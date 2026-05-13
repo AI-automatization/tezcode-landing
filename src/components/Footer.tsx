@@ -6,9 +6,13 @@ import Link from "next/link";
 // ─────────────────────────────────────────────────────────
 function TCLogo() {
   return (
-    <div className="w-9 h-9 flex items-center justify-center rounded-md bg-white p-1">
+    <div className="w-9 h-9 flex items-center justify-center">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/tezcode-logo.png" alt="Tezcode logo" className="w-full h-full object-contain" />
+      <img
+        src="/tezcode-logo-white.png"
+        alt="Tezcode logo"
+        className="w-full h-full object-contain drop-shadow-[0_0_6px_rgba(212,160,23,0.3)]"
+      />
     </div>
   );
 }
@@ -20,13 +24,22 @@ export function Footer() {
   const t = useTranslations("footer");
   const year = new Date().getFullYear();
 
-  const divisionLinks = [
-    "TezCode Systems",
-    "TezCode Custom",
-    "TezCode AI",
-    "TezCode Teams",
-    "TezCode Labs",
-    "TezCode Academy",
+  const divisionLinks: { label: string; href: string }[] = [
+    { label: "TezCode Systems", href: "#divisions" },
+    { label: "TezCode Custom", href: "/for-businesses" },
+    { label: "TezCode AI", href: "#divisions" },
+    { label: "TezCode Teams", href: "/hire-developers" },
+    { label: "TezCode Labs", href: "#divisions" },
+    { label: "TezCode Academy", href: "#divisions" },
+  ];
+
+  const productLinks: { label: string; href: string }[] = [
+    { label: "Pricing", href: "#pricing" },
+    { label: "ROI Calculator", href: "#calculator" },
+    { label: "Reviews", href: "#reviews" },
+    { label: "Case studies", href: "/case-studies" },
+    { label: "Roadmap", href: "/roadmap" },
+    { label: "Changelog", href: "/changelog" },
   ];
 
   const companyLinks = [
@@ -34,6 +47,7 @@ export function Footer() {
     { label: t("team"), href: "#team" },
     { label: t("careers"), href: "#contact" },
     { label: t("contact"), href: "#contact" },
+    { label: "Press kit", href: "/press" },
     { label: t("privacy"), href: "/privacy" },
     { label: t("terms"), href: "/terms" },
   ];
@@ -63,7 +77,7 @@ export function Footer() {
     <footer className="bg-[var(--tc-ink)] border-t border-[var(--tc-border)] py-16 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Top row */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10 mb-12">
           {/* Brand column */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
@@ -106,13 +120,35 @@ export function Footer() {
             </h4>
             <ul className="flex flex-col gap-2">
               {divisionLinks.map((division) => (
-                <li key={division}>
-                  <a
-                    href="#divisions"
+                <li key={division.label}>
+                  <Link
+                    href={division.href}
                     className="text-sm text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] tc-link-underline transition-colors"
                   >
-                    {division}
-                  </a>
+                    {division.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Product column */}
+          <div>
+            <h4
+              className="text-xs font-600 uppercase tracking-widest text-[var(--tc-text-muted)] mb-4"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              Product
+            </h4>
+            <ul className="flex flex-col gap-2">
+              {productLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] tc-link-underline transition-colors"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -169,7 +205,7 @@ export function Footer() {
           </p>
           <div className="flex items-center gap-1 text-xs text-[var(--tc-text-muted)]">
             <span>Built with</span>
-            <span className="text-[var(--tc-blue)]">Next.js 15</span>
+            <span className="text-[var(--tc-blue)]">Next.js 16</span>
             <span>+</span>
             <span className="text-[var(--tc-gold)]">next-intl</span>
           </div>
