@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "title": "Tezcode — AI Software Factory | Automating Business in Uzbekistan",
+    "description": "Tezcode AI — artificial intelligence solutions from small business to enterprise. 6 divisions, 8 products, 5 languages. RAOS, AI Office, HamshiraGo and more.",
+    "ogTitle": "Tezcode | AI Software Factory",
+    "ogDescription": "Systematizing Uzbekistan's business with AI. RAOS POS, AI Office, HamshiraGo and 5 more products."
+  },
+  "nav": {
+    "divisions": "Divisions",
+    "solutions": "Solutions",
+    "team": "Team",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "hero": {
+    "badge": "AI · Software Factory · Tashkent",
+    "headline": "We automate\nany business\nwith AI",
+    "subheadline": "8 products. 6 divisions. 1 mission — systematize every business.",
+    "cta_primary": "Get free demo",
+    "cta_secondary": "Contact us",
+    "stat_divisions": "Divisions",
+    "stat_products": "Products",
+    "stat_projects": "Project",
+    "trust": "✓ 14 days free · ✓ No credit card · ✓ Start in 5 minutes",
+    "stat_clients": "Clients",
+    "stat_years": "Years",
+    "stat_sectors": "Sectors"
+  },
+  "divisions": {
+    "title": "Our 6 Divisions",
+    "subtitle": "Each one — the best solution in its domain",
+    "systems": {
+      "name": "TezCode Systems",
+      "tagline": "Ready-to-use SaaS products",
+      "description": "Production-ready business solutions on a monthly subscription. Connect today, see results tomorrow.",
+      "products": "RAOS · WorkControl",
+      "model": "Monthly subscription"
+    },
+    "custom": {
+      "name": "TezCode Custom",
+      "tagline": "Bespoke software",
+      "description": "Built from scratch to your exact specifications — a solution tailored entirely to your business.",
+      "products": "Custom per client",
+      "model": "Project-based"
+    },
+    "ai": {
+      "name": "TezCode AI",
+      "tagline": "AI agents and platforms",
+      "description": "Intelligent assistants, AI agents, and workflow automation solutions for modern teams.",
+      "products": "AI Office · AI-Trade",
+      "model": "SaaS + Token-based"
+    },
+    "teams": {
+      "name": "TezCode Teams",
+      "tagline": "Developers on demand",
+      "description": "Need a team? Hire our developers on a monthly basis. Quality guaranteed.",
+      "products": "Developer-as-a-service",
+      "model": "Monthly contract"
+    },
+    "labs": {
+      "name": "TezCode Labs",
+      "tagline": "Internal startups",
+      "description": "Our innovation lab — where new products and experimental ideas are born.",
+      "products": "WeWatch · Carevy · Ventra · Savdo-Builder",
+      "model": "Investment + Equity"
+    },
+    "academy": {
+      "name": "TezCode Academy",
+      "tagline": "AI education hub",
+      "description": "AI courses for developers and business owners, workshops, and corporate training programs.",
+      "products": "Course · Bootcamp · Workshop",
+      "model": "Course fee"
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "8 products — each an expert in its field",
+    "raos": {
+      "name": "RAOS",
+      "tagline": "Trading software",
+      "description": "POS for any store — inventory, cashier, customer, reports in one app.",
+      "status": "Live",
+      "division": "Systems",
+      "url": "https://raos.uz"
+    },
+    "ai_office": {
+      "name": "AI Office",
+      "tagline": "AI orchestrator",
+      "description": "12 department agents — chat-first, 0-step signup.",
+      "status": "Beta",
+      "division": "AI",
+      "url": "#"
+    },
+    "hamshirago": {
+      "name": "Carevy",
+      "tagline": "Home nurse + clinic",
+      "description": "Home nurse calls + clinic management across Tashkent.",
+      "status": "Beta",
+      "division": "Labs",
+      "url": "https://hamshirago.uz"
+    },
+    "wewatch": {
+      "name": "WeWatch",
+      "tagline": "Watch videos together",
+      "description": "Platform for watching videos online together with friends.",
+      "status": "Soon",
+      "division": "Labs",
+      "url": "#"
+    },
+    "workcontrol": {
+      "name": "WorkControl",
+      "tagline": "Team control",
+      "description": "Employee time, tasks, reports — in one dashboard.",
+      "status": "Live",
+      "division": "Systems",
+      "url": "#"
+    },
+    "ventra": {
+      "name": "Ventra",
+      "tagline": "Trend analysis",
+      "description": "E-commerce trends, competitor monitoring, price tracking.",
+      "status": "Soon",
+      "division": "Labs",
+      "url": "#"
+    },
+    "ai_trade": {
+      "name": "AI-Trade",
+      "tagline": "Trading bot",
+      "description": "AI-powered automated trading — market signals and portfolio.",
+      "status": "Beta",
+      "division": "AI",
+      "url": "#"
+    },
+    "savdo_builder": {
+      "name": "Savdo-Builder",
+      "tagline": "No-code builder",
+      "description": "Builder for creating commerce apps (no-code).",
+      "status": "Soon",
+      "division": "Labs",
+      "url": "#"
+    },
+    "status_labels": {
+      "Live": "Live",
+      "Beta": "Beta",
+      "Soon": "Soon"
+    },
+    "view_all": "View all"
+  },
+  "solutions": {
+    "title": "Our solutions — for every industry",
+    "subtitle": "Real problems, real solutions",
+    "store": {
+      "title": "For retail stores",
+      "description": "Inventory, POS, customers, reports — all in one platform. Every store runs on autopilot with RAOS.",
+      "product": "RAOS"
+    },
+    "office": {
+      "title": "For offices",
+      "description": "AI orchestrator with 12 department agents. Manage via chat — the work gets done automatically.",
+      "product": "AI Office"
+    },
+    "clinic": {
+      "title": "For clinics",
+      "description": "Home nurse dispatch + clinic management. Fast service across Tashkent.",
+      "product": "Carevy (HamshiraGo)"
+    },
+    "custom": {
+      "title": "Need a custom project?",
+      "description": "Our Custom team builds a tailored solution for you — from zero to a full product.",
+      "product": "TezCode Custom"
+    }
+  },
+  "team": {
+    "title": "Our team",
+    "subtitle": "Founder-led startup — everyone wears multiple hats",
+    "members": {
+      "bekzod": {
+        "name": "Bekzod Mirzaaliyev",
+        "role": "Founder · CEO · CTO · CFO",
+        "bio": "Founder and CEO of Tezcode. Technical direction, AI strategy, and financial oversight — all under Bekzod's leadership.",
+        "telegram": "@webdevelopertk"
+      },
+      "abdulaziz": {
+        "name": "Abdulaziz Yormatov",
+        "role": "COO · Head of Operations",
+        "bio": "Operations management, HR, and accounting. Leads the TezCode Custom division. RAOS Team Lead.",
+        "telegram": "@mr_abdulaziz_yormatov"
+      },
+      "firdavs": {
+        "name": "Firdavs",
+        "role": "CMO · Head of Marketing",
+        "bio": "Brand strategy, content, and advertising. Driving demand and strengthening the Tezcode brand.",
+        "telegram": "@RAYYQF"
+      }
+    },
+    "hiring": {
+      "title": "We're hiring",
+      "roles": "Senior CTO · CFO Assistant · Marketing Team"
+    }
+  },
+  "partners": {
+    "title": "Our partners",
+    "subtitle": "We work with the best technologies"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Let's talk about your project — free consultation",
+    "form": {
+      "name": "Your name",
+      "name_placeholder": "Aziz Karimov",
+      "email": "Email",
+      "email_placeholder": "aziz@example.com",
+      "phone": "Phone",
+      "phone_placeholder": "+998 90 123 45 67",
+      "subject": "Subject",
+      "subjects": {
+        "demo": "Request a demo",
+        "partnership": "Partnership",
+        "investor": "Investor",
+        "career": "Career",
+        "other": "Other"
+      },
+      "message": "Your message",
+      "message_placeholder": "Briefly describe your project...",
+      "submit": "Send",
+      "submitting": "Sending...",
+      "success": "Message sent! We'll get back to you shortly.",
+      "error": "Something went wrong. Please try again."
+    }
+  },
+  "footer": {
+    "tagline": "Systematizing business with AI",
+    "divisions": "Divisions",
+    "company": "Company",
+    "about": "About us",
+    "team": "Team",
+    "careers": "Careers",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "rights": "All rights reserved",
+    "made_in": "Tashkent · Built in Uzbekistan"
+  },
+  "testimonials": {
+    "title": "Customer stories",
+    "subtitle": "Real results from real entrepreneurs",
+    "items": {
+      "dilfuza": {
+        "name": "Dilfuza X.",
+        "role": "Grocery store · Yunusabad",
+        "quote": "After RAOS we save 800K UZS every month. Cashier accurate, inventory automatic.",
+        "metric": "+800K"
+      },
+      "aziz": {
+        "name": "Aziz aka",
+        "role": "Electronics store · Chilanzar",
+        "quote": "I used to pay 2M to an accountant. Now with RAOS I do my own reports.",
+        "metric": "−2M"
+      },
+      "munira": {
+        "name": "Dr. Munira",
+        "role": "Clinic director · Mirzo Ulugbek",
+        "quote": "With Carevy clinic queue is 40% faster. Patients are grateful.",
+        "metric": "40%"
+      }
+    }
+  },
+  "floating": {
+    "telegram": "Message on Telegram",
+    "whatsapp": "Message on WhatsApp",
+    "label": "Contact us"
+  }
+}

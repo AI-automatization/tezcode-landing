@@ -1,0 +1,148 @@
+import type { Metadata, Viewport } from "next";
+import { Inter, Syne } from "next/font/google";
+import { notFound } from "next/navigation";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
+import "./globals.css";
+
+// ─────────────────────────────────────────────────────────
+// Fonts — Syne (display) + Inter (body)
+// ─────────────────────────────────────────────────────────
+const syne = Syne({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin", "cyrillic"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+// ─────────────────────────────────────────────────────────
+// Metadata — per locale
+// ─────────────────────────────────────────────────────────
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta" });
+
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://tezcode.dev";
+  const canonicalUrl = locale === routing.defaultLocale
+    ? baseUrl
+    : `${baseUrl}/${locale}`;
+
+  return {
+    title: {
+      default: t("title"),
+      template: `%s | Tezcode`,
+    },
+    description: t("description"),
+    metadataBase: new URL(baseUrl),
+    alternates: {
+      canonical: canonicalUrl,
+      languages: Object.fromEntries(
+        routing.locales.map((l) => [
+          l,
+          l === routing.defaultLocale ? baseUrl : `${baseUrl}/${l}`,
+        ])
+      ),
+    },
+    openGraph: {
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      url: canonicalUrl,
+      siteName: "Tezcode",
+      locale: locale,
+      type: "website",
+      images: [
+        {
+          url: `${baseUrl}/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: "Tezcode — AI Solutions",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      images: [`${baseUrl}/og-image.png`],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    icons: {
+      icon: "/favicon.ico",
+      shortcut: "/favicon.ico",
+    },
+  };
+}
+
+export const viewport: Viewport = {
+  themeColor: "#0a0a0f",
+  colorScheme: "dark",
+  width: "device-width",
+  initialScale: 1,
+};
+
+// ─────────────────────────────────────────────────────────
+// Static params — generate routes for all 5 locales
+// ─────────────────────────────────────────────────────────
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+// ─────────────────────────────────────────────────────────
+// Root Layout
+// ─────────────────────────────────────────────────────────
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+
+  // Validate locale — 404 if not in supported list
+  if (!routing.locales.includes(locale as typeof routing.locales[number])) {
+    notFound();
+  }
+
+  // Fetch all messages for this locale
+  const messages = await getMessages();
+
+  // RTL for Arabic
+  const dir = locale === "ar" ? "rtl" : "ltr";
+
+  return (
+    <html
+      lang={locale}
+      dir={dir}
+      className={`${syne.variable} ${inter.variable}`}
+    >
+      <body className="bg-[var(--tc-ink)] text-[var(--tc-text-primary)] antialiased">
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
+    </html>
+  );
+}

@@ -1,0 +1,271 @@
+@import "tailwindcss";
+
+/* =========================================================
+   TEZCODE BRAND — CSS Custom Properties
+   ========================================================= */
+@layer base {
+  :root {
+    /* Brand colors */
+    --tc-ink: #0a0a0f;
+    --tc-blue: #0040ff;
+    --tc-blue-light: #3366ff;
+    --tc-blue-dim: rgba(0, 64, 255, 0.12);
+    --tc-gold: #d4a017;
+    --tc-gold-light: #e8b93a;
+    --tc-gold-dim: rgba(212, 160, 23, 0.12);
+
+    /* Surface layers */
+    --tc-surface-0: #0a0a0f;
+    --tc-surface-1: #111118;
+    --tc-surface-2: #18181f;
+    --tc-surface-3: #22222c;
+    --tc-border: rgba(255, 255, 255, 0.08);
+    --tc-border-bright: rgba(255, 255, 255, 0.16);
+
+    /* Text */
+    --tc-text-primary: #f0f0f8;
+    --tc-text-secondary: rgba(240, 240, 248, 0.6);
+    --tc-text-muted: rgba(240, 240, 248, 0.35);
+
+    /* Spacing / radii */
+    --tc-radius-sm: 6px;
+    --tc-radius-md: 12px;
+    --tc-radius-lg: 20px;
+    --tc-radius-xl: 32px;
+
+    /* Motion */
+    --tc-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --tc-duration-fast: 150ms;
+    --tc-duration-base: 300ms;
+    --tc-duration-slow: 600ms;
+  }
+
+  /* RTL support for Arabic */
+  [lang="ar"] {
+    direction: rtl;
+  }
+
+  html {
+    background-color: var(--tc-ink);
+    color: var(--tc-text-primary);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--tc-ink);
+    color: var(--tc-text-primary);
+    font-family: var(--font-body), sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* Global selection color */
+  ::selection {
+    background-color: var(--tc-blue-dim);
+    color: var(--tc-text-primary);
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--tc-surface-1);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--tc-surface-3);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--tc-blue);
+  }
+}
+
+/* =========================================================
+   UTILITY CLASSES — Tezcode specific
+   ========================================================= */
+@layer utilities {
+  .tc-gradient-blue {
+    background: linear-gradient(135deg, var(--tc-blue) 0%, #0066ff 100%);
+  }
+
+  .tc-gradient-gold {
+    background: linear-gradient(135deg, var(--tc-gold) 0%, var(--tc-gold-light) 100%);
+  }
+
+  .tc-text-gradient-blue {
+    background: linear-gradient(135deg, #4d88ff 0%, var(--tc-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .tc-text-gradient-gold {
+    background: linear-gradient(135deg, var(--tc-gold) 0%, var(--tc-gold-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .tc-glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--tc-border);
+  }
+
+  .tc-glow-blue {
+    box-shadow: 0 0 40px rgba(0, 64, 255, 0.15), 0 0 80px rgba(0, 64, 255, 0.05);
+  }
+
+  .tc-glow-gold {
+    box-shadow: 0 0 40px rgba(212, 160, 23, 0.15), 0 0 80px rgba(212, 160, 23, 0.05);
+  }
+
+  /* Noise texture overlay for depth */
+  .tc-noise::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Animated underline for links */
+  .tc-link-underline {
+    position: relative;
+  }
+  .tc-link-underline::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--tc-blue);
+    transition: width var(--tc-duration-base) var(--tc-ease);
+  }
+  .tc-link-underline:hover::after {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+@keyframes tc-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tc-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes tc-slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes tc-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes tc-pulse-blue {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 64, 255, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(0, 64, 255, 0); }
+}
+
+@keyframes tc-scan {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(100vh); }
+}
+
+@keyframes tc-mesh-drift {
+  0%   { transform: translate(0%, 0%) scale(1); }
+  33%  { transform: translate(6%, -4%) scale(1.06); }
+  66%  { transform: translate(-5%, 5%) scale(0.97); }
+  100% { transform: translate(0%, 0%) scale(1); }
+}
+
+@keyframes tc-grid-pan {
+  from { background-position: 0 0; }
+  to   { background-position: 160px 160px; }
+}
+
+@keyframes tc-aurora {
+  0%, 100% { opacity: 0.7; transform: translateX(0); }
+  50%      { opacity: 1;   transform: translateX(8%); }
+}
+
+@keyframes tc-conic-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes tc-shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.tc-shimmer-text {
+  background: linear-gradient(
+    90deg,
+    var(--tc-text-primary) 0%,
+    var(--tc-text-primary) 30%,
+    var(--tc-gold) 50%,
+    var(--tc-text-primary) 70%,
+    var(--tc-text-primary) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: tc-shimmer 6s linear infinite;
+}
+
+.tc-perspective {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+.animate-tc-fade-up {
+  animation: tc-fade-up 0.6s var(--tc-ease) forwards;
+  opacity: 0;
+}
+
+.animate-tc-fade-in {
+  animation: tc-fade-in 0.6s var(--tc-ease) forwards;
+  opacity: 0;
+}
+
+.animate-tc-float {
+  animation: tc-float 4s ease-in-out infinite;
+}
+
+/* Staggered delays for lists */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-800 { animation-delay: 800ms; }

@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "title": "Tezcode — AI Software Factory | O'zbekiston biznesini avtomatlashtiramiz",
+    "description": "Tezcode AI — kichik biznesdan korporatsiyagacha sun'iy intellekt yechimlar. 6 ta bo'lim, 8 ta mahsulot, 5 ta til. RAOS, AI Office, HamshiraGo va boshqalar.",
+    "ogTitle": "Tezcode | AI Software Factory",
+    "ogDescription": "O'zbekiston biznesini AI bilan tizimlash. RAOS POS, AI Office, HamshiraGo va 5 boshqa mahsulot."
+  },
+  "nav": {
+    "divisions": "Bo'limlar",
+    "solutions": "Yechimlar",
+    "team": "Jamoa",
+    "contact": "Bog'lanish",
+    "language": "Til"
+  },
+  "hero": {
+    "badge": "AI · Software Factory · Tashkent",
+    "headline": "Har biznesni\nAI bilan\navtomatlashtiramiz",
+    "subheadline": "8 ta mahsulot. 6 ta yo'nalish. 1 ta missiya — har biznesni tizimlashtirish.",
+    "cta_primary": "Bepul demo olish",
+    "cta_secondary": "Biz bilan bog'lanish",
+    "trust": "✓ 14 kun bepul · ✓ Karta talab qilinmaydi · ✓ 5 daqiqada boshlang",
+    "stat_divisions": "Yo'nalish",
+    "stat_products": "Mahsulot",
+    "stat_projects": "Loyiha",
+    "stat_clients": "Mijoz",
+    "stat_years": "Yil tajriba",
+    "stat_sectors": "Soha"
+  },
+  "testimonials": {
+    "title": "Mijozlarimiz biz haqimizda",
+    "subtitle": "Real natijalar, real biznes egalari",
+    "items": {
+      "dilfuza": {
+        "name": "Dilfuza X.",
+        "role": "Oziq-ovqat do'koni · Yunusobod",
+        "quote": "RAOS ulagandan keyin har oy 800 ming so'm tejaymiz. Kassa hisobi aniq, ombor avtomat.",
+        "metric": "+800K so'm/oy"
+      },
+      "aziz": {
+        "name": "Aziz aka",
+        "role": "Elektronika do'koni · Chilonzor",
+        "quote": "Avval buxgalterga 2 mln berdim. Endi RAOS bilan o'zim hisobot oson chiqaraman.",
+        "metric": "−2M so'm/oy"
+      },
+      "munira": {
+        "name": "Dr. Munira",
+        "role": "Klinika rahbari · Mirzo Ulug'bek",
+        "quote": "Carevy bilan klinika navbati 40% tezroq. Bemorlar minnatdorchilik bildirmoqda.",
+        "metric": "40% tezroq"
+      }
+    }
+  },
+  "floating": {
+    "telegram": "Telegram orqali yozish",
+    "whatsapp": "WhatsApp orqali yozish",
+    "label": "Biz bilan bog'lanish"
+  },
+  "divisions": {
+    "title": "Bizning 6 ta yo'nalish",
+    "subtitle": "Har biri o'z sohada eng yaxshi yechim",
+    "systems": {
+      "name": "TezCode Systems",
+      "tagline": "Tayyor SaaS mahsulotlar",
+      "description": "Oylik obuna asosida ishlovchi tayyor biznes yechimlar. Bugun ulang, ertaga foyda.",
+      "products": "RAOS · WorkControl",
+      "model": "Oylik obuna"
+    },
+    "custom": {
+      "name": "TezCode Custom",
+      "tagline": "Maxsus dasturlar",
+      "description": "Mijozga noldan, individual talab bo'yicha — bespoke yechim. Sizning biznesingizga moslashgan dastur.",
+      "products": "Mijozga maxsus",
+      "model": "Loyiha asosida"
+    },
+    "ai": {
+      "name": "TezCode AI",
+      "tagline": "AI agentlar va platformalar",
+      "description": "Sun'iy intellekt yordamchilari, AI agentlar, ish jarayonlarini avtomatlashtiruvchi yechimlar.",
+      "products": "AI Office · AI-Trade",
+      "model": "SaaS + Token-based"
+    },
+    "teams": {
+      "name": "TezCode Teams",
+      "tagline": "Dasturchilar ijaraga",
+      "description": "Sizga jamoa kerakmi? Bizning dasturchilarni oylik asosda ijaraga oling. Sifat kafolat.",
+      "products": "Developer-as-a-service",
+      "model": "Oylik shartnoma"
+    },
+    "labs": {
+      "name": "TezCode Labs",
+      "tagline": "Ichki startaplar",
+      "description": "Bizning innovatsiya laboratoriyasi — yangi mahsulotlar, eksperimental yechimlar bu yerda tug'iladi.",
+      "products": "WeWatch · Carevy · Ventra · Savdo-Builder",
+      "model": "Investitsiya + Equity"
+    },
+    "academy": {
+      "name": "TezCode Academy",
+      "tagline": "AI ta'lim markazi",
+      "description": "Dasturchilar va biznes egalari uchun AI kurslari, workshoplar, korporativ treninglar.",
+      "products": "Kurs · Bootcamp · Workshop",
+      "model": "Kurs to'lovi"
+    }
+  },
+  "products": {
+    "title": "Bizning Mahsulotlar",
+    "subtitle": "8 ta mahsulot — har biri o'z sohada ekspert",
+    "raos": {
+      "name": "RAOS",
+      "tagline": "Savdo dasturi",
+      "description": "Har do'kon uchun POS — ombor, kassa, mijoz, hisobot bitta dasturda.",
+      "status": "Live",
+      "division": "Systems",
+      "url": "https://raos.uz"
+    },
+    "ai_office": {
+      "name": "AI Office",
+      "tagline": "AI orkestrator",
+      "description": "12 bo'lim agentlari — chat-first, 0 step signup. CEO yordamchi bilan biznes boshqarish.",
+      "status": "Beta",
+      "division": "AI",
+      "url": "#"
+    },
+    "hamshirago": {
+      "name": "Carevy",
+      "tagline": "Uy hamshira + klinika",
+      "description": "Toshkent bo'ylab uy hamshira chaqirish + klinika boshqaruvi.",
+      "status": "Beta",
+      "division": "Labs",
+      "url": "https://hamshirago.uz"
+    },
+    "wewatch": {
+      "name": "WeWatch",
+      "tagline": "Video birga ko'rish",
+      "description": "Do'stlar bilan online video birga ko'rish platformasi.",
+      "status": "Soon",
+      "division": "Labs",
+      "url": "#"
+    },
+    "workcontrol": {
+      "name": "WorkControl",
+      "tagline": "Jamoa nazorat",
+      "description": "Xodimlar vaqt, vazifa, hisobot — bitta dashboard.",
+      "status": "Live",
+      "division": "Systems",
+      "url": "#"
+    },
+    "ventra": {
+      "name": "Ventra",
+      "tagline": "Trend tahlil",
+      "description": "E-commerce trendlari, raqib monitoring, narx kuzatuv.",
+      "status": "Soon",
+      "division": "Labs",
+      "url": "#"
+    },
+    "ai_trade": {
+      "name": "AI-Trade",
+      "tagline": "Trading bot",
+      "description": "AI bilan automated trading — market signal va portfolio.",
+      "status": "Beta",
+      "division": "AI",
+      "url": "#"
+    },
+    "savdo_builder": {
+      "name": "Savdo-Builder",
+      "tagline": "No-code builder",
+      "description": "Mijozga savdo dastur yaratish builder (no-code).",
+      "status": "Soon",
+      "division": "Labs",
+      "url": "#"
+    },
+    "status_labels": {
+      "Live": "Ishlamoqda",
+      "Beta": "Beta",
+      "Soon": "Yaqinda"
+    },
+    "view_all": "Hammasini ko'rish"
+  },
+  "solutions": {
+    "title": "Bizning yechimlar — har soha uchun",
+    "subtitle": "Konkret muammolar, konkret yechimlar",
+    "store": {
+      "title": "Do'konlar uchun",
+      "description": "Ombor, kassa, mijoz, hisobot — bitta dasturda. RAOS bilan har do'kon avtomatlashtirilgan.",
+      "product": "RAOS"
+    },
+    "office": {
+      "title": "Ofislar uchun",
+      "description": "AI yordamchi orkestrator — 12 bo'lim agentlari. Chat orqali boshqaring, ish o'zi bajariladi.",
+      "product": "AI Office"
+    },
+    "clinic": {
+      "title": "Klinikalar uchun",
+      "description": "Uy hamshira chaqirish + klinika boshqaruvi. Toshkent bo'ylab tezkor xizmat.",
+      "product": "Carevy (HamshiraGo)"
+    },
+    "custom": {
+      "title": "Maxsus loyiha kerakmi?",
+      "description": "Bizning Custom jamoa sizga moslashtirilgan dastur yozadi — noldan to'liq mahsulot.",
+      "product": "TezCode Custom"
+    }
+  },
+  "team": {
+    "title": "Bizning jamoa",
+    "subtitle": "Founder-led startup — har biri ko'p rolda",
+    "members": {
+      "bekzod": {
+        "name": "Bekzod Mirzaaliyev",
+        "role": "Founder · CEO · CTO · CFO",
+        "bio": "Tezcode'ning asoschisi va CEO. Texnik yo'nalish, AI strategiyasi, moliyaviy nazorat — barchasi Bekzod ostida.",
+        "telegram": "@webdevelopertk"
+      },
+      "abdulaziz": {
+        "name": "Abdulaziz Yormatov",
+        "role": "COO · Operatsion Rahbar",
+        "bio": "Operatsion boshqaruv, HR, hisob-kitob. TezCode Custom bo'limini ham boshqaradi. RAOS Team Lead.",
+        "telegram": "@mr_abdulaziz_yormatov"
+      },
+      "firdavs": {
+        "name": "Firdavs",
+        "role": "CMO · Marketing Rahbari",
+        "bio": "Brand strategiyasi, kontent, reklama. Talab yaratish va Tezcode brand kuchaytirish.",
+        "telegram": "@RAYYQF"
+      }
+    },
+    "hiring": {
+      "title": "Hozir hire qilmoqdamiz",
+      "roles": "Senior CTO · CFO Assistant · Marketing Team"
+    }
+  },
+  "partners": {
+    "title": "Hamkorlarimiz",
+    "subtitle": "Eng yaxshi texnologiyalar bilan ishlaymiz"
+  },
+  "contact": {
+    "title": "Bizga bog'laning",
+    "subtitle": "Loyiha haqida gaplashamiz — bepul konsultatsiya",
+    "form": {
+      "name": "Ismingiz",
+      "name_placeholder": "Aziz Karimov",
+      "email": "Email",
+      "email_placeholder": "aziz@example.com",
+      "phone": "Telefon",
+      "phone_placeholder": "+998 90 123 45 67",
+      "subject": "Mavzu",
+      "subjects": {
+        "demo": "Demo so'rash",
+        "partnership": "Hamkorlik",
+        "investor": "Investor",
+        "career": "Vakansiya",
+        "other": "Boshqa"
+      },
+      "message": "Xabaringiz",
+      "message_placeholder": "Loyiha haqida qisqacha yozing...",
+      "submit": "Yuborish",
+      "submitting": "Yuborilmoqda...",
+      "success": "Xabaringiz yuborildi! Tez orada javob beramiz.",
+      "error": "Xato yuz berdi. Iltimos qayta urinib ko'ring."
+    }
+  },
+  "footer": {
+    "tagline": "AI bilan biznes tizimlash",
+    "divisions": "Bo'limlar",
+    "company": "Kompaniya",
+    "about": "Biz haqimizda",
+    "team": "Jamoa",
+    "careers": "Vakansiyalar",
+    "contact": "Bog'lanish",
+    "legal": "Huquqiy",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari",
+    "rights": "Barcha huquqlar himoyalangan",
+    "made_in": "Toshkent · O'zbekistondan bilan"
+  }
+}

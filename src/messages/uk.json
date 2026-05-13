@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "title": "Tezcode — AI Software Factory | Автоматизуємо бізнес Узбекистану",
+    "description": "Tezcode AI — рішення на основі штучного інтелекту для малого бізнесу та корпорацій. 6 напрямків, 8 продуктів, 5 мов. RAOS, AI Office, HamshiraGo та інші.",
+    "ogTitle": "Tezcode | AI Software Factory",
+    "ogDescription": "Систематизація бізнесу Узбекистану за допомогою AI. RAOS POS, AI Office, HamshiraGo та 5 інших продуктів."
+  },
+  "nav": {
+    "divisions": "Напрямки",
+    "solutions": "Рішення",
+    "team": "Команда",
+    "contact": "Контакти",
+    "language": "Мова"
+  },
+  "hero": {
+    "badge": "AI · Software Factory · Ташкент",
+    "headline": "Будь-який бізнес\nавтоматизуємо з AI",
+    "subheadline": "8 продуктів. 6 напрямків. 1 місія — систематизувати кожен бізнес.",
+    "cta_primary": "Безкоштовне демо",
+    "cta_secondary": "Зв'язатися з нами",
+    "stat_divisions": "Напрямків",
+    "stat_products": "Продуктів",
+    "stat_projects": "Проєкт",
+    "trust": "✓ 14 днів безкоштовно · ✓ Картка не потрібна · ✓ Почніть за 5 хвилин",
+    "stat_clients": "Клієнтів",
+    "stat_years": "Років",
+    "stat_sectors": "Галузь"
+  },
+  "divisions": {
+    "title": "Наші 6 напрямків",
+    "subtitle": "Кожен — найкраще рішення у своїй галузі",
+    "systems": {
+      "name": "TezCode Systems",
+      "tagline": "Готові SaaS-продукти",
+      "description": "Готові бізнес-рішення на основі щомісячної підписки. Підключіться сьогодні — отримайте результат завтра.",
+      "products": "RAOS · WorkControl",
+      "model": "Щомісячна підписка"
+    },
+    "custom": {
+      "name": "TezCode Custom",
+      "tagline": "Індивідуальні розробки",
+      "description": "Розробка з нуля під унікальні вимоги клієнта. Програмне забезпечення, адаптоване саме під ваш бізнес.",
+      "products": "Індивідуально під клієнта",
+      "model": "Проєктна модель"
+    },
+    "ai": {
+      "name": "TezCode AI",
+      "tagline": "AI-агенти та платформи",
+      "description": "Інтелектуальні помічники, AI-агенти та рішення для автоматизації робочих процесів.",
+      "products": "AI Office · AI-Trade",
+      "model": "SaaS + Token-based"
+    },
+    "teams": {
+      "name": "TezCode Teams",
+      "tagline": "Розробники в оренду",
+      "description": "Потрібна команда? Орендуйте наших розробників на щомісячній основі. Якість гарантована.",
+      "products": "Developer-as-a-service",
+      "model": "Щомісячний контракт"
+    },
+    "labs": {
+      "name": "TezCode Labs",
+      "tagline": "Внутрішні стартапи",
+      "description": "Наша інноваційна лабораторія — тут народжуються нові продукти та експериментальні рішення.",
+      "products": "WeWatch · Carevy · Ventra · Savdo-Builder",
+      "model": "Інвестиції + Equity"
+    },
+    "academy": {
+      "name": "TezCode Academy",
+      "tagline": "Освітній центр AI",
+      "description": "Курси з AI для розробників і власників бізнесу, воркшопи, корпоративні тренінги.",
+      "products": "Курс · Буткемп · Воркшоп",
+      "model": "Оплата за курс"
+    }
+  },
+  "products": {
+    "title": "Наші Продукти",
+    "subtitle": "8 продуктів — кожен експерт у своїй галузі",
+    "raos": {
+      "name": "RAOS",
+      "tagline": "Програма продажів",
+      "description": "POS для будь-якого магазину — склад, каса, клієнт, звіти.",
+      "status": "Live",
+      "division": "Systems",
+      "url": "https://raos.uz"
+    },
+    "ai_office": {
+      "name": "AI Office",
+      "tagline": "AI оркестратор",
+      "description": "Агенти 12 відділів — chat-first.",
+      "status": "Beta",
+      "division": "AI",
+      "url": "#"
+    },
+    "hamshirago": {
+      "name": "Carevy",
+      "tagline": "Домашня медсестра + клініка",
+      "description": "Виклик медсестри додому в Ташкенті.",
+      "status": "Beta",
+      "division": "Labs",
+      "url": "https://hamshirago.uz"
+    },
+    "wewatch": {
+      "name": "WeWatch",
+      "tagline": "Спільний перегляд відео",
+      "description": "Платформа для спільного перегляду відео з друзями.",
+      "status": "Soon",
+      "division": "Labs",
+      "url": "#"
+    },
+    "workcontrol": {
+      "name": "WorkControl",
+      "tagline": "Контроль команди",
+      "description": "Час, завдання співробітників — в одній панелі.",
+      "status": "Live",
+      "division": "Systems",
+      "url": "#"
+    },
+    "ventra": {
+      "name": "Ventra",
+      "tagline": "Аналіз трендів",
+      "description": "Тренди e-commerce, моніторинг конкурентів.",
+      "status": "Soon",
+      "division": "Labs",
+      "url": "#"
+    },
+    "ai_trade": {
+      "name": "AI-Trade",
+      "tagline": "Торговий бот",
+      "description": "AI-автоматизована торгівля.",
+      "status": "Beta",
+      "division": "AI",
+      "url": "#"
+    },
+    "savdo_builder": {
+      "name": "Savdo-Builder",
+      "tagline": "No-code конструктор",
+      "description": "Конструктор додатків для торгівлі (no-code).",
+      "status": "Soon",
+      "division": "Labs",
+      "url": "#"
+    },
+    "status_labels": {
+      "Live": "Працює",
+      "Beta": "Бета",
+      "Soon": "Скоро"
+    },
+    "view_all": "Дивитись усі"
+  },
+  "solutions": {
+    "title": "Наші рішення — для кожної галузі",
+    "subtitle": "Конкретні завдання, конкретні рішення",
+    "store": {
+      "title": "Для магазинів",
+      "description": "Склад, каса, клієнти, звіти — в одній системі. З RAOS кожен магазин працює на автопілоті.",
+      "product": "RAOS"
+    },
+    "office": {
+      "title": "Для офісів",
+      "description": "AI-оркестратор з 12 агентами за відділами. Керуйте через чат — система робить усе сама.",
+      "product": "AI Office"
+    },
+    "clinic": {
+      "title": "Для клінік",
+      "description": "Виклик медсестри додому + управління клінікою. Швидкий сервіс по всьому Ташкенту.",
+      "product": "Carevy (HamshiraGo)"
+    },
+    "custom": {
+      "title": "Потрібен індивідуальний проєкт?",
+      "description": "Наша команда Custom розробить для вас рішення під ключ — від нуля до готового продукту.",
+      "product": "TezCode Custom"
+    }
+  },
+  "team": {
+    "title": "Наша команда",
+    "subtitle": "Founder-led стартап — кожен у кількох ролях",
+    "members": {
+      "bekzod": {
+        "name": "Bekzod Mirzaaliyev",
+        "role": "Founder · CEO · CTO · CFO",
+        "bio": "Засновник і CEO Tezcode. Технічний напрямок, AI-стратегія, фінансовий контроль — усе під його керівництвом.",
+        "telegram": "@webdevelopertk"
+      },
+      "abdulaziz": {
+        "name": "Abdulaziz Yormatov",
+        "role": "COO · Операційний директор",
+        "bio": "Операційне управління, HR, бухгалтерія. Керує напрямком TezCode Custom. Team Lead RAOS.",
+        "telegram": "@mr_abdulaziz_yormatov"
+      },
+      "firdavs": {
+        "name": "Firdavs",
+        "role": "CMO · Директор з маркетингу",
+        "bio": "Бренд-стратегія, контент, реклама. Формування попиту та посилення бренду Tezcode.",
+        "telegram": "@RAYYQF"
+      }
+    },
+    "hiring": {
+      "title": "Зараз відкриті вакансії",
+      "roles": "Senior CTO · CFO Assistant · Marketing Team"
+    }
+  },
+  "partners": {
+    "title": "Наші партнери",
+    "subtitle": "Працюємо з найкращими технологіями"
+  },
+  "contact": {
+    "title": "Зв'яжіться з нами",
+    "subtitle": "Обговоримо ваш проєкт — безкоштовна консультація",
+    "form": {
+      "name": "Ваше ім'я",
+      "name_placeholder": "Aziz Karimov",
+      "email": "Email",
+      "email_placeholder": "aziz@example.com",
+      "phone": "Телефон",
+      "phone_placeholder": "+998 90 123 45 67",
+      "subject": "Тема",
+      "subjects": {
+        "demo": "Запросити демо",
+        "partnership": "Партнерство",
+        "investor": "Інвестор",
+        "career": "Вакансія",
+        "other": "Інше"
+      },
+      "message": "Ваше повідомлення",
+      "message_placeholder": "Коротко опишіть ваш проєкт...",
+      "submit": "Надіслати",
+      "submitting": "Надсилання...",
+      "success": "Повідомлення надіслано! Відповімо найближчим часом.",
+      "error": "Сталася помилка. Будь ласка, спробуйте ще раз."
+    }
+  },
+  "footer": {
+    "tagline": "Систематизація бізнесу за допомогою AI",
+    "divisions": "Напрямки",
+    "company": "Компанія",
+    "about": "Про нас",
+    "team": "Команда",
+    "careers": "Вакансії",
+    "contact": "Контакти",
+    "legal": "Правова інформація",
+    "privacy": "Політика конфіденційності",
+    "terms": "Умови використання",
+    "rights": "Усі права захищені",
+    "made_in": "Ташкент · Зроблено в Узбекистані"
+  },
+  "testimonials": {
+    "title": "Клієнти про нас",
+    "subtitle": "Реальні результати від реальних підприємців",
+    "items": {
+      "dilfuza": {
+        "name": "Dilfuza X.",
+        "role": "Продуктовий магазин · Юнусабад",
+        "quote": "Після RAOS економимо 800 тис. сум на місяць. Каса точна, склад автоматичний.",
+        "metric": "+800K"
+      },
+      "aziz": {
+        "name": "Aziz aka",
+        "role": "Електроніка · Чиланзар",
+        "quote": "Раніше платив 2 млн бухгалтеру. Тепер з RAOS сам роблю звіти.",
+        "metric": "−2M"
+      },
+      "munira": {
+        "name": "Dr. Munira",
+        "role": "Директор клініки · Мірзо Улугбек",
+        "quote": "З Carevy черга в клініці на 40% швидша. Пацієнти вдячні.",
+        "metric": "40%"
+      }
+    }
+  },
+  "floating": {
+    "telegram": "Написати в Telegram",
+    "whatsapp": "Написати у WhatsApp",
+    "label": "Зв'язатися"
+  }
+}

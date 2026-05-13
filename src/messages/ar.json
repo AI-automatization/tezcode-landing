@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "title": "Tezcode — مصنع برمجيات الذكاء الاصطناعي | نُؤتمت أعمال أوزبكستان",
+    "description": "Tezcode AI — حلول ذكاء اصطناعي للشركات الصغيرة والمؤسسات الكبيرة. 6 أقسام، 8 منتجات، 5 لغات. RAOS وAI Office وHamshiraGo والمزيد.",
+    "ogTitle": "Tezcode | مصنع برمجيات الذكاء الاصطناعي",
+    "ogDescription": "تنظيم أعمال أوزبكستان بالذكاء الاصطناعي. RAOS POS وAI Office وHamshiraGo و5 منتجات أخرى."
+  },
+  "nav": {
+    "divisions": "الأقسام",
+    "solutions": "الحلول",
+    "team": "الفريق",
+    "contact": "تواصل معنا",
+    "language": "اللغة"
+  },
+  "hero": {
+    "badge": "AI · مصنع برمجيات · طشقند",
+    "headline": "نحن نؤتمت\nأي عمل تجاري\nبالذكاء الاصطناعي",
+    "subheadline": "8 منتجات. 6 أقسام. مهمة واحدة — تنظيم كل عمل تجاري.",
+    "cta_primary": "احصل على عرض مجاني",
+    "cta_secondary": "اتصل بنا",
+    "stat_divisions": "أقسام",
+    "stat_products": "منتجات",
+    "stat_projects": "مشروع",
+    "trust": "✓ 14 يومًا مجانًا · ✓ بطاقة غير مطلوبة · ✓ ابدأ في 5 دقائق",
+    "stat_clients": "عميل",
+    "stat_years": "سنوات",
+    "stat_sectors": "قطاع"
+  },
+  "divisions": {
+    "title": "أقسامنا الستة",
+    "subtitle": "كل قسم — الحل الأمثل في مجاله",
+    "systems": {
+      "name": "TezCode Systems",
+      "tagline": "منتجات SaaS جاهزة للاستخدام",
+      "description": "حلول أعمال جاهزة بنظام اشتراك شهري. انضم اليوم واحصد النتائج غداً.",
+      "products": "RAOS · WorkControl",
+      "model": "اشتراك شهري"
+    },
+    "custom": {
+      "name": "TezCode Custom",
+      "tagline": "برمجيات مخصصة",
+      "description": "تطوير من الصفر وفق متطلبات العميل — حل مصمم خصيصاً لأعمالك.",
+      "products": "مخصص لكل عميل",
+      "model": "قائم على المشروع"
+    },
+    "ai": {
+      "name": "TezCode AI",
+      "tagline": "وكلاء الذكاء الاصطناعي والمنصات",
+      "description": "مساعدون ذكيون ووكلاء AI وحلول لأتمتة سير العمل.",
+      "products": "AI Office · AI-Trade",
+      "model": "SaaS + Token-based"
+    },
+    "teams": {
+      "name": "TezCode Teams",
+      "tagline": "مطورون للتأجير",
+      "description": "تحتاج إلى فريق؟ استأجر مطورينا على أساس شهري. الجودة مضمونة.",
+      "products": "Developer-as-a-service",
+      "model": "عقد شهري"
+    },
+    "labs": {
+      "name": "TezCode Labs",
+      "tagline": "شركات ناشئة داخلية",
+      "description": "مختبرنا للابتكار — هنا تولد المنتجات الجديدة والحلول التجريبية.",
+      "products": "WeWatch · Carevy · Ventra · Savdo-Builder",
+      "model": "استثمار + حصة في الملكية"
+    },
+    "academy": {
+      "name": "TezCode Academy",
+      "tagline": "مركز تعليم الذكاء الاصطناعي",
+      "description": "دورات AI للمطورين وأصحاب الأعمال، ورش عمل، وتدريب مؤسسي.",
+      "products": "دورة · بوتكامب · ورشة عمل",
+      "model": "رسوم الدورة"
+    }
+  },
+  "products": {
+    "title": "منتجاتنا",
+    "subtitle": "8 منتجات — كل واحد خبير في مجاله",
+    "raos": {
+      "name": "RAOS",
+      "tagline": "برنامج المبيعات",
+      "description": "نقطة بيع لأي متجر — مخزون، صندوق، عميل، تقارير.",
+      "status": "Live",
+      "division": "Systems",
+      "url": "https://raos.uz"
+    },
+    "ai_office": {
+      "name": "AI Office",
+      "tagline": "منسق الذكاء الاصطناعي",
+      "description": "وكلاء 12 قسماً.",
+      "status": "Beta",
+      "division": "AI",
+      "url": "#"
+    },
+    "hamshirago": {
+      "name": "Carevy",
+      "tagline": "ممرضة منزلية + عيادة",
+      "description": "استدعاء ممرضة منزلية في طشقند.",
+      "status": "Beta",
+      "division": "Labs",
+      "url": "https://hamshirago.uz"
+    },
+    "wewatch": {
+      "name": "WeWatch",
+      "tagline": "مشاهدة الفيديو معاً",
+      "description": "منصة لمشاهدة الفيديو مع الأصدقاء.",
+      "status": "Soon",
+      "division": "Labs",
+      "url": "#"
+    },
+    "workcontrol": {
+      "name": "WorkControl",
+      "tagline": "إدارة الفريق",
+      "description": "وقت الموظفين والمهام — في لوحة واحدة.",
+      "status": "Live",
+      "division": "Systems",
+      "url": "#"
+    },
+    "ventra": {
+      "name": "Ventra",
+      "tagline": "تحليل الاتجاهات",
+      "description": "اتجاهات التجارة الإلكترونية ومراقبة المنافسين.",
+      "status": "Soon",
+      "division": "Labs",
+      "url": "#"
+    },
+    "ai_trade": {
+      "name": "AI-Trade",
+      "tagline": "روبوت تداول",
+      "description": "تداول آلي بالذكاء الاصطناعي.",
+      "status": "Beta",
+      "division": "AI",
+      "url": "#"
+    },
+    "savdo_builder": {
+      "name": "Savdo-Builder",
+      "tagline": "منشئ بدون كود",
+      "description": "منشئ تطبيقات التجارة (بدون كود).",
+      "status": "Soon",
+      "division": "Labs",
+      "url": "#"
+    },
+    "status_labels": {
+      "Live": "نشط",
+      "Beta": "بيتا",
+      "Soon": "قريباً"
+    },
+    "view_all": "عرض الكل"
+  },
+  "solutions": {
+    "title": "حلولنا — لكل قطاع",
+    "subtitle": "مشكلات حقيقية، حلول حقيقية",
+    "store": {
+      "title": "للمتاجر",
+      "description": "المخزون، نقطة البيع، العملاء، التقارير — في منصة واحدة. مع RAOS كل متجر يعمل تلقائياً.",
+      "product": "RAOS"
+    },
+    "office": {
+      "title": "للمكاتب",
+      "description": "منسق AI مع 12 وكيلاً لكل قسم. أدر عملك عبر المحادثة والعمل يُنجز تلقائياً.",
+      "product": "AI Office"
+    },
+    "clinic": {
+      "title": "للعيادات",
+      "description": "إرسال ممرضة للمنزل + إدارة العيادة. خدمة سريعة في جميع أنحاء طشقند.",
+      "product": "Carevy (HamshiraGo)"
+    },
+    "custom": {
+      "title": "تحتاج مشروعاً مخصصاً؟",
+      "description": "فريق Custom لدينا يبني لك حلاً متكاملاً — من الصفر حتى المنتج النهائي.",
+      "product": "TezCode Custom"
+    }
+  },
+  "team": {
+    "title": "فريقنا",
+    "subtitle": "شركة ناشئة يقودها المؤسسون — كل عضو يؤدي أدواراً متعددة",
+    "members": {
+      "bekzod": {
+        "name": "Bekzod Mirzaaliyev",
+        "role": "المؤسس · الرئيس التنفيذي · المدير التقني · المدير المالي",
+        "bio": "مؤسس Tezcode والرئيس التنفيذي. التوجه التقني واستراتيجية AI والإشراف المالي — كل ذلك تحت إشرافه.",
+        "telegram": "@webdevelopertk"
+      },
+      "abdulaziz": {
+        "name": "Abdulaziz Yormatov",
+        "role": "المدير التشغيلي · رئيس العمليات",
+        "bio": "الإدارة التشغيلية، الموارد البشرية، المحاسبة. يقود قسم TezCode Custom. قائد فريق RAOS.",
+        "telegram": "@mr_abdulaziz_yormatov"
+      },
+      "firdavs": {
+        "name": "Firdavs",
+        "role": "CMO · رئيس التسويق",
+        "bio": "استراتيجية العلامة التجارية، المحتوى، الإعلانات. تحفيز الطلب وتعزيز علامة Tezcode.",
+        "telegram": "@RAYYQF"
+      }
+    },
+    "hiring": {
+      "title": "نحن نوظف الآن",
+      "roles": "Senior CTO · CFO Assistant · Marketing Team"
+    }
+  },
+  "partners": {
+    "title": "شركاؤنا",
+    "subtitle": "نعمل مع أفضل التقنيات"
+  },
+  "contact": {
+    "title": "تواصل معنا",
+    "subtitle": "دعنا نتحدث عن مشروعك — استشارة مجانية",
+    "form": {
+      "name": "اسمك",
+      "name_placeholder": "Aziz Karimov",
+      "email": "البريد الإلكتروني",
+      "email_placeholder": "aziz@example.com",
+      "phone": "الهاتف",
+      "phone_placeholder": "+998 90 123 45 67",
+      "subject": "الموضوع",
+      "subjects": {
+        "demo": "طلب عرض تجريبي",
+        "partnership": "شراكة",
+        "investor": "مستثمر",
+        "career": "وظيفة",
+        "other": "أخرى"
+      },
+      "message": "رسالتك",
+      "message_placeholder": "اكتب وصفاً موجزاً لمشروعك...",
+      "submit": "إرسال",
+      "submitting": "جارٍ الإرسال...",
+      "success": "تم إرسال رسالتك! سنرد عليك في أقرب وقت.",
+      "error": "حدث خطأ. يرجى المحاولة مرة أخرى."
+    }
+  },
+  "footer": {
+    "tagline": "تنظيم الأعمال بالذكاء الاصطناعي",
+    "divisions": "الأقسام",
+    "company": "الشركة",
+    "about": "من نحن",
+    "team": "الفريق",
+    "careers": "الوظائف",
+    "contact": "تواصل معنا",
+    "legal": "المعلومات القانونية",
+    "privacy": "سياسة الخصوصية",
+    "terms": "شروط الاستخدام",
+    "rights": "جميع الحقوق محفوظة",
+    "made_in": "طشقند · صُنع في أوزبكستان"
+  },
+  "testimonials": {
+    "title": "عملاؤنا عنا",
+    "subtitle": "نتائج حقيقية من رواد أعمال حقيقيين",
+    "items": {
+      "dilfuza": {
+        "name": "دلفوزة",
+        "role": "متجر بقالة · يونوس آباد",
+        "quote": "بعد ربط RAOS نوفر 800 ألف سوم شهريًا. الكاشير دقيق والمخزون تلقائي.",
+        "metric": "+٨٠٠ ألف"
+      },
+      "aziz": {
+        "name": "عزيز",
+        "role": "متجر إلكترونيات · جيلانزار",
+        "quote": "كنت أدفع 2 مليون للمحاسب. الآن مع RAOS أقوم بالتقارير بنفسي.",
+        "metric": "−٢ مليون"
+      },
+      "munira": {
+        "name": "د. منيرة",
+        "role": "مديرة العيادة · ميرزو أولوغبيك",
+        "quote": "مع Carevy طابور العيادة أسرع بنسبة 40%. المرضى يشكروننا.",
+        "metric": "٪٤٠"
+      }
+    }
+  },
+  "floating": {
+    "telegram": "الكتابة عبر Telegram",
+    "whatsapp": "الكتابة عبر WhatsApp",
+    "label": "اتصل بنا"
+  }
+}

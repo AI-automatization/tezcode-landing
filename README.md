@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tezcode Landing Page
 
-## Getting Started
+Next.js 16 landing page scaffold for **tezcode.dev** — Tezcode AI company.
 
-First, run the development server:
+## Stack
+
+- **Framework:** Next.js 16 (App Router, Turbopack)
+- **Language:** TypeScript (strict mode)
+- **Styling:** Tailwind CSS v4
+- **i18n:** next-intl v4 — 5 locales: UZ / RU / EN / AR / UK
+- **Forms:** react-hook-form + zod v4 validation
+- **Fonts:** Syne (display) + Inter (body)
+- **Deploy:** Vercel (zero-config)
+
+## Brand
+
+| Token | Value |
+|-------|-------|
+| Ink (background) | `#0a0a0f` |
+| Blue (primary) | `#0040ff` |
+| Gold (accent) | `#d4a017` |
+
+## Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Install dependencies
+pnpm install
+
+# Start dev server
 pnpm dev
-# or
-bun dev
+# → http://localhost:3000
+
+# Production build
+pnpm build
+
+# Type check
+pnpm type-check
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── app/
+│   ├── [locale]/           ← i18n pages (5 locales)
+│   │   ├── layout.tsx      ← Root layout + metadata + fonts
+│   │   ├── page.tsx        ← Main landing page
+│   │   └── globals.css     ← Tailwind + brand CSS variables
+│   ├── api/
+│   │   └── contact/route.ts ← Contact form API → Telegram
+│   ├── sitemap.ts          ← Auto-generated sitemap.xml
+│   └── robots.ts           ← robots.txt
+├── components/
+│   ├── Navbar.tsx          ← Fixed navbar + locale switcher
+│   ├── Hero.tsx            ← Hero section with stats
+│   ├── ProductsGrid.tsx    ← 8 products grid
+│   ├── BusinessSolutions.tsx ← 4 solution cards
+│   ├── Team.tsx            ← Team members grid
+│   ├── Partners.tsx        ← Partner logos row
+│   ├── ContactForm.tsx     ← react-hook-form + zod + API
+│   └── Footer.tsx          ← Links + socials + copyright
+├── messages/
+│   ├── uz.json             ← FULL content (default locale)
+│   ├── ru.json             ← Full content
+│   ├── en.json             ← Full content
+│   ├── ar.json             ← Full content (RTL)
+│   └── uk.json             ← Full content
+├── i18n/
+│   ├── routing.ts          ← defineRouting (5 locales, uz default)
+│   └── request.ts          ← getRequestConfig
+├── middleware.ts            ← next-intl locale routing
+└── lib/
+    ├── telegram.ts         ← Telegram Bot notification helper
+    └── seo.ts              ← SEO utilities + structured data
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## i18n URL Structure
 
-## Learn More
+| Locale | URL |
+|--------|-----|
+| Uzbek (default) | `https://tezcode.dev/` |
+| Russian | `https://tezcode.dev/ru` |
+| English | `https://tezcode.dev/en` |
+| Arabic (RTL) | `https://tezcode.dev/ar` |
+| Ukrainian | `https://tezcode.dev/uk` |
 
-To learn more about Next.js, take a look at the following resources:
+## Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+# Optional — for contact form Telegram notifications
+TELEGRAM_BOT_TOKEN=your_bot_token_here
+TELEGRAM_CHAT_ID=914653833
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Required for production SEO
+NEXT_PUBLIC_BASE_URL=https://tezcode.dev
+```
 
-## Deploy on Vercel
+## What's Skeleton (TODO next phase)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [ ] Real team photos (replace AvatarPlaceholder)
+- [ ] Real partner logos (replace text placeholders)
+- [ ] Product page routes (/[locale]/products/[slug])
+- [ ] Blog routes
+- [ ] Privacy + Terms pages
+- [ ] OG image generation (/api/og)
+- [ ] Analytics (Plausible / GA4)
+- [ ] Real Telegram bot token in .env.local
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy to Vercel
+
+```bash
+npx vercel --prod
+```
+
+No environment variables required for skeleton deploy.
