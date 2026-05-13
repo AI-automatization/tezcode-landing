@@ -4,11 +4,14 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import {
+  getKeywords,
+  getOrganizationSchema,
+  getProductSchemas,
+  getWebsiteSchema,
+} from "@/lib/seo";
 import "./globals.css";
 
-// ─────────────────────────────────────────────────────────
-// Fonts — Syne (display) + Inter (body)
-// ─────────────────────────────────────────────────────────
 const syne = Syne({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
@@ -23,9 +26,6 @@ const inter = Inter({
   display: "swap",
 });
 
-// ─────────────────────────────────────────────────────────
-// Metadata — per locale
-// ─────────────────────────────────────────────────────────
 export async function generateMetadata({
   params,
 }: {
@@ -35,9 +35,8 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "meta" });
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://tezcode.dev";
-  const canonicalUrl = locale === routing.defaultLocale
-    ? baseUrl
-    : `${baseUrl}/${locale}`;
+  const canonicalUrl =
+    locale === routing.defaultLocale ? baseUrl : `${baseUrl}/${locale}`;
 
   return {
     title: {
@@ -45,6 +44,10 @@ export async function generateMetadata({
       template: `%s | Tezcode`,
     },
     description: t("description"),
+    keywords: getKeywords(locale),
+    authors: [{ name: "Bekzod Mirzaaliyev", url: "https://t.me/webdevelopertk" }],
+    creator: "Tezcode AI",
+    publisher: "Tezcode AI",
     metadataBase: new URL(baseUrl),
     alternates: {
       canonical: canonicalUrl,
@@ -52,7 +55,7 @@ export async function generateMetadata({
         routing.locales.map((l) => [
           l,
           l === routing.defaultLocale ? baseUrl : `${baseUrl}/${l}`,
-        ])
+        ]),
       ),
     },
     openGraph: {
@@ -67,7 +70,7 @@ export async function generateMetadata({
           url: `${baseUrl}/og-image.png`,
           width: 1200,
           height: 630,
-          alt: "Tezcode — AI Solutions",
+          alt: "Tezcode — AI Software Factory",
         },
       ],
     },
@@ -76,6 +79,7 @@ export async function generateMetadata({
       title: t("ogTitle"),
       description: t("ogDescription"),
       images: [`${baseUrl}/og-image.png`],
+      creator: "@webdevelopertk",
     },
     robots: {
       index: true,
@@ -88,6 +92,15 @@ export async function generateMetadata({
         "max-snippet": -1,
       },
     },
+    verification: {
+      // Placeholders — Bekzod sets these in Search Console / Webmaster
+      google: process.env.GOOGLE_SITE_VERIFICATION,
+      yandex: process.env.YANDEX_VERIFICATION,
+      other: {
+        "msvalidate.01": process.env.BING_SITE_VERIFICATION ?? "",
+      },
+    },
+    category: "Technology",
   };
 }
 
@@ -98,16 +111,10 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-// ─────────────────────────────────────────────────────────
-// Static params — generate routes for all 5 locales
-// ─────────────────────────────────────────────────────────
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-// ─────────────────────────────────────────────────────────
-// Root Layout
-// ─────────────────────────────────────────────────────────
 export default async function LocaleLayout({
   children,
   params,
@@ -117,16 +124,16 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
-  // Validate locale — 404 if not in supported list
   if (!routing.locales.includes(locale as typeof routing.locales[number])) {
     notFound();
   }
 
-  // Fetch all messages for this locale
   const messages = await getMessages();
-
-  // RTL for Arabic
   const dir = locale === "ar" ? "rtl" : "ltr";
+
+  const orgSchema = getOrganizationSchema();
+  const websiteSchema = getWebsiteSchema(locale);
+  const productSchemas = getProductSchemas();
 
   return (
     <html
@@ -134,6 +141,23 @@ export default async function LocaleLayout({
       dir={dir}
       className={`${syne.variable} ${inter.variable}`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        {productSchemas.map((schema, i) => (
+          <script
+            key={i}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+        ))}
+      </head>
       <body className="bg-[var(--tc-ink)] text-[var(--tc-text-primary)] antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
