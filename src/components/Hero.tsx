@@ -12,7 +12,7 @@ const fadeUp = {
     opacity: 1,
     y: 0,
     filter: "blur(0px)",
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1], delay },
+    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const, delay },
   }),
 };
 
@@ -163,7 +163,7 @@ function HeroStats({ t }: { t: ReturnType<typeof useTranslations<"hero">> }) {
               opacity: 1,
               y: 0,
               filter: "blur(0px)",
-              transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+              transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
             },
           }}
           className="flex flex-col items-center gap-1"

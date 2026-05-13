@@ -17,7 +17,7 @@ const variants: Variants = {
     opacity: 1,
     y: 0,
     filter: "blur(0px)",
-    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const },
   },
 };
 
@@ -39,7 +39,7 @@ export function Reveal({
           opacity: 1,
           y: 0,
           filter: "blur(0px)",
-          transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1], delay },
+          transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const, delay },
         },
       }}
       className={className}
@@ -91,7 +91,7 @@ export function RevealItem({
           opacity: 1,
           y: 0,
           filter: "blur(0px)",
-          transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+          transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
         },
       }}
       className={className}

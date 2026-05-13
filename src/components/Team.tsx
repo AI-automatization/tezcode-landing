@@ -3,7 +3,6 @@
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
-import { Tilt3D } from "@/components/motion/Tilt3D";
 
 type Member = {
   name: string;
@@ -87,8 +86,6 @@ function initials(name: string): string {
 
 export function Team() {
   const t = useTranslations("team");
-  const founder = TEAM[0];
-  const others = TEAM.slice(1);
 
   return (
     <section
@@ -126,79 +123,12 @@ export function Team() {
           />
         </Reveal>
 
-        {/* Founder big card */}
-        <Reveal>
-          <Tilt3D
-            intensity={3}
-            className="max-w-4xl mx-auto mb-12 rounded-[var(--tc-radius-xl)]"
-          >
-            <div className="relative p-10 md:p-12 rounded-[var(--tc-radius-xl)] border border-[var(--tc-border-bright)] bg-[var(--tc-surface-2)] overflow-hidden">
-              <div
-                aria-hidden
-                className="absolute inset-0 rounded-[var(--tc-radius-xl)] pointer-events-none"
-                style={{ boxShadow: "inset 0 0 80px rgba(212,160,23,0.08)" }}
-              />
-
-              <div className="flex flex-col md:flex-row md:items-center md:gap-8 gap-6">
-                <div
-                  className="relative shrink-0 w-24 h-24 md:w-28 md:h-28 rounded-2xl bg-[var(--tc-surface-0)] border-2 border-[var(--tc-gold)] flex items-center justify-center font-800 text-3xl md:text-4xl text-[var(--tc-gold)] tc-glow-gold"
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    transform: "translateZ(30px)",
-                  }}
-                >
-                  {initials(founder.name)}
-                </div>
-
-                <div className="flex-1 min-w-0">
-                  <motion.div
-                    initial={{ opacity: 0, y: 8 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2 }}
-                    className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-gold)]/10 border border-[var(--tc-gold)]/30 text-xs font-500 text-[var(--tc-gold)] mb-3"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[var(--tc-gold)] animate-pulse" />
-                    FOUNDER
-                  </motion.div>
-
-                  <h3
-                    className="text-3xl md:text-5xl font-700 text-white mb-3 tracking-tight"
-                    style={{ fontFamily: "var(--font-display)" }}
-                  >
-                    {founder.name}
-                  </h3>
-                  <p className="text-base md:text-lg font-500 text-[var(--tc-gold)] mb-5">
-                    {founder.role}
-                  </p>
-
-                  {founder.telegram && (
-                    <motion.a
-                      href={`https://t.me/${founder.telegram.replace("@", "")}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.04 }}
-                      whileTap={{ scale: 0.97 }}
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] text-white font-500 text-sm tc-glow-blue"
-                    >
-                      <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-                      </svg>
-                      {founder.telegram}
-                    </motion.a>
-                  )}
-                </div>
-              </div>
-            </div>
-          </Tilt3D>
-        </Reveal>
-
-        {/* Team grid */}
+        {/* Team grid — equal cards (Bekzod has Founder badge but same size) */}
         <RevealStagger
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-          stagger={0.05}
+          stagger={0.04}
         >
-          {others.map((member) => (
+          {TEAM.map((member) => (
             <RevealItem key={member.name}>
               <TeamCard member={member} />
             </RevealItem>
@@ -223,14 +153,33 @@ export function Team() {
 }
 
 function TeamCard({ member }: { member: Member }) {
+  const accent = member.isFounder ? "gold" : "blue";
+
   return (
     <motion.div
       whileHover={{ y: -4 }}
-      className="group relative p-5 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:bg-[var(--tc-surface-3)] hover:border-[var(--tc-border-bright)] transition-colors h-full"
+      className={[
+        "group relative p-5 rounded-[var(--tc-radius-lg)] border transition-colors h-full",
+        member.isFounder
+          ? "border-[var(--tc-gold)]/40 bg-[var(--tc-surface-2)] hover:border-[var(--tc-gold)]/70"
+          : "border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:bg-[var(--tc-surface-3)] hover:border-[var(--tc-border-bright)]",
+      ].join(" ")}
     >
+      {member.isFounder && (
+        <div className="absolute -top-2 left-5 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[var(--tc-gold)]/15 border border-[var(--tc-gold)]/40 backdrop-blur-md text-[10px] font-700 text-[var(--tc-gold)] uppercase tracking-[0.15em]">
+          <span className="w-1 h-1 rounded-full bg-[var(--tc-gold)] animate-pulse" />
+          Founder
+        </div>
+      )}
+
       <div className="flex items-start gap-3 mb-3">
         <div
-          className="shrink-0 w-12 h-12 rounded-xl bg-[var(--tc-surface-0)] border border-[var(--tc-border-bright)] flex items-center justify-center font-700 text-sm text-[var(--tc-blue)] group-hover:text-[var(--tc-gold)] group-hover:border-[var(--tc-gold)]/40 transition-colors"
+          className={[
+            "shrink-0 w-12 h-12 rounded-xl bg-[var(--tc-surface-0)] border flex items-center justify-center font-700 text-sm transition-colors",
+            accent === "gold"
+              ? "text-[var(--tc-gold)] border-[var(--tc-gold)]/40 group-hover:border-[var(--tc-gold)]/70"
+              : "text-[var(--tc-blue)] border-[var(--tc-border-bright)] group-hover:text-[var(--tc-gold)] group-hover:border-[var(--tc-gold)]/40",
+          ].join(" ")}
           style={{ fontFamily: "var(--font-display)" }}
         >
           {initials(member.name)}
