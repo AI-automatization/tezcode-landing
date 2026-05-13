@@ -8,6 +8,7 @@ import { ProductsShowcase } from "@/components/ProductsShowcase";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { ROICalculator } from "@/components/ROICalculator";
 import { Testimonials } from "@/components/Testimonials";
+import { ReviewsWidget } from "@/components/ReviewsWidget";
 import { BusinessSolutions } from "@/components/BusinessSolutions";
 import { PricingTiers } from "@/components/PricingTiers";
 import { Team } from "@/components/Team";
@@ -58,6 +59,9 @@ export default function HomePage() {
       <Suspense fallback={<div className="h-64 bg-[var(--tc-surface-1)]" />}>
         <Testimonials />
       </Suspense>
+
+      {/* Reviews widget — aggregate rating + 6 verified */}
+      <ReviewsWidget />
 
       {/* Business solutions */}
       <Suspense fallback={<div className="h-64 bg-[var(--tc-surface-1)]" />}>
