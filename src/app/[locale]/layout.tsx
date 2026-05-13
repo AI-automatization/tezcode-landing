@@ -88,10 +88,6 @@ export async function generateMetadata({
         "max-snippet": -1,
       },
     },
-    icons: {
-      icon: "/favicon.ico",
-      shortcut: "/favicon.ico",
-    },
   };
 }
 
