@@ -12,6 +12,7 @@ import { Team } from "@/components/Team";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
+import { LiveVisitorBadge } from "@/components/LiveVisitorBadge";
 
 // ─────────────────────────────────────────────────────────
 // Main Landing Page
@@ -72,6 +73,9 @@ export default function HomePage() {
 
       {/* Floating Telegram + WhatsApp + Sticky Mobile CTA */}
       <FloatingContact />
+
+      {/* Live visitor badge — social proof */}
+      <LiveVisitorBadge />
     </main>
   );
 }

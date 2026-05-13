@@ -10,6 +10,7 @@ import {
   getProductSchemas,
   getWebsiteSchema,
 } from "@/lib/seo";
+import { Analytics } from "@/components/Analytics";
 import "./globals.css";
 
 const syne = Syne({
@@ -162,6 +163,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
