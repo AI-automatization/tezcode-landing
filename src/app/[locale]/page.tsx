@@ -6,13 +6,16 @@ import { TechStackMarquee } from "@/components/TechStackMarquee";
 import { ProductsGrid } from "@/components/ProductsGrid";
 import { ProductsShowcase } from "@/components/ProductsShowcase";
 import { ProcessSteps } from "@/components/ProcessSteps";
+import { ROICalculator } from "@/components/ROICalculator";
 import { Testimonials } from "@/components/Testimonials";
 import { BusinessSolutions } from "@/components/BusinessSolutions";
+import { PricingTiers } from "@/components/PricingTiers";
 import { Team } from "@/components/Team";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
 import { LiveVisitorBadge } from "@/components/LiveVisitorBadge";
+import { CookieConsent } from "@/components/CookieConsent";
 
 // ─────────────────────────────────────────────────────────
 // Main Landing Page
@@ -48,6 +51,9 @@ export default function HomePage() {
         <ProcessSteps />
       </Suspense>
 
+      {/* ROI Calculator */}
+      <ROICalculator />
+
       {/* Customer Testimonials */}
       <Suspense fallback={<div className="h-64 bg-[var(--tc-surface-1)]" />}>
         <Testimonials />
@@ -57,6 +63,9 @@ export default function HomePage() {
       <Suspense fallback={<div className="h-64 bg-[var(--tc-surface-1)]" />}>
         <BusinessSolutions />
       </Suspense>
+
+      {/* Pricing Tiers */}
+      <PricingTiers />
 
       {/* Team */}
       <Suspense fallback={<div className="h-64 bg-[var(--tc-surface-1)]" />}>
@@ -76,6 +85,9 @@ export default function HomePage() {
 
       {/* Live visitor badge — social proof */}
       <LiveVisitorBadge />
+
+      {/* Cookie consent (GDPR + UZ legal) */}
+      <CookieConsent />
     </main>
   );
 }

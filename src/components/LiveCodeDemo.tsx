@@ -2,7 +2,43 @@
 
 import { motion, useInView } from "motion/react";
 import { useEffect, useRef, useState } from "react";
+import { useLocale } from "next-intl";
 import { Reveal } from "@/components/motion/Reveal";
+
+type Lang = "uz" | "ru" | "en" | "ar" | "uk";
+
+const COPY: Record<Lang, { badge: string; title: string; titleHighlight: string; subtitle: string }> = {
+  uz: {
+    badge: "Live AI Engineering",
+    title: "AI biznesni quradi —",
+    titleHighlight: "soniyalarda",
+    subtitle: "Bizning AI engineer'larimiz koda yozadi, test qiladi va deploy qiladi. Sen faqat biznesinga e'tibor berasan.",
+  },
+  ru: {
+    badge: "Live AI Engineering",
+    title: "AI создаёт бизнес —",
+    titleHighlight: "за секунды",
+    subtitle: "Наши AI инженеры пишут код, тестируют и деплоят. Вы фокусируетесь только на бизнесе.",
+  },
+  en: {
+    badge: "Live AI Engineering",
+    title: "AI builds your business —",
+    titleHighlight: "in seconds",
+    subtitle: "Our AI engineers write code, test it, and deploy. You focus only on your business.",
+  },
+  ar: {
+    badge: "Live AI Engineering",
+    title: "AI يبني عملك —",
+    titleHighlight: "في ثوانٍ",
+    subtitle: "مهندسو AI لدينا يكتبون الكود ويختبرونه وينشرونه. أنت تركز على عملك فقط.",
+  },
+  uk: {
+    badge: "Live AI Engineering",
+    title: "AI створює бізнес —",
+    titleHighlight: "за секунди",
+    subtitle: "Наші AI інженери пишуть код, тестують і деплоять. Ви фокусуєтесь лише на бізнесі.",
+  },
+};
 
 const CODE_LINES = [
   { p: "$ ", c: "tezcode generate --product=raos --feature=loyalty", t: "command" },
@@ -21,6 +57,8 @@ const LINE_DELAY = 350;
 export function LiveCodeDemo() {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
+  const locale = useLocale() as Lang;
+  const t = COPY[locale] ?? COPY.uz;
   const [currentLine, setCurrentLine] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [done, setDone] = useState(false);
@@ -68,18 +106,17 @@ export function LiveCodeDemo() {
               transition={{ duration: 1.5, repeat: Infinity }}
               className="w-1.5 h-1.5 rounded-full bg-[var(--tc-blue)]"
             />
-            Live AI Engineering
+            {t.badge}
           </div>
           <h2
             className="text-4xl md:text-6xl font-700 mb-4 tracking-tight"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            AI biznesni quradi —{" "}
-            <span className="tc-text-gradient-blue">soniyalarda</span>
+            {t.title}{" "}
+            <span className="tc-text-gradient-blue">{t.titleHighlight}</span>
           </h2>
           <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl max-w-2xl mx-auto">
-            Bizning AI engineer'larimiz koda yozadi, test qiladi va deploy qiladi.
-            Sen faqat biznesinga e'tibor berasan.
+            {t.subtitle}
           </p>
         </Reveal>
 

@@ -4,6 +4,41 @@ import { motion } from "motion/react";
 import { useLocale } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
+type Lang = "uz" | "ru" | "en" | "ar" | "uk";
+
+const HEADER: Record<Lang, { badge: string; title: string; titleHighlight: string; subtitle: string }> = {
+  uz: {
+    badge: "Bizning Jarayon",
+    title: "4 qadamda",
+    titleHighlight: "tayyor mahsulot",
+    subtitle: "Ideyadan production'gacha — bir necha hafta. AI bilan tezroq, AI bilan ishonchli.",
+  },
+  ru: {
+    badge: "Наш процесс",
+    title: "Готовый продукт",
+    titleHighlight: "за 4 шага",
+    subtitle: "От идеи до production — несколько недель. С AI быстрее и надёжнее.",
+  },
+  en: {
+    badge: "Our Process",
+    title: "Ship a complete product",
+    titleHighlight: "in 4 steps",
+    subtitle: "From idea to production in a few weeks. Faster and more reliable with AI.",
+  },
+  ar: {
+    badge: "عمليتنا",
+    title: "منتج كامل",
+    titleHighlight: "في 4 خطوات",
+    subtitle: "من الفكرة إلى الإنتاج خلال أسابيع. أسرع وأكثر موثوقية مع AI.",
+  },
+  uk: {
+    badge: "Наш процес",
+    title: "Готовий продукт",
+    titleHighlight: "за 4 кроки",
+    subtitle: "Від ідеї до production — кілька тижнів. З AI швидше та надійніше.",
+  },
+};
+
 const STEPS = [
   {
     num: "01",
@@ -75,7 +110,8 @@ const COLOR_MAP: Record<string, { text: string; ring: string; glow: string }> = 
 };
 
 export function ProcessSteps() {
-  const locale = useLocale();
+  const locale = useLocale() as Lang;
+  const h = HEADER[locale] ?? HEADER.uz;
 
   function getTitle(step: typeof STEPS[number]) {
     if (locale === "ru") return step.titleRu;
@@ -93,17 +129,17 @@ export function ProcessSteps() {
       <div className="max-w-7xl mx-auto relative z-10">
         <Reveal className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-gold)]/10 border border-[var(--tc-gold)]/30 text-xs font-500 text-[var(--tc-gold)] mb-6 uppercase tracking-[0.2em]">
-            Bizning Jarayon
+            {h.badge}
           </div>
           <h2
             className="text-4xl md:text-6xl font-700 mb-4 tracking-tight"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            4 qadamda{" "}
-            <span className="tc-text-gradient-gold">tayyor mahsulot</span>
+            {h.title}{" "}
+            <span className="tc-text-gradient-gold">{h.titleHighlight}</span>
           </h2>
           <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl max-w-2xl mx-auto">
-            Ideyadan production'gacha — bir necha hafta. AI bilan tezroq, AI bilan ishonchli.
+            {h.subtitle}
           </p>
         </Reveal>
 

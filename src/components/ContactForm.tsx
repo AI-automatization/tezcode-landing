@@ -12,6 +12,8 @@ const contactSchema = z.object({
   phone: z.string().optional(),
   subject: z.enum(["demo", "partnership", "investor", "career", "other"]),
   message: z.string().min(10, "Min 10 chars").max(2000, "Max 2000 chars"),
+  _hp: z.string().optional(),
+  _hp2: z.string().optional(),
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
@@ -116,6 +118,38 @@ export function ContactForm() {
               className="w-full px-4 py-2.5 rounded-[var(--tc-radius-sm)] bg-[var(--tc-surface-0)] border border-[var(--tc-border)] focus:border-[var(--tc-blue)] focus:outline-none text-[var(--tc-text-primary)] placeholder:text-[var(--tc-text-muted)] text-sm resize-y"
             />
           </Field>
+
+          {/* Honeypot fields — hidden, bots fill them */}
+          <div
+            aria-hidden
+            style={{
+              position: "absolute",
+              left: "-9999px",
+              opacity: 0,
+              pointerEvents: "none",
+              height: 0,
+              overflow: "hidden",
+            }}
+          >
+            <label>
+              Don't fill this in
+              <input
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+                {...register("_hp")}
+              />
+            </label>
+            <label>
+              Leave blank
+              <input
+                type="email"
+                tabIndex={-1}
+                autoComplete="off"
+                {...register("_hp2")}
+              />
+            </label>
+          </div>
 
           <button
             type="submit"
