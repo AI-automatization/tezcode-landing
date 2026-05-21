@@ -10,7 +10,7 @@ Next.js 16 landing page scaffold for **tezcode.dev** — Tezcode AI company.
 - **i18n:** next-intl v4 — 5 locales: UZ / RU / EN / AR / UK
 - **Forms:** react-hook-form + zod v4 validation
 - **Fonts:** Syne (display) + Inter (body)
-- **Deploy:** Vercel (zero-config)
+- **Deploy:** Railway (Nixpacks) — see `railway.json` + `nixpacks.toml`
 
 ## Brand
 
@@ -68,7 +68,7 @@ src/
 ├── i18n/
 │   ├── routing.ts          ← defineRouting (5 locales, uz default)
 │   └── request.ts          ← getRequestConfig
-├── middleware.ts            ← next-intl locale routing
+├── proxy.ts                 ← next-intl locale routing + geo detection (Next 16 renamed middleware → proxy)
 └── lib/
     ├── telegram.ts         ← Telegram Bot notification helper
     └── seo.ts              ← SEO utilities + structured data
@@ -93,6 +93,11 @@ TELEGRAM_CHAT_ID=914653833
 
 # Required for production SEO
 NEXT_PUBLIC_BASE_URL=https://tezcode.dev
+
+# Optional — distributed rate limit (REQUIRED if Railway runs >1 replica)
+# Without these the limiter falls back to in-memory per-instance counters.
+UPSTASH_REDIS_REST_URL=https://your-db.upstash.io
+UPSTASH_REDIS_REST_TOKEN=your_token
 ```
 
 ## What's Skeleton (TODO next phase)
@@ -106,10 +111,18 @@ NEXT_PUBLIC_BASE_URL=https://tezcode.dev
 - [ ] Analytics (Plausible / GA4)
 - [ ] Real Telegram bot token in .env.local
 
-## Deploy to Vercel
+## Deploy to Railway
+
+Push to the `main` branch — Railway builds via Nixpacks using
+`pnpm install && pnpm build`, then runs `pnpm start`.
+
+Required production env vars:
+
+- `NEXT_PUBLIC_BASE_URL=https://tezcode.dev`
+- `TELEGRAM_BOT_TOKEN` (if contact form notifications are enabled)
+- `UPSTASH_REDIS_REST_URL` + `UPSTASH_REDIS_REST_TOKEN` (when running >1 replica)
 
 ```bash
-npx vercel --prod
+# CLI deploy
+railway up
 ```
-
-No environment variables required for skeleton deploy.

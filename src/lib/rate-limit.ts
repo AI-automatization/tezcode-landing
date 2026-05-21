@@ -1,19 +1,28 @@
-// In-memory rate limiter — single instance per Node process.
-// For multi-instance Railway, upgrade to Redis (Upstash) — but for first-year traffic this is enough.
+import { Ratelimit } from "@upstash/ratelimit";
+import { Redis } from "@upstash/redis";
+
+// Rate limiter with two backends:
+//   1. Upstash Redis  — when UPSTASH_REDIS_REST_URL + _TOKEN are set (multi-instance safe).
+//   2. In-memory Map  — fallback for local dev and single-instance deploys.
+//
+// Production on Railway with >1 replica MUST set Upstash env vars,
+// otherwise each replica enforces its own quota.
 
 type RateLimitEntry = {
   count: number;
   resetAt: number;
 };
 
-const store = new Map<string, RateLimitEntry>();
+const memoryStore = new Map<string, RateLimitEntry>();
 
-// Cleanup expired entries every 5 minutes
-if (typeof globalThis !== "undefined" && !(globalThis as { __tcRateCleanup?: boolean }).__tcRateCleanup) {
+if (
+  typeof globalThis !== "undefined" &&
+  !(globalThis as { __tcRateCleanup?: boolean }).__tcRateCleanup
+) {
   setInterval(() => {
     const now = Date.now();
-    for (const [key, entry] of store.entries()) {
-      if (entry.resetAt < now) store.delete(key);
+    for (const [key, entry] of memoryStore.entries()) {
+      if (entry.resetAt < now) memoryStore.delete(key);
     }
   }, 5 * 60 * 1000);
   (globalThis as { __tcRateCleanup?: boolean }).__tcRateCleanup = true;
@@ -25,16 +34,51 @@ export type RateLimitResult = {
   resetAt: number;
 };
 
-export function rateLimit(
+// Cache one limiter per windowMs+max combo — Upstash docs recommend reusing instances.
+const upstashLimiters = new Map<string, Ratelimit>();
+
+function getUpstashLimiter(max: number, windowMs: number): Ratelimit | null {
+  const url = process.env.UPSTASH_REDIS_REST_URL;
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
+  if (!url || !token) return null;
+
+  const cacheKey = `${max}:${windowMs}`;
+  const cached = upstashLimiters.get(cacheKey);
+  if (cached) return cached;
+
+  // Upstash expects a duration string like "1 h", "60 s", "10 m"
+  const windowSec = Math.ceil(windowMs / 1000);
+  const limiter = new Ratelimit({
+    redis: new Redis({ url, token }),
+    limiter: Ratelimit.slidingWindow(max, `${windowSec} s`),
+    analytics: false,
+    prefix: "tc_rl",
+  });
+  upstashLimiters.set(cacheKey, limiter);
+  return limiter;
+}
+
+export async function rateLimit(
   key: string,
   options: { max: number; windowMs: number },
-): RateLimitResult {
+): Promise<RateLimitResult> {
+  const upstash = getUpstashLimiter(options.max, options.windowMs);
+
+  if (upstash) {
+    const result = await upstash.limit(key);
+    return {
+      ok: result.success,
+      remaining: result.remaining,
+      resetAt: result.reset,
+    };
+  }
+
   const now = Date.now();
-  const entry = store.get(key);
+  const entry = memoryStore.get(key);
 
   if (!entry || entry.resetAt < now) {
     const resetAt = now + options.windowMs;
-    store.set(key, { count: 1, resetAt });
+    memoryStore.set(key, { count: 1, resetAt });
     return { ok: true, remaining: options.max - 1, resetAt };
   }
 

@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
   const ip = getClientIp(req.headers);
 
   // Rate limit: 5 submissions per hour per IP
-  const rl = rateLimit(`contact:${ip}`, {
+  const rl = await rateLimit(`contact:${ip}`, {
     max: RATE_LIMIT_MAX,
     windowMs: RATE_LIMIT_WINDOW_MS,
   });
