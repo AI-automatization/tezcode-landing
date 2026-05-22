@@ -35,7 +35,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://tezcode.dev";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.tezcode.dev";
   const canonicalUrl =
     locale === routing.defaultLocale ? baseUrl : `${baseUrl}/${locale}`;
 

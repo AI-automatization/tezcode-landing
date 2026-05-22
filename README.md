@@ -78,11 +78,13 @@ src/
 
 | Locale | URL |
 |--------|-----|
-| Uzbek (default) | `https://tezcode.dev/` |
-| Russian | `https://tezcode.dev/ru` |
-| English | `https://tezcode.dev/en` |
-| Arabic (RTL) | `https://tezcode.dev/ar` |
-| Ukrainian | `https://tezcode.dev/uk` |
+| Uzbek (default) | `https://www.tezcode.dev/` |
+| Russian | `https://www.tezcode.dev/ru` |
+| English | `https://www.tezcode.dev/en` |
+| Arabic (RTL) | `https://www.tezcode.dev/ar` |
+| Ukrainian | `https://www.tezcode.dev/uk` |
+
+> Apex `tezcode.dev` 301-redirects to `https://www.tezcode.dev` (with path forwarding) via Squarespace Domain Forwarding. www is the canonical host.
 
 ## Environment Variables
 
@@ -91,8 +93,10 @@ src/
 TELEGRAM_BOT_TOKEN=your_bot_token_here
 TELEGRAM_CHAT_ID=914653833
 
-# Required for production SEO
-NEXT_PUBLIC_BASE_URL=https://tezcode.dev
+# Required for production SEO — canonical host is www.tezcode.dev.
+# Apex tezcode.dev 301-redirects to www via Squarespace Domain Forwarding
+# (Railway custom-domain validation only accepts CNAME records on subdomains, not apex).
+NEXT_PUBLIC_BASE_URL=https://www.tezcode.dev
 
 # Optional — distributed rate limit (REQUIRED if Railway runs >1 replica)
 # Without these the limiter falls back to in-memory per-instance counters.

@@ -1,4 +1,6 @@
-export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://tezcode.dev";
+// Canonical host is www.tezcode.dev; apex tezcode.dev 301-redirects via Squarespace forwarding.
+// Railway custom-domain validation only accepts CNAME records on subdomains, not apex.
+export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.tezcode.dev";
 
 export const LOCALES = ["uz", "ru", "en", "ar", "uk"] as const;
 export type Locale = (typeof LOCALES)[number];
