@@ -3,8 +3,18 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Changelog",
-  description: "Tezcode landing yangilanishlari — har release haqida.",
+  title: "Changelog — Tezcode Mahsulot Yangilanishlari",
+  description:
+    "Tezcode platforma va mahsulot yangilanishlari: yangi feature, bug fix, performance optimizatsiya. Har release haqida shaffof hisobot 2024-yildan beri.",
+  alternates: {
+    canonical: "https://www.tezcode.dev/changelog",
+  },
+  openGraph: {
+    title: "Tezcode Changelog",
+    description: "Har yangilanish haqida shaffof hisobot.",
+    url: "https://www.tezcode.dev/changelog",
+    type: "website",
+  },
 };
 
 const RELEASES: { date: string; version: string; tag: string; items: string[] }[] = [

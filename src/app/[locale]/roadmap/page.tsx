@@ -3,8 +3,18 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Public Roadmap",
-  description: "Tezcode yo'l xaritasi — qaysi feature qachon chiqishi.",
+  title: "Ochiq Yo'l Xaritasi — Tezcode Mahsulotlari Roadmap",
+  description:
+    "Tezcode AI Software Factory yo'l xaritasi: RAOS POS, AI Office, Carevy/HamshiraGo va boshqa mahsulotlar — qaysi feature qachon chiqadi. Shaffof Q2-Q4 2026 reja.",
+  alternates: {
+    canonical: "https://www.tezcode.dev/roadmap",
+  },
+  openGraph: {
+    title: "Tezcode Yo'l Xaritasi — Mahsulot Reja",
+    description: "RAOS, AI Office, Carevy yangiliklari va kelajak rejasi.",
+    url: "https://www.tezcode.dev/roadmap",
+    type: "website",
+  },
 };
 
 type Status = "done" | "in_progress" | "planned" | "explore";

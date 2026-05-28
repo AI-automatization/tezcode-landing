@@ -4,9 +4,18 @@ import { Footer } from "@/components/Footer";
 import { CodeReviewForm } from "./CodeReviewForm";
 
 export const metadata: Metadata = {
-  title: "Free AI Code Review — Tezcode",
+  title: "Bepul AI Kod Tekshiruvi — GitHub Repo Tahlil",
   description:
-    "GitHub repository link bering — Tezcode AI senior engineerlardek tahlil qiladi: arxitektura, xavfsizlik, performance.",
+    "GitHub repo link bering — Tezcode AI senior dasturchi singari tahlil qiladi: arxitektura, OWASP xavfsizlik (Top 10), performance optimallashtirish, test qamrovi, dependencies. To'lov yo'q, ro'yxatdan o'tish yo'q.",
+  alternates: {
+    canonical: "https://www.tezcode.dev/tools/free-code-review",
+  },
+  openGraph: {
+    title: "Bepul AI Kod Tekshiruvi — Tezcode",
+    description: "GitHub repo'ngizni AI senior dasturchi tahlil qiladi. Bepul.",
+    url: "https://www.tezcode.dev/tools/free-code-review",
+    type: "website",
+  },
 };
 
 const COVERAGE = [

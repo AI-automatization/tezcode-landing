@@ -7,9 +7,14 @@ import { HireDevelopersClient } from "./HireDevelopersClient";
 // SEO — EN primary (target audience: foreign tech founders)
 // ─────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Hire Senior Developers from Tashkent — from $30/hr | TezCode Teams",
+  title: {
+    absolute: "Hire Senior Developers from Tashkent — from $30/hr | TezCode Teams",
+  },
   description:
     "Hire AI-skilled senior developers from Uzbekistan: $30–55/hr, English/Russian fluent, EST overlap 5 hours, IT Park residency, 2-week trial with full refund. 14-engineer in-house team.",
+  alternates: {
+    canonical: "https://www.tezcode.dev/hire-developers",
+  },
   keywords: [
     "hire developers Uzbekistan",
     "staff augmentation Tashkent",

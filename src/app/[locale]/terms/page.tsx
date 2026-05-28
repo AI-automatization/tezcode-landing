@@ -3,8 +3,16 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Foydalanish shartlari",
-  description: "Tezcode xizmatlaridan foydalanish shartlari.",
+  title: "Foydalanish Shartlari — Terms of Service",
+  description:
+    "Tezcode AI xizmatlaridan foydalanish shartlari: huquq va majburiyatlar, to'lov shartlari, javobgarlik chekloyi, nizolar tartibi. So'nggi tahrir 2026-yil.",
+  alternates: {
+    canonical: "https://www.tezcode.dev/terms",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const SECTIONS: { title: string; body: string[] }[] = [

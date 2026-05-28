@@ -4,9 +4,18 @@ import { Footer } from "@/components/Footer";
 import { MvpRoadmapForm } from "./MvpRoadmapForm";
 
 export const metadata: Metadata = {
-  title: "Free MVP Roadmap Generator — Tezcode",
+  title: "Bepul MVP Yo'l Xaritasi Generatori — Startup G'oyangiz Uchun",
   description:
-    "Sizning startup g'oyangiz uchun professional MVP yo'l xaritasi — AI tomonidan, 5 daqiqada bepul.",
+    "Startup g'oyangizni 5 daqiqada professional MVP yo'l xaritasiga aylantiring: texnologiya stack, scope, 4 haftalik plan, budget hisobi. AI generatsiya + Bekzod CEO 24 soatda kommentariy.",
+  alternates: {
+    canonical: "https://www.tezcode.dev/tools/free-mvp-roadmap",
+  },
+  openGraph: {
+    title: "Bepul MVP Roadmap — Tezcode",
+    description: "Startup g'oyangiz uchun AI generatsiyali MVP roadmap. 5 daqiqada.",
+    url: "https://www.tezcode.dev/tools/free-mvp-roadmap",
+    type: "website",
+  },
 };
 
 const STEPS = [

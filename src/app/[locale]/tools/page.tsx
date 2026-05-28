@@ -4,9 +4,18 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Free AI Tools — Tezcode",
+  title: "Bepul AI Vositalar — MVP Roadmap, Kod Tahlili",
   description:
-    "Bepul AI vositalar: MVP roadmap generator, kod tahlili, biznes hisob. Tezcode'ning AI quvvati o'zingiz uchun.",
+    "Tezcode'ning bepul AI vositalari: MVP yo'l xaritasi generatori, GitHub kod tahlili, biznes hisob-kitobi. Ro'yxatdan o'tish kerak emas, to'lov yo'q.",
+  alternates: {
+    canonical: "https://www.tezcode.dev/tools",
+  },
+  openGraph: {
+    title: "Bepul AI Vositalar — Tezcode",
+    description: "MVP roadmap + kod tahlili + biznes ROI hisob — barchasi bepul.",
+    url: "https://www.tezcode.dev/tools",
+    type: "website",
+  },
 };
 
 const TOOLS = [

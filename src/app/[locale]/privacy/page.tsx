@@ -3,9 +3,16 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
+  title: "Maxfiylik Siyosati — Privacy Policy",
   description:
-    "Tezcode privacy policy — shaxsiy ma'lumotlar qanday ishlatilishi haqida.",
+    "Tezcode AI maxfiylik siyosati: shaxsiy ma'lumotlar yig'ish va ishlatish, cookies, GDPR/UZ qonun talablari, foydalanuvchi huquqlari. So'nggi yangilanish 2026-yil.",
+  alternates: {
+    canonical: "https://www.tezcode.dev/privacy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const SECTIONS: { title: string; body: string[] }[] = [

@@ -3,8 +3,18 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Press Kit",
-  description: "Tezcode brand assets — logo, ranglar, founder photos, brand book.",
+  title: "Press Kit — Tezcode Brand Assets va Media Kit",
+  description:
+    "Tezcode brand assets: logo PNG/SVG (TC monogram), brand ranglar (Ink #0a0a0f + Gold #d4a017), founder Bekzod Mirzaaliyev fotosurat, brand book, prezentatsiya, press release shablonlari.",
+  alternates: {
+    canonical: "https://www.tezcode.dev/press",
+  },
+  openGraph: {
+    title: "Tezcode Press Kit",
+    description: "Logo, ranglar, founder fotosurat, brand book — barchasi yuklab olish uchun.",
+    url: "https://www.tezcode.dev/press",
+    type: "website",
+  },
 };
 
 const ASSETS = [
