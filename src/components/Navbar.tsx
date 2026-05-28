@@ -1,19 +1,23 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { routing, Link, usePathname, useRouter, type Locale } from "@/i18n/routing";
 
 // ─────────────────────────────────────────────────────────
-// TC Monogram Logo SVG
+// TC Monogram Logo — next/image (LCP priority, above-fold)
 // ─────────────────────────────────────────────────────────
 function TCLogo({ className = "" }: { className?: string }) {
   return (
-    <div className={`${className} flex items-center justify-center`}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+    <div className={`${className} flex items-center justify-center relative`}>
+      <Image
         src="/tezcode-logo-white.png"
         alt="Tezcode logo"
+        width={36}
+        height={36}
+        priority
+        fetchPriority="high"
         className="w-full h-full object-contain drop-shadow-[0_0_8px_rgba(212,160,23,0.3)]"
       />
     </div>

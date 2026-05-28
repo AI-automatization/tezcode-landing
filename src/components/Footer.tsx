@@ -1,16 +1,19 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 // ─────────────────────────────────────────────────────────
-// TC Monogram (inline for Footer)
+// TC Monogram (Footer — below fold, lazy load)
 // ─────────────────────────────────────────────────────────
 function TCLogo() {
   return (
-    <div className="w-9 h-9 flex items-center justify-center">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+    <div className="w-9 h-9 flex items-center justify-center relative">
+      <Image
         src="/tezcode-logo-white.png"
         alt="Tezcode logo"
+        width={36}
+        height={36}
+        loading="lazy"
         className="w-full h-full object-contain drop-shadow-[0_0_6px_rgba(212,160,23,0.3)]"
       />
     </div>

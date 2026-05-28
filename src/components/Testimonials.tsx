@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
@@ -88,10 +89,12 @@ export function Testimonials() {
                       <div
                         className={`relative shrink-0 w-14 h-14 rounded-full overflow-hidden ring-2 ${accent.ring}`}
                       >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
+                        <Image
                           src={item.photo}
                           alt={name}
+                          width={56}
+                          height={56}
+                          loading="lazy"
                           className="w-full h-full object-cover"
                         />
                       </div>
