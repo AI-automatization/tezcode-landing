@@ -24,8 +24,10 @@
 
     /* Text */
     --tc-text-primary: #f0f0f8;
-    --tc-text-secondary: rgba(240, 240, 248, 0.6);
-    --tc-text-muted: rgba(240, 240, 248, 0.35);
+    /* Opacities tuned to clear WCAG AA (>=4.5:1) for normal text on the
+       dark surfaces (#0a0a0f .. #22222c). secondary 0.72, muted 0.62. */
+    --tc-text-secondary: rgba(240, 240, 248, 0.72);
+    --tc-text-muted: rgba(240, 240, 248, 0.62);
 
     /* Spacing / radii */
     --tc-radius-sm: 6px;
