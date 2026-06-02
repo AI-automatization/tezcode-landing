@@ -197,7 +197,7 @@ export function ReviewsWidget() {
                       </div>
                     </div>
                     <div className="flex flex-col items-end gap-1">
-                      <span className="text-[10px] font-500 text-[var(--tc-blue)] uppercase tracking-widest">
+                      <span className="text-[10px] font-500 text-[var(--tc-blue-text)] uppercase tracking-widest">
                         {r.product}
                       </span>
                       <span className="text-[10px] text-[var(--tc-text-muted)] font-mono">

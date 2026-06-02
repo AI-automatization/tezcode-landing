@@ -1413,7 +1413,7 @@ function RolesSection({ t }: { t: Copy }) {
                     >
                       {r.title}
                     </h3>
-                    <span className="shrink-0 inline-block px-2.5 py-1 rounded-full bg-[var(--tc-blue)]/15 border border-[var(--tc-blue)]/30 text-[var(--tc-blue)] text-[11px] font-700">
+                    <span className="shrink-0 inline-block px-2.5 py-1 rounded-full bg-[var(--tc-blue)]/15 border border-[var(--tc-blue)]/30 text-[var(--tc-blue-text)] text-[11px] font-700">
                       {r.rate}
                     </span>
                   </div>
@@ -1495,7 +1495,7 @@ function ModelsSection({ t }: { t: Copy }) {
                     <li key={i} className="flex items-start gap-2 text-sm">
                       <svg
                         className={`w-4 h-4 mt-0.5 shrink-0 ${
-                          m.highlight ? "text-[var(--tc-gold)]" : "text-[var(--tc-blue)]"
+                          m.highlight ? "text-[var(--tc-gold)]" : "text-[var(--tc-blue-text)]"
                         }`}
                         viewBox="0 0 16 16"
                         fill="none"

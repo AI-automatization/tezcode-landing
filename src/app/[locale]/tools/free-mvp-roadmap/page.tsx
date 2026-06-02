@@ -70,7 +70,7 @@ export default function MvpRoadmapPage() {
               >
                 <div className="flex items-center gap-3 mb-2">
                   <span
-                    className="w-8 h-8 rounded-full bg-[var(--tc-blue)]/15 border border-[var(--tc-blue)]/40 flex items-center justify-center text-sm font-700 text-[var(--tc-blue)]"
+                    className="w-8 h-8 rounded-full bg-[var(--tc-blue)]/15 border border-[var(--tc-blue)]/40 flex items-center justify-center text-sm font-700 text-[var(--tc-blue-text)]"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {step.num}

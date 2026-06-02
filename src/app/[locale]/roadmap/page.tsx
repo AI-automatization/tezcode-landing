@@ -15,7 +15,7 @@ type Status = "done" | "in_progress" | "planned" | "explore";
 
 const STATUS_META: Record<Status, { label: string; color: string; ring: string }> = {
   done: { label: "✓ Bajarildi", color: "text-emerald-400", ring: "border-emerald-500/40" },
-  in_progress: { label: "▶ Ishlamoqda", color: "text-[var(--tc-blue)]", ring: "border-[var(--tc-blue)]/40" },
+  in_progress: { label: "▶ Ishlamoqda", color: "text-[var(--tc-blue-text)]", ring: "border-[var(--tc-blue)]/40" },
   planned: { label: "◷ Rejada", color: "text-[var(--tc-gold)]", ring: "border-[var(--tc-gold)]/40" },
   explore: { label: "? O'rganmoqdamiz", color: "text-purple-400", ring: "border-purple-400/40" },
 };
@@ -139,7 +139,7 @@ export default function RoadmapPage() {
 
           {/* Suggest feature */}
           <section className="mt-20 p-8 rounded-[var(--tc-radius-xl)] border border-dashed border-[var(--tc-border-bright)] bg-[var(--tc-surface-2)]/40 text-center">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue)] mb-4 uppercase tracking-[0.2em]">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue-text)] mb-4 uppercase tracking-[0.2em]">
               Sizning g'oyangiz
             </div>
             <h2

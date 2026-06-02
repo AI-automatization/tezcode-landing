@@ -31,7 +31,7 @@ const ACCENT: Record<Case["accent"], { text: string; ring: string; glow: string;
     bg: "bg-[var(--tc-gold)]/10",
   },
   blue: {
-    text: "text-[var(--tc-blue)]",
+    text: "text-[var(--tc-blue-text)]",
     ring: "ring-[var(--tc-blue)]/40",
     glow: "rgba(0,64,255,0.20)",
     bg: "bg-[var(--tc-blue)]/10",

@@ -186,9 +186,9 @@ export default function PressPage() {
                 sun'iy intellekt asosida ishlovchi mahsulotlar yaratamiz.
               </p>
               <p className="mb-3">
-                3 ta asosiy mahsulot ishga tushgan: <strong className="text-[var(--tc-blue)]">RAOS</strong> (har do'kon uchun POS),{" "}
-                <strong className="text-[var(--tc-blue)]">AI Office</strong> (12 ta bo'lim AI agentlari) va{" "}
-                <strong className="text-[var(--tc-blue)]">Carevy/HamshiraGo</strong> (uy hamshira va klinika boshqaruvi).
+                3 ta asosiy mahsulot ishga tushgan: <strong className="text-[var(--tc-blue-text)]">RAOS</strong> (har do'kon uchun POS),{" "}
+                <strong className="text-[var(--tc-blue-text)]">AI Office</strong> (12 ta bo'lim AI agentlari) va{" "}
+                <strong className="text-[var(--tc-blue-text)]">Carevy/HamshiraGo</strong> (uy hamshira va klinika boshqaruvi).
                 5 ta yangi mahsulot R&D'da.
               </p>
               <p>
@@ -214,13 +214,13 @@ export default function PressPage() {
               <div className="space-y-2 text-sm">
                 <a
                   href="https://t.me/webdevelopertk"
-                  className="block text-[var(--tc-text-secondary)] hover:text-[var(--tc-blue)]"
+                  className="block text-[var(--tc-text-secondary)] hover:text-[var(--tc-blue-text)]"
                 >
                   Telegram: @webdevelopertk
                 </a>
                 <a
                   href="mailto:hello@tezcode.dev"
-                  className="block text-[var(--tc-text-secondary)] hover:text-[var(--tc-blue)]"
+                  className="block text-[var(--tc-text-secondary)] hover:text-[var(--tc-blue-text)]"
                 >
                   Email: hello@tezcode.dev
                 </a>

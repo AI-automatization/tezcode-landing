@@ -87,7 +87,7 @@ export default function ToolsPage() {
                   <p className="text-sm text-[var(--tc-text-secondary)] leading-relaxed flex-1 mb-5">
                     {tool.description}
                   </p>
-                  <div className="text-sm text-[var(--tc-blue)] font-500 inline-flex items-center gap-1.5 opacity-70 group-hover:opacity-100 transition-opacity">
+                  <div className="text-sm text-[var(--tc-blue-text)] font-500 inline-flex items-center gap-1.5 opacity-70 group-hover:opacity-100 transition-opacity">
                     {tool.cta}
                     <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />

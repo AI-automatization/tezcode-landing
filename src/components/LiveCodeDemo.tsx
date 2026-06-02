@@ -100,7 +100,7 @@ export function LiveCodeDemo() {
 
       <div className="max-w-6xl mx-auto relative z-10">
         <Reveal className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue)] mb-6 uppercase tracking-[0.2em]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue-text)] mb-6 uppercase tracking-[0.2em]">
             <motion.span
               animate={{ opacity: [0.4, 1, 0.4] }}
               transition={{ duration: 1.5, repeat: Infinity }}
@@ -164,7 +164,7 @@ export function LiveCodeDemo() {
                         ? "text-[var(--tc-gold)]"
                         : line.t === "success"
                           ? "text-emerald-400"
-                          : "text-[var(--tc-blue)]"
+                          : "text-[var(--tc-blue-text)]"
                     }
                   >
                     {line.p}
@@ -182,7 +182,7 @@ export function LiveCodeDemo() {
                         ? "text-[var(--tc-gold)]"
                         : CODE_LINES[currentLine].t === "success"
                           ? "text-emerald-400"
-                          : "text-[var(--tc-blue)]"
+                          : "text-[var(--tc-blue-text)]"
                     }
                   >
                     {CODE_LINES[currentLine].p}
@@ -207,7 +207,7 @@ export function LiveCodeDemo() {
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
                     47s deploy
                   </span>
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs text-[var(--tc-blue)] font-500">
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs text-[var(--tc-blue-text)] font-500">
                     97% test coverage
                   </span>
                   <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[var(--tc-gold)]/10 border border-[var(--tc-gold)]/30 text-xs text-[var(--tc-gold)] font-500">

@@ -28,7 +28,7 @@ const ICON_MAP: Record<ProductKey, string> = {
 
 const STATUS_STYLE: Record<string, string> = {
   Live: "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-  Beta: "bg-[var(--tc-blue)]/15 text-[var(--tc-blue)] border-[var(--tc-blue)]/30",
+  Beta: "bg-[var(--tc-blue)]/15 text-[var(--tc-blue-text)] border-[var(--tc-blue)]/30",
   Soon: "bg-[var(--tc-gold)]/15 text-[var(--tc-gold)] border-[var(--tc-gold)]/30",
 };
 
@@ -219,7 +219,7 @@ function ProductCardLarge({
           <span className="text-[var(--tc-text-muted)] uppercase tracking-[0.2em]">
             {division}
           </span>
-          <span className="text-[var(--tc-blue)] opacity-60 group-hover:opacity-100 transition-opacity flex items-center gap-1.5 font-500">
+          <span className="text-[var(--tc-blue-text)] opacity-60 group-hover:opacity-100 transition-opacity flex items-center gap-1.5 font-500">
             {isExternal ? "Saytga" : "Demo so'rang"}
             <svg
               className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"

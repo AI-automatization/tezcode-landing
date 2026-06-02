@@ -9,6 +9,9 @@
     --tc-ink: #0a0a0f;
     --tc-blue: #0040ff;
     --tc-blue-light: #3366ff;
+    /* Accessible blue for TEXT on dark surfaces (#0040ff is too dark — ~2.4:1).
+       #5b8cff clears WCAG AA (~6:1 on #0a0a0f). Use for text, not backgrounds. */
+    --tc-blue-text: #5b8cff;
     --tc-blue-dim: rgba(0, 64, 255, 0.12);
     --tc-gold: #d4a017;
     --tc-gold-light: #e8b93a;

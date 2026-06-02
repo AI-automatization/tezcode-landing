@@ -1788,7 +1788,7 @@ function PortfolioSection({ copy, locale }: { copy: Copy; locale: Lang }) {
 // ─────────────────────────────────────────────────────────────────────
 function ProcessSection({ copy }: { copy: Copy }) {
   const STEP_COLORS = [
-    { text: "text-[var(--tc-blue)]", ring: "border-[var(--tc-blue)]/40", glow: "rgba(0,64,255,0.18)" },
+    { text: "text-[var(--tc-blue-text)]", ring: "border-[var(--tc-blue)]/40", glow: "rgba(0,64,255,0.18)" },
     { text: "text-[var(--tc-gold)]", ring: "border-[var(--tc-gold)]/40", glow: "rgba(212,160,23,0.18)" },
     { text: "text-purple-400", ring: "border-purple-400/40", glow: "rgba(168,85,247,0.18)" },
     { text: "text-emerald-400", ring: "border-emerald-400/40", glow: "rgba(52,211,153,0.18)" },

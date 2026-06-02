@@ -126,7 +126,7 @@ export function Navbar() {
                     className={[
                       "flex items-center gap-2 px-3 py-2 text-sm w-full transition-colors",
                       l === locale
-                        ? "text-[var(--tc-blue)]"
+                        ? "text-[var(--tc-blue-text)]"
                         : "text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)]",
                     ].join(" ")}
                   >

@@ -19,7 +19,7 @@ const ACCENT: Record<string, { text: string; ring: string; glow: string }> = {
     glow: "rgba(212,160,23,0.20)",
   },
   blue: {
-    text: "text-[var(--tc-blue)]",
+    text: "text-[var(--tc-blue-text)]",
     ring: "ring-[var(--tc-blue)]/40",
     glow: "rgba(0,64,255,0.20)",
   },

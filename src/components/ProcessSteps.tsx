@@ -88,7 +88,7 @@ const STEPS = [
 
 const COLOR_MAP: Record<string, { text: string; ring: string; glow: string }> = {
   blue: {
-    text: "text-[var(--tc-blue)]",
+    text: "text-[var(--tc-blue-text)]",
     ring: "border-[var(--tc-blue)]/40",
     glow: "rgba(0,64,255,0.18)",
   },

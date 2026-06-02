@@ -255,7 +255,7 @@ export function PricingTiers() {
                     <li key={i} className="flex items-start gap-2 text-sm">
                       <svg
                         className={`w-4 h-4 mt-0.5 shrink-0 ${
-                          tier.highlight ? "text-[var(--tc-gold)]" : "text-[var(--tc-blue)]"
+                          tier.highlight ? "text-[var(--tc-gold)]" : "text-[var(--tc-blue-text)]"
                         }`}
                         viewBox="0 0 16 16"
                         fill="none"

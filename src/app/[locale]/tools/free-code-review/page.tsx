@@ -52,7 +52,7 @@ export default function CodeReviewPage() {
       <main className="min-h-screen bg-[var(--tc-ink)] pt-24 pb-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="mb-12 text-center">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue)] mb-4 uppercase tracking-[0.2em]">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue-text)] mb-4 uppercase tracking-[0.2em]">
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--tc-blue)] animate-pulse" />
               AI Code Review · Bepul
             </div>

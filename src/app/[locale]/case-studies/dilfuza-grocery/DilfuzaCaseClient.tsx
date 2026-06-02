@@ -550,7 +550,7 @@ export function DilfuzaCaseClient() {
         {/* Quote 2 */}
         <Reveal>
           <blockquote className="relative my-16 p-8 md:p-10 rounded-[var(--tc-radius-xl)] border border-[var(--tc-blue)]/30 bg-[var(--tc-surface-2)]">
-            <div className="absolute -top-4 left-8 text-5xl text-[var(--tc-blue)] leading-none font-700 select-none">
+            <div className="absolute -top-4 left-8 text-5xl text-[var(--tc-blue-text)] leading-none font-700 select-none">
               "
             </div>
             <p

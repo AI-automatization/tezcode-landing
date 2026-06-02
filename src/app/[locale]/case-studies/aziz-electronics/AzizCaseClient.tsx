@@ -358,14 +358,14 @@ export function AzizCaseClient() {
         <Reveal>
           <Link
             href="/case-studies"
-            className="inline-block text-sm text-[var(--tc-text-muted)] hover:text-[var(--tc-blue)] transition-colors mb-8"
+            className="inline-block text-sm text-[var(--tc-text-muted)] hover:text-[var(--tc-blue-text)] transition-colors mb-8"
           >
             {t.back}
           </Link>
         </Reveal>
 
         <Reveal>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue)] mb-6 uppercase tracking-[0.3em]">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue-text)] mb-6 uppercase tracking-[0.3em]">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--tc-blue)] animate-pulse" />
             {t.badge}
           </div>
@@ -392,7 +392,7 @@ export function AzizCaseClient() {
                 {t.name}
               </div>
               <div className="text-sm text-[var(--tc-text-muted)]">{t.role}</div>
-              <div className="inline-block mt-1 px-2 py-0.5 rounded-full text-[10px] uppercase tracking-widest font-500 bg-[var(--tc-blue)]/10 text-[var(--tc-blue)]">
+              <div className="inline-block mt-1 px-2 py-0.5 rounded-full text-[10px] uppercase tracking-widest font-500 bg-[var(--tc-blue)]/10 text-[var(--tc-blue-text)]">
                 {t.product}
               </div>
             </div>
@@ -407,12 +407,12 @@ export function AzizCaseClient() {
               className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-[var(--tc-blue)] opacity-10 blur-3xl"
             />
             <div className="relative">
-              <div className="text-xs text-[var(--tc-blue)] uppercase tracking-[0.3em] mb-2">
+              <div className="text-xs text-[var(--tc-blue-text)] uppercase tracking-[0.3em] mb-2">
                 {t.bannerLabel}
               </div>
               <div className="flex items-baseline gap-3 flex-wrap">
                 <span
-                  className="text-5xl md:text-7xl font-800 text-[var(--tc-blue)] tabular-nums"
+                  className="text-5xl md:text-7xl font-800 text-[var(--tc-blue-text)] tabular-nums"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   −<CountUp value={2000000} />
@@ -447,7 +447,7 @@ export function AzizCaseClient() {
                   </span>
                   <span className="text-[var(--tc-text-muted)]">→</span>
                   <span
-                    className="text-2xl md:text-3xl font-700 text-[var(--tc-blue)] tabular-nums"
+                    className="text-2xl md:text-3xl font-700 text-[var(--tc-blue-text)] tabular-nums"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {m.after}
@@ -482,7 +482,7 @@ export function AzizCaseClient() {
 
         <Reveal>
           <blockquote className="relative my-16 p-8 md:p-10 rounded-[var(--tc-radius-xl)] border border-[var(--tc-blue)]/30 bg-[var(--tc-surface-2)]">
-            <div className="absolute -top-4 left-8 text-5xl text-[var(--tc-blue)] leading-none font-700 select-none">
+            <div className="absolute -top-4 left-8 text-5xl text-[var(--tc-blue-text)] leading-none font-700 select-none">
               "
             </div>
             <p
@@ -546,7 +546,7 @@ export function AzizCaseClient() {
             <RevealItem key={i}>
               <div className="relative pl-8 pb-2 border-l border-[var(--tc-border)]">
                 <span className="absolute left-0 top-2 -translate-x-1/2 w-3 h-3 rounded-full bg-[var(--tc-blue)] tc-glow-blue" />
-                <div className="text-xs text-[var(--tc-blue)] uppercase tracking-[0.2em] mb-1">
+                <div className="text-xs text-[var(--tc-blue-text)] uppercase tracking-[0.2em] mb-1">
                   {step.week}
                 </div>
                 <h3

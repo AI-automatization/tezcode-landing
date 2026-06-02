@@ -105,7 +105,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-8 h-8 rounded-[var(--tc-radius-sm)] border border-[var(--tc-border)] flex items-center justify-center text-[var(--tc-text-muted)] hover:text-[var(--tc-blue)] hover:border-[var(--tc-blue)] transition-all duration-200"
+                  className="w-8 h-8 rounded-[var(--tc-radius-sm)] border border-[var(--tc-border)] flex items-center justify-center text-[var(--tc-text-muted)] hover:text-[var(--tc-blue-text)] hover:border-[var(--tc-blue)] transition-all duration-200"
                 >
                   {social.icon}
                 </a>
@@ -189,7 +189,7 @@ export function Footer() {
             </h4>
             <ul className="flex flex-col gap-3 text-sm text-[var(--tc-text-secondary)]">
               <li>
-                <a href="mailto:hello@tezcode.dev" className="hover:text-[var(--tc-blue)] transition-colors">
+                <a href="mailto:hello@tezcode.dev" className="hover:text-[var(--tc-blue-text)] transition-colors">
                   hello@tezcode.dev
                 </a>
               </li>
@@ -208,7 +208,7 @@ export function Footer() {
           </p>
           <div className="flex items-center gap-1 text-xs text-[var(--tc-text-muted)]">
             <span>Built with</span>
-            <span className="text-[var(--tc-blue)]">Next.js 16</span>
+            <span className="text-[var(--tc-blue-text)]">Next.js 16</span>
             <span>+</span>
             <span className="text-[var(--tc-gold)]">next-intl</span>
           </div>

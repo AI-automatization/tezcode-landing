@@ -103,7 +103,7 @@ export function CookieConsent() {
                   {t.body}{" "}
                   <a
                     href={policyHref}
-                    className="text-[var(--tc-blue)] hover:underline"
+                    className="text-[var(--tc-blue-text)] hover:underline"
                   >
                     {t.learn}
                   </a>
