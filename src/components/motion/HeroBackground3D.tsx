@@ -10,7 +10,7 @@ export function HeroBackground3D() {
 
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {/* Conic mesh gradient — slowly rotating */}
+      {/* Conic mesh gradient — slowly rotating (transform only, composited) */}
       <motion.div
         style={{ y: meshY, opacity: meshOpacity }}
         className="absolute inset-0"
@@ -21,12 +21,13 @@ export function HeroBackground3D() {
             background:
               "conic-gradient(from 0deg at 50% 50%, var(--tc-blue) 0deg, transparent 60deg, var(--tc-gold) 180deg, transparent 240deg, var(--tc-blue) 360deg)",
             filter: "blur(80px)",
+            willChange: "transform",
             animation: "tc-conic-spin 40s linear infinite",
           }}
         />
       </motion.div>
 
-      {/* Two animated mesh blobs */}
+      {/* Two animated mesh blobs (transform-only drift, composited) */}
       <motion.div
         style={{ y: meshY }}
         aria-hidden
@@ -38,6 +39,7 @@ export function HeroBackground3D() {
             background:
               "radial-gradient(circle, rgba(0,64,255,0.45) 0%, transparent 60%)",
             filter: "blur(80px)",
+            willChange: "transform",
             animation: "tc-mesh-drift 14s ease-in-out infinite",
           }}
         />
@@ -53,12 +55,13 @@ export function HeroBackground3D() {
             background:
               "radial-gradient(circle, rgba(212,160,23,0.32) 0%, transparent 60%)",
             filter: "blur(100px)",
+            willChange: "transform",
             animation: "tc-mesh-drift 18s ease-in-out infinite reverse",
           }}
         />
       </motion.div>
 
-      {/* Aurora ribbon — Linear-style */}
+      {/* Aurora ribbon — Linear-style (opacity + transform, composited) */}
       <motion.div
         style={{ y: meshY }}
         aria-hidden
@@ -70,12 +73,14 @@ export function HeroBackground3D() {
             background:
               "linear-gradient(90deg, transparent, var(--tc-blue) 30%, var(--tc-gold) 50%, var(--tc-blue) 70%, transparent)",
             filter: "blur(60px)",
+            willChange: "transform, opacity",
             animation: "tc-aurora 12s ease-in-out infinite",
           }}
         />
       </motion.div>
 
-      {/* Animated grid lines */}
+      {/* Static grid lines — animating background-position is non-composited,
+          so the pan is dropped; the scroll-parallax (transform) is kept. */}
       <motion.div
         style={{ y: gridY }}
         aria-hidden
@@ -89,7 +94,6 @@ export function HeroBackground3D() {
               linear-gradient(90deg, var(--tc-border-bright) 1px, transparent 1px)
             `,
             backgroundSize: "80px 80px",
-            animation: "tc-grid-pan 30s linear infinite",
           }}
         />
       </motion.div>
@@ -110,11 +114,9 @@ export function HeroBackground3D() {
       <div className="absolute bottom-20 right-6 w-24 h-px bg-gradient-to-l from-[var(--tc-gold)] to-transparent opacity-60" />
       <div className="absolute bottom-20 right-6 w-px h-24 bg-gradient-to-t from-[var(--tc-gold)] to-transparent opacity-60" />
 
-      {/* Floating particles */}
+      {/* Floating particles (transform + opacity only, composited) */}
       {[
         { top: "18%", left: "12%", color: "var(--tc-blue)", size: 3, delay: 0 },
-        { top: "32%", left: "85%", color: "var(--tc-gold)", size: 2, delay: 1.2 },
-        { top: "58%", left: "8%", color: "var(--tc-gold)", size: 2, delay: 2.4 },
         { top: "72%", left: "90%", color: "var(--tc-blue)", size: 4, delay: 0.6 },
         { top: "45%", left: "50%", color: "var(--tc-gold)", size: 2, delay: 1.8 },
       ].map((dot, i) => (
@@ -136,6 +138,7 @@ export function HeroBackground3D() {
             height: dot.size,
             background: dot.color,
             boxShadow: `0 0 12px ${dot.color}`,
+            willChange: "transform, opacity",
           }}
         />
       ))}

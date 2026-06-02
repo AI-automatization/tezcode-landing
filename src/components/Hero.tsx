@@ -2,9 +2,17 @@
 
 import { motion, useScroll, useTransform } from "motion/react";
 import { useTranslations } from "next-intl";
-import { HeroBackground3D } from "@/components/motion/HeroBackground3D";
+import dynamic from "next/dynamic";
 import { CountUp } from "@/components/motion/CountUp";
 import { Magnetic } from "@/components/motion/Magnetic";
+
+// Decorative, aria-hidden background. Lazy-load on the client so it doesn't
+// block initial render/hydration (cuts unused JS + main-thread work).
+const HeroBackground3D = dynamic(
+  () =>
+    import("@/components/motion/HeroBackground3D").then((m) => m.HeroBackground3D),
+  { ssr: false },
+);
 
 const fadeUp = {
   hidden: { opacity: 0, y: 32, filter: "blur(8px)" },
@@ -44,10 +52,11 @@ export function Hero() {
           {t("badge")}
         </motion.div>
 
-        {/* Headline — bigger, gradient */}
+        {/* Headline — bigger, gradient. LCP element: must paint immediately,
+            so it renders at full opacity (initial={false}) instead of being
+            gated behind a JS opacity:0 -> 1 animation. */}
         <motion.h1
-          initial={fadeUp.hidden}
-          animate={fadeUp.visible(0.1)}
+          initial={false}
           className="text-[clamp(3rem,8vw,7.5rem)] font-800 leading-[0.95] tracking-[-0.03em] mb-8"
           style={{ fontFamily: "var(--font-display)" }}
         >
