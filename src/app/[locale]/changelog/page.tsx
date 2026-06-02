@@ -1,21 +1,15 @@
-import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
+  path: "/changelog",
   title: "Changelog — Tezcode Mahsulot Yangilanishlari",
   description:
     "Tezcode platforma va mahsulot yangilanishlari: yangi feature, bug fix, performance optimizatsiya. Har release haqida shaffof hisobot 2024-yildan beri.",
-  alternates: {
-    canonical: "https://www.tezcode.dev/changelog",
-  },
-  openGraph: {
-    title: "Tezcode Changelog",
-    description: "Har yangilanish haqida shaffof hisobot.",
-    url: "https://www.tezcode.dev/changelog",
-    type: "website",
-  },
-};
+  ogTitle: "Tezcode Changelog",
+  ogDescription: "Har yangilanish haqida shaffof hisobot.",
+});
 
 const RELEASES: { date: string; version: string; tag: string; items: string[] }[] = [
   {

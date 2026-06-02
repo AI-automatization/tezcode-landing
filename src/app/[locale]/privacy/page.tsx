@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Maxfiylik Siyosati — Privacy Policy",
-  description:
-    "Tezcode AI maxfiylik siyosati: shaxsiy ma'lumotlar yig'ish va ishlatish, cookies, GDPR/UZ qonun talablari, foydalanuvchi huquqlari. So'nggi yangilanish 2026-yil.",
-  alternates: {
-    canonical: "https://www.tezcode.dev/privacy",
-  },
+export const metadata = {
+  ...buildPageMetadata({
+    path: "/privacy",
+    title: "Maxfiylik Siyosati — Privacy Policy",
+    description:
+      "Tezcode AI maxfiylik siyosati: shaxsiy ma'lumotlar yig'ish va ishlatish, cookies, GDPR/UZ qonun talablari, foydalanuvchi huquqlari. So'nggi yangilanish 2026-yil.",
+  }),
   robots: {
     index: true,
     follow: true,

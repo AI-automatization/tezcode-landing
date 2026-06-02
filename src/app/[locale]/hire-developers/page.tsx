@@ -1,20 +1,18 @@
-import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo";
 import { HireDevelopersClient } from "./HireDevelopersClient";
 
 // ─────────────────────────────────────────────────────────
 // SEO — EN primary (target audience: foreign tech founders)
 // ─────────────────────────────────────────────────────────
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
+  path: "/hire-developers",
   title: {
     absolute: "Hire Senior Developers from Tashkent — from $30/hr | TezCode Teams",
   },
   description:
     "Hire AI-skilled senior developers from Uzbekistan: $30–55/hr, English/Russian fluent, EST overlap 5 hours, IT Park residency, 2-week trial with full refund. 14-engineer in-house team.",
-  alternates: {
-    canonical: "https://www.tezcode.dev/hire-developers",
-  },
   keywords: [
     "hire developers Uzbekistan",
     "staff augmentation Tashkent",
@@ -29,19 +27,10 @@ export const metadata: Metadata = {
     "IT Park resident Uzbekistan",
     "TezCode Teams",
   ],
-  openGraph: {
-    title: "Hire senior developers from Tashkent — from $30/hr",
-    description:
-      "AI-skilled, English/Russian fluent, EST overlap, vetted in-house team. 2-week trial with full refund.",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Hire senior developers from Tashkent — from $30/hr",
-    description:
-      "AI-skilled, English/Russian fluent, EST overlap, vetted in-house team. 2-week trial with full refund.",
-  },
-};
+  ogTitle: "Hire senior developers from Tashkent — from $30/hr",
+  ogDescription:
+    "AI-skilled, English/Russian fluent, EST overlap, vetted in-house team. 2-week trial with full refund.",
+});
 
 export default function HireDevelopersPage() {
   return (

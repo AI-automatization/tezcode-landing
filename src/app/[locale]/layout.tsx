@@ -52,12 +52,15 @@ export async function generateMetadata({
     metadataBase: new URL(baseUrl),
     alternates: {
       canonical: canonicalUrl,
-      languages: Object.fromEntries(
-        routing.locales.map((l) => [
-          l,
-          l === routing.defaultLocale ? baseUrl : `${baseUrl}/${l}`,
-        ]),
-      ),
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((l) => [
+            l,
+            l === routing.defaultLocale ? baseUrl : `${baseUrl}/${l}`,
+          ]),
+        ),
+        "x-default": baseUrl,
+      },
     },
     openGraph: {
       title: t("ogTitle"),

@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 // Canonical host is www.tezcode.dev; apex tezcode.dev 301-redirects via Squarespace forwarding.
 // Railway custom-domain validation only accepts CNAME records on subdomains, not apex.
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.tezcode.dev";
@@ -79,6 +81,61 @@ export function getKeywords(locale: string): string[] {
   if (locale === "ru") return [...KEYWORDS_BASE, ...KEYWORDS_RU];
   if (locale === "en") return [...KEYWORDS_BASE, ...KEYWORDS_EN];
   return KEYWORDS_BASE;
+}
+
+// Shared metadata builder for sub-pages under app/[locale]/**.
+// Centralises canonical, hreflang (incl. x-default), and the OG/Twitter image
+// so a per-page `openGraph` block never silently drops the social preview
+// (Next.js replaces parent openGraph shallowly when a child defines its own).
+export function buildPageMetadata(input: {
+  path: string; // e.g. "/hire-developers" (no locale prefix)
+  title: Metadata["title"];
+  description: string;
+  keywords?: string[];
+  ogTitle?: string;
+  ogDescription?: string;
+}): Metadata {
+  const url = `${BASE_URL}${input.path}`;
+  const ogTitle =
+    input.ogTitle ??
+    (typeof input.title === "string"
+      ? input.title
+      : typeof input.title === "object" && input.title && "absolute" in input.title
+        ? (input.title.absolute as string)
+        : SITE_NAME);
+  const ogDescription = input.ogDescription ?? input.description;
+  const ogImage = getOgImageUrl();
+
+  return {
+    title: input.title,
+    description: input.description,
+    ...(input.keywords ? { keywords: input.keywords } : {}),
+    alternates: {
+      canonical: url,
+      languages: { ...getAlternateUrls(input.path), "x-default": url },
+    },
+    openGraph: {
+      title: ogTitle,
+      description: ogDescription,
+      url,
+      siteName: SITE_NAME,
+      type: "website",
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: "Tezcode — AI Software Factory",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: ogTitle,
+      description: ogDescription,
+      images: [ogImage],
+    },
+  };
 }
 
 export function getOrganizationSchema() {

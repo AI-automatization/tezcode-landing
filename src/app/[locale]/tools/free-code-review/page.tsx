@@ -1,22 +1,16 @@
-import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo";
 import { CodeReviewForm } from "./CodeReviewForm";
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
+  path: "/tools/free-code-review",
   title: "Bepul AI Kod Tekshiruvi — GitHub Repo Tahlil",
   description:
     "GitHub repo link bering — Tezcode AI senior dasturchi singari tahlil qiladi: arxitektura, OWASP xavfsizlik (Top 10), performance optimallashtirish, test qamrovi, dependencies. To'lov yo'q, ro'yxatdan o'tish yo'q.",
-  alternates: {
-    canonical: "https://www.tezcode.dev/tools/free-code-review",
-  },
-  openGraph: {
-    title: "Bepul AI Kod Tekshiruvi — Tezcode",
-    description: "GitHub repo'ngizni AI senior dasturchi tahlil qiladi. Bepul.",
-    url: "https://www.tezcode.dev/tools/free-code-review",
-    type: "website",
-  },
-};
+  ogTitle: "Bepul AI Kod Tekshiruvi — Tezcode",
+  ogDescription: "GitHub repo'ngizni AI senior dasturchi tahlil qiladi. Bepul.",
+});
 
 const COVERAGE = [
   {

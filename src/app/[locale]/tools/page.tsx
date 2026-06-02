@@ -1,22 +1,16 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
+  path: "/tools",
   title: "Bepul AI Vositalar — MVP Roadmap, Kod Tahlili",
   description:
     "Tezcode'ning bepul AI vositalari: MVP yo'l xaritasi generatori, GitHub kod tahlili, biznes hisob-kitobi. Ro'yxatdan o'tish kerak emas, to'lov yo'q.",
-  alternates: {
-    canonical: "https://www.tezcode.dev/tools",
-  },
-  openGraph: {
-    title: "Bepul AI Vositalar — Tezcode",
-    description: "MVP roadmap + kod tahlili + biznes ROI hisob — barchasi bepul.",
-    url: "https://www.tezcode.dev/tools",
-    type: "website",
-  },
-};
+  ogTitle: "Bepul AI Vositalar — Tezcode",
+  ogDescription: "MVP roadmap + kod tahlili + biznes ROI hisob — barchasi bepul.",
+});
 
 const TOOLS = [
   {
