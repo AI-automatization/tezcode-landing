@@ -61,7 +61,7 @@
       "name": "TezCode Labs",
       "tagline": "Внутрішні стартапи",
       "description": "Наша інноваційна лабораторія — тут народжуються нові продукти та експериментальні рішення.",
-      "products": "WeWatch · Carevy · Ventra · Savdo-Builder",
+      "products": "WeWatch · CoreMed · Ventra · Savdo-Builder",
       "model": "Інвестиції + Equity"
     },
     "academy": {
@@ -92,12 +92,12 @@
       "url": "#"
     },
     "hamshirago": {
-      "name": "Carevy",
-      "tagline": "Домашня медсестра + клініка",
-      "description": "Виклик медсестри додому в Ташкенті.",
-      "status": "Beta",
+      "name": "CoreMed",
+      "tagline": "Медична екосистема",
+      "description": "Медсестра додому (HamshiraGo), CRM клініки (ClinicaGo) та Salomat AI — єдина healthtech-екосистема.",
+      "status": "Live",
       "division": "Labs",
-      "url": "https://hamshirago.uz"
+      "url": "https://coremed.uz"
     },
     "wewatch": {
       "name": "WeWatch",
@@ -161,8 +161,8 @@
     },
     "clinic": {
       "title": "Для клінік",
-      "description": "Виклик медсестри додому + управління клінікою. Швидкий сервіс по всьому Ташкенту.",
-      "product": "Carevy (HamshiraGo)"
+      "description": "Управління клінікою — прийоми, фінанси, база пацієнтів. Швидкий сервіс по всьому Ташкенту.",
+      "product": "ClinicaGo"
     },
     "custom": {
       "title": "Потрібен індивідуальний проєкт?",
@@ -261,7 +261,7 @@
       "munira": {
         "name": "Dr. Munira",
         "role": "Директор клініки · Мірзо Улугбек",
-        "quote": "З Carevy черга в клініці на 40% швидша. Пацієнти вдячні.",
+        "quote": "З ClinicaGo черга в клініці на 40% швидша. Пацієнти вдячні.",
         "metric": "40%"
       }
     }

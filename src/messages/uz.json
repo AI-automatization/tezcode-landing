@@ -45,7 +45,7 @@
       "munira": {
         "name": "Dr. Munira",
         "role": "Klinika rahbari · Mirzo Ulug'bek",
-        "quote": "Carevy bilan klinika navbati 40% tezroq. Bemorlar minnatdorchilik bildirmoqda.",
+        "quote": "ClinicaGo bilan klinika navbati 40% tezroq. Bemorlar minnatdorchilik bildirmoqda.",
         "metric": "40% tezroq"
       }
     }
@@ -90,7 +90,7 @@
       "name": "TezCode Labs",
       "tagline": "Ichki startaplar",
       "description": "Bizning innovatsiya laboratoriyasi — yangi mahsulotlar, eksperimental yechimlar bu yerda tug'iladi.",
-      "products": "WeWatch · Carevy · Ventra · Savdo-Builder",
+      "products": "WeWatch · CoreMed · Ventra · Savdo-Builder",
       "model": "Investitsiya + Equity"
     },
     "academy": {
@@ -121,12 +121,12 @@
       "url": "#"
     },
     "hamshirago": {
-      "name": "Carevy",
-      "tagline": "Uy hamshira + klinika",
-      "description": "Toshkent bo'ylab uy hamshira chaqirish + klinika boshqaruvi.",
-      "status": "Beta",
+      "name": "CoreMed",
+      "tagline": "Tibbiyot ekotizimi",
+      "description": "Uyga hamshira (HamshiraGo), klinika CRM (ClinicaGo) va Salomat AI — bitta healthtech ekotizim.",
+      "status": "Live",
       "division": "Labs",
-      "url": "https://hamshirago.uz"
+      "url": "https://coremed.uz"
     },
     "wewatch": {
       "name": "WeWatch",
@@ -190,8 +190,8 @@
     },
     "clinic": {
       "title": "Klinikalar uchun",
-      "description": "Uy hamshira chaqirish + klinika boshqaruvi. Toshkent bo'ylab tezkor xizmat.",
-      "product": "Carevy (HamshiraGo)"
+      "description": "Klinika boshqaruvi — qabullar, moliya, bemorlar bazasi. Toshkent bo'ylab tezkor xizmat.",
+      "product": "ClinicaGo"
     },
     "custom": {
       "title": "Maxsus loyiha kerakmi?",

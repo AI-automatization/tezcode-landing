@@ -5,6 +5,7 @@ import { useLocale } from "next-intl";
 import { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { getFaqSchema } from "@/lib/seo";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Tilt3D } from "@/components/motion/Tilt3D";
 import { Magnetic } from "@/components/motion/Magnetic";
@@ -217,7 +218,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           slug: "hamshirago",
-          name: "HamshiraGo (Carevy)",
+          name: "HamshiraGo (CoreMed)",
           tagline: "Uy hamshira + klinika boshqaruv",
           summary:
             "Mobil ilova, klinika dashboard, vrach jadval, mijoz qabul, hisobot. 5 ta klinika 3 oyda joriy qildi.",
@@ -471,7 +472,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           slug: "hamshirago",
-          name: "HamshiraGo (Carevy)",
+          name: "HamshiraGo (CoreMed)",
           tagline: "Домашняя медсестра + управление клиникой",
           summary:
             "Мобильное приложение, dashboard клиники, расписание врачей, приём, отчёты. 5 клиник внедрили за 3 месяца.",
@@ -723,7 +724,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           slug: "hamshirago",
-          name: "HamshiraGo (Carevy)",
+          name: "HamshiraGo (CoreMed)",
           tagline: "Home nurse + clinic management",
           summary:
             "Mobile app, clinic dashboard, doctor schedule, appointments, reports. 5 clinics onboarded in 3 months.",
@@ -974,7 +975,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           slug: "hamshirago",
-          name: "HamshiraGo (Carevy)",
+          name: "HamshiraGo (CoreMed)",
           tagline: "ممرضة منزلية + إدارة عيادة",
           summary: "تطبيق جوال، لوحة عيادة، جدول طبيب، حجوزات. 5 عيادات في 3 أشهر.",
           duration: "10 أسابيع",
@@ -1224,7 +1225,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           slug: "hamshirago",
-          name: "HamshiraGo (Carevy)",
+          name: "HamshiraGo (CoreMed)",
           tagline: "Домашня медсестра + керування клінікою",
           summary: "Мобільний додаток, dashboard клініки, розклад лікарів. 5 клінік за 3 місяці.",
           duration: "10 тижнів",
@@ -1380,7 +1381,7 @@ const COPY: Record<Lang, Copy> = {
 // ─────────────────────────────────────────────────────────────────────
 const PARTNERS: { name: string; sector: string }[] = [
   { name: "Pos-Cosmetics", sector: "Retail" },
-  { name: "Carevy", sector: "Healthcare" },
+  { name: "CoreMed", sector: "Healthcare" },
   { name: "OpenClaw", sector: "AI Office" },
   { name: "Ventra", sector: "Analytics" },
   { name: "Savdo-Builder", sector: "No-code" },
@@ -2069,8 +2070,16 @@ function TrustSection({ copy }: { copy: Copy }) {
 function FaqSection({ copy }: { copy: Copy }) {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
+  const faqSchema = getFaqSchema(copy.faq.items);
+
   return (
     <section className="relative py-32 px-6 bg-[var(--tc-surface-1)] overflow-hidden">
+      {/* FAQPage structured data — same items as the accordion below, so answer
+          engines (AI Overviews, ChatGPT, Perplexity) can cite these Q&A. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-4xl mx-auto relative z-10">
         <Reveal className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-gold)]/10 border border-[var(--tc-gold)]/30 text-xs font-500 text-[var(--tc-gold)] mb-6 uppercase tracking-[0.2em]">

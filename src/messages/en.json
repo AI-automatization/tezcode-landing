@@ -61,7 +61,7 @@
       "name": "TezCode Labs",
       "tagline": "Internal startups",
       "description": "Our innovation lab — where new products and experimental ideas are born.",
-      "products": "WeWatch · Carevy · Ventra · Savdo-Builder",
+      "products": "WeWatch · CoreMed · Ventra · Savdo-Builder",
       "model": "Investment + Equity"
     },
     "academy": {
@@ -92,12 +92,12 @@
       "url": "#"
     },
     "hamshirago": {
-      "name": "Carevy",
-      "tagline": "Home nurse + clinic",
-      "description": "Home nurse calls + clinic management across Tashkent.",
-      "status": "Beta",
+      "name": "CoreMed",
+      "tagline": "Healthtech ecosystem",
+      "description": "Home nurse (HamshiraGo), clinic CRM (ClinicaGo) and Salomat AI — one healthtech ecosystem.",
+      "status": "Live",
       "division": "Labs",
-      "url": "https://hamshirago.uz"
+      "url": "https://coremed.uz"
     },
     "wewatch": {
       "name": "WeWatch",
@@ -161,8 +161,8 @@
     },
     "clinic": {
       "title": "For clinics",
-      "description": "Home nurse dispatch + clinic management. Fast service across Tashkent.",
-      "product": "Carevy (HamshiraGo)"
+      "description": "Clinic management — appointments, finance, patient database. Fast service across Tashkent.",
+      "product": "ClinicaGo"
     },
     "custom": {
       "title": "Need a custom project?",
@@ -261,7 +261,7 @@
       "munira": {
         "name": "Dr. Munira",
         "role": "Clinic director · Mirzo Ulugbek",
-        "quote": "With Carevy clinic queue is 40% faster. Patients are grateful.",
+        "quote": "With ClinicaGo clinic queue is 40% faster. Patients are grateful.",
         "metric": "40%"
       }
     }

@@ -76,6 +76,14 @@ const TEAM: Member[] = [
     name: "Jafar Ulugbekov",
     role: "Dasturchi",
   },
+  {
+    name: "Javodbek Abdusalimov",
+    role: "Dasturchi",
+  },
+  {
+    name: "Habibulloh Shuhratov",
+    role: "Dasturchi",
+  },
 ];
 
 function initials(name: string): string {

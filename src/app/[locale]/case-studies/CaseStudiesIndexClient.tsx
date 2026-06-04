@@ -99,7 +99,7 @@ const COPY: Record<Lang, CopyShape> = {
       "munira-clinic": {
         name: "Dr. Munira",
         role: "Klinika rahbari · Mirzo Ulug'bek",
-        product: "Carevy + HamshiraGo",
+        product: "ClinicaGo + HamshiraGo",
         headline: "Navbat vaqti 40% qisqardi, bemor sadoqati 2x oshdi",
         metric: "−40% navbat",
         metricCaption: "kunlik bemor 32 → 45",
@@ -141,7 +141,7 @@ const COPY: Record<Lang, CopyShape> = {
       "munira-clinic": {
         name: "Доктор Мунира",
         role: "Руководитель клиники · Мирзо-Улугбек",
-        product: "Carevy + HamshiraGo",
+        product: "ClinicaGo + HamshiraGo",
         headline: "Очередь сократилась на 40%, лояльность пациентов 2x",
         metric: "−40% очередь",
         metricCaption: "32 → 45 пациентов/день",
@@ -183,7 +183,7 @@ const COPY: Record<Lang, CopyShape> = {
       "munira-clinic": {
         name: "Dr. Munira",
         role: "Clinic director · Mirzo Ulugbek",
-        product: "Carevy + HamshiraGo",
+        product: "ClinicaGo + HamshiraGo",
         headline: "Queue time down 40%, patient loyalty 2x",
         metric: "−40% queue",
         metricCaption: "32 → 45 patients/day",
@@ -225,7 +225,7 @@ const COPY: Record<Lang, CopyShape> = {
       "munira-clinic": {
         name: "د. منيرة",
         role: "مديرة عيادة · ميرزو أولوغبيك",
-        product: "Carevy + HamshiraGo",
+        product: "ClinicaGo + HamshiraGo",
         headline: "تقليل وقت الانتظار 40٪، ولاء المرضى ضعفان",
         metric: "−40٪ انتظار",
         metricCaption: "32 → 45 مريض/يوم",
@@ -266,7 +266,7 @@ const COPY: Record<Lang, CopyShape> = {
       "munira-clinic": {
         name: "Доктор Муніра",
         role: "Керівник клініки · Мірзо-Улугбек",
-        product: "Carevy + HamshiraGo",
+        product: "ClinicaGo + HamshiraGo",
         headline: "Черга скоротилася на 40%, лояльність пацієнтів 2x",
         metric: "−40% черга",
         metricCaption: "32 → 45 пацієнтів/день",

@@ -25,7 +25,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
   {
     title: "2. Xizmatlar",
     body: [
-      "Tezcode AI mahsulotlari ishlab chiqaradi: RAOS (POS), AI Office (biznes AI), HamshiraGo/Carevy (sog'liq), va boshqalar.",
+      "Tezcode AI mahsulotlari ishlab chiqaradi: RAOS (POS), AI Office (biznes AI), CoreMed (sog'liq), va boshqalar.",
       "Har mahsulot o'z foydalanish shartlariga ega bo'lishi mumkin — sotib olganda alohida ko'rsatiladi.",
     ],
   },

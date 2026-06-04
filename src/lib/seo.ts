@@ -42,8 +42,9 @@ const KEYWORDS_BASE = [
   "POS Toshkent",
   "AI Office",
   "RAOS",
+  "CoreMed",
   "HamshiraGo",
-  "Carevy",
+  "ClinicaGo",
   "klinika boshqaruv",
   "magazin POS",
   "restoran POS",
@@ -148,7 +149,7 @@ export function getOrganizationSchema() {
     logo: `${BASE_URL}/icon.png`,
     image: `${BASE_URL}/og-image.png`,
     description:
-      "Tezcode — AI Software Factory. Uzbekistan'da kichik biznesdan korporatsiyagacha AI yechimlar yaratamiz. RAOS POS, AI Office, HamshiraGo va boshqa mahsulotlar.",
+      "Tezcode — AI Software Factory. Uzbekistan'da kichik biznesdan korporatsiyagacha AI yechimlar yaratamiz. RAOS POS, AI Office, CoreMed (healthtech) va boshqa mahsulotlar.",
     foundingDate: "2024",
     founder: {
       "@type": "Person",
@@ -223,9 +224,15 @@ export function getProductSchemas() {
       category: "BusinessApplication",
     },
     {
-      name: "Carevy",
-      description: "Uy hamshira chaqirish va klinika boshqaruv tizimi",
-      url: `${BASE_URL}/#carevy`,
+      name: "HamshiraGo",
+      description: "Uyga hamshira/medik chaqirish platformasi — ilovadan buyurtma, medik uyga keladi; Salomat AI ovozli tibbiy assistent",
+      url: "https://hamshirago.uz",
+      category: "HealthApplication",
+    },
+    {
+      name: "ClinicaGo",
+      description: "Klinikalar uchun CRM — qabullar, moliya, xodimlar va bemorlarni bitta joydan boshqarish",
+      url: "https://app.clinicago.uz",
       category: "HealthApplication",
     },
   ];
@@ -249,6 +256,24 @@ export function getProductSchemas() {
       priceCurrency: "UZS",
     },
   }));
+}
+
+// FAQPage structured data. Answer engines (Google AI Overviews, ChatGPT,
+// Perplexity) lift Q&A pairs directly from this schema, so feed it the SAME
+// items that drive the visible FAQ accordion to keep content and markup in sync.
+export function getFaqSchema(items: Array<{ q: string; a: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
 }
 
 export function getBreadcrumbSchema(items: Array<{ name: string; url: string }>) {

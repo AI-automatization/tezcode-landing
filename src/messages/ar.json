@@ -61,7 +61,7 @@
       "name": "TezCode Labs",
       "tagline": "شركات ناشئة داخلية",
       "description": "مختبرنا للابتكار — هنا تولد المنتجات الجديدة والحلول التجريبية.",
-      "products": "WeWatch · Carevy · Ventra · Savdo-Builder",
+      "products": "WeWatch · CoreMed · Ventra · Savdo-Builder",
       "model": "استثمار + حصة في الملكية"
     },
     "academy": {
@@ -92,12 +92,12 @@
       "url": "#"
     },
     "hamshirago": {
-      "name": "Carevy",
-      "tagline": "ممرضة منزلية + عيادة",
-      "description": "استدعاء ممرضة منزلية في طشقند.",
-      "status": "Beta",
+      "name": "CoreMed",
+      "tagline": "منظومة الصحة الرقمية",
+      "description": "ممرضة منزلية (HamshiraGo)، CRM للعيادات (ClinicaGo)، ومساعد Salomat AI — منظومة healthtech واحدة.",
+      "status": "Live",
       "division": "Labs",
-      "url": "https://hamshirago.uz"
+      "url": "https://coremed.uz"
     },
     "wewatch": {
       "name": "WeWatch",
@@ -161,8 +161,8 @@
     },
     "clinic": {
       "title": "للعيادات",
-      "description": "إرسال ممرضة للمنزل + إدارة العيادة. خدمة سريعة في جميع أنحاء طشقند.",
-      "product": "Carevy (HamshiraGo)"
+      "description": "إدارة العيادة — المواعيد، المالية، قاعدة بيانات المرضى. خدمة سريعة في جميع أنحاء طشقند.",
+      "product": "ClinicaGo"
     },
     "custom": {
       "title": "تحتاج مشروعاً مخصصاً؟",
@@ -261,7 +261,7 @@
       "munira": {
         "name": "د. منيرة",
         "role": "مديرة العيادة · ميرزو أولوغبيك",
-        "quote": "مع Carevy طابور العيادة أسرع بنسبة 40%. المرضى يشكروننا.",
+        "quote": "مع ClinicaGo طابور العيادة أسرع بنسبة 40%. المرضى يشكروننا.",
         "metric": "٪٤٠"
       }
     }

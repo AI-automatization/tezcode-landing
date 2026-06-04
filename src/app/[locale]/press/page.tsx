@@ -188,7 +188,7 @@ export default function PressPage() {
               <p className="mb-3">
                 3 ta asosiy mahsulot ishga tushgan: <strong className="text-[var(--tc-blue-text)]">RAOS</strong> (har do'kon uchun POS),{" "}
                 <strong className="text-[var(--tc-blue-text)]">AI Office</strong> (12 ta bo'lim AI agentlari) va{" "}
-                <strong className="text-[var(--tc-blue-text)]">Carevy/HamshiraGo</strong> (uy hamshira va klinika boshqaruvi).
+                <strong className="text-[var(--tc-blue-text)]">CoreMed</strong> (uy hamshira va klinika boshqaruvi).
                 5 ta yangi mahsulot R&D'da.
               </p>
               <p>

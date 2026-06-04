@@ -6,9 +6,9 @@ export const metadata = buildPageMetadata({
   path: "/roadmap",
   title: "Ochiq Yo'l Xaritasi — Tezcode Mahsulotlari Roadmap",
   description:
-    "Tezcode AI Software Factory yo'l xaritasi: RAOS POS, AI Office, Carevy/HamshiraGo va boshqa mahsulotlar — qaysi feature qachon chiqadi. Shaffof Q2-Q4 2026 reja.",
+    "Tezcode AI Software Factory yo'l xaritasi: RAOS POS, AI Office, CoreMed/HamshiraGo va boshqa mahsulotlar — qaysi feature qachon chiqadi. Shaffof Q2-Q4 2026 reja.",
   ogTitle: "Tezcode Yo'l Xaritasi — Mahsulot Reja",
-  ogDescription: "RAOS, AI Office, Carevy yangiliklari va kelajak rejasi.",
+  ogDescription: "RAOS, AI Office, CoreMed yangiliklari va kelajak rejasi.",
 });
 
 type Status = "done" | "in_progress" | "planned" | "explore";
@@ -28,7 +28,7 @@ const ITEMS: { quarter: string; status: Status; title: string; desc: string; pro
 
   // Q3 2026 in progress
   { quarter: "Q3 2026", status: "in_progress", title: "AI Office Sprint 5 — Component i18n", desc: "333 ta HTTPException → t() migration", product: "AI Office" },
-  { quarter: "Q3 2026", status: "in_progress", title: "Carevy/HamshiraGo public launch", desc: "Uy hamshira + klinika boshqaruv", product: "Carevy" },
+  { quarter: "Q3 2026", status: "in_progress", title: "CoreMed/HamshiraGo public launch", desc: "Uy hamshira + klinika boshqaruv", product: "CoreMed" },
   { quarter: "Q3 2026", status: "in_progress", title: "Landing v2 — Pricing + Blog + Case studies", desc: "Conversion optimization", product: "Tezcode" },
 
   // Q4 2026 planned
