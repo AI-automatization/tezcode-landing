@@ -10,7 +10,8 @@
     "solutions": "Solutions",
     "team": "Team",
     "contact": "Contact",
-    "language": "Language"
+    "language": "Language",
+    "blog": "Blog"
   },
   "hero": {
     "badge": "AI · Software Factory · Tashkent",
@@ -240,7 +241,17 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "rights": "All rights reserved",
-    "made_in": "Tashkent · Built in Uzbekistan"
+    "made_in": "Tashkent · Built in Uzbekistan",
+    "product": "Product",
+    "contact_title": "Contact",
+    "blog": "Blog",
+    "pricing": "Pricing",
+    "roi_calculator": "ROI Calculator",
+    "reviews": "Reviews",
+    "case_studies": "Case studies",
+    "roadmap": "Roadmap",
+    "changelog": "Changelog",
+    "press": "Press kit"
   },
   "testimonials": {
     "title": "Customer stories",

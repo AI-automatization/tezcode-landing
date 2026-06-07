@@ -7,6 +7,7 @@ import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Tilt3D } from "@/components/motion/Tilt3D";
 import { Magnetic } from "@/components/motion/Magnetic";
 import { CountUp } from "@/components/motion/CountUp";
+import { getFaqSchema } from "@/lib/seo";
 
 // ─────────────────────────────────────────────────────────
 // Types
@@ -1669,8 +1670,16 @@ function TeamSection({ t }: { t: Copy }) {
 // 8. FAQ
 // ─────────────────────────────────────────────────────────
 function FAQSection({ t }: { t: Copy }) {
+  // FAQPage structured data — same items as the accordion below, so answer
+  // engines (Google AI Overviews, ChatGPT, Perplexity) can cite these Q&A.
+  const faqSchema = getFaqSchema(t.faq.items);
+
   return (
     <section className="relative py-24 px-6 bg-[var(--tc-surface-1)]/30">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-4xl mx-auto">
         <Reveal className="text-center mb-14">
           <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">

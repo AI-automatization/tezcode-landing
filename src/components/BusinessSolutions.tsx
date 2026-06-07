@@ -38,7 +38,7 @@ export function BusinessSolutions() {
   const solutions: SolutionKey[] = ["store", "office", "clinic", "custom"];
 
   return (
-    <section className="py-32 px-6 bg-[var(--tc-ink)] relative overflow-hidden">
+    <section id="solutions" className="scroll-mt-24 py-32 px-6 bg-[var(--tc-ink)] relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full bg-gradient-to-b from-transparent via-[var(--tc-border)] to-transparent" />
 
       <div className="max-w-7xl mx-auto relative z-10">

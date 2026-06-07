@@ -15,9 +15,10 @@ function buildLlmsTxt(): string {
 
 > Tezcode — Toshkent (O'zbekiston) joylashgan AI Software Factory. Kichik
 > biznesdan korporatsiyagacha buyurtma asosida dasturiy ta'minot, AI agentlar
-> va biznes avtomatlashtirish yechimlarini yaratamiz. Asosiy mahsulotlar: RAOS
-> (POS / savdo platformasi), AI Office (AI biznes orkestratori) va CoreMed
-> (healthtech ekotizimi: HamshiraGo, ClinicaGo, Salomat AI).
+> va biznes avtomatlashtirish yechimlarini yaratamiz. Tayyor mahsulotlar: RAOS
+> (offline-first POS / savdo platformasi), WeWatch (ijtimoiy onlayn kinoteatr /
+> Watch Party), WorkControl (xodimlar ish nazorati) va CoreMed (healthtech
+> ekotizimi: HamshiraGo, ClinicaGo, Salomat AI).
 
 ## Kompaniya haqida (faktlar)
 
@@ -41,14 +42,14 @@ function buildLlmsTxt(): string {
 ## Mahsulotlar va loyihalar
 
 - [RAOS](https://raos.uz): Offline-first POS / savdo platformasi — do'kon, ombor, kassa, mijoz va hisobot.
-- AI Office: AI biznes orkestratori — bo'lim AI agentlari bilan chat orqali biznes boshqaruv.
+- AI Office: AI biznes orkestratori — bo'lim AI agentlari bilan chat orqali biznes boshqaruv. Holati: ishlab chiqilmoqda.
 - CoreMed (https://coremed.uz): O'zbekistonning healthtech ekotizimi — uch mahsulot bitta backend infratuzilmasi va yagona autentifikatsiyada. Hudud: O'zbekiston, Toshkent (uz, ru). Tarkibi:
   - HamshiraGo (https://hamshirago.uz): uyga hamshira/medik chaqirish platformasi — bemor ilovadan buyurtma beradi, medik 30 daqiqada uyiga keladi (24/7). Real-time matching va marshrut, bemor va medik uchun mobil ilovalar, Payme/Click onlayn to'lov, mediklar verifikatsiyasi va reytingi. Holati: beta.
   - ClinicaGo (https://app.clinicago.uz): klinikalar uchun CRM — qabullar, moliya, xodimlar va bemorlarni bitta joydan boshqarish (CEO, resepshyen, doktor, call-center rollari), moliyaviy hisobot, kabinet/xodim jadvali, bemorlar bazasi va davolash tarixi, call-center moduli. Avval "Carevy" nomi bilan tanilgan. Holati: live.
   - Salomat AI: ovozli tibbiy assistent — simptom tahlili va mutaxassis tavsiyasi (uz/ru), STT → LLM → TTS pipeline.
-- WeWatch: Video / kontent platformasi.
-- MaxSavdo: Savdo va sotuvni boshqarish platformasi.
-- WorkControl: Xodimlar ish va vazifa nazorati tizimi.
+- WeWatch (https://wewatch.uz): Ijtimoiy onlayn kinoteatr — do'stlar bilan bir vaqtda (sinxron) film va video ko'rish (Watch Party). YouTube, Rutube, VK Video va to'g'ridan URL'dan video, do'stlar tizimi (invite, online holat) va real-time chat. Hudud: O'zbekiston, Rossiya (uz, ru). Holati: tayyor (MVP).
+- WorkControl: Xodimlarning ish va vazifalarini nazorat qilish tizimi. Holati: tayyor.
+- MaxSavdo: Telegram'ga o'rnatilgan do'kon va checkout platformasi — O'zbekistondagi kichik sotuvchilar uchun ("5 daqiqada Telegram'da do'kon"). Telegram Mini App storefront, web xaridor versiyasi, sotuvchi kabineti (tovar, buyurtma, analitika), admin panel va real-time xaridor↔sotuvchi chat. DM-savdo bilan yirik marketpleys o'rtasidagi bo'shliqni to'ldiradi. Hudud: O'zbekiston (uz, ru). Holati: closed beta (~50 sotuvchi, Free Beta).
 - Adetal: O'zbekiston uchun avto ehtiyot qismlar onlayn bozori (marketplace) — sotuvchi do'konlari va mahsulot joylash, qidiruv, buyurtma va kuzatuv, real-vaqt chat, AI-KYC (passport + selfie) va Telegram bot. (beta)
 
 ## Asosiy sahifalar

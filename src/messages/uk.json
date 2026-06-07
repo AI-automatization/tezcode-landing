@@ -10,7 +10,8 @@
     "solutions": "Рішення",
     "team": "Команда",
     "contact": "Контакти",
-    "language": "Мова"
+    "language": "Мова",
+    "blog": "Блог"
   },
   "hero": {
     "badge": "AI · Software Factory · Ташкент",
@@ -240,7 +241,17 @@
     "privacy": "Політика конфіденційності",
     "terms": "Умови використання",
     "rights": "Усі права захищені",
-    "made_in": "Ташкент · Зроблено в Узбекистані"
+    "made_in": "Ташкент · Зроблено в Узбекистані",
+    "product": "Продукт",
+    "contact_title": "Контакти",
+    "blog": "Блог",
+    "pricing": "Ціни",
+    "roi_calculator": "ROI калькулятор",
+    "reviews": "Відгуки",
+    "case_studies": "Кейси",
+    "roadmap": "Дорожня карта",
+    "changelog": "Журнал змін",
+    "press": "Прес-кіт"
   },
   "testimonials": {
     "title": "Клієнти про нас",

@@ -149,7 +149,7 @@ export function getOrganizationSchema() {
     logo: `${BASE_URL}/icon.png`,
     image: `${BASE_URL}/og-image.png`,
     description:
-      "Tezcode — AI Software Factory. Uzbekistan'da kichik biznesdan korporatsiyagacha AI yechimlar yaratamiz. RAOS POS, AI Office, CoreMed (healthtech) va boshqa mahsulotlar.",
+      "Tezcode — AI Software Factory. Uzbekistan'da kichik biznesdan korporatsiyagacha AI yechimlar yaratamiz. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), WorkControl, CoreMed (healthtech) va boshqalar.",
     foundingDate: "2024",
     founder: {
       "@type": "Person",
@@ -218,10 +218,10 @@ export function getProductSchemas() {
       category: "RetailApplication",
     },
     {
-      name: "AI Office",
-      description: "AI orkestrator — 12 bo'lim AI agentlari, chat-first biznes boshqaruv",
-      url: "https://openclaw-web-production-73ae.up.railway.app",
-      category: "BusinessApplication",
+      name: "WeWatch",
+      description: "Ijtimoiy onlayn kinoteatr — do'stlar bilan sinxron film va video ko'rish (Watch Party), YouTube/Rutube/VK manbalari, real-time chat",
+      url: "https://wewatch.uz",
+      category: "EntertainmentApplication",
     },
     {
       name: "HamshiraGo",
@@ -273,6 +273,91 @@ export function getFaqSchema(items: Array<{ q: string; a: string }>) {
         text: item.a,
       },
     })),
+  };
+}
+
+// Service structured data for a single offering page (e.g. AI automation,
+// IT services). Answer engines and Google use this to understand WHAT the page
+// sells, WHO provides it, and WHERE it is offered — pair it with FAQPage to give
+// AI assistants an extractable definition + Q&A for the same service.
+export function getServiceSchema(input: {
+  name: string;
+  description: string;
+  serviceType: string;
+  path: string; // no locale prefix, e.g. "/ai-avtomatizatsiya"
+  areaServed?: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: input.name,
+    description: input.description,
+    serviceType: input.serviceType,
+    url: `${BASE_URL}${input.path}`,
+    provider: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: BASE_URL,
+    },
+    areaServed: (input.areaServed ?? ["Tashkent", "Uzbekistan"]).map((name) => ({
+      "@type": "Place",
+      name,
+    })),
+    availableChannel: {
+      "@type": "ServiceChannel",
+      serviceUrl: BASE_URL,
+      servicePhone: {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        url: "https://t.me/webdevelopertk",
+        email: "hello@tezcode.dev",
+      },
+    },
+  };
+}
+
+// Article (BlogPosting) structured data for blog / GEO content. Answer engines
+// (ChatGPT, Perplexity, Google AI Overviews) prefer to cite article pages over
+// sales pages — this schema tells them the headline, author, publisher and dates
+// so the piece is attributable and quotable. Pair with FAQPage + Breadcrumb.
+export function getArticleSchema(input: {
+  headline: string;
+  description: string;
+  path: string; // no locale prefix, e.g. "/blog/pos-tizimi-tanlash"
+  locale: string;
+  datePublished: string; // ISO date, e.g. "2026-06-07"
+  dateModified?: string;
+  image?: string;
+}) {
+  const url =
+    input.locale === "uz"
+      ? `${BASE_URL}${input.path}`
+      : `${BASE_URL}/${input.locale}${input.path}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: input.headline,
+    description: input.description,
+    inLanguage: input.locale,
+    url,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    image: input.image ?? getOgImageUrl(),
+    datePublished: input.datePublished,
+    dateModified: input.dateModified ?? input.datePublished,
+    author: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: BASE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: BASE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/icon.png`,
+      },
+    },
   };
 }
 

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { BASE_URL, LOCALES } from "@/lib/seo";
+import { ARTICLES } from "./[locale]/blog/articles";
 
 // Static routes under app/[locale]/**.
 // Add new pages here when a route is introduced.
@@ -7,6 +8,10 @@ const ROUTES = [
   { path: "", priority: 1.0, changeFrequency: "weekly" as const },
   { path: "/for-businesses", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/hire-developers", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/ai-avtomatizatsiya", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/biznes-avtomatlashtirish", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/it-xizmatlar", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/blog", priority: 0.8, changeFrequency: "weekly" as const },
   { path: "/tools", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/tools/free-code-review", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/tools/free-mvp-roadmap", priority: 0.8, changeFrequency: "monthly" as const },
@@ -19,6 +24,12 @@ const ROUTES = [
   { path: "/press", priority: 0.5, changeFrequency: "monthly" as const },
   { path: "/privacy", priority: 0.3, changeFrequency: "yearly" as const },
   { path: "/terms", priority: 0.3, changeFrequency: "yearly" as const },
+  // Blog articles (derived from the registry so new posts auto-appear).
+  ...ARTICLES.map((a) => ({
+    path: `/blog/${a.slug}`,
+    priority: 0.7,
+    changeFrequency: "monthly" as const,
+  })),
 ];
 
 function buildUrl(locale: string, path: string): string {

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 // ─────────────────────────────────────────────────────────
 // TC Monogram (Footer — below fold, lazy load)
@@ -27,30 +27,33 @@ export function Footer() {
   const t = useTranslations("footer");
   const year = new Date().getFullYear();
 
+  // Section anchors (#...) live on the home page — prefix with "/" so they
+  // navigate home from sub-pages instead of appending to the current URL.
   const divisionLinks: { label: string; href: string }[] = [
-    { label: "TezCode Systems", href: "#divisions" },
+    { label: "TezCode Systems", href: "/#divisions" },
     { label: "TezCode Custom", href: "/for-businesses" },
-    { label: "TezCode AI", href: "#divisions" },
+    { label: "TezCode AI", href: "/#divisions" },
     { label: "TezCode Teams", href: "/hire-developers" },
-    { label: "TezCode Labs", href: "#divisions" },
-    { label: "TezCode Academy", href: "#divisions" },
+    { label: "TezCode Labs", href: "/#divisions" },
+    { label: "TezCode Academy", href: "/#divisions" },
   ];
 
   const productLinks: { label: string; href: string }[] = [
-    { label: "Pricing", href: "#pricing" },
-    { label: "ROI Calculator", href: "#calculator" },
-    { label: "Reviews", href: "#reviews" },
-    { label: "Case studies", href: "/case-studies" },
-    { label: "Roadmap", href: "/roadmap" },
-    { label: "Changelog", href: "/changelog" },
+    { label: t("pricing"), href: "/#pricing" },
+    { label: t("roi_calculator"), href: "/#calculator" },
+    { label: t("reviews"), href: "/#reviews" },
+    { label: t("case_studies"), href: "/case-studies" },
+    { label: t("roadmap"), href: "/roadmap" },
+    { label: t("changelog"), href: "/changelog" },
+    { label: t("blog"), href: "/blog" },
   ];
 
   const companyLinks = [
-    { label: t("about"), href: "#team" },
-    { label: t("team"), href: "#team" },
-    { label: t("careers"), href: "#contact" },
-    { label: t("contact"), href: "#contact" },
-    { label: "Press kit", href: "/press" },
+    { label: t("about"), href: "/#team" },
+    { label: t("team"), href: "/#team" },
+    { label: t("careers"), href: "/#contact" },
+    { label: t("contact"), href: "/#contact" },
+    { label: t("press"), href: "/press" },
     { label: t("privacy"), href: "/privacy" },
     { label: t("terms"), href: "/terms" },
   ];
@@ -141,7 +144,7 @@ export function Footer() {
               className="text-xs font-600 uppercase tracking-widest text-[var(--tc-text-muted)] mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              Product
+              {t("product")}
             </h4>
             <ul className="flex flex-col gap-2">
               {productLinks.map((link) => (
@@ -185,7 +188,7 @@ export function Footer() {
               className="text-xs font-600 uppercase tracking-widest text-[var(--tc-text-muted)] mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              Contact
+              {t("contact_title")}
             </h4>
             <ul className="flex flex-col gap-3 text-sm text-[var(--tc-text-secondary)]">
               <li>

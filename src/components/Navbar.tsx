@@ -59,11 +59,15 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Section anchors live on the home page, so they must be prefixed with "/"
+  // to work from sub-pages (blog, case-studies, etc.). The routing Link keeps
+  // the active locale. Blog is a real page.
   const navLinks = [
-    { href: "#divisions", label: t("divisions") },
-    { href: "#solutions", label: t("solutions") },
-    { href: "#team", label: t("team") },
-    { href: "#contact", label: t("contact") },
+    { href: "/#divisions", label: t("divisions") },
+    { href: "/#solutions", label: t("solutions") },
+    { href: "/#team", label: t("team") },
+    { href: "/blog", label: t("blog") },
+    { href: "/#contact", label: t("contact") },
   ];
 
   return (
@@ -91,12 +95,12 @@ export function Navbar() {
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
+              <Link
                 href={link.href}
                 className="text-sm font-medium text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] tc-link-underline transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -142,12 +146,12 @@ export function Navbar() {
           </div>
 
           {/* CTA button */}
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             className="px-4 py-2 rounded-[var(--tc-radius-sm)] text-sm font-medium bg-[var(--tc-blue)] text-white hover:bg-[var(--tc-blue-light)] transition-colors"
           >
             {t("contact")}
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -174,13 +178,13 @@ export function Navbar() {
           <ul className="flex flex-col gap-1 mb-4">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
+                <Link
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
                   className="block py-2 text-sm text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] transition-colors"
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

@@ -10,7 +10,8 @@
     "solutions": "Yechimlar",
     "team": "Jamoa",
     "contact": "Bog'lanish",
-    "language": "Til"
+    "language": "Til",
+    "blog": "Blog"
   },
   "hero": {
     "badge": "AI · Software Factory · Tashkent",
@@ -269,6 +270,16 @@
     "privacy": "Maxfiylik siyosati",
     "terms": "Foydalanish shartlari",
     "rights": "Barcha huquqlar himoyalangan",
-    "made_in": "Toshkent · O'zbekistondan bilan"
+    "made_in": "Toshkent · O'zbekistondan bilan",
+    "product": "Mahsulot",
+    "contact_title": "Aloqa",
+    "blog": "Blog",
+    "pricing": "Narxlar",
+    "roi_calculator": "ROI kalkulyator",
+    "reviews": "Sharhlar",
+    "case_studies": "Keyslar",
+    "roadmap": "Yo'l xaritasi",
+    "changelog": "O'zgarishlar",
+    "press": "Press-kit"
   }
 }
