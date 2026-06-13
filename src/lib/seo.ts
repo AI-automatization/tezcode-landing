@@ -170,11 +170,16 @@ export function getOrganizationSchema() {
       areaServed: ["UZ", "RU", "KZ", "TJ", "KG", "TM"],
       availableLanguage: ["uz", "ru", "en", "ar", "uk"],
     },
+    // sameAs anchors this exact entity to its verified third-party profiles, so AI
+    // engines don't conflate Tezcode (tezcode.dev) with the unrelated TezCode.tech
+    // coding bootcamp or codingtech.uz. Directory profiles double as authority signals.
     sameAs: [
       "https://t.me/Web_Developers_free",
       "https://t.me/webdevelopertk",
       "https://instagram.com/tezcode.ai/",
       "https://github.com/AI-automatization",
+      "https://clutch.co/profile/tezcode",
+      "https://www.f6s.com/tezcode",
     ],
     knowsAbout: [
       "Artificial Intelligence",
