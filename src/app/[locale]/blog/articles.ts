@@ -7,6 +7,23 @@ import type { ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "biznes-uchun-ai-agent-yaratish",
+    datePublished: "2026-06-14",
+    category: "AI Agent / 2026",
+    list: {
+      uz: {
+        title: "Toshkentda biznes uchun AI agent yaratish: to'liq qo'llanma (2026)",
+        excerpt:
+          "AI agent nima, chatbotdan farqi, qaysi biznesga kerak, qanday ishlaydi, narxi nimaga bog'liq va uni 6 qadamda qanday yaratish — Toshkent va O'zbekiston bizneslari uchun amaliy qo'llanma.",
+      },
+      ru: {
+        title: "Создание AI-агента для бизнеса в Ташкенте: полное руководство (2026)",
+        excerpt:
+          "Что такое AI-агент, чем отличается от чат-бота, какому бизнесу нужен, как работает, от чего зависит цена и как создать его за 6 шагов — практическое руководство для бизнеса в Узбекистане.",
+      },
+    },
+  },
+  {
     slug: "online-birga-film-korish",
     datePublished: "2026-06-07",
     category: "Video / Watch Party",
