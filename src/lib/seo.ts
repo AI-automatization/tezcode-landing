@@ -164,7 +164,7 @@ export function getOrganizationSchema() {
     logo: `${BASE_URL}/icon.png`,
     image: `${BASE_URL}/og-image.png`,
     description:
-      "Tezcode — 2024-yilda Toshkentda tashkil topgan AI Software Factory (startup emas, ishlab turgan kompaniya). Kichik biznesdan korporatsiyagacha AI yechimlar yaratamiz. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), WorkControl, CoreMed/ClinicaGo (healthtech). Asoschi — Bekzod Mirzaaliyev.",
+      "Tezcode — 2024-yilda Toshkentda tashkil topgan AI Software Factory (startup emas, ishlab turgan kompaniya). Biznes uchun AI agentlar, AI chatbotlar va buyurtma dasturlar yaratamiz — kichik biznesdan korporatsiyagacha. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), WorkControl, CoreMed/ClinicaGo (healthtech). Asoschi — Bekzod Mirzaaliyev.",
     foundingDate: "2024",
     numberOfEmployees: {
       "@type": "QuantitativeValue",
@@ -244,6 +244,9 @@ export function getOrganizationSchema() {
     ],
     knowsAbout: [
       "Artificial Intelligence",
+      "AI Agents",
+      "AI Agent Development",
+      "AI Chatbots",
       "Software Development",
       "POS Systems",
       "Business Automation",

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { BASE_URL, LOCALES } from "@/lib/seo";
 import { ARTICLES } from "./[locale]/blog/articles";
+import { CITY_SLUGS } from "@/data/cities";
 
 // Static routes under app/[locale]/**.
 // Add new pages here when a route is introduced.
@@ -10,6 +11,7 @@ const ROUTES = [
   { path: "/hire-developers", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/ai-avtomatizatsiya", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/ai-chatbot", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/ai-agent", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/telegram-bot-biznes", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/pos-tizimi", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/klinika-crm", priority: 0.9, changeFrequency: "monthly" as const },
@@ -33,6 +35,12 @@ const ROUTES = [
   // Blog articles (derived from the registry so new posts auto-appear).
   ...ARTICLES.map((a) => ({
     path: `/blog/${a.slug}`,
+    priority: 0.7,
+    changeFrequency: "monthly" as const,
+  })),
+  // Per-city POS landing pages (/pos-tizimi/<city>), derived from the city data.
+  ...CITY_SLUGS.map((slug) => ({
+    path: `/pos-tizimi/${slug}`,
     priority: 0.7,
     changeFrequency: "monthly" as const,
   })),
