@@ -236,7 +236,7 @@ export function getOrganizationSchema() {
     sameAs: [
       "https://t.me/Web_Developers_free",
       "https://t.me/webdevelopertk",
-      "https://instagram.com/tezcode.ai/",
+      "https://www.instagram.com/tezcode_dev/",
       "https://github.com/AI-automatization",
       "https://clutch.co/profile/tezcode",
       "https://www.f6s.com/tezcode",

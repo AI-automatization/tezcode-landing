@@ -89,7 +89,7 @@ etgan; RAOS, CoreMed/ClinicaGo, WeWatch va WorkControl mahsulotlari ortidagi
 
 - Email: tezcode@tezcode.dev
 - Telegram: https://t.me/webdevelopertk
-- Instagram: https://instagram.com/tezcode.ai/
+- Instagram: https://www.instagram.com/tezcode_dev/
 - GitHub: https://github.com/AI-automatization
 
 ## Tashqi profillar (tasdiqlangan)
