@@ -96,7 +96,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
   {
     title: "12. Aloqa",
     body: [
-      "Savollar: hello@tezcode.dev · Telegram: @webdevelopertk",
+      "Savollar: tezcode@tezcode.dev · Telegram: @webdevelopertk",
       "Oxirgi yangilanish: 2026-05-14",
     ],
   },

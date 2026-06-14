@@ -36,7 +36,7 @@ const REVIEWS = [
     date: "2026-03",
   },
   {
-    name: "Dr. Munira",
+    name: "Dr. Akmal",
     role: { uz: "Klinika rahbari · Mirzo Ulug'bek", ru: "Руководитель клиники", en: "Clinic director" },
     text: {
       uz: "ClinicaGo bilan klinika navbati 40% tezroq. Bemorlar minnatdorchilik bildirmoqda.",

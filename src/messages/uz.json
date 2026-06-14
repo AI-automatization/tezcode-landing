@@ -44,7 +44,7 @@
         "metric": "−2M so'm/oy"
       },
       "munira": {
-        "name": "Dr. Munira",
+        "name": "Dr. Akmal",
         "role": "Klinika rahbari · Mirzo Ulug'bek",
         "quote": "ClinicaGo bilan klinika navbati 40% tezroq. Bemorlar minnatdorchilik bildirmoqda.",
         "metric": "40% tezroq"
@@ -202,7 +202,7 @@
   },
   "team": {
     "title": "Bizning jamoa",
-    "subtitle": "14 ta asoschi va dasturchi — har biri o'z loyihasi bilan",
+    "subtitle": "16 ta asoschi va dasturchi — har biri o'z loyihasi bilan",
     "members": {
       "bekzod": {
         "name": "Bekzod Mirzaaliyev",
@@ -272,6 +272,9 @@
     "rights": "Barcha huquqlar himoyalangan",
     "made_in": "Toshkent · O'zbekistondan bilan",
     "product": "Mahsulot",
+    "services": "Xizmatlar",
+    "for_businesses": "Bizneslar uchun",
+    "hire_developers": "Dasturchi yollash",
     "contact_title": "Aloqa",
     "blog": "Blog",
     "pricing": "Narxlar",

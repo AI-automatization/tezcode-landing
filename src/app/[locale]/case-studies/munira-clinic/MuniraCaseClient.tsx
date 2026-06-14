@@ -43,7 +43,7 @@ const COPY: Record<Lang, CopyShape> = {
     badge: "Case Study · Klinika",
     title:
       "Klinika navbati 40% tezroq, bemor sadoqati 2x oshdi",
-    name: "Dr. Munira",
+    name: "Dr. Akmal",
     role: "Klinika rahbari · Mirzo Ulug'bek, Toshkent",
     product: "ClinicaGo + HamshiraGo",
     bannerLabel: "Navbat vaqti",
@@ -57,7 +57,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     problemTitle: "3 yillik qog'oz xaos",
     problemParas: [
-      "Dr. Munira Mirzo Ulug'bek tumanidagi 5 ta shifokorli umumiy amaliyot klinikani boshqaradi. 3 yil oldin to'liq qog'ozda ishlardi: bemor kartochkasi qog'ozda, tashxis qog'ozda, dori retsept qog'ozda. Navbat qog'oz daftarda.",
+      "Dr. Akmal Mirzo Ulug'bek tumanidagi 5 ta shifokorli umumiy amaliyot klinikani boshqaradi. 3 yil oldin to'liq qog'ozda ishlardi: bemor kartochkasi qog'ozda, tashxis qog'ozda, dori retsept qog'ozda. Navbat qog'oz daftarda.",
       "Asosiy muammo — navbat. Bemorlar 1.5-2 soat kutardi. Ko'pchilik kutmasdan ketib qolardi, qaytib kelmaslik darajasi 35% edi. Hamshiralar har 5 daqiqada \"navbat uzunmi?\" deb qarab turardi.",
       "Hamshira ish yuki o'ta og'ir — har bemor uchun 3-4 ta qog'oz to'ldirish, dori berish vaqtini qo'lda yozish, retsept yozish. Kuniga 12 soat ishlardi, oyiga 1 ta hamshira ishdan ketardi.",
       "To'lov tizimi ham chayqalardi — bemor xizmat olganidan keyin kassaga keladi, kassir kartochkadan qancha narx ekanini tekshiradi, qo'lda yozadi. To'lov 3 kungacha cho'zilardi.",
@@ -72,10 +72,10 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     quote1:
       "Avval har kuni 32 ta bemor qabul qilardik, lekin 8-10 nafari kutmasdan ketib qolardi. Endi 45 ta bemor sig'imimiz bor, kutish 25 daqiqadan ortmaydi. Bemorlar \"birinchi marta klinikangizda qulay\" deyishadi.",
-    quote1Caption: "Dr. Munira, 2026-yil yanvar",
+    quote1Caption: "Dr. Akmal, 2026-yil yanvar",
     quote2:
       "Hamshiralar avval kuniga 12 soat ishlardi, charchab ketishardi. HamshiraGo bilan qog'oz ish 70% kamaydi. Endi haqiqiy bemor parvarishiga vaqt yetadi. 2 nafar hamshira maoshi oshirildi va hech kim ishdan ketmadi 6 oydan beri.",
-    quote2Caption: "Dr. Munira, 2026-yil mart",
+    quote2Caption: "Dr. Akmal, 2026-yil mart",
     timelineTitle: "6 haftalik amalga oshirish",
     timeline: [
       { week: "Hafta 1-2", title: "Apparat sozlash + tizim ulash", desc: "5 ta planshet shifokorlar uchun, qabulxonaga katta ekran, QR-kod tizimi, printer. ClinicaGo server o'rnatish + xavfsizlik (HIPAA-style)." },
@@ -103,7 +103,7 @@ const COPY: Record<Lang, CopyShape> = {
     badge: "Кейс · Клиника",
     title:
       "Очередь в клинике сократилась на 40%, лояльность пациентов 2x",
-    name: "Доктор Мунира",
+    name: "Доктор Акмал",
     role: "Руководитель клиники · Мирзо-Улугбек, Ташкент",
     product: "ClinicaGo + HamshiraGo",
     bannerLabel: "Время ожидания",
@@ -117,7 +117,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     problemTitle: "3 года бумажного хаоса",
     problemParas: [
-      "Доктор Мунира руководит клиникой общей практики с 5 врачами в Мирзо-Улугбеке. 3 года всё было на бумаге: карта пациента, диагноз, рецепт, очередь — всё в тетрадях.",
+      "Доктор Акмал руководит клиникой общей практики с 5 врачами в Мирзо-Улугбеке. 3 года всё было на бумаге: карта пациента, диагноз, рецепт, очередь — всё в тетрадях.",
       "Главная боль — очередь. Пациенты ждали 1.5-2 часа. Многие уходили не дождавшись, отказ — 35%. Медсёстры каждые 5 минут проверяли \"длина очереди\".",
       "Нагрузка на медсестёр непосильная — 3-4 бумаги на каждого пациента, ручная запись времени дачи лекарств, рецепты. 12-часовой день, 1 медсестра уходила каждый месяц.",
       "Оплата тоже хаотична — пациент идёт в кассу после приёма, кассир смотрит карту, цены вручную, запись вручную. Платёж растягивался до 3 дней.",
@@ -132,10 +132,10 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     quote1:
       "Раньше принимали 32 пациента в день, но 8-10 уходили не дождавшись. Теперь 45 пациентов, ожидание не более 25 минут. Пациенты говорят \"впервые в клинике комфортно\".",
-    quote1Caption: "Доктор Мунира, январь 2026",
+    quote1Caption: "Доктор Акмал, январь 2026",
     quote2:
       "Раньше медсёстры по 12 часов на ногах, выгорали. С HamshiraGo бумажная работа сократилась на 70%. Теперь хватает времени на реальный уход. 2 медсестрам подняли зарплату, и за 6 месяцев никто не ушёл.",
-    quote2Caption: "Доктор Мунира, март 2026",
+    quote2Caption: "Доктор Акмал, март 2026",
     timelineTitle: "6 недель внедрения",
     timeline: [
       { week: "Недели 1-2", title: "Оборудование + подключение", desc: "5 планшетов врачам, большой экран в приёмной, QR-код, принтер. Установка ClinicaGo сервера + безопасность (HIPAA-style)." },
@@ -163,7 +163,7 @@ const COPY: Record<Lang, CopyShape> = {
     badge: "Case Study · Clinic",
     title:
       "Queue time down 40%, patient loyalty doubled",
-    name: "Dr. Munira",
+    name: "Dr. Akmal",
     role: "Clinic director · Mirzo Ulugbek, Tashkent",
     product: "ClinicaGo + HamshiraGo",
     bannerLabel: "Queue time",
@@ -177,7 +177,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     problemTitle: "3 years of paper chaos",
     problemParas: [
-      "Dr. Munira runs a 5-doctor general practice clinic in Mirzo Ulugbek. For 3 years everything was on paper: patient chart, diagnosis, prescription, queue — all in notebooks.",
+      "Dr. Akmal runs a 5-doctor general practice clinic in Mirzo Ulugbek. For 3 years everything was on paper: patient chart, diagnosis, prescription, queue — all in notebooks.",
       "The main pain — the queue. Patients waited 1.5-2 hours. Many left without being seen; the no-show rate hit 35%. Nurses checked the queue length every 5 minutes.",
       "Nurse workload was crushing — 3-4 forms per patient, hand-written med times, hand-written prescriptions. 12-hour days, one nurse leaving every month.",
       "Payments were also chaotic — after the visit the patient went to the register, the cashier checked the chart, looked up prices manually, wrote it all by hand. Settlement took up to 3 days.",
@@ -192,10 +192,10 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     quote1:
       "We used to see 32 patients per day but 8-10 left without being seen. Now we handle 45 patients, wait time under 25 minutes. Patients say it's the first time they feel comfortable at our clinic.",
-    quote1Caption: "Dr. Munira, January 2026",
+    quote1Caption: "Dr. Akmal, January 2026",
     quote2:
       "Nurses used to do 12-hour days and burn out. With HamshiraGo, paperwork dropped 70%. Now there's time for actual patient care. We raised 2 nurses' salaries, and nobody has left in 6 months.",
-    quote2Caption: "Dr. Munira, March 2026",
+    quote2Caption: "Dr. Akmal, March 2026",
     timelineTitle: "6-week rollout",
     timeline: [
       { week: "Weeks 1-2", title: "Hardware + system", desc: "5 tablets for doctors, big screen in waiting area, QR code, printers. ClinicaGo server install + security (HIPAA-style)." },
@@ -223,8 +223,8 @@ const COPY: Record<Lang, CopyShape> = {
     badge: "دراسة حالة · عيادة",
     title:
       "تقليل وقت الانتظار 40٪، ومضاعفة ولاء المرضى",
-    name: "د. منيرة",
-    role: "مديرة عيادة · ميرزو أولوغبيك، طشقند",
+    name: "د. أكمل",
+    role: "مدير عيادة · ميرزو أولوغبيك، طشقند",
     product: "ClinicaGo + HamshiraGo",
     bannerLabel: "وقت الانتظار",
     bannerCaption: "المرضى يوميًا 32 → 45 (+40٪)",
@@ -237,7 +237,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     problemTitle: "3 سنوات من فوضى الورق",
     problemParas: [
-      "د. منيرة تدير عيادة طب عام مع 5 أطباء في ميرزو أولوغبيك. 3 سنوات كل شيء على الورق: بطاقة المريض، التشخيص، الوصفة، الطابور — في الدفاتر.",
+      "د. أكمل يدير عيادة طب عام مع 5 أطباء في ميرزو أولوغبيك. 3 سنوات كل شيء على الورق: بطاقة المريض، التشخيص، الوصفة، الطابور — في الدفاتر.",
       "المشكلة الكبرى — الطابور. ينتظر المرضى 1.5-2 ساعة. كثيرون يغادرون قبل الدور (نسبة 35٪). الممرضات يفحصن الطابور كل 5 دقائق.",
       "عبء العمل على الممرضات هائل — 3-4 أوراق لكل مريض، وقت الدواء يدويًا، الوصفات يدويًا. أيام 12 ساعة، ممرضة تغادر كل شهر.",
       "الدفع فوضوي أيضًا — بعد الفحص، يذهب المريض للكاشير، يبحث في البطاقة، يكتب يدويًا. التسوية تمتد إلى 3 أيام.",
@@ -252,10 +252,10 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     quote1:
       "كنا نستقبل 32 مريضًا يوميًا، لكن 8-10 يغادرون. الآن نتعامل مع 45 مريضًا، وقت انتظار أقل من 25 دقيقة. يقول المرضى \"لأول مرة نشعر بالراحة في عيادتكم\".",
-    quote1Caption: "د. منيرة، يناير 2026",
+    quote1Caption: "د. أكمل، يناير 2026",
     quote2:
       "كانت الممرضات 12 ساعة على أقدامهن، يحترقن. مع HamshiraGo قلّ الورق 70٪. الآن يبقى وقت لرعاية حقيقية. رفعنا راتب ممرضتين، ولم يغادر أحد منذ 6 أشهر.",
-    quote2Caption: "د. منيرة، مارس 2026",
+    quote2Caption: "د. أكمل، مارس 2026",
     timelineTitle: "تطبيق خلال 6 أسابيع",
     timeline: [
       { week: "الأسبوعان 1-2", title: "المعدات + النظام", desc: "5 أجهزة لوحية للأطباء، شاشة كبيرة، QR، طابعات. تثبيت خادم ClinicaGo + أمان (HIPAA-style)." },
@@ -282,7 +282,7 @@ const COPY: Record<Lang, CopyShape> = {
     badge: "Кейс · Клініка",
     title:
       "Черга в клініці скоротилася на 40%, лояльність пацієнтів подвоїлась",
-    name: "Доктор Муніра",
+    name: "Доктор Акмал",
     role: "Керівник клініки · Мірзо-Улугбек, Ташкент",
     product: "ClinicaGo + HamshiraGo",
     bannerLabel: "Час очікування",
@@ -296,7 +296,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     problemTitle: "3 роки паперового хаосу",
     problemParas: [
-      "Доктор Муніра керує клінікою загальної практики з 5 лікарями в Мірзо-Улугбеку. 3 роки все було на папері: картка пацієнта, діагноз, рецепт, черга — у зошитах.",
+      "Доктор Акмал керує клінікою загальної практики з 5 лікарями в Мірзо-Улугбеку. 3 роки все було на папері: картка пацієнта, діагноз, рецепт, черга — у зошитах.",
       "Головний біль — черга. Пацієнти чекали 1.5-2 години. Багато йшли, не дочекавшись, відмова — 35%. Медсестри щоп'ять хвилин перевіряли довжину черги.",
       "Навантаження на медсестер непосильне — 3-4 папери на кожного пацієнта, ручний запис часу видачі ліків, рецепти. 12-годинний день, 1 медсестра йшла щомісяця.",
       "Оплата теж хаотична — пацієнт йде до каси після прийому, касир дивиться картку, ціни вручну, запис вручну. Платіж розтягувався до 3 днів.",
@@ -311,10 +311,10 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     quote1:
       "Раніше приймали 32 пацієнти на день, але 8-10 йшли не дочекавшись. Тепер 45 пацієнтів, очікування не більше 25 хвилин. Пацієнти кажуть \"вперше у клініці комфортно\".",
-    quote1Caption: "Доктор Муніра, січень 2026",
+    quote1Caption: "Доктор Акмал, січень 2026",
     quote2:
       "Раніше медсестри по 12 годин на ногах, вигорали. З HamshiraGo папір зменшився на 70%. Тепер вистачає часу на справжній догляд. 2 медсестрам підвищили зарплату, і за 6 місяців ніхто не пішов.",
-    quote2Caption: "Доктор Муніра, березень 2026",
+    quote2Caption: "Доктор Акмал, березень 2026",
     timelineTitle: "6 тижнів впровадження",
     timeline: [
       { week: "Тижні 1-2", title: "Обладнання + підключення", desc: "5 планшетів лікарям, великий екран у приймальні, QR-код, принтер. Встановлення ClinicaGo + безпека (HIPAA-style)." },

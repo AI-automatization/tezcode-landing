@@ -243,6 +243,9 @@
     "rights": "All rights reserved",
     "made_in": "Tashkent · Built in Uzbekistan",
     "product": "Product",
+    "services": "Services",
+    "for_businesses": "For businesses",
+    "hire_developers": "Hire developers",
     "contact_title": "Contact",
     "blog": "Blog",
     "pricing": "Pricing",
@@ -270,7 +273,7 @@
         "metric": "−2M"
       },
       "munira": {
-        "name": "Dr. Munira",
+        "name": "Dr. Akmal",
         "role": "Clinic director · Mirzo Ulugbek",
         "quote": "With ClinicaGo clinic queue is 40% faster. Patients are grateful.",
         "metric": "40%"

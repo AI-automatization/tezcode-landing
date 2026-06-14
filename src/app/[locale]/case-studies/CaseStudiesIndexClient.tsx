@@ -97,7 +97,7 @@ const COPY: Record<Lang, CopyShape> = {
         metricCaption: "buxgalter xarajati o'rniga",
       },
       "munira-clinic": {
-        name: "Dr. Munira",
+        name: "Dr. Akmal",
         role: "Klinika rahbari · Mirzo Ulug'bek",
         product: "ClinicaGo + HamshiraGo",
         headline: "Navbat vaqti 40% qisqardi, bemor sadoqati 2x oshdi",
@@ -139,7 +139,7 @@ const COPY: Record<Lang, CopyShape> = {
         metricCaption: "вместо зарплаты бухгалтера",
       },
       "munira-clinic": {
-        name: "Доктор Мунира",
+        name: "Доктор Акмал",
         role: "Руководитель клиники · Мирзо-Улугбек",
         product: "ClinicaGo + HamshiraGo",
         headline: "Очередь сократилась на 40%, лояльность пациентов 2x",
@@ -181,7 +181,7 @@ const COPY: Record<Lang, CopyShape> = {
         metricCaption: "replaces accountant salary",
       },
       "munira-clinic": {
-        name: "Dr. Munira",
+        name: "Dr. Akmal",
         role: "Clinic director · Mirzo Ulugbek",
         product: "ClinicaGo + HamshiraGo",
         headline: "Queue time down 40%, patient loyalty 2x",
@@ -223,8 +223,8 @@ const COPY: Record<Lang, CopyShape> = {
         metricCaption: "بدل راتب المحاسب",
       },
       "munira-clinic": {
-        name: "د. منيرة",
-        role: "مديرة عيادة · ميرزو أولوغبيك",
+        name: "د. أكمل",
+        role: "مدير عيادة · ميرزو أولوغبيك",
         product: "ClinicaGo + HamshiraGo",
         headline: "تقليل وقت الانتظار 40٪، ولاء المرضى ضعفان",
         metric: "−40٪ انتظار",
@@ -264,7 +264,7 @@ const COPY: Record<Lang, CopyShape> = {
         metricCaption: "замість зарплати бухгалтера",
       },
       "munira-clinic": {
-        name: "Доктор Муніра",
+        name: "Доктор Акмал",
         role: "Керівник клініки · Мірзо-Улугбек",
         product: "ClinicaGo + HamshiraGo",
         headline: "Черга скоротилася на 40%, лояльність пацієнтів 2x",

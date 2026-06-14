@@ -20,7 +20,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
     title: "1. Biz kim?",
     body: [
       'Tezcode AI ("biz", "Tezcode") — Toshkent, O\'zbekistonda joylashgan AI mahsulotlari ishlab chiqaruvchi kompaniya. Saytimiz tezcode.dev.',
-      'Aloqa: hello@tezcode.dev · Telegram: @webdevelopertk',
+      'Aloqa: tezcode@tezcode.dev · Telegram: @webdevelopertk',
     ],
   },
   {
@@ -69,7 +69,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
       "• Ishlov berishni cheklash.",
       "• Ma'lumotni boshqa servisga ko'chirish.",
       "• Rozilikni istalgan vaqt qaytarib olish.",
-      "Murojaat: hello@tezcode.dev — 30 kun ichida javob beramiz.",
+      "Murojaat: tezcode@tezcode.dev — 30 kun ichida javob beramiz.",
     ],
   },
   {
@@ -95,7 +95,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
   {
     title: "10. Aloqa",
     body: [
-      "Maxfiylik bo'yicha savollar: hello@tezcode.dev",
+      "Maxfiylik bo'yicha savollar: tezcode@tezcode.dev",
       "Telegram: @webdevelopertk",
       "Pochta: Toshkent, O'zbekiston (manzilingizni so'rasangiz alohida yuboramiz).",
     ],

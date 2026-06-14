@@ -48,7 +48,7 @@ const FACTS = [
   { label: "Founded", value: "2024" },
   { label: "HQ", value: "Toshkent, O'zbekiston" },
   { label: "Founder", value: "Bekzod Mirzaaliyev" },
-  { label: "Team", value: "14 ta dasturchi" },
+  { label: "Team", value: "16 ta dasturchi" },
   { label: "Products", value: "8 ta (3 live, 5 R&D)" },
   { label: "Divisions", value: "6 (Systems / Custom / AI / Teams / Labs / Academy)" },
   { label: "Languages", value: "UZ · RU · EN · AR · UK" },
@@ -219,10 +219,10 @@ export default function PressPage() {
                   Telegram: @webdevelopertk
                 </a>
                 <a
-                  href="mailto:hello@tezcode.dev"
+                  href="mailto:tezcode@tezcode.dev"
                   className="block text-[var(--tc-text-secondary)] hover:text-[var(--tc-blue-text)]"
                 >
-                  Email: hello@tezcode.dev
+                  Email: tezcode@tezcode.dev
                 </a>
               </div>
             </div>

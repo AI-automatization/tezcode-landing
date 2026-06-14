@@ -142,7 +142,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "TezCode Teams · Staff Augmentation",
       headline: "Hire senior developers from Tashkent — from $30/hr",
       subhead:
-        "AI-skilled, English/Russian fluent, EST overlap 5 hours, vetted in-house team of 14. No agencies, no middlemen.",
+        "AI-skilled, English/Russian fluent, EST overlap 5 hours, vetted in-house team of 16. No agencies, no middlemen.",
       ctaPrimary: "Book intro call",
       ctaSecondary: "View team profiles",
       statDevs: "in-house devs",
@@ -170,11 +170,11 @@ const COPY: Record<Lang, Copy> = {
     highlights: {
       sectionTag: "Why Tashkent",
       title: "Four reasons foreign founders pick our team",
-      subtitle: "We are not a marketplace. 14 senior engineers, all in-house, vetted by the CEO himself.",
+      subtitle: "We are not a marketplace. 16 senior engineers, all in-house, vetted by the CEO himself.",
       items: [
         {
           icon: "01",
-          title: "14 in-house senior devs",
+          title: "16 in-house senior devs",
           desc: "Not freelancers. Full-time team trained on AI tooling (Claude, ChatGPT), pair-coded by Bekzod Mirzaaliyev (CEO).",
         },
         {
@@ -353,7 +353,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           q: "How good is the English?",
-          a: "B2–C1 across all 14 engineers. Daily standups, code reviews, and async docs all happen in English. CEO Bekzod is C1 fluent for executive-level calls.",
+          a: "B2–C1 across all 16 engineers. Daily standups, code reviews, and async docs all happen in English. CEO Bekzod is C1 fluent for executive-level calls.",
         },
         {
           q: "How do contracts and invoicing work?",
@@ -384,7 +384,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "TezCode Teams · Dasturchi ijarasi",
       headline: "Toshkentdan senior dasturchi yollang — $30/soat'dan",
       subhead:
-        "AI bilan ishlay oladigan, ingliz/rus tilini biladigan, EST timezone 5 soat mos keladigan 14 ta jamoa. Vositachi yo'q, agentlik yo'q.",
+        "AI bilan ishlay oladigan, ingliz/rus tilini biladigan, EST timezone 5 soat mos keladigan 16 ta jamoa. Vositachi yo'q, agentlik yo'q.",
       ctaPrimary: "Tanishuv qo'ng'irog'i",
       ctaSecondary: "Jamoa profillarini ko'rish",
       statDevs: "in-house dasturchi",
@@ -412,11 +412,11 @@ const COPY: Record<Lang, Copy> = {
     highlights: {
       sectionTag: "Nega Toshkent",
       title: "Xorijiy mijozlar bizni tanlaydigan 4 sabab",
-      subtitle: "Biz marketplace (bozor platforma) emasmiz. 14 ta senior dasturchi, hammasi in-house (ichki jamoa), CEO shaxsan tekshirgan.",
+      subtitle: "Biz marketplace (bozor platforma) emasmiz. 16 ta senior dasturchi, hammasi in-house (ichki jamoa), CEO shaxsan tekshirgan.",
       items: [
         {
           icon: "01",
-          title: "14 ta in-house senior dasturchi",
+          title: "16 ta in-house senior dasturchi",
           desc: "Freelancer (mustaqil dasturchi) emas. Full-time (to'liq kun) jamoa, AI vositalari (Claude, ChatGPT) bilan o'rgatilgan, Bekzod Mirzaaliyev (CEO) bilan pair-code qilingan.",
         },
         {
@@ -595,7 +595,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           q: "Ingliz tili darajasi qanday?",
-          a: "Hamma 14 dasturchida B2–C1. Kunlik standup, code review, async hujjat hammasi ingliz tilida. CEO Bekzod C1 — yuqori darajadagi qo'ng'iroq'lar uchun.",
+          a: "Hamma 16 dasturchida B2–C1. Kunlik standup, code review, async hujjat hammasi ingliz tilida. CEO Bekzod C1 — yuqori darajadagi qo'ng'iroq'lar uchun.",
         },
         {
           q: "Shartnoma va invoice qanday ishlaydi?",
@@ -626,7 +626,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "TezCode Teams · Аренда разработчиков",
       headline: "Нанимайте senior-разработчиков из Ташкента — от $30/час",
       subhead:
-        "AI-навыки, английский/русский свободно, пересечение с EST 5 часов, проверенная in-house команда из 14 инженеров. Без агентств, без посредников.",
+        "AI-навыки, английский/русский свободно, пересечение с EST 5 часов, проверенная in-house команда из 16 инженеров. Без агентств, без посредников.",
       ctaPrimary: "Записаться на звонок",
       ctaSecondary: "Профили команды",
       statDevs: "in-house разработчиков",
@@ -654,11 +654,11 @@ const COPY: Record<Lang, Copy> = {
     highlights: {
       sectionTag: "Почему Ташкент",
       title: "Четыре причины выбора иностранными основателями",
-      subtitle: "Мы не маркетплейс. 14 senior-инженеров in-house, лично проверенных CEO.",
+      subtitle: "Мы не маркетплейс. 16 senior-инженеров in-house, лично проверенных CEO.",
       items: [
         {
           icon: "01",
-          title: "14 senior in-house",
+          title: "16 senior in-house",
           desc: "Не фрилансеры. Full-time команда, обученная AI-инструментам (Claude, ChatGPT), pair-coded с Бекзодом Мирзаалиевым (CEO).",
         },
         {
@@ -771,7 +771,7 @@ const COPY: Record<Lang, Copy> = {
       items: [
         { q: "Когда можно начать?", a: "1–2 недели. Неделя 1: intake + матчинг + интервью. Неделя 2: договор + onboarding (Slack, Linear, GitHub). Большинство клиентов видят разработчика на standup в 8-й день." },
         { q: "Что с timezone?", a: "Ташкент GMT+5. С восточным побережьем США пересекаемся 5 часов (15:00–20:00 EST), с западным — 4 часа. Полное пересечение с Европой и Британией." },
-        { q: "Какой уровень английского?", a: "B2–C1 у всех 14 инженеров. Ежедневные standup, code review, async-документация — на английском. CEO Бекзод — C1." },
+        { q: "Какой уровень английского?", a: "B2–C1 у всех 16 инженеров. Ежедневные standup, code review, async-документация — на английском. CEO Бекзод — C1." },
         { q: "Как с договорами и инвойсами?", a: "Tezcode — резидент IT Park. Стандартный USD-инвойс от зарегистрированной компании. Wire transfer или Stripe. Стандартный MSA + SOW или подпишем ваш." },
         { q: "Если разработчик не подошёл?", a: "2 недели trial с полным возвратом. После — замена за 5 рабочих дней бесплатно. У нас bench (резерв), а не маркетплейс." },
         { q: "Кому принадлежит код / IP?", a: "Вам, полностью. NDA подписывается до начала работы. Все IP передаются клиенту после оплаты. Личный IP transfer + NDA на уровне компании." },
@@ -792,7 +792,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "TezCode Teams · تعيين المطورين",
       headline: "وظف مطورين كبار من طشقند — من 30 دولاراً في الساعة",
       subhead:
-        "بمهارات الذكاء الاصطناعي، إجادة الإنجليزية والروسية، تقاطع 5 ساعات مع توقيت EST، فريق داخلي مدقق من 14 مهندساً. بدون وكالات أو وسطاء.",
+        "بمهارات الذكاء الاصطناعي، إجادة الإنجليزية والروسية، تقاطع 5 ساعات مع توقيت EST، فريق داخلي مدقق من 16 مهندساً. بدون وكالات أو وسطاء.",
       ctaPrimary: "احجز مكالمة تعارف",
       ctaSecondary: "عرض ملفات الفريق",
       statDevs: "مطور داخلي",
@@ -820,9 +820,9 @@ const COPY: Record<Lang, Copy> = {
     highlights: {
       sectionTag: "لماذا طشقند",
       title: "أربعة أسباب يختارنا بها المؤسسون الأجانب",
-      subtitle: "نحن لسنا سوقاً. 14 مهندساً داخلياً تم تدقيقهم من قبل المدير التنفيذي شخصياً.",
+      subtitle: "نحن لسنا سوقاً. 16 مهندساً داخلياً تم تدقيقهم من قبل المدير التنفيذي شخصياً.",
       items: [
-        { icon: "01", title: "14 مطوراً داخلياً", desc: "ليسوا مستقلين. فريق full-time مدرَّب على أدوات AI، تم pair-code مع المدير التنفيذي." },
+        { icon: "01", title: "16 مطوراً داخلياً", desc: "ليسوا مستقلين. فريق full-time مدرَّب على أدوات AI، تم pair-code مع المدير التنفيذي." },
         { icon: "02", title: "إنجليزية / روسية", desc: "B2–C1 إنجليزية. اجتماعات يومية بالإنجليزية. جميع الكوميتات والمستندات بالإنجليزية." },
         { icon: "03", title: "GMT+5 — 5س مع EST", desc: "تقاطع حقيقي مع الساحل الشرقي للولايات المتحدة. أفضل من الهند للعمل المتزامن." },
         { icon: "04", title: "IT Park — مستقر قانونياً", desc: "Tezcode مقيم في IT Park (برنامج حكومي أوزبكي). فواتير USD، NDA قياسي + نقل IP." },
@@ -920,7 +920,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "TezCode Teams · Оренда розробників",
       headline: "Найміть senior-розробників з Ташкента — від $30/год",
       subhead:
-        "AI-навички, вільні англійська / російська, перетин 5 годин з EST, перевірена in-house команда з 14 інженерів. Без агенцій, без посередників.",
+        "AI-навички, вільні англійська / російська, перетин 5 годин з EST, перевірена in-house команда з 16 інженерів. Без агенцій, без посередників.",
       ctaPrimary: "Записатися на дзвінок",
       ctaSecondary: "Профілі команди",
       statDevs: "in-house розробників",
@@ -947,9 +947,9 @@ const COPY: Record<Lang, Copy> = {
     highlights: {
       sectionTag: "Чому Ташкент",
       title: "Чотири причини вибору іноземними засновниками",
-      subtitle: "Ми не маркетплейс. 14 senior-інженерів in-house, особисто перевірених CEO.",
+      subtitle: "Ми не маркетплейс. 16 senior-інженерів in-house, особисто перевірених CEO.",
       items: [
-        { icon: "01", title: "14 senior in-house", desc: "Не фрилансери. Full-time команда, навчена AI-інструментам, pair-coded з Бекзодом (CEO)." },
+        { icon: "01", title: "16 senior in-house", desc: "Не фрилансери. Full-time команда, навчена AI-інструментам, pair-coded з Бекзодом (CEO)." },
         { icon: "02", title: "Англійська / російська", desc: "B2–C1 у всій команді. Щоденні standup англійською. Усі commit, PR, документація англійською." },
         { icon: "03", title: "GMT+5 — 5г EST", desc: "Реальне перетинання зі східним узбережжям США. Краще за Індію для sync-роботи." },
         { icon: "04", title: "IT Park — юридично стабільно", desc: "Tezcode — резидент IT Park. USD інвойси, 7 років податкових пільг, стандартний NDA + IP transfer." },
@@ -1027,7 +1027,7 @@ const COPY: Record<Lang, Copy> = {
       items: [
         { q: "Коли можемо почати?", a: "1–2 тижні. Тиждень 1: intake + матчинг + інтерв'ю. Тиждень 2: договір + onboarding." },
         { q: "Що з timezone?", a: "Ташкент GMT+5. Зі східним узбережжям США перетин 5 годин, із західним — 4. Повний перетин з Європою." },
-        { q: "Який рівень англійської?", a: "B2–C1 у всіх 14 інженерів. Щоденні standup, code review, документація — англійською." },
+        { q: "Який рівень англійської?", a: "B2–C1 у всіх 16 інженерів. Щоденні standup, code review, документація — англійською." },
         { q: "Як з контрактами та інвойсами?", a: "Tezcode — резидент IT Park. Стандартний USD-інвойс. Wire transfer або Stripe." },
         { q: "Якщо розробник не підійшов?", a: "2 тижні trial з повним поверненням. Заміна за 5 робочих днів безкоштовно." },
         { q: "Кому належить код / IP?", a: "Вам, повністю. NDA до початку роботи. Усі IP передаються після оплати." },
@@ -1198,7 +1198,7 @@ function HeroSection({ t }: { t: Copy }) {
 
 function HeroStats({ t }: { t: Copy }) {
   const stats: { value: number; suffix: string; label: string }[] = [
-    { value: 14, suffix: "", label: t.hero.statDevs },
+    { value: 16, suffix: "", label: t.hero.statDevs },
     { value: 30, suffix: "+", label: t.hero.statRate },
     { value: 5, suffix: "h", label: t.hero.statTimezone },
     { value: 12, suffix: "+", label: t.hero.statClients },

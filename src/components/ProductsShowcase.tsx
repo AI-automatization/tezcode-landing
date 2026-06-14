@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 import { Tilt3D } from "@/components/motion/Tilt3D";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
+import { Link } from "@/i18n/routing";
 
 type ProductKey =
   | "raos"
@@ -37,6 +38,49 @@ const DIVISION_COLOR: Record<string, string> = {
   AI: "text-purple-400",
   Labs: "text-orange-400",
 };
+
+// Products that have a dedicated on-site landing page. The card links here
+// (internal) instead of the external product site, so each landing page gets a
+// strong internal link (better crawl/indexing) and visitors get a proper funnel.
+const LANDING_MAP: Partial<Record<ProductKey, string>> = {
+  raos: "/pos-tizimi",
+  hamshirago: "/klinika-crm",
+  workcontrol: "/xodim-nazorati",
+};
+
+// Picks an internal Link (locale-aware) for products with a landing page,
+// otherwise a plain external/anchor link to the product site.
+function CardLink({
+  landing,
+  url,
+  isExternal,
+  className,
+  children,
+}: {
+  landing?: string;
+  url: string;
+  isExternal: boolean;
+  className: string;
+  children: React.ReactNode;
+}) {
+  if (landing) {
+    return (
+      <Link href={landing} className={className}>
+        {children}
+      </Link>
+    );
+  }
+  return (
+    <a
+      href={url}
+      target={isExternal ? "_blank" : undefined}
+      rel={isExternal ? "noopener noreferrer" : undefined}
+      className={className}
+    >
+      {children}
+    </a>
+  );
+}
 
 const PRODUCTION: ProductKey[] = ["raos", "ai_office", "hamshirago"];
 const FUTURE: ProductKey[] = [
@@ -157,17 +201,18 @@ function ProductCardLarge({
   const statusClass = STATUS_STYLE[status] ?? STATUS_STYLE.Beta;
   const divisionColor = DIVISION_COLOR[division] ?? "text-[var(--tc-text-muted)]";
 
-  const isExternal = url.startsWith("http");
+  const landing = LANDING_MAP[product];
+  const isExternal = !landing && url.startsWith("http");
 
   return (
     <Tilt3D
       intensity={7}
       className="group rounded-[var(--tc-radius-lg)] h-full"
     >
-      <a
-        href={url}
-        target={isExternal ? "_blank" : undefined}
-        rel={isExternal ? "noopener noreferrer" : undefined}
+      <CardLink
+        landing={landing}
+        url={url}
+        isExternal={isExternal}
         className="relative block p-8 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:bg-[var(--tc-surface-3)] hover:border-[var(--tc-border-bright)] transition-colors duration-300 h-full flex flex-col overflow-hidden"
       >
         {/* Shimmer top edge */}
@@ -220,7 +265,7 @@ function ProductCardLarge({
             {division}
           </span>
           <span className="text-[var(--tc-blue-text)] opacity-60 group-hover:opacity-100 transition-opacity flex items-center gap-1.5 font-500">
-            {isExternal ? "Saytga" : "Demo so'rang"}
+            {landing ? "Batafsil" : isExternal ? "Saytga" : "Demo so'rang"}
             <svg
               className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"
               viewBox="0 0 16 16"
@@ -232,7 +277,7 @@ function ProductCardLarge({
             </svg>
           </span>
         </div>
-      </a>
+      </CardLink>
     </Tilt3D>
   );
 }
@@ -254,16 +299,15 @@ function ProductCardSmall({
   const statusClass = STATUS_STYLE[status] ?? STATUS_STYLE.Beta;
   const divisionColor = DIVISION_COLOR[division] ?? "text-[var(--tc-text-muted)]";
 
-  const isExternal = url.startsWith("http");
+  const landing = LANDING_MAP[product];
+  const isExternal = !landing && url.startsWith("http");
 
   return (
-    <motion.a
-      href={url}
-      target={isExternal ? "_blank" : undefined}
-      rel={isExternal ? "noopener noreferrer" : undefined}
-      whileHover={{ y: -4, scale: 1.02 }}
-      transition={{ duration: 0.2 }}
-      className="group relative block p-4 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:bg-[var(--tc-surface-3)] hover:border-[var(--tc-border-bright)] transition-colors h-full flex flex-col"
+    <CardLink
+      landing={landing}
+      url={url}
+      isExternal={isExternal}
+      className="group relative block p-4 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:bg-[var(--tc-surface-3)] hover:border-[var(--tc-border-bright)] transition-colors hover:-translate-y-1 duration-200 h-full flex flex-col"
     >
       <div className="flex items-start justify-between mb-3">
         <div className="w-9 h-9 rounded-[var(--tc-radius-sm)] bg-[var(--tc-surface-0)] flex items-center justify-center text-lg">
@@ -284,6 +328,6 @@ function ProductCardSmall({
         {name}
       </h3>
       <p className={`text-[10px] font-500 ${divisionColor}`}>{tagline}</p>
-    </motion.a>
+    </CardLink>
   );
 }

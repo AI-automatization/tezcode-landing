@@ -105,6 +105,13 @@ export async function generateMetadata({
       },
     },
     category: "Technology",
+    // Geo meta tags — pin Tezcode's Tashkent office for local search engines.
+    other: {
+      "geo.region": "UZ-TK",
+      "geo.placename": "Tashkent",
+      "geo.position": "41.366927;69.286331",
+      "ICBM": "41.366927, 69.286331",
+    },
   };
 }
 

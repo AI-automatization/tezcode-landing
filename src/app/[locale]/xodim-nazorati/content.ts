@@ -1,0 +1,407 @@
+import type { ServicePageContent } from "@/components/service-page/types";
+
+// Content for /xodim-nazorati — target keywords: "xodim nazorati", "xodimlar nazorati tizimi",
+// "ish vaqti nazorati", "vazifa boshqaruv", "контроль сотрудников", "учёт рабочего времени",
+// "employee monitoring". Product: WorkControl. Only confirmed facts. No fabricated metrics.
+export const CONTENT: ServicePageContent = {
+  uz: {
+    hero: {
+      badge: "Xodim nazorati — WorkControl · Tezcode",
+      title1: "Jamoangiz uchun",
+      titleAccent: "ish nazorati — WorkControl",
+      title2: "",
+      subtitle:
+        "Vazifalar, ish vaqti, davomat va hisobot bitta dashboardda. WorkControl xodimlar nima qilayotganini va kim qancha ulgurganini aniq ko'rsatadi — taxminsiz.",
+      trust: "Bepul demo • Toshkent va butun O'zbekiston • To'lov MVP tayyor bo'lganda",
+      ctaPrimary: "Bepul demo so'rang",
+      ctaSecondary: "WorkControl nima qila oladi?",
+    },
+    capabilities: {
+      badge: "Imkoniyatlar",
+      title: "WorkControl",
+      titleAccent: "nima qila oladi?",
+      subtitle:
+        "Vazifa berishdan hisobotgacha — jamoa ishini bitta joydan boshqaring.",
+      items: [
+        { icon: "✅", title: "Vazifa boshqaruvi", desc: "Vazifa berish, muddat, mas'ul va holat (bajarilmoqda / tugadi). Hech bir topshiriq yo'qolmaydi." },
+        { icon: "⏱", title: "Ish vaqti va davomat", desc: "Kim qachon ish boshladi/tugatdi, davomat va kechikish. Aniq vaqt hisobi, qog'ozsiz." },
+        { icon: "📈", title: "Samaradorlik (KPI)", desc: "Har xodim nechta vazifa bajardi, qancha vaqtda. Kim ulguryapti, kim ortda — aniq raqamda." },
+        { icon: "🗂", title: "Loyiha va bo'limlar", desc: "Vazifalarni loyiha, bo'lim yoki jamoa bo'yicha guruhlash. Katta jamoa ham tartibli." },
+        { icon: "🔔", title: "Eslatma va bildirishnoma", desc: "Muddat yaqinlashganda yoki vazifa o'zgarganda avtomatik xabar — Telegram orqali ham." },
+        { icon: "📊", title: "Rahbar hisoboti", desc: "Kunlik/haftalik hisobot: bajarilgan ish, kechikish, yuklama. Rahbar bir qarashda holatni ko'radi." },
+      ],
+    },
+    process: {
+      badge: "Qanday boshlaymiz",
+      title: "4 qadamda",
+      titleAccent: "tartibli jamoaga",
+      subtitle: "Birinchi demo bepul. Keyin har qadam aniq narx va aniq muddat bilan.",
+      steps: [
+        { num: "01", title: "Bepul demo", desc: "Jamoangiz qanday ishlashini o'rganamiz, WorkControl'ni jonli ko'rsatamiz. Majburiyat yo'q.", icon: "💬" },
+        { num: "02", title: "Sozlash", desc: "Bo'limlar, rollar, vazifa turlari va hisobotlar — jamoangizga moslab sozlaymiz.", icon: "🔧" },
+        { num: "03", title: "O'rgatish", desc: "Xodim va rahbarlarni o'rgatamiz. Interfeys sodda — tez o'rganiladi.", icon: "⚡" },
+        { num: "04", title: "Ishga tushirish + qo'llab-quvvatlash", desc: "Jonli ishga tushiramiz, ishlashini kuzatamiz va doimo qo'llab-quvvatlaymiz.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "Kimlar uchun",
+      title: "WorkControl qaysi",
+      titleAccent: "jamoalar uchun?",
+      subtitle: "Ofis, masofaviy yoki aralash jamoa — hammasi uchun.",
+      items: [
+        { tag: "01", title: "Ofis jamoalari", desc: "Vazifa, muddat, davomat va hisobot — rahbar har kuni holatdan xabardor." },
+        { tag: "02", title: "Masofaviy / remote jamoa", desc: "Kim nima ustida ishlayapti, qancha ulgurdi — masofadan ham aniq ko'rinadi." },
+        { tag: "03", title: "Filiallar va xizmat ko'rsatish", desc: "Bir nechta nuqta yoki brigadaning ishini markazdan kuzatish." },
+        { tag: "04", title: "Loyiha jamoalari", desc: "Loyiha bo'yicha vazifa taqsimoti, muddat nazorati va yuklama balansi." },
+      ],
+    },
+    cta: {
+      badge: "Boshlash vaqti",
+      title: "Jamoa ishini",
+      titleAccent: "tartibga solamizmi?",
+      subtitle: "Bepul demoda WorkControl sizning jamoangizda qanday ishlashini ko'rasiz. Majburiyat yo'q.",
+      button: "Telegram'da gaplashish",
+      note: "Yoki tezcode@tezcode.dev ga yozing — Bekzod bilan bevosita bog'lanasiz.",
+    },
+    faq: {
+      badge: "Tez-tez beriladigan savollar",
+      title: "Savol va",
+      titleAccent: "javoblar",
+      subtitle: "WorkControl xodim nazorati tizimi haqida ko'p so'raladigan savollar.",
+      items: [
+        { q: "WorkControl aniq nimani nazorat qiladi?", a: "Vazifalar (kim, nima, qachongacha), ish vaqti va davomat, hamda har xodimning samaradorligini. Maqsad — josuslik emas, balki ish jarayonini shaffof va tartibli qilish." },
+        { q: "Masofaviy jamoa uchun ham ishlaydimi?", a: "Ha. Kim qaysi vazifa ustida ishlayapti va qancha ulgurdi — ofisdan ham, masofadan ham bir xil aniq ko'rinadi." },
+        { q: "Telegram'ga eslatma yuboradimi?", a: "Ha. Muddat yaqinlashganda yoki vazifa o'zgarganda xodim va rahbarga avtomatik bildirishnoma boradi (Telegram orqali ham)." },
+        { q: "Rahbar uchun qanday hisobot bor?", a: "Kunlik va haftalik hisobot: bajarilgan vazifalar, kechikishlar, har xodim yuklamasi. Rahbar bir qarashda jamoaning holatini ko'radi." },
+        { q: "Qancha vaqtda ishga tushadi?", a: "Sozlash va o'rgatish odatda bir necha kun. Jamoa hajmiga qarab aniq muddatni demodan keyin aytamiz." },
+        { q: "Narxi qancha?", a: "WorkControl obuna asosida, xodimlar soniga bog'liq. Aniq narxni bepul demodan keyin taklif qilamiz." },
+      ],
+    },
+    service: {
+      name: "WorkControl — xodimlar ish nazorati tizimi | Tezcode",
+      description:
+        "Xodimlar ish nazorati tizimi WorkControl: vazifa boshqaruvi, ish vaqti va davomat, samaradorlik (KPI), rahbar hisoboti, Telegram bildirishnoma. Toshkent va butun O'zbekiston.",
+      serviceType: "Xodim nazorati / vazifa va ish vaqti boshqaruvi",
+    },
+  },
+
+  ru: {
+    hero: {
+      badge: "Контроль сотрудников — WorkControl · Tezcode",
+      title1: "Контроль работы",
+      titleAccent: "вашей команды — WorkControl",
+      title2: "",
+      subtitle:
+        "Задачи, рабочее время, посещаемость и отчёты в одном дашборде. WorkControl точно показывает, кто чем занят и сколько успел — без догадок.",
+      trust: "Бесплатное демо • Ташкент и весь Узбекистан • Оплата после готового MVP",
+      ctaPrimary: "Запросить демо",
+      ctaSecondary: "Что умеет WorkControl?",
+    },
+    capabilities: {
+      badge: "Возможности",
+      title: "Что умеет",
+      titleAccent: "WorkControl?",
+      subtitle: "От постановки задачи до отчёта — управляйте работой команды из одного места.",
+      items: [
+        { icon: "✅", title: "Управление задачами", desc: "Постановка задач, сроки, ответственный и статус (в работе / готово). Ни одно поручение не теряется." },
+        { icon: "⏱", title: "Рабочее время и посещаемость", desc: "Кто когда начал/закончил, посещаемость и опоздания. Точный учёт времени, без бумаги." },
+        { icon: "📈", title: "Эффективность (KPI)", desc: "Сколько задач выполнил каждый сотрудник и за какое время. Кто успевает, кто отстаёт — в цифрах." },
+        { icon: "🗂", title: "Проекты и отделы", desc: "Группировка задач по проекту, отделу или команде. Даже большая команда под контролем." },
+        { icon: "🔔", title: "Напоминания и уведомления", desc: "Авто-уведомление при приближении срока или изменении задачи — в том числе в Telegram." },
+        { icon: "📊", title: "Отчёт руководителю", desc: "Дневной/недельный отчёт: выполненное, опоздания, загрузка. Руководитель видит состояние с одного взгляда." },
+      ],
+    },
+    process: {
+      badge: "Как начинаем",
+      title: "4 шага до",
+      titleAccent: "упорядоченной команды",
+      subtitle: "Первое демо бесплатно. Дальше каждый шаг с точной ценой и сроком.",
+      steps: [
+        { num: "01", title: "Бесплатное демо", desc: "Изучаем, как работает команда, показываем WorkControl вживую. Без обязательств.", icon: "💬" },
+        { num: "02", title: "Настройка", desc: "Отделы, роли, типы задач и отчёты — настроим под вашу команду.", icon: "🔧" },
+        { num: "03", title: "Обучение", desc: "Обучим сотрудников и руководителей. Интерфейс простой — учится быстро.", icon: "⚡" },
+        { num: "04", title: "Запуск + поддержка", desc: "Запускаем, следим за работой и всегда поддерживаем.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "Для кого",
+      title: "Для каких",
+      titleAccent: "команд WorkControl?",
+      subtitle: "Офис, удалёнка или смешанная команда — для всех.",
+      items: [
+        { tag: "01", title: "Офисные команды", desc: "Задачи, сроки, посещаемость и отчёты — руководитель в курсе каждый день." },
+        { tag: "02", title: "Удалённая команда", desc: "Кто над чем работает и сколько успел — точно видно и на расстоянии." },
+        { tag: "03", title: "Филиалы и сервис", desc: "Контроль работы нескольких точек или бригад из центра." },
+        { tag: "04", title: "Проектные команды", desc: "Распределение задач по проекту, контроль сроков и баланс загрузки." },
+      ],
+    },
+    cta: {
+      badge: "Время начать",
+      title: "Наведём порядок",
+      titleAccent: "в работе команды?",
+      subtitle: "На бесплатном демо увидите, как WorkControl работает в вашей команде. Без обязательств.",
+      button: "Написать в Telegram",
+      note: "Или напишите на tezcode@tezcode.dev — свяжетесь напрямую с Бекзодом.",
+    },
+    faq: {
+      badge: "Частые вопросы",
+      title: "Вопросы и",
+      titleAccent: "ответы",
+      subtitle: "Частые вопросы о системе контроля сотрудников WorkControl.",
+      items: [
+        { q: "Что именно контролирует WorkControl?", a: "Задачи (кто, что, к какому сроку), рабочее время и посещаемость, а также эффективность каждого сотрудника. Цель — не слежка, а прозрачность и порядок в работе." },
+        { q: "Работает ли для удалённой команды?", a: "Да. Кто над какой задачей работает и сколько успел — одинаково точно видно и в офисе, и удалённо." },
+        { q: "Отправляет ли уведомления в Telegram?", a: "Да. При приближении срока или изменении задачи сотрудник и руководитель получают авто-уведомление (в том числе в Telegram)." },
+        { q: "Какие отчёты для руководителя?", a: "Дневные и недельные: выполненные задачи, опоздания, загрузка каждого сотрудника. Руководитель видит состояние команды с одного взгляда." },
+        { q: "Сколько времени до запуска?", a: "Настройка и обучение обычно несколько дней. Точный срок зависит от размера команды — скажем после демо." },
+        { q: "Сколько стоит?", a: "WorkControl по подписке, зависит от числа сотрудников. Точную цену дадим после бесплатного демо." },
+      ],
+    },
+    service: {
+      name: "WorkControl — система контроля сотрудников | Tezcode",
+      description:
+        "Система контроля сотрудников WorkControl: управление задачами, рабочее время и посещаемость, эффективность (KPI), отчёт руководителю, уведомления в Telegram. Ташкент и весь Узбекистан.",
+      serviceType: "Контроль сотрудников / управление задачами и временем",
+    },
+  },
+
+  en: {
+    hero: {
+      badge: "Employee monitoring — WorkControl · Tezcode",
+      title1: "Work tracking for",
+      titleAccent: "your team — WorkControl",
+      title2: "",
+      subtitle:
+        "Tasks, work time, attendance and reports in one dashboard. WorkControl shows exactly who is doing what and how much they've done — no guessing.",
+      trust: "Free demo • Tashkent and all of Uzbekistan • Pay after MVP is delivered",
+      ctaPrimary: "Request a demo",
+      ctaSecondary: "What can WorkControl do?",
+    },
+    capabilities: {
+      badge: "Capabilities",
+      title: "What can",
+      titleAccent: "WorkControl do?",
+      subtitle: "From assigning a task to the report — manage your team's work from one place.",
+      items: [
+        { icon: "✅", title: "Task management", desc: "Assign tasks, deadlines, owner and status (in progress / done). No assignment slips through." },
+        { icon: "⏱", title: "Work time & attendance", desc: "Who started/finished when, attendance and lateness. Accurate time tracking, paperless." },
+        { icon: "📈", title: "Performance (KPI)", desc: "How many tasks each person completed and in what time. Who's keeping up, who's behind — in numbers." },
+        { icon: "🗂", title: "Projects & departments", desc: "Group tasks by project, department or team. Even a large team stays organized." },
+        { icon: "🔔", title: "Reminders & notifications", desc: "Auto-notify when a deadline nears or a task changes — including via Telegram." },
+        { icon: "📊", title: "Manager report", desc: "Daily/weekly report: work done, lateness, workload. A manager sees the state at a glance." },
+      ],
+    },
+    process: {
+      badge: "How we start",
+      title: "4 steps to an",
+      titleAccent: "organized team",
+      subtitle: "The first demo is free. Then every step has a clear price and timeline.",
+      steps: [
+        { num: "01", title: "Free demo", desc: "We study how your team works and show WorkControl live. No obligations.", icon: "💬" },
+        { num: "02", title: "Setup", desc: "Departments, roles, task types and reports — configured for your team.", icon: "🔧" },
+        { num: "03", title: "Training", desc: "We train staff and managers. The interface is simple — learned fast.", icon: "⚡" },
+        { num: "04", title: "Launch + support", desc: "We go live, monitor it, and support you continuously.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "Who it's for",
+      title: "Which teams",
+      titleAccent: "is WorkControl for?",
+      subtitle: "Office, remote or hybrid team — for all of them.",
+      items: [
+        { tag: "01", title: "Office teams", desc: "Tasks, deadlines, attendance and reports — the manager stays informed daily." },
+        { tag: "02", title: "Remote team", desc: "Who's working on what and how much they've done — clearly visible from afar too." },
+        { tag: "03", title: "Branches & field service", desc: "Track the work of several locations or crews from the center." },
+        { tag: "04", title: "Project teams", desc: "Task distribution per project, deadline control and workload balance." },
+      ],
+    },
+    cta: {
+      badge: "Time to start",
+      title: "Bring order to",
+      titleAccent: "your team's work?",
+      subtitle: "In a free demo you'll see how WorkControl works in your team. No obligations.",
+      button: "Message on Telegram",
+      note: "Or email tezcode@tezcode.dev — you reach Bekzod directly.",
+    },
+    faq: {
+      badge: "Frequently asked",
+      title: "Questions &",
+      titleAccent: "answers",
+      subtitle: "Common questions about the WorkControl employee monitoring system.",
+      items: [
+        { q: "What exactly does WorkControl track?", a: "Tasks (who, what, by when), work time and attendance, and each employee's performance. The goal is transparency and order in the workflow — not surveillance." },
+        { q: "Does it work for a remote team?", a: "Yes. Who's working on which task and how much they've done is equally clear in the office and remotely." },
+        { q: "Does it send Telegram notifications?", a: "Yes. When a deadline nears or a task changes, the employee and manager get an auto-notification (including via Telegram)." },
+        { q: "What reports does the manager get?", a: "Daily and weekly: completed tasks, lateness, each employee's workload. The manager sees the team's state at a glance." },
+        { q: "How long until it's running?", a: "Setup and training usually take a few days. The exact timeline depends on team size — we'll tell you after the demo." },
+        { q: "How much does it cost?", a: "WorkControl is subscription-based, depending on the number of employees. We give an exact price after the free demo." },
+      ],
+    },
+    service: {
+      name: "WorkControl — employee work tracking | Tezcode",
+      description:
+        "WorkControl employee monitoring system: task management, work time and attendance, performance (KPI), manager reports, Telegram notifications. Tashkent and all of Uzbekistan.",
+      serviceType: "Employee monitoring / task and time management",
+    },
+  },
+
+  ar: {
+    hero: {
+      badge: "مراقبة الموظفين — WorkControl · Tezcode",
+      title1: "متابعة عمل",
+      titleAccent: "فريقك — WorkControl",
+      title2: "",
+      subtitle:
+        "المهام ووقت العمل والحضور والتقارير في لوحة واحدة. يُظهر WorkControl بدقة من يفعل ماذا وكم أنجز — دون تخمين.",
+      trust: "عرض تجريبي مجاني • طشقند وكل أوزبكستان • الدفع بعد تسليم MVP",
+      ctaPrimary: "اطلب عرضاً تجريبياً",
+      ctaSecondary: "ماذا يفعل WorkControl؟",
+    },
+    capabilities: {
+      badge: "الإمكانيات",
+      title: "ماذا يفعل",
+      titleAccent: "WorkControl؟",
+      subtitle: "من إسناد المهمة إلى التقرير — أدر عمل فريقك من مكان واحد.",
+      items: [
+        { icon: "✅", title: "إدارة المهام", desc: "إسناد المهام، المواعيد، المسؤول والحالة (قيد التنفيذ / منجز). لا تضيع أي مهمة." },
+        { icon: "⏱", title: "وقت العمل والحضور", desc: "من بدأ/انتهى ومتى، الحضور والتأخير. تتبع دقيق للوقت بلا ورق." },
+        { icon: "📈", title: "الأداء (KPI)", desc: "كم مهمة أنجز كل موظف وفي أي وقت. من يلحق ومن يتأخر — بالأرقام." },
+        { icon: "🗂", title: "المشاريع والأقسام", desc: "تجميع المهام حسب المشروع أو القسم أو الفريق. حتى الفريق الكبير منظَّم." },
+        { icon: "🔔", title: "التذكيرات والإشعارات", desc: "إشعار تلقائي عند اقتراب الموعد أو تغيّر المهمة — بما في ذلك عبر Telegram." },
+        { icon: "📊", title: "تقرير للمدير", desc: "تقرير يومي/أسبوعي: المنجز، التأخير، حجم العمل. يرى المدير الحالة بنظرة واحدة." },
+      ],
+    },
+    process: {
+      badge: "كيف نبدأ",
+      title: "4 خطوات إلى",
+      titleAccent: "فريق منظَّم",
+      subtitle: "العرض التجريبي الأول مجاني. ثم كل خطوة بسعر وموعد واضحين.",
+      steps: [
+        { num: "01", title: "عرض تجريبي مجاني", desc: "ندرس كيف يعمل فريقك ونعرض WorkControl مباشرة. بلا التزام.", icon: "💬" },
+        { num: "02", title: "الإعداد", desc: "الأقسام، الأدوار، أنواع المهام والتقارير — نضبطها لفريقك.", icon: "🔧" },
+        { num: "03", title: "التدريب", desc: "ندرّب الموظفين والمدراء. الواجهة بسيطة — تُتعلَّم بسرعة.", icon: "⚡" },
+        { num: "04", title: "الإطلاق + الدعم", desc: "نطلقه، نراقب العمل، وندعمك باستمرار.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "لمن",
+      title: "لأي",
+      titleAccent: "فرق WorkControl؟",
+      subtitle: "مكتب، عن بُعد أو فريق مختلط — للجميع.",
+      items: [
+        { tag: "01", title: "فرق المكاتب", desc: "المهام، المواعيد، الحضور والتقارير — المدير على اطلاع يومياً." },
+        { tag: "02", title: "فريق عن بُعد", desc: "من يعمل على ماذا وكم أنجز — واضح بدقة عن بُعد أيضاً." },
+        { tag: "03", title: "الفروع والخدمة الميدانية", desc: "متابعة عمل عدة مواقع أو فرق من المركز." },
+        { tag: "04", title: "فرق المشاريع", desc: "توزيع المهام حسب المشروع، مراقبة المواعيد وتوازن حجم العمل." },
+      ],
+    },
+    cta: {
+      badge: "وقت البدء",
+      title: "ننظّم عمل",
+      titleAccent: "فريقك؟",
+      subtitle: "في عرض تجريبي مجاني سترى كيف يعمل WorkControl في فريقك. بلا التزام.",
+      button: "راسلنا عبر Telegram",
+      note: "أو راسل tezcode@tezcode.dev — تتواصل مباشرة مع بكزود.",
+    },
+    faq: {
+      badge: "أسئلة شائعة",
+      title: "أسئلة و",
+      titleAccent: "إجابات",
+      subtitle: "أسئلة شائعة عن نظام مراقبة الموظفين WorkControl.",
+      items: [
+        { q: "ما الذي يراقبه WorkControl بالضبط؟", a: "المهام (من، ماذا، بأي موعد)، وقت العمل والحضور، وأداء كل موظف. الهدف الشفافية والنظام في سير العمل — وليس التجسس." },
+        { q: "هل يعمل لفريق عن بُعد؟", a: "نعم. من يعمل على أي مهمة وكم أنجز — واضح بنفس الدقة في المكتب وعن بُعد." },
+        { q: "هل يرسل إشعارات Telegram؟", a: "نعم. عند اقتراب الموعد أو تغيّر المهمة يتلقى الموظف والمدير إشعاراً تلقائياً (بما في ذلك عبر Telegram)." },
+        { q: "ما التقارير المتاحة للمدير؟", a: "يومية وأسبوعية: المهام المنجزة، التأخير، حجم عمل كل موظف. يرى المدير حالة الفريق بنظرة واحدة." },
+        { q: "كم يستغرق حتى التشغيل؟", a: "الإعداد والتدريب عادةً بضعة أيام. يعتمد الموعد الدقيق على حجم الفريق — نخبرك بعد العرض التجريبي." },
+        { q: "كم التكلفة؟", a: "WorkControl باشتراك، يعتمد على عدد الموظفين. نقدّم السعر الدقيق بعد العرض المجاني." },
+      ],
+    },
+    service: {
+      name: "WorkControl — نظام متابعة عمل الموظفين | Tezcode",
+      description:
+        "نظام مراقبة الموظفين WorkControl: إدارة المهام، وقت العمل والحضور، الأداء (KPI)، تقرير للمدير، إشعارات Telegram. طشقند وكل أوزبكستان.",
+      serviceType: "مراقبة الموظفين / إدارة المهام والوقت",
+    },
+  },
+
+  uk: {
+    hero: {
+      badge: "Контроль співробітників — WorkControl · Tezcode",
+      title1: "Контроль роботи",
+      titleAccent: "вашої команди — WorkControl",
+      title2: "",
+      subtitle:
+        "Завдання, робочий час, відвідуваність і звіти в одному дашборді. WorkControl точно показує, хто чим зайнятий і скільки встиг — без здогадок.",
+      trust: "Безкоштовне демо • Ташкент і весь Узбекистан • Оплата після готового MVP",
+      ctaPrimary: "Запросити демо",
+      ctaSecondary: "Що вміє WorkControl?",
+    },
+    capabilities: {
+      badge: "Можливості",
+      title: "Що вміє",
+      titleAccent: "WorkControl?",
+      subtitle: "Від постановки завдання до звіту — керуйте роботою команди з одного місця.",
+      items: [
+        { icon: "✅", title: "Управління завданнями", desc: "Постановка завдань, терміни, відповідальний і статус (у роботі / готово). Жодне доручення не губиться." },
+        { icon: "⏱", title: "Робочий час і відвідуваність", desc: "Хто коли почав/закінчив, відвідуваність і запізнення. Точний облік часу, без паперу." },
+        { icon: "📈", title: "Ефективність (KPI)", desc: "Скільки завдань виконав кожен співробітник і за який час. Хто встигає, хто відстає — у цифрах." },
+        { icon: "🗂", title: "Проєкти та відділи", desc: "Групування завдань за проєктом, відділом або командою. Навіть велика команда під контролем." },
+        { icon: "🔔", title: "Нагадування та сповіщення", desc: "Авто-сповіщення при наближенні терміну або зміні завдання — зокрема в Telegram." },
+        { icon: "📊", title: "Звіт керівнику", desc: "Денний/тижневий звіт: виконане, запізнення, навантаження. Керівник бачить стан з одного погляду." },
+      ],
+    },
+    process: {
+      badge: "Як починаємо",
+      title: "4 кроки до",
+      titleAccent: "впорядкованої команди",
+      subtitle: "Перше демо безкоштовне. Далі кожен крок з точною ціною та терміном.",
+      steps: [
+        { num: "01", title: "Безкоштовне демо", desc: "Вивчаємо, як працює команда, показуємо WorkControl наживо. Без зобов'язань.", icon: "💬" },
+        { num: "02", title: "Налаштування", desc: "Відділи, ролі, типи завдань і звіти — налаштуємо під вашу команду.", icon: "🔧" },
+        { num: "03", title: "Навчання", desc: "Навчимо співробітників і керівників. Інтерфейс простий — вчиться швидко.", icon: "⚡" },
+        { num: "04", title: "Запуск + підтримка", desc: "Запускаємо, стежимо за роботою і завжди підтримуємо.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "Для кого",
+      title: "Для яких",
+      titleAccent: "команд WorkControl?",
+      subtitle: "Офіс, віддалена або змішана команда — для всіх.",
+      items: [
+        { tag: "01", title: "Офісні команди", desc: "Завдання, терміни, відвідуваність і звіти — керівник у курсі щодня." },
+        { tag: "02", title: "Віддалена команда", desc: "Хто над чим працює і скільки встиг — чітко видно і на відстані." },
+        { tag: "03", title: "Філії та сервіс", desc: "Контроль роботи кількох точок або бригад з центру." },
+        { tag: "04", title: "Проєктні команди", desc: "Розподіл завдань за проєктом, контроль термінів і баланс навантаження." },
+      ],
+    },
+    cta: {
+      badge: "Час починати",
+      title: "Наведемо порядок",
+      titleAccent: "у роботі команди?",
+      subtitle: "На безкоштовному демо побачите, як WorkControl працює у вашій команді. Без зобов'язань.",
+      button: "Написати в Telegram",
+      note: "Або напишіть на tezcode@tezcode.dev — зв'яжетеся напряму з Бекзодом.",
+    },
+    faq: {
+      badge: "Часті запитання",
+      title: "Запитання та",
+      titleAccent: "відповіді",
+      subtitle: "Часті запитання про систему контролю співробітників WorkControl.",
+      items: [
+        { q: "Що саме контролює WorkControl?", a: "Завдання (хто, що, до якого терміну), робочий час і відвідуваність, а також ефективність кожного співробітника. Мета — прозорість і порядок у роботі, а не стеження." },
+        { q: "Чи працює для віддаленої команди?", a: "Так. Хто над яким завданням працює і скільки встиг — однаково чітко видно в офісі та віддалено." },
+        { q: "Чи надсилає сповіщення в Telegram?", a: "Так. При наближенні терміну або зміні завдання співробітник і керівник отримують авто-сповіщення (зокрема в Telegram)." },
+        { q: "Які звіти для керівника?", a: "Денні та тижневі: виконані завдання, запізнення, навантаження кожного співробітника. Керівник бачить стан команди з одного погляду." },
+        { q: "Скільки часу до запуску?", a: "Налаштування і навчання зазвичай кілька днів. Точний термін залежить від розміру команди — скажемо після демо." },
+        { q: "Скільки коштує?", a: "WorkControl за підпискою, залежить від кількості співробітників. Точну ціну дамо після безкоштовного демо." },
+      ],
+    },
+    service: {
+      name: "WorkControl — система контролю роботи співробітників | Tezcode",
+      description:
+        "Система контролю співробітників WorkControl: управління завданнями, робочий час і відвідуваність, ефективність (KPI), звіт керівнику, сповіщення в Telegram. Ташкент і весь Узбекистан.",
+      serviceType: "Контроль співробітників / управління завданнями та часом",
+    },
+  },
+};

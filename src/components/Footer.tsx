@@ -29,31 +29,26 @@ export function Footer() {
 
   // Section anchors (#...) live on the home page — prefix with "/" so they
   // navigate home from sub-pages instead of appending to the current URL.
-  const divisionLinks: { label: string; href: string }[] = [
-    { label: "TezCode Systems", href: "/#divisions" },
-    { label: "TezCode Custom", href: "/for-businesses" },
-    { label: "TezCode AI", href: "/#divisions" },
-    { label: "TezCode Teams", href: "/hire-developers" },
-    { label: "TezCode Labs", href: "/#divisions" },
-    { label: "TezCode Academy", href: "/#divisions" },
-  ];
-
-  const productLinks: { label: string; href: string }[] = [
-    { label: t("pricing"), href: "/#pricing" },
-    { label: t("roi_calculator"), href: "/#calculator" },
-    { label: t("reviews"), href: "/#reviews" },
-    { label: t("case_studies"), href: "/case-studies" },
-    { label: t("roadmap"), href: "/roadmap" },
-    { label: t("changelog"), href: "/changelog" },
-    { label: t("blog"), href: "/blog" },
+  // Services we build for clients on request. (Products like RAOS / ClinicaGo /
+  // WorkControl are surfaced on the homepage products section, whose cards link
+  // to their dedicated landing pages — so they don't need a footer column.)
+  const serviceLinks: { label: string; href: string }[] = [
+    { label: "AI chatbot", href: "/ai-chatbot" },
+    { label: "Telegram bot", href: "/telegram-bot-biznes" },
+    { label: "AI avtomatizatsiya", href: "/ai-avtomatizatsiya" },
   ];
 
   const companyLinks = [
     { label: t("about"), href: "/#team" },
-    { label: t("team"), href: "/#team" },
-    { label: t("careers"), href: "/#contact" },
-    { label: t("contact"), href: "/#contact" },
+    { label: t("for_businesses"), href: "/for-businesses" },
+    { label: t("hire_developers"), href: "/hire-developers" },
+    { label: t("case_studies"), href: "/case-studies" },
+    { label: t("blog"), href: "/blog" },
     { label: t("press"), href: "/press" },
+  ];
+
+  // Legal links live in the bottom bar (compact), not as a full column.
+  const legalLinks = [
     { label: t("privacy"), href: "/privacy" },
     { label: t("terms"), href: "/terms" },
   ];
@@ -83,7 +78,7 @@ export function Footer() {
     <footer className="bg-[var(--tc-ink)] border-t border-[var(--tc-border)] py-16 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Top row */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-10 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand column */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
@@ -116,38 +111,16 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Products column */}
+          {/* Services column */}
           <div>
             <h4
               className="text-xs font-600 uppercase tracking-widest text-[var(--tc-text-muted)] mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              {t("divisions")}
+              {t("services")}
             </h4>
             <ul className="flex flex-col gap-2">
-              {divisionLinks.map((division) => (
-                <li key={division.label}>
-                  <Link
-                    href={division.href}
-                    className="text-sm text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] tc-link-underline transition-colors"
-                  >
-                    {division.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Product column */}
-          <div>
-            <h4
-              className="text-xs font-600 uppercase tracking-widest text-[var(--tc-text-muted)] mb-4"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              {t("product")}
-            </h4>
-            <ul className="flex flex-col gap-2">
-              {productLinks.map((link) => (
+              {serviceLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
@@ -192,8 +165,8 @@ export function Footer() {
             </h4>
             <ul className="flex flex-col gap-3 text-sm text-[var(--tc-text-secondary)]">
               <li>
-                <a href="mailto:hello@tezcode.dev" className="hover:text-[var(--tc-blue-text)] transition-colors">
-                  hello@tezcode.dev
+                <a href="mailto:tezcode@tezcode.dev" className="hover:text-[var(--tc-blue-text)] transition-colors">
+                  tezcode@tezcode.dev
                 </a>
               </li>
               <li className="text-[var(--tc-text-muted)]">Tashkent, Uzbekistan</li>
@@ -206,9 +179,22 @@ export function Footer() {
 
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-[var(--tc-text-muted)]">
-            © {year} Tezcode AI · {t("rights")} · {t("made_in")}
-          </p>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+            <p className="text-xs text-[var(--tc-text-muted)]">
+              © {year} Tezcode AI · {t("rights")} · {t("made_in")}
+            </p>
+            <div className="flex items-center gap-3">
+              {legalLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="text-xs text-[var(--tc-text-muted)] hover:text-[var(--tc-text-secondary)] transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
           <div className="flex items-center gap-1 text-xs text-[var(--tc-text-muted)]">
             <span>Built with</span>
             <span className="text-[var(--tc-blue-text)]">Next.js 16</span>

@@ -1,0 +1,407 @@
+import type { ServicePageContent } from "@/components/service-page/types";
+
+// Content for /klinika-crm — target keywords: "klinika CRM", "klinika boshqaruv dasturi",
+// "klinika uchun dastur", "CRM для клиники", "программа для клиники", "clinic CRM software".
+// Product: ClinicaGo (CoreMed ecosystem, live). Only confirmed facts. No fabricated metrics.
+export const CONTENT: ServicePageContent = {
+  uz: {
+    hero: {
+      badge: "Klinika CRM — ClinicaGo · Tezcode",
+      title1: "Klinikangiz uchun",
+      titleAccent: "CRM — ClinicaGo",
+      title2: "",
+      subtitle:
+        "Qabullar, navbat, moliya, bemorlar bazasi va xodimlar — bitta tizimda. ClinicaGo (CoreMed ekotizimi) klinikani qog'ozdan raqamli boshqaruvga o'tkazadi.",
+      trust: "Bepul demo • Jonli ishlayotgan mahsulot • Toshkent va butun O'zbekiston",
+      ctaPrimary: "Bepul demo so'rang",
+      ctaSecondary: "ClinicaGo nima qila oladi?",
+    },
+    capabilities: {
+      badge: "Imkoniyatlar",
+      title: "ClinicaGo",
+      titleAccent: "nima qila oladi?",
+      subtitle:
+        "Resepshyendan direktоргacha — har rol o'z ekraniga ega, hammasi bitta tizimda.",
+      items: [
+        { icon: "📅", title: "Qabul va navbat", desc: "Onlayn yozilish, shifokor jadvali, navbat boshqaruvi. Bemor SMS/Telegram orqali eslatma oladi." },
+        { icon: "🗂", title: "Bemorlar bazasi", desc: "Har bemor kartochkasi: tashxis, davolash tarixi, retsept, tahlil natijalari — qog'oz emas, bir joyda." },
+        { icon: "💰", title: "Moliya va hisob", desc: "To'lov, qarz, kassa, shifokor ulushi va xarajatlar. Klinika daromadi real vaqtda ko'rinadi." },
+        { icon: "👥", title: "Rollar (CEO / resepshyen / doktor / call-center)", desc: "Har xodim faqat o'z ishini ko'radi. Kirish huquqlari aniq taqsimlangan." },
+        { icon: "📞", title: "Call-center moduli", desc: "Qo'ng'iroqlar, bemorni qaytarish, eslatma. Yo'qotilgan bemor kamayadi." },
+        { icon: "📊", title: "Hisobot va analitika", desc: "Qabul soni, daromad, shifokor samaradorligi, qaytuvchi bemor — avtomatik hisobot." },
+      ],
+    },
+    process: {
+      badge: "Qanday boshlaymiz",
+      title: "4 qadamda",
+      titleAccent: "raqamli klinikaga",
+      subtitle: "Birinchi demo bepul. Keyin har qadam aniq narx va aniq muddat bilan.",
+      steps: [
+        { num: "01", title: "Bepul demo", desc: "Klinikangiz jarayonini o'rganamiz, ClinicaGo'ni jonli ko'rsatamiz. Majburiyat yo'q.", icon: "💬" },
+        { num: "02", title: "Sozlash + ma'lumot ko'chirish", desc: "Shifokorlar, xizmatlar, narx, bemor bazasi — klinikangizga moslab sozlaymiz.", icon: "🔧" },
+        { num: "03", title: "O'rgatish", desc: "Resepshyen, shifokor va ma'murlarni o'rgatamiz. Har rol o'z ekranida ishlaydi.", icon: "⚡" },
+        { num: "04", title: "Ishga tushirish + qo'llab-quvvatlash", desc: "Jonli ishga tushiramiz, ishlashini kuzatamiz va doimo qo'llab-quvvatlaymiz.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "Kimlar uchun",
+      title: "ClinicaGo qaysi",
+      titleAccent: "klinikalar uchun?",
+      subtitle: "Kichik kabinetdan ko'p shifokorli klinikagacha.",
+      items: [
+        { tag: "01", title: "Umumiy amaliyot klinikalar", desc: "Qabul, bemor kartochkasi, navbat va moliya — qog'ozsiz boshqaruv." },
+        { tag: "02", title: "Stomatologiya va estetika", desc: "Davolash rejasi, bosqichli to'lov, bemor tarixi va eslatma." },
+        { tag: "03", title: "Diagnostika va laboratoriya", desc: "Tahlil buyurtmasi, natija yuborish, bemorga SMS/Telegram xabar." },
+        { tag: "04", title: "Ko'p shifokorli markaz", desc: "Har shifokor jadvali, ulushi va samaradorligi — markaziy boshqaruv." },
+      ],
+    },
+    cta: {
+      badge: "Boshlash vaqti",
+      title: "Klinikangizni",
+      titleAccent: "raqamlashtiramizmi?",
+      subtitle: "Bepul demoda ClinicaGo sizning klinikangizda qanday ishlashini ko'rasiz. Majburiyat yo'q.",
+      button: "Telegram'da gaplashish",
+      note: "Yoki tezcode@tezcode.dev ga yozing — Bekzod bilan bevosita bog'lanasiz.",
+    },
+    faq: {
+      badge: "Tez-tez beriladigan savollar",
+      title: "Savol va",
+      titleAccent: "javoblar",
+      subtitle: "ClinicaGo klinika CRM haqida ko'p so'raladigan savollar.",
+      items: [
+        { q: "ClinicaGo nima va u tayyor mahsulotmi?", a: "ClinicaGo — klinikalar uchun CRM/boshqaruv tizimi (CoreMed ekotizimi qismi). U jonli ishlayotgan mahsulot — qabul, bemor bazasi, moliya va xodimlarni bitta joydan boshqaradi." },
+        { q: "Bemor bazasi va davolash tarixini saqlaydimi?", a: "Ha. Har bemorning kartochkasi: tashxis, retsept, tahlil, davolash tarixi raqamli saqlanadi va bir bosishda ochiladi." },
+        { q: "Resepshyen, shifokor va direktor uchun alohida ekranmi?", a: "Ha. Har rol (CEO, resepshyen, doktor, call-center) faqat o'z ishini ko'radi — kirish huquqlari aniq taqsimlangan." },
+        { q: "Eski bemor bazamni ko'chira olasizmi?", a: "Ha. Mavjud bemor va xizmatlar ma'lumotini ClinicaGo'ga ko'chiramiz, shunda noldan boshlamaysiz." },
+        { q: "Bemorga eslatma yuboradimi?", a: "Ha. Qabul va navbat haqida bemorga SMS/Telegram orqali avtomatik eslatma boradi — kelmay qolish kamayadi." },
+        { q: "Narxi qancha?", a: "ClinicaGo obuna asosida. Aniq narx klinikangiz hajmi va shifokorlar soniga bog'liq — bepul demodan keyin taklif beramiz." },
+      ],
+    },
+    service: {
+      name: "ClinicaGo — klinika uchun CRM | Tezcode",
+      description:
+        "Klinikalar uchun CRM ClinicaGo (CoreMed): qabul va navbat, bemorlar bazasi, moliya, rollar (CEO/resepshyen/doktor/call-center), hisobot. Toshkent va butun O'zbekiston.",
+      serviceType: "Klinika CRM / klinika boshqaruv tizimi",
+    },
+  },
+
+  ru: {
+    hero: {
+      badge: "CRM для клиники — ClinicaGo · Tezcode",
+      title1: "CRM для",
+      titleAccent: "вашей клиники — ClinicaGo",
+      title2: "",
+      subtitle:
+        "Приёмы, очередь, финансы, база пациентов и сотрудники — в одной системе. ClinicaGo (экосистема CoreMed) переводит клинику с бумаги на цифровое управление.",
+      trust: "Бесплатное демо • Реально работающий продукт • Ташкент и весь Узбекистан",
+      ctaPrimary: "Запросить демо",
+      ctaSecondary: "Что умеет ClinicaGo?",
+    },
+    capabilities: {
+      badge: "Возможности",
+      title: "Что умеет",
+      titleAccent: "ClinicaGo?",
+      subtitle: "От ресепшена до директора — у каждой роли свой экран, всё в одной системе.",
+      items: [
+        { icon: "📅", title: "Приём и очередь", desc: "Онлайн-запись, расписание врача, управление очередью. Пациент получает напоминание по SMS/Telegram." },
+        { icon: "🗂", title: "База пациентов", desc: "Карта каждого пациента: диагноз, история лечения, рецепт, результаты анализов — не бумага, а одно место." },
+        { icon: "💰", title: "Финансы и учёт", desc: "Оплаты, долги, касса, доля врача и расходы. Доход клиники виден в реальном времени." },
+        { icon: "👥", title: "Роли (CEO / ресепшен / врач / колл-центр)", desc: "Каждый сотрудник видит только свою работу. Права доступа чётко распределены." },
+        { icon: "📞", title: "Модуль колл-центра", desc: "Звонки, возврат пациента, напоминания. Меньше потерянных пациентов." },
+        { icon: "📊", title: "Отчёты и аналитика", desc: "Число приёмов, доход, эффективность врачей, возвращаемость — автоматические отчёты." },
+      ],
+    },
+    process: {
+      badge: "Как начинаем",
+      title: "4 шага до",
+      titleAccent: "цифровой клиники",
+      subtitle: "Первое демо бесплатно. Дальше каждый шаг с точной ценой и сроком.",
+      steps: [
+        { num: "01", title: "Бесплатное демо", desc: "Изучаем процессы клиники, показываем ClinicaGo вживую. Без обязательств.", icon: "💬" },
+        { num: "02", title: "Настройка + перенос данных", desc: "Врачи, услуги, цены, база пациентов — настроим под вашу клинику.", icon: "🔧" },
+        { num: "03", title: "Обучение", desc: "Обучим ресепшен, врачей и администраторов. Каждая роль работает на своём экране.", icon: "⚡" },
+        { num: "04", title: "Запуск + поддержка", desc: "Запускаем, следим за работой и всегда поддерживаем.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "Для кого",
+      title: "Для каких",
+      titleAccent: "клиник ClinicaGo?",
+      subtitle: "От небольшого кабинета до клиники с несколькими врачами.",
+      items: [
+        { tag: "01", title: "Клиники общей практики", desc: "Приём, карта пациента, очередь и финансы — управление без бумаги." },
+        { tag: "02", title: "Стоматология и эстетика", desc: "План лечения, поэтапная оплата, история пациента и напоминания." },
+        { tag: "03", title: "Диагностика и лаборатория", desc: "Заказ анализа, отправка результата, уведомление пациенту по SMS/Telegram." },
+        { tag: "04", title: "Центр с несколькими врачами", desc: "Расписание, доля и эффективность каждого врача — централизованное управление." },
+      ],
+    },
+    cta: {
+      badge: "Время начать",
+      title: "Оцифруем вашу",
+      titleAccent: "клинику?",
+      subtitle: "На бесплатном демо увидите, как ClinicaGo работает в вашей клинике. Без обязательств.",
+      button: "Написать в Telegram",
+      note: "Или напишите на tezcode@tezcode.dev — свяжетесь напрямую с Бекзодом.",
+    },
+    faq: {
+      badge: "Частые вопросы",
+      title: "Вопросы и",
+      titleAccent: "ответы",
+      subtitle: "Частые вопросы о CRM для клиники ClinicaGo.",
+      items: [
+        { q: "Что такое ClinicaGo и это готовый продукт?", a: "ClinicaGo — CRM/система управления для клиник (часть экосистемы CoreMed). Это реально работающий продукт — управляет приёмами, базой пациентов, финансами и сотрудниками из одного места." },
+        { q: "Хранит ли базу пациентов и историю лечения?", a: "Да. Карта каждого пациента: диагноз, рецепт, анализы, история лечения хранятся в цифре и открываются в один клик." },
+        { q: "Отдельный экран для ресепшена, врача и директора?", a: "Да. Каждая роль (CEO, ресепшен, врач, колл-центр) видит только свою работу — права доступа чётко распределены." },
+        { q: "Перенесёте мою старую базу пациентов?", a: "Да. Перенесём существующих пациентов и услуги в ClinicaGo, чтобы не начинать с нуля." },
+        { q: "Отправляет ли напоминания пациенту?", a: "Да. О приёме и очереди пациент получает автоматическое напоминание по SMS/Telegram — меньше неявок." },
+        { q: "Сколько стоит?", a: "ClinicaGo по подписке. Точная цена зависит от размера клиники и числа врачей — дадим предложение после бесплатного демо." },
+      ],
+    },
+    service: {
+      name: "ClinicaGo — CRM для клиники | Tezcode",
+      description:
+        "CRM для клиник ClinicaGo (CoreMed): приём и очередь, база пациентов, финансы, роли (CEO/ресепшен/врач/колл-центр), отчёты. Ташкент и весь Узбекистан.",
+      serviceType: "CRM для клиники / система управления клиникой",
+    },
+  },
+
+  en: {
+    hero: {
+      badge: "Clinic CRM — ClinicaGo · Tezcode",
+      title1: "A CRM for",
+      titleAccent: "your clinic — ClinicaGo",
+      title2: "",
+      subtitle:
+        "Appointments, queue, finance, patient base and staff — in one system. ClinicaGo (CoreMed ecosystem) moves a clinic from paper to digital management.",
+      trust: "Free demo • A live, working product • Tashkent and all of Uzbekistan",
+      ctaPrimary: "Request a demo",
+      ctaSecondary: "What can ClinicaGo do?",
+    },
+    capabilities: {
+      badge: "Capabilities",
+      title: "What can",
+      titleAccent: "ClinicaGo do?",
+      subtitle: "From reception to director — every role has its own screen, all in one system.",
+      items: [
+        { icon: "📅", title: "Appointments & queue", desc: "Online booking, doctor schedule, queue management. Patients get SMS/Telegram reminders." },
+        { icon: "🗂", title: "Patient base", desc: "Each patient's chart: diagnosis, treatment history, prescriptions, lab results — not paper, all in one place." },
+        { icon: "💰", title: "Finance & accounting", desc: "Payments, debts, cash desk, doctor share and expenses. Clinic revenue visible in real time." },
+        { icon: "👥", title: "Roles (CEO / reception / doctor / call center)", desc: "Each staff member sees only their work. Access rights are clearly assigned." },
+        { icon: "📞", title: "Call-center module", desc: "Calls, patient win-back, reminders. Fewer lost patients." },
+        { icon: "📊", title: "Reports & analytics", desc: "Visit count, revenue, doctor performance, return rate — automatic reports." },
+      ],
+    },
+    process: {
+      badge: "How we start",
+      title: "4 steps to a",
+      titleAccent: "digital clinic",
+      subtitle: "The first demo is free. Then every step has a clear price and timeline.",
+      steps: [
+        { num: "01", title: "Free demo", desc: "We study your clinic's process and show ClinicaGo live. No obligations.", icon: "💬" },
+        { num: "02", title: "Setup + data migration", desc: "Doctors, services, prices, patient base — configured for your clinic.", icon: "🔧" },
+        { num: "03", title: "Training", desc: "We train reception, doctors and admins. Each role works on its own screen.", icon: "⚡" },
+        { num: "04", title: "Launch + support", desc: "We go live, monitor it, and support you continuously.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "Who it's for",
+      title: "Which clinics",
+      titleAccent: "is ClinicaGo for?",
+      subtitle: "From a small practice to a multi-doctor clinic.",
+      items: [
+        { tag: "01", title: "General practice clinics", desc: "Appointments, patient chart, queue and finance — paperless management." },
+        { tag: "02", title: "Dental & aesthetics", desc: "Treatment plan, staged payment, patient history and reminders." },
+        { tag: "03", title: "Diagnostics & lab", desc: "Test orders, result delivery, SMS/Telegram notification to the patient." },
+        { tag: "04", title: "Multi-doctor center", desc: "Each doctor's schedule, share and performance — centralized management." },
+      ],
+    },
+    cta: {
+      badge: "Time to start",
+      title: "Digitize your",
+      titleAccent: "clinic?",
+      subtitle: "In a free demo you'll see how ClinicaGo works in your clinic. No obligations.",
+      button: "Message on Telegram",
+      note: "Or email tezcode@tezcode.dev — you reach Bekzod directly.",
+    },
+    faq: {
+      badge: "Frequently asked",
+      title: "Questions &",
+      titleAccent: "answers",
+      subtitle: "Common questions about the ClinicaGo clinic CRM.",
+      items: [
+        { q: "What is ClinicaGo and is it a finished product?", a: "ClinicaGo is a CRM/management system for clinics (part of the CoreMed ecosystem). It is a live, working product — it manages appointments, the patient base, finance and staff from one place." },
+        { q: "Does it store the patient base and treatment history?", a: "Yes. Each patient's chart — diagnosis, prescriptions, labs, treatment history — is stored digitally and opens in one click." },
+        { q: "Separate screens for reception, doctor and director?", a: "Yes. Each role (CEO, reception, doctor, call center) sees only its own work — access rights are clearly assigned." },
+        { q: "Can you migrate my old patient base?", a: "Yes. We migrate existing patients and services into ClinicaGo so you don't start from scratch." },
+        { q: "Does it send reminders to patients?", a: "Yes. Patients get automatic SMS/Telegram reminders about appointments and queue — fewer no-shows." },
+        { q: "How much does it cost?", a: "ClinicaGo is subscription-based. The exact price depends on your clinic size and number of doctors — we give a quote after the free demo." },
+      ],
+    },
+    service: {
+      name: "ClinicaGo — CRM for clinics | Tezcode",
+      description:
+        "ClinicaGo clinic CRM (CoreMed): appointments and queue, patient base, finance, roles (CEO/reception/doctor/call center), reports. Tashkent and all of Uzbekistan.",
+      serviceType: "Clinic CRM / clinic management system",
+    },
+  },
+
+  ar: {
+    hero: {
+      badge: "CRM للعيادة — ClinicaGo · Tezcode",
+      title1: "نظام CRM",
+      titleAccent: "لعيادتك — ClinicaGo",
+      title2: "",
+      subtitle:
+        "المواعيد، الطابور، المالية، قاعدة المرضى والموظفون — في نظام واحد. ClinicaGo (منظومة CoreMed) ينقل العيادة من الورق إلى الإدارة الرقمية.",
+      trust: "عرض تجريبي مجاني • منتج عامل حقيقي • طشقند وكل أوزبكستان",
+      ctaPrimary: "اطلب عرضاً تجريبياً",
+      ctaSecondary: "ماذا يفعل ClinicaGo؟",
+    },
+    capabilities: {
+      badge: "الإمكانيات",
+      title: "ماذا يفعل",
+      titleAccent: "ClinicaGo؟",
+      subtitle: "من الاستقبال إلى المدير — لكل دور شاشته، وكل شيء في نظام واحد.",
+      items: [
+        { icon: "📅", title: "المواعيد والطابور", desc: "حجز إلكتروني، جدول الطبيب، إدارة الطابور. يتلقى المريض تذكيراً عبر SMS/Telegram." },
+        { icon: "🗂", title: "قاعدة المرضى", desc: "بطاقة كل مريض: التشخيص، تاريخ العلاج، الوصفة، نتائج التحاليل — ليست ورقاً بل مكان واحد." },
+        { icon: "💰", title: "المالية والحسابات", desc: "المدفوعات، الديون، الصندوق، حصة الطبيب والمصاريف. دخل العيادة مرئي في الوقت الفعلي." },
+        { icon: "👥", title: "الأدوار (مدير / استقبال / طبيب / كول سنتر)", desc: "كل موظف يرى عمله فقط. صلاحيات الوصول موزعة بوضوح." },
+        { icon: "📞", title: "وحدة الكول سنتر", desc: "المكالمات، إعادة المريض، التذكيرات. مرضى أقل ضياعاً." },
+        { icon: "📊", title: "التقارير والتحليلات", desc: "عدد الزيارات، الدخل، أداء الأطباء، معدل العودة — تقارير تلقائية." },
+      ],
+    },
+    process: {
+      badge: "كيف نبدأ",
+      title: "4 خطوات إلى",
+      titleAccent: "عيادة رقمية",
+      subtitle: "العرض التجريبي الأول مجاني. ثم كل خطوة بسعر وموعد واضحين.",
+      steps: [
+        { num: "01", title: "عرض تجريبي مجاني", desc: "ندرس عمليات عيادتك ونعرض ClinicaGo مباشرة. بلا التزام.", icon: "💬" },
+        { num: "02", title: "الإعداد + نقل البيانات", desc: "الأطباء، الخدمات، الأسعار، قاعدة المرضى — نضبطها لعيادتك.", icon: "🔧" },
+        { num: "03", title: "التدريب", desc: "ندرّب الاستقبال والأطباء والإداريين. كل دور يعمل على شاشته.", icon: "⚡" },
+        { num: "04", title: "الإطلاق + الدعم", desc: "نطلقه، نراقب العمل، وندعمك باستمرار.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "لمن",
+      title: "لأي",
+      titleAccent: "عيادات ClinicaGo؟",
+      subtitle: "من عيادة صغيرة إلى عيادة بعدة أطباء.",
+      items: [
+        { tag: "01", title: "عيادات الطب العام", desc: "المواعيد، بطاقة المريض، الطابور والمالية — إدارة بلا ورق." },
+        { tag: "02", title: "الأسنان والتجميل", desc: "خطة العلاج، الدفع على مراحل، تاريخ المريض والتذكيرات." },
+        { tag: "03", title: "التشخيص والمختبر", desc: "طلب التحليل، إرسال النتيجة، إشعار المريض عبر SMS/Telegram." },
+        { tag: "04", title: "مركز بعدة أطباء", desc: "جدول وحصة وأداء كل طبيب — إدارة مركزية." },
+      ],
+    },
+    cta: {
+      badge: "وقت البدء",
+      title: "نرقمن",
+      titleAccent: "عيادتك؟",
+      subtitle: "في عرض تجريبي مجاني سترى كيف يعمل ClinicaGo في عيادتك. بلا التزام.",
+      button: "راسلنا عبر Telegram",
+      note: "أو راسل tezcode@tezcode.dev — تتواصل مباشرة مع بكزود.",
+    },
+    faq: {
+      badge: "أسئلة شائعة",
+      title: "أسئلة و",
+      titleAccent: "إجابات",
+      subtitle: "أسئلة شائعة عن CRM العيادة ClinicaGo.",
+      items: [
+        { q: "ما هو ClinicaGo وهل هو منتج جاهز؟", a: "ClinicaGo نظام CRM/إدارة للعيادات (جزء من منظومة CoreMed). إنه منتج عامل حقيقي — يدير المواعيد وقاعدة المرضى والمالية والموظفين من مكان واحد." },
+        { q: "هل يحفظ قاعدة المرضى وتاريخ العلاج؟", a: "نعم. بطاقة كل مريض — التشخيص، الوصفات، التحاليل، تاريخ العلاج — تُحفَظ رقمياً وتُفتَح بنقرة واحدة." },
+        { q: "شاشات منفصلة للاستقبال والطبيب والمدير؟", a: "نعم. كل دور (مدير، استقبال، طبيب، كول سنتر) يرى عمله فقط — صلاحيات الوصول موزعة بوضوح." },
+        { q: "هل تنقلون قاعدة مرضاي القديمة؟", a: "نعم. ننقل المرضى والخدمات الحالية إلى ClinicaGo كي لا تبدأ من الصفر." },
+        { q: "هل يرسل تذكيرات للمريض؟", a: "نعم. يتلقى المريض تذكيراً تلقائياً عبر SMS/Telegram عن المواعيد والطابور — تغيّب أقل." },
+        { q: "كم التكلفة؟", a: "ClinicaGo باشتراك. يعتمد السعر الدقيق على حجم العيادة وعدد الأطباء — نقدّم عرضاً بعد التجربة المجانية." },
+      ],
+    },
+    service: {
+      name: "ClinicaGo — CRM للعيادات | Tezcode",
+      description:
+        "CRM للعيادات ClinicaGo (CoreMed): المواعيد والطابور، قاعدة المرضى، المالية، الأدوار (مدير/استقبال/طبيب/كول سنتر)، التقارير. طشقند وكل أوزبكستان.",
+      serviceType: "CRM للعيادة / نظام إدارة العيادة",
+    },
+  },
+
+  uk: {
+    hero: {
+      badge: "CRM для клініки — ClinicaGo · Tezcode",
+      title1: "CRM для",
+      titleAccent: "вашої клініки — ClinicaGo",
+      title2: "",
+      subtitle:
+        "Прийоми, черга, фінанси, база пацієнтів і співробітники — в одній системі. ClinicaGo (екосистема CoreMed) переводить клініку з паперу на цифрове управління.",
+      trust: "Безкоштовне демо • Реально працюючий продукт • Ташкент і весь Узбекистан",
+      ctaPrimary: "Запросити демо",
+      ctaSecondary: "Що вміє ClinicaGo?",
+    },
+    capabilities: {
+      badge: "Можливості",
+      title: "Що вміє",
+      titleAccent: "ClinicaGo?",
+      subtitle: "Від ресепшену до директора — у кожної ролі свій екран, усе в одній системі.",
+      items: [
+        { icon: "📅", title: "Прийом і черга", desc: "Онлайн-запис, розклад лікаря, керування чергою. Пацієнт отримує нагадування по SMS/Telegram." },
+        { icon: "🗂", title: "База пацієнтів", desc: "Карта кожного пацієнта: діагноз, історія лікування, рецепт, результати аналізів — не папір, а одне місце." },
+        { icon: "💰", title: "Фінанси та облік", desc: "Оплати, борги, каса, частка лікаря і витрати. Дохід клініки видно в реальному часі." },
+        { icon: "👥", title: "Ролі (CEO / ресепшен / лікар / колл-центр)", desc: "Кожен співробітник бачить лише свою роботу. Права доступу чітко розподілені." },
+        { icon: "📞", title: "Модуль колл-центру", desc: "Дзвінки, повернення пацієнта, нагадування. Менше втрачених пацієнтів." },
+        { icon: "📊", title: "Звіти та аналітика", desc: "Кількість прийомів, дохід, ефективність лікарів, повернення — автоматичні звіти." },
+      ],
+    },
+    process: {
+      badge: "Як починаємо",
+      title: "4 кроки до",
+      titleAccent: "цифрової клініки",
+      subtitle: "Перше демо безкоштовне. Далі кожен крок з точною ціною та терміном.",
+      steps: [
+        { num: "01", title: "Безкоштовне демо", desc: "Вивчаємо процеси клініки, показуємо ClinicaGo наживо. Без зобов'язань.", icon: "💬" },
+        { num: "02", title: "Налаштування + перенос даних", desc: "Лікарі, послуги, ціни, база пацієнтів — налаштуємо під вашу клініку.", icon: "🔧" },
+        { num: "03", title: "Навчання", desc: "Навчимо ресепшен, лікарів і адміністраторів. Кожна роль працює на своєму екрані.", icon: "⚡" },
+        { num: "04", title: "Запуск + підтримка", desc: "Запускаємо, стежимо за роботою і завжди підтримуємо.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "Для кого",
+      title: "Для яких",
+      titleAccent: "клінік ClinicaGo?",
+      subtitle: "Від невеликого кабінету до клініки з кількома лікарями.",
+      items: [
+        { tag: "01", title: "Клініки загальної практики", desc: "Прийом, карта пацієнта, черга і фінанси — управління без паперу." },
+        { tag: "02", title: "Стоматологія та естетика", desc: "План лікування, поетапна оплата, історія пацієнта і нагадування." },
+        { tag: "03", title: "Діагностика та лабораторія", desc: "Замовлення аналізу, відправка результату, сповіщення пацієнту по SMS/Telegram." },
+        { tag: "04", title: "Центр з кількома лікарями", desc: "Розклад, частка і ефективність кожного лікаря — централізоване управління." },
+      ],
+    },
+    cta: {
+      badge: "Час починати",
+      title: "Оцифруємо вашу",
+      titleAccent: "клініку?",
+      subtitle: "На безкоштовному демо побачите, як ClinicaGo працює у вашій клініці. Без зобов'язань.",
+      button: "Написати в Telegram",
+      note: "Або напишіть на tezcode@tezcode.dev — зв'яжетеся напряму з Бекзодом.",
+    },
+    faq: {
+      badge: "Часті запитання",
+      title: "Запитання та",
+      titleAccent: "відповіді",
+      subtitle: "Часті запитання про CRM для клініки ClinicaGo.",
+      items: [
+        { q: "Що таке ClinicaGo і це готовий продукт?", a: "ClinicaGo — CRM/система управління для клінік (частина екосистеми CoreMed). Це реально працюючий продукт — керує прийомами, базою пацієнтів, фінансами і співробітниками з одного місця." },
+        { q: "Чи зберігає базу пацієнтів та історію лікування?", a: "Так. Карта кожного пацієнта: діагноз, рецепти, аналізи, історія лікування зберігаються в цифрі й відкриваються в один клік." },
+        { q: "Окремий екран для ресепшену, лікаря і директора?", a: "Так. Кожна роль (CEO, ресепшен, лікар, колл-центр) бачить лише свою роботу — права доступу чітко розподілені." },
+        { q: "Чи перенесете мою стару базу пацієнтів?", a: "Так. Перенесемо наявних пацієнтів і послуги в ClinicaGo, щоб не починати з нуля." },
+        { q: "Чи надсилає нагадування пацієнту?", a: "Так. Про прийом і чергу пацієнт отримує автоматичне нагадування по SMS/Telegram — менше неявок." },
+        { q: "Скільки коштує?", a: "ClinicaGo за підпискою. Точна ціна залежить від розміру клініки і кількості лікарів — дамо пропозицію після безкоштовного демо." },
+      ],
+    },
+    service: {
+      name: "ClinicaGo — CRM для клініки | Tezcode",
+      description:
+        "CRM для клінік ClinicaGo (CoreMed): прийом і черга, база пацієнтів, фінанси, ролі (CEO/ресепшен/лікар/колл-центр), звіти. Ташкент і весь Узбекистан.",
+      serviceType: "CRM для клініки / система управління клінікою",
+    },
+  },
+};

@@ -142,34 +142,94 @@ export function buildPageMetadata(input: {
 export function getOrganizationSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    // Dual-typed as LocalBusiness so AI engines / Google can answer "where is
+    // Tezcode", its phone number and opening hours from this same entity —
+    // geo, telephone and openingHoursSpecification are only valid on LocalBusiness.
+    "@type": ["Organization", "LocalBusiness"],
+    "@id": `${BASE_URL}#organization`,
     name: SITE_NAME,
-    alternateName: ["Tezcode AI", "TezCode"],
+    // Spelling / language variants AI engines may see, so they resolve every form
+    // ("Tez Code", Cyrillic "Тезкод", the bare domain) to THIS entity instead of
+    // the unrelated TezCode.tech bootcamp or codingtech.uz / Coding Tech LLC.
+    alternateName: [
+      "Tezcode AI",
+      "TezCode",
+      "Tez Code",
+      "Tezcode AI Software Factory",
+      "Тезкод",
+      "Тезкоуд",
+      "tezcode.dev",
+    ],
     url: BASE_URL,
     logo: `${BASE_URL}/icon.png`,
     image: `${BASE_URL}/og-image.png`,
     description:
-      "Tezcode — AI Software Factory. Uzbekistan'da kichik biznesdan korporatsiyagacha AI yechimlar yaratamiz. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), WorkControl, CoreMed (healthtech) va boshqalar.",
+      "Tezcode — 2024-yilda Toshkentda tashkil topgan AI Software Factory (startup emas, ishlab turgan kompaniya). Kichik biznesdan korporatsiyagacha AI yechimlar yaratamiz. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), WorkControl, CoreMed/ClinicaGo (healthtech). Asoschi — Bekzod Mirzaaliyev.",
     foundingDate: "2024",
+    numberOfEmployees: {
+      "@type": "QuantitativeValue",
+      value: "16",
+    },
     founder: {
       "@type": "Person",
       name: "Bekzod Mirzaaliyev",
-      jobTitle: "Founder",
+      jobTitle: "Founder & CEO",
+      url: `${BASE_URL}/bekzod-mirzaaliyev`,
+      sameAs: ["https://t.me/webdevelopertk"],
     },
     address: {
       "@type": "PostalAddress",
+      // Must match the Google Business Profile NAP exactly (same address string),
+      // so AI engines / Google see one consistent location and don't lower trust.
+      streetAddress: "Amir Temur ko'chasi 10, Edu Center, 3-qavat",
       addressLocality: "Tashkent",
       addressRegion: "Toshkent",
+      postalCode: "100037",
       addressCountry: "UZ",
     },
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "customer service",
-      email: "hello@tezcode.dev",
-      url: "https://t.me/webdevelopertk",
-      areaServed: ["UZ", "RU", "KZ", "TJ", "KG", "TM"],
-      availableLanguage: ["uz", "ru", "en", "ar", "uk"],
+    // Exact office coordinates (from the shared Google Maps pin) + map link, so
+    // AI engines and Google can place Tezcode on the map and answer "where".
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 41.366927,
+      longitude: 69.286331,
     },
+    hasMap: "https://maps.app.goo.gl/iLEGcZvdGa6AjBFU7",
+    telephone: "+998993151516",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        opens: "09:00",
+        closes: "19:00",
+      },
+    ],
+    priceRange: "$$",
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: "+998993151516",
+        contactType: "customer service",
+        email: "tezcode@tezcode.dev",
+        url: "https://t.me/webdevelopertk",
+        areaServed: ["UZ", "RU", "KZ", "TJ", "KG", "TM"],
+        availableLanguage: ["uz", "ru", "en", "ar", "uk"],
+      },
+      {
+        "@type": "ContactPoint",
+        telephone: "+998917776609",
+        contactType: "sales",
+        areaServed: ["UZ", "RU", "KZ", "TJ", "KG", "TM"],
+        availableLanguage: ["uz", "ru", "en"],
+      },
+    ],
     // sameAs anchors this exact entity to its verified third-party profiles, so AI
     // engines don't conflate Tezcode (tezcode.dev) with the unrelated TezCode.tech
     // coding bootcamp or codingtech.uz. Directory profiles double as authority signals.
@@ -180,6 +240,7 @@ export function getOrganizationSchema() {
       "https://github.com/AI-automatization",
       "https://clutch.co/profile/tezcode",
       "https://www.f6s.com/tezcode",
+      "https://techbehemoths.com/company/tezcode",
     ],
     knowsAbout: [
       "Artificial Intelligence",
@@ -189,6 +250,43 @@ export function getOrganizationSchema() {
       "SaaS",
       "Custom Development",
     ],
+  };
+}
+
+// Founder Person schema for the /bekzod-mirzaaliyev profile page. Giving the
+// founder his own entity (Person + worksFor → Organization) lets AI engines tie
+// "Bekzod Mirzaaliyev" to Tezcode as a real, attributable person — a strong
+// signal that this is an established company, and another anchor against the
+// codingtech.uz / TezCode.tech mix-up.
+export function getFounderSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${BASE_URL}/bekzod-mirzaaliyev#person`,
+    name: "Bekzod Mirzaaliyev",
+    alternateName: ["Bekzod Mirzaaliev", "Бекзод Мирзаалиев"],
+    jobTitle: "Founder & CEO",
+    description:
+      "Bekzod Mirzaaliyev — Tezcode (AI Software Factory, Toshkent) asoschisi va CEO. 2024-yilda Tezcode'ni tashkil etgan; RAOS (POS), CoreMed/ClinicaGo (healthtech), WeWatch va WorkControl mahsulotlari ortida turgan jamoani boshqaradi. Founder & CEO of Tezcode, an AI software factory in Tashkent, Uzbekistan.",
+    url: `${BASE_URL}/bekzod-mirzaaliyev`,
+    worksFor: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: BASE_URL,
+    },
+    knowsAbout: [
+      "Artificial Intelligence",
+      "Software Development",
+      "Business Automation",
+      "SaaS",
+      "Startups",
+    ],
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Tashkent",
+      addressCountry: "UZ",
+    },
+    sameAs: ["https://t.me/webdevelopertk"],
   };
 }
 
@@ -315,7 +413,7 @@ export function getServiceSchema(input: {
         "@type": "ContactPoint",
         contactType: "sales",
         url: "https://t.me/webdevelopertk",
-        email: "hello@tezcode.dev",
+        email: "tezcode@tezcode.dev",
       },
     },
   };

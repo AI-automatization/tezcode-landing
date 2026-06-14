@@ -61,7 +61,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "muhokama qilaylik",
       subtitle: "30 daqiqalik bepul konsultatsiyada eng yaxshi yechimni topamiz. Hech qanday majburiyat yo'q.",
       button: "Telegram'da gaplashish",
-      note: "Yoki hello@tezcode.dev ga yozing — Bekzod bilan bevosita bog'lanasiz.",
+      note: "Yoki tezcode@tezcode.dev ga yozing — Bekzod bilan bevosita bog'lanasiz.",
     },
     faq: {
       badge: "Tez-tez beriladigan savollar",
@@ -141,7 +141,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "вашу IT-задачу",
       subtitle: "На бесплатной 30-минутной консультации найдём лучшее решение. Без обязательств.",
       button: "Написать в Telegram",
-      note: "Или напишите на hello@tezcode.dev — свяжетесь напрямую с Бекзодом.",
+      note: "Или напишите на tezcode@tezcode.dev — свяжетесь напрямую с Бекзодом.",
     },
     faq: {
       badge: "Частые вопросы",
@@ -221,7 +221,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "your IT task",
       subtitle: "We'll find the best solution in a free 30-minute consultation. No obligations.",
       button: "Message on Telegram",
-      note: "Or email hello@tezcode.dev — you reach Bekzod directly.",
+      note: "Or email tezcode@tezcode.dev — you reach Bekzod directly.",
     },
     faq: {
       badge: "Frequently asked",
@@ -301,7 +301,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "مهمتك التقنية",
       subtitle: "سنجد أفضل حل في استشارة مجانية مدتها 30 دقيقة. بلا التزام.",
       button: "راسلنا عبر Telegram",
-      note: "أو راسل hello@tezcode.dev — تتواصل مباشرة مع بكزود.",
+      note: "أو راسل tezcode@tezcode.dev — تتواصل مباشرة مع بكزود.",
     },
     faq: {
       badge: "أسئلة شائعة",
@@ -381,7 +381,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "ваше IT-завдання",
       subtitle: "На безкоштовній 30-хвилинній консультації знайдемо найкраще рішення. Без зобов'язань.",
       button: "Написати в Telegram",
-      note: "Або напишіть на hello@tezcode.dev — зв'яжетеся напряму з Бекзодом.",
+      note: "Або напишіть на tezcode@tezcode.dev — зв'яжетеся напряму з Бекзодом.",
     },
     faq: {
       badge: "Часті запитання",

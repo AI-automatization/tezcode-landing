@@ -65,7 +65,7 @@ const TEAM: Member[] = [
     role: "Dasturchi",
   },
   {
-    name: "Polat Tursunov",
+    name: "Polat Ismailov",
     role: "Dasturchi",
   },
   {

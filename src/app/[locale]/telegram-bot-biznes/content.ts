@@ -1,0 +1,408 @@
+import type { ServicePageContent } from "@/components/service-page/types";
+
+// Content for /telegram-bot-biznes — target keywords: "Telegram bot yasash",
+// "Telegram bot biznes uchun", "Telegram bot Toshkent", "Telegram бот для бизнеса",
+// "заказать телеграм бота", "Telegram bot development Uzbekistan".
+// Tezcode genuinely builds Telegram bots (grammY stack — RAOS, MaxSavdo). No fabricated metrics.
+export const CONTENT: ServicePageContent = {
+  uz: {
+    hero: {
+      badge: "Telegram bot — Tezcode",
+      title1: "Biznesingiz uchun",
+      titleAccent: "Telegram bot yasaymiz",
+      title2: "",
+      subtitle:
+        "Buyurtma qabul qiladigan, savollarga javob beradigan, to'lov oladigan va eslatma yuboradigan Telegram bot. O'zbekiston biznesi uchun — Click/Payme, CRM va Telegram do'kon (Mini App) bilan.",
+      trust: "Bepul 30 daqiqa konsultatsiya • To'lov faqat MVP tayyor bo'lganda",
+      ctaPrimary: "Bepul konsultatsiya so'rang",
+      ctaSecondary: "Bot nima qila oladi?",
+    },
+    capabilities: {
+      badge: "Imkoniyatlar",
+      title: "Telegram bot",
+      titleAccent: "nima qila oladi?",
+      subtitle:
+        "Telegram — O'zbekistonda eng ko'p ishlatiladigan kanal. Bot mijoz bilan o'sha yerda ishlaydi.",
+      items: [
+        { icon: "🛒", title: "Buyurtma qabul qilish", desc: "Mahsulot katalogi, savatcha, buyurtma rasmiylashtirish — hammasi bot ichida. Mijoz saytsiz, ilovasiz buyurtma beradi." },
+        { icon: "💳", title: "Click / Payme to'lov", desc: "Bot ichida onlayn to'lov — Click, Payme integratsiyasi. To'lovdan keyin buyurtma avtomatik tasdiqlanadi." },
+        { icon: "💬", title: "Savol-javob va qo'llab-quvvatlash", desc: "Tez-tez beriladigan savollarga bot o'zi javob beradi, murakkabini operatorga uzatadi. 24/7 ishlaydi." },
+        { icon: "🔔", title: "Eslatma va xabarnoma", desc: "Buyurtma holati, aksiya, eslatma — mijozga avtomatik Telegram xabar. SMS'dan arzon va tezroq." },
+        { icon: "🏪", title: "Telegram do'kon (Mini App)", desc: "Telegram ichida to'liq do'kon oynasi (Mini App) — katalog, savat, to'lov. Ilova kabi, lekin Telegram ichida." },
+        { icon: "🔗", title: "CRM / Sheets / admin panel", desc: "Buyurtma va mijozlar Google Sheets, CRM yoki admin panelga avtomatik tushadi. Hamma narsa bir joyda." },
+      ],
+    },
+    process: {
+      badge: "Qanday ishlaymiz",
+      title: "4 qadamda",
+      titleAccent: "ishlovchi botga",
+      subtitle: "Birinchi 30 daqiqa bepul. Keyin har qadam aniq narx va aniq muddat bilan.",
+      steps: [
+        { num: "01", title: "Bepul konsultatsiya", desc: "Bot nima qilishi kerak — buyurtma, qo'llab-quvvatlash, to'lov? O'rganamiz. Majburiyat yo'q.", icon: "💬" },
+        { num: "02", title: "Stsenariy + taklif", desc: "Bot oqimi (flow), kerakli integratsiyalar — aniq stsenariy, narx va muddat bilan yozma taklif.", icon: "🔍" },
+        { num: "03", title: "MVP yaratish", desc: "1-2 hafta ichida ishlovchi bot. Sinab ko'rasiz, fikr berasiz, biz sozlaymiz.", icon: "⚡" },
+        { num: "04", title: "Ishga tushirish + qo'llab-quvvatlash", desc: "Botni jonli ishga tushiramiz, to'lov/CRM ulaymiz, ishlashini kuzatamiz va yaxshilaymiz.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "Real misollar",
+      title: "Biz qurgan",
+      titleAccent: "Telegram yechimlar",
+      subtitle: "Tezcode Telegram texnologiyasini o'z mahsulotlarida kunlik ishlatadi.",
+      items: [
+        { tag: "01", title: "MaxSavdo — Telegram do'kon platformasi", desc: "Telegram'ga o'rnatilgan do'kon va checkout (Mini App) — sotuvchi 5 daqiqada Telegram'da do'kon ochadi. Real ishlovchi mahsulot." },
+        { tag: "02", title: "Buyurtma va yetkazib berish boti", desc: "Katalog → savat → to'lov → kuryer. Kichik biznes uchun arzon va tez sotuv kanali." },
+        { tag: "03", title: "Bron va navbat boti", desc: "Klinika, salon, restoran uchun — vaqt bron qilish, eslatma yuborish, bekor qilish bot orqali." },
+        { tag: "04", title: "Bildirishnoma boti", desc: "Hisobot, ogohlantirish va eslatmalarni avtomatik Telegram'ga jo'natish — jamoa yoki mijoz uchun." },
+      ],
+    },
+    cta: {
+      badge: "Boshlash vaqti",
+      title: "Telegram'da bot",
+      titleAccent: "ishga tushiramizmi?",
+      subtitle: "30 daqiqalik bepul konsultatsiyada botingiz nima qilishini aniqlaymiz. Majburiyat yo'q.",
+      button: "Telegram'da gaplashish",
+      note: "Yoki tezcode@tezcode.dev ga yozing — Bekzod bilan bevosita bog'lanasiz.",
+    },
+    faq: {
+      badge: "Tez-tez beriladigan savollar",
+      title: "Savol va",
+      titleAccent: "javoblar",
+      subtitle: "Telegram bot haqida ko'p so'raladigan savollar.",
+      items: [
+        { q: "Telegram bot biznesimga nima foyda beradi?", a: "Bot 24/7 buyurtma qabul qiladi, savollarga javob beradi va to'lov oladi — operatorsiz. O'zbekistonda mijozlarning aksariyati Telegram'da, shuning uchun bot mijozni o'z kanalida kutadi." },
+        { q: "Bot ichida to'lov qabul qila oladimi?", a: "Ha. Click va Payme integratsiyasi qilamiz — mijoz bot ichidan to'laydi, to'lovdan keyin buyurtma avtomatik tasdiqlanadi." },
+        { q: "Telegram do'kon (Mini App) nima?", a: "Mini App — Telegram ichida ochiladigan to'liq do'kon oynasi: katalog, savatcha, to'lov. Alohida ilova yuklab olish shart emas, hammasi Telegram ichida." },
+        { q: "Botni mavjud tizimimga (CRM, 1C, Sheets) ulay olasizmi?", a: "Ha. Buyurtma va mijozlar Google Sheets, CRM yoki admin panelga avtomatik tushadi. Bot sizning hozirgi ish oqimingiz ichida ishlaydi." },
+        { q: "Qancha vaqtda tayyor bo'ladi va narxi qancha?", a: "Oddiy bot — 1 hafta, to'lov va katalogli to'liqroq bot — 1-2 hafta MVP. Aniq narx konsultatsiyadan keyin beriladi, to'lov esa faqat MVP tayyor bo'lganda boshlanadi." },
+        { q: "Botni o'zim boshqara olamanmi?", a: "Ha. Mahsulot, narx va matnlarni o'zingiz tahrirlaysiz (admin panel yoki Sheets orqali). Dasturchiga har safar murojaat qilish shart emas." },
+      ],
+    },
+    service: {
+      name: "Telegram bot yaratish — Tezcode",
+      description:
+        "Biznes uchun Telegram bot yaratish: buyurtma qabul qilish, Click/Payme to'lov, qo'llab-quvvatlash, eslatma, Telegram do'kon (Mini App), CRM integratsiyasi. Toshkent, O'zbekiston.",
+      serviceType: "Telegram bot ishlab chiqish",
+    },
+  },
+
+  ru: {
+    hero: {
+      badge: "Telegram-бот — Tezcode",
+      title1: "Создаём Telegram-бота",
+      titleAccent: "для вашего бизнеса",
+      title2: "",
+      subtitle:
+        "Telegram-бот, который принимает заказы, отвечает на вопросы, принимает оплату и отправляет уведомления. Для бизнеса в Узбекистане — Click/Payme, CRM и Telegram-магазин (Mini App).",
+      trust: "Бесплатная 30-мин консультация • Оплата только после готового MVP",
+      ctaPrimary: "Бесплатная консультация",
+      ctaSecondary: "Что умеет бот?",
+    },
+    capabilities: {
+      badge: "Возможности",
+      title: "Что умеет",
+      titleAccent: "Telegram-бот?",
+      subtitle: "Telegram — самый используемый канал в Узбекистане. Бот работает с клиентом прямо там.",
+      items: [
+        { icon: "🛒", title: "Приём заказов", desc: "Каталог товаров, корзина, оформление заказа — всё внутри бота. Клиент заказывает без сайта и приложения." },
+        { icon: "💳", title: "Оплата Click / Payme", desc: "Онлайн-оплата внутри бота — интеграция Click, Payme. После оплаты заказ подтверждается автоматически." },
+        { icon: "💬", title: "Вопросы и поддержка", desc: "На частые вопросы бот отвечает сам, сложные передаёт оператору. Работает 24/7." },
+        { icon: "🔔", title: "Напоминания и уведомления", desc: "Статус заказа, акции, напоминания — автоматическое сообщение в Telegram. Дешевле и быстрее SMS." },
+        { icon: "🏪", title: "Telegram-магазин (Mini App)", desc: "Полноценная витрина внутри Telegram (Mini App) — каталог, корзина, оплата. Как приложение, но внутри Telegram." },
+        { icon: "🔗", title: "CRM / Sheets / админка", desc: "Заказы и клиенты попадают в Google Sheets, CRM или админ-панель автоматически. Всё в одном месте." },
+      ],
+    },
+    process: {
+      badge: "Как мы работаем",
+      title: "4 шага до",
+      titleAccent: "рабочего бота",
+      subtitle: "Первые 30 минут бесплатно. Дальше каждый шаг с точной ценой и сроком.",
+      steps: [
+        { num: "01", title: "Бесплатная консультация", desc: "Что должен делать бот — заказы, поддержка, оплата? Изучаем. Без обязательств.", icon: "💬" },
+        { num: "02", title: "Сценарий + предложение", desc: "Flow бота, нужные интеграции — сценарий, цена и срок в письменном виде.", icon: "🔍" },
+        { num: "03", title: "Создание MVP", desc: "Рабочий бот за 1-2 недели. Вы тестируете, даёте обратную связь, мы настраиваем.", icon: "⚡" },
+        { num: "04", title: "Запуск + поддержка", desc: "Запускаем бота, подключаем оплату/CRM, следим за работой и улучшаем.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "Реальные примеры",
+      title: "Telegram-решения,",
+      titleAccent: "которые мы построили",
+      subtitle: "Tezcode использует технологии Telegram в своих продуктах ежедневно.",
+      items: [
+        { tag: "01", title: "MaxSavdo — платформа Telegram-магазинов", desc: "Магазин и checkout внутри Telegram (Mini App) — продавец открывает магазин за 5 минут. Реально работающий продукт." },
+        { tag: "02", title: "Бот заказов и доставки", desc: "Каталог → корзина → оплата → курьер. Недорогой и быстрый канал продаж для малого бизнеса." },
+        { tag: "03", title: "Бот брони и очереди", desc: "Для клиники, салона, ресторана — бронь времени, напоминания, отмена через бота." },
+        { tag: "04", title: "Бот уведомлений", desc: "Автоматическая отправка отчётов, оповещений и напоминаний в Telegram — для команды или клиента." },
+      ],
+    },
+    cta: {
+      badge: "Время начать",
+      title: "Запустим бота",
+      titleAccent: "в Telegram?",
+      subtitle: "Определим, что будет делать ваш бот, на бесплатной 30-минутной консультации. Без обязательств.",
+      button: "Написать в Telegram",
+      note: "Или напишите на tezcode@tezcode.dev — свяжетесь напрямую с Бекзодом.",
+    },
+    faq: {
+      badge: "Частые вопросы",
+      title: "Вопросы и",
+      titleAccent: "ответы",
+      subtitle: "Частые вопросы о Telegram-боте.",
+      items: [
+        { q: "Чем Telegram-бот полезен моему бизнесу?", a: "Бот принимает заказы 24/7, отвечает на вопросы и принимает оплату — без оператора. В Узбекистане большинство клиентов в Telegram, поэтому бот встречает клиента в его канале." },
+        { q: "Может ли бот принимать оплату?", a: "Да. Делаем интеграцию Click и Payme — клиент платит внутри бота, после оплаты заказ подтверждается автоматически." },
+        { q: "Что такое Telegram-магазин (Mini App)?", a: "Mini App — это полноценная витрина внутри Telegram: каталог, корзина, оплата. Не нужно скачивать отдельное приложение — всё внутри Telegram." },
+        { q: "Подключите ли бота к моей системе (CRM, 1C, Sheets)?", a: "Да. Заказы и клиенты попадают в Google Sheets, CRM или админ-панель автоматически. Бот работает внутри вашего текущего процесса." },
+        { q: "Сколько времени и сколько стоит?", a: "Простой бот — 1 неделя, более полный бот с оплатой и каталогом — MVP за 1-2 недели. Точная цена после консультации, оплата только после готового MVP." },
+        { q: "Смогу ли я управлять ботом сам?", a: "Да. Товары, цены и тексты вы редактируете сами (через админ-панель или Sheets). Не нужно каждый раз обращаться к разработчику." },
+      ],
+    },
+    service: {
+      name: "Создание Telegram-бота — Tezcode",
+      description:
+        "Создание Telegram-бота для бизнеса: приём заказов, оплата Click/Payme, поддержка, уведомления, Telegram-магазин (Mini App), интеграция с CRM. Ташкент, Узбекистан.",
+      serviceType: "Разработка Telegram-бота",
+    },
+  },
+
+  en: {
+    hero: {
+      badge: "Telegram bot — Tezcode",
+      title1: "We build a Telegram bot",
+      titleAccent: "for your business",
+      title2: "",
+      subtitle:
+        "A Telegram bot that takes orders, answers questions, accepts payments and sends notifications. Built for business in Uzbekistan — Click/Payme, CRM and a Telegram store (Mini App).",
+      trust: "Free 30-min consultation • You pay only after MVP is delivered",
+      ctaPrimary: "Book free consultation",
+      ctaSecondary: "What can the bot do?",
+    },
+    capabilities: {
+      badge: "Capabilities",
+      title: "What can the",
+      titleAccent: "Telegram bot do?",
+      subtitle: "Telegram is the most-used channel in Uzbekistan. The bot meets your customer right there.",
+      items: [
+        { icon: "🛒", title: "Order taking", desc: "Product catalog, cart, checkout — all inside the bot. Customers order without a website or app." },
+        { icon: "💳", title: "Click / Payme payments", desc: "In-bot online payment — Click and Payme integration. After payment the order is confirmed automatically." },
+        { icon: "💬", title: "Q&A and support", desc: "The bot answers FAQs itself and escalates complex cases to a human. Works 24/7." },
+        { icon: "🔔", title: "Reminders & notifications", desc: "Order status, promos, reminders — automatic Telegram messages. Cheaper and faster than SMS." },
+        { icon: "🏪", title: "Telegram store (Mini App)", desc: "A full storefront inside Telegram (Mini App) — catalog, cart, payment. Like an app, but inside Telegram." },
+        { icon: "🔗", title: "CRM / Sheets / admin", desc: "Orders and customers flow into Google Sheets, CRM or an admin panel automatically. Everything in one place." },
+      ],
+    },
+    process: {
+      badge: "How we work",
+      title: "4 steps to a",
+      titleAccent: "working bot",
+      subtitle: "First 30 minutes are free. Then every step has a clear price and timeline.",
+      steps: [
+        { num: "01", title: "Free consultation", desc: "What should the bot do — orders, support, payments? We study it. No obligations.", icon: "💬" },
+        { num: "02", title: "Scenario + proposal", desc: "Bot flow, required integrations — a scenario, price and timeline in writing.", icon: "🔍" },
+        { num: "03", title: "Build the MVP", desc: "A working bot in 1-2 weeks. You test, give feedback, we tune.", icon: "⚡" },
+        { num: "04", title: "Launch + support", desc: "We launch the bot, connect payments/CRM, monitor and keep improving.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "Real examples",
+      title: "Telegram solutions",
+      titleAccent: "we have built",
+      subtitle: "Tezcode uses Telegram technology in its own products daily.",
+      items: [
+        { tag: "01", title: "MaxSavdo — Telegram store platform", desc: "Store and checkout inside Telegram (Mini App) — a seller opens a shop in 5 minutes. A real, working product." },
+        { tag: "02", title: "Order & delivery bot", desc: "Catalog → cart → payment → courier. An affordable, fast sales channel for small business." },
+        { tag: "03", title: "Booking & queue bot", desc: "For clinics, salons, restaurants — book a slot, send reminders, cancel via the bot." },
+        { tag: "04", title: "Notification bot", desc: "Automatic delivery of reports, alerts and reminders to Telegram — for your team or customers." },
+      ],
+    },
+    cta: {
+      badge: "Time to start",
+      title: "Shall we launch",
+      titleAccent: "a Telegram bot?",
+      subtitle: "We'll scope your bot in a free 30-minute consultation. No obligations.",
+      button: "Message on Telegram",
+      note: "Or email tezcode@tezcode.dev — you reach Bekzod directly.",
+    },
+    faq: {
+      badge: "Frequently asked",
+      title: "Questions &",
+      titleAccent: "answers",
+      subtitle: "Common questions about Telegram bots.",
+      items: [
+        { q: "How does a Telegram bot help my business?", a: "The bot takes orders 24/7, answers questions and accepts payments — without an operator. In Uzbekistan most customers are on Telegram, so the bot meets them in their channel." },
+        { q: "Can the bot accept payments?", a: "Yes. We integrate Click and Payme — the customer pays inside the bot, and the order is confirmed automatically after payment." },
+        { q: "What is a Telegram store (Mini App)?", a: "A Mini App is a full storefront that opens inside Telegram: catalog, cart, payment. No separate app to download — everything is inside Telegram." },
+        { q: "Can you connect the bot to my system (CRM, 1C, Sheets)?", a: "Yes. Orders and customers flow into Google Sheets, CRM or an admin panel automatically. The bot works inside your current process." },
+        { q: "How long and how much does it cost?", a: "A simple bot — 1 week; a fuller bot with payments and catalog — an MVP in 1-2 weeks. An exact price comes after the consultation, and you pay only once the MVP is delivered." },
+        { q: "Can I manage the bot myself?", a: "Yes. You edit products, prices and texts yourself (via an admin panel or Sheets). No need to contact a developer every time." },
+      ],
+    },
+    service: {
+      name: "Telegram bot development — Tezcode",
+      description:
+        "Telegram bot development for business: order taking, Click/Payme payments, support, notifications, Telegram store (Mini App), CRM integration. Tashkent, Uzbekistan.",
+      serviceType: "Telegram bot development",
+    },
+  },
+
+  ar: {
+    hero: {
+      badge: "بوت تيليجرام — Tezcode",
+      title1: "نبني بوت تيليجرام",
+      titleAccent: "لأعمالك",
+      title2: "",
+      subtitle:
+        "بوت تيليجرام يستقبل الطلبات، يجيب عن الأسئلة، يستقبل المدفوعات ويرسل الإشعارات. لأعمال أوزبكستان — Click/Payme وCRM ومتجر تيليجرام (Mini App).",
+      trust: "استشارة 30 دقيقة مجانية • الدفع فقط بعد تسليم MVP",
+      ctaPrimary: "احجز استشارة مجانية",
+      ctaSecondary: "ماذا يفعل البوت؟",
+    },
+    capabilities: {
+      badge: "الإمكانيات",
+      title: "ماذا يفعل",
+      titleAccent: "بوت تيليجرام؟",
+      subtitle: "تيليجرام هو القناة الأكثر استخداماً في أوزبكستان. يعمل البوت مع عميلك هناك مباشرة.",
+      items: [
+        { icon: "🛒", title: "استقبال الطلبات", desc: "كتالوج المنتجات، السلة، إتمام الطلب — كل ذلك داخل البوت. يطلب العميل دون موقع أو تطبيق." },
+        { icon: "💳", title: "دفع Click / Payme", desc: "دفع إلكتروني داخل البوت — تكامل Click وPayme. بعد الدفع يُؤكَّد الطلب تلقائياً." },
+        { icon: "💬", title: "الأسئلة والدعم", desc: "يجيب البوت عن الأسئلة الشائعة بنفسه ويحوّل المعقد إلى موظف. يعمل 24/7." },
+        { icon: "🔔", title: "التذكيرات والإشعارات", desc: "حالة الطلب، العروض، التذكيرات — رسائل تلقائية في تيليجرام. أرخص وأسرع من SMS." },
+        { icon: "🏪", title: "متجر تيليجرام (Mini App)", desc: "واجهة متجر كاملة داخل تيليجرام (Mini App) — كتالوج، سلة، دفع. كأنه تطبيق لكن داخل تيليجرام." },
+        { icon: "🔗", title: "CRM / Sheets / لوحة تحكم", desc: "تصل الطلبات والعملاء إلى Google Sheets أو CRM أو لوحة التحكم تلقائياً. كل شيء في مكان واحد." },
+      ],
+    },
+    process: {
+      badge: "كيف نعمل",
+      title: "4 خطوات إلى",
+      titleAccent: "بوت عامل",
+      subtitle: "أول 30 دقيقة مجانية. ثم كل خطوة بسعر وموعد واضحين.",
+      steps: [
+        { num: "01", title: "استشارة مجانية", desc: "ماذا يجب أن يفعل البوت — طلبات، دعم، دفع؟ ندرس ذلك. بلا التزام.", icon: "💬" },
+        { num: "02", title: "سيناريو + عرض", desc: "تدفق البوت، التكاملات المطلوبة — سيناريو وسعر وموعد مكتوبة.", icon: "🔍" },
+        { num: "03", title: "بناء MVP", desc: "بوت عامل خلال 1-2 أسبوع. تختبره وتعطي ملاحظات ونضبطه.", icon: "⚡" },
+        { num: "04", title: "الإطلاق + الدعم", desc: "نطلق البوت، نربط الدفع/CRM، نراقب ونحسّن.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "أمثلة حقيقية",
+      title: "حلول تيليجرام",
+      titleAccent: "بنيناها",
+      subtitle: "تستخدم Tezcode تقنية تيليجرام في منتجاتها يومياً.",
+      items: [
+        { tag: "01", title: "MaxSavdo — منصة متاجر تيليجرام", desc: "متجر وإتمام شراء داخل تيليجرام (Mini App) — يفتح البائع متجراً خلال 5 دقائق. منتج حقيقي عامل." },
+        { tag: "02", title: "بوت الطلبات والتوصيل", desc: "كتالوج → سلة → دفع → مندوب. قناة بيع سريعة وميسورة للأعمال الصغيرة." },
+        { tag: "03", title: "بوت الحجز والطابور", desc: "للعيادات والصالونات والمطاعم — حجز موعد، تذكيرات، إلغاء عبر البوت." },
+        { tag: "04", title: "بوت الإشعارات", desc: "إرسال تلقائي للتقارير والتنبيهات والتذكيرات إلى تيليجرام — لفريقك أو عملائك." },
+      ],
+    },
+    cta: {
+      badge: "وقت البدء",
+      title: "هل نطلق",
+      titleAccent: "بوت تيليجرام؟",
+      subtitle: "سنحدد ما سيفعله بوتك في استشارة مجانية مدتها 30 دقيقة. بلا التزام.",
+      button: "راسلنا عبر Telegram",
+      note: "أو راسل tezcode@tezcode.dev — تتواصل مباشرة مع بكزود.",
+    },
+    faq: {
+      badge: "أسئلة شائعة",
+      title: "أسئلة و",
+      titleAccent: "إجابات",
+      subtitle: "أسئلة شائعة عن بوت تيليجرام.",
+      items: [
+        { q: "كيف يفيد بوت تيليجرام أعمالي؟", a: "يستقبل البوت الطلبات 24/7، يجيب عن الأسئلة ويستقبل المدفوعات — دون موظف. في أوزبكستان معظم العملاء على تيليجرام، فيقابلهم البوت في قناتهم." },
+        { q: "هل يستطيع البوت استقبال المدفوعات؟", a: "نعم. ندمج Click وPayme — يدفع العميل داخل البوت، ويُؤكَّد الطلب تلقائياً بعد الدفع." },
+        { q: "ما هو متجر تيليجرام (Mini App)؟", a: "Mini App واجهة متجر كاملة تُفتح داخل تيليجرام: كتالوج، سلة، دفع. لا حاجة لتحميل تطبيق منفصل — كل شيء داخل تيليجرام." },
+        { q: "هل تربطون البوت بنظامي (CRM، 1C، Sheets)؟", a: "نعم. تصل الطلبات والعملاء إلى Google Sheets أو CRM أو لوحة التحكم تلقائياً. يعمل البوت داخل سير عملك الحالي." },
+        { q: "كم يستغرق وكم التكلفة؟", a: "بوت بسيط — أسبوع، وبوت أكمل مع دفع وكتالوج — MVP خلال 1-2 أسبوع. يُعطى السعر بعد الاستشارة، والدفع بعد تسليم MVP فقط." },
+        { q: "هل أستطيع إدارة البوت بنفسي؟", a: "نعم. تحرّر المنتجات والأسعار والنصوص بنفسك (عبر لوحة تحكم أو Sheets). لا حاجة لمراجعة مطور في كل مرة." },
+      ],
+    },
+    service: {
+      name: "تطوير بوت تيليجرام — Tezcode",
+      description:
+        "تطوير بوت تيليجرام للأعمال: استقبال الطلبات، دفع Click/Payme، الدعم، الإشعارات، متجر تيليجرام (Mini App)، تكامل CRM. طشقند، أوزبكستان.",
+      serviceType: "تطوير بوت تيليجرام",
+    },
+  },
+
+  uk: {
+    hero: {
+      badge: "Telegram-бот — Tezcode",
+      title1: "Створюємо Telegram-бота",
+      titleAccent: "для вашого бізнесу",
+      title2: "",
+      subtitle:
+        "Telegram-бот, який приймає замовлення, відповідає на питання, приймає оплату та надсилає сповіщення. Для бізнесу в Узбекистані — Click/Payme, CRM і Telegram-магазин (Mini App).",
+      trust: "Безкоштовна 30-хв консультація • Оплата лише після готового MVP",
+      ctaPrimary: "Безкоштовна консультація",
+      ctaSecondary: "Що вміє бот?",
+    },
+    capabilities: {
+      badge: "Можливості",
+      title: "Що вміє",
+      titleAccent: "Telegram-бот?",
+      subtitle: "Telegram — найпопулярніший канал в Узбекистані. Бот працює з клієнтом прямо там.",
+      items: [
+        { icon: "🛒", title: "Прийом замовлень", desc: "Каталог товарів, кошик, оформлення замовлення — все всередині бота. Клієнт замовляє без сайту і додатка." },
+        { icon: "💳", title: "Оплата Click / Payme", desc: "Онлайн-оплата всередині бота — інтеграція Click, Payme. Після оплати замовлення підтверджується автоматично." },
+        { icon: "💬", title: "Питання і підтримка", desc: "На часті питання бот відповідає сам, складні передає оператору. Працює 24/7." },
+        { icon: "🔔", title: "Нагадування і сповіщення", desc: "Статус замовлення, акції, нагадування — автоматичне повідомлення в Telegram. Дешевше і швидше за SMS." },
+        { icon: "🏪", title: "Telegram-магазин (Mini App)", desc: "Повноцінна вітрина всередині Telegram (Mini App) — каталог, кошик, оплата. Як додаток, але всередині Telegram." },
+        { icon: "🔗", title: "CRM / Sheets / адмінка", desc: "Замовлення і клієнти потрапляють у Google Sheets, CRM або адмін-панель автоматично. Усе в одному місці." },
+      ],
+    },
+    process: {
+      badge: "Як ми працюємо",
+      title: "4 кроки до",
+      titleAccent: "робочого бота",
+      subtitle: "Перші 30 хвилин безкоштовно. Далі кожен крок з точною ціною та терміном.",
+      steps: [
+        { num: "01", title: "Безкоштовна консультація", desc: "Що має робити бот — замовлення, підтримка, оплата? Вивчаємо. Без зобов'язань.", icon: "💬" },
+        { num: "02", title: "Сценарій + пропозиція", desc: "Flow бота, потрібні інтеграції — сценарій, ціна та термін письмово.", icon: "🔍" },
+        { num: "03", title: "Створення MVP", desc: "Робочий бот за 1-2 тижні. Ви тестуєте, даєте відгук, ми налаштовуємо.", icon: "⚡" },
+        { num: "04", title: "Запуск + підтримка", desc: "Запускаємо бота, підключаємо оплату/CRM, стежимо за роботою і покращуємо.", icon: "🚀" },
+      ],
+    },
+    examples: {
+      badge: "Реальні приклади",
+      title: "Telegram-рішення,",
+      titleAccent: "які ми побудували",
+      subtitle: "Tezcode використовує технології Telegram у своїх продуктах щодня.",
+      items: [
+        { tag: "01", title: "MaxSavdo — платформа Telegram-магазинів", desc: "Магазин і checkout всередині Telegram (Mini App) — продавець відкриває магазин за 5 хвилин. Реально працюючий продукт." },
+        { tag: "02", title: "Бот замовлень і доставки", desc: "Каталог → кошик → оплата → кур'єр. Недорогий і швидкий канал продажів для малого бізнесу." },
+        { tag: "03", title: "Бот броні та черги", desc: "Для клініки, салону, ресторану — бронь часу, нагадування, скасування через бота." },
+        { tag: "04", title: "Бот сповіщень", desc: "Автоматичне надсилання звітів, оповіщень і нагадувань у Telegram — для команди або клієнта." },
+      ],
+    },
+    cta: {
+      badge: "Час починати",
+      title: "Запустимо бота",
+      titleAccent: "в Telegram?",
+      subtitle: "Визначимо, що робитиме ваш бот, на безкоштовній 30-хвилинній консультації. Без зобов'язань.",
+      button: "Написати в Telegram",
+      note: "Або напишіть на tezcode@tezcode.dev — зв'яжетеся напряму з Бекзодом.",
+    },
+    faq: {
+      badge: "Часті запитання",
+      title: "Запитання та",
+      titleAccent: "відповіді",
+      subtitle: "Часті запитання про Telegram-бота.",
+      items: [
+        { q: "Чим Telegram-бот корисний моєму бізнесу?", a: "Бот приймає замовлення 24/7, відповідає на питання і приймає оплату — без оператора. В Узбекистані більшість клієнтів у Telegram, тож бот зустрічає клієнта в його каналі." },
+        { q: "Чи може бот приймати оплату?", a: "Так. Робимо інтеграцію Click і Payme — клієнт платить усередині бота, після оплати замовлення підтверджується автоматично." },
+        { q: "Що таке Telegram-магазин (Mini App)?", a: "Mini App — це повноцінна вітрина всередині Telegram: каталог, кошик, оплата. Не потрібно завантажувати окремий додаток — усе всередині Telegram." },
+        { q: "Чи підключите бота до моєї системи (CRM, 1C, Sheets)?", a: "Так. Замовлення і клієнти потрапляють у Google Sheets, CRM або адмін-панель автоматично. Бот працює всередині вашого поточного процесу." },
+        { q: "Скільки часу і скільки коштує?", a: "Простий бот — 1 тиждень, повніший бот з оплатою і каталогом — MVP за 1-2 тижні. Точна ціна після консультації, оплата лише після готового MVP." },
+        { q: "Чи зможу я керувати ботом сам?", a: "Так. Товари, ціни і тексти ви редагуєте самі (через адмін-панель або Sheets). Не потрібно щоразу звертатися до розробника." },
+      ],
+    },
+    service: {
+      name: "Створення Telegram-бота — Tezcode",
+      description:
+        "Створення Telegram-бота для бізнесу: прийом замовлень, оплата Click/Payme, підтримка, сповіщення, Telegram-магазин (Mini App), інтеграція з CRM. Ташкент, Узбекистан.",
+      serviceType: "Розробка Telegram-бота",
+    },
+  },
+};

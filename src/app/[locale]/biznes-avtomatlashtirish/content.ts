@@ -61,7 +61,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "ko'p vaqtingizni oladi?",
       subtitle: "30 daqiqalik bepul konsultatsiyada aniqlaymiz va birinchi qadamni rejalashtiramiz.",
       button: "Telegram'da gaplashish",
-      note: "Yoki hello@tezcode.dev ga yozing — Bekzod bilan bevosita bog'lanasiz.",
+      note: "Yoki tezcode@tezcode.dev ga yozing — Bekzod bilan bevosita bog'lanasiz.",
     },
     faq: {
       badge: "Tez-tez beriladigan savollar",
@@ -141,7 +141,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "отнимает больше всего времени?",
       subtitle: "Определим на бесплатной 30-минутной консультации и спланируем первый шаг.",
       button: "Написать в Telegram",
-      note: "Или напишите на hello@tezcode.dev — свяжетесь напрямую с Бекзодом.",
+      note: "Или напишите на tezcode@tezcode.dev — свяжетесь напрямую с Бекзодом.",
     },
     faq: {
       badge: "Частые вопросы",
@@ -221,7 +221,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "eats most of your time?",
       subtitle: "We'll figure it out in a free 30-minute consultation and plan the first step.",
       button: "Message on Telegram",
-      note: "Or email hello@tezcode.dev — you reach Bekzod directly.",
+      note: "Or email tezcode@tezcode.dev — you reach Bekzod directly.",
     },
     faq: {
       badge: "Frequently asked",
@@ -301,7 +301,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "تستهلك معظم وقتك؟",
       subtitle: "سنحدد ذلك في استشارة مجانية مدتها 30 دقيقة ونخطط للخطوة الأولى.",
       button: "راسلنا عبر Telegram",
-      note: "أو راسل hello@tezcode.dev — تتواصل مباشرة مع بكزود.",
+      note: "أو راسل tezcode@tezcode.dev — تتواصل مباشرة مع بكزود.",
     },
     faq: {
       badge: "أسئلة شائعة",
@@ -381,7 +381,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "забирає найбільше часу?",
       subtitle: "Визначимо на безкоштовній 30-хвилинній консультації та сплануємо перший крок.",
       button: "Написати в Telegram",
-      note: "Або напишіть на hello@tezcode.dev — зв'яжетеся напряму з Бекзодом.",
+      note: "Або напишіть на tezcode@tezcode.dev — зв'яжетеся напряму з Бекзодом.",
     },
     faq: {
       badge: "Часті запитання",

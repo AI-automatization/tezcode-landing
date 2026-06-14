@@ -243,6 +243,9 @@
     "rights": "Усі права захищені",
     "made_in": "Ташкент · Зроблено в Узбекистані",
     "product": "Продукт",
+    "services": "Послуги",
+    "for_businesses": "Для бізнесу",
+    "hire_developers": "Найняти розробників",
     "contact_title": "Контакти",
     "blog": "Блог",
     "pricing": "Ціни",
@@ -270,7 +273,7 @@
         "metric": "−2M"
       },
       "munira": {
-        "name": "Dr. Munira",
+        "name": "Dr. Akmal",
         "role": "Директор клініки · Мірзо Улугбек",
         "quote": "З ClinicaGo черга в клініці на 40% швидша. Пацієнти вдячні.",
         "metric": "40%"

@@ -89,9 +89,22 @@ export function CookieConsent() {
         >
           <div className="p-5 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border-bright)] bg-[var(--tc-surface-2)]/95 backdrop-blur-xl shadow-2xl">
             <div className="flex items-start gap-3 mb-3">
-              <span className="text-xl shrink-0" aria-hidden>
-                🍪
-              </span>
+              <svg
+                className="w-5 h-5 shrink-0 text-[var(--tc-gold)]"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.6}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden
+              >
+                <path d="M12 2.5a9.5 9.5 0 1 0 9.5 9.5 4 4 0 0 1-4.2-4.2A4 4 0 0 1 12 2.5Z" />
+                <circle cx="9" cy="11" r="0.9" fill="currentColor" stroke="none" />
+                <circle cx="13.5" cy="9" r="0.9" fill="currentColor" stroke="none" />
+                <circle cx="14.2" cy="14.4" r="0.9" fill="currentColor" stroke="none" />
+                <circle cx="9.4" cy="15" r="0.9" fill="currentColor" stroke="none" />
+              </svg>
               <div className="flex-1 min-w-0">
                 <h3
                   className="font-700 text-white text-sm mb-1"
