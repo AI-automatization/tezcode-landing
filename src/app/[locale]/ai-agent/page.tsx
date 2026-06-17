@@ -4,6 +4,8 @@ import {
   buildPageMetadata,
   getFaqSchema,
   getServiceSchema,
+  getBreadcrumbSchema,
+  BASE_URL,
 } from "@/lib/seo";
 import { CONTENT } from "./content";
 
@@ -49,6 +51,12 @@ export default async function AiAgentPage({
     path: PATH,
   });
   const faqSchema = getFaqSchema(copy.faq.items);
+  // BreadcrumbList so answer engines see the page's place in the site hierarchy
+  // (Home → AI agent) — same SSR JSON-LD pattern as the blog pillar post.
+  const breadcrumb = getBreadcrumbSchema([
+    { name: "Tezcode", url: BASE_URL },
+    { name: copy.service.name, url: `${BASE_URL}${PATH}` },
+  ]);
 
   return (
     <>
@@ -59,6 +67,10 @@ export default async function AiAgentPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
       <ServicePageClient content={CONTENT} />
     </>
