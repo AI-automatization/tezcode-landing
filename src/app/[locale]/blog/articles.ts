@@ -24,6 +24,28 @@ export const ARTICLES: ArticleMeta[] = [
     },
   },
   {
+    slug: "ai-chatbot-va-ai-agent-farqi",
+    datePublished: "2026-06-17",
+    category: "AI Agent / 2026",
+    list: {
+      uz: {
+        title: "AI chatbot va AI agent farqi nima? (2026)",
+        excerpt:
+          "Chatbot gaplashadi, agent ish bajaradi. Farqni misollar bilan tushuntiramiz, taqqoslash jadvali va qaysi biri sizning biznesingizga kerakligini aniqlashga yordam beramiz.",
+      },
+      ru: {
+        title: "В чём разница между AI-чат-ботом и AI-агентом? (2026)",
+        excerpt:
+          "Чат-бот разговаривает, агент выполняет работу. Объясняем разницу на примерах, таблица сравнения и что именно нужно вашему бизнесу.",
+      },
+      en: {
+        title: "AI chatbot vs AI agent: what is the difference? (2026)",
+        excerpt:
+          "A chatbot talks, an agent does the work. We explain the difference with examples, a comparison table, and which one your business needs.",
+      },
+    },
+  },
+  {
     slug: "online-birga-film-korish",
     datePublished: "2026-06-07",
     category: "Video / Watch Party",

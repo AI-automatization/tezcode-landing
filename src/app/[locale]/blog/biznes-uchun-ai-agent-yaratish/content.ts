@@ -434,4 +434,215 @@ export const CONTENT: ArticleContent = {
       note: "Обычно отвечаем в течение нескольких часов.",
     },
   },
+
+  en: {
+    hero: {
+      badge: "AI Agent / 2026",
+      title: "Building an AI agent for business in Tashkent: a complete guide (2026)",
+      subtitle:
+        "What an AI agent is, how it differs from a chatbot, which businesses need one, how it works, what it costs and how to build one in 6 steps — a practical guide for businesses in Uzbekistan.",
+      dateLabel: "June 14, 2026",
+      readTime: "14 min read",
+    },
+    tldr: {
+      label: "Short answer",
+      text:
+        "An AI agent is software that does not just answer but carries a task through to the end: it replies to the customer, writes data into your CRM or 1C, places the order and brings in a human only when needed. Building an AI agent for business in Tashkent usually takes 6 steps: analysis → design → integration → testing → launch → support. The price is not a ready-made template — it depends on your needs (which model, which integrations, how much complexity). Tezcode — a 16-person team founded in Tashkent in 2024 — builds AI agents on top of Claude and GPT that work in Uzbek and Russian, and offers a free consultation.",
+    },
+    sections: [
+      {
+        heading: "What is an AI agent and how does it differ from a chatbot?",
+        paragraphs: [
+          "An AI agent is software that can make decisions on its own and carry out a practical task in order to reach a goal. An ordinary chatbot answers a question with text and stops there. An AI agent, beyond answering, acts: it looks up data, writes to a system, creates an order, sends an invoice or assigns a task to an employee.",
+          "Here is the difference in a simple example. If a customer asks \"do you have shampoo for hair?\", an ordinary chatbot says \"yes, we have shampoos.\" An AI agent instead checks the stock balance in your inventory, finds a matching product, states its price, places the order in the CRM if the customer wants, and signals the delivery team — with no human involved.",
+          "So the core difference is: a chatbot talks, an agent does the work. In technical terms this is called \"tool calling\" (the agent calls functions in external systems) and \"orchestration\" (running several steps in sequence). This is exactly why, in 2026, modern AI agents have become far more useful than simple question-and-answer bots.",
+          "Another important difference is context and memory. A well-built agent takes the previous conversation, the customer's order history and your business rules into account. So it does not start from scratch every time — it works like a real assistant.",
+          "In short: a chatbot runs on a script (\"if asked this, answer that\") with a limited set of buttons; an AI agent understands free text, makes decisions and acts in external systems. The first is five-year-old technology; the second is the 2026 standard.",
+        ],
+      },
+      {
+        heading: "Which business needs an AI agent?",
+        paragraphs: [
+          "Not every business needs an AI agent to the same degree. But if the following signs are present, it is a strong signal:",
+          "The biggest benefit goes to businesses with a lot of repetitive, similar communication and processes. In Uzbekistan these are usually the following fields — next to each is what exactly the agent does:",
+        ],
+        bullets: [
+          "Sign: you answer the same questions dozens of times a day (\"how much is it?\", \"where are you located?\", \"what are your hours?\").",
+          "Sign: customers write in the evening or on weekends, but there is no operator — leads go cold.",
+          "Sign: you manually move data from one system to another (from Telegram to Excel, from Excel to 1C).",
+          "Retail and e-commerce — product selection, stock checks, taking orders, delivery status.",
+          "Clinics and medical centers — appointment booking, reminders, answers to common questions, a queue without phone calls.",
+          "Restaurants and HoReCa — reservations, menu advice, delivery orders.",
+          "Services (education, beauty, repair, logistics) — sign-ups, reminders, price estimates, lead qualification.",
+        ],
+      },
+      {
+        heading: "Types of AI agents: which one fits you?",
+        paragraphs: [
+          "In practice, businesses most often use one or several of the following types. Each has its own job:",
+        ],
+        bullets: [
+          "Customer support agent — answers questions 24/7, resolves common issues itself, and hands complex cases to an operator.",
+          "Sales / lead agent — \"warms up\" an incoming customer, identifies the need, offers a suitable option and writes the contact into the CRM.",
+          "Order agent — runs the process from product selection to payment and delivery, checking stock and price against the real database.",
+          "Internal automation agent — for employees: prepares documents, gathers reports, moves data between systems and distributes tasks.",
+          "Multi-agent \"AI office\" approach — several agents share the work (one for sales, one for support, one for reporting) while an orchestrator agent manages them.",
+        ],
+      },
+      {
+        heading: "How does an AI agent work? (technical, but in plain language)",
+        paragraphs: [
+          "Many people picture an \"AI agent\" as a magic box. In reality it is made of several clear parts, and each one does an understandable job.",
+          "1. LLM (language model) — the agent's \"brain.\" This is a large language model like GPT (OpenAI) or Claude (Anthropic) that understands text, makes decisions and forms answers. The model choice affects quality, speed and cost.",
+          "2. Knowledge base (RAG) — needed so the agent answers from your real data. In the RAG (Retrieval-Augmented Generation) approach, the agent finds the right snippet in your documents, price list, FAQ and catalog before answering. That is why it does not \"make things up\" but answers based on your reality.",
+          "3. Integration (tools) — connects the agent to your business systems: CRM, 1C, inventory database, Telegram, website, payment system. This is exactly the part that turns the agent from a \"talking bot\" into an \"assistant that does the work.\"",
+          "4. Multilingual support — in Uzbekistan the agent must work naturally in Uzbek and Russian (often mixed within a single conversation). Modern models handle this well, but it requires proper tuning and testing.",
+          "The simplified chain is: the customer writes → the agent understands the intent → if needed it pulls data from the knowledge base → if needed it queries a system (stock, order) → it answers or completes the task → it records the result.",
+          "Let us look at a real example. A customer writes in Telegram: \"Hi, I need a gift for my daughter who is turning 6, do you have something up to 200 thousand?\" The agent understands the intent (gift + age + budget), finds matching products in the catalog, checks stock in the warehouse, offers 3 options, adds the chosen one to the order, asks for the address and phone, and records the order in the CRM while signaling the delivery team. All of this in one conversation, with no operator involved. Only if there is a payment dispute or a non-standard request does it hand off to a human.",
+        ],
+      },
+      {
+        heading: "What is the real benefit of an AI agent? (an honest assessment)",
+        paragraphs: [
+          "Being honest matters here: the exact numbers differ for every business, and we do not cite made-up claims like \"our clients raised sales by X%.\" Instead we name the general trends observed in the industry — the result depends on your process.",
+        ],
+        bullets: [
+          "24/7 answers — even if a customer writes at night or on a holiday, the reply comes instantly and the lead does not go cold.",
+          "Automating routine — repeated questions and manual data transfer stop eating up people's time.",
+          "Fast response time — the customer does not wait for minutes, which positively affects conversion.",
+          "Lower load on operators — the agent takes the simple questions, so people deal only with complex cases.",
+          "Consistent quality — the agent does not get tired and answers correctly and politely regardless of mood.",
+          "Data and analytics — every conversation is recorded, and the most common questions and lead sources become visible.",
+        ],
+      },
+      {
+        heading: "Does an AI agent replace a human?",
+        paragraphs: [
+          "No. The important point: an AI agent does not replace a human entirely. It takes on the repetitive, time-consuming part, while your employees gain time for valuable work — complex deals and relationships. In a properly built system the agent and the human work together: the agent on the front line, the human on complex and high-value cases.",
+        ],
+      },
+      {
+        heading: "How do you build an AI agent? — 6 steps",
+        paragraphs: [
+          "A good AI agent is not just \"switching on a bot.\" A reliable result goes through the following 6 stages. This process is described in detail on Tezcode's AI agent service page (tezcode.dev/ai-agent), while AI chatbot solutions are on the tezcode.dev/ai-chatbot page.",
+        ],
+        bullets: [
+          "1. Analysis — which problem are we solving? Which process is repetitive and worth automating? What is the success criterion? Skipping this stage is the most common mistake.",
+          "2. Design — the agent's job, the conversation flow, which questions it handles itself and when it hands off to a human are defined. Language (uz/ru), tone and business rules are written down here.",
+          "3. Integration — the agent connects to the CRM, 1C, inventory, Telegram or website, and the knowledge base (RAG) is filled with your real data.",
+          "4. Testing — the agent is checked against real scenarios: wrong answers, \"difficult\" customers, edge cases. This stage determines quality.",
+          "5. Launch — the agent connects to a live channel (website, Telegram, Instagram), first at a limited volume, then fully.",
+          "6. Support and improvement — real conversations are analyzed, answers and the knowledge base are updated, and the agent becomes more accurate over time.",
+        ],
+      },
+      {
+        heading: "What will be needed from you to build an AI agent?",
+        paragraphs: [
+          "Many business owners think \"I'm not a technical person, this is probably hard.\" In fact, what is required from you is not to write code but to explain your business well. The following make the agent accurate and useful:",
+        ],
+        bullets: [
+          "A list of common questions — what customers usually ask and how you answer. Reviewing your Telegram or Instagram history is enough.",
+          "Prices and catalog — products/services, prices and key terms. This becomes the agent's knowledge base.",
+          "Business rules — discount limits, working hours, delivery terms, and in which cases to hand off to a human.",
+          "Access to your systems — which CRM, 1C or inventory you use; technical access is needed for integration.",
+          "Tone and language — how the agent should speak: formal or friendly, mainly in Uzbek or Russian.",
+          "A responsible person — if one person on your side answers questions, the project moves faster and with better quality.",
+        ],
+      },
+      {
+        heading: "What does the price of an AI agent depend on?",
+        paragraphs: [
+          "The most frequent question is \"how much does it cost?\" The honest answer: there is no ready price, because an AI agent is like a suit — it is tailored to your measurements. The price depends on:",
+        ],
+        bullets: [
+          "Model — which LLM (GPT, Claude) and which version is used; this affects quality and the ongoing running cost.",
+          "Number of integrations — only the website, or also CRM, 1C, inventory, payment system and Telegram? Each connection increases the workload.",
+          "Complexity — a simple FAQ agent or an agent with multi-step logic that completes an order end to end.",
+          "Knowledge base size — how many documents, the catalog and rules the agent is \"trained\" on.",
+          "Language and tone — mixed Uzbek/Russian communication, brand voice and tuning of business rules.",
+          "Support — the level of updating, monitoring and improvement after launch.",
+          "The right approach — first identify the need in a free consultation, then get a precise proposal tailored to it. Be wary of \"one price for everyone\" offers: they often do not fit your real process.",
+        ],
+      },
+      {
+        heading: "The most common mistakes",
+        paragraphs: [
+          "AI agent projects more often fail because of the approach, not the technology. The most common mistakes:",
+        ],
+        bullets: [
+          "Starting without a goal — building an agent with no clear task, \"everyone does it, so we will too.\" First define which problem it solves.",
+          "Ignoring the knowledge base — if the agent is not fed your real data, it gives wrong or generic answers.",
+          "Leaving it without integration — an agent not connected to CRM/1C turns into an ordinary chatbot and does not deliver the main benefit.",
+          "No handoff path to a human — if the agent cannot pass a complex case to an operator, the customer gets frustrated.",
+          "Cutting the testing stage short — an agent launched without checks makes mistakes in front of a live customer and loses trust.",
+          "Build it once and forget — an agent is a living system; without regular updates it becomes outdated over time.",
+        ],
+      },
+      {
+        heading: "Ready-made platform, no-code or building from scratch — which one?",
+        paragraphs: [
+          "There are several ways to implement an AI agent, and the right choice depends on the complexity of your business:",
+        ],
+        bullets: [
+          "Ready-made SaaS chatbot platforms — start fast and cheap, but often lack deep integration with Uzbek systems (1C, local CRMs, payment) and weakly support the Uzbek language. Enough for a simple FAQ, limited for serious automation.",
+          "No-code builders — require little technical knowledge, but as complexity grows they hit a ceiling, and integrations are limited.",
+          "Custom solution — an agent precisely tuned to your business, integration with any system, full control and data security. The best path for more complex processes and a growing business.",
+          "Practical advice: if your goal is just simple Q&A on the website, you can start with a ready-made solution. But if the agent must work with your inventory, CRM or order process, a custom solution is cheaper and more reliable in the long run, because you do not keep hitting the same limits over and over.",
+        ],
+      },
+      {
+        heading: "Building an AI agent with Tezcode",
+        paragraphs: [
+          "Tezcode is a 16-person AI Software Factory team founded in Tashkent in 2024. We build AI agents, AI chatbots and custom software for business. The founder is Bekzod Mirzaaliyev.",
+          "We build agents on top of Claude (Anthropic) and GPT (OpenAI) models, tune them to work in Uzbek and Russian, and connect them to your existing systems — CRM, 1C, Telegram, website. The work follows the 6 steps described above, agreeing each stage with you.",
+          "Our R&D direction also includes the \"AI office\" approach — where several agents (sales, support, reporting and other departments) share the work between them. This is still a developing approach, not a finished boxed product — but a solution in this direction can be built for your business.",
+          "To get started you do not have to buy anything right away: first, in a free consultation, we assess together whether an AI agent fits your business and what benefit you can get from it.",
+        ],
+      },
+    ],
+    faq: {
+      title: "Frequently asked questions",
+      items: [
+        {
+          q: "What is an AI agent?",
+          a: "An AI agent is software that does not just answer but carries out a task. It replies to the customer, writes data into your CRM or 1C, places the order and, when needed, hands off to an employee. At its core are a large language model like GPT or Claude, your knowledge base and integration with your business systems.",
+        },
+        {
+          q: "How does an AI agent differ from a chatbot?",
+          a: "A chatbot answers a question with text and stops there. An AI agent acts: it checks stock in the warehouse, creates an order, writes data to the system and hands a complex case to an operator. Simply put: a chatbot talks, an agent does the work.",
+        },
+        {
+          q: "Which business needs an AI agent?",
+          a: "Businesses with a lot of repetitive questions and processes — retail and e-commerce, clinics, restaurants, education, beauty and the service sector. If you answer the same questions dozens of times a day, leads go unanswered in the evening, or you manually move data between systems, an AI agent will be useful.",
+        },
+        {
+          q: "Does an AI agent work with existing CRM, 1C or Telegram?",
+          a: "Yes. A properly built AI agent works through integration with your existing CRM, 1C, inventory database, website and Telegram. This integration is exactly what distinguishes an agent from an ordinary chatbot — it does not just talk, it really acts in your systems.",
+        },
+        {
+          q: "Does the AI agent work in the Uzbek language?",
+          a: "Yes. Modern language models work naturally in Uzbek and Russian, often mixed within a single conversation. Tezcode tunes and tests agents specifically for uz/ru communication for businesses in Uzbekistan.",
+        },
+        {
+          q: "How much does an AI agent cost?",
+          a: "There is no fixed ready price — it depends on the model, the number of integrations, the complexity and the size of the knowledge base. The right path is to identify the need in a free consultation and get a precise proposal tailored to it. \"One price for everyone\" usually does not fit a real process.",
+        },
+        {
+          q: "How long does it take to build an AI agent?",
+          a: "It depends on the agent's complexity. A simple FAQ and lead agent launches relatively quickly; a multi-step agent deeply connected to CRM/1C and the order process takes longer. The exact timeline is given after the analysis stage.",
+        },
+        {
+          q: "Is my data safe?",
+          a: "Yes, this requires a serious approach. In a well-built agent, access rights are restricted, confidential data is protected, and the agent only queries the systems it is allowed to. Security requirements are agreed at the start of the project.",
+        },
+      ],
+    },
+    cta: {
+      title: "Thinking about building an AI agent for your business?",
+      subtitle:
+        "The Tezcode team will analyze your business and assess together whether an AI agent fits you and what benefit you can get from it. Get a free consultation.",
+      button: "Contact via Telegram",
+      note: "We usually reply within a few hours.",
+    },
+  },
 };
