@@ -10,6 +10,7 @@ import { ROICalculator } from "@/components/ROICalculator";
 import { Testimonials } from "@/components/Testimonials";
 import { ReviewsWidget } from "@/components/ReviewsWidget";
 import { BusinessSolutions } from "@/components/BusinessSolutions";
+import { Partners } from "@/components/Partners";
 import { PricingTiers } from "@/components/PricingTiers";
 import { Team } from "@/components/Team";
 import { ContactForm } from "@/components/ContactForm";
@@ -67,6 +68,9 @@ export default function HomePage() {
       <Suspense fallback={<div className="h-64 bg-[var(--tc-surface-1)]" />}>
         <BusinessSolutions />
       </Suspense>
+
+      {/* Partners — official integration partners (internal pages only) */}
+      <Partners />
 
       {/* Pricing Tiers */}
       <PricingTiers />

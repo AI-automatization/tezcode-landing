@@ -80,8 +80,9 @@ export function Navbar() {
       ].join(" ")}
     >
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <Link href={`/${locale === "uz" ? "" : locale}`} className="flex items-center gap-2.5 group">
+        {/* Logo — locale-aware Link adds the prefix automatically; pass the
+            unprefixed path so non-uz locales don't get a doubled prefix (404). */}
+        <Link href="/" className="flex items-center gap-2.5 group">
           <TCLogo className="w-9 h-9" />
           <span
             className="font-display font-700 text-lg tracking-tight text-[var(--tc-text-primary)] group-hover:text-white transition-colors"
