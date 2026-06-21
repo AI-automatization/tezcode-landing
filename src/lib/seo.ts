@@ -237,6 +237,7 @@ export function getOrganizationSchema() {
       "https://t.me/Web_Developers_free",
       "https://t.me/webdevelopertk",
       "https://www.instagram.com/tezcode_dev/",
+      "https://www.linkedin.com/company/tezcode-dev",
       "https://github.com/AI-automatization",
       "https://clutch.co/profile/tezcode",
       "https://www.f6s.com/tezcode",
