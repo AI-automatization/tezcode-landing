@@ -2,6 +2,8 @@
 
 import { motion } from "motion/react";
 import { useLocale } from "next-intl";
+import { Search, Palette, Zap, Rocket } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
@@ -39,7 +41,7 @@ const HEADER: Record<Lang, { badge: string; title: string; titleHighlight: strin
   },
 };
 
-const STEPS = [
+const STEPS: { num: string; titleUz: string; titleRu: string; titleEn: string; descUz: string; descRu: string; descEn: string; icon: LucideIcon; color: string }[] = [
   {
     num: "01",
     titleUz: "Tushunamiz",
@@ -48,7 +50,7 @@ const STEPS = [
     descUz: "Biznesingizni o'rganib, bo'sh joylarni topamiz. 1 kun.",
     descRu: "Изучаем бизнес и находим возможности. 1 день.",
     descEn: "We map your business and spot opportunities. 1 day.",
-    icon: "🔍",
+    icon: Search,
     color: "blue",
   },
   {
@@ -59,7 +61,7 @@ const STEPS = [
     descUz: "Sizning brendinge mos yechim chizamiz. 2-3 kun.",
     descRu: "Создаём решение под ваш бренд. 2-3 дня.",
     descEn: "We design a solution tailored to your brand. 2-3 days.",
-    icon: "🎨",
+    icon: Palette,
     color: "gold",
   },
   {
@@ -70,7 +72,7 @@ const STEPS = [
     descUz: "AI yordamida tezda ishlab chiqamiz. 5-10 kun.",
     descRu: "Разрабатываем с помощью AI. 5-10 дней.",
     descEn: "We ship fast with AI engineers. 5-10 days.",
-    icon: "⚡",
+    icon: Zap,
     color: "purple",
   },
   {
@@ -81,7 +83,7 @@ const STEPS = [
     descUz: "Production'ga deploy + 30 kun bepul support.",
     descRu: "Деплой + 30 дней бесплатной поддержки.",
     descEn: "Production deploy + 30 days free support.",
-    icon: "🚀",
+    icon: Rocket,
     color: "emerald",
   },
 ];
@@ -177,9 +179,9 @@ export function ProcessSteps() {
 
                     <div className="relative flex items-center gap-4 mb-5">
                       <div
-                        className={`w-14 h-14 rounded-full bg-[var(--tc-surface-0)] border-2 ${c.ring} flex items-center justify-center text-2xl`}
+                        className={`w-14 h-14 rounded-full bg-[var(--tc-surface-0)] border-2 ${c.ring} flex items-center justify-center`}
                       >
-                        {step.icon}
+                        {(() => { const Icon = step.icon; return <Icon className="w-6 h-6 text-white" />; })()}
                       </div>
                       <span
                         className={`text-4xl font-800 ${c.text} opacity-30`}

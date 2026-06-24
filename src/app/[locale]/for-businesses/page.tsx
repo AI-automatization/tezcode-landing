@@ -9,6 +9,7 @@ import { getFaqSchema } from "@/lib/seo";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Tilt3D } from "@/components/motion/Tilt3D";
 import { Magnetic } from "@/components/motion/Magnetic";
+import { ServiceIcon } from "@/components/service-page/ServiceIcon";
 
 // ─────────────────────────────────────────────────────────────────────
 // Locale types & copy
@@ -165,22 +166,22 @@ const COPY: Record<Lang, Copy> = {
       subtitle: "14 nafar in-house (ichki) dasturchi, AI (sun'iy intellekt) tool'lari, lokal CEO, yagona javobgarlik.",
       items: [
         {
-          icon: "👥",
+          icon: "users",
           title: "14 nafar in-house dasturchi",
           desc: "Toshkentdagi ofisimizda. Freelancer emas, jamoa. Birovi kasal bo'lsa boshqa qo'llab turadi. Backend, frontend, mobil, AI, DevOps — barchasi bizda.",
         },
         {
-          icon: "🤖",
+          icon: "bot",
           title: "AI bilan 3x tezroq",
           desc: "Claude (Anthropic AI) + Cursor (AI kod muharrir) bilan ishlaymiz. Bir oylik ish 1 hafta'da tayyor. Sifat tushmaydi — AI yozgan kod review (tekshiruv)dan o'tadi.",
         },
         {
-          icon: "📋",
+          icon: "clipboard-list",
           title: "Yagona kontrakt, bitta loyiha menejer",
           desc: "Bir kontrakt — bir narx — bir muddat. PM (project manager — loyiha menejer) sizga har hafta hisobot beradi. Aralashish yo'q, surprize narx yo'q.",
         },
         {
-          icon: "💬",
+          icon: "message-circle",
           title: "CEO o'zi Telegram'da, 24/7",
           desc: "Bekzod Mirzaaliyev (CEO) — @webdevelopertk. Muammo chiqsa to'g'ri unga yozasiz. Support tickets (yordam so'rovlari) buyurokratiya yo'q. 30 daq ichida javob.",
         },
@@ -238,25 +239,25 @@ const COPY: Record<Lang, Copy> = {
           num: "01",
           title: "Konsultatsiya — bepul",
           desc: "Sizning biznesni 30-60 daqiqa o'rganamiz. Hozirgi muammo, kerakli funksiya, byudjet. Hech qanday majburiyat yo'q.",
-          icon: "💬",
+          icon: "message-circle",
         },
         {
           num: "02",
           title: "Texnik tahlil + taklif",
           desc: "3-5 kun ichida: aniq texnik hujjat (technical spec), narx, muddat, jamoa tarkibi. Yozma kontrakt.",
-          icon: "📐",
+          icon: "ruler",
         },
         {
           num: "03",
           title: "MVP yaratish",
           desc: "2-4 hafta ichida ishlovchi versiya. Har hafta demo (ko'rsatuv). Siz online ko'rib turasiz, feedback (fikr) berasiz.",
-          icon: "⚡",
+          icon: "zap",
         },
         {
           num: "04",
           title: "Production + support",
           desc: "Deploy (joylashtirish) + 30 kun bepul support. Keyin oyiga $200-500 (loyiha kattaligiga qarab) qo'llab-quvvatlash kontrakti.",
-          icon: "🚀",
+          icon: "rocket",
         },
       ],
     },
@@ -419,22 +420,22 @@ const COPY: Record<Lang, Copy> = {
       subtitle: "14 in-house разработчиков, AI инструменты, локальный CEO, единая ответственность.",
       items: [
         {
-          icon: "👥",
+          icon: "users",
           title: "14 in-house разработчиков",
           desc: "В офисе в Ташкенте. Не фрилансеры — команда. Заболеет один — другие подстрахуют. Backend, frontend, mobile, AI, DevOps — всё у нас.",
         },
         {
-          icon: "🤖",
+          icon: "bot",
           title: "С AI в 3 раза быстрее",
           desc: "Работаем с Claude (Anthropic AI) + Cursor (AI редактор кода). Месяц работы — за неделю. Качество не падает — код проходит ревью.",
         },
         {
-          icon: "📋",
+          icon: "clipboard-list",
           title: "Один контракт, один PM",
           desc: "Один контракт — одна цена — один срок. PM (проектный менеджер) даёт еженедельный отчёт. Никаких сюрпризов по цене.",
         },
         {
-          icon: "💬",
+          icon: "message-circle",
           title: "CEO лично в Telegram, 24/7",
           desc: "Бекзод Мирзаалиев (CEO) — @webdevelopertk. Проблема — пишете напрямую ему. Без тикетов и бюрократии. Ответ за 30 минут.",
         },
@@ -492,25 +493,25 @@ const COPY: Record<Lang, Copy> = {
           num: "01",
           title: "Консультация — бесплатно",
           desc: "Изучаем ваш бизнес 30-60 минут. Текущие проблемы, нужные функции, бюджет. Без обязательств.",
-          icon: "💬",
+          icon: "message-circle",
         },
         {
           num: "02",
           title: "Техническое ТЗ + предложение",
           desc: "За 3-5 дней: технический документ, цена, срок, состав команды. Письменный контракт.",
-          icon: "📐",
+          icon: "ruler",
         },
         {
           num: "03",
           title: "MVP",
           desc: "За 2-4 недели — рабочая версия. Демо каждую неделю. Вы видите всё онлайн, даёте feedback.",
-          icon: "⚡",
+          icon: "zap",
         },
         {
           num: "04",
           title: "Production + support",
           desc: "Деплой + 30 дней бесплатной поддержки. Дальше $200-500/мес (зависит от размера проекта).",
-          icon: "🚀",
+          icon: "rocket",
         },
       ],
     },
@@ -672,22 +673,22 @@ const COPY: Record<Lang, Copy> = {
       subtitle: "14 in-house developers, AI tooling, local CEO, single accountability.",
       items: [
         {
-          icon: "👥",
+          icon: "users",
           title: "14 in-house developers",
           desc: "In our Tashkent office. Not freelancers — a team. If one is sick, others cover. Backend, frontend, mobile, AI, DevOps — all in-house.",
         },
         {
-          icon: "🤖",
+          icon: "bot",
           title: "3x faster with AI",
           desc: "We use Claude (Anthropic AI) and Cursor (AI code editor) daily. A month of work in one week. Quality stays high — every AI line goes through review.",
         },
         {
-          icon: "📋",
+          icon: "clipboard-list",
           title: "One contract, one PM",
           desc: "One contract — one price — one timeline. Your PM gives you a weekly progress report. No price surprises.",
         },
         {
-          icon: "💬",
+          icon: "message-circle",
           title: "CEO on Telegram, 24/7",
           desc: "Bekzod Mirzaaliyev (CEO) — @webdevelopertk. Got a problem? Message him directly. No tickets, no bureaucracy. Reply in 30 minutes.",
         },
@@ -744,25 +745,25 @@ const COPY: Record<Lang, Copy> = {
           num: "01",
           title: "Consultation — free",
           desc: "We study your business for 30-60 minutes. Current pains, needed features, budget. No obligations.",
-          icon: "💬",
+          icon: "message-circle",
         },
         {
           num: "02",
           title: "Tech spec + proposal",
           desc: "Within 3-5 days: technical doc, price, timeline, team. Written contract.",
-          icon: "📐",
+          icon: "ruler",
         },
         {
           num: "03",
           title: "Build MVP",
           desc: "Working version in 2-4 weeks. Weekly demos. You watch live, give feedback.",
-          icon: "⚡",
+          icon: "zap",
         },
         {
           num: "04",
           title: "Production + support",
           desc: "Deploy + 30 days of free support. Then $200-500/month (depending on scope).",
-          icon: "🚀",
+          icon: "rocket",
         },
       ],
     },
@@ -924,22 +925,22 @@ const COPY: Record<Lang, Copy> = {
       subtitle: "14 مطور داخلي، أدوات AI، مدير محلي، مسؤولية واحدة.",
       items: [
         {
-          icon: "👥",
+          icon: "users",
           title: "14 مطور داخلي",
           desc: "في مكتبنا بطشقند. ليس مستقلين — فريق. إذا مرض أحدهم، يعوض الآخرون.",
         },
         {
-          icon: "🤖",
+          icon: "bot",
           title: "أسرع 3 أضعاف مع AI",
           desc: "نستخدم Claude (Anthropic AI) و Cursor (محرر AI) يومياً. شهر عمل في أسبوع. الجودة لا تنخفض.",
         },
         {
-          icon: "📋",
+          icon: "clipboard-list",
           title: "عقد واحد، مدير مشروع واحد",
           desc: "عقد واحد — سعر واحد — موعد واحد. PM يعطي تقريراً أسبوعياً. لا مفاجآت بالسعر.",
         },
         {
-          icon: "💬",
+          icon: "message-circle",
           title: "CEO على Telegram، 24/7",
           desc: "بكزود ميرزااليف (CEO) — @webdevelopertk. مشكلة؟ راسله مباشرة. بلا تذاكر وبيروقراطية.",
         },
@@ -994,25 +995,25 @@ const COPY: Record<Lang, Copy> = {
           num: "01",
           title: "استشارة — مجانية",
           desc: "ندرس أعمالك 30-60 دقيقة. المشاكل الحالية، الميزات المطلوبة، الميزانية.",
-          icon: "💬",
+          icon: "message-circle",
         },
         {
           num: "02",
           title: "مواصفات تقنية + عرض",
           desc: "خلال 3-5 أيام: وثيقة تقنية، سعر، موعد، فريق. عقد مكتوب.",
-          icon: "📐",
+          icon: "ruler",
         },
         {
           num: "03",
           title: "بناء MVP",
           desc: "نسخة عاملة خلال 2-4 أسابيع. عرض كل أسبوع. تشاهد مباشر وتعطي feedback.",
-          icon: "⚡",
+          icon: "zap",
         },
         {
           num: "04",
           title: "الإنتاج + الدعم",
           desc: "نشر + 30 يوم دعم مجاني. ثم $200-500 شهرياً.",
-          icon: "🚀",
+          icon: "rocket",
         },
       ],
     },
@@ -1174,22 +1175,22 @@ const COPY: Record<Lang, Copy> = {
       subtitle: "14 in-house розробників, AI інструменти, локальний CEO, єдина відповідальність.",
       items: [
         {
-          icon: "👥",
+          icon: "users",
           title: "14 in-house розробників",
           desc: "В офісі у Ташкенті. Не фрілансери — команда. Backend, frontend, mobile, AI, DevOps — все у нас.",
         },
         {
-          icon: "🤖",
+          icon: "bot",
           title: "Втричі швидше з AI",
           desc: "Працюємо з Claude (Anthropic AI) + Cursor (AI редактор коду). Місяць роботи — за тиждень.",
         },
         {
-          icon: "📋",
+          icon: "clipboard-list",
           title: "Один контракт, один PM",
           desc: "Один контракт — одна ціна — один термін. PM дає тижневий звіт. Без сюрпризів.",
         },
         {
-          icon: "💬",
+          icon: "message-circle",
           title: "CEO у Telegram, 24/7",
           desc: "Бекзод Мірзаалієв (CEO) — @webdevelopertk. Проблема — пишете напряму. Відповідь за 30 хв.",
         },
@@ -1244,25 +1245,25 @@ const COPY: Record<Lang, Copy> = {
           num: "01",
           title: "Консультація — безкоштовно",
           desc: "Вивчаємо бізнес 30-60 хв. Поточні проблеми, потрібні функції, бюджет.",
-          icon: "💬",
+          icon: "message-circle",
         },
         {
           num: "02",
           title: "Технічне ТЗ + пропозиція",
           desc: "За 3-5 днів: технічний документ, ціна, термін, команда. Письмовий контракт.",
-          icon: "📐",
+          icon: "ruler",
         },
         {
           num: "03",
           title: "MVP",
           desc: "За 2-4 тижні — робоча версія. Демо щотижня. Ви бачите все онлайн.",
-          icon: "⚡",
+          icon: "zap",
         },
         {
           num: "04",
           title: "Production + підтримка",
           desc: "Деплой + 30 днів безкоштовної підтримки. Далі $200-500/міс.",
-          icon: "🚀",
+          icon: "rocket",
         },
       ],
     },
@@ -1652,10 +1653,10 @@ function BenefitsSection({ copy }: { copy: Copy }) {
                   />
                   <motion.div
                     whileHover={{ rotate: -6, scale: 1.1 }}
-                    className="relative w-16 h-16 rounded-[var(--tc-radius-md)] bg-gradient-to-br from-[var(--tc-blue)] to-blue-700 flex items-center justify-center text-3xl mb-6"
+                    className="relative w-16 h-16 rounded-[var(--tc-radius-md)] bg-gradient-to-br from-[var(--tc-blue)] to-blue-700 flex items-center justify-center mb-6"
                     style={{ transform: "translateZ(40px)" }}
                   >
-                    {item.icon}
+                    <ServiceIcon name={item.icon} />
                   </motion.div>
                   <h3
                     className="relative text-2xl md:text-3xl font-700 text-[var(--tc-text-primary)] mb-3 tracking-tight"
@@ -1847,9 +1848,9 @@ function ProcessSection({ copy }: { copy: Copy }) {
 
                     <div className="relative flex items-center gap-4 mb-5">
                       <div
-                        className={`w-14 h-14 rounded-full bg-[var(--tc-surface-0)] border-2 ${c.ring} flex items-center justify-center text-2xl`}
+                        className={`w-14 h-14 rounded-full bg-[var(--tc-surface-0)] border-2 ${c.ring} flex items-center justify-center`}
                       >
-                        {step.icon}
+                        <ServiceIcon name={step.icon} />
                       </div>
                       <span
                         className={`text-4xl font-800 ${c.text} opacity-30`}

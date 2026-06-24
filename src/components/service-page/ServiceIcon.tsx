@@ -3,7 +3,7 @@ import {
   Search, Zap, Rocket, BookOpen, ShoppingCart, Package, FileText,
   Monitor, Smartphone, Bot, Wrench, Receipt, Users, Banknote,
   CreditCard, Bell, Store, Wifi, Ruler, Calendar, FolderOpen,
-  DollarSign, Phone, CheckCircle2, Timer, TrendingUp,
+  DollarSign, Phone, CheckCircle2, Timer, TrendingUp, ClipboardList,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -41,6 +41,7 @@ const ICON_MAP: Record<string, LucideIcon> = {
   "check-circle-2": CheckCircle2,
   "timer": Timer,
   "trending-up": TrendingUp,
+  "clipboard-list": ClipboardList,
 };
 
 export function ServiceIcon({ name, className = "w-6 h-6 text-white" }: { name: string; className?: string }) {
