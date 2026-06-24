@@ -8,7 +8,9 @@ import { Footer } from "@/components/Footer";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Tilt3D } from "@/components/motion/Tilt3D";
 import { Magnetic } from "@/components/motion/Magnetic";
+import { Link } from "@/i18n/routing";
 import type { ServiceLang, ServicePageContent, ServicePageCopy } from "./types";
+import { ServiceIcon } from "./ServiceIcon";
 
 // Reusable, fully-animated renderer for the Tezcode TIER 1 service pages.
 // Same design language as /for-businesses (Reveal / Tilt3D / Magnetic, gradient
@@ -158,7 +160,7 @@ function CapabilitiesSection({ copy }: { copy: ServicePageCopy }) {
                     style={{ background: "radial-gradient(ellipse at 30% 0%, rgba(0,64,255,0.12), transparent 70%)" }}
                   />
                   <div className="relative w-14 h-14 rounded-[var(--tc-radius-md)] bg-gradient-to-br from-[var(--tc-blue)] to-blue-700 flex items-center justify-center text-2xl mb-5">
-                    {item.icon}
+                    <ServiceIcon name={item.icon} />
                   </div>
                   <h3 className="relative text-xl md:text-2xl font-700 text-[var(--tc-text-primary)] mb-3 tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
                     {item.title}
@@ -219,7 +221,7 @@ function ProcessSection({ copy }: { copy: ServicePageCopy }) {
                     />
                     <div className="relative flex items-center gap-4 mb-5">
                       <div className={`w-14 h-14 rounded-full bg-[var(--tc-surface-0)] border-2 ${c.ring} flex items-center justify-center text-2xl`}>
-                        {step.icon}
+                        <ServiceIcon name={step.icon} />
                       </div>
                       <span className={`text-4xl font-800 ${c.text} opacity-30`} style={{ fontFamily: "var(--font-display)" }}>
                         {step.num}
@@ -345,6 +347,126 @@ function FaqSection({ copy }: { copy: ServicePageCopy }) {
   );
 }
 
+// ─────────────────────────── Tech stack ───────────────────────────
+function TechSection({ copy }: { copy: ServicePageCopy }) {
+  if (!copy.tech) return null;
+  const tech = copy.tech;
+  return (
+    <section className="relative py-32 px-6 bg-[var(--tc-surface-1)] overflow-hidden">
+      <div className="max-w-7xl mx-auto relative z-10">
+        <Reveal className="max-w-3xl mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue-light)] mb-6 uppercase tracking-[0.2em]">
+            {tech.badge}
+          </div>
+          <h2 className="text-4xl md:text-6xl font-700 mb-4 tracking-tight leading-tight" style={{ fontFamily: "var(--font-display)" }}>
+            {tech.title}{" "}
+            <span className="tc-text-gradient-blue">{tech.titleAccent}</span>
+          </h2>
+          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl">{tech.subtitle}</p>
+        </Reveal>
+
+        <RevealStagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" stagger={0.08}>
+          {tech.items.map((item) => (
+            <RevealItem key={item.name}>
+              <div className="relative h-full p-6 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-border-bright)] transition-colors">
+                <h3 className="text-lg font-700 text-[var(--tc-text-primary)] mb-2 tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
+                  {item.name}
+                </h3>
+                <p className="text-sm text-[var(--tc-text-secondary)] leading-relaxed">{item.desc}</p>
+              </div>
+            </RevealItem>
+          ))}
+        </RevealStagger>
+      </div>
+    </section>
+  );
+}
+
+// ─────────────────────────── Pricing factors ───────────────────────────
+function PricingSection({ copy }: { copy: ServicePageCopy }) {
+  if (!copy.pricing) return null;
+  const pricing = copy.pricing;
+  return (
+    <section className="relative py-32 px-6 bg-[var(--tc-ink)] overflow-hidden">
+      <div className="max-w-5xl mx-auto relative z-10">
+        <Reveal className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-gold)]/10 border border-[var(--tc-gold)]/30 text-xs font-500 text-[var(--tc-gold)] mb-6 uppercase tracking-[0.2em]">
+            {pricing.badge}
+          </div>
+          <h2 className="text-4xl md:text-6xl font-700 mb-4 tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
+            {pricing.title}{" "}
+            <span className="tc-text-gradient-gold">{pricing.titleAccent}</span>
+          </h2>
+          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl max-w-2xl mx-auto">{pricing.subtitle}</p>
+        </Reveal>
+
+        <RevealStagger className="grid grid-cols-1 md:grid-cols-3 gap-6" stagger={0.1}>
+          {pricing.factors.map((f) => (
+            <RevealItem key={f.title}>
+              <div className="relative h-full p-7 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-gold)]/30 transition-colors">
+                <h3 className="text-lg md:text-xl font-700 text-[var(--tc-text-primary)] mb-2 tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
+                  {f.title}
+                </h3>
+                {f.price ? (
+                  <p className="text-[var(--tc-gold)] font-700 text-lg mb-2">{f.price}</p>
+                ) : null}
+                <p className="text-sm text-[var(--tc-text-secondary)] leading-relaxed">{f.desc}</p>
+              </div>
+            </RevealItem>
+          ))}
+        </RevealStagger>
+
+        {pricing.note ? (
+          <Reveal delay={0.15}>
+            <p className="mt-10 text-center text-sm text-[var(--tc-text-muted)] max-w-2xl mx-auto">{pricing.note}</p>
+          </Reveal>
+        ) : null}
+      </div>
+    </section>
+  );
+}
+
+// ─────────────────────────── Related links ───────────────────────────
+function RelatedSection({ copy }: { copy: ServicePageCopy }) {
+  if (!copy.related) return null;
+  const related = copy.related;
+  return (
+    <section className="relative py-32 px-6 bg-[var(--tc-surface-1)] overflow-hidden">
+      <div className="max-w-7xl mx-auto relative z-10">
+        <Reveal className="max-w-3xl mb-14">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue-light)] mb-6 uppercase tracking-[0.2em]">
+            {related.badge}
+          </div>
+          <h2 className="text-4xl md:text-6xl font-700 mb-4 tracking-tight leading-tight" style={{ fontFamily: "var(--font-display)" }}>
+            {related.title}{" "}
+            <span className="tc-text-gradient-blue">{related.titleAccent}</span>
+          </h2>
+          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl">{related.subtitle}</p>
+        </Reveal>
+
+        <RevealStagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" stagger={0.08}>
+          {related.links.map((link) => (
+            <RevealItem key={link.href}>
+              <Link
+                href={link.href}
+                className="group relative flex flex-col h-full p-6 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-blue)]/40 transition-colors"
+              >
+                <h3 className="text-lg font-700 text-[var(--tc-text-primary)] mb-2 tracking-tight flex items-center gap-2" style={{ fontFamily: "var(--font-display)" }}>
+                  {link.label}
+                  <svg className="w-4 h-4 text-[var(--tc-blue-light)] transition-transform group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </h3>
+                <p className="text-sm text-[var(--tc-text-secondary)] leading-relaxed">{link.desc}</p>
+              </Link>
+            </RevealItem>
+          ))}
+        </RevealStagger>
+      </div>
+    </section>
+  );
+}
+
 // ─────────────────────────── Final CTA ───────────────────────────
 function FinalCtaSection({ copy }: { copy: ServicePageCopy }) {
   return (
@@ -403,9 +525,12 @@ export function ServicePageClient({ content }: { content: ServicePageContent }) 
       <Navbar />
       <HeroSection copy={copy} />
       <CapabilitiesSection copy={copy} />
+      <TechSection copy={copy} />
       <ProcessSection copy={copy} />
       <ExamplesSection copy={copy} />
+      <PricingSection copy={copy} />
       <FaqSection copy={copy} />
+      <RelatedSection copy={copy} />
       <FinalCtaSection copy={copy} />
       <Footer />
     </main>
