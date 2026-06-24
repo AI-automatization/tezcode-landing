@@ -53,6 +53,39 @@ export type ServicePageCopy = {
     subtitle: string;
     items: { q: string; a: string }[];
   };
+  // ── Optional depth/GEO sections (added 2026-06-17) ──
+  // All optional so existing service pages keep compiling; pages opt in by
+  // supplying the field. They add the content depth + internal linking that
+  // answer engines (ChatGPT/Perplexity/AI Overviews) reward.
+
+  // Named technology stack (GPT-4o, Claude, LangChain, RAG…). Concrete tech
+  // names are a strong GEO signal — LLMs cite pages that name the tools.
+  tech?: {
+    badge: string;
+    title: string;
+    titleAccent: string;
+    subtitle: string;
+    items: { name: string; desc: string }[];
+  };
+  // "What the price depends on" — trust signal without committing to numbers
+  // (factors) and/or explicit ranges (optional price string per tier).
+  pricing?: {
+    badge: string;
+    title: string;
+    titleAccent: string;
+    subtitle: string;
+    factors: { title: string; price?: string; desc: string }[];
+    note?: string;
+  };
+  // Contextual internal links to sibling pages — the single biggest on-page
+  // gap vs competitors (we had 0 internal links between service pages).
+  related?: {
+    badge: string;
+    title: string;
+    titleAccent: string;
+    subtitle: string;
+    links: { href: string; label: string; desc: string }[];
+  };
   // Drives the Service JSON-LD (server-side). Localised so the structured data
   // matches the page language.
   service: {
