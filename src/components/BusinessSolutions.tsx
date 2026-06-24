@@ -2,6 +2,8 @@
 
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
+import { ShoppingBag, Building2, HeartPulse, Wrench } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Tilt3D } from "@/components/motion/Tilt3D";
 
@@ -9,25 +11,25 @@ type SolutionKey = "store" | "office" | "clinic" | "custom";
 
 const SOLUTION_ACCENTS: Record<
   SolutionKey,
-  { icon: string; color: string; glow: string }
+  { icon: LucideIcon; color: string; glow: string }
 > = {
   store: {
-    icon: "🛍️",
+    icon: ShoppingBag,
     color: "from-[var(--tc-blue)] to-blue-600",
     glow: "rgba(0, 64, 255, 0.18)",
   },
   office: {
-    icon: "🏢",
+    icon: Building2,
     color: "from-[var(--tc-gold)] to-yellow-600",
     glow: "rgba(212, 160, 23, 0.18)",
   },
   clinic: {
-    icon: "🏥",
+    icon: HeartPulse,
     color: "from-emerald-500 to-emerald-600",
     glow: "rgba(34, 197, 94, 0.18)",
   },
   custom: {
-    icon: "🛠️",
+    icon: Wrench,
     color: "from-purple-500 to-violet-600",
     glow: "rgba(139, 92, 246, 0.18)",
   },
@@ -79,10 +81,10 @@ export function BusinessSolutions() {
 
                     <motion.div
                       whileHover={{ rotate: -6, scale: 1.1 }}
-                      className={`relative w-16 h-16 rounded-[var(--tc-radius-md)] bg-gradient-to-br ${accent.color} flex items-center justify-center text-3xl mb-6`}
+                      className={`relative w-16 h-16 rounded-[var(--tc-radius-md)] bg-gradient-to-br ${accent.color} flex items-center justify-center mb-6`}
                       style={{ transform: "translateZ(40px)" }}
                     >
-                      {accent.icon}
+                      {(() => { const Icon = accent.icon; return <Icon className="w-7 h-7 text-white" />; })()}
                     </motion.div>
 
                     <h3

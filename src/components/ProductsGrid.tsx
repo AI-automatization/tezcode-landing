@@ -2,6 +2,8 @@
 
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
+import { Package, Wrench, Bot, Users, FlaskConical, GraduationCap } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Tilt3D } from "@/components/motion/Tilt3D";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
@@ -13,13 +15,13 @@ type DivisionKey =
   | "labs"
   | "academy";
 
-const ICON_MAP: Record<DivisionKey, string> = {
-  systems: "📦",
-  custom: "🛠",
-  ai: "🤖",
-  teams: "👥",
-  labs: "🧪",
-  academy: "🎓",
+const ICON_MAP: Record<DivisionKey, LucideIcon> = {
+  systems: Package,
+  custom: Wrench,
+  ai: Bot,
+  teams: Users,
+  labs: FlaskConical,
+  academy: GraduationCap,
 };
 
 const ACCENT_MAP: Record<
@@ -171,10 +173,10 @@ function DivisionCard({
 
         {/* Icon */}
         <div
-          className="relative mb-6 w-14 h-14 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-0)] flex items-center justify-center text-2xl transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3"
+          className="relative mb-6 w-14 h-14 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-0)] flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3"
           style={{ transform: "translateZ(40px)" }}
         >
-          {ICON_MAP[division]}
+          {(() => { const Icon = ICON_MAP[division]; return <Icon className="w-6 h-6 text-white" />; })()}
         </div>
 
         <h3
