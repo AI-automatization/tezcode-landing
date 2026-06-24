@@ -191,10 +191,10 @@ export function getOrganizationSchema() {
     // AI engines and Google can place Tezcode on the map and answer "where".
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 41.366927,
-      longitude: 69.286331,
+      latitude: 41.3668868,
+      longitude: 69.2866341,
     },
-    hasMap: "https://maps.app.goo.gl/iLEGcZvdGa6AjBFU7",
+    hasMap: "https://maps.app.goo.gl/pwDZT8ePLFy4wx9JA",
     telephone: "+998993151516",
     openingHoursSpecification: [
       {
