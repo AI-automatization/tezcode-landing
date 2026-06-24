@@ -253,7 +253,7 @@ export function MvpRoadmapForm() {
         disabled={status === "loading"}
         className="w-full px-6 py-4 rounded-[var(--tc-radius-md)] bg-[var(--tc-gold)] text-[var(--tc-ink)] font-700 text-base hover:bg-[var(--tc-gold-light)] transition-all duration-300 tc-glow-gold hover:scale-[1.01] active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        {status === "loading" ? "Yuborilmoqda..." : "🚀 Bepul MVP Roadmap olish"}
+        {status === "loading" ? "Yuborilmoqda..." : "Bepul MVP Roadmap olish"}
       </button>
 
       {status === "error" && (

@@ -2,6 +2,8 @@
 
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
+import { ShoppingBag, Bot, HeartPulse, Clapperboard, Users, BarChart2, TrendingUp, ShoppingCart } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Tilt3D } from "@/components/motion/Tilt3D";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Link } from "@/i18n/routing";
@@ -16,15 +18,15 @@ type ProductKey =
   | "ai_trade"
   | "savdo_builder";
 
-const ICON_MAP: Record<ProductKey, string> = {
-  raos: "🛍️",
-  ai_office: "🤖",
-  hamshirago: "🏥",
-  wewatch: "🎬",
-  workcontrol: "👥",
-  ventra: "📊",
-  ai_trade: "💹",
-  savdo_builder: "🛒",
+const ICON_MAP: Record<ProductKey, LucideIcon> = {
+  raos: ShoppingBag,
+  ai_office: Bot,
+  hamshirago: HeartPulse,
+  wewatch: Clapperboard,
+  workcontrol: Users,
+  ventra: BarChart2,
+  ai_trade: TrendingUp,
+  savdo_builder: ShoppingCart,
 };
 
 const STATUS_STYLE: Record<string, string> = {
@@ -222,8 +224,8 @@ function ProductCardLarge({
           className="flex items-start justify-between mb-6"
           style={{ transform: "translateZ(30px)" }}
         >
-          <div className="w-16 h-16 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-0)] flex items-center justify-center text-3xl transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
-            {ICON_MAP[product]}
+          <div className="w-16 h-16 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-0)] flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
+            {(() => { const Icon = ICON_MAP[product]; return <Icon className="w-7 h-7 text-white" />; })()}
           </div>
           <span
             className={`inline-flex items-center gap-1 rounded-full font-500 border px-2.5 py-0.5 text-[10px] ${statusClass}`}
@@ -310,8 +312,8 @@ function ProductCardSmall({
       className="group relative block p-4 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:bg-[var(--tc-surface-3)] hover:border-[var(--tc-border-bright)] transition-colors hover:-translate-y-1 duration-200 h-full flex flex-col"
     >
       <div className="flex items-start justify-between mb-3">
-        <div className="w-9 h-9 rounded-[var(--tc-radius-sm)] bg-[var(--tc-surface-0)] flex items-center justify-center text-lg">
-          {ICON_MAP[product]}
+        <div className="w-9 h-9 rounded-[var(--tc-radius-sm)] bg-[var(--tc-surface-0)] flex items-center justify-center">
+          {(() => { const Icon = ICON_MAP[product]; return <Icon className="w-5 h-5 text-white" />; })()}
         </div>
         <span
           className={`inline-flex items-center gap-1 rounded-full font-500 border px-1.5 py-0 text-[9px] ${statusClass}`}

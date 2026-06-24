@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Map, Search, DollarSign } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo";
@@ -12,10 +14,10 @@ export const metadata = buildPageMetadata({
   ogDescription: "MVP roadmap + kod tahlili + biznes ROI hisob — barchasi bepul.",
 });
 
-const TOOLS = [
+const TOOLS: { slug: string; icon: LucideIcon; title: string; description: string; cta: string; badge?: string; href?: string }[] = [
   {
     slug: "free-mvp-roadmap",
-    icon: "🗺️",
+    icon: Map,
     title: "MVP Roadmap Generator",
     description: "Sizning startup g'oyangiz uchun professional MVP yo'l xaritasi — AI tomonidan, 5 daqiqada.",
     cta: "Bepul rejani olish",
@@ -23,7 +25,7 @@ const TOOLS = [
   },
   {
     slug: "free-code-review",
-    icon: "🔍",
+    icon: Search,
     title: "AI Code Review",
     description: "GitHub repo link bering — AI bizning eng senior engineer'larimiz kabi tahlil qiladi.",
     cta: "Repository tahlil qilish",
@@ -31,7 +33,7 @@ const TOOLS = [
   },
   {
     slug: "roi-calculator",
-    icon: "💰",
+    icon: DollarSign,
     title: "ROI Calculator",
     description: "Biznesingizning oylik aylanma + xodim soni — Tezcode bilan qancha tejaysiz?",
     cta: "Tejov hisoblash",
@@ -75,8 +77,8 @@ export default function ToolsPage() {
                       {tool.badge}
                     </span>
                   )}
-                  <div className="w-14 h-14 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-0)] border border-[var(--tc-border-bright)] flex items-center justify-center text-3xl mb-5 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
-                    {tool.icon}
+                  <div className="w-14 h-14 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-0)] border border-[var(--tc-border-bright)] flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
+                    {(() => { const Icon = tool.icon; return <Icon className="w-6 h-6 text-white" />; })()}
                   </div>
                   <h3
                     className="text-xl font-700 text-white mb-2"

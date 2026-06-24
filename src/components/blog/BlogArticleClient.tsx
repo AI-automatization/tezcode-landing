@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import { Zap } from "lucide-react";
 import { useLocale } from "next-intl";
 import { useState } from "react";
 import { Navbar } from "@/components/Navbar";
@@ -70,7 +71,7 @@ function TldrBox({ copy }: { copy: ArticleCopy }) {
               }}
             />
             <div className="relative flex items-center gap-2 mb-3">
-              <span className="text-lg">⚡</span>
+              <Zap className="w-4 h-4 text-[var(--tc-gold)]" />
               <span className="text-xs font-600 text-[var(--tc-gold)] uppercase tracking-[0.2em]">
                 {copy.tldr.label}
               </span>

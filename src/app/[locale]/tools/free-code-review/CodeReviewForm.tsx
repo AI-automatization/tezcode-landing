@@ -167,7 +167,7 @@ export function CodeReviewForm() {
         disabled={status === "loading"}
         className="w-full px-6 py-4 rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] text-white font-700 text-base hover:bg-[var(--tc-blue-light)] transition-all duration-300 tc-glow-blue hover:scale-[1.01] active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        {status === "loading" ? "Yuborilmoqda..." : "🔍 Repo'ni tahlil qilish"}
+        {status === "loading" ? "Yuborilmoqda..." : "Repo'ni tahlil qilish"}
       </button>
 
       {status === "error" && (
