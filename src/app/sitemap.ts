@@ -44,6 +44,12 @@ const ROUTES = [
     priority: 0.7,
     changeFrequency: "monthly" as const,
   })),
+  // Per-city AI-automation landing pages (/ai-avtomatizatsiya/<city>).
+  ...CITY_SLUGS.map((slug) => ({
+    path: `/ai-avtomatizatsiya/${slug}`,
+    priority: 0.7,
+    changeFrequency: "monthly" as const,
+  })),
 ];
 
 function buildUrl(locale: string, path: string): string {
