@@ -21,6 +21,11 @@ export const ARTICLES: ArticleMeta[] = [
         excerpt:
           "Хотите автоматизировать бизнес с помощью ИИ, но не знаете, кому доверять? Практическое руководство по выбору компании AI-автоматизации в Узбекистане — критерии, цена, ошибки и вопросы.",
       },
+      en: {
+        title: "How to choose an AI automation company in Tashkent (2026)",
+        excerpt:
+          "Want to automate your business with AI but not sure who to trust? A practical guide to choosing the right AI automation company in Uzbekistan — criteria, pricing, mistakes and questions to ask.",
+      },
     },
   },
   {

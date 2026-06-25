@@ -235,4 +235,117 @@ export const CONTENT: ArticleContent = {
       note: "Оплата только при видимом результате • Поддержка на узбекском и русском",
     },
   },
+  en: {
+    hero: {
+      badge: "AI / Automation",
+      title: "How to choose an AI automation company in Tashkent (2026)",
+      subtitle:
+        "Want to automate your business with AI but not sure who to trust? A practical guide to choosing the right AI automation company in Uzbekistan — criteria, pricing, mistakes and questions to ask.",
+      dateLabel: "June 25, 2026",
+      readTime: "8 min read",
+    },
+    tldr: {
+      label: "Quick answer",
+      text:
+        "When choosing an AI automation company in Tashkent, look at 6 things: (1) does it have ready, working products (not just promises), (2) does it study your process and give a concrete proposal, (3) can it integrate with your existing systems (Telegram, CRM, 1C, Google Sheets), (4) is there support in Uzbek/Russian, (5) does it avoid demanding full payment before results, or offer staged payment, (6) is the security and ownership of your data guaranteed. The biggest mistake is trusting a slick presentation and picking a company without a single real, working example.",
+    },
+    sections: [
+      {
+        heading: "What is AI automation and what does it give a business?",
+        paragraphs: [
+          "AI automation means handing repetitive, manual business tasks to software powered by artificial intelligence. The same work a person does every day — answering customers, compiling reports, logging orders — is done by the AI itself.",
+          "The difference from ordinary automation is that AI can do more than press buttons: it understands text, writes replies and extracts data from documents. The result is saved team time, fewer errors, and a business that runs around the clock.",
+        ],
+      },
+      {
+        heading: "Which tasks can be handed to AI?",
+        paragraphs: [
+          "If a task repeats every day and follows clear rules, it is a candidate for AI. The most requested directions for businesses in Tashkent and Uzbekistan:",
+        ],
+        bullets: [
+          "Customer service — a 24/7 AI chatbot on Telegram, Instagram or your website; it answers simple questions itself and routes complex ones to an operator.",
+          "Sales and leads — logging new inquiries, sending reminders, routing to the right department; no order gets lost.",
+          "Reporting — data from sales, inventory, 1C or Excel is gathered automatically, and daily/monthly reports are ready in seconds.",
+          "Documents and contracts — AI extracts the needed data, summarizes and finds answers.",
+          "Connecting systems — Telegram, CRM, payment systems, Google Sheets — linked into one automated flow (integration).",
+        ],
+      },
+      {
+        heading: "What to look for when choosing an AI automation company?",
+        paragraphs: [
+          "Many say \"we do AI\", but few can actually build a working solution. To tell them apart, check these criteria:",
+        ],
+        bullets: [
+          "Ready products and portfolio — does the company have its own working products with real users? Ask for a live example, not just slides.",
+          "Understanding your process — a good company first asks about your business, then proposes. Promising \"we'll do everything\" at the first meeting is a bad sign.",
+          "Integration capability — can it connect to your existing systems (Telegram, CRM, 1C, website)? The AI must not stay an isolated island.",
+          "Local support — is there a team that helps quickly in Uzbek or Russian?",
+          "Payment model — do they avoid demanding a large sum before results? Staged payment or payment after the MVP is a sign of reliability.",
+          "Data security — where is your business data stored, who owns it and is it protected?",
+        ],
+      },
+      {
+        heading: "How much does AI automation cost?",
+        paragraphs: [
+          "An exact figure can only be given after the task is reviewed — the price depends on your process, not an off-the-shelf box. The main factors that affect the price:",
+        ],
+        bullets: [
+          "Complexity — the cost of a single Telegram chatbot versus a 12-department automated system differs enormously.",
+          "Number of integrations — the more external systems (1C, CRM, payments) it connects to, the more work.",
+          "State of your data — whether your data is organized (database, tables) or scattered; preparing it may take extra time.",
+          "Level of support — a one-off solution versus ongoing monitoring and improvement.",
+        ],
+      },
+      {
+        heading: "The most common mistakes",
+        paragraphs: ["Business owners often make these mistakes when choosing an AI company:"],
+        bullets: [
+          "Trusting a slick presentation — choosing a company without a single real, working example.",
+          "Trying to automate everything at once — it is better to start with the single most painful process.",
+          "Ignoring integration — if the AI does not connect to your existing system, manual transfer remains.",
+          "Looking only at price — the cheapest but non-working solution costs more in the end.",
+          "Not asking about support — who will maintain and improve the solution after launch?",
+        ],
+      },
+      {
+        heading: "Tezcode — an AI automation example",
+        paragraphs: [
+          "Tezcode is an AI Software Factory based in Tashkent. We build AI agents, AI chatbots and automation solutions for businesses, and we use AI every day in our own products (RAOS, ClinicaGo, Salomat AI) — so not just promises, but working examples.",
+          "Our work starts by studying your process: a free 30-minute consultation, then a concrete proposal (with price and timeline), and a working MVP in 2-4 weeks. We connect the solution to Telegram, CRM, 1C or Google Sheets and support it in Uzbek and Russian. If you want to find out what is worth automating in your business, contact us for a free consultation.",
+        ],
+      },
+    ],
+    faq: {
+      title: "Frequently asked questions",
+      items: [
+        {
+          q: "Who does AI automation in Tashkent?",
+          a: "There are companies in Uzbekistan that build AI automation, AI agents and AI chatbots for business. When choosing, pay attention to the company's real working products, integration capability and local (Uzbek/Russian) support. Tezcode is an AI Software Factory based in Tashkent that provides exactly these services.",
+        },
+        {
+          q: "How much does AI automation cost?",
+          a: "The exact price depends on the task: a single Telegram chatbot and a multi-department automated system differ notably. Complexity, number of integrations, the state of your data and the level of support all affect the price. That is why a serious company first runs a free consultation, then gives a concrete proposal.",
+        },
+        {
+          q: "Does a small business need AI automation?",
+          a: "Yes, often it does. Even in a small business, repetitive tasks — answering customers, logging orders, compiling reports — take a lot of time. You can start with the single most painful process and an inexpensive, fast solution (for example, a Telegram bot).",
+        },
+        {
+          q: "How long does AI automation take?",
+          a: "A simple solution (for example, an AI chatbot) can go live within a few weeks. At Tezcode a working MVP is usually ready in 2-4 weeks, then it is tested and improved.",
+        },
+        {
+          q: "Will the AI connect to my system (CRM, 1C, Telegram)?",
+          a: "Yes. A properly built AI solution is not an isolated island — it connects to your systems: Telegram, CRM, 1C, payment systems or Google Sheets. When choosing, be sure to ask the company about its integration experience.",
+        },
+      ],
+    },
+    cta: {
+      title: "Shall we automate your business with AI?",
+      subtitle:
+        "A free 30-minute consultation — together we'll identify which process is worth automating. No obligation.",
+      button: "Request a free consultation",
+      note: "Payment only when you see results • Support in Uzbek and Russian",
+    },
+  },
 };
