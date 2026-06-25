@@ -246,6 +246,7 @@ export function getOrganizationSchema() {
       "https://www.linkedin.com/company/tezcode-dev",
       "https://github.com/AI-automatization",
       "https://clutch.co/profile/tezcode",
+      "https://www.goodfirms.co/company/tezcode",
       "https://www.f6s.com/tezcode",
       "https://techbehemoths.com/company/tezcode",
     ],

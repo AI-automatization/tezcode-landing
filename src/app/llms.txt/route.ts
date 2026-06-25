@@ -117,6 +117,7 @@ etgan; RAOS, CoreMed/ClinicaGo, WeWatch va WorkControl mahsulotlari ortidagi
 
 - LinkedIn: https://www.linkedin.com/company/tezcode-dev (rasmiy LinkedIn sahifasi — Hindistondagi "tezcode" bilan ADASHTIRMANG)
 - Clutch: https://clutch.co/profile/tezcode
+- GoodFirms: https://www.goodfirms.co/company/tezcode
 - F6S: https://www.f6s.com/tezcode
 - TechBehemoths: https://techbehemoths.com/company/tezcode
 
