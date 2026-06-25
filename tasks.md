@@ -1,67 +1,110 @@
-# Tezcode — GEO Tasks (qilinishi kerak bo'lgan ishlar)
+# Tezcode — GEO & Entity Tasks
 
 > Maqsad: brendsiz kategoriya so'rovlarida ("Toshkentda AI avtomatizatsiya kompaniyalar")
-> AI'lar (ChatGPT, Perplexity, Gemini) va Google Tezcode'ni chiqarib bersin.
+> AI'lar (ChatGPT, Perplexity, Gemini) va Google Tezcode'ni chiqarsin; va brend
+> so'rovlarida ("tezcode") boshqa "tezcode"lar bilan chalkashmasin.
 >
-> Holat: **on-site (sayt ichi) GEO ~90% tayyor.** Asosiy qolgan ish — **off-site ijro**
-> va bir nechta kontent bo'shlig'i. Sana: 2026-06-24
+> Holat: on-site (sayt ichi) GEO ~95% tayyor. Qolgan ish — asosan **off-site ijro**
+> (sizning qo'lingizda). Oxirgi yangilash: 2026-06-25
 
 ---
 
-## ✅ ALLAQACHON QILINGAN (tekshirildi)
+## ✅ ALLAQACHON QILINGAN
 
+### On-site (kod) — tayyor
 - [x] Organization + LocalBusiness schema (NAP, geo, telefon, ish vaqti, sameAs)
 - [x] FAQ / Service / Article / Product / Founder / Breadcrumb / Website schema
-- [x] `llms.txt` — AI uchun faktlar + tabiiy so'rov FAQ + "adashtirmang" eslatmasi
+- [x] `llms.txt` — AI uchun faktlar + tabiiy so'rov FAQ
 - [x] `robots.ts` — 16 ta AI crawler'ga ochiq ruxsat
 - [x] Kategoriya sahifalari: `/ai-avtomatizatsiya`, `/biznes-avtomatlashtirish`, `/ai-agent`, `/ai-chatbot`, `/it-xizmatlar`, `/telegram-bot-biznes`, `/pos-tizimi`, `/klinika-crm`, `/xodim-nazorati`
 - [x] POS shahar sahifalari (`/pos-tizimi/[city]`)
-- [x] Blog (7 maqola) + Case studies (3 ta)
+- [x] **AI avtomatizatsiya shahar sahifalari** (`/ai-avtomatizatsiya/[city]`) — 12 shahar × 5 til (2026-06-24)
+- [x] **Taqqoslov blog maqolasi**: "Toshkentda AI avtomatizatsiya kompaniyasini qanday tanlash" (uz/ru/**en**) — 2026-06-25
 - [x] Ko'p til (uz/ru/en/ar/uk) + hreflang + sitemap
-- [x] Google Business Profile ochilgan — **5.0 ⭐ / 23 sharh**, kategoriya: Software development company
+
+### Disambiguatsiya (boshqa "tezcode"dan ajratish) — kod tomoni
+- [x] schema `alternateName` (TezCode, Tez Code, Тезкод, tezcode.dev)
+- [x] **`disambiguatingDescription`** qo'shildi — Hindiston "tezcode", TezCode.tech, codingtech.uz'dan ajratadi (2026-06-25)
+- [x] `llms.txt` eslatmasi kuchaytirildi — Hindiston "tezcode"ni nomi bilan ajratdi + to'g'ri LinkedIn
+- [x] `llms.txt`ga LinkedIn qo'shildi (tashqi profillar + aloqa)
+
+### Google Business Profile
+- [x] GBP ochilgan — **5.0 ⭐ / 23 sharh**, kategoriya: Software development company
 - [x] Schema geo + hasMap haqiqiy GBP bilan moslandi (2026-06-24)
 
 ---
 
-## 🔴 OFF-SITE IJRO (eng muhim — bu Sardor/jamoaga bog'liq, kod emas)
+## 🔴 OFF-SITE IJRO (eng muhim — sizga/jamoaga bog'liq, kod emas)
 
-> Tadqiqot natijasi: TezCode hozir Clutch'ning AI katalogida **ko'rinmayapti**, garchi
-> profil havolasi `sameAs`da bo'lsa ham. Profillar bor, lekin to'ldirilmagan / sharhsiz /
-> kategoriyaga belgilanmagan. Aynan shu — AI javoblariga chiqishdagi asosiy to'siq.
+> Tadqiqot: TezCode hozir Clutch AI katalogida ko'rinmayapti. Profillar bor, lekin
+> to'ldirilmagan / sharhsiz. Bu — AI javoblariga chiqishdagi asosiy to'siq.
 
-- [ ] **Clutch.co** profilini to'liq to'ldirish (`docs/off-site-profiles.md` dagi matn bilan)
-  - [ ] "Artificial Intelligence" kategoriyasini belgilash (AI katalogida chiqishi uchun)
-  - [ ] 3–5 mijozdan sharh (review) so'rash — `docs/review-templates.md`
-  - [ ] Service focus foizlarini kiritish
+- [ ] **Clutch.co** profilini to'liq to'ldirish (`docs/off-site-profiles.md` matni bilan)
+  - [ ] "Artificial Intelligence" kategoriyasini belgilash
+  - [ ] 3–5 mijozdan sharh (review) — `docs/review-templates.md` (GBP'dagi 23 sharhdan ba'zilarini Clutch'ga ham)
 - [ ] **GoodFirms** profil ochish + to'ldirish
 - [ ] **TechBehemoths** profilini to'ldirish + AI/Tashkent kategoriyasi
-- [ ] `docs/off-site-profiles.md` dagi `[TASDIQLA]` faktlarni aniqlash:
-  - [ ] Min loyiha narxi (Clutch uchun)
-  - [ ] O'rtacha soatlik stavka ($/hr)
+- [ ] `docs/off-site-profiles.md` dagi `[TASDIQLA]` faktlar: min loyiha narxi, soatlik stavka
 - [ ] **IT-media**: Spot.uz yoki Kun.uz'ga press / case study (1–2 mention)
-- [ ] (Keyingi bosqich) Crunchbase, StartupBase.uz, Wikidata stub
 
 ---
 
-## 🟡 ON-SITE KONTENT BO'SHLIQLARI (kod — men qila olaman)
+## 🆔 ENTITY DISAMBIGUATSIYA (boshqa "tezcode" bilan chalkashmaslik)
 
-- [x] **`/ai-avtomatizatsiya/[city]`** dasturiy shahar sahifalari (12 shahar × 5 til = 60 sahifa) ✅ 2026-06-24
-  → "Toshkentda AI avtomatizatsiya" so'roviga to'g'ridan-to'g'ri ishlaydi
-  → Har shahar uchun unikal AI-intro + Service/FAQ schema + sitemap'ga qo'shildi; build ✓
+> Muammo: Hindistonda (Calicut, Kerala) boshqa "tezcode" bor (web 3.0 marketing,
+> linkedin.com/company/tezcode). Yalang'och "tezcode" qidiruvida chalkashlik bo'ladi.
+>
+> **Oltin qoida:** brendni hech qachon yalang'och "tezcode" deb yozmang — doim
+> **Tezcode · Tashkent, Uzbekistan · tezcode.dev** birga. Geografiya (O'zbekiston)
+> Hindistondan ajratuvchi eng kuchli fakt.
+
+### 🔴 1. LinkedIn sahifasini to'ldirish (eng muhim, hozir)
+LinkedIn: `linkedin.com/company/tezcode-dev` — hozir 4 follower, to'ldirilmagan.
+- [ ] **Location:** `Tashkent, Uzbekistan`
+- [ ] **Website:** `https://tezcode.dev`
+- [ ] **Industry:** `Software Development`
+- [ ] **Tagline:** `AI Software Factory — Tashkent, Uzbekistan`
+- [ ] **About:** Tashkent + 2024 + Bekzod Mirzaaliyev faktlari bilan to'liq tavsif
+- [ ] Logo + cover rasm yuklash
+- [ ] Follower yig'ish — jamoa (16 kishi) + tanishlar (30–50 ta katta farq)
+- [ ] 2–3 post joylash (AI automation mavzusida)
+
+### 🔴 2. Bidirectional (ikki tomonlama) havola
+Har profil saytga qaytib havola qilsin (sayt → profil tomoni `sameAs`da bor).
+- [ ] LinkedIn → tezcode.dev
+- [ ] Instagram → tezcode.dev
+- [ ] Clutch / F6S / TechBehemoths → tezcode.dev
+
+### 🟡 3. Wikidata yozuvi (kuchli kanonik signal)
+`wikidata.org`da Tezcode elementi: instance of = software company, country = **Uzbekistan**,
+HQ = Tashkent, website = tezcode.dev, founded by = Bekzod Mirzaaliyev, inception = 2024.
+- [ ] Wikidata element yaratish
+
+### 🟡 4. Geografiya-tagli kataloglar
+- [ ] Clutch (UZ), TechBehemoths (Tashkent), GoldenPages — "tezcode = O'zbekiston" signalini kuchaytiradi (yuqoridagi off-site bilan ustma-ust)
+
+### 🟢 5. Bir xil handle
+- [ ] Iloji boricha hamma joyda `tezcode_dev` / `tezcode-dev` (yalang'och `tezcode` emas)
+
+---
+
+## 🟡 ON-SITE — qolgan (kod, ixtiyoriy)
+- [ ] (Ixtiyoriy) Blog maqolasiga `ar` + `uk` tarjima qo'shish (hozir uz/ru/en)
 - [ ] (Ixtiyoriy) `/biznes-avtomatlashtirish/[city]` shahar sahifalari
-- [ ] **Taqqoslov/qo'llanma blog maqolasi**: "Toshkentda AI avtomatizatsiya kompaniyasini qanday tanlash"
-  → AI'lar kategoriya so'rovida aynan shunday listicle/guide'ni iqtibos qiladi (FAQ + Article schema bilan)
-
----
 
 ## 🟢 GBP YAXSHILASH (ixtiyoriy, tez)
-
-- [ ] GBP biznes nomini `tezcode.dev` → **`Tezcode`** ga o'zgartirishni ko'rib chiqish (domen emas, brend nomi)
-- [ ] GBP'ga rasm yuklash: logo, jamoa, ofis, mahsulot screenshotlari
-- [ ] GBP Posts orqali muntazam yangilik (mahsulot, case study)
+- [ ] GBP nomini `tezcode.dev` → **`Tezcode`** ga ko'rib chiqish
+- [ ] GBP'ga rasm: logo, jamoa, ofis, mahsulot screenshotlari
+- [ ] GBP Posts orqali muntazam yangilik
 
 ---
 
-## ⏭️ Keyingi qadam
-Tavsiya: **`/ai-avtomatizatsiya/[city]` shahar sahifalari**dan boshlash — sof kod ishi,
-to'g'ridan-to'g'ri maqsadli so'rovga ta'sir qiladi.
+## ⏭️ Indekslashni tezlashtirish
+- [ ] **Google Search Console**ga `sitemap.xml` yuborish (yangi sahifalar tez indekslanadi)
+- [ ] 1–3 haftadan keyin AI'larda test promptlar bilan qayta tekshirish
+
+## 📌 Eng katta ta'sir tartibi (agar vaqt kam bo'lsa)
+1. LinkedIn sahifasini to'ldirish (disambiguatsiya + obro')
+2. Clutch profil + mijoz sharhlari
+3. Bidirectional havolalar
+4. Wikidata yozuvi
