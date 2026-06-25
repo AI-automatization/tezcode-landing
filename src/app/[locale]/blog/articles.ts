@@ -7,6 +7,23 @@ import type { ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "ai-avtomatizatsiya-kompaniya-tanlash",
+    datePublished: "2026-06-25",
+    category: "AI / Avtomatizatsiya",
+    list: {
+      uz: {
+        title: "Toshkentda AI avtomatizatsiya kompaniyasini qanday tanlash (2026)",
+        excerpt:
+          "Biznesni AI bilan avtomatlashtirmoqchimisiz, lekin kimga ishonishni bilmayapsizmi? O'zbekistonda to'g'ri AI avtomatizatsiya kompaniyasini tanlash bo'yicha amaliy qo'llanma — mezonlar, narx, xatolar va savollar.",
+      },
+      ru: {
+        title: "Как выбрать компанию по AI-автоматизации в Ташкенте (2026)",
+        excerpt:
+          "Хотите автоматизировать бизнес с помощью ИИ, но не знаете, кому доверять? Практическое руководство по выбору компании AI-автоматизации в Узбекистане — критерии, цена, ошибки и вопросы.",
+      },
+    },
+  },
+  {
     slug: "biznes-uchun-ai-agent-yaratish",
     datePublished: "2026-06-14",
     category: "AI Agent / 2026",
