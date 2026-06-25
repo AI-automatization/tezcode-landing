@@ -32,6 +32,15 @@
 - [x] GBP ochilgan — **5.0 ⭐ / 23 sharh**, kategoriya: Software development company
 - [x] Schema geo + hasMap haqiqiy GBP bilan moslandi (2026-06-24)
 
+### LinkedIn Company Page — 2026-06-25
+- [x] Tagline: "AI Software Factory — Tashkent, Uzbekistan"
+- [x] About: to'liq tavsif (Tashkent + 2024 + Bekzod Mirzaaliyev)
+- [x] Post: uz/ru/en uchta tilda (AI automation mavzusida)
+
+### GoodFirms — 2026-06-25
+- [x] Profil ochildi (tezcode@tezcode.dev) — PENDING review (3-5 kun)
+- [x] 4 step to'ldirildi: General, Locations, Services, Clients (62% completion)
+
 ---
 
 ## 🔴 OFF-SITE IJRO (eng muhim — sizga/jamoaga bog'liq, kod emas)
@@ -42,7 +51,6 @@
 - [ ] **Clutch.co** profilini to'liq to'ldirish (`docs/off-site-profiles.md` matni bilan)
   - [ ] "Artificial Intelligence" kategoriyasini belgilash
   - [ ] 3–5 mijozdan sharh (review) — `docs/review-templates.md` (GBP'dagi 23 sharhdan ba'zilarini Clutch'ga ham)
-- [ ] **GoodFirms** profil ochish + to'ldirish
 - [ ] **TechBehemoths** profilini to'ldirish + AI/Tashkent kategoriyasi
 - [ ] `docs/off-site-profiles.md` dagi `[TASDIQLA]` faktlar: min loyiha narxi, soatlik stavka
 - [ ] **IT-media**: Spot.uz yoki Kun.uz'ga press / case study (1–2 mention)
@@ -58,18 +66,7 @@
 > **Tezcode · Tashkent, Uzbekistan · tezcode.dev** birga. Geografiya (O'zbekiston)
 > Hindistondan ajratuvchi eng kuchli fakt.
 
-### 🔴 1. LinkedIn sahifasini to'ldirish (eng muhim, hozir)
-LinkedIn: `linkedin.com/company/tezcode-dev` — hozir 4 follower, to'ldirilmagan.
-- [ ] **Location:** `Tashkent, Uzbekistan`
-- [ ] **Website:** `https://tezcode.dev`
-- [ ] **Industry:** `Software Development`
-- [ ] **Tagline:** `AI Software Factory — Tashkent, Uzbekistan`
-- [ ] **About:** Tashkent + 2024 + Bekzod Mirzaaliyev faktlari bilan to'liq tavsif
-- [ ] Logo + cover rasm yuklash
-- [ ] Follower yig'ish — jamoa (16 kishi) + tanishlar (30–50 ta katta farq)
-- [ ] 2–3 post joylash (AI automation mavzusida)
-
-### 🔴 2. Bidirectional (ikki tomonlama) havola
+### 🔴 1. Bidirectional (ikki tomonlama) havola
 Har profil saytga qaytib havola qilsin (sayt → profil tomoni `sameAs`da bor).
 - [ ] LinkedIn → tezcode.dev
 - [ ] Instagram → tezcode.dev
@@ -104,7 +101,6 @@ HQ = Tashkent, website = tezcode.dev, founded by = Bekzod Mirzaaliyev, inception
 - [ ] 1–3 haftadan keyin AI'larda test promptlar bilan qayta tekshirish
 
 ## 📌 Eng katta ta'sir tartibi (agar vaqt kam bo'lsa)
-1. LinkedIn sahifasini to'ldirish (disambiguatsiya + obro')
-2. Clutch profil + mijoz sharhlari
-3. Bidirectional havolalar
-4. Wikidata yozuvi
+1. Clutch profil + mijoz sharhlari
+2. Bidirectional havolalar
+3. Wikidata yozuvi
