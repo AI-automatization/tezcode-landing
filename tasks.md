@@ -53,7 +53,7 @@
   - [ ] 3–5 mijozdan sharh (review) — `docs/review-templates.md` (GBP'dagi 23 sharhdan ba'zilarini Clutch'ga ham)
 - [ ] **TechBehemoths** profilini to'ldirish + AI/Tashkent kategoriyasi
 - [ ] `docs/off-site-profiles.md` dagi `[TASDIQLA]` faktlar: min loyiha narxi, soatlik stavka
-- [ ] **IT-media**: Spot.uz yoki Kun.uz'ga press / case study (1–2 mention)
+- [ ] **IT-media**: Spot.uz yoki Kun.uz'ga press / case study (1–2 mention) — Wikidata uchun ham mustaqil "reference" (notability) bo'ladi, shuning uchun Wikidata'dan OLDIN qilingani ma'qul
 
 ---
 
