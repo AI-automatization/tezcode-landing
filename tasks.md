@@ -85,6 +85,23 @@ HQ = Tashkent, website = tezcode.dev, founded by = Bekzod Mirzaaliyev, inception
 
 ---
 
+## 🔎 BREND SERP — "tezcode" qidiruvini egallash (2026-06-26)
+
+> Holat (Google "tezcode"): #1 **tezcode.dev** ✅ + knowledge panel (5.0★/23) ✅ +
+> TechBehemoths profil ✅ + Clutch profil ✅. Faqat #2 — **TezCode.tech** (Python
+> bootcamp, begona) — bu qonuniy boshqa kompaniya, O'CHIRIB BO'LMAYDI, faqat ko'proq
+> slot egallab **pastga surish** mumkin. Bu bir vaqtda GEO'ga ham yordam beradi (entity obro'si).
+
+Maqsad: 1-sahifani Tezcode profillari bilan to'ldirib, TezCode.tech'ni pastga surish.
+- [ ] **Crunchbase** profil yaratish + to'ldirish (yangi SERP sloti + entity signali)
+- [ ] **F6S** profilini to'liq to'ldirish (sameAs'da bor — indekslansin)
+- [ ] **Instagram** (tezcode_dev), **GitHub** (AI-automatization), **YouTube** — brend qidiruvida chiqsin
+- [ ] **Wikidata** yozuvi → brendlangan knowledge panel ("tezcode.dev" emas, "Tezcode") + AI iqtibosi *(yuqoridagi disambiguatsiya bilan bir xil)*
+- [ ] **GBP nomi** `tezcode.dev` → `Tezcode` *(GBP bo'limi bilan bir xil — knowledge panel uchun)*
+- [ ] **Press** (Spot.uz / Kun.uz) → yana bir slot + obro' *(off-site bilan bir xil)*
+
+---
+
 ## 🟡 ON-SITE — qolgan (kod, ixtiyoriy)
 - [ ] (Ixtiyoriy) Blog maqolasiga `ar` + `uk` tarjima qo'shish (hozir uz/ru/en)
 - [ ] (Ixtiyoriy) `/biznes-avtomatlashtirish/[city]` shahar sahifalari
