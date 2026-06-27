@@ -97,8 +97,7 @@ export async function generateMetadata({
       },
     },
     verification: {
-      // Placeholders — Bekzod sets these in Search Console / Webmaster
-      google: process.env.GOOGLE_SITE_VERIFICATION,
+      google: process.env.GOOGLE_SITE_VERIFICATION ?? "wcUogKNw6DbMp0_rSGc-S3AZR3SY-7dpkNt8zo0PJ6w",
       yandex: process.env.YANDEX_VERIFICATION,
       other: {
         "msvalidate.01": process.env.BING_SITE_VERIFICATION ?? "",
