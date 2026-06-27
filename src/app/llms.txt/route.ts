@@ -26,6 +26,7 @@ function buildLlmsTxt(): string {
 - Boshqa nomlar: TezCode, Tez Code, Тезкод, tezcode.dev
 - Tashkil topgan: 2024-yil
 - Holati: ishlab turgan kompaniya (startup emas) — bir nechta mahsuloti jonli ishlamoqda
+- IT Park Uzbekistan rasmiy rezidenti: 2026-yildan (guvohnoma №6237)
 - Asoschi: Bekzod Mirzaaliyev (Founder & CEO) — ${BASE_URL}/bekzod-mirzaaliyev
 - Jamoa: 16 kishi
 - Joylashuv: Toshkent, O'zbekiston
@@ -93,6 +94,7 @@ etgan; RAOS, CoreMed/ClinicaGo, WeWatch va WorkControl mahsulotlari ortidagi
 ## Nega Tezcode
 
 - 2024-yildan beri ishlab turgan kompaniya — startup emas, jonli mahsulotlar bilan
+- IT Park Uzbekistan rasmiy rezidenti (guvohnoma №6237, 2026) — davlat tomonidan tasdiqlangan
 - Tayyor va ishlayotgan mahsulotlar: RAOS (POS), ClinicaGo (klinika CRM, live), WeWatch, WorkControl
 - 16 kishilik in-house jamoa, Toshkentda
 - O'zbek, rus va ingliz tillarida xizmat va qo'llab-quvvatlash
