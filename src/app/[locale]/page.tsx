@@ -5,11 +5,11 @@ import { LiveCodeDemo } from "@/components/LiveCodeDemo";
 import { TechStackMarquee } from "@/components/TechStackMarquee";
 import { ProductsGrid } from "@/components/ProductsGrid";
 import { ProductsShowcase } from "@/components/ProductsShowcase";
+import { AutomationShowcase } from "@/components/AutomationShowcase";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { ROICalculator } from "@/components/ROICalculator";
 import { Testimonials } from "@/components/Testimonials";
 import { ReviewsWidget } from "@/components/ReviewsWidget";
-import { BusinessSolutions } from "@/components/BusinessSolutions";
 import { Partners } from "@/components/Partners";
 import { PricingTiers } from "@/components/PricingTiers";
 import { Team } from "@/components/Team";
@@ -48,6 +48,9 @@ export default function HomePage() {
         <ProductsShowcase />
       </Suspense>
 
+      {/* Real AI-generated showcase — "what we automate" image cards */}
+      <AutomationShowcase />
+
       {/* Process: 4 steps */}
       <Suspense fallback={<div className="h-64 bg-[var(--tc-surface-1)]" />}>
         <ProcessSteps />
@@ -63,11 +66,6 @@ export default function HomePage() {
 
       {/* Reviews widget — aggregate rating + 6 verified */}
       <ReviewsWidget />
-
-      {/* Business solutions */}
-      <Suspense fallback={<div className="h-64 bg-[var(--tc-surface-1)]" />}>
-        <BusinessSolutions />
-      </Suspense>
 
       {/* Partners — official integration partners (internal pages only) */}
       <Partners />
