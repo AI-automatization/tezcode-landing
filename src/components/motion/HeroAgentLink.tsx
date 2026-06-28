@@ -1,7 +1,7 @@
 "use client";
 
 import { useReducedMotion } from "motion/react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /**
  * Decorative "AI agent ↔ customers" background for the hero.
@@ -43,6 +43,18 @@ const LINKS = CUSTOMERS.map((c) => {
 export function HeroAgentLink() {
   const reduce = useReducedMotion();
   const svgRef = useRef<SVGSVGElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // On narrow screens use "meet" (fit the whole diagram — nothing cropped);
+  // on desktop keep "slice" (full-bleed). Set after mount to avoid hydration
+  // mismatch.
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 768px)");
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   // Pause the SMIL animation when the hero is scrolled off-screen or the tab
   // is hidden — no wasted work while it's not visible.
@@ -77,7 +89,7 @@ export function HeroAgentLink() {
         ref={svgRef}
         className="h-full w-full"
         viewBox="0 0 1200 600"
-        preserveAspectRatio="xMidYMid slice"
+        preserveAspectRatio={isMobile ? "xMidYMid meet" : "xMidYMid slice"}
         fill="none"
       >
         <defs>
