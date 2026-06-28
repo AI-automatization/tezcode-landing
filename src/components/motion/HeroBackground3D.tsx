@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "motion/react";
+import { HeroAgentLink } from "@/components/motion/HeroAgentLink";
 
 export function HeroBackground3D() {
   const { scrollY } = useScroll();
@@ -142,6 +143,14 @@ export function HeroBackground3D() {
           }}
         />
       ))}
+
+      {/* AI agent ↔ 6 customers — central agent exchanging data with customer
+          avatars, endless bidirectional flow. SVG, behind hero content.
+          Alternatives kept for easy revert (swap import + tag):
+          <HeroOrbit /> (24/7 orbital), <HeroAIScene /> (icon field),
+          <HeroAIFlow /> (linear flow), <HeroCircuit /> (chip),
+          <HeroNeuralNetwork /> (neural net), <HeroFlowWaves /> (gradient). */}
+      <HeroAgentLink />
     </div>
   );
 }
