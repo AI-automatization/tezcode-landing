@@ -189,13 +189,18 @@ export function Navbar() {
               </li>
             ))}
           </ul>
-          {/* Mobile locale switcher */}
+          {/* Mobile locale switcher — switch locale on the SAME path (like the
+              desktop switcher). Using a Link to /{locale} made next-intl prepend
+              the current locale prefix (e.g. /en/ru), which 404s. */}
           <div className="flex gap-2 flex-wrap">
             {routing.locales.map((l) => (
-              <Link
+              <button
                 key={l}
-                href={l === routing.defaultLocale ? "/" : `/${l}`}
-                onClick={() => setMobileOpen(false)}
+                type="button"
+                onClick={() => {
+                  setMobileOpen(false);
+                  switchLocale(l);
+                }}
                 className={[
                   "px-3 py-1 rounded text-xs font-mono uppercase transition-colors",
                   l === locale
@@ -204,7 +209,7 @@ export function Navbar() {
                 ].join(" ")}
               >
                 {l}
-              </Link>
+              </button>
             ))}
           </div>
         </div>
