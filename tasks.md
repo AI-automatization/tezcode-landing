@@ -121,3 +121,33 @@ Maqsad: 1-sahifani Tezcode profillari bilan to'ldirib, TezCode.tech'ni pastga su
 1. Clutch profil + mijoz sharhlari
 2. Bidirectional havolalar
 3. Wikidata yozuvi
+
+---
+
+## 🟠 KATALOG PROFILLARINI TO'LDIRISH (TechBehemoths + GoodFirms)
+Profillar bor, lekin bo'sh joylari ko'p — to'ldirish kerak.
+
+### TechBehemoths (techbehemoths.com/company/tezcode)
+- [ ] **Portfolio** to'ldirish (hozir BO'SH — sayt "xavfli" deb ogohlantiryapti) → 4-5 loyiha:
+  - [ ] RAOS — POS/Retail (do'kon, kassa, ombor, soliq)
+  - [ ] CoreMed / ClinicaGo — Healthcare (klinika CRM, navbat)
+  - [ ] WorkControl — HR/Productivity (xodim nazorati)
+  - [ ] WeWatch — Social/Media (onlayn birga kino)
+  - [ ] AI Chatbot / AI Office — AI (biznes avtomatlashtirish)
+  - har biriga: nom + kategoriya + tavsif + rasm (marketing rasmlari) + natija
+- [ ] **Xizmatlar** kengaytirish (hozir atigi 3 — "cheklangan"): AI agent, business automation, AI chatbot, custom software, web, mobile, CRM/ERP, POS, Telegram bot
+- [ ] **Kategoriya** "Web Development" → **Artificial Intelligence** qo'shish (Top AI companies ro'yxatiga kirish)
+- [ ] **Sharhlar** — 3-5 ta mijoz sharhi
+
+### GoodFirms (goodfirms.co/company/tezcode)
+- [ ] **Portfolio** loyihalar qo'shish (yuqoridagidek)
+- [ ] **Focus areas / xizmatlar** to'liq belgilash (AI, automation, POS, CRM, web, mobile)
+- [ ] **Sharhlar** — 3-5 ta mijoz sharhi
+
+### NAP izchilligi
+- [ ] Manzil "Amir Temur ko'chasi 10, Tashkent 100037" + tel `+998993151516` hamma joyda bir xil (sayt schema, GBP, Yandex, TechBehemoths, GoodFirms)
+
+## 🔧 ON-SITE TUZATISHLAR (aniqlangan)
+- [ ] Soxta "live visitor badge" (5 online · N bugun) — real qilish yoki olib tashlash
+- [ ] Bosh sahifada sharhlar takrori (bir xil mijozlar 2 bo'limda) — birlashtirish
+- [ ] Real case study'lar (aniq raqamlar) + mijoz logolari
