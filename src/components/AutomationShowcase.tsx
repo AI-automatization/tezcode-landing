@@ -112,10 +112,6 @@ export function AutomationShowcase() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
 
-                <span className="absolute top-4 right-4 z-20 px-3 py-1 rounded-full text-xs font-600 bg-[var(--tc-blue)]/90 text-white backdrop-blur-md">
-                  {m.badge}
-                </span>
-
                 <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
 
                 <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
@@ -125,19 +121,21 @@ export function AutomationShowcase() {
                   >
                     {c.cards[i].title}
                   </h3>
-                  <p className="text-white/80 text-sm mb-3">{c.cards[i].subtitle}</p>
-                  <span className="inline-flex items-center gap-1.5 text-[var(--tc-gold)] text-sm font-600">
-                    {c.cta}
-                    <svg
-                      className="w-4 h-4 transition-transform group-hover:translate-x-1"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </span>
+                  <div className="flex items-end justify-between gap-2 mt-2">
+                    <p className="text-white/70 text-xs leading-snug line-clamp-2 flex-1">{c.cards[i].subtitle}</p>
+                    <span className="inline-flex items-center gap-1 text-[var(--tc-gold)] text-sm font-600 shrink-0">
+                      {c.cta}
+                      <svg
+                        className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                  </div>
                 </div>
               </Link>
             </RevealItem>

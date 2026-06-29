@@ -128,13 +128,12 @@ Maqsad: 1-sahifani Tezcode profillari bilan to'ldirib, TezCode.tech'ni pastga su
 Profillar bor, lekin bo'sh joylari ko'p — to'ldirish kerak.
 
 ### TechBehemoths (techbehemoths.com/company/tezcode)
-- [ ] **Portfolio** to'ldirish (hozir BO'SH — sayt "xavfli" deb ogohlantiryapti) → 4-5 loyiha:
-  - [ ] RAOS — POS/Retail (do'kon, kassa, ombor, soliq)
-  - [ ] CoreMed / ClinicaGo — Healthcare (klinika CRM, navbat)
-  - [ ] WorkControl — HR/Productivity (xodim nazorati)
-  - [ ] WeWatch — Social/Media (onlayn birga kino)
-  - [ ] AI Chatbot / AI Office — AI (biznes avtomatlashtirish)
-  - har biriga: nom + kategoriya + tavsif + rasm (marketing rasmlari) + natija
+- [x] **Portfolio** to'ldirish → 4 loyiha qo'shildi (2026-06-29):
+  - [x] RAOS — POS/Retail (do'kon, kassa, ombor, soliq)
+  - [x] CoreMed / ClinicaGo — Healthcare (klinika CRM, navbat)
+  - [x] AI Chatbot / AI Office — AI (biznes avtomatlashtirish)
+  - [x] WeWatch — Social/Media (onlayn birga kino)
+  - [ ] WorkControl — HR/Productivity (xodim nazorati) — qo'shilmadi
 - [ ] **Xizmatlar** kengaytirish (hozir atigi 3 — "cheklangan"): AI agent, business automation, AI chatbot, custom software, web, mobile, CRM/ERP, POS, Telegram bot
 - [ ] **Kategoriya** "Web Development" → **Artificial Intelligence** qo'shish (Top AI companies ro'yxatiga kirish)
 - [ ] **Sharhlar** — 3-5 ta mijoz sharhi
