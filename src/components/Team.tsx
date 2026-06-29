@@ -20,69 +20,69 @@ const TEAM: Member[] = [
   },
   {
     name: "Abdulaziz Yormatov",
-    role: "COO · Dasturchi · AI-mutaxassis",
+    role: "COO · Developer · AI Specialist",
     telegram: "@mr_abdulaziz_yormatov",
   },
   {
     name: "Abdulloh Isroilov",
-    role: "AI-Trade asoschisi · Trading mutaxassis · Dasturchi",
+    role: "AI-Trade Co-founder · Trading Specialist · Developer",
   },
   {
     name: "Azimjon Qurbonov",
-    role: "Savdo Builder asoschisi · Dasturchi",
+    role: "Savdo Builder Co-founder · Developer",
     telegram: "@Azim090",
   },
   {
     name: "Diyor Rahmatullayev",
-    role: "HamshiraGo · ClinicGo asoschisi · Dasturchi",
+    role: "HamshiraGo · ClinicGo Co-founder · Developer",
   },
   {
     name: "Sardor Madaliyev",
-    role: "Ventra asoschisi · Dasturchi",
+    role: "Ventra Co-founder · Developer",
     telegram: "@madaliev_s",
   },
   {
     name: "Ziyora Mirzakirova",
-    role: "Work-Control asoschisi · Dasturchi",
+    role: "Work-Control Co-founder · Developer",
   },
   {
     name: "Emirhan Ertan",
-    role: "WeWatch asoschisi · Dasturchi",
+    role: "WeWatch Co-founder · Developer",
     telegram: "@Emirhan7788",
   },
   {
     name: "Behruz Satimboyev",
-    role: "Zzone asoschisi",
+    role: "Zzone Co-founder",
     telegram: "@behruz_460",
   },
   {
     name: "Abubakir Ilhomov",
-    role: "Dasturchi",
+    role: "Developer",
     telegram: "@abubakirilhomov",
   },
   {
     name: "Ibrat Tursunov",
-    role: "Dasturchi",
+    role: "Developer",
   },
   {
     name: "Polat Ismailov",
-    role: "Dasturchi",
+    role: "Developer",
   },
   {
     name: "Abdulaziz Mirzayev",
-    role: "Dasturchi",
+    role: "Developer",
   },
   {
     name: "Jafar Ulugbekov",
-    role: "Dasturchi",
+    role: "Developer",
   },
   {
     name: "Javodbek Abdusalimov",
-    role: "Dasturchi",
+    role: "Developer",
   },
   {
     name: "Habibulloh Shuhratov",
-    role: "Dasturchi",
+    role: "Developer",
   },
 ];
 
