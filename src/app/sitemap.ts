@@ -29,6 +29,8 @@ const ROUTES = [
   { path: "/roadmap", priority: 0.6, changeFrequency: "monthly" as const },
   { path: "/changelog", priority: 0.6, changeFrequency: "weekly" as const },
   { path: "/bekzod-mirzaaliyev", priority: 0.6, changeFrequency: "yearly" as const },
+  { path: "/partnery/aisolution", priority: 0.6, changeFrequency: "monthly" as const },
+  { path: "/partnery/schwarz-digits", priority: 0.6, changeFrequency: "monthly" as const },
   { path: "/press", priority: 0.5, changeFrequency: "monthly" as const },
   { path: "/privacy", priority: 0.3, changeFrequency: "yearly" as const },
   { path: "/terms", priority: 0.3, changeFrequency: "yearly" as const },

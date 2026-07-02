@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "motion/react";
-import { HeroAgentLink } from "@/components/motion/HeroAgentLink";
 
 export function HeroBackground3D() {
   const { scrollY } = useScroll();
@@ -114,43 +113,6 @@ export function HeroBackground3D() {
       <div className="absolute top-20 left-6 w-px h-24 bg-gradient-to-b from-[var(--tc-blue)] to-transparent opacity-60" />
       <div className="absolute bottom-20 right-6 w-24 h-px bg-gradient-to-l from-[var(--tc-gold)] to-transparent opacity-60" />
       <div className="absolute bottom-20 right-6 w-px h-24 bg-gradient-to-t from-[var(--tc-gold)] to-transparent opacity-60" />
-
-      {/* Floating particles (transform + opacity only, composited) */}
-      {[
-        { top: "18%", left: "12%", color: "var(--tc-blue)", size: 3, delay: 0 },
-        { top: "72%", left: "90%", color: "var(--tc-blue)", size: 4, delay: 0.6 },
-        { top: "45%", left: "50%", color: "var(--tc-gold)", size: 2, delay: 1.8 },
-      ].map((dot, i) => (
-        <motion.div
-          key={i}
-          aria-hidden
-          animate={{ y: [0, -14, 0], opacity: [0.3, 0.8, 0.3] }}
-          transition={{
-            duration: 4 + i * 0.5,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: dot.delay,
-          }}
-          className="absolute rounded-full"
-          style={{
-            top: dot.top,
-            left: dot.left,
-            width: dot.size,
-            height: dot.size,
-            background: dot.color,
-            boxShadow: `0 0 12px ${dot.color}`,
-            willChange: "transform, opacity",
-          }}
-        />
-      ))}
-
-      {/* AI agent ↔ 6 customers — central agent exchanging data with customer
-          avatars, endless bidirectional flow. SVG, behind hero content.
-          Alternatives kept for easy revert (swap import + tag):
-          <HeroOrbit /> (24/7 orbital), <HeroAIScene /> (icon field),
-          <HeroAIFlow /> (linear flow), <HeroCircuit /> (chip),
-          <HeroNeuralNetwork /> (neural net), <HeroFlowWaves /> (gradient). */}
-      <HeroAgentLink />
     </div>
   );
 }

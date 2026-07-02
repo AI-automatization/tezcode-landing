@@ -7,6 +7,28 @@ import type { ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "it-park-schwarz-digits-uchrashuv",
+    datePublished: "2026-07-02",
+    category: "Hamkorlik / IT Park",
+    list: {
+      uz: {
+        title: "IT Park va Schwarz Digits: O'zbekiston IT sektori uchun Yevropa imkoniyati",
+        excerpt:
+          "IT Park Uzbekistan'da Tezcode Schwarz Digits (Lidl va Kaufland egasi Schwarz Group'ning texnologik bo'linmasi) vakili bilan tanishdi. Bu nimani anglatadi va O'zbekiston dasturchilari uchun qanday imkoniyat ochadi.",
+      },
+      ru: {
+        title: "IT Park и Schwarz Digits: европейская возможность для IT-сектора Узбекистана",
+        excerpt:
+          "На встрече в IT Park Uzbekistan Tezcode познакомился с представителем Schwarz Digits — технологического подразделения Schwarz Group, владеющей сетями Lidl и Kaufland. Что это значит и какую возможность открывает для узбекских разработчиков.",
+      },
+      en: {
+        title: "IT Park and Schwarz Digits: a European opening for Uzbekistan's IT sector",
+        excerpt:
+          "At a meeting hosted by IT Park Uzbekistan, Tezcode met a representative of Schwarz Digits — the technology arm of Schwarz Group, which owns the Lidl and Kaufland retail chains. What it means for Uzbek developers.",
+      },
+    },
+  },
+  {
     slug: "ai-avtomatizatsiya-kompaniya-tanlash",
     datePublished: "2026-06-25",
     category: "AI / Avtomatizatsiya",
