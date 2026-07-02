@@ -12,34 +12,34 @@ import type { ArticleLang } from "@/components/blog/types";
 
 const LABELS: Record<ArticleLang, { title: string; subtitle: string; readMore: string; viewAll: string }> = {
   uz: {
-    title: "Yangiliklar",
+    title: "So'nggi maqolalar",
     subtitle: "AI dunyosidagi va Tezcode ekotizimidagi so'nggi yangiliklar",
     readMore: "O'qish",
-    viewAll: "Barcha yangiliklar",
+    viewAll: "Barcha maqolalar",
   },
   ru: {
-    title: "Новости",
+    title: "Последние статьи",
     subtitle: "Последние новости мира AI и экосистемы Tezcode",
     readMore: "Читать",
-    viewAll: "Все новости",
+    viewAll: "Все статьи",
   },
   en: {
-    title: "News",
+    title: "Latest articles",
     subtitle: "Latest updates from the AI world and the Tezcode ecosystem",
     readMore: "Read",
-    viewAll: "All news",
+    viewAll: "All articles",
   },
   ar: {
-    title: "الأخبار",
+    title: "أحدث المقالات",
     subtitle: "آخر التحديثات من عالم الذكاء الاصطناعي ونظام Tezcode",
     readMore: "اقرأ",
-    viewAll: "كل الأخبار",
+    viewAll: "كل المقالات",
   },
   uk: {
-    title: "Новини",
+    title: "Останні статті",
     subtitle: "Останні новини зі світу AI та екосистеми Tezcode",
     readMore: "Читати",
-    viewAll: "Усі новини",
+    viewAll: "Усі статті",
   },
 };
 

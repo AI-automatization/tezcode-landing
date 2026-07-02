@@ -93,33 +93,33 @@ const PARTNERS: Partner[] = [
 
 const LABELS: Record<Lang, { title: string; subtitle: string; more: string; badge: string }> = {
   uz: {
-    title: "Hamkorlarimiz",
+    title: "Tezcode'da yangi",
     subtitle:
       "Yangi hamkorliklar, xalqaro aloqalar va biznes uchun AI imkoniyatlari",
     more: "Batafsil",
     badge: "Hamkor",
   },
   ru: {
-    title: "Наши партнёры",
+    title: "Новое в Tezcode",
     subtitle:
       "Новые партнёрства, международные связи и AI-возможности для бизнеса",
     more: "Подробнее",
     badge: "Партнёр",
   },
   en: {
-    title: "Our Partners",
+    title: "What's new at Tezcode",
     subtitle: "New partnerships, international connections and AI opportunities for business",
     more: "Learn more",
     badge: "Partner",
   },
   ar: {
-    title: "شركاؤنا",
+    title: "جديد Tezcode",
     subtitle: "شراكات جديدة وروابط دولية وفرص للذكاء الاصطناعي في الأعمال",
     more: "اعرف المزيد",
     badge: "شريك",
   },
   uk: {
-    title: "Наші партнери",
+    title: "Нове в Tezcode",
     subtitle: "Нові партнерства, міжнародні зв'язки та AI-можливості для бізнесу",
     more: "Детальніше",
     badge: "Партнер",
