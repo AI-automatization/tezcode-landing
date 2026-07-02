@@ -27,8 +27,8 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Uchrashuvda nima bo'ldi?",
         paragraphs: [
-          "IT Park Uzbekistan tashkil etgan tadbirda Tezcode asoschisi Bekzod Mirzaaliyev, hamkorimiz aisolution.uz asoschisi Abbos Xamidov va Schwarz Digits vakili birgalikda ko'rishdi. Bu Tezcode uchun alohida emas, balki ikkala kompaniya — Tezcode va aisolution.uz — allaqachon bir-biriga hamkor bo'lgani uchun birgalikdagi uchrashuv edi.",
-          "Suhbat davomida tomonlar hamkor bo'lib ishlashga kelishib oldi. Bu — erta bosqich: hozircha imzolangan shartnoma yoki aniq loyiha yo'q, lekin tanishuv va hamkorlikning boshlanishi sifatida muhim qadam.",
+          "2026-yil iyun oxirida Toshkentda, IT Park Uzbekistan tashkil etgan yopiq konferensiyada Schwarz Digits vakili \"Partner Ecosystem & Growth\" konsepsiyasini taqdim etdi — Yevropa kompaniyalari EI hududidan tashqarida qanday texnologik alyanslar qurishi haqida. Konferensiyaning asosiy tezisi: \"Yevropada AI-integratorlar yetishmayapti — pul bor, vazifalar bor, lekin tez va amaliy tarzda joriy eta oladigan jamoalar yetarli emas.\"",
+          "Taqdimotdan so'ng Tezcode asoschisi Bekzod Mirzaaliyev Schwarz Digits vakili bilan shaxsan suhbatlashdi — Tezcode nima qilishini, qanday yo'nalishda ishlashini gapirib berdi. Yig'ilishda hamkorimiz aisolution.uz asoschisi Abbos Xamidov ham qatnashdi. Suhbat yakunida tomonlar hamkor bo'lib ishlashga kelishdi.",
         ],
       },
       {
@@ -48,14 +48,14 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Bu Tezcode uchun nimani anglatadi?",
         paragraphs: [
-          "Tezcode asoschisi Bekzod Mirzaaliyevning so'zlariga ko'ra, uchrashuv natijasi — \"hamkor bo'lib ishlaymiz\" degan kelishuv. Bu hali aniq loyihalar yoki raqamlar bilan tasdiqlangan shartnoma emas, balki hamkorlikning ochiq boshlanishi.",
-          "Tezcode uchun bunday uchrashuvlarning qiymati shunda: mahalliy AI Software Factory sifatida ishlab chiqilgan tajriba va mahsulotlarni (RAOS, AI Office va boshqalar) xalqaro miqyosdagi hamkorlar bilan tanishtirish, va aisolution.uz kabi hamkorlar bilan birgalikda O'zbekiston IT sektorining imkoniyatlarini ko'rsatish.",
+          "Tezcode asoschisi Bekzod Mirzaaliyevning so'zlariga ko'ra, uchrashuv natijasi — \"hamkor bo'lib ishlaymiz\" degan kelishuv. Ochig'ini aytganda, Tezcode hozir Yevropaga shoshilmayapti — ustuvor vazifa O'zbekistonda AI-avtomatlashtirish bo'yicha №1 bo'lish. Lekin bunday uchrashuvlar muhim: ular yo'nalish to'g'ri ekanini ko'rsatadi, va vaqti kelganda aloqalar allaqachon tayyor bo'ladi.",
+          "Tezcode uchun bunday uchrashuvlarning qiymati shunda: mahalliy AI Software Factory sifatida ishlab chiqilgan tajriba va mahsulotlarni (RAOS, ClinicaGo, WorkControl va boshqalar) xalqaro miqyosdagi hamkorlar bilan tanishtirish.",
         ],
       },
       {
         heading: "Keyingi qadamlar",
         paragraphs: [
-          "Hozircha bu hamkorlik erta bosqichda — aniq shartlar, loyihalar yoki muddatlar haqida gapirish erta. Tezcode jamoasi jarayonni kuzatib boradi va aniqliklar paydo bo'lgach, ushbu maqola va tegishli hamkor sahifasi (schwarz-digits) yangilanadi.",
+          "Bu hamkorlik hozircha tanishuv bosqichida — aniq shartnoma yoki loyihalar haqida gapirish erta. Tezcode jamoasi jarayonni kuzatib boradi va aniqliklar paydo bo'lgach, ushbu maqola va tegishli hamkor sahifasi (schwarz-digits) yangilanadi.",
         ],
       },
     ],
@@ -68,11 +68,11 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Tezcode va Schwarz Digits o'rtasida shartnoma imzolanganmi?",
-          a: "Yo'q. Bu hozircha IT Park orqali boshlangan tanishuv va \"hamkor bo'lib ishlaymiz\" degan og'zaki kelishuv. Aniq shartnoma yoki loyihalar hali yo'q.",
+          a: "Hozircha yo'q — bu IT Park orqali boshlangan tanishuv va \"hamkor bo'lib ishlaymiz\" degan kelishuv. Aniq shartlar va loyihalar hali kelishilmoqda.",
         },
         {
           q: "Uchrashuvda kim ishtirok etdi?",
-          a: "Tezcode asoschisi Bekzod Mirzaaliyev, hamkorimiz aisolution.uz asoschisi Abbos Xamidov va Schwarz Digits vakili. Bu ikkala kompaniya uchun birgalikdagi uchrashuv edi, faqat Tezcode'ga xos emas.",
+          a: "Tezcode asoschisi Bekzod Mirzaaliyev Schwarz Digits vakili bilan shaxsan suhbatlashdi. Yig'ilishda hamkorimiz aisolution.uz asoschisi Abbos Xamidov ham qatnashdi.",
         },
         {
           q: "IT Park Uzbekistan bu uchrashuvda qanday rol o'ynadi?",
@@ -111,8 +111,8 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Что произошло на встрече?",
         paragraphs: [
-          "На мероприятии, организованном IT Park Uzbekistan, вместе встретились основатель Tezcode Бекзод Мирзаалиев, основатель нашего партнёра aisolution.uz Аббос Хамидов и представитель Schwarz Digits. Это была не отдельная встреча для Tezcode, а совместная — обе компании, Tezcode и aisolution.uz, уже являются партнёрами друг друга.",
-          "В ходе разговора стороны договорились работать как партнёры. Это ранний этап: пока нет подписанного контракта или конкретного проекта, но это важный шаг как начало знакомства и сотрудничества.",
+          "В конце июня 2026 года в Ташкенте, на закрытой конференции IT Park Uzbekistan, представитель Schwarz Digits представил концепцию «Partner Ecosystem & Growth» — как европейские компании строят технологические альянсы за пределами ЕС. Ключевой тезис конференции: «Европа испытывает дефицит AI-интеграторов — деньги есть, задачи есть, но не хватает команд, которые умеют быстро и практично внедрять».",
+          "После презентации основатель Tezcode Бекзод Мирзаалиев лично пообщался с представителем Schwarz Digits — рассказал о Tezcode и направлении работы компании. На встрече также присутствовал основатель нашего партнёра aisolution.uz Аббос Хамидов. По итогам разговора стороны договорились работать как партнёры.",
         ],
       },
       {
@@ -132,14 +132,14 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Что это значит для Tezcode?",
         paragraphs: [
-          "По словам основателя Tezcode Бекзода Мирзаалиева, итог встречи — договорённость «будем работать как партнёры». Это ещё не контракт с конкретными проектами или цифрами, а открытое начало сотрудничества.",
-          "Ценность таких встреч для Tezcode в том, чтобы представлять опыт и продукты, созданные как локальная AI Software Factory (RAOS, AI Office и другие), международным партнёрам, и вместе с партнёрами вроде aisolution.uz показывать возможности IT-сектора Узбекистана.",
+          "По словам основателя Tezcode Бекзода Мирзаалиева, итог встречи — договорённость «будем работать как партнёры». Честно: Tezcode пока не гонится за Европой — приоритет остаётся стать №1 по AI-автоматизации бизнеса в Узбекистане. Но такие встречи важны: они показывают, что вектор верный, и когда придёт время — связи уже будут готовы.",
+          "Ценность таких встреч для Tezcode в том, чтобы представлять опыт и продукты, созданные как локальная AI Software Factory (RAOS, ClinicaGo, WorkControl и другие), международным партнёрам.",
         ],
       },
       {
         heading: "Следующие шаги",
         paragraphs: [
-          "Пока это партнёрство находится на раннем этапе — говорить о конкретных условиях, проектах или сроках преждевременно. Команда Tezcode будет следить за процессом, и по мере появления деталей эта статья и соответствующая страница партнёра (schwarz-digits) будут обновлены.",
+          "Пока это партнёрство находится на этапе знакомства — говорить о конкретных условиях или проектах преждевременно. Команда Tezcode будет следить за процессом, и по мере появления деталей эта статья и соответствующая страница партнёра (schwarz-digits) будут обновлены.",
         ],
       },
     ],
@@ -152,11 +152,11 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Подписан ли контракт между Tezcode и Schwarz Digits?",
-          a: "Нет. Пока это знакомство, начатое через IT Park, и устная договорённость «будем работать как партнёры». Конкретного контракта или проектов ещё нет.",
+          a: "Пока нет. Это знакомство, начатое через IT Park, и договорённость «будем работать как партнёры». Конкретные условия ещё согласовываются.",
         },
         {
           q: "Кто участвовал во встрече?",
-          a: "Основатель Tezcode Бекзод Мирзаалиев, основатель нашего партнёра aisolution.uz Аббос Хамидов и представитель Schwarz Digits. Это была совместная встреча для обеих компаний, а не только для Tezcode.",
+          a: "Основатель Tezcode Бекзод Мирзаалиев лично пообщался с представителем Schwarz Digits. На встрече также присутствовал основатель нашего партнёра aisolution.uz Аббос Хамидов.",
         },
         {
           q: "Какую роль сыграл IT Park Uzbekistan в этой встрече?",
@@ -195,8 +195,8 @@ export const CONTENT: ArticleContent = {
       {
         heading: "What happened at the meeting?",
         paragraphs: [
-          "At an event organized by IT Park Uzbekistan, Tezcode founder Bekzod Mirzaaliyev, aisolution.uz founder Abbos Khamidov, and a Schwarz Digits representative met together. This wasn't a Tezcode-only meeting — it was a joint one, since Tezcode and aisolution.uz are already partners of each other.",
-          "During the conversation, the parties agreed to work as partners. This is an early stage: there's no signed contract or specific project yet, but it's a meaningful step as the start of an acquaintance and collaboration.",
+          "In late June 2026 in Tashkent, at a closed conference hosted by IT Park Uzbekistan, the Schwarz Digits representative presented their \"Partner Ecosystem & Growth\" concept — how European companies build technology alliances outside the EU. The key point made at the conference: \"Europe is short on AI integrators — there's money, there's demand, but not enough teams who can implement quickly and practically.\"",
+          "After the presentation, Tezcode founder Bekzod Mirzaaliyev spoke personally with the Schwarz Digits representative — explaining what Tezcode does and where the company is headed. Abbos Khamidov, founder of our partner aisolution.uz, was also present at the meeting. By the end of the conversation, both sides agreed to work as partners.",
         ],
       },
       {
@@ -216,14 +216,14 @@ export const CONTENT: ArticleContent = {
       {
         heading: "What does this mean for Tezcode?",
         paragraphs: [
-          "In the words of Tezcode founder Bekzod Mirzaaliyev, the outcome of the meeting was an agreement to \"work as partners.\" That's not yet a contract backed by specific projects or numbers — it's an open start to a collaboration.",
-          "The value of meetings like this for Tezcode lies in introducing the experience and products built as a local AI Software Factory (RAOS, AI Office and others) to international partners, and, together with partners like aisolution.uz, showing what Uzbekistan's IT sector can offer.",
+          "In the words of Tezcode founder Bekzod Mirzaaliyev, the outcome of the meeting was an agreement to \"work as partners.\" Honestly, Tezcode isn't chasing Europe right now — the priority is becoming the #1 AI automation company in Uzbekistan. But meetings like this matter: they confirm the direction is right, and when the time comes, the connections will already be in place.",
+          "The value of meetings like this for Tezcode lies in introducing the experience and products built as a local AI Software Factory (RAOS, ClinicaGo, WorkControl and others) to international partners.",
         ],
       },
       {
         heading: "What's next",
         paragraphs: [
-          "This partnership is still at an early stage — it's too soon to talk about specific terms, projects or timelines. The Tezcode team will follow the process, and this article and the corresponding partner page (schwarz-digits) will be updated as details emerge.",
+          "This partnership is still at the introduction stage — it's too soon to talk about specific terms or projects. The Tezcode team will follow the process, and this article and the corresponding partner page (schwarz-digits) will be updated as details emerge.",
         ],
       },
     ],
@@ -236,11 +236,11 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Has a contract been signed between Tezcode and Schwarz Digits?",
-          a: "No. This is currently an introduction started through IT Park and a verbal agreement to \"work as partners.\" There is no specific contract or project yet.",
+          a: "Not yet. This is an introduction started through IT Park and an agreement to \"work as partners.\" Specific terms are still being worked out.",
         },
         {
           q: "Who attended the meeting?",
-          a: "Tezcode founder Bekzod Mirzaaliyev, aisolution.uz founder Abbos Khamidov, and a Schwarz Digits representative. It was a joint meeting for both companies, not specific to Tezcode alone.",
+          a: "Tezcode founder Bekzod Mirzaaliyev spoke personally with the Schwarz Digits representative. Abbos Khamidov, founder of our partner aisolution.uz, was also present at the meeting.",
         },
         {
           q: "What role did IT Park Uzbekistan play in this meeting?",

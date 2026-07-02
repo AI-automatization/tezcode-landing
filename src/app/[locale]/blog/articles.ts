@@ -7,6 +7,28 @@ import type { ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "claude-fable-5",
+    datePublished: "2026-07-02",
+    category: "AI dunyosida / Yangilik",
+    list: {
+      uz: {
+        title: "Claude Fable 5: Anthropic'ning eng kuchli modeli va bu biznes uchun nimani anglatadi",
+        excerpt:
+          "Anthropic Claude Fable 5'ni chiqardi, AQSh eksport nazorati tufayli vaqtincha to'xtatdi, so'ng yana global qaytardi. Bu O'zbekistondagi AI-avtomatlashtirish loyihalari uchun nimani anglatadi.",
+      },
+      ru: {
+        title: "Claude Fable 5: самая мощная модель Anthropic и что это значит для бизнеса",
+        excerpt:
+          "Anthropic выпустила Claude Fable 5, временно приостановила доступ из-за экспортного контроля США, а затем снова открыла её глобально. Что это значит для AI-автоматизации в Узбекистане.",
+      },
+      en: {
+        title: "Claude Fable 5: Anthropic's most capable model, and what it means for business",
+        excerpt:
+          "Anthropic launched Claude Fable 5, temporarily pulled it under US export controls, then relaunched it globally. What it means for AI automation projects in Uzbekistan.",
+      },
+    },
+  },
+  {
     slug: "it-park-schwarz-digits-uchrashuv",
     datePublished: "2026-07-02",
     category: "Hamkorlik / IT Park",

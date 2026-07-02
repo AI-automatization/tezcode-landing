@@ -11,6 +11,7 @@ import { ROICalculator } from "@/components/ROICalculator";
 import { Testimonials } from "@/components/Testimonials";
 import { ReviewsWidget } from "@/components/ReviewsWidget";
 import { Partners } from "@/components/Partners";
+import { LatestNews } from "@/components/LatestNews";
 import { PricingTiers } from "@/components/PricingTiers";
 import { Team } from "@/components/Team";
 import { ContactForm } from "@/components/ContactForm";
@@ -69,6 +70,9 @@ export default function HomePage() {
 
       {/* Partners — official integration partners (internal pages only) */}
       <Partners />
+
+      {/* Latest news — recent blog posts, AI-industry + partnership updates */}
+      <LatestNews />
 
       {/* Pricing Tiers */}
       <PricingTiers />
