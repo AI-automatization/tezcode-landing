@@ -186,7 +186,7 @@ function PartnerCard({
               alt={`${partner.name} — tezcode`}
               fill
               sizes="(max-width: 768px) 100vw, 384px"
-              className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              className="object-cover object-top"
             />
             {/* gradient overlay so the badge stays legible over the photo */}
             <div
@@ -203,7 +203,7 @@ function PartnerCard({
             alt={`${partner.name} — tezcode`}
             fill
             sizes="(max-width: 768px) 100vw, 384px"
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            className="object-cover"
           />
         ) : (
           <div
