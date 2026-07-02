@@ -47,8 +47,8 @@ export async function generateMetadata({
     description: t("description"),
     keywords: getKeywords(locale),
     authors: [{ name: "Bekzod Mirzaaliyev", url: "https://t.me/webdevelopertk" }],
-    creator: "Tezcode AI",
-    publisher: "Tezcode AI",
+    creator: "Tezcode",
+    publisher: "Tezcode",
     metadataBase: new URL(baseUrl),
     alternates: {
       canonical: canonicalUrl,

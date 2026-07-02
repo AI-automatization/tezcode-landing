@@ -17,7 +17,7 @@ export const metadata = buildPageMetadata({
   title:
     "AI Avtomatizatsiya — Biznesingizni sun'iy intellekt bilan avtomatlashtiring | Tezcode",
   description:
-    "Biznesingizni AI bilan avtomatlashtiring: avtomatik hisobot, AI chatbot, sotuv va ombor avtomatizatsiyasi. Tezcode AI Software Factory, Toshkent. Bepul 30 daqiqa konsultatsiya.",
+    "Biznesingizni AI bilan avtomatlashtiring: avtomatik hisobot, AI chatbot, sotuv va ombor avtomatizatsiyasi. Tezcode Software Factory, Toshkent. Bepul 30 daqiqa konsultatsiya.",
   keywords: [
     "AI avtomatizatsiya",
     "sun'iy intellekt biznes uchun",

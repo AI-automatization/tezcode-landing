@@ -7,7 +7,7 @@ export const metadata = {
     path: "/privacy",
     title: "Maxfiylik Siyosati — Privacy Policy",
     description:
-      "Tezcode AI maxfiylik siyosati: shaxsiy ma'lumotlar yig'ish va ishlatish, cookies, GDPR/UZ qonun talablari, foydalanuvchi huquqlari. So'nggi yangilanish 2026-yil.",
+      "Tezcode maxfiylik siyosati: shaxsiy ma'lumotlar yig'ish va ishlatish, cookies, GDPR/UZ qonun talablari, foydalanuvchi huquqlari. So'nggi yangilanish 2026-yil.",
   }),
   robots: {
     index: true,
@@ -19,7 +19,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
   {
     title: "1. Biz kim?",
     body: [
-      'Tezcode AI ("biz", "Tezcode") — Toshkent, O\'zbekistonda joylashgan AI mahsulotlari ishlab chiqaruvchi kompaniya. Saytimiz tezcode.dev.',
+      'Tezcode ("biz", "Tezcode") — Toshkent, O\'zbekistonda joylashgan AI mahsulotlari ishlab chiqaruvchi kompaniya. Saytimiz tezcode.dev.',
       'Aloqa: tezcode@tezcode.dev · Telegram: @webdevelopertk',
     ],
   },

@@ -35,7 +35,7 @@ const COPY: Record<Lang, CopyShape> = {
     name: "AI Solution",
     role: "tezcode rasmiy joriy etish (integration) hamkori",
     intro:
-      "AI Solution — tezcode AI-mahsulotlarini O'zbekiston bizneslariga kalit topshiriq joriy qiladigan rasmiy hamkorimiz. tezcode mahsulotni ishlab chiqadi, AI Solution esa uni mijozning real biznes jarayonlariga ulaydi va qo'llab-quvvatlaydi.",
+      "AI Solution — Tezcode-mahsulotlarini O'zbekiston bizneslariga kalit topshiriq joriy qiladigan rasmiy hamkorimiz. tezcode mahsulotni ishlab chiqadi, AI Solution esa uni mijozning real biznes jarayonlariga ulaydi va qo'llab-quvvatlaydi.",
     statsTitle: "Raqamlarda",
     stats: [
       { value: "120+", label: "joriy qilingan biznes" },

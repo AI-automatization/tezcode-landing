@@ -52,7 +52,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "Salomat AI — ovozli tibbiy yordamchi", desc: "CoreMed ekotizimida bemor bilan ovoz orqali gaplashadigan AI assistent (STT → LLM → TTS). Murakkab AI yordamchini ham qura olamiz." },
         { tag: "02", title: "Telegram savdo va buyurtma boti", desc: "Buyurtma qabul qilish, eslatma yuborish, savollarga javob — kichik biznes uchun arzon va tez yechim." },
-        { tag: "03", title: "RAOS ichidagi AI", desc: "Savdo platformasida ma'lumotni avtomatik yig'ish va tahlil. Tezcode AI ni real mahsulotda ishlatadi." },
+        { tag: "03", title: "RAOS ichidagi AI", desc: "Savdo platformasida ma'lumotni avtomatik yig'ish va tahlil. Tezcode ni real mahsulotda ishlatadi." },
         { tag: "04", title: "Ko'p kanalli AI yordamchi", desc: "Bitta yordamchi Telegram, Instagram va veb-saytda bir vaqtda ishlaydi — mijoz qayerdan yozsa, javob oladi." },
       ],
     },

@@ -7,7 +7,7 @@ export const metadata = buildPageMetadata({
   path: "/tools/free-code-review",
   title: "Bepul AI Kod Tekshiruvi — GitHub Repo Tahlil",
   description:
-    "GitHub repo link bering — Tezcode AI senior dasturchi singari tahlil qiladi: arxitektura, OWASP xavfsizlik (Top 10), performance optimallashtirish, test qamrovi, dependencies. To'lov yo'q, ro'yxatdan o'tish yo'q.",
+    "GitHub repo link bering — Tezcode senior dasturchi singari tahlil qiladi: arxitektura, OWASP xavfsizlik (Top 10), performance optimallashtirish, test qamrovi, dependencies. To'lov yo'q, ro'yxatdan o'tish yo'q.",
   ogTitle: "Bepul AI Kod Tekshiruvi — Tezcode",
   ogDescription: "GitHub repo'ngizni AI senior dasturchi tahlil qiladi. Bepul.",
 });
@@ -67,7 +67,7 @@ export default function CodeReviewPage() {
               ko'rib bersinmi?
             </h1>
             <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl max-w-2xl mx-auto">
-              GitHub link bering — Tezcode AI 24 soat ichida 6 ta nuqtada professional tahlil qiladi.
+              GitHub link bering — Tezcode 24 soat ichida 6 ta nuqtada professional tahlil qiladi.
             </p>
           </div>
 

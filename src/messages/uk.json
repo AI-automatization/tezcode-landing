@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Tezcode — AI Software Factory | Автоматизуємо бізнес Узбекистану",
-    "description": "Tezcode AI — рішення на основі штучного інтелекту для малого бізнесу та корпорацій. 6 напрямків, 8 продуктів, 5 мов. RAOS, AI Office, HamshiraGo та інші.",
+    "description": "Tezcode — рішення на основі штучного інтелекту для малого бізнесу та корпорацій. 6 напрямків, 8 продуктів, 5 мов. RAOS, AI Office, HamshiraGo та інші.",
     "ogTitle": "Tezcode | AI Software Factory",
     "ogDescription": "Систематизація бізнесу Узбекистану за допомогою AI. RAOS POS, AI Office, HamshiraGo та 5 інших продуктів."
   },
@@ -45,7 +45,7 @@
       "model": "Проєктна модель"
     },
     "ai": {
-      "name": "TezCode AI",
+      "name": "Tezcode",
       "tagline": "AI-агенти та платформи",
       "description": "Інтелектуальні помічники, AI-агенти та рішення для автоматизації робочих процесів.",
       "products": "AI Office · AI-Trade",

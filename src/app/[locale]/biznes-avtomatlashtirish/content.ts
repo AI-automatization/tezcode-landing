@@ -11,7 +11,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "avtomatlashtirish",
       title2: "",
       subtitle:
-        "Qo'lda Excel, Telegram va qog'ozda olib boriladigan ishlarni bitta tizimga jamlaymiz. Hisobot, buyurtma, ombor, mijoz — barchasi avtomatik. Tezcode AI Software Factory.",
+        "Qo'lda Excel, Telegram va qog'ozda olib boriladigan ishlarni bitta tizimga jamlaymiz. Hisobot, buyurtma, ombor, mijoz — barchasi avtomatik. Tezcode Software Factory.",
       trust: "Bepul 30 daqiqa konsultatsiya • To'lov faqat MVP tayyor bo'lganda",
       ctaPrimary: "Bepul konsultatsiya so'rang",
       ctaSecondary: "Nimani avtomatlashtiramiz?",
@@ -92,7 +92,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "бизнес-процессов",
       title2: "",
       subtitle:
-        "Объединяем работу, которая ведётся вручную в Excel, Telegram и на бумаге, в одну систему. Отчёты, заказы, склад, клиенты — всё автоматически. Tezcode AI Software Factory.",
+        "Объединяем работу, которая ведётся вручную в Excel, Telegram и на бумаге, в одну систему. Отчёты, заказы, склад, клиенты — всё автоматически. Tezcode Software Factory.",
       trust: "Бесплатная 30-мин консультация • Оплата только после готового MVP",
       ctaPrimary: "Бесплатная консультация",
       ctaSecondary: "Что автоматизируем?",
@@ -172,7 +172,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "automation",
       title2: "",
       subtitle:
-        "We bring work that runs manually across Excel, Telegram and paper into one system. Reports, orders, inventory, customers — all automatic. Tezcode AI Software Factory.",
+        "We bring work that runs manually across Excel, Telegram and paper into one system. Reports, orders, inventory, customers — all automatic. Tezcode Software Factory.",
       trust: "Free 30-min consultation • You pay only after MVP is delivered",
       ctaPrimary: "Book free consultation",
       ctaSecondary: "What do we automate?",
@@ -252,7 +252,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "عمليات الأعمال",
       title2: "",
       subtitle:
-        "نجمع العمل الذي يُدار يدوياً عبر Excel وTelegram والورق في نظام واحد. التقارير والطلبات والمخزون والعملاء — كل ذلك تلقائياً. Tezcode AI Software Factory.",
+        "نجمع العمل الذي يُدار يدوياً عبر Excel وTelegram والورق في نظام واحد. التقارير والطلبات والمخزون والعملاء — كل ذلك تلقائياً. Tezcode Software Factory.",
       trust: "استشارة 30 دقيقة مجانية • الدفع فقط بعد تسليم MVP",
       ctaPrimary: "احجز استشارة مجانية",
       ctaSecondary: "ماذا نؤتمت؟",
@@ -332,7 +332,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "бізнес-процесів",
       title2: "",
       subtitle:
-        "Об'єднуємо роботу, що ведеться вручну в Excel, Telegram і на папері, в одну систему. Звіти, замовлення, склад, клієнти — все автоматично. Tezcode AI Software Factory.",
+        "Об'єднуємо роботу, що ведеться вручну в Excel, Telegram і на папері, в одну систему. Звіти, замовлення, склад, клієнти — все автоматично. Tezcode Software Factory.",
       trust: "Безкоштовна 30-хв консультація • Оплата лише після готового MVP",
       ctaPrimary: "Безкоштовна консультація",
       ctaSecondary: "Що автоматизуємо?",

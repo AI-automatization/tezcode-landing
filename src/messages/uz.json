@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Tezcode — AI Software Factory | O'zbekiston biznesini avtomatlashtiramiz",
-    "description": "Tezcode AI — kichik biznesdan korporatsiyagacha sun'iy intellekt yechimlar. 6 ta bo'lim, 8 ta mahsulot, 5 ta til. RAOS, AI Office, HamshiraGo va boshqalar.",
+    "description": "Tezcode — kichik biznesdan korporatsiyagacha sun'iy intellekt yechimlar. 6 ta bo'lim, 8 ta mahsulot, 5 ta til. RAOS, AI Office, HamshiraGo va boshqalar.",
     "ogTitle": "Tezcode | AI Software Factory",
     "ogDescription": "O'zbekiston biznesini AI bilan tizimlash. RAOS POS, AI Office, HamshiraGo va 5 boshqa mahsulot."
   },
@@ -74,7 +74,7 @@
       "model": "Loyiha asosida"
     },
     "ai": {
-      "name": "TezCode AI",
+      "name": "Tezcode",
       "tagline": "AI agentlar va platformalar",
       "description": "Sun'iy intellekt yordamchilari, AI agentlar, ish jarayonlarini avtomatlashtiruvchi yechimlar.",
       "products": "AI Office · AI-Trade",

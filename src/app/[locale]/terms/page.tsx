@@ -7,7 +7,7 @@ export const metadata = {
     path: "/terms",
     title: "Foydalanish Shartlari — Terms of Service",
     description:
-      "Tezcode AI xizmatlaridan foydalanish shartlari: huquq va majburiyatlar, to'lov shartlari, javobgarlik chekloyi, nizolar tartibi. So'nggi tahrir 2026-yil.",
+      "Tezcode xizmatlaridan foydalanish shartlari: huquq va majburiyatlar, to'lov shartlari, javobgarlik chekloyi, nizolar tartibi. So'nggi tahrir 2026-yil.",
   }),
   robots: {
     index: true,
@@ -19,13 +19,13 @@ const SECTIONS: { title: string; body: string[] }[] = [
   {
     title: "1. Umumiy",
     body: [
-      "Ushbu shartlar Tezcode AI saytidan va xizmatlaridan foydalanishni tartibga soladi. Saytdan foydalanish bilan ushbu shartlarga rozilik bildirasiz.",
+      "Ushbu shartlar Tezcode saytidan va xizmatlaridan foydalanishni tartibga soladi. Saytdan foydalanish bilan ushbu shartlarga rozilik bildirasiz.",
     ],
   },
   {
     title: "2. Xizmatlar",
     body: [
-      "Tezcode AI mahsulotlari ishlab chiqaradi: RAOS (POS), AI Office (biznes AI), CoreMed (sog'liq), va boshqalar.",
+      "Tezcode mahsulotlari ishlab chiqaradi: RAOS (POS), AI Office (biznes AI), CoreMed (sog'liq), va boshqalar.",
       "Har mahsulot o'z foydalanish shartlariga ega bo'lishi mumkin — sotib olganda alohida ko'rsatiladi.",
     ],
   },
@@ -42,7 +42,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
   {
     title: "4. Intellektual mulk",
     body: [
-      "Tezcode brand, logo, kod, dizayn va kontent Tezcode AI mulki. Yozma ruxsatsiz nusxa olish, qayta tarqatish yoki tijoriy maqsadda ishlatish taqiqlanadi.",
+      "Tezcode brand, logo, kod, dizayn va kontent Tezcode mulki. Yozma ruxsatsiz nusxa olish, qayta tarqatish yoki tijoriy maqsadda ishlatish taqiqlanadi.",
       "Mijoz ma'lumotlari — mijoz mulki, biz faqat xizmat ko'rsatish uchun ishlatamiz.",
     ],
   },
@@ -71,13 +71,13 @@ const SECTIONS: { title: string; body: string[] }[] = [
   {
     title: "8. Javobgarlik chegarasi",
     body: [
-      "Tezcode AI har xil yo'qotishlardan javobgar emas — bilvosita, tasodifiy, jazo yoki yo'qotilgan foyda uchun. Maksimal javobgarlik — oxirgi 12 oy uchun to'langan summa.",
+      "Tezcode har xil yo'qotishlardan javobgar emas — bilvosita, tasodifiy, jazo yoki yo'qotilgan foyda uchun. Maksimal javobgarlik — oxirgi 12 oy uchun to'langan summa.",
     ],
   },
   {
     title: "9. Bekor qilish",
     body: [
-      "Foydalanuvchi istalgan vaqtda obunani bekor qilishi mumkin. Tezcode AI qoidalarni jiddiy buzganlik uchun hisobni bekor qilish huquqini saqlab qoladi.",
+      "Foydalanuvchi istalgan vaqtda obunani bekor qilishi mumkin. Tezcode qoidalarni jiddiy buzganlik uchun hisobni bekor qilish huquqini saqlab qoladi.",
     ],
   },
   {

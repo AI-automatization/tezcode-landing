@@ -27,7 +27,7 @@ export const metadata = buildPageMetadata({
   ],
   ogTitle: "Bekzod Mirzaaliyev — Tezcode asoschisi",
   ogDescription:
-    "Tezcode AI Software Factory asoschisi va CEO. RAOS, CoreMed, WeWatch ortidagi jamoa.",
+    "Tezcode Software Factory asoschisi va CEO. RAOS, CoreMed, WeWatch ortidagi jamoa.",
 });
 
 const FACTS = [

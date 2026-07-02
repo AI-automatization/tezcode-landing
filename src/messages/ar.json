@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Tezcode — مصنع برمجيات الذكاء الاصطناعي | نُؤتمت أعمال أوزبكستان",
-    "description": "Tezcode AI — حلول ذكاء اصطناعي للشركات الصغيرة والمؤسسات الكبيرة. 6 أقسام، 8 منتجات، 5 لغات. RAOS وAI Office وHamshiraGo والمزيد.",
+    "description": "Tezcode — حلول ذكاء اصطناعي للشركات الصغيرة والمؤسسات الكبيرة. 6 أقسام، 8 منتجات، 5 لغات. RAOS وAI Office وHamshiraGo والمزيد.",
     "ogTitle": "Tezcode | مصنع برمجيات الذكاء الاصطناعي",
     "ogDescription": "تنظيم أعمال أوزبكستان بالذكاء الاصطناعي. RAOS POS وAI Office وHamshiraGo و5 منتجات أخرى."
   },
@@ -45,7 +45,7 @@
       "model": "قائم على المشروع"
     },
     "ai": {
-      "name": "TezCode AI",
+      "name": "Tezcode",
       "tagline": "وكلاء الذكاء الاصطناعي والمنصات",
       "description": "مساعدون ذكيون ووكلاء AI وحلول لأتمتة سير العمل.",
       "products": "AI Office · AI-Trade",

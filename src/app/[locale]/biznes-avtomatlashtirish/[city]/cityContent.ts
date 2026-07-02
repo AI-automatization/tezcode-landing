@@ -90,7 +90,7 @@ export function buildBiznesAvtoCityContent(city: City): ServicePageContent {
       },
       service: {
         ...base.service,
-        description: `${cityName} bizneslari uchun jarayon avtomatlashtirish: buyurtma, ombor, CRM, hisobot, to'lov. Tezcode AI Software Factory. ${cityName} va butun O'zbekiston.`,
+        description: `${cityName} bizneslari uchun jarayon avtomatlashtirish: buyurtma, ombor, CRM, hisobot, to'lov. Tezcode Software Factory. ${cityName} va butun O'zbekiston.`,
       },
     };
   }

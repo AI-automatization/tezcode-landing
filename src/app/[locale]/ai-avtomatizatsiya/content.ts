@@ -11,7 +11,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "AI bilan avtomatlashtiring",
       title2: "",
       subtitle:
-        "Sun'iy intellekt (AI) takroriy ishlarni o'zi bajaradi: hisobot, mijoz xizmati, sotuv, ombor. Tezcode AI Software Factory sizning jarayoningizga moslab AI yechim quradi.",
+        "Sun'iy intellekt (AI) takroriy ishlarni o'zi bajaradi: hisobot, mijoz xizmati, sotuv, ombor. Tezcode Software Factory sizning jarayoningizga moslab AI yechim quradi.",
       trust: "Bepul 30 daqiqa konsultatsiya • To'lov faqat MVP tayyor bo'lganda",
       ctaPrimary: "Bepul konsultatsiya so'rang",
       ctaSecondary: "Nima avtomatlashtira olamiz?",
@@ -92,7 +92,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "с помощью ИИ",
       title2: "",
       subtitle:
-        "Искусственный интеллект сам выполняет рутину: отчёты, поддержку клиентов, продажи, склад. Tezcode AI Software Factory строит ИИ-решение под ваши процессы.",
+        "Искусственный интеллект сам выполняет рутину: отчёты, поддержку клиентов, продажи, склад. Tezcode Software Factory строит ИИ-решение под ваши процессы.",
       trust: "Бесплатная 30-мин консультация • Оплата только после готового MVP",
       ctaPrimary: "Бесплатная консультация",
       ctaSecondary: "Что можем автоматизировать?",
@@ -172,7 +172,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "with AI",
       title2: "",
       subtitle:
-        "Artificial intelligence handles the repetitive work: reports, customer support, sales, inventory. Tezcode AI Software Factory builds an AI solution around your processes.",
+        "Artificial intelligence handles the repetitive work: reports, customer support, sales, inventory. Tezcode Software Factory builds an AI solution around your processes.",
       trust: "Free 30-min consultation • You pay only after MVP is delivered",
       ctaPrimary: "Book free consultation",
       ctaSecondary: "What can we automate?",
@@ -332,7 +332,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "за допомогою ШІ",
       title2: "",
       subtitle:
-        "Штучний інтелект сам виконує рутину: звіти, підтримку клієнтів, продажі, склад. Tezcode AI Software Factory будує ШІ-рішення під ваші процеси.",
+        "Штучний інтелект сам виконує рутину: звіти, підтримку клієнтів, продажі, склад. Tezcode Software Factory будує ШІ-рішення під ваші процеси.",
       trust: "Безкоштовна 30-хв консультація • Оплата лише після готового MVP",
       ctaPrimary: "Безкоштовна консультація",
       ctaSecondary: "Що можемо автоматизувати?",

@@ -13,7 +13,7 @@ export const metadata = buildPageMetadata({
   path: PATH,
   title: "IT xizmatlar — Toshkent | dastur, mobil ilova, AI | Tezcode",
   description:
-    "Toshkentda IT xizmatlar: dasturiy ta'minot ishlab chiqish, mobil ilova, veb-sayt, AI va avtomatizatsiya, integratsiya va qo'llab-quvvatlash. Tezcode AI Software Factory, 14 in-house dasturchi. Bepul konsultatsiya.",
+    "Toshkentda IT xizmatlar: dasturiy ta'minot ishlab chiqish, mobil ilova, veb-sayt, AI va avtomatizatsiya, integratsiya va qo'llab-quvvatlash. Tezcode Software Factory, 14 in-house dasturchi. Bepul konsultatsiya.",
   keywords: [
     "IT xizmatlar Toshkent",
     "IT kompaniya Toshkent",

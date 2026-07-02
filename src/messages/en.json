@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Tezcode — AI Software Factory | Automating Business in Uzbekistan",
-    "description": "Tezcode AI — artificial intelligence solutions from small business to enterprise. 6 divisions, 8 products, 5 languages. RAOS, AI Office, HamshiraGo and more.",
+    "description": "Tezcode — artificial intelligence solutions from small business to enterprise. 6 divisions, 8 products, 5 languages. RAOS, AI Office, HamshiraGo and more.",
     "ogTitle": "Tezcode | AI Software Factory",
     "ogDescription": "Systematizing Uzbekistan's business with AI. RAOS POS, AI Office, HamshiraGo and 5 more products."
   },
@@ -45,7 +45,7 @@
       "model": "Project-based"
     },
     "ai": {
-      "name": "TezCode AI",
+      "name": "Tezcode",
       "tagline": "AI agents and platforms",
       "description": "Intelligent assistants, AI agents, and workflow automation solutions for modern teams.",
       "products": "AI Office · AI-Trade",

@@ -31,7 +31,7 @@ export const CONTENT: ArticleContent = {
         paragraphs: [
           "AI chatbot — bu foydalanuvchi bilan matn (yoki ovoz) orqali suhbatlashadigan dastur. Zamonaviy AI chatbot katta til modeli (GPT, Claude) asosida ishlaydi, shuning uchun u tayyor tugmalar emas, erkin matnni tushunadi va tabiiy javob beradi.",
           "Lekin chatbotning asosiy vazifasi — ma'lumot berish va suhbatlashish. U sizning ko'p uchraydigan savollaringizga javob beradi, mahsulot haqida gapiradi, ish vaqtini aytadi. Suhbat tugagach, u hech narsa \"bajarmaydi\" — ya'ni buyurtmani o'zi rasmiylashtirmaydi, tizimga yozmaydi.",
-          "Tezcode AI chatbot yechimlari haqida batafsil ma'lumot tezcode.dev/ai-chatbot sahifasida.",
+          "Tezcode chatbot yechimlari haqida batafsil ma'lumot tezcode.dev/ai-chatbot sahifasida.",
         ],
       },
       {

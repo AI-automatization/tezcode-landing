@@ -6,7 +6,7 @@ export const metadata = buildPageMetadata({
   path: "/roadmap",
   title: "Ochiq Yo'l Xaritasi — Tezcode Mahsulotlari Roadmap",
   description:
-    "Tezcode AI Software Factory yo'l xaritasi: RAOS POS, AI Office, CoreMed/HamshiraGo va boshqa mahsulotlar — qaysi feature qachon chiqadi. Shaffof Q2-Q4 2026 reja.",
+    "Tezcode Software Factory yo'l xaritasi: RAOS POS, AI Office, CoreMed/HamshiraGo va boshqa mahsulotlar — qaysi feature qachon chiqadi. Shaffof Q2-Q4 2026 reja.",
   ogTitle: "Tezcode Yo'l Xaritasi — Mahsulot Reja",
   ogDescription: "RAOS, AI Office, CoreMed yangiliklari va kelajak rejasi.",
 });

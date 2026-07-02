@@ -181,7 +181,7 @@ export default function PressPage() {
             </h2>
             <div className="p-7 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] text-[var(--tc-text-secondary)] leading-relaxed">
               <p className="mb-3">
-                <strong className="text-white">Tezcode AI</strong> — O'zbekistonda
+                <strong className="text-white">Tezcode</strong> — O'zbekistonda
                 joylashgan AI Software Factory. Kichik biznesdan korporatsiyagacha
                 sun'iy intellekt asosida ishlovchi mahsulotlar yaratamiz.
               </p>

@@ -34,7 +34,7 @@ export const metadata = buildPageMetadata({
     "AI агент Ташкент",
     "AI агент для бизнеса Узбекистан",
     "разработка AI агента",
-    "Tezcode AI agent",
+    "Tezcode agent",
   ],
 });
 

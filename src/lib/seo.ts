@@ -152,10 +152,10 @@ export function getOrganizationSchema() {
     // ("Tez Code", Cyrillic "Тезкод", the bare domain) to THIS entity instead of
     // the unrelated TezCode.tech bootcamp or codingtech.uz / Coding Tech LLC.
     alternateName: [
-      "Tezcode AI",
+      "Tezcode",
       "TezCode",
       "Tez Code",
-      "Tezcode AI Software Factory",
+      "Tezcode Software Factory",
       "Тезкод",
       "Тезкоуд",
       "tezcode.dev",
