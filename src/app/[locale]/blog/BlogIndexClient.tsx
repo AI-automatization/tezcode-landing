@@ -1,10 +1,10 @@
 "use client";
 
 import { useLocale } from "next-intl";
+import { ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
-import { Tilt3D } from "@/components/motion/Tilt3D";
 import { Link } from "@/i18n/routing";
 import type { ArticleLang } from "@/components/blog/types";
 import { ARTICLES } from "./articles";
@@ -55,23 +55,18 @@ export function BlogIndexClient() {
   const t = COPY[locale] ?? COPY.uz;
 
   return (
-    <main className="relative min-h-screen bg-[var(--tc-ink)] overflow-hidden">
+    <main
+      data-theme="light"
+      className="relative min-h-screen bg-[var(--tc-ink)] text-[var(--tc-text-primary)] overflow-hidden"
+    >
       <Navbar />
 
       <section className="relative pt-36 pb-12 px-6 overflow-hidden">
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-[0.12] pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(0,64,255,0.5), transparent 70%)",
-            filter: "blur(70px)",
-          }}
-        />
+        <div aria-hidden className="tc-grid-bg absolute inset-0" />
         <div className="max-w-5xl mx-auto relative z-10 text-center">
           <Reveal>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue-light)] mb-6 uppercase tracking-[0.2em]">
-              {t.badge}
+            <div className="mb-6">
+              <span className="tc-chip">{t.badge}</span>
             </div>
             <h1
               className="text-[clamp(2.5rem,6vw,5rem)] font-800 leading-[1.02] tracking-[-0.02em] mb-6 text-[var(--tc-text-primary)]"
@@ -93,36 +88,27 @@ export function BlogIndexClient() {
               const card = a.list[locale] ?? a.list.uz;
               return (
                 <RevealItem key={a.slug}>
-                  <Tilt3D intensity={4} className="group rounded-[var(--tc-radius-lg)] h-full">
-                    <Link
-                      href={`/blog/${a.slug}`}
-                      className="relative flex flex-col h-full p-7 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-border-bright)] transition-colors duration-300 overflow-hidden"
+                  <Link
+                    href={`/blog/${a.slug}`}
+                    className="tc-card tc-card-hover group flex flex-col h-full p-7"
+                  >
+                    <div className="inline-flex self-start px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-widest font-600 bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] mb-4">
+                      {a.category}
+                    </div>
+                    <h2
+                      className="text-[var(--tc-text-primary)] text-xl md:text-2xl font-700 leading-snug mb-3 tracking-tight"
+                      style={{ fontFamily: "var(--font-display)" }}
                     >
-                      <div
-                        aria-hidden
-                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                        style={{
-                          background:
-                            "radial-gradient(ellipse at top right, rgba(0,64,255,0.14), transparent 60%)",
-                        }}
-                      />
-                      <div className="relative inline-flex self-start px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-widest font-500 bg-[var(--tc-blue)]/10 text-[var(--tc-blue-light)] mb-4">
-                        {a.category}
-                      </div>
-                      <h2
-                        className="relative text-white text-xl md:text-2xl font-700 leading-snug mb-3 tracking-tight"
-                        style={{ fontFamily: "var(--font-display)" }}
-                      >
-                        {card.title}
-                      </h2>
-                      <p className="relative text-sm md:text-base text-[var(--tc-text-secondary)] leading-relaxed mb-6 flex-1">
-                        {card.excerpt}
-                      </p>
-                      <div className="relative text-sm font-500 text-[var(--tc-blue-light)] group-hover:translate-x-1 transition-transform">
-                        {t.readMore} →
-                      </div>
-                    </Link>
-                  </Tilt3D>
+                      {card.title}
+                    </h2>
+                    <p className="text-sm md:text-base text-[var(--tc-text-secondary)] leading-relaxed mb-6 flex-1">
+                      {card.excerpt}
+                    </p>
+                    <div className="inline-flex items-center gap-1.5 text-sm font-600 text-[var(--tc-blue-text)]">
+                      {t.readMore}
+                      <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
+                    </div>
+                  </Link>
                 </RevealItem>
               );
             })}

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { BASE_URL } from "@/lib/seo";
+import { BASE_URL, LOCALES } from "@/lib/seo";
 
 // AI assistant / answer-engine crawlers we explicitly welcome so Tezcode can be
 // cited in ChatGPT, Claude, Perplexity, Gemini and similar answers (LLM SEO).
@@ -39,7 +39,8 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: `${BASE_URL}/sitemap.xml`,
+    // Per-locale sitemaps (generateSitemaps in app/sitemap.ts)
+    sitemap: LOCALES.map((locale) => `${BASE_URL}/sitemap/${locale}.xml`),
     host: BASE_URL,
   };
 }

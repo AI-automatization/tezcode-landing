@@ -27,16 +27,16 @@ const STACK: StackItem[] = [
 export function TechStackMarquee() {
   return (
     <section
-      className="relative py-12 bg-[var(--tc-ink)] border-y border-[var(--tc-border)] overflow-hidden"
+      className="relative py-8 bg-[var(--tc-surface-0)] border-y border-[var(--tc-border)] overflow-hidden"
       aria-label="Technology stack"
     >
-      {/* Edge fades */}
+      {/* Edge fades — theme-aware */}
       <div
         aria-hidden
         className="absolute left-0 top-0 bottom-0 w-32 z-10 pointer-events-none"
         style={{
           background:
-            "linear-gradient(to right, var(--tc-ink), transparent)",
+            "linear-gradient(to right, var(--tc-surface-0), transparent)",
         }}
       />
       <div
@@ -44,11 +44,11 @@ export function TechStackMarquee() {
         className="absolute right-0 top-0 bottom-0 w-32 z-10 pointer-events-none"
         style={{
           background:
-            "linear-gradient(to left, var(--tc-ink), transparent)",
+            "linear-gradient(to left, var(--tc-surface-0), transparent)",
         }}
       />
 
-      <div className="text-center mb-8 text-xs uppercase tracking-[0.3em] text-[var(--tc-text-muted)]">
+      <div className="text-center mb-6 text-xs uppercase tracking-[0.3em] text-[var(--tc-text-muted)]">
         Our Technology Stack
       </div>
 
@@ -67,13 +67,13 @@ export function TechStackMarquee() {
             className="flex items-center gap-3 group"
           >
             <span
-              className="w-12 h-12 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-2)] border border-[var(--tc-border)] flex items-center justify-center text-sm font-700 text-[var(--tc-text-secondary)] group-hover:text-[var(--tc-gold)] group-hover:border-[var(--tc-gold)]/40 transition-colors"
+              className="w-12 h-12 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-1)] border border-[var(--tc-border)] flex items-center justify-center text-sm font-700 text-[var(--tc-text-muted)] group-hover:text-[var(--tc-blue-text)] group-hover:border-[color-mix(in_srgb,var(--tc-blue)_30%,transparent)] transition-colors"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {typeof tech.icon === "string" ? tech.icon : (() => { const Icon = tech.icon as LucideIcon; return <Icon className="w-5 h-5" />; })()}
             </span>
             <span
-              className="text-base font-500 text-[var(--tc-text-secondary)] group-hover:text-[var(--tc-text-primary)] transition-colors"
+              className="text-base font-500 text-[var(--tc-text-muted)] group-hover:text-[var(--tc-blue-text)] transition-colors"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {tech.name}

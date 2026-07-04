@@ -120,7 +120,7 @@ export function MvpRoadmapForm() {
           Tezcode jamoa Telegram orqali siz bilan to'g'ridan-to'g'ri bog'lanadi.
         </p>
         <a
-          href="https://t.me/webdevelopertk"
+          href="https://t.me/tezcode_managament"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] text-white font-500 text-sm tc-glow-blue hover:bg-[var(--tc-blue-light)] transition-colors"
@@ -258,7 +258,7 @@ export function MvpRoadmapForm() {
 
       {status === "error" && (
         <div className="p-3 rounded-[var(--tc-radius-sm)] bg-red-500/10 border border-red-500/30 text-red-400 text-sm text-center">
-          Yuborishda xato. Telegram orqali bog'laning: @webdevelopertk
+          Yuborishda xato. Telegram orqali bog'laning: @tezcode_managament
         </div>
       )}
 

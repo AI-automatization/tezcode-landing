@@ -5,12 +5,13 @@ import { getClientIp, rateLimit } from "@/lib/rate-limit";
 
 const schema = z.object({
   name: z.string().min(2).max(100),
-  email: z.string().email().max(200),
-  phone: z.string().max(50).optional(),
+  // Simplified form: phone is the required contact channel; email/message optional
+  email: z.string().email().max(200).optional().or(z.literal("")),
+  phone: z.string().min(7).max(50),
   subject: z
     .enum(["demo", "partnership", "investor", "career", "other"])
     .optional(),
-  message: z.string().min(10).max(2000),
+  message: z.string().max(2000).optional().or(z.literal("")),
   locale: z.string().optional().default("uz"),
   // Honeypot — bots fill hidden fields, humans don't see them
   _hp: z.string().max(0).optional(),

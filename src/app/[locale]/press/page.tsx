@@ -1,3 +1,4 @@
+import { Download } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo";
@@ -56,30 +57,35 @@ const FACTS = [
 
 export default function PressPage() {
   return (
-    <>
+    <main
+      data-theme="light"
+      className="relative min-h-screen bg-[var(--tc-ink)] text-[var(--tc-text-primary)]"
+    >
       <Navbar />
-      <main className="min-h-screen bg-[var(--tc-ink)] pt-24 pb-24">
+      <div className="relative pt-32 pb-24">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="mb-12 text-center">
-            <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
-              Press Kit
+          <div className="relative mb-12 text-center">
+            <div aria-hidden className="tc-grid-bg absolute -inset-x-6 -inset-y-10" />
+            <div className="relative">
+              <div className="mb-5">
+                <span className="tc-chip">Press Kit</span>
+              </div>
+              <h1
+                className="text-4xl md:text-6xl font-700 mb-4 tracking-tight text-[var(--tc-text-primary)]"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                Tezcode for media
+              </h1>
+              <p className="text-[var(--tc-text-secondary)] text-lg max-w-2xl mx-auto">
+                Brand assets, ranglar, kompaniya haqida ma'lumot — jurnalist, blog'er va hamkorlar uchun bepul.
+              </p>
             </div>
-            <h1
-              className="text-4xl md:text-6xl font-700 mb-4 tracking-tight"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              Tezcode for media
-            </h1>
-            <p className="text-[var(--tc-text-secondary)] text-lg max-w-2xl mx-auto">
-              Brand assets, ranglar, kompaniya haqida ma'lumot — jurnalist, blog'er va hamkorlar uchun bepul.
-            </p>
-            <div className="mt-6 mx-auto w-24 h-0.5 bg-gradient-to-r from-transparent via-[var(--tc-gold)] to-transparent" />
           </div>
 
           {/* Brand assets */}
           <section className="mb-20">
             <h2
-              className="text-2xl font-700 text-white mb-6"
+              className="text-2xl font-700 text-[var(--tc-text-primary)] mb-6"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Brand assets
@@ -90,14 +96,14 @@ export default function PressPage() {
                   key={a.href}
                   href={a.href}
                   download
-                  className="group flex items-center gap-4 p-5 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-border-bright)] hover:bg-[var(--tc-surface-3)] transition-colors"
+                  className="tc-card tc-card-hover group flex items-center gap-4 p-5"
                 >
-                  <div className="w-12 h-12 rounded-[var(--tc-radius-sm)] bg-[var(--tc-surface-0)] border border-[var(--tc-border)] flex items-center justify-center text-[var(--tc-gold)] text-xl shrink-0">
-                    ⬇
+                  <div className="w-12 h-12 rounded-xl bg-[var(--tc-blue-dim)] flex items-center justify-center shrink-0">
+                    <Download className="w-5 h-5 text-[var(--tc-blue-text)]" strokeWidth={1.75} />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div
-                      className="font-700 text-white text-sm"
+                      className="font-700 text-[var(--tc-text-primary)] text-sm"
                       style={{ fontFamily: "var(--font-display)" }}
                     >
                       {a.name}
@@ -114,29 +120,26 @@ export default function PressPage() {
           {/* Brand colors */}
           <section className="mb-20">
             <h2
-              className="text-2xl font-700 text-white mb-6"
+              className="text-2xl font-700 text-[var(--tc-text-primary)] mb-6"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Brand colors
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {PALETTE.map((c) => (
-                <div
-                  key={c.hex}
-                  className="p-5 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)]"
-                >
+                <div key={c.hex} className="tc-card p-5">
                   <div
-                    className="w-full aspect-square rounded-[var(--tc-radius-md)] mb-4 border border-[var(--tc-border-bright)]"
+                    className="w-full aspect-square rounded-[var(--tc-radius-md)] mb-4 border border-[var(--tc-border)]"
                     style={{ backgroundColor: c.hex }}
                     aria-hidden
                   />
                   <div
-                    className="font-700 text-white"
+                    className="font-700 text-[var(--tc-text-primary)]"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {c.name}
                   </div>
-                  <div className="text-xs text-[var(--tc-gold)] font-mono mt-1">
+                  <div className="text-xs text-[var(--tc-blue-text)] font-mono mt-1">
                     {c.hex}
                   </div>
                   <div className="text-xs text-[var(--tc-text-muted)] mt-2">
@@ -150,12 +153,12 @@ export default function PressPage() {
           {/* Company facts */}
           <section className="mb-20">
             <h2
-              className="text-2xl font-700 text-white mb-6"
+              className="text-2xl font-700 text-[var(--tc-text-primary)] mb-6"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Kompaniya faktlari
             </h2>
-            <div className="p-7 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)]">
+            <div className="tc-card p-7">
               <dl className="space-y-3">
                 {FACTS.map((f) => (
                   <div key={f.label} className="flex flex-wrap gap-2 text-sm">
@@ -174,14 +177,14 @@ export default function PressPage() {
           {/* About */}
           <section className="mb-20">
             <h2
-              className="text-2xl font-700 text-white mb-6"
+              className="text-2xl font-700 text-[var(--tc-text-primary)] mb-6"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Tezcode haqida (short)
             </h2>
-            <div className="p-7 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] text-[var(--tc-text-secondary)] leading-relaxed">
+            <div className="tc-card p-7 text-[var(--tc-text-secondary)] leading-relaxed">
               <p className="mb-3">
-                <strong className="text-white">Tezcode</strong> — O'zbekistonda
+                <strong className="text-[var(--tc-text-primary)]">Tezcode</strong> — O'zbekistonda
                 joylashgan AI Software Factory. Kichik biznesdan korporatsiyagacha
                 sun'iy intellekt asosida ishlovchi mahsulotlar yaratamiz.
               </p>
@@ -201,26 +204,26 @@ export default function PressPage() {
           {/* Contact */}
           <section>
             <h2
-              className="text-2xl font-700 text-white mb-6"
+              className="text-2xl font-700 text-[var(--tc-text-primary)] mb-6"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Press contact
             </h2>
-            <div className="p-7 rounded-[var(--tc-radius-lg)] border border-[var(--tc-gold)]/40 bg-[var(--tc-surface-2)]">
-              <div className="font-700 text-white text-lg mb-1" style={{ fontFamily: "var(--font-display)" }}>
+            <div className="tc-card p-7">
+              <div className="font-700 text-[var(--tc-text-primary)] text-lg mb-1" style={{ fontFamily: "var(--font-display)" }}>
                 Bekzod Mirzaaliyev
               </div>
-              <div className="text-sm text-[var(--tc-gold)] mb-4">Founder & CEO</div>
+              <div className="text-sm text-[var(--tc-blue-text)] font-600 mb-4">Founder & CEO</div>
               <div className="space-y-2 text-sm">
                 <a
-                  href="https://t.me/webdevelopertk"
-                  className="block text-[var(--tc-text-secondary)] hover:text-[var(--tc-blue-text)]"
+                  href="https://t.me/tezcode_managament"
+                  className="block text-[var(--tc-text-secondary)] hover:text-[var(--tc-blue-text)] transition-colors"
                 >
-                  Telegram: @webdevelopertk
+                  Telegram: @tezcode_managament
                 </a>
                 <a
                   href="mailto:tezcode@tezcode.dev"
-                  className="block text-[var(--tc-text-secondary)] hover:text-[var(--tc-blue-text)]"
+                  className="block text-[var(--tc-text-secondary)] hover:text-[var(--tc-blue-text)] transition-colors"
                 >
                   Email: tezcode@tezcode.dev
                 </a>
@@ -228,8 +231,8 @@ export default function PressPage() {
             </div>
           </section>
         </div>
-      </main>
+      </div>
       <Footer />
-    </>
+    </main>
   );
 }

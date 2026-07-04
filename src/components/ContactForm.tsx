@@ -1,25 +1,40 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useState } from "react";
+import { Send } from "lucide-react";
 
+// Deliberately minimal: a business owner only needs to leave a name and
+// a phone number — everything else is optional. (Kept subject hidden with
+// the "demo" default so the Telegram notification stays informative.)
 const contactSchema = z.object({
   name: z.string().min(2, "Min 2 chars"),
-  email: z.string().email("Invalid email"),
-  phone: z.string().optional(),
+  phone: z.string().min(7, "Min 7 digits").max(50),
   subject: z.enum(["demo", "partnership", "investor", "career", "other"]),
-  message: z.string().min(10, "Min 10 chars").max(2000, "Max 2000 chars"),
+  message: z.string().max(2000, "Max 2000 chars").optional(),
   _hp: z.string().optional(),
   _hp2: z.string().optional(),
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
 
-export function ContactForm() {
+const CHIP_LABEL: Record<string, string> = {
+  uz: "Aloqa",
+  ru: "Контакты",
+  en: "Contact",
+  ar: "اتصال",
+  uk: "Контакти",
+};
+
+const inputClasses =
+  "w-full px-4 py-3 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-2)] border border-[var(--tc-border)] text-[var(--tc-text-primary)] placeholder:text-[var(--tc-text-muted)] text-sm outline-none transition-colors focus:border-[var(--tc-blue)] focus:ring-2 focus:ring-[var(--tc-blue)]/20";
+
+export function ContactForm({ hideHeader = false }: { hideHeader?: boolean }) {
   const t = useTranslations("contact");
+  const locale = useLocale();
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const {
@@ -49,73 +64,60 @@ export function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-24 px-6 bg-[var(--tc-surface-1)] relative overflow-hidden">
-      <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-[var(--tc-blue)] opacity-[0.04] blur-[80px] pointer-events-none" />
-
-      <div className="max-w-3xl mx-auto relative z-10">
-        <div className="text-center mb-12">
-          <h2
-            className="text-3xl md:text-5xl font-700 mb-4"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            {t("title")}
-          </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg">{t("subtitle")}</p>
-          <div className="mt-6 mx-auto w-16 h-0.5 bg-gradient-to-r from-transparent via-[var(--tc-gold)] to-transparent" />
-        </div>
+    <section
+      id="contact"
+      className="py-20 sm:py-28 px-6 bg-[var(--tc-ink)] border-t border-[var(--tc-border)]"
+    >
+      <div className="max-w-3xl mx-auto">
+        {!hideHeader && (
+          <div className="text-center mb-12">
+            <div className="mb-5">
+              <span className="tc-chip">{CHIP_LABEL[locale] ?? CHIP_LABEL.uz}</span>
+            </div>
+            <h2
+              className="text-3xl sm:text-4xl lg:text-5xl font-700 tracking-tight text-[var(--tc-text-primary)] mb-4"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              {t("title")}
+            </h2>
+            <p className="text-[var(--tc-text-muted)] text-lg max-w-2xl mx-auto">
+              {t("subtitle")}
+            </p>
+          </div>
+        )}
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="space-y-5 p-8 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)]"
+          className="tc-card relative space-y-5 p-8 sm:p-10"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <Field label={t("form.name")} error={errors.name?.message}>
               <input
                 {...register("name")}
                 placeholder={t("form.name_placeholder")}
-                className="w-full px-4 py-2.5 rounded-[var(--tc-radius-sm)] bg-[var(--tc-surface-0)] border border-[var(--tc-border)] focus:border-[var(--tc-blue)] focus:outline-none text-[var(--tc-text-primary)] placeholder:text-[var(--tc-text-muted)] text-sm"
+                className={inputClasses}
               />
             </Field>
 
-            <Field label={t("form.email")} error={errors.email?.message}>
-              <input
-                {...register("email")}
-                type="email"
-                placeholder={t("form.email_placeholder")}
-                className="w-full px-4 py-2.5 rounded-[var(--tc-radius-sm)] bg-[var(--tc-surface-0)] border border-[var(--tc-border)] focus:border-[var(--tc-blue)] focus:outline-none text-[var(--tc-text-primary)] placeholder:text-[var(--tc-text-muted)] text-sm"
-              />
-            </Field>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <Field label={t("form.phone")}>
+            <Field label={t("form.phone")} error={errors.phone?.message}>
               <input
                 {...register("phone")}
+                type="tel"
                 placeholder={t("form.phone_placeholder")}
-                className="w-full px-4 py-2.5 rounded-[var(--tc-radius-sm)] bg-[var(--tc-surface-0)] border border-[var(--tc-border)] focus:border-[var(--tc-blue)] focus:outline-none text-[var(--tc-text-primary)] placeholder:text-[var(--tc-text-muted)] text-sm"
+                className={inputClasses}
               />
             </Field>
-
-            <Field label={t("form.subject")}>
-              <select
-                {...register("subject")}
-                className="w-full px-4 py-2.5 rounded-[var(--tc-radius-sm)] bg-[var(--tc-surface-0)] border border-[var(--tc-border)] focus:border-[var(--tc-blue)] focus:outline-none text-[var(--tc-text-primary)] text-sm"
-              >
-                <option value="demo">{t("form.subjects.demo")}</option>
-                <option value="partnership">{t("form.subjects.partnership")}</option>
-                <option value="investor">{t("form.subjects.investor")}</option>
-                <option value="career">{t("form.subjects.career")}</option>
-                <option value="other">{t("form.subjects.other")}</option>
-              </select>
-            </Field>
           </div>
+
+          {/* Subject stays fixed to "demo" — the dropdown was one field too many */}
+          <input type="hidden" {...register("subject")} value="demo" />
 
           <Field label={t("form.message")} error={errors.message?.message}>
             <textarea
               {...register("message")}
-              rows={5}
+              rows={3}
               placeholder={t("form.message_placeholder")}
-              className="w-full px-4 py-2.5 rounded-[var(--tc-radius-sm)] bg-[var(--tc-surface-0)] border border-[var(--tc-border)] focus:border-[var(--tc-blue)] focus:outline-none text-[var(--tc-text-primary)] placeholder:text-[var(--tc-text-muted)] text-sm resize-y"
+              className={`${inputClasses} resize-y`}
             />
           </Field>
 
@@ -154,18 +156,19 @@ export function ContactForm() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="w-full px-6 py-3 rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] text-white font-semibold text-sm hover:bg-[var(--tc-blue-light)] transition-all duration-300 tc-glow-blue hover:scale-[1.01] active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed"
+            className="tc-btn-primary w-full text-sm disabled:opacity-60 disabled:cursor-not-allowed"
           >
+            <Send className="w-4 h-4" strokeWidth={2} aria-hidden />
             {status === "loading" ? t("form.submitting") : t("form.submit")}
           </button>
 
           {status === "success" && (
-            <div className="p-3 rounded-[var(--tc-radius-sm)] bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm text-center">
+            <div className="p-3 rounded-[var(--tc-radius-md)] bg-[rgba(5,150,105,0.08)] border border-[rgba(5,150,105,0.3)] text-[var(--tc-success)] text-sm text-center">
               {t("form.success")}
             </div>
           )}
           {status === "error" && (
-            <div className="p-3 rounded-[var(--tc-radius-sm)] bg-red-500/10 border border-red-500/30 text-red-400 text-sm text-center">
+            <div className="p-3 rounded-[var(--tc-radius-md)] bg-[rgba(220,38,38,0.06)] border border-[rgba(220,38,38,0.3)] text-[#dc2626] text-sm text-center">
               {t("form.error")}
             </div>
           )}
@@ -186,11 +189,11 @@ function Field({
 }) {
   return (
     <div>
-      <label className="block text-xs font-500 text-[var(--tc-text-secondary)] mb-1.5">
+      <label className="block text-sm font-600 text-[var(--tc-text-primary)] mb-1.5">
         {label}
       </label>
       {children}
-      {error && <p className="mt-1 text-xs text-red-400">{error}</p>}
+      {error && <p className="mt-1 text-xs text-[#dc2626]">{error}</p>}
     </div>
   );
 }

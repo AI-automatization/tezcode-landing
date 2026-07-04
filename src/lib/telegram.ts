@@ -3,10 +3,10 @@ const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID ?? "-1002640882371"; // Te
 
 interface TelegramMessage {
   name: string;
-  email: string;
+  email?: string;
   phone?: string;
   subject?: string;
-  message: string;
+  message?: string;
   locale: string;
 }
 
@@ -30,13 +30,13 @@ export async function sendTelegramNotification(data: TelegramMessage): Promise<b
     `🔔 *Yangi murojaat tezcode.dev'dan*`,
     ``,
     `👤 *Ism:* ${data.name}`,
-    `📧 *Email:* ${data.email}`,
     `📞 *Telefon:* ${data.phone || "—"}`,
+    `📧 *Email:* ${data.email || "—"}`,
     `🌐 *Til:* ${data.locale.toUpperCase()}`,
     `📋 *Mavzu:* ${subjectLabel}`,
     ``,
     `💬 *Xabar:*`,
-    data.message,
+    data.message || "—",
     ``,
     `📍 tezcode.dev · ${new Date().toLocaleString("uz-UZ", { timeZone: "Asia/Tashkent" })}`,
   ].join("\n");

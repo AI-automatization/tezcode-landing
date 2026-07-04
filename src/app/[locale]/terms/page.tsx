@@ -96,7 +96,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
   {
     title: "12. Aloqa",
     body: [
-      "Savollar: tezcode@tezcode.dev · Telegram: @webdevelopertk",
+      "Savollar: tezcode@tezcode.dev · Telegram: @tezcode_managament",
       "Oxirgi yangilanish: 2026-05-14",
     ],
   },
@@ -104,16 +104,19 @@ const SECTIONS: { title: string; body: string[] }[] = [
 
 export default function TermsPage() {
   return (
-    <>
+    <main
+      data-theme="light"
+      className="relative min-h-screen bg-[var(--tc-ink)] text-[var(--tc-text-primary)]"
+    >
       <Navbar />
-      <main className="min-h-screen bg-[var(--tc-ink)] pt-24 pb-24">
+      <div className="pt-32 pb-24">
         <div className="max-w-3xl mx-auto px-6">
           <div className="mb-12">
             <div className="text-xs text-[var(--tc-text-muted)] uppercase tracking-[0.2em] mb-3">
               Legal · v1.0 — 2026-05-14
             </div>
             <h1
-              className="text-4xl md:text-5xl font-700 mb-4 tracking-tight"
+              className="text-4xl md:text-5xl font-700 mb-4 tracking-tight text-[var(--tc-text-primary)]"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Foydalanish shartlari
@@ -127,7 +130,7 @@ export default function TermsPage() {
             {SECTIONS.map((sec) => (
               <section key={sec.title}>
                 <h2
-                  className="text-xl font-700 text-white mb-3"
+                  className="text-xl font-700 text-[var(--tc-text-primary)] mb-3"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {sec.title}
@@ -141,8 +144,8 @@ export default function TermsPage() {
             ))}
           </div>
         </div>
-      </main>
+      </div>
       <Footer />
-    </>
+    </main>
   );
 }

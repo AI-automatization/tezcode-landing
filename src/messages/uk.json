@@ -11,14 +11,37 @@
     "team": "Команда",
     "contact": "Контакти",
     "language": "Мова",
-    "blog": "Блог"
+    "blog": "Блог",
+    "pricing": "Тарифи",
+    "about": "Про компанію"
+  },
+  "menu": {
+    "headers": {
+      "products": "Продукти",
+      "aiSolutions": "AI рішення",
+      "services": "Послуги"
+    },
+    "allSolutions": "Всі рішення",
+    "solutions": {
+      "aiAutomation": "AI автоматизація",
+      "aiAgent": "AI агент",
+      "businessAutomation": "Автоматизація бізнесу",
+      "aiChatbot": "AI чат-бот",
+      "telegramBot": "Telegram-бот",
+      "posSystem": "POS-система",
+      "clinicCrm": "CRM для клінік",
+      "employeeMonitoring": "Контроль співробітників",
+      "itServices": "IT-послуги",
+      "hireDevelopers": "Оренда розробників",
+      "caseStudies": "Кейси"
+    }
   },
   "hero": {
     "badge": "AI · Software Factory · Ташкент",
     "headline": "Будь-який бізнес\nавтоматизуємо з AI",
     "subheadline": "8 продуктів. 6 напрямків. 1 місія — систематизувати кожен бізнес.",
     "cta_primary": "Безкоштовне демо",
-    "cta_secondary": "Зв'язатися з нами",
+    "cta_secondary": "Написати в Telegram",
     "stat_divisions": "Напрямків",
     "stat_products": "Продуктів",
     "stat_projects": "Проєкт",
@@ -30,6 +53,7 @@
   "divisions": {
     "title": "Наші 6 напрямків",
     "subtitle": "Кожен — найкраще рішення у своїй галузі",
+    "cta": "Детальніше",
     "systems": {
       "name": "TezCode Systems",
       "tagline": "Готові SaaS-продукти",
@@ -62,7 +86,7 @@
       "name": "TezCode Labs",
       "tagline": "Внутрішні стартапи",
       "description": "Наша інноваційна лабораторія — тут народжуються нові продукти та експериментальні рішення.",
-      "products": "WeWatch · CoreMed · Ventra · Savdo-Builder",
+      "products": "WeWatch · CoreMed · Ventra · MaxSavdo",
       "model": "Інвестиції + Equity"
     },
     "academy": {
@@ -133,12 +157,12 @@
       "url": "#"
     },
     "savdo_builder": {
-      "name": "Savdo-Builder",
+      "name": "MaxSavdo",
       "tagline": "No-code конструктор",
       "description": "Конструктор додатків для торгівлі (no-code).",
       "status": "Soon",
       "division": "Labs",
-      "url": "#"
+      "url": "https://maxsavdo.uz"
     },
     "status_labels": {
       "Live": "Працює",

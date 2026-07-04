@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { motion } from "motion/react";
+import { Inbox } from "lucide-react";
 import { useLocale } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Tilt3D } from "@/components/motion/Tilt3D";
@@ -23,24 +24,21 @@ const CASES: readonly Case[] = [
   { slug: "munira-clinic", photo: "/customers/customer-3.jpg", category: "clinic", accent: "emerald" },
 ] as const;
 
-const ACCENT: Record<Case["accent"], { text: string; ring: string; glow: string; bg: string }> = {
+const ACCENT: Record<Case["accent"], { text: string; ring: string; bg: string }> = {
   amber: {
     text: "text-[var(--tc-gold)]",
-    ring: "ring-[var(--tc-gold)]/40",
-    glow: "rgba(212,160,23,0.20)",
-    bg: "bg-[var(--tc-gold)]/10",
+    ring: "ring-[var(--tc-gold)]/30",
+    bg: "bg-[var(--tc-gold-dim)]",
   },
   blue: {
     text: "text-[var(--tc-blue-text)]",
-    ring: "ring-[var(--tc-blue)]/40",
-    glow: "rgba(0,64,255,0.20)",
-    bg: "bg-[var(--tc-blue)]/10",
+    ring: "ring-[var(--tc-blue)]/30",
+    bg: "bg-[var(--tc-blue-dim)]",
   },
   emerald: {
-    text: "text-emerald-400",
-    ring: "ring-emerald-400/40",
-    glow: "rgba(52,211,153,0.20)",
-    bg: "bg-emerald-400/10",
+    text: "text-[var(--tc-success)]",
+    ring: "ring-[var(--tc-success)]/30",
+    bg: "bg-[rgba(5,150,105,0.10)]",
   },
 };
 
@@ -297,27 +295,22 @@ export function CaseStudiesIndexClient() {
   ];
 
   return (
-    <main className="relative min-h-screen bg-[var(--tc-ink)] pt-24 pb-32 overflow-hidden">
-      {/* Background glow */}
-      <div
-        aria-hidden
-        className="absolute top-32 left-1/2 -translate-x-1/2 w-[900px] h-[600px] opacity-[0.06] pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse at center, var(--tc-gold) 0%, transparent 70%)",
-          filter: "blur(100px)",
-        }}
-      />
+    <main
+      data-theme="light"
+      className="relative min-h-screen bg-[var(--tc-ink)] text-[var(--tc-text-primary)] pt-24 pb-28 overflow-hidden"
+    >
+      {/* Faint grid background */}
+      <div aria-hidden className="tc-grid-bg absolute inset-0 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Hero */}
         <Reveal className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-gold)]/10 border border-[var(--tc-gold)]/30 text-xs font-500 text-[var(--tc-gold)] mb-6 uppercase tracking-[0.3em]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[var(--tc-gold)] animate-pulse" />
+          <div className="tc-chip mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-[var(--tc-blue)]" />
             {t.badge}
           </div>
           <h1
-            className="text-4xl md:text-6xl lg:text-7xl font-700 mb-6 tracking-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl font-800 mb-6 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.title}
@@ -330,7 +323,7 @@ export function CaseStudiesIndexClient() {
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-8 mx-auto w-24 h-0.5 bg-gradient-to-r from-transparent via-[var(--tc-gold)] to-transparent origin-center"
+            className="mt-8 mx-auto w-24 h-0.5 bg-gradient-to-r from-transparent via-[var(--tc-blue)] to-transparent origin-center"
           />
         </Reveal>
 
@@ -346,8 +339,8 @@ export function CaseStudiesIndexClient() {
                   onClick={() => setFilter(f.key)}
                   className={`px-5 py-2.5 rounded-full text-sm font-500 transition-all duration-200 border ${
                     active
-                      ? "bg-[var(--tc-blue)] text-white border-[var(--tc-blue)] tc-glow-blue"
-                      : "bg-[var(--tc-surface-2)] text-[var(--tc-text-secondary)] border-[var(--tc-border)] hover:border-[var(--tc-border-bright)] hover:text-white"
+                      ? "bg-[var(--tc-blue)] text-white border-[var(--tc-blue)] shadow-[0_8px_20px_rgba(0,64,255,0.25)]"
+                      : "bg-[var(--tc-surface-1)] text-[var(--tc-text-secondary)] border-[var(--tc-border)] hover:border-[var(--tc-border-bright)] hover:text-[var(--tc-text-primary)]"
                   }`}
                 >
                   {f.label}
@@ -372,16 +365,8 @@ export function CaseStudiesIndexClient() {
                   <Tilt3D intensity={4} className="group rounded-[var(--tc-radius-lg)] h-full">
                     <Link
                       href={`/case-studies/${c.slug}`}
-                      className="relative block h-full p-7 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-border-bright)] transition-colors duration-300 overflow-hidden"
+                      className="tc-card tc-card-hover relative block h-full p-7 overflow-hidden"
                     >
-                      <div
-                        aria-hidden
-                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                        style={{
-                          background: `radial-gradient(ellipse at top right, ${accent.glow}, transparent 60%)`,
-                        }}
-                      />
-
                       <div className="relative flex items-center gap-4 mb-5" style={{ transform: "translateZ(30px)" }}>
                         <div
                           className={`relative shrink-0 w-16 h-16 rounded-full overflow-hidden ring-2 ${accent.ring}`}
@@ -395,7 +380,7 @@ export function CaseStudiesIndexClient() {
                         </div>
                         <div className="flex-1 min-w-0">
                           <div
-                            className="text-white font-700 text-lg leading-tight"
+                            className="text-[var(--tc-text-primary)] font-700 text-lg leading-tight"
                             style={{ fontFamily: "var(--font-display)" }}
                           >
                             {card.name}
@@ -412,7 +397,7 @@ export function CaseStudiesIndexClient() {
                       </div>
 
                       <h3
-                        className="relative text-white text-xl md:text-2xl font-700 leading-snug mb-6 min-h-[3.5rem]"
+                        className="relative text-[var(--tc-text-primary)] text-xl md:text-2xl font-700 leading-snug mb-6 min-h-[3.5rem]"
                         style={{ fontFamily: "var(--font-display)", transform: "translateZ(20px)" }}
                       >
                         {card.headline}
@@ -428,7 +413,7 @@ export function CaseStudiesIndexClient() {
                         <div className="flex items-end justify-between gap-3">
                           <div className="min-w-0">
                             <div
-                              className={`font-700 text-2xl md:text-3xl ${accent.text} tabular-nums leading-none`}
+                              className="font-700 text-2xl md:text-3xl text-[var(--tc-success)] tabular-nums leading-none"
                               style={{ fontFamily: "var(--font-display)" }}
                             >
                               {card.metric}
@@ -438,7 +423,7 @@ export function CaseStudiesIndexClient() {
                             </div>
                           </div>
                           <div
-                            className={`shrink-0 text-sm font-500 ${accent.text} group-hover:translate-x-1 transition-transform`}
+                            className="shrink-0 text-sm font-500 text-[var(--tc-blue-text)] group-hover:translate-x-1 transition-transform"
                           >
                             {t.readMore} →
                           </div>
@@ -452,19 +437,19 @@ export function CaseStudiesIndexClient() {
           </RevealStagger>
         ) : (
           <div className="text-center py-20 text-[var(--tc-text-muted)] text-sm">
-            ⌛
+            <Inbox aria-hidden className="mx-auto h-6 w-6" strokeWidth={1.75} />
           </div>
         )}
 
         {/* CTA */}
         <Reveal className="mt-24">
-          <div className="relative p-10 md:p-14 rounded-[var(--tc-radius-xl)] border border-[var(--tc-gold)]/40 bg-gradient-to-br from-[var(--tc-surface-2)] to-[var(--tc-surface-1)] text-center overflow-hidden">
+          <div className="tc-navy-section relative p-10 md:p-14 rounded-[var(--tc-radius-xl)] text-center overflow-hidden">
             <div
               aria-hidden
-              className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-[var(--tc-gold)] opacity-10 blur-3xl"
+              className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-[var(--tc-blue)] opacity-20 blur-3xl"
             />
             <h2
-              className="text-3xl md:text-4xl font-700 mb-4 relative"
+              className="text-3xl md:text-4xl font-700 mb-4 relative text-[var(--tc-text-primary)]"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {t.ctaTitle}
@@ -473,10 +458,10 @@ export function CaseStudiesIndexClient() {
               {t.ctaText}
             </p>
             <motion.a
-              href="/#contact"
+              href="/aloqa"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="inline-block px-8 py-3.5 rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] text-white font-600 text-sm tc-glow-blue relative"
+              className="tc-btn-primary text-sm relative"
             >
               {t.ctaBtn}
             </motion.a>

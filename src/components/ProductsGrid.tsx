@@ -1,19 +1,12 @@
 "use client";
 
-import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
-import { Package, Wrench, Bot, Users, FlaskConical, GraduationCap } from "lucide-react";
+import { Package, Wrench, Bot, Users, FlaskConical, GraduationCap, ArrowRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
-import { Tilt3D } from "@/components/motion/Tilt3D";
-import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
+import { Link } from "@/i18n/routing";
+import { Reveal } from "@/components/motion/Reveal";
 
-type DivisionKey =
-  | "systems"
-  | "custom"
-  | "ai"
-  | "teams"
-  | "labs"
-  | "academy";
+type DivisionKey = "systems" | "custom" | "ai" | "teams" | "labs" | "academy";
 
 const ICON_MAP: Record<DivisionKey, LucideIcon> = {
   systems: Package,
@@ -24,46 +17,14 @@ const ICON_MAP: Record<DivisionKey, LucideIcon> = {
   academy: GraduationCap,
 };
 
-const ACCENT_MAP: Record<
-  DivisionKey,
-  { ring: string; text: string; glow: string; gradient: string }
-> = {
-  systems: {
-    ring: "rgba(0, 64, 255, 0.25)",
-    text: "text-blue-400",
-    glow: "rgba(0, 64, 255, 0.35)",
-    gradient: "from-blue-500/20 to-transparent",
-  },
-  custom: {
-    ring: "rgba(212, 160, 23, 0.25)",
-    text: "text-[var(--tc-gold)]",
-    glow: "rgba(212, 160, 23, 0.35)",
-    gradient: "from-amber-500/20 to-transparent",
-  },
-  ai: {
-    ring: "rgba(139, 92, 246, 0.25)",
-    text: "text-purple-400",
-    glow: "rgba(139, 92, 246, 0.35)",
-    gradient: "from-purple-500/20 to-transparent",
-  },
-  teams: {
-    ring: "rgba(52, 211, 153, 0.25)",
-    text: "text-emerald-400",
-    glow: "rgba(52, 211, 153, 0.35)",
-    gradient: "from-emerald-500/20 to-transparent",
-  },
-  labs: {
-    ring: "rgba(251, 146, 60, 0.25)",
-    text: "text-orange-400",
-    glow: "rgba(251, 146, 60, 0.35)",
-    gradient: "from-orange-500/20 to-transparent",
-  },
-  academy: {
-    ring: "rgba(244, 114, 182, 0.25)",
-    text: "text-pink-400",
-    glow: "rgba(244, 114, 182, 0.35)",
-    gradient: "from-pink-500/20 to-transparent",
-  },
+// Each division links to its most relevant detail page.
+const HREF_MAP: Record<DivisionKey, string> = {
+  systems: "/tezcode-systems",
+  custom: "/tezcode-custom",
+  ai: "/ai-agent",
+  teams: "/hire-developers",
+  labs: "/tezcode-labs",
+  academy: "/tezcode-academy",
 };
 
 export function ProductsGrid() {
@@ -79,54 +40,50 @@ export function ProductsGrid() {
   ];
 
   return (
-    <section
-      id="divisions"
-      className="py-32 px-6 bg-[var(--tc-surface-1)] relative overflow-hidden"
-    >
-      {/* Section background accent */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] opacity-[0.05] pointer-events-none">
-        <div
-          className="w-full h-full"
-          style={{
-            background:
-              "radial-gradient(ellipse at center, var(--tc-blue) 0%, transparent 70%)",
-            filter: "blur(60px)",
-          }}
-        />
-      </div>
-
-      <div className="max-w-7xl mx-auto relative z-10">
-        <Reveal className="text-center mb-20">
+    <section id="divisions" className="py-20 sm:py-28 bg-[var(--tc-ink)] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6">
+        <Reveal className="text-center mb-12">
+          <span className="tc-chip">Yo&apos;nalishlar</span>
           <h2
-            className="text-4xl md:text-6xl font-700 mb-4 tracking-tight"
+            className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-700 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t("title")}
           </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="mt-4 text-[var(--tc-text-muted)] max-w-2xl mx-auto">
             {t("subtitle")}
           </p>
-          <motion.div
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-8 mx-auto w-24 h-0.5 bg-gradient-to-r from-transparent via-[var(--tc-gold)] to-transparent origin-center"
-          />
         </Reveal>
-
-        <RevealStagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {divisions.map((d) => (
-            <RevealItem key={d}>
-              <DivisionCard division={d} t={t} />
-            </RevealItem>
-          ))}
-        </RevealStagger>
       </div>
+
+      {/* Slow auto-scrolling swiper — pauses on hover, cards stay clickable */}
+      <Reveal>
+        <div className="relative">
+          {/* edge fades */}
+          <div
+            aria-hidden
+            className="absolute inset-y-0 start-0 w-16 sm:w-32 z-10 pointer-events-none"
+            style={{ background: "linear-gradient(to right, var(--tc-ink), transparent)" }}
+          />
+          <div
+            aria-hidden
+            className="absolute inset-y-0 end-0 w-16 sm:w-32 z-10 pointer-events-none"
+            style={{ background: "linear-gradient(to left, var(--tc-ink), transparent)" }}
+          />
+
+          <div className="tc-marquee-x flex w-max items-stretch gap-5 py-2">
+            {[...divisions, ...divisions].map((d, i) => (
+              <DivisionCard key={`${d}-${i}`} division={d} t={t} />
+            ))}
+          </div>
+        </div>
+      </Reveal>
     </section>
   );
 }
 
+// Compact swiper card — name, tagline and a clamped description only;
+// the full details live on the division's own page ("Batafsil").
 function DivisionCard({
   division,
   t,
@@ -137,90 +94,39 @@ function DivisionCard({
   const name = t(`${division}.name`);
   const tagline = t(`${division}.tagline`);
   const description = t(`${division}.description`);
-  const products = t(`${division}.products`);
-  const model = t(`${division}.model`);
+  const cta = t("cta");
 
-  const accent = ACCENT_MAP[division];
+  const href = HREF_MAP[division];
+  const Icon = ICON_MAP[division];
 
   return (
-    <Tilt3D
-      intensity={6}
-      className="group rounded-[var(--tc-radius-lg)] h-full"
+    <Link
+      href={href}
+      className="group tc-card tc-card-hover w-[260px] sm:w-[300px] shrink-0 p-5 flex flex-col"
     >
-      <div
-        className={[
-          "relative p-7 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)]",
-          "bg-[var(--tc-surface-2)] hover:bg-[var(--tc-surface-3)]",
-          "hover:border-[var(--tc-border-bright)] transition-colors duration-300",
-          "cursor-pointer h-full flex flex-col overflow-hidden",
-        ].join(" ")}
-        style={{ transform: "translateZ(0)" }}
-      >
-        {/* Top-left gradient blob — accent-colored */}
-        <div
-          aria-hidden
-          className={`absolute -top-20 -left-20 w-48 h-48 rounded-full bg-gradient-radial ${accent.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-2xl`}
-        />
-
-        {/* Hover border glow */}
-        <div
-          aria-hidden
-          className="absolute inset-0 rounded-[var(--tc-radius-lg)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-          style={{
-            boxShadow: `inset 0 0 0 1px ${accent.ring}, 0 0 40px ${accent.glow}`,
-          }}
-        />
-
-        {/* Icon */}
-        <div
-          className="relative mb-6 w-14 h-14 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-0)] flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3"
-          style={{ transform: "translateZ(40px)" }}
-        >
-          {(() => { const Icon = ICON_MAP[division]; return <Icon className="w-6 h-6 text-white" />; })()}
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-10 h-10 shrink-0 rounded-xl bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] flex items-center justify-center">
+          <Icon className="w-5 h-5" strokeWidth={1.75} />
         </div>
-
-        <h3
-          className="relative text-2xl font-700 text-white mb-1 tracking-tight"
-          style={{
-            fontFamily: "var(--font-display)",
-            transform: "translateZ(30px)",
-          }}
-        >
-          {name}
-        </h3>
-
-        <p
-          className={`relative text-sm font-500 mb-4 ${accent.text}`}
-          style={{ transform: "translateZ(25px)" }}
-        >
-          {tagline}
-        </p>
-
-        <p
-          className="relative text-sm text-[var(--tc-text-muted)] leading-relaxed mb-6 flex-1"
-          style={{ transform: "translateZ(20px)" }}
-        >
-          {description}
-        </p>
-
-        <div
-          className="relative pt-4 border-t border-[var(--tc-border)] space-y-1.5"
-          style={{ transform: "translateZ(15px)" }}
-        >
-          <div className="text-xs text-[var(--tc-text-muted)]">
-            <span className="font-500 text-[var(--tc-text-secondary)]">
-              Mahsulot:
-            </span>{" "}
-            {products}
-          </div>
-          <div className="text-xs text-[var(--tc-text-muted)]">
-            <span className="font-500 text-[var(--tc-text-secondary)]">
-              Model:
-            </span>{" "}
-            {model}
-          </div>
+        <div className="min-w-0">
+          <h3
+            className="text-base font-700 text-[var(--tc-text-primary)] tracking-tight truncate"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            {name}
+          </h3>
+          <p className="text-xs text-[var(--tc-text-muted)] truncate">{tagline}</p>
         </div>
       </div>
-    </Tilt3D>
+
+      <p className="text-sm text-[var(--tc-text-secondary)] leading-relaxed line-clamp-2 mb-4 flex-1">
+        {description}
+      </p>
+
+      <div className="inline-flex items-center gap-1.5 text-sm font-600 text-[var(--tc-blue-text)]">
+        {cta}
+        <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
+      </div>
+    </Link>
   );
 }

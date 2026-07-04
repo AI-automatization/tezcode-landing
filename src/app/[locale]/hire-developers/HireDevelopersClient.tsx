@@ -3,6 +3,8 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useLocale } from "next-intl";
 import { useRef } from "react";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Tilt3D } from "@/components/motion/Tilt3D";
 import { Magnetic } from "@/components/motion/Magnetic";
@@ -142,7 +144,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "TezCode Teams · Staff Augmentation",
       headline: "Hire senior developers from Tashkent — from $30/hr",
       subhead:
-        "AI-skilled, English/Russian fluent, EST overlap 5 hours, vetted in-house team of 16. No agencies, no middlemen.",
+        "AI-skilled, English/Russian fluent, EST overlap 5 hours, vetted in-house team of 8. No agencies, no middlemen.",
       ctaPrimary: "Book intro call",
       ctaSecondary: "View team profiles",
       statDevs: "in-house devs",
@@ -170,11 +172,11 @@ const COPY: Record<Lang, Copy> = {
     highlights: {
       sectionTag: "Why Tashkent",
       title: "Four reasons foreign founders pick our team",
-      subtitle: "We are not a marketplace. 16 senior engineers, all in-house, vetted by the CEO himself.",
+      subtitle: "We are not a marketplace. 8 senior engineers, all in-house, vetted by the CEO himself.",
       items: [
         {
           icon: "01",
-          title: "16 in-house senior devs",
+          title: "8 in-house senior devs",
           desc: "Not freelancers. Full-time team trained on AI tooling (Claude, ChatGPT), pair-coded by Bekzod Mirzaaliyev (CEO).",
         },
         {
@@ -353,7 +355,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           q: "How good is the English?",
-          a: "B2–C1 across all 16 engineers. Daily standups, code reviews, and async docs all happen in English. CEO Bekzod is C1 fluent for executive-level calls.",
+          a: "B2–C1 across all 8 engineers. Daily standups, code reviews, and async docs all happen in English. CEO Bekzod is C1 fluent for executive-level calls.",
         },
         {
           q: "How do contracts and invoicing work?",
@@ -384,7 +386,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "TezCode Teams · Dasturchi ijarasi",
       headline: "Toshkentdan senior dasturchi yollang — $30/soat'dan",
       subhead:
-        "AI bilan ishlay oladigan, ingliz/rus tilini biladigan, EST timezone 5 soat mos keladigan 16 ta jamoa. Vositachi yo'q, agentlik yo'q.",
+        "AI bilan ishlay oladigan, ingliz/rus tilini biladigan, EST timezone 5 soat mos keladigan 8 ta jamoa. Vositachi yo'q, agentlik yo'q.",
       ctaPrimary: "Tanishuv qo'ng'irog'i",
       ctaSecondary: "Jamoa profillarini ko'rish",
       statDevs: "in-house dasturchi",
@@ -412,11 +414,11 @@ const COPY: Record<Lang, Copy> = {
     highlights: {
       sectionTag: "Nega Toshkent",
       title: "Xorijiy mijozlar bizni tanlaydigan 4 sabab",
-      subtitle: "Biz marketplace (bozor platforma) emasmiz. 16 ta senior dasturchi, hammasi in-house (ichki jamoa), CEO shaxsan tekshirgan.",
+      subtitle: "Biz marketplace (bozor platforma) emasmiz. 8 ta senior dasturchi, hammasi in-house (ichki jamoa), CEO shaxsan tekshirgan.",
       items: [
         {
           icon: "01",
-          title: "16 ta in-house senior dasturchi",
+          title: "8 ta in-house senior dasturchi",
           desc: "Freelancer (mustaqil dasturchi) emas. Full-time (to'liq kun) jamoa, AI vositalari (Claude, ChatGPT) bilan o'rgatilgan, Bekzod Mirzaaliyev (CEO) bilan pair-code qilingan.",
         },
         {
@@ -595,7 +597,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           q: "Ingliz tili darajasi qanday?",
-          a: "Hamma 16 dasturchida B2–C1. Kunlik standup, code review, async hujjat hammasi ingliz tilida. CEO Bekzod C1 — yuqori darajadagi qo'ng'iroq'lar uchun.",
+          a: "Hamma 8 dasturchida B2–C1. Kunlik standup, code review, async hujjat hammasi ingliz tilida. CEO Bekzod C1 — yuqori darajadagi qo'ng'iroq'lar uchun.",
         },
         {
           q: "Shartnoma va invoice qanday ishlaydi?",
@@ -626,7 +628,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "TezCode Teams · Аренда разработчиков",
       headline: "Нанимайте senior-разработчиков из Ташкента — от $30/час",
       subhead:
-        "AI-навыки, английский/русский свободно, пересечение с EST 5 часов, проверенная in-house команда из 16 инженеров. Без агентств, без посредников.",
+        "AI-навыки, английский/русский свободно, пересечение с EST 5 часов, проверенная in-house команда из 8 инженеров. Без агентств, без посредников.",
       ctaPrimary: "Записаться на звонок",
       ctaSecondary: "Профили команды",
       statDevs: "in-house разработчиков",
@@ -654,11 +656,11 @@ const COPY: Record<Lang, Copy> = {
     highlights: {
       sectionTag: "Почему Ташкент",
       title: "Четыре причины выбора иностранными основателями",
-      subtitle: "Мы не маркетплейс. 16 senior-инженеров in-house, лично проверенных CEO.",
+      subtitle: "Мы не маркетплейс. 8 senior-инженеров in-house, лично проверенных CEO.",
       items: [
         {
           icon: "01",
-          title: "16 senior in-house",
+          title: "8 senior in-house",
           desc: "Не фрилансеры. Full-time команда, обученная AI-инструментам (Claude, ChatGPT), pair-coded с Бекзодом Мирзаалиевым (CEO).",
         },
         {
@@ -771,7 +773,7 @@ const COPY: Record<Lang, Copy> = {
       items: [
         { q: "Когда можно начать?", a: "1–2 недели. Неделя 1: intake + матчинг + интервью. Неделя 2: договор + onboarding (Slack, Linear, GitHub). Большинство клиентов видят разработчика на standup в 8-й день." },
         { q: "Что с timezone?", a: "Ташкент GMT+5. С восточным побережьем США пересекаемся 5 часов (15:00–20:00 EST), с западным — 4 часа. Полное пересечение с Европой и Британией." },
-        { q: "Какой уровень английского?", a: "B2–C1 у всех 16 инженеров. Ежедневные standup, code review, async-документация — на английском. CEO Бекзод — C1." },
+        { q: "Какой уровень английского?", a: "B2–C1 у всех 8 инженеров. Ежедневные standup, code review, async-документация — на английском. CEO Бекзод — C1." },
         { q: "Как с договорами и инвойсами?", a: "Tezcode — резидент IT Park. Стандартный USD-инвойс от зарегистрированной компании. Wire transfer или Stripe. Стандартный MSA + SOW или подпишем ваш." },
         { q: "Если разработчик не подошёл?", a: "2 недели trial с полным возвратом. После — замена за 5 рабочих дней бесплатно. У нас bench (резерв), а не маркетплейс." },
         { q: "Кому принадлежит код / IP?", a: "Вам, полностью. NDA подписывается до начала работы. Все IP передаются клиенту после оплаты. Личный IP transfer + NDA на уровне компании." },
@@ -792,7 +794,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "TezCode Teams · تعيين المطورين",
       headline: "وظف مطورين كبار من طشقند — من 30 دولاراً في الساعة",
       subhead:
-        "بمهارات الذكاء الاصطناعي، إجادة الإنجليزية والروسية، تقاطع 5 ساعات مع توقيت EST، فريق داخلي مدقق من 16 مهندساً. بدون وكالات أو وسطاء.",
+        "بمهارات الذكاء الاصطناعي، إجادة الإنجليزية والروسية، تقاطع 5 ساعات مع توقيت EST، فريق داخلي مدقق من 8 مهندساً. بدون وكالات أو وسطاء.",
       ctaPrimary: "احجز مكالمة تعارف",
       ctaSecondary: "عرض ملفات الفريق",
       statDevs: "مطور داخلي",
@@ -820,9 +822,9 @@ const COPY: Record<Lang, Copy> = {
     highlights: {
       sectionTag: "لماذا طشقند",
       title: "أربعة أسباب يختارنا بها المؤسسون الأجانب",
-      subtitle: "نحن لسنا سوقاً. 16 مهندساً داخلياً تم تدقيقهم من قبل المدير التنفيذي شخصياً.",
+      subtitle: "نحن لسنا سوقاً. 8 مهندساً داخلياً تم تدقيقهم من قبل المدير التنفيذي شخصياً.",
       items: [
-        { icon: "01", title: "16 مطوراً داخلياً", desc: "ليسوا مستقلين. فريق full-time مدرَّب على أدوات AI، تم pair-code مع المدير التنفيذي." },
+        { icon: "01", title: "8 مطوراً داخلياً", desc: "ليسوا مستقلين. فريق full-time مدرَّب على أدوات AI، تم pair-code مع المدير التنفيذي." },
         { icon: "02", title: "إنجليزية / روسية", desc: "B2–C1 إنجليزية. اجتماعات يومية بالإنجليزية. جميع الكوميتات والمستندات بالإنجليزية." },
         { icon: "03", title: "GMT+5 — 5س مع EST", desc: "تقاطع حقيقي مع الساحل الشرقي للولايات المتحدة. أفضل من الهند للعمل المتزامن." },
         { icon: "04", title: "IT Park — مستقر قانونياً", desc: "Tezcode مقيم في IT Park (برنامج حكومي أوزبكي). فواتير USD، NDA قياسي + نقل IP." },
@@ -920,7 +922,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "TezCode Teams · Оренда розробників",
       headline: "Найміть senior-розробників з Ташкента — від $30/год",
       subhead:
-        "AI-навички, вільні англійська / російська, перетин 5 годин з EST, перевірена in-house команда з 16 інженерів. Без агенцій, без посередників.",
+        "AI-навички, вільні англійська / російська, перетин 5 годин з EST, перевірена in-house команда з 8 інженерів. Без агенцій, без посередників.",
       ctaPrimary: "Записатися на дзвінок",
       ctaSecondary: "Профілі команди",
       statDevs: "in-house розробників",
@@ -947,9 +949,9 @@ const COPY: Record<Lang, Copy> = {
     highlights: {
       sectionTag: "Чому Ташкент",
       title: "Чотири причини вибору іноземними засновниками",
-      subtitle: "Ми не маркетплейс. 16 senior-інженерів in-house, особисто перевірених CEO.",
+      subtitle: "Ми не маркетплейс. 8 senior-інженерів in-house, особисто перевірених CEO.",
       items: [
-        { icon: "01", title: "16 senior in-house", desc: "Не фрилансери. Full-time команда, навчена AI-інструментам, pair-coded з Бекзодом (CEO)." },
+        { icon: "01", title: "8 senior in-house", desc: "Не фрилансери. Full-time команда, навчена AI-інструментам, pair-coded з Бекзодом (CEO)." },
         { icon: "02", title: "Англійська / російська", desc: "B2–C1 у всій команді. Щоденні standup англійською. Усі commit, PR, документація англійською." },
         { icon: "03", title: "GMT+5 — 5г EST", desc: "Реальне перетинання зі східним узбережжям США. Краще за Індію для sync-роботи." },
         { icon: "04", title: "IT Park — юридично стабільно", desc: "Tezcode — резидент IT Park. USD інвойси, 7 років податкових пільг, стандартний NDA + IP transfer." },
@@ -1027,7 +1029,7 @@ const COPY: Record<Lang, Copy> = {
       items: [
         { q: "Коли можемо почати?", a: "1–2 тижні. Тиждень 1: intake + матчинг + інтерв'ю. Тиждень 2: договір + onboarding." },
         { q: "Що з timezone?", a: "Ташкент GMT+5. Зі східним узбережжям США перетин 5 годин, із західним — 4. Повний перетин з Європою." },
-        { q: "Який рівень англійської?", a: "B2–C1 у всіх 16 інженерів. Щоденні standup, code review, документація — англійською." },
+        { q: "Який рівень англійської?", a: "B2–C1 у всіх 8 інженерів. Щоденні standup, code review, документація — англійською." },
         { q: "Як з контрактами та інвойсами?", a: "Tezcode — резидент IT Park. Стандартний USD-інвойс. Wire transfer або Stripe." },
         { q: "Якщо розробник не підійшов?", a: "2 тижні trial з повним поверненням. Заміна за 5 робочих днів безкоштовно." },
         { q: "Кому належить код / IP?", a: "Вам, повністю. NDA до початку роботи. Усі IP передаються після оплати." },
@@ -1058,7 +1060,7 @@ const fadeUp = {
   }),
 };
 
-const TELEGRAM_URL = "https://t.me/webdevelopertk";
+const TELEGRAM_URL = "https://t.me/tezcode_managament";
 
 // ─────────────────────────────────────────────────────────
 // Main component
@@ -1068,7 +1070,11 @@ export function HireDevelopersClient() {
   const t = COPY[locale] ?? COPY.en;
 
   return (
-    <main className="relative bg-[var(--tc-ink)] overflow-hidden">
+    <main
+      data-theme="light"
+      className="relative min-h-screen bg-[var(--tc-ink)] text-[var(--tc-text-primary)] overflow-hidden"
+    >
+      <Navbar />
       <HeroSection t={t} />
       <RatesSection t={t} />
       <HighlightsSection t={t} />
@@ -1078,6 +1084,7 @@ export function HireDevelopersClient() {
       <TeamSection t={t} />
       <FAQSection t={t} />
       <FinalCTASection t={t} />
+      <Footer />
     </main>
   );
 }
@@ -1094,24 +1101,16 @@ function HeroSection({ t }: { t: Copy }) {
   return (
     <section
       ref={ref}
-      className="relative min-h-[92vh] flex flex-col items-center justify-center pt-28 pb-20 overflow-hidden tc-perspective"
+      className="relative flex flex-col items-center justify-center pt-36 pb-16 overflow-hidden"
     >
-      {/* Background mesh */}
+      {/* Light blueprint grid + one soft blue blob */}
+      <div aria-hidden className="tc-grid-bg absolute inset-0" />
       <div
         aria-hidden
-        className="absolute inset-0 opacity-60"
+        className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle at 20% 30%, rgba(0,64,255,0.18), transparent 55%), radial-gradient(circle at 80% 70%, rgba(212,160,23,0.10), transparent 55%)",
-        }}
-      />
-      <div
-        aria-hidden
-        className="absolute inset-0 opacity-[0.06]"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
+            "radial-gradient(ellipse 70% 55% at 50% 0%, rgba(0,64,255,0.06), transparent 70%)",
         }}
       />
 
@@ -1122,12 +1121,12 @@ function HeroSection({ t }: { t: Copy }) {
         <motion.div
           initial={fadeUp.hidden}
           animate={fadeUp.visible(0)}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[var(--tc-border-bright)] bg-[var(--tc-surface-1)]/60 backdrop-blur-md text-xs font-medium text-[var(--tc-text-secondary)] mb-8"
+          className="tc-chip gap-2 mb-8"
         >
           <motion.span
             animate={{ opacity: [0.4, 1, 0.4] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="w-1.5 h-1.5 rounded-full bg-[var(--tc-gold)]"
+            className="w-1.5 h-1.5 rounded-full bg-[var(--tc-blue)]"
           />
           {t.hero.badge}
         </motion.div>
@@ -1135,10 +1134,10 @@ function HeroSection({ t }: { t: Copy }) {
         <motion.h1
           initial={fadeUp.hidden}
           animate={fadeUp.visible(0.1)}
-          className="text-[clamp(2.5rem,7vw,6rem)] font-800 leading-[0.98] tracking-[-0.03em] mb-6"
+          className="text-[clamp(2.5rem,6vw,4.75rem)] font-800 leading-[1.05] tracking-tight mb-6 text-[var(--tc-text-primary)]"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          <span className="tc-text-gradient-blue block">{t.hero.headline}</span>
+          <span className="block">{t.hero.headline}</span>
         </motion.h1>
 
         <motion.p
@@ -1161,13 +1160,13 @@ function HeroSection({ t }: { t: Copy }) {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="group relative inline-flex w-full sm:w-auto px-9 py-4 rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] text-white font-semibold text-sm overflow-hidden tc-glow-blue"
+              className="tc-btn-primary group w-full sm:w-auto justify-center"
             >
-              <span className="relative z-10 flex items-center justify-center gap-2">
+              <span className="flex items-center justify-center gap-2">
                 {t.hero.ctaPrimary}
                 <svg
                   className="w-4 h-4 transition-transform group-hover:translate-x-1"
-                  viewBox="0 0 16 16"
+                  viewBox="0 0 8 8"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
@@ -1183,7 +1182,7 @@ function HeroSection({ t }: { t: Copy }) {
               href="#team"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="inline-flex w-full sm:w-auto px-9 py-4 rounded-[var(--tc-radius-md)] border border-[var(--tc-border-bright)] bg-[var(--tc-surface-1)]/40 backdrop-blur-md text-[var(--tc-text-primary)] font-semibold text-sm hover:bg-[var(--tc-surface-2)] transition-colors items-center justify-center gap-2"
+              className="tc-btn-secondary w-full sm:w-auto justify-center gap-2"
             >
               {t.hero.ctaSecondary}
             </motion.a>
@@ -1198,7 +1197,7 @@ function HeroSection({ t }: { t: Copy }) {
 
 function HeroStats({ t }: { t: Copy }) {
   const stats: { value: number; suffix: string; label: string }[] = [
-    { value: 16, suffix: "", label: t.hero.statDevs },
+    { value: 8, suffix: "", label: t.hero.statDevs },
     { value: 30, suffix: "+", label: t.hero.statRate },
     { value: 5, suffix: "h", label: t.hero.statTimezone },
     { value: 12, suffix: "+", label: t.hero.statClients },
@@ -1211,7 +1210,7 @@ function HeroStats({ t }: { t: Copy }) {
         hidden: {},
         visible: { transition: { staggerChildren: 0.1, delayChildren: 0.5 } },
       }}
-      className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-14 max-w-4xl mx-auto"
+      className="mt-14 tc-card grid grid-cols-2 sm:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[var(--tc-border)] max-w-4xl mx-auto"
     >
       {stats.map((stat, i) => (
         <motion.div
@@ -1225,13 +1224,14 @@ function HeroStats({ t }: { t: Copy }) {
               transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
             },
           }}
-          className="flex flex-col items-center gap-1"
+          className="flex flex-col items-center gap-1 px-4 py-6"
+          style={{ fontFamily: "var(--font-display)" }}
         >
           <CountUp
             value={stat.value}
             suffix={stat.suffix}
             duration={2.0}
-            className="text-3xl md:text-5xl font-800 tc-text-gradient-gold tabular-nums"
+            className="text-3xl md:text-4xl font-800 text-[var(--tc-text-primary)] tabular-nums"
           />
           <span
             className="text-[10px] md:text-xs text-[var(--tc-text-muted)] uppercase tracking-[0.2em] mt-1 text-center"
@@ -1250,14 +1250,14 @@ function HeroStats({ t }: { t: Copy }) {
 // ─────────────────────────────────────────────────────────
 function RatesSection({ t }: { t: Copy }) {
   return (
-    <section id="rates" className="relative py-24 px-6 bg-[var(--tc-surface-1)]/30">
+    <section id="rates" className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] border-y border-[var(--tc-border)]">
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center mb-14">
-          <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
+          <div className="tc-chip mb-6">
             {t.rates.sectionTag}
           </div>
           <h2
-            className="text-3xl md:text-5xl font-700 mb-4 tracking-tight text-white"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 mb-4 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.rates.title}
@@ -1268,7 +1268,7 @@ function RatesSection({ t }: { t: Copy }) {
         </Reveal>
 
         <Reveal>
-          <div className="overflow-x-auto rounded-[var(--tc-radius-xl)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)]">
+          <div className="tc-card overflow-x-auto p-0">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[var(--tc-border)]">
@@ -1276,7 +1276,7 @@ function RatesSection({ t }: { t: Copy }) {
                     {/* role column header — empty intentionally */}
                     &nbsp;
                   </th>
-                  <th className="text-center p-4 md:p-5 text-[var(--tc-gold)] font-700 uppercase tracking-widest text-xs">
+                  <th className="text-center p-4 md:p-5 text-[var(--tc-blue-text)] font-700 uppercase tracking-widest text-xs">
                     {t.rates.colTezcode}
                   </th>
                   <th className="text-center p-4 md:p-5 text-[var(--tc-text-muted)] font-500 uppercase tracking-widest text-xs">
@@ -1294,11 +1294,11 @@ function RatesSection({ t }: { t: Copy }) {
                 {t.rates.rows.map((row, i) => (
                   <tr
                     key={i}
-                    className="border-b border-[var(--tc-border)] last:border-b-0 hover:bg-[var(--tc-surface-3)]/40 transition-colors"
+                    className="border-b border-[var(--tc-border)] last:border-b-0 hover:bg-[var(--tc-surface-2)] transition-colors"
                   >
-                    <td className="p-4 md:p-5 font-600 text-white">{row.role}</td>
+                    <td className="p-4 md:p-5 font-600 text-[var(--tc-text-primary)]">{row.role}</td>
                     <td className="p-4 md:p-5 text-center">
-                      <span className="inline-block px-3 py-1 rounded-full bg-[var(--tc-gold)]/15 border border-[var(--tc-gold)]/30 text-[var(--tc-gold)] font-700">
+                      <span className="inline-block px-3 py-1 rounded-full bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] font-700">
                         {row.tezcode}
                       </span>
                     </td>
@@ -1330,14 +1330,14 @@ function RatesSection({ t }: { t: Copy }) {
 // ─────────────────────────────────────────────────────────
 function HighlightsSection({ t }: { t: Copy }) {
   return (
-    <section className="relative py-24 px-6 bg-[var(--tc-ink)]">
+    <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-ink)]">
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center mb-14">
-          <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
+          <div className="tc-chip mb-6">
             {t.highlights.sectionTag}
           </div>
           <h2
-            className="text-3xl md:text-5xl font-700 mb-4 tracking-tight text-white"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 mb-4 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.highlights.title}
@@ -1351,15 +1351,15 @@ function HighlightsSection({ t }: { t: Copy }) {
           {t.highlights.items.map((item, i) => (
             <RevealItem key={i}>
               <Tilt3D intensity={6} className="h-full">
-                <div className="h-full p-7 rounded-[var(--tc-radius-xl)] border border-[var(--tc-border)] bg-gradient-to-br from-[var(--tc-surface-2)] to-[var(--tc-surface-1)] hover:border-[var(--tc-border-bright)] transition-colors">
+                <div className="tc-card tc-card-hover h-full p-7">
                   <div
-                    className="text-4xl font-800 tc-text-gradient-gold mb-4"
+                    className="text-4xl font-800 text-[var(--tc-blue-text)] mb-4"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {item.icon}
                   </div>
                   <h3
-                    className="text-xl font-700 text-white mb-2"
+                    className="text-xl font-700 text-[var(--tc-text-primary)] mb-2"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {item.title}
@@ -1382,14 +1382,14 @@ function HighlightsSection({ t }: { t: Copy }) {
 // ─────────────────────────────────────────────────────────
 function RolesSection({ t }: { t: Copy }) {
   return (
-    <section className="relative py-24 px-6 bg-[var(--tc-surface-1)]/30">
+    <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] border-y border-[var(--tc-border)]">
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center mb-14">
-          <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
+          <div className="tc-chip mb-6">
             {t.roles.sectionTag}
           </div>
           <h2
-            className="text-3xl md:text-5xl font-700 mb-4 tracking-tight text-white"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 mb-4 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.roles.title}
@@ -1406,15 +1406,15 @@ function RolesSection({ t }: { t: Copy }) {
           {t.roles.items.map((r, i) => (
             <RevealItem key={i}>
               <Tilt3D intensity={5} className="h-full">
-                <div className="h-full p-6 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-blue)]/60 transition-colors">
+                <div className="tc-card tc-card-hover h-full p-6">
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <h3
-                      className="text-lg font-700 text-white"
+                      className="text-lg font-700 text-[var(--tc-text-primary)]"
                       style={{ fontFamily: "var(--font-display)" }}
                     >
                       {r.title}
                     </h3>
-                    <span className="shrink-0 inline-block px-2.5 py-1 rounded-full bg-[var(--tc-blue)]/15 border border-[var(--tc-blue)]/30 text-[var(--tc-blue-text)] text-[11px] font-700">
+                    <span className="shrink-0 inline-block px-2.5 py-1 rounded-full bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] text-[11px] font-700">
                       {r.rate}
                     </span>
                   </div>
@@ -1436,14 +1436,14 @@ function RolesSection({ t }: { t: Copy }) {
 // ─────────────────────────────────────────────────────────
 function ModelsSection({ t }: { t: Copy }) {
   return (
-    <section className="relative py-24 px-6 bg-[var(--tc-ink)]">
+    <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-ink)]">
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center mb-14">
-          <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
+          <div className="tc-chip mb-6">
             {t.models.sectionTag}
           </div>
           <h2
-            className="text-3xl md:text-5xl font-700 mb-4 tracking-tight text-white"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 mb-4 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.models.title}
@@ -1464,17 +1464,17 @@ function ModelsSection({ t }: { t: Copy }) {
                 className={[
                   "relative p-8 rounded-[var(--tc-radius-xl)] h-full flex flex-col transition-colors",
                   m.highlight
-                    ? "border-2 border-[var(--tc-gold)] bg-gradient-to-br from-[var(--tc-surface-2)] to-[var(--tc-surface-1)] tc-glow-gold"
-                    : "border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-border-bright)]",
+                    ? "tc-navy-section shadow-[0_24px_60px_rgba(0,64,255,0.25)] md:scale-[1.03]"
+                    : "tc-card",
                 ].join(" ")}
               >
                 {m.highlight && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-[var(--tc-gold)] text-[var(--tc-ink)] text-[10px] font-700 uppercase tracking-[0.15em]">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-[var(--tc-blue)] text-white text-[10px] font-700 uppercase tracking-[0.15em]">
                     Most popular
                   </div>
                 )}
                 <h3
-                  className="text-2xl font-700 text-white mb-1"
+                  className="text-2xl font-700 text-[var(--tc-text-primary)] mb-1"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {m.name}
@@ -1482,9 +1482,7 @@ function ModelsSection({ t }: { t: Copy }) {
                 <p className="text-sm text-[var(--tc-text-muted)] mb-6">{m.tagline}</p>
                 <div className="mb-6 flex items-baseline gap-1">
                   <span
-                    className={`text-5xl font-800 ${
-                      m.highlight ? "tc-text-gradient-gold" : "text-white"
-                    }`}
+                    className="text-5xl font-800 text-[var(--tc-text-primary)]"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {m.price}
@@ -1496,9 +1494,9 @@ function ModelsSection({ t }: { t: Copy }) {
                     <li key={i} className="flex items-start gap-2 text-sm">
                       <svg
                         className={`w-4 h-4 mt-0.5 shrink-0 ${
-                          m.highlight ? "text-[var(--tc-gold)]" : "text-[var(--tc-blue-text)]"
+                          m.highlight ? "text-[#5b8cff]" : "text-[var(--tc-success)]"
                         }`}
-                        viewBox="0 0 16 16"
+                        viewBox="0 0 8 8"
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2.5"
@@ -1514,10 +1512,8 @@ function ModelsSection({ t }: { t: Copy }) {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={[
-                    "block w-full text-center px-5 py-3 rounded-[var(--tc-radius-md)] font-600 text-sm transition-colors",
-                    m.highlight
-                      ? "bg-[var(--tc-gold)] text-[var(--tc-ink)] hover:bg-[var(--tc-gold-light)]"
-                      : "border border-[var(--tc-border-bright)] text-white hover:bg-[var(--tc-surface-3)]",
+                    "w-full justify-center text-sm",
+                    m.highlight ? "tc-btn-primary" : "tc-btn-secondary",
                   ].join(" ")}
                 >
                   {t.models.cta}
@@ -1536,14 +1532,14 @@ function ModelsSection({ t }: { t: Copy }) {
 // ─────────────────────────────────────────────────────────
 function VettingSection({ t }: { t: Copy }) {
   return (
-    <section className="relative py-24 px-6 bg-[var(--tc-surface-1)]/30">
+    <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] border-y border-[var(--tc-border)]">
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center mb-14">
-          <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
+          <div className="tc-chip mb-6">
             {t.vetting.sectionTag}
           </div>
           <h2
-            className="text-3xl md:text-5xl font-700 mb-4 tracking-tight text-white"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 mb-4 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.vetting.title}
@@ -1559,15 +1555,15 @@ function VettingSection({ t }: { t: Copy }) {
         >
           {t.vetting.items.map((s, i) => (
             <RevealItem key={i}>
-              <div className="relative h-full p-6 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-gold)]/50 transition-colors">
+              <div className="tc-card tc-card-hover relative h-full p-6">
                 <div
-                  className="text-3xl font-800 tc-text-gradient-blue mb-3"
+                  className="w-12 h-12 rounded-full bg-[var(--tc-blue-dim)] flex items-center justify-center text-lg font-800 text-[var(--tc-blue-text)] mb-4"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {s.num}
                 </div>
                 <h3
-                  className="text-base font-700 text-white mb-2"
+                  className="text-base font-700 text-[var(--tc-text-primary)] mb-2"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {s.title}
@@ -1589,14 +1585,14 @@ function VettingSection({ t }: { t: Copy }) {
 // ─────────────────────────────────────────────────────────
 function TeamSection({ t }: { t: Copy }) {
   return (
-    <section id="team" className="relative py-24 px-6 bg-[var(--tc-ink)]">
+    <section id="team" className="relative py-20 sm:py-28 px-6 bg-[var(--tc-ink)]">
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center mb-14">
-          <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
+          <div className="tc-chip mb-6">
             {t.team.sectionTag}
           </div>
           <h2
-            className="text-3xl md:text-5xl font-700 mb-4 tracking-tight text-white"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 mb-4 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.team.title}
@@ -1613,10 +1609,10 @@ function TeamSection({ t }: { t: Copy }) {
           {t.team.profiles.map((p, i) => (
             <RevealItem key={i}>
               <Tilt3D intensity={7} className="h-full">
-                <div className="h-full p-6 rounded-[var(--tc-radius-xl)] border border-[var(--tc-border)] bg-gradient-to-br from-[var(--tc-surface-2)] to-[var(--tc-surface-1)]">
+                <div className="tc-card tc-card-hover h-full p-6">
                   <div className="flex items-center justify-between gap-2 mb-4">
-                    <span className="inline-flex items-center gap-1.5 text-[11px] font-600 text-emerald-400">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                    <span className="inline-flex items-center gap-1.5 text-[11px] font-600 text-[var(--tc-success)]">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[var(--tc-success)]" />
                       {p.badge}
                     </span>
                     <span className="text-[11px] text-[var(--tc-text-muted)] uppercase tracking-widest">
@@ -1625,9 +1621,9 @@ function TeamSection({ t }: { t: Copy }) {
                   </div>
 
                   {/* Avatar placeholder */}
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[var(--tc-blue)]/40 to-[var(--tc-gold)]/40 border border-[var(--tc-border-bright)] flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-[var(--tc-blue-dim)] flex items-center justify-center mb-4">
                     <svg
-                      className="w-7 h-7 text-white/60"
+                      className="w-6 h-6 text-[var(--tc-blue-text)]"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
@@ -1639,12 +1635,12 @@ function TeamSection({ t }: { t: Copy }) {
                   </div>
 
                   <h3
-                    className="text-lg font-700 text-white mb-1"
+                    className="text-lg font-700 text-[var(--tc-text-primary)] mb-1"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {p.role}
                   </h3>
-                  <div className="text-sm text-[var(--tc-gold)] font-700 mb-3">
+                  <div className="text-sm text-[var(--tc-blue-text)] font-700 mb-3">
                     {p.rate}
                   </div>
                   <p className="text-xs text-[var(--tc-text-secondary)] leading-relaxed">
@@ -1675,18 +1671,18 @@ function FAQSection({ t }: { t: Copy }) {
   const faqSchema = getFaqSchema(t.faq.items);
 
   return (
-    <section className="relative py-24 px-6 bg-[var(--tc-surface-1)]/30">
+    <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] border-y border-[var(--tc-border)]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div className="max-w-4xl mx-auto">
         <Reveal className="text-center mb-14">
-          <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
+          <div className="tc-chip mb-6">
             {t.faq.sectionTag}
           </div>
           <h2
-            className="text-3xl md:text-5xl font-700 mb-4 tracking-tight text-white"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 mb-4 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.faq.title}
@@ -1699,15 +1695,15 @@ function FAQSection({ t }: { t: Copy }) {
         <RevealStagger className="space-y-3" stagger={0.06}>
           {t.faq.items.map((item, i) => (
             <RevealItem key={i}>
-              <details className="group rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] open:border-[var(--tc-blue)]/40 transition-colors">
+              <details className="tc-card group open:border-[var(--tc-blue)] transition-colors">
                 <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer list-none">
                   <h3
-                    className="text-sm md:text-base font-600 text-white"
+                    className="text-sm md:text-base font-600 text-[var(--tc-text-primary)]"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {item.q}
                   </h3>
-                  <span className="shrink-0 w-7 h-7 rounded-full border border-[var(--tc-border-bright)] flex items-center justify-center text-[var(--tc-gold)] text-lg transition-transform group-open:rotate-45">
+                  <span className="shrink-0 w-7 h-7 rounded-full bg-[var(--tc-blue-dim)] flex items-center justify-center text-[var(--tc-blue-text)] text-lg transition-transform group-open:rotate-45">
                     +
                   </span>
                 </summary>
@@ -1728,22 +1724,22 @@ function FAQSection({ t }: { t: Copy }) {
 // ─────────────────────────────────────────────────────────
 function FinalCTASection({ t }: { t: Copy }) {
   return (
-    <section id="contact" className="relative py-28 px-6 bg-[var(--tc-ink)] overflow-hidden">
+    <section id="contact" className="tc-navy-section relative py-20 sm:py-28 px-6 overflow-hidden">
       <div
         aria-hidden
-        className="absolute inset-0 opacity-50"
+        className="absolute inset-0 pointer-events-none opacity-[0.35]"
         style={{
           background:
-            "radial-gradient(circle at 50% 50%, rgba(0,64,255,0.18), transparent 60%)",
+            "radial-gradient(ellipse 70% 55% at 50% 0%, rgba(0,64,255,0.45), transparent 70%)",
         }}
       />
       <div className="relative max-w-4xl mx-auto text-center">
         <Reveal>
-          <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
+          <div className="tc-chip mb-6">
             {t.finalCta.sectionTag}
           </div>
           <h2
-            className="text-3xl md:text-5xl font-700 mb-5 tracking-tight text-white"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 mb-5 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.finalCta.title}
@@ -1760,7 +1756,7 @@ function FinalCTASection({ t }: { t: Copy }) {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
-                className="group relative inline-flex w-full sm:w-auto px-9 py-4 rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] text-white font-semibold text-sm overflow-hidden tc-glow-blue items-center justify-center gap-2"
+                className="tc-btn-primary group w-full sm:w-auto justify-center gap-2"
               >
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
@@ -1775,14 +1771,14 @@ function FinalCTASection({ t }: { t: Copy }) {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="inline-flex w-full sm:w-auto px-9 py-4 rounded-[var(--tc-radius-md)] border border-[var(--tc-border-bright)] bg-[var(--tc-surface-1)]/40 backdrop-blur-md text-[var(--tc-text-primary)] font-semibold text-sm hover:bg-[var(--tc-surface-2)] transition-colors items-center justify-center gap-2"
+                className="tc-btn-secondary w-full sm:w-auto justify-center gap-2"
               >
                 {t.finalCta.ctaSecondary}
               </motion.a>
             </Magnetic>
           </div>
 
-          <p className="text-xs text-[var(--tc-gold)] font-500">{t.finalCta.trust}</p>
+          <p className="text-sm text-[var(--tc-text-muted)] font-500">{t.finalCta.trust}</p>
         </Reveal>
       </div>
     </section>

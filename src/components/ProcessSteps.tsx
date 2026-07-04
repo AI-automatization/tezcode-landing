@@ -41,7 +41,7 @@ const HEADER: Record<Lang, { badge: string; title: string; titleHighlight: strin
   },
 };
 
-const STEPS: { num: string; titleUz: string; titleRu: string; titleEn: string; descUz: string; descRu: string; descEn: string; icon: LucideIcon; color: string }[] = [
+const STEPS: { num: string; titleUz: string; titleRu: string; titleEn: string; descUz: string; descRu: string; descEn: string; icon: LucideIcon }[] = [
   {
     num: "01",
     titleUz: "Tushunamiz",
@@ -51,7 +51,6 @@ const STEPS: { num: string; titleUz: string; titleRu: string; titleEn: string; d
     descRu: "Изучаем бизнес и находим возможности. 1 день.",
     descEn: "We map your business and spot opportunities. 1 day.",
     icon: Search,
-    color: "blue",
   },
   {
     num: "02",
@@ -62,7 +61,6 @@ const STEPS: { num: string; titleUz: string; titleRu: string; titleEn: string; d
     descRu: "Создаём решение под ваш бренд. 2-3 дня.",
     descEn: "We design a solution tailored to your brand. 2-3 days.",
     icon: Palette,
-    color: "gold",
   },
   {
     num: "03",
@@ -73,7 +71,6 @@ const STEPS: { num: string; titleUz: string; titleRu: string; titleEn: string; d
     descRu: "Разрабатываем с помощью AI. 5-10 дней.",
     descEn: "We ship fast with AI engineers. 5-10 days.",
     icon: Zap,
-    color: "purple",
   },
   {
     num: "04",
@@ -84,32 +81,18 @@ const STEPS: { num: string; titleUz: string; titleRu: string; titleEn: string; d
     descRu: "Деплой + 30 дней бесплатной поддержки.",
     descEn: "Production deploy + 30 days free support.",
     icon: Rocket,
-    color: "emerald",
   },
 ];
 
-const COLOR_MAP: Record<string, { text: string; ring: string; glow: string }> = {
-  blue: {
-    text: "text-[var(--tc-blue-text)]",
-    ring: "border-[var(--tc-blue)]/40",
-    glow: "rgba(0,64,255,0.18)",
-  },
-  gold: {
-    text: "text-[var(--tc-gold)]",
-    ring: "border-[var(--tc-gold)]/40",
-    glow: "rgba(212,160,23,0.18)",
-  },
-  purple: {
-    text: "text-purple-400",
-    ring: "border-purple-400/40",
-    glow: "rgba(168,85,247,0.18)",
-  },
-  emerald: {
-    text: "text-emerald-400",
-    ring: "border-emerald-400/40",
-    glow: "rgba(52,211,153,0.18)",
-  },
-};
+// Pull a trailing timing mention ("1 kun." / "2-3 дня." / "5-10 days.")
+// out of the description so it can render as a muted pill.
+const TIMING_RE = /^(.*?)(\d[\d\s\-–]*\s*(?:kun|день|дня|дней|day|days))\.?\s*$/i;
+
+function splitTiming(desc: string): { body: string; timing: string | null } {
+  const m = desc.match(TIMING_RE);
+  if (!m) return { body: desc, timing: null };
+  return { body: m[1].trim(), timing: m[2].trim() };
+}
 
 export function ProcessSteps() {
   const locale = useLocale() as Lang;
@@ -127,34 +110,29 @@ export function ProcessSteps() {
   }
 
   return (
-    <section className="relative py-32 px-6 bg-[var(--tc-surface-1)] overflow-hidden">
-      <div className="max-w-7xl mx-auto relative z-10">
-        <Reveal className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-gold)]/10 border border-[var(--tc-gold)]/30 text-xs font-500 text-[var(--tc-gold)] mb-6 uppercase tracking-[0.2em]">
-            {h.badge}
+    <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] border-y border-[var(--tc-border)]">
+      <div className="max-w-7xl mx-auto">
+        <Reveal className="text-center mb-16">
+          <div className="mb-6 flex justify-center">
+            <span className="tc-chip">{h.badge}</span>
           </div>
           <h2
-            className="text-4xl md:text-6xl font-700 mb-4 tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 mb-4 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {h.title}{" "}
-            <span className="tc-text-gradient-gold">{h.titleHighlight}</span>
+            <span className="text-[var(--tc-blue-text)]">{h.titleHighlight}</span>
           </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--tc-text-muted)] max-w-2xl mx-auto leading-relaxed">
             {h.subtitle}
           </p>
         </Reveal>
 
-        {/* Connecting line — desktop */}
         <div className="relative">
+          {/* Connecting dashed line — desktop, behind the number circles */}
           <div
             aria-hidden
-            className="hidden lg:block absolute top-12 left-[12.5%] right-[12.5%] h-px"
-            style={{
-              background:
-                "linear-gradient(90deg, var(--tc-blue), var(--tc-gold), rgb(168,85,247), rgb(52,211,153))",
-              opacity: 0.4,
-            }}
+            className="hidden lg:block absolute top-12 left-[12.5%] right-[12.5%] border-t border-dashed border-[var(--tc-border-bright)]"
           />
 
           <RevealStagger
@@ -162,44 +140,40 @@ export function ProcessSteps() {
             stagger={0.15}
           >
             {STEPS.map((step) => {
-              const c = COLOR_MAP[step.color];
+              const Icon = step.icon;
+              const { body, timing } = splitTiming(getDesc(step));
               return (
                 <RevealItem key={step.num}>
                   <motion.div
-                    whileHover={{ y: -6 }}
-                    className="group relative p-6 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-border-bright)] transition-colors h-full"
+                    whileHover={{ y: -4 }}
+                    className="tc-card tc-card-hover relative p-6 h-full"
                   >
-                    <div
-                      aria-hidden
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-[var(--tc-radius-lg)]"
-                      style={{
-                        background: `radial-gradient(ellipse at top, ${c.glow}, transparent 70%)`,
-                      }}
-                    />
-
-                    <div className="relative flex items-center gap-4 mb-5">
-                      <div
-                        className={`w-14 h-14 rounded-full bg-[var(--tc-surface-0)] border-2 ${c.ring} flex items-center justify-center`}
-                      >
-                        {(() => { const Icon = step.icon; return <Icon className="w-6 h-6 text-white" />; })()}
+                    <div className="flex items-center justify-between mb-5">
+                      <div className="w-12 h-12 rounded-full bg-[var(--tc-blue-dim)] flex items-center justify-center">
+                        <span
+                          className="text-lg font-800 text-[var(--tc-blue-text)]"
+                          style={{ fontFamily: "var(--font-display)" }}
+                        >
+                          {step.num}
+                        </span>
                       </div>
-                      <span
-                        className={`text-4xl font-800 ${c.text} opacity-30`}
-                        style={{ fontFamily: "var(--font-display)" }}
-                      >
-                        {step.num}
-                      </span>
+                      <Icon className="w-5 h-5 text-[var(--tc-text-muted)]" strokeWidth={1.75} />
                     </div>
 
                     <h3
-                      className="relative text-xl font-700 text-white mb-2 tracking-tight"
+                      className="text-lg font-700 text-[var(--tc-text-primary)] mb-2 tracking-tight"
                       style={{ fontFamily: "var(--font-display)" }}
                     >
                       {getTitle(step)}
                     </h3>
-                    <p className="relative text-sm text-[var(--tc-text-secondary)] leading-relaxed">
-                      {getDesc(step)}
+                    <p className="text-sm text-[var(--tc-text-secondary)] leading-relaxed">
+                      {body}
                     </p>
+                    {timing && (
+                      <span className="mt-4 inline-flex items-center rounded-full border border-[var(--tc-border)] bg-[var(--tc-surface-2)] px-3 py-1 text-xs font-500 text-[var(--tc-text-muted)]">
+                        {timing}
+                      </span>
+                    )}
                   </motion.div>
                 </RevealItem>
               );

@@ -32,7 +32,7 @@ function buildLlmsTxt(): string {
 - Joylashuv: Toshkent, O'zbekiston
 - Xizmat hududi: O'zbekiston, Rossiya, Qozog'iston, Tojikiston, Qirg'iziston, Turkmaniston
 - Til: o'zbek, rus, ingliz, arab, ukrain
-- Aloqa: tezcode@tezcode.dev | Telegram: https://t.me/webdevelopertk
+- Aloqa: tezcode@tezcode.dev | Telegram: https://t.me/tezcode_managament
 
 ## Xizmatlar
 
@@ -110,7 +110,7 @@ etgan; RAOS, CoreMed/ClinicaGo, WeWatch va WorkControl mahsulotlari ortidagi
 ## Aloqa
 
 - Email: tezcode@tezcode.dev
-- Telegram: https://t.me/webdevelopertk
+- Telegram: https://t.me/tezcode_managament
 - Instagram: https://www.instagram.com/tezcode_dev/
 - LinkedIn: https://www.linkedin.com/company/tezcode-dev
 - GitHub: https://github.com/AI-automatization

@@ -18,10 +18,18 @@ const ROUTES = [
   { path: "/xodim-nazorati", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/biznes-avtomatlashtirish", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/it-xizmatlar", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/tezcode-systems", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/tezcode-custom", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/tezcode-labs", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/tezcode-academy", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/tariflar", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/aloqa", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/biz-haqimizda", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/blog", priority: 0.8, changeFrequency: "weekly" as const },
   { path: "/tools", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/tools/free-code-review", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/tools/free-mvp-roadmap", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/tools/roi-calculator", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/case-studies", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/case-studies/aziz-electronics", priority: 0.7, changeFrequency: "yearly" as const },
   { path: "/case-studies/dilfuza-grocery", priority: 0.7, changeFrequency: "yearly" as const },
@@ -59,21 +67,30 @@ function buildUrl(locale: string, path: string): string {
   return `${prefix}${path}`;
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+// One sitemap per locale (served at /sitemap/<locale>.xml) so each language
+// can be submitted and monitored separately in Search Console instead of one
+// 285-URL blob. Every entry still carries the full hreflang alternate set.
+export async function generateSitemaps() {
+  return LOCALES.map((locale) => ({ id: locale }));
+}
+
+export default async function sitemap(props: {
+  id: Promise<string>;
+}): Promise<MetadataRoute.Sitemap> {
+  const id = await props.id;
+  const locale = (LOCALES as readonly string[]).includes(id) ? id : "uz";
   const now = new Date();
 
-  return ROUTES.flatMap((route) =>
-    LOCALES.map((locale) => ({
-      url: buildUrl(locale, route.path),
-      lastModified: now,
-      changeFrequency: route.changeFrequency,
-      // Slight preference for default locale (uz) over translations
-      priority: locale === "uz" ? route.priority : Math.max(0.1, route.priority - 0.1),
-      alternates: {
-        languages: Object.fromEntries(
-          LOCALES.map((l) => [l, buildUrl(l, route.path)]),
-        ),
-      },
-    })),
-  );
+  return ROUTES.map((route) => ({
+    url: buildUrl(locale, route.path),
+    lastModified: now,
+    changeFrequency: route.changeFrequency,
+    // Slight preference for default locale (uz) over translations
+    priority: locale === "uz" ? route.priority : Math.max(0.1, route.priority - 0.1),
+    alternates: {
+      languages: Object.fromEntries(
+        LOCALES.map((l) => [l, buildUrl(l, route.path)]),
+      ),
+    },
+  }));
 }

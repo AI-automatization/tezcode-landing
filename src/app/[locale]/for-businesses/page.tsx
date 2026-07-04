@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion } from "motion/react";
+import { Check } from "lucide-react";
 import { useLocale } from "next-intl";
 import { useState } from "react";
 import { Navbar } from "@/components/Navbar";
@@ -183,7 +184,7 @@ const COPY: Record<Lang, Copy> = {
         {
           icon: "message-circle",
           title: "CEO o'zi Telegram'da, 24/7",
-          desc: "Bekzod Mirzaaliyev (CEO) — @webdevelopertk. Muammo chiqsa to'g'ri unga yozasiz. Support tickets (yordam so'rovlari) buyurokratiya yo'q. 30 daq ichida javob.",
+          desc: "Bekzod Mirzaaliyev (CEO) — @tezcode_managament. Muammo chiqsa to'g'ri unga yozasiz. Support tickets (yordam so'rovlari) buyurokratiya yo'q. 30 daq ichida javob.",
         },
       ],
     },
@@ -437,7 +438,7 @@ const COPY: Record<Lang, Copy> = {
         {
           icon: "message-circle",
           title: "CEO лично в Telegram, 24/7",
-          desc: "Бекзод Мирзаалиев (CEO) — @webdevelopertk. Проблема — пишете напрямую ему. Без тикетов и бюрократии. Ответ за 30 минут.",
+          desc: "Бекзод Мирзаалиев (CEO) — @tezcode_managament. Проблема — пишете напрямую ему. Без тикетов и бюрократии. Ответ за 30 минут.",
         },
       ],
     },
@@ -690,7 +691,7 @@ const COPY: Record<Lang, Copy> = {
         {
           icon: "message-circle",
           title: "CEO on Telegram, 24/7",
-          desc: "Bekzod Mirzaaliyev (CEO) — @webdevelopertk. Got a problem? Message him directly. No tickets, no bureaucracy. Reply in 30 minutes.",
+          desc: "Bekzod Mirzaaliyev (CEO) — @tezcode_managament. Got a problem? Message him directly. No tickets, no bureaucracy. Reply in 30 minutes.",
         },
       ],
     },
@@ -942,7 +943,7 @@ const COPY: Record<Lang, Copy> = {
         {
           icon: "message-circle",
           title: "CEO على Telegram، 24/7",
-          desc: "بكزود ميرزااليف (CEO) — @webdevelopertk. مشكلة؟ راسله مباشرة. بلا تذاكر وبيروقراطية.",
+          desc: "بكزود ميرزااليف (CEO) — @tezcode_managament. مشكلة؟ راسله مباشرة. بلا تذاكر وبيروقراطية.",
         },
       ],
     },
@@ -1192,7 +1193,7 @@ const COPY: Record<Lang, Copy> = {
         {
           icon: "message-circle",
           title: "CEO у Telegram, 24/7",
-          desc: "Бекзод Мірзаалієв (CEO) — @webdevelopertk. Проблема — пишете напряму. Відповідь за 30 хв.",
+          desc: "Бекзод Мірзаалієв (CEO) — @tezcode_managament. Проблема — пишете напряму. Відповідь за 30 хв.",
         },
       ],
     },
@@ -1385,7 +1386,7 @@ const PARTNERS: { name: string; sector: string }[] = [
   { name: "CoreMed", sector: "Healthcare" },
   { name: "OpenClaw", sector: "AI Office" },
   { name: "Ventra", sector: "Analytics" },
-  { name: "Savdo-Builder", sector: "No-code" },
+  { name: "MaxSavdo", sector: "No-code" },
   { name: "Work-Control", sector: "HR Tech" },
 ];
 
@@ -1393,46 +1394,11 @@ const PARTNERS: { name: string; sector: string }[] = [
 // Section: Hero (with parallax mesh)
 // ─────────────────────────────────────────────────────────────────────
 function HeroSection({ copy }: { copy: Copy }) {
-  const { scrollY } = useScroll();
-  const meshY = useTransform(scrollY, [0, 600], ["0%", "30%"]);
-  const meshOpacity = useTransform(scrollY, [0, 500], [1, 0.3]);
-  const titleY = useTransform(scrollY, [0, 600], [0, 120]);
-  const titleOpacity = useTransform(scrollY, [0, 500], [1, 0]);
-
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-16 overflow-hidden tc-perspective">
-      {/* Parallax mesh background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          style={{ y: meshY, opacity: meshOpacity }}
-          className="absolute inset-0"
-        >
-          <div
-            className="absolute -top-1/4 -left-1/4 w-[150%] h-[150%] opacity-[0.20]"
-            style={{
-              background:
-                "conic-gradient(from 0deg at 50% 50%, var(--tc-blue) 0deg, transparent 60deg, var(--tc-gold) 180deg, transparent 240deg, var(--tc-blue) 360deg)",
-              filter: "blur(80px)",
-              animation: "tc-conic-spin 40s linear infinite",
-            }}
-          />
-        </motion.div>
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-[0.05]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)",
-            backgroundSize: "80px 80px",
-            animation: "tc-grid-pan 30s linear infinite",
-          }}
-        />
-      </div>
+    <section className="relative pt-36 pb-20 overflow-hidden">
+      <div aria-hidden className="tc-grid-bg absolute inset-0 pointer-events-none" />
 
-      <motion.div
-        style={{ y: titleY, opacity: titleOpacity }}
-        className="relative z-10 max-w-6xl mx-auto px-6 text-center"
-      >
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{
@@ -1440,12 +1406,12 @@ function HeroSection({ copy }: { copy: Copy }) {
             y: 0,
             transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const },
           }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[var(--tc-border-bright)] bg-[var(--tc-surface-1)]/60 backdrop-blur-md text-xs font-medium text-[var(--tc-text-secondary)] mb-8"
+          className="tc-chip mb-8"
         >
           <motion.span
             animate={{ opacity: [0.4, 1, 0.4] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="w-1.5 h-1.5 rounded-full bg-[var(--tc-gold)]"
+            className="w-1.5 h-1.5 rounded-full bg-[var(--tc-blue)]"
           />
           {copy.hero.badge}
         </motion.div>
@@ -1458,11 +1424,11 @@ function HeroSection({ copy }: { copy: Copy }) {
             filter: "blur(0px)",
             transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] as const, delay: 0.1 },
           }}
-          className="text-[clamp(2.5rem,7vw,6.5rem)] font-800 leading-[0.95] tracking-[-0.03em] mb-8"
+          className="text-4xl sm:text-5xl lg:text-6xl font-800 leading-[1.05] tracking-tight mb-8"
           style={{ fontFamily: "var(--font-display)" }}
         >
           <span className="block text-[var(--tc-text-primary)]">{copy.hero.title1}</span>
-          <span className="tc-text-gradient-blue block">{copy.hero.titleAccent}</span>
+          <span className="block text-[var(--tc-blue-text)]">{copy.hero.titleAccent}</span>
           <span className="block text-[var(--tc-text-primary)]">{copy.hero.title2}</span>
         </motion.h1>
 
@@ -1484,8 +1450,9 @@ function HeroSection({ copy }: { copy: Copy }) {
             opacity: 1,
             transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const, delay: 0.4 },
           }}
-          className="text-sm md:text-base text-[var(--tc-gold)] font-500 mb-12"
+          className="inline-flex items-center justify-center gap-2 text-sm md:text-base text-[var(--tc-text-muted)] font-500 mb-12"
         >
+          <Check className="w-4 h-4 shrink-0 text-[var(--tc-success)]" />
           {copy.hero.trust}
         </motion.p>
 
@@ -1503,7 +1470,7 @@ function HeroSection({ copy }: { copy: Copy }) {
               href="#consult"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="group relative inline-flex w-full sm:w-auto px-9 py-4 rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] text-white font-semibold text-sm overflow-hidden tc-glow-blue"
+              className="tc-btn-primary group relative w-full sm:w-auto text-sm"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
                 {copy.hero.ctaPrimary}
@@ -1518,27 +1485,13 @@ function HeroSection({ copy }: { copy: Copy }) {
               href="#portfolio"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="inline-flex w-full sm:w-auto px-9 py-4 rounded-[var(--tc-radius-md)] border border-[var(--tc-border-bright)] bg-[var(--tc-surface-1)]/40 backdrop-blur-md text-[var(--tc-text-primary)] font-semibold text-sm hover:bg-[var(--tc-surface-2)] transition-colors items-center justify-center gap-2"
+              className="tc-btn-secondary w-full sm:w-auto text-sm"
             >
               {copy.hero.ctaSecondary}
             </motion.a>
           </Magnetic>
         </motion.div>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.6 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-      >
-        <span className="text-[var(--tc-text-muted)] text-xs tracking-[0.3em] uppercase">scroll</span>
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-          className="w-px h-12 bg-gradient-to-b from-[var(--tc-border-bright)] to-transparent"
-        />
-      </motion.div>
+      </div>
     </section>
   );
 }
@@ -1548,20 +1501,20 @@ function HeroSection({ copy }: { copy: Copy }) {
 // ─────────────────────────────────────────────────────────────────────
 function ProblemsSection({ copy }: { copy: Copy }) {
   return (
-    <section className="relative py-32 px-6 bg-[var(--tc-surface-1)] overflow-hidden">
+    <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] border-y border-[var(--tc-border)] overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <Reveal className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-xs font-500 text-red-300 mb-6 uppercase tracking-[0.2em]">
-            {copy.problems.badge}
+          <div className="mb-6">
+            <span className="tc-chip">{copy.problems.badge}</span>
           </div>
           <h2
-            className="text-4xl md:text-6xl font-700 mb-4 tracking-tight leading-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--tc-text-primary)] mb-4 tracking-tight leading-tight"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {copy.problems.title}{" "}
-            <span className="tc-text-gradient-gold">{copy.problems.titleAccent}</span>
+            <span className="text-[var(--tc-blue-text)]">{copy.problems.titleAccent}</span>
           </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl">
+          <p className="text-[var(--tc-text-muted)] text-lg md:text-xl">
             {copy.problems.subtitle}
           </p>
         </Reveal>
@@ -1573,17 +1526,9 @@ function ProblemsSection({ copy }: { copy: Copy }) {
           {copy.problems.items.map((item) => (
             <RevealItem key={item.tag}>
               <Tilt3D intensity={5} className="rounded-[var(--tc-radius-lg)]">
-                <div className="relative h-full p-8 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-red-500/30 transition-colors overflow-hidden">
-                  <div
-                    aria-hidden
-                    className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                    style={{
-                      background:
-                        "radial-gradient(ellipse at top right, rgba(239,68,68,0.10), transparent 70%)",
-                    }}
-                  />
+                <div className="tc-card tc-card-hover relative h-full p-8 overflow-hidden">
                   <span
-                    className="absolute top-6 right-6 text-5xl font-800 text-red-500/15 select-none"
+                    className="absolute top-6 right-6 text-5xl font-800 text-[var(--tc-blue-text)] opacity-15 select-none"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {item.tag}
@@ -1612,25 +1557,20 @@ function ProblemsSection({ copy }: { copy: Copy }) {
 // ─────────────────────────────────────────────────────────────────────
 function BenefitsSection({ copy }: { copy: Copy }) {
   return (
-    <section className="relative py-32 px-6 bg-[var(--tc-ink)] overflow-hidden">
-      <div
-        aria-hidden
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full bg-gradient-to-b from-transparent via-[var(--tc-border)] to-transparent"
-      />
-
+    <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-ink)] overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <Reveal className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue-light)] mb-6 uppercase tracking-[0.2em]">
-            {copy.benefits.badge}
+          <div className="mb-6">
+            <span className="tc-chip">{copy.benefits.badge}</span>
           </div>
           <h2
-            className="text-4xl md:text-6xl font-700 mb-4 tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--tc-text-primary)] mb-4 tracking-tight"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {copy.benefits.title}{" "}
-            <span className="tc-text-gradient-blue">{copy.benefits.titleAccent}</span>
+            <span className="text-[var(--tc-blue-text)]">{copy.benefits.titleAccent}</span>
           </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl">
+          <p className="text-[var(--tc-text-muted)] text-lg md:text-xl">
             {copy.benefits.subtitle}
           </p>
         </Reveal>
@@ -1642,21 +1582,13 @@ function BenefitsSection({ copy }: { copy: Copy }) {
           {copy.benefits.items.map((item, i) => (
             <RevealItem key={i} className={i % 2 === 1 ? "md:mt-12" : ""}>
               <Tilt3D intensity={6} className="rounded-[var(--tc-radius-xl)]">
-                <div className="relative h-full p-8 md:p-10 rounded-[var(--tc-radius-xl)] border border-[var(--tc-border)] bg-[var(--tc-surface-1)] hover:border-[var(--tc-border-bright)] transition-colors overflow-hidden">
-                  <div
-                    aria-hidden
-                    className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                    style={{
-                      background:
-                        "radial-gradient(ellipse at 30% 50%, rgba(0,64,255,0.14), transparent 70%)",
-                    }}
-                  />
+                <div className="tc-card tc-card-hover relative h-full p-8 md:p-10 overflow-hidden">
                   <motion.div
                     whileHover={{ rotate: -6, scale: 1.1 }}
-                    className="relative w-16 h-16 rounded-[var(--tc-radius-md)] bg-gradient-to-br from-[var(--tc-blue)] to-blue-700 flex items-center justify-center mb-6"
+                    className="relative w-12 h-12 rounded-xl bg-[var(--tc-blue-dim)] flex items-center justify-center mb-6"
                     style={{ transform: "translateZ(40px)" }}
                   >
-                    <ServiceIcon name={item.icon} />
+                    <ServiceIcon name={item.icon} className="w-6 h-6 text-[var(--tc-blue-text)]" />
                   </motion.div>
                   <h3
                     className="relative text-2xl md:text-3xl font-700 text-[var(--tc-text-primary)] mb-3 tracking-tight"
@@ -1690,21 +1622,21 @@ function PortfolioSection({ copy, locale }: { copy: Copy; locale: Lang }) {
   return (
     <section
       id="portfolio"
-      className="relative py-32 px-6 bg-[var(--tc-surface-1)] overflow-hidden"
+      className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] border-y border-[var(--tc-border)] overflow-hidden"
     >
       <div className="max-w-7xl mx-auto relative z-10">
         <Reveal className="max-w-3xl mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-gold)]/10 border border-[var(--tc-gold)]/30 text-xs font-500 text-[var(--tc-gold)] mb-6 uppercase tracking-[0.2em]">
-            {copy.portfolio.badge}
+          <div className="mb-6">
+            <span className="tc-chip">{copy.portfolio.badge}</span>
           </div>
           <h2
-            className="text-4xl md:text-6xl font-700 mb-4 tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--tc-text-primary)] mb-4 tracking-tight"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {copy.portfolio.title}{" "}
-            <span className="tc-text-gradient-gold">{copy.portfolio.titleAccent}</span>
+            <span className="text-[var(--tc-blue-text)]">{copy.portfolio.titleAccent}</span>
           </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl">
+          <p className="text-[var(--tc-text-muted)] text-lg md:text-xl">
             {copy.portfolio.subtitle}
           </p>
         </Reveal>
@@ -1718,8 +1650,8 @@ function PortfolioSection({ copy, locale }: { copy: Copy; locale: Lang }) {
             return (
               <RevealItem key={item.slug}>
                 <Tilt3D intensity={6} className="rounded-[var(--tc-radius-lg)] h-full">
-                  <div className="relative h-full p-8 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-gold)]/30 transition-colors flex flex-col">
-                    <div className="text-xs uppercase tracking-[0.25em] text-[var(--tc-gold)] mb-3">
+                  <div className="tc-card tc-card-hover relative h-full p-8 flex flex-col">
+                    <div className="text-xs font-600 uppercase tracking-[0.25em] text-[var(--tc-blue-text)] mb-3">
                       {copy.portfolio.caseLabel}
                     </div>
                     <h3
@@ -1748,7 +1680,7 @@ function PortfolioSection({ copy, locale }: { copy: Copy; locale: Lang }) {
                         <div className="text-xs text-[var(--tc-text-muted)] uppercase tracking-wider mb-1">
                           {copy.portfolio.savedLabel}
                         </div>
-                        <div className="text-sm font-600 text-emerald-400">
+                        <div className="text-sm font-600 text-[var(--tc-success)]">
                           {item.saved}
                         </div>
                       </div>
@@ -1758,7 +1690,7 @@ function PortfolioSection({ copy, locale }: { copy: Copy; locale: Lang }) {
                       {item.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-2.5 py-1 rounded-full text-[10px] font-500 bg-[var(--tc-surface-3)] text-[var(--tc-text-secondary)] border border-[var(--tc-border)]"
+                          className="px-2.5 py-1 rounded-full text-[10px] font-500 bg-[var(--tc-surface-2)] text-[var(--tc-text-secondary)] border border-[var(--tc-border)]"
                         >
                           {tag}
                         </span>
@@ -1767,7 +1699,7 @@ function PortfolioSection({ copy, locale }: { copy: Copy; locale: Lang }) {
 
                     <a
                       href={fullCaseHref}
-                      className="inline-flex items-center gap-1.5 text-sm font-600 text-[var(--tc-blue-light)] hover:text-[var(--tc-gold)] transition-colors tc-link-underline w-fit"
+                      className="inline-flex items-center gap-1.5 text-sm font-600 text-[var(--tc-blue-text)] hover:text-[var(--tc-blue)] transition-colors tc-link-underline w-fit"
                     >
                       {copy.portfolio.fullCase}
                       <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
@@ -1789,28 +1721,21 @@ function PortfolioSection({ copy, locale }: { copy: Copy; locale: Lang }) {
 // Section: Process timeline
 // ─────────────────────────────────────────────────────────────────────
 function ProcessSection({ copy }: { copy: Copy }) {
-  const STEP_COLORS = [
-    { text: "text-[var(--tc-blue-text)]", ring: "border-[var(--tc-blue)]/40", glow: "rgba(0,64,255,0.18)" },
-    { text: "text-[var(--tc-gold)]", ring: "border-[var(--tc-gold)]/40", glow: "rgba(212,160,23,0.18)" },
-    { text: "text-purple-400", ring: "border-purple-400/40", glow: "rgba(168,85,247,0.18)" },
-    { text: "text-emerald-400", ring: "border-emerald-400/40", glow: "rgba(52,211,153,0.18)" },
-  ];
-
   return (
-    <section className="relative py-32 px-6 bg-[var(--tc-ink)] overflow-hidden">
+    <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-ink)] overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <Reveal className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-gold)]/10 border border-[var(--tc-gold)]/30 text-xs font-500 text-[var(--tc-gold)] mb-6 uppercase tracking-[0.2em]">
-            {copy.process.badge}
+          <div className="mb-6">
+            <span className="tc-chip">{copy.process.badge}</span>
           </div>
           <h2
-            className="text-4xl md:text-6xl font-700 mb-4 tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--tc-text-primary)] mb-4 tracking-tight"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {copy.process.title}{" "}
-            <span className="tc-text-gradient-gold">{copy.process.titleAccent}</span>
+            <span className="text-[var(--tc-blue-text)]">{copy.process.titleAccent}</span>
           </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="text-[var(--tc-text-muted)] text-lg md:text-xl max-w-2xl mx-auto">
             {copy.process.subtitle}
           </p>
         </Reveal>
@@ -1818,42 +1743,29 @@ function ProcessSection({ copy }: { copy: Copy }) {
         <div className="relative">
           <div
             aria-hidden
-            className="hidden lg:block absolute top-12 left-[12.5%] right-[12.5%] h-px"
-            style={{
-              background:
-                "linear-gradient(90deg, var(--tc-blue), var(--tc-gold), rgb(168,85,247), rgb(52,211,153))",
-              opacity: 0.4,
-            }}
+            className="hidden lg:block absolute top-12 left-[12.5%] right-[12.5%] border-t border-dashed border-[var(--tc-border-bright)]"
           />
 
           <RevealStagger
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
             stagger={0.15}
           >
-            {copy.process.steps.map((step, i) => {
-              const c = STEP_COLORS[i] ?? STEP_COLORS[0];
+            {copy.process.steps.map((step) => {
               return (
                 <RevealItem key={step.num}>
                   <motion.div
                     whileHover={{ y: -6 }}
-                    className="group relative p-6 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-border-bright)] transition-colors h-full"
+                    className="tc-card group relative p-6 h-full"
                   >
-                    <div
-                      aria-hidden
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-[var(--tc-radius-lg)]"
-                      style={{
-                        background: `radial-gradient(ellipse at top, ${c.glow}, transparent 70%)`,
-                      }}
-                    />
-
                     <div className="relative flex items-center gap-4 mb-5">
-                      <div
-                        className={`w-14 h-14 rounded-full bg-[var(--tc-surface-0)] border-2 ${c.ring} flex items-center justify-center`}
-                      >
-                        <ServiceIcon name={step.icon} />
+                      <div className="w-12 h-12 rounded-xl bg-[var(--tc-blue-dim)] flex items-center justify-center">
+                        <ServiceIcon
+                          name={step.icon}
+                          className="w-6 h-6 text-[var(--tc-blue-text)]"
+                        />
                       </div>
                       <span
-                        className={`text-4xl font-800 ${c.text} opacity-30`}
+                        className="text-4xl font-800 text-[var(--tc-blue-text)] opacity-30"
                         style={{ fontFamily: "var(--font-display)" }}
                       >
                         {step.num}
@@ -1861,7 +1773,7 @@ function ProcessSection({ copy }: { copy: Copy }) {
                     </div>
 
                     <h3
-                      className="relative text-xl font-700 text-white mb-2 tracking-tight"
+                      className="relative text-xl font-700 text-[var(--tc-text-primary)] mb-2 tracking-tight"
                       style={{ fontFamily: "var(--font-display)" }}
                     >
                       {step.title}
@@ -1885,20 +1797,20 @@ function ProcessSection({ copy }: { copy: Copy }) {
 // ─────────────────────────────────────────────────────────────────────
 function PricingSection({ copy }: { copy: Copy }) {
   return (
-    <section className="relative py-32 px-6 bg-[var(--tc-surface-1)] overflow-hidden">
+    <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] border-y border-[var(--tc-border)] overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <Reveal className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs font-500 text-emerald-300 mb-6 uppercase tracking-[0.2em]">
-            {copy.pricing.badge}
+          <div className="mb-6">
+            <span className="tc-chip">{copy.pricing.badge}</span>
           </div>
           <h2
-            className="text-4xl md:text-6xl font-700 mb-4 tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--tc-text-primary)] mb-4 tracking-tight"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {copy.pricing.title}{" "}
-            <span className="tc-text-gradient-blue">{copy.pricing.titleAccent}</span>
+            <span className="text-[var(--tc-blue-text)]">{copy.pricing.titleAccent}</span>
           </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl">
+          <p className="text-[var(--tc-text-muted)] text-lg md:text-xl">
             {copy.pricing.subtitle}
           </p>
         </Reveal>
@@ -1918,11 +1830,10 @@ function PricingSection({ copy }: { copy: Copy }) {
                   <div
                     className={[
                       "relative h-full p-8 md:p-10 rounded-[var(--tc-radius-xl)]",
-                      "bg-[var(--tc-surface-2)] overflow-hidden flex flex-col",
+                      "overflow-hidden flex flex-col",
                       featured
-                        ? "border-2 border-[var(--tc-blue)] tc-glow-blue"
-                        : "border border-[var(--tc-border)] hover:border-[var(--tc-border-bright)]",
-                      "transition-colors duration-500",
+                        ? "tc-navy-section lg:scale-[1.03] shadow-[0_24px_60px_rgba(0,64,255,0.25)]"
+                        : "tc-card tc-card-hover",
                     ].join(" ")}
                   >
                     {featured && (
@@ -1937,12 +1848,12 @@ function PricingSection({ copy }: { copy: Copy }) {
                       {tier.name}
                     </h3>
                     <div
-                      className={`text-4xl md:text-5xl font-800 mb-1 ${featured ? "tc-text-gradient-blue" : "text-[var(--tc-text-primary)]"}`}
+                      className="text-4xl md:text-5xl font-800 text-[var(--tc-text-primary)] mb-1"
                       style={{ fontFamily: "var(--font-display)" }}
                     >
                       {tier.range}
                     </div>
-                    <div className="text-sm text-[var(--tc-gold)] font-500 mb-5">
+                    <div className="text-sm text-[var(--tc-text-muted)] font-500 mb-5">
                       {tier.timeline}
                     </div>
                     <p className="text-sm text-[var(--tc-text-secondary)] mb-6 leading-relaxed">
@@ -1955,7 +1866,13 @@ function PricingSection({ copy }: { copy: Copy }) {
                           key={feat}
                           className="flex items-start gap-2.5 text-sm text-[var(--tc-text-secondary)]"
                         >
-                          <svg className="w-4 h-4 mt-0.5 shrink-0 text-emerald-400" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.5">
+                          <svg
+                            className={`w-4 h-4 mt-0.5 shrink-0 ${featured ? "text-[#5b8cff]" : "text-[var(--tc-success)]"}`}
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2.5"
+                          >
                             <path d="M3 8l3 3 7-7" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                           <span>{feat}</span>
@@ -1967,10 +1884,8 @@ function PricingSection({ copy }: { copy: Copy }) {
                       <a
                         href="#consult"
                         className={[
-                          "inline-flex w-full px-6 py-3.5 rounded-[var(--tc-radius-md)] font-semibold text-sm items-center justify-center gap-2 transition-colors",
-                          featured
-                            ? "bg-[var(--tc-blue)] text-white hover:bg-[var(--tc-blue-light)]"
-                            : "border border-[var(--tc-border-bright)] bg-[var(--tc-surface-1)] text-[var(--tc-text-primary)] hover:bg-[var(--tc-surface-3)]",
+                          "w-full text-sm",
+                          featured ? "tc-btn-primary" : "tc-btn-secondary",
                         ].join(" ")}
                       >
                         {tier.cta}
@@ -1998,18 +1913,18 @@ function PricingSection({ copy }: { copy: Copy }) {
 // ─────────────────────────────────────────────────────────────────────
 function TrustSection({ copy }: { copy: Copy }) {
   return (
-    <section className="relative py-24 px-6 bg-[var(--tc-ink)] overflow-hidden">
+    <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-ink)] overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <Reveal className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue-light)] mb-6 uppercase tracking-[0.2em]">
-            {copy.trust.badge}
+          <div className="mb-6">
+            <span className="tc-chip">{copy.trust.badge}</span>
           </div>
           <h2
-            className="text-3xl md:text-5xl font-700 mb-4 tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--tc-text-primary)] mb-4 tracking-tight"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {copy.trust.title}{" "}
-            <span className="tc-text-gradient-gold">{copy.trust.titleAccent}</span>
+            <span className="text-[var(--tc-blue-text)]">{copy.trust.titleAccent}</span>
           </h2>
         </Reveal>
 
@@ -2019,9 +1934,9 @@ function TrustSection({ copy }: { copy: Copy }) {
         >
           {copy.trust.stats.map((stat, i) => (
             <RevealItem key={i}>
-              <div className="text-center p-6 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-1)]">
+              <div className="tc-card text-center p-6">
                 <div
-                  className="text-4xl md:text-5xl font-800 tc-text-gradient-blue mb-2 tabular-nums"
+                  className="text-4xl md:text-5xl font-800 text-[var(--tc-text-primary)] mb-2 tabular-nums"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {stat.value}
@@ -2046,7 +1961,7 @@ function TrustSection({ copy }: { copy: Copy }) {
         >
           {PARTNERS.map((p) => (
             <RevealItem key={p.name}>
-              <div className="group relative p-5 rounded-[var(--tc-radius-md)] border border-[var(--tc-border)] bg-[var(--tc-surface-1)] hover:border-[var(--tc-border-bright)] transition-colors text-center">
+              <div className="tc-card tc-card-hover group relative p-5 text-center">
                 <div
                   className="text-sm font-700 text-[var(--tc-text-primary)] mb-1 tracking-tight"
                   style={{ fontFamily: "var(--font-display)" }}
@@ -2074,7 +1989,7 @@ function FaqSection({ copy }: { copy: Copy }) {
   const faqSchema = getFaqSchema(copy.faq.items);
 
   return (
-    <section className="relative py-32 px-6 bg-[var(--tc-surface-1)] overflow-hidden">
+    <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] border-y border-[var(--tc-border)] overflow-hidden">
       {/* FAQPage structured data — same items as the accordion below, so answer
           engines (AI Overviews, ChatGPT, Perplexity) can cite these Q&A. */}
       <script
@@ -2083,17 +1998,17 @@ function FaqSection({ copy }: { copy: Copy }) {
       />
       <div className="max-w-4xl mx-auto relative z-10">
         <Reveal className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-gold)]/10 border border-[var(--tc-gold)]/30 text-xs font-500 text-[var(--tc-gold)] mb-6 uppercase tracking-[0.2em]">
-            {copy.faq.badge}
+          <div className="mb-6">
+            <span className="tc-chip">{copy.faq.badge}</span>
           </div>
           <h2
-            className="text-4xl md:text-6xl font-700 mb-4 tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 text-[var(--tc-text-primary)] mb-4 tracking-tight"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {copy.faq.title}{" "}
-            <span className="tc-text-gradient-gold">{copy.faq.titleAccent}</span>
+            <span className="text-[var(--tc-blue-text)]">{copy.faq.titleAccent}</span>
           </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl">
+          <p className="text-[var(--tc-text-muted)] text-lg md:text-xl">
             {copy.faq.subtitle}
           </p>
         </Reveal>
@@ -2105,9 +2020,9 @@ function FaqSection({ copy }: { copy: Copy }) {
               <RevealItem key={i}>
                 <div
                   className={[
-                    "rounded-[var(--tc-radius-lg)] border bg-[var(--tc-surface-2)] transition-colors overflow-hidden",
+                    "rounded-[var(--tc-radius-lg)] border bg-[var(--tc-surface-1)] shadow-[var(--tc-shadow-card)] transition-colors overflow-hidden",
                     isOpen
-                      ? "border-[var(--tc-blue)]/40"
+                      ? "border-[var(--tc-blue)]"
                       : "border-[var(--tc-border)] hover:border-[var(--tc-border-bright)]",
                   ].join(" ")}
                 >
@@ -2130,7 +2045,7 @@ function FaqSection({ copy }: { copy: Copy }) {
                         "shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-xl",
                         isOpen
                           ? "bg-[var(--tc-blue)] text-white"
-                          : "bg-[var(--tc-surface-3)] text-[var(--tc-text-secondary)]",
+                          : "bg-[var(--tc-surface-2)] text-[var(--tc-text-secondary)]",
                       ].join(" ")}
                     >
                       +
@@ -2166,29 +2081,29 @@ function FinalCtaSection({ copy }: { copy: Copy }) {
   return (
     <section
       id="consult"
-      className="relative py-32 px-6 bg-[var(--tc-ink)] overflow-hidden"
+      className="tc-navy-section relative py-20 sm:py-28 px-6 overflow-hidden"
     >
       <div
         aria-hidden
         className="absolute inset-0 opacity-[0.18] pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(0,64,255,0.4), transparent 70%)",
+            "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,64,255,0.5), transparent 70%)",
           filter: "blur(60px)",
         }}
       />
 
       <div className="max-w-4xl mx-auto relative z-10 text-center">
         <Reveal>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-gold)]/10 border border-[var(--tc-gold)]/30 text-xs font-500 text-[var(--tc-gold)] mb-6 uppercase tracking-[0.2em]">
-            {copy.finalCta.badge}
+          <div className="mb-6">
+            <span className="tc-chip">{copy.finalCta.badge}</span>
           </div>
           <h2
-            className="text-4xl md:text-6xl lg:text-7xl font-800 mb-6 tracking-tight leading-[1.05]"
+            className="text-4xl sm:text-5xl lg:text-6xl font-800 text-[var(--tc-text-primary)] mb-6 tracking-tight leading-[1.05]"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            <span className="text-[var(--tc-text-primary)] block">{copy.finalCta.title}</span>
-            <span className="tc-text-gradient-blue block">{copy.finalCta.titleAccent}</span>
+            <span className="block">{copy.finalCta.title}</span>
+            <span className="text-[var(--tc-blue-text)] block">{copy.finalCta.titleAccent}</span>
           </h2>
           <p className="text-lg md:text-xl text-[var(--tc-text-secondary)] mb-12 max-w-2xl mx-auto leading-relaxed">
             {copy.finalCta.subtitle}
@@ -2198,12 +2113,12 @@ function FinalCtaSection({ copy }: { copy: Copy }) {
         <Reveal delay={0.1}>
           <Magnetic strength={12}>
             <motion.a
-              href="https://t.me/webdevelopertk"
+              href="https://t.me/tezcode_managament"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="group inline-flex px-10 py-5 rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] text-white font-700 text-base tc-glow-blue items-center gap-3"
+              className="tc-btn-primary group text-base gap-3"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
@@ -2221,7 +2136,7 @@ function FinalCtaSection({ copy }: { copy: Copy }) {
             {copy.finalCta.note}
           </p>
           <p
-            className="mt-10 text-xl md:text-2xl tc-text-gradient-gold font-700"
+            className="mt-10 text-xl md:text-2xl text-[var(--tc-text-primary)] font-700"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {copy.finalCta.pitch}
@@ -2240,7 +2155,10 @@ export default function ForBusinessesPage() {
   const copy = COPY[locale] ?? COPY.uz;
 
   return (
-    <main className="relative min-h-screen bg-[var(--tc-ink)] overflow-hidden">
+    <main
+      data-theme="light"
+      className="relative min-h-screen bg-[var(--tc-ink)] text-[var(--tc-text-primary)] overflow-hidden"
+    >
       <Navbar />
       <HeroSection copy={copy} />
       <ProblemsSection copy={copy} />

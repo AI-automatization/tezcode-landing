@@ -176,10 +176,10 @@ export default function BekzodMirzaaliyevPage() {
             </h2>
             <div className="p-7 rounded-[var(--tc-radius-lg)] border border-[var(--tc-gold)]/40 bg-[var(--tc-surface-2)] space-y-2 text-sm">
               <a
-                href="https://t.me/webdevelopertk"
+                href="https://t.me/tezcode_managament"
                 className="block text-[var(--tc-text-secondary)] hover:text-[var(--tc-blue-text)]"
               >
-                Telegram: @webdevelopertk
+                Telegram: @tezcode_managament
               </a>
               <a
                 href="mailto:tezcode@tezcode.dev"

@@ -35,9 +35,8 @@ const TOOLS: { slug: string; icon: LucideIcon; title: string; description: strin
     slug: "roi-calculator",
     icon: DollarSign,
     title: "ROI Calculator",
-    description: "Biznesingizning oylik aylanma + xodim soni — Tezcode bilan qancha tejaysiz?",
+    description: "Biznes turingiz + xodim soni — Tezcode bilan qancha tejashingizni ko'ring.",
     cta: "Tejov hisoblash",
-    href: "/#calculator",
   },
 ];
 
@@ -111,7 +110,7 @@ export default function ToolsPage() {
               Sizga kerakli AI vosita bizda yo'qmi? Telegram'da yozing — qo'shamiz.
             </p>
             <a
-              href="https://t.me/webdevelopertk"
+              href="https://t.me/tezcode_managament"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] text-white font-500 text-sm tc-glow-blue hover:bg-[var(--tc-blue-light)] transition-colors"

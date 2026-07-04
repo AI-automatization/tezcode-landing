@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useLocale } from "next-intl";
+import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
@@ -83,18 +84,26 @@ export function AutomationShowcase() {
   const c = CONTENT[locale] ?? CONTENT.en;
 
   return (
-    <section id="solutions" className="scroll-mt-24 py-32 px-6 bg-[var(--tc-ink)] relative overflow-hidden">
-      <div className="max-w-7xl mx-auto relative z-10">
-        <Reveal className="max-w-3xl mx-auto text-center mb-16">
-          <h2
-            className="text-4xl md:text-6xl font-700 mb-4 leading-tight tracking-tight"
-            style={{ fontFamily: "var(--font-display)" }}
+    <section id="solutions" className="scroll-mt-24 py-20 sm:py-28 px-6 bg-[var(--tc-ink)]">
+      <div className="max-w-7xl mx-auto">
+        <Reveal className="mb-14 flex items-end justify-between gap-6">
+          <div className="max-w-2xl">
+            <span className="tc-chip">Yechimlar</span>
+            <h2
+              className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-700 tracking-tight text-[var(--tc-text-primary)]"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              {c.heading}
+            </h2>
+            <p className="mt-4 text-[var(--tc-text-muted)]">{c.subtitle}</p>
+          </div>
+          <Link
+            href="/ai-avtomatizatsiya"
+            className="hidden sm:flex items-center gap-1.5 shrink-0 text-sm font-600 text-[var(--tc-blue-text)] mb-1.5"
           >
-            {c.heading}
-          </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl">
-            {c.subtitle}
-          </p>
+            {c.cta}
+            <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+          </Link>
         </Reveal>
 
         <RevealStagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -102,7 +111,7 @@ export function AutomationShowcase() {
             <RevealItem key={m.href}>
               <Link
                 href={m.href}
-                className="group relative block aspect-square overflow-hidden rounded-[var(--tc-radius-xl)] border border-[var(--tc-border)] hover:border-[var(--tc-border-bright)] transition-colors"
+                className="group relative block aspect-square overflow-hidden rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] shadow-[var(--tc-shadow-card)] hover:shadow-[var(--tc-shadow-card-hover)] transition-shadow duration-300"
               >
                 <Image
                   src={m.img}
@@ -112,9 +121,9 @@ export function AutomationShowcase() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
 
-                <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
 
-                <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
+                <div className="absolute bottom-0 inset-x-0 z-20 p-5">
                   <h3
                     className="text-2xl font-700 text-white mb-1 tracking-tight"
                     style={{ fontFamily: "var(--font-display)" }}
@@ -122,18 +131,12 @@ export function AutomationShowcase() {
                     {c.cards[i].title}
                   </h3>
                   <div className="flex items-end justify-between gap-2 mt-2">
-                    <p className="text-white/70 text-xs leading-snug line-clamp-2 flex-1">{c.cards[i].subtitle}</p>
-                    <span className="inline-flex items-center gap-1 text-[var(--tc-gold)] text-sm font-600 shrink-0">
+                    <p className="text-white/75 text-xs leading-snug line-clamp-2 flex-1">
+                      {c.cards[i].subtitle}
+                    </p>
+                    <span className="inline-flex items-center gap-1 text-white/90 text-sm font-600 shrink-0">
                       {c.cta}
-                      <svg
-                        className="w-4 h-4 transition-transform group-hover:translate-x-1"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                      >
-                        <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
+                      <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
                     </span>
                   </div>
                 </div>

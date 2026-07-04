@@ -12,10 +12,10 @@ export const metadata = buildPageMetadata({
 
 export default function MuniraCaseStudyPage() {
   return (
-    <>
+    <div data-theme="light" className="bg-[var(--tc-ink)] text-[var(--tc-text-primary)]">
       <Navbar />
       <MuniraCaseClient />
       <Footer />
-    </>
+    </div>
   );
 }

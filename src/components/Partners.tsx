@@ -1,36 +1,60 @@
 "use client";
 
 import { useLocale } from "next-intl";
+import { useRef, useState, useCallback, useEffect } from "react";
 import Image from "next/image";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { Reveal } from "@/components/motion/Reveal";
 
 // ─────────────────────────────────────────────────────────
-// Partners Section — real partners with internal partner pages.
-// NOTE: cards link to INTERNAL partner pages only (no outbound
-// links to partner websites — keeps visitors on tezcode.dev).
+// "Tezcode'da yangi" — a horizontal carousel (AI Solution style):
+// IT Park residency highlight + real partners. Cards link to
+// INTERNAL pages only (keeps visitors on tezcode.dev).
 // ─────────────────────────────────────────────────────────
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
+
+// Emerald accents for the IT Park card — tuned to read well on both themes.
+const EMERALD_BG = "rgba(5,150,105,0.08)";
+const EMERALD_BORDER = "rgba(5,150,105,0.25)";
 
 interface Partner {
   id: string;
   name: string;
   logoUrl: string;
-  /**
-   * "photo" = wide banner photo (object-cover); "logo" = square mark shown on
-   * a gradient panel; "banner" = a full pre-composed wordmark/banner image
-   * (object-contain, letterboxed on the card's own surface color)
-   */
   media: "photo" | "logo" | "banner";
-  /** internal route (locale-aware) */
   href: string;
   role: Record<Lang, string>;
-  /** 1-2 sentence description of what the partner company actually does */
   description: Record<Lang, string>;
-  /** short keyword pills shown under the description */
   tags: Record<Lang, string[]>;
 }
+
+// IT Park residency — official credibility (shown as the featured first card).
+const ITPARK = {
+  href: "/biz-haqimizda",
+  role: {
+    uz: "Rasmiy rezident — Texnologik park",
+    ru: "Официальный резидент — Технологический парк",
+    en: "Official resident — Technological Park",
+    ar: "مقيم رسمي — الحديقة التكنولوجية",
+    uk: "Офіційний резидент — Технологічний парк",
+  } as Record<Lang, string>,
+  description: {
+    uz: 'Tezcode ("TEZ KOD" MCHJ) — IT Park Uzbekistan rezidenti. Texnopark rezidentlarining Yagona reestriga 2026-yil 18-iyunda kiritildi. Guvohnoma №6237.',
+    ru: 'Tezcode (ООО "TEZ KOD") — резидент IT Park Uzbekistan. Внесён в Единый реестр резидентов технопарка 18 июня 2026 года. Свидетельство №6237.',
+    en: 'Tezcode ("TEZ KOD" LLC) is an official IT Park Uzbekistan resident, entered into the technopark residents\' unified registry on 18 June 2026. Certificate №6237.',
+    ar: 'Tezcode ("TEZ KOD" ذ.م.م) مقيم في IT Park Uzbekistan، أُدرج في السجل الموحّد لمقيمي الحديقة التقنية بتاريخ 18 يونيو 2026. الشهادة رقم 6237.',
+    uk: 'Tezcode (ТОВ "TEZ KOD") — резидент IT Park Uzbekistan. Внесений до Єдиного реєстру резидентів технопарку 18 червня 2026 року. Свідоцтво №6237.',
+  } as Record<Lang, string>,
+  tags: {
+    uz: ["IT Park", "Rezident", "№6237"],
+    ru: ["IT Park", "Резидент", "№6237"],
+    en: ["IT Park", "Resident", "№6237"],
+    ar: ["IT Park", "مقيم", "№6237"],
+    uk: ["IT Park", "Резидент", "№6237"],
+  } as Record<Lang, string[]>,
+};
 
 const PARTNERS: Partner[] = [
   {
@@ -91,38 +115,41 @@ const PARTNERS: Partner[] = [
   },
 ];
 
-const LABELS: Record<Lang, { title: string; subtitle: string; more: string; badge: string }> = {
+const LABELS: Record<Lang, { title: string; subtitle: string; more: string; badge: string; resident: string }> = {
   uz: {
     title: "Tezcode'da yangi",
-    subtitle:
-      "Yangi hamkorliklar, xalqaro aloqalar va biznes uchun AI imkoniyatlari",
+    subtitle: "Yangi hamkorliklar, xalqaro aloqalar va biznes uchun AI imkoniyatlari",
     more: "Batafsil",
     badge: "Hamkor",
+    resident: "Rezident",
   },
   ru: {
     title: "Новое в Tezcode",
-    subtitle:
-      "Новые партнёрства, международные связи и AI-возможности для бизнеса",
+    subtitle: "Новые партнёрства, международные связи и AI-возможности для бизнеса",
     more: "Подробнее",
     badge: "Партнёр",
+    resident: "Резидент",
   },
   en: {
     title: "What's new at Tezcode",
     subtitle: "New partnerships, international connections and AI opportunities for business",
     more: "Learn more",
     badge: "Partner",
+    resident: "Resident",
   },
   ar: {
     title: "جديد Tezcode",
     subtitle: "شراكات جديدة وروابط دولية وفرص للذكاء الاصطناعي في الأعمال",
     more: "اعرف المزيد",
     badge: "شريك",
+    resident: "مقيم",
   },
   uk: {
     title: "Нове в Tezcode",
     subtitle: "Нові партнерства, міжнародні зв'язки та AI-можливості для бізнесу",
     more: "Детальніше",
     badge: "Партнер",
+    resident: "Резидент",
   },
 };
 
@@ -130,30 +157,202 @@ export function Partners() {
   const locale = useLocale() as Lang;
   const l = LABELS[locale] ?? LABELS.uz;
 
+  const scroller = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
+  // itpark card + partner cards
+  const total = 1 + PARTNERS.length;
+
+  const scrollToIndex = useCallback((i: number) => {
+    const el = scroller.current;
+    if (!el) return;
+    const card = el.children[i] as HTMLElement | undefined;
+    if (card) el.scrollTo({ left: card.offsetLeft - 8, behavior: "smooth" });
+  }, []);
+
+  const step = useCallback(
+    (dir: number) => {
+      const next = Math.min(total - 1, Math.max(0, active + dir));
+      scrollToIndex(next);
+    },
+    [active, total, scrollToIndex],
+  );
+
+  // Track the closest card to update the active dot.
+  useEffect(() => {
+    const el = scroller.current;
+    if (!el) return;
+    const onScroll = () => {
+      const children = Array.from(el.children) as HTMLElement[];
+      let closest = 0;
+      let min = Infinity;
+      children.forEach((c, i) => {
+        const d = Math.abs(c.offsetLeft - el.scrollLeft - 8);
+        if (d < min) {
+          min = d;
+          closest = i;
+        }
+      });
+      setActive(closest);
+    };
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => el.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const arrowBtnClass =
+    "w-10 h-10 rounded-full border border-[var(--tc-border)] bg-[var(--tc-surface-1)] shadow-[var(--tc-shadow-card)] flex items-center justify-center text-[var(--tc-text-secondary)] hover:border-[var(--tc-blue)] hover:text-[var(--tc-blue-text)] disabled:opacity-30 disabled:pointer-events-none transition-colors";
+
   return (
-    <section className="py-20 px-6 bg-[var(--tc-ink)] border-t border-[var(--tc-border)]">
+    <section className="py-20 sm:py-28 px-6 bg-[var(--tc-ink)] border-t border-[var(--tc-border)] overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <Reveal className="text-center mb-12">
-          <h2
-            className="text-2xl md:text-3xl font-600 mb-2"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            {l.title}
-          </h2>
-          <p className="text-sm text-[var(--tc-text-muted)]">{l.subtitle}</p>
+        {/* Header — chip + title/subtitle left, arrows right */}
+        <Reveal className="mb-10 flex items-end justify-between gap-6">
+          <div>
+            <div className="mb-4">
+              <span className="tc-chip">{l.badge}</span>
+            </div>
+            <h2
+              className="text-3xl sm:text-4xl lg:text-5xl font-700 mb-3 tracking-tight text-[var(--tc-text-primary)]"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              {l.title}
+            </h2>
+            <p className="text-sm md:text-base text-[var(--tc-text-muted)] max-w-xl leading-relaxed">
+              {l.subtitle}
+            </p>
+          </div>
+          <div className="hidden sm:flex items-center gap-2 shrink-0">
+            <button
+              type="button"
+              aria-label="Previous"
+              onClick={() => step(-1)}
+              disabled={active === 0}
+              className={arrowBtnClass}
+            >
+              <ChevronLeft className="w-5 h-5" strokeWidth={2} />
+            </button>
+            <button
+              type="button"
+              aria-label="Next"
+              onClick={() => step(1)}
+              disabled={active >= total - 1}
+              className={arrowBtnClass}
+            >
+              <ChevronRight className="w-5 h-5" strokeWidth={2} />
+            </button>
+          </div>
         </Reveal>
 
-        {/* Partner cards */}
-        <div className="mx-auto grid max-w-3xl grid-cols-1 items-stretch gap-6 sm:grid-cols-2">
-          {PARTNERS.map((partner, i) => (
-            <Reveal key={partner.id} delay={i * 0.08}>
-              <PartnerCard partner={partner} locale={locale} more={l.more} badge={l.badge} />
-            </Reveal>
+        {/* Carousel */}
+        <div
+          ref={scroller}
+          className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-2 -mx-6 px-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
+          {/* Featured — IT Park residency */}
+          <ItParkCard locale={locale} more={l.more} resident={l.resident} />
+
+          {/* Partner cards */}
+          {PARTNERS.map((partner) => (
+            <PartnerCard
+              key={partner.id}
+              partner={partner}
+              locale={locale}
+              more={l.more}
+              badge={l.badge}
+            />
+          ))}
+        </div>
+
+        {/* Dots */}
+        <div className="mt-8 flex items-center justify-center gap-2">
+          {Array.from({ length: total }).map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              aria-label={`Go to card ${i + 1}`}
+              onClick={() => scrollToIndex(i)}
+              className={[
+                "h-2 rounded-full transition-all duration-300",
+                i === active
+                  ? "w-6 bg-[var(--tc-blue)]"
+                  : "w-2 bg-[var(--tc-border-bright)] hover:bg-[var(--tc-text-muted)]",
+              ].join(" ")}
+            />
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+// ── IT Park residency featured card (emerald accents, distinct) ──
+function ItParkCard({
+  locale,
+  more,
+  resident,
+}: {
+  locale: Lang;
+  more: string;
+  resident: string;
+}) {
+  const role = ITPARK.role[locale] ?? ITPARK.role.uz;
+  const description = ITPARK.description[locale] ?? ITPARK.description.uz;
+  const tags = ITPARK.tags[locale] ?? ITPARK.tags.uz;
+
+  return (
+    <Link
+      href={ITPARK.href}
+      className="group tc-card tc-card-hover relative flex w-[300px] sm:w-[420px] shrink-0 snap-start flex-col overflow-hidden border-[rgba(5,150,105,0.25)]"
+    >
+      {/* Real IT Park residency certificate */}
+      <div className="relative h-52 w-full shrink-0 overflow-hidden bg-white p-2">
+        <div className="relative h-full w-full">
+          <Image
+            src="/it-park-guvohnoma.jpg"
+            alt='IT Park Uzbekistan rezidentlik guvohnomasi — "TEZ KOD" MCHJ, №6237'
+            fill
+            sizes="(max-width: 768px) 100vw, 420px"
+            className="object-cover object-top"
+          />
+        </div>
+        <span className="absolute end-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-[var(--tc-border)] bg-[var(--tc-surface-1)]/90 px-3 py-1 text-[11px] font-500 text-[var(--tc-text-primary)] backdrop-blur">
+          <span className="h-1.5 w-1.5 rounded-full bg-[var(--tc-success)]" />
+          {resident}
+        </span>
+      </div>
+
+      <div className="relative flex flex-1 flex-col gap-3 p-6 text-start">
+        <div>
+          <div
+            className="text-lg font-700 tracking-tight text-[var(--tc-text-primary)]"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            IT Park Uzbekistan
+          </div>
+          <p className="mt-1.5 text-sm leading-relaxed text-[var(--tc-success)]">{role}</p>
+          <p className="mt-3 text-sm leading-relaxed text-[var(--tc-text-muted)]">
+            {description}
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <span
+                key={tag}
+                className="rounded-full px-2.5 py-1 text-xs text-[var(--tc-success)]"
+                style={{
+                  border: `1px solid ${EMERALD_BORDER}`,
+                  background: EMERALD_BG,
+                }}
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+        <span className="relative mt-auto inline-flex items-center gap-1.5 pt-3 text-sm font-500 text-[var(--tc-success)]">
+          {more}
+          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
+        </span>
+      </div>
+    </Link>
   );
 }
 
@@ -175,10 +374,10 @@ function PartnerCard({
   return (
     <Link
       href={partner.href}
-      className="group relative flex h-full w-full max-w-sm flex-col overflow-hidden rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-1)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--tc-border-bright)]"
+      className="group tc-card tc-card-hover relative flex w-[300px] sm:w-[380px] shrink-0 snap-start flex-col overflow-hidden"
     >
       {/* Media banner */}
-      <div className="relative aspect-[16/9] w-full shrink-0 overflow-hidden bg-[var(--tc-surface-2)]">
+      <div className="relative h-52 w-full shrink-0 overflow-hidden bg-[var(--tc-surface-2)]">
         {partner.media === "photo" ? (
           <>
             <Image
@@ -188,16 +387,15 @@ function PartnerCard({
               sizes="(max-width: 768px) 100vw, 384px"
               className="object-cover object-top"
             />
-            {/* gradient overlay so the badge stays legible over the photo */}
             <div
               className="pointer-events-none absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(to top, var(--tc-ink) 0%, rgba(10,10,15,0.05) 55%, transparent 75%)",
+                  "linear-gradient(to top, var(--tc-surface-1), transparent 60%)",
               }}
             />
           </>
-        ) : partner.media === "banner" ? (
+        ) : (
           <Image
             src={partner.logoUrl}
             alt={`${partner.name} — tezcode`}
@@ -205,63 +403,25 @@ function PartnerCard({
             sizes="(max-width: 768px) 100vw, 384px"
             className="object-cover"
           />
-        ) : (
-          <div
-            className="relative flex h-full w-full items-center justify-center"
-            style={{
-              backgroundImage: [
-                "linear-gradient(rgba(91,140,255,0.10) 1px, transparent 1px)",
-                "linear-gradient(90deg, rgba(91,140,255,0.10) 1px, transparent 1px)",
-                "radial-gradient(60% 70% at 14% 12%, rgba(51,102,255,0.40), transparent 60%)",
-                "radial-gradient(65% 75% at 88% 90%, rgba(0,64,255,0.30), transparent 65%)",
-                "linear-gradient(160deg, #10173a 0%, #0a0a0f 55%, #05060b 100%)",
-              ].join(", "),
-              backgroundSize: "28px 28px, 28px 28px, 100% 100%, 100% 100%, 100% 100%",
-            }}
-          >
-            {/* soft vignette so the tech-grid fades toward the card edges */}
-            <div
-              className="pointer-events-none absolute inset-0"
-              style={{
-                background:
-                  "radial-gradient(75% 90% at 50% 45%, transparent 30%, #0a0a0f 100%)",
-                opacity: 0.55,
-              }}
-            />
-            <div className="relative rounded-2xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm">
-              <Image
-                src={partner.logoUrl}
-                alt={`${partner.name} logo`}
-                width={112}
-                height={112}
-                className="h-16 w-16 object-contain drop-shadow-[0_4px_16px_rgba(0,0,0,0.35)] transition-transform duration-500 group-hover:scale-105 md:h-20 md:w-20"
-              />
-            </div>
-          </div>
         )}
 
-        {/* Partner badge */}
-        <span className="absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-[var(--tc-border)] bg-[var(--tc-surface-1)]/80 px-3 py-1 text-[11px] font-500 text-[var(--tc-blue-text)] backdrop-blur-md">
-          <span className="h-1.5 w-1.5 rounded-full bg-[var(--tc-blue-light)]" />
+        <span className="absolute end-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-[var(--tc-border)] bg-[var(--tc-surface-1)]/90 px-3 py-1 text-[11px] font-500 text-[var(--tc-text-primary)] backdrop-blur">
+          <span className="h-1.5 w-1.5 rounded-full bg-[var(--tc-blue)]" />
           {badge}
         </span>
       </div>
 
       {/* Content */}
-      <div className="relative flex flex-1 flex-col gap-3 p-6 text-left">
+      <div className="relative flex flex-1 flex-col gap-3 p-6 text-start">
         <div>
           <div
-            className="text-lg font-600 text-[var(--tc-text-primary)]"
+            className="text-lg font-700 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {partner.name}
           </div>
-          <p className="mt-1.5 text-sm leading-relaxed text-[var(--tc-text-secondary)]">
-            {role}
-          </p>
-          <p className="mt-3 text-sm leading-relaxed text-[var(--tc-text-muted)]">
-            {description}
-          </p>
+          <p className="mt-1.5 text-sm leading-relaxed text-[var(--tc-text-secondary)]">{role}</p>
+          <p className="mt-3 text-sm leading-relaxed text-[var(--tc-text-muted)]">{description}</p>
           <div className="mt-3 flex flex-wrap gap-2">
             {tags.map((tag) => (
               <span
@@ -274,12 +434,9 @@ function PartnerCard({
           </div>
         </div>
 
-        {/* CTA */}
-        <span className="relative mt-auto inline-flex items-center gap-1 pt-3 text-sm font-500 text-[var(--tc-blue-text)] transition-colors group-hover:text-[var(--tc-text-primary)]">
+        <span className="relative mt-auto inline-flex items-center gap-1.5 pt-3 text-sm font-500 text-[var(--tc-blue-text)]">
           {more}
-          <span className="transition-transform duration-300 group-hover:translate-x-1">
-            →
-          </span>
+          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
         </span>
       </div>
     </Link>

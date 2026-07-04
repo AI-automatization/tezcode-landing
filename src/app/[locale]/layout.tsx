@@ -46,7 +46,7 @@ export async function generateMetadata({
     },
     description: t("description"),
     keywords: getKeywords(locale),
-    authors: [{ name: "Bekzod Mirzaaliyev", url: "https://t.me/webdevelopertk" }],
+    authors: [{ name: "Bekzod Mirzaaliyev", url: "https://t.me/tezcode_managament" }],
     creator: "Tezcode",
     publisher: "Tezcode",
     metadataBase: new URL(baseUrl),
@@ -83,7 +83,7 @@ export async function generateMetadata({
       title: t("ogTitle"),
       description: t("ogDescription"),
       images: [`${baseUrl}/og-image.png`],
-      creator: "@webdevelopertk",
+      creator: "@tezcode_managament",
     },
     robots: {
       index: true,

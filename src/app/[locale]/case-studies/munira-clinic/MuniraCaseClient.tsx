@@ -344,40 +344,26 @@ export function MuniraCaseClient() {
   const t = COPY[locale] ?? COPY.uz;
 
   return (
-    <main className="relative min-h-screen bg-[var(--tc-ink)] pt-24 pb-32 overflow-hidden">
-      <div
-        aria-hidden
-        className="absolute top-20 right-0 w-[600px] h-[600px] opacity-[0.05] pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse at center, rgb(52,211,153) 0%, transparent 70%)",
-          filter: "blur(120px)",
-        }}
-      />
+    <main
+      data-theme="light"
+      className="relative min-h-screen bg-[var(--tc-ink)] text-[var(--tc-text-primary)] pt-24 pb-28 overflow-hidden"
+    >
+      <div aria-hidden className="tc-grid-bg absolute inset-0 pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         <Reveal>
-          <Link
-            href="/case-studies"
-            className="inline-block text-sm text-[var(--tc-text-muted)] hover:text-emerald-400 transition-colors mb-8"
-          >
-            {t.back}
-          </Link>
-        </Reveal>
-
-        <Reveal>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-400/10 border border-emerald-400/30 text-xs font-500 text-emerald-400 mb-6 uppercase tracking-[0.3em]">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          <div className="tc-chip mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-[var(--tc-blue)]" />
             {t.badge}
           </div>
           <h1
-            className="text-3xl md:text-5xl lg:text-6xl font-700 mb-8 tracking-tight leading-[1.1]"
+            className="text-3xl md:text-5xl lg:text-6xl font-700 mb-8 tracking-tight leading-[1.1] text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.title}
           </h1>
           <div className="flex items-center gap-4 mb-10">
-            <div className="relative shrink-0 w-16 h-16 rounded-full overflow-hidden ring-2 ring-emerald-400/40">
+            <div className="relative shrink-0 w-16 h-16 rounded-full overflow-hidden ring-2 ring-[var(--tc-blue)]/30">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/customers/customer-3.jpg"
@@ -387,33 +373,29 @@ export function MuniraCaseClient() {
             </div>
             <div className="min-w-0">
               <div
-                className="text-white font-700 text-lg"
+                className="text-[var(--tc-text-primary)] font-700 text-lg"
                 style={{ fontFamily: "var(--font-display)" }}
               >
                 {t.name}
               </div>
               <div className="text-sm text-[var(--tc-text-muted)]">{t.role}</div>
-              <div className="inline-block mt-1 px-2 py-0.5 rounded-full text-[10px] uppercase tracking-widest font-500 bg-emerald-400/10 text-emerald-400">
+              <div className="inline-block mt-1 px-2 py-0.5 rounded-full text-[10px] uppercase tracking-widest font-500 bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)]">
                 {t.product}
               </div>
             </div>
           </div>
         </Reveal>
 
-        {/* Key banner */}
+        {/* Key banner — styled like the home stats card */}
         <Reveal>
-          <div className="relative mb-16 p-8 md:p-10 rounded-[var(--tc-radius-xl)] border border-emerald-400/40 bg-gradient-to-br from-emerald-500/10 to-[var(--tc-surface-2)] overflow-hidden">
-            <div
-              aria-hidden
-              className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-emerald-400 opacity-10 blur-3xl"
-            />
+          <div className="tc-card relative mb-16 p-8 md:p-10 overflow-hidden">
             <div className="relative">
-              <div className="text-xs text-emerald-400 uppercase tracking-[0.3em] mb-2">
+              <div className="text-xs text-[var(--tc-text-muted)] uppercase tracking-[0.3em] mb-2">
                 {t.bannerLabel}
               </div>
               <div className="flex items-baseline gap-3 flex-wrap">
                 <span
-                  className="text-5xl md:text-7xl font-800 text-emerald-400 tabular-nums"
+                  className="text-5xl md:text-7xl font-800 text-[var(--tc-success)] tabular-nums"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   −<CountUp value={40} />%
@@ -428,7 +410,7 @@ export function MuniraCaseClient() {
 
         <Reveal>
           <h2
-            className="text-2xl md:text-3xl font-700 text-white mb-6"
+            className="text-2xl md:text-3xl font-700 text-[var(--tc-text-primary)] mb-6"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.metricsTitle}
@@ -437,7 +419,7 @@ export function MuniraCaseClient() {
         <RevealStagger className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-16" stagger={0.08}>
           {t.metrics.map((m, i) => (
             <RevealItem key={i}>
-              <div className="p-6 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] h-full">
+              <div className="tc-card p-6 h-full">
                 <div className="text-xs text-[var(--tc-text-muted)] uppercase tracking-widest mb-3">
                   {m.label}
                 </div>
@@ -447,7 +429,7 @@ export function MuniraCaseClient() {
                   </span>
                   <span className="text-[var(--tc-text-muted)]">→</span>
                   <span
-                    className="text-2xl md:text-3xl font-700 text-emerald-400 tabular-nums"
+                    className="text-2xl md:text-3xl font-700 text-[var(--tc-success)] tabular-nums"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {m.after}
@@ -463,7 +445,7 @@ export function MuniraCaseClient() {
 
         <Reveal>
           <h2
-            className="text-2xl md:text-3xl font-700 text-white mb-6"
+            className="text-2xl md:text-3xl font-700 text-[var(--tc-text-primary)] mb-6"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.problemTitle}
@@ -481,12 +463,12 @@ export function MuniraCaseClient() {
         </Reveal>
 
         <Reveal>
-          <blockquote className="relative my-16 p-8 md:p-10 rounded-[var(--tc-radius-xl)] border border-emerald-400/30 bg-[var(--tc-surface-2)]">
-            <div className="absolute -top-4 left-8 text-5xl text-emerald-400 leading-none font-700 select-none">
+          <blockquote className="tc-card relative my-16 p-8 md:p-10">
+            <div className="absolute -top-4 left-8 text-5xl text-[var(--tc-blue-text)] leading-none font-700 select-none">
               "
             </div>
             <p
-              className="text-xl md:text-2xl text-white leading-relaxed font-500 italic mb-4"
+              className="text-xl md:text-2xl text-[var(--tc-text-primary)] leading-relaxed font-500 italic mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {t.quote1}
@@ -499,7 +481,7 @@ export function MuniraCaseClient() {
 
         <Reveal>
           <h2
-            className="text-2xl md:text-3xl font-700 text-white mb-6"
+            className="text-2xl md:text-3xl font-700 text-[var(--tc-text-primary)] mb-6"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.solutionTitle}
@@ -517,12 +499,12 @@ export function MuniraCaseClient() {
         </Reveal>
 
         <Reveal>
-          <blockquote className="relative my-16 p-8 md:p-10 rounded-[var(--tc-radius-xl)] border border-[var(--tc-gold)]/30 bg-[var(--tc-surface-2)]">
-            <div className="absolute -top-4 left-8 text-5xl text-[var(--tc-gold)] leading-none font-700 select-none">
+          <blockquote className="tc-card relative my-16 p-8 md:p-10">
+            <div className="absolute -top-4 left-8 text-5xl text-[var(--tc-blue-text)] leading-none font-700 select-none">
               "
             </div>
             <p
-              className="text-xl md:text-2xl text-white leading-relaxed font-500 italic mb-4"
+              className="text-xl md:text-2xl text-[var(--tc-text-primary)] leading-relaxed font-500 italic mb-4"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {t.quote2}
@@ -535,7 +517,7 @@ export function MuniraCaseClient() {
 
         <Reveal>
           <h2
-            className="text-2xl md:text-3xl font-700 text-white mb-8"
+            className="text-2xl md:text-3xl font-700 text-[var(--tc-text-primary)] mb-8"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.timelineTitle}
@@ -545,12 +527,12 @@ export function MuniraCaseClient() {
           {t.timeline.map((step, i) => (
             <RevealItem key={i}>
               <div className="relative pl-8 pb-2 border-l border-[var(--tc-border)]">
-                <span className="absolute left-0 top-2 -translate-x-1/2 w-3 h-3 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,0.6)]" />
-                <div className="text-xs text-emerald-400 uppercase tracking-[0.2em] mb-1">
+                <span className="absolute left-0 top-2 -translate-x-1/2 w-3 h-3 rounded-full bg-[var(--tc-blue)]" />
+                <div className="text-xs text-[var(--tc-blue-text)] uppercase tracking-[0.2em] mb-1">
                   {step.week}
                 </div>
                 <h3
-                  className="text-lg md:text-xl font-700 text-white mb-2"
+                  className="text-lg md:text-xl font-700 text-[var(--tc-text-primary)] mb-2"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {step.title}
@@ -565,7 +547,7 @@ export function MuniraCaseClient() {
 
         <Reveal>
           <h2
-            className="text-2xl md:text-3xl font-700 text-white mb-6"
+            className="text-2xl md:text-3xl font-700 text-[var(--tc-text-primary)] mb-6"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.stackTitle}
@@ -574,10 +556,10 @@ export function MuniraCaseClient() {
             {t.stack.map((s, i) => (
               <div
                 key={i}
-                className="p-5 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)]"
+                className="tc-card p-5"
               >
                 <div
-                  className="font-700 text-white text-base mb-1"
+                  className="font-700 text-[var(--tc-text-primary)] text-base mb-1"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {s.name}
@@ -591,13 +573,13 @@ export function MuniraCaseClient() {
         </Reveal>
 
         <Reveal>
-          <div className="relative mt-20 p-10 md:p-14 rounded-[var(--tc-radius-xl)] border border-emerald-400/40 bg-gradient-to-br from-[var(--tc-surface-2)] to-[var(--tc-surface-1)] text-center overflow-hidden">
+          <div className="tc-navy-section relative mt-20 p-10 md:p-14 rounded-[var(--tc-radius-xl)] text-center overflow-hidden">
             <div
               aria-hidden
-              className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-emerald-400 opacity-10 blur-3xl"
+              className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-[var(--tc-blue)] opacity-20 blur-3xl"
             />
             <h2
-              className="text-2xl md:text-4xl font-700 mb-4 relative"
+              className="text-2xl md:text-4xl font-700 mb-4 relative text-[var(--tc-text-primary)]"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {t.ctaTitle}
@@ -607,16 +589,16 @@ export function MuniraCaseClient() {
             </p>
             <div className="flex flex-wrap justify-center gap-3 relative">
               <motion.a
-                href="/#contact"
+                href="/aloqa"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="inline-block px-8 py-3.5 rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] text-white font-600 text-sm tc-glow-blue"
+                className="tc-btn-primary text-sm"
               >
                 {t.ctaBtn}
               </motion.a>
               <Link
                 href="/case-studies"
-                className="inline-block px-8 py-3.5 rounded-[var(--tc-radius-md)] border border-[var(--tc-border-bright)] text-[var(--tc-text-primary)] font-600 text-sm hover:border-emerald-400 transition-colors"
+                className="tc-btn-secondary text-sm"
               >
                 {t.ctaSecondary}
               </Link>

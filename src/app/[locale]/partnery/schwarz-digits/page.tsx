@@ -20,10 +20,10 @@ export const metadata = buildPageMetadata({
 
 export default function SchwarzDigitsPartnerPage() {
   return (
-    <>
+    <div data-theme="light" className="bg-[var(--tc-ink)] text-[var(--tc-text-primary)]">
       <Navbar />
       <SchwarzDigitsPartnerClient />
       <Footer />
-    </>
+    </div>
   );
 }

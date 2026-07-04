@@ -1,23 +1,17 @@
 import { Suspense } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { LiveCodeDemo } from "@/components/LiveCodeDemo";
 import { TechStackMarquee } from "@/components/TechStackMarquee";
 import { ProductsGrid } from "@/components/ProductsGrid";
 import { ProductsShowcase } from "@/components/ProductsShowcase";
 import { AutomationShowcase } from "@/components/AutomationShowcase";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { ROICalculator } from "@/components/ROICalculator";
-import { Testimonials } from "@/components/Testimonials";
-import { ReviewsWidget } from "@/components/ReviewsWidget";
 import { Partners } from "@/components/Partners";
 import { LatestNews } from "@/components/LatestNews";
 import { PricingTiers } from "@/components/PricingTiers";
-import { Team } from "@/components/Team";
-import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
-import { LiveVisitorBadge } from "@/components/LiveVisitorBadge";
 import { CookieConsent } from "@/components/CookieConsent";
 
 // ─────────────────────────────────────────────────────────
@@ -26,15 +20,15 @@ import { CookieConsent } from "@/components/CookieConsent";
 // ─────────────────────────────────────────────────────────
 export default function HomePage() {
   return (
-    <main className="relative min-h-screen bg-[var(--tc-ink)] overflow-hidden">
+    <main
+      data-theme="light"
+      className="relative min-h-screen bg-[var(--tc-ink)] text-[var(--tc-text-primary)] overflow-hidden"
+    >
       {/* Navigation */}
       <Navbar />
 
       {/* Hero — above the fold */}
       <Hero />
-
-      {/* Live AI engineering demo — proof of capability */}
-      <LiveCodeDemo />
 
       {/* Tech stack marquee — social proof */}
       <TechStackMarquee />
@@ -60,14 +54,6 @@ export default function HomePage() {
       {/* ROI Calculator */}
       <ROICalculator />
 
-      {/* Customer Testimonials */}
-      <Suspense fallback={<div className="h-64 bg-[var(--tc-surface-1)]" />}>
-        <Testimonials />
-      </Suspense>
-
-      {/* Reviews widget — aggregate rating + 6 verified */}
-      <ReviewsWidget />
-
       {/* Partners — official integration partners (internal pages only) */}
       <Partners />
 
@@ -77,24 +63,11 @@ export default function HomePage() {
       {/* Pricing Tiers */}
       <PricingTiers />
 
-      {/* Team */}
-      <Suspense fallback={<div className="h-64 bg-[var(--tc-surface-1)]" />}>
-        <Team />
-      </Suspense>
-
-      {/* Contact form */}
-      <section id="contact">
-        <ContactForm />
-      </section>
-
       {/* Footer */}
       <Footer />
 
       {/* Floating Telegram + WhatsApp + Sticky Mobile CTA */}
       <FloatingContact />
-
-      {/* Live visitor badge — social proof */}
-      <LiveVisitorBadge />
 
       {/* Cookie consent (GDPR + UZ legal) */}
       <CookieConsent />

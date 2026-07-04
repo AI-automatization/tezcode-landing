@@ -215,35 +215,22 @@ export function AisolutionPartnerClient() {
   const c = COPY[locale] ?? COPY.uz;
 
   return (
-    <main className="relative min-h-screen bg-[var(--tc-ink)] pt-28 pb-24">
-      {/* ambient glow */}
-      <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-[420px]"
-        style={{
-          background:
-            "radial-gradient(70% 60% at 50% 0%, var(--tc-blue-dim), transparent 70%)",
-        }}
-      />
+    <main
+      data-theme="light"
+      className="relative min-h-screen bg-[var(--tc-ink)] text-[var(--tc-text-primary)] pt-28 pb-24"
+    >
+      {/* Faint grid background */}
+      <div aria-hidden className="tc-grid-bg pointer-events-none absolute inset-0" />
 
       <div className="relative mx-auto max-w-4xl px-6">
-        {/* Back */}
-        <Reveal>
-          <Link
-            href="/"
-            className="inline-block text-sm text-[var(--tc-text-muted)] transition-colors hover:text-[var(--tc-text-primary)]"
-          >
-            {c.back}
-          </Link>
-        </Reveal>
-
         {/* Hero */}
         <Reveal className="mt-8 flex flex-col items-center text-center" delay={0.05}>
-          <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-[var(--tc-border)] bg-[var(--tc-surface-1)] px-4 py-1.5 text-xs font-500 text-[var(--tc-blue-text)]">
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--tc-blue-light)]" />
+          <span className="tc-chip mb-6">
+            <span className="h-1.5 w-1.5 rounded-full bg-[var(--tc-blue)]" />
             {c.badge}
           </span>
 
-          <div className="flex h-28 w-28 items-center justify-center rounded-[var(--tc-radius-xl)] bg-white/5 p-4 ring-1 ring-[var(--tc-border)]">
+          <div className="tc-card flex h-28 w-28 items-center justify-center rounded-[var(--tc-radius-xl)] p-4">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/partners/aisolution-logo.png"
@@ -273,10 +260,10 @@ export function AisolutionPartnerClient() {
             {c.stats.map((s, i) => (
               <RevealItem
                 key={i}
-                className="rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-1)] p-6 text-center"
+                className="tc-card p-6 text-center"
               >
                 <div
-                  className="text-2xl font-700 text-[var(--tc-blue-text)] md:text-3xl"
+                  className="text-3xl font-800 text-[var(--tc-text-primary)] md:text-4xl tracking-tight"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {s.value}
@@ -323,7 +310,7 @@ export function AisolutionPartnerClient() {
             {c.offerings.map((o, i) => (
               <RevealItem
                 key={i}
-                className="rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-1)] p-6 transition-colors hover:border-[var(--tc-border-bright)]"
+                className="tc-card tc-card-hover p-6"
               >
                 <div className="mb-2 flex items-center gap-3">
                   <span className="flex h-8 w-8 items-center justify-center rounded-[var(--tc-radius-sm)] bg-[var(--tc-blue-dim)] text-sm font-700 text-[var(--tc-blue-text)]">
@@ -365,7 +352,7 @@ export function AisolutionPartnerClient() {
 
         {/* CTA */}
         <Reveal className="mt-20">
-          <div className="relative overflow-hidden rounded-[var(--tc-radius-xl)] border border-[var(--tc-border)] bg-[var(--tc-surface-1)] p-10 text-center">
+          <div className="tc-navy-section relative overflow-hidden rounded-[var(--tc-radius-xl)] p-10 text-center">
             <div
               className="pointer-events-none absolute inset-0"
               style={{
@@ -383,8 +370,8 @@ export function AisolutionPartnerClient() {
               {c.ctaText}
             </p>
             <Link
-              href="/#contact"
-              className="relative mt-6 inline-flex items-center justify-center rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] px-7 py-3 text-sm font-600 text-white transition-all duration-300 hover:bg-[var(--tc-blue-light)]"
+              href="/aloqa"
+              className="tc-btn-primary relative mt-6 text-sm"
             >
               {c.ctaBtn}
             </Link>

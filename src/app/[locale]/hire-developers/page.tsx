@@ -1,5 +1,3 @@
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo";
 import { HireDevelopersClient } from "./HireDevelopersClient";
 
@@ -12,7 +10,7 @@ export const metadata = buildPageMetadata({
     absolute: "Hire Senior Developers from Tashkent — from $30/hr | TezCode Teams",
   },
   description:
-    "Hire AI-skilled senior developers from Uzbekistan: $30–55/hr, English/Russian fluent, EST overlap 5 hours, IT Park residency, 2-week trial with full refund. 14-engineer in-house team.",
+    "Hire AI-skilled senior developers from Uzbekistan: $30–55/hr, English/Russian fluent, EST overlap 5 hours, IT Park residency, 2-week trial with full refund. 8-engineer in-house team.",
   keywords: [
     "hire developers Uzbekistan",
     "staff augmentation Tashkent",
@@ -33,11 +31,5 @@ export const metadata = buildPageMetadata({
 });
 
 export default function HireDevelopersPage() {
-  return (
-    <>
-      <Navbar />
-      <HireDevelopersClient />
-      <Footer />
-    </>
-  );
+  return <HireDevelopersClient />;
 }

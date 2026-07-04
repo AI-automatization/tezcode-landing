@@ -107,7 +107,7 @@ export function CookieConsent() {
               </svg>
               <div className="flex-1 min-w-0">
                 <h3
-                  className="font-700 text-white text-sm mb-1"
+                  className="font-700 text-[var(--tc-text-primary)] text-sm mb-1"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {t.title}

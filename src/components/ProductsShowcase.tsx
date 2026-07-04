@@ -1,10 +1,8 @@
 "use client";
 
-import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
-import { ShoppingBag, Bot, HeartPulse, Clapperboard, Users, BarChart2, TrendingUp, ShoppingCart } from "lucide-react";
+import { ShoppingBag, Bot, HeartPulse, Clapperboard, Users, BarChart2, TrendingUp, ShoppingCart, ArrowRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
-import { Tilt3D } from "@/components/motion/Tilt3D";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Link } from "@/i18n/routing";
 
@@ -30,15 +28,9 @@ const ICON_MAP: Record<ProductKey, LucideIcon> = {
 };
 
 const STATUS_STYLE: Record<string, string> = {
-  Live: "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-  Beta: "bg-[var(--tc-blue)]/15 text-[var(--tc-blue-text)] border-[var(--tc-blue)]/30",
-  Soon: "bg-[var(--tc-gold)]/15 text-[var(--tc-gold)] border-[var(--tc-gold)]/30",
-};
-
-const DIVISION_COLOR: Record<string, string> = {
-  Systems: "text-blue-400",
-  AI: "text-purple-400",
-  Labs: "text-orange-400",
+  Live: "bg-[rgba(5,150,105,0.1)] text-[var(--tc-success)] border-[rgba(5,150,105,0.25)]",
+  Beta: "bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] border-[rgba(0,64,255,0.25)]",
+  Soon: "bg-[var(--tc-surface-2)] text-[var(--tc-text-muted)] border-[var(--tc-border)]",
 };
 
 // Products that have a dedicated on-site landing page. The card links here
@@ -84,14 +76,10 @@ function CardLink({
   );
 }
 
-const PRODUCTION: ProductKey[] = ["raos", "ai_office", "hamshirago"];
-const FUTURE: ProductKey[] = [
-  "workcontrol",
-  "ai_trade",
-  "wewatch",
-  "ventra",
-  "savdo_builder",
-];
+// WorkControl is Live, so it belongs with production — the R&D row below
+// holds only upcoming/beta products. 4 + 4 keeps both rows balanced.
+const PRODUCTION: ProductKey[] = ["raos", "ai_office", "hamshirago", "workcontrol"];
+const FUTURE: ProductKey[] = ["ai_trade", "wewatch", "ventra", "savdo_builder"];
 
 export function ProductsShowcase() {
   const t = useTranslations("products");
@@ -99,52 +87,29 @@ export function ProductsShowcase() {
   return (
     <section
       id="products"
-      className="py-32 px-6 bg-[var(--tc-ink)] relative overflow-hidden"
+      className="py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] border-y border-[var(--tc-border)]"
     >
-      {/* Section background — animated radial glows */}
-      <motion.div
-        animate={{ opacity: [0.04, 0.08, 0.04] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 rounded-full bg-[var(--tc-blue)] blur-[80px] pointer-events-none"
-      />
-      <motion.div
-        animate={{ opacity: [0.04, 0.08, 0.04] }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 4,
-        }}
-        className="absolute top-1/2 right-0 -translate-y-1/2 w-64 h-64 rounded-full bg-[var(--tc-gold)] blur-[80px] pointer-events-none"
-      />
-
-      <div className="max-w-7xl mx-auto relative z-10">
-        <Reveal className="text-center mb-20">
+      <div className="max-w-7xl mx-auto">
+        <Reveal className="text-center mb-14">
+          <span className="tc-chip">Mahsulotlar</span>
           <h2
-            className="text-4xl md:text-6xl font-700 mb-4 tracking-tight"
+            className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-700 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t("title")}
           </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl">
+          <p className="mt-4 text-[var(--tc-text-muted)] max-w-2xl mx-auto">
             {t("subtitle")}
           </p>
-          <motion.div
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-8 mx-auto w-24 h-0.5 bg-gradient-to-r from-transparent via-[var(--tc-blue)] to-transparent origin-center"
-          />
         </Reveal>
 
-        {/* Production — 3 big cards with 3D tilt */}
+        {/* Production — 4 big cards */}
         <RevealStagger
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-16"
           stagger={0.12}
         >
           {PRODUCTION.map((p) => (
-            <RevealItem key={p}>
+            <RevealItem key={p} className="h-full">
               <ProductCardLarge product={p} t={t} />
             </RevealItem>
           ))}
@@ -152,30 +117,18 @@ export function ProductsShowcase() {
 
         {/* Future Pipeline divider */}
         <Reveal className="flex items-center gap-4 mb-10">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent to-[var(--tc-border)]" />
-          <motion.div
-            animate={{ boxShadow: [
-              "0 0 0 0 rgba(212,160,23,0.4)",
-              "0 0 0 8px rgba(212,160,23,0)",
-            ] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--tc-surface-2)] border border-[var(--tc-border-bright)]"
-          >
-            <span className="w-1.5 h-1.5 rounded-full bg-[var(--tc-gold)]" />
-            <span className="text-xs font-500 text-[var(--tc-gold)] uppercase tracking-[0.2em]">
-              Future Pipeline · R&D
-            </span>
-          </motion.div>
-          <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[var(--tc-border)]" />
+          <div className="h-px flex-1 bg-[var(--tc-border)]" />
+          <span className="tc-chip">Future Pipeline · R&amp;D</span>
+          <div className="h-px flex-1 bg-[var(--tc-border)]" />
         </Reveal>
 
-        {/* Future — 5 small cards */}
+        {/* Future — 4 small cards, aligned with the production columns */}
         <RevealStagger
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-5"
           stagger={0.06}
         >
           {FUTURE.map((p) => (
-            <RevealItem key={p}>
+            <RevealItem key={p} className="h-full">
               <ProductCardSmall product={p} t={t} />
             </RevealItem>
           ))}
@@ -201,86 +154,53 @@ function ProductCardLarge({
   const statusLabel = t(`status_labels.${status}`);
 
   const statusClass = STATUS_STYLE[status] ?? STATUS_STYLE.Beta;
-  const divisionColor = DIVISION_COLOR[division] ?? "text-[var(--tc-text-muted)]";
+  const Icon = ICON_MAP[product];
 
   const landing = LANDING_MAP[product];
   const isExternal = !landing && url.startsWith("http");
 
   return (
-    <Tilt3D
-      intensity={7}
-      className="group rounded-[var(--tc-radius-lg)] h-full"
+    <CardLink
+      landing={landing}
+      url={url}
+      isExternal={isExternal}
+      className="group tc-card tc-card-hover p-8 h-full flex flex-col"
     >
-      <CardLink
-        landing={landing}
-        url={url}
-        isExternal={isExternal}
-        className="relative block p-8 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:bg-[var(--tc-surface-3)] hover:border-[var(--tc-border-bright)] transition-colors duration-300 h-full flex flex-col overflow-hidden"
+      <div className="flex items-start justify-between mb-6">
+        <div className="w-14 h-14 rounded-xl bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] flex items-center justify-center">
+          <Icon className="w-7 h-7" strokeWidth={1.75} />
+        </div>
+        <span
+          className={`inline-flex items-center gap-1.5 rounded-full font-500 border px-2.5 py-0.5 text-[10px] ${statusClass}`}
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-current" />
+          {statusLabel}
+        </span>
+      </div>
+
+      <h3
+        className="text-2xl font-700 text-[var(--tc-text-primary)] mb-1 tracking-tight"
+        style={{ fontFamily: "var(--font-display)" }}
       >
-        {/* Shimmer top edge */}
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--tc-blue)]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+        {name}
+      </h3>
 
-        <div
-          className="flex items-start justify-between mb-6"
-          style={{ transform: "translateZ(30px)" }}
-        >
-          <div className="w-16 h-16 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-0)] flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
-            {(() => { const Icon = ICON_MAP[product]; return <Icon className="w-7 h-7 text-white" />; })()}
-          </div>
-          <span
-            className={`inline-flex items-center gap-1 rounded-full font-500 border px-2.5 py-0.5 text-[10px] ${statusClass}`}
-          >
-            <span className="w-1 h-1 rounded-full bg-current" />
-            {statusLabel}
-          </span>
-        </div>
+      <p className="text-sm text-[var(--tc-text-secondary)] mb-5">{tagline}</p>
 
-        <h3
-          className="text-3xl font-700 text-white mb-1 tracking-tight"
-          style={{
-            fontFamily: "var(--font-display)",
-            transform: "translateZ(25px)",
-          }}
-        >
-          {name}
-        </h3>
+      <p className="text-sm text-[var(--tc-text-muted)] leading-relaxed mb-6 flex-1">
+        {description}
+      </p>
 
-        <p
-          className={`text-sm font-500 mb-5 ${divisionColor}`}
-          style={{ transform: "translateZ(20px)" }}
-        >
-          {tagline}
-        </p>
-
-        <p
-          className="text-sm text-[var(--tc-text-muted)] leading-relaxed mb-6 flex-1"
-          style={{ transform: "translateZ(15px)" }}
-        >
-          {description}
-        </p>
-
-        <div
-          className="pt-4 border-t border-[var(--tc-border)] flex items-center justify-between text-xs"
-          style={{ transform: "translateZ(10px)" }}
-        >
-          <span className="text-[var(--tc-text-muted)] uppercase tracking-[0.2em]">
-            {division}
-          </span>
-          <span className="text-[var(--tc-blue-text)] opacity-60 group-hover:opacity-100 transition-opacity flex items-center gap-1.5 font-500">
-            {landing ? "Batafsil" : isExternal ? "Saytga" : "Demo so'rang"}
-            <svg
-              className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"
-              viewBox="0 0 16 16"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </span>
-        </div>
-      </CardLink>
-    </Tilt3D>
+      <div className="pt-4 border-t border-[var(--tc-border)] flex items-center justify-between text-xs">
+        <span className="text-[var(--tc-text-muted)] uppercase tracking-[0.2em]">
+          {division}
+        </span>
+        <span className="text-[var(--tc-blue-text)] flex items-center gap-1.5 font-500">
+          {landing ? "Batafsil" : isExternal ? "Saytga" : "Demo so'rang"}
+          <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
+        </span>
+      </div>
+    </CardLink>
   );
 }
 
@@ -294,12 +214,11 @@ function ProductCardSmall({
   const name = t(`${product}.name`);
   const tagline = t(`${product}.tagline`);
   const status = t(`${product}.status`);
-  const division = t(`${product}.division`);
   const url = t(`${product}.url`);
   const statusLabel = t(`status_labels.${status}`);
 
   const statusClass = STATUS_STYLE[status] ?? STATUS_STYLE.Beta;
-  const divisionColor = DIVISION_COLOR[division] ?? "text-[var(--tc-text-muted)]";
+  const Icon = ICON_MAP[product];
 
   const landing = LANDING_MAP[product];
   const isExternal = !landing && url.startsWith("http");
@@ -309,14 +228,14 @@ function ProductCardSmall({
       landing={landing}
       url={url}
       isExternal={isExternal}
-      className="group relative block p-4 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:bg-[var(--tc-surface-3)] hover:border-[var(--tc-border-bright)] transition-colors hover:-translate-y-1 duration-200 h-full flex flex-col"
+      className="group tc-card tc-card-hover p-5 h-full flex flex-col"
     >
-      <div className="flex items-start justify-between mb-3">
-        <div className="w-9 h-9 rounded-[var(--tc-radius-sm)] bg-[var(--tc-surface-0)] flex items-center justify-center">
-          {(() => { const Icon = ICON_MAP[product]; return <Icon className="w-5 h-5 text-white" />; })()}
+      <div className="flex items-start justify-between mb-4">
+        <div className="w-10 h-10 rounded-xl bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] flex items-center justify-center">
+          <Icon className="w-5 h-5" strokeWidth={1.75} />
         </div>
         <span
-          className={`inline-flex items-center gap-1 rounded-full font-500 border px-1.5 py-0 text-[9px] ${statusClass}`}
+          className={`inline-flex items-center gap-1.5 rounded-full font-500 border px-2 py-0.5 text-[10px] ${statusClass}`}
         >
           <span className="w-1 h-1 rounded-full bg-current" />
           {statusLabel}
@@ -324,12 +243,12 @@ function ProductCardSmall({
       </div>
 
       <h3
-        className="text-sm font-700 text-white mb-0.5"
+        className="text-base font-700 text-[var(--tc-text-primary)] mb-0.5 tracking-tight"
         style={{ fontFamily: "var(--font-display)" }}
       >
         {name}
       </h3>
-      <p className={`text-[10px] font-500 ${divisionColor}`}>{tagline}</p>
+      <p className="text-xs text-[var(--tc-text-muted)]">{tagline}</p>
     </CardLink>
   );
 }

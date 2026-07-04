@@ -39,7 +39,7 @@ const ITEMS: { quarter: string; status: Status; title: string; desc: string; pro
 
   // Q1 2027 planned
   { quarter: "Q1 2027", status: "planned", title: "Ventra public launch", desc: "Trend tahlili AI", product: "Ventra" },
-  { quarter: "Q1 2027", status: "planned", title: "Savdo-Builder no-code", desc: "Drag-drop biznes dastur quruvchi", product: "Savdo-Builder" },
+  { quarter: "Q1 2027", status: "planned", title: "MaxSavdo no-code", desc: "Drag-drop biznes dastur quruvchi", product: "MaxSavdo" },
   { quarter: "Q1 2027", status: "planned", title: "Mobile apps (iOS + Android)", desc: "RAOS + AI Office native", product: "Tezcode" },
   { quarter: "Q1 2027", status: "planned", title: "API marketplace", desc: "Tezcode API'lar uchinchi tomonlarga", product: "Tezcode" },
 
@@ -152,7 +152,7 @@ export default function RoadmapPage() {
               Sizning ehtiyojingiz bizning keyingi sprintingiz bo'lishi mumkin.
             </p>
             <a
-              href="https://t.me/webdevelopertk"
+              href="https://t.me/tezcode_managament"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] text-white font-500 text-sm tc-glow-blue hover:bg-[var(--tc-blue-light)] transition-colors"

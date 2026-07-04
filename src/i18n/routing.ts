@@ -5,7 +5,9 @@ export const routing = defineRouting({
   locales: ["uz", "ru", "en", "ar", "uk"],
   defaultLocale: "uz",
   localePrefix: "as-needed",
-  localeDetection: true,
+  // Uzbek is the primary language: always serve uz first. Visitors can switch
+  // manually (their choice persists via the locale cookie).
+  localeDetection: false,
   localeCookie: {
     maxAge: 60 * 60 * 24 * 365, // 1 year
   },

@@ -12,10 +12,10 @@ export const metadata = buildPageMetadata({
 
 export default function CaseStudiesIndexPage() {
   return (
-    <>
+    <div data-theme="light" className="bg-[var(--tc-ink)] text-[var(--tc-text-primary)]">
       <Navbar />
       <CaseStudiesIndexClient />
       <Footer />
-    </>
+    </div>
   );
 }

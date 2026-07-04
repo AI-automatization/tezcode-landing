@@ -181,7 +181,7 @@ export function getOrganizationSchema() {
       name: "Bekzod Mirzaaliyev",
       jobTitle: "Founder & CEO",
       url: `${BASE_URL}/bekzod-mirzaaliyev`,
-      sameAs: ["https://t.me/webdevelopertk"],
+      sameAs: ["https://t.me/tezcode_managament"],
     },
     address: {
       "@type": "PostalAddress",
@@ -224,7 +224,7 @@ export function getOrganizationSchema() {
         telephone: "+998993151516",
         contactType: "customer service",
         email: "tezcode@tezcode.dev",
-        url: "https://t.me/webdevelopertk",
+        url: "https://t.me/tezcode_managament",
         areaServed: ["UZ", "RU", "KZ", "TJ", "KG", "TM"],
         availableLanguage: ["uz", "ru", "en", "ar", "uk"],
       },
@@ -240,8 +240,7 @@ export function getOrganizationSchema() {
     // engines don't conflate Tezcode (tezcode.dev) with the unrelated TezCode.tech
     // coding bootcamp or codingtech.uz. Directory profiles double as authority signals.
     sameAs: [
-      "https://t.me/Web_Developers_free",
-      "https://t.me/webdevelopertk",
+      "https://t.me/tezcode_managament",
       "https://www.instagram.com/tezcode_dev/",
       "https://www.linkedin.com/company/tezcode-dev",
       "https://github.com/AI-automatization",
@@ -297,7 +296,7 @@ export function getFounderSchema() {
       addressLocality: "Tashkent",
       addressCountry: "UZ",
     },
-    sameAs: ["https://t.me/webdevelopertk"],
+    sameAs: ["https://t.me/tezcode_managament"],
   };
 }
 
@@ -423,7 +422,7 @@ export function getServiceSchema(input: {
       servicePhone: {
         "@type": "ContactPoint",
         contactType: "sales",
-        url: "https://t.me/webdevelopertk",
+        url: "https://t.me/tezcode_managament",
         email: "tezcode@tezcode.dev",
       },
     },

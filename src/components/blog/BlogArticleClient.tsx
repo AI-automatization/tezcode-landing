@@ -10,29 +10,22 @@ import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Magnetic } from "@/components/motion/Magnetic";
 import type { ArticleContent, ArticleCopy, ArticleLang } from "./types";
 
-// Renderer for a single Tezcode blog / GEO article. Same design language as the
-// service pages (tc-ink surface, blue/gold accents, Reveal motion) but laid out
-// as a readable long-form article: hero → TL;DR answer box → prose sections →
-// FAQ accordion → CTA. The visible FAQ mirrors the FAQPage JSON-LD emitted by
-// the server page so answer engines see the same Q&A they render.
+// Renderer for a single Tezcode blog / GEO article. Same LIGHT premium design
+// language as the home page (data-theme="light" scope, tc-card surfaces, one
+// blue accent) laid out as a readable long-form article: hero → TL;DR answer
+// box → prose sections → FAQ accordion → CTA. The visible FAQ mirrors the
+// FAQPage JSON-LD emitted by the server page so answer engines see the same
+// Q&A they render.
 
 // ─────────────────────────── Hero ───────────────────────────
 function ArticleHero({ copy }: { copy: ArticleCopy }) {
   return (
     <section className="relative pt-36 pb-16 px-6 overflow-hidden">
-      <div
-        aria-hidden
-        className="absolute inset-0 opacity-[0.12] pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(0,64,255,0.5), transparent 70%)",
-          filter: "blur(70px)",
-        }}
-      />
+      <div aria-hidden className="tc-grid-bg absolute inset-0" />
       <div className="max-w-3xl mx-auto relative z-10">
         <Reveal>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue-light)] mb-6 uppercase tracking-[0.2em]">
-            {copy.hero.badge}
+          <div className="mb-6">
+            <span className="tc-chip">{copy.hero.badge}</span>
           </div>
           <h1
             className="text-[clamp(2rem,5vw,4rem)] font-800 leading-[1.05] tracking-[-0.02em] mb-6 text-[var(--tc-text-primary)]"
@@ -61,22 +54,16 @@ function TldrBox({ copy }: { copy: ArticleCopy }) {
     <section className="px-6">
       <div className="max-w-3xl mx-auto">
         <Reveal>
-          <div className="relative rounded-[var(--tc-radius-lg)] border border-[var(--tc-blue)]/30 bg-[var(--tc-surface-2)] p-6 md:p-8 overflow-hidden">
-            <div
-              aria-hidden
-              className="absolute inset-0 opacity-[0.10] pointer-events-none"
-              style={{
-                background:
-                  "radial-gradient(ellipse at 0% 0%, rgba(0,64,255,0.5), transparent 60%)",
-              }}
-            />
-            <div className="relative flex items-center gap-2 mb-3">
-              <Zap className="w-4 h-4 text-[var(--tc-gold)]" />
-              <span className="text-xs font-600 text-[var(--tc-gold)] uppercase tracking-[0.2em]">
+          <div className="tc-card p-6 md:p-8">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="w-7 h-7 rounded-lg bg-[var(--tc-blue-dim)] flex items-center justify-center">
+                <Zap className="w-4 h-4 text-[var(--tc-blue-text)]" />
+              </span>
+              <span className="text-xs font-600 text-[var(--tc-blue-text)] uppercase tracking-[0.2em]">
                 {copy.tldr.label}
               </span>
             </div>
-            <p className="relative text-base md:text-lg text-[var(--tc-text-primary)] leading-relaxed">
+            <p className="text-base md:text-lg text-[var(--tc-text-primary)] leading-relaxed">
               {copy.tldr.text}
             </p>
           </div>
@@ -133,7 +120,7 @@ function ArticleFaq({ copy }: { copy: ArticleCopy }) {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
   return (
-    <section className="relative py-24 px-6 bg-[var(--tc-surface-1)] overflow-hidden">
+    <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] border-t border-[var(--tc-border)] overflow-hidden">
       <div className="max-w-3xl mx-auto relative z-10">
         <Reveal className="mb-12">
           <h2
@@ -151,9 +138,9 @@ function ArticleFaq({ copy }: { copy: ArticleCopy }) {
               <RevealItem key={i}>
                 <div
                   className={[
-                    "rounded-[var(--tc-radius-lg)] border bg-[var(--tc-surface-2)] transition-colors overflow-hidden",
+                    "rounded-[var(--tc-radius-lg)] border bg-[var(--tc-surface-1)] transition-colors overflow-hidden",
                     isOpen
-                      ? "border-[var(--tc-blue)]/40"
+                      ? "border-[var(--tc-blue)]/40 shadow-[var(--tc-shadow-card)]"
                       : "border-[var(--tc-border)] hover:border-[var(--tc-border-bright)]",
                   ].join(" ")}
                 >
@@ -176,7 +163,7 @@ function ArticleFaq({ copy }: { copy: ArticleCopy }) {
                         "shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-xl",
                         isOpen
                           ? "bg-[var(--tc-blue)] text-white"
-                          : "bg-[var(--tc-surface-3)] text-[var(--tc-text-secondary)]",
+                          : "bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)]",
                       ].join(" ")}
                     >
                       +
@@ -204,19 +191,11 @@ function ArticleFaq({ copy }: { copy: ArticleCopy }) {
 
 // ─────────────────────────── CTA ───────────────────────────
 function ArticleCta({ copy }: { copy: ArticleCopy }) {
-  const href = copy.cta.href ?? "https://t.me/webdevelopertk";
+  const href = copy.cta.href ?? "https://t.me/tezcode_managament";
   const isTelegram = href.includes("t.me");
   return (
-    <section className="relative py-28 px-6 overflow-hidden">
-      <div
-        aria-hidden
-        className="absolute inset-0 opacity-[0.16] pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(0,64,255,0.4), transparent 70%)",
-          filter: "blur(60px)",
-        }}
-      />
+    <section className="relative py-20 sm:py-28 px-6 overflow-hidden">
+      <div aria-hidden className="tc-grid-bg absolute inset-0" />
       <div className="max-w-3xl mx-auto relative z-10 text-center">
         <Reveal>
           <h2
@@ -237,7 +216,7 @@ function ArticleCta({ copy }: { copy: ArticleCopy }) {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="group inline-flex px-10 py-5 rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] text-white font-700 text-base tc-glow-blue items-center gap-3"
+              className="tc-btn-primary group inline-flex items-center gap-3 text-base"
             >
               {isTelegram ? (
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -245,7 +224,7 @@ function ArticleCta({ copy }: { copy: ArticleCopy }) {
                 </svg>
               ) : null}
               {copy.cta.button}
-              <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg className="w-4 h-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </motion.a>
@@ -265,7 +244,10 @@ export function BlogArticleClient({ content }: { content: ArticleContent }) {
   const copy = content[locale] ?? content.uz;
 
   return (
-    <main className="relative min-h-screen bg-[var(--tc-ink)] overflow-hidden">
+    <main
+      data-theme="light"
+      className="relative min-h-screen bg-[var(--tc-ink)] text-[var(--tc-text-primary)] overflow-hidden"
+    >
       <Navbar />
       <ArticleHero copy={copy} />
       <TldrBox copy={copy} />

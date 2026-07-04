@@ -11,14 +11,37 @@
     "team": "Team",
     "contact": "Contact",
     "language": "Language",
-    "blog": "Blog"
+    "blog": "Blog",
+    "pricing": "Pricing",
+    "about": "About"
+  },
+  "menu": {
+    "headers": {
+      "products": "Products",
+      "aiSolutions": "AI solutions",
+      "services": "Services"
+    },
+    "allSolutions": "All solutions",
+    "solutions": {
+      "aiAutomation": "AI automation",
+      "aiAgent": "AI agent",
+      "businessAutomation": "Business automation",
+      "aiChatbot": "AI chatbot",
+      "telegramBot": "Telegram bot",
+      "posSystem": "POS system",
+      "clinicCrm": "Clinic CRM",
+      "employeeMonitoring": "Employee monitoring",
+      "itServices": "IT services",
+      "hireDevelopers": "Hire developers",
+      "caseStudies": "Case studies"
+    }
   },
   "hero": {
     "badge": "AI · Software Factory · Tashkent",
     "headline": "We automate\nany business\nwith AI",
     "subheadline": "8 products. 6 divisions. 1 mission — systematize every business.",
     "cta_primary": "Get free demo",
-    "cta_secondary": "Contact us",
+    "cta_secondary": "Message us on Telegram",
     "stat_divisions": "Divisions",
     "stat_products": "Products",
     "stat_projects": "Project",
@@ -30,6 +53,7 @@
   "divisions": {
     "title": "Our 6 Divisions",
     "subtitle": "Each one — the best solution in its domain",
+    "cta": "Learn more",
     "systems": {
       "name": "TezCode Systems",
       "tagline": "Ready-to-use SaaS products",
@@ -62,7 +86,7 @@
       "name": "TezCode Labs",
       "tagline": "Internal startups",
       "description": "Our innovation lab — where new products and experimental ideas are born.",
-      "products": "WeWatch · CoreMed · Ventra · Savdo-Builder",
+      "products": "WeWatch · CoreMed · Ventra · MaxSavdo",
       "model": "Investment + Equity"
     },
     "academy": {
@@ -133,12 +157,12 @@
       "url": "#"
     },
     "savdo_builder": {
-      "name": "Savdo-Builder",
+      "name": "MaxSavdo",
       "tagline": "No-code builder",
       "description": "Builder for creating commerce apps (no-code).",
       "status": "Soon",
       "division": "Labs",
-      "url": "#"
+      "url": "https://maxsavdo.uz"
     },
     "status_labels": {
       "Live": "Live",

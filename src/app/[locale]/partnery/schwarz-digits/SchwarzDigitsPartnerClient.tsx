@@ -255,36 +255,59 @@ const COPY: Record<Lang, CopyShape> = {
   },
 };
 
+// Captions for the two extra meeting photos (added later — kept as a small
+// inline map so the large COPY object doesn't need touching in 5 locales).
+const EXTRA_CAPTIONS: Record<Lang, { abbosWolf: string; ecosystem: string }> = {
+  uz: {
+    abbosWolf:
+      "Uchrashuvda: Abbos Xamidov (aisolution.uz) va Schwarz Digits vakili — IT Park Uzbekistan.",
+    ecosystem:
+      "Schwarz Digits taqdimoti — «Hamkorlar ekotizimi va o'sish» kontseptsiyasi: Yevropa kompaniyalari qanday texnologik ittifoqlar quradi.",
+  },
+  ru: {
+    abbosWolf:
+      "На встрече: Аббос Хамидов (aisolution.uz) и представитель Schwarz Digits — IT Park Uzbekistan.",
+    ecosystem:
+      "Презентация Schwarz Digits — концепция «Экосистема партнёров и рост»: как европейские компании строят технологические альянсы.",
+  },
+  en: {
+    abbosWolf:
+      "At the meeting: Abbos Khamidov (aisolution.uz) and the Schwarz Digits representative — IT Park Uzbekistan.",
+    ecosystem:
+      "Schwarz Digits presentation — the “Partner Ecosystem & Growth” concept: how European companies build technology alliances.",
+  },
+  ar: {
+    abbosWolf:
+      "في الاجتماع: عباس خاميدوف (aisolution.uz) وممثل Schwarz Digits — IT Park Uzbekistan.",
+    ecosystem:
+      "عرض Schwarz Digits — مفهوم «منظومة الشركاء والنمو»: كيف تبني الشركات الأوروبية تحالفات تقنية.",
+  },
+  uk: {
+    abbosWolf:
+      "На зустрічі: Аббос Хамідов (aisolution.uz) та представник Schwarz Digits — IT Park Uzbekistan.",
+    ecosystem:
+      "Презентація Schwarz Digits — концепція «Екосистема партнерів і зростання»: як європейські компанії будують технологічні альянси.",
+  },
+};
+
 export function SchwarzDigitsPartnerClient() {
   const locale = useLocale() as Lang;
   const c = COPY[locale] ?? COPY.uz;
+  const extra = EXTRA_CAPTIONS[locale] ?? EXTRA_CAPTIONS.uz;
 
   return (
-    <main className="relative min-h-screen bg-[var(--tc-ink)] pt-28 pb-24">
-      {/* ambient glow */}
-      <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-[420px]"
-        style={{
-          background:
-            "radial-gradient(70% 60% at 50% 0%, var(--tc-blue-dim), transparent 70%)",
-        }}
-      />
+    <main
+      data-theme="light"
+      className="relative min-h-screen bg-[var(--tc-ink)] text-[var(--tc-text-primary)] pt-28 pb-24"
+    >
+      {/* Faint grid background */}
+      <div aria-hidden className="tc-grid-bg pointer-events-none absolute inset-0" />
 
       <div className="relative mx-auto max-w-4xl px-6">
-        {/* Back */}
-        <Reveal>
-          <Link
-            href="/"
-            className="inline-block text-sm text-[var(--tc-text-muted)] transition-colors hover:text-[var(--tc-text-primary)]"
-          >
-            {c.back}
-          </Link>
-        </Reveal>
-
         {/* Hero */}
         <Reveal className="mt-8 flex flex-col items-center text-center" delay={0.05}>
-          <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-[var(--tc-border)] bg-[var(--tc-surface-1)] px-4 py-1.5 text-xs font-500 text-[var(--tc-blue-text)]">
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--tc-blue-light)]" />
+          <span className="tc-chip mb-6">
+            <span className="h-1.5 w-1.5 rounded-full bg-[var(--tc-blue)]" />
             {c.badge}
           </span>
 
@@ -300,37 +323,18 @@ export function SchwarzDigitsPartnerClient() {
           </p>
         </Reveal>
 
-        {/* Photos */}
-        <RevealStagger className="mt-14 grid gap-4 md:grid-cols-2">
-          <RevealItem className="overflow-hidden rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-1)]">
-            <div className="relative aspect-[3/4] w-full">
-              <Image
-                src="/partners/schwarz-digits-meeting-group.jpg"
-                alt={c.photoGroupCaption}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-            <p className="p-4 text-xs leading-relaxed text-[var(--tc-text-muted)]">
-              {c.photoGroupCaption}
-            </p>
-          </RevealItem>
-          <RevealItem className="overflow-hidden rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-1)]">
-            <div className="relative aspect-[3/4] w-full">
-              <Image
-                src="/partners/schwarz-digits-meeting-duo.jpg"
-                alt={c.photoDuoCaption}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-            <p className="p-4 text-xs leading-relaxed text-[var(--tc-text-muted)]">
-              {c.photoDuoCaption}
-            </p>
-          </RevealItem>
-        </RevealStagger>
+        {/* Photo 1 — Schwarz Digits representative & Tezcode */}
+        <Reveal className="mt-14">
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-lg overflow-hidden rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] shadow-[var(--tc-shadow-card)]">
+            <Image
+              src="/partners/schwarz-digits-meeting-duo.jpg"
+              alt={c.photoDuoCaption}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 512px"
+            />
+          </div>
+        </Reveal>
 
         {/* About */}
         <section className="mt-16">
@@ -354,6 +358,19 @@ export function SchwarzDigitsPartnerClient() {
           </Reveal>
         </section>
 
+        {/* Photo 2 — the "Partner Ecosystem" presentation */}
+        <Reveal className="mt-14">
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-lg overflow-hidden rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] shadow-[var(--tc-shadow-card)]">
+            <Image
+              src="/partners/schwarz-digits-ecosystem.jpg"
+              alt={extra.ecosystem}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 512px"
+            />
+          </div>
+        </Reveal>
+
         {/* Facts */}
         <section className="mt-16">
           <h2
@@ -366,7 +383,7 @@ export function SchwarzDigitsPartnerClient() {
             {c.facts.map((f, i) => (
               <RevealItem
                 key={i}
-                className="rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-1)] p-6 transition-colors hover:border-[var(--tc-border-bright)]"
+                className="tc-card tc-card-hover p-6"
               >
                 <div className="mb-2 flex items-center gap-3">
                   <span className="flex h-8 w-8 items-center justify-center rounded-[var(--tc-radius-sm)] bg-[var(--tc-blue-dim)] text-sm font-700 text-[var(--tc-blue-text)]">
@@ -406,6 +423,19 @@ export function SchwarzDigitsPartnerClient() {
           </Reveal>
         </section>
 
+        {/* Photo 3 — IT Park × Schwarz Digits welcome slide */}
+        <Reveal className="mt-14">
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-lg overflow-hidden rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] shadow-[var(--tc-shadow-card)]">
+            <Image
+              src="/partners/schwarz-digits-abbos-wolf.jpg"
+              alt="IT Park Uzbekistan × Schwarz Digits — Xush kelibsiz"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 512px"
+            />
+          </div>
+        </Reveal>
+
         {/* Position */}
         <section className="mt-16">
           <Reveal>
@@ -428,6 +458,19 @@ export function SchwarzDigitsPartnerClient() {
           </Reveal>
         </section>
 
+        {/* Photo 4 — the group at IT Park */}
+        <Reveal className="mt-14">
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-lg overflow-hidden rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] shadow-[var(--tc-shadow-card)]">
+            <Image
+              src="/partners/schwarz-digits-meeting-group.jpg"
+              alt={c.photoGroupCaption}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 512px"
+            />
+          </div>
+        </Reveal>
+
         {/* FAQ */}
         <section className="mt-16">
           <Reveal>
@@ -442,7 +485,7 @@ export function SchwarzDigitsPartnerClient() {
             {c.faq.map((item, i) => (
               <RevealItem
                 key={i}
-                className="rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-1)] p-6"
+                className="tc-card p-6"
               >
                 <h3 className="font-600 text-[var(--tc-text-primary)]">{item.q}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[var(--tc-text-muted)]">
@@ -455,7 +498,7 @@ export function SchwarzDigitsPartnerClient() {
 
         {/* CTA */}
         <Reveal className="mt-20">
-          <div className="relative overflow-hidden rounded-[var(--tc-radius-xl)] border border-[var(--tc-border)] bg-[var(--tc-surface-1)] p-10 text-center">
+          <div className="tc-navy-section relative overflow-hidden rounded-[var(--tc-radius-xl)] p-10 text-center">
             <div
               className="pointer-events-none absolute inset-0"
               style={{
@@ -473,8 +516,8 @@ export function SchwarzDigitsPartnerClient() {
               {c.ctaText}
             </p>
             <Link
-              href="/#contact"
-              className="relative mt-6 inline-flex items-center justify-center rounded-[var(--tc-radius-md)] bg-[var(--tc-blue)] px-7 py-3 text-sm font-600 text-white transition-all duration-300 hover:bg-[var(--tc-blue-light)]"
+              href="/aloqa"
+              className="tc-btn-primary relative mt-6 text-sm"
             >
               {c.ctaBtn}
             </Link>

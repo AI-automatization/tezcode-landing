@@ -2,7 +2,9 @@
 
 import { motion } from "motion/react";
 import { useLocale } from "next-intl";
+import { Check } from "lucide-react";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
+import { Link } from "@/i18n/routing";
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
 
@@ -181,6 +183,14 @@ const COPY: Record<Lang, {
   },
 };
 
+const CHIP_LABEL: Record<Lang, string> = {
+  uz: "Narxlar",
+  ru: "Цены",
+  en: "Pricing",
+  ar: "الأسعار",
+  uk: "Ціни",
+};
+
 export function PricingTiers() {
   const locale = useLocale() as Lang;
   const t = COPY[locale] ?? COPY.uz;
@@ -188,63 +198,80 @@ export function PricingTiers() {
   return (
     <section
       id="pricing"
-      className="relative py-32 px-6 bg-[var(--tc-ink)] overflow-hidden"
+      className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] border-t border-[var(--tc-border)]"
     >
-      <div className="max-w-7xl mx-auto relative z-10">
-        <Reveal className="text-center mb-20">
+      <div className="max-w-7xl mx-auto">
+        <Reveal className="text-center mb-14">
+          <div className="mb-5">
+            <span className="tc-chip">{CHIP_LABEL[locale] ?? CHIP_LABEL.uz}</span>
+          </div>
           <h2
-            className="text-4xl md:text-6xl font-700 mb-4 tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-700 tracking-tight text-[var(--tc-text-primary)] mb-4"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {t.title}
           </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl">
+          <p className="text-[var(--tc-text-muted)] text-lg max-w-2xl mx-auto">
             {t.subtitle}
           </p>
         </Reveal>
 
         <RevealStagger
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch max-w-5xl mx-auto"
           stagger={0.1}
         >
           {t.tiers.map((tier) => (
-            <RevealItem key={tier.name}>
+            <RevealItem key={tier.name} className="h-full">
               <motion.div
-                whileHover={{ y: -6 }}
+                whileHover={tier.highlight ? undefined : { y: -6 }}
                 className={[
-                  "relative p-8 rounded-[var(--tc-radius-xl)] h-full flex flex-col transition-colors",
+                  "relative h-full flex flex-col p-8",
                   tier.highlight
-                    ? "border-2 border-[var(--tc-gold)] bg-gradient-to-br from-[var(--tc-surface-2)] to-[var(--tc-surface-1)] tc-glow-gold"
-                    : "border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-border-bright)]",
+                    ? "z-10 rounded-[var(--tc-radius-lg)] border border-[rgba(255,255,255,0.14)] bg-[var(--tc-navy)] shadow-[0_24px_60px_rgba(0,64,255,0.25)] md:scale-[1.04]"
+                    : "tc-card tc-card-hover",
                 ].join(" ")}
               >
                 {tier.highlight && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-[var(--tc-gold)] text-[var(--tc-ink)] text-[10px] font-700 uppercase tracking-[0.15em]">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[var(--tc-blue)] px-4 py-1 text-xs font-700 text-white">
                     Popular
                   </div>
                 )}
 
                 <h3
-                  className="text-2xl font-700 text-white mb-1"
+                  className={`text-2xl font-700 mb-1 ${
+                    tier.highlight ? "text-[#f2f5fb]" : "text-[var(--tc-text-primary)]"
+                  }`}
                   style={{ fontFamily: "var(--font-display)" }}
                 >
                   {tier.name}
                 </h3>
-                <p className="text-sm text-[var(--tc-text-muted)] mb-6">
+                <p
+                  className={`text-sm mb-6 ${
+                    tier.highlight
+                      ? "text-[rgba(242,245,251,0.72)]"
+                      : "text-[var(--tc-text-muted)]"
+                  }`}
+                >
                   {tier.tagline}
                 </p>
 
                 <div className="mb-6 flex items-baseline gap-1">
                   <span
                     className={`text-5xl font-800 ${
-                      tier.highlight ? "tc-text-gradient-gold" : "text-white"
+                      tier.highlight ? "text-[#f2f5fb]" : "text-[var(--tc-text-primary)]"
                     }`}
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {tier.price}
                   </span>
                   {tier.price.startsWith("$") && tier.price !== "$0" && (
-                    <span className="text-sm text-[var(--tc-text-muted)]">
+                    <span
+                      className={`text-sm ${
+                        tier.highlight
+                          ? "text-[rgba(242,245,251,0.72)]"
+                          : "text-[var(--tc-text-muted)]"
+                      }`}
+                    >
                       {t.per}
                     </span>
                   )}
@@ -253,33 +280,36 @@ export function PricingTiers() {
                 <ul className="space-y-3 mb-8 flex-1">
                   {tier.features.map((feat, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm">
-                      <svg
+                      <Check
                         className={`w-4 h-4 mt-0.5 shrink-0 ${
-                          tier.highlight ? "text-[var(--tc-gold)]" : "text-[var(--tc-blue-text)]"
+                          tier.highlight ? "text-[#34d399]" : "text-[var(--tc-success)]"
                         }`}
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
+                        strokeWidth={2.5}
+                        aria-hidden
+                      />
+                      <span
+                        className={
+                          tier.highlight
+                            ? "text-[rgba(242,245,251,0.72)]"
+                            : "text-[var(--tc-text-secondary)]"
+                        }
                       >
-                        <path d="M3 8l3 3 7-7" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                      <span className="text-[var(--tc-text-secondary)]">{feat}</span>
+                        {feat}
+                      </span>
                     </li>
                   ))}
                 </ul>
 
-                <a
-                  href="#contact"
-                  className={[
-                    "block w-full text-center px-5 py-3 rounded-[var(--tc-radius-md)] font-600 text-sm transition-colors",
+                <Link
+                  href="/aloqa"
+                  className={
                     tier.highlight
-                      ? "bg-[var(--tc-gold)] text-[var(--tc-ink)] hover:bg-[var(--tc-gold-light)]"
-                      : "border border-[var(--tc-border-bright)] text-white hover:bg-[var(--tc-surface-3)]",
-                  ].join(" ")}
+                      ? "tc-btn-primary w-full text-sm"
+                      : "tc-btn-secondary w-full text-sm"
+                  }
                 >
                   {t.cta}
-                </a>
+                </Link>
               </motion.div>
             </RevealItem>
           ))}

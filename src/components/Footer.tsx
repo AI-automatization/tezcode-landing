@@ -1,6 +1,130 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+import { ArrowRight, Check, Mail, MapPin, Phone, Send } from "lucide-react";
+import { InstagramIcon, LinkedinIcon } from "@/components/icons/BrandIcons";
+
+// ─────────────────────────────────────────────────────────
+// Contact hub copy (pre-footer block) — per-locale, uz fallback
+// ─────────────────────────────────────────────────────────
+type HubLang = "uz" | "ru" | "en" | "ar" | "uk";
+
+const HUB_COPY: Record<
+  HubLang,
+  {
+    forLeaders: string;
+    auditTitle: string;
+    auditDesc: string;
+    points: [string, string, string];
+    cta: string;
+  }
+> = {
+  uz: {
+    forLeaders: "Biznes egalari uchun",
+    auditTitle: "Bepul jarayon auditidan boshlang",
+    auditDesc:
+      "30 daqiqada AI biznesingizning qaysi qismiga eng katta foyda berishini aniqlab beramiz: savdo, mijozlar, hisobotlar yoki jarayonlar.",
+    points: [
+      "14 kun bepul sinov — karta talab qilinmaydi",
+      "Qo'llab-quvvatlash: UZ / RU / EN",
+      "POS, CRM va Telegram integratsiyalari",
+    ],
+    cta: "Bepul konsultatsiya",
+  },
+  ru: {
+    forLeaders: "Для владельцев бизнеса",
+    auditTitle: "Начните с бесплатного аудита процессов",
+    auditDesc:
+      "За 30 минут определим, где AI даст вашему бизнесу наибольший эффект: продажи, клиенты, отчёты или процессы.",
+    points: [
+      "14 дней бесплатно — карта не нужна",
+      "Поддержка: UZ / RU / EN",
+      "Интеграции: POS, CRM и Telegram",
+    ],
+    cta: "Бесплатная консультация",
+  },
+  en: {
+    forLeaders: "For business owners",
+    auditTitle: "Start with a free process audit",
+    auditDesc:
+      "In 30 minutes we'll pinpoint where AI delivers the biggest impact for your business: sales, customers, reporting or operations.",
+    points: [
+      "14-day free trial — no card required",
+      "Support: UZ / RU / EN",
+      "POS, CRM and Telegram integrations",
+    ],
+    cta: "Free consultation",
+  },
+  ar: {
+    forLeaders: "لأصحاب الأعمال",
+    auditTitle: "ابدأ بتدقيق مجاني للعمليات",
+    auditDesc:
+      "خلال 30 دقيقة نحدد أين يحقق الذكاء الاصطناعي أكبر أثر في عملك: المبيعات، العملاء، التقارير أو العمليات.",
+    points: [
+      "تجربة مجانية لمدة 14 يومًا — بدون بطاقة",
+      "الدعم: UZ / RU / EN",
+      "تكاملات POS وCRM وTelegram",
+    ],
+    cta: "استشارة مجانية",
+  },
+  uk: {
+    forLeaders: "Для власників бізнесу",
+    auditTitle: "Почніть з безкоштовного аудиту процесів",
+    auditDesc:
+      "За 30 хвилин визначимо, де AI дасть вашому бізнесу найбільший ефект: продажі, клієнти, звіти чи процеси.",
+    points: [
+      "14 днів безкоштовно — картка не потрібна",
+      "Підтримка: UZ / RU / EN",
+      "Інтеграції: POS, CRM і Telegram",
+    ],
+    cta: "Безкоштовна консультація",
+  },
+};
+
+const CONTACT_CHANNELS: {
+  label: string;
+  href?: string;
+  external?: boolean;
+  icon: "phone" | "send" | "mail" | "pin" | "instagram" | "linkedin";
+}[] = [
+  { label: "+998 91 777 66 09", href: "tel:+998917776609", icon: "phone" },
+  {
+    label: "@tezcode_managament",
+    href: "https://t.me/tezcode_managament",
+    external: true,
+    icon: "send",
+  },
+  {
+    label: "Toshkent, Amir Temur shoh ko'chasi, 10",
+    href: "https://yandex.uz/maps/-/CTeXZ-PZ",
+    external: true,
+    icon: "pin",
+  },
+];
+
+// Compact icon-only row under the main channels.
+const SOCIAL_CHANNELS: { label: string; href: string; icon: "instagram" | "linkedin" | "mail" }[] = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/tezcode_dev/",
+    icon: "instagram",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/tezcode-dev/",
+    icon: "linkedin",
+  },
+  { label: "Email", href: "mailto:tezcode@tezcode.dev", icon: "mail" },
+];
+
+const CHANNEL_ICONS = {
+  phone: Phone,
+  send: Send,
+  mail: Mail,
+  pin: MapPin,
+  instagram: InstagramIcon,
+  linkedin: LinkedinIcon,
+} as const;
 
 // ─────────────────────────────────────────────────────────
 // TC Monogram (Footer — below fold, lazy load)
@@ -14,7 +138,7 @@ function TCLogo() {
         width={36}
         height={36}
         loading="lazy"
-        className="w-full h-full object-contain drop-shadow-[0_0_6px_rgba(212,160,23,0.3)]"
+        className="w-full h-full object-contain"
       />
     </div>
   );
@@ -25,6 +149,8 @@ function TCLogo() {
 // ─────────────────────────────────────────────────────────
 export function Footer() {
   const t = useTranslations("footer");
+  const locale = useLocale();
+  const hub = HUB_COPY[locale as HubLang] ?? HUB_COPY.uz;
   const year = new Date().getFullYear();
 
   // Section anchors (#...) live on the home page — prefix with "/" so they
@@ -39,7 +165,7 @@ export function Footer() {
   ];
 
   const companyLinks = [
-    { label: t("about"), href: "/#team" },
+    { label: t("about"), href: "/biz-haqimizda" },
     { label: t("for_businesses"), href: "/for-businesses" },
     { label: t("hire_developers"), href: "/hire-developers" },
     { label: t("case_studies"), href: "/case-studies" },
@@ -53,38 +179,132 @@ export function Footer() {
     { label: t("terms"), href: "/terms" },
   ];
 
-  const socialLinks = [
-    {
-      label: "Telegram",
-      href: "https://t.me/Web_Developers_free",
-      icon: (
-        <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-        </svg>
-      ),
-    },
-    {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/company/tezcode-dev/",
-      icon: (
-        <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-        </svg>
-      ),
-    },
-    {
-      label: "Instagram",
-      href: "https://www.instagram.com/tezcode_dev/",
-      icon: (
-        <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-        </svg>
-      ),
-    },
-  ];
-
   return (
-    <footer className="bg-[var(--tc-ink)] border-t border-[var(--tc-border)] py-16 px-6">
+    <>
+      {/* ── Contact hub — pre-footer: single navy panel ──── */}
+      <section className="bg-[var(--tc-ink)] border-t border-[var(--tc-border)] py-16 sm:py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="tc-navy-section relative overflow-hidden rounded-[28px] border border-[rgba(255,255,255,0.12)] p-8 sm:p-12 lg:p-14">
+            {/* Soft corner glow */}
+            <div
+              aria-hidden
+              className="absolute -top-32 -end-24 w-[26rem] h-[26rem] rounded-full blur-3xl pointer-events-none"
+              style={{ background: "rgba(0,64,255,0.22)" }}
+            />
+
+            <div className="relative grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-14">
+              {/* Left: pitch + CTAs + trust points */}
+              <div>
+                <div
+                  className="text-xs font-600 uppercase tracking-[0.16em] text-[var(--tc-blue-text)] mb-4"
+                  style={{ fontFamily: "var(--font-display)" }}
+                >
+                  {hub.forLeaders}
+                </div>
+                <h3
+                  className="text-3xl sm:text-4xl font-700 text-[var(--tc-text-primary)] leading-tight mb-4"
+                  style={{ fontFamily: "var(--font-display)" }}
+                >
+                  {hub.auditTitle}
+                </h3>
+                <p className="text-sm sm:text-base text-[var(--tc-text-secondary)] leading-relaxed mb-8 max-w-xl">
+                  {hub.auditDesc}
+                </p>
+
+                <div className="flex flex-col sm:flex-row gap-3 mb-9">
+                  <Link href="/aloqa" className="tc-btn-primary">
+                    {hub.cta}
+                    <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+                  </Link>
+                  <a
+                    href="https://t.me/tezcode_managament"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="tc-btn-secondary"
+                  >
+                    <Send className="w-4 h-4" />
+                    Telegram
+                  </a>
+                </div>
+
+                <div className="flex flex-wrap gap-x-6 gap-y-2.5">
+                  {hub.points.map((point) => (
+                    <span
+                      key={point}
+                      className="inline-flex items-center gap-2 text-sm text-[var(--tc-text-secondary)]"
+                    >
+                      <Check
+                        className="w-4 h-4 shrink-0 text-[var(--tc-success)]"
+                        strokeWidth={2.5}
+                      />
+                      {point}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right: contact channels — plain rows, no cards */}
+              <div className="lg:border-s lg:border-[var(--tc-border)] lg:ps-10">
+                <ul className="divide-y divide-[var(--tc-border)]">
+                  {CONTACT_CHANNELS.map((ch) => {
+                    const Icon = CHANNEL_ICONS[ch.icon];
+                    const inner = (
+                      <>
+                        <span className="w-10 h-10 shrink-0 rounded-xl bg-[var(--tc-blue-dim)] flex items-center justify-center">
+                          <Icon className="w-4.5 h-4.5 text-[var(--tc-blue-text)]" />
+                        </span>
+                        <span className="text-sm sm:text-base font-500 text-[var(--tc-text-primary)] truncate">
+                          {ch.label}
+                        </span>
+                      </>
+                    );
+                    return (
+                      <li key={ch.label}>
+                        {ch.href ? (
+                          <a
+                            href={ch.href}
+                            {...(ch.external
+                              ? { target: "_blank", rel: "noopener noreferrer" }
+                              : {})}
+                            className="flex items-center gap-4 py-4 group"
+                          >
+                            {inner}
+                          </a>
+                        ) : (
+                          <div className="flex items-center gap-4 py-4">{inner}</div>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+
+                {/* Socials + email — compact icon row */}
+                <div className="flex items-center gap-3 pt-5 border-t border-[var(--tc-border)]">
+                  {SOCIAL_CHANNELS.map((ch) => {
+                    const Icon = CHANNEL_ICONS[ch.icon];
+                    return (
+                      <a
+                        key={ch.label}
+                        href={ch.href}
+                        {...(ch.href.startsWith("http")
+                          ? { target: "_blank", rel: "noopener noreferrer" }
+                          : {})}
+                        aria-label={ch.label}
+                        title={ch.label}
+                        className="w-11 h-11 rounded-xl bg-[var(--tc-blue-dim)] flex items-center justify-center transition-colors duration-200 hover:bg-[var(--tc-blue)] group/social"
+                      >
+                        <Icon className="w-5 h-5 text-[var(--tc-blue-text)] group-hover/social:text-white transition-colors duration-200" />
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="tc-navy-section py-16 sm:py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Top row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
@@ -93,31 +313,15 @@ export function Footer() {
             <div className="flex items-center gap-2.5 mb-4">
               <TCLogo />
               <span
-                className="font-700 text-lg"
+                className="font-700 text-lg text-[var(--tc-text-primary)]"
                 style={{ fontFamily: "var(--font-display)" }}
               >
                 Tezcode
               </span>
             </div>
-            <p className="text-sm text-[var(--tc-text-muted)] leading-relaxed mb-6">
+            <p className="text-sm text-[var(--tc-text-muted)] leading-relaxed">
               {t("tagline")}
             </p>
-
-            {/* Socials */}
-            <div className="flex items-center gap-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="w-8 h-8 rounded-[var(--tc-radius-sm)] border border-[var(--tc-border)] flex items-center justify-center text-[var(--tc-text-muted)] hover:text-[var(--tc-blue-text)] hover:border-[var(--tc-blue)] transition-all duration-200"
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Services column */}
@@ -178,7 +382,7 @@ export function Footer() {
                   tezcode@tezcode.dev
                 </a>
               </li>
-              <li className="text-[var(--tc-text-muted)]">Tashkent, Uzbekistan</li>
+              <li className="text-[var(--tc-text-muted)]">Toshkent, Amir Temur shoh ko'chasi, 10</li>
             </ul>
           </div>
         </div>
@@ -189,7 +393,7 @@ export function Footer() {
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-            <p className="text-xs text-[var(--tc-text-muted)]">
+            <p className="text-sm text-[var(--tc-text-muted)]">
               © {year} Tezcode · {t("rights")} · {t("made_in")}
             </p>
             <div className="flex items-center gap-3">
@@ -197,21 +401,16 @@ export function Footer() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-xs text-[var(--tc-text-muted)] hover:text-[var(--tc-text-secondary)] transition-colors"
+                  className="text-sm text-[var(--tc-text-muted)] hover:text-[var(--tc-text-secondary)] transition-colors"
                 >
                   {link.label}
                 </Link>
               ))}
             </div>
           </div>
-          <div className="flex items-center gap-1 text-xs text-[var(--tc-text-muted)]">
-            <span>Built with</span>
-            <span className="text-[var(--tc-blue-text)]">Next.js 16</span>
-            <span>+</span>
-            <span className="text-[var(--tc-gold)]">next-intl</span>
-          </div>
         </div>
       </div>
-    </footer>
+      </footer>
+    </>
   );
 }

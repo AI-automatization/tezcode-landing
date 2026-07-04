@@ -15,7 +15,7 @@ const TEAM: Member[] = [
   {
     name: "Bekzod Mirzaaliyev",
     role: "Founder",
-    telegram: "@webdevelopertk",
+    telegram: "@tezcode_managament",
     isFounder: true,
   },
   {

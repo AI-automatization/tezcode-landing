@@ -11,14 +11,37 @@
     "team": "Jamoa",
     "contact": "Bog'lanish",
     "language": "Til",
-    "blog": "Blog"
+    "blog": "Blog",
+    "pricing": "Tariflar",
+    "about": "Biz haqimizda"
+  },
+  "menu": {
+    "headers": {
+      "products": "Mahsulotlar",
+      "aiSolutions": "AI yechimlar",
+      "services": "Xizmatlar"
+    },
+    "allSolutions": "Barcha yechimlar",
+    "solutions": {
+      "aiAutomation": "AI avtomatizatsiya",
+      "aiAgent": "AI agent",
+      "businessAutomation": "Biznes avtomatlashtirish",
+      "aiChatbot": "AI chatbot",
+      "telegramBot": "Telegram bot",
+      "posSystem": "POS tizimi",
+      "clinicCrm": "Klinika CRM",
+      "employeeMonitoring": "Xodim nazorati",
+      "itServices": "IT xizmatlar",
+      "hireDevelopers": "Dasturchi ijaraga",
+      "caseStudies": "Case study"
+    }
   },
   "hero": {
     "badge": "AI · Software Factory · Tashkent",
     "headline": "Har biznesni\nAI bilan\navtomatlashtiramiz",
     "subheadline": "8 ta mahsulot. 6 ta yo'nalish. 1 ta missiya — har biznesni tizimlashtirish.",
     "cta_primary": "Bepul demo olish",
-    "cta_secondary": "Biz bilan bog'lanish",
+    "cta_secondary": "Telegram'da yozish",
     "trust": "✓ 14 kun bepul · ✓ Karta talab qilinmaydi · ✓ 5 daqiqada boshlang",
     "stat_divisions": "Yo'nalish",
     "stat_products": "Mahsulot",
@@ -59,6 +82,7 @@
   "divisions": {
     "title": "Bizning 6 ta yo'nalish",
     "subtitle": "Har biri o'z sohada eng yaxshi yechim",
+    "cta": "Batafsil",
     "systems": {
       "name": "TezCode Systems",
       "tagline": "Tayyor SaaS mahsulotlar",
@@ -91,7 +115,7 @@
       "name": "TezCode Labs",
       "tagline": "Ichki startaplar",
       "description": "Bizning innovatsiya laboratoriyasi — yangi mahsulotlar, eksperimental yechimlar bu yerda tug'iladi.",
-      "products": "WeWatch · CoreMed · Ventra · Savdo-Builder",
+      "products": "WeWatch · CoreMed · Ventra · MaxSavdo",
       "model": "Investitsiya + Equity"
     },
     "academy": {
@@ -162,12 +186,12 @@
       "url": "#"
     },
     "savdo_builder": {
-      "name": "Savdo-Builder",
+      "name": "MaxSavdo",
       "tagline": "No-code builder",
       "description": "Mijozga savdo dastur yaratish builder (no-code).",
       "status": "Soon",
       "division": "Labs",
-      "url": "#"
+      "url": "https://maxsavdo.uz"
     },
     "status_labels": {
       "Live": "Ishlamoqda",

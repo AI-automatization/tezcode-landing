@@ -43,6 +43,41 @@
     --tc-duration-fast: 150ms;
     --tc-duration-base: 300ms;
     --tc-duration-slow: 600ms;
+
+    /* Navy anchor + status (theme-independent) */
+    --tc-navy: #0a1630;
+    --tc-navy-ink: #0c2050;
+    --tc-success: #34d399;
+    --tc-shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+    --tc-shadow-card-hover: 0 2px 4px rgba(0, 0, 0, 0.3), 0 16px 40px rgba(0, 0, 0, 0.45);
+  }
+
+  /* =========================================================
+     LIGHT THEME SCOPE — applied via data-theme="light" on a
+     page's <main>. Same var names, remapped values, so every
+     component styled with --tc-* adapts automatically.
+     ========================================================= */
+  [data-theme="light"] {
+    --tc-ink: #f5f7fb;
+    --tc-surface-0: #eef1f7;
+    --tc-surface-1: #ffffff;
+    --tc-surface-2: #f8fafc;
+    --tc-surface-3: #eef2f8;
+    --tc-border: #e3e8f0;
+    --tc-border-bright: #cbd5e4;
+    --tc-text-primary: #0c1a2e;
+    --tc-text-secondary: #3d4c63;
+    --tc-text-muted: #64748b;
+    --tc-blue-text: #0038d8;
+    --tc-blue-dim: rgba(0, 64, 255, 0.08);
+    --tc-gold: #b45309;
+    --tc-gold-light: #d97706;
+    --tc-gold-dim: rgba(180, 83, 9, 0.1);
+    --tc-success: #059669;
+    --tc-shadow-card: 0 1px 2px rgba(12, 26, 46, 0.05), 0 8px 24px rgba(12, 26, 46, 0.07);
+    --tc-shadow-card-hover: 0 2px 4px rgba(12, 26, 46, 0.06), 0 16px 40px rgba(12, 26, 46, 0.12);
+    color: var(--tc-text-primary);
+    background-color: var(--tc-ink);
   }
 
   /* RTL support for Arabic */
@@ -53,6 +88,15 @@
   html {
     background-color: var(--tc-ink);
     color: var(--tc-text-primary);
+  }
+
+  /* Root bg follows the page theme (overscroll / anchor-jump paint) */
+  html:has(main[data-theme="light"]) {
+    background-color: #f5f7fb;
+    color: #0c1a2e;
+  }
+
+  html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -93,6 +137,127 @@
    UTILITY CLASSES — Tezcode specific
    ========================================================= */
 @layer utilities {
+  /* ── Redesign primitives ─────────────────────────────── */
+  .tc-card {
+    background: var(--tc-surface-1);
+    border: 1px solid var(--tc-border);
+    border-radius: var(--tc-radius-lg);
+    box-shadow: var(--tc-shadow-card);
+  }
+
+  .tc-card-hover {
+    transition:
+      transform var(--tc-duration-base) var(--tc-ease),
+      box-shadow var(--tc-duration-base) var(--tc-ease),
+      border-color var(--tc-duration-base) var(--tc-ease);
+  }
+  .tc-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--tc-shadow-card-hover);
+    border-color: var(--tc-border-bright);
+  }
+
+  .tc-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    border: 1px solid var(--tc-border);
+    background: var(--tc-surface-1);
+    padding: 0.375rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--tc-blue-text);
+  }
+
+  .tc-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    background: var(--tc-blue);
+    color: #ffffff;
+    padding: 0.875rem 1.75rem;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0, 64, 255, 0.25);
+    transition:
+      background var(--tc-duration-base) var(--tc-ease),
+      transform var(--tc-duration-base) var(--tc-ease),
+      box-shadow var(--tc-duration-base) var(--tc-ease);
+  }
+  .tc-btn-primary:hover {
+    background: var(--tc-blue-light);
+    transform: translateY(-1px);
+    box-shadow: 0 12px 28px rgba(0, 64, 255, 0.32);
+  }
+
+  .tc-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    background: var(--tc-surface-1);
+    border: 1px solid var(--tc-border-bright);
+    color: var(--tc-text-primary);
+    padding: 0.875rem 1.75rem;
+    font-weight: 600;
+    transition:
+      border-color var(--tc-duration-base) var(--tc-ease),
+      color var(--tc-duration-base) var(--tc-ease);
+  }
+  .tc-btn-secondary:hover {
+    border-color: var(--tc-blue);
+    color: var(--tc-blue-text);
+  }
+
+  /* Navy anchor section — re-flips inner vars to light-on-navy */
+  .tc-navy-section {
+    background-color: var(--tc-navy);
+    --tc-ink: var(--tc-navy);
+    --tc-surface-0: rgba(255, 255, 255, 0.03);
+    --tc-surface-1: rgba(255, 255, 255, 0.05);
+    --tc-surface-2: rgba(255, 255, 255, 0.07);
+    --tc-surface-3: rgba(255, 255, 255, 0.1);
+    --tc-border: rgba(255, 255, 255, 0.1);
+    --tc-border-bright: rgba(255, 255, 255, 0.22);
+    --tc-text-primary: #f2f5fb;
+    --tc-text-secondary: rgba(242, 245, 251, 0.75);
+    --tc-text-muted: rgba(242, 245, 251, 0.58);
+    --tc-blue-text: #7da2ff;
+    --tc-blue-dim: rgba(91, 140, 255, 0.14);
+    --tc-gold: #e8b93a;
+    --tc-gold-light: #f0ca5e;
+    --tc-success: #34d399;
+    --tc-shadow-card: 0 1px 2px rgba(0, 0, 0, 0.25), 0 8px 24px rgba(0, 0, 0, 0.3);
+    --tc-shadow-card-hover: 0 2px 4px rgba(0, 0, 0, 0.25), 0 16px 40px rgba(0, 0, 0, 0.4);
+    color: var(--tc-text-primary);
+  }
+
+  /* Faint blueprint grid + radial fade, for hero/section bgs */
+  .tc-grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(12, 26, 46, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(12, 26, 46, 0.045) 1px, transparent 1px);
+    background-size: 48px 48px;
+    -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 20%, black 40%, transparent 100%);
+    mask-image: radial-gradient(ellipse 90% 80% at 50% 20%, black 40%, transparent 100%);
+  }
+
+  /* Theme-aware logo swap (Navbar renders on dark AND light pages) */
+  .tc-logo-on-light {
+    display: none;
+  }
+  [data-theme="light"] .tc-logo-on-light {
+    display: block;
+  }
+  [data-theme="light"] .tc-logo-on-dark {
+    display: none;
+  }
+
   .tc-gradient-blue {
     background: linear-gradient(135deg, var(--tc-blue) 0%, #0066ff 100%);
   }
@@ -162,6 +327,27 @@
 /* =========================================================
    ANIMATIONS
    ========================================================= */
+/* Continuous horizontal marquee — content must be duplicated once
+   (two identical halves) so -50% lands seamlessly on the loop point. */
+@keyframes tc-marquee-x {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.tc-marquee-x {
+  animation: tc-marquee-x 38s linear infinite;
+}
+.tc-marquee-x:hover {
+  animation-play-state: paused;
+}
+[dir="rtl"] .tc-marquee-x {
+  animation-direction: reverse;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tc-marquee-x {
+    animation: none;
+  }
+}
+
 @keyframes tc-fade-up {
   from {
     opacity: 0;

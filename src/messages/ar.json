@@ -11,14 +11,37 @@
     "team": "الفريق",
     "contact": "تواصل معنا",
     "language": "اللغة",
-    "blog": "المدونة"
+    "blog": "المدونة",
+    "pricing": "الأسعار",
+    "about": "من نحن"
+  },
+  "menu": {
+    "headers": {
+      "products": "المنتجات",
+      "aiSolutions": "حلول الذكاء الاصطناعي",
+      "services": "الخدمات"
+    },
+    "allSolutions": "جميع الحلول",
+    "solutions": {
+      "aiAutomation": "الأتمتة بالذكاء الاصطناعي",
+      "aiAgent": "وكيل ذكاء اصطناعي",
+      "businessAutomation": "أتمتة الأعمال",
+      "aiChatbot": "روبوت دردشة بالذكاء الاصطناعي",
+      "telegramBot": "بوت تيليجرام",
+      "posSystem": "نظام نقاط البيع",
+      "clinicCrm": "CRM للعيادات",
+      "employeeMonitoring": "مراقبة الموظفين",
+      "itServices": "خدمات تقنية المعلومات",
+      "hireDevelopers": "استئجار مطورين",
+      "caseStudies": "دراسات الحالة"
+    }
   },
   "hero": {
     "badge": "AI · مصنع برمجيات · طشقند",
     "headline": "نحن نؤتمت\nأي عمل تجاري\nبالذكاء الاصطناعي",
     "subheadline": "8 منتجات. 6 أقسام. مهمة واحدة — تنظيم كل عمل تجاري.",
     "cta_primary": "احصل على عرض مجاني",
-    "cta_secondary": "اتصل بنا",
+    "cta_secondary": "راسلنا على Telegram",
     "stat_divisions": "أقسام",
     "stat_products": "منتجات",
     "stat_projects": "مشروع",
@@ -30,6 +53,7 @@
   "divisions": {
     "title": "أقسامنا الستة",
     "subtitle": "كل قسم — الحل الأمثل في مجاله",
+    "cta": "اعرف المزيد",
     "systems": {
       "name": "TezCode Systems",
       "tagline": "منتجات SaaS جاهزة للاستخدام",
@@ -62,7 +86,7 @@
       "name": "TezCode Labs",
       "tagline": "شركات ناشئة داخلية",
       "description": "مختبرنا للابتكار — هنا تولد المنتجات الجديدة والحلول التجريبية.",
-      "products": "WeWatch · CoreMed · Ventra · Savdo-Builder",
+      "products": "WeWatch · CoreMed · Ventra · MaxSavdo",
       "model": "استثمار + حصة في الملكية"
     },
     "academy": {
@@ -133,12 +157,12 @@
       "url": "#"
     },
     "savdo_builder": {
-      "name": "Savdo-Builder",
+      "name": "MaxSavdo",
       "tagline": "منشئ بدون كود",
       "description": "منشئ تطبيقات التجارة (بدون كود).",
       "status": "Soon",
       "division": "Labs",
-      "url": "#"
+      "url": "https://maxsavdo.uz"
     },
     "status_labels": {
       "Live": "نشط",
