@@ -20,8 +20,12 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: PATH,
-    title:
-      "POS tizimi — RAOS: kassa, ombor, hisobot, internetsiz ishlaydi | Tezcode",
+    // { absolute } bypasses the layout's `%s | Tezcode` template so the
+    // rendered title ends with a single "— Tezcode".
+    title: {
+      absolute:
+        "POS tizimi — RAOS: kassa, ombor, hisobot, internetsiz ishlaydi — Tezcode",
+    },
     description:
       "O'zbekiston do'konlari uchun POS tizimi RAOS: kassa, ombor, mijoz, hisobot, ko'p filial va internetsiz (offline-first) ishlash. Toshkent va butun O'zbekiston. Bepul demo.",
     keywords: [

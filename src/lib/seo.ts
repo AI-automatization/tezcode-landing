@@ -175,13 +175,13 @@ export function getOrganizationSchema() {
     logo: `${BASE_URL}/icon.png`,
     image: `${BASE_URL}/og-image.png`,
     description:
-      "Tezcode — 2024-yilda Toshkentda tashkil topgan AI Software Factory (startup emas, ishlab turgan kompaniya). Biznes uchun AI agentlar, AI chatbotlar va buyurtma dasturlar yaratamiz — kichik biznesdan korporatsiyagacha. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), WorkControl, CoreMed/ClinicaGo (healthtech). Asoschi — Bekzod Mirzaaliyev.",
+      "TezCode — AI Software Factory. Toshkentda biznes uchun AI avtomatlashtirish: AI agentlar, chatbotlar va jarayonlar avtomatizatsiyasi. 2024-yilda tashkil topgan (startup emas, ishlab turgan kompaniya); buyurtma dasturlar ham yaratamiz — kichik biznesdan korporatsiyagacha. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), WorkControl, CoreMed/ClinicaGo (healthtech). Asoschi — Bekzod Mirzaaliyev.",
     // schema.org/disambiguatingDescription — purpose-built to separate this
     // entity from other similarly-named ones. Names the concrete collisions
     // (Tashkent UZ vs the Calicut/India "tezcode", the TezCode.tech bootcamp,
     // codingtech.uz) so AI engines resolve the bare name "tezcode" to THIS one.
     disambiguatingDescription:
-      "AI Software Factory based in Tashkent, Uzbekistan (tezcode.dev), founded 2024 by Bekzod Mirzaaliyev. NOT affiliated with any other company named 'tezcode' — in particular not the Calicut / Kerala (India) web-3.0 marketing company at linkedin.com/company/tezcode, not the TezCode.tech coding bootcamp, and not codingtech.uz / Coding Tech LLC.",
+      "TezCode — AI Software Factory. AI automation for business in Tashkent: AI agents, chatbots and process automation. Based in Tashkent, Uzbekistan (tezcode.dev), founded 2024 by Bekzod Mirzaaliyev. NOT affiliated with any other company named 'tezcode' — in particular not the Calicut / Kerala (India) web-3.0 marketing company at linkedin.com/company/tezcode, not the TezCode.tech coding bootcamp, and not codingtech.uz / Coding Tech LLC.",
     foundingDate: "2024",
     numberOfEmployees: {
       "@type": "QuantitativeValue",

@@ -1,27 +1,30 @@
 import type { ServicePageContent } from "@/components/service-page/types";
 
-// Content for /biznes-avtomatlashtirish — target keyword: "biznes avtomatlashtirish" /
-// "biznes jarayonlarini avtomatlashtirish" / "автоматизация бизнеса".
+// Content for /biznes-avtomatlashtirish — target keyword: "biznes jarayonlarini
+// avtomatlashtirish" / "автоматизация бизнес-процессов" with an INDUSTRY/PROCESS
+// angle (savdo, xizmat ko'rsatish, ombor, hisobot). Deliberately distinct from
+// /ai-avtomatizatsiya, the umbrella "AI avtomatlashtirish" hub — this page links
+// up to it (see `related`) instead of competing for the same head term.
 // Only confirmed Tezcode facts. No fabricated client counts or percentages.
 export const CONTENT: ServicePageContent = {
   uz: {
     hero: {
-      badge: "Biznes avtomatlashtirish — Tezcode",
+      badge: "Jarayonlar avtomatlashtirish — soha yechimlari",
       title1: "Biznes jarayonlarini",
       titleAccent: "avtomatlashtirish",
-      title2: "",
+      title2: "— sohangiz uchun",
       subtitle:
-        "Qo'lda Excel, Telegram va qog'ozda olib boriladigan ishlarni bitta tizimga jamlaymiz. Hisobot, buyurtma, ombor, mijoz — barchasi avtomatik. Tezcode Software Factory.",
+        "Savdo, xizmat ko'rsatish, ombor va hisobot jarayonlarini sohangizga moslab avtomatlashtiramiz. Qo'lda Excel, Telegram va qog'ozda olib boriladigan ishlar bitta tizimda. Tezcode Software Factory.",
       trust: "Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan",
       ctaPrimary: "Bepul konsultatsiya so'rang",
       ctaSecondary: "Nimani avtomatlashtiramiz?",
     },
     capabilities: {
-      badge: "Yo'nalishlar",
+      badge: "Sohalar va jarayonlar",
       title: "Qaysi jarayonlarni",
       titleAccent: "avtomatlashtiramiz?",
       subtitle:
-        "Vaqt va xato ko'p bo'ladigan har bir qo'l ish — avtomatlashtirishga arziydi. Eng ko'p so'raladiganlar.",
+        "Savdo, xizmat ko'rsatish, ombor, hisobot — vaqt va xato ko'p bo'ladigan har bir qo'l ish avtomatlashtirishga arziydi. Eng ko'p so'raladiganlar.",
       items: [
         { icon: "bar-chart-2", title: "Hisobot va analitika", desc: "Savdo, xarajat, foyda bir joyda. Kunlik va oylik hisobot avtomatik tuziladi — Excel'ni qo'lda yangilash kerak emas." },
         { icon: "receipt", title: "Buyurtma va sotuv", desc: "Buyurtma qabul qilish, holatini kuzatish, mijozga avtomatik xabar. Hech bir buyurtma yo'qolmaydi yoki unutilmaydi." },
@@ -77,31 +80,43 @@ export const CONTENT: ServicePageContent = {
         { q: "Hozirgi tizimlarim (1C, kassa, Telegram) bilan ishlaydimi?", a: "Ha. Biz Telegram, Google Sheets, 1C, to'lov va kassa tizimlari bilan integratsiya quramiz, shunda avtomatizatsiya hozirgi ish oqimingiz ichida ishlaydi." },
       ],
     },
+    related: {
+      badge: "Katta rasm",
+      title: "Bu — soha yechimlari.",
+      titleAccent: "Asosiy xizmat: AI avtomatlashtirish",
+      subtitle:
+        "Jarayonlarni avtomatlashtirish — Tezcode'ning \"AI avtomatlashtirish\" xizmatining bir qismi. To'liq ko'lam va bog'liq yechimlar quyida.",
+      links: [
+        { href: "/ai-avtomatizatsiya", label: "AI avtomatlashtirish xizmati haqida to'liq", desc: "Asosiy (umbrella) xizmat sahifasi: AI agentlar, chatbotlar va jarayonlar avtomatizatsiyasi — barcha imkoniyatlar bir joyda." },
+        { href: "/pos-tizimi", label: "POS tizimi (RAOS)", desc: "Savdo nuqtasi uchun tayyor yechim — kassa, ombor, mijoz va hisobot bitta dasturda." },
+        { href: "/telegram-bot-biznes", label: "Telegram bot biznes uchun", desc: "Buyurtma qabul qilish va to'lovlarni Telegram orqali avtomatlashtirish — arzon birinchi qadam." },
+      ],
+    },
     service: {
-      name: "Biznes avtomatlashtirish xizmati — Tezcode",
+      name: "Biznes jarayonlarini avtomatlashtirish — Tezcode",
       description:
-        "Biznes jarayonlarini avtomatlashtirish: hisobot, buyurtma, ombor, CRM, moliya va integratsiya. Buyurtma asosida tizim, Toshkent, O'zbekiston.",
+        "Soha bo'yicha biznes jarayonlarini avtomatlashtirish: savdo, xizmat ko'rsatish, ombor, hisobot, CRM, moliya va integratsiya. Buyurtma asosida tizim, Toshkent, O'zbekiston.",
       serviceType: "Biznes jarayonlarini avtomatlashtirish",
     },
   },
 
   ru: {
     hero: {
-      badge: "Автоматизация бизнеса — Tezcode",
+      badge: "Автоматизация процессов — отраслевые решения",
       title1: "Автоматизация",
       titleAccent: "бизнес-процессов",
-      title2: "",
+      title2: "— под вашу отрасль",
       subtitle:
-        "Объединяем работу, которая ведётся вручную в Excel, Telegram и на бумаге, в одну систему. Отчёты, заказы, склад, клиенты — всё автоматически. Tezcode Software Factory.",
+        "Автоматизируем процессы торговли, сферы услуг, склада и отчётности под вашу отрасль. Работа, которая ведётся вручную в Excel, Telegram и на бумаге, — в одной системе. Tezcode Software Factory.",
       trust: "Бесплатная 30-мин консультация • Оплата: 30% предоплата",
       ctaPrimary: "Бесплатная консультация",
       ctaSecondary: "Что автоматизируем?",
     },
     capabilities: {
-      badge: "Направления",
+      badge: "Отрасли и процессы",
       title: "Какие процессы",
       titleAccent: "автоматизируем?",
-      subtitle: "Любая ручная работа, где много времени и ошибок, заслуживает автоматизации. Самые частые запросы.",
+      subtitle: "Торговля, сфера услуг, склад, отчётность — любая ручная работа, где много времени и ошибок, заслуживает автоматизации. Самые частые запросы.",
       items: [
         { icon: "bar-chart-2", title: "Отчёты и аналитика", desc: "Продажи, расходы, прибыль в одном месте. Ежедневный и месячный отчёт строится автоматически — не нужно вручную обновлять Excel." },
         { icon: "receipt", title: "Заказы и продажи", desc: "Приём заказа, отслеживание статуса, автоуведомление клиенту. Ни один заказ не теряется и не забывается." },
@@ -157,31 +172,43 @@ export const CONTENT: ServicePageContent = {
         { q: "Работает ли с моими системами (1C, касса, Telegram)?", a: "Да. Мы строим интеграцию с Telegram, Google Sheets, 1C, платёжными и кассовыми системами, чтобы автоматизация работала внутри вашего текущего процесса." },
       ],
     },
+    related: {
+      badge: "Общая картина",
+      title: "Это — отраслевые решения.",
+      titleAccent: "Основная услуга: AI-автоматизация",
+      subtitle:
+        "Автоматизация процессов — часть услуги Tezcode «AI-автоматизация». Полный охват и связанные решения ниже.",
+      links: [
+        { href: "/ai-avtomatizatsiya", label: "Всё об услуге AI-автоматизации", desc: "Основная (зонтичная) страница услуги: AI-агенты, чат-боты и автоматизация процессов — все возможности в одном месте." },
+        { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Готовое решение для точки продаж — касса, склад, клиенты и отчёты в одной программе." },
+        { href: "/telegram-bot-biznes", label: "Telegram-бот для бизнеса", desc: "Автоматизация приёма заказов и платежей через Telegram — недорогой первый шаг." },
+      ],
+    },
     service: {
-      name: "Услуга автоматизации бизнеса — Tezcode",
+      name: "Автоматизация бизнес-процессов — Tezcode",
       description:
-        "Автоматизация бизнес-процессов: отчёты, заказы, склад, CRM, финансы и интеграция. Система на заказ, Ташкент, Узбекистан.",
+        "Отраслевая автоматизация бизнес-процессов: торговля, сфера услуг, склад, отчётность, CRM, финансы и интеграция. Система на заказ, Ташкент, Узбекистан.",
       serviceType: "Автоматизация бизнес-процессов",
     },
   },
 
   en: {
     hero: {
-      badge: "Business automation — Tezcode",
+      badge: "Process automation — industry solutions",
       title1: "Business process",
       titleAccent: "automation",
-      title2: "",
+      title2: "— for your industry",
       subtitle:
-        "We bring work that runs manually across Excel, Telegram and paper into one system. Reports, orders, inventory, customers — all automatic. Tezcode Software Factory.",
+        "We automate sales, service, warehouse and reporting processes, tailored to your industry. Work that runs manually across Excel, Telegram and paper — in one system. Tezcode Software Factory.",
       trust: "Free 30-min consultation • Payment: 30% upfront",
       ctaPrimary: "Book free consultation",
       ctaSecondary: "What do we automate?",
     },
     capabilities: {
-      badge: "Areas",
+      badge: "Industries & processes",
       title: "Which processes",
       titleAccent: "do we automate?",
-      subtitle: "Any manual task with lots of time and errors is worth automating. The most requested ones.",
+      subtitle: "Retail, services, warehouse, reporting — any manual task with lots of time and errors is worth automating. The most requested ones.",
       items: [
         { icon: "bar-chart-2", title: "Reports & analytics", desc: "Sales, costs, profit in one place. Daily and monthly reports build automatically — no manual Excel updates." },
         { icon: "receipt", title: "Orders & sales", desc: "Take orders, track status, auto-notify the customer. No order is lost or forgotten." },
@@ -237,31 +264,43 @@ export const CONTENT: ServicePageContent = {
         { q: "Will it work with my systems (1C, POS, Telegram)?", a: "Yes. We build integrations with Telegram, Google Sheets, 1C, payment and POS systems so the automation works inside your current process." },
       ],
     },
+    related: {
+      badge: "The bigger picture",
+      title: "This page — industry solutions.",
+      titleAccent: "The main service: AI automation",
+      subtitle:
+        "Process automation is part of Tezcode's \"AI automation\" service. See the full scope and related solutions below.",
+      links: [
+        { href: "/ai-avtomatizatsiya", label: "Everything about the AI automation service", desc: "The main (umbrella) service page: AI agents, chatbots and process automation — all capabilities in one place." },
+        { href: "/pos-tizimi", label: "POS system (RAOS)", desc: "A ready solution for the point of sale — register, inventory, customers and reports in one app." },
+        { href: "/telegram-bot-biznes", label: "Telegram bot for business", desc: "Automate order intake and payments via Telegram — an affordable first step." },
+      ],
+    },
     service: {
-      name: "Business automation service — Tezcode",
+      name: "Business process automation — Tezcode",
       description:
-        "Business process automation: reports, orders, inventory, CRM, finance and integration. Custom-built system, Tashkent, Uzbekistan.",
+        "Industry-focused business process automation: sales, services, warehouse, reporting, CRM, finance and integration. Custom-built system, Tashkent, Uzbekistan.",
       serviceType: "Business process automation",
     },
   },
 
   ar: {
     hero: {
-      badge: "أتمتة الأعمال — Tezcode",
+      badge: "أتمتة العمليات — حلول حسب المجال",
       title1: "أتمتة",
       titleAccent: "عمليات الأعمال",
-      title2: "",
+      title2: "— لمجالك",
       subtitle:
-        "نجمع العمل الذي يُدار يدوياً عبر Excel وTelegram والورق في نظام واحد. التقارير والطلبات والمخزون والعملاء — كل ذلك تلقائياً. Tezcode Software Factory.",
+        "نؤتمت عمليات البيع والخدمات والمخزون والتقارير بما يناسب مجالك. العمل الذي يُدار يدوياً عبر Excel وTelegram والورق — في نظام واحد. Tezcode Software Factory.",
       trust: "استشارة 30 دقيقة مجانية • الدفع: 30% مقدمًا",
       ctaPrimary: "احجز استشارة مجانية",
       ctaSecondary: "ماذا نؤتمت؟",
     },
     capabilities: {
-      badge: "المجالات",
+      badge: "المجالات والعمليات",
       title: "أي عمليات",
       titleAccent: "نؤتمت؟",
-      subtitle: "أي عمل يدوي يستهلك الوقت ويكثر فيه الخطأ يستحق الأتمتة. الأكثر طلباً.",
+      subtitle: "التجارة والخدمات والمخزون والتقارير — أي عمل يدوي يستهلك الوقت ويكثر فيه الخطأ يستحق الأتمتة. الأكثر طلباً.",
       items: [
         { icon: "bar-chart-2", title: "التقارير والتحليلات", desc: "المبيعات والمصاريف والأرباح في مكان واحد. يُبنى التقرير اليومي والشهري تلقائياً — بلا تحديث يدوي لـ Excel." },
         { icon: "receipt", title: "الطلبات والمبيعات", desc: "استقبال الطلب، تتبع الحالة، إشعار تلقائي للعميل. لا يضيع أي طلب ولا يُنسى." },
@@ -317,31 +356,43 @@ export const CONTENT: ServicePageContent = {
         { q: "هل يعمل مع أنظمتي (1C، نقطة البيع، Telegram)؟", a: "نعم. نبني تكاملاً مع Telegram وGoogle Sheets و1C وأنظمة الدفع ونقاط البيع لتعمل الأتمتة داخل عمليتك الحالية." },
       ],
     },
+    related: {
+      badge: "الصورة الكاملة",
+      title: "هذه الصفحة — حلول حسب المجال.",
+      titleAccent: "الخدمة الرئيسية: الأتمتة بالذكاء الاصطناعي",
+      subtitle:
+        "أتمتة العمليات جزء من خدمة Tezcode \"الأتمتة بالذكاء الاصطناعي\". النطاق الكامل والحلول ذات الصلة أدناه.",
+      links: [
+        { href: "/ai-avtomatizatsiya", label: "كل شيء عن خدمة الأتمتة بالذكاء الاصطناعي", desc: "الصفحة الرئيسية (المظلة) للخدمة: وكلاء AI وروبوتات الدردشة وأتمتة العمليات — كل الإمكانات في مكان واحد." },
+        { href: "/pos-tizimi", label: "نظام نقاط البيع (RAOS)", desc: "حل جاهز لنقطة البيع — كاشير ومخزون وعملاء وتقارير في تطبيق واحد." },
+        { href: "/telegram-bot-biznes", label: "بوت Telegram للأعمال", desc: "أتمتة استقبال الطلبات والمدفوعات عبر Telegram — خطوة أولى ميسورة." },
+      ],
+    },
     service: {
-      name: "خدمة أتمتة الأعمال — Tezcode",
+      name: "أتمتة عمليات الأعمال — Tezcode",
       description:
-        "أتمتة عمليات الأعمال: التقارير، الطلبات، المخزون، CRM، المالية والتكامل. نظام مبني حسب الطلب، طشقند، أوزبكستان.",
+        "أتمتة عمليات الأعمال حسب المجال: البيع، الخدمات، المخزون، التقارير، CRM، المالية والتكامل. نظام مبني حسب الطلب، طشقند، أوزبكستان.",
       serviceType: "أتمتة عمليات الأعمال",
     },
   },
 
   uk: {
     hero: {
-      badge: "Автоматизація бізнесу — Tezcode",
+      badge: "Автоматизація процесів — галузеві рішення",
       title1: "Автоматизація",
       titleAccent: "бізнес-процесів",
-      title2: "",
+      title2: "— під вашу галузь",
       subtitle:
-        "Об'єднуємо роботу, що ведеться вручну в Excel, Telegram і на папері, в одну систему. Звіти, замовлення, склад, клієнти — все автоматично. Tezcode Software Factory.",
+        "Автоматизуємо процеси торгівлі, сфери послуг, складу та звітності під вашу галузь. Робота, що ведеться вручну в Excel, Telegram і на папері, — в одній системі. Tezcode Software Factory.",
       trust: "Безкоштовна 30-хв консультація • Оплата: 30% передоплата",
       ctaPrimary: "Безкоштовна консультація",
       ctaSecondary: "Що автоматизуємо?",
     },
     capabilities: {
-      badge: "Напрямки",
+      badge: "Галузі та процеси",
       title: "Які процеси",
       titleAccent: "автоматизуємо?",
-      subtitle: "Будь-яка ручна робота, де багато часу й помилок, варта автоматизації. Найчастіші запити.",
+      subtitle: "Торгівля, сфера послуг, склад, звітність — будь-яка ручна робота, де багато часу й помилок, варта автоматизації. Найчастіші запити.",
       items: [
         { icon: "bar-chart-2", title: "Звіти та аналітика", desc: "Продажі, витрати, прибуток в одному місці. Щоденний і місячний звіт будується автоматично — не треба вручну оновлювати Excel." },
         { icon: "receipt", title: "Замовлення та продажі", desc: "Прийом замовлення, відстеження статусу, автосповіщення клієнту. Жодне замовлення не губиться і не забувається." },
@@ -397,10 +448,22 @@ export const CONTENT: ServicePageContent = {
         { q: "Чи працює з моїми системами (1C, каса, Telegram)?", a: "Так. Ми будуємо інтеграцію з Telegram, Google Sheets, 1C, платіжними та касовими системами, щоб автоматизація працювала всередині вашого поточного процесу." },
       ],
     },
+    related: {
+      badge: "Загальна картина",
+      title: "Це — галузеві рішення.",
+      titleAccent: "Основна послуга: AI-автоматизація",
+      subtitle:
+        "Автоматизація процесів — частина послуги Tezcode «AI-автоматизація». Повний обсяг і пов'язані рішення нижче.",
+      links: [
+        { href: "/ai-avtomatizatsiya", label: "Усе про послугу AI-автоматизації", desc: "Основна (парасолькова) сторінка послуги: AI-агенти, чат-боти й автоматизація процесів — усі можливості в одному місці." },
+        { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Готове рішення для точки продажу — каса, склад, клієнти та звіти в одному додатку." },
+        { href: "/telegram-bot-biznes", label: "Telegram-бот для бізнесу", desc: "Автоматизація прийому замовлень і платежів через Telegram — недорогий перший крок." },
+      ],
+    },
     service: {
-      name: "Послуга автоматизації бізнесу — Tezcode",
+      name: "Автоматизація бізнес-процесів — Tezcode",
       description:
-        "Автоматизація бізнес-процесів: звіти, замовлення, склад, CRM, фінанси та інтеграція. Система на замовлення, Ташкент, Узбекистан.",
+        "Галузева автоматизація бізнес-процесів: торгівля, сфера послуг, склад, звітність, CRM, фінанси та інтеграція. Система на замовлення, Ташкент, Узбекистан.",
       serviceType: "Автоматизація бізнес-процесів",
     },
   },

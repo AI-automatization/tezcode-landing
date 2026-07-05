@@ -20,8 +20,12 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: PATH,
-    title:
-      "Klinika uchun CRM — ClinicaGo: qabul, bemor bazasi, moliya | Tezcode",
+    // { absolute } bypasses the layout's `%s | Tezcode` template so the
+    // rendered title ends with a single "— Tezcode".
+    title: {
+      absolute:
+        "Klinika uchun CRM — ClinicaGo: qabul, bemor bazasi, moliya — Tezcode",
+    },
     description:
       "Klinikalar uchun CRM ClinicaGo: qabul va navbat, bemorlar bazasi, moliya, rollar (resepshyen/doktor/call-center), hisobot. CoreMed ekotizimi, jonli ishlaydi. Toshkent. Bepul demo.",
     keywords: [

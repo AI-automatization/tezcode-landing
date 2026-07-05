@@ -21,25 +21,27 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: PATH,
-    title:
-      "AI Avtomatizatsiya — Biznesingizni sun'iy intellekt bilan avtomatlashtiring | Tezcode",
+    // NOTE: no "| Tezcode" suffix here — the root layout applies a
+    // `%s | Tezcode` title template, so the suffix is appended automatically.
+    title: "AI avtomatlashtirish Toshkentda — biznes uchun AI yechimlar",
     description:
-      "Biznesingizni AI bilan avtomatlashtiring: avtomatik hisobot, AI chatbot, sotuv va ombor avtomatizatsiyasi. Tezcode Software Factory, Toshkent. Bepul 30 daqiqa konsultatsiya.",
+      "Toshkentda biznes uchun AI avtomatlashtirish: avtomatik hisobot, AI chatbot, sotuv va ombor avtomatizatsiyasi, 1C/CRM integratsiya. Bepul 30 daqiqa konsultatsiya. Tezcode Software Factory.",
     keywords: [
       "AI avtomatizatsiya",
+      "AI avtomatlashtirish Toshkent",
+      "biznesni AI bilan avtomatlashtirish",
       "sun'iy intellekt biznes uchun",
-      "biznes avtomatlashtirish AI",
       "AI yechim O'zbekiston",
       "AI chatbot yasatish",
       "avtomatik hisobot",
-      "AI автоматизация",
+      "AI автоматизация бизнеса Ташкент",
       "ИИ для бизнеса",
       "внедрение ИИ Ташкент",
       "AI automation Uzbekistan",
     ],
-    ogTitle: "Biznesingizni AI bilan avtomatlashtiring",
+    ogTitle: "AI avtomatlashtirish Toshkentda — biznes uchun AI yechimlar",
     ogDescription:
-      "Avtomatik hisobot, AI chatbot, sotuv va ombor avtomatizatsiyasi — biznesingizga moslab. Bepul konsultatsiya.",
+      "Toshkentda biznes uchun AI avtomatlashtirish: avtomatik hisobot, AI chatbot, sotuv va ombor avtomatizatsiyasi — jarayoningizga moslab. Bepul konsultatsiya.",
   });
 }
 

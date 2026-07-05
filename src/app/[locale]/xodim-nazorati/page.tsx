@@ -20,8 +20,12 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: PATH,
-    title:
-      "Xodim nazorati tizimi — WorkControl: vazifa, ish vaqti, hisobot | Tezcode",
+    // { absolute } bypasses the layout's `%s | Tezcode` template so the
+    // rendered title ends with a single "— Tezcode".
+    title: {
+      absolute:
+        "Xodim nazorati tizimi — WorkControl: vazifa, ish vaqti, hisobot — Tezcode",
+    },
     description:
       "Xodimlar ish nazorati tizimi WorkControl: vazifa boshqaruvi, ish vaqti va davomat, samaradorlik (KPI), rahbar hisoboti, Telegram bildirishnoma. Toshkent va butun O'zbekiston. Bepul demo.",
     keywords: [

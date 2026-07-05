@@ -13,9 +13,10 @@ export const dynamic = "force-static";
 function buildLlmsTxt(): string {
   return `# Tezcode
 
-> Tezcode — Toshkent (O'zbekiston) joylashgan AI Software Factory. Kichik
-> biznesdan korporatsiyagacha buyurtma asosida dasturiy ta'minot, AI agentlar
-> va biznes avtomatlashtirish yechimlarini yaratamiz. Tayyor mahsulotlar: RAOS
+> TezCode — AI Software Factory. Toshkentda biznes uchun AI avtomatlashtirish:
+> AI agentlar, chatbotlar va jarayonlar avtomatizatsiyasi. Shuningdek kichik
+> biznesdan korporatsiyagacha buyurtma asosida dasturiy ta'minot
+> yaratamiz. Tayyor mahsulotlar: RAOS
 > (offline-first POS / savdo platformasi), WeWatch (ijtimoiy onlayn kinoteatr /
 > Watch Party), WorkControl (xodimlar ish nazorati) va CoreMed (healthtech
 > ekotizimi: HamshiraGo, ClinicaGo, Salomat AI).

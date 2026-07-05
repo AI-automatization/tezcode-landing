@@ -18,7 +18,11 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: PATH,
-    title: "IT xizmatlar — Toshkent | dastur, mobil ilova, AI | Tezcode",
+    // { absolute } bypasses the layout's `%s | Tezcode` template so the
+    // rendered title ends with a single "— Tezcode".
+    title: {
+      absolute: "IT xizmatlar — Toshkent: dastur, mobil ilova, AI — Tezcode",
+    },
     description:
       "Toshkentda IT xizmatlar: dasturiy ta'minot ishlab chiqish, mobil ilova, veb-sayt, AI va avtomatizatsiya, integratsiya va qo'llab-quvvatlash. Tezcode Software Factory, 14 in-house dasturchi. Bepul konsultatsiya.",
     keywords: [

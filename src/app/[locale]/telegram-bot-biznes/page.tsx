@@ -21,8 +21,12 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: PATH,
-    title:
-      "Telegram bot yaratish — buyurtma, to'lov, do'kon (Mini App) | Tezcode",
+    // { absolute } bypasses the layout's `%s | Tezcode` template so the
+    // rendered title ends with a single "— Tezcode".
+    title: {
+      absolute:
+        "Telegram bot yaratish — buyurtma, to'lov, do'kon (Mini App) — Tezcode",
+    },
     description:
       "Biznes uchun Telegram bot yaratamiz: buyurtma qabul qilish, Click/Payme to'lov, qo'llab-quvvatlash, eslatma, Telegram do'kon (Mini App), CRM integratsiyasi. Tezcode, Toshkent. Bepul konsultatsiya.",
     keywords: [
