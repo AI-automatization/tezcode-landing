@@ -12,28 +12,36 @@ const PATH = "/ai-avtomatizatsiya";
 // Page is a Server Component: metadata + JSON-LD are emitted on the server so the
 // structured data is present in the initial HTML (AI Overviews / ChatGPT / Perplexity
 // read SSR markup). The animated UI lives in ServicePageClient.
-export const metadata = buildPageMetadata({
-  path: PATH,
-  title:
-    "AI Avtomatizatsiya — Biznesingizni sun'iy intellekt bilan avtomatlashtiring | Tezcode",
-  description:
-    "Biznesingizni AI bilan avtomatlashtiring: avtomatik hisobot, AI chatbot, sotuv va ombor avtomatizatsiyasi. Tezcode Software Factory, Toshkent. Bepul 30 daqiqa konsultatsiya.",
-  keywords: [
-    "AI avtomatizatsiya",
-    "sun'iy intellekt biznes uchun",
-    "biznes avtomatlashtirish AI",
-    "AI yechim O'zbekiston",
-    "AI chatbot yasatish",
-    "avtomatik hisobot",
-    "AI автоматизация",
-    "ИИ для бизнеса",
-    "внедрение ИИ Ташкент",
-    "AI automation Uzbekistan",
-  ],
-  ogTitle: "Biznesingizni AI bilan avtomatlashtiring",
-  ogDescription:
-    "Avtomatik hisobot, AI chatbot, sotuv va ombor avtomatizatsiyasi — biznesingizga moslab. Bepul konsultatsiya.",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title:
+      "AI Avtomatizatsiya — Biznesingizni sun'iy intellekt bilan avtomatlashtiring | Tezcode",
+    description:
+      "Biznesingizni AI bilan avtomatlashtiring: avtomatik hisobot, AI chatbot, sotuv va ombor avtomatizatsiyasi. Tezcode Software Factory, Toshkent. Bepul 30 daqiqa konsultatsiya.",
+    keywords: [
+      "AI avtomatizatsiya",
+      "sun'iy intellekt biznes uchun",
+      "biznes avtomatlashtirish AI",
+      "AI yechim O'zbekiston",
+      "AI chatbot yasatish",
+      "avtomatik hisobot",
+      "AI автоматизация",
+      "ИИ для бизнеса",
+      "внедрение ИИ Ташкент",
+      "AI automation Uzbekistan",
+    ],
+    ogTitle: "Biznesingizni AI bilan avtomatlashtiring",
+    ogDescription:
+      "Avtomatik hisobot, AI chatbot, sotuv va ombor avtomatizatsiyasi — biznesingizga moslab. Bepul konsultatsiya.",
+  });
+}
 
 export default async function AiAvtomatizatsiyaPage({
   params,
@@ -61,7 +69,7 @@ export default async function AiAvtomatizatsiyaPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <ServicePageClient content={CONTENT} />
+      <ServicePageClient content={CONTENT} serviceSlug="ai-avtomatizatsiya" />
     </>
   );
 }

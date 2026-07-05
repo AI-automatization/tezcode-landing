@@ -151,6 +151,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const m = META[toLang(locale)];
   return buildPageMetadata({
+    locale,
     path: PATH,
     title: m.title,
     description: m.description,

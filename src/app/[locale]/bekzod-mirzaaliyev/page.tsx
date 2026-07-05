@@ -12,23 +12,31 @@ const PATH = "/bekzod-mirzaaliyev";
 // Server Component: founder Person + Breadcrumb JSON-LD are emitted in the SSR
 // HTML so AI engines (ChatGPT, Perplexity, AI Overviews) can attribute Tezcode
 // to a real person and resolve the brand entity unambiguously.
-export const metadata = buildPageMetadata({
-  path: PATH,
-  title: "Bekzod Mirzaaliyev — Tezcode asoschisi va CEO",
-  description:
-    "Bekzod Mirzaaliyev — Tezcode (AI Software Factory, Toshkent) asoschisi va CEO. 2024-yilda Tezcode'ni tashkil etgan; RAOS, CoreMed/ClinicaGo, WeWatch va WorkControl mahsulotlari ortidagi jamoani boshqaradi.",
-  keywords: [
-    "Bekzod Mirzaaliyev",
-    "Tezcode asoschisi",
-    "Tezcode founder",
-    "Tezcode CEO",
-    "Bekzod Mirzaaliyev Tezcode",
-    "AI Software Factory Toshkent asoschisi",
-  ],
-  ogTitle: "Bekzod Mirzaaliyev — Tezcode asoschisi",
-  ogDescription:
-    "Tezcode Software Factory asoschisi va CEO. RAOS, CoreMed, WeWatch ortidagi jamoa.",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title: "Bekzod Mirzaaliyev — Tezcode asoschisi va CEO",
+    description:
+      "Bekzod Mirzaaliyev — Tezcode (AI Software Factory, Toshkent) asoschisi va CEO. 2024-yilda Tezcode'ni tashkil etgan; RAOS, CoreMed/ClinicaGo, WeWatch va WorkControl mahsulotlari ortidagi jamoani boshqaradi.",
+    keywords: [
+      "Bekzod Mirzaaliyev",
+      "Tezcode asoschisi",
+      "Tezcode founder",
+      "Tezcode CEO",
+      "Bekzod Mirzaaliyev Tezcode",
+      "AI Software Factory Toshkent asoschisi",
+    ],
+    ogTitle: "Bekzod Mirzaaliyev — Tezcode asoschisi",
+    ogDescription:
+      "Tezcode Software Factory asoschisi va CEO. RAOS, CoreMed, WeWatch ortidagi jamoa.",
+  });
+}
 
 const FACTS = [
   { label: "Lavozim", value: "Founder & CEO, Tezcode" },

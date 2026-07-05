@@ -16,22 +16,30 @@ const PATH = `/blog/${SLUG}`;
 // Server Component: emits Article + FAQPage + Breadcrumb JSON-LD and metadata in
 // the initial HTML so answer engines read the structured data on first fetch.
 // The readable article UI lives in BlogArticleClient.
-export const metadata = buildPageMetadata({
-  path: PATH,
-  title: "AI chatbot va AI agent farqi nima? (2026) | Tezcode",
-  description:
-    "AI chatbot gaplashadi, AI agent ish bajaradi. Farqni misollar bilan tushuntiramiz, taqqoslash jadvali va qaysi biri sizning biznesingizga kerakligi — Tezcode qo'llanmasi.",
-  keywords: [
-    "AI chatbot va AI agent farqi",
-    "chatbot vs agent",
-    "AI agent nima",
-    "AI chatbot nima",
-    "AI agent O'zbekiston",
-    "AI chatbot Toshkent",
-    "разница чат-бот и AI-агент",
-    "AI агент Узбекистан",
-  ],
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title: "AI chatbot va AI agent farqi nima? (2026) | Tezcode",
+    description:
+      "AI chatbot gaplashadi, AI agent ish bajaradi. Farqni misollar bilan tushuntiramiz, taqqoslash jadvali va qaysi biri sizning biznesingizga kerakligi — Tezcode qo'llanmasi.",
+    keywords: [
+      "AI chatbot va AI agent farqi",
+      "chatbot vs agent",
+      "AI agent nima",
+      "AI chatbot nima",
+      "AI agent O'zbekiston",
+      "AI chatbot Toshkent",
+      "разница чат-бот и AI-агент",
+      "AI агент Узбекистан",
+    ],
+  });
+}
 
 export default function AiChatbotVaAiAgentFarqiPage() {
   const meta = getArticle(SLUG);
@@ -71,7 +79,7 @@ export default function AiChatbotVaAiAgentFarqiPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <BlogArticleClient content={CONTENT} />
+      <BlogArticleClient content={CONTENT} relatedService={meta?.relatedService} />
     </>
   );
 }

@@ -162,6 +162,11 @@ export function Footer() {
     { label: "AI chatbot", href: "/ai-chatbot" },
     { label: "Telegram bot", href: "/telegram-bot-biznes" },
     { label: "AI avtomatizatsiya", href: "/ai-avtomatizatsiya" },
+    { label: "POS tizimi", href: "/pos-tizimi" },
+    { label: "Klinika CRM", href: "/klinika-crm" },
+    { label: "Xodim nazorati", href: "/xodim-nazorati" },
+    { label: "AI agent", href: "/ai-agent" },
+    { label: "Biznes avtomatlashtirish", href: "/biznes-avtomatlashtirish" },
   ];
 
   const companyLinks = [

@@ -78,6 +78,17 @@ export const CONTENT: ServicePageContent = {
         { q: "O'rgatib berasizmi?", a: "Ha. Sotuvchi va kassirlarni o'rgatamiz, qo'llanma beramiz. RAOS sodda interfeysga ega — odatda tez o'rganiladi." },
       ],
     },
+    related: {
+      badge: "Bog'liq xizmatlar",
+      title: "Sizga yana",
+      titleAccent: "foydali bo'lishi mumkin",
+      subtitle: "POS bilan birga ko'p ishlatiladigan Tezcode yechimlari.",
+      links: [
+        { href: "/biznes-avtomatlashtirish", label: "Biznes avtomatlashtirish", desc: "Kassadan tashqari jarayonlarni ham avtomatlashtiring — hisobot, buyurtma oqimi va takroriy ishlar bitta tizimda." },
+        { href: "/ai-chatbot", label: "AI chatbot", desc: "Do'koningiz uchun 24/7 mijoz xizmati — savollarga javob beradi, buyurtma va lid yig'adi." },
+        { href: "/xodim-nazorati", label: "Xodim nazorati", desc: "Sotuvchilar davomati, vazifalari va samaradorligini bitta tizimda kuzating." },
+      ],
+    },
     service: {
       name: "RAOS — do'kon uchun POS tizimi | Tezcode",
       description:
@@ -156,6 +167,17 @@ export const CONTENT: ServicePageContent = {
         { q: "На каких устройствах работает?", a: "Компьютер, планшет и Windows POS-устройства. Работает со сканером штрихкода, чек-принтером и денежным ящиком." },
         { q: "Сколько стоит?", a: "RAOS по подписке. Точная цена зависит от размера магазина и числа филиалов — дадим предложение после бесплатного демо." },
         { q: "Обучите?", a: "Да. Обучим продавцов и кассиров, дадим инструкцию. У RAOS простой интерфейс — обычно учится быстро." },
+      ],
+    },
+    related: {
+      badge: "Связанные услуги",
+      title: "Вам также может",
+      titleAccent: "быть полезно",
+      subtitle: "Решения Tezcode, которые часто используют вместе с POS.",
+      links: [
+        { href: "/biznes-avtomatlashtirish", label: "Автоматизация бизнеса", desc: "Автоматизируйте процессы за пределами кассы — отчёты, поток заказов и рутинные задачи в одной системе." },
+        { href: "/ai-chatbot", label: "AI-чат-бот", desc: "Клиентский сервис 24/7 для вашего магазина — отвечает на вопросы, собирает заказы и лиды." },
+        { href: "/xodim-nazorati", label: "Контроль сотрудников", desc: "Посещаемость, задачи и продуктивность продавцов в одной системе." },
       ],
     },
     service: {
@@ -238,6 +260,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Do you provide training?", a: "Yes. We train salespeople and cashiers and provide a guide. RAOS has a simple interface — usually learned quickly." },
       ],
     },
+    related: {
+      badge: "Related services",
+      title: "You may also",
+      titleAccent: "find useful",
+      subtitle: "Tezcode solutions often used together with a POS.",
+      links: [
+        { href: "/biznes-avtomatlashtirish", label: "Business automation", desc: "Automate beyond the register — reports, order flow and repetitive tasks in one system." },
+        { href: "/ai-chatbot", label: "AI chatbot", desc: "24/7 customer service for your store — answers questions, collects orders and leads." },
+        { href: "/xodim-nazorati", label: "Employee monitoring", desc: "Attendance, tasks and productivity of your staff in one system." },
+      ],
+    },
     service: {
       name: "RAOS — POS system for retail | Tezcode",
       description:
@@ -318,6 +351,17 @@ export const CONTENT: ServicePageContent = {
         { q: "هل تدرّبون؟", a: "نعم. ندرّب البائعين والكاشير ونوفّر دليلاً. واجهة RAOS بسيطة — تُتعلَّم بسرعة عادةً." },
       ],
     },
+    related: {
+      badge: "خدمات ذات صلة",
+      title: "قد يفيدك",
+      titleAccent: "أيضاً",
+      subtitle: "حلول Tezcode التي تُستخدم غالباً مع نظام POS.",
+      links: [
+        { href: "/biznes-avtomatlashtirish", label: "أتمتة الأعمال", desc: "أتمتة ما بعد الكاشير — التقارير وتدفق الطلبات والمهام المتكررة في نظام واحد." },
+        { href: "/ai-chatbot", label: "شات بوت AI", desc: "خدمة عملاء 24/7 لمتجرك — يجيب عن الأسئلة ويجمع الطلبات والعملاء المحتملين." },
+        { href: "/xodim-nazorati", label: "مراقبة الموظفين", desc: "الحضور والمهام وإنتاجية البائعين في نظام واحد." },
+      ],
+    },
     service: {
       name: "RAOS — نظام POS للمتاجر | Tezcode",
       description:
@@ -396,6 +440,17 @@ export const CONTENT: ServicePageContent = {
         { q: "На яких пристроях працює?", a: "Комп'ютери, планшети та Windows POS-пристрої. Працює зі сканером штрихкоду, чек-принтером і грошовою скринькою." },
         { q: "Скільки коштує?", a: "RAOS за підпискою. Точна ціна залежить від розміру магазину і кількості філій — дамо пропозицію після безкоштовного демо." },
         { q: "Навчите?", a: "Так. Навчимо продавців і касирів, дамо інструкцію. У RAOS простий інтерфейс — зазвичай вчиться швидко." },
+      ],
+    },
+    related: {
+      badge: "Пов'язані послуги",
+      title: "Вам також може",
+      titleAccent: "бути корисно",
+      subtitle: "Рішення Tezcode, які часто використовують разом із POS.",
+      links: [
+        { href: "/biznes-avtomatlashtirish", label: "Автоматизація бізнесу", desc: "Автоматизуйте процеси поза касою — звіти, потік замовлень і рутинні задачі в одній системі." },
+        { href: "/ai-chatbot", label: "AI-чат-бот", desc: "Клієнтський сервіс 24/7 для вашого магазину — відповідає на питання, збирає замовлення та ліди." },
+        { href: "/xodim-nazorati", label: "Контроль співробітників", desc: "Відвідуваність, задачі та продуктивність продавців в одній системі." },
       ],
     },
     service: {

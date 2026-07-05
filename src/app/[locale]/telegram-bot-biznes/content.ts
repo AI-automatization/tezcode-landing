@@ -78,6 +78,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Botni o'zim boshqara olamanmi?", a: "Ha. Mahsulot, narx va matnlarni o'zingiz tahrirlaysiz (admin panel yoki Sheets orqali). Dasturchiga har safar murojaat qilish shart emas." },
       ],
     },
+    related: {
+      badge: "Bog'liq xizmatlar",
+      title: "Sizga yana",
+      titleAccent: "foydali bo'lishi mumkin",
+      subtitle: "Telegram bot bilan birga ko'p ishlatiladigan Tezcode yechimlari.",
+      links: [
+        { href: "/ai-chatbot", label: "AI chatbot", desc: "Botingizni aqlli qiling — savollarga AI javob beradi, lidlarni saralaydi va operatorga uzatadi." },
+        { href: "/pos-tizimi", label: "POS tizimi (RAOS)", desc: "Bot orqali kelgan buyurtmalarni kassaga ulang — kassa, ombor va hisobot bitta dasturda." },
+        { href: "/biznes-avtomatlashtirish", label: "Biznes avtomatlashtirish", desc: "Botdan tashqari jarayonlarni ham avtomatlashtiring — hisobot, buyurtma oqimi, takroriy ishlar." },
+      ],
+    },
     service: {
       name: "Telegram bot yaratish — Tezcode",
       description:
@@ -156,6 +167,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Подключите ли бота к моей системе (CRM, 1C, Sheets)?", a: "Да. Заказы и клиенты попадают в Google Sheets, CRM или админ-панель автоматически. Бот работает внутри вашего текущего процесса." },
         { q: "Сколько времени и сколько стоит?", a: "Простой бот — 1 неделя, более полный бот с оплатой и каталогом — MVP за 1-2 недели. Точная цена после консультации, оплата — 30% предоплата." },
         { q: "Смогу ли я управлять ботом сам?", a: "Да. Товары, цены и тексты вы редактируете сами (через админ-панель или Sheets). Не нужно каждый раз обращаться к разработчику." },
+      ],
+    },
+    related: {
+      badge: "Связанные услуги",
+      title: "Вам также может",
+      titleAccent: "быть полезно",
+      subtitle: "Решения Tezcode, которые часто используют вместе с Telegram-ботом.",
+      links: [
+        { href: "/ai-chatbot", label: "AI-чат-бот", desc: "Сделайте бота умным — AI отвечает на вопросы, квалифицирует лиды и передаёт оператору." },
+        { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Подключите заказы из бота к кассе — касса, склад и отчёты в одной программе." },
+        { href: "/biznes-avtomatlashtirish", label: "Автоматизация бизнеса", desc: "Автоматизируйте процессы за пределами бота — отчёты, поток заказов, рутинные задачи." },
       ],
     },
     service: {
@@ -238,6 +260,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Can I manage the bot myself?", a: "Yes. You edit products, prices and texts yourself (via an admin panel or Sheets). No need to contact a developer every time." },
       ],
     },
+    related: {
+      badge: "Related services",
+      title: "You may also",
+      titleAccent: "find useful",
+      subtitle: "Tezcode solutions often used together with a Telegram bot.",
+      links: [
+        { href: "/ai-chatbot", label: "AI chatbot", desc: "Make your bot smart — AI answers questions, qualifies leads and hands off to an operator." },
+        { href: "/pos-tizimi", label: "POS system (RAOS)", desc: "Connect bot orders to your register — POS, inventory and reports in one app." },
+        { href: "/biznes-avtomatlashtirish", label: "Business automation", desc: "Automate beyond the bot — reports, order flow and repetitive tasks." },
+      ],
+    },
     service: {
       name: "Telegram bot development — Tezcode",
       description:
@@ -318,6 +351,17 @@ export const CONTENT: ServicePageContent = {
         { q: "هل أستطيع إدارة البوت بنفسي؟", a: "نعم. تحرّر المنتجات والأسعار والنصوص بنفسك (عبر لوحة تحكم أو Sheets). لا حاجة لمراجعة مطور في كل مرة." },
       ],
     },
+    related: {
+      badge: "خدمات ذات صلة",
+      title: "قد يفيدك",
+      titleAccent: "أيضاً",
+      subtitle: "حلول Tezcode التي تُستخدم غالباً مع بوت تيليجرام.",
+      links: [
+        { href: "/ai-chatbot", label: "شات بوت AI", desc: "اجعل بوتك ذكياً — يجيب الـAI عن الأسئلة ويصنّف العملاء المحتملين ويحوّل للمشغّل." },
+        { href: "/pos-tizimi", label: "نظام POS ‏(RAOS)", desc: "اربط طلبات البوت بالكاشير — الكاشير والمخزون والتقارير في برنامج واحد." },
+        { href: "/biznes-avtomatlashtirish", label: "أتمتة الأعمال", desc: "أتمتة ما هو أبعد من البوت — التقارير وتدفق الطلبات والمهام المتكررة." },
+      ],
+    },
     service: {
       name: "تطوير بوت تيليجرام — Tezcode",
       description:
@@ -396,6 +440,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Чи підключите бота до моєї системи (CRM, 1C, Sheets)?", a: "Так. Замовлення і клієнти потрапляють у Google Sheets, CRM або адмін-панель автоматично. Бот працює всередині вашого поточного процесу." },
         { q: "Скільки часу і скільки коштує?", a: "Простий бот — 1 тиждень, повніший бот з оплатою і каталогом — MVP за 1-2 тижні. Точна ціна після консультації, оплата — 30% передоплати." },
         { q: "Чи зможу я керувати ботом сам?", a: "Так. Товари, ціни і тексти ви редагуєте самі (через адмін-панель або Sheets). Не потрібно щоразу звертатися до розробника." },
+      ],
+    },
+    related: {
+      badge: "Пов'язані послуги",
+      title: "Вам також може",
+      titleAccent: "бути корисно",
+      subtitle: "Рішення Tezcode, які часто використовують разом із Telegram-ботом.",
+      links: [
+        { href: "/ai-chatbot", label: "AI-чат-бот", desc: "Зробіть бота розумним — AI відповідає на питання, кваліфікує ліди й передає оператору." },
+        { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Підключіть замовлення з бота до каси — каса, склад і звіти в одній програмі." },
+        { href: "/biznes-avtomatlashtirish", label: "Автоматизація бізнесу", desc: "Автоматизуйте процеси поза ботом — звіти, потік замовлень, рутинні задачі." },
       ],
     },
     service: {

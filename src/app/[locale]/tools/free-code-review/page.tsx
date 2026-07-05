@@ -3,14 +3,22 @@ import { Footer } from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo";
 import { CodeReviewForm } from "./CodeReviewForm";
 
-export const metadata = buildPageMetadata({
-  path: "/tools/free-code-review",
-  title: "Bepul AI Kod Tekshiruvi — GitHub Repo Tahlil",
-  description:
-    "GitHub repo link bering — Tezcode senior dasturchi singari tahlil qiladi: arxitektura, OWASP xavfsizlik (Top 10), performance optimallashtirish, test qamrovi, dependencies. To'lov yo'q, ro'yxatdan o'tish yo'q.",
-  ogTitle: "Bepul AI Kod Tekshiruvi — Tezcode",
-  ogDescription: "GitHub repo'ngizni AI senior dasturchi tahlil qiladi. Bepul.",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: "/tools/free-code-review",
+    title: "Bepul AI Kod Tekshiruvi — GitHub Repo Tahlil",
+    description:
+      "GitHub repo link bering — Tezcode senior dasturchi singari tahlil qiladi: arxitektura, OWASP xavfsizlik (Top 10), performance optimallashtirish, test qamrovi, dependencies. To'lov yo'q, ro'yxatdan o'tish yo'q.",
+    ogTitle: "Bepul AI Kod Tekshiruvi — Tezcode",
+    ogDescription: "GitHub repo'ngizni AI senior dasturchi tahlil qiladi. Bepul.",
+  });
+}
 
 const COVERAGE = [
   {

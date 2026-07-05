@@ -95,8 +95,15 @@ export function buildPageMetadata(input: {
   keywords?: string[];
   ogTitle?: string;
   ogDescription?: string;
+  locale?: string; // current locale — canonical/og:url must point at THIS locale's URL
 }): Metadata {
-  const url = `${BASE_URL}${input.path}`;
+  const locale = input.locale ?? "uz";
+  // Locale-aware canonical: /ru/... pages must declare /ru/... as canonical,
+  // never the uz URL, or search engines drop the localized page from the index.
+  const url =
+    locale === "uz"
+      ? `${BASE_URL}${input.path}`
+      : `${BASE_URL}/${locale}${input.path}`;
   const ogTitle =
     input.ogTitle ??
     (typeof input.title === "string"
@@ -113,7 +120,11 @@ export function buildPageMetadata(input: {
     ...(input.keywords ? { keywords: input.keywords } : {}),
     alternates: {
       canonical: url,
-      languages: { ...getAlternateUrls(input.path), "x-default": url },
+      // x-default always points at the unprefixed uz URL regardless of locale.
+      languages: {
+        ...getAlternateUrls(input.path),
+        "x-default": `${BASE_URL}${input.path}`,
+      },
     },
     openGraph: {
       title: ogTitle,
@@ -187,7 +198,7 @@ export function getOrganizationSchema() {
       "@type": "PostalAddress",
       // Must match the Google Business Profile NAP exactly (same address string),
       // so AI engines / Google see one consistent location and don't lower trust.
-      streetAddress: "Amir Temur ko'chasi 10, Edu Center, 3-qavat",
+      streetAddress: "Amir Temur shoh ko'chasi, 10",
       addressLocality: "Tashkent",
       addressRegion: "Toshkent",
       postalCode: "100037",
@@ -201,7 +212,7 @@ export function getOrganizationSchema() {
       longitude: 69.2866341,
     },
     hasMap: "https://maps.app.goo.gl/pwDZT8ePLFy4wx9JA",
-    telephone: "+998993151516",
+    telephone: "+998917776609",
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -221,7 +232,7 @@ export function getOrganizationSchema() {
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: "+998993151516",
+        telephone: "+998917776609",
         contactType: "customer service",
         email: "tezcode@tezcode.dev",
         url: "https://t.me/tezcode_managament",
@@ -230,7 +241,7 @@ export function getOrganizationSchema() {
       },
       {
         "@type": "ContactPoint",
-        telephone: "+998917776609",
+        telephone: "+998993151516",
         contactType: "sales",
         areaServed: ["UZ", "RU", "KZ", "TJ", "KG", "TM"],
         availableLanguage: ["uz", "ru", "en"],

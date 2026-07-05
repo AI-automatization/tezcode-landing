@@ -9,27 +9,35 @@ import { CONTENT } from "./content";
 
 const PATH = "/biznes-avtomatlashtirish";
 
-export const metadata = buildPageMetadata({
-  path: PATH,
-  title:
-    "Biznes avtomatlashtirish — jarayonlarni avtomatlashtirish tizimi | Tezcode",
-  description:
-    "Biznes jarayonlarini avtomatlashtirish: hisobot, buyurtma, ombor, CRM va moliya bitta tizimda. Buyurtma asosida, Toshkent. Bepul 30 daqiqa konsultatsiya, to'lov 30% oldindan.",
-  keywords: [
-    "biznes avtomatlashtirish",
-    "biznes jarayonlarini avtomatlashtirish",
-    "jarayonlarni avtomatlashtirish",
-    "do'kon avtomatlashtirish",
-    "buyurtma dastur Toshkent",
-    "автоматизация бизнеса",
-    "автоматизация бизнес-процессов",
-    "автоматизация бизнеса Ташкент",
-    "business automation Uzbekistan",
-  ],
-  ogTitle: "Biznes jarayonlarini avtomatlashtirish",
-  ogDescription:
-    "Hisobot, buyurtma, ombor, CRM va moliya — bitta avtomatik tizimda, biznesingizga moslab. Bepul konsultatsiya.",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title:
+      "Biznes avtomatlashtirish — jarayonlarni avtomatlashtirish tizimi | Tezcode",
+    description:
+      "Biznes jarayonlarini avtomatlashtirish: hisobot, buyurtma, ombor, CRM va moliya bitta tizimda. Buyurtma asosida, Toshkent. Bepul 30 daqiqa konsultatsiya, to'lov 30% oldindan.",
+    keywords: [
+      "biznes avtomatlashtirish",
+      "biznes jarayonlarini avtomatlashtirish",
+      "jarayonlarni avtomatlashtirish",
+      "do'kon avtomatlashtirish",
+      "buyurtma dastur Toshkent",
+      "автоматизация бизнеса",
+      "автоматизация бизнес-процессов",
+      "автоматизация бизнеса Ташкент",
+      "business automation Uzbekistan",
+    ],
+    ogTitle: "Biznes jarayonlarini avtomatlashtirish",
+    ogDescription:
+      "Hisobot, buyurtma, ombor, CRM va moliya — bitta avtomatik tizimda, biznesingizga moslab. Bepul konsultatsiya.",
+  });
+}
 
 export default async function BiznesAvtomatlashtirishPage({
   params,
@@ -57,7 +65,7 @@ export default async function BiznesAvtomatlashtirishPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <ServicePageClient content={CONTENT} />
+      <ServicePageClient content={CONTENT} serviceSlug="biznes-avtomatlashtirish" />
     </>
   );
 }

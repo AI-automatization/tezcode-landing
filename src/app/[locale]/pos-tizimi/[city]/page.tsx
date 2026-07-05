@@ -109,6 +109,7 @@ export async function generateMetadata({
 
   const m = META[lang];
   return buildPageMetadata({
+    locale,
     path,
     title: m.title,
     description: m.description,

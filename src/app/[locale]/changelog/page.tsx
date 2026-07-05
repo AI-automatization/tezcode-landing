@@ -2,14 +2,22 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = buildPageMetadata({
-  path: "/changelog",
-  title: "Changelog — Tezcode Mahsulot Yangilanishlari",
-  description:
-    "Tezcode platforma va mahsulot yangilanishlari: yangi feature, bug fix, performance optimizatsiya. Har release haqida shaffof hisobot 2024-yildan beri.",
-  ogTitle: "Tezcode Changelog",
-  ogDescription: "Har yangilanish haqida shaffof hisobot.",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: "/changelog",
+    title: "Changelog — Tezcode Mahsulot Yangilanishlari",
+    description:
+      "Tezcode platforma va mahsulot yangilanishlari: yangi feature, bug fix, performance optimizatsiya. Har release haqida shaffof hisobot 2024-yildan beri.",
+    ogTitle: "Tezcode Changelog",
+    ogDescription: "Har yangilanish haqida shaffof hisobot.",
+  });
+}
 
 const RELEASES: { date: string; version: string; tag: string; items: string[] }[] = [
   {

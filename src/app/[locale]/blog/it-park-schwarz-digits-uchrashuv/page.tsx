@@ -16,22 +16,30 @@ const PATH = `/blog/${SLUG}`;
 // Server Component: emits Article + FAQPage + Breadcrumb JSON-LD and metadata in
 // the initial HTML so answer engines read the structured data on first fetch.
 // The readable article UI lives in BlogArticleClient.
-export const metadata = buildPageMetadata({
-  path: PATH,
-  title:
-    "IT Park va Schwarz Digits: O'zbekiston IT sektori uchun Yevropa imkoniyati | Tezcode",
-  description:
-    "IT Park Uzbekistan'da Tezcode Schwarz Digits (Schwarz Group — Lidl va Kaufland egasi) vakili bilan tanishdi. Yevropa suveren AI ekotizimi va O'zbekiston IT sektori uchun imkoniyat haqida.",
-  keywords: [
-    "IT Park Uzbekistan",
-    "Schwarz Digits",
-    "Schwarz Group",
-    "Yevropa AI ekotizimi",
-    "Tezcode hamkorlik",
-    "aisolution.uz",
-    "O'zbekiston IT eksport",
-  ],
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title:
+      "IT Park va Schwarz Digits: O'zbekiston IT sektori uchun Yevropa imkoniyati | Tezcode",
+    description:
+      "IT Park Uzbekistan'da Tezcode Schwarz Digits (Schwarz Group — Lidl va Kaufland egasi) vakili bilan tanishdi. Yevropa suveren AI ekotizimi va O'zbekiston IT sektori uchun imkoniyat haqida.",
+    keywords: [
+      "IT Park Uzbekistan",
+      "Schwarz Digits",
+      "Schwarz Group",
+      "Yevropa AI ekotizimi",
+      "Tezcode hamkorlik",
+      "aisolution.uz",
+      "O'zbekiston IT eksport",
+    ],
+  });
+}
 
 export default function ItParkSchwarzDigitsPage() {
   const meta = getArticle(SLUG);
@@ -71,7 +79,7 @@ export default function ItParkSchwarzDigitsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <BlogArticleClient content={CONTENT} />
+      <BlogArticleClient content={CONTENT} relatedService={meta?.relatedService} />
     </>
   );
 }

@@ -87,7 +87,7 @@ export async function generateMetadata({
   };
 
   const m = META[lang];
-  return buildPageMetadata({ path, title: m.title, description: m.description, keywords: m.keywords, ogTitle: m.ogTitle, ogDescription: m.ogDescription });
+  return buildPageMetadata({ locale, path, title: m.title, description: m.description, keywords: m.keywords, ogTitle: m.ogTitle, ogDescription: m.ogDescription });
 }
 
 export default async function AiAgentCityPage({

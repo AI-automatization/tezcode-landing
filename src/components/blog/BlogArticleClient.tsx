@@ -1,13 +1,14 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Zap } from "lucide-react";
+import { ArrowRight, Zap } from "lucide-react";
 import { useLocale } from "next-intl";
 import { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Magnetic } from "@/components/motion/Magnetic";
+import { Link } from "@/i18n/routing";
 import type { ArticleContent, ArticleCopy, ArticleLang } from "./types";
 import { StickyCTA } from "@/components/StickyCTA";
 
@@ -190,6 +191,53 @@ function ArticleFaq({ copy }: { copy: ArticleCopy }) {
   );
 }
 
+// ─────────────────────────── Related service card ───────────────────────────
+// Small internal-link card ("Mavzuga oid xizmat") from the article to its most
+// relevant service/money page — SEO internal linking blog → service.
+const RELATED_SERVICE_HEADING: Record<ArticleLang, string> = {
+  uz: "Mavzuga oid xizmat",
+  ru: "Связанная услуга",
+  en: "Related service",
+  ar: "خدمة ذات صلة",
+  uk: "Пов'язана послуга",
+};
+
+function RelatedServiceCard({
+  locale,
+  relatedService,
+}: {
+  locale: ArticleLang;
+  relatedService?: { href: string; label: string };
+}) {
+  if (!relatedService) return null;
+  const heading = RELATED_SERVICE_HEADING[locale] ?? RELATED_SERVICE_HEADING.uz;
+  return (
+    <section className="px-6 pt-16">
+      <div className="max-w-3xl mx-auto">
+        <Reveal>
+          <Link
+            href={relatedService.href}
+            className="tc-card tc-card-hover group flex items-center justify-between gap-4 p-6"
+          >
+            <div>
+              <p className="text-xs font-600 text-[var(--tc-blue-text)] uppercase tracking-[0.2em] mb-2">
+                {heading}
+              </p>
+              <p
+                className="text-lg font-700 text-[var(--tc-text-primary)] tracking-tight"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                {relatedService.label}
+              </p>
+            </div>
+            <ArrowRight className="w-5 h-5 shrink-0 text-[var(--tc-blue-text)] transition-transform group-hover:translate-x-1 rtl:rotate-180" />
+          </Link>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 // ─────────────────────────── CTA ───────────────────────────
 function ArticleCta({ copy }: { copy: ArticleCopy }) {
   const href = copy.cta.href ?? "https://t.me/tezcode_managament";
@@ -240,7 +288,13 @@ function ArticleCta({ copy }: { copy: ArticleCopy }) {
 }
 
 // ─────────────────────────── Page entry ───────────────────────────
-export function BlogArticleClient({ content }: { content: ArticleContent }) {
+export function BlogArticleClient({
+  content,
+  relatedService,
+}: {
+  content: ArticleContent;
+  relatedService?: { href: string; label: string };
+}) {
   const locale = useLocale() as ArticleLang;
   const copy = content[locale] ?? content.uz;
 
@@ -254,6 +308,7 @@ export function BlogArticleClient({ content }: { content: ArticleContent }) {
       <TldrBox copy={copy} />
       <ArticleBody copy={copy} />
       <ArticleFaq copy={copy} />
+      <RelatedServiceCard locale={locale} relatedService={relatedService} />
       <ArticleCta copy={copy} />
       <Footer />
           <StickyCTA />

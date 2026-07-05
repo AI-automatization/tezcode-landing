@@ -11,28 +11,36 @@ const PATH = "/xodim-nazorati";
 
 // Server Component: metadata + JSON-LD on the server so structured data is in the
 // initial HTML (AI Overviews / ChatGPT / Perplexity read SSR markup).
-export const metadata = buildPageMetadata({
-  path: PATH,
-  title:
-    "Xodim nazorati tizimi — WorkControl: vazifa, ish vaqti, hisobot | Tezcode",
-  description:
-    "Xodimlar ish nazorati tizimi WorkControl: vazifa boshqaruvi, ish vaqti va davomat, samaradorlik (KPI), rahbar hisoboti, Telegram bildirishnoma. Toshkent va butun O'zbekiston. Bepul demo.",
-  keywords: [
-    "xodim nazorati",
-    "xodimlar nazorati tizimi",
-    "ish vaqti nazorati",
-    "vazifa boshqaruv dasturi",
-    "WorkControl",
-    "davomat nazorati",
-    "контроль сотрудников",
-    "учёт рабочего времени Ташкент",
-    "управление задачами",
-    "employee monitoring Uzbekistan",
-  ],
-  ogTitle: "WorkControl — xodimlar ish nazorati",
-  ogDescription:
-    "Vazifa, ish vaqti, davomat va hisobot bitta dashboardda. Bepul demo.",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title:
+      "Xodim nazorati tizimi — WorkControl: vazifa, ish vaqti, hisobot | Tezcode",
+    description:
+      "Xodimlar ish nazorati tizimi WorkControl: vazifa boshqaruvi, ish vaqti va davomat, samaradorlik (KPI), rahbar hisoboti, Telegram bildirishnoma. Toshkent va butun O'zbekiston. Bepul demo.",
+    keywords: [
+      "xodim nazorati",
+      "xodimlar nazorati tizimi",
+      "ish vaqti nazorati",
+      "vazifa boshqaruv dasturi",
+      "WorkControl",
+      "davomat nazorati",
+      "контроль сотрудников",
+      "учёт рабочего времени Ташкент",
+      "управление задачами",
+      "employee monitoring Uzbekistan",
+    ],
+    ogTitle: "WorkControl — xodimlar ish nazorati",
+    ogDescription:
+      "Vazifa, ish vaqti, davomat va hisobot bitta dashboardda. Bepul demo.",
+  });
+}
 
 export default async function XodimNazoratiPage({
   params,

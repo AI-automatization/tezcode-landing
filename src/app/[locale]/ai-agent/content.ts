@@ -63,7 +63,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "agent kerakmi?",
       subtitle: "30 daqiqalik bepul konsultatsiyada qaysi vazifani agent bajarishini aniqlaymiz. Majburiyat yo'q.",
       button: "Telegram'da gaplashish",
-      note: "Yoki tezcode@tezcode.dev ga yozing yoki +998993151516 ga qo'ng'iroq qiling.",
+      note: "Yoki tezcode@tezcode.dev ga yozing yoki +998917776609 ga qo'ng'iroq qiling.",
     },
     faq: {
       badge: "Tez-tez beriladigan savollar",
@@ -190,7 +190,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "AI-агент?",
       subtitle: "На бесплатной 30-минутной консультации определим, какую задачу возьмёт на себя агент. Без обязательств.",
       button: "Написать в Telegram",
-      note: "Или напишите на tezcode@tezcode.dev либо позвоните +998993151516.",
+      note: "Или напишите на tezcode@tezcode.dev либо позвоните +998917776609.",
     },
     faq: {
       badge: "Частые вопросы",
@@ -317,7 +317,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "an AI agent?",
       subtitle: "In a free 30-minute consultation we'll scope which task an agent should take over. No obligations.",
       button: "Message on Telegram",
-      note: "Or email tezcode@tezcode.dev or call +998993151516.",
+      note: "Or email tezcode@tezcode.dev or call +998917776609.",
     },
     faq: {
       badge: "Frequently asked",
@@ -444,7 +444,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "وكيل ذكاء اصطناعي؟",
       subtitle: "في استشارة مجانية مدتها 30 دقيقة سنحدد أي مهمة يجب أن يتولاها الوكيل. بلا التزام.",
       button: "راسلنا عبر Telegram",
-      note: "أو راسل tezcode@tezcode.dev أو اتصل بـ ‎+998993151516.",
+      note: "أو راسل tezcode@tezcode.dev أو اتصل بـ ‎+998917776609.",
     },
     faq: {
       badge: "أسئلة شائعة",
@@ -571,7 +571,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "AI-агент?",
       subtitle: "На безкоштовній 30-хвилинній консультації визначимо, яке завдання візьме на себе агент. Без зобов'язань.",
       button: "Написати в Telegram",
-      note: "Або напишіть на tezcode@tezcode.dev чи зателефонуйте +998993151516.",
+      note: "Або напишіть на tezcode@tezcode.dev чи зателефонуйте +998917776609.",
     },
     faq: {
       badge: "Часті запитання",

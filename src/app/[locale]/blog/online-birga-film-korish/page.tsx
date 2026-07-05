@@ -13,24 +13,32 @@ import { CONTENT } from "./content";
 const SLUG = "online-birga-film-korish";
 const PATH = `/blog/${SLUG}`;
 
-export const metadata = buildPageMetadata({
-  path: PATH,
-  title:
-    "Do'stlar bilan online birga film ko'rish: Watch Party qanday ishlaydi | Tezcode",
-  description:
-    "Do'stlar bilan masofadan turib bir vaqtda film va video ko'rish (Watch Party) qanday ishlaydi, nima kerak va qaysi manbalardan ko'rish mumkin. WeWatch misolida.",
-  keywords: [
-    "online birga film ko'rish",
-    "watch party",
-    "do'stlar bilan film ko'rish",
-    "sinxron video ko'rish",
-    "online kinoteatr",
-    "смотреть фильмы вместе онлайн",
-    "watch party онлайн",
-    "совместный просмотр",
-    "WeWatch",
-  ],
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title:
+      "Do'stlar bilan online birga film ko'rish: Watch Party qanday ishlaydi | Tezcode",
+    description:
+      "Do'stlar bilan masofadan turib bir vaqtda film va video ko'rish (Watch Party) qanday ishlaydi, nima kerak va qaysi manbalardan ko'rish mumkin. WeWatch misolida.",
+    keywords: [
+      "online birga film ko'rish",
+      "watch party",
+      "do'stlar bilan film ko'rish",
+      "sinxron video ko'rish",
+      "online kinoteatr",
+      "смотреть фильмы вместе онлайн",
+      "watch party онлайн",
+      "совместный просмотр",
+      "WeWatch",
+    ],
+  });
+}
 
 export default function OnlineBirgaFilmKorishPage() {
   const meta = getArticle(SLUG);
@@ -67,7 +75,7 @@ export default function OnlineBirgaFilmKorishPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <BlogArticleClient content={CONTENT} />
+      <BlogArticleClient content={CONTENT} relatedService={meta?.relatedService} />
     </>
   );
 }

@@ -10,7 +10,9 @@ const AI_CRAWLERS = [
   "OAI-SearchBot", // OpenAI — ChatGPT search index
   "ChatGPT-User", // OpenAI — live browsing on user request
   "ClaudeBot", // Anthropic — crawling
-  "Claude-Web", // Anthropic — live browsing
+  "Claude-SearchBot", // Anthropic — Claude search index
+  "Claude-User", // Anthropic — live browsing on user request
+  "Claude-Web", // Anthropic — live browsing (legacy)
   "anthropic-ai", // Anthropic — legacy agent
   "PerplexityBot", // Perplexity — index
   "Perplexity-User", // Perplexity — live fetch
@@ -22,6 +24,7 @@ const AI_CRAWLERS = [
   "Bytespider", // ByteDance / Doubao
   "DuckAssistBot", // DuckDuckGo AI
   "YouBot", // You.com
+  "bingbot", // Microsoft Bing — search index (also feeds Copilot answers)
 ];
 
 export default function robots(): MetadataRoute.Robots {

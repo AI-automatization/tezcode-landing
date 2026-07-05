@@ -5,15 +5,23 @@ import { FloatingContact } from "@/components/FloatingContact";
 import { CookieConsent } from "@/components/CookieConsent";
 import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = buildPageMetadata({
-  path: "/tools/roi-calculator",
-  title: "ROI Kalkulyator — Tezcode bilan qancha tejaysiz?",
-  description:
-    "Bepul ROI kalkulyator: biznes turingiz va xodimlar sonini tanlang — Tezcode avtomatlashtirish bilan oyiga qancha tejashingizni bir zumda ko'ring.",
-  ogTitle: "ROI Kalkulyator — Tezcode",
-  ogDescription:
-    "Biznes turi + xodimlar soni — oylik tejovingizni bir zumda hisoblang. Bepul, ro'yxatdan o'tish shart emas.",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: "/tools/roi-calculator",
+    title: "ROI Kalkulyator — Tezcode bilan qancha tejaysiz?",
+    description:
+      "Bepul ROI kalkulyator: biznes turingiz va xodimlar sonini tanlang — Tezcode avtomatlashtirish bilan oyiga qancha tejashingizni bir zumda ko'ring.",
+    ogTitle: "ROI Kalkulyator — Tezcode",
+    ogDescription:
+      "Biznes turi + xodimlar soni — oylik tejovingizni bir zumda hisoblang. Bepul, ro'yxatdan o'tish shart emas.",
+  });
+}
 
 // Standalone home for the ROI calculator so nothing has to deep-link to the
 // home page's #calculator section.

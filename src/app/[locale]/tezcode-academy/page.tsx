@@ -9,27 +9,35 @@ import { CONTENT } from "./content";
 
 const PATH = "/tezcode-academy";
 
-export const metadata = buildPageMetadata({
-  path: PATH,
-  title: "TezCode Academy — AI ta'lim markazi | kurslar, bootcamp | Tezcode",
-  description:
-    "TezCode Academy — Tezcode'ning AI ta'lim markazi. Dasturchilar va biznes egalari uchun AI kurslari, bootcamp, workshop va korporativ treninglar. Amaliyot birinchi o'rinda, ishlab turgan Software Factory muhandislaridan o'rganing. Bepul konsultatsiya.",
-  keywords: [
-    "AI kurslari Toshkent",
-    "dasturlash bootcamp Toshkent",
-    "IT ta'lim markazi O'zbekiston",
-    "korporativ trening AI",
-    "AI обучение Ташкент",
-    "курсы программирования Ташкент",
-    "AI bootcamp Tashkent",
-    "AI courses Tashkent",
-    "learn to code with AI",
-    "corporate AI training",
-  ],
-  ogTitle: "TezCode Academy — AI ta'lim markazi",
-  ogDescription:
-    "AI, avtomatizatsiya va zamonaviy muhandislikni ishlab turgan Software Factory muhandislaridan o'rganing. Kurslar, bootcamp, korporativ treninglar.",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title: "TezCode Academy — AI ta'lim markazi | kurslar, bootcamp | Tezcode",
+    description:
+      "TezCode Academy — Tezcode'ning AI ta'lim markazi. Dasturchilar va biznes egalari uchun AI kurslari, bootcamp, workshop va korporativ treninglar. Amaliyot birinchi o'rinda, ishlab turgan Software Factory muhandislaridan o'rganing. Bepul konsultatsiya.",
+    keywords: [
+      "AI kurslari Toshkent",
+      "dasturlash bootcamp Toshkent",
+      "IT ta'lim markazi O'zbekiston",
+      "korporativ trening AI",
+      "AI обучение Ташкент",
+      "курсы программирования Ташкент",
+      "AI bootcamp Tashkent",
+      "AI courses Tashkent",
+      "learn to code with AI",
+      "corporate AI training",
+    ],
+    ogTitle: "TezCode Academy — AI ta'lim markazi",
+    ogDescription:
+      "AI, avtomatizatsiya va zamonaviy muhandislikni ishlab turgan Software Factory muhandislaridan o'rganing. Kurslar, bootcamp, korporativ treninglar.",
+  });
+}
 
 export default async function TezcodeAcademyPage({
   params,

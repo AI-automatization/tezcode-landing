@@ -8,6 +8,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Link } from "@/i18n/routing";
+import { CITIES, CITY_SLUGS } from "@/data/cities";
 import type { ServiceLang, ServicePageContent, ServicePageCopy } from "./types";
 import { ServiceIcon } from "./ServiceIcon";
 import { StickyCTA } from "@/components/StickyCTA";
@@ -446,6 +447,66 @@ function RelatedSection({ copy }: { copy: ServicePageCopy }) {
   );
 }
 
+// ─────────────────────────── City links row ───────────────────────────
+// Unobtrusive internal-link row to the live per-city landing pages of a
+// service (/pos-tizimi/toshkent, …). Static map mirrors each route's
+// generateStaticParams so we only link city pages that actually exist.
+const SERVICE_CITY_SLUGS: Record<string, string[]> = {
+  "pos-tizimi": CITY_SLUGS, // all 12 cities live (CITY_SLUGS fan-out)
+  "ai-avtomatizatsiya": CITY_SLUGS, // all 12 cities live (CITY_SLUGS fan-out)
+  "ai-chatbot": ["toshkent", "samarqand"],
+  "ai-agent": ["toshkent", "samarqand"],
+  "telegram-bot-biznes": ["toshkent", "samarqand"],
+  "biznes-avtomatlashtirish": ["toshkent", "samarqand"],
+};
+
+const CITY_ROW_HEADING: Record<ServiceLang, string> = {
+  uz: "Shaharlar bo'yicha",
+  ru: "По городам",
+  en: "By city",
+  ar: "حسب المدينة",
+  uk: "За містами",
+};
+
+function CityLinksSection({
+  serviceSlug,
+  locale,
+}: {
+  serviceSlug?: string;
+  locale: ServiceLang;
+}) {
+  if (!serviceSlug) return null;
+  const citySlugs = SERVICE_CITY_SLUGS[serviceSlug];
+  if (!citySlugs || citySlugs.length === 0) return null;
+  const cities = CITIES.filter((c) => citySlugs.includes(c.slug));
+  const heading = CITY_ROW_HEADING[locale] ?? CITY_ROW_HEADING.uz;
+
+  return (
+    <section
+      className="relative py-10 px-6 bg-[var(--tc-surface-0)]"
+      style={{ borderTop: "1px solid var(--tc-border)" }}
+    >
+      <div className="max-w-7xl mx-auto">
+        <p className="text-xs font-600 uppercase tracking-widest text-[var(--tc-text-muted)] mb-4">
+          {heading}
+        </p>
+        <ul className="flex flex-wrap gap-x-5 gap-y-2">
+          {cities.map((city) => (
+            <li key={city.slug}>
+              <Link
+                href={`/${serviceSlug}/${city.slug}`}
+                className="text-sm text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] tc-link-underline transition-colors"
+              >
+                {city.name[locale] ?? city.name.uz}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
 // ─────────────────────────── Final CTA (navy anchor) ───────────────────────────
 function FinalCtaSection({ copy }: { copy: ServicePageCopy }) {
   return (
@@ -494,7 +555,15 @@ function FinalCtaSection({ copy }: { copy: ServicePageCopy }) {
 }
 
 // ─────────────────────────── Page entry ───────────────────────────
-export function ServicePageClient({ content }: { content: ServicePageContent }) {
+export function ServicePageClient({
+  content,
+  serviceSlug,
+}: {
+  content: ServicePageContent;
+  // Route slug of the service (e.g. "pos-tizimi") — enables the city links row
+  // when the service has live per-city pages. Omitted on city pages themselves.
+  serviceSlug?: string;
+}) {
   const locale = useLocale() as ServiceLang;
   const copy = content[locale] ?? content.uz;
 
@@ -512,6 +581,7 @@ export function ServicePageClient({ content }: { content: ServicePageContent }) 
       <PricingSection copy={copy} />
       <FaqSection copy={copy} />
       <RelatedSection copy={copy} />
+      <CityLinksSection serviceSlug={serviceSlug} locale={locale} />
       <FinalCtaSection copy={copy} />
       <Footer />
           <StickyCTA />

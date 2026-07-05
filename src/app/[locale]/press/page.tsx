@@ -3,14 +3,22 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = buildPageMetadata({
-  path: "/press",
-  title: "Press Kit — Tezcode Brand Assets va Media Kit",
-  description:
-    "Tezcode brand assets: logo PNG/SVG (TC monogram), brand ranglar (Ink #0a0a0f + Gold #d4a017), founder Bekzod Mirzaaliyev fotosurat, brand book, prezentatsiya, press release shablonlari.",
-  ogTitle: "Tezcode Press Kit",
-  ogDescription: "Logo, ranglar, founder fotosurat, brand book — barchasi yuklab olish uchun.",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: "/press",
+    title: "Press Kit — Tezcode Brand Assets va Media Kit",
+    description:
+      "Tezcode brand assets: logo PNG/SVG (TC monogram), brand ranglar (Ink #0a0a0f + Gold #d4a017), founder Bekzod Mirzaaliyev fotosurat, brand book, prezentatsiya, press release shablonlari.",
+    ogTitle: "Tezcode Press Kit",
+    ogDescription: "Logo, ranglar, founder fotosurat, brand book — barchasi yuklab olish uchun.",
+  });
+}
 
 const ASSETS = [
   {

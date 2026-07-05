@@ -72,4 +72,8 @@ export type ArticleMeta = {
   list: Partial<ArticleListLang> & {
     uz: { title: string; excerpt: string };
   };
+  // Optional internal link from the article to the most relevant money/service
+  // page ("Mavzuga oid xizmat" card near the end of the article). href is a
+  // locale-relative path (e.g. "/pos-tizimi") rendered via the i18n Link.
+  relatedService?: { href: string; label: string };
 };

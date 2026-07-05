@@ -16,24 +16,32 @@ const PATH = `/blog/${SLUG}`;
 // Server Component: emits Article + FAQPage + Breadcrumb JSON-LD and metadata in
 // the initial HTML so answer engines read the structured data on first fetch.
 // The readable article UI lives in BlogArticleClient.
-export const metadata = buildPageMetadata({
-  path: PATH,
-  title:
-    "O'zbekistonda do'kon uchun POS tizimi qanday tanlanadi (2026) | Tezcode",
-  description:
-    "Do'kon, market yoki kosmetika do'koni uchun POS tizimi tanlash qo'llanmasi: offline ishlash, ombor nazorati, fiskal talablar va eng ko'p uchraydigan xatolar.",
-  keywords: [
-    "POS tizimi tanlash",
-    "do'kon uchun POS",
-    "POS dasturi O'zbekiston",
-    "offline POS",
-    "ombor dasturi",
-    "kassa dasturi Toshkent",
-    "POS система для магазина",
-    "POS Узбекистан",
-    "RAOS",
-  ],
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title:
+      "O'zbekistonda do'kon uchun POS tizimi qanday tanlanadi (2026) | Tezcode",
+    description:
+      "Do'kon, market yoki kosmetika do'koni uchun POS tizimi tanlash qo'llanmasi: offline ishlash, ombor nazorati, fiskal talablar va eng ko'p uchraydigan xatolar.",
+    keywords: [
+      "POS tizimi tanlash",
+      "do'kon uchun POS",
+      "POS dasturi O'zbekiston",
+      "offline POS",
+      "ombor dasturi",
+      "kassa dasturi Toshkent",
+      "POS система для магазина",
+      "POS Узбекистан",
+      "RAOS",
+    ],
+  });
+}
 
 export default function PosTizimiTanlashPage() {
   const meta = getArticle(SLUG);
@@ -73,7 +81,7 @@ export default function PosTizimiTanlashPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <BlogArticleClient content={CONTENT} />
+      <BlogArticleClient content={CONTENT} relatedService={meta?.relatedService} />
     </>
   );
 }

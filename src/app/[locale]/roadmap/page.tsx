@@ -2,14 +2,22 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = buildPageMetadata({
-  path: "/roadmap",
-  title: "Ochiq Yo'l Xaritasi — Tezcode Mahsulotlari Roadmap",
-  description:
-    "Tezcode Software Factory yo'l xaritasi: RAOS POS, AI Office, CoreMed/HamshiraGo va boshqa mahsulotlar — qaysi feature qachon chiqadi. Shaffof Q2-Q4 2026 reja.",
-  ogTitle: "Tezcode Yo'l Xaritasi — Mahsulot Reja",
-  ogDescription: "RAOS, AI Office, CoreMed yangiliklari va kelajak rejasi.",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: "/roadmap",
+    title: "Ochiq Yo'l Xaritasi — Tezcode Mahsulotlari Roadmap",
+    description:
+      "Tezcode Software Factory yo'l xaritasi: RAOS POS, AI Office, CoreMed/HamshiraGo va boshqa mahsulotlar — qaysi feature qachon chiqadi. Shaffof Q2-Q4 2026 reja.",
+    ogTitle: "Tezcode Yo'l Xaritasi — Mahsulot Reja",
+    ogDescription: "RAOS, AI Office, CoreMed yangiliklari va kelajak rejasi.",
+  });
+}
 
 type Status = "done" | "in_progress" | "planned" | "explore";
 

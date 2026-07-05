@@ -2,18 +2,26 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  ...buildPageMetadata({
-    path: "/terms",
-    title: "Foydalanish Shartlari — Terms of Service",
-    description:
-      "Tezcode xizmatlaridan foydalanish shartlari: huquq va majburiyatlar, to'lov shartlari, javobgarlik chekloyi, nizolar tartibi. So'nggi tahrir 2026-yil.",
-  }),
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return {
+    ...buildPageMetadata({
+      locale,
+      path: "/terms",
+      title: "Foydalanish Shartlari — Terms of Service",
+      description:
+        "Tezcode xizmatlaridan foydalanish shartlari: huquq va majburiyatlar, to'lov shartlari, javobgarlik chekloyi, nizolar tartibi. So'nggi tahrir 2026-yil.",
+    }),
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 const SECTIONS: { title: string; body: string[] }[] = [
   {

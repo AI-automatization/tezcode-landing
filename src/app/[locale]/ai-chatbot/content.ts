@@ -78,6 +78,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Bot javob bera olmasa nima bo'ladi?", a: "Murakkab yoki nozik savolni AI o'zi jonli operatorga to'liq suhbat konteksti bilan uzatadi. Shunday qilib mijoz hech qachon javobsiz qolmaydi." },
       ],
     },
+    related: {
+      badge: "Bog'liq xizmatlar",
+      title: "Sizga yana",
+      titleAccent: "foydali bo'lishi mumkin",
+      subtitle: "AI chatbotga yaqin Tezcode yechimlari.",
+      links: [
+        { href: "/telegram-bot-biznes", label: "Telegram bot", desc: "Buyurtma, to'lov va Mini App bilan biznes uchun Telegram bot — chatbot eng ko'p ishlaydigan kanal." },
+        { href: "/ai-agent", label: "AI agent", desc: "Chatbotdan bir qadam yuqori: o'zi qaror qabul qiladigan va vazifani oxirigacha bajaradigan AI agent." },
+        { href: "/ai-avtomatizatsiya", label: "AI avtomatizatsiya", desc: "Suhbatdan tashqari jarayonlarni ham AI bilan avtomatlashtiring — hisobot, lid saralash, integratsiya." },
+      ],
+    },
     service: {
       name: "AI chatbot va yordamchi yaratish — Tezcode",
       description:
@@ -156,6 +167,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Подключится ли к моей CRM или 1C?", a: "Да. Мы строим интеграцию с AmoCRM, Bitrix24, 1C, Google Sheets и другими системами — клиенты и заказы записываются автоматически." },
         { q: "Сколько времени и сколько стоит?", a: "Простой бот — 1-2 недели, более полный AI-ассистент — MVP за 2-3 недели. Точная цена даётся после консультации, оплата — 30% предоплата." },
         { q: "Что если бот не сможет ответить?", a: "Сложный или деликатный вопрос AI сам передаёт живому оператору с полным контекстом переписки. Так клиент никогда не остаётся без ответа." },
+      ],
+    },
+    related: {
+      badge: "Связанные услуги",
+      title: "Вам также может",
+      titleAccent: "быть полезно",
+      subtitle: "Решения Tezcode, близкие к AI-чат-боту.",
+      links: [
+        { href: "/telegram-bot-biznes", label: "Telegram-бот", desc: "Telegram-бот для бизнеса с заказами, оплатой и Mini App — главный канал для чат-бота." },
+        { href: "/ai-agent", label: "AI-агент", desc: "На шаг выше чат-бота: AI-агент сам принимает решения и доводит задачу до конца." },
+        { href: "/ai-avtomatizatsiya", label: "AI-автоматизация", desc: "Автоматизируйте с помощью ИИ не только диалог — отчёты, квалификация лидов, интеграции." },
       ],
     },
     service: {
@@ -238,6 +260,17 @@ export const CONTENT: ServicePageContent = {
         { q: "What if the bot can't answer?", a: "The AI hands a complex or sensitive question to a human operator with the full conversation context, so a customer is never left without an answer." },
       ],
     },
+    related: {
+      badge: "Related services",
+      title: "You may also",
+      titleAccent: "find useful",
+      subtitle: "Tezcode solutions close to an AI chatbot.",
+      links: [
+        { href: "/telegram-bot-biznes", label: "Telegram bot", desc: "A business Telegram bot with orders, payments and Mini App — the chatbot's main channel." },
+        { href: "/ai-agent", label: "AI agent", desc: "One step beyond a chatbot: an AI agent that makes decisions and completes tasks end to end." },
+        { href: "/ai-avtomatizatsiya", label: "AI automation", desc: "Automate more than the conversation — reports, lead qualification and integrations with AI." },
+      ],
+    },
     service: {
       name: "AI chatbot & assistant development — Tezcode",
       description:
@@ -318,6 +351,17 @@ export const CONTENT: ServicePageContent = {
         { q: "ماذا لو لم يستطع البوت الإجابة؟", a: "يحوّل الذكاء الاصطناعي السؤال المعقد أو الحساس إلى موظف بشري مع سياق المحادثة الكامل، فلا يبقى العميل دون رد." },
       ],
     },
+    related: {
+      badge: "خدمات ذات صلة",
+      title: "قد يفيدك",
+      titleAccent: "أيضاً",
+      subtitle: "حلول Tezcode القريبة من شات بوت AI.",
+      links: [
+        { href: "/telegram-bot-biznes", label: "بوت تيليجرام", desc: "بوت تيليجرام للأعمال مع الطلبات والدفع وMini App — القناة الرئيسية للشات بوت." },
+        { href: "/ai-agent", label: "وكيل AI", desc: "خطوة أبعد من الشات بوت: وكيل AI يتخذ القرارات وينجز المهمة من البداية إلى النهاية." },
+        { href: "/ai-avtomatizatsiya", label: "أتمتة AI", desc: "أتمتة ما هو أبعد من المحادثة — التقارير وتصنيف العملاء المحتملين والتكاملات بالذكاء الاصطناعي." },
+      ],
+    },
     service: {
       name: "تطوير شات بوت ومساعد ذكي — Tezcode",
       description:
@@ -396,6 +440,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Чи підключиться до моєї CRM або 1C?", a: "Так. Ми будуємо інтеграцію з AmoCRM, Bitrix24, 1C, Google Sheets та іншими системами — клієнти та замовлення записуються автоматично." },
         { q: "Скільки часу і скільки коштує?", a: "Простий бот — 1-2 тижні, повніший AI-асистент — MVP за 2-3 тижні. Точна ціна дається після консультації, оплата — 30% передоплати." },
         { q: "Що якщо бот не зможе відповісти?", a: "Складне або делікатне питання AI сам передає живому оператору з повним контекстом листування. Так клієнт ніколи не залишається без відповіді." },
+      ],
+    },
+    related: {
+      badge: "Пов'язані послуги",
+      title: "Вам також може",
+      titleAccent: "бути корисно",
+      subtitle: "Рішення Tezcode, близькі до AI-чат-бота.",
+      links: [
+        { href: "/telegram-bot-biznes", label: "Telegram-бот", desc: "Telegram-бот для бізнесу із замовленнями, оплатою та Mini App — головний канал для чат-бота." },
+        { href: "/ai-agent", label: "AI-агент", desc: "На крок вище за чат-бота: AI-агент сам ухвалює рішення і доводить задачу до кінця." },
+        { href: "/ai-avtomatizatsiya", label: "AI-автоматизація", desc: "Автоматизуйте не лише діалог — звіти, кваліфікація лідів та інтеграції за допомогою ШІ." },
       ],
     },
     service: {

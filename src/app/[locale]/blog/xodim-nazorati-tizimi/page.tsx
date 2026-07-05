@@ -13,24 +13,32 @@ import { CONTENT } from "./content";
 const SLUG = "xodim-nazorati-tizimi";
 const PATH = `/blog/${SLUG}`;
 
-export const metadata = buildPageMetadata({
-  path: PATH,
-  title:
-    "Xodimlar ish vaqti va vazifalarini nazorat qilish tizimi qanday tanlanadi (2026) | Tezcode",
-  description:
-    "Xodimlar ish vaqti, vazifalar va samaradorlikni nazorat qilish tizimini tanlash qo'llanmasi: vazifa boshqaruvi, davomat, hisobotlar, nazorat-ishonch muvozanati va xatolar.",
-  keywords: [
-    "xodim nazorati tizimi",
-    "vazifa boshqaruvi dasturi",
-    "ish vaqti nazorati",
-    "xodim samaradorligi",
-    "task management O'zbekiston",
-    "контроль сотрудников",
-    "учёт рабочего времени",
-    "управление задачами",
-    "WorkControl",
-  ],
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title:
+      "Xodimlar ish vaqti va vazifalarini nazorat qilish tizimi qanday tanlanadi (2026) | Tezcode",
+    description:
+      "Xodimlar ish vaqti, vazifalar va samaradorlikni nazorat qilish tizimini tanlash qo'llanmasi: vazifa boshqaruvi, davomat, hisobotlar, nazorat-ishonch muvozanati va xatolar.",
+    keywords: [
+      "xodim nazorati tizimi",
+      "vazifa boshqaruvi dasturi",
+      "ish vaqti nazorati",
+      "xodim samaradorligi",
+      "task management O'zbekiston",
+      "контроль сотрудников",
+      "учёт рабочего времени",
+      "управление задачами",
+      "WorkControl",
+    ],
+  });
+}
 
 export default function XodimNazoratiTizimiPage() {
   const meta = getArticle(SLUG);
@@ -67,7 +75,7 @@ export default function XodimNazoratiTizimiPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <BlogArticleClient content={CONTENT} />
+      <BlogArticleClient content={CONTENT} relatedService={meta?.relatedService} />
     </>
   );
 }

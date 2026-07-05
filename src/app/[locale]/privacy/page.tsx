@@ -2,18 +2,26 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  ...buildPageMetadata({
-    path: "/privacy",
-    title: "Maxfiylik Siyosati — Privacy Policy",
-    description:
-      "Tezcode maxfiylik siyosati: shaxsiy ma'lumotlar yig'ish va ishlatish, cookies, GDPR/UZ qonun talablari, foydalanuvchi huquqlari. So'nggi yangilanish 2026-yil.",
-  }),
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return {
+    ...buildPageMetadata({
+      locale,
+      path: "/privacy",
+      title: "Maxfiylik Siyosati — Privacy Policy",
+      description:
+        "Tezcode maxfiylik siyosati: shaxsiy ma'lumotlar yig'ish va ishlatish, cookies, GDPR/UZ qonun talablari, foydalanuvchi huquqlari. So'nggi yangilanish 2026-yil.",
+    }),
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 const SECTIONS: { title: string; body: string[] }[] = [
   {

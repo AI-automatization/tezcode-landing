@@ -15,24 +15,32 @@ const PATH = `/blog/${SLUG}`;
 
 // Server Component: emits Article + FAQPage + Breadcrumb JSON-LD and metadata in
 // the initial HTML so answer engines read the structured data on first fetch.
-export const metadata = buildPageMetadata({
-  path: PATH,
-  title: "Klinika uchun CRM qanday tanlanadi (2026) | Tezcode",
-  description:
-    "Klinika, tibbiyot markazi yoki stomatologiya uchun CRM tanlash qo'llanmasi: qabullar, bemor bazasi, moliyaviy hisobot, rollar va eng ko'p uchraydigan xatolar.",
-  keywords: [
-    "klinika uchun CRM",
-    "tibbiyot CRM",
-    "klinika boshqaruv dasturi",
-    "klinika CRM O'zbekiston",
-    "stomatologiya CRM",
-    "CRM для клиники",
-    "программа для клиники",
-    "медицинская CRM",
-    "ClinicaGo",
-    "CoreMed",
-  ],
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title: "Klinika uchun CRM qanday tanlanadi (2026) | Tezcode",
+    description:
+      "Klinika, tibbiyot markazi yoki stomatologiya uchun CRM tanlash qo'llanmasi: qabullar, bemor bazasi, moliyaviy hisobot, rollar va eng ko'p uchraydigan xatolar.",
+    keywords: [
+      "klinika uchun CRM",
+      "tibbiyot CRM",
+      "klinika boshqaruv dasturi",
+      "klinika CRM O'zbekiston",
+      "stomatologiya CRM",
+      "CRM для клиники",
+      "программа для клиники",
+      "медицинская CRM",
+      "ClinicaGo",
+      "CoreMed",
+    ],
+  });
+}
 
 export default function KlinikaUchunCrmPage() {
   const meta = getArticle(SLUG);
@@ -69,7 +77,7 @@ export default function KlinikaUchunCrmPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <BlogArticleClient content={CONTENT} />
+      <BlogArticleClient content={CONTENT} relatedService={meta?.relatedService} />
     </>
   );
 }

@@ -12,27 +12,35 @@ const PATH = "/telegram-bot-biznes";
 // Server Component: metadata + JSON-LD are emitted on the server so the
 // structured data is in the initial HTML (AI Overviews / ChatGPT / Perplexity
 // read SSR markup). The animated UI lives in ServicePageClient.
-export const metadata = buildPageMetadata({
-  path: PATH,
-  title:
-    "Telegram bot yaratish — buyurtma, to'lov, do'kon (Mini App) | Tezcode",
-  description:
-    "Biznes uchun Telegram bot yaratamiz: buyurtma qabul qilish, Click/Payme to'lov, qo'llab-quvvatlash, eslatma, Telegram do'kon (Mini App), CRM integratsiyasi. Tezcode, Toshkent. Bepul konsultatsiya.",
-  keywords: [
-    "Telegram bot yasash",
-    "Telegram bot biznes uchun",
-    "Telegram bot Toshkent",
-    "Telegram bot buyurtma",
-    "Telegram do'kon Mini App",
-    "Telegram бот для бизнеса",
-    "заказать телеграм бота Ташкент",
-    "телеграм бот с оплатой Click Payme",
-    "Telegram bot development Uzbekistan",
-  ],
-  ogTitle: "Biznesingiz uchun Telegram bot",
-  ogDescription:
-    "Buyurtma, Click/Payme to'lov, qo'llab-quvvatlash, Telegram do'kon (Mini App) — biznesingizga moslab. Bepul konsultatsiya.",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title:
+      "Telegram bot yaratish — buyurtma, to'lov, do'kon (Mini App) | Tezcode",
+    description:
+      "Biznes uchun Telegram bot yaratamiz: buyurtma qabul qilish, Click/Payme to'lov, qo'llab-quvvatlash, eslatma, Telegram do'kon (Mini App), CRM integratsiyasi. Tezcode, Toshkent. Bepul konsultatsiya.",
+    keywords: [
+      "Telegram bot yasash",
+      "Telegram bot biznes uchun",
+      "Telegram bot Toshkent",
+      "Telegram bot buyurtma",
+      "Telegram do'kon Mini App",
+      "Telegram бот для бизнеса",
+      "заказать телеграм бота Ташкент",
+      "телеграм бот с оплатой Click Payme",
+      "Telegram bot development Uzbekistan",
+    ],
+    ogTitle: "Biznesingiz uchun Telegram bot",
+    ogDescription:
+      "Buyurtma, Click/Payme to'lov, qo'llab-quvvatlash, Telegram do'kon (Mini App) — biznesingizga moslab. Bepul konsultatsiya.",
+  });
+}
 
 export default async function TelegramBotBiznesPage({
   params,
@@ -60,7 +68,7 @@ export default async function TelegramBotBiznesPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <ServicePageClient content={CONTENT} />
+      <ServicePageClient content={CONTENT} serviceSlug="telegram-bot-biznes" />
     </>
   );
 }

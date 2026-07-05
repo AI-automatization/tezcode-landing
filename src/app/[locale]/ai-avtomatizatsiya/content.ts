@@ -77,6 +77,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Ma'lumotlarim xavfsiz bo'ladimi?", a: "Ha. Maxfiy ma'lumotlar siz nazorat qiladigan muhitda saqlanadi, kirish huquqlari cheklanadi. Xavfsizlik talablarini konsultatsiyada batafsil kelishamiz." },
       ],
     },
+    related: {
+      badge: "Bog'liq xizmatlar",
+      title: "Sizga yana",
+      titleAccent: "foydali bo'lishi mumkin",
+      subtitle: "AI avtomatizatsiyaga yaqin Tezcode yechimlari.",
+      links: [
+        { href: "/ai-agent", label: "AI agent", desc: "O'zi qaror qabul qiladigan va vazifani boshidan oxirigacha bajaradigan AI agentlar — avtomatizatsiyaning keyingi darajasi." },
+        { href: "/biznes-avtomatlashtirish", label: "Biznes avtomatlashtirish", desc: "Takroriy qo'l ishlarini tizimlashtirib, vaqt va xarajatni tejaydigan klassik avtomatlashtirish." },
+        { href: "/ai-chatbot", label: "AI chatbot", desc: "24/7 mijoz xizmati va lid yig'ish uchun AI chatbot — avtomatizatsiyaning eng tez natija beradigan qismi." },
+      ],
+    },
     service: {
       name: "AI avtomatizatsiya xizmati — Tezcode",
       description:
@@ -155,6 +166,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Сколько это стоит?", a: "Точная цена даётся только после ИИ-аудита, ведь процессы у всех разные. Консультация бесплатна, оплата — 30% предоплата, остальное поэтапно." },
         { q: "Подключится ли к моим системам (1C, Telegram, CRM)?", a: "Да. Мы строим интеграцию с Telegram, Google Sheets, 1C, платёжными системами и CRM, чтобы ИИ работал внутри вашего текущего рабочего процесса." },
         { q: "Будут ли мои данные в безопасности?", a: "Да. Конфиденциальные данные хранятся в подконтрольной вам среде, доступы ограничены. Требования к безопасности подробно согласуем на консультации." },
+      ],
+    },
+    related: {
+      badge: "Связанные услуги",
+      title: "Вам также может",
+      titleAccent: "быть полезно",
+      subtitle: "Решения Tezcode, близкие к AI-автоматизации.",
+      links: [
+        { href: "/ai-agent", label: "AI-агент", desc: "AI-агенты, которые сами принимают решения и выполняют задачу от начала до конца — следующий уровень автоматизации." },
+        { href: "/biznes-avtomatlashtirish", label: "Автоматизация бизнеса", desc: "Классическая автоматизация рутинных ручных задач — экономия времени и расходов." },
+        { href: "/ai-chatbot", label: "AI-чат-бот", desc: "AI-чат-бот для сервиса 24/7 и сбора лидов — самая быстрая по результату часть автоматизации." },
       ],
     },
     service: {
@@ -237,6 +259,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Will my data be safe?", a: "Yes. Sensitive data is stored in an environment you control, with restricted access. We agree on security requirements in detail during the consultation." },
       ],
     },
+    related: {
+      badge: "Related services",
+      title: "You may also",
+      titleAccent: "find useful",
+      subtitle: "Tezcode solutions close to AI automation.",
+      links: [
+        { href: "/ai-agent", label: "AI agent", desc: "AI agents that make decisions and complete tasks end to end — the next level of automation." },
+        { href: "/biznes-avtomatlashtirish", label: "Business automation", desc: "Classic automation of repetitive manual work — saving time and costs." },
+        { href: "/ai-chatbot", label: "AI chatbot", desc: "An AI chatbot for 24/7 customer service and lead capture — the fastest-payoff part of automation." },
+      ],
+    },
     service: {
       name: "AI automation service — Tezcode",
       description:
@@ -317,6 +350,17 @@ export const CONTENT: ServicePageContent = {
         { q: "هل بياناتي آمنة؟", a: "نعم. تُخزّن البيانات الحساسة في بيئة تتحكم بها أنت، مع صلاحيات محدودة. نتفق على متطلبات الأمان بالتفصيل في الاستشارة." },
       ],
     },
+    related: {
+      badge: "خدمات ذات صلة",
+      title: "قد يفيدك",
+      titleAccent: "أيضاً",
+      subtitle: "حلول Tezcode القريبة من أتمتة الذكاء الاصطناعي.",
+      links: [
+        { href: "/ai-agent", label: "وكيل AI", desc: "وكلاء AI يتخذون القرارات وينجزون المهمة من البداية إلى النهاية — المستوى التالي من الأتمتة." },
+        { href: "/biznes-avtomatlashtirish", label: "أتمتة الأعمال", desc: "الأتمتة الكلاسيكية للمهام اليدوية المتكررة — توفير الوقت والتكاليف." },
+        { href: "/ai-chatbot", label: "شات بوت AI", desc: "شات بوت AI لخدمة العملاء 24/7 وجمع العملاء المحتملين — أسرع جزء من الأتمتة نتيجةً." },
+      ],
+    },
     service: {
       name: "خدمة أتمتة الذكاء الاصطناعي — Tezcode",
       description:
@@ -395,6 +439,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Скільки це коштує?", a: "Точна ціна дається лише після ШІ-аудиту, адже процеси у всіх різні. Консультація безкоштовна, оплата — 30% передоплати, решта поетапно." },
         { q: "Чи підключиться до моїх систем (1C, Telegram, CRM)?", a: "Так. Ми будуємо інтеграцію з Telegram, Google Sheets, 1C, платіжними системами та CRM, щоб ШІ працював усередині вашого поточного робочого процесу." },
         { q: "Чи будуть мої дані в безпеці?", a: "Так. Конфіденційні дані зберігаються у підконтрольному вам середовищі, доступи обмежені. Вимоги до безпеки детально узгоджуємо на консультації." },
+      ],
+    },
+    related: {
+      badge: "Пов'язані послуги",
+      title: "Вам також може",
+      titleAccent: "бути корисно",
+      subtitle: "Рішення Tezcode, близькі до AI-автоматизації.",
+      links: [
+        { href: "/ai-agent", label: "AI-агент", desc: "AI-агенти, що самі ухвалюють рішення і виконують задачу від початку до кінця — наступний рівень автоматизації." },
+        { href: "/biznes-avtomatlashtirish", label: "Автоматизація бізнесу", desc: "Класична автоматизація рутинної ручної роботи — економія часу та витрат." },
+        { href: "/ai-chatbot", label: "AI-чат-бот", desc: "AI-чат-бот для сервісу 24/7 і збору лідів — найшвидша за результатом частина автоматизації." },
       ],
     },
     service: {

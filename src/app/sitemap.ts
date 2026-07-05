@@ -3,9 +3,34 @@ import { BASE_URL, LOCALES } from "@/lib/seo";
 import { ARTICLES } from "./[locale]/blog/articles";
 import { CITY_SLUGS } from "@/data/cities";
 
+// Site-wide lastModified for non-blog pages. Bump this date on real releases
+// (content/design changes worth re-crawling) — NOT on every build. Using a
+// fixed date instead of `new Date()` keeps lastModified honest: search engines
+// lose trust in sitemaps where every URL "changes" on every deploy.
+const SITE_UPDATED = new Date("2026-07-05");
+
+// City slugs with live pages for the newer per-city service landings.
+// Must mirror ACTIVE_CITY_SLUGS in each service's [city]/page.tsx
+// (ai-chatbot, ai-agent, telegram-bot-biznes, biznes-avtomatlashtirish).
+const ACTIVE_CITY_SLUGS = ["toshkent", "samarqand"];
+const CITY_SERVICES = [
+  "/ai-chatbot",
+  "/ai-agent",
+  "/telegram-bot-biznes",
+  "/biznes-avtomatlashtirish",
+];
+
+type Route = {
+  path: string;
+  priority: number;
+  changeFrequency: "weekly" | "monthly" | "yearly";
+  // Per-route override (blog posts use their publish date); defaults to SITE_UPDATED.
+  lastModified?: Date;
+};
+
 // Static routes under app/[locale]/**.
 // Add new pages here when a route is introduced.
-const ROUTES = [
+const ROUTES: Route[] = [
   { path: "", priority: 1.0, changeFrequency: "weekly" as const },
   { path: "/for-businesses", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/hire-developers", priority: 0.9, changeFrequency: "monthly" as const },
@@ -43,10 +68,12 @@ const ROUTES = [
   { path: "/privacy", priority: 0.3, changeFrequency: "yearly" as const },
   { path: "/terms", priority: 0.3, changeFrequency: "yearly" as const },
   // Blog articles (derived from the registry so new posts auto-appear).
+  // lastModified = the article's publish date, not the build date.
   ...ARTICLES.map((a) => ({
     path: `/blog/${a.slug}`,
     priority: 0.7,
     changeFrequency: "monthly" as const,
+    lastModified: new Date(a.datePublished),
   })),
   // Per-city POS landing pages (/pos-tizimi/<city>), derived from the city data.
   ...CITY_SLUGS.map((slug) => ({
@@ -60,6 +87,15 @@ const ROUTES = [
     priority: 0.7,
     changeFrequency: "monthly" as const,
   })),
+  // Per-city landings for the newer services (/<service>/<city>) — only the
+  // city slugs that actually have live pages (ACTIVE_CITY_SLUGS).
+  ...CITY_SERVICES.flatMap((service) =>
+    ACTIVE_CITY_SLUGS.map((slug) => ({
+      path: `${service}/${slug}`,
+      priority: 0.7,
+      changeFrequency: "monthly" as const,
+    })),
+  ),
 ];
 
 function buildUrl(locale: string, path: string): string {
@@ -79,11 +115,10 @@ export default async function sitemap(props: {
 }): Promise<MetadataRoute.Sitemap> {
   const id = await props.id;
   const locale = (LOCALES as readonly string[]).includes(id) ? id : "uz";
-  const now = new Date();
 
   return ROUTES.map((route) => ({
     url: buildUrl(locale, route.path),
-    lastModified: now,
+    lastModified: route.lastModified ?? SITE_UPDATED,
     changeFrequency: route.changeFrequency,
     // Slight preference for default locale (uz) over translations
     priority: locale === "uz" ? route.priority : Math.max(0.1, route.priority - 0.1),

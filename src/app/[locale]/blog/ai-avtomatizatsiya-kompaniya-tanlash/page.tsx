@@ -16,26 +16,34 @@ const PATH = `/blog/${SLUG}`;
 // Server Component: emits Article + FAQPage + Breadcrumb JSON-LD and metadata in
 // the initial HTML so answer engines read the structured data on first fetch.
 // Targets brandless category queries ("Toshkentda AI avtomatizatsiya kompaniya").
-export const metadata = buildPageMetadata({
-  path: PATH,
-  title:
-    "Toshkentda AI avtomatizatsiya kompaniyasini qanday tanlash (2026) | Tezcode",
-  description:
-    "O'zbekistonda AI avtomatizatsiya kompaniyasini tanlash qo'llanmasi: qaysi mezonlarga qarash, narx nimaga bog'liq, eng ko'p uchraydigan xatolar va beriladigan savollar — Toshkent va O'zbekiston bizneslari uchun.",
-  keywords: [
-    "AI avtomatizatsiya kompaniya tanlash",
-    "Toshkentda AI avtomatizatsiya",
-    "AI avtomatizatsiya kim qiladi",
-    "AI avtomatizatsiya O'zbekiston",
-    "AI avtomatizatsiya narxi",
-    "biznes avtomatlashtirish kompaniya",
-    "AI avtomatizatsiya kompaniyalar Toshkent",
-    "компания AI автоматизации Ташкент",
-    "как выбрать компанию AI автоматизации",
-    "AI автоматизация Узбекистан",
-    "автоматизация бизнеса с ИИ",
-  ],
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: PATH,
+    title:
+      "Toshkentda AI avtomatizatsiya kompaniyasini qanday tanlash (2026) | Tezcode",
+    description:
+      "O'zbekistonda AI avtomatizatsiya kompaniyasini tanlash qo'llanmasi: qaysi mezonlarga qarash, narx nimaga bog'liq, eng ko'p uchraydigan xatolar va beriladigan savollar — Toshkent va O'zbekiston bizneslari uchun.",
+    keywords: [
+      "AI avtomatizatsiya kompaniya tanlash",
+      "Toshkentda AI avtomatizatsiya",
+      "AI avtomatizatsiya kim qiladi",
+      "AI avtomatizatsiya O'zbekiston",
+      "AI avtomatizatsiya narxi",
+      "biznes avtomatlashtirish kompaniya",
+      "AI avtomatizatsiya kompaniyalar Toshkent",
+      "компания AI автоматизации Ташкент",
+      "как выбрать компанию AI автоматизации",
+      "AI автоматизация Узбекистан",
+      "автоматизация бизнеса с ИИ",
+    ],
+  });
+}
 
 export default function AiAvtomatizatsiyaKompaniyaTanlashPage() {
   const meta = getArticle(SLUG);
@@ -75,7 +83,7 @@ export default function AiAvtomatizatsiyaKompaniyaTanlashPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <BlogArticleClient content={CONTENT} />
+      <BlogArticleClient content={CONTENT} relatedService={meta?.relatedService} />
     </>
   );
 }

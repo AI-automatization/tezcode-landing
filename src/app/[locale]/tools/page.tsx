@@ -5,14 +5,22 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = buildPageMetadata({
-  path: "/tools",
-  title: "Bepul AI Vositalar — MVP Roadmap, Kod Tahlili",
-  description:
-    "Tezcode'ning bepul AI vositalari: MVP yo'l xaritasi generatori, GitHub kod tahlili, biznes hisob-kitobi. Ro'yxatdan o'tish kerak emas, to'lov yo'q.",
-  ogTitle: "Bepul AI Vositalar — Tezcode",
-  ogDescription: "MVP roadmap + kod tahlili + biznes ROI hisob — barchasi bepul.",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: "/tools",
+    title: "Bepul AI Vositalar — MVP Roadmap, Kod Tahlili",
+    description:
+      "Tezcode'ning bepul AI vositalari: MVP yo'l xaritasi generatori, GitHub kod tahlili, biznes hisob-kitobi. Ro'yxatdan o'tish kerak emas, to'lov yo'q.",
+    ogTitle: "Bepul AI Vositalar — Tezcode",
+    ogDescription: "MVP roadmap + kod tahlili + biznes ROI hisob — barchasi bepul.",
+  });
+}
 
 const TOOLS: { slug: string; icon: LucideIcon; title: string; description: string; cta: string; badge?: string; href?: string }[] = [
   {

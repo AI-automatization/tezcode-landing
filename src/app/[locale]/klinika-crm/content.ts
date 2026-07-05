@@ -77,6 +77,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Narxi qancha?", a: "ClinicaGo obuna asosida. Aniq narx klinikangiz hajmi va shifokorlar soniga bog'liq — bepul demodan keyin taklif beramiz." },
       ],
     },
+    related: {
+      badge: "Bog'liq xizmatlar",
+      title: "Sizga yana",
+      titleAccent: "foydali bo'lishi mumkin",
+      subtitle: "Klinika CRM bilan birga ko'p ishlatiladigan Tezcode yechimlari.",
+      links: [
+        { href: "/pos-tizimi", label: "POS tizimi (RAOS)", desc: "Dorixona yoki klinika do'koni uchun kassa, ombor va hisobot — internetsiz ham ishlaydi." },
+        { href: "/ai-chatbot", label: "AI chatbot", desc: "Bemorlar savollariga 24/7 javob beradigan, qabulga yozadigan AI yordamchi." },
+        { href: "/xodim-nazorati", label: "Xodim nazorati", desc: "Shifokor va xodimlar davomati, vazifalari va samaradorligini bitta tizimda kuzating." },
+      ],
+    },
     service: {
       name: "ClinicaGo — klinika uchun CRM | Tezcode",
       description:
@@ -155,6 +166,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Перенесёте мою старую базу пациентов?", a: "Да. Перенесём существующих пациентов и услуги в ClinicaGo, чтобы не начинать с нуля." },
         { q: "Отправляет ли напоминания пациенту?", a: "Да. О приёме и очереди пациент получает автоматическое напоминание по SMS/Telegram — меньше неявок." },
         { q: "Сколько стоит?", a: "ClinicaGo по подписке. Точная цена зависит от размера клиники и числа врачей — дадим предложение после бесплатного демо." },
+      ],
+    },
+    related: {
+      badge: "Связанные услуги",
+      title: "Вам также может",
+      titleAccent: "быть полезно",
+      subtitle: "Решения Tezcode, которые часто используют вместе с CRM для клиники.",
+      links: [
+        { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Касса, склад и отчёты для аптеки или магазина при клинике — работает даже без интернета." },
+        { href: "/ai-chatbot", label: "AI-чат-бот", desc: "AI-ассистент, который отвечает пациентам 24/7 и записывает на приём." },
+        { href: "/xodim-nazorati", label: "Контроль сотрудников", desc: "Посещаемость, задачи и продуктивность врачей и персонала в одной системе." },
       ],
     },
     service: {
@@ -237,6 +259,17 @@ export const CONTENT: ServicePageContent = {
         { q: "How much does it cost?", a: "ClinicaGo is subscription-based. The exact price depends on your clinic size and number of doctors — we give a quote after the free demo." },
       ],
     },
+    related: {
+      badge: "Related services",
+      title: "You may also",
+      titleAccent: "find useful",
+      subtitle: "Tezcode solutions often used together with a clinic CRM.",
+      links: [
+        { href: "/pos-tizimi", label: "POS system (RAOS)", desc: "Register, inventory and reports for a pharmacy or clinic shop — works even offline." },
+        { href: "/ai-chatbot", label: "AI chatbot", desc: "An AI assistant that answers patients 24/7 and books appointments." },
+        { href: "/xodim-nazorati", label: "Employee monitoring", desc: "Attendance, tasks and productivity of doctors and staff in one system." },
+      ],
+    },
     service: {
       name: "ClinicaGo — CRM for clinics | Tezcode",
       description:
@@ -317,6 +350,17 @@ export const CONTENT: ServicePageContent = {
         { q: "كم التكلفة؟", a: "ClinicaGo باشتراك. يعتمد السعر الدقيق على حجم العيادة وعدد الأطباء — نقدّم عرضاً بعد التجربة المجانية." },
       ],
     },
+    related: {
+      badge: "خدمات ذات صلة",
+      title: "قد يفيدك",
+      titleAccent: "أيضاً",
+      subtitle: "حلول Tezcode التي تُستخدم غالباً مع CRM العيادات.",
+      links: [
+        { href: "/pos-tizimi", label: "نظام POS ‏(RAOS)", desc: "كاشير ومخزون وتقارير لصيدلية أو متجر العيادة — يعمل حتى بدون إنترنت." },
+        { href: "/ai-chatbot", label: "شات بوت AI", desc: "مساعد AI يجيب المرضى 24/7 ويحجز المواعيد." },
+        { href: "/xodim-nazorati", label: "مراقبة الموظفين", desc: "الحضور والمهام وإنتاجية الأطباء والموظفين في نظام واحد." },
+      ],
+    },
     service: {
       name: "ClinicaGo — CRM للعيادات | Tezcode",
       description:
@@ -395,6 +439,17 @@ export const CONTENT: ServicePageContent = {
         { q: "Чи перенесете мою стару базу пацієнтів?", a: "Так. Перенесемо наявних пацієнтів і послуги в ClinicaGo, щоб не починати з нуля." },
         { q: "Чи надсилає нагадування пацієнту?", a: "Так. Про прийом і чергу пацієнт отримує автоматичне нагадування по SMS/Telegram — менше неявок." },
         { q: "Скільки коштує?", a: "ClinicaGo за підпискою. Точна ціна залежить від розміру клініки і кількості лікарів — дамо пропозицію після безкоштовного демо." },
+      ],
+    },
+    related: {
+      badge: "Пов'язані послуги",
+      title: "Вам також може",
+      titleAccent: "бути корисно",
+      subtitle: "Рішення Tezcode, які часто використовують разом із CRM для клініки.",
+      links: [
+        { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Каса, склад і звіти для аптеки чи магазину при клініці — працює навіть без інтернету." },
+        { href: "/ai-chatbot", label: "AI-чат-бот", desc: "AI-асистент, який відповідає пацієнтам 24/7 і записує на прийом." },
+        { href: "/xodim-nazorati", label: "Контроль співробітників", desc: "Відвідуваність, задачі та продуктивність лікарів і персоналу в одній системі." },
       ],
     },
     service: {

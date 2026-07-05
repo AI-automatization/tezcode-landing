@@ -3,14 +3,22 @@ import { Footer } from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo";
 import { MvpRoadmapForm } from "./MvpRoadmapForm";
 
-export const metadata = buildPageMetadata({
-  path: "/tools/free-mvp-roadmap",
-  title: "Bepul MVP Yo'l Xaritasi Generatori — Startup G'oyangiz Uchun",
-  description:
-    "Startup g'oyangizni 5 daqiqada professional MVP yo'l xaritasiga aylantiring: texnologiya stack, scope, 4 haftalik plan, budget hisobi. AI generatsiya + Bekzod CEO 24 soatda kommentariy.",
-  ogTitle: "Bepul MVP Roadmap — Tezcode",
-  ogDescription: "Startup g'oyangiz uchun AI generatsiyali MVP roadmap. 5 daqiqada.",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return buildPageMetadata({
+    locale,
+    path: "/tools/free-mvp-roadmap",
+    title: "Bepul MVP Yo'l Xaritasi Generatori — Startup G'oyangiz Uchun",
+    description:
+      "Startup g'oyangizni 5 daqiqada professional MVP yo'l xaritasiga aylantiring: texnologiya stack, scope, 4 haftalik plan, budget hisobi. AI generatsiya + Bekzod CEO 24 soatda kommentariy.",
+    ogTitle: "Bepul MVP Roadmap — Tezcode",
+    ogDescription: "Startup g'oyangiz uchun AI generatsiyali MVP roadmap. 5 daqiqada.",
+  });
+}
 
 const STEPS = [
   { num: "1", title: "G'oyangizni yozing", desc: "1-2 paragrafda — biznes muammo + qanday yechmoqchisiz" },

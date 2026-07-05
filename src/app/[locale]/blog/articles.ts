@@ -10,6 +10,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: "claude-fable-5",
     datePublished: "2026-07-02",
     category: "AI dunyosida / Yangilik",
+    relatedService: { href: "/ai-agent", label: "AI agent yasash" },
     list: {
       uz: {
         title: "Claude Fable 5: Anthropic'ning eng kuchli modeli va bu biznes uchun nimani anglatadi",
@@ -32,6 +33,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: "it-park-schwarz-digits-uchrashuv",
     datePublished: "2026-07-02",
     category: "Hamkorlik / IT Park",
+    relatedService: { href: "/it-xizmatlar", label: "IT xizmatlar" },
     list: {
       uz: {
         title: "IT Park va Schwarz Digits: O'zbekiston IT sektori uchun Yevropa imkoniyati",
@@ -54,6 +56,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: "ai-avtomatizatsiya-kompaniya-tanlash",
     datePublished: "2026-06-25",
     category: "AI / Avtomatizatsiya",
+    relatedService: { href: "/ai-avtomatizatsiya", label: "AI avtomatizatsiya" },
     list: {
       uz: {
         title: "Toshkentda AI avtomatizatsiya kompaniyasini qanday tanlash (2026)",
@@ -76,6 +79,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: "biznes-uchun-ai-agent-yaratish",
     datePublished: "2026-06-14",
     category: "AI Agent / 2026",
+    relatedService: { href: "/ai-agent", label: "AI agent yasash" },
     list: {
       uz: {
         title: "Toshkentda biznes uchun AI agent yaratish: to'liq qo'llanma (2026)",
@@ -93,6 +97,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: "ai-chatbot-va-ai-agent-farqi",
     datePublished: "2026-06-17",
     category: "AI Agent / 2026",
+    relatedService: { href: "/ai-chatbot", label: "AI chatbot" },
     list: {
       uz: {
         title: "AI chatbot va AI agent farqi nima? (2026)",
@@ -132,6 +137,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: "xodim-nazorati-tizimi",
     datePublished: "2026-06-07",
     category: "HR / Nazorat",
+    relatedService: { href: "/xodim-nazorati", label: "Xodim nazorati (WorkControl)" },
     list: {
       uz: {
         title: "Xodimlar ish vaqti va vazifalarini nazorat qilish tizimi qanday tanlanadi",
@@ -149,6 +155,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: "klinika-uchun-crm",
     datePublished: "2026-06-07",
     category: "CRM / Klinika",
+    relatedService: { href: "/klinika-crm", label: "Klinika CRM (ClinicaGo)" },
     list: {
       uz: {
         title: "Klinika uchun CRM qanday tanlanadi",
@@ -166,6 +173,7 @@ export const ARTICLES: ArticleMeta[] = [
     slug: "pos-tizimi-tanlash",
     datePublished: "2026-06-07",
     category: "POS / Savdo",
+    relatedService: { href: "/pos-tizimi", label: "POS tizimi (RAOS)" },
     list: {
       uz: {
         title: "O'zbekistonda do'kon uchun POS tizimi qanday tanlanadi",
