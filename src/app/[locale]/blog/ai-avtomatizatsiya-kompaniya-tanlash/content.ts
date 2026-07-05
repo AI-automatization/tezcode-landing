@@ -54,7 +54,7 @@ export const CONTENT: ArticleContent = {
           "Jarayoningizni o'rganishi — yaxshi kompaniya avval biznesingizni so'raydi, keyin taklif beradi. Birinchi uchrashuvdayoq \"hammasini qilamiz\" deyish — yomon belgi.",
           "Integratsiya imkoniyati — mavjud tizimlaringizga (Telegram, CRM, 1C, sayt) ulana oladimi? AI alohida orolcha bo'lib qolmasligi kerak.",
           "Mahalliy qo'llab-quvvatlash — muammo chiqqanda o'zbek yoki rus tilida, tez yordam beradigan jamoa bormi?",
-          "To'lov modeli — natija ko'rinmaguncha katta pul talab qilinmaydimi? Bosqichma-bosqich yoki MVP'dan keyin to'lov — ishonchli belgisi.",
+          "To'lov modeli — natija ko'rinmaguncha katta pul talab qilinmaydimi? Bosqichma-bosqich to'lov — ishonchli belgisi.",
           "Ma'lumot xavfsizligi — biznes ma'lumotingiz qayerda saqlanadi, kimga tegishli va himoyalanganmi?",
         ],
       },
@@ -119,7 +119,7 @@ export const CONTENT: ArticleContent = {
       subtitle:
         "Bepul 30 daqiqa konsultatsiya — qaysi jarayonni avtomatlashtirish foydali ekanini birga aniqlaymiz. Majburiyat yo'q.",
       button: "Bepul konsultatsiya so'rang",
-      note: "To'lov faqat natija ko'ringanda • O'zbek va rus tilida qo'llab-quvvatlash",
+      note: "To'lov: 30% oldindan • O'zbek va rus tilida qo'llab-quvvatlash",
     },
   },
   ru: {
@@ -167,7 +167,7 @@ export const CONTENT: ArticleContent = {
           "Изучение вашего процесса — хорошая компания сначала расспрашивает о бизнесе, потом предлагает. Обещание «сделаем всё» на первой встрече — плохой знак.",
           "Возможность интеграции — подключается ли к вашим системам (Telegram, CRM, 1C, сайт)? ИИ не должен оставаться отдельным островком.",
           "Локальная поддержка — есть ли команда, которая быстро помогает на узбекском или русском?",
-          "Модель оплаты — не требуют ли крупную сумму до результата? Поэтапная оплата или оплата после MVP — признак надёжности.",
+          "Модель оплаты — не требуют ли крупную сумму до результата? Поэтапная оплата — признак надёжности.",
           "Безопасность данных — где хранятся ваши бизнес-данные, кому они принадлежат и защищены ли?",
         ],
       },
@@ -232,7 +232,7 @@ export const CONTENT: ArticleContent = {
       subtitle:
         "Бесплатная 30-минутная консультация — вместе определим, какой процесс выгодно автоматизировать. Без обязательств.",
       button: "Запросить бесплатную консультацию",
-      note: "Оплата только при видимом результате • Поддержка на узбекском и русском",
+      note: "Оплата: 30% предоплата • Поддержка на узбекском и русском",
     },
   },
   en: {
@@ -280,7 +280,7 @@ export const CONTENT: ArticleContent = {
           "Understanding your process — a good company first asks about your business, then proposes. Promising \"we'll do everything\" at the first meeting is a bad sign.",
           "Integration capability — can it connect to your existing systems (Telegram, CRM, 1C, website)? The AI must not stay an isolated island.",
           "Local support — is there a team that helps quickly in Uzbek or Russian?",
-          "Payment model — do they avoid demanding a large sum before results? Staged payment or payment after the MVP is a sign of reliability.",
+          "Payment model — do they avoid demanding a large sum before results? Staged payment is a sign of reliability.",
           "Data security — where is your business data stored, who owns it and is it protected?",
         ],
       },
@@ -345,7 +345,7 @@ export const CONTENT: ArticleContent = {
       subtitle:
         "A free 30-minute consultation — together we'll identify which process is worth automating. No obligation.",
       button: "Request a free consultation",
-      note: "Payment only when you see results • Support in Uzbek and Russian",
+      note: "Payment: 30% upfront • Support in Uzbek and Russian",
     },
   },
 };

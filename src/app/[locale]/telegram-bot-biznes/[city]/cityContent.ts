@@ -82,7 +82,7 @@ export function buildTelegramBotCityContent(city: City): ServicePageContent {
         ...base.hero,
         badge: `${cityName}da Telegram bot — Tezcode`,
         subtitle: `${intro}\n\n${base.hero.subtitle}`,
-        trust: `${cityName} va butun O'zbekiston • Bepul 30 daqiqa konsultatsiya • To'lov faqat MVP tayyor bo'lganda`,
+        trust: `${cityName} va butun O'zbekiston • Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan`,
       },
       faq: {
         ...base.faq,

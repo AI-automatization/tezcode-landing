@@ -14,7 +14,7 @@ export const metadata = buildPageMetadata({
   title:
     "Biznes avtomatlashtirish — jarayonlarni avtomatlashtirish tizimi | Tezcode",
   description:
-    "Biznes jarayonlarini avtomatlashtirish: hisobot, buyurtma, ombor, CRM va moliya bitta tizimda. Buyurtma asosida, Toshkent. Bepul 30 daqiqa konsultatsiya, to'lov faqat MVP tayyor bo'lganda.",
+    "Biznes jarayonlarini avtomatlashtirish: hisobot, buyurtma, ombor, CRM va moliya bitta tizimda. Buyurtma asosida, Toshkent. Bepul 30 daqiqa konsultatsiya, to'lov 30% oldindan.",
   keywords: [
     "biznes avtomatlashtirish",
     "biznes jarayonlarini avtomatlashtirish",

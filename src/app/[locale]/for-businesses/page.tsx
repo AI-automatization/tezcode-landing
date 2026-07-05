@@ -128,7 +128,7 @@ const COPY: Record<Lang, Copy> = {
       title2: "— 2 hafta'da",
       subtitle:
         "Tayyor SaaS (saas — bulutli dastur) sizning ish jarayoniga mos kelmasa, biz noldan yozamiz. ERP, CRM, e-commerce, custom dashboard (boshqaruv paneli) — qaysi biri kerak bo'lsa.",
-      trust: "Bepul 30 daqiqa konsultatsiya • To'lov faqat MVP (minimum viable product — eng kichik ishlovchi versiya) tayyor bo'lganda",
+      trust: "Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan",
       ctaPrimary: "Bepul konsultatsiya so'rang",
       ctaSecondary: "Portfolio ko'rish",
     },
@@ -382,7 +382,7 @@ const COPY: Record<Lang, Copy> = {
       title2: "— за 2 недели",
       subtitle:
         "Если готовые SaaS не подходят под ваш рабочий процесс, мы напишем с нуля. ERP, CRM, e-commerce, custom dashboard — что нужно.",
-      trust: "Бесплатная 30-мин консультация • Оплата только после готового MVP (минимально жизнеспособная версия)",
+      trust: "Бесплатная 30-мин консультация • Оплата: 30% предоплата",
       ctaPrimary: "Бесплатная консультация",
       ctaSecondary: "Смотреть портфолио",
     },
@@ -635,7 +635,7 @@ const COPY: Record<Lang, Copy> = {
       title2: "— in 2 weeks",
       subtitle:
         "When off-the-shelf SaaS doesn't fit your workflow, we build from scratch. ERP, CRM, e-commerce, custom dashboard — whatever you need.",
-      trust: "Free 30-min consultation • You pay only after MVP is delivered",
+      trust: "Free 30-min consultation • Payment: 30% upfront",
       ctaPrimary: "Book free consultation",
       ctaSecondary: "View portfolio",
     },
@@ -887,7 +887,7 @@ const COPY: Record<Lang, Copy> = {
       title2: "— في أسبوعين",
       subtitle:
         "عندما لا تناسب حلول SaaS الجاهزة سير عملك، نبني من الصفر. ERP، CRM، تجارة إلكترونية، لوحة تحكم مخصصة — أي ما تحتاج.",
-      trust: "استشارة 30 دقيقة مجانية • الدفع فقط بعد تسليم MVP",
+      trust: "استشارة 30 دقيقة مجانية • الدفع: 30% مقدمًا",
       ctaPrimary: "احجز استشارة مجانية",
       ctaSecondary: "عرض الأعمال",
     },
@@ -1137,7 +1137,7 @@ const COPY: Record<Lang, Copy> = {
       title2: "— за 2 тижні",
       subtitle:
         "Якщо готові SaaS не підходять під ваш робочий процес, ми пишемо з нуля. ERP, CRM, e-commerce, custom dashboard — що потрібно.",
-      trust: "Безкоштовна 30-хв консультація • Оплата лише після готового MVP",
+      trust: "Безкоштовна 30-хв консультація • Оплата: 30% передоплата",
       ctaPrimary: "Безкоштовна консультація",
       ctaSecondary: "Дивитись портфоліо",
     },

@@ -13,7 +13,7 @@ export const metadata = buildPageMetadata({
   path: PATH,
   title: "TezCode Custom — buyurtma dasturiy ta'minot | source code 100% sizniki | Tezcode",
   description:
-    "TezCode Custom: noldan buyurtma asosidagi dasturiy mahsulot — biznesingizga moslab qurilgan ERP, CRM, marketplace, ichki tizim yoki AI ilova. MVP 2-4 haftada, to'lov faqat MVP tayyor bo'lganda, source code 100% sizniki. 14 in-house dasturchi, Toshkent.",
+    "TezCode Custom: noldan buyurtma asosidagi dasturiy mahsulot — biznesingizga moslab qurilgan ERP, CRM, marketplace, ichki tizim yoki AI ilova. MVP 2-4 haftada, to'lov 30% oldindan, source code 100% sizniki. 14 in-house dasturchi, Toshkent.",
   keywords: [
     "buyurtma dasturiy ta'minot",
     "custom software Toshkent",
@@ -24,11 +24,11 @@ export const metadata = buildPageMetadata({
     "custom software development",
     "bespoke software Tashkent",
     "source code ownership",
-    "pay after MVP",
+    "30% upfront payment",
   ],
   ogTitle: "TezCode Custom — buyurtma dasturiy mahsulot",
   ogDescription:
-    "Sizning biznesingizga moslab qurilgan dasturiy mahsulot. MVP 2-4 haftada, to'lov faqat MVP tayyor bo'lganda, source code 100% sizniki.",
+    "Sizning biznesingizga moslab qurilgan dasturiy mahsulot. MVP 2-4 haftada, to'lov 30% oldindan, source code 100% sizniki.",
 });
 
 export default async function TezcodeCustomPage({

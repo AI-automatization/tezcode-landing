@@ -3,7 +3,7 @@ import type { ServicePageContent } from "@/components/service-page/types";
 // Content for /tezcode-custom — TezCode Custom division: fully bespoke software
 // built from scratch for one client (project-based). Angle: your OWN product,
 // tailored to your business, source code 100% yours, MVP in 2-4 weeks,
-// pay-after-MVP. Only confirmed Tezcode facts (AI Software Factory, 2024,
+// 30% upfront payment. Only confirmed Tezcode facts (AI Software Factory, 2024,
 // founder Bekzod Mirzaaliyev, 14 in-house developers, Tashkent, IT Park).
 export const CONTENT: ServicePageContent = {
   uz: {
@@ -13,8 +13,8 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "noldan, faqat sizga",
       title2: "",
       subtitle:
-        "TezCode Custom — biznesingizga aynan moslab noldan quriladigan dasturiy mahsulot. Tayyor shablon emas: sizning jarayoningizga qurilgan tizim, source code esa 100% sizniki. MVP 2-4 haftada, to'lov faqat ishlovchi MVP tayyor bo'lganda.",
-      trust: "Bepul 30 daqiqa konsultatsiya • To'lov faqat MVP tayyor bo'lganda • Source code 100% sizniki",
+        "TezCode Custom — biznesingizga aynan moslab noldan quriladigan dasturiy mahsulot. Tayyor shablon emas: sizning jarayoningizga qurilgan tizim, source code esa 100% sizniki. MVP 2-4 haftada, to'lov 30% oldindan boshlanadi.",
+      trust: "Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan • Source code 100% sizniki",
       ctaPrimary: "Loyihani muhokama qilish",
       ctaSecondary: "Qanday ishlaymiz",
     },
@@ -41,7 +41,7 @@ export const CONTENT: ServicePageContent = {
       steps: [
         { num: "01", title: "Discovery", desc: "Biznesingizni va muammoni chuqur o'rganamiz: kimga, nima uchun, qanday natija. Mahsulot ko'lamini birga aniqlaymiz.", icon: "search" },
         { num: "02", title: "Texnik spec + narx", desc: "Aniq texnik hujjat, arxitektura, narx, muddat va jamoa tarkibi. Yozma kontrakt — hech qanday yashirin xarajat yo'q.", icon: "clipboard-list" },
-        { num: "03", title: "MVP (2-4 hafta)", desc: "Ishlovchi birinchi versiyani 2-4 haftada quramiz. Har hafta demo ko'rsatamiz, siz fikr berasiz. To'lov shu bosqichda boshlanadi.", icon: "zap" },
+        { num: "03", title: "MVP (2-4 hafta)", desc: "Ishlovchi birinchi versiyani 2-4 haftada quramiz. Har hafta demo ko'rsatamiz, siz fikr berasiz.", icon: "zap" },
         { num: "04", title: "Production + scale", desc: "Deploy, real foydalanuvchilar va keyingi funksiyalar. Mahsulotni birga o'stiramiz va texnik qo'llab-quvvatlaymiz.", icon: "rocket" },
       ],
     },
@@ -53,7 +53,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "14 nafar in-house dasturchi", desc: "Toshkentdagi ofisimizda. Freelancer emas — jamoa. Backend, frontend, mobil, AI, DevOps bitta loyihada birga ishlaydi." },
         { tag: "02", title: "AI bilan tezroq MVP", desc: "Claude va zamonaviy AI vositalari kundalik ishchi vositamiz. Shuning uchun to'liq buyurtma MVP odatda 2-4 haftada tayyor." },
-        { tag: "03", title: "To'lov faqat MVP tayyor bo'lganda", desc: "Risk siz tomonda emas. Ishlovchi mahsulotni ko'rmaguningizcha to'lov boshlanmaydi — bizning ishonch modelimiz." },
+        { tag: "03", title: "Shaffof to'lov — 30% oldindan", desc: "Boshlash uchun atigi 30% — qolgani loyiha bosqichlari bo'yicha to'lanadi." },
         { tag: "04", title: "Source code 100% sizniki", desc: "Kod to'liq sizga o'tadi, GitHub sizning hisobingizda. Vendor lock-in yo'q — mahsulot va uning kodi butunlay sizniki." },
         { tag: "05", title: "Lokal jamoa, founder bilan bevosita", desc: "Founder Bekzod Mirzaaliyev Telegram'da. Til va vaqt mintaqasi muammosi yo'q — biznesingizni bevosita tushunamiz." },
       ],
@@ -72,7 +72,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "javoblar",
       subtitle: "Buyurtma dasturiy mahsulot haqida ko'p so'raladigan savollar.",
       items: [
-        { q: "Buyurtma mahsulot qancha turadi va qancha vaqt oladi?", a: "Aniq narx va muddat texnik spec'dan keyin beriladi, chunki har mahsulot har xil. Odatda ishlovchi MVP 2-4 haftada tayyor bo'ladi. Konsultatsiya bepul, to'lov esa faqat MVP tayyor bo'lganda boshlanadi." },
+        { q: "Buyurtma mahsulot qancha turadi va qancha vaqt oladi?", a: "Aniq narx va muddat texnik spec'dan keyin beriladi, chunki har mahsulot har xil. Odatda ishlovchi MVP 2-4 haftada tayyor bo'ladi. Konsultatsiya bepul, to'lov 30% oldindan, qolgani bosqichma-bosqich." },
         { q: "TezCode Custom oddiy IT xizmatdan nimasi bilan farq qiladi?", a: "Bu tayyor shablon yoki ijaraga olinadigan SaaS emas. Biz sizning individual ehtiyojingizga noldan mahsulot quramiz — u faqat sizniki, sizning jarayoningizga qurilgan va source code'i to'liq sizga tegishli." },
         { q: "Source code kimniki bo'ladi?", a: "100% sizniki. Kontraktda yoziladi: kod to'liq sizga beriladi, GitHub sizning hisobingizda. Mahsulot ham, uning kodi ham butunlay sizga tegishli." },
         { q: "Vendor lock-in bo'ladimi?", a: "Yo'q. Kod sizda bo'lgani uchun bizga bog'lanib qolmaysiz — istalgan vaqtda boshqa jamoaga o'tishingiz yoki o'zingiz davom ettirishingiz mumkin. Biz sifat va qulaylik bilan ushlab qolamiz, majburiyat bilan emas." },
@@ -105,8 +105,8 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "с нуля, только для вас",
       title2: "",
       subtitle:
-        "TezCode Custom — программный продукт, который строится с нуля именно под ваш бизнес. Не готовый шаблон: система под ваши процессы, а исходный код на 100% ваш. MVP за 2-4 недели, оплата только после готового MVP.",
-      trust: "Бесплатная 30-мин консультация • Оплата только после готового MVP • Исходный код на 100% ваш",
+        "TezCode Custom — программный продукт, который строится с нуля именно под ваш бизнес. Не готовый шаблон: система под ваши процессы, а исходный код на 100% ваш. MVP за 2-4 недели, оплата — 30% предоплата.",
+      trust: "Бесплатная 30-мин консультация • Оплата: 30% предоплата • Исходный код на 100% ваш",
       ctaPrimary: "Обсудить проект",
       ctaSecondary: "Как мы работаем",
     },
@@ -133,7 +133,7 @@ export const CONTENT: ServicePageContent = {
       steps: [
         { num: "01", title: "Discovery", desc: "Глубоко изучаем ваш бизнес и проблему: для кого, зачем, какой результат. Вместе определяем объём продукта.", icon: "search" },
         { num: "02", title: "Технический spec + цена", desc: "Технический документ, архитектура, цена, срок и состав команды. Письменный контракт — без скрытых затрат.", icon: "clipboard-list" },
-        { num: "03", title: "MVP (2-4 недели)", desc: "Строим первую рабочую версию за 2-4 недели. Демо каждую неделю, вы даёте обратную связь. Оплата начинается на этом этапе.", icon: "zap" },
+        { num: "03", title: "MVP (2-4 недели)", desc: "Строим первую рабочую версию за 2-4 недели. Демо каждую неделю, вы даёте обратную связь.", icon: "zap" },
         { num: "04", title: "Production + масштабирование", desc: "Деплой, реальные пользователи и следующие функции. Вместе растим продукт и обеспечиваем техподдержку.", icon: "rocket" },
       ],
     },
@@ -145,7 +145,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "14 in-house разработчиков", desc: "В офисе в Ташкенте. Не фрилансеры — команда. Backend, frontend, mobile, AI, DevOps работают над одним проектом вместе." },
         { tag: "02", title: "Быстрее MVP с AI", desc: "Claude и современные AI-инструменты — наш ежедневный рабочий инструмент. Поэтому полноценный заказной MVP обычно готов за 2-4 недели." },
-        { tag: "03", title: "Оплата только после готового MVP", desc: "Риск не на вашей стороне. Пока не увидите рабочий продукт — оплата не начинается. Это наша модель доверия." },
+        { tag: "03", title: "Прозрачная оплата — 30% предоплата", desc: "Для старта достаточно 30% — остальное по этапам проекта." },
         { tag: "04", title: "Исходный код на 100% ваш", desc: "Код полностью передаётся вам, GitHub на вашем аккаунте. Без vendor lock-in — продукт и его код целиком ваши." },
         { tag: "05", title: "Локальная команда, прямой контакт с основателем", desc: "Основатель Бекзод Мирзаалиев в Telegram. Нет языкового барьера и разницы таймзон — понимаем ваш бизнес напрямую." },
       ],
@@ -164,7 +164,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "ответы",
       subtitle: "Частые вопросы о заказной разработке продукта.",
       items: [
-        { q: "Сколько стоит заказной продукт и сколько времени занимает?", a: "Точная цена и срок даются после технического spec, ведь каждый продукт разный. Обычно рабочий MVP готов за 2-4 недели. Консультация бесплатна, оплата начинается только после готового MVP." },
+        { q: "Сколько стоит заказной продукт и сколько времени занимает?", a: "Точная цена и срок даются после технического spec, ведь каждый продукт разный. Обычно рабочий MVP готов за 2-4 недели. Консультация бесплатна, оплата — 30% предоплата, остальное поэтапно." },
         { q: "Чем TezCode Custom отличается от обычных IT-услуг?", a: "Это не готовый шаблон и не арендуемый SaaS. Мы строим продукт под вашу индивидуальную потребность с нуля — он только ваш, построен под ваши процессы, а исходный код полностью принадлежит вам." },
         { q: "Чей будет исходный код?", a: "100% ваш. В контракте указано: код передаётся полностью, GitHub на вашем аккаунте. И продукт, и его код целиком принадлежат вам." },
         { q: "Будет ли vendor lock-in?", a: "Нет. Раз код у вас, вы не привязаны к нам — в любой момент можете перейти к другой команде или продолжить сами. Мы удерживаем качеством и удобством, а не привязкой." },
@@ -197,8 +197,8 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "from scratch, just for you",
       title2: "",
       subtitle:
-        "TezCode Custom is a software product built from scratch specifically for your business. Not an off-the-shelf template: a system shaped to your processes, and the source code is 100% yours. MVP in 2-4 weeks, you pay only after the MVP is delivered.",
-      trust: "Free 30-min consultation • You pay only after MVP is delivered • Source code 100% yours",
+        "TezCode Custom is a software product built from scratch specifically for your business. Not an off-the-shelf template: a system shaped to your processes, and the source code is 100% yours. MVP in 2-4 weeks, payment starts with a 30% deposit.",
+      trust: "Free 30-min consultation • Payment: 30% upfront • Source code 100% yours",
       ctaPrimary: "Discuss your project",
       ctaSecondary: "How we work",
     },
@@ -225,7 +225,7 @@ export const CONTENT: ServicePageContent = {
       steps: [
         { num: "01", title: "Discovery", desc: "We study your business and problem deeply: for whom, why, what outcome. Together we define the product scope.", icon: "search" },
         { num: "02", title: "Technical spec + quote", desc: "A technical doc, architecture, price, timeline and team. Written contract — no hidden costs.", icon: "clipboard-list" },
-        { num: "03", title: "MVP (2-4 weeks)", desc: "We build the first working version in 2-4 weeks. Weekly demos, you give feedback. Payment starts at this stage.", icon: "zap" },
+        { num: "03", title: "MVP (2-4 weeks)", desc: "We build the first working version in 2-4 weeks. Weekly demos, you give feedback.", icon: "zap" },
         { num: "04", title: "Production + scale", desc: "Deploy, real users and the next features. We grow the product together and provide technical support.", icon: "rocket" },
       ],
     },
@@ -237,7 +237,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "14 in-house developers", desc: "In our Tashkent office. Not freelancers — a team. Backend, frontend, mobile, AI, DevOps work on one project together." },
         { tag: "02", title: "Faster MVP with AI", desc: "Claude and modern AI tools are our daily workhorse. That's why a full bespoke MVP is usually ready in 2-4 weeks." },
-        { tag: "03", title: "Pay only after MVP is delivered", desc: "Risk is not on you. Payment doesn't start until you see a working product. That's our trust model." },
+        { tag: "03", title: "Transparent payment — 30% upfront", desc: "Just 30% to start — the rest is paid per project stage." },
         { tag: "04", title: "Source code 100% yours", desc: "The code is handed over to you in full, GitHub on your account. No vendor lock-in — the product and its code are entirely yours." },
         { tag: "05", title: "Local team, direct founder contact", desc: "Founder Bekzod Mirzaaliyev is on Telegram. No language barrier or timezone gap — we understand your business directly." },
       ],
@@ -256,7 +256,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "answers",
       subtitle: "Common questions about bespoke product development.",
       items: [
-        { q: "How much does a bespoke product cost and how long does it take?", a: "An exact price and timeline come after the technical spec, since every product differs. A working MVP is usually ready in 2-4 weeks. The consultation is free, and payment starts only after the MVP is delivered." },
+        { q: "How much does a bespoke product cost and how long does it take?", a: "An exact price and timeline come after the technical spec, since every product differs. A working MVP is usually ready in 2-4 weeks. The consultation is free, payment starts with a 30% deposit, the rest per stage." },
         { q: "How is TezCode Custom different from generic IT services?", a: "It's not an off-the-shelf template or a rented SaaS. We build a product for your individual need from scratch — it's yours alone, shaped to your processes, and the source code belongs entirely to you." },
         { q: "Who owns the source code?", a: "100% you. The contract states: full code handover, GitHub on your account. Both the product and its code belong entirely to you." },
         { q: "Is there any vendor lock-in?", a: "No. Since you hold the code, you're not tied to us — at any point you can move to another team or continue on your own. We keep you with quality and convenience, not lock-in." },
@@ -289,8 +289,8 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "من الصفر، لك وحدك",
       title2: "",
       subtitle:
-        "TezCode Custom منتج برمجي يُبنى من الصفر خصيصاً لأعمالك. ليس قالباً جاهزاً: نظام مصمم لعملياتك، والكود المصدري لك بنسبة 100%. MVP خلال 2-4 أسابيع، والدفع فقط بعد تسليم MVP.",
-      trust: "استشارة 30 دقيقة مجانية • الدفع فقط بعد تسليم MVP • الكود المصدري لك 100%",
+        "TezCode Custom منتج برمجي يُبنى من الصفر خصيصاً لأعمالك. ليس قالباً جاهزاً: نظام مصمم لعملياتك، والكود المصدري لك بنسبة 100%. MVP خلال 2-4 أسابيع، والدفع يبدأ بدفعة مقدمة 30%.",
+      trust: "استشارة 30 دقيقة مجانية • الدفع: 30% مقدمًا • الكود المصدري لك 100%",
       ctaPrimary: "لنناقش مشروعك",
       ctaSecondary: "كيف نعمل",
     },
@@ -317,7 +317,7 @@ export const CONTENT: ServicePageContent = {
       steps: [
         { num: "01", title: "Discovery", desc: "ندرس أعمالك ومشكلتك بعمق: لمن، ولماذا، وأي نتيجة. نحدد نطاق المنتج معاً.", icon: "search" },
         { num: "02", title: "Spec تقني + سعر", desc: "وثيقة تقنية، معمارية، سعر، موعد وفريق. عقد مكتوب — بلا تكاليف خفية.", icon: "clipboard-list" },
-        { num: "03", title: "MVP (2-4 أسابيع)", desc: "نبني أول نسخة عاملة خلال 2-4 أسابيع. عرض كل أسبوع، وأنت تعطي ملاحظات. يبدأ الدفع في هذه المرحلة.", icon: "zap" },
+        { num: "03", title: "MVP (2-4 أسابيع)", desc: "نبني أول نسخة عاملة خلال 2-4 أسابيع. عرض كل أسبوع، وأنت تعطي ملاحظات.", icon: "zap" },
         { num: "04", title: "الإنتاج + التوسع", desc: "نشر، مستخدمون حقيقيون والميزات التالية. ننمّي المنتج معاً ونقدّم الدعم الفني.", icon: "rocket" },
       ],
     },
@@ -329,7 +329,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "14 مطوراً داخلياً", desc: "في مكتبنا بطشقند. ليسوا مستقلين — فريق. Backend وfrontend وجوال وAI وDevOps يعملون على مشروع واحد معاً." },
         { tag: "02", title: "MVP أسرع مع AI", desc: "Claude وأدوات الذكاء الاصطناعي الحديثة أداتنا اليومية. لذلك عادة يكون MVP مخصص كامل جاهزاً خلال 2-4 أسابيع." },
-        { tag: "03", title: "الدفع فقط بعد تسليم MVP", desc: "المخاطرة ليست عليك. لا يبدأ الدفع حتى ترى منتجاً عاملاً. هذا نموذج ثقتنا." },
+        { tag: "03", title: "دفع شفاف — 30% مقدمًا", desc: "يكفي 30% للبدء — والباقي حسب مراحل المشروع." },
         { tag: "04", title: "الكود المصدري لك 100%", desc: "يُسلَّم الكود لك بالكامل، GitHub على حسابك. لا vendor lock-in — المنتج وكوده لك تماماً." },
         { tag: "05", title: "فريق محلي، تواصل مباشر مع المؤسس", desc: "المؤسس بكزود ميرزااليف على Telegram. لا حاجز لغوي ولا فرق توقيت — نفهم أعمالك مباشرة." },
       ],
@@ -348,7 +348,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "إجابات",
       subtitle: "أسئلة شائعة عن تطوير المنتجات المخصصة.",
       items: [
-        { q: "كم يكلّف المنتج المخصص وكم يستغرق؟", a: "يُعطى السعر والموعد الدقيقان بعد الـ spec التقني، لأن كل منتج يختلف. عادة يكون MVP عامل جاهزاً خلال 2-4 أسابيع. الاستشارة مجانية، والدفع يبدأ فقط بعد تسليم MVP." },
+        { q: "كم يكلّف المنتج المخصص وكم يستغرق؟", a: "يُعطى السعر والموعد الدقيقان بعد الـ spec التقني، لأن كل منتج يختلف. عادة يكون MVP عامل جاهزاً خلال 2-4 أسابيع. الاستشارة مجانية، والدفع يبدأ بدفعة مقدمة 30% والباقي على مراحل." },
         { q: "كيف يختلف TezCode Custom عن خدمات IT العامة؟", a: "ليس قالباً جاهزاً ولا SaaS مستأجَراً. نبني منتجاً لاحتياجك الفردي من الصفر — إنه لك وحدك، مصمم لعملياتك، والكود المصدري يخصك بالكامل." },
         { q: "لمن الكود المصدري؟", a: "100% لك. ينص العقد: تسليم كامل للكود، GitHub على حسابك. المنتج وكوده يخصانك بالكامل." },
         { q: "هل هناك vendor lock-in؟", a: "لا. بما أن الكود لديك، فأنت غير مرتبط بنا — يمكنك في أي وقت الانتقال لفريق آخر أو المتابعة بنفسك. نحتفظ بك بالجودة والراحة، لا بالارتباط." },
@@ -381,8 +381,8 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "з нуля, лише для вас",
       title2: "",
       subtitle:
-        "TezCode Custom — програмний продукт, що будується з нуля саме під ваш бізнес. Не готовий шаблон: система під ваші процеси, а вихідний код на 100% ваш. MVP за 2-4 тижні, оплата лише після готового MVP.",
-      trust: "Безкоштовна 30-хв консультація • Оплата лише після готового MVP • Вихідний код на 100% ваш",
+        "TezCode Custom — програмний продукт, що будується з нуля саме під ваш бізнес. Не готовий шаблон: система під ваші процеси, а вихідний код на 100% ваш. MVP за 2-4 тижні, оплата — 30% передоплати.",
+      trust: "Безкоштовна 30-хв консультація • Оплата: 30% передоплата • Вихідний код на 100% ваш",
       ctaPrimary: "Обговорити проект",
       ctaSecondary: "Як ми працюємо",
     },
@@ -409,7 +409,7 @@ export const CONTENT: ServicePageContent = {
       steps: [
         { num: "01", title: "Discovery", desc: "Глибоко вивчаємо ваш бізнес і проблему: для кого, навіщо, який результат. Разом визначаємо обсяг продукту.", icon: "search" },
         { num: "02", title: "Технічний spec + ціна", desc: "Технічний документ, архітектура, ціна, термін і склад команди. Письмовий контракт — без прихованих витрат.", icon: "clipboard-list" },
-        { num: "03", title: "MVP (2-4 тижні)", desc: "Будуємо першу робочу версію за 2-4 тижні. Демо щотижня, ви даєте відгук. Оплата починається на цьому етапі.", icon: "zap" },
+        { num: "03", title: "MVP (2-4 тижні)", desc: "Будуємо першу робочу версію за 2-4 тижні. Демо щотижня, ви даєте відгук.", icon: "zap" },
         { num: "04", title: "Production + масштабування", desc: "Деплой, реальні користувачі та наступні функції. Разом ростимо продукт і забезпечуємо техпідтримку.", icon: "rocket" },
       ],
     },
@@ -421,7 +421,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "14 in-house розробників", desc: "В офісі у Ташкенті. Не фрілансери — команда. Backend, frontend, mobile, AI, DevOps працюють над одним проектом разом." },
         { tag: "02", title: "Швидший MVP з AI", desc: "Claude і сучасні AI-інструменти — наш щоденний робочий інструмент. Тому повноцінний замовний MVP зазвичай готовий за 2-4 тижні." },
-        { tag: "03", title: "Оплата лише після готового MVP", desc: "Ризик не на вашому боці. Поки не побачите робочий продукт — оплата не починається. Це наша модель довіри." },
+        { tag: "03", title: "Прозора оплата — 30% передоплата", desc: "Для старту достатньо 30% — решта за етапами проєкту." },
         { tag: "04", title: "Вихідний код на 100% ваш", desc: "Код повністю передається вам, GitHub на вашому акаунті. Без vendor lock-in — продукт і його код цілком ваші." },
         { tag: "05", title: "Локальна команда, прямий контакт із засновником", desc: "Засновник Бекзод Мірзаалієв у Telegram. Немає мовного бар'єру та різниці таймзон — розуміємо ваш бізнес напряму." },
       ],
@@ -440,7 +440,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "відповіді",
       subtitle: "Часті запитання про замовну розробку продукту.",
       items: [
-        { q: "Скільки коштує замовний продукт і скільки часу займає?", a: "Точна ціна і термін даються після технічного spec, адже кожен продукт різний. Зазвичай робочий MVP готовий за 2-4 тижні. Консультація безкоштовна, оплата починається лише після готового MVP." },
+        { q: "Скільки коштує замовний продукт і скільки часу займає?", a: "Точна ціна і термін даються після технічного spec, адже кожен продукт різний. Зазвичай робочий MVP готовий за 2-4 тижні. Консультація безкоштовна, оплата — 30% передоплати, решта поетапно." },
         { q: "Чим TezCode Custom відрізняється від звичайних IT-послуг?", a: "Це не готовий шаблон і не орендований SaaS. Ми будуємо продукт під вашу індивідуальну потребу з нуля — він лише ваш, побудований під ваші процеси, а вихідний код повністю належить вам." },
         { q: "Кому належить вихідний код?", a: "100% вам. У контракті вказано: повна передача коду, GitHub на вашому акаунті. І продукт, і його код цілком належать вам." },
         { q: "Чи буде vendor lock-in?", a: "Ні. Оскільки код у вас, ви не прив'язані до нас — будь-коли можете перейти до іншої команди або продовжити самі. Ми утримуємо якістю та зручністю, а не прив'язкою." },

@@ -55,7 +55,7 @@ const COPY: Record<Lang, Copy> = {
       titleAccent: "ajratib turadi",
       subtitle: "To'rtta tamoyil — har loyihada.",
       items: [
-        { icon: "check-circle-2", title: "To'lov MVP'dan keyin", desc: "Ishlovchi natijani ko'rmaguningizcha to'lov boshlanmaydi. Risk siz tomonda emas." },
+        { icon: "check-circle-2", title: "Shaffof to'lov — 30% oldindan", desc: "Boshlash uchun atigi 30% — qolgani loyiha bosqichlari bo'yicha to'lanadi." },
         { icon: "users", title: "Lokal jamoa", desc: "Toshkentdagi ofisimizda. To'g'ridan-to'g'ri aloqa, til va vaqt mintaqasi muammosi yo'q." },
         { icon: "bot", title: "AI-first", desc: "Claude va zamonaviy AI vositalari kundalik ishimizda. Tezroq, lekin sifatni saqlagan holda." },
         { icon: "package", title: "Kod sizniki", desc: "Manba kod 100% sizga tegishli. Vendor lock-in yo'q — istalgan vaqtda mustaqilsiz." },
@@ -99,7 +99,7 @@ const COPY: Record<Lang, Copy> = {
       titleAccent: "отличает",
       subtitle: "Четыре принципа — в каждом проекте.",
       items: [
-        { icon: "check-circle-2", title: "Оплата после MVP", desc: "Оплата не начнётся, пока вы не увидите работающий результат. Риск не на вашей стороне." },
+        { icon: "check-circle-2", title: "Прозрачная оплата — 30% предоплата", desc: "Для старта достаточно 30% — остальное по этапам проекта." },
         { icon: "users", title: "Локальная команда", desc: "В нашем офисе в Ташкенте. Прямая связь, без проблем с языком и часовым поясом." },
         { icon: "bot", title: "AI-first", desc: "Claude и современные AI-инструменты в ежедневной работе. Быстрее, сохраняя качество." },
         { icon: "package", title: "Код принадлежит вам", desc: "Исходный код на 100% ваш. Никакого vendor lock-in — вы независимы в любой момент." },
@@ -143,7 +143,7 @@ const COPY: Record<Lang, Copy> = {
       titleAccent: "us apart",
       subtitle: "Four principles — in every project.",
       items: [
-        { icon: "check-circle-2", title: "Pay after MVP", desc: "Payment doesn't start until you see a working result. The risk is not on your side." },
+        { icon: "check-circle-2", title: "Transparent payment — 30% upfront", desc: "Just 30% to start — the rest is paid per project stage." },
         { icon: "users", title: "Local team", desc: "In our Tashkent office. Direct contact, no language or time-zone friction." },
         { icon: "bot", title: "AI-first", desc: "Claude and modern AI tools in our daily work. Faster, while keeping quality." },
         { icon: "package", title: "You own the code", desc: "The source code is 100% yours. No vendor lock-in — you stay independent." },
@@ -187,7 +187,7 @@ const COPY: Record<Lang, Copy> = {
       titleAccent: "يميّزنا",
       subtitle: "أربعة مبادئ — في كل مشروع.",
       items: [
-        { icon: "check-circle-2", title: "الدفع بعد MVP", desc: "لا يبدأ الدفع حتى ترى نتيجة عاملة. المخاطرة ليست عليك." },
+        { icon: "check-circle-2", title: "دفع شفاف — 30% مقدمًا", desc: "يكفي 30% للبدء — والباقي حسب مراحل المشروع." },
         { icon: "users", title: "فريق محلي", desc: "في مكتبنا بطشقند. تواصل مباشر دون مشاكل اللغة أو المنطقة الزمنية." },
         { icon: "bot", title: "الذكاء الاصطناعي أولًا", desc: "Claude وأدوات الذكاء الاصطناعي الحديثة في عملنا اليومي. أسرع مع الحفاظ على الجودة." },
         { icon: "package", title: "الكود ملكك", desc: "الكود المصدري ملكك 100%. لا احتكار مورّد — تبقى مستقلًا في أي وقت." },
@@ -231,7 +231,7 @@ const COPY: Record<Lang, Copy> = {
       titleAccent: "вирізняє",
       subtitle: "Чотири принципи — у кожному проєкті.",
       items: [
-        { icon: "check-circle-2", title: "Оплата після MVP", desc: "Оплата не починається, доки ви не побачите робочий результат. Ризик не на вашому боці." },
+        { icon: "check-circle-2", title: "Прозора оплата — 30% передоплата", desc: "Для старту достатньо 30% — решта за етапами проєкту." },
         { icon: "users", title: "Локальна команда", desc: "У нашому офісі в Ташкенті. Прямий зв'язок, без проблем із мовою та часовим поясом." },
         { icon: "bot", title: "AI-first", desc: "Claude та сучасні AI-інструменти в щоденній роботі. Швидше, зберігаючи якість." },
         { icon: "package", title: "Код належить вам", desc: "Вихідний код на 100% ваш. Жодного vendor lock-in — ви незалежні будь-коли." },

@@ -7,7 +7,7 @@ export const metadata = buildPageMetadata({
   path: "/for-businesses",
   title: "Biznes uchun buyurtma dastur — ERP, CRM, E-commerce",
   description:
-    "Tayyor SaaS ish jarayoningizga mos kelmasa, Tezcode noldan yozadi: ERP, CRM, e-commerce, custom dashboard. Bepul 30 daqiqa konsultatsiya, to'lov faqat MVP tayyor bo'lganda.",
+    "Tayyor SaaS ish jarayoningizga mos kelmasa, Tezcode noldan yozadi: ERP, CRM, e-commerce, custom dashboard. Bepul 30 daqiqa konsultatsiya, to'lov 30% oldindan.",
   ogTitle: "Biznesingizga moslashtirilgan dastur — 2 haftada",
   ogDescription:
     "ERP, CRM, e-commerce, custom dashboard — noldan, biznesingizga moslab. Bepul konsultatsiya.",

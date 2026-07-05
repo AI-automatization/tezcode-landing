@@ -77,7 +77,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Excel yoki 1C'dan ko'chib o'ta olamanmi?", a: "Ha. Setup bosqichida mavjud ma'lumotlaringizni (mahsulotlar, qoldiq, mijozlar) tizimga ko'chirishga yordam beramiz. Noldan qayta kiritish shart emas." },
         { q: "Ulanish qancha vaqt oladi?", a: "Tayyor mahsulot bo'lgani uchun uzoq ishlab chiqish yo'q. Demodan keyin sozlash, o'qitish va jonli ishga tushish odatda bir necha kun ichida bo'ladi." },
         { q: "Qo'llab-quvvatlash bormi?", a: "Ha. Texnik yordam, yangilanishlar va nazorat obunaga kiradi. Savol yoki muammo bo'lsa, jamoamiz Telegram va email orqali yordam beradi." },
-        { q: "Buyurtma dasturi ham kerak bo'lsa-chi?", a: "TezCode Systems tayyor SaaS'ga qaratilgan. Agar sizga to'liq noldan, biznesingizga xos tizim kerak bo'lsa, Tezcode buyurtma asosidagi ishlab chiqishni ham taklif qiladi — to'lov MVP tayyor bo'lganda." },
+        { q: "Buyurtma dasturi ham kerak bo'lsa-chi?", a: "TezCode Systems tayyor SaaS'ga qaratilgan. Agar sizga to'liq noldan, biznesingizga xos tizim kerak bo'lsa, Tezcode buyurtma asosidagi ishlab chiqishni ham taklif qiladi — to'lov 30% oldindan." },
       ],
     },
     related: {
@@ -169,7 +169,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Можно ли перейти из Excel или 1C?", a: "Да. На этапе настройки поможем перенести ваши данные (товары, остатки, клиенты) в систему. Не нужно вводить всё заново." },
         { q: "Сколько времени занимает подключение?", a: "Поскольку продукт готов, долгой разработки нет. После демо настройка, обучение и запуск обычно занимают несколько дней." },
         { q: "Есть ли поддержка?", a: "Да. Техподдержка, обновления и мониторинг входят в подписку. При вопросах или проблемах наша команда помогает через Telegram и email." },
-        { q: "А если нужна и заказная разработка?", a: "TezCode Systems сфокусирован на готовом SaaS. Если вам нужна полностью индивидуальная система с нуля, Tezcode предлагает и заказную разработку — оплата после готового MVP." },
+        { q: "А если нужна и заказная разработка?", a: "TezCode Systems сфокусирован на готовом SaaS. Если вам нужна полностью индивидуальная система с нуля, Tezcode предлагает и заказную разработку — оплата: 30% предоплата." },
       ],
     },
     related: {
@@ -261,7 +261,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Can I migrate from Excel or 1C?", a: "Yes. During setup we help migrate your existing data (products, stock, customers) into the system. No need to re-enter everything." },
         { q: "How long does onboarding take?", a: "Since the product is ready, there's no long development. After the demo, setup, training and go-live usually take a few days." },
         { q: "Is there support?", a: "Yes. Technical support, updates and monitoring are included in the subscription. For questions or issues, our team helps via Telegram and email." },
-        { q: "What if I also need a custom build?", a: "TezCode Systems focuses on ready SaaS. If you need a fully custom system from scratch, Tezcode also offers custom development — you pay after the MVP is delivered." },
+        { q: "What if I also need a custom build?", a: "TezCode Systems focuses on ready SaaS. If you need a fully custom system from scratch, Tezcode also offers custom development — payment starts with a 30% deposit." },
       ],
     },
     related: {
@@ -353,7 +353,7 @@ export const CONTENT: ServicePageContent = {
         { q: "هل يمكنني الانتقال من Excel أو 1C؟", a: "نعم. في مرحلة الإعداد نساعد في نقل بياناتك (المنتجات، الرصيد، العملاء) إلى النظام. لا حاجة لإدخال كل شيء من جديد." },
         { q: "كم يستغرق التفعيل؟", a: "بما أن المنتج جاهز، لا يوجد تطوير طويل. بعد العرض التجريبي، الإعداد والتدريب والانطلاق يستغرق عادة أياماً قليلة." },
         { q: "هل يوجد دعم؟", a: "نعم. الدعم الفني والتحديثات والمراقبة ضمن الاشتراك. عند الأسئلة أو المشاكل يساعدك فريقنا عبر Telegram والبريد الإلكتروني." },
-        { q: "وماذا لو احتجت تطويراً مخصصاً أيضاً؟", a: "تركّز TezCode Systems على SaaS الجاهز. إذا احتجت نظاماً مخصصاً بالكامل من الصفر، تقدّم Tezcode أيضاً التطوير المخصص — الدفع بعد تسليم MVP." },
+        { q: "وماذا لو احتجت تطويراً مخصصاً أيضاً؟", a: "تركّز TezCode Systems على SaaS الجاهز. إذا احتجت نظاماً مخصصاً بالكامل من الصفر، تقدّم Tezcode أيضاً التطوير المخصص — الدفع: 30% مقدمًا." },
       ],
     },
     related: {
@@ -445,7 +445,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Чи можна перейти з Excel або 1C?", a: "Так. На етапі налаштування допоможемо перенести ваші дані (товари, залишки, клієнти) в систему. Не потрібно вводити все заново." },
         { q: "Скільки часу займає підключення?", a: "Оскільки продукт готовий, довгої розробки немає. Після демо налаштування, навчання та запуск зазвичай займають кілька днів." },
         { q: "Чи є підтримка?", a: "Так. Техпідтримка, оновлення та моніторинг входять у підписку. За питаннями чи проблемами наша команда допомагає через Telegram та email." },
-        { q: "А якщо потрібна й замовна розробка?", a: "TezCode Systems сфокусований на готовому SaaS. Якщо вам потрібна повністю індивідуальна система з нуля, Tezcode пропонує й замовну розробку — оплата після готового MVP." },
+        { q: "А якщо потрібна й замовна розробка?", a: "TezCode Systems сфокусований на готовому SaaS. Якщо вам потрібна повністю індивідуальна система з нуля, Tezcode пропонує й замовну розробку — оплата: 30% передоплата." },
       ],
     },
     related: {

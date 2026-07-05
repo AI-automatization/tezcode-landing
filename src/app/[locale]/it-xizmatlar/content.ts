@@ -2,7 +2,7 @@ import type { ServicePageContent } from "@/components/service-page/types";
 
 // Content for /it-xizmatlar — target keyword: "IT xizmatlar Toshkent" /
 // "IT услуги Ташкент". Only confirmed Tezcode facts (AI Software Factory, 2024,
-// founder Bekzod Mirzaaliyev, 14 in-house developers, Tashkent, pay-after-MVP).
+// founder Bekzod Mirzaaliyev, 14 in-house developers, Tashkent, 30% upfront).
 export const CONTENT: ServicePageContent = {
   uz: {
     hero: {
@@ -12,7 +12,7 @@ export const CONTENT: ServicePageContent = {
       title2: "",
       subtitle:
         "Dastur ishlab chiqish, veb va mobil ilova, AI yechim, integratsiya va texnik qo'llab-quvvatlash. Tezcode — Toshkentdagi AI Software Factory, 14 nafar in-house dasturchi.",
-      trust: "Bepul 30 daqiqa konsultatsiya • To'lov faqat MVP tayyor bo'lganda",
+      trust: "Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan",
       ctaPrimary: "Bepul konsultatsiya so'rang",
       ctaSecondary: "Xizmatlarni ko'rish",
     },
@@ -51,7 +51,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "14 nafar in-house dasturchi", desc: "Toshkentdagi ofisimizda. Freelancer emas — jamoa. Backend, frontend, mobil, AI, DevOps — barchasi bizda." },
         { tag: "02", title: "AI bilan tezroq", desc: "Claude va zamonaviy AI vositalari kundalik ishchi vositamiz. Bir oylik ishni qisqaroq muddatda, sifatni saqlagan holda." },
-        { tag: "03", title: "To'lov faqat MVP tayyor bo'lganda", desc: "Risk siz tomonda emas. Ishlovchi natijani ko'rmaguningizcha to'lov boshlanmaydi — bizning ishonch modelimiz." },
+        { tag: "03", title: "Shaffof to'lov — 30% oldindan", desc: "Boshlash uchun atigi 30% — qolgani loyiha bosqichlari bo'yicha to'lanadi." },
         { tag: "04", title: "Lokal jamoa, to'g'ridan-to'g'ri aloqa", desc: "Founder Bekzod Mirzaaliyev Telegram'da. Til va vaqt mintaqasi muammosi yo'q — sizning biznes muhitingizni tushunamiz." },
       ],
     },
@@ -72,7 +72,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Tezcode qanday IT xizmatlarni ko'rsatadi?", a: "Tezcode to'liq tsikl IT xizmatlarini ko'rsatadi: dasturiy ta'minot ishlab chiqish (web, backend), mobil ilovalar, veb-sayt va landing, AI va avtomatizatsiya, integratsiya/API va texnik qo'llab-quvvatlash. Hammasi bitta jamoadan." },
         { q: "Toshkentda joylashganmisiz?", a: "Ha. Tezcode Toshkentda joylashgan AI Software Factory, 14 nafar in-house dasturchidan iborat jamoa. Founder — Bekzod Mirzaaliyev. Lokal jamoa bo'lgani uchun til va vaqt mintaqasi muammosi yo'q." },
         { q: "Qancha vaqtda ishni boshlaysiz?", a: "Konsultatsiyadan keyin 3-5 kun ichida texnik taklif beramiz, kelishilgach darrov boshlaymiz. Birinchi ishlovchi versiya odatda 2-4 hafta ichida tayyor bo'ladi." },
-        { q: "Narx qanday belgilanadi?", a: "Aniq narx texnik tahlildan keyin beriladi, chunki har vazifa har xil. Konsultatsiya bepul, to'lov esa faqat MVP tayyor bo'lganda boshlanadi — risk siz tomonda emas." },
+        { q: "Narx qanday belgilanadi?", a: "Aniq narx texnik tahlildan keyin beriladi, chunki har vazifa har xil. Konsultatsiya bepul, to'lov 30% oldindan, qolgani bosqichma-bosqich." },
         { q: "Manba kod (source code) kimniki bo'ladi?", a: "100% sizniki. Kontraktda yoziladi: kod to'liq sizga beriladi, GitHub sizning yoki bizning hisobimizda — siz tanlaysiz. Vendor lock-in yo'q." },
         { q: "Joriy etgandan keyin qo'llab-quvvatlaysizmi?", a: "Ha. Deploy'dan keyin texnik qo'llab-quvvatlash, yangilanish va nazorat ko'rsatamiz. Qo'llab-quvvatlash shartlarini loyiha kattaligiga qarab kelishamiz." },
       ],
@@ -93,7 +93,7 @@ export const CONTENT: ServicePageContent = {
       title2: "",
       subtitle:
         "Разработка ПО, веб и мобильные приложения, AI-решения, интеграции и техническая поддержка. Tezcode — AI Software Factory в Ташкенте, 14 in-house разработчиков.",
-      trust: "Бесплатная 30-мин консультация • Оплата только после готового MVP",
+      trust: "Бесплатная 30-мин консультация • Оплата: 30% предоплата",
       ctaPrimary: "Бесплатная консультация",
       ctaSecondary: "Смотреть услуги",
     },
@@ -131,7 +131,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "14 in-house разработчиков", desc: "В офисе в Ташкенте. Не фрилансеры — команда. Backend, frontend, mobile, AI, DevOps — всё у нас." },
         { tag: "02", title: "Быстрее с AI", desc: "Claude и современные AI-инструменты — наш ежедневный рабочий инструмент. Месяц работы за меньший срок без потери качества." },
-        { tag: "03", title: "Оплата только после готового MVP", desc: "Риск не на вашей стороне. Пока не увидите рабочий результат — оплата не начинается. Это наша модель доверия." },
+        { tag: "03", title: "Прозрачная оплата — 30% предоплата", desc: "Для старта достаточно 30% — остальное по этапам проекта." },
         { tag: "04", title: "Локальная команда, прямая связь", desc: "Основатель Бекзод Мирзаалиев в Telegram. Нет языкового барьера и разницы таймзон — понимаем вашу бизнес-среду." },
       ],
     },
@@ -152,7 +152,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Какие IT-услуги оказывает Tezcode?", a: "Tezcode оказывает полный цикл IT-услуг: разработка ПО (web, backend), мобильные приложения, сайты и лендинги, AI и автоматизация, интеграции/API и техническая поддержка. Всё от одной команды." },
         { q: "Вы находитесь в Ташкенте?", a: "Да. Tezcode — это AI Software Factory в Ташкенте, команда из 14 in-house разработчиков. Основатель — Бекзод Мирзаалиев. Локальная команда, поэтому нет языкового барьера и разницы таймзон." },
         { q: "Как быстро вы начинаете?", a: "После консультации мы даём техническое предложение за 3-5 дней, и сразу начинаем после согласования. Первая рабочая версия обычно готова за 2-4 недели." },
-        { q: "Как определяется цена?", a: "Точная цена даётся после технического анализа, ведь каждая задача разная. Консультация бесплатна, оплата начинается только после готового MVP — риск не на вашей стороне." },
+        { q: "Как определяется цена?", a: "Точная цена даётся после технического анализа, ведь каждая задача разная. Консультация бесплатна, оплата — 30% предоплата, остальное поэтапно." },
         { q: "Чей будет исходный код?", a: "100% ваш. В контракте указано: код передаётся полностью, GitHub на вашем или нашем аккаунте — вы решаете. Без vendor lock-in." },
         { q: "Поддерживаете ли после внедрения?", a: "Да. После деплоя оказываем техническую поддержку, обновления и мониторинг. Условия поддержки согласуем в зависимости от размера проекта." },
       ],
@@ -173,7 +173,7 @@ export const CONTENT: ServicePageContent = {
       title2: "",
       subtitle:
         "Software development, web and mobile apps, AI solutions, integrations and technical support. Tezcode is an AI Software Factory in Tashkent with 14 in-house developers.",
-      trust: "Free 30-min consultation • You pay only after MVP is delivered",
+      trust: "Free 30-min consultation • Payment: 30% upfront",
       ctaPrimary: "Book free consultation",
       ctaSecondary: "View services",
     },
@@ -211,7 +211,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "14 in-house developers", desc: "In our Tashkent office. Not freelancers — a team. Backend, frontend, mobile, AI, DevOps — all in-house." },
         { tag: "02", title: "Faster with AI", desc: "Claude and modern AI tools are our daily workhorse. A month of work in a shorter time, without losing quality." },
-        { tag: "03", title: "Pay only after MVP is delivered", desc: "Risk is not on you. Payment doesn't start until you see a working result. That's our trust model." },
+        { tag: "03", title: "Transparent payment — 30% upfront", desc: "Just 30% to start — the rest is paid per project stage." },
         { tag: "04", title: "Local team, direct contact", desc: "Founder Bekzod Mirzaaliyev is on Telegram. No language barrier or timezone gap — we understand your business environment." },
       ],
     },
@@ -232,7 +232,7 @@ export const CONTENT: ServicePageContent = {
         { q: "What IT services does Tezcode provide?", a: "Tezcode provides a full cycle of IT services: software development (web, backend), mobile apps, websites and landing pages, AI and automation, integrations/API and technical support. All from one team." },
         { q: "Are you based in Tashkent?", a: "Yes. Tezcode is an AI Software Factory based in Tashkent, a team of 14 in-house developers. The founder is Bekzod Mirzaaliyev. Being a local team, there's no language barrier or timezone gap." },
         { q: "How fast can you start?", a: "After the consultation we provide a technical proposal within 3-5 days and start right after agreement. The first working version is usually ready in 2-4 weeks." },
-        { q: "How is the price set?", a: "An exact price comes after the technical analysis, since every task differs. The consultation is free, and you pay only after the MVP is delivered — risk is not on you." },
+        { q: "How is the price set?", a: "An exact price comes after the technical analysis, since every task differs. The consultation is free, payment starts with a 30% deposit, the rest per stage." },
         { q: "Who owns the source code?", a: "100% you. The contract states: full code handover, GitHub on your account or ours — your call. No vendor lock-in." },
         { q: "Do you support after rollout?", a: "Yes. After deploy we provide technical support, updates and monitoring. We agree on support terms depending on project size." },
       ],
@@ -253,7 +253,7 @@ export const CONTENT: ServicePageContent = {
       title2: "",
       subtitle:
         "تطوير البرمجيات، تطبيقات الويب والجوال، حلول الذكاء الاصطناعي، التكاملات والدعم الفني. Tezcode مصنع برمجيات بالذكاء الاصطناعي في طشقند، 14 مطوراً داخلياً.",
-      trust: "استشارة 30 دقيقة مجانية • الدفع فقط بعد تسليم MVP",
+      trust: "استشارة 30 دقيقة مجانية • الدفع: 30% مقدمًا",
       ctaPrimary: "احجز استشارة مجانية",
       ctaSecondary: "عرض الخدمات",
     },
@@ -291,7 +291,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "14 مطوراً داخلياً", desc: "في مكتبنا بطشقند. ليسوا مستقلين — فريق. Backend، frontend، جوال، AI، DevOps — كله لدينا." },
         { tag: "02", title: "أسرع مع AI", desc: "Claude وأدوات الذكاء الاصطناعي الحديثة أداتنا اليومية. شهر عمل في وقت أقصر دون فقدان الجودة." },
-        { tag: "03", title: "الدفع فقط بعد تسليم MVP", desc: "المخاطرة ليست عليك. لا يبدأ الدفع حتى ترى نتيجة عاملة. هذا نموذج ثقتنا." },
+        { tag: "03", title: "دفع شفاف — 30% مقدمًا", desc: "يكفي 30% للبدء — والباقي حسب مراحل المشروع." },
         { tag: "04", title: "فريق محلي، تواصل مباشر", desc: "المؤسس بكزود ميرزااليف على Telegram. لا حاجز لغوي ولا فرق توقيت — نفهم بيئة عملك." },
       ],
     },
@@ -312,7 +312,7 @@ export const CONTENT: ServicePageContent = {
         { q: "ما خدمات IT التي تقدّمها Tezcode؟", a: "تقدّم Tezcode دورة كاملة من خدمات IT: تطوير البرمجيات (ويب، خلفية)، تطبيقات الجوال، المواقع وصفحات الهبوط، الذكاء الاصطناعي والأتمتة، التكاملات/API والدعم الفني. كله من فريق واحد." },
         { q: "هل أنتم في طشقند؟", a: "نعم. Tezcode مصنع برمجيات بالذكاء الاصطناعي في طشقند، فريق من 14 مطوراً داخلياً. المؤسس بكزود ميرزااليف. كوننا فريقاً محلياً يعني لا حاجز لغوي ولا فرق توقيت." },
         { q: "كم تبدؤون بسرعة؟", a: "بعد الاستشارة نقدّم عرضاً تقنياً خلال 3-5 أيام ونبدأ فور الاتفاق. عادة تكون أول نسخة عاملة جاهزة خلال 2-4 أسابيع." },
-        { q: "كيف يُحدد السعر؟", a: "يُعطى السعر الدقيق بعد التحليل التقني، لأن كل مهمة تختلف. الاستشارة مجانية، والدفع يبدأ بعد تسليم MVP فقط — المخاطرة ليست عليك." },
+        { q: "كيف يُحدد السعر؟", a: "يُعطى السعر الدقيق بعد التحليل التقني، لأن كل مهمة تختلف. الاستشارة مجانية، والدفع يبدأ بدفعة مقدمة 30% والباقي على مراحل." },
         { q: "لمن الكود المصدري؟", a: "100% لك. ينص العقد: تسليم كامل للكود، GitHub على حسابك أو حسابنا — أنت تقرر. لا vendor lock-in." },
         { q: "هل تدعمون بعد التطبيق؟", a: "نعم. بعد النشر نقدّم دعماً فنياً وتحديثات ومراقبة. نتفق على شروط الدعم حسب حجم المشروع." },
       ],
@@ -333,7 +333,7 @@ export const CONTENT: ServicePageContent = {
       title2: "",
       subtitle:
         "Розробка ПЗ, веб і мобільні застосунки, AI-рішення, інтеграції та технічна підтримка. Tezcode — AI Software Factory у Ташкенті, 14 in-house розробників.",
-      trust: "Безкоштовна 30-хв консультація • Оплата лише після готового MVP",
+      trust: "Безкоштовна 30-хв консультація • Оплата: 30% передоплата",
       ctaPrimary: "Безкоштовна консультація",
       ctaSecondary: "Дивитись послуги",
     },
@@ -371,7 +371,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "14 in-house розробників", desc: "В офісі у Ташкенті. Не фрілансери — команда. Backend, frontend, mobile, AI, DevOps — все у нас." },
         { tag: "02", title: "Швидше з AI", desc: "Claude і сучасні AI-інструменти — наш щоденний робочий інструмент. Місяць роботи за коротший час без втрати якості." },
-        { tag: "03", title: "Оплата лише після готового MVP", desc: "Ризик не на вашому боці. Поки не побачите робочий результат — оплата не починається. Це наша модель довіри." },
+        { tag: "03", title: "Прозора оплата — 30% передоплата", desc: "Для старту достатньо 30% — решта за етапами проєкту." },
         { tag: "04", title: "Локальна команда, прямий зв'язок", desc: "Засновник Бекзод Мірзаалієв у Telegram. Немає мовного бар'єру та різниці таймзон — розуміємо ваше бізнес-середовище." },
       ],
     },
@@ -392,7 +392,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Які IT-послуги надає Tezcode?", a: "Tezcode надає повний цикл IT-послуг: розробка ПЗ (web, backend), мобільні застосунки, сайти та лендінги, AI та автоматизація, інтеграції/API і технічна підтримка. Усе від однієї команди." },
         { q: "Ви розташовані в Ташкенті?", a: "Так. Tezcode — це AI Software Factory у Ташкенті, команда з 14 in-house розробників. Засновник — Бекзод Мірзаалієв. Локальна команда, тому немає мовного бар'єру та різниці таймзон." },
         { q: "Як швидко ви починаєте?", a: "Після консультації ми даємо технічну пропозицію за 3-5 днів і починаємо одразу після узгодження. Перша робоча версія зазвичай готова за 2-4 тижні." },
-        { q: "Як визначається ціна?", a: "Точна ціна дається після технічного аналізу, адже кожне завдання різне. Консультація безкоштовна, оплата починається лише після готового MVP — ризик не на вашому боці." },
+        { q: "Як визначається ціна?", a: "Точна ціна дається після технічного аналізу, адже кожне завдання різне. Консультація безкоштовна, оплата — 30% передоплати, решта поетапно." },
         { q: "Кому належить вихідний код?", a: "100% вам. У контракті вказано: повна передача коду, GitHub на вашому або нашому акаунті — ви вирішуєте. Без vendor lock-in." },
         { q: "Чи підтримуєте після впровадження?", a: "Так. Після деплою надаємо технічну підтримку, оновлення та моніторинг. Умови підтримки узгоджуємо залежно від розміру проекту." },
       ],

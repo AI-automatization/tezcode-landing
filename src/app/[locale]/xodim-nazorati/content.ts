@@ -12,7 +12,7 @@ export const CONTENT: ServicePageContent = {
       title2: "",
       subtitle:
         "Vazifalar, ish vaqti, davomat va hisobot bitta dashboardda. WorkControl xodimlar nima qilayotganini va kim qancha ulgurganini aniq ko'rsatadi — taxminsiz.",
-      trust: "Bepul demo • Toshkent va butun O'zbekiston • To'lov MVP tayyor bo'lganda",
+      trust: "Bepul demo • Toshkent va butun O'zbekiston • To'lov: 30% oldindan",
       ctaPrimary: "Bepul demo so'rang",
       ctaSecondary: "WorkControl nima qila oladi?",
     },
@@ -93,7 +93,7 @@ export const CONTENT: ServicePageContent = {
       title2: "",
       subtitle:
         "Задачи, рабочее время, посещаемость и отчёты в одном дашборде. WorkControl точно показывает, кто чем занят и сколько успел — без догадок.",
-      trust: "Бесплатное демо • Ташкент и весь Узбекистан • Оплата после готового MVP",
+      trust: "Бесплатное демо • Ташкент и весь Узбекистан • Оплата: 30% предоплата",
       ctaPrimary: "Запросить демо",
       ctaSecondary: "Что умеет WorkControl?",
     },
@@ -173,7 +173,7 @@ export const CONTENT: ServicePageContent = {
       title2: "",
       subtitle:
         "Tasks, work time, attendance and reports in one dashboard. WorkControl shows exactly who is doing what and how much they've done — no guessing.",
-      trust: "Free demo • Tashkent and all of Uzbekistan • Pay after MVP is delivered",
+      trust: "Free demo • Tashkent and all of Uzbekistan • Payment: 30% upfront",
       ctaPrimary: "Request a demo",
       ctaSecondary: "What can WorkControl do?",
     },
@@ -253,7 +253,7 @@ export const CONTENT: ServicePageContent = {
       title2: "",
       subtitle:
         "المهام ووقت العمل والحضور والتقارير في لوحة واحدة. يُظهر WorkControl بدقة من يفعل ماذا وكم أنجز — دون تخمين.",
-      trust: "عرض تجريبي مجاني • طشقند وكل أوزبكستان • الدفع بعد تسليم MVP",
+      trust: "عرض تجريبي مجاني • طشقند وكل أوزبكستان • الدفع: 30% مقدمًا",
       ctaPrimary: "اطلب عرضاً تجريبياً",
       ctaSecondary: "ماذا يفعل WorkControl؟",
     },
@@ -333,7 +333,7 @@ export const CONTENT: ServicePageContent = {
       title2: "",
       subtitle:
         "Завдання, робочий час, відвідуваність і звіти в одному дашборді. WorkControl точно показує, хто чим зайнятий і скільки встиг — без здогадок.",
-      trust: "Безкоштовне демо • Ташкент і весь Узбекистан • Оплата після готового MVP",
+      trust: "Безкоштовне демо • Ташкент і весь Узбекистан • Оплата: 30% передоплата",
       ctaPrimary: "Запросити демо",
       ctaSecondary: "Що вміє WorkControl?",
     },

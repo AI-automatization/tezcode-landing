@@ -26,7 +26,7 @@ const COPY: Record<Lang, Copy> = {
     title1: "Shaffof narxlar —",
     titleAccent: "yashirin to'lov yo'q",
     subtitle:
-      "Tayyor SaaS obuna, buyurtma dastur yoki AI avtomatizatsiya — har biri uchun aniq model. Buyurtma dasturda to'lov faqat MVP tayyor bo'lganda boshlanadi.",
+      "Tayyor SaaS obuna, buyurtma dastur yoki AI avtomatizatsiya — har biri uchun aniq model. Buyurtma dasturda to'lov 30% oldindan boshlanadi.",
     ctaTitle: "Aniq narxni",
     ctaSubtitle:
       "30 daqiqalik bepul konsultatsiyada vazifangizga eng mos tarifni birga tanlaymiz. Hech qanday majburiyat yo'q.",
@@ -38,7 +38,7 @@ const COPY: Record<Lang, Copy> = {
     title1: "Прозрачные цены —",
     titleAccent: "без скрытых платежей",
     subtitle:
-      "Готовая SaaS-подписка, разработка на заказ или AI-автоматизация — для каждого своя модель. В разработке на заказ оплата начинается только после готового MVP.",
+      "Готовая SaaS-подписка, разработка на заказ или AI-автоматизация — для каждого своя модель. В разработке на заказ оплата — 30% предоплата.",
     ctaTitle: "Узнать точную",
     ctaSubtitle:
       "На бесплатной 30-минутной консультации вместе подберём тариф под вашу задачу. Без обязательств.",
@@ -50,7 +50,7 @@ const COPY: Record<Lang, Copy> = {
     title1: "Transparent pricing —",
     titleAccent: "no hidden fees",
     subtitle:
-      "Ready SaaS subscription, custom development or AI automation — each with a clear model. For custom builds, payment starts only after a working MVP.",
+      "Ready SaaS subscription, custom development or AI automation — each with a clear model. For custom builds, payment starts with a 30% deposit.",
     ctaTitle: "Get an exact",
     ctaSubtitle:
       "In a free 30-minute consultation we'll pick the right plan for your task together. No commitment.",
@@ -62,7 +62,7 @@ const COPY: Record<Lang, Copy> = {
     title1: "أسعار شفافة —",
     titleAccent: "بدون رسوم خفية",
     subtitle:
-      "اشتراك SaaS جاهز، أو تطوير مخصص، أو أتمتة بالذكاء الاصطناعي — لكل منها نموذج واضح. في التطوير المخصص يبدأ الدفع فقط بعد تسليم نسخة MVP عاملة.",
+      "اشتراك SaaS جاهز، أو تطوير مخصص، أو أتمتة بالذكاء الاصطناعي — لكل منها نموذج واضح. في التطوير المخصص يبدأ الدفع بدفعة مقدمة 30%.",
     ctaTitle: "احصل على سعر",
     ctaSubtitle:
       "في استشارة مجانية مدتها 30 دقيقة سنختار معًا الخطة المناسبة لمهمتك. دون أي التزام.",
@@ -74,7 +74,7 @@ const COPY: Record<Lang, Copy> = {
     title1: "Прозорі ціни —",
     titleAccent: "без прихованих платежів",
     subtitle:
-      "Готова SaaS-підписка, розробка на замовлення або AI-автоматизація — для кожного своя модель. У розробці на замовлення оплата починається лише після готового MVP.",
+      "Готова SaaS-підписка, розробка на замовлення або AI-автоматизація — для кожного своя модель. У розробці на замовлення оплата — 30% передоплати.",
     ctaTitle: "Дізнатися точну",
     ctaSubtitle:
       "На безкоштовній 30-хвилинній консультації разом підберемо тариф під ваше завдання. Без зобов'язань.",
