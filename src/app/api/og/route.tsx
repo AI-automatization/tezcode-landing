@@ -3,11 +3,15 @@ import type { NextRequest } from "next/server";
 
 export const runtime = "edge";
 
+// OG card in the light premium brand: soft paper bg + faint grid,
+// ink headline, one blue accent — mirrors the redesigned home page.
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
 
-  const title = searchParams.get("title") ?? "Tezcode";
-  const subtitle = searchParams.get("subtitle") ?? "AI Software Factory";
+  const title = searchParams.get("title") ?? "Har biznesni AI bilan avtomatlashtiramiz";
+  const subtitle =
+    searchParams.get("subtitle") ??
+    "RAOS POS · AI Office · CoreMed va yana 5 ta mahsulot";
   const tag = searchParams.get("tag") ?? "Toshkent · O'zbekiston";
 
   return new ImageResponse(
@@ -20,81 +24,31 @@ export async function GET(req: NextRequest) {
           flexDirection: "column",
           alignItems: "flex-start",
           justifyContent: "space-between",
-          padding: "80px",
-          backgroundColor: "#0a0a0f",
+          padding: "72px",
+          backgroundColor: "#f5f7fb",
           backgroundImage:
-            "radial-gradient(ellipse 1200px 600px at 20% 30%, rgba(0,64,255,0.25), transparent), radial-gradient(ellipse 800px 500px at 80% 90%, rgba(212,160,23,0.18), transparent)",
-          color: "#f0f0f8",
+            "radial-gradient(ellipse 900px 500px at 85% 10%, rgba(0,64,255,0.10), transparent), linear-gradient(to right, rgba(12,26,46,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(12,26,46,0.05) 1px, transparent 1px)",
+          backgroundSize: "100% 100%, 56px 56px, 56px 56px",
+          color: "#0c1a2e",
           fontFamily: "sans-serif",
         }}
       >
-        {/* Top — brand */}
-        <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-          <div
-            style={{
-              width: 56,
-              height: 56,
-              borderRadius: 14,
-              background: "#0a0a0f",
-              border: "2px solid rgba(212,160,23,0.5)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "white",
-              fontSize: 28,
-              fontWeight: 800,
-            }}
-          >
-            TC
-          </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <div style={{ fontSize: 28, fontWeight: 700, letterSpacing: "-0.02em" }}>
-              Tezcode
-            </div>
-            <div style={{ fontSize: 14, color: "#d4a017", letterSpacing: "0.2em", textTransform: "uppercase" }}>
-              AI Software Factory
-            </div>
-          </div>
-        </div>
-
-        {/* Center — headline */}
-        <div style={{ display: "flex", flexDirection: "column", maxWidth: "85%" }}>
-          <div
-            style={{
-              fontSize: title.length > 50 ? 72 : 96,
-              fontWeight: 800,
-              lineHeight: 1.05,
-              letterSpacing: "-0.03em",
-              backgroundImage:
-                "linear-gradient(135deg, #4d88ff 0%, #0040ff 100%)",
-              backgroundClip: "text",
-              color: "transparent",
-              display: "flex",
-            }}
-          >
-            {title}
-          </div>
-          <div
-            style={{
-              fontSize: 32,
-              color: "rgba(240,240,248,0.65)",
-              marginTop: 16,
-              maxWidth: 900,
-              display: "flex",
-            }}
-          >
-            {subtitle}
-          </div>
-        </div>
-
-        {/* Bottom — tag */}
+        {/* Top — hero-style chip badge */}
         <div
           style={{
             display: "flex",
             alignItems: "center",
             gap: 12,
+            padding: "12px 24px",
+            borderRadius: 999,
+            border: "1px solid #e3e8f0",
+            backgroundColor: "#ffffff",
             fontSize: 20,
-            color: "#d4a017",
+            fontWeight: 600,
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            color: "#0038d8",
+            boxShadow: "0 1px 2px rgba(12,26,46,0.05), 0 8px 24px rgba(12,26,46,0.07)",
           }}
         >
           <div
@@ -102,10 +56,81 @@ export async function GET(req: NextRequest) {
               width: 10,
               height: 10,
               borderRadius: "50%",
-              background: "#d4a017",
+              background: "#0040ff",
             }}
           />
-          {tag}
+          AI · Software Factory
+        </div>
+
+        {/* Center — headline */}
+        <div style={{ display: "flex", flexDirection: "column", maxWidth: "90%" }}>
+          <div
+            style={{
+              fontSize: title.length > 50 ? 60 : 76,
+              fontWeight: 800,
+              lineHeight: 1.08,
+              letterSpacing: "-0.03em",
+              color: "#0c1a2e",
+              display: "flex",
+            }}
+          >
+            {title}
+          </div>
+          <div
+            style={{
+              fontSize: 28,
+              color: "#3d4c63",
+              marginTop: 20,
+              maxWidth: 940,
+              display: "flex",
+            }}
+          >
+            {subtitle}
+          </div>
+        </div>
+
+        {/* Bottom — brand row */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            width: "100%",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+            <div
+              style={{
+                width: 52,
+                height: 52,
+                borderRadius: 14,
+                background: "#0040ff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "white",
+                fontSize: 24,
+                fontWeight: 800,
+                boxShadow: "0 8px 20px rgba(0,64,255,0.25)",
+              }}
+            >
+              TC
+            </div>
+            <div style={{ fontSize: 30, fontWeight: 700, color: "#0c1a2e" }}>Tezcode</div>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 10,
+              fontSize: 22,
+              color: "#64748b",
+            }}
+          >
+            {tag}
+            <div style={{ color: "#0038d8", fontWeight: 600 }}>· tezcode.dev</div>
+          </div>
         </div>
       </div>
     ),
