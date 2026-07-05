@@ -18,6 +18,18 @@ const nextConfig: NextConfig = {
   },
   // Production source maps off (smaller bundle)
   productionBrowserSourceMaps: false,
+  // Legacy sitemap URL: the single /sitemap.xml was split into per-locale
+  // sitemaps (2026-07-04), but Bing/GSC and other consumers still request the
+  // old path — permanent-redirect it to a sitemap index instead of 404ing.
+  async redirects() {
+    return [
+      {
+        source: "/sitemap.xml",
+        destination: "/sitemap-index.xml",
+        permanent: true,
+      },
+    ];
+  },
   // Headers for security + performance
   async headers() {
     return [

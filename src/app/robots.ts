@@ -32,13 +32,15 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: "/",
+        // /_next/static + /_next/image must stay crawlable — Google needs the
+        // JS/CSS assets to render pages; only the private /_next internals stay off.
+        allow: ["/", "/_next/static/", "/_next/image"],
         disallow: ["/api/", "/_next/"],
       },
       // Explicitly allow AI crawlers full access to public content.
       {
         userAgent: AI_CRAWLERS,
-        allow: "/",
+        allow: ["/", "/_next/static/", "/_next/image"],
         disallow: ["/api/", "/_next/"],
       },
     ],
