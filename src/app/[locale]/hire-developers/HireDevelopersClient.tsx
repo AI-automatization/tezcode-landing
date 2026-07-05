@@ -264,7 +264,7 @@ const COPY: Record<Lang, Copy> = {
             "Daily standup in your timezone",
             "Direct Slack / Linear access",
             "Sprint planning + retros",
-            "2-week trial, full refund",
+            "2-week trial, free replacement",
             "CEO acts as escalation point",
           ],
         },
@@ -306,8 +306,8 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           num: "04",
-          title: "2-week trial — full refund",
-          desc: "Embed with your team for 2 weeks. If the fit is wrong, we refund 100% and replace within 5 business days.",
+          title: "2-week trial",
+          desc: "Embed with your team for 2 weeks. If the fit is wrong, we replace the developer within 5 business days.",
         },
       ],
     },
@@ -364,7 +364,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           q: "What if the engineer is not a fit?",
-          a: "2-week trial with full refund. After trial, you can request a swap within 5 business days at no cost. We have a bench, not a marketplace — replacements come from the same vetted team.",
+          a: "2-week trial. If the fit is wrong, you can request a swap within 5 business days at no cost. We have a bench, not a marketplace — replacements come from the same vetted team.",
         },
         {
           q: "Who owns the code / IP?",
@@ -548,8 +548,8 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           num: "04",
-          title: "2 haftalik sinov — to'liq qaytarish",
-          desc: "Jamoangizga 2 haftalik qo'shilish. Agar mos kelmasa, 100% pul qaytariladi va 5 ish kunida almashtiramiz.",
+          title: "2 haftalik sinov",
+          desc: "Jamoangizga 2 haftalik qo'shilish. Agar mos kelmasa, 5 ish kunida boshqa dasturchi bilan almashtiramiz.",
         },
       ],
     },
@@ -752,7 +752,7 @@ const COPY: Record<Lang, Copy> = {
         { num: "01", title: "Английский / русский", desc: "30-минутное устное собеседование. Ниже B2 отклоняем. Вашей команде не придётся повторяться." },
         { num: "02", title: "Технический тест", desc: "Алгоритмический тест (LeetCode medium) + system design. Бенчмарк против senior США." },
         { num: "03", title: "Pair coding с CEO", desc: "90-минутная live-сессия с Бекзодом. Рефакторинг реальной кодовой базы. Смотрим, как думает, не только код." },
-        { num: "04", title: "2 недели trial", desc: "Встраивание в вашу команду на 2 недели. Если не подошёл — возврат 100% и замена за 5 рабочих дней." },
+        { num: "04", title: "2 недели trial", desc: "Встраивание в вашу команду на 2 недели. Если не подошёл — заменим разработчика за 5 рабочих дней." },
       ],
     },
     team: {
@@ -882,7 +882,7 @@ const COPY: Record<Lang, Copy> = {
         { num: "01", title: "مقابلة إنجليزية / روسية", desc: "30 دقيقة تقييم شفوي. أقل من B2 نرفض." },
         { num: "02", title: "تقييم تقني", desc: "اختبار خوارزمي + نقاش system design. معيار senior الولايات المتحدة." },
         { num: "03", title: "Pair coding مع المدير التنفيذي", desc: "90 دقيقة جلسة مباشرة مع بكزود. refactor قاعدة كود حقيقية." },
-        { num: "04", title: "أسبوعان تجربة — استرداد كامل", desc: "اندماج لمدة أسبوعين. لو لم يناسب، استرداد 100% واستبدال خلال 5 أيام عمل." },
+        { num: "04", title: "أسبوعان تجربة", desc: "اندماج لمدة أسبوعين. لو لم يناسب، نستبدل المطور خلال 5 أيام عمل." },
       ],
     },
     team: {
@@ -1009,7 +1009,7 @@ const COPY: Record<Lang, Copy> = {
         { num: "01", title: "Англійська / російська", desc: "30-хвилинна усна співбесіда. Нижче B2 відхиляємо." },
         { num: "02", title: "Технічний тест", desc: "Алгоритмічний тест + system design. Бенчмарк проти senior США." },
         { num: "03", title: "Pair coding з CEO", desc: "90-хвилинна жива сесія з Бекзодом. Рефакторинг реальної кодової бази." },
-        { num: "04", title: "2 тижні trial", desc: "Вбудовування у вашу команду на 2 тижні. Не підійшов — повернення 100% та заміна за 5 робочих днів." },
+        { num: "04", title: "2 тижні trial", desc: "Вбудовування у вашу команду на 2 тижні. Не підійшов — замінимо розробника за 5 робочих днів." },
       ],
     },
     team: {

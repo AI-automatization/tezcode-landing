@@ -10,7 +10,7 @@ export const metadata = buildPageMetadata({
     absolute: "Hire Senior Developers from Tashkent — from $30/hr | TezCode Teams",
   },
   description:
-    "Hire AI-skilled senior developers from Uzbekistan: $30–55/hr, English/Russian fluent, EST overlap 5 hours, IT Park residency, 2-week trial with full refund. 8-engineer in-house team.",
+    "Hire AI-skilled senior developers from Uzbekistan: $30–55/hr, English/Russian fluent, EST overlap 5 hours, IT Park residency, 2-week trial with free replacement. 8-engineer in-house team.",
   keywords: [
     "hire developers Uzbekistan",
     "staff augmentation Tashkent",
@@ -27,7 +27,7 @@ export const metadata = buildPageMetadata({
   ],
   ogTitle: "Hire senior developers from Tashkent — from $30/hr",
   ogDescription:
-    "AI-skilled, English/Russian fluent, EST overlap, vetted in-house team. 2-week trial with full refund.",
+    "AI-skilled, English/Russian fluent, EST overlap, vetted in-house team. 2-week trial with free replacement.",
 });
 
 export default function HireDevelopersPage() {
