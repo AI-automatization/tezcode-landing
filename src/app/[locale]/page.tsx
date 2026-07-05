@@ -12,6 +12,7 @@ import { LatestNews } from "@/components/LatestNews";
 import { PricingTiers } from "@/components/PricingTiers";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
+import { StickyCTA } from "@/components/StickyCTA";
 import { CookieConsent } from "@/components/CookieConsent";
 
 // ─────────────────────────────────────────────────────────
@@ -66,8 +67,11 @@ export default function HomePage() {
       {/* Footer */}
       <Footer />
 
-      {/* Floating Telegram + WhatsApp + Sticky Mobile CTA */}
+      {/* Floating Telegram + Sticky Mobile CTA */}
       <FloatingContact />
+
+      {/* Desktop scroll-in conversion bar */}
+      <StickyCTA />
 
       {/* Cookie consent (GDPR + UZ legal) */}
       <CookieConsent />

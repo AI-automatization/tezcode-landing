@@ -10,6 +10,7 @@ import { Tilt3D } from "@/components/motion/Tilt3D";
 import { Magnetic } from "@/components/motion/Magnetic";
 import { CountUp } from "@/components/motion/CountUp";
 import { getFaqSchema } from "@/lib/seo";
+import { StickyCTA } from "@/components/StickyCTA";
 
 // ─────────────────────────────────────────────────────────
 // Types
@@ -1085,7 +1086,9 @@ export function HireDevelopersClient() {
       <FAQSection t={t} />
       <FinalCTASection t={t} />
       <Footer />
-    </main>
+          <StickyCTA />
+
+      </main>
   );
 }
 

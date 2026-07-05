@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { ServiceIcon } from "@/components/service-page/ServiceIcon";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Magnetic } from "@/components/motion/Magnetic";
+import { StickyCTA } from "@/components/StickyCTA";
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
 
@@ -456,6 +457,8 @@ export default function AboutPage() {
       </section>
 
       <Footer />
-    </main>
+          <StickyCTA />
+
+      </main>
   );
 }

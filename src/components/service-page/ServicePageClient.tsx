@@ -10,6 +10,7 @@ import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Link } from "@/i18n/routing";
 import type { ServiceLang, ServicePageContent, ServicePageCopy } from "./types";
 import { ServiceIcon } from "./ServiceIcon";
+import { StickyCTA } from "@/components/StickyCTA";
 
 // Reusable renderer for the Tezcode TIER 1 service pages, in the LIGHT premium
 // design system (data-theme="light"): tc-card surfaces, tc-chip section labels,
@@ -513,6 +514,8 @@ export function ServicePageClient({ content }: { content: ServicePageContent }) 
       <RelatedSection copy={copy} />
       <FinalCtaSection copy={copy} />
       <Footer />
-    </main>
+          <StickyCTA />
+
+      </main>
   );
 }
