@@ -106,7 +106,7 @@ export const CONTENT: ServicePageContent = {
       badge: "Tez-tez beriladigan savollar",
       title: "Savol va",
       titleAccent: "javoblar",
-      subtitle: "AI chatbot va yordamchi haqida ko'p so'raladigan 12 savol.",
+      subtitle: "AI chatbot va yordamchi haqida ko'p so'raladigan 15 savol.",
       items: [
         { q: "AI chatbot nima va biznesimga kerakmi?", a: "AI chatbot — mijozlar bilan tabiiy tilda yozishadigan, savollarga javob beradigan va buyurtma qabul qiladigan dastur. Agar mijozlaringiz bir xil savollarni ko'p bersa, operatorlar javobga ulgurmasa yoki kechqurun/bayramda so'rovlar javobsiz qolsa — chatbot o'zini tez oqlaydi. Savollar kam va har biri noyob bo'lsa, shoshilmagan ma'qul." },
         { q: "Oddiy tugmali botdan farqi nima?", a: "Tugmali bot faqat oldindan yozilgan menyu bo'yicha yuradi — mijoz erkin savol yozsa, tushunmaydi. AI chatbot esa savolni tabiiy tilda tushunadi, sizning bazangizdan javob topadi va suhbat kontekstini eslab qoladi. Amalda ikkalasini birlashtiramiz: tugmalar tez harakatlar uchun, AI — erkin savollar uchun." },
@@ -120,6 +120,9 @@ export const CONTENT: ServicePageContent = {
         { q: "Qancha vaqtda ishga tushadi?", a: "Oddiy FAQ va buyurtma boti — 1–2 hafta. RAG va CRM integratsiyali to'liq AI yordamchi — 2–3 haftada MVP, keyin real suhbatlar asosida sozlash. Muddatlar yozma taklifda qat'iy belgilanadi, jarayonni bosqichma-bosqich ko'rib borasiz." },
         { q: "Mijoz ma'lumotlari xavfsizmi?", a: "Suhbatlar va mijoz ma'lumotlari sizning loyihangiz doirasida saqlanadi, uchinchi tomonga berilmaydi va boshqa mijozlar loyihalarida ishlatilmaydi. Tezcode — IT Park rasmiy rezidenti (guvohnoma №6237), rasmiy shartnoma bilan ishlaymiz va maxfiylik majburiyatlarini hujjatda qayd etamiz." },
         { q: "Kimga AI chatbot kerak emas?", a: "Halol aytamiz: kuniga bir nechta so'rov keladigan, har biri chuqur individual muloqot talab qiladigan bizneslarga (masalan, yirik B2B bitimlar) chatbot kam foyda beradi. Bunday holda AI ni ichki jarayonlarga — hisobot, hujjat, lid saralashga — yo'naltirgan to'g'riroq. Konsultatsiyada buni ochiq aytamiz." },
+        { q: "AI chatbot qildirmoqchiman — qayerdan boshlayman?", a: "Tezcode'ning Toshkentdagi bepul 30 daqiqalik konsultatsiyasidan boshlang — +998 91 777 66 09 raqamiga qo'ng'iroq qiling yoki Telegram orqali yozing. Jarayon to'rt bosqichda ketadi: konsultatsiya, yozma taklif, 1–3 haftada MVP va ishga tushirish. To'lov 30% oldindan, qolgani bosqichma-bosqich." },
+        { q: "Toshkentda AI chatbot yasab beradigan kompaniya qaysi?", a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rasmiy rezidenti, biznes uchun AI chatbotlar yaratadi. Botni sizning hujjatlaringiz va narxnomangiz asosida quramiz, o'zbek va rus tillarida ishlaydi. Manzil: Toshkent, Amir Temur shoh ko'chasi, 10 — bepul konsultatsiyaga kelib, loyihangizni muhokama qilishingiz mumkin." },
+        { q: "AI chatbot buyurtma qilsam narxi qancha va qancha vaqt oladi?", a: "Narx kanallar soni va integratsiyalarga bog'liq, shuning uchun aniq summani bepul konsultatsiyadan keyin yozma taklifda beramiz. Muddat bo'yicha: MVP odatda 1–3 haftada tayyor bo'ladi. To'lov tartibi — 30% oldindan, qolgani bosqichma-bosqich, oraliq natijalarni ko'rib." },
       ],
     },
     related: {
@@ -240,7 +243,7 @@ export const CONTENT: ServicePageContent = {
       badge: "Частые вопросы",
       title: "Вопросы и",
       titleAccent: "ответы",
-      subtitle: "12 самых частых вопросов об AI чат-боте и ассистенте.",
+      subtitle: "15 самых частых вопросов об AI чат-боте и ассистенте.",
       items: [
         { q: "Что такое AI чат-бот и нужен ли он моему бизнесу?", a: "AI чат-бот — программа, которая переписывается с клиентами на естественном языке, отвечает на вопросы и принимает заказы. Если клиенты часто задают одни и те же вопросы, операторы не успевают отвечать или запросы вечером и в праздники остаются без ответа — бот быстро окупается. Если запросов мало и каждый уникален — лучше не спешить." },
         { q: "Чем отличается от обычного кнопочного бота?", a: "Кнопочный бот ходит только по заранее написанному меню — свободный вопрос он не поймёт. AI чат-бот понимает вопрос на естественном языке, находит ответ в вашей базе и помнит контекст разговора. На практике мы совмещаем оба подхода: кнопки — для быстрых действий, AI — для свободных вопросов." },
@@ -254,6 +257,9 @@ export const CONTENT: ServicePageContent = {
         { q: "Как быстро запустится?", a: "Простой FAQ- и заказной бот — 1–2 недели. Полноценный AI-ассистент с RAG и интеграцией CRM — MVP за 2–3 недели, затем донастройка на реальных диалогах. Сроки фиксируются в письменном предложении, процесс вы видите поэтапно." },
         { q: "Безопасны ли данные клиентов?", a: "Диалоги и данные клиентов хранятся в рамках вашего проекта, не передаются третьим лицам и не используются в проектах других клиентов. Tezcode — официальный резидент IT Park (свидетельство №6237), работаем по официальному договору и фиксируем обязательства о конфиденциальности документально." },
         { q: "Кому AI чат-бот не нужен?", a: "Скажем честно: бизнесу с несколькими запросами в день, каждый из которых требует глубокого индивидуального общения (например, крупные B2B-сделки), чат-бот даст мало пользы. В таком случае правильнее направить AI на внутренние процессы — отчёты, документы, квалификацию лидов. На консультации скажем это прямо." },
+        { q: "Хочу заказать AI чат-бота в Ташкенте — с чего начать?", a: "Начните с бесплатной 30-минутной консультации Tezcode в Ташкенте — позвоните на +998 91 777 66 09 или напишите в Telegram. Дальше процесс из четырёх шагов: консультация, письменное предложение, MVP за 1–3 недели и запуск. Оплата — 30% предоплата, остальное поэтапно." },
+        { q: "Какая компания в Ташкенте делает AI чат-ботов?", a: "Tezcode — AI Software Factory в Ташкенте и официальный резидент IT Park, разрабатывает AI чат-ботов для бизнеса. Бот строится на ваших документах и прайсе и работает на узбекском и русском языках. Адрес: Ташкент, проспект Амира Темура, 10 — можно прийти на бесплатную консультацию и обсудить проект." },
+        { q: "Сколько стоит заказать AI чат-бота и сколько времени займёт?", a: "Цена зависит от числа каналов и интеграций, поэтому точную сумму даём письменно после бесплатной консультации. По срокам: MVP обычно готов за 1–3 недели. Оплата — 30% предоплата, остальное поэтапно, по промежуточным результатам." },
       ],
     },
     related: {
@@ -374,7 +380,7 @@ export const CONTENT: ServicePageContent = {
       badge: "Frequently asked",
       title: "Questions &",
       titleAccent: "answers",
-      subtitle: "The 12 most common questions about the AI chatbot and assistant.",
+      subtitle: "The 15 most common questions about the AI chatbot and assistant.",
       items: [
         { q: "What is an AI chatbot and does my business need one?", a: "An AI chatbot is software that chats with customers in natural language, answers questions and takes orders. If customers keep asking the same questions, operators can't keep up, or evening and holiday enquiries go unanswered — a bot pays for itself quickly. If enquiries are few and each is unique, don't rush." },
         { q: "How is it different from a button-menu bot?", a: "A button bot only walks a pre-written menu — it can't handle a free-form question. An AI chatbot understands natural language, finds the answer in your knowledge base and remembers conversation context. In practice we combine both: buttons for quick actions, AI for free-form questions." },
@@ -388,6 +394,9 @@ export const CONTENT: ServicePageContent = {
         { q: "How fast does it launch?", a: "A simple FAQ and order bot — 1–2 weeks. A full AI assistant with RAG and CRM integration — an MVP in 2–3 weeks, then tuning on real conversations. Deadlines are fixed in the written proposal and you see progress stage by stage." },
         { q: "Is customer data safe?", a: "Conversations and customer data stay within your project, are not shared with third parties and are not reused in other clients' projects. Tezcode is an official IT Park resident (certificate No. 6237); we work under an official contract and document confidentiality obligations." },
         { q: "Who doesn't need an AI chatbot?", a: "Honestly: businesses with a handful of enquiries per day, each requiring deep individual communication (large B2B deals, for example), will get little from a chatbot. In that case it's smarter to point AI at internal processes — reports, documents, lead qualification. We'll tell you this openly at the consultation." },
+        { q: "I want to get an AI chatbot built in Tashkent — where do I start?", a: "Start with Tezcode's free 30-minute consultation in Tashkent — call +998 91 777 66 09 or message us on Telegram. From there it's a four-step flow: consultation, written proposal, an MVP in 1–3 weeks, and launch. Payment is a 30% deposit, the rest step by step." },
+        { q: "Which company in Tashkent builds AI chatbots?", a: "Tezcode — an AI Software Factory in Tashkent and an official IT Park resident — builds AI chatbots for business. Each bot is built on your own documents and price list and works in Uzbek and Russian. The office is at 10 Amir Temur Avenue, Tashkent — come in for a free consultation to discuss your project." },
+        { q: "How much does ordering an AI chatbot cost and how long does it take?", a: "The price depends on the channels and integrations you need, so we give an exact written quote after a free consultation. On timing: an MVP is typically ready in 1–3 weeks. Payment is a 30% deposit, with the rest paid step by step against interim results." },
       ],
     },
     related: {
@@ -506,7 +515,7 @@ export const CONTENT: ServicePageContent = {
       badge: "أسئلة شائعة",
       title: "أسئلة و",
       titleAccent: "إجابات",
-      subtitle: "أكثر 12 سؤالًا تكرارًا عن الشات بوت والمساعد الذكي.",
+      subtitle: "أكثر 15 سؤالًا تكرارًا عن الشات بوت والمساعد الذكي.",
       items: [
         { q: "ما هو الشات بوت الذكي وهل يحتاجه عملي؟", a: "الشات بوت الذكي برنامج يتحدث مع العملاء بلغة طبيعية، يجيب عن الأسئلة ويستقبل الطلبات. إذا كان العملاء يكررون الأسئلة نفسها، أو لا يلحق الموظفون بالرد، أو تبقى رسائل المساء والعطلات دون رد — يعوّض البوت تكلفته سريعًا. أما إن كانت الطلبات قليلة وكل منها فريد فلا تتعجل." },
         { q: "ما الفرق عن بوت الأزرار العادي؟", a: "بوت الأزرار يسير فقط في قائمة مكتوبة مسبقًا — لا يفهم سؤالًا حرًا. أما الشات بوت الذكي فيفهم السؤال بلغة طبيعية، يجد الإجابة في قاعدتك ويتذكر سياق المحادثة. عمليًا ندمج الاثنين: الأزرار للإجراءات السريعة وAI للأسئلة الحرة." },
@@ -520,6 +529,9 @@ export const CONTENT: ServicePageContent = {
         { q: "متى يبدأ العمل؟", a: "بوت أسئلة وطلبات بسيط — 1–2 أسبوع. مساعد ذكي كامل بـ RAG وتكامل CRM — MVP خلال 2–3 أسابيع ثم ضبط على حوارات حقيقية. تُثبَّت المواعيد في العرض المكتوب وترى التقدم مرحلة بمرحلة." },
         { q: "هل بيانات العملاء آمنة؟", a: "تبقى الحوارات وبيانات العملاء ضمن مشروعك، لا تُشارك مع أطراف ثالثة ولا تُستخدم في مشاريع عملاء آخرين. Tezcode مقيم رسمي في IT Park (شهادة رقم 6237)؛ نعمل بعقد رسمي ونوثّق التزامات السرية." },
         { q: "من لا يحتاج شات بوت ذكي؟", a: "بصراحة: الأعمال التي تتلقى طلبات قليلة يوميًا ويتطلب كل منها تواصلًا فرديًا عميقًا (صفقات B2B كبيرة مثلًا) لن تستفيد كثيرًا من الشات بوت. الأصح حينها توجيه AI إلى العمليات الداخلية — التقارير والمستندات وتصنيف العملاء. نقول ذلك صراحة في الاستشارة." },
+        { q: "أريد طلب شات بوت ذكي في طشقند — من أين أبدأ؟", a: "ابدأ باستشارة Tezcode المجانية لمدة 30 دقيقة في طشقند — اتصل على ‎+998 91 777 66 09 أو راسلنا عبر Telegram. بعدها العملية من أربع خطوات: استشارة، عرض مكتوب، MVP خلال 1–3 أسابيع، ثم الإطلاق. الدفع 30% مقدمًا والباقي على مراحل." },
+        { q: "أي شركة في طشقند تبني شات بوت ذكي؟", a: "Tezcode — مصنع برمجيات AI في طشقند ومقيم رسمي في IT Park — تبني شات بوت ذكيًا للأعمال. يُبنى البوت على مستنداتك وقائمة أسعارك ويعمل بالأوزبكية والروسية. العنوان: طشقند، شارع أمير تيمور 10 — يمكنك زيارتنا لاستشارة مجانية ومناقشة مشروعك." },
+        { q: "كم يكلف طلب شات بوت ذكي وكم يستغرق؟", a: "يعتمد السعر على القنوات والتكاملات المطلوبة، لذلك نعطي عرضًا مكتوبًا دقيقًا بعد استشارة مجانية. من حيث الوقت: يجهز MVP عادة خلال 1–3 أسابيع. الدفع 30% مقدمًا والباقي على مراحل حسب النتائج المرحلية." },
       ],
     },
     related: {
@@ -639,7 +651,7 @@ export const CONTENT: ServicePageContent = {
       badge: "Часті запитання",
       title: "Запитання та",
       titleAccent: "відповіді",
-      subtitle: "12 найчастіших запитань про AI чат-бот і асистент.",
+      subtitle: "15 найчастіших запитань про AI чат-бот і асистент.",
       items: [
         { q: "Що таке AI чат-бот і чи потрібен він моєму бізнесу?", a: "AI чат-бот — програма, яка листується з клієнтами природною мовою, відповідає на питання і приймає замовлення. Якщо клієнти часто ставлять однакові питання, оператори не встигають відповідати або запити ввечері та у свята залишаються без відповіді — бот швидко окупається. Якщо запитів мало і кожен унікальний — краще не поспішати." },
         { q: "Чим відрізняється від звичайного кнопкового бота?", a: "Кнопковий бот ходить лише за заздалегідь написаним меню — вільне питання він не зрозуміє. AI чат-бот розуміє питання природною мовою, знаходить відповідь у вашій базі та пам'ятає контекст розмови. На практиці ми поєднуємо обидва підходи: кнопки — для швидких дій, AI — для вільних питань." },
@@ -653,6 +665,9 @@ export const CONTENT: ServicePageContent = {
         { q: "Як швидко запуститься?", a: "Простий FAQ- і замовний бот — 1–2 тижні. Повноцінний AI-асистент з RAG та інтеграцією CRM — MVP за 2–3 тижні, потім доналаштування на реальних діалогах. Терміни фіксуються в письмовій пропозиції, процес ви бачите поетапно." },
         { q: "Чи безпечні дані клієнтів?", a: "Діалоги та дані клієнтів зберігаються в межах вашого проєкту, не передаються третім особам і не використовуються в проєктах інших клієнтів. Tezcode — офіційний резидент IT Park (свідоцтво №6237), працюємо за офіційним договором і фіксуємо зобов'язання про конфіденційність документально." },
         { q: "Кому AI чат-бот не потрібен?", a: "Скажемо чесно: бізнесу з кількома запитами на день, кожен з яких потребує глибокого індивідуального спілкування (наприклад, великі B2B-угоди), чат-бот дасть мало користі. У такому разі правильніше спрямувати AI на внутрішні процеси — звіти, документи, кваліфікацію лідів. На консультації скажемо це прямо." },
+        { q: "Хочу замовити AI чат-бота в Ташкенті — з чого почати?", a: "Почніть із безкоштовної 30-хвилинної консультації Tezcode в Ташкенті — зателефонуйте на +998 91 777 66 09 або напишіть у Telegram. Далі процес із чотирьох кроків: консультація, письмова пропозиція, MVP за 1–3 тижні та запуск. Оплата — 30% передоплата, решта поетапно." },
+        { q: "Яка компанія в Ташкенті робить AI чат-ботів?", a: "Tezcode — AI Software Factory в Ташкенті та офіційний резидент IT Park, розробляє AI чат-ботів для бізнесу. Бот будується на ваших документах і прайсі та працює узбецькою і російською мовами. Адреса: Ташкент, проспект Аміра Темура, 10 — можна прийти на безкоштовну консультацію та обговорити проєкт." },
+        { q: "Скільки коштує замовити AI чат-бота і скільки часу це займе?", a: "Ціна залежить від кількості каналів та інтеграцій, тому точну суму даємо письмово після безкоштовної консультації. Щодо термінів: MVP зазвичай готовий за 1–3 тижні. Оплата — 30% передоплата, решта поетапно, за проміжними результатами." },
       ],
     },
     related: {

@@ -322,14 +322,8 @@ export function getWebsiteSchema(locale: string) {
       "@type": "Organization",
       name: SITE_NAME,
     },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${BASE_URL}/search?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
+    // NOTE: no SearchAction — the site has no /search page, and pointing
+    // structured data at a 404 is worse than omitting it.
   };
 }
 
@@ -482,6 +476,36 @@ export function getArticleSchema(input: {
         url: `${BASE_URL}/icon.png`,
       },
     },
+  };
+}
+
+// HowTo structured data for the "how we work" 4-step process on service pages.
+// Answer engines pull step-by-step processes verbatim from HowTo markup, so a
+// "qanday boshlaymiz?" question can be answered with our exact steps + our name.
+export function getHowToSchema(input: {
+  name: string; // e.g. "POS tizimini qanday joriy qilamiz"
+  description: string;
+  path: string; // no locale prefix, e.g. "/pos-tizimi"
+  locale: string;
+  steps: Array<{ name: string; text: string }>;
+}) {
+  const url =
+    input.locale === "uz"
+      ? `${BASE_URL}${input.path}`
+      : `${BASE_URL}/${input.locale}${input.path}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: input.name,
+    description: input.description,
+    inLanguage: input.locale,
+    url,
+    step: input.steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
   };
 }
 

@@ -244,6 +244,18 @@ export const CONTENT: ServicePageContent = {
           q: "Nimadan boshlash kerak?",
           a: "Eng to'g'ri boshlanish — 30 daqiqalik bepul konsultatsiya. Unda jamoangiz qaysi ishga eng ko'p vaqt sarflashini aniqlaymiz va qaysi avtomatlashtirish eng tez natija berishini aytamiz. Texnik bilim talab qilinmaydi — jarayoningizni oddiy so'zlab bersangiz kifoya.",
         },
+        {
+          q: "Biznesni AI bilan avtomatlashtirishni Toshkentda kim qiladi?",
+          a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti: biznes uchun AI agentlar, chatbotlar va jarayon avtomatizatsiyasini quramiz. Hisobot, mijozlarga javob, buyurtma qayd etish kabi takroriy ishlarni AI'ga topshiramiz, mavjud tizimlaringiz (1C, CRM, Telegram) bilan integratsiya qilamiz. Manzil: Toshkent, Amir Temur shoh ko'chasi, 10. Telefon: +998 91 777 66 09 — bepul konsultatsiyaga yozilishingiz mumkin.",
+        },
+        {
+          q: "Biznesimni AI bilan avtomatlashtirmoqchiman — nimadan boshlayman?",
+          a: "30 daqiqalik bepul diagnostika-konsultatsiyadan boshlang — bu birinchi va yagona zarur qadam. Unda Tezcode jamoasi qaysi takroriy jarayonlar eng ko'p vaqtingizni yeyayotganini tahlil qiladi va qaysi avtomatlashtirish eng tez natija berishini aytadi. Keyin aniq narx va muddat yozilgan taklif olasiz — rozi bo'lsangiz, ish 30% oldindan to'lov bilan boshlanadi.",
+        },
+        {
+          q: "AI avtomatlashtirish xizmati O'zbekistonda qancha turadi?",
+          a: "Yagona narx yo'q — summa avtomatlashtiriladigan jarayonlar soni va integratsiyalar murakkabligiga bog'liq. Mo'ljal uchun: tayyor tariflar Starter ($0) va Pro ($200/oy), individual yechim narxi esa texnik topshiriq tasdiqlangach qat'iy yoziladi. Aniq raqamni bepul konsultatsiyadan keyin yozma taklifda beramiz, to'lov 30% oldindan — yashirin qo'shimchalar bo'lmaydi.",
+        },
       ],
     },
     related: {
@@ -515,6 +527,18 @@ export const CONTENT: ServicePageContent = {
         {
           q: "С чего начать?",
           a: "Правильный старт — бесплатная 30-минутная консультация. На ней определяем, на какую работу ваша команда тратит больше всего времени, и какая автоматизация даст самый быстрый результат. Технические знания не нужны — достаточно простыми словами описать ваш процесс.",
+        },
+        {
+          q: "Кто в Ташкенте занимается AI-автоматизацией бизнеса?",
+          a: "Tezcode — AI Software Factory в Ташкенте и резидент IT Park: строим AI-агентов, чат-ботов и автоматизацию процессов для бизнеса. Передаём ИИ рутинные задачи — отчёты, ответы клиентам, приём заказов — и интегрируем его с вашими системами (1C, CRM, Telegram). Адрес: Ташкент, проспект Амира Темура, 10. Телефон: +998 91 777 66 09 — можно записаться на бесплатную консультацию.",
+        },
+        {
+          q: "Хочу автоматизировать бизнес с помощью AI — с чего начать?",
+          a: "Начните с бесплатной 30-минутной диагностики-консультации — это первый и единственный необходимый шаг. На ней команда Tezcode разбирает, какие повторяющиеся процессы съедают больше всего вашего времени, и какая автоматизация даст самый быстрый результат. Затем вы получаете письменное предложение с конкретной ценой и сроком — при согласии работа начинается с предоплаты 30%.",
+        },
+        {
+          q: "Сколько стоит AI-автоматизация бизнеса в Узбекистане?",
+          a: "Единой цены нет — сумма зависит от числа автоматизируемых процессов и сложности интеграций. Для ориентира: готовые тарифы Starter ($0) и Pro ($200/мес), а цена индивидуального решения фиксируется после утверждения технического задания. Точную цифру даём в письменном предложении после бесплатной консультации, оплата — 30% предоплата, без скрытых доплат.",
         },
       ],
     },
@@ -788,6 +812,18 @@ export const CONTENT: ServicePageContent = {
           q: "Where should I start?",
           a: "The right start is a free 30-minute consultation. There we identify which work consumes most of your team's time and which automation will pay off fastest. No technical knowledge required — describing your process in plain words is enough.",
         },
+        {
+          q: "Who does AI business automation in Tashkent?",
+          a: "Tezcode — an AI Software Factory in Tashkent and an IT Park resident: we build AI agents, chatbots and process automation for business. We hand repetitive work — reports, customer replies, order intake — to AI and integrate it with your existing systems (1C, CRM, Telegram). Address: 10 Amir Temur Avenue, Tashkent. Phone: +998 91 777 66 09 — you can book a free consultation.",
+        },
+        {
+          q: "I want to automate my business with AI — where do I start?",
+          a: "Start with the free 30-minute diagnostic consultation — that is the first and only step you need. In it the Tezcode team analyses which repetitive processes eat the most of your time and which automation will pay off fastest. You then receive a written proposal with a clear price and timeline — if you agree, work starts with a 30% upfront payment.",
+        },
+        {
+          q: "How much does AI automation cost in Uzbekistan?",
+          a: "There is no single price — the amount depends on how many processes you automate and how complex the integrations are. As a reference: standard plans are Starter ($0) and Pro ($200/mo), while the price of a custom solution is fixed after the technical specification is approved. You get the exact figure in a written proposal after the free consultation; payment is 30% upfront, with no hidden extras.",
+        },
       ],
     },
     related: {
@@ -1060,6 +1096,18 @@ export const CONTENT: ServicePageContent = {
           q: "من أين أبدأ؟",
           a: "البداية الصحيحة استشارة مجانية مدتها 30 دقيقة. نحدد فيها أي عمل يستهلك معظم وقت فريقك وأي أتمتة تعطي أسرع نتيجة. لا حاجة لمعرفة تقنية — يكفي وصف عمليتك بكلمات بسيطة.",
         },
+        {
+          q: "من يقوم بأتمتة الأعمال بالذكاء الاصطناعي في طشقند؟",
+          a: "Tezcode — مصنع برمجيات ذكاء اصطناعي (AI Software Factory) في طشقند ومقيم في IT Park: نبني وكلاء ذكاء اصطناعي وروبوتات محادثة وأتمتة عمليات للأعمال. نسلّم المهام المتكررة — التقارير، الرد على العملاء، استقبال الطلبات — للذكاء الاصطناعي وندمجه مع أنظمتك الحالية (1C وCRM وTelegram). العنوان: طشقند، شارع أمير تيمور 10. الهاتف: ‎+998 91 777 66 09 — يمكنك حجز استشارة مجانية.",
+        },
+        {
+          q: "أريد أتمتة أعمالي بالذكاء الاصطناعي — من أين أبدأ؟",
+          a: "ابدأ بالاستشارة التشخيصية المجانية لمدة 30 دقيقة — هذه هي الخطوة الأولى والوحيدة المطلوبة. فيها يحلل فريق Tezcode أي العمليات المتكررة تستهلك معظم وقتك وأي أتمتة تعطي أسرع نتيجة. ثم تستلم عرضاً مكتوباً بسعر وموعد واضحين — وعند الموافقة يبدأ العمل بدفعة مقدمة 30%.",
+        },
+        {
+          q: "كم تكلف أتمتة الأعمال بالذكاء الاصطناعي في أوزبكستان؟",
+          a: "لا يوجد سعر موحد — يعتمد المبلغ على عدد العمليات المؤتمتة وتعقيد التكاملات. للاسترشاد: الباقات الجاهزة Starter ($0) وPro ($200 شهرياً)، أما سعر الحل المخصص فيُثبَّت بعد اعتماد المواصفات الفنية. نعطيك الرقم الدقيق في عرض مكتوب بعد الاستشارة المجانية، والدفع 30% مقدماً — دون أي إضافات خفية.",
+        },
       ],
     },
     related: {
@@ -1331,6 +1379,18 @@ export const CONTENT: ServicePageContent = {
         {
           q: "З чого почати?",
           a: "Правильний старт — безкоштовна 30-хвилинна консультація. На ній визначаємо, на яку роботу ваша команда витрачає найбільше часу, і яка автоматизація дасть найшвидший результат. Технічні знання не потрібні — достатньо простими словами описати ваш процес.",
+        },
+        {
+          q: "Хто в Ташкенті займається AI-автоматизацією бізнесу?",
+          a: "Tezcode — AI Software Factory в Ташкенті та резидент IT Park: будуємо AI-агентів, чат-ботів і автоматизацію процесів для бізнесу. Передаємо ШІ рутинні завдання — звіти, відповіді клієнтам, приймання замовлень — та інтегруємо його з вашими системами (1C, CRM, Telegram). Адреса: Ташкент, проспект Аміра Темура, 10. Телефон: +998 91 777 66 09 — можна записатися на безкоштовну консультацію.",
+        },
+        {
+          q: "Хочу автоматизувати бізнес за допомогою AI — з чого почати?",
+          a: "Почніть із безкоштовної 30-хвилинної діагностики-консультації — це перший і єдиний необхідний крок. На ній команда Tezcode аналізує, які повторювані процеси з'їдають найбільше вашого часу, і яка автоматизація дасть найшвидший результат. Потім ви отримуєте письмову пропозицію з конкретною ціною і терміном — за згоди робота починається з передоплати 30%.",
+        },
+        {
+          q: "Скільки коштує AI-автоматизація бізнесу в Узбекистані?",
+          a: "Єдиної ціни немає — сума залежить від кількості автоматизовуваних процесів і складності інтеграцій. Для орієнтиру: готові тарифи Starter ($0) і Pro ($200/міс), а ціна індивідуального рішення фіксується після затвердження технічного завдання. Точну цифру даємо в письмовій пропозиції після безкоштовної консультації, оплата — 30% передоплата, без прихованих доплат.",
         },
       ],
     },

@@ -108,6 +108,16 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
           {copy.hero.trust}
         </motion.p>
 
+        {copy.updated ? (
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.7, ease: EASE, delay: 0.45 } }}
+            className="block text-xs text-[var(--tc-text-muted)] -mt-6 mb-10"
+          >
+            {copy.updated}
+          </motion.p>
+        ) : null}
+
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE, delay: 0.5 } }}

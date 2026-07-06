@@ -158,7 +158,7 @@ export const CONTENT: ServicePageContent = {
       badge: "Tez-tez beriladigan savollar",
       title: "Savol va",
       titleAccent: "javoblar",
-      subtitle: "AI agent yaratish haqida eng ko'p so'raladigan 12 savol.",
+      subtitle: "AI agent yaratish haqida eng ko'p so'raladigan 15 savol.",
       items: [
         {
           q: "AI agent nima?",
@@ -207,6 +207,18 @@ export const CONTENT: ServicePageContent = {
         {
           q: "Nega aynan Tezcode?",
           a: "Biz AI agentlarni faqat mijozlarga qurmaymiz — o'zimiz ham kunlik ishlatamiz va o'z mahsulotimiz AI Office (12 bo'lim agentli AI orkestrator) ustida ishlayapmiz, ya'ni agentlar qayerda sinishini amalda bilamiz. Tezcode — IT Park Uzbekistan rasmiy rezidenti (guvohnoma №6237). To'lov 30% oldindan — natijani ko'rmaguningizcha katta summa so'ramaymiz.",
+        },
+        {
+          q: "Biznesim uchun AI agent qildirmoqchiman — kimga murojaat qilaman?",
+          a: "Tezcode'ga murojaat qiling — Toshkentdagi AI Software Factory, IT Park Uzbekistan rasmiy rezidenti. Biz agentni tayyor shablondan emas, aynan sizning tizimlaringizga (CRM, 1C, Google Sheets, Telegram) ulangan holda quramiz. +998 91 777 66 09 ga qo'ng'iroq qiling yoki Telegram'da yozing — avval 30 daqiqalik bepul konsultatsiyada vazifangizni birga aniqlaymiz.",
+        },
+        {
+          q: "AI agent yasab beradigan kompaniya Toshkentda bormi?",
+          a: "Ha — Tezcode, manzil: Toshkent, Amir Temur shoh ko'chasi, 10. Biz biznesdagi takroriy, ko'p bosqichli ishlarni — lidlar bilan yozishma, buyurtma qabul qilish, CRMga yozish, hisobot tuzish — o'z bo'yniga oladigan AI agentlar quramiz. Bepul konsultatsiyada qaysi vazifani agentga topshirish mumkinligini birga ko'rib chiqamiz.",
+        },
+        {
+          q: "AI agent buyurtma qilsam narxi qancha, qancha vaqtda tayyor bo'ladi?",
+          a: "Narx integratsiyalar soni va stsenariy murakkabligiga bog'liq — shuning uchun oldindan bitta raqam aytmaymiz, aniq summani bepul konsultatsiyadan keyin yozma taklifda beramiz. Muddat: ishlaydigan MVP odatda bir necha haftada tayyor bo'ladi (oddiy agent — 1-2 hafta, murakkabrog'i — 2-4 hafta). To'lov 30% oldindan, qolgani loyiha bosqichlari bo'yicha.",
         },
       ],
     },
@@ -454,7 +466,7 @@ export const CONTENT: ServicePageContent = {
       badge: "Частые вопросы",
       title: "Вопросы и",
       titleAccent: "ответы",
-      subtitle: "12 самых частых вопросов о создании AI-агентов.",
+      subtitle: "15 самых частых вопросов о создании AI-агентов.",
       items: [
         {
           q: "Что такое AI-агент?",
@@ -503,6 +515,18 @@ export const CONTENT: ServicePageContent = {
         {
           q: "Почему именно Tezcode?",
           a: "Мы строим AI-агентов не только клиентам — сами пользуемся ими ежедневно и развиваем собственный продукт AI Office (AI-оркестратор с агентами 12 отделов), то есть на практике знаем, где агенты ломаются. Tezcode — официальный резидент IT Park Uzbekistan (свидетельство №6237). Оплата — 30% предоплата: не просим крупную сумму, пока вы не увидите результат.",
+        },
+        {
+          q: "Хочу заказать AI-агента для бизнеса — к кому обратиться в Ташкенте?",
+          a: "Обратитесь в Tezcode — AI Software Factory в Ташкенте, официальный резидент IT Park Uzbekistan. Мы строим AI-агентов не по шаблону, а под ваши системы: CRM, 1C, Google Sheets, Telegram. Позвоните на +998 91 777 66 09 или напишите в Telegram — сначала на бесплатной 30-минутной консультации вместе определим задачу.",
+        },
+        {
+          q: "Есть ли в Ташкенте компания, которая делает AI-агентов?",
+          a: "Да — Tezcode, адрес: Ташкент, проспект Амира Темура, 10. Мы строим AI-агентов, которые берут на себя повторяющуюся многошаговую работу: переписку с лидами, приём заказов, запись в CRM, отчёты. На бесплатной консультации вместе разберём, какую задачу можно передать агенту.",
+        },
+        {
+          q: "Сколько стоит AI-агент и как быстро он будет готов?",
+          a: "Цена зависит от количества интеграций и сложности сценария, поэтому одну цифру заранее не называем — точную сумму даём в письменном предложении после бесплатной консультации. По срокам: рабочий MVP обычно готов за несколько недель (простой агент — 1-2 недели, посложнее — 2-4 недели). Оплата — 30% предоплата, остальное по этапам проекта.",
         },
       ],
     },
@@ -750,7 +774,7 @@ export const CONTENT: ServicePageContent = {
       badge: "Frequently asked",
       title: "Questions &",
       titleAccent: "answers",
-      subtitle: "The 12 most common questions about AI agent development.",
+      subtitle: "The 15 most common questions about AI agent development.",
       items: [
         {
           q: "What is an AI agent?",
@@ -799,6 +823,18 @@ export const CONTENT: ServicePageContent = {
         {
           q: "Why Tezcode?",
           a: "We don't just build AI agents for clients — we use them daily ourselves and are developing our own product, AI Office (an AI orchestrator with 12 department agents), so we know in practice where agents break. Tezcode is an official IT Park Uzbekistan resident (certificate No. 6237). Payment starts at 30% upfront — we don't ask for a large sum before you see results.",
+        },
+        {
+          q: "I want to get an AI agent built for my business — who do I contact?",
+          a: "Contact Tezcode — an AI Software Factory in Tashkent and an official IT Park Uzbekistan resident. We build AI agents wired to your own systems — CRM, 1C, Google Sheets, Telegram — not from a template. Call +998 91 777 66 09 or message us on Telegram; we start with a free 30-minute consultation to define the task together.",
+        },
+        {
+          q: "Is there a company in Tashkent that builds AI agents?",
+          a: "Yes — Tezcode, at Amir Temur Avenue 10, Tashkent. We build AI agents that take over repetitive multi-step work: talking to leads, taking orders, logging to CRM, preparing reports. In a free consultation we work out together which task is worth handing to an agent.",
+        },
+        {
+          q: "If I order an AI agent, how much does it cost and how fast is it ready?",
+          a: "The price depends on the number of integrations and scenario complexity, so we don't quote a single figure upfront — you get the exact sum in a written proposal after the free consultation. Timeline: a working MVP is typically ready in a few weeks (a simple agent in 1-2 weeks, a more complex one in 2-4). Payment is 30% upfront, the rest per project stage.",
         },
       ],
     },
@@ -1046,7 +1082,7 @@ export const CONTENT: ServicePageContent = {
       badge: "أسئلة شائعة",
       title: "أسئلة و",
       titleAccent: "إجابات",
-      subtitle: "أكثر 12 سؤالاً شيوعاً عن تطوير وكلاء الذكاء الاصطناعي.",
+      subtitle: "أكثر 15 سؤالاً شيوعاً عن تطوير وكلاء الذكاء الاصطناعي.",
       items: [
         {
           q: "ما هو وكيل الذكاء الاصطناعي؟",
@@ -1095,6 +1131,18 @@ export const CONTENT: ServicePageContent = {
         {
           q: "لماذا Tezcode بالذات؟",
           a: "نحن لا نبني وكلاء الذكاء الاصطناعي للعملاء فقط — بل نستخدمهم يومياً ونطوّر منتجنا الخاص AI Office (منسّق ذكاء اصطناعي بوكلاء 12 قسماً)، أي نعرف عملياً أين يتعطل الوكلاء. Tezcode عضو رسمي في IT Park Uzbekistan (شهادة رقم 6237). الدفع يبدأ بـ30% مقدماً — لا نطلب مبلغاً كبيراً قبل أن ترى النتيجة.",
+        },
+        {
+          q: "أريد بناء وكيل ذكاء اصطناعي لشركتي — بمن أتصل؟",
+          a: "تواصل مع Tezcode — مصنع برمجيات ذكاء اصطناعي في طشقند وعضو رسمي في IT Park Uzbekistan. نبني وكلاء ذكاء اصطناعي مرتبطين بأنظمتك أنت — CRM و1C وGoogle Sheets وTelegram — وليس من قالب جاهز. اتصل على ‎+998 91 777 66 09 أو راسلنا على Telegram — نبدأ باستشارة مجانية لمدة 30 دقيقة لتحديد المهمة معاً.",
+        },
+        {
+          q: "هل توجد في طشقند شركة تبني وكلاء ذكاء اصطناعي؟",
+          a: "نعم — Tezcode، العنوان: طشقند، شارع أمير تيمور 10. نبني وكلاء ذكاء اصطناعي يتولون العمل المتكرر متعدد الخطوات: التحدث مع العملاء المحتملين، استقبال الطلبات، التسجيل في CRM، إعداد التقارير. في استشارة مجانية نحدد معاً أي مهمة يستحق تسليمها للوكيل.",
+        },
+        {
+          q: "إذا طلبت وكيل ذكاء اصطناعي — كم التكلفة ومتى يجهز؟",
+          a: "يعتمد السعر على عدد التكاملات وتعقيد السيناريو، لذلك لا نعطي رقماً واحداً مسبقاً — تحصل على المبلغ الدقيق في عرض مكتوب بعد الاستشارة المجانية. المدة: MVP عامل يجهز عادةً خلال بضعة أسابيع (وكيل بسيط في 1-2 أسبوع، والأكثر تعقيداً في 2-4 أسابيع). الدفع 30% مقدماً والباقي حسب مراحل المشروع.",
         },
       ],
     },
@@ -1342,7 +1390,7 @@ export const CONTENT: ServicePageContent = {
       badge: "Часті запитання",
       title: "Запитання та",
       titleAccent: "відповіді",
-      subtitle: "12 найчастіших запитань про створення AI-агентів.",
+      subtitle: "15 найчастіших запитань про створення AI-агентів.",
       items: [
         {
           q: "Що таке AI-агент?",
@@ -1391,6 +1439,18 @@ export const CONTENT: ServicePageContent = {
         {
           q: "Чому саме Tezcode?",
           a: "Ми будуємо AI-агентів не лише клієнтам — самі користуємось ними щодня і розвиваємо власний продукт AI Office (AI-оркестратор з агентами 12 відділів), тобто на практиці знаємо, де агенти ламаються. Tezcode — офіційний резидент IT Park Uzbekistan (свідоцтво №6237). Оплата — 30% передоплати: не просимо велику суму, поки ви не побачите результат.",
+        },
+        {
+          q: "Хочу замовити AI-агента для бізнесу — до кого звернутися в Ташкенті?",
+          a: "Зверніться в Tezcode — AI Software Factory в Ташкенті, офіційний резидент IT Park Uzbekistan. Ми будуємо AI-агентів не за шаблоном, а під ваші системи: CRM, 1C, Google Sheets, Telegram. Зателефонуйте на +998 91 777 66 09 або напишіть у Telegram — спершу на безкоштовній 30-хвилинній консультації разом визначимо завдання.",
+        },
+        {
+          q: "Чи є в Ташкенті компанія, яка робить AI-агентів?",
+          a: "Так — Tezcode, адреса: Ташкент, проспект Аміра Темура, 10. Ми будуємо AI-агентів, які беруть на себе повторювану багатокрокову роботу: листування з лідами, прийом замовлень, запис у CRM, звіти. На безкоштовній консультації разом розберемо, яке завдання можна передати агенту.",
+        },
+        {
+          q: "Скільки коштує AI-агент і як швидко він буде готовий?",
+          a: "Ціна залежить від кількості інтеграцій і складності сценарію, тому одну цифру заздалегідь не називаємо — точну суму даємо в письмовій пропозиції після безкоштовної консультації. Щодо термінів: робочий MVP зазвичай готовий за кілька тижнів (простий агент — 1-2 тижні, складніший — 2-4 тижні). Оплата — 30% передоплата, решта за етапами проєкту.",
         },
       ],
     },

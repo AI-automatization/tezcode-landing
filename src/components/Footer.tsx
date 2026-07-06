@@ -327,6 +327,28 @@ export function Footer() {
             <p className="text-sm text-[var(--tc-text-muted)] leading-relaxed">
               {t("tagline")}
             </p>
+
+            {/* Own products on their own domains — visible cross-links so
+                crawlers/AI connect the Tezcode ↔ RAOS ↔ ClinicaGo family
+                (the JSON-LD alone has no crawlable <a> equity). */}
+            <ul className="mt-5 flex flex-col gap-2">
+              {[
+                { name: "RAOS", href: "https://raos.uz", desc: "POS" },
+                { name: "ClinicaGo", href: "https://clinicago.uz", desc: "CRM" },
+              ].map((p) => (
+                <li key={p.name}>
+                  <a
+                    href={p.href}
+                    target="_blank"
+                    rel="noopener"
+                    className="text-sm text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] tc-link-underline transition-colors"
+                  >
+                    {p.name}
+                    <span className="text-[var(--tc-text-muted)]"> — {p.desc}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Services column */}

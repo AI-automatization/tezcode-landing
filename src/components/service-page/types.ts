@@ -86,6 +86,10 @@ export type ServicePageCopy = {
     subtitle: string;
     links: { href: string; label: string; desc: string }[];
   };
+  // Visible freshness signal ("Yangilangan: 2026-yil 5-iyul") — answer engines
+  // prefer pages that show when they were last reviewed. Pre-formatted per
+  // locale; rendered as a small line under the hero trust text.
+  updated?: string;
   // Drives the Service JSON-LD (server-side). Localised so the structured data
   // matches the page language.
   service: {

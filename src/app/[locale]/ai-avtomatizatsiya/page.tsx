@@ -3,6 +3,7 @@ import type { ServiceLang } from "@/components/service-page/types";
 import {
   buildPageMetadata,
   getFaqSchema,
+  getHowToSchema,
   getServiceSchema,
 } from "@/lib/seo";
 import { CONTENT } from "./content";
@@ -60,6 +61,13 @@ export default async function AiAvtomatizatsiyaPage({
     path: PATH,
   });
   const faqSchema = getFaqSchema(copy.faq.items);
+  const howToSchema = getHowToSchema({
+    name: `${copy.process.title} ${copy.process.titleAccent}`.trim(),
+    description: copy.process.subtitle,
+    path: PATH,
+    locale,
+    steps: copy.process.steps.map((st) => ({ name: st.title, text: st.desc })),
+  });
 
   return (
     <>
@@ -70,6 +78,10 @@ export default async function AiAvtomatizatsiyaPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <ServicePageClient content={CONTENT} serviceSlug="ai-avtomatizatsiya" />
     </>

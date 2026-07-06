@@ -98,7 +98,7 @@ const META: Record<
   { title: string; description: string; ogTitle: string; ogDescription: string }
 > = {
   uz: {
-    title: "Aloqa — Tezcode | Telegram, Telefon, Email",
+    title: "Aloqa — Telegram, telefon, email",
     description:
       "Tezcode bilan bog'laning: Telegram (@tezcode_managament), telefon +998 91 777 66 09, email tezcode@tezcode.dev. Toshkent, O'zbekiston. Bepul konsultatsiya uchun yozing.",
     ogTitle: "Aloqa — Tezcode",
@@ -106,7 +106,7 @@ const META: Record<
       "Telegram, telefon yoki email orqali bog'laning — bepul konsultatsiya. Toshkent, O'zbekiston.",
   },
   ru: {
-    title: "Контакты — Tezcode | Telegram, Телефон, Email",
+    title: "Контакты — Telegram, телефон, email",
     description:
       "Свяжитесь с Tezcode: Telegram (@tezcode_managament), telefon +998 91 777 66 09, email tezcode@tezcode.dev. Ташкент, Узбекистан. Напишите для бесплатной консультации.",
     ogTitle: "Контакты — Tezcode",
@@ -114,7 +114,7 @@ const META: Record<
       "Свяжитесь через Telegram, телефон или email — бесплатная консультация. Ташкент, Узбекистан.",
   },
   en: {
-    title: "Contact — Tezcode | Telegram, Phone, Email",
+    title: "Contact — Telegram, phone, email",
     description:
       "Contact Tezcode: Telegram (@tezcode_managament), telefon +998 91 777 66 09, email tezcode@tezcode.dev. Tashkent, Uzbekistan. Write us for a free consultation.",
     ogTitle: "Contact — Tezcode",
@@ -122,7 +122,7 @@ const META: Record<
       "Reach us on Telegram, by phone or email — free consultation. Tashkent, Uzbekistan.",
   },
   ar: {
-    title: "اتصال — Tezcode | تيليجرام، واتساب، بريد إلكتروني",
+    title: "اتصال — تيليجرام، هاتف، بريد إلكتروني",
     description:
       "تواصل مع Tezcode: تيليجرام (@tezcode_managament)، الهاتف +998 91 777 66 09، البريد tezcode@tezcode.dev. طشقند، أوزبكستان. راسلنا للحصول على استشارة مجانية.",
     ogTitle: "اتصال — Tezcode",
@@ -130,7 +130,7 @@ const META: Record<
       "تواصل عبر تيليجرام أو واتساب أو البريد الإلكتروني — استشارة مجانية. طشقند، أوزبكستان.",
   },
   uk: {
-    title: "Контакти — Tezcode | Telegram, Телефон, Email",
+    title: "Контакти — Telegram, телефон, email",
     description:
       "Зв'яжіться з Tezcode: Telegram (@tezcode_managament), telefon +998 91 777 66 09, email tezcode@tezcode.dev. Ташкент, Узбекистан. Напишіть для безкоштовної консультації.",
     ogTitle: "Контакти — Tezcode",

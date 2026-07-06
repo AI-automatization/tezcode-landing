@@ -18,7 +18,7 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: PATH,
-    title: "TezCode Academy — AI ta'lim markazi | kurslar, bootcamp | Tezcode",
+    title: "TezCode Academy — AI ta'lim markazi: kurslar, bootcamp",
     description:
       "TezCode Academy — Tezcode'ning AI ta'lim markazi. Dasturchilar va biznes egalari uchun AI kurslari, bootcamp, workshop va korporativ treninglar. Amaliyot birinchi o'rinda, ishlab turgan Software Factory muhandislaridan o'rganing. Bepul konsultatsiya.",
     keywords: [

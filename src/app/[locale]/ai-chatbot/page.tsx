@@ -5,6 +5,7 @@ import {
   buildPageMetadata,
   getBreadcrumbSchema,
   getFaqSchema,
+  getHowToSchema,
   getServiceSchema,
 } from "@/lib/seo";
 import { CONTENT } from "./content";
@@ -109,6 +110,13 @@ export default async function AiChatbotPage({
     path: PATH,
   });
   const faqSchema = getFaqSchema(copy.faq.items);
+  const howToSchema = getHowToSchema({
+    name: `${copy.process.title} ${copy.process.titleAccent}`.trim(),
+    description: copy.process.subtitle,
+    path: PATH,
+    locale,
+    steps: copy.process.steps.map((st) => ({ name: st.title, text: st.desc })),
+  });
   // BreadcrumbList so answer engines see the page's place in the site
   // hierarchy (Home → AI chatbot) — same SSR JSON-LD pattern as /ai-agent.
   const breadcrumb = getBreadcrumbSchema([
@@ -125,6 +133,10 @@ export default async function AiChatbotPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <script
         type="application/ld+json"

@@ -3,6 +3,7 @@ import type { ServiceLang } from "@/components/service-page/types";
 import {
   buildPageMetadata,
   getFaqSchema,
+  getHowToSchema,
   getServiceSchema,
   getBreadcrumbSchema,
   BASE_URL,
@@ -108,6 +109,13 @@ export default async function AiAgentPage({
     path: PATH,
   });
   const faqSchema = getFaqSchema(copy.faq.items);
+  const howToSchema = getHowToSchema({
+    name: `${copy.process.title} ${copy.process.titleAccent}`.trim(),
+    description: copy.process.subtitle,
+    path: PATH,
+    locale,
+    steps: copy.process.steps.map((st) => ({ name: st.title, text: st.desc })),
+  });
   // BreadcrumbList so answer engines see the page's place in the site hierarchy
   // (Home → AI agent) — same SSR JSON-LD pattern as the blog pillar post.
   const breadcrumb = getBreadcrumbSchema([
@@ -124,6 +132,10 @@ export default async function AiAgentPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <script
         type="application/ld+json"
