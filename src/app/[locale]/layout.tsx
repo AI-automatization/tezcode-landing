@@ -98,7 +98,7 @@ export async function generateMetadata({
     },
     verification: {
       google: process.env.GOOGLE_SITE_VERIFICATION ?? "wcUogKNw6DbMp0_rSGc-S3AZR3SY-7dpkNt8zo0PJ6w",
-      yandex: process.env.YANDEX_VERIFICATION,
+      yandex: process.env.YANDEX_VERIFICATION ?? "2799c1c5a0b79784",
       other: {
         "msvalidate.01": process.env.BING_SITE_VERIFICATION ?? "",
       },
