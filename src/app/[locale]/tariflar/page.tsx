@@ -6,7 +6,6 @@ import { Footer } from "@/components/Footer";
 import { PricingTiers } from "@/components/PricingTiers";
 import { Reveal } from "@/components/motion/Reveal";
 import { Magnetic } from "@/components/motion/Magnetic";
-import { StickyCTA } from "@/components/StickyCTA";
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
 
@@ -144,7 +143,6 @@ export default function TariflarPage() {
       </section>
 
       <Footer />
-          <StickyCTA />
 
       </main>
   );

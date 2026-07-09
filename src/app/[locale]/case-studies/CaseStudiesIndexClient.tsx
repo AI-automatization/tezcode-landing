@@ -7,7 +7,6 @@ import { Inbox } from "lucide-react";
 import { useLocale } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Tilt3D } from "@/components/motion/Tilt3D";
-import { StickyCTA } from "@/components/StickyCTA";
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
 type FilterKey = "all" | "retail" | "clinic" | "custom";
@@ -469,7 +468,6 @@ export function CaseStudiesIndexClient() {
           </div>
         </Reveal>
       </div>
-          <StickyCTA />
 
       </main>
   );

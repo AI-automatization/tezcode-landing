@@ -11,7 +11,6 @@ import { Link } from "@/i18n/routing";
 import { CITIES, CITY_SLUGS } from "@/data/cities";
 import type { ServiceLang, ServicePageContent, ServicePageCopy } from "./types";
 import { ServiceIcon } from "./ServiceIcon";
-import { StickyCTA } from "@/components/StickyCTA";
 
 // Reusable renderer for the Tezcode TIER 1 service pages, in the LIGHT premium
 // design system (data-theme="light"): tc-card surfaces, tc-chip section labels,
@@ -594,7 +593,6 @@ export function ServicePageClient({
       <CityLinksSection serviceSlug={serviceSlug} locale={locale} />
       <FinalCtaSection copy={copy} />
       <Footer />
-          <StickyCTA />
 
       </main>
   );

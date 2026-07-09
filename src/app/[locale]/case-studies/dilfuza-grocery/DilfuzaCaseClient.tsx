@@ -5,7 +5,6 @@ import { motion } from "motion/react";
 import { useLocale } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { CountUp } from "@/components/motion/CountUp";
-import { StickyCTA } from "@/components/StickyCTA";
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
 
@@ -641,7 +640,6 @@ export function DilfuzaCaseClient() {
           </div>
         </Reveal>
       </div>
-          <StickyCTA />
 
       </main>
   );

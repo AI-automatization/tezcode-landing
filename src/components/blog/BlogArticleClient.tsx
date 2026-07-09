@@ -10,7 +10,6 @@ import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Magnetic } from "@/components/motion/Magnetic";
 import { Link } from "@/i18n/routing";
 import type { ArticleContent, ArticleCopy, ArticleLang } from "./types";
-import { StickyCTA } from "@/components/StickyCTA";
 
 // Renderer for a single Tezcode blog / GEO article. Same LIGHT premium design
 // language as the home page (data-theme="light" scope, tc-card surfaces, one
@@ -311,7 +310,6 @@ export function BlogArticleClient({
       <RelatedServiceCard locale={locale} relatedService={relatedService} />
       <ArticleCta copy={copy} />
       <Footer />
-          <StickyCTA />
 
       </main>
   );

@@ -11,7 +11,6 @@ import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Tilt3D } from "@/components/motion/Tilt3D";
 import { Magnetic } from "@/components/motion/Magnetic";
 import { ServiceIcon } from "@/components/service-page/ServiceIcon";
-import { StickyCTA } from "@/components/StickyCTA";
 
 // ─────────────────────────────────────────────────────────────────────
 // Locale types & copy
@@ -2171,7 +2170,6 @@ export default function ForBusinessesPage() {
       <FaqSection copy={copy} />
       <FinalCtaSection copy={copy} />
       <Footer />
-          <StickyCTA />
 
       </main>
   );
