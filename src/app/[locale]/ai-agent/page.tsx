@@ -22,7 +22,7 @@ const META: Record<
   uz: {
     title: "AI agent yaratish biznes uchun — Toshkent",
     description:
-      "AI agentlar — javob beribgina qolmay, ishni o'zi bajaradigan raqamli xodimlar: savdo agenti (lid → CRM → follow-up), buyurtma, hisobot va HR agentlari. Telegram/CRM/1C/POS integratsiyasi, o'zbek va rus tilida. Tezcode — IT Park rezidenti, Toshkent. Bepul konsultatsiya.",
+      "AI agentlar $400 dan — javob beribgina qolmay, ishni o'zi bajaradigan raqamli xodimlar: savdo agenti (lid → CRM → follow-up), buyurtma, hisobot va HR agentlari. Telegram/CRM/1C/POS integratsiyasi, o'zbek va rus tilida. Tezcode — IT Park rezidenti, Toshkent. Bepul konsultatsiya.",
     ogTitle: "AI agent yaratish biznes uchun — Tezcode, Toshkent",
     ogDescription:
       "Ishni o'zi bajaradigan AI agentlar: savdo, buyurtma, hisobot, HR. Telegram/CRM/1C/POS integratsiyasi, uz/ru. Bepul konsultatsiya.",
@@ -30,7 +30,7 @@ const META: Record<
   ru: {
     title: "Создание AI-агента для бизнеса — Ташкент",
     description:
-      "AI-агенты — цифровые сотрудники, которые не просто отвечают, а сами выполняют работу: агент продаж (лид → CRM → follow-up), заказы, отчёты, HR. Интеграция Telegram/CRM/1C/POS, на узбекском и русском. Tezcode — резидент IT Park, Ташкент. Бесплатная консультация.",
+      "AI-агенты от $400 — цифровые сотрудники, которые не просто отвечают, а сами выполняют работу: агент продаж (лид → CRM → follow-up), заказы, отчёты, HR. Интеграция Telegram/CRM/1C/POS, на узбекском и русском. Tezcode — резидент IT Park, Ташкент. Бесплатная консультация.",
     ogTitle: "Создание AI-агента для бизнеса — Tezcode, Ташкент",
     ogDescription:
       "AI-агенты, которые сами выполняют работу: продажи, заказы, отчёты, HR. Интеграция Telegram/CRM/1C/POS, uz/ru. Бесплатная консультация.",
@@ -38,7 +38,7 @@ const META: Record<
   en: {
     title: "AI Agent Development for Business — Tashkent",
     description:
-      "AI agents — digital employees that don't just reply but do the work themselves: sales agent (lead → CRM → follow-up), orders, reporting, HR. Telegram/CRM/1C/POS integration, in Uzbek and Russian. Tezcode — IT Park resident, Tashkent. Free consultation.",
+      "AI agents from $400 — digital employees that don't just reply but do the work themselves: sales agent (lead → CRM → follow-up), orders, reporting, HR. Telegram/CRM/1C/POS integration, in Uzbek and Russian. Tezcode — IT Park resident, Tashkent. Free consultation.",
     ogTitle: "AI Agent Development for Business — Tezcode, Tashkent",
     ogDescription:
       "AI agents that do the work themselves: sales, orders, reporting, HR. Telegram/CRM/1C/POS integration, uz/ru. Free consultation.",
@@ -46,7 +46,7 @@ const META: Record<
   ar: {
     title: "تطوير وكيل ذكاء اصطناعي للأعمال — طشقند",
     description:
-      "وكلاء الذكاء الاصطناعي — موظفون رقميون لا يكتفون بالرد بل ينفّذون العمل بأنفسهم: وكيل مبيعات (عميل محتمل ← CRM ← متابعة)، طلبات، تقارير، موارد بشرية. تكامل Telegram/CRM/1C/POS، بالأوزبكية والروسية. Tezcode — عضو IT Park، طشقند. استشارة مجانية.",
+      "وكلاء الذكاء الاصطناعي من $400 — موظفون رقميون لا يكتفون بالرد بل ينفّذون العمل بأنفسهم: وكيل مبيعات (عميل محتمل ← CRM ← متابعة)، طلبات، تقارير، موارد بشرية. تكامل Telegram/CRM/1C/POS، بالأوزبكية والروسية. Tezcode — عضو IT Park، طشقند. استشارة مجانية.",
     ogTitle: "تطوير وكيل ذكاء اصطناعي للأعمال — Tezcode، طشقند",
     ogDescription:
       "وكلاء ذكاء اصطناعي ينفّذون العمل بأنفسهم: مبيعات، طلبات، تقارير، موارد بشرية. تكامل Telegram/CRM/1C/POS. استشارة مجانية.",
@@ -54,7 +54,7 @@ const META: Record<
   uk: {
     title: "Створення AI-агента для бізнесу — Ташкент",
     description:
-      "AI-агенти — цифрові співробітники, які не просто відповідають, а самі виконують роботу: агент продажів (лід → CRM → follow-up), замовлення, звіти, HR. Інтеграція Telegram/CRM/1C/POS, узбецькою та російською. Tezcode — резидент IT Park, Ташкент. Безкоштовна консультація.",
+      "AI-агенти від $400 — цифрові співробітники, які не просто відповідають, а самі виконують роботу: агент продажів (лід → CRM → follow-up), замовлення, звіти, HR. Інтеграція Telegram/CRM/1C/POS, узбецькою та російською. Tezcode — резидент IT Park, Ташкент. Безкоштовна консультація.",
     ogTitle: "Створення AI-агента для бізнесу — Tezcode, Ташкент",
     ogDescription:
       "AI-агенти, які самі виконують роботу: продажі, замовлення, звіти, HR. Інтеграція Telegram/CRM/1C/POS, uz/ru. Безкоштовна консультація.",

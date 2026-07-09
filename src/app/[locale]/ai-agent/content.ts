@@ -170,7 +170,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "Narxi qancha turadi?",
-          a: "Narx vazifa murakkabligi, integratsiyalar soni va kanallariga bog'liq — oddiy savol-javob agenti bilan ko'p tizimga ulanadigan, qaror qabul qiladigan agent narxi boshqa-boshqa. Aniq raqamni bepul konsultatsiyadan keyin yozma taklifda beramiz. To'lov 30% oldindan, qolgani loyiha bosqichlari bo'yicha.",
+          a: "AI agent $400 dan boshlanadi. Aniq narx vazifa murakkabligi, integratsiyalar soni va kanallariga bog'liq — oddiy savol-javob agenti bilan ko'p tizimga ulanadigan, qaror qabul qiladigan agent narxi boshqa-boshqa. Aniq summani bepul konsultatsiyadan keyin yozma taklifda beramiz. To'lov 30% oldindan, qolgani loyiha bosqichlari bo'yicha.",
         },
         {
           q: "Qancha vaqtda tayyor bo'ladi?",
@@ -218,7 +218,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "AI agent buyurtma qilsam narxi qancha, qancha vaqtda tayyor bo'ladi?",
-          a: "Narx integratsiyalar soni va stsenariy murakkabligiga bog'liq — shuning uchun oldindan bitta raqam aytmaymiz, aniq summani bepul konsultatsiyadan keyin yozma taklifda beramiz. Muddat: ishlaydigan MVP odatda bir necha haftada tayyor bo'ladi (oddiy agent — 1-2 hafta, murakkabrog'i — 2-4 hafta). To'lov 30% oldindan, qolgani loyiha bosqichlari bo'yicha.",
+          a: "AI agent $400 dan boshlanadi. Aniq summa integratsiyalar soni va stsenariy murakkabligiga bog'liq — uni bepul konsultatsiyadan keyin yozma taklifda beramiz. Muddat: ishlaydigan MVP odatda bir necha haftada tayyor bo'ladi (oddiy agent — 1-2 hafta, murakkabrog'i — 2-4 hafta). To'lov 30% oldindan, qolgani loyiha bosqichlari bo'yicha.",
         },
       ],
     },
@@ -478,7 +478,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "Сколько это стоит?",
-          a: "Цена зависит от сложности задачи, количества интеграций и каналов — простой агент вопрос-ответ и агент, подключённый к нескольким системам и принимающий решения, стоят по-разному. Точную цифру даём в письменном предложении после бесплатной консультации. Оплата — 30% предоплата, остальное по этапам проекта.",
+          a: "AI-агент от $400. Точная цена зависит от сложности задачи, количества интеграций и каналов — простой агент вопрос-ответ и агент, подключённый к нескольким системам и принимающий решения, стоят по-разному. Точную сумму даём в письменном предложении после бесплатной консультации. Оплата — 30% предоплата, остальное по этапам проекта.",
         },
         {
           q: "За какое время будет готов?",
@@ -526,7 +526,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "Сколько стоит AI-агент и как быстро он будет готов?",
-          a: "Цена зависит от количества интеграций и сложности сценария, поэтому одну цифру заранее не называем — точную сумму даём в письменном предложении после бесплатной консультации. По срокам: рабочий MVP обычно готов за несколько недель (простой агент — 1-2 недели, посложнее — 2-4 недели). Оплата — 30% предоплата, остальное по этапам проекта.",
+          a: "AI-агент от $400. Точная сумма зависит от количества интеграций и сложности сценария — её даём в письменном предложении после бесплатной консультации. По срокам: рабочий MVP обычно готов за несколько недель (простой агент — 1-2 недели, посложнее — 2-4 недели). Оплата — 30% предоплата, остальное по этапам проекта.",
         },
       ],
     },
@@ -786,7 +786,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "How much does it cost?",
-          a: "The price depends on task complexity, number of integrations and channels — a simple Q&A agent and a decision-making agent connected to several systems cost very differently. We give the exact figure in a written proposal after the free consultation. Payment: 30% upfront, the rest per project stage.",
+          a: "An AI agent starts from $400. The exact price depends on task complexity, number of integrations and channels — a simple Q&A agent and a decision-making agent connected to several systems cost very differently. We give the exact figure in a written proposal after the free consultation. Payment: 30% upfront, the rest per project stage.",
         },
         {
           q: "How long until it's ready?",
@@ -834,7 +834,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "If I order an AI agent, how much does it cost and how fast is it ready?",
-          a: "The price depends on the number of integrations and scenario complexity, so we don't quote a single figure upfront — you get the exact sum in a written proposal after the free consultation. Timeline: a working MVP is typically ready in a few weeks (a simple agent in 1-2 weeks, a more complex one in 2-4). Payment is 30% upfront, the rest per project stage.",
+          a: "An AI agent starts from $400. The exact sum depends on the number of integrations and scenario complexity — you get it in a written proposal after the free consultation. Timeline: a working MVP is typically ready in a few weeks (a simple agent in 1-2 weeks, a more complex one in 2-4). Payment is 30% upfront, the rest per project stage.",
         },
       ],
     },
@@ -1094,7 +1094,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "كم التكلفة؟",
-          a: "يعتمد السعر على تعقيد المهمة وعدد التكاملات والقنوات — وكيل سؤال-جواب بسيط ووكيل يتخذ القرارات ومتصل بعدة أنظمة يختلفان في السعر كثيراً. نعطي الرقم الدقيق في عرض مكتوب بعد الاستشارة المجانية. الدفع: 30% مقدماً والباقي حسب مراحل المشروع.",
+          a: "يبدأ وكيل الذكاء الاصطناعي من $400. يعتمد السعر الدقيق على تعقيد المهمة وعدد التكاملات والقنوات — وكيل سؤال-جواب بسيط ووكيل يتخذ القرارات ومتصل بعدة أنظمة يختلفان في السعر كثيراً. نعطي الرقم الدقيق في عرض مكتوب بعد الاستشارة المجانية. الدفع: 30% مقدماً والباقي حسب مراحل المشروع.",
         },
         {
           q: "كم يستغرق حتى يجهز؟",
@@ -1142,7 +1142,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "إذا طلبت وكيل ذكاء اصطناعي — كم التكلفة ومتى يجهز؟",
-          a: "يعتمد السعر على عدد التكاملات وتعقيد السيناريو، لذلك لا نعطي رقماً واحداً مسبقاً — تحصل على المبلغ الدقيق في عرض مكتوب بعد الاستشارة المجانية. المدة: MVP عامل يجهز عادةً خلال بضعة أسابيع (وكيل بسيط في 1-2 أسبوع، والأكثر تعقيداً في 2-4 أسابيع). الدفع 30% مقدماً والباقي حسب مراحل المشروع.",
+          a: "يبدأ وكيل الذكاء الاصطناعي من $400. يعتمد المبلغ الدقيق على عدد التكاملات وتعقيد السيناريو — نعطيه في عرض مكتوب بعد الاستشارة المجانية. المدة: MVP عامل يجهز عادةً خلال بضعة أسابيع (وكيل بسيط في 1-2 أسبوع، والأكثر تعقيداً في 2-4 أسابيع). الدفع 30% مقدماً والباقي حسب مراحل المشروع.",
         },
       ],
     },
@@ -1402,7 +1402,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "Скільки це коштує?",
-          a: "Ціна залежить від складності завдання, кількості інтеграцій і каналів — простий агент запитання-відповідь і агент, підключений до кількох систем та здатний ухвалювати рішення, коштують по-різному. Точну цифру даємо в письмовій пропозиції після безкоштовної консультації. Оплата — 30% передоплата, решта за етапами проєкту.",
+          a: "AI-агент від $400. Точна ціна залежить від складності завдання, кількості інтеграцій і каналів — простий агент запитання-відповідь і агент, підключений до кількох систем та здатний ухвалювати рішення, коштують по-різному. Точну суму даємо в письмовій пропозиції після безкоштовної консультації. Оплата — 30% передоплата, решта за етапами проєкту.",
         },
         {
           q: "За який час буде готовий?",
@@ -1450,7 +1450,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "Скільки коштує AI-агент і як швидко він буде готовий?",
-          a: "Ціна залежить від кількості інтеграцій і складності сценарію, тому одну цифру заздалегідь не називаємо — точну суму даємо в письмовій пропозиції після безкоштовної консультації. Щодо термінів: робочий MVP зазвичай готовий за кілька тижнів (простий агент — 1-2 тижні, складніший — 2-4 тижні). Оплата — 30% передоплата, решта за етапами проєкту.",
+          a: "AI-агент від $400. Точна сума залежить від кількості інтеграцій і складності сценарію — її даємо в письмовій пропозиції після безкоштовної консультації. Щодо термінів: робочий MVP зазвичай готовий за кілька тижнів (простий агент — 1-2 тижні, складніший — 2-4 тижні). Оплата — 30% передоплата, решта за етапами проєкту.",
         },
       ],
     },

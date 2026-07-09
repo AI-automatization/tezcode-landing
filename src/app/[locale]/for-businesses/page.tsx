@@ -318,12 +318,12 @@ const COPY: Record<Lang, Copy> = {
     },
     trust: {
       badge: "Ishonch belgilari",
-      title: "5 yil tajriba,",
+      title: "2 yil tajriba,",
       titleAccent: "150+ loyiha",
       stats: [
         { value: "14", label: "In-house dasturchi" },
         { value: "150+", label: "Ishlangan loyiha" },
-        { value: "5", label: "Yillik tajriba" },
+        { value: "2", label: "Yillik tajriba" },
         { value: "8", label: "O'z mahsulotimiz" },
       ],
       partnersLabel: "Mijozlar va hamkorlar",
@@ -572,12 +572,12 @@ const COPY: Record<Lang, Copy> = {
     },
     trust: {
       badge: "Знаки доверия",
-      title: "5 лет опыта,",
+      title: "2 года опыта,",
       titleAccent: "150+ проектов",
       stats: [
         { value: "14", label: "In-house разработчиков" },
         { value: "150+", label: "Сделано проектов" },
-        { value: "5", label: "Лет опыта" },
+        { value: "2", label: "Года опыта" },
         { value: "8", label: "Своих продуктов" },
       ],
       partnersLabel: "Клиенты и партнёры",
@@ -824,12 +824,12 @@ const COPY: Record<Lang, Copy> = {
     },
     trust: {
       badge: "Trust signals",
-      title: "5 years experience,",
+      title: "2 years experience,",
       titleAccent: "150+ projects",
       stats: [
         { value: "14", label: "In-house developers" },
         { value: "150+", label: "Projects delivered" },
-        { value: "5", label: "Years of experience" },
+        { value: "2", label: "Years of experience" },
         { value: "8", label: "Own products" },
       ],
       partnersLabel: "Clients and partners",
@@ -1074,12 +1074,12 @@ const COPY: Record<Lang, Copy> = {
     },
     trust: {
       badge: "إشارات الثقة",
-      title: "5 سنوات خبرة،",
+      title: "سنتان من الخبرة،",
       titleAccent: "150+ مشروع",
       stats: [
         { value: "14", label: "مطور داخلي" },
         { value: "150+", label: "مشروع مسلم" },
-        { value: "5", label: "سنوات خبرة" },
+        { value: "2", label: "سنة خبرة" },
         { value: "8", label: "منتج خاص" },
       ],
       partnersLabel: "العملاء والشركاء",
@@ -1324,12 +1324,12 @@ const COPY: Record<Lang, Copy> = {
     },
     trust: {
       badge: "Знаки довіри",
-      title: "5 років досвіду,",
+      title: "2 роки досвіду,",
       titleAccent: "150+ проектів",
       stats: [
         { value: "14", label: "In-house розробників" },
         { value: "150+", label: "Зроблено проектів" },
-        { value: "5", label: "Років досвіду" },
+        { value: "2", label: "роки досвіду" },
         { value: "8", label: "Власних продуктів" },
       ],
       partnersLabel: "Клієнти та партнери",

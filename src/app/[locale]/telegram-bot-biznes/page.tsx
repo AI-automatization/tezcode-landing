@@ -23,7 +23,7 @@ const META: Record<
   uz: {
     title: "Telegram bot biznes uchun — Toshkent: buyurtma, to'lov",
     description:
-      "Biznes uchun Telegram bot yaratish Toshkentda: buyurtma qabul qilish, Click/Payme to'lov, qo'llab-quvvatlash, eslatma, Telegram do'kon (Mini App), CRM integratsiyasi. Tezcode — IT Park rezidenti. Bepul konsultatsiya, to'lov 30% oldindan.",
+      "Biznes uchun Telegram bot yaratish Toshkentda $279 dan: buyurtma qabul qilish, Click/Payme to'lov, qo'llab-quvvatlash, eslatma, Telegram do'kon (Mini App), CRM integratsiyasi. Tezcode — IT Park rezidenti. Bepul konsultatsiya, to'lov 30% oldindan.",
     ogTitle: "Telegram bot biznes uchun — Toshkent | Tezcode",
     ogDescription:
       "Buyurtma, Click/Payme to'lov, eslatma, Telegram do'kon (Mini App), CRM integratsiyasi va AI qatlami — biznesingizga moslab. Bepul konsultatsiya.",
@@ -31,7 +31,7 @@ const META: Record<
   ru: {
     title: "Телеграм бот для бизнеса — Ташкент: заказы, оплата",
     description:
-      "Создание Telegram-бота для бизнеса в Ташкенте: приём заказов, оплата Click/Payme, поддержка, уведомления, Telegram-магазин (Mini App), интеграция с CRM. Tezcode — резидент IT Park. Бесплатная консультация, оплата 30% предоплата.",
+      "Создание Telegram-бота для бизнеса в Ташкенте от $279: приём заказов, оплата Click/Payme, поддержка, уведомления, Telegram-магазин (Mini App), интеграция с CRM. Tezcode — резидент IT Park. Бесплатная консультация, оплата 30% предоплата.",
     ogTitle: "Телеграм бот для бизнеса — Ташкент | Tezcode",
     ogDescription:
       "Заказы, оплата Click/Payme, уведомления, Telegram-магазин (Mini App), интеграция с CRM и AI-слой — под ваш бизнес. Бесплатная консультация.",
@@ -39,7 +39,7 @@ const META: Record<
   en: {
     title: "Telegram bot development for business — Uzbekistan",
     description:
-      "Telegram bot development for business in Tashkent, Uzbekistan: order taking, Click/Payme payments, support, notifications, a Telegram store (Mini App), CRM integration. Tezcode — IT Park resident. Free consultation, 30% upfront payment.",
+      "Telegram bot development for business in Tashkent, Uzbekistan from $279: order taking, Click/Payme payments, support, notifications, a Telegram store (Mini App), CRM integration. Tezcode — IT Park resident. Free consultation, 30% upfront payment.",
     ogTitle: "Telegram bot for business — Tashkent | Tezcode",
     ogDescription:
       "Orders, Click/Payme payments, notifications, a Telegram store (Mini App), CRM integration and an AI layer — built around your business. Free consultation.",
@@ -47,7 +47,7 @@ const META: Record<
   ar: {
     title: "بوت تيليجرام للأعمال — طشقند: الطلبات والدفع",
     description:
-      "تطوير بوت تيليجرام للأعمال في طشقند: استقبال الطلبات، دفع Click/Payme، الدعم، الإشعارات، متجر تيليجرام (Mini App)، تكامل CRM. Tezcode — مقيم IT Park. استشارة مجانية، الدفع 30% مقدمًا.",
+      "تطوير بوت تيليجرام للأعمال في طشقند من $279: استقبال الطلبات، دفع Click/Payme، الدعم، الإشعارات، متجر تيليجرام (Mini App)، تكامل CRM. Tezcode — مقيم IT Park. استشارة مجانية، الدفع 30% مقدمًا.",
     ogTitle: "بوت تيليجرام للأعمال — طشقند | Tezcode",
     ogDescription:
       "الطلبات، دفع Click/Payme، الإشعارات، متجر تيليجرام (Mini App)، تكامل CRM وطبقة AI — حسب عملك. استشارة مجانية.",
@@ -55,7 +55,7 @@ const META: Record<
   uk: {
     title: "Telegram-бот для бізнесу — Ташкент: замовлення, оплата",
     description:
-      "Створення Telegram-бота для бізнесу в Ташкенті: прийом замовлень, оплата Click/Payme, підтримка, сповіщення, Telegram-магазин (Mini App), інтеграція з CRM. Tezcode — резидент IT Park. Безкоштовна консультація, оплата 30% передоплата.",
+      "Створення Telegram-бота для бізнесу в Ташкенті від $279: прийом замовлень, оплата Click/Payme, підтримка, сповіщення, Telegram-магазин (Mini App), інтеграція з CRM. Tezcode — резидент IT Park. Безкоштовна консультація, оплата 30% передоплата.",
     ogTitle: "Telegram-бот для бізнесу — Ташкент | Tezcode",
     ogDescription:
       "Замовлення, оплата Click/Payme, сповіщення, Telegram-магазин (Mini App), інтеграція з CRM та AI-шар — під ваш бізнес. Безкоштовна консультація.",
