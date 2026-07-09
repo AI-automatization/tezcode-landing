@@ -771,7 +771,7 @@ function HeroStats({ t }: { t: ReturnType<typeof useTranslations<"hero">> }) {
     { value: 50, suffix: "+", label: t("stat_clients") },
     { value: 8, suffix: "", label: t("stat_products") },
     { value: 150, suffix: "+", label: t("stat_projects") },
-    { value: 5, suffix: "", label: t("stat_years") },
+    { value: 2, suffix: "", label: t("stat_years") },
   ];
 
   return (

@@ -22,7 +22,7 @@ const META: Record<
   uz: {
     title: "AI chatbot biznes uchun — Toshkent",
     description:
-      "Biznes uchun AI chatbot Toshkentda: Telegram, Instagram, WhatsApp va veb-saytda 24/7 mijoz xizmati, buyurtma qabul qilish, CRM/1C integratsiyasi, o'zbek va rus tillari. IT Park rezidenti Tezcode. Bepul konsultatsiya, to'lov 30% oldindan.",
+      "Biznes uchun AI chatbot Toshkentda $339 dan: Telegram, Instagram, WhatsApp va veb-saytda 24/7 mijoz xizmati, buyurtma qabul qilish, CRM/1C integratsiyasi, o'zbek va rus tillari. IT Park rezidenti Tezcode. Bepul konsultatsiya, to'lov 30% oldindan.",
     ogTitle: "AI chatbot biznes uchun — Toshkent | Tezcode",
     ogDescription:
       "24/7 mijoz xizmati, buyurtma qabul, lid saralash, CRM/1C integratsiyasi — Telegram, Instagram, WhatsApp va veb-saytda. O'zbek va rus tillarida. Bepul konsultatsiya.",
@@ -30,7 +30,7 @@ const META: Record<
   ru: {
     title: "AI чат-бот для бизнеса — Ташкент",
     description:
-      "AI чат-бот для бизнеса в Ташкенте: поддержка клиентов 24/7 в Telegram, Instagram, WhatsApp и на сайте, приём заказов, интеграция с CRM/1C, узбекский и русский языки. Tezcode — резидент IT Park. Бесплатная консультация, оплата 30% предоплата.",
+      "AI чат-бот для бизнеса в Ташкенте от $339: поддержка клиентов 24/7 в Telegram, Instagram, WhatsApp и на сайте, приём заказов, интеграция с CRM/1C, узбекский и русский языки. Tezcode — резидент IT Park. Бесплатная консультация, оплата 30% предоплата.",
     ogTitle: "AI чат-бот для бизнеса — Ташкент | Tezcode",
     ogDescription:
       "Поддержка 24/7, приём заказов, квалификация лидов, интеграция с CRM/1C — Telegram, Instagram, WhatsApp и сайт. На узбекском и русском. Бесплатная консультация.",
@@ -38,7 +38,7 @@ const META: Record<
   en: {
     title: "AI chatbot for business — Tashkent",
     description:
-      "AI chatbot for business in Tashkent: 24/7 customer support on Telegram, Instagram, WhatsApp and websites, order taking, CRM/1C integration, Uzbek and Russian languages. Tezcode — IT Park resident. Free consultation, 30% upfront payment.",
+      "AI chatbot for business in Tashkent from $339: 24/7 customer support on Telegram, Instagram, WhatsApp and websites, order taking, CRM/1C integration, Uzbek and Russian languages. Tezcode — IT Park resident. Free consultation, 30% upfront payment.",
     ogTitle: "AI chatbot for business — Tashkent | Tezcode",
     ogDescription:
       "24/7 support, order taking, lead qualification, CRM/1C integration — on Telegram, Instagram, WhatsApp and your website. In Uzbek and Russian. Free consultation.",
@@ -46,7 +46,7 @@ const META: Record<
   ar: {
     title: "شات بوت AI للأعمال — طشقند",
     description:
-      "شات بوت AI للأعمال في طشقند: دعم عملاء 24/7 على Telegram وInstagram وWhatsApp والمواقع، استقبال الطلبات، تكامل CRM/1C، الأوزبكية والروسية. Tezcode — مقيم IT Park. استشارة مجانية، الدفع 30% مقدمًا.",
+      "شات بوت AI للأعمال في طشقند من $339: دعم عملاء 24/7 على Telegram وInstagram وWhatsApp والمواقع، استقبال الطلبات، تكامل CRM/1C، الأوزبكية والروسية. Tezcode — مقيم IT Park. استشارة مجانية، الدفع 30% مقدمًا.",
     ogTitle: "شات بوت AI للأعمال — طشقند | Tezcode",
     ogDescription:
       "دعم 24/7، استقبال الطلبات، تصنيف العملاء، تكامل CRM/1C — على Telegram وInstagram وWhatsApp والموقع. بالأوزبكية والروسية. استشارة مجانية.",
@@ -54,7 +54,7 @@ const META: Record<
   uk: {
     title: "AI чат-бот для бізнесу — Ташкент",
     description:
-      "AI чат-бот для бізнесу в Ташкенті: підтримка клієнтів 24/7 у Telegram, Instagram, WhatsApp і на сайті, прийом замовлень, інтеграція з CRM/1C, узбецька та російська мови. Tezcode — резидент IT Park. Безкоштовна консультація, оплата 30% передоплата.",
+      "AI чат-бот для бізнесу в Ташкенті від $339: підтримка клієнтів 24/7 у Telegram, Instagram, WhatsApp і на сайті, прийом замовлень, інтеграція з CRM/1C, узбецька та російська мови. Tezcode — резидент IT Park. Безкоштовна консультація, оплата 30% передоплата.",
     ogTitle: "AI чат-бот для бізнесу — Ташкент | Tezcode",
     ogDescription:
       "Підтримка 24/7, прийом замовлень, кваліфікація лідів, інтеграція з CRM/1C — Telegram, Instagram, WhatsApp і сайт. Узбецькою та російською. Безкоштовна консультація.",
