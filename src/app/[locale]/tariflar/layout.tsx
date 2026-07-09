@@ -1,4 +1,10 @@
-import { buildPageMetadata } from "@/lib/seo";
+import {
+  BASE_URL,
+  buildPageMetadata,
+  getBreadcrumbSchema,
+  getFaqSchema,
+} from "@/lib/seo";
+import { PRICING_FAQ, type FaqLang } from "@/content/faq";
 
 // Client page → SEO metadata lives in this server layout.
 export async function generateMetadata({
@@ -27,10 +33,35 @@ export async function generateMetadata({
   });
 }
 
-export default function TariflarLayout({
+// FAQPage + BreadcrumbList JSON-LD is emitted here (server) since the page
+// itself is a client component — a pricing page is the top AEO target
+// ("how much does X cost"), so the Q&A must be machine-readable in the SSR HTML.
+export default async function TariflarLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
-  return children;
+  const { locale } = await params;
+  const faq = PRICING_FAQ[locale as FaqLang] ?? PRICING_FAQ.uz;
+  const faqSchema = getFaqSchema(faq.items);
+  const breadcrumb = getBreadcrumbSchema([
+    { name: "Tezcode", url: BASE_URL },
+    { name: "Tariflar", url: `${BASE_URL}/tariflar` },
+  ]);
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      {children}
+    </>
+  );
 }

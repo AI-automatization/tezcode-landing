@@ -1,7 +1,9 @@
 import { ServicePageClient } from "@/components/service-page/ServicePageClient";
 import type { ServiceLang } from "@/components/service-page/types";
 import {
+  BASE_URL,
   buildPageMetadata,
+  getBreadcrumbSchema,
   getFaqSchema,
   getHowToSchema,
   getServiceSchema,
@@ -61,6 +63,10 @@ export default async function AiAvtomatizatsiyaPage({
     path: PATH,
   });
   const faqSchema = getFaqSchema(copy.faq.items);
+  const breadcrumb = getBreadcrumbSchema([
+    { name: "Tezcode", url: BASE_URL },
+    { name: copy.service.name, url: `${BASE_URL}${PATH}` },
+  ]);
   const howToSchema = getHowToSchema({
     name: `${copy.process.title} ${copy.process.titleAccent}`.trim(),
     description: copy.process.subtitle,
@@ -78,6 +84,10 @@ export default async function AiAvtomatizatsiyaPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
       <script
         type="application/ld+json"

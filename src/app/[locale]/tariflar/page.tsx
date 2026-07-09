@@ -6,6 +6,8 @@ import { Footer } from "@/components/Footer";
 import { PricingTiers } from "@/components/PricingTiers";
 import { Reveal } from "@/components/motion/Reveal";
 import { Magnetic } from "@/components/motion/Magnetic";
+import { FaqAccordion } from "@/components/FaqAccordion";
+import { PRICING_FAQ, type FaqLang } from "@/content/faq";
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
 
@@ -86,6 +88,7 @@ const COPY: Record<Lang, Copy> = {
 export default function TariflarPage() {
   const locale = useLocale() as Lang;
   const t = COPY[locale] ?? COPY.uz;
+  const pfaq = PRICING_FAQ[locale as FaqLang] ?? PRICING_FAQ.uz;
 
   return (
     <main
@@ -114,6 +117,15 @@ export default function TariflarPage() {
 
       {/* Reuse the homepage pricing tiers */}
       <PricingTiers />
+
+      {/* Pricing FAQ — visible Q&A mirroring the FAQPage JSON-LD in layout.tsx */}
+      <FaqAccordion
+        badge={pfaq.badge}
+        title={pfaq.title}
+        titleAccent={pfaq.titleAccent}
+        subtitle={pfaq.subtitle}
+        items={pfaq.items}
+      />
 
       {/* Final CTA */}
       <section className="tc-navy-section py-20 sm:py-28 px-6">

@@ -13,12 +13,27 @@ import { PricingTiers } from "@/components/PricingTiers";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
 import { CookieConsent } from "@/components/CookieConsent";
+import { FaqAccordion } from "@/components/FaqAccordion";
+import { HOME_FAQ, type FaqLang } from "@/content/faq";
+import { BASE_URL, getBreadcrumbSchema, getFaqSchema } from "@/lib/seo";
 
 // ─────────────────────────────────────────────────────────
 // Main Landing Page
 // Each section is a Server Component that reads translations
 // ─────────────────────────────────────────────────────────
-export default function HomePage() {
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const faq = HOME_FAQ[locale as FaqLang] ?? HOME_FAQ.uz;
+
+  // FAQPage + BreadcrumbList JSON-LD in the SSR HTML so answer engines
+  // (Google AI Overviews, ChatGPT, Perplexity) can lift the Q&A + hierarchy.
+  const faqSchema = getFaqSchema(faq.items);
+  const breadcrumb = getBreadcrumbSchema([{ name: "Tezcode", url: BASE_URL }]);
+
   return (
     <main
       data-theme="light"
@@ -62,6 +77,23 @@ export default function HomePage() {
 
       {/* Pricing Tiers */}
       <PricingTiers />
+
+      {/* FAQ — visible Q&A that mirrors the FAQPage JSON-LD below */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <FaqAccordion
+        badge={faq.badge}
+        title={faq.title}
+        titleAccent={faq.titleAccent}
+        subtitle={faq.subtitle}
+        items={faq.items}
+      />
 
       {/* Footer */}
       <Footer />
