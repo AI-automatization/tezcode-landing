@@ -128,9 +128,9 @@
       "name": "WeWatch",
       "tagline": "Совместный просмотр видео",
       "description": "Платформа для совместного онлайн-просмотра видео с друзьями.",
-      "status": "Soon",
+      "status": "Live",
       "division": "Labs",
-      "url": "#"
+      "url": "https://wewatch.uz"
     },
     "workcontrol": {
       "name": "WorkControl",
@@ -158,9 +158,9 @@
     },
     "savdo_builder": {
       "name": "MaxSavdo",
-      "tagline": "No-code конструктор",
-      "description": "Конструктор для создания торговых приложений (no-code).",
-      "status": "Soon",
+      "tagline": "Магазин в Telegram",
+      "description": "Превратите Instagram в магазин в Telegram — с корзиной и заказами, без комиссии.",
+      "status": "Beta",
       "division": "Labs",
       "url": "https://maxsavdo.uz"
     },

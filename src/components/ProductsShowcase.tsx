@@ -40,6 +40,8 @@ const LANDING_MAP: Partial<Record<ProductKey, string>> = {
   raos: "/pos-tizimi",
   hamshirago: "/klinika-crm",
   workcontrol: "/xodim-nazorati",
+  wewatch: "/wewatch",
+  savdo_builder: "/maxsavdo",
 };
 
 // Picks an internal Link (locale-aware) for products with a landing page,

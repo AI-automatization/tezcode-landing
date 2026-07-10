@@ -157,9 +157,9 @@
       "name": "WeWatch",
       "tagline": "Video birga ko'rish",
       "description": "Do'stlar bilan online video birga ko'rish platformasi.",
-      "status": "Soon",
+      "status": "Live",
       "division": "Labs",
-      "url": "#"
+      "url": "https://wewatch.uz"
     },
     "workcontrol": {
       "name": "WorkControl",
@@ -187,9 +187,9 @@
     },
     "savdo_builder": {
       "name": "MaxSavdo",
-      "tagline": "No-code builder",
-      "description": "Mijozga savdo dastur yaratish builder (no-code).",
-      "status": "Soon",
+      "tagline": "Telegram'da do'kon",
+      "description": "Instagram'ni komissiyasiz Telegram do'koniga aylantiring — savat va buyurtma bilan.",
+      "status": "Beta",
       "division": "Labs",
       "url": "https://maxsavdo.uz"
     },
