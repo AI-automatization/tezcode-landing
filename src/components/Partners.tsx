@@ -310,8 +310,9 @@ function ItParkCard({
             src="/it-park-guvohnoma.jpg"
             alt='IT Park Uzbekistan rezidentlik guvohnomasi — "TEZ KOD" MCHJ, №6237'
             fill
+            draggable={false}
             sizes="(max-width: 768px) 100vw, 420px"
-            className="object-cover object-top"
+            className="object-cover object-top select-none pointer-events-none [-webkit-user-drag:none]"
           />
         </div>
         <span className="absolute end-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-[var(--tc-border)] bg-[var(--tc-surface-1)]/90 px-3 py-1 text-[11px] font-500 text-[var(--tc-text-primary)] backdrop-blur">
@@ -384,8 +385,9 @@ function PartnerCard({
               src={partner.logoUrl}
               alt={`${partner.name} — tezcode`}
               fill
+              draggable={false}
               sizes="(max-width: 768px) 100vw, 384px"
-              className="object-cover object-top"
+              className="object-cover object-top select-none pointer-events-none [-webkit-user-drag:none]"
             />
             <div
               className="pointer-events-none absolute inset-0"
@@ -400,8 +402,9 @@ function PartnerCard({
             src={partner.logoUrl}
             alt={`${partner.name} — tezcode`}
             fill
+            draggable={false}
             sizes="(max-width: 768px) 100vw, 384px"
-            className="object-cover"
+            className="object-cover select-none pointer-events-none [-webkit-user-drag:none]"
           />
         )}
 
