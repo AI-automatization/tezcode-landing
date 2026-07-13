@@ -64,11 +64,21 @@ const SECTIONS: { title: string; body: string[] }[] = [
     title: "6. To'lovlar",
     body: [
       "Pricing sahifasidagi narxlar AQSh dollarida (USD), to'lov soatida valyuta kursi bo'yicha so'mga aylantiriladi. Korxonalar uchun USD invoice mavjud.",
-      "Pul qaytarish: 14 kun ichida sababsiz qaytaramiz.",
+      "To'lov usullari: Payme, Click va Uzum Pay orqali — mobil ilova yoki bank kartasi (Uzcard, Humo, Visa, Mastercard) bilan.",
+      "Pul qaytarish: 14 kun ichida sababsiz qaytaramiz. Qaytarish so'rovi tezcode@tezcode.dev manziliga yuboriladi va to'lov qaysi usul orqali amalga oshirilgan bo'lsa, o'sha usul orqali 5 ish kuni ichida amalga oshiriladi.",
     ],
   },
   {
-    title: "7. Xizmat darajasi (SLA)",
+    title: "7. Xavfsizlik va firibgarlikka qarshi choralar",
+    body: [
+      "Barcha kartadan to'lovlar Payme, Click va Uzum Pay kabi litsenziyalangan to'lov tizimlari orqali amalga oshiriladi — Tezcode karta raqami, muddati yoki CVV kodini saqlamaydi va ko'rmaydi.",
+      "Shubhali yoki g'ayrioddiy operatsiyalarni oldini olish uchun bitta operatsiya, kunlik va oylik aylanma bo'yicha chegaralar qo'llaniladi, bu chegaralar to'lov tizimlari va bank hamkorlarimizning firibgarlikka qarshi (antifraud) tizimlari bilan kelishilgan holda belgilanadi.",
+      "Shubha tug'diruvchi to'lov aniqlansa, to'lov tizimi yoki bank operatsiyani vaqtincha to'xtatishi va foydalanuvchidan qo'shimcha tasdiqlash so'rashi mumkin — bu holatda Tezcode mustaqil ravishda operatsiyani bekor qilmaydi yoki majburlamaydi.",
+      "Firibgarlik yuz berganiga shubha bo'lsa yoki ruxsatsiz operatsiya sodir bo'lsa, foydalanuvchi darhol tezcode@tezcode.dev manziliga yoki Telegram @tezcode_managament orqali murojaat qilishi so'raladi.",
+    ],
+  },
+  {
+    title: "8. Xizmat darajasi (SLA)",
     body: [
       "Tezcode Pro va Enterprise reja uchun:",
       "• Pro: 99.5% uptime",
@@ -77,35 +87,35 @@ const SECTIONS: { title: string; body: string[] }[] = [
     ],
   },
   {
-    title: "8. Javobgarlik chegarasi",
+    title: "9. Javobgarlik chegarasi",
     body: [
       "Tezcode har xil yo'qotishlardan javobgar emas — bilvosita, tasodifiy, jazo yoki yo'qotilgan foyda uchun. Maksimal javobgarlik — oxirgi 12 oy uchun to'langan summa.",
     ],
   },
   {
-    title: "9. Bekor qilish",
+    title: "10. Bekor qilish",
     body: [
       "Foydalanuvchi istalgan vaqtda obunani bekor qilishi mumkin. Tezcode qoidalarni jiddiy buzganlik uchun hisobni bekor qilish huquqini saqlab qoladi.",
     ],
   },
   {
-    title: "10. O'zgartirishlar",
+    title: "11. O'zgartirishlar",
     body: [
       "Shartlar yangilanishi mumkin. Sezilarli o'zgarishlar 30 kun oldin e'lon qilinadi.",
     ],
   },
   {
-    title: "11. Qo'llaniluvchi qonun",
+    title: "12. Qo'llaniluvchi qonun",
     body: [
       "O'zbekiston Respublikasi qonunchiligi.",
       "Nizolar Toshkent shahar iqtisodiy sudida ko'rib chiqiladi.",
     ],
   },
   {
-    title: "12. Aloqa",
+    title: "13. Aloqa",
     body: [
       "Savollar: tezcode@tezcode.dev · Telegram: @tezcode_managament",
-      "Oxirgi yangilanish: 2026-05-14",
+      "Oxirgi yangilanish: 2026-07-13",
     ],
   },
 ];
@@ -121,7 +131,7 @@ export default function TermsPage() {
         <div className="max-w-3xl mx-auto px-6">
           <div className="mb-12">
             <div className="text-xs text-[var(--tc-text-muted)] uppercase tracking-[0.2em] mb-3">
-              Legal · v1.0 — 2026-05-14
+              Legal · v1.1 — 2026-07-13
             </div>
             <h1
               className="text-4xl md:text-5xl font-700 mb-4 tracking-tight text-[var(--tc-text-primary)]"
