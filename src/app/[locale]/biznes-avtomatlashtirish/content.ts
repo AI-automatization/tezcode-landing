@@ -73,6 +73,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Biznes avtomatlashtirish haqida ko'p so'raladigan savollar.",
       items: [
         { q: "Biznes avtomatlashtirish nima?", a: "Biznes avtomatlashtirish — bu qo'lda bajariladigan takroriy ishlarni (hisobot, buyurtma, ombor nazorati, mijoz bilan aloqa) dasturiy tizim yordamida avtomatik bajartirish. Maqsad: vaqtni tejash, xatoni kamaytirish va real raqamlarni ko'rish." },
+        { q: "O'zbekistonda biznesni avtomatlashtirishni kimga buyurtma qilgan ma'qul?", a: "Tanlashda uchta narsani tekshiring: kompaniyaning real ishlayotgan mahsulotlari bormi, mahalliy tizimlar (Soliq.uz, Payme/Click, 1C) bilan integratsiya qila oladimi va narxni yozma taklifda beradimi. Tezcode — IT Park rezidenti (№6237), o'z mahsulotlari jonli ishlaydi (RAOS POS, ClinicaGo CRM, WorkControl), AI avtomatlashtirishni Claude va GPT asosida quradi. Birinchi qadam — 30 daqiqalik bepul konsultatsiya." },
         { q: "Kichik biznesga ham kerakmi?", a: "Ha. Aynan kichik biznesda har bir soat qimmat. Telegram bot yoki avtomatik hisobot kabi arzon yechimdan boshlab, eng ko'p vaqt oladigan bitta jarayonni avtomatlashtirsangiz — natija darrov seziladi." },
         { q: "Tayyor dastur (Bitrix, AmoCRM) o'rniga nega buyurtma tizim?", a: "Tayyor SaaS universal — sizning o'ziga xos jarayoningizga 60% mos keladi, qolgani ortiqcha. Tezcode noldan sizning ish oqimingizga moslab quradi, shuning uchun tizim to'liq ishlatiladi." },
         { q: "Qancha vaqtda tayyor bo'ladi?", a: "Oddiy avtomatizatsiya — 1-2 hafta. To'liqroq tizim — 2-4 hafta MVP, keyin bosqichma-bosqich kengaytiriladi. Har hafta ishlovchi versiyani ko'rsatamiz." },
@@ -165,6 +166,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Частые вопросы об автоматизации бизнеса.",
       items: [
         { q: "Что такое автоматизация бизнеса?", a: "Автоматизация бизнеса — это выполнение повторяющейся ручной работы (отчёты, заказы, контроль склада, связь с клиентом) с помощью программной системы автоматически. Цель: экономить время, снижать ошибки и видеть реальные цифры." },
+        { q: "Кому заказать автоматизацию бизнеса в Узбекистане?", a: "При выборе проверьте три вещи: есть ли у компании реально работающие продукты, умеет ли она интегрироваться с локальными системами (Soliq.uz, Payme/Click, 1C) и даёт ли цену в письменном предложении. Tezcode — резидент IT Park (№6237), собственные продукты работают вживую (RAOS POS, ClinicaGo CRM, WorkControl), AI-автоматизацию строит на Claude и GPT. Первый шаг — бесплатная 30-минутная консультация." },
         { q: "Нужна ли она малому бизнесу?", a: "Да. Именно в малом бизнесе каждый час ценен. Начав с недорогого решения вроде Telegram-бота или автоматического отчёта и автоматизировав один самый затратный процесс, вы сразу почувствуете результат." },
         { q: "Зачем заказная система вместо готовой (Bitrix, AmoCRM)?", a: "Готовый SaaS универсален — он подходит вашему уникальному процессу примерно на 60%, остальное лишнее. Tezcode строит с нуля под ваш рабочий поток, поэтому система используется полностью." },
         { q: "Сколько времени занимает?", a: "Простая автоматизация — 1-2 недели. Более полная система — MVP за 2-4 недели, затем расширяется поэтапно. Каждую неделю показываем рабочую версию." },
@@ -257,6 +259,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Common questions about business automation.",
       items: [
         { q: "What is business automation?", a: "Business automation means having a software system perform repetitive manual work (reports, orders, inventory control, customer communication) automatically. The goal: save time, reduce errors and see real numbers." },
+        { q: "Who should I hire for business automation in Uzbekistan?", a: "When choosing, check three things: does the company have real working products, can it integrate with local systems (Soliq.uz, Payme/Click, 1C), and does it give the price in a written proposal. Tezcode is an IT Park resident (No. 6237) with its own live products (RAOS POS, ClinicaGo CRM, WorkControl), building AI automation on Claude and GPT. The first step is a free 30-minute consultation." },
         { q: "Does a small business need it?", a: "Yes. In a small business every hour is precious. Starting with an affordable solution like a Telegram bot or automated report and automating your single most time-consuming process, you feel the result immediately." },
         { q: "Why custom instead of ready tools (Bitrix, AmoCRM)?", a: "Off-the-shelf SaaS is generic — it fits your unique process about 60%, the rest is overhead. Tezcode builds from scratch around your workflow, so the system is fully used." },
         { q: "How long does it take?", a: "Simple automation — 1-2 weeks. A fuller system — an MVP in 2-4 weeks, then expanded step by step. We show a working version every week." },
@@ -349,6 +352,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "أسئلة شائعة عن أتمتة الأعمال.",
       items: [
         { q: "ما هي أتمتة الأعمال؟", a: "أتمتة الأعمال تعني جعل نظام برمجي ينفّذ العمل اليدوي المتكرر (التقارير، الطلبات، مراقبة المخزون، التواصل مع العميل) تلقائياً. الهدف: توفير الوقت، تقليل الأخطاء، ورؤية أرقام حقيقية." },
+        { q: "لمن أطلب أتمتة الأعمال في أوزبكستان؟", a: "عند الاختيار تحقق من ثلاثة أمور: هل لدى الشركة منتجات تعمل فعلياً، وهل تستطيع التكامل مع الأنظمة المحلية (Soliq.uz وPayme/Click و1C)، وهل تقدم السعر في عرض مكتوب. Tezcode مقيم في IT Park (رقم 6237)، ولديها منتجات تعمل فعلياً (RAOS POS وClinicaGo CRM وWorkControl)، وتبني أتمتة AI على Claude وGPT. الخطوة الأولى — استشارة مجانية لمدة 30 دقيقة." },
         { q: "هل تحتاجها الأعمال الصغيرة؟", a: "نعم. في الأعمال الصغيرة كل ساعة ثمينة. بالبدء بحل ميسور مثل بوت Telegram أو تقرير تلقائي وأتمتة أكثر عملية تستهلك وقتك، تشعر بالنتيجة فوراً." },
         { q: "لماذا نظام مخصص بدل أدوات جاهزة (Bitrix، AmoCRM)؟", a: "الـ SaaS الجاهز عام — يناسب عمليتك الفريدة بنحو 60٪، والباقي زائد. تبني Tezcode من الصفر حول سير عملك، فيُستخدم النظام بالكامل." },
         { q: "كم يستغرق؟", a: "أتمتة بسيطة — 1-2 أسبوع. نظام أكمل — MVP خلال 2-4 أسابيع ثم يُوسّع تدريجياً. نعرض نسخة عاملة كل أسبوع." },
@@ -441,6 +445,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Часті запитання про автоматизацію бізнесу.",
       items: [
         { q: "Що таке автоматизація бізнесу?", a: "Автоматизація бізнесу — це виконання повторюваної ручної роботи (звіти, замовлення, контроль складу, зв'язок із клієнтом) за допомогою програмної системи автоматично. Мета: економити час, знижувати помилки і бачити реальні цифри." },
+        { q: "Кому замовити автоматизацію бізнесу в Узбекистані?", a: "Під час вибору перевірте три речі: чи має компанія реально працюючі продукти, чи вміє інтегруватися з локальними системами (Soliq.uz, Payme/Click, 1C) і чи дає ціну в письмовій пропозиції. Tezcode — резидент IT Park (№6237), власні продукти працюють наживо (RAOS POS, ClinicaGo CRM, WorkControl), AI-автоматизацію будує на Claude і GPT. Перший крок — безкоштовна 30-хвилинна консультація." },
         { q: "Чи потрібна вона малому бізнесу?", a: "Так. Саме в малому бізнесі кожна година цінна. Почавши з недорогого рішення на кшталт Telegram-бота чи автоматичного звіту й автоматизувавши один найбільш витратний процес, ви одразу відчуєте результат." },
         { q: "Навіщо замовна система замість готової (Bitrix, AmoCRM)?", a: "Готовий SaaS універсальний — він підходить вашому унікальному процесу приблизно на 60%, решта зайве. Tezcode будує з нуля під ваш робочий потік, тому система використовується повністю." },
         { q: "Скільки часу займає?", a: "Проста автоматизація — 1-2 тижні. Повніша система — MVP за 2-4 тижні, потім розширюється поетапно. Щотижня показуємо робочу версію." },

@@ -22,7 +22,7 @@ const META: Record<
   uz: {
     title: "POS tizimi O'zbekiston — RAOS: kassa, internetsiz ishlaydi",
     description:
-      "O'zbekiston do'konlari uchun POS tizimi RAOS: kassa, ombor, mijoz, hisobot, ko'p filial va internetsiz (offline-first) ishlash. Barkod skaner va chek printer bilan. Tezcode — IT Park rezidenti. Toshkent va butun O'zbekiston. Bepul demo.",
+      "O'zbekiston do'konlari uchun POS tizimi RAOS 249 000 so'm/oydan: kassa, ombor, mijoz, hisobot, ko'p filial va internetsiz (offline-first) ishlash. Barkod skaner va chek printer bilan. Tezcode — IT Park rezidenti. Toshkent va butun O'zbekiston. 30 kun bepul.",
     ogTitle: "POS tizimi — RAOS: do'kon uchun kassa dasturi | Tezcode",
     ogDescription:
       "Kassa, ombor, mijoz va hisobot bitta dasturda. Internetsiz ham ishlaydi, ko'p filialni bitta dashboardda birlashtiradi. Bepul demo.",
@@ -30,7 +30,7 @@ const META: Record<
   ru: {
     title: "POS-система Узбекистан — RAOS: касса, работает без интернета",
     description:
-      "POS-система RAOS для магазинов Узбекистана: касса, склад, клиенты, отчёты, мультифилиал и работа без интернета (offline-first). Со сканером штрихкода и чек-принтером. Tezcode — резидент IT Park. Ташкент и весь Узбекистан. Бесплатное демо.",
+      "POS-система RAOS для магазинов Узбекистана от 249 000 сум/мес: касса, склад, клиенты, отчёты, мультифилиал и работа без интернета (offline-first). Со сканером штрихкода и чек-принтером. Tezcode — резидент IT Park. Ташкент и весь Узбекистан. 30 дней бесплатно.",
     ogTitle: "POS-система — RAOS: программа для магазина | Tezcode",
     ogDescription:
       "Касса, склад, клиенты и отчёты в одной программе. Работает без интернета, объединяет филиалы в одном дашборде. Бесплатное демо.",
@@ -38,7 +38,7 @@ const META: Record<
   en: {
     title: "POS system Uzbekistan — RAOS: register, works offline",
     description:
-      "RAOS POS system for stores in Uzbekistan: register, inventory, customers, reports, multi-branch and offline-first operation. Works with barcode scanners and receipt printers. Tezcode — IT Park resident. Tashkent and all of Uzbekistan. Free demo.",
+      "RAOS POS system for stores in Uzbekistan from 249,000 UZS/month: register, inventory, customers, reports, multi-branch and offline-first operation. Works with barcode scanners and receipt printers. Tezcode — IT Park resident. Tashkent and all of Uzbekistan. 30-day free trial.",
     ogTitle: "POS system — RAOS: retail software for your store | Tezcode",
     ogDescription:
       "Register, inventory, customers and reports in one app. Works offline and unites branches in one dashboard. Free demo.",
@@ -46,7 +46,7 @@ const META: Record<
   ar: {
     title: "نظام POS أوزبكستان — RAOS: كاشير، يعمل بدون إنترنت",
     description:
-      "نظام RAOS POS لمتاجر أوزبكستان: كاشير، مخزون، عملاء، تقارير، فروع متعددة وعمل بدون إنترنت (offline-first). يعمل مع ماسح الباركود وطابعة الإيصالات. Tezcode — مقيم IT Park. طشقند وكل أوزبكستان. عرض تجريبي مجاني.",
+      "نظام RAOS POS لمتاجر أوزبكستان من 249 000 سوم شهرياً: كاشير، مخزون، عملاء، تقارير، فروع متعددة وعمل بدون إنترنت (offline-first). يعمل مع ماسح الباركود وطابعة الإيصالات. Tezcode — مقيم IT Park. طشقند وكل أوزبكستان. 30 يوماً مجاناً.",
     ogTitle: "نظام POS — RAOS: برنامج المتاجر | Tezcode",
     ogDescription:
       "كاشير ومخزون وعملاء وتقارير في برنامج واحد. يعمل بدون إنترنت ويجمع الفروع في لوحة واحدة. عرض تجريبي مجاني.",
@@ -54,7 +54,7 @@ const META: Record<
   uk: {
     title: "POS-система Узбекистан — RAOS: каса, працює без інтернету",
     description:
-      "POS-система RAOS для магазинів Узбекистану: каса, склад, клієнти, звіти, мультифілія і робота без інтернету (offline-first). Зі сканером штрихкоду і чек-принтером. Tezcode — резидент IT Park. Ташкент і весь Узбекистан. Безкоштовне демо.",
+      "POS-система RAOS для магазинів Узбекистану від 249 000 сум/міс: каса, склад, клієнти, звіти, мультифілія і робота без інтернету (offline-first). Зі сканером штрихкоду і чек-принтером. Tezcode — резидент IT Park. Ташкент і весь Узбекистан. 30 днів безкоштовно.",
     ogTitle: "POS-система — RAOS: програма для магазину | Tezcode",
     ogDescription:
       "Каса, склад, клієнти та звіти в одній програмі. Працює без інтернету, об'єднує філії в одній панелі. Безкоштовне демо.",
