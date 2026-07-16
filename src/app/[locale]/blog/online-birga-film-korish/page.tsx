@@ -21,6 +21,8 @@ export async function generateMetadata({
   const { locale } = await params;
   return buildPageMetadata({
     locale,
+    // untranslated locales canonicalize to the uz original (see lib/seo.ts)
+    availableLocales: Object.keys(CONTENT),
     path: PATH,
     title:
       "Do'stlar bilan online birga film ko'rish: Watch Party qanday ishlaydi | Tezcode",

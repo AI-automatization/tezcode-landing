@@ -21,6 +21,8 @@ export async function generateMetadata({
   const { locale } = await params;
   return buildPageMetadata({
     locale,
+    // untranslated locales canonicalize to the uz original (see lib/seo.ts)
+    availableLocales: Object.keys(CONTENT),
     path: PATH,
     title:
       "Xodimlar ish vaqti va vazifalarini nazorat qilish tizimi qanday tanlanadi (2026) | Tezcode",

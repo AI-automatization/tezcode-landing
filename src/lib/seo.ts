@@ -96,14 +96,26 @@ export function buildPageMetadata(input: {
   ogTitle?: string;
   ogDescription?: string;
   locale?: string; // current locale — canonical/og:url must point at THIS locale's URL
+  // Locales this page actually has translated meta/content for. When the
+  // current locale is NOT listed, the page is an uz fallback served on a
+  // localized URL — its canonical must point at the uz original, otherwise
+  // Bing/Google see dozens of URLs sharing identical titles/descriptions
+  // ("too many pages with identical titles" in Bing Webmaster Tools).
+  availableLocales?: readonly string[];
 }): Metadata {
   const locale = input.locale ?? "uz";
+  const isFallback =
+    input.availableLocales !== undefined &&
+    locale !== "uz" &&
+    !input.availableLocales.includes(locale);
   // Locale-aware canonical: /ru/... pages must declare /ru/... as canonical,
   // never the uz URL, or search engines drop the localized page from the index.
+  // Exception: untranslated fallback locales canonicalize to the uz original.
+  const canonicalLocale = isFallback ? "uz" : locale;
   const url =
-    locale === "uz"
+    canonicalLocale === "uz"
       ? `${BASE_URL}${input.path}`
-      : `${BASE_URL}/${locale}${input.path}`;
+      : `${BASE_URL}/${canonicalLocale}${input.path}`;
   const ogTitle =
     input.ogTitle ??
     (typeof input.title === "string"
@@ -113,9 +125,16 @@ export function buildPageMetadata(input: {
         : SITE_NAME);
   const ogDescription = input.ogDescription ?? input.description;
   const ogImage = getOgImageUrl();
+  // The [locale] layout applies a "%s | Tezcode" title template. Page titles
+  // that already end in "| Tezcode" must opt out via `absolute`, or they
+  // render as "… | Tezcode | Tezcode" in the SERP.
+  const title =
+    typeof input.title === "string" && /\|\s*Tezcode\s*$/.test(input.title)
+      ? ({ absolute: input.title } as Metadata["title"])
+      : input.title;
 
   return {
-    title: input.title,
+    title,
     description: input.description,
     ...(input.keywords ? { keywords: input.keywords } : {}),
     alternates: {

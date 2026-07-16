@@ -50,6 +50,17 @@ export async function generateMetadata({
     creator: "Tezcode",
     publisher: "Tezcode",
     metadataBase: new URL(baseUrl),
+    // Icons are served by explicit route handlers (src/app/{favicon.ico,icon.png,
+    // apple-icon.png}/route.ts) with stable, query-less URLs — NOT the app-dir
+    // file convention, whose per-build "?<generated>" hash churned the favicon's
+    // HTTP identity on every deploy (see src/lib/brand-icons.ts).
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
+        { url: "/icon.png", sizes: "512x512", type: "image/png" },
+      ],
+      apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    },
     alternates: {
       canonical: canonicalUrl,
       languages: {
