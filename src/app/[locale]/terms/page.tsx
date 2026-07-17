@@ -28,6 +28,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
     title: "1. Umumiy",
     body: [
       "Ushbu shartlar Tezcode saytidan va xizmatlaridan foydalanishni tartibga soladi. Saytdan foydalanish bilan ushbu shartlarga rozilik bildirasiz.",
+      "To'lovga oid rasmiy shartnoma — ommaviy oferta: tezcode.dev/oferta.",
     ],
   },
   {
@@ -61,7 +62,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
     ],
   },
   {
-    title: "6. To'lovlar",
+    title: "6. To'lovlar / Способы оплаты и возврата",
     body: [
       "Pricing sahifasidagi narxlar AQSh dollarida (USD), to'lov soatida valyuta kursi bo'yicha so'mga aylantiriladi. Korxonalar uchun USD invoice mavjud.",
       "To'lov usullari: Payme, Click va Uzum Pay orqali — mobil ilova yoki bank kartasi (Uzcard, Humo, Visa, Mastercard) bilan.",
@@ -69,7 +70,8 @@ const SECTIONS: { title: string; body: string[] }[] = [
     ],
   },
   {
-    title: "7. Xavfsizlik va firibgarlikka qarshi choralar",
+    title:
+      "7. Xavfsizlik va firibgarlikka qarshi choralar / Антифрод-меры и ограничение операций",
     body: [
       "Barcha kartadan to'lovlar Payme, Click va Uzum Pay kabi litsenziyalangan to'lov tizimlari orqali amalga oshiriladi — Tezcode karta raqami, muddati yoki CVV kodini saqlamaydi va ko'rmaydi.",
       "Shubhali yoki g'ayrioddiy operatsiyalarni oldini olish uchun bitta operatsiya, kunlik va oylik aylanma bo'yicha chegaralar qo'llaniladi, bu chegaralar to'lov tizimlari va bank hamkorlarimizning firibgarlikka qarshi (antifraud) tizimlari bilan kelishilgan holda belgilanadi.",
@@ -115,7 +117,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
     title: "13. Aloqa",
     body: [
       "Savollar: tezcode@tezcode.dev · Telegram: @tezcode_managament",
-      "Oxirgi yangilanish: 2026-07-13",
+      "Oxirgi yangilanish: 2026-07-17",
     ],
   },
 ];
@@ -131,7 +133,7 @@ export default function TermsPage() {
         <div className="max-w-3xl mx-auto px-6">
           <div className="mb-12">
             <div className="text-xs text-[var(--tc-text-muted)] uppercase tracking-[0.2em] mb-3">
-              Legal · v1.1 — 2026-07-13
+              Legal · v1.2 — 2026-07-17
             </div>
             <h1
               className="text-4xl md:text-5xl font-700 mb-4 tracking-tight text-[var(--tc-text-primary)]"

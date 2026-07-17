@@ -182,6 +182,7 @@ export function Footer() {
   const legalLinks = [
     { label: t("privacy"), href: "/privacy" },
     { label: t("terms"), href: "/terms" },
+    { label: t("oferta"), href: "/oferta" },
   ];
 
   return (

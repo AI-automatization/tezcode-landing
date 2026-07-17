@@ -7,7 +7,7 @@ import { CITY_SLUGS } from "@/data/cities";
 // (content/design changes worth re-crawling) — NOT on every build. Using a
 // fixed date instead of `new Date()` keeps lastModified honest: search engines
 // lose trust in sitemaps where every URL "changes" on every deploy.
-const SITE_UPDATED = new Date("2026-07-05");
+const SITE_UPDATED = new Date("2026-07-17");
 
 // City slugs with live pages for the newer per-city service landings.
 // Must mirror ACTIVE_CITY_SLUGS in each service's [city]/page.tsx
@@ -69,6 +69,7 @@ const ROUTES: Route[] = [
   { path: "/press", priority: 0.5, changeFrequency: "monthly" as const },
   { path: "/privacy", priority: 0.3, changeFrequency: "yearly" as const },
   { path: "/terms", priority: 0.3, changeFrequency: "yearly" as const },
+  { path: "/oferta", priority: 0.3, changeFrequency: "yearly" as const },
   // Blog articles (derived from the registry so new posts auto-appear).
   // lastModified = the article's publish date, not the build date.
   ...ARTICLES.map((a) => ({
