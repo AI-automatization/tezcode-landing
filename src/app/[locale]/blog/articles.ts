@@ -7,6 +7,32 @@ import type { ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "biznesni-ai-bilan-avtomatlashtirish",
+    datePublished: "2026-07-18",
+    category: "AI / Avtomatizatsiya",
+    relatedService: { href: "/ai-avtomatizatsiya", label: "AI avtomatizatsiya" },
+    list: {
+      uz: {
+        title:
+          "Biznesni AI bilan avtomatlashtirish: Toshkent va O'zbekiston uchun to'liq qo'llanma (2026)",
+        excerpt:
+          "«Biznesimni AI bilan avtomatlashtirmoqchiman» deganlar uchun amaliy qo'llanma: nimadan boshlash, aniq narxlar (chatbot $339 dan, Telegram bot $279 dan), muddatlar va kompaniya tanlash mezonlari.",
+      },
+      ru: {
+        title:
+          "Автоматизация бизнеса с ИИ: полное руководство для Ташкента и Узбекистана (2026)",
+        excerpt:
+          "Практическое руководство для тех, кто хочет автоматизировать бизнес с ИИ: с чего начать, точные цены (чатбот от $339, Telegram-бот от $279), сроки и критерии выбора компании.",
+      },
+      en: {
+        title:
+          "Automating your business with AI: the complete guide for Tashkent and Uzbekistan (2026)",
+        excerpt:
+          "A practical guide for business owners who want AI automation: where to start, concrete prices (chatbot from $339, Telegram bot from $279), timelines and how to choose a company.",
+      },
+    },
+  },
+  {
     slug: "claude-fable-5",
     datePublished: "2026-07-02",
     category: "AI dunyosida / Yangilik",

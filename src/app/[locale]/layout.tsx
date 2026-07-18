@@ -112,6 +112,10 @@ export async function generateMetadata({
       yandex: process.env.YANDEX_VERIFICATION ?? "2799c1c5a0b79784",
       other: {
         "msvalidate.01": process.env.BING_SITE_VERIFICATION ?? "",
+        // Second Yandex code for the separate https://www.tezcode.dev property
+        // (the account's DNS-era key). Yandex accepts multiple
+        // yandex-verification tags — each property matches its own code.
+        "yandex-verification": "3b48fa0ea10b2653",
       },
     },
     category: "Technology",

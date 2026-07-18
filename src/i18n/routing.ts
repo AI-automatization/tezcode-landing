@@ -5,9 +5,14 @@ export const routing = defineRouting({
   locales: ["uz", "ru", "en", "ar", "uk"],
   defaultLocale: "uz",
   localePrefix: "as-needed",
-  // Uzbek is the primary language: always serve uz first. Visitors can switch
-  // manually (their choice persists via the locale cookie).
-  localeDetection: false,
+  // First visit: pick the locale from the browser's Accept-Language header
+  // (a ru-language browser lands on /ru, etc.). This is the Google-safe way
+  // to auto-localize — crawlers send no Accept-Language, so they always get
+  // the default uz tree and every locale URL stays directly crawlable (a
+  // hard IP-geo redirect would instead funnel US-based crawlers into one
+  // locale and hurt indexation). A manual switch persists via the locale
+  // cookie below and overrides detection on later visits.
+  localeDetection: true,
   localeCookie: {
     maxAge: 60 * 60 * 24 * 365, // 1 year
   },

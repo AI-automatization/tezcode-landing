@@ -278,6 +278,11 @@ export function getOrganizationSchema() {
       "https://www.goodfirms.co/company/tezcode",
       "https://www.f6s.com/tezcode",
       "https://techbehemoths.com/company/tezcode",
+      // Live local-directory profiles (verified 200, indexed by Google) — the
+      // first third-party citations that triggered the July 2026 indexing wave.
+      "https://2gis.uz/tashkent/firm/70000001115821063",
+      "https://pc.uz/company/127105-tezcode",
+      "https://www.wikidata.org/wiki/Q140361328",
     ],
     knowsAbout: [
       "Artificial Intelligence",
