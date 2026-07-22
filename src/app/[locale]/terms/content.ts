@@ -5,7 +5,7 @@ export const TERMS_CONTENT: LegalContent = {
     metaTitle: "Foydalanish Shartlari — Terms of Service",
     metaDescription:
       "Tezcode xizmatlaridan foydalanish shartlari: huquq va majburiyatlar, to'lov shartlari, javobgarlik chekloyi, nizolar tartibi. So'nggi tahrir 2026-yil.",
-    versionLabel: "Legal · v1.2 — 2026-07-17",
+    versionLabel: "Legal · v1.3 — 2026-07-22",
     heading: "Foydalanish shartlari",
     subheading: "Tezcode xizmatlaridan foydalanish shartlari.",
     sections: [
@@ -47,11 +47,13 @@ export const TERMS_CONTENT: LegalContent = {
         ],
       },
       {
-        title: "6. To'lovlar",
+        title: "6. To'lovlar va pul qaytarish",
         body: [
           "Pricing sahifasidagi narxlar AQSh dollarida (USD), to'lov soatida valyuta kursi bo'yicha so'mga aylantiriladi. Korxonalar uchun USD invoice mavjud.",
           "To'lov usullari: Payme, Click va Uzum Pay orqali — mobil ilova yoki bank kartasi (Uzcard, Humo, Visa, Mastercard) bilan.",
-          "Pul qaytarish: 14 kun ichida sababsiz qaytaramiz. Qaytarish so'rovi tezcode@tezcode.dev manziliga yuboriladi va to'lov qaysi usul orqali amalga oshirilgan bo'lsa, o'sha usul orqali 5 ish kuni ichida amalga oshiriladi.",
+          "Pul mablag'larini qaytarish (Refund). Mijoz quyidagi hollarda to'langan mablag'ni qaytarishni so'rashi mumkin: (1) xizmat texnik sabablarga ko'ra ko'rsatilmagan bo'lsa; (2) to'lov xato yoki takroran amalga oshirilgan bo'lsa.",
+          "Qaytarish so'rovi tezcode@tezcode.dev manziliga yuboriladi. So'rov ko'rib chiqilgach, mablag' xuddi to'langan usul (karta) orqali, odatda 10 (o'n) ish kuni ichida — bank va to'lov tizimi qoidalariga muvofiq qaytariladi.",
+          "Foydalanib bo'lingan obuna davri uchun mablag' qaytarilmaydi. Foydalanilmagan (qolgan) obuna davri uchun mablag' Mijoz so'roviga ko'ra qaytarilishi mumkin.",
         ],
       },
       {
@@ -110,7 +112,7 @@ export const TERMS_CONTENT: LegalContent = {
     metaTitle: "Условия использования — Tezcode",
     metaDescription:
       "Условия использования сервисов Tezcode: права и обязанности, условия оплаты, антифрод-меры, ограничение ответственности, порядок разрешения споров. Последнее обновление 2026 год.",
-    versionLabel: "Правовой документ · v1.2 — 17.07.2026",
+    versionLabel: "Правовой документ · v1.3 — 22.07.2026",
     heading: "Условия использования",
     subheading: "Условия использования сервисов Tezcode.",
     sections: [
@@ -152,11 +154,13 @@ export const TERMS_CONTENT: LegalContent = {
         ],
       },
       {
-        title: "6. Оплата",
+        title: "6. Оплата и возврат средств",
         body: [
           "Цены на странице тарифов указаны в долларах США (USD), при оплате конвертируются в сум по курсу на момент платежа. Для юрлиц доступен инвойс в USD.",
           "Способы оплаты: через платёжные системы Payme, Click и Uzum Pay — мобильным приложением или банковской картой (Uzcard, Humo, Visa, Mastercard).",
-          "Возврат средств: в течение 14 дней без объяснения причин. Запрос направляется на tezcode@tezcode.dev, средства возвращаются тем же способом, которым была произведена оплата, в течение 5 рабочих дней.",
+          "Возврат денежных средств (Refund). Клиент может запросить возврат оплаченных средств в следующих случаях: (1) если услуга не была оказана по техническим причинам; (2) если платёж совершён ошибочно или повторно (дважды).",
+          "Запрос на возврат направляется на tezcode@tezcode.dev. После рассмотрения запроса средства возвращаются тем же способом, которым была произведена оплата (на карту), обычно в течение 10 (десяти) рабочих дней — в соответствии с правилами банка и платёжной системы.",
+          "Оплата за уже использованный период подписки возврату не подлежит. Неиспользованный (оставшийся) период подписки может быть возвращён по запросу Клиента.",
         ],
       },
       {
@@ -215,7 +219,7 @@ export const TERMS_CONTENT: LegalContent = {
     metaTitle: "Terms of Service — Tezcode",
     metaDescription:
       "Tezcode terms of service: rights and obligations, payment terms, anti-fraud measures, limitation of liability, dispute resolution. Last updated 2026.",
-    versionLabel: "Legal · v1.2 — 2026-07-17",
+    versionLabel: "Legal · v1.3 — 2026-07-22",
     heading: "Terms of Service",
     subheading: "Terms of service for using Tezcode.",
     sections: [
@@ -257,11 +261,13 @@ export const TERMS_CONTENT: LegalContent = {
         ],
       },
       {
-        title: "6. Payments",
+        title: "6. Payments and refunds",
         body: [
           "Prices on the pricing page are listed in US dollars (USD) and converted to so'm at the exchange rate at the time of payment. A USD invoice is available for businesses.",
           "Payment methods: Payme, Click and Uzum Pay — via mobile app or bank card (Uzcard, Humo, Visa, Mastercard).",
-          "Refunds: within 14 days, no reason required. Send a request to tezcode@tezcode.dev; funds are returned via the original payment method within 5 business days.",
+          "Refunds. The customer may request a refund of paid funds in the following cases: (1) if the service was not provided for technical reasons; (2) if the payment was made in error or duplicated (charged twice).",
+          "A refund request is sent to tezcode@tezcode.dev. Once reviewed, funds are returned via the same method used for payment (card), typically within 10 (ten) business days — in accordance with the rules of the bank and payment system.",
+          "Payment for an already-used subscription period is non-refundable. The unused (remaining) subscription period may be refunded at the customer's request.",
         ],
       },
       {
@@ -320,7 +326,7 @@ export const TERMS_CONTENT: LegalContent = {
     metaTitle: "Умови використання — Tezcode",
     metaDescription:
       "Умови використання сервісів Tezcode: права та обов'язки, умови оплати, антифрод-заходи, обмеження відповідальності, порядок вирішення спорів. Останнє оновлення 2026 рік.",
-    versionLabel: "Правовий документ · v1.2 — 17.07.2026",
+    versionLabel: "Правовий документ · v1.3 — 22.07.2026",
     heading: "Умови використання",
     subheading: "Умови використання сервісів Tezcode.",
     sections: [
@@ -362,11 +368,13 @@ export const TERMS_CONTENT: LegalContent = {
         ],
       },
       {
-        title: "6. Оплата",
+        title: "6. Оплата та повернення коштів",
         body: [
           "Ціни на сторінці тарифів вказані в доларах США (USD) і конвертуються в сум за курсом на момент оплати. Для юридичних осіб доступний інвойс у USD.",
           "Способи оплати: через платіжні системи Payme, Click та Uzum Pay — мобільним застосунком або банківською карткою (Uzcard, Humo, Visa, Mastercard).",
-          "Повернення коштів: протягом 14 днів без пояснення причин. Запит надсилається на tezcode@tezcode.dev, кошти повертаються тим самим способом оплати протягом 5 робочих днів.",
+          "Повернення коштів (Refund). Клієнт може подати запит на повернення сплачених коштів у таких випадках: (1) якщо послугу не було надано з технічних причин; (2) якщо платіж здійснено помилково або повторно (двічі).",
+          "Запит на повернення надсилається на tezcode@tezcode.dev. Після розгляду запиту кошти повертаються тим самим способом, яким було здійснено оплату (на картку), зазвичай протягом 10 (десяти) робочих днів — відповідно до правил банку та платіжної системи.",
+          "Оплата за вже використаний період підписки поверненню не підлягає. Невикористаний (залишковий) період підписки може бути повернено за запитом Клієнта.",
         ],
       },
       {
@@ -425,7 +433,7 @@ export const TERMS_CONTENT: LegalContent = {
     metaTitle: "شروط الاستخدام — Tezcode",
     metaDescription:
       "شروط استخدام خدمات Tezcode: الحقوق والالتزامات، شروط الدفع، إجراءات مكافحة الاحتيال، حدود المسؤولية، تسوية المنازعات. آخر تحديث 2026.",
-    versionLabel: "وثيقة قانونية · الإصدار 1.2 — 2026-07-17",
+    versionLabel: "وثيقة قانونية · الإصدار 1.3 — 2026-07-22",
     heading: "شروط الاستخدام",
     subheading: "شروط استخدام خدمات Tezcode.",
     sections: [
@@ -467,11 +475,13 @@ export const TERMS_CONTENT: LegalContent = {
         ],
       },
       {
-        title: "6. الدفع",
+        title: "6. الدفع واسترداد الأموال",
         body: [
           "الأسعار الموضحة في صفحة الأسعار بالدولار الأمريكي (USD)، وتُحوَّل إلى السوم بسعر الصرف وقت الدفع. تتوفر فاتورة بالدولار للشركات.",
           "طرق الدفع: عبر أنظمة الدفع Payme وClick وUzum Pay — من خلال التطبيق أو بطاقة مصرفية (Uzcard وHumo وVisa وMastercard).",
-          "استرداد الأموال: خلال 14 يومًا دون إبداء أسباب. يُرسل طلب الاسترداد إلى tezcode@tezcode.dev، وتُعاد الأموال بنفس وسيلة الدفع خلال 5 أيام عمل.",
+          "استرداد الأموال (Refund). يجوز للعميل طلب استرداد المبالغ المدفوعة في الحالات التالية: (1) إذا لم تُقدَّم الخدمة لأسباب تقنية؛ (2) إذا تمّ الدفع بالخطأ أو بشكل مكرَّر (مرتين).",
+          "يُرسَل طلب الاسترداد إلى tezcode@tezcode.dev. وبعد مراجعة الطلب، تُعاد الأموال بنفس وسيلة الدفع المستخدمة (إلى البطاقة)، عادةً خلال 10 (عشرة) أيام عمل — وفقًا لقواعد البنك ونظام الدفع.",
+          "المبلغ المدفوع عن فترة الاشتراك المُستخدَمة بالفعل غير قابل للاسترداد. أمّا فترة الاشتراك غير المُستخدَمة (المتبقية) فيمكن استردادها بناءً على طلب العميل.",
         ],
       },
       {

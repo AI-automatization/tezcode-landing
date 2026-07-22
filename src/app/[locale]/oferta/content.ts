@@ -10,7 +10,7 @@ export const OFERTA_CONTENT: LegalContent = {
     metaTitle: "Ommaviy oferta — Public Offer",
     metaDescription:
       "TEZ KOD MCHJning obuna xizmatlarini taqdim etish bo'yicha ommaviy offertasi: oferta predmeti, narx va to'lov tartibi, firibgarlikka qarshi choralar, tomonlar rekvizitlari.",
-    versionLabel: "Legal · v1.0 — 2026-07-17",
+    versionLabel: "Legal · v1.1 — 2026-07-22",
     heading: "Ommaviy oferta",
     subheading:
       "TEZ KOD obuna xizmatlarini taqdim etish shartnomasi — FK 369-370-moddalari.",
@@ -30,11 +30,13 @@ export const OFERTA_CONTENT: LegalContent = {
         ],
       },
       {
-        title: "3. Narx va to'lov tartibi",
+        title: "3. Narx, to'lov va pul qaytarish tartibi",
         body: [
           "Xizmat narxi tegishli mahsulot saytida ko'rsatilgan tarifga muvofiq belgilanadi. To'lov Payme, Click va Uzum Pay to'lov tizimlari orqali — mobil ilova yoki bank kartasi (Uzcard, Humo, Visa, Mastercard) bilan amalga oshiriladi.",
           "TEZ KOD karta rekvizitlarini (raqami, amal qilish muddati, CVV kodi) saqlamaydi va ko'rmaydi — barcha to'lovlar litsenziyalangan to'lov tizimlari infratuzilmasi orqali amalga oshiriladi.",
-          "Pul qaytarish: 14 kun ichida sababsiz qaytariladi. So'rov tezcode@tezcode.dev manziliga yuboriladi, mablag' dastlabki to'lov amalga oshirilgan usul orqali 5 ish kuni ichida qaytariladi. To'liq shartlar: tezcode.dev/terms, 6-bo'lim.",
+          "Pul mablag'larini qaytarish (Refund). Mijoz quyidagi hollarda to'langan mablag'ni qaytarishni so'rashi mumkin: (1) xizmat texnik sabablarga ko'ra ko'rsatilmagan bo'lsa; (2) to'lov xato yoki takroran amalga oshirilgan bo'lsa.",
+          "Qaytarish so'rovi tezcode@tezcode.dev manziliga yuboriladi. So'rov ko'rib chiqilgach, mablag' xuddi to'langan usul (karta) orqali, odatda 10 (o'n) ish kuni ichida — bank va to'lov tizimi qoidalariga muvofiq qaytariladi.",
+          "Foydalanib bo'lingan obuna davri uchun mablag' qaytarilmaydi. Foydalanilmagan (qolgan) obuna davri uchun mablag' Mijoz so'roviga ko'ra qaytarilishi mumkin. To'liq shartlar: tezcode.dev/terms.",
         ],
       },
       {
@@ -87,7 +89,7 @@ export const OFERTA_CONTENT: LegalContent = {
     metaTitle: "Публичная оферта — Tezcode",
     metaDescription:
       "Публичная оферта TEZ KOD на предоставление подписочных услуг: предмет оферты, цена и порядок оплаты, антифрод-меры, реквизиты сторон.",
-    versionLabel: "Правовой документ · v1.0 — 17.07.2026",
+    versionLabel: "Правовой документ · v1.1 — 22.07.2026",
     heading: "Публичная оферта",
     subheading:
       "Договор оферты на предоставление подписочных услуг TEZ KOD — ст. 369-370 ГК Республики Узбекистан.",
@@ -107,11 +109,13 @@ export const OFERTA_CONTENT: LegalContent = {
         ],
       },
       {
-        title: "3. Цена и порядок оплаты",
+        title: "3. Цена, порядок оплаты и возврата средств",
         body: [
           "Стоимость услуги определяется согласно тарифу, указанному на сайте соответствующего продукта. Оплата производится через платёжные системы Payme, Click и Uzum Pay — банковской картой (Uzcard, Humo, Visa, Mastercard) или через мобильное приложение.",
           "TEZ KOD не хранит и не видит реквизиты карты (номер, срок действия, CVV) — все платежи проходят через инфраструктуру лицензированных платёжных систем.",
-          "Возврат средств: в течение 14 дней без объяснения причин; запрос направляется на tezcode@tezcode.dev, средства возвращаются тем же способом оплаты в течение 5 рабочих дней. Полные условия — tezcode.dev/terms, раздел 6.",
+          "Возврат денежных средств (Refund). Клиент может запросить возврат оплаченных средств в следующих случаях: (1) если услуга не была оказана по техническим причинам; (2) если платёж совершён ошибочно или повторно (дважды).",
+          "Запрос на возврат направляется на tezcode@tezcode.dev. После рассмотрения запроса средства возвращаются тем же способом, которым была произведена оплата (на карту), обычно в течение 10 (десяти) рабочих дней — в соответствии с правилами банка и платёжной системы.",
+          "Оплата за уже использованный период подписки возврату не подлежит. Неиспользованный (оставшийся) период подписки может быть возвращён по запросу Клиента. Полные условия — tezcode.dev/terms.",
         ],
       },
       {
@@ -164,7 +168,7 @@ export const OFERTA_CONTENT: LegalContent = {
     metaTitle: "Public Offer — Tezcode",
     metaDescription:
       "TEZ KOD public offer for subscription services: subject of the offer, price and payment terms, anti-fraud measures, contracting parties' details.",
-    versionLabel: "Legal · v1.0 — 2026-07-17",
+    versionLabel: "Legal · v1.1 — 2026-07-22",
     heading: "Public Offer",
     subheading:
       "Public offer agreement for TEZ KOD subscription services — Articles 369-370 of the Civil Code of Uzbekistan.",
@@ -184,11 +188,13 @@ export const OFERTA_CONTENT: LegalContent = {
         ],
       },
       {
-        title: "3. Price and payment terms",
+        title: "3. Price, payment and refund terms",
         body: [
           "The service price is set according to the tariff listed on the relevant product's website. Payment is made via Payme, Click, and Uzum Pay — by mobile app or bank card (Uzcard, Humo, Visa, Mastercard).",
           "TEZ KOD does not store or see card details (number, expiry date, CVV) — all payments are processed through the infrastructure of licensed payment systems.",
-          "Refunds: within 14 days, no reason required; send a request to tezcode@tezcode.dev, funds are returned via the original payment method within 5 business days. Full terms: tezcode.dev/terms, section 6.",
+          "Refunds. The customer may request a refund of paid funds in the following cases: (1) if the service was not provided for technical reasons; (2) if the payment was made in error or duplicated (charged twice).",
+          "A refund request is sent to tezcode@tezcode.dev. Once reviewed, funds are returned via the same method used for payment (card), typically within 10 (ten) business days — in accordance with the rules of the bank and payment system.",
+          "Payment for an already-used subscription period is non-refundable. The unused (remaining) subscription period may be refunded at the customer's request. Full terms: tezcode.dev/terms.",
         ],
       },
       {
@@ -241,7 +247,7 @@ export const OFERTA_CONTENT: LegalContent = {
     metaTitle: "Публічна оферта — Tezcode",
     metaDescription:
       "Публічна оферта TEZ KOD на надання послуг за підпискою: предмет оферти, ціна та порядок оплати, антифрод-заходи, реквізити сторін.",
-    versionLabel: "Правовий документ · v1.0 — 17.07.2026",
+    versionLabel: "Правовий документ · v1.1 — 22.07.2026",
     heading: "Публічна оферта",
     subheading:
       "Договір оферти на надання послуг за підпискою TEZ KOD — ст. 369-370 ЦК Республіки Узбекистан.",
@@ -261,11 +267,13 @@ export const OFERTA_CONTENT: LegalContent = {
         ],
       },
       {
-        title: "3. Ціна та порядок оплати",
+        title: "3. Ціна, порядок оплати та повернення коштів",
         body: [
           "Вартість послуги визначається згідно з тарифом, вказаним на сайті відповідного продукту. Оплата здійснюється через платіжні системи Payme, Click та Uzum Pay — мобільним застосунком або банківською карткою (Uzcard, Humo, Visa, Mastercard).",
           "TEZ KOD не зберігає і не бачить реквізити картки (номер, термін дії, CVV) — усі платежі проходять через інфраструктуру ліцензованих платіжних систем.",
-          "Повернення коштів: протягом 14 днів без пояснення причин; запит надсилається на tezcode@tezcode.dev, кошти повертаються тим самим способом оплати протягом 5 робочих днів. Повні умови — tezcode.dev/terms, розділ 6.",
+          "Повернення коштів (Refund). Клієнт може подати запит на повернення сплачених коштів у таких випадках: (1) якщо послугу не було надано з технічних причин; (2) якщо платіж здійснено помилково або повторно (двічі).",
+          "Запит на повернення надсилається на tezcode@tezcode.dev. Після розгляду запиту кошти повертаються тим самим способом, яким було здійснено оплату (на картку), зазвичай протягом 10 (десяти) робочих днів — відповідно до правил банку та платіжної системи.",
+          "Оплата за вже використаний період підписки поверненню не підлягає. Невикористаний (залишковий) період підписки може бути повернено за запитом Клієнта. Повні умови — tezcode.dev/terms.",
         ],
       },
       {
@@ -318,7 +326,7 @@ export const OFERTA_CONTENT: LegalContent = {
     metaTitle: "العرض العام — Tezcode",
     metaDescription:
       "العرض العام لشركة TEZ KOD لتقديم خدمات الاشتراك: موضوع العرض، السعر وطريقة الدفع، إجراءات مكافحة الاحتيال، بيانات الأطراف.",
-    versionLabel: "وثيقة قانونية · الإصدار 1.0 — 2026-07-17",
+    versionLabel: "وثيقة قانونية · الإصدار 1.1 — 2026-07-22",
     heading: "العرض العام",
     subheading:
       "عقد العرض العام لتقديم خدمات اشتراك TEZ KOD — المادتان 369-370 من القانون المدني لأوزبكستان.",
@@ -338,11 +346,13 @@ export const OFERTA_CONTENT: LegalContent = {
         ],
       },
       {
-        title: "3. السعر وطريقة الدفع",
+        title: "3. السعر وطريقة الدفع واسترداد الأموال",
         body: [
           "يُحدَّد سعر الخدمة وفق التعرفة المعلنة على موقع المنتج المعني. تتم عملية الدفع عبر أنظمة Payme وClick وUzum Pay — من خلال التطبيق أو بطاقة مصرفية (Uzcard وHumo وVisa وMastercard).",
           "لا تحتفظ TEZ KOD ببيانات البطاقة (الرقم، تاريخ الانتهاء، رمز CVV) ولا تراها — تمر جميع المدفوعات عبر بنية أنظمة الدفع المرخّصة.",
-          "استرداد الأموال: خلال 14 يومًا دون إبداء أسباب؛ يُرسل الطلب إلى tezcode@tezcode.dev، وتُعاد الأموال بنفس وسيلة الدفع خلال 5 أيام عمل. الشروط الكاملة: tezcode.dev/terms، القسم 6.",
+          "استرداد الأموال (Refund). يجوز للعميل طلب استرداد المبالغ المدفوعة في الحالات التالية: (1) إذا لم تُقدَّم الخدمة لأسباب تقنية؛ (2) إذا تمّ الدفع بالخطأ أو بشكل مكرَّر (مرتين).",
+          "يُرسَل طلب الاسترداد إلى tezcode@tezcode.dev. وبعد مراجعة الطلب، تُعاد الأموال بنفس وسيلة الدفع المستخدمة (إلى البطاقة)، عادةً خلال 10 (عشرة) أيام عمل — وفقًا لقواعد البنك ونظام الدفع.",
+          "المبلغ المدفوع عن فترة الاشتراك المُستخدَمة بالفعل غير قابل للاسترداد. أمّا فترة الاشتراك غير المُستخدَمة (المتبقية) فيمكن استردادها بناءً على طلب العميل. الشروط الكاملة: tezcode.dev/terms.",
         ],
       },
       {
