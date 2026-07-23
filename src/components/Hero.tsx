@@ -18,6 +18,7 @@ import {
   ShoppingCart,
   Stethoscope,
   Users,
+  Video,
   Workflow,
 } from "lucide-react";
 import { CountUp } from "@/components/motion/CountUp";
@@ -116,6 +117,13 @@ const VISUAL_COPY: Record<string, VisualCopy> = {
         oldLabel: "10 ta qo'l ishi",
         newLabel: "1 ta AI agent",
       },
+      {
+        title: "AI video analitika",
+        desc: "AI mavjud kameralaringizni aqlli qiladi — odam sanaydi, yuz taniydi, xavfsizlikni nazorat qiladi.",
+        tasks: ["Odam aniqlash va sanash", "Yuz tanib davomat", "Kaska va avto raqam nazorati"],
+        oldLabel: "Qo'lda kuzatuv",
+        newLabel: "AI o'zi kuzatadi",
+      },
     ],
     chip1: "24/7 avtomatik",
     statVal: "+40%",
@@ -194,6 +202,13 @@ const VISUAL_COPY: Record<string, VisualCopy> = {
         tasks: ["Связывает отделы между собой", "Сам принимает решения", "Вам — только итоги"],
         oldLabel: "10 ручных операций",
         newLabel: "1 AI-агент",
+      },
+      {
+        title: "AI-видеоаналитика",
+        desc: "AI делает ваши камеры умными — считает людей, распознаёт лица, контролирует безопасность.",
+        tasks: ["Детекция и подсчёт людей", "Учёт по лицу", "Контроль каски и автономеров"],
+        oldLabel: "Ручной надзор",
+        newLabel: "AI следит сам",
       },
     ],
     chip1: "24/7 автоматизация",
@@ -274,6 +289,13 @@ const VISUAL_COPY: Record<string, VisualCopy> = {
         oldLabel: "10 manual steps",
         newLabel: "1 AI agent",
       },
+      {
+        title: "AI video analytics",
+        desc: "AI makes your existing cameras smart — counts people, recognizes faces, monitors safety.",
+        tasks: ["Detect and count people", "Face-based attendance", "Helmet & plate control"],
+        oldLabel: "Manual monitoring",
+        newLabel: "AI watches for you",
+      },
     ],
     chip1: "24/7 automated",
     statVal: "+40%",
@@ -352,6 +374,13 @@ const VISUAL_COPY: Record<string, VisualCopy> = {
         tasks: ["يربط الأقسام ببعضها", "يتخذ القرارات بنفسه", "تصلك الخلاصة فقط"],
         oldLabel: "10 خطوات يدوية",
         newLabel: "وكيل AI واحد",
+      },
+      {
+        title: "تحليلات الفيديو بالذكاء الاصطناعي",
+        desc: "الذكاء الاصطناعي يجعل كاميراتك ذكية — يعدّ الأشخاص، يتعرّف على الوجوه، ويراقب السلامة.",
+        tasks: ["كشف الأشخاص وعدّهم", "الحضور عبر بصمة الوجه", "مراقبة الخوذة ولوحات المركبات"],
+        oldLabel: "مراقبة يدوية",
+        newLabel: "الذكاء الاصطناعي يراقب",
       },
     ],
     chip1: "أتمتة 24/7",
@@ -432,6 +461,13 @@ const VISUAL_COPY: Record<string, VisualCopy> = {
         oldLabel: "10 ручних операцій",
         newLabel: "1 AI-агент",
       },
+      {
+        title: "AI-відеоаналітика",
+        desc: "AI робить ваші камери розумними — рахує людей, розпізнає обличчя, контролює безпеку.",
+        tasks: ["Виявлення та підрахунок людей", "Облік за обличчям", "Контроль каски та автономерів"],
+        oldLabel: "Ручний нагляд",
+        newLabel: "AI стежить сам",
+      },
     ],
     chip1: "24/7 автоматизація",
     statVal: "+40%",
@@ -451,6 +487,7 @@ const SLIDE_ICONS = [
   Stethoscope,
   Users,
   Workflow,
+  Video,
 ] as const;
 const SLIDE_INTERVAL_MS = 4000;
 

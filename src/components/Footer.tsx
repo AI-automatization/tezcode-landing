@@ -160,6 +160,7 @@ export function Footer() {
   // to their dedicated landing pages — so they don't need a footer column.)
   const serviceLinks: { label: string; href: string }[] = [
     { label: "AI chatbot", href: "/ai-chatbot" },
+    { label: "AI video analitika", href: "/ai-video-analitika" },
     { label: "Telegram bot", href: "/telegram-bot-biznes" },
     { label: "AI avtomatizatsiya", href: "/ai-avtomatizatsiya" },
     { label: "POS tizimi", href: "/pos-tizimi" },

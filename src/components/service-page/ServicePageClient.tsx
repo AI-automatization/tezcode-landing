@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "motion/react";
 import { useLocale } from "next-intl";
 import { useState } from "react";
@@ -130,6 +131,67 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
             {copy.hero.ctaSecondary}
           </a>
         </motion.div>
+      </div>
+
+      {copy.heroImage ? (
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0, transition: { duration: 0.9, ease: EASE, delay: 0.6 } }}
+          className="relative z-10 mt-16 max-w-5xl mx-auto"
+        >
+          <div className="relative aspect-[16/9] overflow-hidden rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] shadow-[var(--tc-shadow-card-hover)]">
+            <Image
+              src={copy.heroImage.src}
+              alt={copy.heroImage.alt}
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 1024px"
+              className="object-cover"
+            />
+          </div>
+        </motion.div>
+      ) : null}
+    </section>
+  );
+}
+
+// ─────────────────────────── Showcase gallery ───────────────────────────
+function ShowcaseSection({ copy }: { copy: ServicePageCopy }) {
+  if (!copy.showcase) return null;
+  const showcase = copy.showcase;
+  return (
+    <section
+      className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] overflow-hidden"
+      style={{ borderBottom: "1px solid var(--tc-border)" }}
+    >
+      <div className="max-w-7xl mx-auto relative z-10">
+        <SectionHeader
+          badge={showcase.badge}
+          title={showcase.title}
+          titleAccent={showcase.titleAccent}
+          subtitle={showcase.subtitle}
+        />
+
+        <RevealStagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" stagger={0.1}>
+          {showcase.items.map((item) => (
+            <RevealItem key={item.src}>
+              <figure className="h-full">
+                <div className="relative aspect-[16/9] overflow-hidden rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] shadow-[var(--tc-shadow-card)]">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover"
+                  />
+                </div>
+                <figcaption className="mt-4 text-sm text-[var(--tc-text-muted)] leading-relaxed">
+                  {item.caption}
+                </figcaption>
+              </figure>
+            </RevealItem>
+          ))}
+        </RevealStagger>
       </div>
     </section>
   );
@@ -584,6 +646,7 @@ export function ServicePageClient({
       <Navbar />
       <HeroSection copy={copy} />
       <CapabilitiesSection copy={copy} />
+      <ShowcaseSection copy={copy} />
       <TechSection copy={copy} />
       <ProcessSection copy={copy} />
       <ExamplesSection copy={copy} />

@@ -36,6 +36,7 @@ const ROUTES: Route[] = [
   { path: "/hire-developers", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/ai-avtomatizatsiya", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/ai-chatbot", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/ai-video-analitika", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/ai-agent", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/telegram-bot-biznes", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/pos-tizimi", priority: 0.9, changeFrequency: "monthly" as const },

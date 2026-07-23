@@ -51,7 +51,7 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
       titleAccent: "nima beradi?",
       items: [
         { icon: "store", title: "Telegram Mini App do'kon", desc: "To'liq do'kon Telegram ichida ochiladi — xaridor ilovadan chiqmasdan tovarlarni ko'radi va buyurtma beradi." },
-        { icon: "package", title: "Sotuvchi kabineti", desc: "Tovar, buyurtma va omborni bitta panelдан boshqaring. Web xaridor versiyasi va admin panel ham bor." },
+        { icon: "package", title: "Sotuvchi kabineti", desc: "Tovar, buyurtma va omborni bitta paneldan boshqaring. Web xaridor versiyasi va admin panel ham bor." },
         { icon: "message-circle", title: "Xaridor↔sotuvchi chat", desc: "Real-time chat — xaridor savol beradi, siz javob berasiz, buyurtma yo'qolmaydi." },
         { icon: "bar-chart-2", title: "Analitika", desc: "Sotuvlar, buyurtmalar va mijozlar bo'yicha statistika — biznesingizni raqamlar bilan ko'rasiz." },
       ],
@@ -62,7 +62,7 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
       titleAccent: "Telegram do'koni",
       items: [
         { num: "01", title: "Do'kon oching", desc: "Ro'yxatdan o'ting va do'koningizni yarating — 5 daqiqa, texnik bilim shart emas." },
-        { num: "02", title: "Tovar joylang", desc: "Mahsulotlar, narx va rasmlarни qo'shing — do'koningiz darhol tayyor." },
+        { num: "02", title: "Tovar joylang", desc: "Mahsulotlar, narx va rasmlarni qo'shing — do'koningiz darhol tayyor." },
         { num: "03", title: "Sota boshlang", desc: "Havolani ulashing — xaridorlar Telegram'da ko'radi, buyurtma beradi, siz chat orqali yakunlaysiz." },
       ],
     },

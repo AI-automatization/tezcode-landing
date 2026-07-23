@@ -90,6 +90,18 @@ export type ServicePageCopy = {
   // prefer pages that show when they were last reviewed. Pre-formatted per
   // locale; rendered as a small line under the hero trust text.
   updated?: string;
+  // Optional premium hero banner image (16:9). When set, rendered below the
+  // hero text/CTAs as a large rounded, shadowed banner via next/image.
+  heroImage?: { src: string; alt: string };
+  // Optional visual showcase gallery (rendered after the capabilities section):
+  // a section header + responsive grid of 16:9 images, each with a caption.
+  showcase?: {
+    badge: string;
+    title: string;
+    titleAccent: string;
+    subtitle: string;
+    items: { src: string; alt: string; caption: string }[];
+  };
   // Drives the Service JSON-LD (server-side). Localised so the structured data
   // matches the page language.
   service: {
