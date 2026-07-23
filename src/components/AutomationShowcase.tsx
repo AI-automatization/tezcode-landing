@@ -12,6 +12,7 @@ const META = [
   { img: "/showcase/raos-dokon.jpeg", badge: "RAOS", href: "/pos-tizimi" },
   { img: "/showcase/ai-chatbot.jpeg", badge: "24/7", href: "/ai-chatbot" },
   { img: "/showcase/klinika-coremed.jpeg", badge: "CoreMed", href: "/klinika-crm" },
+  { img: "/showcase/ai-video-analitika.jpeg", badge: "AI Kamera", href: "/ai-video-analitika" },
 ] as const;
 
 type Content = {
@@ -31,6 +32,7 @@ const CONTENT: Record<string, Content> = {
       { title: "Savdo va do'kon", subtitle: "Kassa, ombor va sotuv — bir tizimda" },
       { title: "AI Chatbot", subtitle: "Mijozlarga 24/7 avtomatik javob" },
       { title: "Klinika va salomatlik", subtitle: "Bemor qabuli va navbatni avtomatlashtirish" },
+      { title: "AI video analitika", subtitle: "Kameralarni AI bilan avtomatlashtirish" },
     ],
   },
   ru: {
@@ -42,6 +44,7 @@ const CONTENT: Record<string, Content> = {
       { title: "Продажи и магазин", subtitle: "Касса, склад и продажи — в одной системе" },
       { title: "AI-чат-бот", subtitle: "Ответы клиентам 24/7" },
       { title: "Клиника и здоровье", subtitle: "Запись пациентов и автоматизация очереди" },
+      { title: "AI-видеоаналитика", subtitle: "Автоматизация камер с помощью AI" },
     ],
   },
   en: {
@@ -53,6 +56,7 @@ const CONTENT: Record<string, Content> = {
       { title: "Sales & retail", subtitle: "POS, inventory and sales in one system" },
       { title: "AI Chatbot", subtitle: "24/7 automatic replies to customers" },
       { title: "Clinic & health", subtitle: "Patient booking and queue automation" },
+      { title: "AI video analytics", subtitle: "Make your cameras smart with AI" },
     ],
   },
   ar: {
@@ -64,6 +68,7 @@ const CONTENT: Record<string, Content> = {
       { title: "المبيعات والتجزئة", subtitle: "نقاط البيع والمخزون والمبيعات في نظام واحد" },
       { title: "روبوت دردشة بالذكاء الاصطناعي", subtitle: "ردود تلقائية للعملاء على مدار الساعة" },
       { title: "العيادة والصحة", subtitle: "حجز المرضى وأتمتة الطابور" },
+      { title: "تحليلات الفيديو بالذكاء الاصطناعي", subtitle: "جعل الكاميرات ذكية بالذكاء الاصطناعي" },
     ],
   },
   uk: {
@@ -75,6 +80,7 @@ const CONTENT: Record<string, Content> = {
       { title: "Продажі та магазин", subtitle: "Каса, склад і продажі — в одній системі" },
       { title: "AI-чат-бот", subtitle: "Відповіді клієнтам 24/7" },
       { title: "Клініка та здоров'я", subtitle: "Запис пацієнтів та автоматизація черги" },
+      { title: "AI-відеоаналітика", subtitle: "Автоматизація камер за допомогою AI" },
     ],
   },
 };
@@ -106,7 +112,7 @@ export function AutomationShowcase() {
           </Link>
         </Reveal>
 
-        <RevealStagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <RevealStagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {META.map((m, i) => (
             <RevealItem key={m.href}>
               <Link
