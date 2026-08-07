@@ -22,7 +22,7 @@ const META: Record<
   uz: {
     title: "AI video analitika — Toshkent",
     description:
-      "AI video analitika Toshkentda: mavjud IP kameralarni AI bilan aqlli qilamiz — odam sanash, yuz tanish orqali davomat, kaska/ish xavfsizligi nazorati va avto raqam tanish (ANPR). Real vaqtda ogohlantirish, on-premise yoki bulut. IT Park rezidenti Tezcode. Bepul konsultatsiya, to'lov 30% oldindan.",
+      "AI video analitika Toshkentda: mavjud IP kameralarni AI bilan aqlli qilamiz — odam sanash, yuz tanish orqali davomat, kaska/ish xavfsizligi nazorati va avto raqam tanish (ANPR). Real vaqtda ogohlantirish, on-premise yoki bulut. Narx: $990 dan (bir martalik ulash). IT Park rezidenti Tezcode. Bepul konsultatsiya.",
     ogTitle: "AI video analitika — Toshkent | Tezcode",
     ogDescription:
       "Mavjud kameralaringizni AI bilan aqlli qiling: odam sanash, yuz tanish davomat, kaska nazorati, ANPR. Real vaqtda xabar, on-premise yoki bulut. Bepul konsultatsiya.",
@@ -30,7 +30,7 @@ const META: Record<
   ru: {
     title: "AI-видеоаналитика — Ташкент",
     description:
-      "AI-видеоаналитика в Ташкенте: делаем существующие IP-камеры умными — подсчёт людей, посещаемость по распознаванию лиц, контроль касок/охраны труда и распознавание автономеров (ANPR). Уведомления в реальном времени, on-premise или облако. Tezcode — резидент IT Park. Бесплатная консультация, оплата 30% предоплата.",
+      "AI-видеоаналитика в Ташкенте: делаем существующие IP-камеры умными — подсчёт людей, посещаемость по распознаванию лиц, контроль касок/охраны труда и распознавание автономеров (ANPR). Уведомления в реальном времени, on-premise или облако. Цена: от $990 (разовое подключение). Tezcode — резидент IT Park. Бесплатная консультация.",
     ogTitle: "AI-видеоаналитика — Ташкент | Tezcode",
     ogDescription:
       "Сделайте существующие камеры умными с AI: подсчёт людей, посещаемость по лицу, контроль касок, ANPR. Уведомления в реальном времени, on-premise или облако. Бесплатная консультация.",
@@ -38,7 +38,7 @@ const META: Record<
   en: {
     title: "AI video analytics — Tashkent",
     description:
-      "AI video analytics in Tashkent: make existing IP cameras smart — people counting, attendance by face recognition, helmet/workplace-safety control and number-plate recognition (ANPR). Real-time alerts, on-premise or cloud. Tezcode — IT Park resident. Free consultation, 30% upfront payment.",
+      "AI video analytics in Tashkent: make existing IP cameras smart — people counting, attendance by face recognition, helmet/workplace-safety control and number-plate recognition (ANPR). Real-time alerts, on-premise or cloud. Price: from $990 (one-time setup). Tezcode — IT Park resident. Free consultation.",
     ogTitle: "AI video analytics — Tashkent | Tezcode",
     ogDescription:
       "Make your existing cameras smart with AI: people counting, attendance by face, helmet control, ANPR. Real-time alerts, on-premise or cloud. Free consultation.",
@@ -46,7 +46,7 @@ const META: Record<
   ar: {
     title: "تحليلات الفيديو بالذكاء الاصطناعي — طشقند",
     description:
-      "تحليلات الفيديو بالذكاء الاصطناعي في طشقند: نجعل كاميرات IP الحالية ذكية — عدّ الأشخاص، الحضور بالتعرف على الوجه، مراقبة الخوذ/سلامة العمل والتعرف على لوحات المركبات (ANPR). تنبيهات فورية، on-premise أو سحابة. Tezcode — مقيم IT Park. استشارة مجانية، الدفع 30% مقدمًا.",
+      "تحليلات الفيديو بالذكاء الاصطناعي في طشقند: نجعل كاميرات IP الحالية ذكية — عدّ الأشخاص، الحضور بالتعرف على الوجه، مراقبة الخوذ/سلامة العمل والتعرف على لوحات المركبات (ANPR). تنبيهات فورية، on-premise أو سحابة. السعر: من 990$ (تركيب لمرة واحدة). Tezcode — مقيم IT Park. استشارة مجانية.",
     ogTitle: "تحليلات الفيديو بالذكاء الاصطناعي — طشقند | Tezcode",
     ogDescription:
       "اجعل كاميراتك الحالية ذكية بالذكاء الاصطناعي: عدّ الأشخاص، الحضور بالوجه، مراقبة الخوذ، ANPR. تنبيهات فورية، on-premise أو سحابة. استشارة مجانية.",
@@ -54,7 +54,7 @@ const META: Record<
   uk: {
     title: "AI-відеоаналітика — Ташкент",
     description:
-      "AI-відеоаналітика в Ташкенті: робимо наявні IP-камери розумними — підрахунок людей, відвідуваність за розпізнаванням облич, контроль касок/охорони праці та розпізнавання автономерів (ANPR). Сповіщення в реальному часі, on-premise або хмара. Tezcode — резидент IT Park. Безкоштовна консультація, оплата 30% передоплата.",
+      "AI-відеоаналітика в Ташкенті: робимо наявні IP-камери розумними — підрахунок людей, відвідуваність за розпізнаванням облич, контроль касок/охорони праці та розпізнавання автономерів (ANPR). Сповіщення в реальному часі, on-premise або хмара. Ціна: від $990 (разове підключення). Tezcode — резидент IT Park. Безкоштовна консультація.",
     ogTitle: "AI-відеоаналітика — Ташкент | Tezcode",
     ogDescription:
       "Зробіть наявні камери розумними за допомогою AI: підрахунок людей, відвідуваність за обличчям, контроль касок, ANPR. Сповіщення в реальному часі, on-premise або хмара. Безкоштовна консультація.",

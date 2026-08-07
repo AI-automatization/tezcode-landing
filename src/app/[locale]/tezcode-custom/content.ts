@@ -72,7 +72,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "javoblar",
       subtitle: "Buyurtma dasturiy mahsulot haqida ko'p so'raladigan savollar.",
       items: [
-        { q: "Buyurtma mahsulot qancha turadi va qancha vaqt oladi?", a: "Aniq narx va muddat texnik spec'dan keyin beriladi, chunki har mahsulot har xil. Odatda ishlovchi MVP 2-4 haftada tayyor bo'ladi. Konsultatsiya bepul, to'lov 30% oldindan, qolgani bosqichma-bosqich." },
+        { q: "Buyurtma mahsulot qancha turadi va qancha vaqt oladi?", a: "MVP $1000 dan boshlanadi. To'liq loyiha narxi hajm va murakkablikka bog'liq — aniq narxni texnik spec'dan keyin yozma taklif sifatida beramiz. Ishlovchi MVP odatda 2-4 haftada tayyor bo'ladi. Konsultatsiya bepul, to'lov 30% oldindan, qolgani bosqichma-bosqich." },
         { q: "TezCode Custom oddiy IT xizmatdan nimasi bilan farq qiladi?", a: "Bu tayyor shablon yoki ijaraga olinadigan SaaS emas. Biz sizning individual ehtiyojingizga noldan mahsulot quramiz — u faqat sizniki, sizning jarayoningizga qurilgan va source code'i to'liq sizga tegishli." },
         { q: "Source code kimniki bo'ladi?", a: "100% sizniki. Kontraktda yoziladi: kod to'liq sizga beriladi, GitHub sizning hisobingizda. Mahsulot ham, uning kodi ham butunlay sizga tegishli." },
         { q: "Vendor lock-in bo'ladimi?", a: "Yo'q. Kod sizda bo'lgani uchun bizga bog'lanib qolmaysiz — istalgan vaqtda boshqa jamoaga o'tishingiz yoki o'zingiz davom ettirishingiz mumkin. Biz sifat va qulaylik bilan ushlab qolamiz, majburiyat bilan emas." },
@@ -93,7 +93,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "TezCode Custom — buyurtma dasturiy mahsulot, Toshkent",
       description:
-        "Noldan buyurtma asosidagi dasturiy mahsulot: ERP, CRM, marketplace, ichki tizim, AI ilova va integratsiya. Biznesingizga moslab qurilgan, MVP 2-4 haftada, source code 100% sizniki. AI Software Factory, 14 in-house dasturchi, Toshkent.",
+        "Noldan buyurtma asosidagi dasturiy mahsulot: ERP, CRM, marketplace, ichki tizim, AI ilova va integratsiya. Biznesingizga moslab qurilgan, MVP $1000 dan, 2-4 haftada, source code 100% sizniki. AI Software Factory, 14 in-house dasturchi, Toshkent.",
       serviceType: "Buyurtma dasturiy ta'minot ishlab chiqish",
     },
   },
@@ -164,7 +164,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "ответы",
       subtitle: "Частые вопросы о заказной разработке продукта.",
       items: [
-        { q: "Сколько стоит заказной продукт и сколько времени занимает?", a: "Точная цена и срок даются после технического spec, ведь каждый продукт разный. Обычно рабочий MVP готов за 2-4 недели. Консультация бесплатна, оплата — 30% предоплата, остальное поэтапно." },
+        { q: "Сколько стоит заказной продукт и сколько времени занимает?", a: "MVP от $1000. Полная цена проекта зависит от объёма и сложности — точную цену дадим письменным предложением после технического spec. Рабочий MVP обычно готов за 2-4 недели. Консультация бесплатна, оплата — 30% предоплата, остальное поэтапно." },
         { q: "Чем TezCode Custom отличается от обычных IT-услуг?", a: "Это не готовый шаблон и не арендуемый SaaS. Мы строим продукт под вашу индивидуальную потребность с нуля — он только ваш, построен под ваши процессы, а исходный код полностью принадлежит вам." },
         { q: "Чей будет исходный код?", a: "100% ваш. В контракте указано: код передаётся полностью, GitHub на вашем аккаунте. И продукт, и его код целиком принадлежат вам." },
         { q: "Будет ли vendor lock-in?", a: "Нет. Раз код у вас, вы не привязаны к нам — в любой момент можете перейти к другой команде или продолжить сами. Мы удерживаем качеством и удобством, а не привязкой." },
@@ -185,7 +185,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "TezCode Custom — заказной программный продукт, Ташкент",
       description:
-        "Заказная разработка ПО с нуля: ERP, CRM, marketplace, внутренние системы, AI-приложения и интеграции. Построено под ваш бизнес, MVP за 2-4 недели, исходный код на 100% ваш. AI Software Factory, 14 in-house разработчиков, Ташкент.",
+        "Заказная разработка ПО с нуля: ERP, CRM, marketplace, внутренние системы, AI-приложения и интеграции. Построено под ваш бизнес, MVP от $1000, за 2-4 недели, исходный код на 100% ваш. AI Software Factory, 14 in-house разработчиков, Ташкент.",
       serviceType: "Заказная разработка программного обеспечения",
     },
   },
@@ -256,7 +256,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "answers",
       subtitle: "Common questions about bespoke product development.",
       items: [
-        { q: "How much does a bespoke product cost and how long does it take?", a: "An exact price and timeline come after the technical spec, since every product differs. A working MVP is usually ready in 2-4 weeks. The consultation is free, payment starts with a 30% deposit, the rest per stage." },
+        { q: "How much does a bespoke product cost and how long does it take?", a: "MVP from $1000. The full project price depends on scope and complexity — we give an exact quote in a written proposal after the technical spec. A working MVP is usually ready in 2-4 weeks. The consultation is free, payment starts with a 30% deposit, the rest per stage." },
         { q: "How is TezCode Custom different from generic IT services?", a: "It's not an off-the-shelf template or a rented SaaS. We build a product for your individual need from scratch — it's yours alone, shaped to your processes, and the source code belongs entirely to you." },
         { q: "Who owns the source code?", a: "100% you. The contract states: full code handover, GitHub on your account. Both the product and its code belong entirely to you." },
         { q: "Is there any vendor lock-in?", a: "No. Since you hold the code, you're not tied to us — at any point you can move to another team or continue on your own. We keep you with quality and convenience, not lock-in." },
@@ -277,7 +277,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "TezCode Custom — bespoke software product, Tashkent",
       description:
-        "Bespoke software built from scratch: ERP, CRM, marketplace, internal tools, AI-powered apps and integrations. Shaped to your business, MVP in 2-4 weeks, source code 100% yours. AI Software Factory, 14 in-house developers, Tashkent.",
+        "Bespoke software built from scratch: ERP, CRM, marketplace, internal tools, AI-powered apps and integrations. Shaped to your business, MVP from $1000, in 2-4 weeks, source code 100% yours. AI Software Factory, 14 in-house developers, Tashkent.",
       serviceType: "Bespoke / custom software development",
     },
   },
@@ -348,7 +348,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "إجابات",
       subtitle: "أسئلة شائعة عن تطوير المنتجات المخصصة.",
       items: [
-        { q: "كم يكلّف المنتج المخصص وكم يستغرق؟", a: "يُعطى السعر والموعد الدقيقان بعد الـ spec التقني، لأن كل منتج يختلف. عادة يكون MVP عامل جاهزاً خلال 2-4 أسابيع. الاستشارة مجانية، والدفع يبدأ بدفعة مقدمة 30% والباقي على مراحل." },
+        { q: "كم يكلّف المنتج المخصص وكم يستغرق؟", a: "MVP من 1000$. سعر المشروع الكامل يعتمد على النطاق والتعقيد — نقدّم السعر الدقيق في عرض مكتوب بعد الـ spec التقني. عادة يكون MVP عامل جاهزاً خلال 2-4 أسابيع. الاستشارة مجانية، والدفع يبدأ بدفعة مقدمة 30% والباقي على مراحل." },
         { q: "كيف يختلف TezCode Custom عن خدمات IT العامة؟", a: "ليس قالباً جاهزاً ولا SaaS مستأجَراً. نبني منتجاً لاحتياجك الفردي من الصفر — إنه لك وحدك، مصمم لعملياتك، والكود المصدري يخصك بالكامل." },
         { q: "لمن الكود المصدري؟", a: "100% لك. ينص العقد: تسليم كامل للكود، GitHub على حسابك. المنتج وكوده يخصانك بالكامل." },
         { q: "هل هناك vendor lock-in؟", a: "لا. بما أن الكود لديك، فأنت غير مرتبط بنا — يمكنك في أي وقت الانتقال لفريق آخر أو المتابعة بنفسك. نحتفظ بك بالجودة والراحة، لا بالارتباط." },
@@ -369,7 +369,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "TezCode Custom — منتج برمجي مخصص، طشقند",
       description:
-        "تطوير برمجيات مخصصة من الصفر: ERP، CRM، marketplace، أنظمة داخلية، تطبيقات AI وتكاملات. مصمم لأعمالك، MVP خلال 2-4 أسابيع، الكود المصدري لك 100%. مصنع برمجيات بالذكاء الاصطناعي، 14 مطوراً داخلياً، طشقند.",
+        "تطوير برمجيات مخصصة من الصفر: ERP، CRM، marketplace، أنظمة داخلية، تطبيقات AI وتكاملات. مصمم لأعمالك، MVP من 1000$، خلال 2-4 أسابيع، الكود المصدري لك 100%. مصنع برمجيات بالذكاء الاصطناعي، 14 مطوراً داخلياً، طشقند.",
       serviceType: "تطوير البرمجيات المخصصة",
     },
   },
@@ -440,7 +440,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "відповіді",
       subtitle: "Часті запитання про замовну розробку продукту.",
       items: [
-        { q: "Скільки коштує замовний продукт і скільки часу займає?", a: "Точна ціна і термін даються після технічного spec, адже кожен продукт різний. Зазвичай робочий MVP готовий за 2-4 тижні. Консультація безкоштовна, оплата — 30% передоплати, решта поетапно." },
+        { q: "Скільки коштує замовний продукт і скільки часу займає?", a: "MVP від $1000. Повна ціна проєкту залежить від обсягу та складності — точну ціну дамо письмовою пропозицією після технічного spec. Робочий MVP зазвичай готовий за 2-4 тижні. Консультація безкоштовна, оплата — 30% передоплати, решта поетапно." },
         { q: "Чим TezCode Custom відрізняється від звичайних IT-послуг?", a: "Це не готовий шаблон і не орендований SaaS. Ми будуємо продукт під вашу індивідуальну потребу з нуля — він лише ваш, побудований під ваші процеси, а вихідний код повністю належить вам." },
         { q: "Кому належить вихідний код?", a: "100% вам. У контракті вказано: повна передача коду, GitHub на вашому акаунті. І продукт, і його код цілком належать вам." },
         { q: "Чи буде vendor lock-in?", a: "Ні. Оскільки код у вас, ви не прив'язані до нас — будь-коли можете перейти до іншої команди або продовжити самі. Ми утримуємо якістю та зручністю, а не прив'язкою." },
@@ -461,7 +461,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "TezCode Custom — замовний програмний продукт, Ташкент",
       description:
-        "Замовна розробка ПЗ з нуля: ERP, CRM, marketplace, внутрішні системи, AI-застосунки та інтеграції. Побудовано під ваш бізнес, MVP за 2-4 тижні, вихідний код на 100% ваш. AI Software Factory, 14 in-house розробників, Ташкент.",
+        "Замовна розробка ПЗ з нуля: ERP, CRM, marketplace, внутрішні системи, AI-застосунки та інтеграції. Побудовано під ваш бізнес, MVP від $1000, за 2-4 тижні, вихідний код на 100% ваш. AI Software Factory, 14 in-house розробників, Ташкент.",
       serviceType: "Замовна розробка програмного забезпечення",
     },
   },

@@ -11,8 +11,8 @@ export const CONTENT: ServicePageContent = {
   uz: {
     hero: {
       badge: "AI video analitika — Toshkent",
-      title1: "Mavjud kameralaringizni",
-      titleAccent: "AI bilan aqlli qiling",
+      title1: "Kameralaringizni",
+      titleAccent: "AI bilan avtomatlashtirish",
       title2: "",
       subtitle:
         "AI video analitika — bu kameralaringizdagi tasvirni real vaqtda tahlil qiladigan sun'iy intellekt: odamlarni sanaydi, yuz orqali davomatni belgilaydi, kaska va himoya kiyimini nazorat qiladi va avto raqamlarni o'qiydi. Yangi jihoz sotib olish shart emas — biz sizning mavjud IP kameralaringizga ulanib, ular ko'rgan narsani hodisaga aylantiramiz va Telegram yoki dashboardga darhol xabar yuboramiz. On-premise (ichki server) yoki bulutda ishlaydi.",
@@ -82,9 +82,9 @@ export const CONTENT: ServicePageContent = {
       title: "Narx nimaga",
       titleAccent: "bog'liq?",
       subtitle:
-        "AI video analitikada bitta universal narx bo'lmaydi — u kameralar soni, vazifa murakkabligi va joylashuvga (on-prem yoki bulut) qarab o'zgaradi. Aniq narxni kameralar auditi va TZ dan keyin yozma beramiz.",
+        "Bir martalik ulash $990 dan boshlanadi. Keyin AI ishlashini o'zingiz boshqarasiz — hosting va foydalanishni o'zingiz to'laysiz. Aniq narx kamera soni va vazifalarga bog'liq.",
       factors: [
-        { title: "Kameralar soni", price: "TZ dan keyin", desc: "Nechta kamera va nechta nuqta tahlil qilinadi — asosiy omil. Bitta kirish kamerasidan butun zavod perimetrigacha; jarayon bosqichma-bosqich kengaytiriladi." },
+        { title: "Kameralar soni", price: "$990 dan", desc: "Nechta kamera va nechta nuqta tahlil qilinadi — asosiy omil. Bitta kirish kamerasidan butun zavod perimetrigacha; jarayon bosqichma-bosqich kengaytiriladi." },
         { title: "Use-case murakkabligi", price: "TZ dan keyin", desc: "Oddiy odam sanash bir narx, yuz tanish yoki ANPR baza bilan boshqa. Bir nechta vazifa birlashtirilsa, murakkablik va narx oshadi." },
         { title: "On-premise yoki bulut", price: "TZ dan keyin", desc: "Maxfiylik uchun ichki GPU server kerak bo'lsa — jihoz va sozlash hisobga olinadi. Bulutli ishlov ko'p holatda arzonroq startni beradi." },
       ],
@@ -105,7 +105,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "javoblar",
       subtitle: "AI video analitika haqida ko'p so'raladigan savollar.",
       items: [
-        { q: "AI video analitika qancha turadi?", a: "Bitta belgilangan narx yo'q — u kameralar soni, vazifa murakkabligi (odam sanash, yuz tanish yoki ANPR) va joylashuvga (ichki server yoki bulut) bog'liq. Shuning uchun bepul konsultatsiya va kameralar auditidan keyin, TZ asosida yozma narx beramiz. To'lov 30% oldindan, qolgani bosqichma-bosqich, natijani ko'rib." },
+        { q: "AI video analitika qancha turadi?", a: "$990 dan (bir martalik ulash) boshlanadi — bu AI ni mavjud kameralaringizga ulash uchun bir martalik to'lov, obuna emas. Ulashdan keyin AI ishlashini o'zingiz boshqarasiz: hosting va foydalanishni (API/server) o'zingiz to'laysiz. Aniq narx kameralar soni va vazifa murakkabligiga (odam sanash, yuz tanish yoki ANPR) bog'liq — bepul konsultatsiya va kameralar auditidan keyin yozma taklifda aniqlaymiz." },
         { q: "Mavjud kameralar bilan ishlaydimi?", a: "Ha — bu xizmatning asosiy g'oyasi. Yangi kamera yoki maxsus jihoz sotib olish shart emas. RTSP/ONVIF ni qo'llaydigan IP kameralaringizga (Hikvision, Dahua va boshqalar) to'g'ridan-to'g'ri ulanamiz. AI qatlami mavjud videokuzatuv ustiga qo'shiladi, videoregistrator o'z joyida qoladi." },
         { q: "Yuz tanish qonuniymi?", a: "Yuz tanishni qonuniy asosda qo'llash mumkin: xodimlar davomati uchun ularning roziligi bilan, o'z hududingizda xavfsizlik maqsadida. Muhimi — ma'lumotlarni himoya qilish va faqat kelishilgan maqsadda ishlatish. Biz tizimni sizning ichki serveringizda (on-premise) qurishimiz mumkin, shunda yuz ma'lumotlari tashqariga umuman chiqmaydi. Aniq huquqiy tafsilotlarni loyihaga qarab kelishamiz." },
         { q: "Yangi kamera o'rnatish kerakmi?", a: "Odatda yo'q. Agar mavjud kameralar kerakli burchak va sifatni bersa — ular yetarli. Faqat ba'zi nuqtada (masalan, avto raqam uchun to'g'ri burchak yoki past yorug'lik) qo'shimcha kamera tavsiya qilinishi mumkin. Buni kameralar auditida ochiq aytamiz, majburlamaymiz." },
@@ -113,6 +113,9 @@ export const CONTENT: ServicePageContent = {
         { q: "Ogohlantirish qanday keladi?", a: "Hodisa yuz berganda — kaskasiz xodim, notanish yuz, ruxsatsiz mashina yoki navbat cho'zilishi — Telegram, dashboard yoki xavfsizlik pultiga soniyalarda xabar boradi. Xabarda skrinshot, vaqt va joy bo'ladi; yozuvni keyin ham arxivdan topasiz." },
         { q: "Kaska va himoya kiyimini nazorat qila oladimi?", a: "Ha. Tizim kaska, jilet yoki himoya kiyimini kiymagan xodimni aniqlaydi va xavfli zonaga kirishni sezadi. Buzilish yuz berganda usta yoki xavfsizlik bo'limiga darhol signal boradi va jurnalga yoziladi — bu baxtsiz hodisa oldini olishga yordam beradi." },
         { q: "Qancha vaqtda ishga tushadi?", a: "Aniq muddat kameralar soni va use-case ga bog'liq. Odatda bitta vazifa (masalan, kirish nuqtasida odam sanash yoki ANPR) uchun pilot tizim bir necha hafta ichida ishga tushadi. Kengroq loyiha bosqichma-bosqich yoyiladi. Aniq muddat yozma taklifda qat'iy belgilanadi." },
+        { q: "Kameradan odam (mijoz) sanash mumkinmi?", a: "Ha. Tizim kirgan va chiqqan odamlarni avtomatik sanaydi: do'konga kunlik tashrif (footfall), navbat uzunligi, zal to'lganligi va eng gavjum soatlar. Bu raqamlar marketing samarasini o'lchash va smenaga qancha xodim kerakligini rejalashtirishda ishlatiladi — barchasi dashboardda grafik ko'rinishida." },
+        { q: "Yuz tanish orqali xodimlar davomatini yuritish mumkinmi?", a: "Ha. Kamera xodim yuzini tanib, kirish va chiqishni avtomatik belgilaydi — turniket yoki propuska kartasi kerak emas. Davomat jurnali o'zi shakllanadi: kim qachon kelgani, kechikish va ishdan erta ketish ko'rinib turadi. Kech kelgan yoki notanish yuz kirsa, Telegramga darhol xabar boradi." },
+        { q: "Avtomobil raqamlarini (ANPR) o'qiy oladimi?", a: "Ha. Tizim avtomobil davlat raqamini o'qiydi va bazaga yozadi: ruxsat etilgan mashinaga shlagbaumni avtomatik ochadi, mehmon va o'z transportini ajratadi, kirish-chiqish jurnalini yuritadi. Qorovul har bir mashinani qo'lda yozib o'tirmaydi — hammasi avtomatik." },
         { q: "Toshkentda AI video analitika kim qiladi?", a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rasmiy rezidenti (guvohnoma 6237). Mavjud kameralaringizni AI bilan aqlli qilamiz: odam sanash, yuz tanish orqali davomat, ish xavfsizligi nazorati va avto raqam tanish. Bepul konsultatsiyaga kelib, loyihangizni muhokama qilishingiz mumkin: Toshkent, Amir Temur shoh ko'chasi, 10." },
       ],
     },
@@ -166,8 +169,8 @@ export const CONTENT: ServicePageContent = {
   ru: {
     hero: {
       badge: "AI-видеоаналитика — Ташкент",
-      title1: "Сделайте существующие камеры",
-      titleAccent: "умными с помощью AI",
+      title1: "Автоматизация камер",
+      titleAccent: "с помощью ИИ",
       title2: "",
       subtitle:
         "AI-видеоаналитика — это искусственный интеллект, который в реальном времени анализирует изображение с ваших камер: считает людей, отмечает посещаемость по лицу, контролирует каски и спецодежду и распознаёт автомобильные номера. Новое оборудование покупать не нужно — мы подключаемся к вашим существующим IP-камерам, превращаем то, что они видят, в события и мгновенно шлём уведомление в Telegram или на дашборд. Работает on-premise (на вашем сервере) или в облаке.",
@@ -237,9 +240,9 @@ export const CONTENT: ServicePageContent = {
       title: "От чего зависит",
       titleAccent: "стоимость?",
       subtitle:
-        "У AI-видеоаналитики нет одной универсальной цены — она зависит от числа камер, сложности задачи и размещения (on-prem или облако). Точную цену даём письменно после аудита камер и ТЗ.",
+        "Разовое подключение — от $990. Дальше вы сами управляете работой AI: хостинг и использование оплачиваете самостоятельно. Точная цена зависит от числа камер и задач.",
       factors: [
-        { title: "Количество камер", price: "После ТЗ", desc: "Сколько камер и точек анализируется — главный фактор. От одной камеры на входе до периметра целого завода; проект расширяется поэтапно." },
+        { title: "Количество камер", price: "от $990", desc: "Сколько камер и точек анализируется — главный фактор. От одной камеры на входе до периметра целого завода; проект расширяется поэтапно." },
         { title: "Сложность use-case", price: "После ТЗ", desc: "Простой подсчёт людей — одна цена, распознавание лиц или ANPR с базой — другая. При объединении нескольких задач сложность и цена растут." },
         { title: "On-premise или облако", price: "После ТЗ", desc: "Если для приватности нужен внутренний GPU-сервер — учитывается оборудование и настройка. Облачная обработка чаще даёт более дешёвый старт." },
       ],
@@ -260,7 +263,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "ответы",
       subtitle: "Частые вопросы об AI-видеоаналитике.",
       items: [
-        { q: "Сколько стоит AI-видеоаналитика?", a: "Единой фиксированной цены нет — она зависит от числа камер, сложности задачи (подсчёт людей, распознавание лиц или ANPR) и размещения (внутренний сервер или облако). Поэтому после бесплатной консультации и аудита камер даём письменную цену по ТЗ. Оплата 30% предоплата, остальное поэтапно, по результату." },
+        { q: "Сколько стоит AI-видеоаналитика?", a: "От $990 (разовое подключение) — это единоразовая плата за подключение AI к вашим существующим камерам, а не подписка. После подключения вы сами управляете работой AI: хостинг и использование (API/сервер) оплачиваете самостоятельно. Точная цена зависит от числа камер и сложности задачи (подсчёт людей, распознавание лиц или ANPR) — уточняем в письменном предложении после бесплатной консультации и аудита камер." },
         { q: "Работает ли с существующими камерами?", a: "Да — это основная идея услуги. Покупать новые камеры или специальное оборудование не нужно. Подключаемся напрямую к вашим IP-камерам по RTSP/ONVIF (Hikvision, Dahua и другие). Слой AI добавляется поверх существующего видеонаблюдения, видеорегистратор остаётся на месте." },
         { q: "Законно ли распознавание лиц?", a: "Распознавание лиц можно применять на законных основаниях: для учёта посещаемости сотрудников с их согласия, для безопасности на вашей территории. Важно защищать данные и использовать их только по согласованной цели. Мы можем построить систему на вашем внутреннем сервере (on-premise), тогда данные о лицах вообще не выходят наружу. Конкретные юридические детали согласуем под проект." },
         { q: "Нужно ли ставить новые камеры?", a: "Обычно нет. Если существующие камеры дают нужный угол и качество — их достаточно. Лишь в отдельных точках (например, правильный угол для автономера или слабое освещение) может понадобиться дополнительная камера. Скажем об этом прямо на аудите камер, без навязывания." },
@@ -268,6 +271,9 @@ export const CONTENT: ServicePageContent = {
         { q: "Как приходят уведомления?", a: "Когда происходит событие — сотрудник без каски, незнакомое лицо, машина без доступа или растущая очередь — уведомление за секунды уходит в Telegram, на дашборд или пульт охраны. В уведомлении есть скриншот, время и место; запись потом найдёте в архиве." },
         { q: "Может ли контролировать каски и спецодежду?", a: "Да. Система выявляет сотрудника без каски, жилета или спецодежды и замечает вход в опасную зону. При нарушении сразу идёт сигнал мастеру или в отдел ТБ и запись в журнал — это помогает предотвращать несчастные случаи." },
         { q: "За сколько времени запустится?", a: "Точный срок зависит от числа камер и use-case. Обычно пилот под одну задачу (например, подсчёт людей на входе или ANPR) запускается за несколько недель. Более широкий проект разворачивается поэтапно. Точный срок жёстко фиксируется в письменном предложении." },
+        { q: "Можно ли считать посетителей по камере?", a: "Да. Система автоматически считает вошедших и вышедших: дневной трафик магазина (footfall), длину очереди, заполненность зала и часы пик. Эти цифры используются для оценки эффективности маркетинга и расчёта нужного числа сотрудников в смену — всё в виде графиков на дашборде." },
+        { q: "Можно ли вести учёт рабочего времени по распознаванию лиц?", a: "Да. Камера распознаёт лицо сотрудника и автоматически отмечает вход и выход — турникет и карта-пропуск не нужны. Журнал посещаемости формируется сам: кто во сколько пришёл, видны опоздания и ранний уход. При позднем приходе или незнакомом лице сразу приходит уведомление в Telegram." },
+        { q: "Может ли считывать автономера (ANPR)?", a: "Да. Система считывает госномер автомобиля и записывает в базу: автоматически открывает шлагбаум разрешённой машине, отделяет гостевой транспорт от своего, ведёт журнал въезда-выезда. Охраннику не нужно вручную записывать каждую машину — всё автоматически." },
         { q: "Кто делает AI-видеоаналитику в Ташкенте?", a: "Tezcode — AI Software Factory в Ташкенте и официальный резидент IT Park (свидетельство 6237). Делаем ваши существующие камеры умными с помощью AI: подсчёт людей, посещаемость по лицу, контроль охраны труда и распознавание автономеров. Можно прийти на бесплатную консультацию и обсудить проект: Ташкент, проспект Амира Темура, 10." },
       ],
     },
@@ -321,8 +327,8 @@ export const CONTENT: ServicePageContent = {
   en: {
     hero: {
       badge: "AI video analytics — Tashkent",
-      title1: "Make your existing cameras",
-      titleAccent: "smart with AI",
+      title1: "Camera automation",
+      titleAccent: "with AI",
       title2: "",
       subtitle:
         "AI video analytics is artificial intelligence that analyses your camera feed in real time: it counts people, marks attendance by face, checks helmets and workwear, and reads vehicle number plates. No new hardware to buy — we connect to your existing IP cameras, turn what they see into events, and send an instant alert to Telegram or a dashboard. Runs on-premise (on your server) or in the cloud.",
@@ -392,9 +398,9 @@ export const CONTENT: ServicePageContent = {
       title: "What does the price",
       titleAccent: "depend on?",
       subtitle:
-        "AI video analytics has no single universal price — it depends on the number of cameras, the complexity of the task and the deployment (on-prem or cloud). We give an exact price in writing after the camera audit and spec.",
+        "One-time setup starts from $990. After that you run the AI yourself — you pay for your own hosting and usage. The exact price depends on the number of cameras and tasks.",
       factors: [
-        { title: "Number of cameras", price: "After the spec", desc: "How many cameras and points are analysed is the main factor. From one entrance camera to a whole factory perimeter; the project scales in stages." },
+        { title: "Number of cameras", price: "from $990", desc: "How many cameras and points are analysed is the main factor. From one entrance camera to a whole factory perimeter; the project scales in stages." },
         { title: "Use-case complexity", price: "After the spec", desc: "Simple people counting is one price; face recognition or ANPR with a database is another. Combining several tasks raises complexity and price." },
         { title: "On-premise or cloud", price: "After the spec", desc: "If an internal GPU server is needed for privacy, hardware and setup are factored in. Cloud processing usually gives a cheaper start." },
       ],
@@ -415,7 +421,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "answers",
       subtitle: "Common questions about AI video analytics.",
       items: [
-        { q: "How much does AI video analytics cost?", a: "There is no single fixed price — it depends on the number of cameras, the complexity of the task (people counting, face recognition or ANPR) and the deployment (internal server or cloud). So after a free consultation and camera audit we give a written price against the spec. Payment is 30% upfront, the rest in stages, based on results." },
+        { q: "How much does AI video analytics cost?", a: "From $990 (one-time setup) — a single connection fee to link AI to your existing cameras, not a subscription. After setup you run the AI yourself: you pay for your own hosting and usage (API/server). The exact price depends on the number of cameras and the complexity of the task (people counting, face recognition or ANPR) — we confirm it in a written proposal after a free consultation and camera audit." },
         { q: "Does it work with existing cameras?", a: "Yes — that's the whole idea of the service. There's no need to buy new cameras or special hardware. We connect directly to your IP cameras over RTSP/ONVIF (Hikvision, Dahua and others). The AI layer is added on top of your existing CCTV; the NVR stays in place." },
         { q: "Is face recognition legal?", a: "Face recognition can be used on legal grounds: for staff attendance with their consent, and for security on your own premises. The key is protecting the data and using it only for the agreed purpose. We can build the system on your internal server (on-premise), so face data never leaves the premises. Specific legal details are agreed per project." },
         { q: "Do I need to install new cameras?", a: "Usually not. If your existing cameras give the needed angle and quality, they are enough. Only at certain points (for example, the right angle for a number plate, or low light) might an extra camera be recommended. We say this openly during the camera audit, without pushing." },
@@ -423,6 +429,9 @@ export const CONTENT: ServicePageContent = {
         { q: "How do alerts arrive?", a: "When an event happens — a worker without a helmet, an unknown face, a car without access, or a growing queue — an alert reaches Telegram, a dashboard or the security desk within seconds. The alert includes a screenshot, time and place; the recording is later found in the archive." },
         { q: "Can it monitor helmets and workwear?", a: "Yes. The system detects a worker without a helmet, vest or workwear and notices entry into a danger zone. On a violation, an alert goes to the foreman or safety team at once and is logged — this helps prevent accidents." },
         { q: "How fast does it launch?", a: "The exact timeline depends on the number of cameras and the use case. A pilot for a single task (for example, people counting at an entrance, or ANPR) usually launches within a few weeks. A broader project rolls out in stages. The exact timeline is firmly fixed in the written proposal." },
+        { q: "Can it count visitors from the camera?", a: "Yes. The system automatically counts people entering and leaving: daily store footfall, queue length, hall occupancy and peak hours. These numbers help measure marketing performance and plan how many staff each shift needs — all shown as charts on the dashboard." },
+        { q: "Can it track staff attendance by face recognition?", a: "Yes. The camera recognises an employee's face and automatically logs entry and exit — no turnstile or access card needed. The attendance log builds itself: who arrived when, with late arrivals and early leaving visible. On a late arrival or an unknown face, an alert goes to Telegram at once." },
+        { q: "Can it read car number plates (ANPR)?", a: "Yes. The system reads a vehicle's number plate and records it in a database: it automatically opens the barrier for an allowed car, separates guest vehicles from your own, and keeps an entry-exit log. The guard doesn't have to log every car by hand — it's all automatic." },
         { q: "Who does AI video analytics in Tashkent?", a: "Tezcode — an AI Software Factory in Tashkent and an official IT Park resident (certificate 6237) — makes your existing cameras smart with AI: people counting, attendance by face, workplace-safety control and number-plate recognition. Come in for a free consultation to discuss your project: 10 Amir Temur Avenue, Tashkent." },
       ],
     },
@@ -476,8 +485,8 @@ export const CONTENT: ServicePageContent = {
   ar: {
     hero: {
       badge: "تحليلات الفيديو بالذكاء الاصطناعي — طشقند",
-      title1: "اجعل كاميراتك الحالية",
-      titleAccent: "ذكية بالذكاء الاصطناعي",
+      title1: "أتمتة الكاميرات",
+      titleAccent: "بالذكاء الاصطناعي",
       title2: "",
       subtitle:
         "تحليلات الفيديو بالذكاء الاصطناعي هي ذكاء اصطناعي يحلل بث كاميراتك في الوقت الحقيقي: يعدّ الأشخاص، ويسجّل الحضور بالوجه، ويراقب الخوذ وملابس العمل، ويقرأ لوحات أرقام المركبات. لا حاجة لشراء أجهزة جديدة — نتصل بكاميرات IP الحالية لديك، ونحوّل ما تراه إلى أحداث، ونرسل تنبيهًا فوريًا إلى Telegram أو لوحة التحكم. يعمل on-premise (على خادمك) أو في السحابة.",
@@ -547,9 +556,9 @@ export const CONTENT: ServicePageContent = {
       title: "على ماذا يتوقف",
       titleAccent: "السعر؟",
       subtitle:
-        "لا يوجد سعر واحد عام لتحليلات الفيديو الذكية — يعتمد على عدد الكاميرات وتعقيد المهمة ومكان التشغيل (on-prem أو سحابة). نعطي السعر الدقيق كتابةً بعد تدقيق الكاميرات والمواصفات.",
+        "يبدأ التركيب لمرة واحدة من 990$. بعد ذلك تدير عمل الذكاء الاصطناعي بنفسك — تدفع الاستضافة والاستخدام بنفسك. السعر الدقيق يعتمد على عدد الكاميرات والمهام.",
       factors: [
-        { title: "عدد الكاميرات", price: "بعد المواصفات", desc: "كم كاميرا ونقطة تُحلَّل هو العامل الأساسي. من كاميرا مدخل واحدة إلى محيط مصنع كامل؛ يتوسع المشروع تدريجيًا." },
+        { title: "عدد الكاميرات", price: "من 990$", desc: "كم كاميرا ونقطة تُحلَّل هو العامل الأساسي. من كاميرا مدخل واحدة إلى محيط مصنع كامل؛ يتوسع المشروع تدريجيًا." },
         { title: "تعقيد حالة الاستخدام", price: "بعد المواصفات", desc: "عدّ الأشخاص البسيط سعر، والتعرف على الوجه أو ANPR بقاعدة بيانات سعر آخر. دمج عدة مهام يرفع التعقيد والسعر." },
         { title: "on-premise أو سحابة", price: "بعد المواصفات", desc: "إذا احتجت خادم GPU داخلي للخصوصية تُحتسب الأجهزة والإعداد. المعالجة السحابية غالبًا تعطي بداية أرخص." },
       ],
@@ -570,7 +579,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "إجابات",
       subtitle: "أسئلة شائعة عن تحليلات الفيديو بالذكاء الاصطناعي.",
       items: [
-        { q: "كم تكلف تحليلات الفيديو الذكية؟", a: "لا يوجد سعر ثابت واحد — يعتمد على عدد الكاميرات وتعقيد المهمة (عدّ الأشخاص، التعرف على الوجه أو ANPR) ومكان التشغيل (خادم داخلي أو سحابة). لذلك بعد استشارة مجانية وتدقيق الكاميرات نعطي سعرًا مكتوبًا حسب المواصفات. الدفع 30% مقدمًا والباقي على مراحل حسب النتائج." },
+        { q: "كم تكلف تحليلات الفيديو الذكية؟", a: "من 990$ (تركيب لمرة واحدة) — وهي رسوم لمرة واحدة لربط الذكاء الاصطناعي بكاميراتك الحالية، وليست اشتراكًا. بعد التركيب تدير عمل الذكاء الاصطناعي بنفسك: تدفع الاستضافة والاستخدام (API/الخادم) بنفسك. السعر الدقيق يعتمد على عدد الكاميرات وتعقيد المهمة (عدّ الأشخاص، التعرف على الوجه أو ANPR) — نحدده في عرض مكتوب بعد استشارة مجانية وتدقيق الكاميرات." },
         { q: "هل يعمل مع الكاميرات الحالية؟", a: "نعم — هذه هي الفكرة الأساسية للخدمة. لا حاجة لشراء كاميرات جديدة أو أجهزة خاصة. نتصل مباشرة بكاميرات IP لديك عبر RTSP/ONVIF (Hikvision وDahua وغيرها). تُضاف طبقة AI فوق نظام المراقبة الحالي، ويبقى مسجل الفيديو في مكانه." },
         { q: "هل التعرف على الوجه قانوني؟", a: "يمكن استخدام التعرف على الوجه على أسس قانونية: لتسجيل حضور الموظفين بموافقتهم، وللأمن في منطقتك الخاصة. المهم حماية البيانات واستخدامها للغرض المتفق عليه فقط. يمكننا بناء النظام على خادمك الداخلي (on-premise)، فلا تخرج بيانات الوجوه للخارج إطلاقًا. نتفق على التفاصيل القانونية الدقيقة حسب المشروع." },
         { q: "هل يجب تركيب كاميرات جديدة؟", a: "عادة لا. إذا أعطت الكاميرات الحالية الزاوية والجودة المطلوبة فهي كافية. فقط في نقاط معينة (مثل الزاوية الصحيحة للوحة السيارة أو الإضاءة الضعيفة) قد نوصي بكاميرا إضافية. نقول ذلك بصراحة في تدقيق الكاميرات دون إلزام." },
@@ -578,6 +587,9 @@ export const CONTENT: ServicePageContent = {
         { q: "كيف تصل التنبيهات؟", a: "عند وقوع حدث — موظف بلا خوذة، وجه غير معروف، سيارة بلا صلاحية أو طابور متزايد — يصل التنبيه خلال ثوانٍ إلى Telegram أو لوحة التحكم أو مركز الأمن. يتضمن التنبيه لقطة شاشة ووقتًا ومكانًا؛ ويُوجد التسجيل لاحقًا في الأرشيف." },
         { q: "هل يمكنه مراقبة الخوذ وملابس العمل؟", a: "نعم. يكتشف النظام الموظف بلا خوذة أو سترة أو ملابس واقية ويلاحظ الدخول إلى منطقة خطرة. عند المخالفة تذهب إشارة فورًا للمشرف أو قسم السلامة وتُسجَّل — وهذا يساعد على منع الحوادث." },
         { q: "خلال كم من الوقت يبدأ العمل؟", a: "يعتمد الموعد الدقيق على عدد الكاميرات وحالة الاستخدام. عادة يُطلَق مشروع تجريبي لمهمة واحدة (مثل عدّ الأشخاص عند المدخل أو ANPR) خلال أسابيع قليلة. المشروع الأوسع يُنشر على مراحل. يُثبَّت الموعد الدقيق في العرض المكتوب." },
+        { q: "هل يمكن عدّ الزوار عبر الكاميرا؟", a: "نعم. يعدّ النظام تلقائيًا الداخلين والخارجين: عدد زوار المتجر اليومي (footfall)، وطول الطابور، وامتلاء القاعة وساعات الذروة. تُستخدم هذه الأرقام لقياس فعالية التسويق وتخطيط عدد الموظفين المطلوب لكل وردية — كل ذلك كرسوم بيانية على لوحة التحكم." },
+        { q: "هل يمكن تسجيل حضور الموظفين بالتعرف على الوجه؟", a: "نعم. تتعرّف الكاميرا على وجه الموظف وتسجّل الدخول والخروج تلقائيًا — دون بوابة أو بطاقة دخول. يتكوّن سجل الحضور من تلقاء نفسه: من أتى ومتى، مع ظهور التأخير والمغادرة المبكرة. عند التأخّر أو ظهور وجه غير معروف يصل تنبيه فوري إلى Telegram." },
+        { q: "هل يمكنه قراءة لوحات السيارات (ANPR)؟", a: "نعم. يقرأ النظام لوحة السيارة ويسجّلها في قاعدة البيانات: يفتح الحاجز تلقائيًا للسيارة المصرّح لها، ويفصل مركبات الضيوف عن مركباتك، ويحتفظ بسجل الدخول والخروج. لا يحتاج الحارس إلى تدوين كل سيارة يدويًا — كل شيء تلقائي." },
         { q: "من يقدم تحليلات الفيديو الذكية في طشقند؟", a: "Tezcode — مصنع برمجيات AI في طشقند ومقيم رسمي في IT Park (شهادة 6237) — يجعل كاميراتك الحالية ذكية بالذكاء الاصطناعي: عدّ الأشخاص، الحضور بالوجه، مراقبة سلامة العمل والتعرف على لوحات المركبات. يمكنك زيارتنا لاستشارة مجانية ومناقشة مشروعك: طشقند، شارع أمير تيمور 10." },
       ],
     },
@@ -631,8 +643,8 @@ export const CONTENT: ServicePageContent = {
   uk: {
     hero: {
       badge: "AI-відеоаналітика — Ташкент",
-      title1: "Зробіть наявні камери",
-      titleAccent: "розумними за допомогою AI",
+      title1: "Автоматизація камер",
+      titleAccent: "за допомогою ШІ",
       title2: "",
       subtitle:
         "AI-відеоаналітика — це штучний інтелект, який у реальному часі аналізує зображення з ваших камер: рахує людей, відмічає відвідуваність за обличчям, контролює каски й спецодяг і розпізнає автомобільні номери. Купувати нове обладнання не потрібно — ми підключаємося до ваших наявних IP-камер, перетворюємо те, що вони бачать, на події й миттєво надсилаємо сповіщення в Telegram або на дашборд. Працює on-premise (на вашому сервері) або в хмарі.",
@@ -702,9 +714,9 @@ export const CONTENT: ServicePageContent = {
       title: "Від чого залежить",
       titleAccent: "вартість?",
       subtitle:
-        "У AI-відеоаналітики немає однієї універсальної ціни — вона залежить від кількості камер, складності завдання і розміщення (on-prem чи хмара). Точну ціну даємо письмово після аудиту камер і ТЗ.",
+        "Разове підключення — від $990. Далі ви самі керуєте роботою AI: хостинг і використання оплачуєте самостійно. Точна ціна залежить від кількості камер і завдань.",
       factors: [
-        { title: "Кількість камер", price: "Після ТЗ", desc: "Скільки камер і точок аналізується — головний фактор. Від однієї камери на вході до периметра цілого заводу; проєкт розширюється поетапно." },
+        { title: "Кількість камер", price: "від $990", desc: "Скільки камер і точок аналізується — головний фактор. Від однієї камери на вході до периметра цілого заводу; проєкт розширюється поетапно." },
         { title: "Складність use-case", price: "Після ТЗ", desc: "Простий підрахунок людей — одна ціна, розпізнавання облич або ANPR з базою — інша. При об'єднанні кількох завдань складність і ціна зростають." },
         { title: "On-premise або хмара", price: "Після ТЗ", desc: "Якщо для приватності потрібен внутрішній GPU-сервер — враховується обладнання і налаштування. Хмарна обробка частіше дає дешевший старт." },
       ],
@@ -725,7 +737,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "відповіді",
       subtitle: "Часті запитання про AI-відеоаналітику.",
       items: [
-        { q: "Скільки коштує AI-відеоаналітика?", a: "Єдиної фіксованої ціни немає — вона залежить від кількості камер, складності завдання (підрахунок людей, розпізнавання облич або ANPR) і розміщення (внутрішній сервер чи хмара). Тому після безкоштовної консультації та аудиту камер даємо письмову ціну за ТЗ. Оплата 30% передоплата, решта поетапно, за результатом." },
+        { q: "Скільки коштує AI-відеоаналітика?", a: "Від $990 (разове підключення) — це одноразова плата за підключення AI до ваших наявних камер, а не підписка. Після підключення ви самі керуєте роботою AI: хостинг і використання (API/сервер) оплачуєте самостійно. Точна ціна залежить від кількості камер і складності завдання (підрахунок людей, розпізнавання облич або ANPR) — уточнюємо в письмовій пропозиції після безкоштовної консультації та аудиту камер." },
         { q: "Чи працює з наявними камерами?", a: "Так — це основна ідея послуги. Купувати нові камери чи спеціальне обладнання не потрібно. Підключаємося напряму до ваших IP-камер по RTSP/ONVIF (Hikvision, Dahua та інші). Шар AI додається поверх наявного відеоспостереження, відеореєстратор залишається на місці." },
         { q: "Чи законне розпізнавання облич?", a: "Розпізнавання облич можна застосовувати на законних підставах: для обліку відвідуваності співробітників за їхньою згодою, для безпеки на вашій території. Важливо захищати дані й використовувати їх лише за узгодженою метою. Ми можемо побудувати систему на вашому внутрішньому сервері (on-premise), тоді дані про обличчя взагалі не виходять назовні. Конкретні юридичні деталі узгоджуємо під проєкт." },
         { q: "Чи потрібно ставити нові камери?", a: "Зазвичай ні. Якщо наявні камери дають потрібний кут і якість — їх достатньо. Лише в окремих точках (наприклад, правильний кут для автономера чи слабке освітлення) може знадобитися додаткова камера. Скажемо про це прямо на аудиті камер, без нав'язування." },
@@ -733,6 +745,9 @@ export const CONTENT: ServicePageContent = {
         { q: "Як приходять сповіщення?", a: "Коли стається подія — співробітник без каски, незнайоме обличчя, машина без доступу чи зростаюча черга — сповіщення за секунди йде в Telegram, на дашборд або пульт охорони. У сповіщенні є скріншот, час і місце; запис потім знайдете в архіві." },
         { q: "Чи може контролювати каски й спецодяг?", a: "Так. Система виявляє співробітника без каски, жилета чи спецодягу й помічає вхід у небезпечну зону. При порушенні одразу йде сигнал майстру або у відділ ОП і запис у журнал — це допомагає запобігати нещасним випадкам." },
         { q: "За скільки часу запуститься?", a: "Точний термін залежить від кількості камер і use-case. Зазвичай пілот під одне завдання (наприклад, підрахунок людей на вході або ANPR) запускається за кілька тижнів. Ширший проєкт розгортається поетапно. Точний термін жорстко фіксується в письмовій пропозиції." },
+        { q: "Чи можна рахувати відвідувачів по камері?", a: "Так. Система автоматично рахує тих, хто увійшов і вийшов: денний трафік магазину (footfall), довжину черги, заповненість залу та години пік. Ці цифри використовуються для оцінки ефективності маркетингу й розрахунку потрібної кількості співробітників у зміну — усе у вигляді графіків на дашборді." },
+        { q: "Чи можна вести облік робочого часу за розпізнаванням облич?", a: "Так. Камера розпізнає обличчя співробітника й автоматично відмічає вхід і вихід — турнікет і картка-перепустка не потрібні. Журнал відвідуваності формується сам: хто о котрій прийшов, видно запізнення та ранній вихід. За пізнього приходу чи незнайомого обличчя одразу приходить сповіщення в Telegram." },
+        { q: "Чи може зчитувати автономери (ANPR)?", a: "Так. Система зчитує держномер автомобіля й записує в базу: автоматично відкриває шлагбаум дозволеній машині, відділяє гостьовий транспорт від власного, веде журнал в'їзду-виїзду. Охоронцю не потрібно вручну записувати кожну машину — усе автоматично." },
         { q: "Хто робить AI-відеоаналітику в Ташкенті?", a: "Tezcode — AI Software Factory в Ташкенті та офіційний резидент IT Park (свідоцтво 6237) — робить ваші наявні камери розумними за допомогою AI: підрахунок людей, відвідуваність за обличчям, контроль охорони праці та розпізнавання автономерів. Можна прийти на безкоштовну консультацію й обговорити проєкт: Ташкент, проспект Аміра Темура, 10." },
       ],
     },

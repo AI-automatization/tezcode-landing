@@ -21,7 +21,7 @@ const META: Record<
     title:
       "Biznes jarayonlarini avtomatlashtirish — soha bo'yicha yechimlar — Tezcode",
     description:
-      "Savdo, xizmat ko'rsatish, ombor va hisobot jarayonlarini avtomatlashtirish — sohangizga moslangan tizim: buyurtma, CRM, moliya va integratsiya. Tezcode, Toshkent. Bepul 30 daqiqa konsultatsiya.",
+      "Savdo, xizmat ko'rsatish, ombor va hisobot jarayonlarini avtomatlashtirish — sohangizga moslangan tizim: buyurtma, CRM, moliya va integratsiya. Tezcode, Toshkent. Narx $400 dan. Bepul 30 daqiqa konsultatsiya.",
     ogTitle: "Biznes jarayonlarini avtomatlashtirish — soha bo'yicha yechimlar",
     ogDescription:
       "Savdo, xizmat ko'rsatish, ombor va hisobot jarayonlari — sohangizga moslangan bitta tizimda. Bepul konsultatsiya.",
@@ -30,7 +30,7 @@ const META: Record<
     title:
       "Автоматизация бизнес-процессов — отраслевые решения — Tezcode",
     description:
-      "Автоматизация процессов торговли, сферы услуг, склада и отчётности — система под вашу отрасль: заказы, CRM, финансы и интеграции. Tezcode, Ташкент. Бесплатная 30-минутная консультация.",
+      "Автоматизация процессов торговли, сферы услуг, склада и отчётности — система под вашу отрасль: заказы, CRM, финансы и интеграции. Tezcode, Ташкент. Цена от $400. Бесплатная 30-минутная консультация.",
     ogTitle: "Автоматизация бизнес-процессов — отраслевые решения",
     ogDescription:
       "Торговля, сфера услуг, склад и отчётность — в одной системе под вашу отрасль. Бесплатная консультация.",
@@ -38,7 +38,7 @@ const META: Record<
   en: {
     title: "Business process automation — industry solutions — Tezcode",
     description:
-      "Automation of sales, service, warehouse and reporting processes — a system tailored to your industry: orders, CRM, finance and integrations. Tezcode, Tashkent. Free 30-minute consultation.",
+      "Automation of sales, service, warehouse and reporting processes — a system tailored to your industry: orders, CRM, finance and integrations. Tezcode, Tashkent. From $400. Free 30-minute consultation.",
     ogTitle: "Business process automation — industry solutions",
     ogDescription:
       "Sales, service, warehouse and reporting processes — in one system tailored to your industry. Free consultation.",
@@ -46,7 +46,7 @@ const META: Record<
   ar: {
     title: "أتمتة عمليات الأعمال — حلول حسب المجال — Tezcode",
     description:
-      "أتمتة عمليات البيع والخدمات والمخزون والتقارير — نظام مصمم لمجالك: الطلبات وCRM والمالية والتكامل. Tezcode، طشقند. استشارة مجانية 30 دقيقة.",
+      "أتمتة عمليات البيع والخدمات والمخزون والتقارير — نظام مصمم لمجالك: الطلبات وCRM والمالية والتكامل. Tezcode، طشقند. من 400$. استشارة مجانية 30 دقيقة.",
     ogTitle: "أتمتة عمليات الأعمال — حلول حسب المجال",
     ogDescription:
       "البيع والخدمات والمخزون والتقارير — في نظام واحد مصمم لمجالك. استشارة مجانية.",
@@ -54,7 +54,7 @@ const META: Record<
   uk: {
     title: "Автоматизація бізнес-процесів — галузеві рішення — Tezcode",
     description:
-      "Автоматизація процесів торгівлі, сфери послуг, складу та звітності — система під вашу галузь: замовлення, CRM, фінанси та інтеграції. Tezcode, Ташкент. Безкоштовна 30-хвилинна консультація.",
+      "Автоматизація процесів торгівлі, сфери послуг, складу та звітності — система під вашу галузь: замовлення, CRM, фінанси та інтеграції. Tezcode, Ташкент. Ціна від $400. Безкоштовна 30-хвилинна консультація.",
     ogTitle: "Автоматизація бізнес-процесів — галузеві рішення",
     ogDescription:
       "Торгівля, сфера послуг, склад і звітність — в одній системі під вашу галузь. Безкоштовна консультація.",

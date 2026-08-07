@@ -18,9 +18,9 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: PATH,
-    title: "TezCode Custom — buyurtma dasturiy ta'minot | source code 100% sizniki | Tezcode",
+    title: "TezCode Custom — buyurtma dasturiy ta'minot Toshkent | source code 100% sizniki | Tezcode",
     description:
-      "TezCode Custom: noldan buyurtma asosidagi dasturiy mahsulot — biznesingizga moslab qurilgan ERP, CRM, marketplace, ichki tizim yoki AI ilova. MVP 2-4 haftada, to'lov 30% oldindan, source code 100% sizniki. 14 in-house dasturchi, Toshkent.",
+      "TezCode Custom: noldan buyurtma asosidagi dasturiy mahsulot — biznesingizga moslab qurilgan ERP, CRM, marketplace, ichki tizim yoki AI ilova. MVP $1000 dan, 2-4 haftada, to'lov 30% oldindan, source code 100% sizniki. 14 in-house dasturchi, Toshkent.",
     keywords: [
       "buyurtma dasturiy ta'minot",
       "custom software Toshkent",
@@ -35,7 +35,7 @@ export async function generateMetadata({
     ],
     ogTitle: "TezCode Custom — buyurtma dasturiy mahsulot",
     ogDescription:
-      "Sizning biznesingizga moslab qurilgan dasturiy mahsulot. MVP 2-4 haftada, to'lov 30% oldindan, source code 100% sizniki.",
+      "Sizning biznesingizga moslab qurilgan dasturiy mahsulot. MVP $1000 dan, 2-4 haftada, to'lov 30% oldindan, source code 100% sizniki.",
   });
 }
 

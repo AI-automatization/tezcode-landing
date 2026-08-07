@@ -24,7 +24,7 @@ const META: Record<
   uz: {
     title: "Klinika CRM Toshkent — ClinicaGo: qabul, bemor bazasi",
     description:
-      "Klinika CRM ClinicaGo (CoreMed): qabul va navbat, shifokor jadvali, bemorlar bazasi, SMS/Telegram eslatmalar, moliya, rollar, hisobot. Jonli ishlayotgan mahsulot, IT Park rezidenti Tezcode. Toshkent. Bepul demo.",
+      "Klinika CRM ClinicaGo (CoreMed): qabul va navbat, shifokor jadvali, bemorlar bazasi, SMS/Telegram eslatmalar, moliya, rollar, hisobot. $25/oy dan (1-oy bepul). Jonli ishlayotgan mahsulot, IT Park rezidenti Tezcode. Toshkent. Bepul demo.",
     ogTitle: "ClinicaGo — klinikangiz uchun CRM | Tezcode",
     ogDescription:
       "Qabul, navbat, shifokor jadvali, bemor bazasi, moliya va xodimlar bitta tizimda. Bepul demo.",
@@ -32,7 +32,7 @@ const META: Record<
   ru: {
     title: "CRM для клиники — ClinicaGo, Ташкент",
     description:
-      "CRM для клиники ClinicaGo (CoreMed): приём и очередь, расписание врачей, база пациентов, SMS/Telegram-напоминания, финансы, роли, отчёты. Реально работающий продукт, Tezcode — резидент IT Park. Ташкент. Бесплатное демо.",
+      "CRM для клиники ClinicaGo (CoreMed): приём и очередь, расписание врачей, база пациентов, SMS/Telegram-напоминания, финансы, роли, отчёты. От $25/мес (первый месяц бесплатно). Реально работающий продукт, Tezcode — резидент IT Park. Ташкент. Бесплатное демо.",
     ogTitle: "ClinicaGo — CRM для вашей клиники | Tezcode",
     ogDescription:
       "Приём, очередь, расписание врачей, база пациентов, финансы и сотрудники в одной системе. Бесплатное демо.",
@@ -40,7 +40,7 @@ const META: Record<
   en: {
     title: "Clinic CRM — ClinicaGo, Tashkent",
     description:
-      "ClinicaGo clinic CRM (CoreMed): appointments and queue, doctor schedules, patient base, SMS/Telegram reminders, finance, roles, reports. A live, working product by Tezcode — IT Park resident. Tashkent. Free demo.",
+      "ClinicaGo clinic CRM (CoreMed): appointments and queue, doctor schedules, patient base, SMS/Telegram reminders, finance, roles, reports. From $25/mo (first month free). A live, working product by Tezcode — IT Park resident. Tashkent. Free demo.",
     ogTitle: "ClinicaGo — a CRM for your clinic | Tezcode",
     ogDescription:
       "Appointments, queue, doctor schedules, patient base, finance and staff in one system. Free demo.",
@@ -48,7 +48,7 @@ const META: Record<
   ar: {
     title: "CRM للعيادات — ClinicaGo، طشقند",
     description:
-      "CRM للعيادات ClinicaGo (CoreMed): المواعيد والطابور، جداول الأطباء، قاعدة المرضى، تذكيرات SMS/Telegram، المالية، الأدوار، التقارير. منتج عامل حقيقي من Tezcode — مقيم IT Park. طشقند. عرض تجريبي مجاني.",
+      "CRM للعيادات ClinicaGo (CoreMed): المواعيد والطابور، جداول الأطباء، قاعدة المرضى، تذكيرات SMS/Telegram، المالية، الأدوار، التقارير. من 25$ شهرياً (الشهر الأول مجاناً). منتج عامل حقيقي من Tezcode — مقيم IT Park. طشقند. عرض تجريبي مجاني.",
     ogTitle: "ClinicaGo — نظام CRM لعيادتك | Tezcode",
     ogDescription:
       "المواعيد، الطابور، جداول الأطباء، قاعدة المرضى، المالية والموظفون في نظام واحد. عرض تجريبي مجاني.",
@@ -56,7 +56,7 @@ const META: Record<
   uk: {
     title: "CRM для клініки — ClinicaGo, Ташкент",
     description:
-      "CRM для клініки ClinicaGo (CoreMed): прийом і черга, розклад лікарів, база пацієнтів, SMS/Telegram-нагадування, фінанси, ролі, звіти. Реально працюючий продукт, Tezcode — резидент IT Park. Ташкент. Безкоштовне демо.",
+      "CRM для клініки ClinicaGo (CoreMed): прийом і черга, розклад лікарів, база пацієнтів, SMS/Telegram-нагадування, фінанси, ролі, звіти. Від $25/міс (перший місяць безкоштовно). Реально працюючий продукт, Tezcode — резидент IT Park. Ташкент. Безкоштовне демо.",
     ogTitle: "ClinicaGo — CRM для вашої клініки | Tezcode",
     ogDescription:
       "Прийом, черга, розклад лікарів, база пацієнтів, фінанси і співробітники в одній системі. Безкоштовне демо.",

@@ -23,7 +23,7 @@ const META: Record<
   uz: {
     title: "Xodim nazorati tizimi — WorkControl, Toshkent",
     description:
-      "Xodim nazorati tizimi WorkControl: vazifa boshqaruvi, ish vaqti va davomat, kechikish nazorati, samaradorlik (KPI), rahbar hisoboti, Telegram bildirishnoma. Tezcode — IT Park rezidenti. Toshkent va butun O'zbekiston. Bepul demo, to'lov 30% oldindan.",
+      "Xodim nazorati tizimi WorkControl $35/oy dan: vazifa boshqaruvi, ish vaqti va davomat, kechikish nazorati, samaradorlik (KPI), rahbar hisoboti, Telegram bildirishnoma. Tezcode — IT Park rezidenti. Toshkent va butun O'zbekiston. Bepul demo, to'lov 30% oldindan.",
     ogTitle: "Xodim nazorati tizimi — WorkControl, Toshkent | Tezcode",
     ogDescription:
       "Vazifa, ish vaqti, davomat, KPI va hisobot bitta dashboardda. Telegram bildirishnomalari, filiallar ko'rinishi. Bepul demo.",
@@ -31,7 +31,7 @@ const META: Record<
   ru: {
     title: "Контроль сотрудников: программа WorkControl — Ташкент",
     description:
-      "Программа контроля сотрудников WorkControl в Ташкенте: управление задачами, рабочее время и посещаемость, контроль опозданий, эффективность (KPI), отчёт руководителю, уведомления в Telegram. Tezcode — резидент IT Park. Бесплатное демо, оплата 30% предоплата.",
+      "Программа контроля сотрудников WorkControl в Ташкенте от $35/мес: управление задачами, рабочее время и посещаемость, контроль опозданий, эффективность (KPI), отчёт руководителю, уведомления в Telegram. Tezcode — резидент IT Park. Бесплатное демо, оплата 30% предоплата.",
     ogTitle: "Контроль сотрудников — WorkControl, Ташкент | Tezcode",
     ogDescription:
       "Задачи, рабочее время, посещаемость, KPI и отчёты в одном дашборде. Уведомления в Telegram, обзор филиалов. Бесплатное демо.",
@@ -39,7 +39,7 @@ const META: Record<
   en: {
     title: "Staff monitoring system — WorkControl, Uzbekistan",
     description:
-      "WorkControl staff monitoring system in Tashkent, Uzbekistan: task management, work time and attendance, lateness control, performance (KPI), manager reports, Telegram notifications. Tezcode — IT Park resident. Free demo, 30% upfront payment.",
+      "WorkControl staff monitoring system in Tashkent, Uzbekistan from $35/mo: task management, work time and attendance, lateness control, performance (KPI), manager reports, Telegram notifications. Tezcode — IT Park resident. Free demo, 30% upfront payment.",
     ogTitle: "Staff monitoring system — WorkControl, Uzbekistan | Tezcode",
     ogDescription:
       "Tasks, work time, attendance, KPI and reports in one dashboard. Telegram notifications, branch overview. Free demo.",
@@ -47,7 +47,7 @@ const META: Record<
   ar: {
     title: "نظام مراقبة الموظفين — WorkControl، طشقند",
     description:
-      "نظام مراقبة الموظفين WorkControl في طشقند: إدارة المهام، وقت العمل والحضور، مراقبة التأخير، الأداء (KPI)، تقارير المدير، إشعارات Telegram. Tezcode — مقيم في IT Park. عرض تجريبي مجاني، الدفع 30% مقدمًا.",
+      "نظام مراقبة الموظفين WorkControl في طشقند من 35$ شهرياً: إدارة المهام، وقت العمل والحضور، مراقبة التأخير، الأداء (KPI)، تقارير المدير، إشعارات Telegram. Tezcode — مقيم في IT Park. عرض تجريبي مجاني، الدفع 30% مقدمًا.",
     ogTitle: "نظام مراقبة الموظفين — WorkControl، طشقند | Tezcode",
     ogDescription:
       "المهام ووقت العمل والحضور وKPI والتقارير في لوحة واحدة. إشعارات Telegram وعرض الفروع. عرض تجريبي مجاني.",
@@ -55,7 +55,7 @@ const META: Record<
   uk: {
     title: "Контроль співробітників: програма WorkControl — Ташкент",
     description:
-      "Програма контролю співробітників WorkControl у Ташкенті: управління завданнями, робочий час і відвідуваність, контроль запізнень, ефективність (KPI), звіт керівнику, сповіщення в Telegram. Tezcode — резидент IT Park. Безкоштовне демо, оплата 30% передоплата.",
+      "Програма контролю співробітників WorkControl у Ташкенті від $35/міс: управління завданнями, робочий час і відвідуваність, контроль запізнень, ефективність (KPI), звіт керівнику, сповіщення в Telegram. Tezcode — резидент IT Park. Безкоштовне демо, оплата 30% передоплата.",
     ogTitle: "Контроль співробітників — WorkControl, Ташкент | Tezcode",
     ogDescription:
       "Завдання, робочий час, відвідуваність, KPI та звіти в одному дашборді. Сповіщення в Telegram, огляд філій. Безкоштовне демо.",

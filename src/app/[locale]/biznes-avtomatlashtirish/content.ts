@@ -58,6 +58,20 @@ export const CONTENT: ServicePageContent = {
         { tag: "04", title: "Telegram orqali avtomatizatsiya", desc: "Buyurtma qabul qilish, eslatma, hisobotni Telegramga jo'natish — kichik biznes uchun arzon birinchi qadam." },
       ],
     },
+    pricing: {
+      badge: "Narx",
+      title: "Avtomatlashtirish",
+      titleAccent: "qancha turadi?",
+      subtitle:
+        "Loyiha uchun narx $400 dan boshlanadi. Aniq summa jarayonlar soni va murakkabligiga bog'liq — bepul auditdan keyin yozma taklif beramiz.",
+      factors: [
+        { title: "Oddiy avtomatizatsiya", price: "$400 dan", desc: "Telegram bot yoki avtomatik hisobot — eng ko'p vaqt oladigan bitta jarayon. Kichik biznes uchun tez start, 1-2 hafta." },
+        { title: "To'liq tizim (CRM + ombor + hisobot)", price: "Jarayonga qarab", desc: "Bir nechta jarayon bitta tizimda, integratsiya bilan. 2-4 hafta MVP, keyin bosqichma-bosqich kengaytiriladi." },
+        { title: "Murakkab / integratsiyali yechim", price: "Individual", desc: "1C, kassa, to'lov tizimi va bir nechta bo'lim — hajm va narx audit asosida belgilanadi." },
+      ],
+      note:
+        "Avtomatlashtirish $400 dan boshlanadi. To'lov: 30% oldindan, qolgani bosqichma-bosqich, natijani ko'rib. Aniq narx bepul konsultatsiya va jarayon auditidan keyin yozma taklifda beriladi.",
+    },
     cta: {
       badge: "Boshlash vaqti",
       title: "Qaysi jarayon",
@@ -77,7 +91,8 @@ export const CONTENT: ServicePageContent = {
         { q: "Kichik biznesga ham kerakmi?", a: "Ha. Aynan kichik biznesda har bir soat qimmat. Telegram bot yoki avtomatik hisobot kabi arzon yechimdan boshlab, eng ko'p vaqt oladigan bitta jarayonni avtomatlashtirsangiz — natija darrov seziladi." },
         { q: "Tayyor dastur (Bitrix, AmoCRM) o'rniga nega buyurtma tizim?", a: "Tayyor SaaS universal — sizning o'ziga xos jarayoningizga 60% mos keladi, qolgani ortiqcha. Tezcode noldan sizning ish oqimingizga moslab quradi, shuning uchun tizim to'liq ishlatiladi." },
         { q: "Qancha vaqtda tayyor bo'ladi?", a: "Oddiy avtomatizatsiya — 1-2 hafta. To'liqroq tizim — 2-4 hafta MVP, keyin bosqichma-bosqich kengaytiriladi. Har hafta ishlovchi versiyani ko'rsatamiz." },
-        { q: "Narxi qancha?", a: "Aniq narx faqat jarayon auditidan keyin beriladi, chunki har biznes har xil. Konsultatsiya bepul, to'lov 30% oldindan, qolgani bosqichma-bosqich." },
+        { q: "Narxi qancha?", a: "$400 dan boshlanadi. Aniq narx jarayonlar soni va murakkabligiga bog'liq, chunki har biznes har xil — bepul auditdan keyin yozma taklif beramiz. Konsultatsiya bepul, to'lov 30% oldindan, qolgani bosqichma-bosqich." },
+        { q: "Biznes jarayonlarini avtomatlashtirish qancha turadi?", a: "$400 dan boshlanadi. Aniq narx jarayonlar soni va murakkabligiga bog'liq — bepul auditdan keyin yozma taklif beramiz." },
         { q: "Hozirgi tizimlarim (1C, kassa, Telegram) bilan ishlaydimi?", a: "Ha. Biz Telegram, Google Sheets, 1C, to'lov va kassa tizimlari bilan integratsiya quramiz, shunda avtomatizatsiya hozirgi ish oqimingiz ichida ishlaydi." },
       ],
     },
@@ -151,6 +166,20 @@ export const CONTENT: ServicePageContent = {
         { tag: "04", title: "Автоматизация через Telegram", desc: "Приём заказов, напоминания, отправка отчётов в Telegram — недорогой первый шаг для малого бизнеса." },
       ],
     },
+    pricing: {
+      badge: "Цена",
+      title: "Сколько стоит",
+      titleAccent: "автоматизация?",
+      subtitle:
+        "Цена за проект начинается от $400. Точная сумма зависит от количества процессов и их сложности — после бесплатного аудита даём письменное предложение.",
+      factors: [
+        { title: "Простая автоматизация", price: "от $400", desc: "Telegram-бот или автоматический отчёт — один самый затратный по времени процесс. Быстрый старт для малого бизнеса, 1-2 недели." },
+        { title: "Полная система (CRM + склад + отчёты)", price: "По процессам", desc: "Несколько процессов в одной системе с интеграциями. MVP за 2-4 недели, затем расширение поэтапно." },
+        { title: "Сложное / интеграционное решение", price: "Индивидуально", desc: "1C, касса, платёжная система и несколько отделов — объём и цена определяются по аудиту." },
+      ],
+      note:
+        "Автоматизация начинается от $400. Оплата: 30% предоплата, остальное поэтапно, по результату. Точная цена — после бесплатной консультации и аудита процессов в письменном предложении.",
+    },
     cta: {
       badge: "Время начать",
       title: "Какой процесс",
@@ -170,7 +199,8 @@ export const CONTENT: ServicePageContent = {
         { q: "Нужна ли она малому бизнесу?", a: "Да. Именно в малом бизнесе каждый час ценен. Начав с недорогого решения вроде Telegram-бота или автоматического отчёта и автоматизировав один самый затратный процесс, вы сразу почувствуете результат." },
         { q: "Зачем заказная система вместо готовой (Bitrix, AmoCRM)?", a: "Готовый SaaS универсален — он подходит вашему уникальному процессу примерно на 60%, остальное лишнее. Tezcode строит с нуля под ваш рабочий поток, поэтому система используется полностью." },
         { q: "Сколько времени занимает?", a: "Простая автоматизация — 1-2 недели. Более полная система — MVP за 2-4 недели, затем расширяется поэтапно. Каждую неделю показываем рабочую версию." },
-        { q: "Сколько это стоит?", a: "Точная цена даётся только после аудита процессов, ведь бизнесы разные. Консультация бесплатна, оплата — 30% предоплата, остальное поэтапно." },
+        { q: "Сколько это стоит?", a: "От $400. Точная цена зависит от количества процессов и их сложности, ведь бизнесы разные — после бесплатного аудита даём письменное предложение. Консультация бесплатна, оплата — 30% предоплата, остальное поэтапно." },
+        { q: "Сколько стоит автоматизация бизнес-процессов?", a: "От $400. Точная цена зависит от количества процессов и их сложности — после бесплатного аудита даём письменное предложение." },
         { q: "Работает ли с моими системами (1C, касса, Telegram)?", a: "Да. Мы строим интеграцию с Telegram, Google Sheets, 1C, платёжными и кассовыми системами, чтобы автоматизация работала внутри вашего текущего процесса." },
       ],
     },
@@ -244,6 +274,20 @@ export const CONTENT: ServicePageContent = {
         { tag: "04", title: "Automation via Telegram", desc: "Take orders, send reminders, push reports to Telegram — an affordable first step for small business." },
       ],
     },
+    pricing: {
+      badge: "Pricing",
+      title: "How much does",
+      titleAccent: "automation cost?",
+      subtitle:
+        "Project pricing starts from $400. The exact figure depends on the number of processes and their complexity — after a free audit we send a written proposal.",
+      factors: [
+        { title: "Simple automation", price: "from $400", desc: "A Telegram bot or automated report — your single most time-consuming process. A fast start for small business, 1-2 weeks." },
+        { title: "Full system (CRM + inventory + reports)", price: "By process", desc: "Several processes in one system with integrations. MVP in 2-4 weeks, then expanded step by step." },
+        { title: "Complex / integrated solution", price: "Custom", desc: "1C, POS, payment system and several departments — scope and price set after the audit." },
+      ],
+      note:
+        "Automation starts from $400. Payment: 30% upfront, the rest per stage against results. The exact price comes after a free consultation and process audit, in a written proposal.",
+    },
     cta: {
       badge: "Time to start",
       title: "Which process",
@@ -263,7 +307,8 @@ export const CONTENT: ServicePageContent = {
         { q: "Does a small business need it?", a: "Yes. In a small business every hour is precious. Starting with an affordable solution like a Telegram bot or automated report and automating your single most time-consuming process, you feel the result immediately." },
         { q: "Why custom instead of ready tools (Bitrix, AmoCRM)?", a: "Off-the-shelf SaaS is generic — it fits your unique process about 60%, the rest is overhead. Tezcode builds from scratch around your workflow, so the system is fully used." },
         { q: "How long does it take?", a: "Simple automation — 1-2 weeks. A fuller system — an MVP in 2-4 weeks, then expanded step by step. We show a working version every week." },
-        { q: "How much does it cost?", a: "An exact price comes only after the process audit, since businesses differ. The consultation is free, payment starts with a 30% deposit, the rest per stage." },
+        { q: "How much does it cost?", a: "From $400. The exact price depends on the number of processes and their complexity, since businesses differ — after a free audit we send a written proposal. The consultation is free, payment starts with a 30% deposit, the rest per stage." },
+        { q: "How much does business process automation cost?", a: "From $400. The exact price depends on the number of processes and their complexity — after a free audit we send a written proposal." },
         { q: "Will it work with my systems (1C, POS, Telegram)?", a: "Yes. We build integrations with Telegram, Google Sheets, 1C, payment and POS systems so the automation works inside your current process." },
       ],
     },
@@ -337,6 +382,20 @@ export const CONTENT: ServicePageContent = {
         { tag: "04", title: "أتمتة عبر Telegram", desc: "استقبال الطلبات، التذكيرات، إرسال التقارير إلى Telegram — خطوة أولى ميسورة للأعمال الصغيرة." },
       ],
     },
+    pricing: {
+      badge: "السعر",
+      title: "كم تكلفة",
+      titleAccent: "الأتمتة؟",
+      subtitle:
+        "يبدأ سعر المشروع من 400$. يعتمد المبلغ الدقيق على عدد العمليات وتعقيدها — بعد تدقيق مجاني نرسل عرضاً مكتوباً.",
+      factors: [
+        { title: "أتمتة بسيطة", price: "من 400$", desc: "بوت Telegram أو تقرير تلقائي — أكثر عملية تستهلك وقتك. بداية سريعة للأعمال الصغيرة، 1-2 أسبوع." },
+        { title: "نظام كامل (CRM + مخزون + تقارير)", price: "حسب العمليات", desc: "عدة عمليات في نظام واحد مع تكاملات. MVP خلال 2-4 أسابيع ثم توسّع تدريجياً." },
+        { title: "حل معقّد / متكامل", price: "مخصّص", desc: "1C ونقطة البيع ونظام الدفع وعدة أقسام — يُحدّد النطاق والسعر بعد التدقيق." },
+      ],
+      note:
+        "تبدأ الأتمتة من 400$. الدفع: 30% مقدمًا والباقي على مراحل حسب النتيجة. يُعطى السعر الدقيق بعد استشارة مجانية وتدقيق العمليات في عرض مكتوب.",
+    },
     cta: {
       badge: "وقت البدء",
       title: "أي عملية",
@@ -356,7 +415,8 @@ export const CONTENT: ServicePageContent = {
         { q: "هل تحتاجها الأعمال الصغيرة؟", a: "نعم. في الأعمال الصغيرة كل ساعة ثمينة. بالبدء بحل ميسور مثل بوت Telegram أو تقرير تلقائي وأتمتة أكثر عملية تستهلك وقتك، تشعر بالنتيجة فوراً." },
         { q: "لماذا نظام مخصص بدل أدوات جاهزة (Bitrix، AmoCRM)؟", a: "الـ SaaS الجاهز عام — يناسب عمليتك الفريدة بنحو 60٪، والباقي زائد. تبني Tezcode من الصفر حول سير عملك، فيُستخدم النظام بالكامل." },
         { q: "كم يستغرق؟", a: "أتمتة بسيطة — 1-2 أسبوع. نظام أكمل — MVP خلال 2-4 أسابيع ثم يُوسّع تدريجياً. نعرض نسخة عاملة كل أسبوع." },
-        { q: "كم التكلفة؟", a: "يُعطى السعر الدقيق بعد تدقيق العمليات فقط، لأن الأعمال تختلف. الاستشارة مجانية، والدفع يبدأ بدفعة مقدمة 30% والباقي على مراحل." },
+        { q: "كم التكلفة؟", a: "من 400$. يعتمد السعر الدقيق على عدد العمليات وتعقيدها لأن الأعمال تختلف — بعد تدقيق مجاني نرسل عرضاً مكتوباً. الاستشارة مجانية، والدفع يبدأ بدفعة مقدمة 30% والباقي على مراحل." },
+        { q: "كم تكلفة أتمتة عمليات الأعمال؟", a: "من 400$. يعتمد السعر الدقيق على عدد العمليات وتعقيدها — بعد تدقيق مجاني نرسل عرضاً مكتوباً." },
         { q: "هل يعمل مع أنظمتي (1C، نقطة البيع، Telegram)؟", a: "نعم. نبني تكاملاً مع Telegram وGoogle Sheets و1C وأنظمة الدفع ونقاط البيع لتعمل الأتمتة داخل عمليتك الحالية." },
       ],
     },
@@ -430,6 +490,20 @@ export const CONTENT: ServicePageContent = {
         { tag: "04", title: "Автоматизація через Telegram", desc: "Прийом замовлень, нагадування, надсилання звітів у Telegram — недорогий перший крок для малого бізнесу." },
       ],
     },
+    pricing: {
+      badge: "Ціна",
+      title: "Скільки коштує",
+      titleAccent: "автоматизація?",
+      subtitle:
+        "Ціна за проект починається від $400. Точна сума залежить від кількості процесів та їх складності — після безкоштовного аудиту надсилаємо письмову пропозицію.",
+      factors: [
+        { title: "Проста автоматизація", price: "від $400", desc: "Telegram-бот або автоматичний звіт — один найбільш витратний за часом процес. Швидкий старт для малого бізнесу, 1-2 тижні." },
+        { title: "Повна система (CRM + склад + звіти)", price: "За процесами", desc: "Кілька процесів в одній системі з інтеграціями. MVP за 2-4 тижні, потім розширення поетапно." },
+        { title: "Складне / інтеграційне рішення", price: "Індивідуально", desc: "1C, каса, платіжна система та кілька відділів — обсяг і ціна визначаються за аудитом." },
+      ],
+      note:
+        "Автоматизація починається від $400. Оплата: 30% передоплата, решта поетапно, за результатом. Точна ціна — після безкоштовної консультації та аудиту процесів у письмовій пропозиції.",
+    },
     cta: {
       badge: "Час починати",
       title: "Який процес",
@@ -449,7 +523,8 @@ export const CONTENT: ServicePageContent = {
         { q: "Чи потрібна вона малому бізнесу?", a: "Так. Саме в малому бізнесі кожна година цінна. Почавши з недорогого рішення на кшталт Telegram-бота чи автоматичного звіту й автоматизувавши один найбільш витратний процес, ви одразу відчуєте результат." },
         { q: "Навіщо замовна система замість готової (Bitrix, AmoCRM)?", a: "Готовий SaaS універсальний — він підходить вашому унікальному процесу приблизно на 60%, решта зайве. Tezcode будує з нуля під ваш робочий потік, тому система використовується повністю." },
         { q: "Скільки часу займає?", a: "Проста автоматизація — 1-2 тижні. Повніша система — MVP за 2-4 тижні, потім розширюється поетапно. Щотижня показуємо робочу версію." },
-        { q: "Скільки це коштує?", a: "Точна ціна дається лише після аудиту процесів, адже бізнеси різні. Консультація безкоштовна, оплата — 30% передоплати, решта поетапно." },
+        { q: "Скільки це коштує?", a: "Від $400. Точна ціна залежить від кількості процесів та їх складності, адже бізнеси різні — після безкоштовного аудиту надсилаємо письмову пропозицію. Консультація безкоштовна, оплата — 30% передоплати, решта поетапно." },
+        { q: "Скільки коштує автоматизація бізнес-процесів?", a: "Від $400. Точна ціна залежить від кількості процесів та їх складності — після безкоштовного аудиту надсилаємо письмову пропозицію." },
         { q: "Чи працює з моїми системами (1C, каса, Telegram)?", a: "Так. Ми будуємо інтеграцію з Telegram, Google Sheets, 1C, платіжними та касовими системами, щоб автоматизація працювала всередині вашого поточного процесу." },
       ],
     },

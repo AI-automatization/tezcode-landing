@@ -82,9 +82,9 @@ export const CONTENT: ServicePageContent = {
       title: "Narx nimaga",
       titleAccent: "bog'liq?",
       subtitle:
-        "WorkControl obuna asosida ishlaydi — universal narx yo'q, chunki hajm jamoaga qarab o'zgaradi. Aniq raqamni bepul demodan keyin yozma taklifda beramiz.",
+        "WorkControl $35/oy dan boshlanadi. Aniq tarif jamoa hajmi va xodimlar soniga bog'liq — bepul demodan keyin yozma taklif beramiz.",
       factors: [
-        { title: "Xodimlar soni", desc: "Obuna narxi jamoa hajmiga qarab hisoblanadi: 10 kishilik jamoa bilan 100 kishilik kompaniya uchun narx har xil bo'ladi." },
+        { title: "Xodimlar soni", price: "$35/oy dan", desc: "Obuna narxi jamoa hajmiga qarab hisoblanadi: 10 kishilik jamoa bilan 100 kishilik kompaniya uchun narx har xil bo'ladi." },
         { title: "Sozlash hajmi", desc: "Bo'limlar, rollar, vazifa turlari va hisobot shakllari qanchalik chuqur moslashtirilsa, joriy etish ishi shuncha ko'p bo'ladi." },
         { title: "O'rgatish va joriy etish", desc: "Sozlash va o'rgatish odatda bir necha kun. Katta yoki ko'p filialli jamoada bosqichma-bosqich joriy etamiz — muddat demodan keyin aniqlanadi." },
       ],
@@ -110,7 +110,7 @@ export const CONTENT: ServicePageContent = {
         { q: "WorkControl aniq nimani nazorat qiladi?", a: "Uchta narsani: vazifalar (kim, nima, qachongacha), ish vaqti va davomat (kelish-ketish, kechikish) hamda samaradorlik (har xodim qancha vazifani qancha vaqtda bajargani). Maqsad — josuslik emas, ish jarayonini shaffof va tartibli qilish." },
         { q: "Xodimlar ekrani yoki yozishmalarini kuzatadimi?", a: "Yo'q. WorkControl ekran yozuvi, klaviatura kuzatuvi yoki shaxsiy yozishmalarni o'qish bilan shug'ullanmaydi. Tizim faqat ish ko'rsatkichlarini qayd etadi: vazifa, davomat, muddat va natija. Xodimlar qaysi ma'lumot yig'ilishini ochiq biladi — bu ishonchni buzmaydi, aksincha baholashni shaffof va adolatli qiladi." },
         { q: "Qanday qurilma kerak?", a: "Maxsus qurilma shart emas: WorkControl veb dashboard sifatida ishlaydi — oddiy kompyuter yoki smartfon brauzeri yetarli. Bildirishnomalar Telegram orqali keladi, ya'ni xodimlar allaqachon ishlatayotgan ilova kifoya qiladi." },
-        { q: "Narxi qancha va to'lov qanday?", a: "WorkControl obuna asosida, narx xodimlar soni va sozlash hajmiga bog'liq — shuning uchun universal raqam aytmaymiz. Aniq narx bepul demodan keyin yozma taklifda beriladi. Joriy etish to'lovi: 30% oldindan, qolgani bosqichma-bosqich. Yashirin to'lovlar yo'q." },
+        { q: "Narxi qancha va to'lov qanday?", a: "WorkControl $35/oy dan boshlanadi. Narx obuna asosida bo'lib, xodimlar soni va sozlash hajmiga bog'liq — aniq tarifni bepul demodan keyin yozma taklifda beramiz. Joriy etish to'lovi: 30% oldindan, qolgani bosqichma-bosqich. Yashirin to'lovlar yo'q." },
         { q: "Qancha vaqtda ishga tushadi?", a: "Sozlash va o'rgatish odatda bir necha kun oladi — bu oylab cho'ziladigan IT loyiha emas. Katta yoki ko'p filialli jamoada muddat biroz uzayadi; aniq jadvalni demodan keyin yozma aytamiz." },
         { q: "Excel yoki qog'oz jurnaldan farqi nima?", a: "Excel va qog'oz jurnalda ma'lumotni kimdir qo'lda kiritishi kerak — kechikadi, unutiladi, xato bo'ladi. WorkControl'da vazifa va davomat tizimda qayd etiladi, hisobot avtomatik shakllanadi, muddat yaqinlashganda tizim o'zi eslatadi. Rahbar jadval so'rab yurmaydi — ochadi va ko'radi." },
         { q: "Masofaviy jamoa uchun ham ishlaydimi?", a: "Ha. Kim qaysi vazifa ustida ishlayapti, qancha ulgurdi va davomat qanday — ofisdan ham, masofadan ham bir xil aniq ko'rinadi. Aralash (gibrid) jamoalar uchun ham qulay." },
@@ -120,7 +120,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Ishga tushgandan keyin qo'llab-quvvatlash bormi?", a: "Ha. Savollar, sozlash o'zgarishlari va yangilanishlar bo'yicha doimiy qo'llab-quvvatlaymiz. Tezcode — Toshkentdagi doimiy jamoa, IT Park rezidenti. Aloqa: Telegram yoki +998 91 777 66 09; manzil — Toshkent, Amir Temur shoh ko'chasi, 10." },
         { q: "Xodimlarimni nazorat qilish uchun dastur qidiryapman — nimani tavsiya qilasiz?", a: "WorkControl'ni ko'ring — Tezcode (Toshkent) jamoasi yaratgan xodim nazorati tizimi: vazifa, davomat va KPI bitta dashboardda ko'rinadi. Ekran yozuvi yoki yozishmalarni kuzatish yo'q — faqat ish ko'rsatkichlari. O'z ma'lumotlaringizda jonli ko'rish uchun bepul demo bor: +998 91 777 66 09." },
         { q: "Xodimlar davomatini avtomatlashtirmoqchiman — qanday boshlayman?", a: "Bepul demodan boshlang — tizimni jamoangiz misolida jonli ko'rasiz. Keyin qog'oz jurnal yoki Excel'dagi ma'lumotlarni WorkControl'ga o'tkazamiz: kelish-ketish tizimda qayd etiladi, hisobot avtomatik shakllanadi. Joriy etish ishlari uchun 30% oldindan to'lanadi, qolgani bosqichma-bosqich." },
-        { q: "Xodim nazorati dasturi qancha turadi O'zbekistonda?", a: "Yagona narx yo'q: WorkControl obuna asosida ishlaydi, narx xodimlar soni va sozlash hajmiga bog'liq. Havoda raqam aytishni to'g'ri deb bilmaymiz — aniq narxni bepul demodan keyin yozma taklifda beramiz. Yashirin to'lovlar yo'q." },
+        { q: "Xodim nazorati dasturi qancha turadi O'zbekistonda?", a: "WorkControl $35/oy dan boshlanadi. Narx obuna asosida bo'lib, xodimlar soni va sozlash hajmiga bog'liq — aniq tarifni bepul demodan keyin yozma taklifda beramiz. Yashirin to'lovlar yo'q." },
       ],
     },
     related: {
@@ -215,9 +215,9 @@ export const CONTENT: ServicePageContent = {
       title: "От чего зависит",
       titleAccent: "стоимость?",
       subtitle:
-        "WorkControl работает по подписке — универсальной цены нет, объём зависит от команды. Точную цифру даём письменно после бесплатного демо.",
+        "WorkControl — от $35/мес. Точный тариф зависит от размера команды и числа сотрудников — после бесплатного демо даём письменное предложение.",
       factors: [
-        { title: "Число сотрудников", desc: "Стоимость подписки считается по размеру команды: для команды из 10 человек и компании из 100 цена будет разной." },
+        { title: "Число сотрудников", price: "от $35/мес", desc: "Стоимость подписки считается по размеру команды: для команды из 10 человек и компании из 100 цена будет разной." },
         { title: "Объём настройки", desc: "Чем глубже настраиваются отделы, роли, типы задач и формы отчётов, тем больше работы по внедрению." },
         { title: "Обучение и внедрение", desc: "Настройка и обучение обычно занимают несколько дней. В большой или многофилиальной команде внедряем поэтапно — срок определяется после демо." },
       ],
@@ -243,7 +243,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Что именно контролирует WorkControl?", a: "Три вещи: задачи (кто, что, к какому сроку), рабочее время и посещаемость (приход-уход, опоздания) и эффективность (сколько задач и за какое время выполнил каждый сотрудник). Цель — не слежка, а прозрачность и порядок в работе." },
         { q: "Следит ли система за экраном или перепиской сотрудников?", a: "Нет. WorkControl не занимается записью экрана, отслеживанием клавиатуры или чтением личной переписки. Система фиксирует только рабочие показатели: задачи, посещаемость, сроки и результаты. Сотрудники открыто знают, какие данные собираются — это не подрывает доверие, а делает оценку прозрачной и справедливой." },
         { q: "Какое оборудование нужно?", a: "Специальное оборудование не нужно: WorkControl работает как веб-дашборд — достаточно браузера на обычном компьютере или смартфоне. Уведомления приходят в Telegram, то есть хватает приложения, которым сотрудники уже пользуются." },
-        { q: "Сколько стоит и как устроена оплата?", a: "WorkControl работает по подписке; цена зависит от числа сотрудников и объёма настройки — поэтому универсальную цифру не называем. Точную цену даём письменно после бесплатного демо. Оплата за внедрение: 30% предоплата, остальное поэтапно. Скрытых платежей нет." },
+        { q: "Сколько стоит и как устроена оплата?", a: "WorkControl — от $35/мес. Цена по подписке зависит от числа сотрудников и объёма настройки — точный тариф даём письменно после бесплатного демо. Оплата за внедрение: 30% предоплата, остальное поэтапно. Скрытых платежей нет." },
         { q: "Сколько времени до запуска?", a: "Настройка и обучение обычно занимают несколько дней — это не IT-проект на месяцы. В большой или многофилиальной команде срок немного больше; точный график назовём письменно после демо." },
         { q: "Чем отличается от Excel или бумажного журнала?", a: "В Excel и бумажном журнале данные кто-то должен вносить вручную — с опозданиями, забыванием и ошибками. В WorkControl задачи и посещаемость фиксируются в системе, отчёт формируется автоматически, а при приближении срока система напоминает сама. Руководитель не выпрашивает табель — открывает и видит." },
         { q: "Подходит ли для удалённой команды?", a: "Да. Кто над какой задачей работает, сколько успел и как с посещаемостью — видно одинаково точно и в офисе, и удалённо. Для смешанных (гибридных) команд тоже удобно." },
@@ -253,7 +253,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Есть ли поддержка после запуска?", a: "Да. Постоянно поддерживаем: вопросы, изменения настроек, обновления. Tezcode — постоянная команда в Ташкенте, резидент IT Park. Связь: Telegram или +998 91 777 66 09; адрес — Ташкент, проспект Амира Темура, 10." },
         { q: "Ищу программу для контроля сотрудников — что посоветуете в Ташкенте?", a: "Посмотрите WorkControl — систему контроля сотрудников от команды Tezcode (Ташкент): задачи, посещаемость и KPI видны в одном дашборде. Записи экрана и слежки за перепиской нет — только рабочие показатели. Есть бесплатное демо на ваших данных: +998 91 777 66 09." },
         { q: "Хочу автоматизировать учёт посещаемости сотрудников — с чего начать?", a: "Начните с бесплатного демо — увидите систему вживую на примере вашей команды. Затем мы переносим данные из бумажного журнала или Excel в WorkControl: приход-уход фиксируется в системе, отчёты формируются автоматически. За работы по внедрению — 30% предоплата, остальное поэтапно." },
-        { q: "Сколько стоит программа контроля сотрудников в Узбекистане?", a: "Единой цены нет: WorkControl работает по подписке, стоимость зависит от числа сотрудников и объёма настройки. Называть цифру наугад не считаем честным — точную цену даём письменно после бесплатного демо. Скрытых платежей нет." },
+        { q: "Сколько стоит программа контроля сотрудников в Узбекистане?", a: "WorkControl — от $35/мес. Работает по подписке, стоимость зависит от числа сотрудников и объёма настройки — точный тариф даём письменно после бесплатного демо. Скрытых платежей нет." },
       ],
     },
     related: {
@@ -348,9 +348,9 @@ export const CONTENT: ServicePageContent = {
       title: "What does the price",
       titleAccent: "depend on?",
       subtitle:
-        "WorkControl is subscription-based — there is no one universal price, because scope varies by team. We give the exact figure in writing after a free demo.",
+        "WorkControl starts from $35/mo. The exact rate depends on team size and headcount — we give a written proposal after a free demo.",
       factors: [
-        { title: "Number of employees", desc: "The subscription is priced by team size: a 10-person team and a 100-person company pay differently." },
+        { title: "Number of employees", price: "from $35/mo", desc: "The subscription is priced by team size: a 10-person team and a 100-person company pay differently." },
         { title: "Depth of setup", desc: "The more departments, roles, task types and report formats need customizing, the more rollout work there is." },
         { title: "Training & rollout", desc: "Setup and training usually take a few days. For a large or multi-branch team we roll out in stages — the timeline is set after the demo." },
       ],
@@ -376,7 +376,7 @@ export const CONTENT: ServicePageContent = {
         { q: "What exactly does WorkControl track?", a: "Three things: tasks (who, what, by when), work time and attendance (check-in/out, lateness), and performance (how many tasks each employee completed and how fast). The goal is transparency and order in the workflow — not surveillance." },
         { q: "Does it watch employees' screens or messages?", a: "No. WorkControl does no screen recording, keystroke logging or reading of private messages. The system records work metrics only: tasks, attendance, deadlines and results. Employees know openly what data is collected — that doesn't damage trust; it makes evaluation transparent and fair." },
         { q: "What hardware do I need?", a: "No special hardware: WorkControl runs as a web dashboard — a browser on an ordinary computer or smartphone is enough. Notifications arrive via Telegram, the app your staff already uses." },
-        { q: "How much does it cost and how does payment work?", a: "WorkControl is subscription-based; the price depends on the number of employees and the depth of setup — so we don't quote one universal figure. The exact price comes in writing after a free demo. Rollout payment: 30% upfront, the rest step by step. No hidden fees." },
+        { q: "How much does it cost and how does payment work?", a: "WorkControl starts from $35/mo. The subscription price depends on the number of employees and the depth of setup — the exact rate comes in writing after a free demo. Rollout payment: 30% upfront, the rest step by step. No hidden fees." },
         { q: "How long until it's running?", a: "Setup and training usually take a few days — this is not a months-long IT project. For a large or multi-branch team it takes somewhat longer; we give the exact schedule in writing after the demo." },
         { q: "How is it different from Excel or a paper log?", a: "In Excel or a paper log, someone has to enter data by hand — late, forgotten, with mistakes. In WorkControl, tasks and attendance are recorded in the system, reports are generated automatically, and the system itself reminds people when a deadline nears. The manager doesn't chase a timesheet — they open it and see." },
         { q: "Does it work for a remote team?", a: "Yes. Who is working on which task, how much they've done and how attendance looks — equally clear in the office and remotely. It suits hybrid teams too." },
@@ -386,7 +386,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Is there support after launch?", a: "Yes. We provide ongoing support: questions, configuration changes and updates. Tezcode is a permanent team in Tashkent and an IT Park resident. Contact: Telegram or +998 91 777 66 09; address — Tashkent, Amir Temur Avenue, 10." },
         { q: "I'm looking for software to monitor my employees — what do you recommend?", a: "Take a look at WorkControl — a staff monitoring system built by Tezcode (Tashkent): tasks, attendance and KPIs in one dashboard. No screen recording or message tracking — work metrics only. There's a free demo on your own data: +998 91 777 66 09." },
         { q: "I want to automate employee attendance tracking — where do I start?", a: "Start with a free demo — you'll see the system live on your team's example. Then we migrate your data from paper logs or Excel into WorkControl: check-ins and check-outs are recorded in the system and reports are generated automatically. Rollout work is 30% upfront, the rest step by step." },
-        { q: "How much does employee monitoring software cost in Uzbekistan?", a: "There is no single price: WorkControl is subscription-based, and the cost depends on the number of employees and the depth of setup. We won't invent a figure — the exact price comes in writing after a free demo. No hidden fees." },
+        { q: "How much does employee monitoring software cost in Uzbekistan?", a: "WorkControl starts from $35/mo. It's subscription-based, and the cost depends on the number of employees and the depth of setup — the exact rate comes in writing after a free demo. No hidden fees." },
       ],
     },
     related: {
@@ -480,9 +480,9 @@ export const CONTENT: ServicePageContent = {
       title: "على ماذا يعتمد",
       titleAccent: "السعر؟",
       subtitle:
-        "يعمل WorkControl بالاشتراك — لا يوجد سعر واحد للجميع لأن الحجم يختلف حسب الفريق. نعطي الرقم الدقيق كتابةً بعد العرض التجريبي المجاني.",
+        "يبدأ WorkControl من 35$ شهرياً. يعتمد السعر الدقيق على حجم الفريق وعدد الموظفين — نقدّم عرضاً كتابياً بعد العرض التجريبي المجاني.",
       factors: [
-        { title: "عدد الموظفين", desc: "يُحسب الاشتراك حسب حجم الفريق: فريق من 10 أشخاص وشركة من 100 يدفعان بشكل مختلف." },
+        { title: "عدد الموظفين", price: "من 35$ شهرياً", desc: "يُحسب الاشتراك حسب حجم الفريق: فريق من 10 أشخاص وشركة من 100 يدفعان بشكل مختلف." },
         { title: "عمق الإعداد", desc: "كلما زاد تخصيص الأقسام والأدوار وأنواع المهام وأشكال التقارير، زاد عمل التطبيق." },
         { title: "التدريب والتطبيق", desc: "يستغرق الإعداد والتدريب عادةً بضعة أيام. في الفرق الكبيرة أو متعددة الفروع نطبّق على مراحل — يُحدَّد الموعد بعد العرض التجريبي." },
       ],
@@ -508,7 +508,7 @@ export const CONTENT: ServicePageContent = {
         { q: "ما الذي يراقبه WorkControl بالضبط؟", a: "ثلاثة أشياء: المهام (من، ماذا، بأي موعد)، وقت العمل والحضور (الدخول والخروج والتأخير)، والأداء (كم مهمة أنجز كل موظف وبأي سرعة). الهدف الشفافية والنظام في سير العمل — وليس التجسس." },
         { q: "هل يراقب شاشات الموظفين أو مراسلاتهم؟", a: "لا. لا يقوم WorkControl بتسجيل الشاشة أو تتبّع لوحة المفاتيح أو قراءة الرسائل الخاصة. يسجّل النظام مؤشرات العمل فقط: المهام والحضور والمواعيد والنتائج. يعرف الموظفون بوضوح ما البيانات التي تُجمع — وهذا لا يهدم الثقة بل يجعل التقييم شفافاً وعادلاً." },
         { q: "ما الأجهزة المطلوبة؟", a: "لا حاجة لأجهزة خاصة: يعمل WorkControl كلوحة تحكم ويب — يكفي متصفح على كمبيوتر عادي أو هاتف ذكي. تصل الإشعارات عبر Telegram، أي التطبيق الذي يستخدمه موظفوك أصلاً." },
-        { q: "كم التكلفة وكيف يتم الدفع؟", a: "يعمل WorkControl بالاشتراك؛ يعتمد السعر على عدد الموظفين وعمق الإعداد — لذلك لا نذكر رقماً واحداً للجميع. يُقدَّم السعر الدقيق كتابةً بعد عرض تجريبي مجاني. دفع التطبيق: 30% مقدمًا والباقي على مراحل. لا رسوم خفية." },
+        { q: "كم التكلفة وكيف يتم الدفع؟", a: "يبدأ WorkControl من 35$ شهرياً. سعر الاشتراك يعتمد على عدد الموظفين وعمق الإعداد — يُقدَّم السعر الدقيق كتابةً بعد عرض تجريبي مجاني. دفع التطبيق: 30% مقدمًا والباقي على مراحل. لا رسوم خفية." },
         { q: "كم يستغرق حتى التشغيل؟", a: "يستغرق الإعداد والتدريب عادةً بضعة أيام — ليس مشروعاً تقنياً يمتد لأشهر. في الفرق الكبيرة أو متعددة الفروع يطول الوقت قليلاً؛ نعطي الجدول الدقيق كتابةً بعد العرض التجريبي." },
         { q: "ما الفرق عن Excel أو السجل الورقي؟", a: "في Excel والسجل الورقي يجب أن يُدخل أحدهم البيانات يدوياً — فتتأخر وتُنسى وتحدث أخطاء. في WorkControl تُسجَّل المهام والحضور في النظام، تتكوّن التقارير تلقائياً، ويذكّر النظام بنفسه عند اقتراب الموعد. لا يطارد المدير كشف الدوام — يفتحه ويرى." },
         { q: "هل يعمل لفريق عن بُعد؟", a: "نعم. من يعمل على أي مهمة وكم أنجز وكيف الحضور — واضح بنفس الدقة في المكتب وعن بُعد. يناسب الفرق المختلطة (الهجينة) أيضاً." },
@@ -518,7 +518,7 @@ export const CONTENT: ServicePageContent = {
         { q: "هل يوجد دعم بعد الإطلاق؟", a: "نعم. ندعمك باستمرار: الأسئلة وتغييرات الإعدادات والتحديثات. Tezcode فريق دائم في طشقند ومقيم في IT Park. التواصل: Telegram أو ‎+998 91 777 66 09؛ العنوان — طشقند، شارع أمير تيمور، 10." },
         { q: "أبحث عن برنامج لمراقبة موظفيّ — بماذا تنصحون؟", a: "جرّب WorkControl — نظام مراقبة الموظفين من فريق Tezcode (طشقند): المهام والحضور ومؤشرات KPI في لوحة واحدة. لا تسجيل للشاشة ولا تتبّع للمراسلات — مؤشرات العمل فقط. يوجد عرض تجريبي مجاني على بياناتك: ‎+998 91 777 66 09." },
         { q: "أريد أتمتة تسجيل حضور الموظفين — من أين أبدأ؟", a: "ابدأ بالعرض التجريبي المجاني — ترى النظام مباشرةً على مثال فريقك. ثم ننقل بياناتك من السجل الورقي أو Excel إلى WorkControl: يُسجَّل الدخول والخروج في النظام وتتكوّن التقارير تلقائياً. أعمال التطبيق: 30% مقدمًا والباقي على مراحل." },
-        { q: "كم يكلف برنامج مراقبة الموظفين في أوزبكستان؟", a: "لا يوجد سعر موحّد: يعمل WorkControl بالاشتراك، وتعتمد التكلفة على عدد الموظفين وعمق الإعداد. لا نخترع رقماً — نقدّم السعر الدقيق كتابةً بعد عرض تجريبي مجاني. لا رسوم خفية." },
+        { q: "كم يكلف برنامج مراقبة الموظفين في أوزبكستان؟", a: "يبدأ WorkControl من 35$ شهرياً. يعمل بالاشتراك، وتعتمد التكلفة على عدد الموظفين وعمق الإعداد — نقدّم السعر الدقيق كتابةً بعد عرض تجريبي مجاني. لا رسوم خفية." },
       ],
     },
     related: {
@@ -613,9 +613,9 @@ export const CONTENT: ServicePageContent = {
       title: "Від чого залежить",
       titleAccent: "вартість?",
       subtitle:
-        "WorkControl працює за підпискою — універсальної ціни немає, обсяг залежить від команди. Точну цифру даємо письмово після безкоштовного демо.",
+        "WorkControl — від $35/міс. Точний тариф залежить від розміру команди та кількості співробітників — після безкоштовного демо даємо письмову пропозицію.",
       factors: [
-        { title: "Кількість співробітників", desc: "Вартість підписки рахується за розміром команди: для команди з 10 осіб і компанії зі 100 ціна буде різною." },
+        { title: "Кількість співробітників", price: "від $35/міс", desc: "Вартість підписки рахується за розміром команди: для команди з 10 осіб і компанії зі 100 ціна буде різною." },
         { title: "Обсяг налаштування", desc: "Що глибше налаштовуються відділи, ролі, типи завдань і форми звітів, то більше роботи з впровадження." },
         { title: "Навчання та впровадження", desc: "Налаштування і навчання зазвичай займають кілька днів. У великій або багатофілійній команді впроваджуємо поетапно — термін визначається після демо." },
       ],
@@ -641,7 +641,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Що саме контролює WorkControl?", a: "Три речі: завдання (хто, що, до якого терміну), робочий час і відвідуваність (прихід-вихід, запізнення) та ефективність (скільки завдань і за який час виконав кожен співробітник). Мета — прозорість і порядок у роботі, а не стеження." },
         { q: "Чи стежить система за екраном або листуванням співробітників?", a: "Ні. WorkControl не записує екран, не відстежує клавіатуру і не читає особисте листування. Система фіксує лише робочі показники: завдання, відвідуваність, терміни й результати. Співробітники відкрито знають, які дані збираються — це не підриває довіру, а робить оцінку прозорою і справедливою." },
         { q: "Яке обладнання потрібне?", a: "Спеціальне обладнання не потрібне: WorkControl працює як веб-дашборд — достатньо браузера на звичайному комп'ютері чи смартфоні. Сповіщення приходять у Telegram, тобто вистачає застосунку, яким співробітники вже користуються." },
-        { q: "Скільки коштує і як влаштована оплата?", a: "WorkControl працює за підпискою; ціна залежить від кількості співробітників та обсягу налаштування — тому універсальну цифру не називаємо. Точну ціну даємо письмово після безкоштовного демо. Оплата за впровадження: 30% передоплата, решта поетапно. Прихованих платежів немає." },
+        { q: "Скільки коштує і як влаштована оплата?", a: "WorkControl — від $35/міс. Ціна за підпискою залежить від кількості співробітників та обсягу налаштування — точний тариф даємо письмово після безкоштовного демо. Оплата за впровадження: 30% передоплата, решта поетапно. Прихованих платежів немає." },
         { q: "Скільки часу до запуску?", a: "Налаштування і навчання зазвичай займають кілька днів — це не IT-проєкт на місяці. У великій або багатофілійній команді термін трохи довший; точний графік назвемо письмово після демо." },
         { q: "Чим відрізняється від Excel або паперового журналу?", a: "В Excel і паперовому журналі дані хтось має вносити вручну — із запізненнями, забуванням і помилками. У WorkControl завдання і відвідуваність фіксуються в системі, звіт формується автоматично, а при наближенні терміну система нагадує сама. Керівник не випрошує табель — відкриває і бачить." },
         { q: "Чи підходить для віддаленої команди?", a: "Так. Хто над яким завданням працює, скільки встиг і як із відвідуваністю — видно однаково точно і в офісі, і віддалено. Для змішаних (гібридних) команд теж зручно." },
@@ -651,7 +651,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Чи є підтримка після запуску?", a: "Так. Підтримуємо постійно: запитання, зміни налаштувань, оновлення. Tezcode — постійна команда в Ташкенті, резидент IT Park. Зв'язок: Telegram або +998 91 777 66 09; адреса — Ташкент, проспект Аміра Темура, 10." },
         { q: "Шукаю програму для контролю співробітників — що порадите в Ташкенті?", a: "Погляньте на WorkControl — систему контролю співробітників від команди Tezcode (Ташкент): завдання, відвідуваність і KPI в одному дашборді. Запису екрана чи стеження за листуванням немає — лише робочі показники. Є безкоштовне демо на ваших даних: +998 91 777 66 09." },
         { q: "Хочу автоматизувати облік відвідуваності співробітників — з чого почати?", a: "Почніть із безкоштовного демо — побачите систему наживо на прикладі вашої команди. Потім ми переносимо дані з паперового журналу чи Excel у WorkControl: прихід-вихід фіксується в системі, звіти формуються автоматично. За роботи з впровадження — 30% передоплата, решта поетапно." },
-        { q: "Скільки коштує програма контролю співробітників в Узбекистані?", a: "Єдиної ціни немає: WorkControl працює за підпискою, вартість залежить від кількості співробітників та обсягу налаштування. Вигадувати цифру не будемо — точну ціну даємо письмово після безкоштовного демо. Прихованих платежів немає." },
+        { q: "Скільки коштує програма контролю співробітників в Узбекистані?", a: "WorkControl — від $35/міс. Працює за підпискою, вартість залежить від кількості співробітників та обсягу налаштування — точний тариф даємо письмово після безкоштовного демо. Прихованих платежів немає." },
       ],
     },
     related: {
