@@ -61,6 +61,7 @@ export default async function AiAvtomatizatsiyaPage({
     description: copy.service.description,
     serviceType: copy.service.serviceType,
     path: PATH,
+    offers: { price: "200", priceCurrency: "USD", billingPeriod: "MONTH" },
   });
   const faqSchema = getFaqSchema(copy.faq.items);
   const breadcrumb = getBreadcrumbSchema([

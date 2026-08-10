@@ -108,6 +108,7 @@ export default async function AiChatbotPage({
     description: copy.service.description,
     serviceType: copy.service.serviceType,
     path: PATH,
+    offers: { price: "339", priceCurrency: "USD" },
   });
   const faqSchema = getFaqSchema(copy.faq.items);
   const howToSchema = getHowToSchema({

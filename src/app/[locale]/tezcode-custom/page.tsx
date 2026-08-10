@@ -52,6 +52,7 @@ export default async function TezcodeCustomPage({
     description: copy.service.description,
     serviceType: copy.service.serviceType,
     path: PATH,
+    offers: { price: "1000", priceCurrency: "USD" },
   });
   const faqSchema = getFaqSchema(copy.faq.items);
 

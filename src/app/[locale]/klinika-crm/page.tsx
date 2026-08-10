@@ -112,6 +112,7 @@ export default async function KlinikaCrmPage({
     description: copy.service.description,
     serviceType: copy.service.serviceType,
     path: PATH,
+    offers: { price: "25", priceCurrency: "USD", billingPeriod: "MONTH" },
   });
   const faqSchema = getFaqSchema(copy.faq.items);
   // BreadcrumbList so answer engines see the page's place in the site

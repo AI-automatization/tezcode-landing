@@ -113,6 +113,7 @@ export default async function XodimNazoratiPage({
     description: copy.service.description,
     serviceType: copy.service.serviceType,
     path: PATH,
+    offers: { price: "35", priceCurrency: "USD", billingPeriod: "MONTH" },
   });
   const faqSchema = getFaqSchema(copy.faq.items);
   // BreadcrumbList so answer engines see the page's place in the site

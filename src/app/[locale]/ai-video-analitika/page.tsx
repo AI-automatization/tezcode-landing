@@ -112,6 +112,7 @@ export default async function AiVideoAnalyticsPage({
     description: copy.service.description,
     serviceType: copy.service.serviceType,
     path: PATH,
+    offers: { price: "990", priceCurrency: "USD" },
   });
   const faqSchema = getFaqSchema(copy.faq.items);
   const howToSchema = getHowToSchema({

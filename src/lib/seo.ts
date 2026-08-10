@@ -428,6 +428,11 @@ export function getServiceSchema(input: {
   serviceType: string;
   path: string; // no locale prefix, e.g. "/ai-avtomatizatsiya"
   areaServed?: string[];
+  // Optional "from" price so answer engines (Google AI Overview, ChatGPT,
+  // Perplexity) can read a machine-readable price — the ClinicaGo signal that
+  // wins AI Overview. price is the "starting from" figure; billingPeriod (e.g.
+  // "MONTH") turns it into a UnitPriceSpecification for subscriptions.
+  offers?: { price: string; priceCurrency?: string; billingPeriod?: string };
 }) {
   return {
     "@context": "https://schema.org",
@@ -441,6 +446,27 @@ export function getServiceSchema(input: {
       name: SITE_NAME,
       url: BASE_URL,
     },
+    ...(input.offers
+      ? {
+          offers: {
+            "@type": "Offer",
+            price: input.offers.price,
+            priceCurrency: input.offers.priceCurrency ?? "USD",
+            availability: "https://schema.org/InStock",
+            url: `${BASE_URL}${input.path}`,
+            ...(input.offers.billingPeriod
+              ? {
+                  priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: input.offers.price,
+                    priceCurrency: input.offers.priceCurrency ?? "USD",
+                    unitText: input.offers.billingPeriod,
+                  },
+                }
+              : {}),
+          },
+        }
+      : {}),
     areaServed: (input.areaServed ?? ["Tashkent", "Uzbekistan"]).map((name) => ({
       "@type": "Place",
       name,

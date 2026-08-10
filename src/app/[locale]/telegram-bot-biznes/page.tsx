@@ -109,6 +109,7 @@ export default async function TelegramBotBiznesPage({
     description: copy.service.description,
     serviceType: copy.service.serviceType,
     path: PATH,
+    offers: { price: "279", priceCurrency: "USD" },
   });
   const faqSchema = getFaqSchema(copy.faq.items);
   // BreadcrumbList so answer engines see the page's place in the site

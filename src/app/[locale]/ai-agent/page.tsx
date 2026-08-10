@@ -107,6 +107,7 @@ export default async function AiAgentPage({
     description: copy.service.description,
     serviceType: copy.service.serviceType,
     path: PATH,
+    offers: { price: "400", priceCurrency: "USD" },
   });
   const faqSchema = getFaqSchema(copy.faq.items);
   const howToSchema = getHowToSchema({
