@@ -86,10 +86,21 @@ Tezcode (TezCode) — AI Software Factory в Ташкенте, Узбекист�
 
 ## Narx mo'ljallari
 
+Xizmatlar bo'yicha narx (dan boshlab):
+- AI chatbot: $339 dan
+- AI agent: $400 dan
+- Telegram bot: $279 dan
+- AI video analitika: $990 dan (bir martalik ulash — keyin AI'ni o'zingiz boshqarasiz)
+- Klinika CRM (ClinicaGo): $25/oy dan (1-oy bepul)
+- Xodim nazorati (WorkControl): $35/oy dan
+- POS tizimi (RAOS): 249 000 so'm/oy dan (30 kun bepul)
+- Biznes avtomatlashtirish: $400 dan
+- Buyurtma dastur (custom): MVP $1000 dan (to'liq narx TZ dan keyin)
+
+Umumiy tariflar:
 - Starter tarifi: $0 (14 kun bepul sinov, keyin ham $0 — kichik biznes uchun)
 - Pro tarifi: $200/oy (o'sayotgan biznes uchun; 30 kun bepul sinov)
 - Enterprise: so'rov bo'yicha (korporatsiyalar va tarmoqlar uchun)
-- Buyurtma (custom) loyihalar: narx texnik topshiriq (TZ) kelishilgandan keyin aytiladi
 - To'lov modeli: 30% oldindan, qolgani bosqichma-bosqich
 
 To'liq tariflar: ${BASE_URL}/tariflar
