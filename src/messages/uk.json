@@ -26,6 +26,7 @@
       "aiAutomation": "AI автоматизація",
       "aiAgent": "AI агент",
       "businessAutomation": "Автоматизація бізнесу",
+      "crmIntegration": "Інтеграція CRM",
       "aiChatbot": "AI чат-бот",
       "aiVideoAnalytics": "AI-відеоаналітика",
       "telegramBot": "Telegram-бот",
@@ -285,6 +286,8 @@
   "testimonials": {
     "title": "Клієнти про нас",
     "subtitle": "Реальні результати від реальних підприємців",
+    "google_count": "6 відгуків у Google",
+    "google_label": "Відгук у Google",
     "items": {
       "dilfuza": {
         "name": "Dilfuza X.",

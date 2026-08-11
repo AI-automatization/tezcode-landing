@@ -295,6 +295,65 @@ export function getOrganizationSchema() {
       "SaaS",
       "Custom Development",
     ],
+    // Real Google Business Profile reviews (maps.app.goo.gl/pwDZT8ePLFy4wx9JA),
+    // mirrored in the visible Testimonials section so structured data matches
+    // on-page content (Google's rich-results requirement). All 5★.
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      reviewCount: "6",
+      bestRating: "5",
+      worstRating: "1",
+    },
+    review: [
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Gulyuz Zokirova" },
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        datePublished: "2026-07-11",
+        reviewBody:
+          "Работать с Tezcode удобно — профессионально и ответственно. Спасибо!",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Dilshod Toriev" },
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        datePublished: "2026-07-11",
+        reviewBody:
+          "Сделали Telegram-бота и админ-панель быстро и качественно, цена адекватная. Следующий проект тоже доверим этой команде.",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Botir Jomirzayev" },
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        datePublished: "2026-07-11",
+        reviewBody:
+          "Мне нужна была POS-система и система учёта для моего магазина — Tezcode предложила отличное решение. Теперь продажи, кассовый аппарат и отчётность управляются из одного места. Поддержка всегда готова помочь. Спасибо!",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Abdulboriy Shukurillayev" },
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        datePublished: "2026-07-11",
+        reviewBody: "Очень удобно, всем рекомендую, стоит своих денег.",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Sardor" },
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        datePublished: "2026-07-11",
+        reviewBody:
+          "Для моего бизнеса они создали ИИ-агента, который отвечает клиентам круглосуточно. Это сэкономило много времени, и продажи выросли. Спасибо за современный подход.",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Muhammadyusuf" },
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        datePublished: "2026-07-11",
+        reviewBody:
+          "Я заказал программу для своего бизнеса у команды Tezcode. Они выполнили работу в срок и качественно, поддерживая связь на каждом этапе. Надёжная IT-команда в Ташкенте. Рекомендую!",
+      },
+    ],
   };
 }
 

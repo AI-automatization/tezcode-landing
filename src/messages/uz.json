@@ -26,6 +26,7 @@
       "aiAutomation": "AI avtomatizatsiya",
       "aiAgent": "AI agent",
       "businessAutomation": "Biznes avtomatlashtirish",
+      "crmIntegration": "CRM integratsiya",
       "aiChatbot": "AI chatbot",
       "aiVideoAnalytics": "AI video analitika",
       "telegramBot": "Telegram bot",
@@ -54,6 +55,8 @@
   "testimonials": {
     "title": "Mijozlarimiz biz haqimizda",
     "subtitle": "Real natijalar, real biznes egalari",
+    "google_count": "6 ta Google sharh",
+    "google_label": "Google sharhi",
     "items": {
       "dilfuza": {
         "name": "Dilfuza X.",

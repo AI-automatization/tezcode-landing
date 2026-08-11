@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 import { ArrowRight, Plus } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
@@ -578,6 +578,92 @@ function CityLinksSection({
   );
 }
 
+// ─────────────────────── Related services (topical cluster) ───────────────────────
+// Internal links between sibling service pages. Backlinks pointed almost entirely
+// at the homepage, so service pages had no inbound authority; cross-linking siblings
+// distributes link equity and builds topical authority for each service cluster.
+const RELATED_SERVICES: Record<string, string[]> = {
+  "ai-chatbot": ["ai-agent", "telegram-bot-biznes", "crm-integratsiya"],
+  "ai-agent": ["ai-chatbot", "ai-avtomatizatsiya", "biznes-avtomatlashtirish"],
+  "ai-avtomatizatsiya": ["ai-agent", "ai-chatbot", "biznes-avtomatlashtirish"],
+  "biznes-avtomatlashtirish": ["ai-avtomatizatsiya", "crm-integratsiya", "klinika-crm"],
+  "crm-integratsiya": ["ai-chatbot", "biznes-avtomatlashtirish", "telegram-bot-biznes"],
+  "telegram-bot-biznes": ["ai-chatbot", "ai-agent", "crm-integratsiya"],
+  "ai-video-analitika": ["xodim-nazorati", "pos-tizimi", "ai-avtomatizatsiya"],
+  "xodim-nazorati": ["ai-video-analitika", "biznes-avtomatlashtirish", "pos-tizimi"],
+  "klinika-crm": ["biznes-avtomatlashtirish", "crm-integratsiya", "ai-chatbot"],
+  "pos-tizimi": ["klinika-crm", "xodim-nazorati", "biznes-avtomatlashtirish"],
+  "it-xizmatlar": ["ai-avtomatizatsiya", "biznes-avtomatlashtirish", "crm-integratsiya"],
+};
+
+// slug → key inside the existing menu.solutions translations (all 5 locales)
+const RELATED_LABEL_KEY: Record<string, string> = {
+  "ai-chatbot": "aiChatbot",
+  "ai-agent": "aiAgent",
+  "ai-avtomatizatsiya": "aiAutomation",
+  "biznes-avtomatlashtirish": "businessAutomation",
+  "crm-integratsiya": "crmIntegration",
+  "ai-video-analitika": "aiVideoAnalytics",
+  "telegram-bot-biznes": "telegramBot",
+  "pos-tizimi": "posSystem",
+  "klinika-crm": "clinicCrm",
+  "xodim-nazorati": "employeeMonitoring",
+  "it-xizmatlar": "itServices",
+};
+
+const RELATED_HEADING: Record<ServiceLang, string> = {
+  uz: "Aloqador xizmatlar",
+  ru: "Смежные услуги",
+  en: "Related services",
+  ar: "خدمات ذات صلة",
+  uk: "Суміжні послуги",
+};
+
+function RelatedServicesSection({
+  serviceSlug,
+  locale,
+}: {
+  serviceSlug?: string;
+  locale: ServiceLang;
+}) {
+  const t = useTranslations("menu.solutions");
+  if (!serviceSlug) return null;
+  const related = RELATED_SERVICES[serviceSlug];
+  if (!related || related.length === 0) return null;
+  const heading = RELATED_HEADING[locale] ?? RELATED_HEADING.uz;
+
+  return (
+    <section
+      className="relative py-14 px-6 bg-[var(--tc-surface-1)]"
+      style={{ borderTop: "1px solid var(--tc-border)" }}
+    >
+      <div className="max-w-7xl mx-auto">
+        <p className="text-xs font-600 uppercase tracking-widest text-[var(--tc-text-muted)] mb-6">
+          {heading}
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {related.map((slug) => {
+            const key = RELATED_LABEL_KEY[slug];
+            if (!key) return null;
+            return (
+              <Link
+                key={slug}
+                href={`/${slug}`}
+                className="group flex items-center justify-between rounded-[var(--tc-radius-md)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] px-5 py-4 hover:border-[var(--tc-border-bright)] transition-colors"
+              >
+                <span className="text-sm font-600 text-[var(--tc-text-primary)]">
+                  {t(key)}
+                </span>
+                <ArrowRight className="w-4 h-4 shrink-0 text-[var(--tc-text-muted)] transition-transform group-hover:translate-x-1 rtl:rotate-180" />
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // ─────────────────────────── Final CTA (navy anchor) ───────────────────────────
 function FinalCtaSection({ copy }: { copy: ServicePageCopy }) {
   return (
@@ -654,6 +740,7 @@ export function ServicePageClient({
       <FaqSection copy={copy} />
       <RelatedSection copy={copy} />
       <CityLinksSection serviceSlug={serviceSlug} locale={locale} />
+      <RelatedServicesSection serviceSlug={serviceSlug} locale={locale} />
       <FinalCtaSection copy={copy} />
       <Footer />
 

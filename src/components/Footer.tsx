@@ -168,6 +168,7 @@ export function Footer() {
     { label: "Xodim nazorati", href: "/xodim-nazorati" },
     { label: "AI agent", href: "/ai-agent" },
     { label: "Biznes avtomatlashtirish", href: "/biznes-avtomatlashtirish" },
+    { label: "CRM integratsiya", href: "/crm-integratsiya" },
   ];
 
   const companyLinks = [

@@ -26,6 +26,7 @@
       "aiAutomation": "الأتمتة بالذكاء الاصطناعي",
       "aiAgent": "وكيل ذكاء اصطناعي",
       "businessAutomation": "أتمتة الأعمال",
+      "crmIntegration": "تكامل CRM",
       "aiChatbot": "روبوت دردشة بالذكاء الاصطناعي",
       "aiVideoAnalytics": "تحليلات الفيديو بالذكاء الاصطناعي",
       "telegramBot": "بوت تيليجرام",
@@ -285,6 +286,8 @@
   "testimonials": {
     "title": "عملاؤنا عنا",
     "subtitle": "نتائج حقيقية من رواد أعمال حقيقيين",
+    "google_count": "٦ مراجعات على Google",
+    "google_label": "مراجعة على Google",
     "items": {
       "dilfuza": {
         "name": "دلفوزة",

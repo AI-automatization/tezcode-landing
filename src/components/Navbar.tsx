@@ -20,6 +20,7 @@ import {
   UserCheck,
   Code,
   Briefcase,
+  Link2,
   ChevronDown,
   ArrowRight,
 } from "lucide-react";
@@ -105,6 +106,7 @@ const SOLUTION_GROUPS: { headerKey: string; items: SolutionItem[] }[] = [
     headerKey: "services",
     items: [
       { key: "businessAutomation", href: "/biznes-avtomatlashtirish", icon: Workflow },
+      { key: "crmIntegration", href: "/crm-integratsiya", icon: Link2 },
       { key: "itServices", href: "/it-xizmatlar", icon: Code },
       { key: "hireDevelopers", href: "/hire-developers", icon: Users },
       { key: "caseStudies", href: "/case-studies", icon: Briefcase },

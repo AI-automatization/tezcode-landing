@@ -43,6 +43,7 @@ const ROUTES: Route[] = [
   { path: "/klinika-crm", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/xodim-nazorati", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/biznes-avtomatlashtirish", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/crm-integratsiya", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/it-xizmatlar", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/tezcode-systems", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/tezcode-custom", priority: 0.9, changeFrequency: "monthly" as const },

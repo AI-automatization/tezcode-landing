@@ -3,6 +3,7 @@ import type { ServiceLang } from "@/components/service-page/types";
 import {
   buildPageMetadata,
   getFaqSchema,
+  getHowToSchema,
   getServiceSchema,
 } from "@/lib/seo";
 import { CONTENT } from "./content";
@@ -109,6 +110,15 @@ export default async function BiznesAvtomatlashtirishPage({
     offers: { price: "400", priceCurrency: "USD" },
   });
   const faqSchema = getFaqSchema(copy.faq.items);
+  // HowTo mirrors the visible process steps, so "how to automate a business
+  // process?" queries can be answered with our exact onboarding steps.
+  const howTo = getHowToSchema({
+    name: `${copy.process.title} ${copy.process.titleAccent}`.trim(),
+    description: copy.process.subtitle,
+    path: PATH,
+    locale,
+    steps: copy.process.steps.map((s) => ({ name: s.title, text: s.desc })),
+  });
 
   return (
     <>
@@ -119,6 +129,10 @@ export default async function BiznesAvtomatlashtirishPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howTo) }}
       />
       <ServicePageClient content={CONTENT} serviceSlug="biznes-avtomatlashtirish" />
     </>

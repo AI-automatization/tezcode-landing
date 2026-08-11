@@ -26,6 +26,7 @@
       "aiAutomation": "AI automation",
       "aiAgent": "AI agent",
       "businessAutomation": "Business automation",
+      "crmIntegration": "CRM integration",
       "aiChatbot": "AI chatbot",
       "aiVideoAnalytics": "AI video analytics",
       "telegramBot": "Telegram bot",
@@ -285,6 +286,8 @@
   "testimonials": {
     "title": "Customer stories",
     "subtitle": "Real results from real entrepreneurs",
+    "google_count": "6 Google reviews",
+    "google_label": "Google review",
     "items": {
       "dilfuza": {
         "name": "Dilfuza X.",
