@@ -17,6 +17,7 @@ const AI_CRAWLERS = [
   "PerplexityBot", // Perplexity — index
   "Perplexity-User", // Perplexity — live fetch
   "Google-Extended", // Google — Gemini / Vertex training
+  "Applebot", // Apple — Safari Suggestions, Siri, Spotlight (Apple search index)
   "Applebot-Extended", // Apple — Apple Intelligence
   "CCBot", // Common Crawl — feeds many open LLMs
   "cohere-ai", // Cohere

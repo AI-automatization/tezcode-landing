@@ -119,6 +119,13 @@ export async function generateMetadata({
       },
     },
     category: "Technology",
+    // Name Safari/Siri/Spotlight see for this site (Apple ecosystem signal).
+    applicationName: "Tezcode",
+    appleWebApp: {
+      capable: true,
+      title: "Tezcode",
+      statusBarStyle: "black-translucent",
+    },
     // Geo meta tags — pin Tezcode's Tashkent office for local search engines.
     other: {
       "geo.region": "UZ-TK",
