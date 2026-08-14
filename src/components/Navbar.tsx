@@ -20,6 +20,7 @@ import {
   UserCheck,
   Code,
   Briefcase,
+  Store,
   Link2,
   ChevronDown,
   ArrowRight,
@@ -88,6 +89,7 @@ const SOLUTION_GROUPS: { headerKey: string; items: SolutionItem[] }[] = [
     headerKey: "products",
     items: [
       { key: "posSystem", href: "/pos-tizimi", icon: ShoppingCart },
+      { key: "aiRestaurant", href: "/ai-restoran-uchun", icon: Store },
       { key: "clinicCrm", href: "/klinika-crm", icon: Stethoscope },
       { key: "employeeMonitoring", href: "/xodim-nazorati", icon: UserCheck },
     ],

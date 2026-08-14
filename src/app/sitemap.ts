@@ -47,6 +47,7 @@ const ROUTES: Route[] = [
   { path: "/xodim-nazorati", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/biznes-avtomatlashtirish", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/crm-integratsiya", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/ai-restoran-uchun", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/amocrm-vs-bitrix24", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/it-xizmatlar", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/tezcode-systems", priority: 0.9, changeFrequency: "monthly" as const },

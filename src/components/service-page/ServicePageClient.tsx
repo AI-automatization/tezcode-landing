@@ -589,10 +589,11 @@ const RELATED_SERVICES: Record<string, string[]> = {
   "biznes-avtomatlashtirish": ["ai-avtomatizatsiya", "crm-integratsiya", "klinika-crm"],
   "crm-integratsiya": ["ai-chatbot", "biznes-avtomatlashtirish", "telegram-bot-biznes"],
   "telegram-bot-biznes": ["ai-chatbot", "ai-agent", "crm-integratsiya"],
-  "ai-video-analitika": ["xodim-nazorati", "pos-tizimi", "ai-avtomatizatsiya"],
+  "ai-video-analitika": ["ai-restoran-uchun", "pos-tizimi", "ai-avtomatizatsiya"],
   "xodim-nazorati": ["ai-video-analitika", "biznes-avtomatlashtirish", "pos-tizimi"],
   "klinika-crm": ["biznes-avtomatlashtirish", "crm-integratsiya", "ai-chatbot"],
-  "pos-tizimi": ["klinika-crm", "xodim-nazorati", "biznes-avtomatlashtirish"],
+  "pos-tizimi": ["ai-restoran-uchun", "klinika-crm", "xodim-nazorati"],
+  "ai-restoran-uchun": ["pos-tizimi", "ai-chatbot", "ai-video-analitika"],
   "it-xizmatlar": ["ai-avtomatizatsiya", "biznes-avtomatlashtirish", "crm-integratsiya"],
 };
 
@@ -609,6 +610,7 @@ const RELATED_LABEL_KEY: Record<string, string> = {
   "klinika-crm": "clinicCrm",
   "xodim-nazorati": "employeeMonitoring",
   "it-xizmatlar": "itServices",
+  "ai-restoran-uchun": "aiRestaurant",
 };
 
 const RELATED_HEADING: Record<ServiceLang, string> = {
