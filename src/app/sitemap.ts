@@ -1,13 +1,14 @@
 import type { MetadataRoute } from "next";
 import { BASE_URL, LOCALES } from "@/lib/seo";
 import { ARTICLES } from "./[locale]/blog/articles";
-import { CITY_SLUGS } from "@/data/cities";
 
 // Site-wide lastModified for non-blog pages. Bump this date on real releases
 // (content/design changes worth re-crawling) — NOT on every build. Using a
 // fixed date instead of `new Date()` keeps lastModified honest: search engines
-// lose trust in sitemaps where every URL "changes" on every deploy.
-const SITE_UPDATED = new Date("2026-07-17");
+// lose trust in sitemaps where every URL "changes" on every deploy. Bump this
+// only on major site-wide content updates (e.g. 2026-08-11: Review schema +
+// internal linking added to every service page, new CRM/comparison pages).
+const SITE_UPDATED = new Date("2026-08-11");
 
 // City slugs with live pages for the newer per-city service landings.
 // Must mirror ACTIVE_CITY_SLUGS in each service's [city]/page.tsx
@@ -18,6 +19,8 @@ const CITY_SERVICES = [
   "/ai-agent",
   "/telegram-bot-biznes",
   "/biznes-avtomatlashtirish",
+  "/pos-tizimi",
+  "/ai-avtomatizatsiya",
 ];
 
 type Route = {
@@ -81,20 +84,11 @@ const ROUTES: Route[] = [
     changeFrequency: "monthly" as const,
     lastModified: new Date(a.datePublished),
   })),
-  // Per-city POS landing pages (/pos-tizimi/<city>), derived from the city data.
-  ...CITY_SLUGS.map((slug) => ({
-    path: `/pos-tizimi/${slug}`,
-    priority: 0.7,
-    changeFrequency: "monthly" as const,
-  })),
-  // Per-city AI-automation landing pages (/ai-avtomatizatsiya/<city>).
-  ...CITY_SLUGS.map((slug) => ({
-    path: `/ai-avtomatizatsiya/${slug}`,
-    priority: 0.7,
-    changeFrequency: "monthly" as const,
-  })),
-  // Per-city landings for the newer services (/<service>/<city>) — only the
-  // city slugs that actually have live pages (ACTIVE_CITY_SLUGS).
+  // Per-city landings for every service (/<service>/<city>) — only the city
+  // slugs that actually have live pages (ACTIVE_CITY_SLUGS = Tashkent +
+  // Samarkand). pos-tizimi and ai-avtomatizatsiya used to fan out to all 12
+  // cities here, but those small-city pages were thin template duplicates that
+  // Google refused to index, so they're trimmed to the two real cities too.
   ...CITY_SERVICES.flatMap((service) =>
     ACTIVE_CITY_SLUGS.map((slug) => ({
       path: `${service}/${slug}`,

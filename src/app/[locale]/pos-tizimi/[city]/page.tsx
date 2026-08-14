@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { ServicePageClient } from "@/components/service-page/ServicePageClient";
 import type { ServiceLang } from "@/components/service-page/types";
 import { buildPageMetadata, getFaqSchema, getServiceSchema } from "@/lib/seo";
-import { CITY_SLUGS, getCity } from "@/data/cities";
+import { getCity } from "@/data/cities";
 import { buildCityContent } from "../cityContent";
 
 // Dynamic per-city POS landing pages: /pos-tizimi/<city>.
@@ -15,9 +15,16 @@ import { buildCityContent } from "../cityContent";
 // Only the city slugs we ship — unknown cities 404 instead of rendering thin pages.
 export const dynamicParams = false;
 
+// Only Tashkent + Samarkand ship live pages. The other 10 city slugs (still in
+// the CITIES data) were thin template duplicates — same copy, city name swapped —
+// that Google discovered but refused to index. getCity() alone still resolves
+// them, so we gate on this allowlist everywhere to 404 the doorway pages and let
+// Google drop them.
+const ACTIVE_CITIES = ["toshkent", "samarqand"];
+
 // The parent [locale] segment fans out locales; this child fans out city slugs.
 export function generateStaticParams() {
-  return CITY_SLUGS.map((city) => ({ city }));
+  return ACTIVE_CITIES.map((city) => ({ city }));
 }
 
 export async function generateMetadata({
@@ -27,7 +34,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, city: citySlug } = await params;
   const city = getCity(citySlug);
-  if (!city) return {};
+  if (!city || !ACTIVE_CITIES.includes(citySlug)) return {};
 
   const lang = (["uz", "ru", "en", "ar", "uk"].includes(locale)
     ? locale
@@ -126,7 +133,7 @@ export default async function PosTizimiCityPage({
 }) {
   const { locale, city: citySlug } = await params;
   const city = getCity(citySlug);
-  if (!city) notFound();
+  if (!city || !ACTIVE_CITIES.includes(citySlug)) notFound();
 
   const lang = (["uz", "ru", "en", "ar", "uk"].includes(locale)
     ? locale

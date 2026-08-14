@@ -9,7 +9,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Link } from "@/i18n/routing";
-import { CITIES, CITY_SLUGS } from "@/data/cities";
+import { CITIES } from "@/data/cities";
 import type { ServiceLang, ServicePageContent, ServicePageCopy } from "./types";
 import { ServiceIcon } from "./ServiceIcon";
 
@@ -523,8 +523,8 @@ function RelatedSection({ copy }: { copy: ServicePageCopy }) {
 // service (/pos-tizimi/toshkent, …). Static map mirrors each route's
 // generateStaticParams so we only link city pages that actually exist.
 const SERVICE_CITY_SLUGS: Record<string, string[]> = {
-  "pos-tizimi": CITY_SLUGS, // all 12 cities live (CITY_SLUGS fan-out)
-  "ai-avtomatizatsiya": CITY_SLUGS, // all 12 cities live (CITY_SLUGS fan-out)
+  "pos-tizimi": ["toshkent", "samarqand"], // trimmed from 12: small-city pages were thin duplicates
+  "ai-avtomatizatsiya": ["toshkent", "samarqand"], // trimmed from 12: small-city pages were thin duplicates
   "ai-chatbot": ["toshkent", "samarqand"],
   "ai-agent": ["toshkent", "samarqand"],
   "telegram-bot-biznes": ["toshkent", "samarqand"],
