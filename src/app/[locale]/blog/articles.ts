@@ -7,6 +7,29 @@ import type { ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "1c-crm-ai-integratsiya",
+    datePublished: "2026-08-14",
+    category: "CRM / Integratsiya",
+    relatedService: { href: "/crm-integratsiya", label: "CRM integratsiya" },
+    list: {
+      uz: {
+        title: "1C ni CRM va AI bilan bog'lash: to'liq qo'llanma (2026)",
+        excerpt:
+          "1C ni amoCRM, Bitrix24 va AI bilan bog'lash: buyurtma, qoldiq va hisob-faktura sinxronizatsiyasi, AI 1C'dan real narx va mavjudlikni o'qishi. Narx $700 dan.",
+      },
+      ru: {
+        title: "Интеграция 1С с CRM и AI: полное руководство (2026)",
+        excerpt:
+          "Связка 1С с amoCRM, Bitrix24 и AI: синхронизация заказов, остатков и счетов, AI читает из 1С реальную цену и наличие. Цена от $700.",
+      },
+      en: {
+        title: "Integrating 1C with CRM and AI: the complete guide (2026)",
+        excerpt:
+          "Connecting 1C with amoCRM, Bitrix24 and AI: order, stock and invoice sync, AI reading real price and availability from 1C. Price from $700.",
+      },
+    },
+  },
+  {
     slug: "ai-yechimlar-narxi-2026",
     datePublished: "2026-08-14",
     category: "Narxlar / AI",
