@@ -70,7 +70,7 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <m.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={false}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE } }}
           className="mb-8"
         >
@@ -81,7 +81,7 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
         </m.div>
 
         <m.h1
-          initial={{ opacity: 0, y: 32 }}
+          initial={false}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.9, ease: EASE, delay: 0.1 } }}
           className="text-4xl sm:text-5xl lg:text-6xl font-800 leading-[1.05] tracking-tight mb-6 text-[var(--tc-text-primary)]"
           style={{ fontFamily: "var(--font-display)" }}
@@ -92,7 +92,7 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
         </m.h1>
 
         <m.p
-          initial={{ opacity: 0, y: 24 }}
+          initial={false}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE, delay: 0.25 } }}
           className="text-lg md:text-xl text-[var(--tc-text-secondary)] max-w-2xl mx-auto mb-5 leading-relaxed"
         >
@@ -100,7 +100,7 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
         </m.p>
 
         <m.p
-          initial={{ opacity: 0 }}
+          initial={false}
           animate={{ opacity: 1, transition: { duration: 0.7, ease: EASE, delay: 0.4 } }}
           className="inline-flex items-center gap-2 text-sm text-[var(--tc-text-muted)] font-500 mb-10"
         >
@@ -110,7 +110,7 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
 
         {copy.updated ? (
           <m.p
-            initial={{ opacity: 0 }}
+            initial={false}
             animate={{ opacity: 1, transition: { duration: 0.7, ease: EASE, delay: 0.45 } }}
             className="block text-xs text-[var(--tc-text-muted)] -mt-6 mb-10"
           >
@@ -119,7 +119,7 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
         ) : null}
 
         <m.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={false}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE, delay: 0.5 } }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
@@ -135,7 +135,7 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
 
       {copy.heroImage ? (
         <m.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={false}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.9, ease: EASE, delay: 0.6 } }}
           className="relative z-10 mt-16 max-w-5xl mx-auto"
         >

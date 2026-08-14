@@ -535,7 +535,7 @@ export function Hero() {
           <div className="text-center lg:text-start">
             {/* Badge */}
             <m.div
-              initial={fadeUp.hidden}
+              initial={false}
               animate={fadeUp.visible(0)}
               className="tc-chip mb-7"
             >
@@ -559,7 +559,7 @@ export function Hero() {
 
             {/* Subheadline */}
             <m.p
-              initial={fadeUp.hidden}
+              initial={false}
               animate={fadeUp.visible(0.15)}
               className="text-lg text-[var(--tc-text-secondary)] max-w-xl mx-auto lg:mx-0 mb-6 leading-relaxed"
             >
@@ -568,7 +568,7 @@ export function Hero() {
 
             {/* Risk-reversal trust checkmarks */}
             <m.div
-              initial={fadeUp.hidden}
+              initial={false}
               animate={fadeUp.visible(0.25)}
               className="flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-2 mb-9"
             >
@@ -585,7 +585,7 @@ export function Hero() {
 
             {/* CTAs */}
             <m.div
-              initial={fadeUp.hidden}
+              initial={false}
               animate={fadeUp.visible(0.35)}
               className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-4"
             >
@@ -614,7 +614,7 @@ export function Hero() {
             {/* IT Park resident badge */}
             <m.a
               href="/biz-haqimizda"
-              initial={fadeUp.hidden}
+              initial={false}
               animate={fadeUp.visible(0.45)}
               className="mt-8 inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-500 text-[var(--tc-success)] transition-colors"
               style={{
@@ -662,7 +662,7 @@ function HeroVisual() {
 
   return (
     <m.div
-      initial={{ opacity: 0, y: 24 }}
+      initial={false}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
       className="relative mx-auto w-full max-w-md lg:max-w-none"
@@ -813,7 +813,7 @@ function HeroStats({ t }: { t: ReturnType<typeof useTranslations<"hero">> }) {
 
   return (
     <m.div
-      initial={{ opacity: 0, y: 24 }}
+      initial={false}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className="tc-card rounded-[24px] mt-16 grid grid-cols-2 sm:grid-cols-4 divide-x divide-y sm:divide-y-0 divide-[var(--tc-border)] overflow-hidden"
