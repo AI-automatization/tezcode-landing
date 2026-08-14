@@ -1,7 +1,7 @@
 "use client";
 
 import {
-  motion,
+  m,
   useMotionTemplate,
   useMotionValue,
   useSpring,
@@ -53,7 +53,7 @@ export function Tilt3D({
   }
 
   return (
-    <motion.div
+    <m.div
       ref={ref}
       onMouseMove={handleMove}
       onMouseLeave={handleLeave}
@@ -62,12 +62,12 @@ export function Tilt3D({
     >
       {children}
       {glare && (
-        <motion.div
+        <m.div
           aria-hidden
           className="pointer-events-none absolute inset-0 rounded-[inherit] opacity-0 transition-opacity duration-300 hover:opacity-100"
           style={{ background: glareBg }}
         />
       )}
-    </motion.div>
+    </m.div>
   );
 }

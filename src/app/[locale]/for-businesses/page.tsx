@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { Check } from "lucide-react";
 import { useLocale } from "next-intl";
 import { useState } from "react";
@@ -1399,7 +1399,7 @@ function HeroSection({ copy }: { copy: Copy }) {
       <div aria-hidden className="tc-grid-bg absolute inset-0 pointer-events-none" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 24 }}
           animate={{
             opacity: 1,
@@ -1408,15 +1408,15 @@ function HeroSection({ copy }: { copy: Copy }) {
           }}
           className="tc-chip mb-8"
         >
-          <motion.span
+          <m.span
             animate={{ opacity: [0.4, 1, 0.4] }}
             transition={{ duration: 2, repeat: Infinity }}
             className="w-1.5 h-1.5 rounded-full bg-[var(--tc-blue)]"
           />
           {copy.hero.badge}
-        </motion.div>
+        </m.div>
 
-        <motion.h1
+        <m.h1
           initial={{ opacity: 0, y: 32, filter: "blur(8px)" }}
           animate={{
             opacity: 1,
@@ -1430,9 +1430,9 @@ function HeroSection({ copy }: { copy: Copy }) {
           <span className="block text-[var(--tc-text-primary)]">{copy.hero.title1}</span>
           <span className="block text-[var(--tc-blue-text)]">{copy.hero.titleAccent}</span>
           <span className="block text-[var(--tc-text-primary)]">{copy.hero.title2}</span>
-        </motion.h1>
+        </m.h1>
 
-        <motion.p
+        <m.p
           initial={{ opacity: 0, y: 24 }}
           animate={{
             opacity: 1,
@@ -1442,9 +1442,9 @@ function HeroSection({ copy }: { copy: Copy }) {
           className="text-lg md:text-2xl text-[var(--tc-text-secondary)] max-w-3xl mx-auto mb-6 leading-relaxed"
         >
           {copy.hero.subtitle}
-        </motion.p>
+        </m.p>
 
-        <motion.p
+        <m.p
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
@@ -1454,9 +1454,9 @@ function HeroSection({ copy }: { copy: Copy }) {
         >
           <Check className="w-4 h-4 shrink-0 text-[var(--tc-success)]" />
           {copy.hero.trust}
-        </motion.p>
+        </m.p>
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 24 }}
           animate={{
             opacity: 1,
@@ -1466,7 +1466,7 @@ function HeroSection({ copy }: { copy: Copy }) {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Magnetic strength={12}>
-            <motion.a
+            <m.a
               href="#consult"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
@@ -1478,19 +1478,19 @@ function HeroSection({ copy }: { copy: Copy }) {
                   <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
-            </motion.a>
+            </m.a>
           </Magnetic>
           <Magnetic strength={10}>
-            <motion.a
+            <m.a
               href="#portfolio"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="tc-btn-secondary w-full sm:w-auto text-sm"
             >
               {copy.hero.ctaSecondary}
-            </motion.a>
+            </m.a>
           </Magnetic>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );
@@ -1583,13 +1583,13 @@ function BenefitsSection({ copy }: { copy: Copy }) {
             <RevealItem key={i} className={i % 2 === 1 ? "md:mt-12" : ""}>
               <Tilt3D intensity={6} className="rounded-[var(--tc-radius-xl)]">
                 <div className="tc-card tc-card-hover relative h-full p-8 md:p-10 overflow-hidden">
-                  <motion.div
+                  <m.div
                     whileHover={{ rotate: -6, scale: 1.1 }}
                     className="relative w-12 h-12 rounded-xl bg-[var(--tc-blue-dim)] flex items-center justify-center mb-6"
                     style={{ transform: "translateZ(40px)" }}
                   >
                     <ServiceIcon name={item.icon} className="w-6 h-6 text-[var(--tc-blue-text)]" />
-                  </motion.div>
+                  </m.div>
                   <h3
                     className="relative text-2xl md:text-3xl font-700 text-[var(--tc-text-primary)] mb-3 tracking-tight"
                     style={{
@@ -1753,7 +1753,7 @@ function ProcessSection({ copy }: { copy: Copy }) {
             {copy.process.steps.map((step) => {
               return (
                 <RevealItem key={step.num}>
-                  <motion.div
+                  <m.div
                     whileHover={{ y: -6 }}
                     className="tc-card group relative p-6 h-full"
                   >
@@ -1781,7 +1781,7 @@ function ProcessSection({ copy }: { copy: Copy }) {
                     <p className="relative text-sm text-[var(--tc-text-secondary)] leading-relaxed">
                       {step.desc}
                     </p>
-                  </motion.div>
+                  </m.div>
                 </RevealItem>
               );
             })}
@@ -2038,7 +2038,7 @@ function FaqSection({ copy }: { copy: Copy }) {
                     >
                       {item.q}
                     </span>
-                    <motion.span
+                    <m.span
                       animate={{ rotate: isOpen ? 45 : 0 }}
                       transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] as const }}
                       className={[
@@ -2049,9 +2049,9 @@ function FaqSection({ copy }: { copy: Copy }) {
                       ].join(" ")}
                     >
                       +
-                    </motion.span>
+                    </m.span>
                   </button>
-                  <motion.div
+                  <m.div
                     initial={false}
                     animate={{
                       height: isOpen ? "auto" : 0,
@@ -2063,7 +2063,7 @@ function FaqSection({ copy }: { copy: Copy }) {
                     <div className="px-5 md:px-6 pb-5 md:pb-6 text-[var(--tc-text-secondary)] leading-relaxed">
                       {item.a}
                     </div>
-                  </motion.div>
+                  </m.div>
                 </div>
               </RevealItem>
             );
@@ -2112,7 +2112,7 @@ function FinalCtaSection({ copy }: { copy: Copy }) {
 
         <Reveal delay={0.1}>
           <Magnetic strength={12}>
-            <motion.a
+            <m.a
               href="https://t.me/tezcode_managament"
               target="_blank"
               rel="noopener noreferrer"
@@ -2127,7 +2127,7 @@ function FinalCtaSection({ copy }: { copy: Copy }) {
               <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </motion.a>
+            </m.a>
           </Magnetic>
         </Reveal>
 

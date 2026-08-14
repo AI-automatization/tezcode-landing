@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { useLocale } from "next-intl";
 import { Check } from "lucide-react";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
@@ -222,7 +222,7 @@ export function PricingTiers() {
         >
           {t.tiers.map((tier) => (
             <RevealItem key={tier.name} className="h-full">
-              <motion.div
+              <m.div
                 whileHover={tier.highlight ? undefined : { y: -6 }}
                 className={[
                   "relative h-full flex flex-col p-8",
@@ -310,7 +310,7 @@ export function PricingTiers() {
                 >
                   {t.cta}
                 </Link>
-              </motion.div>
+              </m.div>
             </RevealItem>
           ))}
         </RevealStagger>

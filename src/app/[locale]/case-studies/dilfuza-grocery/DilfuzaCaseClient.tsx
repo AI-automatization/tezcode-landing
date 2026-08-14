@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { useLocale } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { CountUp } from "@/components/motion/CountUp";
@@ -622,14 +622,14 @@ export function DilfuzaCaseClient() {
               {t.ctaText}
             </p>
             <div className="flex flex-wrap justify-center gap-3 relative">
-              <motion.a
+              <m.a
                 href="/aloqa"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="tc-btn-primary text-sm"
               >
                 {t.ctaBtn}
-              </motion.a>
+              </m.a>
               <Link
                 href="/case-studies"
                 className="tc-btn-secondary text-sm"

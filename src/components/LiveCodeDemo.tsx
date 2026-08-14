@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "motion/react";
+import { m, useInView } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { useLocale } from "next-intl";
 import { Reveal } from "@/components/motion/Reveal";
@@ -101,7 +101,7 @@ export function LiveCodeDemo() {
       <div className="max-w-6xl mx-auto relative z-10">
         <Reveal className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--tc-blue)]/10 border border-[var(--tc-blue)]/30 text-xs font-500 text-[var(--tc-blue-text)] mb-6 uppercase tracking-[0.2em]">
-            <motion.span
+            <m.span
               animate={{ opacity: [0.4, 1, 0.4] }}
               transition={{ duration: 1.5, repeat: Infinity }}
               className="w-1.5 h-1.5 rounded-full bg-[var(--tc-blue)]"
@@ -140,7 +140,7 @@ export function LiveCodeDemo() {
                   </span>
                 ) : (
                   <span className="inline-flex items-center gap-1.5">
-                    <motion.span
+                    <m.span
                       animate={{ opacity: [0.3, 1, 0.3] }}
                       transition={{ duration: 1.2, repeat: Infinity }}
                       className="w-1.5 h-1.5 rounded-full bg-[var(--tc-gold)]"
@@ -190,7 +190,7 @@ export function LiveCodeDemo() {
                   <span className="text-[var(--tc-text-primary)]">
                     {currentText}
                   </span>
-                  <motion.span
+                  <m.span
                     animate={{ opacity: [1, 0, 1] }}
                     transition={{ duration: 0.8, repeat: Infinity }}
                     className="inline-block w-2 h-5 bg-[var(--tc-text-primary)] ml-0.5"
@@ -198,7 +198,7 @@ export function LiveCodeDemo() {
                 </div>
               )}
               {done && (
-                <motion.div
+                <m.div
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   className="mt-6 flex flex-wrap items-center gap-3 pt-4 border-t border-[var(--tc-border)]"
@@ -213,7 +213,7 @@ export function LiveCodeDemo() {
                   <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[var(--tc-gold)]/10 border border-[var(--tc-gold)]/30 text-xs text-[var(--tc-gold)] font-500">
                     Zero downtime
                   </span>
-                </motion.div>
+                </m.div>
               )}
             </div>
           </div>

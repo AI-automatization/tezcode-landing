@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { Plus } from "lucide-react";
 import { RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
@@ -76,7 +76,7 @@ export function FaqAccordion({
                     >
                       {item.q}
                     </span>
-                    <motion.span
+                    <m.span
                       animate={{ rotate: isOpen ? 45 : 0 }}
                       transition={{ duration: 0.25, ease: EASE }}
                       className={[
@@ -87,9 +87,9 @@ export function FaqAccordion({
                       ].join(" ")}
                     >
                       <Plus className="w-4 h-4" />
-                    </motion.span>
+                    </m.span>
                   </button>
-                  <motion.div
+                  <m.div
                     initial={false}
                     animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
                     transition={{ duration: 0.3, ease: EASE }}
@@ -98,7 +98,7 @@ export function FaqAccordion({
                     <div className="px-5 md:px-6 pb-5 md:pb-6 text-[var(--tc-text-secondary)] leading-relaxed">
                       {item.a}
                     </div>
-                  </motion.div>
+                  </m.div>
                 </div>
               </RevealItem>
             );

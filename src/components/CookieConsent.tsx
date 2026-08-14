@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence } from "motion/react";
+import { m, AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
 import { useLocale } from "next-intl";
 
@@ -78,7 +78,7 @@ export function CookieConsent() {
   return (
     <AnimatePresence>
       {show && (
-        <motion.div
+        <m.div
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
@@ -140,7 +140,7 @@ export function CookieConsent() {
               </button>
             </div>
           </div>
-        </motion.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

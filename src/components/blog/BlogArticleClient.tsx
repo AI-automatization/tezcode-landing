@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { ArrowRight, Zap } from "lucide-react";
 import { useLocale } from "next-intl";
 import { useState } from "react";
@@ -157,7 +157,7 @@ function ArticleFaq({ copy }: { copy: ArticleCopy }) {
                     >
                       {item.q}
                     </span>
-                    <motion.span
+                    <m.span
                       animate={{ rotate: isOpen ? 45 : 0 }}
                       transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] as const }}
                       className={[
@@ -168,9 +168,9 @@ function ArticleFaq({ copy }: { copy: ArticleCopy }) {
                       ].join(" ")}
                     >
                       +
-                    </motion.span>
+                    </m.span>
                   </button>
-                  <motion.div
+                  <m.div
                     initial={false}
                     animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
                     transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] as const }}
@@ -179,7 +179,7 @@ function ArticleFaq({ copy }: { copy: ArticleCopy }) {
                     <div className="px-5 md:px-6 pb-5 md:pb-6 text-[var(--tc-text-secondary)] leading-relaxed">
                       {item.a}
                     </div>
-                  </motion.div>
+                  </m.div>
                 </div>
               </RevealItem>
             );
@@ -258,7 +258,7 @@ function ArticleCta({ copy }: { copy: ArticleCopy }) {
         </Reveal>
         <Reveal delay={0.1}>
           <Magnetic strength={12}>
-            <motion.a
+            <m.a
               href={href}
               target="_blank"
               rel="noopener noreferrer"
@@ -275,7 +275,7 @@ function ArticleCta({ copy }: { copy: ArticleCopy }) {
               <svg className="w-4 h-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </motion.a>
+            </m.a>
           </Magnetic>
         </Reveal>
         <Reveal delay={0.2}>

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { useLocale } from "next-intl";
 import { Search, Palette, Zap, Rocket } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
@@ -144,7 +144,7 @@ export function ProcessSteps() {
               const { body, timing } = splitTiming(getDesc(step));
               return (
                 <RevealItem key={step.num}>
-                  <motion.div
+                  <m.div
                     whileHover={{ y: -4 }}
                     className="tc-card tc-card-hover relative p-6 h-full"
                   >
@@ -174,7 +174,7 @@ export function ProcessSteps() {
                         {timing}
                       </span>
                     )}
-                  </motion.div>
+                  </m.div>
                 </RevealItem>
               );
             })}

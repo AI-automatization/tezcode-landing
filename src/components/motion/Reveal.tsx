@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, type Variants } from "motion/react";
+import { m, type Variants } from "motion/react";
 import type { ReactNode } from "react";
 
 type RevealProps = {
@@ -29,7 +29,7 @@ export function Reveal({
   once = true,
 }: RevealProps) {
   return (
-    <motion.div
+    <m.div
       initial="hidden"
       whileInView="visible"
       viewport={{ once, margin: "-80px" }}
@@ -45,7 +45,7 @@ export function Reveal({
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -59,7 +59,7 @@ export function RevealStagger({
   stagger?: number;
 }) {
   return (
-    <motion.div
+    <m.div
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-80px" }}
@@ -70,7 +70,7 @@ export function RevealStagger({
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -84,7 +84,7 @@ export function RevealItem({
   y?: number;
 }) {
   return (
-    <motion.div
+    <m.div
       variants={{
         hidden: { opacity: 0, y, filter: "blur(6px)" },
         visible: {
@@ -97,7 +97,7 @@ export function RevealItem({
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 

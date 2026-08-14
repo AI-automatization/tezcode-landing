@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, m } from "motion/react";
 import { useLocale } from "next-intl";
 import { ArrowRight, Check, X } from "lucide-react";
 
@@ -164,7 +164,7 @@ export function StickyCTA() {
   return (
     <AnimatePresence>
       {overlayActive && (
-        <motion.div
+        <m.div
           key="backdrop"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -175,7 +175,7 @@ export function StickyCTA() {
         />
       )}
       {visible && !dismissed && (
-        <motion.div
+        <m.div
           key="bar"
           initial={{ y: 96, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -243,7 +243,7 @@ export function StickyCTA() {
           >
             <X className="w-4 h-4" />
           </button>
-        </motion.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

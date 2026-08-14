@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { Inbox } from "lucide-react";
 import { useLocale } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
@@ -318,7 +318,7 @@ export function CaseStudiesIndexClient() {
           <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             {t.subtitle}
           </p>
-          <motion.div
+          <m.div
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
@@ -457,14 +457,14 @@ export function CaseStudiesIndexClient() {
             <p className="text-[var(--tc-text-secondary)] text-base md:text-lg max-w-2xl mx-auto mb-8 relative">
               {t.ctaText}
             </p>
-            <motion.a
+            <m.a
               href="/aloqa"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="tc-btn-primary text-sm relative"
             >
               {t.ctaBtn}
-            </motion.a>
+            </m.a>
           </div>
         </Reveal>
       </div>

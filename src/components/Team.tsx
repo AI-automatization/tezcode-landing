@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { useTranslations } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
@@ -100,7 +100,7 @@ export function Team() {
       id="team"
       className="py-32 px-6 bg-[var(--tc-surface-1)] relative overflow-hidden"
     >
-      <motion.div
+      <m.div
         animate={{ opacity: [0.04, 0.08, 0.04] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full pointer-events-none"
@@ -122,7 +122,7 @@ export function Team() {
           <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl">
             {t("subtitle")}
           </p>
-          <motion.div
+          <m.div
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
@@ -164,7 +164,7 @@ function TeamCard({ member }: { member: Member }) {
   const accent = member.isFounder ? "gold" : "blue";
 
   return (
-    <motion.div
+    <m.div
       whileHover={{ y: -4 }}
       className={[
         "group relative p-5 rounded-[var(--tc-radius-lg)] border transition-colors h-full",
@@ -217,6 +217,6 @@ function TeamCard({ member }: { member: Member }) {
           {member.telegram}
         </a>
       )}
-    </motion.div>
+    </m.div>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "motion/react";
+import { m, useScroll, useTransform } from "motion/react";
 import { useLocale } from "next-intl";
 import { useRef } from "react";
 import { Navbar } from "@/components/Navbar";
@@ -1115,47 +1115,47 @@ function HeroSection({ t }: { t: Copy }) {
         }}
       />
 
-      <motion.div
+      <m.div
         style={{ y: titleY, opacity: titleOpacity }}
         className="relative z-10 max-w-6xl mx-auto px-6 text-center"
       >
-        <motion.div
+        <m.div
           initial={fadeUp.hidden}
           animate={fadeUp.visible(0)}
           className="tc-chip gap-2 mb-8"
         >
-          <motion.span
+          <m.span
             animate={{ opacity: [0.4, 1, 0.4] }}
             transition={{ duration: 2, repeat: Infinity }}
             className="w-1.5 h-1.5 rounded-full bg-[var(--tc-blue)]"
           />
           {t.hero.badge}
-        </motion.div>
+        </m.div>
 
-        <motion.h1
+        <m.h1
           initial={fadeUp.hidden}
           animate={fadeUp.visible(0.1)}
           className="text-[clamp(2.5rem,6vw,4.75rem)] font-800 leading-[1.05] tracking-tight mb-6 text-[var(--tc-text-primary)]"
           style={{ fontFamily: "var(--font-display)" }}
         >
           <span className="block">{t.hero.headline}</span>
-        </motion.h1>
+        </m.h1>
 
-        <motion.p
+        <m.p
           initial={fadeUp.hidden}
           animate={fadeUp.visible(0.2)}
           className="text-base md:text-xl text-[var(--tc-text-secondary)] max-w-3xl mx-auto mb-10 leading-relaxed"
         >
           {t.hero.subhead}
-        </motion.p>
+        </m.p>
 
-        <motion.div
+        <m.div
           initial={fadeUp.hidden}
           animate={fadeUp.visible(0.3)}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Magnetic strength={12}>
-            <motion.a
+            <m.a
               href={TELEGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -1175,23 +1175,23 @@ function HeroSection({ t }: { t: Copy }) {
                   <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
-            </motion.a>
+            </m.a>
           </Magnetic>
 
           <Magnetic strength={10}>
-            <motion.a
+            <m.a
               href="#team"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="tc-btn-secondary w-full sm:w-auto justify-center gap-2"
             >
               {t.hero.ctaSecondary}
-            </motion.a>
+            </m.a>
           </Magnetic>
-        </motion.div>
+        </m.div>
 
         <HeroStats t={t} />
-      </motion.div>
+      </m.div>
     </section>
   );
 }
@@ -1204,7 +1204,7 @@ function HeroStats({ t }: { t: Copy }) {
     { value: 12, suffix: "+", label: t.hero.statClients },
   ];
   return (
-    <motion.div
+    <m.div
       initial="hidden"
       animate="visible"
       variants={{
@@ -1214,7 +1214,7 @@ function HeroStats({ t }: { t: Copy }) {
       className="mt-14 tc-card grid grid-cols-2 sm:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[var(--tc-border)] max-w-4xl mx-auto"
     >
       {stats.map((stat, i) => (
-        <motion.div
+        <m.div
           key={i}
           variants={{
             hidden: { opacity: 0, y: 24, filter: "blur(6px)" },
@@ -1240,9 +1240,9 @@ function HeroStats({ t }: { t: Copy }) {
           >
             {stat.label}
           </span>
-        </motion.div>
+        </m.div>
       ))}
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -1458,18 +1458,18 @@ function ModelsSection({ t }: { t: Copy }) {
           className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto"
           stagger={0.1}
         >
-          {t.models.items.map((m) => (
-            <RevealItem key={m.name}>
-              <motion.div
+          {t.models.items.map((model) => (
+            <RevealItem key={model.name}>
+              <m.div
                 whileHover={{ y: -6 }}
                 className={[
                   "relative p-8 rounded-[var(--tc-radius-xl)] h-full flex flex-col transition-colors",
-                  m.highlight
+                  model.highlight
                     ? "tc-navy-section shadow-[0_24px_60px_rgba(0,64,255,0.25)] md:scale-[1.03]"
                     : "tc-card",
                 ].join(" ")}
               >
-                {m.highlight && (
+                {model.highlight && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-[var(--tc-blue)] text-white text-[10px] font-700 uppercase tracking-[0.15em]">
                     Most popular
                   </div>
@@ -1478,24 +1478,24 @@ function ModelsSection({ t }: { t: Copy }) {
                   className="text-2xl font-700 text-[var(--tc-text-primary)] mb-1"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
-                  {m.name}
+                  {model.name}
                 </h3>
-                <p className="text-sm text-[var(--tc-text-muted)] mb-6">{m.tagline}</p>
+                <p className="text-sm text-[var(--tc-text-muted)] mb-6">{model.tagline}</p>
                 <div className="mb-6 flex items-baseline gap-1">
                   <span
                     className="text-5xl font-800 text-[var(--tc-text-primary)]"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
-                    {m.price}
+                    {model.price}
                   </span>
-                  <span className="text-sm text-[var(--tc-text-muted)]">{m.per}</span>
+                  <span className="text-sm text-[var(--tc-text-muted)]">{model.per}</span>
                 </div>
                 <ul className="space-y-3 mb-8 flex-1">
-                  {m.features.map((f, i) => (
+                  {model.features.map((f, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm">
                       <svg
                         className={`w-4 h-4 mt-0.5 shrink-0 ${
-                          m.highlight ? "text-[#5b8cff]" : "text-[var(--tc-success)]"
+                          model.highlight ? "text-[#5b8cff]" : "text-[var(--tc-success)]"
                         }`}
                         viewBox="0 0 8 8"
                         fill="none"
@@ -1514,12 +1514,12 @@ function ModelsSection({ t }: { t: Copy }) {
                   rel="noopener noreferrer"
                   className={[
                     "w-full justify-center text-sm",
-                    m.highlight ? "tc-btn-primary" : "tc-btn-secondary",
+                    model.highlight ? "tc-btn-primary" : "tc-btn-secondary",
                   ].join(" ")}
                 >
                   {t.models.cta}
                 </a>
-              </motion.div>
+              </m.div>
             </RevealItem>
           ))}
         </RevealStagger>
@@ -1751,7 +1751,7 @@ function FinalCTASection({ t }: { t: Copy }) {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <Magnetic strength={12}>
-              <motion.a
+              <m.a
                 href={TELEGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1763,10 +1763,10 @@ function FinalCTASection({ t }: { t: Copy }) {
                   <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
                 </svg>
                 {t.finalCta.ctaPrimary}
-              </motion.a>
+              </m.a>
             </Magnetic>
             <Magnetic strength={10}>
-              <motion.a
+              <m.a
                 href={TELEGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1775,7 +1775,7 @@ function FinalCTASection({ t }: { t: Copy }) {
                 className="tc-btn-secondary w-full sm:w-auto justify-center gap-2"
               >
                 {t.finalCta.ctaSecondary}
-              </motion.a>
+              </m.a>
             </Magnetic>
           </div>
 

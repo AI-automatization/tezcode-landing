@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -69,7 +69,7 @@ export function CodeReviewForm() {
 
   if (status === "success") {
     return (
-      <motion.div
+      <m.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="p-10 rounded-[var(--tc-radius-xl)] border-2 border-emerald-500/40 bg-gradient-to-br from-emerald-500/10 to-[var(--tc-surface-2)] text-center"
@@ -95,7 +95,7 @@ export function CodeReviewForm() {
         >
           Telegram'da kuting →
         </a>
-      </motion.div>
+      </m.div>
     );
   }
 

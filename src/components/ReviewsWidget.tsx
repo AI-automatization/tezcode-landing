@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { useLocale } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
@@ -161,7 +161,7 @@ export function ReviewsWidget() {
             const lang = (locale === "ar" || locale === "uk") ? "en" : (locale as "uz" | "ru" | "en");
             return (
               <RevealItem key={r.name}>
-                <motion.div
+                <m.div
                   whileHover={{ y: -4 }}
                   className="group relative p-5 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-border-bright)] transition-colors h-full flex flex-col"
                 >
@@ -205,7 +205,7 @@ export function ReviewsWidget() {
                       </span>
                     </div>
                   </div>
-                </motion.div>
+                </m.div>
               </RevealItem>
             );
           })}

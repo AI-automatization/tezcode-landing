@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 import { ArrowRight, Plus } from "lucide-react";
@@ -69,7 +69,7 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
       />
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE } }}
           className="mb-8"
@@ -78,9 +78,9 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--tc-success)]" />
             {copy.hero.badge}
           </span>
-        </motion.div>
+        </m.div>
 
-        <motion.h1
+        <m.h1
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.9, ease: EASE, delay: 0.1 } }}
           className="text-4xl sm:text-5xl lg:text-6xl font-800 leading-[1.05] tracking-tight mb-6 text-[var(--tc-text-primary)]"
@@ -89,36 +89,36 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
           {copy.hero.title1}{" "}
           <span className="text-[var(--tc-blue)]">{copy.hero.titleAccent}</span>
           {copy.hero.title2 ? <> {copy.hero.title2}</> : null}
-        </motion.h1>
+        </m.h1>
 
-        <motion.p
+        <m.p
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE, delay: 0.25 } }}
           className="text-lg md:text-xl text-[var(--tc-text-secondary)] max-w-2xl mx-auto mb-5 leading-relaxed"
         >
           {copy.hero.subtitle}
-        </motion.p>
+        </m.p>
 
-        <motion.p
+        <m.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 0.7, ease: EASE, delay: 0.4 } }}
           className="inline-flex items-center gap-2 text-sm text-[var(--tc-text-muted)] font-500 mb-10"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-[var(--tc-success)]" />
           {copy.hero.trust}
-        </motion.p>
+        </m.p>
 
         {copy.updated ? (
-          <motion.p
+          <m.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.7, ease: EASE, delay: 0.45 } }}
             className="block text-xs text-[var(--tc-text-muted)] -mt-6 mb-10"
           >
             {copy.updated}
-          </motion.p>
+          </m.p>
         ) : null}
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE, delay: 0.5 } }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
@@ -130,11 +130,11 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
           <a href="#capabilities" className="tc-btn-secondary w-full sm:w-auto text-sm">
             {copy.hero.ctaSecondary}
           </a>
-        </motion.div>
+        </m.div>
       </div>
 
       {copy.heroImage ? (
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.9, ease: EASE, delay: 0.6 } }}
           className="relative z-10 mt-16 max-w-5xl mx-auto"
@@ -149,7 +149,7 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
               className="object-cover"
             />
           </div>
-        </motion.div>
+        </m.div>
       ) : null}
     </section>
   );
@@ -364,7 +364,7 @@ function FaqSection({ copy }: { copy: ServicePageCopy }) {
                     >
                       {item.q}
                     </span>
-                    <motion.span
+                    <m.span
                       animate={{ rotate: isOpen ? 45 : 0 }}
                       transition={{ duration: 0.25, ease: EASE }}
                       className={[
@@ -375,9 +375,9 @@ function FaqSection({ copy }: { copy: ServicePageCopy }) {
                       ].join(" ")}
                     >
                       <Plus className="w-4 h-4" />
-                    </motion.span>
+                    </m.span>
                   </button>
-                  <motion.div
+                  <m.div
                     initial={false}
                     animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
                     transition={{ duration: 0.3, ease: EASE }}
@@ -386,7 +386,7 @@ function FaqSection({ copy }: { copy: ServicePageCopy }) {
                     <div className="px-5 md:px-6 pb-5 md:pb-6 text-[var(--tc-text-secondary)] leading-relaxed">
                       {item.a}
                     </div>
-                  </motion.div>
+                  </m.div>
                 </div>
               </RevealItem>
             );

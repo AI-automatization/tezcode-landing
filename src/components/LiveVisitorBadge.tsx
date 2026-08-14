@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { useEffect, useState } from "react";
 
 // Visitor badge — shows online count + total today
@@ -35,7 +35,7 @@ export function LiveVisitorBadge() {
   if (!mounted) return null;
 
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1.5, duration: 0.6 }}
@@ -54,6 +54,6 @@ export function LiveVisitorBadge() {
       <span className="text-[var(--tc-text-muted)]">
         <span className="text-[var(--tc-gold)] font-600">{todayTotal}</span> bugun
       </span>
-    </motion.div>
+    </m.div>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence } from "motion/react";
+import { m, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { useLocale } from "next-intl";
 import {
@@ -359,7 +359,7 @@ export function ROICalculator() {
                 </div>
 
                 <AnimatePresence mode="wait">
-                  <motion.p
+                  <m.p
                     key={pain}
                     initial={{ opacity: 0, y: 8 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -368,7 +368,7 @@ export function ROICalculator() {
                     className="text-base sm:text-lg font-600 text-[var(--tc-text-primary)] leading-snug mb-7 min-h-[3.5rem]"
                   >
                     {solution}
-                  </motion.p>
+                  </m.p>
                 </AnimatePresence>
 
                 {/* Effect bars — honest ranges, no fake precision */}
@@ -385,7 +385,7 @@ export function ROICalculator() {
                         </span>
                       </div>
                       <div className="h-1.5 rounded-full bg-[var(--tc-surface-3)] overflow-hidden">
-                        <motion.div
+                        <m.div
                           initial={{ width: 0 }}
                           whileInView={{ width: eff.width }}
                           viewport={{ once: true }}
@@ -406,7 +406,7 @@ export function ROICalculator() {
                     {t.est_label}
                   </div>
                   <AnimatePresence mode="wait">
-                    <motion.div
+                    <m.div
                       key={biz}
                       initial={{ opacity: 0.4, scale: 0.95 }}
                       animate={{ opacity: 1, scale: 1 }}
@@ -424,7 +424,7 @@ export function ROICalculator() {
                         {t.mln}
                         {t.mo}
                       </span>
-                    </motion.div>
+                    </m.div>
                   </AnimatePresence>
                   <p className="mt-2.5 text-xs text-[var(--tc-text-muted)] leading-relaxed flex items-start gap-1.5">
                     <Check
@@ -435,14 +435,14 @@ export function ROICalculator() {
                   </p>
                 </div>
 
-                <motion.a
+                <m.a
                   href={t.cta_link}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="tc-btn-primary flex w-full items-center justify-center text-center"
                 >
                   {t.cta}
-                </motion.a>
+                </m.a>
               </div>
             </div>
           </div>

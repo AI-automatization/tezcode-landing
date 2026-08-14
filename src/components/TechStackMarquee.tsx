@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { Triangle, Atom, Zap, Database, Waves, Sparkles, Container, Server, CreditCard, Hexagon, Code2 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -52,7 +52,7 @@ export function TechStackMarquee() {
         Our Technology Stack
       </div>
 
-      <motion.div
+      <m.div
         animate={{ x: ["0%", "-50%"] }}
         transition={{
           duration: 40,
@@ -80,7 +80,7 @@ export function TechStackMarquee() {
             </span>
           </div>
         ))}
-      </motion.div>
+      </m.div>
     </section>
   );
 }

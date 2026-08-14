@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { useTranslations, useLocale } from "next-intl";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "motion/react";
@@ -534,40 +534,40 @@ export function Hero() {
           {/* ── LEFT: text ── */}
           <div className="text-center lg:text-start">
             {/* Badge */}
-            <motion.div
+            <m.div
               initial={fadeUp.hidden}
               animate={fadeUp.visible(0)}
               className="tc-chip mb-7"
             >
-              <motion.span
+              <m.span
                 animate={{ opacity: [0.4, 1, 0.4] }}
                 transition={{ duration: 2, repeat: Infinity }}
                 className="w-1.5 h-1.5 rounded-full"
                 style={{ background: "linear-gradient(135deg, var(--tc-blue), #7c3aed)" }}
               />
               {t("badge")}
-            </motion.div>
+            </m.div>
 
             {/* Headline — LCP: paints immediately (initial={false}) */}
-            <motion.h1
+            <m.h1
               initial={false}
               className="text-[2rem] leading-[1.1] sm:text-5xl lg:text-6xl font-800 tracking-tight sm:leading-[1.05] text-[var(--tc-text-primary)] mb-6 break-words"
               style={{ fontFamily: "var(--font-display)" }}
             >
               {t("headline")}
-            </motion.h1>
+            </m.h1>
 
             {/* Subheadline */}
-            <motion.p
+            <m.p
               initial={fadeUp.hidden}
               animate={fadeUp.visible(0.15)}
               className="text-lg text-[var(--tc-text-secondary)] max-w-xl mx-auto lg:mx-0 mb-6 leading-relaxed"
             >
               {t("subheadline")}
-            </motion.p>
+            </m.p>
 
             {/* Risk-reversal trust checkmarks */}
-            <motion.div
+            <m.div
               initial={fadeUp.hidden}
               animate={fadeUp.visible(0.25)}
               className="flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-2 mb-9"
@@ -581,15 +581,15 @@ export function Hero() {
                   {part}
                 </span>
               ))}
-            </motion.div>
+            </m.div>
 
             {/* CTAs */}
-            <motion.div
+            <m.div
               initial={fadeUp.hidden}
               animate={fadeUp.visible(0.35)}
               className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-4"
             >
-              <motion.a
+              <m.a
                 href="/aloqa"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -597,8 +597,8 @@ export function Hero() {
               >
                 {t("cta_primary")}
                 <ArrowRight className="w-4 h-4 rtl:rotate-180" />
-              </motion.a>
-              <motion.a
+              </m.a>
+              <m.a
                 href="https://t.me/tezcode_managament"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -608,11 +608,11 @@ export function Hero() {
               >
                 <Send className="w-4 h-4 text-[var(--tc-blue-text)]" />
                 {t("cta_secondary")}
-              </motion.a>
-            </motion.div>
+              </m.a>
+            </m.div>
 
             {/* IT Park resident badge */}
-            <motion.a
+            <m.a
               href="/biz-haqimizda"
               initial={fadeUp.hidden}
               animate={fadeUp.visible(0.45)}
@@ -626,7 +626,7 @@ export function Hero() {
               {residentLabel}
               <span className="opacity-50">·</span>
               <span className="opacity-80">№6237</span>
-            </motion.a>
+            </m.a>
           </div>
 
           {/* ── RIGHT: business-outcome dashboard mockup ── */}
@@ -661,7 +661,7 @@ function HeroVisual() {
   const Icon = SLIDE_ICONS[active] ?? Bot;
 
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
@@ -693,7 +693,7 @@ function HeroVisual() {
         {/* rotating slide */}
         <div className="min-h-[24rem] sm:min-h-[22rem]">
           <AnimatePresence mode="wait">
-            <motion.div
+            <m.div
               key={active}
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
@@ -719,7 +719,7 @@ function HeroVisual() {
               {/* what exactly gets automated */}
               <div className="flex flex-col gap-2 mb-5">
                 {slide.tasks.map((task, i) => (
-                  <motion.div
+                  <m.div
                     key={task}
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -736,7 +736,7 @@ function HeroVisual() {
                     <span className="text-[13px] sm:text-sm font-500 text-[var(--tc-text-primary)] truncate">
                       {task}
                     </span>
-                  </motion.div>
+                  </m.div>
                 ))}
               </div>
 
@@ -757,7 +757,7 @@ function HeroVisual() {
                   {slide.newLabel}
                 </span>
               </div>
-            </motion.div>
+            </m.div>
           </AnimatePresence>
         </div>
 
@@ -780,17 +780,17 @@ function HeroVisual() {
       </div>
 
       {/* floating chip — top-right */}
-      <motion.div
+      <m.div
         animate={{ y: [0, -8, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         className="tc-card absolute -top-4 -end-3 hidden sm:inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-600 text-[var(--tc-text-primary)]"
       >
         <Bot className="w-3.5 h-3.5 text-[var(--tc-blue-text)]" />
         {c.chip1}
-      </motion.div>
+      </m.div>
 
       {/* floating stat — bottom-left */}
-      <motion.div
+      <m.div
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
         className="tc-card absolute -bottom-4 -start-3 hidden sm:inline-flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs font-600 text-[var(--tc-text-primary)]"
@@ -798,8 +798,8 @@ function HeroVisual() {
         <ArrowUp className="w-3.5 h-3.5 text-[var(--tc-success)]" strokeWidth={2.5} />
         <span className="text-[var(--tc-success)]">{c.statVal}</span>
         {c.statLabel}
-      </motion.div>
-    </motion.div>
+      </m.div>
+    </m.div>
   );
 }
 
@@ -812,7 +812,7 @@ function HeroStats({ t }: { t: ReturnType<typeof useTranslations<"hero">> }) {
   ];
 
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
@@ -833,6 +833,6 @@ function HeroStats({ t }: { t: ReturnType<typeof useTranslations<"hero">> }) {
           </div>
         </div>
       ))}
-    </motion.div>
+    </m.div>
   );
 }

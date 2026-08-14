@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useMotionValue, useSpring } from "motion/react";
+import { m, useMotionValue, useSpring } from "motion/react";
 import { useRef, type ReactNode } from "react";
 
 type MagneticProps = {
@@ -33,7 +33,7 @@ export function Magnetic({ children, className = "", strength = 24 }: MagneticPr
   }
 
   return (
-    <motion.div
+    <m.div
       ref={ref}
       onMouseMove={handleMove}
       onMouseLeave={handleLeave}
@@ -41,6 +41,6 @@ export function Magnetic({ children, className = "", strength = 24 }: MagneticPr
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

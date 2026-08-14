@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { useTranslations } from "next-intl";
 import { ShoppingBag, Building2, HeartPulse, Wrench } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
@@ -79,13 +79,13 @@ export function BusinessSolutions() {
                       }}
                     />
 
-                    <motion.div
+                    <m.div
                       whileHover={{ rotate: -6, scale: 1.1 }}
                       className={`relative w-16 h-16 rounded-[var(--tc-radius-md)] bg-gradient-to-br ${accent.color} flex items-center justify-center mb-6`}
                       style={{ transform: "translateZ(40px)" }}
                     >
                       {(() => { const Icon = accent.icon; return <Icon className="w-7 h-7 text-white" />; })()}
-                    </motion.div>
+                    </m.div>
 
                     <h3
                       className="relative text-2xl md:text-3xl font-600 text-[var(--tc-text-primary)] mb-3 tracking-tight"

@@ -1,7 +1,7 @@
 "use client";
 
 import { animate, useInView, useMotionValue, useTransform } from "motion/react";
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { useEffect, useRef } from "react";
 
 type CountUpProps = {
@@ -37,7 +37,7 @@ export function CountUp({
   return (
     <span ref={ref} className={className}>
       {prefix}
-      <motion.span>{rounded}</motion.span>
+      <m.span>{rounded}</m.span>
       {suffix}
     </span>
   );

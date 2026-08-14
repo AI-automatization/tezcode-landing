@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Syne } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
+import { MotionProvider } from "@/components/motion/MotionProvider";
 import { getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import {
@@ -192,7 +193,7 @@ export default async function LocaleLayout({
       </head>
       <body className="bg-[var(--tc-ink)] text-[var(--tc-text-primary)] antialiased">
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <MotionProvider>{children}</MotionProvider>
         </NextIntlClientProvider>
         <Analytics />
       </body>
