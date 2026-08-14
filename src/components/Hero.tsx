@@ -769,12 +769,16 @@ function HeroVisual() {
               type="button"
               aria-label={s.title}
               onClick={() => setActive(i)}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
-                i === active
-                  ? "w-7 bg-[var(--tc-blue)]"
-                  : "w-1.5 bg-[var(--tc-border-bright)] hover:bg-[var(--tc-text-muted)]"
-              }`}
-            />
+              className="flex h-6 items-center justify-center px-1 -my-2"
+            >
+              <span
+                className={`block h-1.5 rounded-full transition-all duration-300 ${
+                  i === active
+                    ? "w-7 bg-[var(--tc-blue)]"
+                    : "w-1.5 bg-[var(--tc-border-bright)] group-hover:bg-[var(--tc-text-muted)]"
+                }`}
+              />
+            </button>
           ))}
         </div>
       </div>
