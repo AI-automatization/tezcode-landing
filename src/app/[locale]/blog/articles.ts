@@ -7,6 +7,32 @@ import type { ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "ai-yechimlar-narxi-2026",
+    datePublished: "2026-08-14",
+    category: "Narxlar / AI",
+    relatedService: { href: "/tariflar", label: "Tariflar" },
+    list: {
+      uz: {
+        title:
+          "AI yechimlar narxi 2026: qaysi xizmat qancha turadi? (Toshkent, O'zbekiston)",
+        excerpt:
+          "AI chatbot $339 dan, AI agent $400 dan, CRM integratsiya $700 dan, AI video analitika $990 dan — barcha AI yechimlarning aniq 2026 narxlari, narxga nima ta'sir qiladi va to'lov tartibi.",
+      },
+      ru: {
+        title:
+          "Цены на AI-решения 2026: сколько стоит каждая услуга? (Ташкент, Узбекистан)",
+        excerpt:
+          "AI-чат-бот от $339, AI-агент от $400, интеграция CRM от $700, AI-видеоаналитика от $990 — точные цены на все AI-решения на 2026, что влияет на цену и порядок оплаты.",
+      },
+      en: {
+        title:
+          "AI solution prices 2026: how much does each service cost? (Tashkent, Uzbekistan)",
+        excerpt:
+          "AI chatbot from $339, AI agent from $400, CRM integration from $700, AI video analytics from $990 — exact 2026 prices for all AI solutions, what drives the price and payment terms.",
+      },
+    },
+  },
+  {
     slug: "biznesni-ai-bilan-avtomatlashtirish",
     datePublished: "2026-07-18",
     category: "AI / Avtomatizatsiya",
