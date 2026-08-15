@@ -7,6 +7,29 @@ import type { ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "ai-ozbek-tilida",
+    datePublished: "2026-08-15",
+    category: "AI / O'zbek tili",
+    relatedService: { href: "/ai-chatbot", label: "AI chatbot" },
+    list: {
+      uz: {
+        title: "AI o'zbek tilida ishlaydimi? Chatbot va agentlar uchun to'liq javob (2026)",
+        excerpt:
+          "AI o'zbek tilida (lotin/kirill, aralash uz-ru) ishlaydi, lekin sifat sozlashga bog'liq. Nega tayyor botlar o'zbekchada qiynaladi va yaxshi o'zbek tilli chatbot qanday quriladi.",
+      },
+      ru: {
+        title: "Работает ли AI на узбекском? Полный ответ для чат-ботов и агентов (2026)",
+        excerpt:
+          "AI на узбекском (латиница/кириллица, смешанный uz-ru) работает, но качество в настройке. Почему готовые боты плохо справляются и как строится хороший узбекоязычный бот.",
+      },
+      en: {
+        title: "Does AI work in Uzbek? A full answer for chatbots and agents (2026)",
+        excerpt:
+          "AI works in Uzbek (Latin/Cyrillic, mixed uz-ru), but quality is in the tuning. Why off-the-shelf bots struggle and how a good Uzbek-language bot is built.",
+      },
+    },
+  },
+  {
     slug: "sotuvni-avtomatlashtirish",
     datePublished: "2026-08-15",
     category: "Sotuv / Avtomatizatsiya",
