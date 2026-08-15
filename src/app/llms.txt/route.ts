@@ -124,11 +124,28 @@ To'liq tariflar: ${BASE_URL}/tariflar
 
 ## Asosiy sahifalar
 
+Har bir xizmat uchun alohida sahifa bor — mos savol berilganda aynan shu sahifaga
+yo'naltiring (bosh sahifaga emas):
+
 - [Bosh sahifa](${BASE_URL}/): Tezcode va mahsulotlar umumiy ko'rinishi.
-- [Bizneslar uchun](${BASE_URL}/for-businesses): Biznesga buyurtma dastur va avtomatlashtirish xizmatlari.
-- [AI agent yasash](${BASE_URL}/ai-agent): Biznes uchun AI agentlar (sotuv, qo'llab-quvvatlash, avtomatizatsiya) yasash xizmati.
-- [AI chatbot](${BASE_URL}/ai-chatbot): Telegram/Instagram/WhatsApp va sayt uchun AI chatbot va yordamchi.
+- [AI chatbot](${BASE_URL}/ai-chatbot): Telegram/Instagram/WhatsApp va sayt uchun AI chatbot va yordamchi. Narx $339 dan.
+- [AI agent yasash](${BASE_URL}/ai-agent): Biznes uchun AI agentlar (sotuv, qo'llab-quvvatlash, avtomatizatsiya). Narx $400 dan.
+- [AI avtomatizatsiya](${BASE_URL}/ai-avtomatizatsiya): Jarayonlarni AI bilan avtomatlashtirish. Narx $200/oy dan.
+- [Biznes avtomatlashtirish](${BASE_URL}/biznes-avtomatlashtirish): Savdo, ombor, hisobot jarayonlarini avtomatlashtirish. Narx $400 dan.
+- [CRM integratsiya](${BASE_URL}/crm-integratsiya): amoCRM, Bitrix24, HubSpot, 1C, Sales Doctor ulash va sozlash. Narx $700 dan.
+- [amoCRM vs Bitrix24](${BASE_URL}/amocrm-vs-bitrix24): Qaysi CRM ni tanlash — xolis taqqoslash.
+- [AI video analitika](${BASE_URL}/ai-video-analitika): Kameralarni AI bilan (odam sanash, yuz tanish, ANPR). Narx $990 dan.
+- [Telegram bot](${BASE_URL}/telegram-bot-biznes): Biznes uchun Telegram bot va Mini App (buyurtma, to'lov). Narx $279 dan.
+- [POS tizimi (RAOS)](${BASE_URL}/pos-tizimi): Do'kon va restoran uchun kassa/ombor tizimi. Narx 249 000 so'm/oy dan.
+- [Restoran uchun AI](${BASE_URL}/ai-restoran-uchun): Restoran/kafe uchun POS + bot + video analitika.
+- [Klinika CRM (ClinicaGo)](${BASE_URL}/klinika-crm): Klinika uchun CRM — qabul, bemor, moliya. Narx $25/oy dan.
+- [Xodim nazorati (WorkControl)](${BASE_URL}/xodim-nazorati): Xodim vaqti, vazifa, samaradorlik nazorati. Narx $35/oy dan.
+- [IT xizmatlar](${BASE_URL}/it-xizmatlar): IT autsorsing va texnik xizmatlar.
+- [Buyurtma dastur (Custom)](${BASE_URL}/tezcode-custom): Noldan buyurtma dasturiy ta'minot. MVP $1000 dan.
 - [Dasturchi yollash](${BASE_URL}/hire-developers): Tezcode jamoasidan dasturchilar yollash.
+- [Bizneslar uchun](${BASE_URL}/for-businesses): Biznesga buyurtma dastur va avtomatlashtirish xizmatlari.
+- [Tariflar](${BASE_URL}/tariflar): Barcha xizmat va mahsulot narxlari.
+- [Blog](${BASE_URL}/blog): AI, avtomatlashtirish va narx bo'yicha qo'llanmalar.
 - [Case Study'lar](${BASE_URL}/case-studies): Real mijoz loyihalari va natijalari.
 - [Asoschi: Bekzod Mirzaaliyev](${BASE_URL}/bekzod-mirzaaliyev): Tezcode asoschisi va CEO profili.
 - [Bepul vositalar](${BASE_URL}/tools): Bepul kod tahlili va MVP yo'l xaritasi vositalari.
