@@ -7,6 +7,29 @@ import type { ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "kamerani-ai-bilan-aqlli-qilish",
+    datePublished: "2026-08-15",
+    category: "AI video analitika / Qo'llanma",
+    relatedService: { href: "/ai-video-analitika", label: "AI video analitika" },
+    list: {
+      uz: {
+        title: "Kamerangizni AI bilan aqlli qilish: odam sanash, davomat va xavfsizlik (2026)",
+        excerpt:
+          "Mavjud IP kameralarni AI bilan aqlli qilish: odam sanash (footfall), yuz tanish davomat, ish xavfsizligi, ANPR. Yangi kamera shart emas, $990 dan.",
+      },
+      ru: {
+        title: "Сделайте камеры умными с AI: подсчёт людей, посещаемость и безопасность (2026)",
+        excerpt:
+          "Сделать существующие IP-камеры умными с AI: подсчёт людей (footfall), посещаемость по лицу, охрана труда, ANPR. Новые камеры не нужны, от $990.",
+      },
+      en: {
+        title: "Make your cameras smart with AI: people counting, attendance and safety (2026)",
+        excerpt:
+          "Make existing IP cameras smart with AI: people counting (footfall), face attendance, workplace safety, ANPR. No new cameras needed, from $990.",
+      },
+    },
+  },
+  {
     slug: "ai-ozbek-tilida",
     datePublished: "2026-08-15",
     category: "AI / O'zbek tili",
