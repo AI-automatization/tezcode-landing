@@ -7,6 +7,29 @@ import type { ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "sotuvni-avtomatlashtirish",
+    datePublished: "2026-08-15",
+    category: "Sotuv / Avtomatizatsiya",
+    relatedService: { href: "/crm-integratsiya", label: "CRM integratsiya" },
+    list: {
+      uz: {
+        title: "Sotuvni avtomatlashtirish: Telegram, Instagram va CRM (2026)",
+        excerpt:
+          "Barcha kanal → bitta CRM, AI chatbot 24/7 javob va lid saralash, buyurtma avtomatik 1C/CRM'ga. Bironta lid yo'qolmaydi — sotuvni avtomatlashtirish qo'llanmasi.",
+      },
+      ru: {
+        title: "Автоматизация продаж: Telegram, Instagram и CRM (2026)",
+        excerpt:
+          "Все каналы → одна CRM, AI-чат-бот отвечает 24/7 и квалифицирует лиды, заказ автоматически в 1C/CRM. Ни один лид не теряется — руководство по автоматизации продаж.",
+      },
+      en: {
+        title: "Sales automation: Telegram, Instagram and CRM (2026)",
+        excerpt:
+          "All channels → one CRM, an AI chatbot answers 24/7 and qualifies leads, orders written to 1C/CRM automatically. No lead lost — a sales-automation guide.",
+      },
+    },
+  },
+  {
     slug: "biznes-uchun-telegram-bot",
     datePublished: "2026-08-15",
     category: "Telegram bot / Qo'llanma",
