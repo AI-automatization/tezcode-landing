@@ -7,6 +7,29 @@ import type { ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "ai-chatbot-vs-jonli-operator",
+    datePublished: "2026-08-15",
+    category: "AI chatbot / Taqqoslash",
+    relatedService: { href: "/ai-chatbot", label: "AI chatbot" },
+    list: {
+      uz: {
+        title: "AI chatbot vs jonli operator: qaysi biri, qachon? (2026)",
+        excerpt:
+          "AI chatbot soniyalarda va arzon, jonli operator nozik holatlarda kuchli. Narx, tezlik va sifat taqqoslash — va nega gibrid (AI + operator) model eng samarali.",
+      },
+      ru: {
+        title: "AI чат-бот или живой оператор: что и когда? (2026)",
+        excerpt:
+          "AI чат-бот за секунды и дёшево, живой оператор силён в деликатных ситуациях. Сравнение по цене, скорости и качеству — и почему гибрид эффективнее.",
+      },
+      en: {
+        title: "AI chatbot vs a live agent: which, and when? (2026)",
+        excerpt:
+          "An AI chatbot is fast and cheap; a live agent is strong in delicate cases. A price/speed/quality comparison — and why a hybrid model wins.",
+      },
+    },
+  },
+  {
     slug: "1c-crm-ai-integratsiya",
     datePublished: "2026-08-14",
     category: "CRM / Integratsiya",
