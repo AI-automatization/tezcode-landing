@@ -7,6 +7,29 @@ import type { ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "biznes-uchun-telegram-bot",
+    datePublished: "2026-08-15",
+    category: "Telegram bot / Qo'llanma",
+    relatedService: { href: "/telegram-bot-biznes", label: "Telegram bot" },
+    list: {
+      uz: {
+        title: "Biznes uchun Telegram bot: nima, narxi va qanday yaratiladi (2026)",
+        excerpt:
+          "Buyurtma, Click/Payme to'lov, 24/7 javob va CRM integratsiya — Telegram botда. Narx $279 dan, bot turlari va qanday yaratiladi — amaliy qo'llanma.",
+      },
+      ru: {
+        title: "Telegram-бот для бизнеса: что это, цена и как сделать (2026)",
+        excerpt:
+          "Заказы, оплата Click/Payme, ответы 24/7 и интеграция CRM — в Telegram-боте. Цена от $279, виды ботов и как сделать — практическое руководство.",
+      },
+      en: {
+        title: "A Telegram bot for business: what it is, price and how to build it (2026)",
+        excerpt:
+          "Orders, Click/Payme payment, 24/7 answers and CRM integration — in a Telegram bot. From $279, bot types and how it's built — a practical guide.",
+      },
+    },
+  },
+  {
     slug: "ai-chatbot-vs-jonli-operator",
     datePublished: "2026-08-15",
     category: "AI chatbot / Taqqoslash",
