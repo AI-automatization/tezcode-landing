@@ -21,6 +21,7 @@ import {
   Code,
   Briefcase,
   Store,
+  Calendar,
   Link2,
   ChevronDown,
   ArrowRight,
@@ -90,6 +91,7 @@ const SOLUTION_GROUPS: { headerKey: string; items: SolutionItem[] }[] = [
     items: [
       { key: "posSystem", href: "/pos-tizimi", icon: ShoppingCart },
       { key: "aiRestaurant", href: "/ai-restoran-uchun", icon: Store },
+      { key: "aiSalon", href: "/ai-salon-uchun", icon: Calendar },
       { key: "clinicCrm", href: "/klinika-crm", icon: Stethoscope },
       { key: "employeeMonitoring", href: "/xodim-nazorati", icon: UserCheck },
     ],

@@ -594,6 +594,7 @@ const RELATED_SERVICES: Record<string, string[]> = {
   "klinika-crm": ["biznes-avtomatlashtirish", "crm-integratsiya", "ai-chatbot"],
   "pos-tizimi": ["ai-restoran-uchun", "klinika-crm", "xodim-nazorati"],
   "ai-restoran-uchun": ["pos-tizimi", "ai-chatbot", "ai-video-analitika"],
+  "ai-salon-uchun": ["ai-chatbot", "telegram-bot-biznes", "crm-integratsiya"],
   "it-xizmatlar": ["ai-avtomatizatsiya", "biznes-avtomatlashtirish", "crm-integratsiya"],
 };
 
@@ -611,6 +612,7 @@ const RELATED_LABEL_KEY: Record<string, string> = {
   "xodim-nazorati": "employeeMonitoring",
   "it-xizmatlar": "itServices",
   "ai-restoran-uchun": "aiRestaurant",
+  "ai-salon-uchun": "aiSalon",
 };
 
 const RELATED_HEADING: Record<ServiceLang, string> = {
