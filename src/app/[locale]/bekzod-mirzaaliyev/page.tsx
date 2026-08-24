@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import {
@@ -61,7 +62,7 @@ export default function BekzodMirzaaliyevPage() {
   ]);
 
   return (
-    <>
+    <main data-theme="light" className="min-h-screen bg-[var(--tc-ink)]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
@@ -71,10 +72,20 @@ export default function BekzodMirzaaliyevPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <Navbar />
-      <main className="min-h-screen bg-[var(--tc-ink)] pt-24 pb-24">
+      <div className="pt-24 pb-24">
         <div className="max-w-3xl mx-auto px-6">
           {/* Hero */}
-          <div className="mb-12">
+          <div className="mb-12 text-center">
+            <div className="mx-auto mb-6 w-40 h-40 rounded-full overflow-hidden border-2 border-[var(--tc-gold)]/30 shadow-[var(--tc-shadow-card)]">
+              <Image
+                src="/team/bekzod-mirzaaliyev.jpg"
+                alt="Bekzod Mirzaaliyev — Tezcode asoschisi va CEO"
+                width={160}
+                height={160}
+                priority
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
               Founder & CEO
             </div>
@@ -84,11 +95,11 @@ export default function BekzodMirzaaliyevPage() {
             >
               Bekzod Mirzaaliyev
             </h1>
-            <p className="text-[var(--tc-text-secondary)] text-lg leading-relaxed">
-              <strong className="text-white">Tezcode</strong> — Toshkentda
+            <p className="text-[var(--tc-text-secondary)] text-lg leading-relaxed max-w-xl mx-auto">
+              <strong className="text-[var(--tc-text-primary)]">Tezcode</strong> — Toshkentda
               joylashgan AI Software Factory'ning asoschisi va CEO'si.
             </p>
-            <div className="mt-6 w-24 h-0.5 bg-gradient-to-r from-[var(--tc-gold)] to-transparent" />
+            <div className="mt-6 mx-auto w-24 h-0.5 bg-gradient-to-r from-transparent via-[var(--tc-gold)] to-transparent" />
           </div>
 
           {/* Bio */}
@@ -96,7 +107,7 @@ export default function BekzodMirzaaliyevPage() {
             <div className="p-7 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] text-[var(--tc-text-secondary)] leading-relaxed space-y-4">
               <p>
                 Bekzod Mirzaaliyev 2024-yilda{" "}
-                <strong className="text-white">Tezcode</strong>'ni tashkil etgan —
+                <strong className="text-[var(--tc-text-primary)]">Tezcode</strong>'ni tashkil etgan —
                 kichik biznesdan korporatsiyagacha sun'iy intellekt asosidagi
                 dasturiy mahsulotlar va biznes avtomatlashtirish yechimlarini
                 yaratuvchi kompaniya. Bugun Tezcode 16 kishilik jamoaga ega.
@@ -124,7 +135,7 @@ export default function BekzodMirzaaliyevPage() {
           {/* Facts */}
           <section className="mb-16">
             <h2
-              className="text-2xl font-700 text-white mb-6"
+              className="text-2xl font-700 text-[var(--tc-text-primary)] mb-6"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Qisqacha
@@ -148,7 +159,7 @@ export default function BekzodMirzaaliyevPage() {
           {/* Products */}
           <section className="mb-16">
             <h2
-              className="text-2xl font-700 text-white mb-6"
+              className="text-2xl font-700 text-[var(--tc-text-primary)] mb-6"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Tezcode mahsulotlari
@@ -161,7 +172,7 @@ export default function BekzodMirzaaliyevPage() {
                   className="group p-5 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:border-[var(--tc-border-bright)] hover:bg-[var(--tc-surface-3)] transition-colors"
                 >
                   <div
-                    className="font-700 text-white"
+                    className="font-700 text-[var(--tc-text-primary)]"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {p.name}
@@ -177,17 +188,17 @@ export default function BekzodMirzaaliyevPage() {
           {/* Contact */}
           <section>
             <h2
-              className="text-2xl font-700 text-white mb-6"
+              className="text-2xl font-700 text-[var(--tc-text-primary)] mb-6"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Aloqa
             </h2>
             <div className="p-7 rounded-[var(--tc-radius-lg)] border border-[var(--tc-gold)]/40 bg-[var(--tc-surface-2)] space-y-2 text-sm">
               <a
-                href="https://t.me/tezcode_managament"
+                href="https://t.me/webdevelopertk"
                 className="block text-[var(--tc-text-secondary)] hover:text-[var(--tc-blue-text)]"
               >
-                Telegram: @tezcode_managament
+                Telegram: @webdevelopertk
               </a>
               <a
                 href="mailto:tezcode@tezcode.dev"
@@ -198,8 +209,8 @@ export default function BekzodMirzaaliyevPage() {
             </div>
           </section>
         </div>
-      </main>
+      </div>
       <Footer />
-    </>
+    </main>
   );
 }

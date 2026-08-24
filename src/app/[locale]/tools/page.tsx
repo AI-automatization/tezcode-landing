@@ -50,9 +50,9 @@ const TOOLS: { slug: string; icon: LucideIcon; title: string; description: strin
 
 export default function ToolsPage() {
   return (
-    <>
+    <main data-theme="light" className="min-h-screen bg-[var(--tc-ink)]">
       <Navbar />
-      <main className="min-h-screen bg-[var(--tc-ink)] pt-24 pb-24">
+      <div className="pt-24 pb-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16 text-center">
             <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
@@ -85,10 +85,10 @@ export default function ToolsPage() {
                     </span>
                   )}
                   <div className="w-14 h-14 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-0)] border border-[var(--tc-border-bright)] flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
-                    {(() => { const Icon = tool.icon; return <Icon className="w-6 h-6 text-white" />; })()}
+                    {(() => { const Icon = tool.icon; return <Icon className="w-6 h-6 text-[var(--tc-blue-text)]" />; })()}
                   </div>
                   <h3
-                    className="text-xl font-700 text-white mb-2"
+                    className="text-xl font-700 text-[var(--tc-text-primary)] mb-2"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {tool.title}
@@ -109,7 +109,7 @@ export default function ToolsPage() {
 
           <div className="mt-16 text-center p-8 rounded-[var(--tc-radius-lg)] border border-dashed border-[var(--tc-border-bright)] bg-[var(--tc-surface-2)]/40 max-w-3xl mx-auto">
             <h2
-              className="text-2xl font-700 text-white mb-2"
+              className="text-2xl font-700 text-[var(--tc-text-primary)] mb-2"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Yangi vosita kerakmi?
@@ -130,8 +130,8 @@ export default function ToolsPage() {
             </a>
           </div>
         </div>
-      </main>
+      </div>
       <Footer />
-    </>
+    </main>
   );
 }

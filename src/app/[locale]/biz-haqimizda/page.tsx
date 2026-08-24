@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useLocale } from "next-intl";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Team } from "@/components/Team";
 import { ServiceIcon } from "@/components/service-page/ServiceIcon";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Magnetic } from "@/components/motion/Magnetic";
@@ -429,6 +430,9 @@ export default function AboutPage() {
           </Reveal>
         </div>
       </section>
+
+      {/* Team — every developer with brief info; click a card for the full profile */}
+      <Team />
 
       {/* CTA */}
       <section className="tc-navy-section py-20 sm:py-28 px-6">

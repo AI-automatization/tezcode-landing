@@ -87,9 +87,9 @@ const TAG_STYLE: Record<string, string> = {
 
 export default function ChangelogPage() {
   return (
-    <>
+    <main data-theme="light" className="min-h-screen bg-[var(--tc-ink)]">
       <Navbar />
-      <main className="min-h-screen bg-[var(--tc-ink)] pt-24 pb-24">
+      <div className="pt-24 pb-24">
         <div className="max-w-3xl mx-auto px-6">
           <div className="mb-12">
             <div className="text-xs text-[var(--tc-text-muted)] uppercase tracking-[0.2em] mb-3">
@@ -116,7 +116,7 @@ export default function ChangelogPage() {
 
                   <div className="flex items-center gap-3 mb-3 flex-wrap">
                     <span
-                      className="font-700 text-white text-xl"
+                      className="font-700 text-[var(--tc-text-primary)] text-xl"
                       style={{ fontFamily: "var(--font-display)" }}
                     >
                       {rel.version}
@@ -142,8 +142,8 @@ export default function ChangelogPage() {
             })}
           </div>
         </div>
-      </main>
+      </div>
       <Footer />
-    </>
+    </main>
   );
 }

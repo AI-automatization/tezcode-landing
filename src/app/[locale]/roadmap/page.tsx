@@ -61,9 +61,9 @@ const QUARTERS = ["Q2 2026", "Q3 2026", "Q4 2026", "Q1 2027", "2027+"];
 
 export default function RoadmapPage() {
   return (
-    <>
+    <main data-theme="light" className="min-h-screen bg-[var(--tc-ink)]">
       <Navbar />
-      <main className="min-h-screen bg-[var(--tc-ink)] pt-24 pb-24">
+      <div className="pt-24 pb-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="mb-12 text-center">
             <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
@@ -101,7 +101,7 @@ export default function RoadmapPage() {
               return (
                 <section key={q}>
                   <h2
-                    className="text-2xl md:text-3xl font-700 text-white mb-6 inline-flex items-center gap-3"
+                    className="text-2xl md:text-3xl font-700 text-[var(--tc-text-primary)] mb-6 inline-flex items-center gap-3"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {q}
@@ -128,7 +128,7 @@ export default function RoadmapPage() {
                             )}
                           </div>
                           <h3
-                            className="font-700 text-white text-base mb-1"
+                            className="font-700 text-[var(--tc-text-primary)] text-base mb-1"
                             style={{ fontFamily: "var(--font-display)" }}
                           >
                             {item.title}
@@ -151,7 +151,7 @@ export default function RoadmapPage() {
               Sizning g'oyangiz
             </div>
             <h2
-              className="text-2xl font-700 text-white mb-2"
+              className="text-2xl font-700 text-[var(--tc-text-primary)] mb-2"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Roadmap'ga qo'shilsin?
@@ -172,8 +172,8 @@ export default function RoadmapPage() {
             </a>
           </section>
         </div>
-      </main>
+      </div>
       <Footer />
-    </>
+    </main>
   );
 }

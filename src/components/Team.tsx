@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { m } from "motion/react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
 type Member = {
@@ -9,14 +11,19 @@ type Member = {
   role: string;
   telegram?: string;
   isFounder?: boolean;
+  profileSlug?: string; // if set, card links to /jamoa/<slug>
+  profileHref?: string; // explicit profile path (e.g. top-level founder pages)
+  photo?: string; // /team/<file>.jpg — shown instead of initials when present
 };
 
 const TEAM: Member[] = [
   {
     name: "Bekzod Mirzaaliyev",
     role: "Founder",
-    telegram: "@tezcode_managament",
+    telegram: "@webdevelopertk",
     isFounder: true,
+    profileHref: "/bekzod-mirzaaliyev",
+    photo: "/team/bekzod-mirzaaliyev.jpg",
   },
   {
     name: "Abdulaziz Yormatov",
@@ -38,8 +45,10 @@ const TEAM: Member[] = [
   },
   {
     name: "Sardor Madaliyev",
-    role: "Ventra Co-founder · Developer",
+    role: "AI Engineer · AI Video Analitika",
     telegram: "@madaliev_s",
+    profileHref: "/sardor-madaliyev",
+    photo: "/team/sardor-madaliyev.jpg",
   },
   {
     name: "Ziyora Mirzakirova",
@@ -52,8 +61,10 @@ const TEAM: Member[] = [
   },
   {
     name: "Behruz Satimboyev",
-    role: "Zzone Co-founder",
-    telegram: "@behruz_460",
+    role: "Team Lead · Full-Stack Developer",
+    telegram: "@behruz_237",
+    profileSlug: "behruz-satimboyev",
+    photo: "/team/behruz-satimboyev.jpg",
   },
   {
     name: "Abubakir Ilhomov",
@@ -78,7 +89,9 @@ const TEAM: Member[] = [
   },
   {
     name: "Javodbek Abdusalimov",
-    role: "Developer",
+    role: "Full-Stack Developer",
+    telegram: "@Javodbe411",
+    profileSlug: "javodbek-abdusalimov",
   },
   {
     name: "Habibulloh Shuhratov",
@@ -162,6 +175,9 @@ export function Team() {
 
 function TeamCard({ member }: { member: Member }) {
   const accent = member.isFounder ? "gold" : "blue";
+  const profileHref =
+    member.profileHref ??
+    (member.profileSlug ? `/jamoa/${member.profileSlug}` : null);
 
   return (
     <m.div
@@ -181,20 +197,39 @@ function TeamCard({ member }: { member: Member }) {
       )}
 
       <div className="flex items-start gap-3 mb-3">
-        <div
-          className={[
-            "shrink-0 w-12 h-12 rounded-xl bg-[var(--tc-surface-0)] border flex items-center justify-center font-700 text-sm transition-colors",
-            accent === "gold"
-              ? "text-[var(--tc-gold)] border-[var(--tc-gold)]/40 group-hover:border-[var(--tc-gold)]/70"
-              : "text-[var(--tc-blue-text)] border-[var(--tc-border-bright)] group-hover:text-[var(--tc-gold)] group-hover:border-[var(--tc-gold)]/40",
-          ].join(" ")}
-          style={{ fontFamily: "var(--font-display)" }}
-        >
-          {initials(member.name)}
-        </div>
+        {member.photo ? (
+          <div
+            className={[
+              "shrink-0 w-12 h-12 rounded-xl overflow-hidden border transition-colors",
+              accent === "gold"
+                ? "border-[var(--tc-gold)]/40 group-hover:border-[var(--tc-gold)]/70"
+                : "border-[var(--tc-border-bright)] group-hover:border-[var(--tc-gold)]/40",
+            ].join(" ")}
+          >
+            <Image
+              src={member.photo}
+              alt={member.name}
+              width={48}
+              height={48}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ) : (
+          <div
+            className={[
+              "shrink-0 w-12 h-12 rounded-xl bg-[var(--tc-surface-0)] border flex items-center justify-center font-700 text-sm transition-colors",
+              accent === "gold"
+                ? "text-[var(--tc-gold)] border-[var(--tc-gold)]/40 group-hover:border-[var(--tc-gold)]/70"
+                : "text-[var(--tc-blue-text)] border-[var(--tc-border-bright)] group-hover:text-[var(--tc-gold)] group-hover:border-[var(--tc-gold)]/40",
+            ].join(" ")}
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            {initials(member.name)}
+          </div>
+        )}
         <div className="flex-1 min-w-0">
           <h4
-            className="font-700 text-white text-sm leading-snug mb-1"
+            className="font-700 text-[var(--tc-text-primary)] text-sm leading-snug mb-1"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {member.name}
@@ -204,19 +239,29 @@ function TeamCard({ member }: { member: Member }) {
           </p>
         </div>
       </div>
-      {member.telegram && (
-        <a
-          href={`https://t.me/${member.telegram.replace("@", "")}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-xs text-[var(--tc-text-muted)] hover:text-[var(--tc-blue-text)] transition-colors mt-1"
-        >
-          <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-          </svg>
-          {member.telegram}
-        </a>
-      )}
+      <div className="flex items-center gap-3 flex-wrap mt-1">
+        {member.telegram && (
+          <a
+            href={`https://t.me/${member.telegram.replace("@", "")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-xs text-[var(--tc-text-muted)] hover:text-[var(--tc-blue-text)] transition-colors"
+          >
+            <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+            </svg>
+            {member.telegram}
+          </a>
+        )}
+        {profileHref && (
+          <Link
+            href={profileHref}
+            className="inline-flex items-center gap-1 text-xs text-[var(--tc-blue-text)] hover:underline transition-colors"
+          >
+            Batafsil →
+          </Link>
+        )}
+      </div>
     </m.div>
   );
 }

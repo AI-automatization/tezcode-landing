@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { BASE_URL, LOCALES } from "@/lib/seo";
 import { ARTICLES } from "./[locale]/blog/articles";
+import { TEAM_PROFILES } from "@/content/team-profiles";
 
 // Site-wide lastModified for non-blog pages. Bump this date on real releases
 // (content/design changes worth re-crawling) — NOT on every build. Using a
@@ -72,6 +73,14 @@ const ROUTES: Route[] = [
   { path: "/roadmap", priority: 0.6, changeFrequency: "monthly" as const },
   { path: "/changelog", priority: 0.6, changeFrequency: "weekly" as const },
   { path: "/bekzod-mirzaaliyev", priority: 0.6, changeFrequency: "yearly" as const },
+  { path: "/sardor-madaliyev", priority: 0.6, changeFrequency: "yearly" as const },
+  // Team member profiles (/jamoa/<slug>) — derived from the profile registry so
+  // new teammates auto-appear in the sitemap.
+  ...TEAM_PROFILES.map((p) => ({
+    path: `/jamoa/${p.slug}`,
+    priority: 0.5,
+    changeFrequency: "monthly" as const,
+  })),
   { path: "/partnery/aisolution", priority: 0.6, changeFrequency: "monthly" as const },
   { path: "/partnery/schwarz-digits", priority: 0.6, changeFrequency: "monthly" as const },
   { path: "/press", priority: 0.5, changeFrequency: "monthly" as const },

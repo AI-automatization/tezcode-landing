@@ -1,0 +1,88 @@
+// Data-driven team member profiles. Each entry renders a full profile page at
+// /jamoa/<slug> (via app/[locale]/jamoa/[slug]/page.tsx) plus a Person JSON-LD
+// entity. Adding a new teammate = add one object here — no new page file.
+// Info is collected from team members via the @sardor_ai_assistant DM flow.
+
+export type TeamProject = { name: string; role: string; href?: string };
+
+export type TeamProfile = {
+  slug: string;
+  name: string;
+  role: string; // hero eyebrow + schema jobTitle
+  bio: string[]; // paragraphs, pure Latin Uzbek
+  skills: string[];
+  projects: TeamProject[];
+  telegram?: string; // username without @
+  instagram?: string; // username without @
+  linkedin?: string; // full URL
+  email?: string;
+  photo?: string; // /team/<file>.jpg (in public/)
+  knowsAbout: string[]; // schema.org Person knowsAbout
+  metaTitle: string;
+  metaDescription: string;
+};
+
+export const TEAM_PROFILES: TeamProfile[] = [
+  {
+    slug: "behruz-satimboyev",
+    name: "Behruz Satimboyev",
+    role: "Team Lead · Full-Stack Developer",
+    bio: [
+      "Behruz Satimboyev — Tezcode jamoasida Team Lead va Full-Stack Developer. React, Next.js va Node.js asosida to'liq mahsulotlar quradi hamda jamoa ishini boshqaradi.",
+      "TezDetal loyihasi ustida ishlaydi. REST API, real vaqt (Socket.io), autentifikatsiya (JWT) va CI/CD bo'yicha tajribaga ega; mobil uchun React Native va AI prompt engineering bilan ishlaydi.",
+    ],
+    skills: [
+      "React",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST API",
+      "JWT",
+      "Socket.io",
+      "React Native",
+      "CI/CD",
+      "AI Prompt Engineering",
+    ],
+    projects: [{ name: "TezDetal", role: "Full-stack mahsulot ishlab chiqish va jamoa boshqaruvi" }],
+    telegram: "behruz_237",
+    photo: "/team/behruz-satimboyev.jpg",
+    knowsAbout: [
+      "Full-Stack Development",
+      "React",
+      "Next.js",
+      "Node.js",
+      "REST API",
+      "React Native",
+    ],
+    metaTitle: "Behruz Satimboyev — Tezcode Team Lead, Full-Stack Developer",
+    metaDescription:
+      "Behruz Satimboyev — Tezcode jamoasida Team Lead va Full-Stack Developer. React, Next.js, Node.js, React Native. TezDetal loyihasi.",
+  },
+  {
+    slug: "javodbek-abdusalimov",
+    name: "Javodbek Abdusalimov",
+    role: "Full-Stack Developer",
+    bio: [
+      "Javodbek Abdusalimov — Tezcode jamoasida Full-Stack Developer. Next.js, React va Node.js asosida veb-mahsulotlar quradi.",
+      "TezDetal loyihasi ustida ishlaydi. TypeScript va zamonaviy JavaScript bilan frontend hamda backend qismlarini ishlab chiqadi.",
+    ],
+    skills: ["Next.js", "React", "Node.js", "TypeScript", "JavaScript"],
+    projects: [{ name: "TezDetal", role: "Full-stack veb ishlab chiqish" }],
+    telegram: "Javodbe411",
+    knowsAbout: [
+      "Full-Stack Development",
+      "React",
+      "Next.js",
+      "Node.js",
+      "TypeScript",
+    ],
+    metaTitle: "Javodbek Abdusalimov — Tezcode Full-Stack Developer",
+    metaDescription:
+      "Javodbek Abdusalimov — Tezcode jamoasida Full-Stack Developer. Next.js, React, Node.js, TypeScript. TezDetal loyihasi.",
+  },
+];
+
+export function getProfile(slug: string): TeamProfile | undefined {
+  return TEAM_PROFILES.find((p) => p.slug === slug);
+}

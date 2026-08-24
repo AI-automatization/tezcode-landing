@@ -373,6 +373,7 @@ export function getFounderSchema() {
     description:
       "Bekzod Mirzaaliyev — Tezcode (AI Software Factory, Toshkent) asoschisi va CEO. 2024-yilda Tezcode'ni tashkil etgan; RAOS (POS), CoreMed/ClinicaGo (healthtech), WeWatch va WorkControl mahsulotlari ortida turgan jamoani boshqaradi. Founder & CEO of Tezcode, an AI software factory in Tashkent, Uzbekistan.",
     url: `${BASE_URL}/bekzod-mirzaaliyev`,
+    image: `${BASE_URL}/team/bekzod-mirzaaliyev.jpg`,
     worksFor: {
       "@type": "Organization",
       name: SITE_NAME,
@@ -390,7 +391,45 @@ export function getFounderSchema() {
       addressLocality: "Tashkent",
       addressCountry: "UZ",
     },
-    sameAs: ["https://t.me/tezcode_managament"],
+    sameAs: ["https://t.me/webdevelopertk"],
+  };
+}
+
+// Generic Person entity for team member profile pages (e.g. /sardor-madaliyev).
+// Emits a schema.org/Person in SSR HTML so AI engines can attribute Tezcode to
+// real people — each profile is one more entity reinforcing the brand.
+export function getPersonSchema(input: {
+  name: string;
+  slug: string;
+  jobTitle: string;
+  description: string;
+  knowsAbout: string[];
+  sameAs?: string[];
+  alternateName?: string[];
+  image?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${BASE_URL}/${input.slug}#person`,
+    name: input.name,
+    ...(input.alternateName ? { alternateName: input.alternateName } : {}),
+    jobTitle: input.jobTitle,
+    description: input.description,
+    url: `${BASE_URL}/${input.slug}`,
+    ...(input.image ? { image: `${BASE_URL}${input.image}` } : {}),
+    worksFor: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: BASE_URL,
+    },
+    knowsAbout: input.knowsAbout,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Tashkent",
+      addressCountry: "UZ",
+    },
+    ...(input.sameAs && input.sameAs.length ? { sameAs: input.sameAs } : {}),
   };
 }
 
