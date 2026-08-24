@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { m } from "motion/react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/routing";
+import { useRouter } from "@/i18n/routing";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
 type Member = {
@@ -111,7 +111,7 @@ export function Team() {
   return (
     <section
       id="team"
-      className="py-32 px-6 bg-[var(--tc-surface-1)] relative overflow-hidden"
+      className="py-32 px-6 bg-[var(--tc-surface-0)] relative overflow-hidden"
     >
       <m.div
         animate={{ opacity: [0.04, 0.08, 0.04] }}
@@ -146,7 +146,7 @@ export function Team() {
 
         {/* Team grid — equal cards (Bekzod has Founder badge but same size) */}
         <RevealStagger
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
           stagger={0.04}
         >
           {TEAM.map((member) => (
@@ -174,92 +174,104 @@ export function Team() {
 }
 
 function TeamCard({ member }: { member: Member }) {
-  const accent = member.isFounder ? "gold" : "blue";
+  const router = useRouter();
   const profileHref =
     member.profileHref ??
     (member.profileSlug ? `/jamoa/${member.profileSlug}` : null);
+  const clickable = Boolean(profileHref);
+
+  const openProfile = () => {
+    if (profileHref) router.push(profileHref);
+  };
 
   return (
-    <m.div
-      whileHover={{ y: -4 }}
-      className={[
-        "group relative p-5 rounded-[var(--tc-radius-lg)] border transition-colors h-full",
-        member.isFounder
-          ? "border-[var(--tc-gold)]/40 bg-[var(--tc-surface-2)] hover:border-[var(--tc-gold)]/70"
-          : "border-[var(--tc-border)] bg-[var(--tc-surface-2)] hover:bg-[var(--tc-surface-3)] hover:border-[var(--tc-border-bright)]",
-      ].join(" ")}
-    >
-      {member.isFounder && (
-        <div className="absolute -top-2 left-5 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[var(--tc-gold)]/15 border border-[var(--tc-gold)]/40 backdrop-blur-md text-[10px] font-700 text-[var(--tc-gold)] uppercase tracking-[0.15em]">
-          <span className="w-1 h-1 rounded-full bg-[var(--tc-gold)] animate-pulse" />
-          Founder
-        </div>
-      )}
+    <m.div whileHover={{ y: -6 }} className="group relative h-full">
+      <div
+        role={clickable ? "link" : undefined}
+        tabIndex={clickable ? 0 : undefined}
+        onClick={clickable ? openProfile : undefined}
+        onKeyDown={
+          clickable
+            ? (e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  openProfile();
+                }
+              }
+            : undefined
+        }
+        className={[
+          "tc-card tc-card-hover h-full p-6 pt-8 flex flex-col items-center text-center",
+          member.isFounder ? "ring-1 ring-[var(--tc-gold)]/40" : "",
+          clickable
+            ? "cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--tc-blue)]/50"
+            : "",
+        ].join(" ")}
+      >
+        {member.isFounder && (
+          <div className="absolute -top-2.5 left-1/2 -translate-x-1/2 inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[var(--tc-gold)]/15 border border-[var(--tc-gold)]/40 backdrop-blur-md text-[10px] font-700 text-[var(--tc-gold)] uppercase tracking-[0.15em] whitespace-nowrap">
+            <span className="w-1 h-1 rounded-full bg-[var(--tc-gold)] animate-pulse" />
+            Founder
+          </div>
+        )}
 
-      <div className="flex items-start gap-3 mb-3">
+        {/* Avatar */}
         {member.photo ? (
           <div
             className={[
-              "shrink-0 w-12 h-12 rounded-xl overflow-hidden border transition-colors",
-              accent === "gold"
-                ? "border-[var(--tc-gold)]/40 group-hover:border-[var(--tc-gold)]/70"
-                : "border-[var(--tc-border-bright)] group-hover:border-[var(--tc-gold)]/40",
+              "w-24 h-24 rounded-full overflow-hidden ring-2 mb-4 transition-transform duration-300 group-hover:scale-105",
+              member.isFounder
+                ? "ring-[var(--tc-gold)]/50"
+                : "ring-[var(--tc-border-bright)]",
             ].join(" ")}
           >
             <Image
               src={member.photo}
               alt={member.name}
-              width={48}
-              height={48}
+              width={96}
+              height={96}
               className="w-full h-full object-cover"
             />
           </div>
         ) : (
           <div
             className={[
-              "shrink-0 w-12 h-12 rounded-xl bg-[var(--tc-surface-0)] border flex items-center justify-center font-700 text-sm transition-colors",
-              accent === "gold"
-                ? "text-[var(--tc-gold)] border-[var(--tc-gold)]/40 group-hover:border-[var(--tc-gold)]/70"
-                : "text-[var(--tc-blue-text)] border-[var(--tc-border-bright)] group-hover:text-[var(--tc-gold)] group-hover:border-[var(--tc-gold)]/40",
+              "w-24 h-24 rounded-full flex items-center justify-center mb-4 text-2xl font-700 ring-2 transition-transform duration-300 group-hover:scale-105 bg-gradient-to-br from-[var(--tc-blue-dim)] to-[var(--tc-surface-3)]",
+              member.isFounder
+                ? "text-[var(--tc-gold)] ring-[var(--tc-gold)]/50"
+                : "text-[var(--tc-blue-text)] ring-[var(--tc-border-bright)]",
             ].join(" ")}
             style={{ fontFamily: "var(--font-display)" }}
           >
             {initials(member.name)}
           </div>
         )}
-        <div className="flex-1 min-w-0">
-          <h4
-            className="font-700 text-[var(--tc-text-primary)] text-sm leading-snug mb-1"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            {member.name}
-          </h4>
-          <p className="text-xs text-[var(--tc-text-muted)] leading-snug">
-            {member.role}
-          </p>
-        </div>
-      </div>
-      <div className="flex items-center gap-3 flex-wrap mt-1">
+
+        <h4
+          className="font-700 text-[var(--tc-text-primary)] text-base leading-snug"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          {member.name}
+        </h4>
+        <p className="text-xs text-[var(--tc-text-muted)] leading-snug mt-1.5 flex-1">
+          {member.role}
+        </p>
+
         {member.telegram && (
-          <a
-            href={`https://t.me/${member.telegram.replace("@", "")}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-xs text-[var(--tc-text-muted)] hover:text-[var(--tc-blue-text)] transition-colors"
-          >
-            <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-            </svg>
-            {member.telegram}
-          </a>
-        )}
-        {profileHref && (
-          <Link
-            href={profileHref}
-            className="inline-flex items-center gap-1 text-xs text-[var(--tc-blue-text)] hover:underline transition-colors"
-          >
-            Batafsil →
-          </Link>
+          <div className="flex items-center justify-center mt-5 pt-4 border-t border-[var(--tc-border)] w-full">
+            <a
+              href={`https://t.me/${member.telegram.replace("@", "")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-1 text-xs text-[var(--tc-text-muted)] hover:text-[var(--tc-blue-text)] transition-colors"
+            >
+              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+              </svg>
+              {member.telegram}
+            </a>
+          </div>
         )}
       </div>
     </m.div>
