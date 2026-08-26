@@ -42,8 +42,11 @@ const TEAM: Member[] = [
     telegram: "@Azim090",
   },
   {
-    name: "Diyor Rahmatullayev",
-    role: "HamshiraGo · ClinicGo Co-founder · Developer",
+    name: "Diyor Raxmatullayev",
+    role: "CoreMed Founder · Tezcode Team Lead",
+    telegram: "@diyor_011",
+    profileSlug: "diyor-raxmatullayev",
+    photo: "/team/diyor-raxmatullayev.jpg",
   },
   {
     name: "Sardor Madaliyev",

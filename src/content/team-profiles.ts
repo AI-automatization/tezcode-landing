@@ -203,6 +203,46 @@ export const TEAM_PROFILES: TeamProfile[] = [
     metaDescription:
       "Ibrohim Sobirov — Tezcode jamoasida Full-Stack Developer. React, Node.js. ClinicaGo loyihasi.",
   },
+  {
+    slug: "diyor-raxmatullayev",
+    name: "Diyor Raxmatullayev",
+    role: "CoreMed Founder · Tezcode Team Lead",
+    bio: [
+      "Diyor Raxmatullayev — CoreMed healthtech holdingi asoschisi (HamshiraGo, ClinicaGo, Salomat AI) va Tezcode jamoasida Team Lead.",
+      "Next.js, NestJS va TypeScript asosida full-stack ishlaydi; PostgreSQL, Railway, Remotion va AI/Claude integratsiyasi bilan klinikalar uchun CRM hamda tibbiy xizmat mahsulotlarini quradi.",
+    ],
+    skills: [
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "Remotion",
+      "Railway",
+      "AI/Claude integration",
+    ],
+    projects: [
+      { name: "ClinicaGo", role: "Klinikalar uchun CRM" },
+      { name: "HamshiraGo", role: "Tibbiy xizmat platformasi" },
+      { name: "CoreMed", role: "Healthtech holding" },
+      { name: "Salomat AI", role: "AI tibbiy yordamchi" },
+    ],
+    telegram: "diyor_011",
+    photo: "/team/diyor-raxmatullayev.jpg",
+    knowsAbout: [
+      "Healthtech",
+      "Full-Stack Development",
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "AI Integration",
+    ],
+    metaTitle: "Diyor Raxmatullayev — CoreMed Founder, Tezcode Team Lead",
+    metaDescription:
+      "Diyor Raxmatullayev — CoreMed healthtech holdingi asoschisi (HamshiraGo, ClinicaGo) va Tezcode Team Lead. Next.js, NestJS, TypeScript, AI integratsiya.",
+  },
 ];
 
 export function getProfile(slug: string): TeamProfile | undefined {
