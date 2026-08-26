@@ -154,6 +154,56 @@ export const TEAM_PROFILES: TeamProfile[] = [
     metaDescription:
       "Abdulaziz Yormatov — Tezcode jamoasida COO. TypeScript, NestJS, React, Prisma. RAOS, CoreMed va billing arxitekturasi.",
   },
+  {
+    slug: "abdulaziz-atxamov",
+    name: "Abdulaziz Atxamov",
+    role: "Marketing · QA · Developer",
+    bio: [
+      "Abdulaziz Atxamov — Tezcode jamoasida marketing, QA va development bo'yicha ishlaydi. Node.js va React asosida veb-mahsulotlar quradi hamda sifat nazorati (QA) qiladi.",
+      "MaxSavdo loyihasida ishlaydi. Redux, JavaScript va Remotion (video) bilan ishlaydi; GitHub CLI orqali kod boshqaruvi.",
+    ],
+    skills: [
+      "Node.js",
+      "React",
+      "Redux",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Remotion",
+      "GitHub CLI",
+    ],
+    projects: [{ name: "MaxSavdo", role: "Development, QA va marketing" }],
+    telegram: "abdulazizatxamov262",
+    linkedin: "https://www.linkedin.com/in/abdulaziz-atxamov-389ab83b5/",
+    photo: "/team/abdulaziz-atxamov.jpg",
+    knowsAbout: [
+      "Web Development",
+      "React",
+      "Node.js",
+      "Quality Assurance",
+      "Marketing",
+      "Remotion",
+    ],
+    metaTitle: "Abdulaziz Atxamov — Tezcode Marketing, QA & Developer",
+    metaDescription:
+      "Abdulaziz Atxamov — Tezcode jamoasida marketing, QA va developer. Node.js, React, Redux, Remotion. MaxSavdo loyihasi.",
+  },
+  {
+    slug: "ibrohim-sobirov",
+    name: "Ibrohim Sobirov",
+    role: "Full-Stack Developer",
+    bio: [
+      "Ibrohim Sobirov — Tezcode jamoasida Full-Stack Developer. React va Node.js asosida veb-mahsulotlar quradi.",
+      "ClinicaGo (klinika CRM) loyihasida ishlaydi — frontend va backend qismlarini ishlab chiqadi.",
+    ],
+    skills: ["React", "Node.js", "JavaScript"],
+    projects: [{ name: "ClinicaGo", role: "Full-stack veb ishlab chiqish" }],
+    telegram: "Sinus_30gradus",
+    knowsAbout: ["Full-Stack Development", "React", "Node.js"],
+    metaTitle: "Ibrohim Sobirov — Tezcode Full-Stack Developer",
+    metaDescription:
+      "Ibrohim Sobirov — Tezcode jamoasida Full-Stack Developer. React, Node.js. ClinicaGo loyihasi.",
+  },
 ];
 
 export function getProfile(slug: string): TeamProfile | undefined {

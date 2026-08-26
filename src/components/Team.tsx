@@ -106,6 +106,19 @@ const TEAM: Member[] = [
     telegram: "@forgerjunior",
     profileSlug: "saidazim-buriboyev",
   },
+  {
+    name: "Abdulaziz Atxamov",
+    role: "Marketing · QA · Developer",
+    telegram: "@abdulazizatxamov262",
+    profileSlug: "abdulaziz-atxamov",
+    photo: "/team/abdulaziz-atxamov.jpg",
+  },
+  {
+    name: "Ibrohim Sobirov",
+    role: "Full-Stack Developer",
+    telegram: "@Sinus_30gradus",
+    profileSlug: "ibrohim-sobirov",
+  },
 ];
 
 function initials(name: string): string {
