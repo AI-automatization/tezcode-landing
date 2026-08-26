@@ -29,7 +29,7 @@ export function TeamProfile({
       label: `Instagram: @${p.instagram}`,
       href: `https://instagram.com/${p.instagram}`,
     },
-    p.linkedin && { label: "LinkedIn", href: p.linkedin },
+    p.linkedin && { label: `LinkedIn: ${p.name}`, href: p.linkedin },
     p.email && { label: `Email: ${p.email}`, href: `mailto:${p.email}` },
   ].filter(Boolean) as { label: string; href: string }[];
 
