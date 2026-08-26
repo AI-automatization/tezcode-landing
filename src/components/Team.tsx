@@ -73,8 +73,10 @@ const TEAM: Member[] = [
   },
   {
     name: "Abubakir Ilhomov",
-    role: "Developer",
+    role: "Full-Stack & AI Developer",
     telegram: "@abubakirilhomov",
+    profileSlug: "abubakir-ilhomov",
+    photo: "/team/abubakir-ilhomov.jpg",
   },
   {
     name: "Ibrat Tursunov",
@@ -89,8 +91,10 @@ const TEAM: Member[] = [
     role: "Developer",
   },
   {
-    name: "Jafar Ulugbekov",
-    role: "Developer",
+    name: "Jafarbek Ulugbekov",
+    role: "Full-Stack Developer",
+    telegram: "@JafarbekUlugbekov",
+    profileSlug: "jafarbek-ulugbekov",
   },
   {
     name: "Javodbek Abdusalimov",
@@ -101,7 +105,9 @@ const TEAM: Member[] = [
   },
   {
     name: "Habibulloh Shuhratov",
-    role: "Developer",
+    role: "Full-Stack Developer",
+    telegram: "@shuhratov_HH",
+    profileSlug: "habibulloh-shuhratov",
   },
   {
     name: "Saidazim Buriboyev",
