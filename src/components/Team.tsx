@@ -27,8 +27,10 @@ const TEAM: Member[] = [
   },
   {
     name: "Abdulaziz Yormatov",
-    role: "COO · Developer · AI Specialist",
+    role: "COO",
     telegram: "@mr_abdulaziz_yormatov",
+    profileSlug: "abdulaziz-yormatov",
+    photo: "/team/abdulaziz-yormatov.jpg",
   },
   {
     name: "Abdulloh Isroilov",

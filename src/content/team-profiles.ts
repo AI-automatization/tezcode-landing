@@ -113,6 +113,47 @@ export const TEAM_PROFILES: TeamProfile[] = [
     metaDescription:
       "Saidazim Buriboyev — Tezcode jamoasida Backend Developer. Node.js, Express, MongoDB, Redis, Docker, mikroservislar. WeWatch loyihasi.",
   },
+  {
+    slug: "abdulaziz-yormatov",
+    name: "Abdulaziz Yormatov",
+    role: "COO",
+    bio: [
+      "Abdulaziz Yormatov — Tezcode jamoasida COO. Studiyaning barcha mahsulotlarida arxitektura qarorlarini qabul qiladi va kod reviewdan o'tkazadi.",
+      "NestJS va Prisma asosidagi backend, React hamda React Native frontend bilan ishlaydi; RAOS kassa tizimi, CoreMed va markazlashtirilgan billing ustida.",
+    ],
+    skills: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL",
+      "React Native (Expo)",
+      "Arxitektura",
+      "Code review",
+    ],
+    projects: [
+      { name: "RAOS", role: "POS/kassa — arxitektura va texnik qarorlar" },
+      { name: "CoreMed", role: "Healthtech ekotizimi — arxitektura, PR review" },
+      { name: "WeWatch", role: "Ijtimoiy onlayn kinoteatr" },
+      { name: "tezcode-billing", role: "Markazlashtirilgan billing tizimi" },
+    ],
+    telegram: "mr_abdulaziz_yormatov",
+    linkedin: "https://www.linkedin.com/in/abdulaziz-yormatov-724287418/",
+    photo: "/team/abdulaziz-yormatov.jpg",
+    knowsAbout: [
+      "Software Architecture",
+      "TypeScript",
+      "NestJS",
+      "React",
+      "React Native",
+      "Code Review",
+      "PostgreSQL",
+    ],
+    metaTitle: "Abdulaziz Yormatov — Tezcode COO",
+    metaDescription:
+      "Abdulaziz Yormatov — Tezcode jamoasida COO. TypeScript, NestJS, React, Prisma. RAOS, CoreMed va billing arxitekturasi.",
+  },
 ];
 
 export function getProfile(slug: string): TeamProfile | undefined {
