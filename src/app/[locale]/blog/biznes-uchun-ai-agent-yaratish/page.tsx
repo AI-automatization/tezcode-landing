@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle } from "../articles";
+import { getArticle, localizeArticleMeta } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "biznes-uchun-ai-agent-yaratish";
@@ -22,15 +22,19 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const localized = localizeArticleMeta(SLUG, locale, {
+    title:
+      "Toshkentda biznes uchun AI agent yaratish: to'liq qo'llanma (2026) | Tezcode",
+    description:
+      "AI agent nima, chatbotdan farqi, qaysi biznesga kerak, qanday ishlaydi, narxi nimaga bog'liq va uni 6 qadamda qanday yaratish — Toshkent va O'zbekiston bizneslari uchun 2026 qo'llanma.",
+  });
   return buildPageMetadata({
     locale,
     // untranslated locales canonicalize to the uz original (see lib/seo.ts)
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title:
-      "Toshkentda biznes uchun AI agent yaratish: to'liq qo'llanma (2026) | Tezcode",
-    description:
-      "AI agent nima, chatbotdan farqi, qaysi biznesga kerak, qanday ishlaydi, narxi nimaga bog'liq va uni 6 qadamda qanday yaratish — Toshkent va O'zbekiston bizneslari uchun 2026 qo'llanma.",
+    title: localized.title,
+    description: localized.description,
     keywords: [
       "biznes uchun AI agent yaratish",
       "Toshkentda AI agent",
@@ -48,15 +52,20 @@ export async function generateMetadata({
   });
 }
 
-export default function BiznesUchunAiAgentYaratishPage() {
+export default async function BiznesUchunAiAgentYaratishPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale: rawLocale } = await params;
   const meta = getArticle(SLUG);
   const datePublished = meta?.datePublished ?? "2026-06-14";
 
   // Build localised Article + FAQ + Breadcrumb for the default locale (uz). The
   // client renders per-locale copy; structured data uses the uz master so the
   // markup is present in SSR HTML regardless of which locale is requested.
-  const copy = CONTENT.uz;
-  const locale: ArticleLang = "uz";
+  const locale: ArticleLang = (rawLocale in CONTENT ? rawLocale : "uz") as ArticleLang;
+  const copy = CONTENT[locale] ?? CONTENT.uz;
 
   const articleSchema = getArticleSchema({
     headline: copy.hero.title,

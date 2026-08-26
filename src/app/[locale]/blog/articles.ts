@@ -3,9 +3,35 @@
 // (src/app/[locale]/blog/<slug>/content.ts); this file only carries the
 // lightweight listing metadata so the index and sitemap stay cheap.
 
-import type { ArticleMeta } from "@/components/blog/types";
+import type { ArticleLang, ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
+  {
+    slug: "suniy-intellekt-xizmatlari",
+    datePublished: "2026-08-26",
+    category: "Sun'iy intellekt / Qo'llanma",
+    relatedService: { href: "/ai-avtomatizatsiya", label: "AI avtomatizatsiya" },
+    list: {
+      uz: {
+        title:
+          "Sun'iy intellekt xizmatlari O'zbekistonda: turlari, narxi va qanday tanlash (2026)",
+        excerpt:
+          "Sun'iy intellekt (AI) nima, biznes uchun qanday xizmatlar bor — chatbot, AI agent, avtomatizatsiya, video analitika, ovozli assistent — narxlari qancha ($279 dan) va provayderni qanday tanlash.",
+      },
+      ru: {
+        title:
+          "Услуги искусственного интеллекта в Узбекистане: виды, цены и как выбрать (2026)",
+        excerpt:
+          "Что такое искусственный интеллект (AI), какие услуги есть для бизнеса — чат-бот, AI-агент, автоматизация, видеоаналитика, голосовые ассистенты — сколько они стоят (от $279) и как выбрать подрядчика.",
+      },
+      en: {
+        title:
+          "Artificial intelligence services in Uzbekistan: types, prices and how to choose (2026)",
+        excerpt:
+          "What artificial intelligence (AI) is, which services exist for business — chatbots, AI agents, automation, video analytics, voice assistants — what they cost (from $279) and how to choose a provider.",
+      },
+    },
+  },
   {
     slug: "kamerani-ai-bilan-aqlli-qilish",
     datePublished: "2026-08-15",
@@ -381,4 +407,19 @@ export const ARTICLES: ArticleMeta[] = [
 
 export function getArticle(slug: string): ArticleMeta | undefined {
   return ARTICLES.find((a) => a.slug === slug);
+}
+
+// Locale-aware SERP meta for an article page. The uz title/description stay the
+// hand-tuned strings each page passes as `fallback`; ru/en fall back to the
+// registry's localized listing copy so /ru/blog/* and /en/blog/* never ship an
+// Uzbek title (Bing flags those as duplicate titles across locales).
+export function localizeArticleMeta(
+  slug: string,
+  locale: string,
+  fallback: { title: string; description: string },
+): { title: string; description: string } {
+  if (locale === "uz") return fallback;
+  const listed = getArticle(slug)?.list[locale as ArticleLang];
+  if (!listed) return fallback;
+  return { title: `${listed.title} | Tezcode`, description: listed.excerpt };
 }

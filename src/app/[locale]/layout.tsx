@@ -7,6 +7,8 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import {
   getKeywords,
+  getOgAlternateLocales,
+  getOgLocale,
   getOrganizationSchema,
   getProductSchemas,
   getWebsiteSchema,
@@ -79,7 +81,8 @@ export async function generateMetadata({
       description: t("ogDescription"),
       url: canonicalUrl,
       siteName: "Tezcode",
-      locale: locale,
+      locale: getOgLocale(locale),
+      alternateLocale: getOgAlternateLocales(locale),
       type: "website",
       images: [
         {
@@ -95,7 +98,6 @@ export async function generateMetadata({
       title: t("ogTitle"),
       description: t("ogDescription"),
       images: [`${baseUrl}/og-image.png`],
-      creator: "@tezcode_managament",
     },
     robots: {
       index: true,
@@ -164,7 +166,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   const dir = locale === "ar" ? "rtl" : "ltr";
 
-  const orgSchema = getOrganizationSchema();
+  const orgSchema = getOrganizationSchema(locale);
   const websiteSchema = getWebsiteSchema(locale);
   const productSchemas = getProductSchemas();
 

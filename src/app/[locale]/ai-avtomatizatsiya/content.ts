@@ -26,7 +26,7 @@ export const CONTENT: ServicePageContent = {
       title: "Nima",
       titleAccent: "avtomatlashtira olamiz?",
       subtitle:
-        "Qo'lda qilinadigan har takroriy ish — AI uchun nomzod. Quyida Toshkent va butun O'zbekiston bo'ylab bizdan eng ko'p so'raladigan yo'nalishlar — har birida real ssenariy bilan.",
+        "Qo'lda qilinadigan har takroriy ish — sun'iy intellekt uchun nomzod. Quyida Toshkent va butun O'zbekiston bo'ylab bizdan eng ko'p so'raladigan yo'nalishlar — har birida real ssenariy bilan.",
       items: [
         {
           icon: "bar-chart-2",
@@ -131,7 +131,7 @@ export const CONTENT: ServicePageContent = {
       title: "Biz qurgan",
       titleAccent: "AI yechimlar",
       subtitle:
-        "Tezcode AI'ni mijozlarga sotibgina qolmaydi — o'z mahsulotlarida har kuni ishlatadi. Quyidagilar real ishlab turgan misollar.",
+        "Tezcode sun'iy intellektni mijozlarga sotibgina qolmaydi — o'z mahsulotlarida har kuni ishlatadi. Quyidagilar real ishlab turgan misollar.",
       items: [
         {
           tag: "01",
@@ -199,6 +199,10 @@ export const CONTENT: ServicePageContent = {
         {
           q: "AI avtomatlashtirish nima va oddiy dasturdan farqi nimada?",
           a: "AI avtomatlashtirish — takroriy ishlarni (hisobot tuzish, savolga javob berish, ma'lumot kiritish) sun'iy intellekt yordamida odam aralashuvisiz bajartirish. Oddiy dastur faqat oldindan yozilgan qat'iy qoidalar bo'yicha ishlaydi, AI esa erkin yozilgan matnni tushunadi, vaziyatga qarab javob tanlaydi va yangi holatlarga moslashadi. Shuning uchun mijoz bilan suhbat yoki hujjat tahlili kabi ishlarni faqat AI uddalaydi.",
+        },
+        {
+          q: "Sun'iy intellekt va AI bir xilmi?",
+          a: "Ha, ikkalasi bitta tushuncha: AI — inglizcha artificial intelligence so'zining qisqartmasi, o'zbekchasi — sun'iy intellekt. Kundalik gapda AI avtomatizatsiya, sun'iy intellekt bilan avtomatlashtirish yoki aqlli dastur deyilganda bir xil narsa nazarda tutiladi: takroriy ishni odam o'rniga dastur bajarishi. Shuning uchun qaysi atamada qidirsangiz ham javob bitta — muhimi, yechim sizning jarayoningizga ulanib real ish bajarishi.",
         },
         {
           q: "Narxi qancha?",
@@ -485,6 +489,10 @@ export const CONTENT: ServicePageContent = {
           a: "ИИ-автоматизация — это выполнение рутинных задач (отчёты, ответы на вопросы, ввод данных) искусственным интеллектом без участия человека. Обычная программа работает только по жёстко заданным правилам, а ИИ понимает свободный текст, подбирает ответ по ситуации и адаптируется к новым случаям. Поэтому диалог с клиентом или анализ документов под силу только ИИ.",
         },
         {
+          q: "Искусственный интеллект и AI — это одно и то же?",
+          a: "Да, это одно понятие: AI — сокращение от artificial intelligence, по-русски — искусственный интеллект. «AI-автоматизация», «автоматизация с помощью искусственного интеллекта» или «умная программа» в обычной речи означают одно: рутинную работу вместо человека выполняет программа. Поэтому каким бы термином вы ни искали, ответ один — важно, чтобы решение подключалось к вашему процессу и выполняло реальную работу.",
+        },
+        {
           q: "Сколько это стоит?",
           a: "Готовые тарифы: Starter — $0 (базовые возможности для малого бизнеса), Pro — $200/мес (продвинутый AI, до 30 сотрудников, поддержка 24/7). Цена индивидуального решения под ваш процесс фиксируется после утверждения технического задания (ТЗ). Оплата — 30% предоплата, остальное поэтапно.",
         },
@@ -767,6 +775,10 @@ export const CONTENT: ServicePageContent = {
         {
           q: "What is AI automation and how is it different from regular software?",
           a: "AI automation means having artificial intelligence perform repetitive tasks (reports, answering questions, data entry) without human involvement. Regular software only follows rigid, pre-written rules; AI understands free-form text, picks the right response for the situation and adapts to new cases. That is why customer conversations or document analysis are only feasible with AI.",
+        },
+        {
+          q: "Are 'artificial intelligence' and 'AI' the same thing?",
+          a: "Yes — AI is simply the abbreviation of artificial intelligence. 'AI automation', 'automation with artificial intelligence' or 'smart software' usually mean the same thing: software doing the repetitive work instead of a person. So whichever term you search for, the answer is the same — what matters is that the solution plugs into your process and does real work.",
         },
         {
           q: "How much does it cost?",
@@ -1053,6 +1065,10 @@ export const CONTENT: ServicePageContent = {
           a: "أتمتة الذكاء الاصطناعي تعني تنفيذ المهام المتكررة (التقارير، الرد على الأسئلة، إدخال البيانات) بالذكاء الاصطناعي دون تدخل بشري. البرنامج العادي يعمل بقواعد جامدة مكتوبة مسبقاً فقط، أما الذكاء الاصطناعي فيفهم النص الحر ويختار الرد المناسب للموقف ويتكيف مع الحالات الجديدة. لذلك محادثة العميل أو تحليل المستندات لا يقدر عليهما إلا الذكاء الاصطناعي.",
         },
         {
+          q: "هل «الذكاء الاصطناعي» و«AI» شيء واحد؟",
+          a: "نعم — AI هو اختصار artificial intelligence أي الذكاء الاصطناعي. «أتمتة AI» و«الأتمتة بالذكاء الاصطناعي» و«البرنامج الذكي» تعني عادة الشيء نفسه: برنامج يؤدي العمل المتكرر بدل الإنسان. فأياً كان المصطلح الذي تبحث به، الجواب واحد — المهم أن يرتبط الحل بعمليتك وينجز عملاً حقيقياً.",
+        },
+        {
           q: "كم التكلفة؟",
           a: "الباقات الجاهزة: Starter — $0 (إمكانيات أساسية للأعمال الصغيرة)، Pro — $200 شهرياً (AI متقدم، حتى 30 موظفاً، دعم 24/7). سعر الحل المخصص لعمليتك يُثبَّت بعد اعتماد المواصفات الفنية. الدفع 30% مقدماً والباقي على مراحل.",
         },
@@ -1335,6 +1351,10 @@ export const CONTENT: ServicePageContent = {
         {
           q: "Що таке ШІ-автоматизація і чим вона відрізняється від звичайної програми?",
           a: "ШІ-автоматизація — це виконання рутинних завдань (звіти, відповіді на питання, введення даних) штучним інтелектом без участі людини. Звичайна програма працює лише за жорстко заданими правилами, а ШІ розуміє вільний текст, підбирає відповідь за ситуацією і адаптується до нових випадків. Тому діалог із клієнтом або аналіз документів під силу лише ШІ.",
+        },
+        {
+          q: "Штучний інтелект і AI — це одне й те саме?",
+          a: "Так, це одне поняття: AI — скорочення від artificial intelligence, українською — штучний інтелект. «AI-автоматизація», «автоматизація за допомогою штучного інтелекту» чи «розумна програма» у звичайній мові означають одне: рутинну роботу замість людини виконує програма. Тож яким би терміном ви не шукали, відповідь одна — важливо, щоб рішення підключалося до вашого процесу і виконувало реальну роботу.",
         },
         {
           q: "Скільки це коштує?",

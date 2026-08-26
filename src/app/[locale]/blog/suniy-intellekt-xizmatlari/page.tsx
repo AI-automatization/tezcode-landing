@@ -10,9 +10,12 @@ import {
 import { getArticle, localizeArticleMeta } from "../articles";
 import { CONTENT } from "./content";
 
-const SLUG = "ai-ozbek-tilida";
+const SLUG = "suniy-intellekt-xizmatlari";
 const PATH = `/blog/${SLUG}`;
 
+// Server Component: emits Article + FAQPage + Breadcrumb JSON-LD and metadata in
+// the initial HTML so answer engines read the structured data on first fetch.
+// The readable article UI lives in BlogArticleClient.
 export async function generateMetadata({
   params,
 }: {
@@ -20,38 +23,46 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const localized = localizeArticleMeta(SLUG, locale, {
-    title: "AI o'zbek tilida ishlaydimi? Chatbot va agentlar uchun to'liq javob (2026) | Tezcode",
+    title:
+      "Sun'iy intellekt xizmatlari O'zbekistonda: turlari, narxi va qanday tanlash (2026) | Tezcode",
     description:
-      "AI o'zbek tilida (lotin/kirill, aralash uz-ru) ishlaydi, lekin sifat sozlashga bog'liq. Nega tayyor botlar o'zbekchada qiynaladi va yaxshi o'zbek tilli chatbot qanday quriladi. Tezcode qo'llanmasi.",
+      "Sun'iy intellekt (AI) nima, biznes uchun qanday xizmatlar bor — chatbot, AI agent, avtomatizatsiya, video analitika — narxlari qancha ($279 dan) va provayderni qanday tanlash — 2026 amaliy qo'llanma.",
   });
   return buildPageMetadata({
     locale,
+    // untranslated locales canonicalize to the uz original (see lib/seo.ts)
     availableLocales: Object.keys(CONTENT),
     path: PATH,
     title: localized.title,
     description: localized.description,
     keywords: [
-      "AI o'zbek tilida",
-      "o'zbekcha chatbot",
-      "o'zbek tilida AI",
-      "o'zbek tilida AI agent",
-      "o'zbekcha AI yordamchi",
-      "AI на узбекском",
-      "чат-бот на узбекском",
-      "Uzbek language AI chatbot",
+      "sun'iy intellekt xizmatlari",
+      "sun'iy intellekt nima",
+      "sun'iy intellekt biznes uchun",
+      "sun'iy intellekt O'zbekiston",
+      "sun'iy intellekt narxi",
+      "sun'iy intellekt xizmati Toshkent",
+      "AI xizmatlari",
+      "услуги искусственного интеллекта",
+      "искусственный интеллект для бизнеса Узбекистан",
+      "artificial intelligence services Uzbekistan",
+      "Tezcode AI",
     ],
   });
 }
 
-export default async function AiOzbekTilidaPage({
+export default async function SuniyIntellektXizmatlariPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale: rawLocale } = await params;
   const meta = getArticle(SLUG);
-  const datePublished = meta?.datePublished ?? "2026-08-15";
+  const datePublished = meta?.datePublished ?? "2026-08-26";
 
+  // Build localised Article + FAQ + Breadcrumb for the default locale (uz). The
+  // client renders per-locale copy; structured data uses the uz master so the
+  // markup is present in SSR HTML regardless of which locale is requested.
   const locale: ArticleLang = (rawLocale in CONTENT ? rawLocale : "uz") as ArticleLang;
   const copy = CONTENT[locale] ?? CONTENT.uz;
 

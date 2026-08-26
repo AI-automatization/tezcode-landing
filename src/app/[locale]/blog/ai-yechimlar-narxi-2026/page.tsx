@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle } from "../articles";
+import { getArticle, localizeArticleMeta } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "ai-yechimlar-narxi-2026";
@@ -19,13 +19,17 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const localized = localizeArticleMeta(SLUG, locale, {
+    title: "AI yechimlar narxi 2026: qaysi xizmat qancha turadi? | Tezcode",
+    description:
+      "AI chatbot $339 dan, AI agent $400 dan, CRM integratsiya $700 dan, AI video analitika $990 dan — barcha AI yechimlarning aniq 2026 narxlari, narxga nima ta'sir qiladi va to'lov tartibi. Tezcode ochiq narx qo'llanmasi.",
+  });
   return buildPageMetadata({
     locale,
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title: "AI yechimlar narxi 2026: qaysi xizmat qancha turadi? | Tezcode",
-    description:
-      "AI chatbot $339 dan, AI agent $400 dan, CRM integratsiya $700 dan, AI video analitika $990 dan — barcha AI yechimlarning aniq 2026 narxlari, narxga nima ta'sir qiladi va to'lov tartibi. Tezcode ochiq narx qo'llanmasi.",
+    title: localized.title,
+    description: localized.description,
     keywords: [
       "AI yechimlar narxi",
       "AI chatbot narxi",
@@ -41,12 +45,17 @@ export async function generateMetadata({
   });
 }
 
-export default function AiYechimlarNarxi2026Page() {
+export default async function AiYechimlarNarxi2026Page({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale: rawLocale } = await params;
   const meta = getArticle(SLUG);
   const datePublished = meta?.datePublished ?? "2026-08-14";
 
-  const copy = CONTENT.uz;
-  const locale: ArticleLang = "uz";
+  const locale: ArticleLang = (rawLocale in CONTENT ? rawLocale : "uz") as ArticleLang;
+  const copy = CONTENT[locale] ?? CONTENT.uz;
 
   const articleSchema = getArticleSchema({
     headline: copy.hero.title,

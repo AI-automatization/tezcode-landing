@@ -5,7 +5,70 @@
 > so'rovlarida ("tezcode") boshqa "tezcode"lar bilan chalkashmasin.
 >
 > Holat: on-site (sayt ichi) GEO ~95% tayyor. Qolgan ish — asosan **off-site ijro**
-> (sizning qo'lingizda). Oxirgi yangilash: 2026-06-25
+> (sizning qo'lingizda). Oxirgi yangilash: 2026-08-26
+
+---
+
+## 🆕 2026-08-26 AUDIT — yangi topilmalar (SEO/GEO tahlil + aisolution taqqoslash)
+
+> Manba: 3-yo'nalishli audit (texnik SEO / SERP ko'rinish / landing UX) +
+> aisolution.uz bilan yonma-yon taqqoslash. SERP holati: "AI avtomatizatsiya
+> Toshkent" klasteri biznikida (4 natija), lekin "AI agent yaratish", "biznes
+> uchun AI", "suniy intellekt xizmatlari" — innosoft.uz'da (5/10 so'rovda chiqadi).
+> aisolution: davlat-darajali RU so'rovlarda oldinda, o'zbekchada umuman yo'q.
+
+### 🔧 Kod (texnik) — 2026-08-26 bajarildi ✅
+- [x] **HSTS header** qo'shildi (next.config.ts) — 2 yil, includeSubDomains, preload [HIGH]
+- [x] **EN/RU blog metalari** — 17 post + /blog indeks lokalizatsiya qilindi:
+      `localizeArticleMeta()` helper (articles.ts), schema `inLanguage` endi to'g'ri.
+      Lokal serverda tekshirildi: /en post → en title + en_US + inLanguage:en [MEDIUM]
+- [x] **og:locale formati** — `uz_UZ` va h.k. + alternateLocale; buildPageMetadata orqali
+      barcha subpage'larga ham qo'shildi [LOW]
+- [x] **twitter:creator** olib tashlandi [LOW]
+- [x] **alternateName kengaytirildi** — "TEZ KOD", 'MCHJ "TEZ KOD"', "Tez Kod",
+      "Tezcode Dev", "тезкод дев" qo'shildi (jami 12 variant) [LOW]
+- [x] Homepage title (uz) 69 → 56 belgi: "...— Toshkent | Tezcode" [LOW]
+- [x] **Organization schema description** endi 3 tilda (uz/ru/en; ar/uk → en fallback) —
+      auditda `/en`da o'zbekcha chiqayotgan edi [MEDIUM]
+- [~] `/uz` → `/` 307 — next-intl default xatti-harakati, ichki linklar /uz'ga bormaydi,
+      custom middleware'ga arzimaydi — QILINMAYDI deb yopildi [LOW]
+- [ ] Homepage heading tartibi: birinchi H2'dan oldin yetim H3, mobil/desktop H3 dublikatlar [LOW]
+
+> Tekshiruv: `tsc --noEmit` ✅, `next build` ✅, lokal `next start` smoke-test ✅.
+> Eslatma: biznesni-ai-bilan-avtomatlashtirish postidagi eski qo'lda yozilgan ruscha
+> meta endi articles.ts `list.ru` dan keladi (mazmunan yaqin, so'zma-so'z emas).
+
+### 📝 Kontent (eng katta ta'sil) — 2026-08-26 bajarildi ✅
+- [x] **"Sun'iy intellekt" bo'shlig'i yopildi** — sayt avval bu iborani umuman
+      ishlatmasdi. Yangi blog post: /blog/suniy-intellekt-xizmatlari (uz/ru/en,
+      6-savol FAQ, saytdagi real narxlar bilan). /ai-agent va /ai-avtomatizatsiya'ga
+      sinonim 5 tilda qo'shildi (jami ~22 joyda)
+- [x] **/ai-agent kuchaytirildi** — FAQ 15 → 17 (innosoft'ning "qimmat custom"
+      burchagiga qarshi "tayyor vs buyurtma" savoli + sinonim savoli), yangi
+      savollar FAQ schema'ga avtomatik kiradi
+- [x] **Davlat-darajali sahifa yaratildi** — /ai-ozbekistonda (5 til):
+      ru "Внедрение ИИ в бизнес в Узбекистане" (asosiy nishon), uz "O'zbekistonda
+      biznesga AI joriy qilish". Service+FAQPage+HowTo+Breadcrumb schema,
+      sitemap'ga qo'shildi. FAQAT real faktlar ishlatilgan; 3 joyda
+      `TODO(Sardor): real raqam qo'yish` — loyihalar soni kabi kuchli raqamni
+      siz qo'yishingiz kerak (yolg'on "120+" yozilmadi)
+- [ ] **Tarmoq landinglari kengaytirish** — aisolution'da 30 tarmoq + 12 rol sahifasi bor;
+      bizda RAOS/ClinicaGo'ga bog'lab: klinika, restoran, do'kon, ta'lim, HR...
+- [ ] **Keyslar to'ldirish** — /case-studies bor, lekin mijoz nomi + raqam bilan
+      kuchaytirilsin (aisolution'da atigi 2 keys — birinchi bo'lib 5-6 ta chiqargan yutadi)
+
+### 🤝 Off-site (yangi)
+- [ ] **2GIS kartochka** — "IT kompaniya Toshkent" so'rovida 2GIS 1-natija, biz yo'qmiz
+- [ ] **Yandex Maps kartochka** (business.yandex.ru/sprav)
+- [x] **aisolution bilan o'zaro linklashish** — /partnery/aisolution sahifasi repo'da
+      allaqachon mavjud ekan (tekshirildi 2026-08-26)
+- [ ] tezcode.com HugeDomains'da sotuvda — brend himoyasi uchun baholash
+
+### 💡 Landing UX (konversiya)
+- [ ] Hero ostida 4 yo'nalish aniq ko'rinsin (sayt, bot, CRM, AI) — "sayt kerak" degan
+      mijoz H1'da o'zini topmayapti
+- [ ] /tariflar: SaaS obuna va buyurtma ishlar ($279 bot, $1000 MVP) ajratilsin
+- [ ] Bitta birlamchi CTA (hozir demo/konsultatsiya/audit/trial aralash)
 
 ---
 

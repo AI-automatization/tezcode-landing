@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle } from "../articles";
+import { getArticle, localizeArticleMeta } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "biznes-uchun-telegram-bot";
@@ -19,13 +19,17 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const localized = localizeArticleMeta(SLUG, locale, {
+    title: "Biznes uchun Telegram bot: nima, narxi va qanday yaratiladi (2026) | Tezcode",
+    description:
+      "Biznes uchun Telegram bot — buyurtma, Click/Payme to'lov, 24/7 javob, CRM integratsiya. Narx $279 dan, turlari (oddiy, Mini App do'kon, AI botli) va qanday yaratiladi. Tezcode qo'llanmasi.",
+  });
   return buildPageMetadata({
     locale,
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title: "Biznes uchun Telegram bot: nima, narxi va qanday yaratiladi (2026) | Tezcode",
-    description:
-      "Biznes uchun Telegram bot — buyurtma, Click/Payme to'lov, 24/7 javob, CRM integratsiya. Narx $279 dan, turlari (oddiy, Mini App do'kon, AI botli) va qanday yaratiladi. Tezcode qo'llanmasi.",
+    title: localized.title,
+    description: localized.description,
     keywords: [
       "biznes uchun telegram bot",
       "telegram bot yaratish",
@@ -40,12 +44,17 @@ export async function generateMetadata({
   });
 }
 
-export default function BiznesUchunTelegramBotPage() {
+export default async function BiznesUchunTelegramBotPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale: rawLocale } = await params;
   const meta = getArticle(SLUG);
   const datePublished = meta?.datePublished ?? "2026-08-15";
 
-  const copy = CONTENT.uz;
-  const locale: ArticleLang = "uz";
+  const locale: ArticleLang = (rawLocale in CONTENT ? rawLocale : "uz") as ArticleLang;
+  const copy = CONTENT[locale] ?? CONTENT.uz;
 
   const articleSchema = getArticleSchema({
     headline: copy.hero.title,

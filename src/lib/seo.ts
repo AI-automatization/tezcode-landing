@@ -29,6 +29,24 @@ export function getOgImageUrl(_params?: {
   return `${BASE_URL}/og-image.png`;
 }
 
+// The OG protocol wants full language_TERRITORY codes ("uz_UZ"), not bare
+// language tags — Facebook/LinkedIn ignore malformed og:locale values.
+const OG_LOCALES: Record<Locale, string> = {
+  uz: "uz_UZ",
+  ru: "ru_RU",
+  en: "en_US",
+  ar: "ar_AE",
+  uk: "uk_UA",
+};
+
+export function getOgLocale(locale: string) {
+  return OG_LOCALES[locale as Locale] ?? OG_LOCALES.uz;
+}
+
+export function getOgAlternateLocales(locale: string) {
+  return LOCALES.filter((l) => l !== locale).map((l) => OG_LOCALES[l]);
+}
+
 const KEYWORDS_BASE = [
   "Tezcode",
   "AI",
@@ -150,6 +168,8 @@ export function buildPageMetadata(input: {
       description: ogDescription,
       url,
       siteName: SITE_NAME,
+      locale: getOgLocale(locale),
+      alternateLocale: getOgAlternateLocales(locale),
       type: "website",
       images: [
         {
@@ -169,7 +189,16 @@ export function buildPageMetadata(input: {
   };
 }
 
-export function getOrganizationSchema() {
+// Organization description per locale — the entity is one, but its description
+// should match the page language (a Russian/English page carrying an Uzbek org
+// description reads as untranslated boilerplate to search/AI engines).
+const ORG_DESCRIPTIONS: Partial<Record<Locale, string>> = {
+  uz: "TezCode — AI Software Factory. Toshkentda biznes uchun AI avtomatlashtirish: AI agentlar, chatbotlar va jarayonlar avtomatizatsiyasi. 2024-yilda tashkil topgan (startup emas, ishlab turgan kompaniya); buyurtma dasturlar ham yaratamiz — kichik biznesdan korporatsiyagacha. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), WorkControl, CoreMed/ClinicaGo (healthtech). Asoschi — Bekzod Mirzaaliyev.",
+  ru: "TezCode — AI Software Factory. AI-автоматизация бизнеса в Ташкенте: AI-агенты, чат-боты и автоматизация процессов. Основана в 2024 году (не стартап — работающая компания); также разрабатываем ПО на заказ — от малого бизнеса до корпораций. Готовые продукты: RAOS (POS), WeWatch (Watch Party), WorkControl, CoreMed/ClinicaGo (healthtech). Основатель — Бекзод Мирзаалиев.",
+  en: "TezCode — AI Software Factory. AI automation for business in Tashkent, Uzbekistan: AI agents, chatbots and process automation. Founded in 2024 (not a startup — an operating company); we also build custom software, from small businesses to enterprises. Products: RAOS (POS), WeWatch (Watch Party), WorkControl, CoreMed/ClinicaGo (healthtech). Founder — Bekzod Mirzaaliyev.",
+};
+
+export function getOrganizationSchema(locale: string = "uz") {
   return {
     "@context": "https://schema.org",
     // Dual-typed as LocalBusiness so AI engines / Google can answer "where is
@@ -185,16 +214,20 @@ export function getOrganizationSchema() {
       "Tezcode",
       "TezCode",
       "Tez Code",
+      "Tez Kod",
+      "TEZ KOD",
+      'MCHJ "TEZ KOD"',
+      "Tezcode Dev",
       "Tezcode Software Factory",
       "Тезкод",
       "Тезкоуд",
+      "тезкод дев",
       "tezcode.dev",
     ],
     url: BASE_URL,
     logo: `${BASE_URL}/icon.png`,
     image: `${BASE_URL}/og-image.png`,
-    description:
-      "TezCode — AI Software Factory. Toshkentda biznes uchun AI avtomatlashtirish: AI agentlar, chatbotlar va jarayonlar avtomatizatsiyasi. 2024-yilda tashkil topgan (startup emas, ishlab turgan kompaniya); buyurtma dasturlar ham yaratamiz — kichik biznesdan korporatsiyagacha. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), WorkControl, CoreMed/ClinicaGo (healthtech). Asoschi — Bekzod Mirzaaliyev.",
+    description: ORG_DESCRIPTIONS[locale as Locale] ?? ORG_DESCRIPTIONS.en,
     // schema.org/disambiguatingDescription — purpose-built to separate this
     // entity from other similarly-named ones. Names the concrete collisions
     // (Tashkent UZ vs the Calicut/India "tezcode", the TezCode.tech bootcamp,

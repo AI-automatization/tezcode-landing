@@ -22,7 +22,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "AI agent",
       title2: "yaratish",
       subtitle:
-        "AI agent nima? Bu — savolga javob berib qo'ya qoladigan chatbot emas, balki ishni o'zi bajaradigan raqamli xodim: mijoz nima xohlayotganini tushunadi, o'zi qaror qabul qiladi, CRM, Telegram va 1C kabi tizimlaringizda amal bajaradi va jarayonni boshidan oxirigacha o'zi olib boradi. Tezcode savdo, buyurtma, hisobot va HR jarayonlari uchun o'zbek tilini tushunadigan AI agentlar quradi — bitta agentdan tortib ko'p agentli 'AI ofis' yondashuvigacha.",
+        "AI agent (sun'iy intellekt agenti) nima? Bu — savolga javob berib qo'ya qoladigan chatbot emas, balki ishni o'zi bajaradigan raqamli xodim: mijoz nima xohlayotganini tushunadi, o'zi qaror qabul qiladi, CRM, Telegram va 1C kabi tizimlaringizda amal bajaradi va jarayonni boshidan oxirigacha o'zi olib boradi. Tezcode savdo, buyurtma, hisobot va HR jarayonlari uchun o'zbek tilini tushunadigan AI agentlar quradi — bitta agentdan tortib ko'p agentli 'AI ofis' yondashuvigacha.",
       trust:
         "Toshkent va butun O'zbekiston • IT Park rasmiy rezidenti • Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan",
       ctaPrimary: "Bepul konsultatsiya so'rang",
@@ -108,8 +108,8 @@ export const CONTENT: ServicePageContent = {
     },
     examples: {
       badge: "Konkret stsenariylar",
-      title: "Qanday agentlar",
-      titleAccent: "quramiz",
+      title: "Qanday sun'iy intellekt",
+      titleAccent: "agentlarini quramiz",
       subtitle:
         "Quyidagilar biz quradigan agentlarning real ko'rinishlari. Natija bo'yicha halol mo'ljal: 10 ta qo'l ishi o'rnini 1 ta AI agent bosadi, takroriy qo'l mehnati odatda 60–70% ga kamayadi — aniq raqam sizning jarayonlaringizga bog'liq va konsultatsiyada birga hisoblanadi.",
       items: [
@@ -158,11 +158,15 @@ export const CONTENT: ServicePageContent = {
       badge: "Tez-tez beriladigan savollar",
       title: "Savol va",
       titleAccent: "javoblar",
-      subtitle: "AI agent yaratish haqida eng ko'p so'raladigan 15 savol.",
+      subtitle: "AI agent yaratish haqida eng ko'p so'raladigan 17 savol.",
       items: [
         {
           q: "AI agent nima?",
           a: "AI agent — bu ishni o'zi bajaradigan AI tizim: mijoz yoki xodim so'rovini tushunadi, o'zi qaror qabul qiladi, ulangan tizimlarda (CRM, Telegram, 1C) amal bajaradi va jarayonni boshidan oxirigacha olib boradi. Oddiy misol: lid keldi — agent gaplashdi, ma'lumotni CRMga yozdi, taklif yubordi, follow-up qildi. Menejerga tayyor 'issiq' mijoz keladi, xolos.",
+        },
+        {
+          q: "Sun'iy intellekt agenti va AI agent bir xilmi?",
+          a: "Ha, bu bir tushuncha: AI — inglizcha artificial intelligence, ya'ni sun'iy intellekt degani. Shuning uchun sun'iy intellekt agenti, AI agent yoki aqlli yordamchi deyilganda odatda bitta narsa nazarda tutiladi — ishni o'zi tushunib, o'zi bajaradigan dastur. Qaysi atama bilan qidirsangiz ham mohiyat o'zgarmaydi: agent vaziyatni tushunadi, qaror qabul qiladi va vazifani oxirigacha bajaradi.",
         },
         {
           q: "AI agent chatbotdan nimasi bilan farq qiladi?",
@@ -171,6 +175,10 @@ export const CONTENT: ServicePageContent = {
         {
           q: "Narxi qancha turadi?",
           a: "AI agent $400 dan boshlanadi. Aniq narx vazifa murakkabligi, integratsiyalar soni va kanallariga bog'liq — oddiy savol-javob agenti bilan ko'p tizimga ulanadigan, qaror qabul qiladigan agent narxi boshqa-boshqa. Aniq summani bepul konsultatsiyadan keyin yozma taklifda beramiz. To'lov 30% oldindan, qolgani loyiha bosqichlari bo'yicha.",
+        },
+        {
+          q: "Tayyor AI agent bilan buyurtma asosida qurilgan agent farqi nimada?",
+          a: "Tayyor (shablon) agent tez ishga tushadi, lekin faqat umumiy vazifalarni biladi — sizning CRM, 1C va ish jarayoningizni tanimaydi. Buyurtma asosidagi agent esa aynan sizning tizimlaringizga ulanadi va sizning qoidalaringiz bo'yicha ishlaydi. Muhimi: buyurtma agent juda qimmat bo'lishi shart emas — bizda $400 dan boshlanadi, to'lov 30% oldindan, ko'p loyihani esa bitta kichik vazifadan boshlab bosqichma-bosqich kengaytiramiz. O'zingiz uchun to'g'ri variantni bepul konsultatsiyada halol aytamiz — ba'zida arzonroq chatbot ham yetarli bo'ladi.",
         },
         {
           q: "Qancha vaqtda tayyor bo'ladi?",
@@ -318,7 +326,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "AI agent yaratish — Tezcode",
       description:
-        "Biznes uchun AI agent yaratish: savdo agenti (lid → CRM → follow-up), buyurtma agenti, hisobot agenti, HR/davomat agenti, qo'llab-quvvatlash agenti va ko'p agentli 'AI ofis' yondashuvi. Telegram/CRM/1C/POS integratsiyasi, o'zbek va rus tilida. IT Park rezidenti. Toshkent va butun O'zbekiston.",
+        "Biznes uchun AI agent (sun'iy intellekt agenti) yaratish: savdo agenti (lid → CRM → follow-up), buyurtma agenti, hisobot agenti, HR/davomat agenti, qo'llab-quvvatlash agenti va ko'p agentli 'AI ofis' yondashuvi. Telegram/CRM/1C/POS integratsiyasi, o'zbek va rus tilida. IT Park rezidenti. Toshkent va butun O'zbekiston.",
       serviceType: "AI agent yaratish / AI agent development",
     },
   },
@@ -466,11 +474,15 @@ export const CONTENT: ServicePageContent = {
       badge: "Частые вопросы",
       title: "Вопросы и",
       titleAccent: "ответы",
-      subtitle: "15 самых частых вопросов о создании AI-агентов.",
+      subtitle: "17 самых частых вопросов о создании AI-агентов.",
       items: [
         {
           q: "Что такое AI-агент?",
           a: "AI-агент — это AI-система, которая сама выполняет работу: понимает запрос клиента или сотрудника, сама принимает решения, действует в подключённых системах (CRM, Telegram, 1C) и ведёт процесс от начала до конца. Простой пример: пришёл лид — агент пообщался, записал данные в CRM, отправил предложение, сделал follow-up. Менеджеру приходит уже готовый «горячий» клиент.",
+        },
+        {
+          q: "AI-агент и агент на основе искусственного интеллекта — одно и то же?",
+          a: "Да, это одно понятие: AI — сокращение от artificial intelligence, то есть искусственный интеллект. «Агент на искусственном интеллекте», «AI-агент» и «умный помощник» обычно означают одно — программу, которая сама понимает задачу и сама её выполняет. Каким бы термином вы ни искали, суть не меняется: агент понимает ситуацию, принимает решение и доводит работу до конца.",
         },
         {
           q: "Чем AI-агент отличается от чат-бота?",
@@ -479,6 +491,10 @@ export const CONTENT: ServicePageContent = {
         {
           q: "Сколько это стоит?",
           a: "AI-агент от $400. Точная цена зависит от сложности задачи, количества интеграций и каналов — простой агент вопрос-ответ и агент, подключённый к нескольким системам и принимающий решения, стоят по-разному. Точную сумму даём в письменном предложении после бесплатной консультации. Оплата — 30% предоплата, остальное по этапам проекта.",
+        },
+        {
+          q: "Чем готовый AI-агент отличается от агента на заказ?",
+          a: "Готовый (шаблонный) агент запускается быстро, но знает только общие задачи — ваши CRM, 1C и рабочий процесс ему незнакомы. Агент на заказ подключается именно к вашим системам и работает по вашим правилам. Важно: заказная разработка не обязана быть «очень дорогой» — у нас агент начинается от $400, оплата — 30% предоплата, а многие проекты мы начинаем с одной небольшой задачи и расширяем поэтапно. Какой вариант правильный именно для вас — честно скажем на бесплатной консультации; иногда достаточно более дешёвого чат-бота.",
         },
         {
           q: "За какое время будет готов?",
@@ -774,11 +790,15 @@ export const CONTENT: ServicePageContent = {
       badge: "Frequently asked",
       title: "Questions &",
       titleAccent: "answers",
-      subtitle: "The 15 most common questions about AI agent development.",
+      subtitle: "The 17 most common questions about AI agent development.",
       items: [
         {
           q: "What is an AI agent?",
           a: "An AI agent is an AI system that does the work itself: it understands a customer's or employee's request, makes its own decisions, acts in the connected systems (CRM, Telegram, 1C) and carries the process from start to finish. Simple example: a lead arrives — the agent talks, logs the data to CRM, sends an offer, follows up. The manager just receives a ready 'hot' customer.",
+        },
+        {
+          q: "Is an 'artificial intelligence agent' the same as an 'AI agent'?",
+          a: "Yes — it is the same concept: AI stands for artificial intelligence. 'Artificial intelligence agent', 'AI agent' and 'smart assistant' usually mean the same thing — software that understands a task on its own and completes it on its own. Whichever term you search for, the essence doesn't change: the agent understands the situation, makes a decision and carries the work through to the end.",
         },
         {
           q: "How is an AI agent different from a chatbot?",
@@ -787,6 +807,10 @@ export const CONTENT: ServicePageContent = {
         {
           q: "How much does it cost?",
           a: "An AI agent starts from $400. The exact price depends on task complexity, number of integrations and channels — a simple Q&A agent and a decision-making agent connected to several systems cost very differently. We give the exact figure in a written proposal after the free consultation. Payment: 30% upfront, the rest per project stage.",
+        },
+        {
+          q: "What's the difference between an off-the-shelf AI agent and a custom-built one?",
+          a: "An off-the-shelf (template) agent launches fast but only knows generic tasks — it doesn't know your CRM, 1C or workflow. A custom agent is wired to your own systems and works by your rules. Importantly, custom doesn't have to mean 'very expensive' — ours start from $400, payment is 30% upfront, and we begin many projects with one small task and extend step by step. Which option is right for you we'll tell you honestly in the free consultation — sometimes a cheaper chatbot is enough.",
         },
         {
           q: "How long until it's ready?",
@@ -1082,11 +1106,15 @@ export const CONTENT: ServicePageContent = {
       badge: "أسئلة شائعة",
       title: "أسئلة و",
       titleAccent: "إجابات",
-      subtitle: "أكثر 15 سؤالاً شيوعاً عن تطوير وكلاء الذكاء الاصطناعي.",
+      subtitle: "أكثر 17 سؤالاً شيوعاً عن تطوير وكلاء الذكاء الاصطناعي.",
       items: [
         {
           q: "ما هو وكيل الذكاء الاصطناعي؟",
           a: "وكيل الذكاء الاصطناعي نظام ذكاء اصطناعي ينفّذ العمل بنفسه: يفهم طلب العميل أو الموظف، يتخذ قراراته بنفسه، يتصرف في الأنظمة المتصلة (CRM، Telegram، 1C) ويقود العملية من البداية إلى النهاية. مثال بسيط: وصل عميل محتمل — تحدث الوكيل، سجّل البيانات في CRM، أرسل عرضاً، وتابع. يصل إلى المدير عميل «ساخن» جاهز فحسب.",
+        },
+        {
+          q: "هل «وكيل الذكاء الاصطناعي» هو نفسه «AI agent»؟",
+          a: "نعم — المفهوم واحد: AI اختصار artificial intelligence أي الذكاء الاصطناعي. «وكيل الذكاء الاصطناعي» و«AI agent» و«المساعد الذكي» تعني عادة الشيء نفسه — برنامجاً يفهم المهمة بنفسه وينجزها بنفسه. أياً كان المصطلح الذي تبحث به، الجوهر لا يتغير: الوكيل يفهم الموقف ويتخذ القرار ويُكمل العمل حتى النهاية.",
         },
         {
           q: "بماذا يختلف وكيل الذكاء الاصطناعي عن الشات بوت؟",
@@ -1095,6 +1123,10 @@ export const CONTENT: ServicePageContent = {
         {
           q: "كم التكلفة؟",
           a: "يبدأ وكيل الذكاء الاصطناعي من $400. يعتمد السعر الدقيق على تعقيد المهمة وعدد التكاملات والقنوات — وكيل سؤال-جواب بسيط ووكيل يتخذ القرارات ومتصل بعدة أنظمة يختلفان في السعر كثيراً. نعطي الرقم الدقيق في عرض مكتوب بعد الاستشارة المجانية. الدفع: 30% مقدماً والباقي حسب مراحل المشروع.",
+        },
+        {
+          q: "ما الفرق بين وكيل جاهز ووكيل مبني حسب الطلب؟",
+          a: "الوكيل الجاهز (القالب) ينطلق بسرعة لكنه يعرف المهام العامة فقط — لا يعرف CRM و1C وسير عملك. أما الوكيل حسب الطلب فيُربط بأنظمتك أنت ويعمل وفق قواعدك. المهم: التطوير حسب الطلب لا يجب أن يكون «باهظاً» — عندنا يبدأ الوكيل من $400، والدفع 30% مقدماً، ونبدأ كثيراً من المشاريع بمهمة صغيرة واحدة ثم نوسّعها تدريجياً. أي خيار هو الصحيح لك — نقوله بصدق في الاستشارة المجانية؛ أحياناً يكفي شات بوت أرخص.",
         },
         {
           q: "كم يستغرق حتى يجهز؟",
@@ -1390,11 +1422,15 @@ export const CONTENT: ServicePageContent = {
       badge: "Часті запитання",
       title: "Запитання та",
       titleAccent: "відповіді",
-      subtitle: "15 найчастіших запитань про створення AI-агентів.",
+      subtitle: "17 найчастіших запитань про створення AI-агентів.",
       items: [
         {
           q: "Що таке AI-агент?",
           a: "AI-агент — це AI-система, яка сама виконує роботу: розуміє запит клієнта чи співробітника, сама ухвалює рішення, діє в підключених системах (CRM, Telegram, 1C) і веде процес від початку до кінця. Простий приклад: прийшов лід — агент поспілкувався, записав дані в CRM, надіслав пропозицію, зробив follow-up. Менеджеру приходить уже готовий «гарячий» клієнт.",
+        },
+        {
+          q: "AI-агент і агент на основі штучного інтелекту — це одне й те саме?",
+          a: "Так, це одне поняття: AI — скорочення від artificial intelligence, тобто штучний інтелект. «Агент на штучному інтелекті», «AI-агент» і «розумний помічник» зазвичай означають одне — програму, яка сама розуміє завдання і сама його виконує. Яким би терміном ви не шукали, суть не змінюється: агент розуміє ситуацію, ухвалює рішення і доводить роботу до кінця.",
         },
         {
           q: "Чим AI-агент відрізняється від чат-бота?",
@@ -1403,6 +1439,10 @@ export const CONTENT: ServicePageContent = {
         {
           q: "Скільки це коштує?",
           a: "AI-агент від $400. Точна ціна залежить від складності завдання, кількості інтеграцій і каналів — простий агент запитання-відповідь і агент, підключений до кількох систем та здатний ухвалювати рішення, коштують по-різному. Точну суму даємо в письмовій пропозиції після безкоштовної консультації. Оплата — 30% передоплата, решта за етапами проєкту.",
+        },
+        {
+          q: "Чим готовий AI-агент відрізняється від агента на замовлення?",
+          a: "Готовий (шаблонний) агент запускається швидко, але знає лише загальні завдання — ваші CRM, 1C і робочий процес йому незнайомі. Агент на замовлення підключається саме до ваших систем і працює за вашими правилами. Важливо: замовна розробка не мусить бути «дуже дорогою» — у нас агент починається від $400, оплата — 30% передоплата, а багато проєктів ми починаємо з одного невеликого завдання і розширюємо поетапно. Який варіант правильний саме для вас — чесно скажемо на безкоштовній консультації; іноді достатньо дешевшого чат-бота.",
         },
         {
           q: "За який час буде готовий?",

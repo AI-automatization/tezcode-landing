@@ -175,7 +175,6 @@ export const TEAM_PROFILES: TeamProfile[] = [
     projects: [{ name: "MaxSavdo", role: "Development, QA va marketing" }],
     telegram: "abdulazizatxamov262",
     linkedin: "https://www.linkedin.com/in/abdulaziz-atxamov-389ab83b5/",
-    photo: "/team/abdulaziz-atxamov.jpg",
     knowsAbout: [
       "Web Development",
       "React",

@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle } from "../articles";
+import { getArticle, localizeArticleMeta } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "1c-crm-ai-integratsiya";
@@ -19,13 +19,17 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const localized = localizeArticleMeta(SLUG, locale, {
+    title: "1C ni CRM va AI bilan bog'lash: to'liq qo'llanma (2026) | Tezcode",
+    description:
+      "1C ni amoCRM, Bitrix24 va AI bilan bog'lash: buyurtma, qoldiq va hisob-faktura sinxronizatsiyasi, AI 1C'dan narx va mavjudlikni o'qishi. Narx $700 dan. Tezcode qo'llanmasi.",
+  });
   return buildPageMetadata({
     locale,
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title: "1C ni CRM va AI bilan bog'lash: to'liq qo'llanma (2026) | Tezcode",
-    description:
-      "1C ni amoCRM, Bitrix24 va AI bilan bog'lash: buyurtma, qoldiq va hisob-faktura sinxronizatsiyasi, AI 1C'dan narx va mavjudlikni o'qishi. Narx $700 dan. Tezcode qo'llanmasi.",
+    title: localized.title,
+    description: localized.description,
     keywords: [
       "1C CRM integratsiya",
       "1C ni CRM bilan bog'lash",
@@ -39,12 +43,17 @@ export async function generateMetadata({
   });
 }
 
-export default function OneCCrmAiIntegratsiyaPage() {
+export default async function OneCCrmAiIntegratsiyaPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale: rawLocale } = await params;
   const meta = getArticle(SLUG);
   const datePublished = meta?.datePublished ?? "2026-08-14";
 
-  const copy = CONTENT.uz;
-  const locale: ArticleLang = "uz";
+  const locale: ArticleLang = (rawLocale in CONTENT ? rawLocale : "uz") as ArticleLang;
+  const copy = CONTENT[locale] ?? CONTENT.uz;
 
   const articleSchema = getArticleSchema({
     headline: copy.hero.title,

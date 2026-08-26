@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle } from "../articles";
+import { getArticle, localizeArticleMeta } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "xodim-nazorati-tizimi";
@@ -19,15 +19,19 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const localized = localizeArticleMeta(SLUG, locale, {
+    title:
+      "Xodimlar ish vaqti va vazifalarini nazorat qilish tizimi qanday tanlanadi (2026) | Tezcode",
+    description:
+      "Xodimlar ish vaqti, vazifalar va samaradorlikni nazorat qilish tizimini tanlash qo'llanmasi: vazifa boshqaruvi, davomat, hisobotlar, nazorat-ishonch muvozanati va xatolar.",
+  });
   return buildPageMetadata({
     locale,
     // untranslated locales canonicalize to the uz original (see lib/seo.ts)
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title:
-      "Xodimlar ish vaqti va vazifalarini nazorat qilish tizimi qanday tanlanadi (2026) | Tezcode",
-    description:
-      "Xodimlar ish vaqti, vazifalar va samaradorlikni nazorat qilish tizimini tanlash qo'llanmasi: vazifa boshqaruvi, davomat, hisobotlar, nazorat-ishonch muvozanati va xatolar.",
+    title: localized.title,
+    description: localized.description,
     keywords: [
       "xodim nazorati tizimi",
       "vazifa boshqaruvi dasturi",
@@ -42,12 +46,17 @@ export async function generateMetadata({
   });
 }
 
-export default function XodimNazoratiTizimiPage() {
+export default async function XodimNazoratiTizimiPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale: rawLocale } = await params;
   const meta = getArticle(SLUG);
   const datePublished = meta?.datePublished ?? "2026-06-07";
 
-  const copy = CONTENT.uz;
-  const locale: ArticleLang = "uz";
+  const locale: ArticleLang = (rawLocale in CONTENT ? rawLocale : "uz") as ArticleLang;
+  const copy = CONTENT[locale] ?? CONTENT.uz;
 
   const articleSchema = getArticleSchema({
     headline: copy.hero.title,
