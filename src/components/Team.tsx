@@ -56,8 +56,10 @@ const TEAM: Member[] = [
     photo: "/team/sardor-madaliyev.jpg",
   },
   {
-    name: "Ziyora Mirzakirova",
-    role: "Work-Control Co-founder · Developer",
+    name: "Ziyoda Mirzakirova",
+    role: "Full Stack Developer",
+    telegram: "@mirzakiirova",
+    profileSlug: "ziyoda-mirzakirova",
   },
   {
     name: "Emirhan Ertan",
@@ -88,7 +90,10 @@ const TEAM: Member[] = [
   },
   {
     name: "Abdulaziz Mirzayev",
-    role: "Developer",
+    role: "Frontend & Mobile Developer",
+    telegram: "@mirzaevvv011",
+    profileSlug: "abdulaziz-mirzayev",
+    photo: "/team/abdulaziz-mirzayev.jpg",
   },
   {
     name: "Jafarbek Ulugbekov",
@@ -126,6 +131,12 @@ const TEAM: Member[] = [
     role: "Full-Stack Developer",
     telegram: "@Sinus_30gradus",
     profileSlug: "ibrohim-sobirov",
+  },
+  {
+    name: "Yusuf Kasimov",
+    role: "Full-Stack Developer",
+    telegram: "@ky_747",
+    profileSlug: "yusuf-kasimov",
   },
 ];
 

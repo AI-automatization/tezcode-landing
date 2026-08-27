@@ -357,6 +357,107 @@ export const TEAM_PROFILES: TeamProfile[] = [
     metaDescription:
       "Habibulloh Shuhratov — Tezcode jamoasida Full-Stack Developer. React, Next.js, Node.js, NestJS, TypeScript, Prisma.",
   },
+  {
+    slug: "yusuf-kasimov",
+    name: "Yusuf Kasimov",
+    role: "Full-Stack Developer",
+    bio: [
+      "Yusuf Kasimov — Tezcode jamoasida Full-Stack Developer. React frontend va Node.js backend bilan veb-mahsulotlar quradi.",
+      "MaxSavdo va AviaTamir loyihalarida ishlaydi. MongoDB, Mongoose va Tailwind CSS bilan ishlaydi.",
+    ],
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Mongoose",
+      "Tailwind CSS",
+    ],
+    projects: [
+      { name: "MaxSavdo", role: "Full-stack veb ishlab chiqish" },
+      { name: "AviaTamir", role: "Veb ishlab chiqish" },
+    ],
+    telegram: "ky_747",
+    knowsAbout: [
+      "Full-Stack Development",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "JavaScript",
+    ],
+    metaTitle: "Yusuf Kasimov — Tezcode Full-Stack Developer",
+    metaDescription:
+      "Yusuf Kasimov — Tezcode jamoasida Full-Stack Developer. React, Node.js, MongoDB. MaxSavdo, AviaTamir loyihalari.",
+  },
+  {
+    slug: "abdulaziz-mirzayev",
+    name: "Abdulaziz Mirzayev",
+    role: "Frontend & Mobile Developer",
+    bio: [
+      "Abdulaziz Mirzayev — Tezcode jamoasida frontend va mobil developer. React va Next.js frontend hamda React Native (iOS & Android) mobil ilovalar quradi.",
+      "RAOS (POS/kassa) mahsulotida ishlaydi. TypeScript, Redux, Chart.js, Socket.io va i18n bilan ishlaydi.",
+    ],
+    skills: [
+      "React",
+      "Next.js",
+      "React Native",
+      "TypeScript",
+      "JavaScript",
+      "Redux",
+      "i18n",
+      "Chart.js",
+      "Axios",
+      "Socket.io",
+    ],
+    projects: [{ name: "RAOS", role: "POS/kassa — frontend va mobil" }],
+    telegram: "mirzaevvv011",
+    linkedin: "https://www.linkedin.com/in/abdulaziz-mirzayev-b25650379",
+    photo: "/team/abdulaziz-mirzayev.jpg",
+    knowsAbout: [
+      "Frontend Development",
+      "Mobile Development",
+      "React",
+      "React Native",
+      "TypeScript",
+    ],
+    metaTitle: "Abdulaziz Mirzayev — Tezcode Frontend & Mobile Developer",
+    metaDescription:
+      "Abdulaziz Mirzayev — Tezcode jamoasida frontend va mobil developer. React, Next.js, React Native (iOS & Android), TypeScript. RAOS loyihasi.",
+  },
+  {
+    slug: "ziyoda-mirzakirova",
+    name: "Ziyoda Mirzakirova",
+    role: "Full Stack Developer",
+    bio: [
+      "Ziyoda Mirzakirova — Tezcode jamoasida Full Stack Developer. React va Redux asosida frontend hamda Node.js backend bilan ishlaydi.",
+      "HTML, CSS, Tailwind CSS va zamonaviy JavaScript bilan veb-mahsulotlar quradi.",
+    ],
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Tailwind CSS",
+      "React",
+      "Redux",
+      "Redux Toolkit",
+      "Redux Persist",
+      "Node.js",
+    ],
+    projects: [],
+    telegram: "mirzakiirova",
+    knowsAbout: [
+      "Full-Stack Development",
+      "React",
+      "Redux",
+      "Node.js",
+      "JavaScript",
+    ],
+    metaTitle: "Ziyoda Mirzakirova — Tezcode Full Stack Developer",
+    metaDescription:
+      "Ziyoda Mirzakirova — Tezcode jamoasida Full Stack Developer. React, Redux, Node.js, Tailwind CSS.",
+  },
 ];
 
 export function getProfile(slug: string): TeamProfile | undefined {
