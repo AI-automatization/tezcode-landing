@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle, localizeArticleMeta } from "../articles";
+import { getArticle } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "ai-chatbot-va-ai-agent-farqi";
@@ -22,18 +22,14 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const localized = localizeArticleMeta(SLUG, locale, {
-    title: "AI chatbot va AI agent farqi nima? (2026) | Tezcode",
-    description:
-      "AI chatbot gaplashadi, AI agent ish bajaradi. Farqni misollar bilan tushuntiramiz, taqqoslash jadvali va qaysi biri sizning biznesingizga kerakligi — Tezcode qo'llanmasi.",
-  });
   return buildPageMetadata({
     locale,
     // untranslated locales canonicalize to the uz original (see lib/seo.ts)
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title: localized.title,
-    description: localized.description,
+    title: "AI chatbot va AI agent farqi nima? (2026) | Tezcode",
+    description:
+      "AI chatbot gaplashadi, AI agent ish bajaradi. Farqni misollar bilan tushuntiramiz, taqqoslash jadvali va qaysi biri sizning biznesingizga kerakligi — Tezcode qo'llanmasi.",
     keywords: [
       "AI chatbot va AI agent farqi",
       "chatbot vs agent",
@@ -47,19 +43,15 @@ export async function generateMetadata({
   });
 }
 
-export default async function AiChatbotVaAiAgentFarqiPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale: rawLocale } = await params;
+export default function AiChatbotVaAiAgentFarqiPage() {
   const meta = getArticle(SLUG);
   const datePublished = meta?.datePublished ?? "2026-06-17";
 
-  // Build localised Article + FAQ + Breadcrumb for the requested locale,
-  // falling back to the uz master when no translation exists.
-  const locale: ArticleLang = (rawLocale in CONTENT ? rawLocale : "uz") as ArticleLang;
-  const copy = CONTENT[locale] ?? CONTENT.uz;
+  // Build localised Article + FAQ + Breadcrumb for the default locale (uz). The
+  // client renders per-locale copy; structured data uses the uz master so the
+  // markup is present in SSR HTML regardless of which locale is requested.
+  const copy = CONTENT.uz;
+  const locale: ArticleLang = "uz";
 
   const articleSchema = getArticleSchema({
     headline: copy.hero.title,

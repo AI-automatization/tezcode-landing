@@ -34,7 +34,10 @@ const TEAM: Member[] = [
   },
   {
     name: "Abdulloh Isroilov",
-    role: "AI-Trade Co-founder · Trading Specialist · Developer",
+    role: "AI-Trade Co-founder · Full-Stack Developer",
+    telegram: "@abufdx",
+    profileSlug: "abdulloh-isroilov",
+    photo: "/team/abdulloh-isroilov.jpg",
   },
   {
     name: "Azimjon Qurbonov",

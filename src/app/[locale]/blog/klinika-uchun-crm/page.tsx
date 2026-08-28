@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle, localizeArticleMeta } from "../articles";
+import { getArticle } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "klinika-uchun-crm";
@@ -21,18 +21,14 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const localized = localizeArticleMeta(SLUG, locale, {
-    title: "Klinika uchun CRM qanday tanlanadi (2026) | Tezcode",
-    description:
-      "Klinika, tibbiyot markazi yoki stomatologiya uchun CRM tanlash qo'llanmasi: qabullar, bemor bazasi, moliyaviy hisobot, rollar va eng ko'p uchraydigan xatolar.",
-  });
   return buildPageMetadata({
     locale,
     // untranslated locales canonicalize to the uz original (see lib/seo.ts)
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title: localized.title,
-    description: localized.description,
+    title: "Klinika uchun CRM qanday tanlanadi (2026) | Tezcode",
+    description:
+      "Klinika, tibbiyot markazi yoki stomatologiya uchun CRM tanlash qo'llanmasi: qabullar, bemor bazasi, moliyaviy hisobot, rollar va eng ko'p uchraydigan xatolar.",
     keywords: [
       "klinika uchun CRM",
       "tibbiyot CRM",
@@ -48,17 +44,12 @@ export async function generateMetadata({
   });
 }
 
-export default async function KlinikaUchunCrmPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale: rawLocale } = await params;
+export default function KlinikaUchunCrmPage() {
   const meta = getArticle(SLUG);
   const datePublished = meta?.datePublished ?? "2026-06-07";
 
-  const locale: ArticleLang = (rawLocale in CONTENT ? rawLocale : "uz") as ArticleLang;
-  const copy = CONTENT[locale] ?? CONTENT.uz;
+  const copy = CONTENT.uz;
+  const locale: ArticleLang = "uz";
 
   const articleSchema = getArticleSchema({
     headline: copy.hero.title,

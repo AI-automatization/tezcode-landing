@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle, localizeArticleMeta } from "../articles";
+import { getArticle } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "ai-ozbek-tilida";
@@ -19,17 +19,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const localized = localizeArticleMeta(SLUG, locale, {
-    title: "AI o'zbek tilida ishlaydimi? Chatbot va agentlar uchun to'liq javob (2026) | Tezcode",
-    description:
-      "AI o'zbek tilida (lotin/kirill, aralash uz-ru) ishlaydi, lekin sifat sozlashga bog'liq. Nega tayyor botlar o'zbekchada qiynaladi va yaxshi o'zbek tilli chatbot qanday quriladi. Tezcode qo'llanmasi.",
-  });
   return buildPageMetadata({
     locale,
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title: localized.title,
-    description: localized.description,
+    title: "AI o'zbek tilida ishlaydimi? Chatbot va agentlar uchun to'liq javob (2026) | Tezcode",
+    description:
+      "AI o'zbek tilida (lotin/kirill, aralash uz-ru) ishlaydi, lekin sifat sozlashga bog'liq. Nega tayyor botlar o'zbekchada qiynaladi va yaxshi o'zbek tilli chatbot qanday quriladi. Tezcode qo'llanmasi.",
     keywords: [
       "AI o'zbek tilida",
       "o'zbekcha chatbot",
@@ -43,17 +39,12 @@ export async function generateMetadata({
   });
 }
 
-export default async function AiOzbekTilidaPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale: rawLocale } = await params;
+export default function AiOzbekTilidaPage() {
   const meta = getArticle(SLUG);
   const datePublished = meta?.datePublished ?? "2026-08-15";
 
-  const locale: ArticleLang = (rawLocale in CONTENT ? rawLocale : "uz") as ArticleLang;
-  const copy = CONTENT[locale] ?? CONTENT.uz;
+  const copy = CONTENT.uz;
+  const locale: ArticleLang = "uz";
 
   const articleSchema = getArticleSchema({
     headline: copy.hero.title,

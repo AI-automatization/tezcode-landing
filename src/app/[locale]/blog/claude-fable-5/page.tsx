@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle, localizeArticleMeta } from "../articles";
+import { getArticle } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "claude-fable-5";
@@ -22,19 +22,15 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const localized = localizeArticleMeta(SLUG, locale, {
-    title:
-      "Claude Fable 5: Anthropic'ning eng kuchli modeli va bu biznes uchun nimani anglatadi | Tezcode",
-    description:
-      "Anthropic Claude Fable 5'ni chiqardi, AQSh eksport nazorati tufayli vaqtincha to'xtatdi, so'ng yana global qaytardi. Bu O'zbekistondagi AI-avtomatlashtirish loyihalari uchun nimani anglatadi.",
-  });
   return buildPageMetadata({
     locale,
     // untranslated locales canonicalize to the uz original (see lib/seo.ts)
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title: localized.title,
-    description: localized.description,
+    title:
+      "Claude Fable 5: Anthropic'ning eng kuchli modeli va bu biznes uchun nimani anglatadi | Tezcode",
+    description:
+      "Anthropic Claude Fable 5'ni chiqardi, AQSh eksport nazorati tufayli vaqtincha to'xtatdi, so'ng yana global qaytardi. Bu O'zbekistondagi AI-avtomatlashtirish loyihalari uchun nimani anglatadi.",
     keywords: [
       "Claude Fable 5",
       "Anthropic",
@@ -46,19 +42,15 @@ export async function generateMetadata({
   });
 }
 
-export default async function ClaudeFable5Page({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale: rawLocale } = await params;
+export default function ClaudeFable5Page() {
   const meta = getArticle(SLUG);
   const datePublished = meta?.datePublished ?? "2026-07-02";
 
-  // Build localised Article + FAQ + Breadcrumb for the requested locale,
-  // falling back to the uz master when no translation exists.
-  const locale: ArticleLang = (rawLocale in CONTENT ? rawLocale : "uz") as ArticleLang;
-  const copy = CONTENT[locale] ?? CONTENT.uz;
+  // Build localised Article + FAQ + Breadcrumb for the default locale (uz). The
+  // client renders per-locale copy; structured data uses the uz master so the
+  // markup is present in SSR HTML regardless of which locale is requested.
+  const copy = CONTENT.uz;
+  const locale: ArticleLang = "uz";
 
   const articleSchema = getArticleSchema({
     headline: copy.hero.title,

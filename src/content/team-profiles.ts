@@ -458,6 +458,29 @@ export const TEAM_PROFILES: TeamProfile[] = [
     metaDescription:
       "Ziyoda Mirzakirova — Tezcode jamoasida Full Stack Developer. React, Redux, Node.js, Tailwind CSS.",
   },
+  {
+    slug: "abdulloh-isroilov",
+    name: "Abdulloh Isroilov",
+    role: "AI-Trade Co-founder · Full-Stack Developer",
+    bio: [
+      "Abdulloh Isroilov — Tezcode jamoasida Full-Stack Developer va AI-Trade co-founder. React frontend hamda Node.js/Express backend bilan ishlaydi.",
+      "AI-Trade savdo agenti loyihasida ishlaydi. MongoDB va zamonaviy JavaScript bilan mahsulot quradi.",
+    ],
+    skills: ["React", "Node.js", "Express.js", "MongoDB", "JavaScript"],
+    projects: [{ name: "AI-Trade", role: "Savdo agenti — full-stack" }],
+    telegram: "abufdx",
+    photo: "/team/abdulloh-isroilov.jpg",
+    knowsAbout: [
+      "Full-Stack Development",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Trading",
+    ],
+    metaTitle: "Abdulloh Isroilov — Tezcode Full-Stack Developer, AI-Trade",
+    metaDescription:
+      "Abdulloh Isroilov — Tezcode jamoasida Full-Stack Developer va AI-Trade co-founder. React, Node.js, Express, MongoDB.",
+  },
 ];
 
 export function getProfile(slug: string): TeamProfile | undefined {

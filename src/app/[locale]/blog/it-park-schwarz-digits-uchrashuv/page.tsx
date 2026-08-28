@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle, localizeArticleMeta } from "../articles";
+import { getArticle } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "it-park-schwarz-digits-uchrashuv";
@@ -22,19 +22,15 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const localized = localizeArticleMeta(SLUG, locale, {
-    title:
-      "IT Park va Schwarz Digits: O'zbekiston IT sektori uchun Yevropa imkoniyati | Tezcode",
-    description:
-      "IT Park Uzbekistan'da Tezcode Schwarz Digits (Schwarz Group — Lidl va Kaufland egasi) vakili bilan tanishdi. Yevropa suveren AI ekotizimi va O'zbekiston IT sektori uchun imkoniyat haqida.",
-  });
   return buildPageMetadata({
     locale,
     // untranslated locales canonicalize to the uz original (see lib/seo.ts)
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title: localized.title,
-    description: localized.description,
+    title:
+      "IT Park va Schwarz Digits: O'zbekiston IT sektori uchun Yevropa imkoniyati | Tezcode",
+    description:
+      "IT Park Uzbekistan'da Tezcode Schwarz Digits (Schwarz Group — Lidl va Kaufland egasi) vakili bilan tanishdi. Yevropa suveren AI ekotizimi va O'zbekiston IT sektori uchun imkoniyat haqida.",
     keywords: [
       "IT Park Uzbekistan",
       "Schwarz Digits",
@@ -47,19 +43,15 @@ export async function generateMetadata({
   });
 }
 
-export default async function ItParkSchwarzDigitsPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale: rawLocale } = await params;
+export default function ItParkSchwarzDigitsPage() {
   const meta = getArticle(SLUG);
   const datePublished = meta?.datePublished ?? "2026-07-02";
 
-  // Build localised Article + FAQ + Breadcrumb for the requested locale,
-  // falling back to the uz master when no translation exists.
-  const locale: ArticleLang = (rawLocale in CONTENT ? rawLocale : "uz") as ArticleLang;
-  const copy = CONTENT[locale] ?? CONTENT.uz;
+  // Build localised Article + FAQ + Breadcrumb for the default locale (uz). The
+  // client renders per-locale copy; structured data uses the uz master so the
+  // markup is present in SSR HTML regardless of which locale is requested.
+  const copy = CONTENT.uz;
+  const locale: ArticleLang = "uz";
 
   const articleSchema = getArticleSchema({
     headline: copy.hero.title,

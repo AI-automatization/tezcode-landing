@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle, localizeArticleMeta } from "../articles";
+import { getArticle } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "ai-avtomatizatsiya-kompaniya-tanlash";
@@ -22,19 +22,15 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const localized = localizeArticleMeta(SLUG, locale, {
-    title:
-      "Toshkentda AI avtomatizatsiya kompaniyasini qanday tanlash (2026) | Tezcode",
-    description:
-      "O'zbekistonda AI avtomatizatsiya kompaniyasini tanlash qo'llanmasi: qaysi mezonlarga qarash, narx nimaga bog'liq, eng ko'p uchraydigan xatolar va beriladigan savollar — Toshkent va O'zbekiston bizneslari uchun.",
-  });
   return buildPageMetadata({
     locale,
     // untranslated locales canonicalize to the uz original (see lib/seo.ts)
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title: localized.title,
-    description: localized.description,
+    title:
+      "Toshkentda AI avtomatizatsiya kompaniyasini qanday tanlash (2026) | Tezcode",
+    description:
+      "O'zbekistonda AI avtomatizatsiya kompaniyasini tanlash qo'llanmasi: qaysi mezonlarga qarash, narx nimaga bog'liq, eng ko'p uchraydigan xatolar va beriladigan savollar — Toshkent va O'zbekiston bizneslari uchun.",
     keywords: [
       "AI avtomatizatsiya kompaniya tanlash",
       "Toshkentda AI avtomatizatsiya",
@@ -51,19 +47,15 @@ export async function generateMetadata({
   });
 }
 
-export default async function AiAvtomatizatsiyaKompaniyaTanlashPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale: rawLocale } = await params;
+export default function AiAvtomatizatsiyaKompaniyaTanlashPage() {
   const meta = getArticle(SLUG);
   const datePublished = meta?.datePublished ?? "2026-06-25";
 
-  // Build localised Article + FAQ + Breadcrumb for the requested locale,
-  // falling back to the uz master when no translation exists.
-  const locale: ArticleLang = (rawLocale in CONTENT ? rawLocale : "uz") as ArticleLang;
-  const copy = CONTENT[locale] ?? CONTENT.uz;
+  // Build localised Article + FAQ + Breadcrumb for the default locale (uz). The
+  // client renders per-locale copy; structured data uses the uz master so the
+  // markup is present in SSR HTML regardless of which locale is requested.
+  const copy = CONTENT.uz;
+  const locale: ArticleLang = "uz";
 
   const articleSchema = getArticleSchema({
     headline: copy.hero.title,

@@ -36,12 +36,6 @@ const nextConfig: NextConfig = {
       {
         source: "/(.*)",
         headers: [
-          // 2 years, ready for the hstspreload.org list. Railway terminates TLS
-          // for both apex and www, so includeSubDomains is safe here.
-          {
-            key: "Strict-Transport-Security",
-            value: "max-age=63072000; includeSubDomains; preload",
-          },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
