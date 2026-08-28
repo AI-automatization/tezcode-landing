@@ -1,9 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { m } from "motion/react";
-import { Inbox } from "lucide-react";
+import { Inbox, MonitorSmartphone, Stethoscope, Store, type LucideIcon } from "lucide-react";
 import { useLocale } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Tilt3D } from "@/components/motion/Tilt3D";
@@ -13,15 +13,18 @@ type FilterKey = "all" | "retail" | "clinic" | "custom";
 
 type Case = {
   slug: string;
-  photo: string;
+  icon: LucideIcon;
   category: Exclude<FilterKey, "all">;
   accent: "amber" | "blue" | "emerald";
 };
 
+// TODO(Sardor): mijoz nomi va rozilik — real mijoz nomlari va roziligi
+// olingach, sektor yorliqlari o'rniga qo'yiladi. Stok foto mijoz sifatida
+// ko'rsatilmaydi — o'rniga sektor ikonkasi ishlatiladi.
 const CASES: readonly Case[] = [
-  { slug: "dilfuza-grocery", photo: "/customers/customer-1.jpg", category: "retail", accent: "amber" },
-  { slug: "aziz-electronics", photo: "/customers/customer-2.jpg", category: "retail", accent: "blue" },
-  { slug: "munira-clinic", photo: "/customers/customer-3.jpg", category: "clinic", accent: "emerald" },
+  { slug: "dilfuza-grocery", icon: Store, category: "retail", accent: "amber" },
+  { slug: "aziz-electronics", icon: MonitorSmartphone, category: "retail", accent: "blue" },
+  { slug: "munira-clinic", icon: Stethoscope, category: "clinic", accent: "emerald" },
 ] as const;
 
 const ACCENT: Record<Case["accent"], { text: string; ring: string; bg: string }> = {
@@ -79,23 +82,23 @@ const COPY: Record<Lang, CopyShape> = {
     resultLabel: "Natija",
     cards: {
       "dilfuza-grocery": {
-        name: "Dilfuza X.",
-        role: "Oziq-ovqat do'koni · Yunusobod",
+        name: "Oziq-ovqat do'koni",
+        role: "Do'kon egasi · Yunusobod",
         product: "RAOS POS",
         headline: "30 kun ichida Excel'dan POS'ga o'tdi va kassasi tartibga keldi",
         metric: "+800K so'm/oy",
         metricCaption: "tejov",
       },
       "aziz-electronics": {
-        name: "Aziz aka",
-        role: "Elektronika do'koni · Chilonzor",
+        name: "Elektronika do'koni",
+        role: "2 ta filial · Chilonzor",
         product: "RAOS POS",
         headline: "Buxgalterga to'lov o'rniga RAOS o'zi hisobot chiqaradi",
         metric: "−2M so'm/oy",
         metricCaption: "buxgalter xarajati o'rniga",
       },
       "munira-clinic": {
-        name: "Dr. Akmal",
+        name: "Xususiy klinika",
         role: "Klinika rahbari · Mirzo Ulug'bek",
         product: "ClinicaGo + HamshiraGo",
         headline: "Navbat vaqti 40% qisqardi, bemor sadoqati 2x oshdi",
@@ -121,23 +124,23 @@ const COPY: Record<Lang, CopyShape> = {
     resultLabel: "Результат",
     cards: {
       "dilfuza-grocery": {
-        name: "Дилфуза Х.",
-        role: "Продуктовый магазин · Юнусабад",
+        name: "Продуктовый магазин",
+        role: "Владелица · Юнусабад",
         product: "RAOS POS",
         headline: "За 30 дней перешла с Excel на POS — касса стала прозрачной",
         metric: "+800K сум/мес",
         metricCaption: "экономия",
       },
       "aziz-electronics": {
-        name: "Азиз ака",
-        role: "Электроника · Чиланзар",
+        name: "Магазин электроники",
+        role: "2 филиала · Чиланзар",
         product: "RAOS POS",
         headline: "Вместо бухгалтера — RAOS сам делает отчёты",
         metric: "−2M сум/мес",
         metricCaption: "вместо зарплаты бухгалтера",
       },
       "munira-clinic": {
-        name: "Доктор Акмал",
+        name: "Частная клиника",
         role: "Руководитель клиники · Мирзо-Улугбек",
         product: "ClinicaGo + HamshiraGo",
         headline: "Очередь сократилась на 40%, лояльность пациентов 2x",
@@ -163,23 +166,23 @@ const COPY: Record<Lang, CopyShape> = {
     resultLabel: "Result",
     cards: {
       "dilfuza-grocery": {
-        name: "Dilfuza X.",
-        role: "Grocery store · Yunusabad",
+        name: "Grocery store",
+        role: "Owner · Yunusabad",
         product: "RAOS POS",
         headline: "Moved from Excel to POS in 30 days — cash register cleared up",
         metric: "+800K UZS/mo",
         metricCaption: "savings",
       },
       "aziz-electronics": {
-        name: "Aziz aka",
-        role: "Electronics · Chilanzar",
+        name: "Electronics store",
+        role: "2 branches · Chilanzar",
         product: "RAOS POS",
         headline: "Instead of an accountant — RAOS files reports itself",
         metric: "−2M UZS/mo",
         metricCaption: "replaces accountant salary",
       },
       "munira-clinic": {
-        name: "Dr. Akmal",
+        name: "Private clinic",
         role: "Clinic director · Mirzo Ulugbek",
         product: "ClinicaGo + HamshiraGo",
         headline: "Queue time down 40%, patient loyalty 2x",
@@ -205,24 +208,24 @@ const COPY: Record<Lang, CopyShape> = {
     resultLabel: "النتيجة",
     cards: {
       "dilfuza-grocery": {
-        name: "دلفوزة خ.",
-        role: "بقالة · يونسآباد",
+        name: "بقالة",
+        role: "مالكة المتجر · يونسآباد",
         product: "RAOS POS",
         headline: "انتقلت من Excel إلى نقاط البيع خلال 30 يومًا",
         metric: "+800 ألف سوم/شهر",
         metricCaption: "توفير",
       },
       "aziz-electronics": {
-        name: "عزيز أكا",
-        role: "إلكترونيات · شيلانزار",
+        name: "متجر إلكترونيات",
+        role: "فرعان · شيلانزار",
         product: "RAOS POS",
         headline: "بدل المحاسب — RAOS يصدر التقارير بنفسه",
         metric: "−2 مليون سوم/شهر",
         metricCaption: "بدل راتب المحاسب",
       },
       "munira-clinic": {
-        name: "د. أكمل",
-        role: "مدير عيادة · ميرزو أولوغبيك",
+        name: "عيادة خاصة",
+        role: "مدير العيادة · ميرزو أولوغبيك",
         product: "ClinicaGo + HamshiraGo",
         headline: "تقليل وقت الانتظار 40٪، ولاء المرضى ضعفان",
         metric: "−40٪ انتظار",
@@ -246,23 +249,23 @@ const COPY: Record<Lang, CopyShape> = {
     resultLabel: "Результат",
     cards: {
       "dilfuza-grocery": {
-        name: "Дилфуза Х.",
-        role: "Продуктовий магазин · Юнусабад",
+        name: "Продуктовий магазин",
+        role: "Власниця · Юнусабад",
         product: "RAOS POS",
         headline: "За 30 днів перейшла з Excel на POS",
         metric: "+800K сум/міс",
         metricCaption: "економія",
       },
       "aziz-electronics": {
-        name: "Азіз ака",
-        role: "Електроніка · Чиланзар",
+        name: "Магазин електроніки",
+        role: "2 філії · Чиланзар",
         product: "RAOS POS",
         headline: "Замість бухгалтера — RAOS сам робить звіти",
         metric: "−2M сум/міс",
         metricCaption: "замість зарплати бухгалтера",
       },
       "munira-clinic": {
-        name: "Доктор Акмал",
+        name: "Приватна клініка",
         role: "Керівник клініки · Мірзо-Улугбек",
         product: "ClinicaGo + HamshiraGo",
         headline: "Черга скоротилася на 40%, лояльність пацієнтів 2x",
@@ -358,6 +361,7 @@ export function CaseStudiesIndexClient() {
           >
             {visible.map((c) => {
               const accent = ACCENT[c.accent];
+              const Icon = c.icon;
               const card = t.cards[c.slug];
               if (!card) return null;
               return (
@@ -369,14 +373,9 @@ export function CaseStudiesIndexClient() {
                     >
                       <div className="relative flex items-center gap-4 mb-5" style={{ transform: "translateZ(30px)" }}>
                         <div
-                          className={`relative shrink-0 w-16 h-16 rounded-full overflow-hidden ring-2 ${accent.ring}`}
+                          className={`relative shrink-0 w-16 h-16 rounded-full flex items-center justify-center ring-2 ${accent.ring} ${accent.bg}`}
                         >
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
-                            src={c.photo}
-                            alt={card.name}
-                            className="w-full h-full object-cover"
-                          />
+                          <Icon aria-hidden className={`h-7 w-7 ${accent.text}`} strokeWidth={1.75} />
                         </div>
                         <div className="flex-1 min-w-0">
                           <div

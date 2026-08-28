@@ -1,10 +1,11 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { m } from "motion/react";
 import { useLocale } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { CountUp } from "@/components/motion/CountUp";
+import { Store } from "lucide-react";
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
 
@@ -35,26 +36,32 @@ type CopyShape = {
   ctaText: string;
   ctaBtn: string;
   ctaSecondary: string;
+  ctaService: string;
 };
 
+// TODO(Sardor): mijoz nomi va rozilik — rozilik olingach, sektor yorlig'i
+// o'rniga real mijoz nomi qo'yiladi. Sayt bo'yicha tasdiqlangan raqamlar:
+// ~800K so'm/oy tejov va 30 kunlik joriy etish (/ai-ozbekistonda bilan mos).
+// Qolgan metrikalar (aniqlik 99.5%, 4 soat→15 daq, +18% sodiqlik, 3,400 SKU,
+// 1.2-1.5M yetishmovchilik) real mijoz ma'lumoti bilan tasdiqlanishi kerak.
 const COPY: Record<Lang, CopyShape> = {
   uz: {
     back: "← Barcha case study'lar",
     badge: "Case Study · Savdo",
     title:
       "Oziq-ovqat do'koni 30 kun ichida POS'ga o'tdi va oyiga 800K so'm tejaydi",
-    name: "Dilfuza X.",
-    role: "Oziq-ovqat do'koni egasi · Yunusobod, Toshkent",
+    name: "Do'kon egasi",
+    role: "Oziq-ovqat do'koni · Yunusobod, Toshkent",
     product: "RAOS POS",
     bannerLabel: "Oylik tejov",
     bannerCaption: "kassa xato + ombor + xodim vaqti",
     metricsTitle: "4 ta asosiy ko'rsatkich",
     metrics: [
       {
-        label: "Kassa xatosi",
+        label: "Kassa aniqligi",
         before: "95%",
-        after: "0.5%",
-        caption: "har 100 chekdan 1 ta xato qolmadi",
+        after: "99.5%",
+        caption: "chek xatolari deyarli yo'qoldi",
       },
       {
         label: "Ombor sanash",
@@ -77,25 +84,25 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     problemTitle: "Qanday muammo bor edi",
     problemParas: [
-      "Dilfuza opa Yunusobod tumanida o'rta kattalikdagi oziq-ovqat do'kon olib boradi — kuniga taxminan 200-250 chek. Boshlanishida hammasi Excel jadvalida edi: kunlik tushum, ombor qoldig'i, yetkazib beruvchi to'lovi — barchasi qo'lda yozilardi.",
+      "Do'kon egasi Yunusobod tumanida o'rta kattalikdagi oziq-ovqat do'konini yuritadi — kuniga taxminan 200-250 chek. Boshlanishida hammasi Excel jadvalida edi: kunlik tushum, ombor qoldig'i, yetkazib beruvchi to'lovi — barchasi qo'lda yozilardi.",
       "Asosiy muammo — kassirlar smenadan oldin va keyin hisob qaynatishi. Kassa apparati alohida, Excel alohida — har kuni oxirida 2-3 soat \"raqam to'g'rilash\" ketardi. Bir oyda 1.2-1.5M so'm yetishmovchilik chiqar edi (Excel chaos — chalkash jadval).",
       "Ombor (sklad) holati umuman noma'lum: qaysi mahsulot tugagan, qaysisi qotib qolgan — bilib bo'lmasdi. Yetkazib beruvchi keldi deganda, har gal kerakli mahsulot ro'yxati telefon orqali tuziladi va ko'pincha noto'g'ri bo'lardi.",
-      "Mijozlar bilan ham aloqa yo'q edi. Doimiy mijoz kim, qaysi mahsulot ko'p sotiladi, qaysi soat eng band — hech qanday ma'lumot yo'q. \"Oddiygina ishlayapmiz\" — Dilfuza opaning so'zlari.",
+      "Mijozlar bilan ham aloqa yo'q edi. Doimiy mijoz kim, qaysi mahsulot ko'p sotiladi, qaysi soat eng band — hech qanday ma'lumot yo'q. \"Oddiygina ishlayapmiz\" — do'kon egasining so'zlari.",
     ],
     solutionTitle: "Tezcode bilan yechim",
     solutionParas: [
       "RAOS POS dasturini tanladik — har do'kon uchun mo'ljallangan, oddiy interface (ko'rinish), kassir 1 kunda o'rganadigan. Asboblar to'plami: kassa apparati, barcode scanner (chiziq-kod o'qigich), termal printer (chek bosish uchun).",
       "Birinchi hafta — sozlash. Tezcode jamoasi do'konga keldi, mahsulot bazasi (3,400 ta SKU) Excel'dan RAOS'ga import qilindi. Har mahsulotga barcode biriktirildi (yangilari uchun printer chiqarib berdi).",
       "Ikkinchi hafta — kassir o'qitish. 3 ta kassir, har biri 4 soatlik dars: chek ochish, qaytarish, kassa yopish, hisobot. Real holatlarda mashq qildirildi.",
-      "Uchinchi hafta — launch (ishga tushirish). Kuniga 2 soat support agenti (yordamchi) online turdi — har qanday savol darhol javob oldi. Telegram bot orqali kunlik tushum hisoboti Dilfuza opaga avtomat yuborildi.",
+      "Uchinchi hafta — launch (ishga tushirish). Kuniga 2 soat support agenti (yordamchi) online turdi — har qanday savol darhol javob oldi. Telegram bot orqali kunlik tushum hisoboti do'kon egasiga avtomat yuborildi.",
       "To'rtinchi hafta — optimizatsiya. AI Office Sales bo'limi ulandi: kunlik tushum tahlili, eng ko'p sotilgan mahsulot, eng tezda tugaydigan ombor pozitsiyasi — barchasi avtomat hisobot bo'lib keladi.",
     ],
     quote1:
       "Avval har kuni kechqurun 2 soat \"raqam to'g'rilash\" qilardim. Endi telefonimda Telegram'da kunlik hisobot keladi — 1 daqiqada hammasini ko'raman. Bu ozodlik!",
-    quote1Caption: "Dilfuza X., 2026-yil mart",
+    quote1Caption: "Do'kon egasi — RAOS mijozi",
     quote2:
       "Eng yoqqani — ombor avtomat sanaydi. Avval qaysi mahsulot tugagan bilmasdim, mijoz kelib so'rasa noqulay bo'lardi. Endi ertalab telefonni ochaman, 6 ta mahsulot ozaygan — buyurtma qilaman tamom.",
-    quote2Caption: "Dilfuza X., 2026-yil aprel",
+    quote2Caption: "Do'kon egasi — RAOS mijozi",
     timelineTitle: "30 kunlik amalga oshirish",
     timeline: [
       {
@@ -111,7 +118,7 @@ const COPY: Record<Lang, CopyShape> = {
       {
         week: "Hafta 3",
         title: "Launch (ishga tushirish)",
-        desc: "Birinchi haqiqiy kun. Support agent 8 soat online. Telegram bot orqali kunlik tushum hisoboti Dilfuza opaga avtomat.",
+        desc: "Birinchi haqiqiy kun. Support agent 8 soat online. Telegram bot orqali kunlik tushum hisoboti do'kon egasiga avtomat.",
       },
       {
         week: "Hafta 4",
@@ -123,7 +130,7 @@ const COPY: Record<Lang, CopyShape> = {
     stack: [
       { name: "RAOS POS", role: "Asosiy savdo nuqtasi dasturi (kassa)" },
       { name: "AI Office · Sales bo'limi", role: "Tushum tahlili, ombor prognoz" },
-      { name: "Telegram Bot", role: "Kunlik avtomat hisobot Dilfuza opaga" },
+      { name: "Telegram Bot", role: "Kunlik avtomat hisobot do'kon egasiga" },
       { name: "Barcode Scanner + Printer", role: "Mahsulot identifikatsiyasi" },
     ],
     ctaTitle: "Sizning do'koningizga ham yordam bera olamiz",
@@ -131,45 +138,46 @@ const COPY: Record<Lang, CopyShape> = {
       "30 kun — Excel chaos'dan tartibli POS'ga. Demo so'rang, biz sizning do'koningiz uchun tahlil tayyorlaymiz.",
     ctaBtn: "Demo so'rash",
     ctaSecondary: "Boshqa case'larni ko'rish",
+    ctaService: "POS tizimi haqida",
   },
   ru: {
     back: "← Все кейсы",
     badge: "Кейс · Розница",
     title:
       "Продуктовый магазин перешёл на POS за 30 дней и экономит 800K сум/месяц",
-    name: "Дилфуза Х.",
-    role: "Владелица продуктового магазина · Юнусабад, Ташкент",
+    name: "Владелица магазина",
+    role: "Продуктовый магазин · Юнусабад, Ташкент",
     product: "RAOS POS",
     bannerLabel: "Месячная экономия",
     bannerCaption: "ошибки кассы + склад + время сотрудников",
     metricsTitle: "4 ключевых показателя",
     metrics: [
-      { label: "Ошибки кассы", before: "95%", after: "0.5%", caption: "1 ошибка на 100 чеков — норма" },
+      { label: "Точность кассы", before: "95%", after: "99.5%", caption: "ошибки в чеках почти исчезли" },
       { label: "Инвентаризация", before: "4 часа", after: "15 минут", caption: "через barcode-сканер" },
       { label: "Лояльность (возврат клиента)", before: "—", after: "+18%", caption: "программа лояльности" },
       { label: "Рабочее время", before: "12 ч", after: "10 ч", caption: "−2 часа в день" },
     ],
     problemTitle: "В чём была проблема",
     problemParas: [
-      "Дилфуза опа держит магазин среднего размера в Юнусабаде — около 200-250 чеков в день. В начале всё было в Excel-таблицах: дневная выручка, складские остатки, оплаты поставщикам — всё вручную.",
+      "Владелица держит магазин среднего размера в Юнусабаде — около 200-250 чеков в день. В начале всё было в Excel-таблицах: дневная выручка, складские остатки, оплаты поставщикам — всё вручную.",
       "Главная проблема — кассиры сводили цифры до и после смены. Касса отдельно, Excel отдельно — каждый вечер уходило 2-3 часа на \"подгонку чисел\". В месяц выходила недостача 1.2-1.5M сум (хаос Excel).",
       "Состояние склада совсем неизвестно: какой товар закончился, какой залежался — невозможно понять. Когда приезжал поставщик, список составлялся по телефону и часто оказывался неверным.",
-      "С клиентами тоже не было связи. Кто постоянный покупатель, какой товар уходит лучше, какой час самый загруженный — никаких данных. \"Просто работаем\" — слова Дилфузы опа.",
+      "С клиентами тоже не было связи. Кто постоянный покупатель, какой товар уходит лучше, какой час самый загруженный — никаких данных. \"Просто работаем\" — слова владелицы.",
     ],
     solutionTitle: "Решение с Tezcode",
     solutionParas: [
       "Выбрали RAOS POS — заточенный под магазины, простой интерфейс, кассир осваивает за 1 день. Комплект: POS-терминал, barcode-сканер, термопринтер чеков.",
       "Первая неделя — установка. Команда Tezcode приехала, импортировали базу товаров (3 400 SKU) из Excel в RAOS. Каждому товару привязали barcode (для новых — распечатали).",
       "Вторая неделя — обучение кассиров. 3 кассира по 4 часа каждый: открытие чека, возврат, закрытие смены, отчёт. Тренировались на реальных сценариях.",
-      "Третья неделя — запуск. Агент поддержки 8 часов был онлайн каждый день. Telegram-бот отправлял дневную выручку Дилфузе опа автоматически.",
+      "Третья неделя — запуск. Агент поддержки 8 часов был онлайн каждый день. Telegram-бот отправлял дневную выручку владелице автоматически.",
       "Четвёртая неделя — оптимизация. Подключили отдел Sales в AI Office: аналитика выручки, топ-товары, прогноз склада — всё автоматически.",
     ],
     quote1:
       "Раньше каждый вечер 2 часа \"подгоняла цифры\". Теперь телефон, Telegram, отчёт — 1 минута и всё понятно. Это свобода!",
-    quote1Caption: "Дилфуза Х., март 2026",
+    quote1Caption: "Владелица магазина — клиент RAOS",
     quote2:
       "Больше всего нравится — склад сам считает. Раньше не знала, какой товар закончился — было неудобно перед клиентами. Теперь утром открываю телефон, 6 товаров заканчиваются — заказала, готово.",
-    quote2Caption: "Дилфуза Х., апрель 2026",
+    quote2Caption: "Владелица магазина — клиент RAOS",
     timelineTitle: "30 дней внедрения",
     timeline: [
       { week: "Неделя 1", title: "Установка + импорт данных", desc: "Установка оборудования (POS, сканер, принтер). Импорт 3 400 товаров из Excel в RAOS. Печать и привязка barcode." },
@@ -181,52 +189,53 @@ const COPY: Record<Lang, CopyShape> = {
     stack: [
       { name: "RAOS POS", role: "Основное ПО кассы" },
       { name: "AI Office · Отдел Sales", role: "Аналитика выручки, прогноз склада" },
-      { name: "Telegram Bot", role: "Ежедневный авто-отчёт Дилфузе опа" },
+      { name: "Telegram Bot", role: "Ежедневный авто-отчёт владелице" },
       { name: "Barcode Scanner + Printer", role: "Идентификация товаров" },
     ],
     ctaTitle: "Вашему магазину тоже поможем",
     ctaText: "30 дней — от Excel-хаоса к упорядоченному POS. Запросите демо, подготовим разбор для вашего магазина.",
     ctaBtn: "Запросить демо",
     ctaSecondary: "Смотреть другие кейсы",
+    ctaService: "О POS-системе",
   },
   en: {
     back: "← All case studies",
     badge: "Case Study · Retail",
     title:
       "Grocery store moved from Excel to POS in 30 days and saves 800K UZS/month",
-    name: "Dilfuza X.",
-    role: "Grocery store owner · Yunusabad, Tashkent",
+    name: "Store owner",
+    role: "Grocery store · Yunusabad, Tashkent",
     product: "RAOS POS",
     bannerLabel: "Monthly savings",
     bannerCaption: "register errors + inventory + staff time",
     metricsTitle: "4 key metrics",
     metrics: [
-      { label: "Register errors", before: "95%", after: "0.5%", caption: "barely 1 error per 100 receipts" },
+      { label: "Register accuracy", before: "95%", after: "99.5%", caption: "receipt errors nearly gone" },
       { label: "Inventory count", before: "4 hours", after: "15 minutes", caption: "via barcode scanner" },
       { label: "Customer return rate", before: "—", after: "+18%", caption: "loyalty program" },
       { label: "Working hours", before: "12 h", after: "10 h", caption: "−2 hours per day" },
     ],
     problemTitle: "The problem before",
     problemParas: [
-      "Dilfuza runs a mid-size grocery store in Yunusabad with ~200-250 receipts per day. Everything started in Excel: daily revenue, inventory, supplier payments — all by hand.",
+      "The owner runs a mid-size grocery store in Yunusabad with ~200-250 receipts per day. Everything started in Excel: daily revenue, inventory, supplier payments — all by hand.",
       "Main pain: cashiers reconciling cash before and after each shift. Cash register on one side, Excel on the other — 2-3 hours every evening just \"matching numbers\". Monthly shortage averaged 1.2-1.5M UZS (Excel chaos).",
       "Stock visibility was zero. Which product was out, which was sitting forever — no way to tell. Supplier visits relied on phone-call lists that were often wrong.",
-      "No customer relationship either. Who's a regular, what sells well, which hour is busiest — no data. \"We just work\" — Dilfuza's words.",
+      "No customer relationship either. Who's a regular, what sells well, which hour is busiest — no data. \"We just work\" — the owner's words.",
     ],
     solutionTitle: "Tezcode solution",
     solutionParas: [
       "We chose RAOS POS — built for retail, simple UI, a cashier learns it in 1 day. Hardware kit: POS terminal, barcode scanner, thermal receipt printer.",
       "Week 1 — setup. Tezcode team came to the store, imported 3,400 SKUs from Excel into RAOS. Every product got a barcode (printed on the spot for new ones).",
       "Week 2 — cashier training. 3 cashiers × 4 hours each: opening a receipt, returns, closing shift, daily report. Trained on real scenarios.",
-      "Week 3 — launch. A support agent stayed online 8 hours/day for instant questions. A Telegram bot auto-sent the daily revenue report to Dilfuza.",
+      "Week 3 — launch. A support agent stayed online 8 hours/day for instant questions. A Telegram bot auto-sent the daily revenue report to the owner.",
       "Week 4 — optimization. AI Office Sales department plugged in: revenue analytics, top sellers, stock forecast — all automatic.",
     ],
     quote1:
       "Before, I spent 2 hours every evening \"matching numbers\". Now my Telegram pings me the daily report — 1 minute, all clear. That's freedom!",
-    quote1Caption: "Dilfuza X., March 2026",
+    quote1Caption: "Store owner — RAOS customer",
     quote2:
       "My favorite — stock counts itself. Before, I didn't know what was out and felt embarrassed in front of customers. Now I open my phone in the morning, 6 products are running low — one order and done.",
-    quote2Caption: "Dilfuza X., April 2026",
+    quote2Caption: "Store owner — RAOS customer",
     timelineTitle: "30-day rollout",
     timeline: [
       { week: "Week 1", title: "Setup + data import", desc: "Install POS, scanner, printer. Import 3,400 SKUs from Excel to RAOS. Print and attach barcodes." },
@@ -245,27 +254,28 @@ const COPY: Record<Lang, CopyShape> = {
     ctaText: "30 days — from Excel chaos to clean POS. Request a demo, we'll prep an analysis for your store.",
     ctaBtn: "Request demo",
     ctaSecondary: "Explore other cases",
+    ctaService: "About the POS service",
   },
   ar: {
     back: "← كل دراسات الحالة",
     badge: "دراسة حالة · تجزئة",
     title:
       "بقالة انتقلت من Excel إلى نقاط البيع خلال 30 يومًا ووفّرت 800 ألف سوم شهريًا",
-    name: "دلفوزة خ.",
-    role: "مالكة بقالة · يونسآباد، طشقند",
+    name: "مالكة المتجر",
+    role: "بقالة · يونسآباد، طشقند",
     product: "RAOS POS",
     bannerLabel: "التوفير الشهري",
     bannerCaption: "أخطاء الكاشير + المخزون + وقت الموظفين",
     metricsTitle: "4 مؤشرات أساسية",
     metrics: [
-      { label: "أخطاء الكاشير", before: "95٪", after: "0.5٪", caption: "خطأ واحد لكل 100 إيصال" },
+      { label: "دقة الكاشير", before: "95٪", after: "99.5٪", caption: "أخطاء الإيصالات شبه اختفت" },
       { label: "جرد المخزون", before: "4 ساعات", after: "15 دقيقة", caption: "عبر قارئ الباركود" },
       { label: "ولاء العملاء", before: "—", after: "+18٪", caption: "برنامج ولاء" },
       { label: "ساعات العمل", before: "12 س", after: "10 س", caption: "−ساعتان يوميًا" },
     ],
     problemTitle: "ما كانت المشكلة",
     problemParas: [
-      "دلفوزة تدير بقالة متوسطة الحجم في يونسآباد بنحو 200-250 إيصال يوميًا. في البداية كان كل شيء في Excel: الإيرادات اليومية، المخزون، مدفوعات الموردين — كله يدويًا.",
+      "المالكة تدير بقالة متوسطة الحجم في يونسآباد بنحو 200-250 إيصال يوميًا. في البداية كان كل شيء في Excel: الإيرادات اليومية، المخزون، مدفوعات الموردين — كله يدويًا.",
       "المشكلة الكبرى — موازنة الكاشير قبل وبعد كل وردية. النقدية على جهة وExcel على جهة، 2-3 ساعات كل مساء لمطابقة الأرقام. كان النقص الشهري يصل إلى 1.2-1.5 مليون سوم.",
       "حالة المخزون مجهولة تمامًا — أي منتج نفد، أي منتج راكد. زيارات الموردين تعتمد على قوائم هاتفية كثيرًا ما تكون خاطئة.",
       "ولا علاقة مع العملاء أيضًا. لا بيانات عن الزبائن الدائمين، ولا عن الأكثر مبيعًا، ولا عن أوقات الذروة.",
@@ -280,10 +290,10 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     quote1:
       "في السابق كنت أقضي ساعتين كل مساء لمطابقة الأرقام. الآن يصلني التقرير اليومي على Telegram — دقيقة واحدة وكل شيء واضح. هذه حرية!",
-    quote1Caption: "دلفوزة خ.، مارس 2026",
+    quote1Caption: "مالكة المتجر — عميلة RAOS",
     quote2:
       "أكثر ما أحب — المخزون يحسب نفسه. كنت أحرج أمام الزبائن. الآن أفتح الهاتف صباحًا، 6 منتجات تنفد — أطلبها وانتهى الأمر.",
-    quote2Caption: "دلفوزة خ.، أبريل 2026",
+    quote2Caption: "مالكة المتجر — عميلة RAOS",
     timelineTitle: "تطبيق خلال 30 يومًا",
     timeline: [
       { week: "الأسبوع 1", title: "تركيب + استيراد البيانات", desc: "تركيب POS وقارئ وطابعة. استيراد 3,400 منتج من Excel إلى RAOS. طباعة الباركود وربطه." },
@@ -302,27 +312,28 @@ const COPY: Record<Lang, CopyShape> = {
     ctaText: "30 يومًا من فوضى Excel إلى نقاط بيع منظمة. اطلب عرضًا، نحضّر تحليلًا لمتجركم.",
     ctaBtn: "اطلب عرضًا",
     ctaSecondary: "تصفّح كل الحالات",
+    ctaService: "عن نظام POS",
   },
   uk: {
     back: "← Усі кейси",
     badge: "Кейс · Роздріб",
     title:
       "Продуктовий магазин перейшов з Excel на POS за 30 днів і економить 800K сум/місяць",
-    name: "Дилфуза Х.",
-    role: "Власниця продуктового магазину · Юнусабад, Ташкент",
+    name: "Власниця магазину",
+    role: "Продуктовий магазин · Юнусабад, Ташкент",
     product: "RAOS POS",
     bannerLabel: "Місячна економія",
     bannerCaption: "помилки каси + склад + час співробітників",
     metricsTitle: "4 ключові показники",
     metrics: [
-      { label: "Помилки каси", before: "95%", after: "0.5%", caption: "1 помилка на 100 чеків" },
+      { label: "Точність каси", before: "95%", after: "99.5%", caption: "помилки в чеках майже зникли" },
       { label: "Інвентаризація", before: "4 год", after: "15 хв", caption: "через barcode-сканер" },
       { label: "Лояльність клієнтів", before: "—", after: "+18%", caption: "програма лояльності" },
       { label: "Робочий час", before: "12 год", after: "10 год", caption: "−2 години на день" },
     ],
     problemTitle: "У чому була проблема",
     problemParas: [
-      "Дилфуза опа тримає середній магазин у Юнусабаді — близько 200-250 чеків на день. Спочатку все було в Excel: денний виторг, склад, оплати постачальникам — усе вручну.",
+      "Власниця тримає середній магазин у Юнусабаді — близько 200-250 чеків на день. Спочатку все було в Excel: денний виторг, склад, оплати постачальникам — усе вручну.",
       "Головна проблема — касири зводили цифри до і після зміни. Каса окремо, Excel окремо — 2-3 години кожен вечір на \"підгонку чисел\". Місячна нестача — 1.2-1.5M сум.",
       "Стан складу взагалі невідомий: який товар закінчився, який залежався — неможливо зрозуміти. Списки для постачальників часто були помилковими.",
       "З клієнтами теж жодного зв'язку. Хто постійний, що добре продається, коли пік — жодних даних.",
@@ -337,10 +348,10 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     quote1:
       "Раніше щовечора 2 години \"підганяла цифри\". Тепер Telegram, звіт — 1 хвилина, все ясно. Це свобода!",
-    quote1Caption: "Дилфуза Х., березень 2026",
+    quote1Caption: "Власниця магазину — клієнтка RAOS",
     quote2:
       "Найкраще — склад сам рахує. Раніше не знала, що закінчилось, і ніяковіла перед клієнтами. Тепер відкриваю телефон зранку, 6 товарів закінчуються — замовила, готово.",
-    quote2Caption: "Дилфуза Х., квітень 2026",
+    quote2Caption: "Власниця магазину — клієнтка RAOS",
     timelineTitle: "30-денне впровадження",
     timeline: [
       { week: "Тиждень 1", title: "Встановлення + імпорт даних", desc: "Встановлення POS, сканера, принтера. Імпорт 3 400 товарів з Excel у RAOS. Друк і прив'язка barcode." },
@@ -359,6 +370,7 @@ const COPY: Record<Lang, CopyShape> = {
     ctaText: "30 днів — від хаосу Excel до впорядкованого POS. Запросіть демо, підготуємо аналіз для вашого магазину.",
     ctaBtn: "Запросити демо",
     ctaSecondary: "Дивитись інші кейси",
+    ctaService: "Про POS-систему",
   },
 };
 
@@ -388,13 +400,8 @@ export function DilfuzaCaseClient() {
             {t.title}
           </h1>
           <div className="flex items-center gap-4 mb-10">
-            <div className="relative shrink-0 w-16 h-16 rounded-full overflow-hidden ring-2 ring-[var(--tc-blue)]/30">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/customers/customer-1.jpg"
-                alt={t.name}
-                className="w-full h-full object-cover"
-              />
+            <div className="relative shrink-0 w-16 h-16 rounded-full flex items-center justify-center ring-2 ring-[var(--tc-blue)]/30 bg-[var(--tc-blue-dim)]">
+              <Store aria-hidden className="h-7 w-7 text-[var(--tc-blue-text)]" strokeWidth={1.75} />
             </div>
             <div className="min-w-0">
               <div
@@ -635,6 +642,12 @@ export function DilfuzaCaseClient() {
                 className="tc-btn-secondary text-sm"
               >
                 {t.ctaSecondary}
+              </Link>
+              <Link
+                href="/pos-tizimi"
+                className="tc-btn-secondary text-sm"
+              >
+                {t.ctaService}
               </Link>
             </div>
           </div>

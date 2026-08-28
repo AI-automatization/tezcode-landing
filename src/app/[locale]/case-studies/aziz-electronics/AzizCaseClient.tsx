@@ -1,10 +1,11 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { m } from "motion/react";
 import { useLocale } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { CountUp } from "@/components/motion/CountUp";
+import { MonitorSmartphone } from "lucide-react";
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
 
@@ -35,16 +36,22 @@ type CopyShape = {
   ctaText: string;
   ctaBtn: string;
   ctaSecondary: string;
+  ctaService: string;
 };
 
+// TODO(Sardor): mijoz nomi va rozilik — rozilik olingach, sektor yorlig'i
+// o'rniga real mijoz nomi qo'yiladi. DIQQAT: bu case'dagi raqamlar (2M so'm/oy
+// buxgalter tejovi, 12%→0.6% ombor yo'qotish, 8 soat→5 daqiqa hisobot, 850K
+// jarima, 100-150M aylanma) saytning boshqa sahifalarida tasdiqlanmagan —
+// real mijoz ma'lumoti bilan tekshirilishi shart.
 const COPY: Record<Lang, CopyShape> = {
   uz: {
     back: "← Barcha case study'lar",
     badge: "Case Study · Savdo + Hisobot",
     title:
       "Buxgalterga oyiga 2M so'm to'lash o'rniga RAOS o'zi hisobot chiqaradi",
-    name: "Aziz aka",
-    role: "Elektronika do'koni egasi · 2 ta filial, Chilonzor",
+    name: "Do'kon egasi",
+    role: "Elektronika do'koni · 2 ta filial, Chilonzor",
     product: "RAOS POS + Accounting",
     bannerLabel: "Oylik tejov",
     bannerCaption: "buxgalter ish haqi o'rniga avtomat hisobot",
@@ -57,7 +64,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     problemTitle: "5 yillik buxgalter — har oyi 2M so'm",
     problemParas: [
-      "Aziz aka Chilonzor tumanida 2 ta elektronika do'koni boshqaradi — telefonlar, kompyuter qismlari, kichik maishiy texnika. Tushum kuniga 3-5M so'm, oyiga 100-150M so'm aylanma.",
+      "Do'kon egasi Chilonzor tumanida 2 ta elektronika do'konini boshqaradi — telefonlar, kompyuter qismlari, kichik maishiy texnika. Tushum kuniga 3-5M so'm, oyiga 100-150M so'm aylanma.",
       "5 yil davomida bitta buxgalter ishlatib keldi — oyiga 2M so'm + soliq (rasmiy 30%, real 25%). Buxgalter har oy 4-5 kun ishlardi: chek to'plash, Excel'ga yozish, Soliq.uz'ga deklaratsiya yuborish, kassa apparati hisoboti.",
       "Asosiy muammo — har inspeksiya kelganda \"tartibsiz hujjat\" deyiladi. Chek bor, Excel boshqa, kassa apparati uchinchi xil raqam. Soliq inspektorlari 2 marta po'st tashlagan, har marta 3-4 hafta tushuntirish kerak bo'lgan.",
       "Buxgalter kasal bo'lsa yoki ta'tilda bo'lsa — hisobot kechikadi. Bir marta deklaratsiyani kechiktirish uchun 850K so'm jarima to'lagan. \"Buxgalter zarur\" deb fikrlagan, lekin haqiqatda buxgalter o'zi ham qo'lda ishlardi — RAOS shu ishni avtomat qiladi.",
@@ -68,14 +75,14 @@ const COPY: Record<Lang, CopyShape> = {
       "Birinchi 10 kun — ma'lumot migratsiyasi (ko'chirish). 5 yillik Excel jadvali RAOS'ga import qilindi. 2,800 ta mahsulot katalogi, har bittasiga barcode va serial number (telefonlar uchun majburiy).",
       "Soliq.uz integratsiyasi (ulanish) — RAOS uchun rasmiy sertifikatlangan moduli mavjud. API kalit oldik, RAOS har savdoni real-time soliq xizmatiga yuboradi. Oxirida oy deklaratsiyasi 1 tugma orqali to'liq tayyor.",
       "Kassa apparati to'g'ridan-to'g'ri integratsiya. RAOS chek ochsa, fiscal printer avtomat chiqaradi va Soliq.uz'ga avtomat yuboradi. Avval 4 soatlik qo'lda ish — endi real-time, xato yo'q.",
-      "1 oy o'tib buxgalter bilan xayrlashildi (yaxshilikcha, ish topgan boshqa do'konda). Aziz aka oyiga 2M so'm + buxgalter xonasi (250K so'm ijara) + buxgalter texnika (kompyuter, printer) — jami 2.4M so'm tejaydi.",
+      "1 oy o'tib buxgalter bilan xayrlashildi (yaxshilikcha, ish topgan boshqa do'konda). Do'kon egasi oyiga 2M so'm + buxgalter xonasi (250K so'm ijara) + buxgalter texnika (kompyuter, printer) — jami 2.4M so'm tejaydi.",
     ],
     quote1:
       "5 yil buxgalterga ishondim, har oy 2M to'lardim. Endi tushunaman — buxgalter o'zi ham Excel'da qo'lda yozardi. RAOS shu ishni 5 daqiqada avtomat qiladi. Ortga qaytsam, 5 yil avval boshlagan bo'lardim.",
-    quote1Caption: "Aziz aka, 2026-yil fevral",
+    quote1Caption: "Do'kon egasi — RAOS mijozi",
     quote2:
       "Soliq inspektor keldi, deklaratsiyani so'radi. RAOS'dan PDF eksport qildim, bittada hammasi tayyor — chek, ombor, savdo. Inspektor 10 daqiqada ko'rib chiqdi va ketdi. Avval 3 hafta tushuntirish kerak edi.",
-    quote2Caption: "Aziz aka, 2026-yil mart",
+    quote2Caption: "Do'kon egasi — RAOS mijozi",
     timelineTitle: "30 kunlik amalga oshirish",
     timeline: [
       { week: "Hafta 1", title: "Sozlash + 2 do'kon ulash", desc: "2 ta POS terminal, scanner, fiscal printer o'rnatish. Soliq.uz API sertifikat. Tezcode jamoasi har do'konda 2 kun." },
@@ -97,14 +104,15 @@ const COPY: Record<Lang, CopyShape> = {
       "RAOS Accounting moduli + Soliq.uz integratsiya bilan oyiga 1.5-3M so'm tejash mumkin. Demo so'rang, sizning do'koningiz uchun ROI hisoblaymiz.",
     ctaBtn: "Demo so'rash",
     ctaSecondary: "Boshqa case'larni ko'rish",
+    ctaService: "POS tizimi haqida",
   },
   ru: {
     back: "← Все кейсы",
     badge: "Кейс · Розница + Учёт",
     title:
       "Вместо 2M сум бухгалтеру — RAOS делает отчёты сам",
-    name: "Азиз ака",
-    role: "Владелец 2 магазинов электроники · Чиланзар",
+    name: "Владелец магазинов",
+    role: "2 магазина электроники · Чиланзар",
     product: "RAOS POS + Accounting",
     bannerLabel: "Месячная экономия",
     bannerCaption: "вместо зарплаты бухгалтера — авто-отчёты",
@@ -117,7 +125,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     problemTitle: "5 лет бухгалтера — каждый месяц 2M сум",
     problemParas: [
-      "Азиз ака держит 2 магазина электроники в Чиланзаре — телефоны, комплектующие, мелкая бытовая техника. Дневная выручка 3-5M, месячный оборот 100-150M сум.",
+      "Владелец держит 2 магазина электроники в Чиланзаре — телефоны, комплектующие, мелкая бытовая техника. Дневная выручка 3-5M, месячный оборот 100-150M сум.",
       "5 лет — один бухгалтер, 2M сум/мес + налоги. Каждый месяц 4-5 дней работы: чеки в кучу, Excel, декларация в Soliq.uz, отчёт по кассе.",
       "Главная проблема — каждая инспекция говорила \"бумаги в беспорядке\". Чек один, Excel другой, касса третий. Дважды наказывали штрафами, каждый раз 3-4 недели объяснений.",
       "Бухгалтер заболел/в отпуске — отчёт задержан. Однажды штраф 850K сум за просрочку. Думал \"бухгалтер нужен\", но он сам тоже вёл в Excel вручную — RAOS делает это автоматически.",
@@ -132,10 +140,10 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     quote1:
       "5 лет верил бухгалтеру, платил 2M в месяц. Теперь понимаю — он тоже вёл всё в Excel вручную. RAOS делает это за 5 минут. Если бы знал — начал бы 5 лет назад.",
-    quote1Caption: "Азиз ака, февраль 2026",
+    quote1Caption: "Владелец магазина — клиент RAOS",
     quote2:
       "Пришёл налоговый инспектор, попросил декларацию. Экспортировал PDF из RAOS — всё готово: чеки, склад, продажи. Инспектор 10 минут посмотрел и ушёл. Раньше 3 недели объяснений.",
-    quote2Caption: "Азиз ака, март 2026",
+    quote2Caption: "Владелец магазина — клиент RAOS",
     timelineTitle: "30 дней внедрения",
     timeline: [
       { week: "Неделя 1", title: "Установка + 2 магазина", desc: "2 POS-терминала, сканер, fiscal printer. API-сертификат Soliq.uz. Команда Tezcode 2 дня в каждом магазине." },
@@ -157,14 +165,15 @@ const COPY: Record<Lang, CopyShape> = {
       "Модуль RAOS Accounting + интеграция с Soliq.uz экономят 1.5-3M сум/мес. Запросите демо, посчитаем ROI для вашего магазина.",
     ctaBtn: "Запросить демо",
     ctaSecondary: "Смотреть другие кейсы",
+    ctaService: "О POS-системе",
   },
   en: {
     back: "← All case studies",
     badge: "Case Study · Retail + Accounting",
     title:
       "Instead of paying an accountant 2M UZS/month, RAOS files the reports itself",
-    name: "Aziz aka",
-    role: "Owner of 2 electronics stores · Chilanzar",
+    name: "Store owner",
+    role: "2 electronics stores · Chilanzar",
     product: "RAOS POS + Accounting",
     bannerLabel: "Monthly savings",
     bannerCaption: "auto-reports replace the accountant's salary",
@@ -177,7 +186,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     problemTitle: "5 years of an accountant — 2M UZS every month",
     problemParas: [
-      "Aziz aka runs two electronics stores in Chilanzar — phones, PC parts, small home appliances. Daily revenue 3-5M, monthly turnover 100-150M UZS.",
+      "The owner runs two electronics stores in Chilanzar — phones, PC parts, small home appliances. Daily revenue 3-5M, monthly turnover 100-150M UZS.",
       "For 5 years one accountant: 2M UZS/month + taxes. 4-5 days every month: collecting receipts, Excel, Soliq.uz declaration, register report.",
       "Main pain — every inspection found \"messy paperwork\". Receipts one number, Excel another, the register a third. Two penalty rounds, 3-4 weeks of explanations each.",
       "If the accountant got sick or took leave — late filing. Once a 850K UZS fine for delay. He thought \"an accountant is essential\", but the accountant himself was doing Excel by hand — RAOS automates exactly that.",
@@ -192,10 +201,10 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     quote1:
       "Five years I trusted the accountant, 2M every month. Now I see — he was just doing Excel by hand too. RAOS does it in 5 minutes. If I'd known, I'd have started 5 years ago.",
-    quote1Caption: "Aziz aka, February 2026",
+    quote1Caption: "Store owner — RAOS customer",
     quote2:
       "A tax inspector came, asked for the declaration. I exported a PDF from RAOS — receipts, inventory, sales, all in one. He spent 10 minutes and left. Used to take 3 weeks of explaining.",
-    quote2Caption: "Aziz aka, March 2026",
+    quote2Caption: "Store owner — RAOS customer",
     timelineTitle: "30-day rollout",
     timeline: [
       { week: "Week 1", title: "Setup + 2 stores online", desc: "2 POS terminals, scanner, fiscal printer. Soliq.uz API certificate. Tezcode team on-site 2 days per store." },
@@ -217,13 +226,14 @@ const COPY: Record<Lang, CopyShape> = {
       "RAOS Accounting + Soliq.uz integration saves 1.5-3M UZS/month. Request a demo, we'll calculate the ROI for your store.",
     ctaBtn: "Request demo",
     ctaSecondary: "Explore other cases",
+    ctaService: "About the POS service",
   },
   ar: {
     back: "← كل دراسات الحالة",
     badge: "دراسة حالة · تجزئة + محاسبة",
     title: "بدل دفع 2 مليون سوم للمحاسب — RAOS يصدر التقارير بنفسه",
-    name: "عزيز أكا",
-    role: "مالك متجرَين للإلكترونيات · شيلانزار",
+    name: "مالك المتجرين",
+    role: "متجرا إلكترونيات · شيلانزار",
     product: "RAOS POS + Accounting",
     bannerLabel: "التوفير الشهري",
     bannerCaption: "تقارير آلية بدل راتب المحاسب",
@@ -236,7 +246,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     problemTitle: "5 سنوات محاسب — 2 مليون سوم شهريًا",
     problemParas: [
-      "عزيز أكا يدير متجرَي إلكترونيات في شيلانزار — هواتف، قطع كمبيوتر، أجهزة منزلية صغيرة. إيراد يومي 3-5 مليون، دوران شهري 100-150 مليون سوم.",
+      "المالك يدير متجرَي إلكترونيات في شيلانزار — هواتف، قطع كمبيوتر، أجهزة منزلية صغيرة. إيراد يومي 3-5 مليون، دوران شهري 100-150 مليون سوم.",
       "5 سنوات محاسب واحد: 2 مليون سوم/شهر + ضرائب. 4-5 أيام كل شهر: جمع الإيصالات، Excel، إقرار Soliq.uz، تقرير الكاشير.",
       "المشكلة — كل تفتيش يكشف \"أوراقًا فوضوية\". الإيصال رقم، Excel رقم، الكاشير رقم ثالث. تم تغريمنا مرتين بشروحات 3-4 أسابيع كل مرة.",
       "إذا مرض المحاسب أو ذهب في إجازة — تأخير. مرة دفع غرامة 850 ألف سوم. كان يظن أن المحاسب ضروري، لكن المحاسب نفسه يستخدم Excel يدويًا — RAOS يفعل ذلك آليًا.",
@@ -251,10 +261,10 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     quote1:
       "5 سنوات وثقت في المحاسب، 2 مليون كل شهر. الآن أفهم — كان يستخدم Excel يدويًا. RAOS يفعل ذلك في 5 دقائق. لو علمت لبدأت قبل 5 سنوات.",
-    quote1Caption: "عزيز أكا، فبراير 2026",
+    quote1Caption: "مالك المتجر — عميل RAOS",
     quote2:
       "جاء مفتش الضرائب وطلب الإقرار. صدّرت PDF من RAOS — كل شيء جاهز: إيصالات، مخزون، مبيعات. نظر 10 دقائق وذهب. كنا نحتاج 3 أسابيع شرح.",
-    quote2Caption: "عزيز أكا، مارس 2026",
+    quote2Caption: "مالك المتجر — عميل RAOS",
     timelineTitle: "تطبيق خلال 30 يومًا",
     timeline: [
       { week: "الأسبوع 1", title: "تركيب + متجران", desc: "محطتا POS، قارئ، fiscal printer. شهادة Soliq.uz API. فريق Tezcode يومان في كل متجر." },
@@ -276,13 +286,14 @@ const COPY: Record<Lang, CopyShape> = {
       "وحدة RAOS Accounting + تكامل Soliq.uz توفر 1.5-3 مليون سوم شهريًا. اطلب عرضًا ونحسب ROI لمتجركم.",
     ctaBtn: "اطلب عرضًا",
     ctaSecondary: "تصفّح كل الحالات",
+    ctaService: "عن نظام POS",
   },
   uk: {
     back: "← Усі кейси",
     badge: "Кейс · Роздріб + Облік",
     title: "Замість 2M сум бухгалтеру — RAOS сам робить звіти",
-    name: "Азіз ака",
-    role: "Власник 2 магазинів електроніки · Чиланзар",
+    name: "Власник магазинів",
+    role: "2 магазини електроніки · Чиланзар",
     product: "RAOS POS + Accounting",
     bannerLabel: "Місячна економія",
     bannerCaption: "автозвіти замість зарплати бухгалтера",
@@ -295,7 +306,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     problemTitle: "5 років бухгалтера — щомісяця 2M сум",
     problemParas: [
-      "Азіз ака тримає 2 магазини електроніки в Чиланзарі — телефони, комплектуючі, дрібна побутова техніка. Денний виторг 3-5M, місячний оборот 100-150M сум.",
+      "Власник тримає 2 магазини електроніки в Чиланзарі — телефони, комплектуючі, дрібна побутова техніка. Денний виторг 3-5M, місячний оборот 100-150M сум.",
       "5 років — один бухгалтер, 2M сум/міс + податки. Щомісяця 4-5 днів роботи: чеки у купу, Excel, декларація в Soliq.uz, звіт по касі.",
       "Головна проблема — кожна інспекція знаходила \"папери у безладі\". Чек одне, Excel інше, каса третє. Двічі штрафували, кожного разу 3-4 тижні пояснень.",
       "Бухгалтер захворів чи у відпустці — звіт затримано. Одного разу штраф 850K сум. Думав \"бухгалтер потрібен\", але він теж вів усе в Excel вручну — RAOS робить це автоматично.",
@@ -310,10 +321,10 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     quote1:
       "5 років вірив бухгалтеру, 2M щомісяця. Тепер розумію — він теж вів усе в Excel вручну. RAOS робить це за 5 хвилин. Якби знав — почав би 5 років тому.",
-    quote1Caption: "Азіз ака, лютий 2026",
+    quote1Caption: "Власник магазину — клієнт RAOS",
     quote2:
       "Прийшов податковий інспектор, попросив декларацію. Експортував PDF з RAOS — усе готове. Інспектор 10 хвилин подивився і пішов. Раніше 3 тижні пояснень.",
-    quote2Caption: "Азіз ака, березень 2026",
+    quote2Caption: "Власник магазину — клієнт RAOS",
     timelineTitle: "30 днів впровадження",
     timeline: [
       { week: "Тиждень 1", title: "Встановлення + 2 магазини", desc: "2 POS-термінали, сканер, fiscal printer. API-сертифікат Soliq.uz. Команда Tezcode 2 дні в кожному магазині." },
@@ -335,6 +346,7 @@ const COPY: Record<Lang, CopyShape> = {
       "Модуль RAOS Accounting + інтеграція Soliq.uz економлять 1.5-3M сум/міс. Запросіть демо, порахуємо ROI для вашого магазину.",
     ctaBtn: "Запросити демо",
     ctaSecondary: "Дивитись інші кейси",
+    ctaService: "Про POS-систему",
   },
 };
 
@@ -362,13 +374,8 @@ export function AzizCaseClient() {
             {t.title}
           </h1>
           <div className="flex items-center gap-4 mb-10">
-            <div className="relative shrink-0 w-16 h-16 rounded-full overflow-hidden ring-2 ring-[var(--tc-blue)]/30">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/customers/customer-2.jpg"
-                alt={t.name}
-                className="w-full h-full object-cover"
-              />
+            <div className="relative shrink-0 w-16 h-16 rounded-full flex items-center justify-center ring-2 ring-[var(--tc-blue)]/30 bg-[var(--tc-blue-dim)]">
+              <MonitorSmartphone aria-hidden className="h-7 w-7 text-[var(--tc-blue-text)]" strokeWidth={1.75} />
             </div>
             <div className="min-w-0">
               <div
@@ -601,6 +608,12 @@ export function AzizCaseClient() {
                 className="tc-btn-secondary text-sm"
               >
                 {t.ctaSecondary}
+              </Link>
+              <Link
+                href="/pos-tizimi"
+                className="tc-btn-secondary text-sm"
+              >
+                {t.ctaService}
               </Link>
             </div>
           </div>
