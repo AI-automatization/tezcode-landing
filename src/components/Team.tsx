@@ -63,11 +63,13 @@ const TEAM: Member[] = [
     role: "Full Stack Developer",
     telegram: "@mirzakiirova",
     profileSlug: "ziyoda-mirzakirova",
+    photo: "/team/ziyoda-mirzakirova.jpg",
   },
   {
     name: "Emirhan Ertan",
-    role: "WeWatch Co-founder · Developer",
+    role: "WeWatch Co-founder · SEO",
     telegram: "@Emirhan7788",
+    profileSlug: "emirhan-ertan",
   },
   {
     name: "Behruz Satimboyev",
@@ -85,11 +87,16 @@ const TEAM: Member[] = [
   },
   {
     name: "Ibrat Tursunov",
-    role: "Developer",
+    role: "Full-Stack Developer",
+    telegram: "@tursunov_078",
+    profileSlug: "ibrat-tursunov",
   },
   {
-    name: "Polat Ismailov",
-    role: "Developer",
+    name: "Polatbek Ismoilov",
+    role: "Tech Lead",
+    telegram: "@ismailov_0011",
+    profileSlug: "polatbek-ismoilov",
+    photo: "/team/polatbek-ismoilov.jpg",
   },
   {
     name: "Abdulaziz Mirzayev",

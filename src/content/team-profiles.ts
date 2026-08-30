@@ -447,6 +447,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
     ],
     projects: [],
     telegram: "mirzakiirova",
+    photo: "/team/ziyoda-mirzakirova.jpg",
     knowsAbout: [
       "Full-Stack Development",
       "React",
@@ -480,6 +481,101 @@ export const TEAM_PROFILES: TeamProfile[] = [
     metaTitle: "Abdulloh Isroilov — Tezcode Full-Stack Developer, AI-Trade",
     metaDescription:
       "Abdulloh Isroilov — Tezcode jamoasida Full-Stack Developer va AI-Trade co-founder. React, Node.js, Express, MongoDB.",
+  },
+  {
+    slug: "polatbek-ismoilov",
+    name: "Polatbek Ismoilov",
+    role: "Tech Lead",
+    bio: [
+      "Polatbek Ismoilov — Tezcode jamoasida MaxSavdo bo'yicha Tech Lead. NestJS backend, admin panel, Telegram bot va mini-app — to'liq platformani boshqaradi.",
+      "TypeScript, PostgreSQL/Prisma, Redis/BullMQ va Socket.IO bilan ishlaydi; Turborepo monorepo, Railway va Cloudflare R2. RAOS bilan Partner API integratsiyasi.",
+    ],
+    skills: [
+      "TypeScript",
+      "NestJS",
+      "PostgreSQL",
+      "Prisma",
+      "Redis",
+      "BullMQ",
+      "Socket.IO",
+      "Next.js",
+      "React",
+      "Telegram Mini Apps",
+      "Turborepo",
+      "Railway",
+    ],
+    projects: [
+      { name: "MaxSavdo", role: "Telegram-sotuvchilar uchun e-commerce — backend, bot, mini-app" },
+      { name: "RAOS", role: "Partner API integratsiyasi" },
+    ],
+    telegram: "ismailov_0011",
+    linkedin: "https://www.linkedin.com/in/polatbek-ismoilov-b33861404/",
+    photo: "/team/polatbek-ismoilov.jpg",
+    knowsAbout: [
+      "Backend Development",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "System Architecture",
+    ],
+    metaTitle: "Polatbek Ismoilov — Tezcode Tech Lead",
+    metaDescription:
+      "Polatbek Ismoilov — Tezcode jamoasida Tech Lead (MaxSavdo). NestJS, TypeScript, PostgreSQL, Prisma, Redis. MaxSavdo va RAOS integratsiyasi.",
+  },
+  {
+    slug: "ibrat-tursunov",
+    name: "Ibrat Tursunov",
+    role: "Full-Stack Developer",
+    bio: [
+      "Ibrat Tursunov — Tezcode jamoasida Full-Stack Developer. RAOS savdo va inventarizatsiya tizimini quradi — backend API, web admin, POS desktop, worker va Telegram botlar.",
+      "TypeScript, NestJS, Next.js va React Native; Tauri bilan desktop POS. Hozirgi yo'nalishi — fiskal modul va virtual kassalarni Davlat reestriga integratsiya.",
+    ],
+    skills: [
+      "TypeScript",
+      "NestJS",
+      "Next.js",
+      "React Native",
+      "Tauri",
+      "PostgreSQL",
+      "Prisma",
+      "Redis",
+      "BullMQ",
+      "Docker",
+      "CI/CD",
+    ],
+    projects: [
+      { name: "RAOS", role: "Savdo/inventarizatsiya — backend, admin, POS desktop, DevOps" },
+    ],
+    telegram: "tursunov_078",
+    knowsAbout: [
+      "Full-Stack Development",
+      "NestJS",
+      "React Native",
+      "TypeScript",
+      "DevOps",
+    ],
+    metaTitle: "Ibrat Tursunov — Tezcode Full-Stack Developer",
+    metaDescription:
+      "Ibrat Tursunov — Tezcode jamoasida Full-Stack Developer. TypeScript, NestJS, Next.js, React Native, Tauri. RAOS loyihasi.",
+  },
+  {
+    slug: "emirhan-ertan",
+    name: "Emirhan Ertan",
+    role: "WeWatch Co-founder · SEO",
+    bio: [
+      "Emirhan Ertan — Tezcode jamoasida WeWatch co-founder va SEO mutaxassisi. WeWatch.uz (ijtimoiy onlayn kinoteatr) o'sishi va qidiruv optimizatsiyasi bilan shug'ullanadi.",
+      "HTML, CSS, JavaScript va React Native bilan ishlaydi. WeWatch va Uy Savdo loyihalarida.",
+    ],
+    skills: ["SEO", "HTML", "CSS", "JavaScript", "React Native"],
+    projects: [
+      { name: "WeWatch", role: "Ijtimoiy onlayn kinoteatr — co-founder, SEO" },
+      { name: "Uy Savdo", role: "Veb loyiha" },
+    ],
+    telegram: "Emirhan7788",
+    knowsAbout: ["SEO", "WeWatch", "React Native", "Web Development"],
+    metaTitle: "Emirhan Ertan — Tezcode WeWatch Co-founder, SEO",
+    metaDescription:
+      "Emirhan Ertan — Tezcode jamoasida WeWatch co-founder va SEO mutaxassisi. WeWatch.uz. HTML, CSS, JavaScript, React Native.",
   },
 ];
 
