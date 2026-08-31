@@ -90,7 +90,7 @@ export async function generateMetadata({
       "biznesga AI joriy qilish",
       "AI implementation Uzbekistan",
       "AI for business Uzbekistan",
-      "AI агенты Узбекистан",
+      "ИИ-агенты Узбекистан",
       "чат-бот Узбекистан",
     ],
     ogTitle: meta.ogTitle,

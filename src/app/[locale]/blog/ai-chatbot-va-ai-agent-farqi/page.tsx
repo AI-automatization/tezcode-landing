@@ -37,8 +37,8 @@ export async function generateMetadata({
       "AI chatbot nima",
       "AI agent O'zbekiston",
       "AI chatbot Toshkent",
-      "разница чат-бот и AI-агент",
-      "AI агент Узбекистан",
+      "разница чат-бот и ИИ-агент",
+      "ИИ-агент Узбекистан",
     ],
   });
 }

@@ -46,16 +46,16 @@ export async function generateMetadata({
       ogDescription: `Sotuv, qo'llab-quvvatlash va avtomatlashtirish AI agentlari. CRM/1C/Telegram integratsiyasi, uz/ru. ${cityName}. Bepul konsultatsiya.`,
     },
     ru: {
-      title: `AI агент ${cityName} — AI-агент для бизнеса | Tezcode`,
-      description: `AI-агент для бизнеса в ${cityName}: агент продаж, агент поддержки, квалификация лидов, внутренняя автоматизация. Интеграция CRM/1С/Telegram. ${cityName} и весь Узбекистан. Бесплатная консультация.`,
+      title: `ИИ (AI) агент ${cityName} — ИИ-агент для бизнеса | Tezcode`,
+      description: `ИИ-агент для бизнеса в ${cityName}: агент продаж, агент поддержки, квалификация лидов, внутренняя автоматизация. Интеграция CRM/1С/Telegram. ${cityName} и весь Узбекистан. Бесплатная консультация.`,
       keywords: [
-        `AI агент ${cityName}`,
-        `AI-агент для бизнеса ${cityName}`,
+        `ИИ-агент ${cityName}`,
+        `ИИ-агент для бизнеса ${cityName}`,
         `агент продаж ${cityName}`,
-        `ИИ агент ${cityName}`,
-        "AI агент Узбекистан",
+        `ИИ-агент ${cityName}`,
+        "ИИ-агент Узбекистан",
       ],
-      ogTitle: `AI-агент для бизнеса в ${cityName} — Tezcode`,
+      ogTitle: `ИИ-агент для бизнеса в ${cityName} — Tezcode`,
       ogDescription: `Агенты продаж, поддержки и автоматизации. Интеграция CRM/1С/Telegram, uz/ru. ${cityName}. Бесплатная консультация.`,
     },
     en: {

@@ -37,10 +37,10 @@ export async function generateMetadata({
       ogDescription: `24/7 javob, lid saralash, buyurtma qabul qilish. Telegram/Instagram/WhatsApp. ${cityName}. Bepul konsultatsiya.`,
     },
     ru: {
-      title: `AI чатбот ${cityName} — AI-ассистент для бизнеса | Tezcode`,
-      description: `AI-чатбот для бизнеса в ${cityName}: ответы 24/7, квалификация лидов, приём заказов. Telegram, Instagram, WhatsApp, сайт. ${cityName} и весь Узбекистан. Бесплатная консультация.`,
-      keywords: [`AI чатбот ${cityName}`, `чатбот для бизнеса ${cityName}`, `ИИ ассистент ${cityName}`, "AI чатбот Узбекистан"],
-      ogTitle: `AI-чатбот для бизнеса в ${cityName} — Tezcode`,
+      title: `ИИ-чатбот ${cityName} — ИИ-ассистент для бизнеса | Tezcode`,
+      description: `ИИ-чатбот для бизнеса в ${cityName}: ответы 24/7, квалификация лидов, приём заказов. Telegram, Instagram, WhatsApp, сайт. ${cityName} и весь Узбекистан. Бесплатная консультация.`,
+      keywords: [`ИИ-чатбот ${cityName}`, `чатбот для бизнеса ${cityName}`, `ИИ ассистент ${cityName}`, "ИИ-чатбот Узбекистан"],
+      ogTitle: `ИИ-чатбот для бизнеса в ${cityName} — Tezcode`,
       ogDescription: `Ответы 24/7, квалификация лидов, приём заказов. Telegram/Instagram/WhatsApp. ${cityName}. Бесплатная консультация.`,
     },
     en: {

@@ -22,7 +22,7 @@ const LABELS: Record<ArticleLang, { badge: string; title: string; subtitle: stri
   ru: {
     badge: "Блог",
     title: "Последние статьи",
-    subtitle: "Последние новости мира AI и экосистемы Tezcode",
+    subtitle: "Последние новости из мира ИИ и экосистемы Tezcode",
     readMore: "Читать",
     viewAll: "Все статьи",
   },

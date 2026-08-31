@@ -19,7 +19,7 @@ const HEADER: Record<Lang, { badge: string; title: string; titleHighlight: strin
     badge: "Наш процесс",
     title: "Готовый продукт",
     titleHighlight: "за 4 шага",
-    subtitle: "От идеи до production — несколько недель. С AI быстрее и надёжнее.",
+    subtitle: "От идеи до production — несколько недель. С ИИ быстрее и надёжнее.",
   },
   en: {
     badge: "Our Process",
@@ -68,7 +68,7 @@ const STEPS: { num: string; titleUz: string; titleRu: string; titleEn: string; d
     titleRu: "Разрабатываем",
     titleEn: "Build",
     descUz: "AI yordamida tezda ishlab chiqamiz. 5-10 kun.",
-    descRu: "Разрабатываем с помощью AI. 5-10 дней.",
+    descRu: "Разрабатываем с помощью ИИ. 5-10 дней.",
     descEn: "We ship fast with AI engineers. 5-10 days.",
     icon: Zap,
   },

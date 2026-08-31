@@ -25,7 +25,7 @@ const COPY: Record<ArticleLang, { badge: string; title: string; subtitle: string
     badge: "Блог",
     title: "Блог Tezcode",
     subtitle:
-      "Практические руководства по автоматизации бизнеса, POS, CRM и AI — из нашего опыта.",
+      "Практические руководства по автоматизации бизнеса, POS, CRM и ИИ — из нашего опыта.",
     readMore: "Читать",
   },
   en: {

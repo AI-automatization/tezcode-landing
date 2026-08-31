@@ -32,7 +32,7 @@ export async function generateMetadata({
       "o'zbek tilida AI",
       "o'zbek tilida AI agent",
       "o'zbekcha AI yordamchi",
-      "AI на узбекском",
+      "ИИ на узбекском",
       "чат-бот на узбекском",
       "Uzbek language AI chatbot",
     ],

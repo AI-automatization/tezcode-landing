@@ -33,7 +33,7 @@ export async function generateMetadata({
       "AI chatbot narxi",
       "jonli operator vs chatbot",
       "чат-бот или оператор",
-      "AI чат-бот vs живой оператор",
+      "ИИ-чат-бот vs живой оператор",
       "нужен ли чат-бот",
       "AI chatbot vs live agent",
     ],

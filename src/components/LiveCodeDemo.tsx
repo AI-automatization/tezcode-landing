@@ -16,9 +16,9 @@ const COPY: Record<Lang, { badge: string; title: string; titleHighlight: string;
   },
   ru: {
     badge: "Live AI Engineering",
-    title: "AI создаёт бизнес —",
+    title: "ИИ создаёт бизнес —",
     titleHighlight: "за секунды",
-    subtitle: "Наши AI инженеры пишут код, тестируют и деплоят. Вы фокусируетесь только на бизнесе.",
+    subtitle: "Наши ИИ-инженеры пишут код, тестируют и деплоят. Вы сосредоточены только на бизнесе.",
   },
   en: {
     badge: "Live AI Engineering",

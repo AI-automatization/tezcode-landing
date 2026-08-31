@@ -35,7 +35,7 @@ const HUB_COPY: Record<
     forLeaders: "Для владельцев бизнеса",
     auditTitle: "Начните с бесплатного аудита процессов",
     auditDesc:
-      "За 30 минут определим, где AI даст вашему бизнесу наибольший эффект: продажи, клиенты, отчёты или процессы.",
+      "За 30 минут определим, где ИИ даст вашему бизнесу наибольший эффект: продажи, клиенты, отчёты или процессы.",
     points: [
       "14 дней бесплатно — карта не нужна",
       "Поддержка: UZ / RU / EN",
@@ -81,6 +81,30 @@ const HUB_COPY: Record<
   },
 };
 
+// Localized service links (labels per locale; href stays constant). Previously
+// these were hardcoded Uzbek, so RU/EN/AR/UK footers showed Uzbek labels.
+const SERVICE_LINKS: { href: string; label: Record<HubLang, string> }[] = [
+  { href: "/ai-chatbot", label: { uz: "AI chatbot", ru: "ИИ-чат-бот", en: "AI chatbot", ar: "روبوت دردشة بالذكاء الاصطناعي", uk: "ШІ-чат-бот" } },
+  { href: "/ai-video-analitika", label: { uz: "AI video analitika", ru: "ИИ-видеоаналитика", en: "AI video analytics", ar: "تحليلات الفيديو بالذكاء الاصطناعي", uk: "ШІ-відеоаналітика" } },
+  { href: "/telegram-bot-biznes", label: { uz: "Telegram bot", ru: "Telegram-бот", en: "Telegram bot", ar: "بوت تيليجرام", uk: "Telegram-бот" } },
+  { href: "/ai-avtomatizatsiya", label: { uz: "AI avtomatizatsiya", ru: "ИИ-автоматизация", en: "AI automation", ar: "الأتمتة بالذكاء الاصطناعي", uk: "ШІ-автоматизація" } },
+  { href: "/pos-tizimi", label: { uz: "POS tizimi", ru: "POS-система", en: "POS system", ar: "نظام POS", uk: "POS-система" } },
+  { href: "/klinika-crm", label: { uz: "Klinika CRM", ru: "CRM для клиники", en: "Clinic CRM", ar: "CRM للعيادة", uk: "CRM для клініки" } },
+  { href: "/xodim-nazorati", label: { uz: "Xodim nazorati", ru: "Контроль сотрудников", en: "Employee monitoring", ar: "مراقبة الموظفين", uk: "Контроль співробітників" } },
+  { href: "/ai-agent", label: { uz: "AI agent", ru: "ИИ-агент", en: "AI agent", ar: "وكيل ذكاء اصطناعي", uk: "ШІ-агент" } },
+  { href: "/biznes-avtomatlashtirish", label: { uz: "Biznes avtomatlashtirish", ru: "Автоматизация бизнеса", en: "Business automation", ar: "أتمتة الأعمال", uk: "Автоматизація бізнесу" } },
+  { href: "/crm-integratsiya", label: { uz: "CRM integratsiya", ru: "CRM-интеграция", en: "CRM integration", ar: "تكامل CRM", uk: "CRM-інтеграція" } },
+];
+
+// Office address, localized (was hardcoded Uzbek in every locale).
+const ADDRESS: Record<HubLang, string> = {
+  uz: "Toshkent, Amir Temur shoh ko'chasi, 10",
+  ru: "Ташкент, проспект Амира Темура, 10",
+  en: "Tashkent, Amir Temur Avenue, 10",
+  ar: "طشقند، شارع أمير تيمور، 10",
+  uk: "Ташкент, проспект Аміра Темура, 10",
+};
+
 const CONTACT_CHANNELS: {
   label: string;
   href?: string;
@@ -95,7 +119,8 @@ const CONTACT_CHANNELS: {
     icon: "send",
   },
   {
-    label: "Toshkent, Amir Temur shoh ko'chasi, 10",
+    // label filled per-locale from ADDRESS at render time (icon === "pin")
+    label: "",
     href: "https://yandex.uz/maps/-/CTeXZ-PZ",
     external: true,
     icon: "pin",
@@ -158,18 +183,12 @@ export function Footer() {
   // Services we build for clients on request. (Products like RAOS / ClinicaGo /
   // WorkControl are surfaced on the homepage products section, whose cards link
   // to their dedicated landing pages — so they don't need a footer column.)
-  const serviceLinks: { label: string; href: string }[] = [
-    { label: "AI chatbot", href: "/ai-chatbot" },
-    { label: "AI video analitika", href: "/ai-video-analitika" },
-    { label: "Telegram bot", href: "/telegram-bot-biznes" },
-    { label: "AI avtomatizatsiya", href: "/ai-avtomatizatsiya" },
-    { label: "POS tizimi", href: "/pos-tizimi" },
-    { label: "Klinika CRM", href: "/klinika-crm" },
-    { label: "Xodim nazorati", href: "/xodim-nazorati" },
-    { label: "AI agent", href: "/ai-agent" },
-    { label: "Biznes avtomatlashtirish", href: "/biznes-avtomatlashtirish" },
-    { label: "CRM integratsiya", href: "/crm-integratsiya" },
-  ];
+  const loc = (locale as HubLang) in HUB_COPY ? (locale as HubLang) : "uz";
+  const serviceLinks = SERVICE_LINKS.map((l) => ({
+    label: l.label[loc],
+    href: l.href,
+  }));
+  const address = ADDRESS[loc];
 
   const companyLinks = [
     { label: t("about"), href: "/biz-haqimizda" },
@@ -256,18 +275,19 @@ export function Footer() {
                 <ul className="divide-y divide-[var(--tc-border)]">
                   {CONTACT_CHANNELS.map((ch) => {
                     const Icon = CHANNEL_ICONS[ch.icon];
+                    const chLabel = ch.icon === "pin" ? address : ch.label;
                     const inner = (
                       <>
                         <span className="w-10 h-10 shrink-0 rounded-xl bg-[var(--tc-blue-dim)] flex items-center justify-center">
                           <Icon className="w-4.5 h-4.5 text-[var(--tc-blue-text)]" />
                         </span>
                         <span className="text-sm sm:text-base font-500 text-[var(--tc-text-primary)] truncate">
-                          {ch.label}
+                          {chLabel}
                         </span>
                       </>
                     );
                     return (
-                      <li key={ch.label}>
+                      <li key={ch.icon}>
                         {ch.href ? (
                           <a
                             href={ch.href}
@@ -412,7 +432,7 @@ export function Footer() {
                   tezcode@tezcode.dev
                 </a>
               </li>
-              <li className="text-[var(--tc-text-muted)]">Toshkent, Amir Temur shoh ko'chasi, 10</li>
+              <li className="text-[var(--tc-text-muted)]">{address}</li>
             </ul>
           </div>
         </div>

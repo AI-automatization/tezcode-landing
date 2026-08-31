@@ -39,9 +39,9 @@ export async function generateMetadata({
       "AI avtomatizatsiya narxi",
       "biznes avtomatlashtirish kompaniya",
       "AI avtomatizatsiya kompaniyalar Toshkent",
-      "компания AI автоматизации Ташкент",
-      "как выбрать компанию AI автоматизации",
-      "AI автоматизация Узбекистан",
+      "компания ИИ-автоматизации Ташкент",
+      "как выбрать компанию ИИ-автоматизации",
+      "ИИ-автоматизация Узбекистан",
       "автоматизация бизнеса с ИИ",
     ],
   });

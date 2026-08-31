@@ -22,7 +22,7 @@ export const ARTICLES: ArticleMeta[] = [
         title:
           "Услуги искусственного интеллекта в Узбекистане: виды, цены и как выбрать (2026)",
         excerpt:
-          "Что такое искусственный интеллект (AI), какие услуги есть для бизнеса — чат-бот, AI-агент, автоматизация, видеоаналитика, голосовые ассистенты — сколько они стоят (от $279) и как выбрать подрядчика.",
+          "Что такое искусственный интеллект (ИИ), какие услуги есть для бизнеса — чат-бот, ИИ-агент, автоматизация, видеоаналитика, голосовые ассистенты — сколько они стоят (от $279) и как выбрать подрядчика.",
       },
       en: {
         title:
@@ -44,9 +44,9 @@ export const ARTICLES: ArticleMeta[] = [
           "Mavjud IP kameralarni AI bilan aqlli qilish: odam sanash (footfall), yuz tanish davomat, ish xavfsizligi, ANPR. Yangi kamera shart emas, $990 dan.",
       },
       ru: {
-        title: "Сделайте камеры умными с AI: подсчёт людей, посещаемость и безопасность (2026)",
+        title: "Сделайте камеры умными с ИИ: подсчёт людей, посещаемость и безопасность (2026)",
         excerpt:
-          "Сделать существующие IP-камеры умными с AI: подсчёт людей (footfall), посещаемость по лицу, охрана труда, ANPR. Новые камеры не нужны, от $990.",
+          "Сделать существующие IP-камеры умными с ИИ: подсчёт людей (footfall), посещаемость по лицу, охрана труда, ANPR. Новые камеры не нужны, от $990.",
       },
       en: {
         title: "Make your cameras smart with AI: people counting, attendance and safety (2026)",
@@ -67,9 +67,9 @@ export const ARTICLES: ArticleMeta[] = [
           "AI o'zbek tilida (lotin/kirill, aralash uz-ru) ishlaydi, lekin sifat sozlashga bog'liq. Nega tayyor botlar o'zbekchada qiynaladi va yaxshi o'zbek tilli chatbot qanday quriladi.",
       },
       ru: {
-        title: "Работает ли AI на узбекском? Полный ответ для чат-ботов и агентов (2026)",
+        title: "Работает ли ИИ на узбекском? Полный ответ для чат-ботов и агентов (2026)",
         excerpt:
-          "AI на узбекском (латиница/кириллица, смешанный uz-ru) работает, но качество в настройке. Почему готовые боты плохо справляются и как строится хороший узбекоязычный бот.",
+          "ИИ на узбекском (латиница/кириллица, смешанный uz-ru) работает, но качество в настройке. Почему готовые боты плохо справляются и как строится хороший узбекоязычный бот.",
       },
       en: {
         title: "Does AI work in Uzbek? A full answer for chatbots and agents (2026)",
@@ -92,7 +92,7 @@ export const ARTICLES: ArticleMeta[] = [
       ru: {
         title: "Автоматизация продаж: Telegram, Instagram и CRM (2026)",
         excerpt:
-          "Все каналы → одна CRM, AI-чат-бот отвечает 24/7 и квалифицирует лиды, заказ автоматически в 1C/CRM. Ни один лид не теряется — руководство по автоматизации продаж.",
+          "Все каналы → одна CRM, ИИ-чат-бот отвечает 24/7 и квалифицирует лиды, заказ автоматически в 1C/CRM. Ни один лид не теряется — руководство по автоматизации продаж.",
       },
       en: {
         title: "Sales automation: Telegram, Instagram and CRM (2026)",
@@ -136,9 +136,9 @@ export const ARTICLES: ArticleMeta[] = [
           "AI chatbot soniyalarda va arzon, jonli operator nozik holatlarda kuchli. Narx, tezlik va sifat taqqoslash — va nega gibrid (AI + operator) model eng samarali.",
       },
       ru: {
-        title: "AI чат-бот или живой оператор: что и когда? (2026)",
+        title: "ИИ-чат-бот или живой оператор: что и когда? (2026)",
         excerpt:
-          "AI чат-бот за секунды и дёшево, живой оператор силён в деликатных ситуациях. Сравнение по цене, скорости и качеству — и почему гибрид эффективнее.",
+          "ИИ-чат-бот за секунды и дёшево, живой оператор силён в деликатных ситуациях. Сравнение по цене, скорости и качеству — и почему гибрид эффективнее.",
       },
       en: {
         title: "AI chatbot vs a live agent: which, and when? (2026)",
@@ -159,9 +159,9 @@ export const ARTICLES: ArticleMeta[] = [
           "1C ni amoCRM, Bitrix24 va AI bilan bog'lash: buyurtma, qoldiq va hisob-faktura sinxronizatsiyasi, AI 1C'dan real narx va mavjudlikni o'qishi. Narx $700 dan.",
       },
       ru: {
-        title: "Интеграция 1С с CRM и AI: полное руководство (2026)",
+        title: "Интеграция 1С с CRM и ИИ: полное руководство (2026)",
         excerpt:
-          "Связка 1С с amoCRM, Bitrix24 и AI: синхронизация заказов, остатков и счетов, AI читает из 1С реальную цену и наличие. Цена от $700.",
+          "Связка 1С с amoCRM, Bitrix24 и ИИ: синхронизация заказов, остатков и счетов, ИИ читает из 1С реальную цену и наличие. Цена от $700.",
       },
       en: {
         title: "Integrating 1C with CRM and AI: the complete guide (2026)",
@@ -184,9 +184,9 @@ export const ARTICLES: ArticleMeta[] = [
       },
       ru: {
         title:
-          "Цены на AI-решения 2026: сколько стоит каждая услуга? (Ташкент, Узбекистан)",
+          "Цены на ИИ-решения 2026: сколько стоит каждая услуга? (Ташкент, Узбекистан)",
         excerpt:
-          "AI-чат-бот от $339, AI-агент от $400, интеграция CRM от $700, AI-видеоаналитика от $990 — точные цены на все AI-решения на 2026, что влияет на цену и порядок оплаты.",
+          "ИИ-чат-бот от $339, ИИ-агент от $400, интеграция CRM от $700, ИИ-видеоаналитика от $990 — точные цены на все ИИ-решения на 2026, что влияет на цену и порядок оплаты.",
       },
       en: {
         title:
@@ -236,7 +236,7 @@ export const ARTICLES: ArticleMeta[] = [
       ru: {
         title: "Claude Fable 5: самая мощная модель Anthropic и что это значит для бизнеса",
         excerpt:
-          "Anthropic выпустила Claude Fable 5, временно приостановила доступ из-за экспортного контроля США, а затем снова открыла её глобально. Что это значит для AI-автоматизации в Узбекистане.",
+          "Anthropic выпустила Claude Fable 5, временно приостановила доступ из-за экспортного контроля США, а затем снова открыла её глобально. Что это значит для ИИ-автоматизации в Узбекистане.",
       },
       en: {
         title: "Claude Fable 5: Anthropic's most capable model, and what it means for business",
@@ -280,9 +280,9 @@ export const ARTICLES: ArticleMeta[] = [
           "Biznesni AI bilan avtomatlashtirmoqchimisiz, lekin kimga ishonishni bilmayapsizmi? O'zbekistonda to'g'ri AI avtomatizatsiya kompaniyasini tanlash bo'yicha amaliy qo'llanma — mezonlar, narx, xatolar va savollar.",
       },
       ru: {
-        title: "Как выбрать компанию по AI-автоматизации в Ташкенте (2026)",
+        title: "Как выбрать компанию по ИИ-автоматизации в Ташкенте (2026)",
         excerpt:
-          "Хотите автоматизировать бизнес с помощью ИИ, но не знаете, кому доверять? Практическое руководство по выбору компании AI-автоматизации в Узбекистане — критерии, цена, ошибки и вопросы.",
+          "Хотите автоматизировать бизнес с помощью ИИ, но не знаете, кому доверять? Практическое руководство по выбору компании ИИ-автоматизации в Узбекистане — критерии, цена, ошибки и вопросы.",
       },
       en: {
         title: "How to choose an AI automation company in Tashkent (2026)",
@@ -303,9 +303,9 @@ export const ARTICLES: ArticleMeta[] = [
           "AI agent nima, chatbotdan farqi, qaysi biznesga kerak, qanday ishlaydi, narxi nimaga bog'liq va uni 6 qadamda qanday yaratish — Toshkent va O'zbekiston bizneslari uchun amaliy qo'llanma.",
       },
       ru: {
-        title: "Создание AI-агента для бизнеса в Ташкенте: полное руководство (2026)",
+        title: "Создание ИИ-агента для бизнеса в Ташкенте: полное руководство (2026)",
         excerpt:
-          "Что такое AI-агент, чем отличается от чат-бота, какому бизнесу нужен, как работает, от чего зависит цена и как создать его за 6 шагов — практическое руководство для бизнеса в Узбекистане.",
+          "Что такое ИИ-агент, чем отличается от чат-бота, какому бизнесу нужен, как работает, от чего зависит цена и как создать его за 6 шагов — практическое руководство для бизнеса в Узбекистане.",
       },
     },
   },
@@ -321,7 +321,7 @@ export const ARTICLES: ArticleMeta[] = [
           "Chatbot gaplashadi, agent ish bajaradi. Farqni misollar bilan tushuntiramiz, taqqoslash jadvali va qaysi biri sizning biznesingizga kerakligini aniqlashga yordam beramiz.",
       },
       ru: {
-        title: "В чём разница между AI-чат-ботом и AI-агентом? (2026)",
+        title: "В чём разница между ИИ-чат-ботом и ИИ-агентом? (2026)",
         excerpt:
           "Чат-бот разговаривает, агент выполняет работу. Объясняем разницу на примерах, таблица сравнения и что именно нужно вашему бизнесу.",
       },

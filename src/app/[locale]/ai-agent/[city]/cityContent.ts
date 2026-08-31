@@ -7,14 +7,14 @@ import { CONTENT } from "../content";
 const AI_AGENT_INTRO: Record<string, Record<ServiceLang, string>> = {
   toshkent: {
     uz: "Toshkent — O'zbekistonning eng yirik savdo va biznes markazi: yirik savdo markazlari, ko'p filialli tarmoqlar, tez rivojlanayotgan startaplar va xizmat ko'rsatish sohalari. Bunday muhitda mijozlar oqimi katta, lekin menejerlar vaqti cheklangan — AI agent sotuv, qo'llab-quvvatlash va lid oqimini avtomatlashtiradi.",
-    ru: "Ташкент — крупнейший торговый и деловой центр Узбекистана: большие торговые сети, многофилиальные компании, быстрорастущие стартапы и сфера услуг. В такой среде поток клиентов велик, но время менеджеров ограничено — AI-агент автоматизирует продажи, поддержку и обработку лидов.",
+    ru: "Ташкент — крупнейший торговый и деловой центр Узбекистана: большие торговые сети, многофилиальные компании, быстрорастущие стартапы и сфера услуг. В такой среде поток клиентов велик, но время менеджеров ограничено — ИИ-агент автоматизирует продажи, поддержку и обработку лидов.",
     en: "Tashkent is Uzbekistan's largest commercial and business hub — major retail chains, multi-branch companies, fast-growing startups and service businesses. In this environment, customer flow is high but manager time is limited — an AI agent automates sales, support and lead processing.",
     ar: "طشقند أكبر مركز تجاري وأعمال في أوزبكستان — سلاسل تجارة كبرى وشركات متعددة الفروع وشركات ناشئة سريعة النمو وقطاع خدمات. في هذه البيئة، تدفق العملاء كبير لكن وقت المديرين محدود — يعمل وكيل الذكاء الاصطناعي على أتمتة المبيعات والدعم ومعالجة العملاء المحتملين.",
     uk: "Ташкент — найбільший торговий та діловий центр Узбекистану: великі торгові мережі, компанії з філіями, стартапи та сфера послуг. У такому середовищі потік клієнтів великий, але час менеджерів обмежений — AI-агент автоматизує продажі, підтримку та обробку лідів.",
   },
   samarqand: {
     uz: "Samarqand — Ipak yo'lining markazida turistik, mehmondo'stlik va hunarmandchilik bizneslari gullab-yashnaydi. Mavsumiy talab yuqori, Telegram va Instagram orqali keluvchi so'rovlar ko'p — AI agent barcha kanalda 24/7 mijozga javob beradi, bron va buyurtmalarni qabul qiladi.",
-    ru: "Самарканд — в центре Шёлкового пути процветают туризм, гостеприимство и ремёсла. Сезонный спрос высок, запросов через Telegram и Instagram много — AI-агент отвечает клиентам 24/7 по всем каналам, принимает бронирования и заказы.",
+    ru: "Самарканд — в центре Шёлкового пути процветают туризм, гостеприимство и ремёсла. Сезонный спрос высок, запросов через Telegram и Instagram много — ИИ-агент отвечает клиентам 24/7 по всем каналам, принимает бронирования и заказы.",
     en: "Samarkand — at the crossroads of the Silk Road, tourism, hospitality and craft businesses thrive. Seasonal demand is high and inquiries via Telegram and Instagram are plentiful — an AI agent responds to customers 24/7 across all channels and accepts bookings and orders.",
     ar: "سمرقند — عند مفترق طريق الحرير، تزدهر أعمال السياحة والضيافة والحرف اليدوية. الطلب الموسمي مرتفع والاستفسارات عبر تيليغرام وإنستغرام كثيرة — يرد وكيل الذكاء الاصطناعي على العملاء على مدار الساعة عبر جميع القنوات ويستقبل الحجوزات والطلبات.",
     uk: "Самарканд — на перехресті Великого шовкового шляху процвітають туризм, гостинність та ремесла. Сезонний попит високий, запитів через Telegram та Instagram багато — AI-агент відповідає клієнтам 24/7 по всіх каналах, приймає бронювання та замовлення.",
@@ -29,7 +29,7 @@ const CITY_FAQ: Record<string, Record<ServiceLang, { q: string; a: string }>> = 
       a: "Narx loyiha hajmiga bog'liq: oddiy savol-javob agenti — 500–1500 USD, CRM/1C integratsiyali sotuv agenti — 1500–4000 USD. Bepul 30 daqiqa konsultatsiyada aniq hisob-kitob qilamiz.",
     },
     ru: {
-      q: "Сколько стоит AI-агент для бизнеса в Ташкенте?",
+      q: "Сколько стоит ИИ-агент для бизнеса в Ташкенте?",
       a: "Цена зависит от объёма: простой агент для ответов на вопросы — 500–1500 USD, агент продаж с интеграцией CRM/1С — 1500–4000 USD. На бесплатной 30-минутной консультации рассчитаем точно.",
     },
     en: {
@@ -51,8 +51,8 @@ const CITY_FAQ: Record<string, Record<ServiceLang, { q: string; a: string }>> = 
       a: "Ha. Bron qabul qilish, mehmonxona savollari, menyu va narxlar bo'yicha javob berish, Instagram/Telegram orqali lidlarni saralash — AI agent bularning hammasini 24/7 qiladi. Bepul konsultatsiyada o'z holatingizga moslab ko'ramiz.",
     },
     ru: {
-      q: "Подходит ли AI-агент для туристического и ресторанного бизнеса Самарканда?",
-      a: "Да. Приём бронирований, ответы на вопросы об отеле, меню и ценах, квалификация лидов через Instagram/Telegram — AI-агент делает всё это 24/7. На бесплатной консультации настроим под ваш случай.",
+      q: "Подходит ли ИИ-агент для туристического и ресторанного бизнеса Самарканда?",
+      a: "Да. Приём бронирований, ответы на вопросы об отеле, меню и ценах, квалификация лидов через Instagram/Telegram — ИИ-агент делает всё это 24/7. На бесплатной консультации настроим под ваш случай.",
     },
     en: {
       q: "Does an AI agent work for tourism and restaurant businesses in Samarkand?",

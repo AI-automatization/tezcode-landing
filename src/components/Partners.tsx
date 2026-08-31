@@ -100,7 +100,7 @@ const PARTNERS: Partner[] = [
     },
     description: {
       uz: "Schwarz Digits — Lidl va Kaufland egasi Schwarz Group'ning raqamli bo'linmasi. Yevropaning suveren AI ekotizimini Capgemini, Deloitte, SAP va Intel bilan birga quradi.",
-      ru: "Schwarz Digits — цифровое подразделение Schwarz Group (владелец Lidl и Kaufland). Строит суверенную европейскую AI-экосистему вместе с Capgemini, Deloitte, SAP и Intel.",
+      ru: "Schwarz Digits — цифровое подразделение Schwarz Group (владелец Lidl и Kaufland). Строит суверенную европейскую ИИ-экосистему вместе с Capgemini, Deloitte, SAP и Intel.",
       en: "Schwarz Digits is the digital arm of Schwarz Group (owner of Lidl and Kaufland), building a sovereign European AI ecosystem together with Capgemini, Deloitte, SAP and Intel.",
       ar: "Schwarz Digits هي الذراع الرقمية لمجموعة Schwarz (مالكة Lidl وKaufland)، وتبني نظامًا أوروبيًا سياديًا للذكاء الاصطناعي مع Capgemini وDeloitte وSAP وIntel.",
       uk: "Schwarz Digits — цифровий підрозділ Schwarz Group (власник Lidl і Kaufland). Будує суверенну європейську AI-екосистему разом з Capgemini, Deloitte, SAP та Intel.",
@@ -125,7 +125,7 @@ const LABELS: Record<Lang, { title: string; subtitle: string; more: string; badg
   },
   ru: {
     title: "Новое в Tezcode",
-    subtitle: "Новые партнёрства, международные связи и AI-возможности для бизнеса",
+    subtitle: "Новые партнёрства, международные связи и ИИ-возможности для бизнеса",
     more: "Подробнее",
     badge: "Партнёр",
     resident: "Резидент",

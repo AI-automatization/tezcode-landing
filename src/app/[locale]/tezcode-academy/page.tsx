@@ -26,7 +26,7 @@ export async function generateMetadata({
       "dasturlash bootcamp Toshkent",
       "IT ta'lim markazi O'zbekiston",
       "korporativ trening AI",
-      "AI обучение Ташкент",
+      "ИИ обучение Ташкент",
       "курсы программирования Ташкент",
       "AI bootcamp Tashkent",
       "AI courses Tashkent",

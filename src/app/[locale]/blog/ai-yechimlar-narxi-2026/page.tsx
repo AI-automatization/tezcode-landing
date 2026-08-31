@@ -34,9 +34,9 @@ export async function generateMetadata({
       "AI video analitika narxi",
       "chatbot narxi Toshkent",
       "AI narxlari 2026",
-      "цены на AI решения",
+      "цены на ИИ-решения",
       "сколько стоит чат-бот",
-      "стоимость AI агента Ташкент",
+      "стоимость ИИ-агента Ташкент",
     ],
   });
 }

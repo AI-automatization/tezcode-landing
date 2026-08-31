@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "AI-автоматизация бизнеса — Ташкент, Узбекистан | Tezcode",
-    "description": "TezCode — AI Software Factory. AI-автоматизация бизнеса в Ташкенте: AI-агенты, чат-боты и автоматизация процессов.",
-    "ogTitle": "AI-автоматизация бизнеса — Tezcode, Ташкент",
-    "ogDescription": "Систематизация бизнеса Узбекистана с помощью AI. RAOS POS, AI Office, HamshiraGo и 5 других продуктов."
+    "title": "ИИ-автоматизация бизнеса — Ташкент, Узбекистан | Tezcode",
+    "description": "TezCode — AI Software Factory. ИИ-автоматизация бизнеса в Ташкенте: ИИ-агенты, чат-боты и автоматизация процессов.",
+    "ogTitle": "ИИ-автоматизация бизнеса — Tezcode, Ташкент",
+    "ogDescription": "Систематизация бизнеса в Узбекистане с помощью ИИ. RAOS POS, AI Office, HamshiraGo и 5 других продуктов."
   },
   "nav": {
     "divisions": "Направления",
@@ -18,19 +18,19 @@
   "menu": {
     "headers": {
       "products": "Продукты",
-      "aiSolutions": "AI решения",
+      "aiSolutions": "ИИ-решения",
       "services": "Услуги"
     },
     "allSolutions": "Все решения",
     "solutions": {
-      "aiAutomation": "AI автоматизация",
-      "aiAgent": "AI агент",
+      "aiAutomation": "ИИ-автоматизация",
+      "aiAgent": "ИИ-агент",
       "businessAutomation": "Автоматизация бизнеса",
-      "aiSalon": "AI для салона",
-      "aiRestaurant": "AI для ресторана",
+      "aiSalon": "ИИ для салона",
+      "aiRestaurant": "ИИ для ресторана",
       "crmIntegration": "Интеграция CRM",
-      "aiChatbot": "AI чат-бот",
-      "aiVideoAnalytics": "AI-видеоаналитика",
+      "aiChatbot": "ИИ-чат-бот",
+      "aiVideoAnalytics": "ИИ-видеоаналитика",
       "telegramBot": "Telegram-бот",
       "posSystem": "POS-система",
       "clinicCrm": "CRM для клиник",
@@ -41,15 +41,15 @@
     }
   },
   "hero": {
-    "badge": "AI · Software Factory · Ташкент",
-    "headline": "Любой бизнес\nавтоматизируем с AI",
+    "badge": "ИИ · Software Factory · Ташкент",
+    "headline": "Автоматизируем любой бизнес\nс помощью ИИ",
     "subheadline": "8 продуктов. 6 направлений. 1 миссия — систематизировать каждый бизнес.",
     "cta_primary": "Бесплатная консультация",
     "cta_secondary": "Смотреть продукты",
     "directions_aria": "Направления",
     "dir_web": "Сайт и MVP",
     "dir_bot": "Telegram-бот",
-    "dir_ai": "AI-чатбот и агенты",
+    "dir_ai": "ИИ-чатбот и агенты",
     "dir_crm": "CRM и 1С-интеграция",
     "stat_divisions": "Направлений",
     "stat_products": "Продуктов",
@@ -79,8 +79,8 @@
     },
     "ai": {
       "name": "Tezcode",
-      "tagline": "AI-агенты и платформы",
-      "description": "Интеллектуальные помощники, AI-агенты и решения для автоматизации рабочих процессов.",
+      "tagline": "ИИ-агенты и платформы",
+      "description": "Интеллектуальные помощники, ИИ-агенты и решения для автоматизации рабочих процессов.",
       "products": "AI Office · AI-Trade",
       "model": "SaaS + Token-based"
     },
@@ -100,27 +100,27 @@
     },
     "academy": {
       "name": "TezCode Academy",
-      "tagline": "AI-образовательный центр",
-      "description": "Курсы по AI для разработчиков и владельцев бизнеса, воркшопы, корпоративные тренинги.",
+      "tagline": "ИИ-образовательный центр",
+      "description": "Курсы по ИИ для разработчиков и владельцев бизнеса, воркшопы, корпоративные тренинги.",
       "products": "Курс · Буткемп · Воркшоп",
       "model": "Оплата за курс"
     }
   },
   "products": {
-    "title": "Наши Продукты",
+    "title": "Наши продукты",
     "subtitle": "8 продуктов — каждый эксперт в своей области",
     "raos": {
       "name": "RAOS",
-      "tagline": "Программа торговли",
-      "description": "POS для любого магазина — склад, касса, клиент, отчёт в одной программе.",
+      "tagline": "Торговая программа",
+      "description": "POS для любого магазина — склад, касса, клиенты и отчёты в одной программе.",
       "status": "Live",
       "division": "Systems",
       "url": "https://raos.uz"
     },
     "ai_office": {
       "name": "AI Office",
-      "tagline": "AI оркестратор",
-      "description": "Агенты 12 отделов — chat-first, 0 шагов регистрации.",
+      "tagline": "ИИ-оркестратор",
+      "description": "Агенты для 12 отделов — chat-first, без регистрации.",
       "status": "Beta",
       "division": "AI",
       "url": "#"
@@ -160,7 +160,7 @@
     "ai_trade": {
       "name": "AI-Trade",
       "tagline": "Торговый бот",
-      "description": "Автоматизированная торговля с AI — рыночные сигналы и портфель.",
+      "description": "Автоматизированная торговля с ИИ — рыночные сигналы и портфель.",
       "status": "Beta",
       "division": "AI",
       "url": "#"
@@ -168,7 +168,7 @@
     "savdo_builder": {
       "name": "MaxSavdo",
       "tagline": "Магазин в Telegram",
-      "description": "Превратите Instagram в магазин в Telegram — с корзиной и заказами, без комиссии.",
+      "description": "Превратите Instagram в Telegram-магазин — с корзиной, заказами и без комиссии.",
       "status": "Beta",
       "division": "Labs",
       "url": "https://maxsavdo.uz"
@@ -190,7 +190,7 @@
     },
     "office": {
       "title": "Для офисов",
-      "description": "AI-оркестратор с 12 агентами по отделам. Управляйте через чат — система делает всё сама.",
+      "description": "ИИ-оркестратор с 12 агентами по отделам. Управляйте через чат — система делает всё сама.",
       "product": "AI Office"
     },
     "clinic": {
@@ -211,7 +211,7 @@
       "bekzod": {
         "name": "Bekzod Mirzaaliyev",
         "role": "Founder · CEO · CTO · CFO",
-        "bio": "Основатель и CEO Tezcode. Техническое направление, AI-стратегия, финансовый контроль — всё под его руководством.",
+        "bio": "Основатель и CEO Tezcode. Техническое направление, ИИ-стратегия, финансовый контроль — всё под его руководством.",
         "telegram": "@webdevelopertk"
       },
       "abdulaziz": {
@@ -263,7 +263,7 @@
     }
   },
   "footer": {
-    "tagline": "Систематизация бизнеса с помощью AI",
+    "tagline": "Систематизация бизнеса с помощью ИИ",
     "divisions": "Направления",
     "company": "Компания",
     "about": "О нас",
