@@ -11,6 +11,8 @@ import {
   Bot,
   Check,
   FileText,
+  Globe,
+  LayoutGrid,
   Megaphone,
   MessageSquare,
   Phone,
@@ -22,6 +24,7 @@ import {
   Workflow,
 } from "lucide-react";
 import { CountUp } from "@/components/motion/CountUp";
+import { Link } from "@/i18n/routing";
 
 // Right-side visual copy — rotating "what we automate" scenarios.
 // Each slide: a business everyone recognizes + old way → new result.
@@ -500,6 +503,15 @@ const RESIDENT_LABEL: Record<string, string> = {
   uk: "Резидент IT Park Uzbekistan",
 };
 
+// Direction chips under the subheadline — the 4 things visitors actually
+// search for ("sayt", "bot", "chatbot", "CRM"), each linking to its page.
+const DIRECTIONS = [
+  { key: "dir_web", href: "/tezcode-custom", icon: Globe },
+  { key: "dir_bot", href: "/telegram-bot-biznes", icon: Send },
+  { key: "dir_ai", href: "/ai-chatbot", icon: Bot },
+  { key: "dir_crm", href: "/crm-integratsiya", icon: Workflow },
+] as const;
+
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
   visible: (delay: number = 0) => ({
@@ -566,6 +578,25 @@ export function Hero() {
               {t("subheadline")}
             </m.p>
 
+            {/* Direction chips — "sayt / bot / chatbot / CRM" self-selection */}
+            <m.nav
+              initial={false}
+              animate={fadeUp.visible(0.2)}
+              aria-label={t("directions_aria")}
+              className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-6"
+            >
+              {DIRECTIONS.map(({ key, href, icon: Icon }) => (
+                <Link
+                  key={key}
+                  href={href}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-[var(--tc-border)] bg-[var(--tc-surface-1)] px-3.5 py-1.5 text-[13px] font-500 text-[var(--tc-text-secondary)] transition-colors hover:border-[var(--tc-blue)] hover:text-[var(--tc-blue-text)]"
+                >
+                  <Icon className="w-3.5 h-3.5 shrink-0 text-[var(--tc-blue-text)]" strokeWidth={2} />
+                  {t(key)}
+                </Link>
+              ))}
+            </m.nav>
+
             {/* Risk-reversal trust checkmarks */}
             <m.div
               initial={false}
@@ -599,14 +630,12 @@ export function Hero() {
                 <ArrowRight className="w-4 h-4 rtl:rotate-180" />
               </m.a>
               <m.a
-                href="https://t.me/tezcode_managament"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#products"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="tc-btn-secondary text-sm"
               >
-                <Send className="w-4 h-4 text-[var(--tc-blue-text)]" />
+                <LayoutGrid className="w-4 h-4 text-[var(--tc-blue-text)]" />
                 {t("cta_secondary")}
               </m.a>
             </m.div>

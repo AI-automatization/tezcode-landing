@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Biznesni AI bilan avtomatlashtirish — Toshkent | Tezcode",
+    "title": "Biznesni AI bilan avtomatlashtirish — Toshkent, O'zbekiston | Tezcode",
     "description": "TezCode — AI Software Factory. Toshkentda biznes uchun AI avtomatlashtirish: AI agentlar, chatbotlar va jarayonlar avtomatizatsiyasi.",
     "ogTitle": "Biznesni AI bilan avtomatlashtirish — Tezcode, Toshkent",
     "ogDescription": "O'zbekiston biznesini AI bilan tizimlash. RAOS POS, AI Office, HamshiraGo va 5 boshqa mahsulot."
@@ -44,9 +44,14 @@
     "badge": "AI · Software Factory · Tashkent",
     "headline": "Har biznesni\nAI bilan\navtomatlashtiramiz",
     "subheadline": "8 ta mahsulot. 6 ta yo'nalish. 1 ta missiya — har biznesni tizimlashtirish.",
-    "cta_primary": "Bepul demo olish",
-    "cta_secondary": "Telegram'da yozish",
-    "trust": "✓ 14 kun bepul · ✓ Karta talab qilinmaydi · ✓ 5 daqiqada boshlang",
+    "cta_primary": "Bepul konsultatsiya",
+    "cta_secondary": "Mahsulotlarni ko'rish",
+    "trust": "✓ Konsultatsiya bepul · ✓ Majburiyatsiz · ✓ 24 soat ichida javob",
+    "directions_aria": "Yo'nalishlar",
+    "dir_web": "Sayt & MVP",
+    "dir_bot": "Telegram bot",
+    "dir_ai": "AI chatbot & agent",
+    "dir_crm": "CRM & 1C integratsiya",
     "stat_divisions": "Yo'nalish",
     "stat_products": "Mahsulot",
     "stat_projects": "Loyiha",
