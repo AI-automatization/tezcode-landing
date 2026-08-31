@@ -411,6 +411,10 @@ export function getPersonSchema(input: {
   knowsAbout: string[];
   sameAs?: string[];
   alternateName?: string[];
+  // schema.org/disambiguatingDescription — purpose-built to separate this
+  // person from a same-named entity (e.g. a namesake singer) so search engines
+  // and answer engines resolve the right Knowledge Graph node.
+  disambiguatingDescription?: string;
   image?: string;
 }) {
   return {
@@ -419,6 +423,9 @@ export function getPersonSchema(input: {
     "@id": `${BASE_URL}/${input.slug}#person`,
     name: input.name,
     ...(input.alternateName ? { alternateName: input.alternateName } : {}),
+    ...(input.disambiguatingDescription
+      ? { disambiguatingDescription: input.disambiguatingDescription }
+      : {}),
     jobTitle: input.jobTitle,
     description: input.description,
     url: `${BASE_URL}/${input.slug}`,

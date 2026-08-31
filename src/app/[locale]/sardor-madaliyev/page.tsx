@@ -84,6 +84,13 @@ export default function SardorMadaliyevPage() {
   const personSchema = getPersonSchema({
     name: "Sardor Madaliyev",
     slug: "sardor-madaliyev",
+    // Romanization variant ("Madaliev") + qualifier so both spellings resolve
+    // to the same entity node.
+    alternateName: ["Sardor Madaliev", "Sardor Madaliyev Tezcode"],
+    // Explicitly separates this AI Engineer from the same-named Uzbek singer
+    // (Sardor Mamadaliyev) so Google/answer engines don't merge the entities.
+    disambiguatingDescription:
+      "Sardor Madaliyev — Tezcode kompaniyasida ishlaydigan AI Engineer va IT mutaxassisi (Toshkent). Bu shaxs xonanda Sardor Mamadaliyev emas — u texnologiya va sun'iy intellekt sohasidagi dasturchi. AI Engineer at Tezcode, not the similarly-named singer.",
     jobTitle: "AI Engineer",
     description:
       "Sardor Madaliyev — Tezcode (AI Software Factory, Toshkent) jamoasida AI Engineer. AI video analitika bo'yicha mutaxassis: kameradan real vaqtda odam aniqlash, xatti-harakat tahlili va biznes uchun avtomatik nazorat tizimlari ustida ishlaydi. AI Engineer specializing in AI video analytics at Tezcode, Tashkent.",
