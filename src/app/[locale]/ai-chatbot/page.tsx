@@ -28,12 +28,12 @@ const META: Record<
       "24/7 mijoz xizmati, buyurtma qabul, lid saralash, CRM/1C integratsiyasi — Telegram, Instagram, WhatsApp va veb-saytda. O'zbek va rus tillarida. Bepul konsultatsiya.",
   },
   ru: {
-    title: "AI чат-бот для бизнеса — Ташкент",
+    title: "ИИ-чат-бот (AI-чат-бот) для бизнеса — Ташкент",
     description:
-      "AI чат-бот для бизнеса в Ташкенте от $339: поддержка клиентов 24/7 в Telegram, Instagram, WhatsApp и на сайте, приём заказов, интеграция с CRM/1C, узбекский и русский языки. Tezcode — резидент IT Park. Бесплатная консультация, оплата 30% предоплата.",
-    ogTitle: "AI чат-бот для бизнеса — Ташкент | Tezcode",
+      "ИИ-чат-бот (AI-чат-бот) для бизнеса в Ташкенте от $339 (≈ от 4 млн сум): поддержка клиентов 24/7 в Telegram, Instagram, WhatsApp и на сайте, приём заказов, интеграция с CRM/1C, узбекский и русский языки. Tezcode — резидент IT Park. Бесплатная консультация, оплата 30% предоплата.",
+    ogTitle: "ИИ-чат-бот (AI) для бизнеса — Ташкент | Tezcode",
     ogDescription:
-      "Поддержка 24/7, приём заказов, квалификация лидов, интеграция с CRM/1C — Telegram, Instagram, WhatsApp и сайт. На узбекском и русском. Бесплатная консультация.",
+      "ИИ-чат-бот для бизнеса: поддержка 24/7, приём заказов, квалификация лидов, интеграция с CRM/1C — Telegram, Instagram, WhatsApp и сайт. На узбекском и русском. Бесплатная консультация.",
   },
   en: {
     title: "AI chatbot for business — Tashkent",

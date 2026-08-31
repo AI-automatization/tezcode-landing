@@ -30,10 +30,10 @@ const META: Record<
   ru: {
     title: "Интеграция CRM — Ташкент",
     description:
-      "Интеграция CRM в Ташкенте от $700: подключение amoCRM, Bitrix24, HubSpot, 1C и Sales Doctor к Telegram, Instagram, WhatsApp, сайту и телефонии, настройка воронки, миграция данных. Tezcode — резидент IT Park. Бесплатная консультация, оплата 30% предоплата.",
+      "Интеграция CRM в Ташкенте от $700 (≈ от 8.5 млн сум): подключение amoCRM, Bitrix24, HubSpot, 1C и Sales Doctor к Telegram, Instagram, WhatsApp, сайту и телефонии, настройка воронки, миграция данных, ИИ-слой (AI). Tezcode — резидент IT Park. Бесплатная консультация, оплата 30% предоплата.",
     ogTitle: "Интеграция CRM — Ташкент | Tezcode",
     ogDescription:
-      "amoCRM, Bitrix24, HubSpot, 1C, Sales Doctor — подключаем все каналы к одной CRM, настраиваем воронку, переносим базу. От $700. Бесплатная консультация.",
+      "amoCRM, Bitrix24, HubSpot, 1C, Sales Doctor — подключаем все каналы к одной CRM, настраиваем воронку, переносим базу, добавляем ИИ (AI). От $700 (≈ от 8.5 млн сум). Бесплатная консультация.",
   },
   en: {
     title: "CRM integration — Tashkent",

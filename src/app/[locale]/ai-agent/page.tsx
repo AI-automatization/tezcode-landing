@@ -28,12 +28,12 @@ const META: Record<
       "Ishni o'zi bajaradigan AI agentlar: savdo, buyurtma, hisobot, HR. Telegram/CRM/1C/POS integratsiyasi, uz/ru. Bepul konsultatsiya.",
   },
   ru: {
-    title: "Создание AI-агента для бизнеса — Ташкент",
+    title: "Создание ИИ-агента (AI-агента) для бизнеса — Ташкент",
     description:
-      "AI-агенты от $400 — цифровые сотрудники, которые не просто отвечают, а сами выполняют работу: агент продаж (лид → CRM → follow-up), заказы, отчёты, HR. Интеграция Telegram/CRM/1C/POS, на узбекском и русском. Tezcode — резидент IT Park, Ташкент. Бесплатная консультация.",
-    ogTitle: "Создание AI-агента для бизнеса — Tezcode, Ташкент",
+      "ИИ-агенты (AI-агенты) от $400 (≈ от 5 млн сум) — цифровые сотрудники, которые не просто отвечают, а сами выполняют работу: агент продаж (лид → CRM → follow-up), заказы, отчёты, HR. Интеграция Telegram/CRM/1C/POS, на узбекском и русском. Tezcode — резидент IT Park, Ташкент. Бесплатная консультация.",
+    ogTitle: "Создание ИИ-агента (AI) для бизнеса — Tezcode, Ташкент",
     ogDescription:
-      "AI-агенты, которые сами выполняют работу: продажи, заказы, отчёты, HR. Интеграция Telegram/CRM/1C/POS, uz/ru. Бесплатная консультация.",
+      "ИИ-агенты (AI-агенты), которые сами выполняют работу: продажи, заказы, отчёты, HR. Интеграция Telegram/CRM/1C/POS, uz/ru. Бесплатная консультация.",
   },
   en: {
     title: "AI Agent Development for Business — Tashkent",
