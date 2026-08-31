@@ -129,7 +129,7 @@ export function Testimonials() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div
-                        className="text-white font-700 text-base truncate"
+                        className="text-[var(--tc-text-primary)] font-700 text-base truncate"
                         style={{ fontFamily: "var(--font-display)" }}
                       >
                         {r.name}

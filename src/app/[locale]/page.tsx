@@ -8,9 +8,9 @@ import { AutomationShowcase } from "@/components/AutomationShowcase";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { ROICalculator } from "@/components/ROICalculator";
 import { Partners } from "@/components/Partners";
+import { Clients } from "@/components/Clients";
 import { LatestNews } from "@/components/LatestNews";
 import { PricingTiers } from "@/components/PricingTiers";
-import { Testimonials } from "@/components/Testimonials";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
 import { CookieConsent } from "@/components/CookieConsent";
@@ -49,6 +49,9 @@ export default async function HomePage({
       {/* Tech stack marquee — social proof */}
       <TechStackMarquee />
 
+      {/* Clients — brands Tezcode has built for (logo wall) — high social proof */}
+      <Clients />
+
       {/* 6 Divisions */}
       <Suspense fallback={<div className="h-96 bg-[var(--tc-surface-1)]" />}>
         <ProductsGrid />
@@ -78,10 +81,6 @@ export default async function HomePage({
 
       {/* Pricing Tiers */}
       <PricingTiers />
-
-      {/* Testimonials — real Google reviews, mirrors the Review/AggregateRating
-          JSON-LD in getOrganizationSchema so visible content matches structured data */}
-      <Testimonials />
 
       {/* FAQ — visible Q&A that mirrors the FAQPage JSON-LD below */}
       <script

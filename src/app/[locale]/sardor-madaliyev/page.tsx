@@ -75,7 +75,7 @@ const LINKS = [
   { label: "Instagram: @_madaliev_s", href: "https://instagram.com/_madaliev_s" },
   {
     label: "LinkedIn: Sardor Madaliev",
-    href: "https://www.linkedin.com/in/sardor-madaliev-566601377/",
+    href: "https://www.linkedin.com/in/sardor-madaliyev-566601377/",
   },
   { label: "Email: madalievsardor33@gmail.com", href: "mailto:madalievsardor33@gmail.com" },
 ];
@@ -98,7 +98,7 @@ export default function SardorMadaliyevPage() {
     sameAs: [
       "https://t.me/madaliev_s",
       "https://instagram.com/_madaliev_s",
-      "https://www.linkedin.com/in/sardor-madaliev-566601377/",
+      "https://www.linkedin.com/in/sardor-madaliyev-566601377/",
     ],
     image: "/team/sardor-madaliyev.jpg",
   });

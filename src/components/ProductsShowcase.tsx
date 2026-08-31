@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ShoppingBag, Bot, HeartPulse, Clapperboard, Users, BarChart2, TrendingUp, ShoppingCart, ArrowRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
@@ -44,6 +45,15 @@ const LANDING_MAP: Partial<Record<ProductKey, string>> = {
   savdo_builder: "/maxsavdo",
 };
 
+// Real product logos (square, in public/products/). Products without a logo
+// fall back to the lucide ICON_MAP. Fetched from each product's own site.
+const LOGO_MAP: Partial<Record<ProductKey, string>> = {
+  raos: "/products/raos.png",
+  hamshirago: "/products/coremed.png", // card renders as "CoreMed"
+  wewatch: "/products/wewatch.png",
+  savdo_builder: "/products/maxsavdo.png", // card renders as "MaxSavdo"
+};
+
 // Picks an internal Link (locale-aware) for products with a landing page,
 // otherwise a plain external/anchor link to the product site.
 function CardLink({
@@ -80,8 +90,8 @@ function CardLink({
 
 // WorkControl is Live, so it belongs with production — the R&D row below
 // holds only upcoming/beta products. 4 + 4 keeps both rows balanced.
-const PRODUCTION: ProductKey[] = ["raos", "ai_office", "hamshirago", "workcontrol"];
-const FUTURE: ProductKey[] = ["ai_trade", "wewatch", "ventra", "savdo_builder"];
+const PRODUCTION: ProductKey[] = ["raos", "wewatch", "hamshirago", "savdo_builder"];
+const FUTURE: ProductKey[] = ["ai_trade", "ai_office", "ventra", "workcontrol"];
 
 export function ProductsShowcase() {
   const t = useTranslations("products");
@@ -157,6 +167,7 @@ function ProductCardLarge({
 
   const statusClass = STATUS_STYLE[status] ?? STATUS_STYLE.Beta;
   const Icon = ICON_MAP[product];
+  const logo = LOGO_MAP[product];
 
   const landing = LANDING_MAP[product];
   const isExternal = !landing && url.startsWith("http");
@@ -169,9 +180,15 @@ function ProductCardLarge({
       className="group tc-card tc-card-hover p-8 h-full flex flex-col"
     >
       <div className="flex items-start justify-between mb-6">
-        <div className="w-14 h-14 rounded-xl bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] flex items-center justify-center">
-          <Icon className="w-7 h-7" strokeWidth={1.75} />
-        </div>
+        {logo ? (
+          <div className="w-14 h-14 rounded-xl overflow-hidden bg-[var(--tc-surface-2)] flex items-center justify-center">
+            <Image src={logo} alt={name} width={56} height={56} className="w-full h-full object-cover" />
+          </div>
+        ) : (
+          <div className="w-14 h-14 rounded-xl bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] flex items-center justify-center">
+            <Icon className="w-7 h-7" strokeWidth={1.75} />
+          </div>
+        )}
         <span
           className={`inline-flex items-center gap-1.5 rounded-full font-500 border px-2.5 py-0.5 text-[10px] ${statusClass}`}
         >
@@ -221,6 +238,7 @@ function ProductCardSmall({
 
   const statusClass = STATUS_STYLE[status] ?? STATUS_STYLE.Beta;
   const Icon = ICON_MAP[product];
+  const logo = LOGO_MAP[product];
 
   const landing = LANDING_MAP[product];
   const isExternal = !landing && url.startsWith("http");
@@ -233,9 +251,15 @@ function ProductCardSmall({
       className="group tc-card tc-card-hover p-5 h-full flex flex-col"
     >
       <div className="flex items-start justify-between mb-4">
-        <div className="w-10 h-10 rounded-xl bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] flex items-center justify-center">
-          <Icon className="w-5 h-5" strokeWidth={1.75} />
-        </div>
+        {logo ? (
+          <div className="w-10 h-10 rounded-xl overflow-hidden bg-[var(--tc-surface-2)] flex items-center justify-center">
+            <Image src={logo} alt={name} width={40} height={40} className="w-full h-full object-cover" />
+          </div>
+        ) : (
+          <div className="w-10 h-10 rounded-xl bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] flex items-center justify-center">
+            <Icon className="w-5 h-5" strokeWidth={1.75} />
+          </div>
+        )}
         <span
           className={`inline-flex items-center gap-1.5 rounded-full font-500 border px-2 py-0.5 text-[10px] ${statusClass}`}
         >
