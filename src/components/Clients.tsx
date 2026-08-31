@@ -4,46 +4,50 @@ import Image from "next/image";
 import { useLocale } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
-// Clients (logo wall) — brands Tezcode has built for. Distinct from Partners
-// (partnerships carousel) and Testimonials (reviews). Add a logo here as new
-// clients come in. Logos live in public/clients/.
-type Client = {
+// "Trusted by" wall — partners + clients Tezcode works with. Each tile is a
+// logo + brand name, and is intentionally NOT a link (no navigation to their
+// sites). Distinct from the Partners carousel (detailed cards) and Testimonials
+// (reviews). Add a brand here as new ones come in. Logos live in public/clients/.
+type Brand = {
   name: string;
   logo: string; // /clients/<file> (transparent PNG preferred)
-  href?: string;
   w: number; // intrinsic logo width
   h: number; // intrinsic logo height
 };
 
-const CLIENTS: Client[] = [
-  { name: "Hoffen1", logo: "/clients/hoffen1.png", href: "https://hoffen.uz", w: 432, h: 182 },
+const BRANDS: Brand[] = [
+  { name: "Biznes Bomond", logo: "/clients/bomond.png", w: 776, h: 257 },
+  { name: "Hoffen", logo: "/clients/hoffen1.png", w: 432, h: 182 },
+  { name: "Dantes", logo: "/clients/dantes.png", w: 250, h: 265 },
+  { name: "Mars IT School", logo: "/clients/mars-it-school.png", w: 560, h: 118 },
+  { name: "AI Solution", logo: "/clients/aisolution.png", w: 719, h: 834 },
 ];
 
 const LABELS: Record<string, { chip: string; title: string; subtitle: string }> = {
   uz: {
-    chip: "Mijozlarimiz",
-    title: "Bizga ishonch bildirgan brendlar",
-    subtitle: "O'zbekistondagi kompaniyalar Tezcode bilan ishlaydi.",
+    chip: "Hamkor va mijozlar",
+    title: "Bizga ishonganlar",
+    subtitle: "O'zbekistondagi brendlar va hamkorlar Tezcode bilan ishlaydi.",
   },
   ru: {
-    chip: "Наши клиенты",
-    title: "Бренды, которые нам доверяют",
-    subtitle: "Компании Узбекистана работают с Tezcode.",
+    chip: "Партнёры и клиенты",
+    title: "Нам доверяют",
+    subtitle: "Бренды и партнёры Узбекистана работают с Tezcode.",
   },
   en: {
-    chip: "Our clients",
-    title: "Brands that trust us",
-    subtitle: "Companies across Uzbekistan work with Tezcode.",
+    chip: "Partners & clients",
+    title: "Trusted by",
+    subtitle: "Brands and partners across Uzbekistan work with Tezcode.",
   },
   ar: {
-    chip: "عملاؤنا",
-    title: "علامات تجارية تثق بنا",
-    subtitle: "شركات في أوزبكستان تعمل مع Tezcode.",
+    chip: "الشركاء والعملاء",
+    title: "يثقون بنا",
+    subtitle: "علامات تجارية وشركاء في أوزبكستان يعملون مع Tezcode.",
   },
   uk: {
-    chip: "Наші клієнти",
-    title: "Бренди, які нам довіряють",
-    subtitle: "Компанії Узбекистану працюють з Tezcode.",
+    chip: "Партнери та клієнти",
+    title: "Нам довіряють",
+    subtitle: "Бренди та партнери Узбекистану працюють з Tezcode.",
   },
 };
 
@@ -67,41 +71,39 @@ export function Clients() {
           </p>
         </Reveal>
 
-        <RevealStagger
-          className="flex flex-wrap items-center justify-center gap-5"
-          stagger={0.08}
-        >
-          {CLIENTS.map((c) => {
-            const inner = (
-              <Image
-                src={c.logo}
-                alt={c.name}
-                width={c.w}
-                height={c.h}
-                className="h-12 w-auto object-contain"
-              />
-            );
-            return (
-              <RevealItem key={c.name}>
-                {c.href ? (
-                  <a
-                    href={c.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={c.name}
-                    className="tc-card tc-card-hover flex items-center justify-center h-24 px-10 min-w-[220px]"
-                  >
-                    {inner}
-                  </a>
-                ) : (
-                  <div className="tc-card flex items-center justify-center h-24 px-10 min-w-[220px]">
-                    {inner}
+        {/* Single unified panel — logos in one row split by dividers.
+            Intentionally not links (no navigation to their sites). The inner
+            grid is pulled 1px past the card on the end/bottom edges so the
+            outer cell borders get clipped by overflow-hidden (leaving only the
+            inner dividers), which works for any number of brands. */}
+        <Reveal className="max-w-6xl mx-auto">
+          <div className="tc-card overflow-hidden !p-0">
+            <RevealStagger
+              className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 -me-px -mb-px"
+              stagger={0.08}
+            >
+              {BRANDS.map((b) => (
+                <RevealItem
+                  key={b.name}
+                  className="flex flex-col items-center justify-center gap-5 py-12 px-6 group border-e border-b border-[var(--tc-border)]"
+                >
+                  <div className="flex h-16 items-center justify-center">
+                    <Image
+                      src={b.logo}
+                      alt={b.name}
+                      width={b.w}
+                      height={b.h}
+                      className="h-14 w-auto max-h-14 max-w-[170px] object-contain transition-transform duration-300 group-hover:scale-105"
+                    />
                   </div>
-                )}
-              </RevealItem>
-            );
-          })}
-        </RevealStagger>
+                  <span className="text-sm font-600 tracking-wide text-[var(--tc-text-secondary)] text-center">
+                    {b.name}
+                  </span>
+                </RevealItem>
+              ))}
+            </RevealStagger>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
