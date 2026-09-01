@@ -64,6 +64,7 @@ const ROUTES: Route[] = [
   { path: "/tezcode-labs", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/wewatch", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/maxsavdo", priority: 0.7, changeFrequency: "monthly" as const },
+  { path: "/tezdetal", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/tezcode-academy", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/tariflar", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/aloqa", priority: 0.8, changeFrequency: "monthly" as const },
