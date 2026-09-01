@@ -172,54 +172,79 @@ function ProductCardLarge({
   const landing = LANDING_MAP[product];
   const isExternal = !landing && url.startsWith("http");
 
+  // RAOS gets a separate "UZ RAOS" backlink to raos.uz in the footer strip
+  const isRaos = product === "raos";
+
   return (
-    <CardLink
-      landing={landing}
-      url={url}
-      isExternal={isExternal}
-      className="group tc-card tc-card-hover p-8 h-full flex flex-col"
-    >
-      <div className="flex items-start justify-between mb-6">
-        {logo ? (
-          <div className="w-14 h-14 rounded-xl overflow-hidden bg-[var(--tc-surface-2)] flex items-center justify-center">
-            <Image src={logo} alt={name} width={56} height={56} className="w-full h-full object-cover" />
-          </div>
-        ) : (
-          <div className="w-14 h-14 rounded-xl bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] flex items-center justify-center">
-            <Icon className="w-7 h-7" strokeWidth={1.75} />
-          </div>
-        )}
-        <span
-          className={`inline-flex items-center gap-1.5 rounded-full font-500 border px-2.5 py-0.5 text-[10px] ${statusClass}`}
-        >
-          <span className="w-1.5 h-1.5 rounded-full bg-current" />
-          {statusLabel}
-        </span>
-      </div>
-
-      <h3
-        className="text-2xl font-700 text-[var(--tc-text-primary)] mb-1 tracking-tight"
-        style={{ fontFamily: "var(--font-display)" }}
+    <div className="group tc-card tc-card-hover p-8 h-full flex flex-col">
+      {/* Main clickable area — internal landing or external URL */}
+      <CardLink
+        landing={landing}
+        url={url}
+        isExternal={isExternal}
+        className="flex flex-col flex-1"
       >
-        {name}
-      </h3>
+        <div className="flex items-start justify-between mb-6">
+          {logo ? (
+            <div className="w-14 h-14 rounded-xl overflow-hidden bg-[var(--tc-surface-2)] flex items-center justify-center">
+              <Image src={logo} alt={name} width={56} height={56} className="w-full h-full object-cover" />
+            </div>
+          ) : (
+            <div className="w-14 h-14 rounded-xl bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] flex items-center justify-center">
+              <Icon className="w-7 h-7" strokeWidth={1.75} />
+            </div>
+          )}
+          <span
+            className={`inline-flex items-center gap-1.5 rounded-full font-500 border px-2.5 py-0.5 text-[10px] ${statusClass}`}
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-current" />
+            {statusLabel}
+          </span>
+        </div>
 
-      <p className="text-sm text-[var(--tc-text-secondary)] mb-5">{tagline}</p>
+        <h3
+          className="text-2xl font-700 text-[var(--tc-text-primary)] mb-1 tracking-tight"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          {name}
+        </h3>
 
-      <p className="text-sm text-[var(--tc-text-muted)] leading-relaxed mb-6 flex-1">
-        {description}
-      </p>
+        <p className="text-sm text-[var(--tc-text-secondary)] mb-5">{tagline}</p>
 
+        <p className="text-sm text-[var(--tc-text-muted)] leading-relaxed mb-6 flex-1">
+          {description}
+        </p>
+      </CardLink>
+
+      {/* Footer strip — division + CTA + optional backlink */}
       <div className="pt-4 border-t border-[var(--tc-border)] flex items-center justify-between text-xs">
         <span className="text-[var(--tc-text-muted)] uppercase tracking-[0.2em]">
           {division}
         </span>
-        <span className="text-[var(--tc-blue-text)] flex items-center gap-1.5 font-500">
-          {landing ? "Batafsil" : isExternal ? "Saytga" : "Demo so'rang"}
-          <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
-        </span>
+        <div className="flex items-center gap-4">
+          {/* UZ RAOS backlink for raos product */}
+          {isRaos && (
+            <a
+              href="https://raos.uz"
+              target="_blank"
+              rel="noopener"
+              className="text-sm text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] tc-link-underline transition-colors"
+            >
+              UZ RAOS
+            </a>
+          )}
+          <CardLink
+            landing={landing}
+            url={url}
+            isExternal={isExternal}
+            className="text-[var(--tc-blue-text)] flex items-center gap-1.5 font-500"
+          >
+            {landing ? "Batafsil" : isExternal ? "Saytga" : "Demo so'rang"}
+            <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
+          </CardLink>
+        </div>
       </div>
-    </CardLink>
+    </div>
   );
 }
 
