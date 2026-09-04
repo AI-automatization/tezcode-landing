@@ -175,6 +175,32 @@ const ROLE_RU: Record<string, string> = {
   "Yusuf Kasimov": "Full-Stack разработчик",
 };
 
+// Russian (Cyrillic) name spellings — shown in the ru locale so the About page
+// reads natively. Transliterations follow common UZ→RU usage; a member can
+// request a different spelling.
+const NAME_RU: Record<string, string> = {
+  "Bekzod Mirzaaliyev": "Бекзод Мирзаалиев",
+  "Abdulaziz Yormatov": "Абдулазиз Ёрматов",
+  "Abdulloh Isroilov": "Абдулло Исроилов",
+  "Azimjon Qurbonov": "Азимжон Курбонов",
+  "Diyor Raxmatullayev": "Диёр Рахматуллаев",
+  "Sardor Madaliyev": "Сардор Мадалиев",
+  "Ziyoda Mirzakirova": "Зиёда Мирзакирова",
+  "Emirhan Ertan": "Эмирхан Эртан",
+  "Behruz Satimboyev": "Бехруз Сатимбоев",
+  "Abubakir Ilhomov": "Абубакир Илхомов",
+  "Ibrat Tursunov": "Ибрат Турсунов",
+  "Polatbek Ismoilov": "Полатбек Исмоилов",
+  "Abdulaziz Mirzayev": "Абдулазиз Мирзаев",
+  "Jafarbek Ulugbekov": "Джафарбек Улугбеков",
+  "Javodbek Abdusalimov": "Джаводбек Абдусалимов",
+  "Habibulloh Shuhratov": "Хабибулло Шухратов",
+  "Saidazim Buriboyev": "Саидазим Бурибоев",
+  "Abdulaziz Atxamov": "Абдулазиз Атхамов",
+  "Ibrohim Sobirov": "Иброхим Собиров",
+  "Yusuf Kasimov": "Юсуф Касимов",
+};
+
 function initials(name: string): string {
   const parts = name.trim().split(/\s+/);
   if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
@@ -258,6 +284,8 @@ function TeamCard({ member }: { member: Member }) {
   const locale = useLocale();
   const displayRole =
     locale === "ru" ? ROLE_RU[member.name] ?? member.role : member.role;
+  const displayName =
+    locale === "ru" ? NAME_RU[member.name] ?? member.name : member.name;
 
   const openProfile = () => {
     if (profileHref) router.push(profileHref);
@@ -306,7 +334,7 @@ function TeamCard({ member }: { member: Member }) {
           >
             <Image
               src={member.photo}
-              alt={member.name}
+              alt={displayName}
               width={96}
               height={96}
               className="w-full h-full object-cover"
@@ -322,7 +350,7 @@ function TeamCard({ member }: { member: Member }) {
             ].join(" ")}
             style={{ fontFamily: "var(--font-display)" }}
           >
-            {initials(member.name)}
+            {initials(displayName)}
           </div>
         )}
 
@@ -330,7 +358,7 @@ function TeamCard({ member }: { member: Member }) {
           className="font-700 text-[var(--tc-text-primary)] text-base leading-snug"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          {member.name}
+
         </h4>
         <p className="text-xs text-[var(--tc-text-muted)] leading-snug mt-1.5 flex-1">
           {displayRole}
