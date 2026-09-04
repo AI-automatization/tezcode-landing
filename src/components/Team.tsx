@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { m } from "motion/react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/routing";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
@@ -150,6 +150,31 @@ const TEAM: Member[] = [
   },
 ];
 
+// Russian role labels (cards default to English roles; in the ru locale the
+// TeamCard shows these instead so the About page reads natively in Russian).
+const ROLE_RU: Record<string, string> = {
+  "Bekzod Mirzaaliyev": "Основатель",
+  "Abdulaziz Yormatov": "COO · Операционный директор",
+  "Abdulloh Isroilov": "Со-основатель AI-Trade · Full-Stack разработчик",
+  "Azimjon Qurbonov": "Со-основатель Savdo Builder · разработчик",
+  "Diyor Raxmatullayev": "Основатель CoreMed · тимлид Tezcode",
+  "Sardor Madaliyev": "ИИ-инженер · ИИ-видеоаналитика",
+  "Ziyoda Mirzakirova": "Full-Stack разработчик",
+  "Emirhan Ertan": "Со-основатель WeWatch · SEO",
+  "Behruz Satimboyev": "Тимлид · Full-Stack разработчик",
+  "Abubakir Ilhomov": "Full-Stack и ИИ-разработчик",
+  "Ibrat Tursunov": "Full-Stack разработчик",
+  "Polatbek Ismoilov": "Техлид",
+  "Abdulaziz Mirzayev": "Frontend и Mobile разработчик",
+  "Jafarbek Ulugbekov": "Full-Stack разработчик",
+  "Javodbek Abdusalimov": "Full-Stack разработчик",
+  "Habibulloh Shuhratov": "Full-Stack разработчик",
+  "Saidazim Buriboyev": "Backend-разработчик",
+  "Abdulaziz Atxamov": "Маркетинг · QA · разработчик",
+  "Ibrohim Sobirov": "Full-Stack разработчик",
+  "Yusuf Kasimov": "Full-Stack разработчик",
+};
+
 function initials(name: string): string {
   const parts = name.trim().split(/\s+/);
   if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
@@ -230,6 +255,9 @@ function TeamCard({ member }: { member: Member }) {
     member.profileHref ??
     (member.profileSlug ? `/jamoa/${member.profileSlug}` : null);
   const clickable = Boolean(profileHref);
+  const locale = useLocale();
+  const displayRole =
+    locale === "ru" ? ROLE_RU[member.name] ?? member.role : member.role;
 
   const openProfile = () => {
     if (profileHref) router.push(profileHref);
@@ -305,7 +333,7 @@ function TeamCard({ member }: { member: Member }) {
           {member.name}
         </h4>
         <p className="text-xs text-[var(--tc-text-muted)] leading-snug mt-1.5 flex-1">
-          {member.role}
+          {displayRole}
         </p>
 
         {member.telegram && (
