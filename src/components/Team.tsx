@@ -358,7 +358,7 @@ function TeamCard({ member }: { member: Member }) {
           className="font-700 text-[var(--tc-text-primary)] text-base leading-snug"
           style={{ fontFamily: "var(--font-display)" }}
         >
-
+          {displayName}
         </h4>
         <p className="text-xs text-[var(--tc-text-muted)] leading-snug mt-1.5 flex-1">
           {displayRole}
