@@ -8,8 +8,10 @@ import { TEAM_PROFILES } from "@/content/team-profiles";
 // fixed date instead of `new Date()` keeps lastModified honest: search engines
 // lose trust in sitemaps where every URL "changes" on every deploy. Bump this
 // only on major site-wide content updates (e.g. 2026-08-11: Review schema +
-// internal linking added to every service page, new CRM/comparison pages).
-const SITE_UPDATED = new Date("2026-08-11");
+// internal linking added to every service page, new CRM/comparison pages;
+// 2026-09-05: full RU "AI"→"ИИ" localization + native-RU quality pass across
+// every page — signal search engines to re-crawl the updated Russian titles).
+const SITE_UPDATED = new Date("2026-09-05");
 
 // Team profile pages (founder + /jamoa/* developers) are newly created and
 // actively updated as members submit info. A fresh, honest lastModified here
