@@ -30,14 +30,12 @@ const TEAM: Member[] = [
     role: "COO",
     telegram: "@mr_abdulaziz_yormatov",
     profileSlug: "abdulaziz-yormatov",
-    photo: "/team/abdulaziz-yormatov.jpg",
   },
   {
     name: "Abdulloh Isroilov",
     role: "AI-Trade Co-founder · Full-Stack Developer",
     telegram: "@abufdx",
     profileSlug: "abdulloh-isroilov",
-    photo: "/team/abdulloh-isroilov.jpg",
   },
   {
     name: "Azimjon Qurbonov",
@@ -49,21 +47,18 @@ const TEAM: Member[] = [
     role: "CoreMed Founder · Tezcode Team Lead",
     telegram: "@diyor_011",
     profileSlug: "diyor-raxmatullayev",
-    photo: "/team/diyor-raxmatullayev.jpg",
   },
   {
     name: "Sardor Madaliyev",
     role: "AI Engineer · AI Video Analitika",
     telegram: "@madaliev_s",
     profileHref: "/sardor-madaliyev",
-    photo: "/team/sardor-madaliyev.jpg",
   },
   {
     name: "Ziyoda Mirzakirova",
     role: "Full Stack Developer",
     telegram: "@mirzakiirova",
     profileSlug: "ziyoda-mirzakirova",
-    photo: "/team/ziyoda-mirzakirova.jpg",
   },
   {
     name: "Emirhan Ertan",
@@ -83,7 +78,6 @@ const TEAM: Member[] = [
     role: "Full-Stack & AI Developer",
     telegram: "@abubakirilhomov",
     profileSlug: "abubakir-ilhomov",
-    photo: "/team/abubakir-ilhomov.jpg",
   },
   {
     name: "Ibrat Tursunov",
@@ -96,14 +90,12 @@ const TEAM: Member[] = [
     role: "Tech Lead",
     telegram: "@ismailov_0011",
     profileSlug: "polatbek-ismoilov",
-    photo: "/team/polatbek-ismoilov.jpg",
   },
   {
     name: "Abdulaziz Mirzayev",
     role: "Frontend & Mobile Developer",
     telegram: "@mirzaevvv011",
     profileSlug: "abdulaziz-mirzayev",
-    photo: "/team/abdulaziz-mirzayev.jpg",
   },
   {
     name: "Jafarbek Ulugbekov",
