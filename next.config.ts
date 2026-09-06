@@ -30,6 +30,36 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  // The two founders have root-level profile pages (/sardor-madaliyev,
+  // /bekzod-mirzaaliyev), NOT /jamoa/<slug> like the rest of the team. Product
+  // sites (raos.uz, maxsavdo.uz, tezdetal.uz) build every teammate link as
+  // /jamoa/<slug>, so their links to the two founders currently 404 and their
+  // backlink equity is wasted. 301 those /jamoa/<founder> URLs to the real
+  // pages so the inbound links resolve and pass authority to the profiles.
+  async redirects() {
+    return [
+      {
+        source: "/jamoa/sardor-madaliyev",
+        destination: "/sardor-madaliyev",
+        permanent: true,
+      },
+      {
+        source: "/jamoa/bekzod-mirzaaliyev",
+        destination: "/bekzod-mirzaaliyev",
+        permanent: true,
+      },
+      {
+        source: "/:locale/jamoa/sardor-madaliyev",
+        destination: "/:locale/sardor-madaliyev",
+        permanent: true,
+      },
+      {
+        source: "/:locale/jamoa/bekzod-mirzaaliyev",
+        destination: "/:locale/bekzod-mirzaaliyev",
+        permanent: true,
+      },
+    ];
+  },
   // Headers for security + performance
   async headers() {
     return [
