@@ -213,11 +213,31 @@ export function getOrganizationSchema() {
     },
     founder: {
       "@type": "Person",
+      "@id": `${BASE_URL}/bekzod-mirzaaliyev#person`,
       name: "Bekzod Mirzaaliyev",
       jobTitle: "Founder & CEO",
       url: `${BASE_URL}/bekzod-mirzaaliyev`,
       sameAs: ["https://t.me/tezcode_managament"],
     },
+    // Named employees linked by @id to their own /…#person profile nodes. This
+    // ties each person to THIS organization in the entity graph, so a name query
+    // (e.g. "Sardor Madaliyev") resolves to the Tezcode-affiliated person and
+    // his profile page — not the same-named singer.
+    employee: [
+      {
+        "@type": "Person",
+        "@id": `${BASE_URL}/sardor-madaliyev#person`,
+        name: "Sardor Madaliyev",
+        alternateName: "Sardor Madaliev",
+        jobTitle: "AI Engineer",
+        url: `${BASE_URL}/sardor-madaliyev`,
+        sameAs: [
+          "https://www.linkedin.com/in/sardor-madaliyev-566601377/",
+          "https://t.me/madaliev_s",
+          "https://instagram.com/_madaliev_s",
+        ],
+      },
+    ],
     address: {
       "@type": "PostalAddress",
       // Must match the Google Business Profile NAP exactly (same address string),

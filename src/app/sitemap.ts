@@ -19,6 +19,11 @@ const SITE_UPDATED = new Date("2026-09-05");
 // inheriting the older site-wide date.
 const TEAM_UPDATED = new Date("2026-08-26");
 
+// The two founder profile pages (root-level vanity URLs) are personal-brand
+// entity pages we actively want re-crawled and ranked for the person's name.
+// Fresher date + higher priority than the /jamoa registry pages.
+const FOUNDER_UPDATED = new Date("2026-09-06");
+
 // City slugs with live pages for the newer per-city service landings.
 // Must mirror ACTIVE_CITY_SLUGS in each service's [city]/page.tsx
 // (ai-chatbot, ai-agent, telegram-bot-biznes, biznes-avtomatlashtirish).
@@ -83,8 +88,8 @@ const ROUTES: Route[] = [
   { path: "/case-studies/munira-clinic", priority: 0.7, changeFrequency: "yearly" as const },
   { path: "/roadmap", priority: 0.6, changeFrequency: "monthly" as const },
   { path: "/changelog", priority: 0.6, changeFrequency: "weekly" as const },
-  { path: "/bekzod-mirzaaliyev", priority: 0.6, changeFrequency: "monthly" as const, lastModified: TEAM_UPDATED },
-  { path: "/sardor-madaliyev", priority: 0.6, changeFrequency: "monthly" as const, lastModified: TEAM_UPDATED },
+  { path: "/bekzod-mirzaaliyev", priority: 0.8, changeFrequency: "monthly" as const, lastModified: FOUNDER_UPDATED },
+  { path: "/sardor-madaliyev", priority: 0.8, changeFrequency: "monthly" as const, lastModified: FOUNDER_UPDATED },
   // Team member profiles (/jamoa/<slug>) — derived from the profile registry so
   // new teammates auto-appear in the sitemap. Fresh lastModified nudges crawling.
   ...TEAM_PROFILES.map((p) => ({
