@@ -140,7 +140,6 @@ export const TEAM_PROFILES: TeamProfile[] = [
     ],
     telegram: "mr_abdulaziz_yormatov",
     linkedin: "https://www.linkedin.com/in/abdulaziz-yormatov-724287418/",
-    photo: "/team/abdulaziz-yormatov.jpg",
     knowsAbout: [
       "Software Architecture",
       "TypeScript",
@@ -229,7 +228,6 @@ export const TEAM_PROFILES: TeamProfile[] = [
       { name: "Salomat AI", role: "AI tibbiy yordamchi" },
     ],
     telegram: "diyor_011",
-    photo: "/team/diyor-raxmatullayev.jpg",
     knowsAbout: [
       "Healthtech",
       "Full-Stack Development",
@@ -307,7 +305,6 @@ export const TEAM_PROFILES: TeamProfile[] = [
     ],
     telegram: "abubakirilhomov",
     linkedin: "https://www.linkedin.com/in/abubakir-ilhomov-888131325",
-    photo: "/team/abubakir-ilhomov.jpg",
     knowsAbout: [
       "Full-Stack Development",
       "AI Agents",
@@ -414,7 +411,6 @@ export const TEAM_PROFILES: TeamProfile[] = [
     projects: [{ name: "RAOS", role: "POS/kassa — frontend va mobil" }],
     telegram: "mirzaevvv011",
     linkedin: "https://www.linkedin.com/in/abdulaziz-mirzayev-b25650379",
-    photo: "/team/abdulaziz-mirzayev.jpg",
     knowsAbout: [
       "Frontend Development",
       "Mobile Development",
@@ -447,7 +443,6 @@ export const TEAM_PROFILES: TeamProfile[] = [
     ],
     projects: [],
     telegram: "mirzakiirova",
-    photo: "/team/ziyoda-mirzakirova.jpg",
     knowsAbout: [
       "Full-Stack Development",
       "React",
@@ -470,7 +465,6 @@ export const TEAM_PROFILES: TeamProfile[] = [
     skills: ["React", "Node.js", "Express.js", "MongoDB", "JavaScript"],
     projects: [{ name: "AI-Trade", role: "Savdo agenti — full-stack" }],
     telegram: "abufdx",
-    photo: "/team/abdulloh-isroilov.jpg",
     knowsAbout: [
       "Full-Stack Development",
       "React",
@@ -510,7 +504,6 @@ export const TEAM_PROFILES: TeamProfile[] = [
     ],
     telegram: "ismailov_0011",
     linkedin: "https://www.linkedin.com/in/polatbek-ismoilov-b33861404/",
-    photo: "/team/polatbek-ismoilov.jpg",
     knowsAbout: [
       "Backend Development",
       "NestJS",
