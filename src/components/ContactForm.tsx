@@ -91,20 +91,30 @@ export function ContactForm({ hideHeader = false }: { hideHeader?: boolean }) {
           className="tc-card relative space-y-5 p-8 sm:p-10"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <Field label={t("form.name")} error={errors.name?.message}>
+            <Field id="contact-name" label={t("form.name")} error={errors.name?.message}>
               <input
                 {...register("name")}
+                id="contact-name"
                 placeholder={t("form.name_placeholder")}
                 className={inputClasses}
+                required
+                aria-required
+                aria-invalid={errors.name ? true : undefined}
+                aria-describedby={errors.name ? "contact-name-error" : undefined}
               />
             </Field>
 
-            <Field label={t("form.phone")} error={errors.phone?.message}>
+            <Field id="contact-phone" label={t("form.phone")} error={errors.phone?.message}>
               <input
                 {...register("phone")}
+                id="contact-phone"
                 type="tel"
                 placeholder={t("form.phone_placeholder")}
                 className={inputClasses}
+                required
+                aria-required
+                aria-invalid={errors.phone ? true : undefined}
+                aria-describedby={errors.phone ? "contact-phone-error" : undefined}
               />
             </Field>
           </div>
@@ -112,12 +122,15 @@ export function ContactForm({ hideHeader = false }: { hideHeader?: boolean }) {
           {/* Subject stays fixed to "demo" — the dropdown was one field too many */}
           <input type="hidden" {...register("subject")} value="demo" />
 
-          <Field label={t("form.message")} error={errors.message?.message}>
+          <Field id="contact-message" label={t("form.message")} error={errors.message?.message}>
             <textarea
               {...register("message")}
+              id="contact-message"
               rows={3}
               placeholder={t("form.message_placeholder")}
               className={`${inputClasses} resize-y`}
+              aria-invalid={errors.message ? true : undefined}
+              aria-describedby={errors.message ? "contact-message-error" : undefined}
             />
           </Field>
 
@@ -163,12 +176,20 @@ export function ContactForm({ hideHeader = false }: { hideHeader?: boolean }) {
           </button>
 
           {status === "success" && (
-            <div className="p-3 rounded-[var(--tc-radius-md)] bg-[rgba(5,150,105,0.08)] border border-[rgba(5,150,105,0.3)] text-[var(--tc-success)] text-sm text-center">
+            <div
+              role="status"
+              aria-live="polite"
+              className="p-3 rounded-[var(--tc-radius-md)] bg-[rgba(5,150,105,0.08)] border border-[rgba(5,150,105,0.3)] text-[var(--tc-success)] text-sm text-center"
+            >
               {t("form.success")}
             </div>
           )}
           {status === "error" && (
-            <div className="p-3 rounded-[var(--tc-radius-md)] bg-[rgba(220,38,38,0.06)] border border-[rgba(220,38,38,0.3)] text-[#dc2626] text-sm text-center">
+            <div
+              role="alert"
+              aria-live="assertive"
+              className="p-3 rounded-[var(--tc-radius-md)] bg-[rgba(220,38,38,0.06)] border border-[rgba(220,38,38,0.3)] text-[#dc2626] text-sm text-center"
+            >
               {t("form.error")}
             </div>
           )}
@@ -179,21 +200,30 @@ export function ContactForm({ hideHeader = false }: { hideHeader?: boolean }) {
 }
 
 function Field({
+  id,
   label,
   error,
   children,
 }: {
+  id: string;
   label: string;
   error?: string;
   children: React.ReactNode;
 }) {
   return (
     <div>
-      <label className="block text-sm font-600 text-[var(--tc-text-primary)] mb-1.5">
+      <label
+        htmlFor={id}
+        className="block text-sm font-600 text-[var(--tc-text-primary)] mb-1.5"
+      >
         {label}
       </label>
       {children}
-      {error && <p className="mt-1 text-xs text-[#dc2626]">{error}</p>}
+      {error && (
+        <p id={`${id}-error`} className="mt-1 text-xs text-[#dc2626]">
+          {error}
+        </p>
+      )}
     </div>
   );
 }

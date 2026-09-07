@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import {
@@ -370,6 +370,54 @@ export function Navbar() {
 }
 
 // ─────────────────────────────────────────────────────────
+// Shared disclosure logic for the desktop mega-menus.
+// Keeps hover behaviour (pure CSS) intact while adding a
+// keyboard/screen-reader operable open state: click toggles,
+// Escape closes (and returns focus to the trigger), and focus
+// leaving the menu or a click outside closes it.
+// ─────────────────────────────────────────────────────────
+function useMenuDisclosure() {
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  // Close on click outside (pointer users).
+  useEffect(() => {
+    if (!open) return;
+    const onDocPointer = (e: MouseEvent) => {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", onDocPointer);
+    return () => document.removeEventListener("mousedown", onDocPointer);
+  }, [open]);
+
+  const onKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === "Escape" && open) {
+      setOpen(false);
+      buttonRef.current?.focus();
+    }
+  };
+
+  // Close when focus leaves the whole menu (keyboard tab-out).
+  const onBlur = (e: React.FocusEvent<HTMLDivElement>) => {
+    if (!containerRef.current?.contains(e.relatedTarget as Node | null)) {
+      setOpen(false);
+    }
+  };
+
+  // When open, force the panel visible; otherwise keep the original
+  // hover reveal and add focus-within so tabbing through the links
+  // (or any residual focus) keeps the panel visible and tabbable.
+  const panelVisibility = open
+    ? "visible opacity-100"
+    : "invisible opacity-0 group-hover/menu:visible group-hover/menu:opacity-100 focus-within:visible focus-within:opacity-100";
+
+  return { open, setOpen, containerRef, buttonRef, onKeyDown, onBlur, panelVisibility };
+}
+
+// ─────────────────────────────────────────────────────────
 // Desktop mega-menu — CSS hover dropdown. The trigger is a real
 // Link (clicking navigates); hovering reveals the sub-pages.
 // ─────────────────────────────────────────────────────────
@@ -382,11 +430,23 @@ function MegaMenu({
   label: string;
   items: MenuItem[];
 }) {
+  const { open, setOpen, containerRef, buttonRef, onKeyDown, onBlur, panelVisibility } =
+    useMenuDisclosure();
+
   return (
-    <div className="relative group/menu">
+    <div
+      ref={containerRef}
+      onKeyDown={onKeyDown}
+      onBlur={onBlur}
+      className="relative group/menu"
+    >
       {/* Menu trigger only — not a link, so no /#anchor URLs in the address bar */}
       <button
+        ref={buttonRef}
         type="button"
+        aria-haspopup="true"
+        aria-expanded={open}
+        onClick={() => setOpen((o) => !o)}
         className="inline-flex items-center gap-1 px-3 py-2 text-sm font-medium text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] transition-colors cursor-default"
       >
         {label}
@@ -394,7 +454,9 @@ function MegaMenu({
       </button>
 
       {/* pt-3 bridges the gap so the panel doesn't close when moving the cursor */}
-      <div className="invisible opacity-0 group-hover/menu:visible group-hover/menu:opacity-100 transition-opacity duration-200 absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50">
+      <div
+        className={`${panelVisibility} transition-opacity duration-200 absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50`}
+      >
         <div className="w-[560px] bg-[var(--tc-surface-1)] rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] shadow-[var(--tc-shadow-card-hover)] p-2 grid grid-cols-2 gap-1">
           {items.map((item) => {
             const Icon = item.icon;
@@ -491,18 +553,32 @@ function SolutionsMegaMenu({
   groups: SolutionGroup[];
   allLabel: string;
 }) {
+  const { open, setOpen, containerRef, buttonRef, onKeyDown, onBlur, panelVisibility } =
+    useMenuDisclosure();
+
   return (
-    <div className="relative group/menu">
+    <div
+      ref={containerRef}
+      onKeyDown={onKeyDown}
+      onBlur={onBlur}
+      className="relative group/menu"
+    >
       {/* Menu trigger only — not a link, so no /#anchor URLs in the address bar */}
       <button
+        ref={buttonRef}
         type="button"
+        aria-haspopup="true"
+        aria-expanded={open}
+        onClick={() => setOpen((o) => !o)}
         className="inline-flex items-center gap-1 px-3 py-2 text-sm font-medium text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] transition-colors cursor-default"
       >
         {label}
         <ChevronDown className="w-3.5 h-3.5 opacity-50 transition-transform duration-200 group-hover/menu:rotate-180" />
       </button>
 
-      <div className="invisible opacity-0 group-hover/menu:visible group-hover/menu:opacity-100 transition-opacity duration-200 absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50">
+      <div
+        className={`${panelVisibility} transition-opacity duration-200 absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50`}
+      >
         <div className="w-[720px] bg-[var(--tc-surface-1)] rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] shadow-[var(--tc-shadow-card-hover)] p-4">
           <div className="grid grid-cols-3 gap-x-4 gap-y-1">
             {groups.map((group) => (

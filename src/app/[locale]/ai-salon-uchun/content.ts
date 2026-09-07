@@ -108,7 +108,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Bot kelmay qolishni (no-show) kamaytiradimi?", a: "Ha. Bron oldidan avtomatik eslatma yuboriladi (masalan bir kun va bir soat oldin). Mijoz unutmaydi, kelmay qolish sezilarli kamayadi — bu daromadingizga to'g'ridan-to'g'ri ta'sir qiladi." },
         { q: "Bot o'zbek tilida ishlaydimi?", a: "Ha. Bot o'zbek (lotin va kirill) va rus tilida ishlaydi. Mijoz o'z tilida bron qiladi va savol beradi — Tezcode buni alohida sozlaydi." },
         { q: "Instagram'dan bron olsa bo'ladimi?", a: "Ha. Bot Instagram Direct va Telegram'ning ikkalasida ham bron oladi. O'zbekistonda salon mijozlari ko'proq shu kanallarda bo'lgani uchun bu muhim." },
-        { q: "Narxi qancha?", a: "Bron boti $279 дан boshlanadi. AI (erkin savolga javob), CRM va sodiqlik qo'shilsa narx oshadi — AI chatbot $339 дан. Aniq summa TZ'dan keyin yozma beriladi." },
+        { q: "Narxi qancha?", a: "Bron boti $279 dan boshlanadi. AI (erkin savolga javob), CRM va sodiqlik qo'shilsa narx oshadi — AI chatbot $339 dan. Aniq summa TZ'dan keyin yozma beriladi." },
         { q: "Mijozlar bazasi va tarix saqlanadimi?", a: "Ha. Har mijozning tashrif tarixi, sevimli usta va xizmatlari CRM'da saqlanadi. Shu asosda qaytgan mijozga shaxsiy taklif va aksiya yuboriladi." },
         { q: "Toshkentda salon uchun bot kim yasaydi?", a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti — go'zallik saloni, barbershop va klinika uchun onlayn bron boti, AI chatbot va CRM o'rnatadi. Bepul konsultatsiyaga keling." },
       ],

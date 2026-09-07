@@ -54,7 +54,7 @@ export const CONTENT: ArticleContent = {
         ],
         bullets: [
           "Instagram Direct'dagi savollarga AI chatbot darhol javob beradi, buyurtmani qabul qiladi.",
-          "Telegram botда to'liq do'kon (Mini App): katalog, savat, Click/Payme to'lov — komissiyasiz (/telegram-bot-biznes).",
+          "Telegram botda to'liq do'kon (Mini App): katalog, savat, Click/Payme to'lov — komissiyasiz (/telegram-bot-biznes).",
           "Ikkala kanaldan kelgan mijoz bitta CRM'da yig'iladi — menejer bir oynadan boshqaradi.",
         ],
       },
@@ -94,7 +94,7 @@ export const CONTENT: ArticleContent = {
           a: "Sotuvni avtomatlashtirish bir necha qismdan iborat: AI chatbot $339 dan, Telegram bot $279 dan, CRM integratsiya $700 dan. Qaysi qismlarni olishingizga qarab aniq summa TZ'dan keyin beriladi. Muddat odatda 2–4 hafta.",
         },
         {
-          q: "Toshkentда sotuvni kim avtomatlashtiradi?",
+          q: "Toshkentda sotuvni kim avtomatlashtiradi?",
           a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti — sotuvni avtomatlashtiradi: Instagram/Telegram/sayt + AI chatbot + CRM/1C ni bitta oqimga bog'laydi. Bepul konsultatsiyaga keling.",
         },
       ],
@@ -102,7 +102,7 @@ export const CONTENT: ArticleContent = {
     cta: {
       title: "Sotuvingizni avtomatlashtiramizmi?",
       subtitle:
-        "Tezcode bepul konsultatsiyada sotuv jarayoningizni ko'rib, qayerда lid yo'qolayotganini va nimani avtomatlashtirishni aniqlaydi. Majburiyat yo'q.",
+        "Tezcode bepul konsultatsiyada sotuv jarayoningizni ko'rib, qayerda lid yo'qolayotganini va nimani avtomatlashtirishni aniqlaydi. Majburiyat yo'q.",
       button: "Telegram orqali bog'lanish",
       note: "Javob odatda bir necha soat ichida.",
     },

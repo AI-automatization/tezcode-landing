@@ -110,7 +110,7 @@ export const ARTICLES: ArticleMeta[] = [
       uz: {
         title: "Biznes uchun Telegram bot: nima, narxi va qanday yaratiladi (2026)",
         excerpt:
-          "Buyurtma, Click/Payme to'lov, 24/7 javob va CRM integratsiya — Telegram botда. Narx $279 dan, bot turlari va qanday yaratiladi — amaliy qo'llanma.",
+          "Buyurtma, Click/Payme to'lov, 24/7 javob va CRM integratsiya — Telegram botda. Narx $279 dan, bot turlari va qanday yaratiladi — amaliy qo'llanma.",
       },
       ru: {
         title: "Telegram-бот для бизнеса: что это, цена и как сделать (2026)",

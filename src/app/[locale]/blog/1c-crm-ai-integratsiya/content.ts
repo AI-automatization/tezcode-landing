@@ -38,7 +38,7 @@ export const CONTENT: ArticleContent = {
         bullets: [
           "Buyurtma sinxronizatsiyasi: CRM (yoki chatbot) da rasmiylashtirilgan buyurtma 1C'da hujjat sifatida yaratiladi — qayta kiritish shart emas.",
           "Qoldiq va narx: 1C'dagi ombor qoldig'i va narxnoma CRM va AI chatbot'ga uzatiladi, shuning uchun mijozga aniq, real ma'lumot beriladi.",
-          "Hisob-faktura: buyurtma tasdiqlangач 1C hisob-faktura yaratadi, holati CRM'ga qaytariladi.",
+          "Hisob-faktura: buyurtma tasdiqlangach 1C hisob-faktura yaratadi, holati CRM'ga qaytariladi.",
           "AI o'qishi: AI chatbot yoki agent 1C'dan mahsulot, narx va mavjudlikni o'qib, mijozga tabiiy tilda javob beradi (\"bu mahsulot bormi, qancha turadi?\").",
         ],
       },

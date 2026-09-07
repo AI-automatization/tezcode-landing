@@ -14,7 +14,7 @@ export const CONTENT: ArticleContent = {
       badge: "Telegram bot / Qo'llanma",
       title: "Biznes uchun Telegram bot: nima, narxi va qanday yaratiladi (2026)",
       subtitle:
-        "Buyurtma qabul qilish, to'lov olish va mijozga 24/7 javob berish — bularning hammasi Telegram botда. Biznesga bot nega kerak, qancha turadi va qanday tanlash — amaliy qo'llanma.",
+        "Buyurtma qabul qilish, to'lov olish va mijozga 24/7 javob berish — bularning hammasi Telegram botda. Biznesga bot nega kerak, qancha turadi va qanday tanlash — amaliy qo'llanma.",
       dateLabel: "2026-yil 15-avgust",
       readTime: "8 daqiqa o'qish",
     },
@@ -45,7 +45,7 @@ export const CONTENT: ArticleContent = {
         bullets: [
           "Mijozga yangi ilova yuklatish shart emas — u allaqachon Telegram'da.",
           "Bot mijozni o'z kanalida kutib oladi: reklama, kanal va bot bir joyda.",
-          "Mini App orqali to'liq do'kon (katalog, savat, to'lov) Telegram ichида ochiladi — sayt ham shart emas.",
+          "Mini App orqali to'liq do'kon (katalog, savat, to'lov) Telegram ichida ochiladi — sayt ham shart emas.",
         ],
       },
       {
@@ -106,14 +106,14 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Bot to'lovni qabul qila oladimi?",
-          a: "Ha. Click va Payme to'lov tizimlari botga ulanadi — mijoz to'lovni to'g'ridan chatда amalga oshiradi, buyurtma esa sizga (yoki CRM'ga) tushadi.",
+          a: "Ha. Click va Payme to'lov tizimlari botga ulanadi — mijoz to'lovni to'g'ridan chatda amalga oshiradi, buyurtma esa sizga (yoki CRM'ga) tushadi.",
         },
         {
-          q: "Qancha vaqtда tayyor bo'ladi?",
+          q: "Qancha vaqtda tayyor bo'ladi?",
           a: "Oddiy buyurtma/FAQ boti 1–2 hafta. To'lov, Mini App yoki AI qatlami bilan murakkab bot 2–4 hafta. Muddat TZ'da qat'iy belgilanadi.",
         },
         {
-          q: "Toshkentда biznes uchun Telegram bot kim yasaydi?",
+          q: "Toshkentda biznes uchun Telegram bot kim yasaydi?",
           a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti — biznes uchun Telegram bot va Mini App do'kon yaratadi (buyurtma, Click/Payme to'lov, CRM integratsiya, AI qatlami). Batafsil: tezcode.dev/telegram-bot-biznes.",
         },
       ],

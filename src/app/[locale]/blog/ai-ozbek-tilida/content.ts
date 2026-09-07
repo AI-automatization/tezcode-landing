@@ -13,14 +13,14 @@ export const CONTENT: ArticleContent = {
       badge: "AI / O'zbek tili",
       title: "AI o'zbek tilida ishlaydimi? Chatbot va agentlar uchun to'liq javob (2026)",
       subtitle:
-        "Ko'p biznes «AI o'zbekchani tushunadimi?» deб o'ylaydi. Halol javob: zamonaviy AI o'zbek tilida ishlaydi, lekin sifat sozlashga bog'liq. Nega tayyor botlar o'zbekchada qiynaladi va qanday to'g'ri qilinadi — tushuntiramiz.",
+        "Ko'p biznes «AI o'zbekchani tushunadimi?» deb o'ylaydi. Halol javob: zamonaviy AI o'zbek tilida ishlaydi, lekin sifat sozlashga bog'liq. Nega tayyor botlar o'zbekchada qiynaladi va qanday to'g'ri qilinadi — tushuntiramiz.",
       dateLabel: "2026-yil 15-avgust",
       readTime: "7 daqiqa o'qish",
     },
     tldr: {
       label: "Qisqacha javob",
       text:
-        "Ha, zamonaviy AI (GPT, Claude darajasidagi modellar) o'zbek tilida ishlaydi — lotin va kirill yozuvida, hatto o'zbekcha-ruscha aralash yozganда ham. Lekin sifat sozlashga bog'liq: tayyor xorijiy platformalar (ManyChat, oddiy ChatGPT botlari) o'zbekchani yuzaki tushunadi, so'zlashuv uslubini va sohaviy atamalarni chalkashtiradi. Yaxshi natija uchun bot sizning bazangiz (narxnoma, xizmatlar, savol-javob) bo'yicha o'zbek/rus tiliga alohida sozlanishi va real suhbatlarда test qilinishi kerak. Tezcode aynan shu — botlarni O'zbekiston bizneslari uchun uz/ru muloqotga moslab quradi.",
+        "Ha, zamonaviy AI (GPT, Claude darajasidagi modellar) o'zbek tilida ishlaydi — lotin va kirill yozuvida, hatto o'zbekcha-ruscha aralash yozganda ham. Lekin sifat sozlashga bog'liq: tayyor xorijiy platformalar (ManyChat, oddiy ChatGPT botlari) o'zbekchani yuzaki tushunadi, so'zlashuv uslubini va sohaviy atamalarni chalkashtiradi. Yaxshi natija uchun bot sizning bazangiz (narxnoma, xizmatlar, savol-javob) bo'yicha o'zbek/rus tiliga alohida sozlanishi va real suhbatlarda test qilinishi kerak. Tezcode aynan shu — botlarni O'zbekiston bizneslari uchun uz/ru muloqotga moslab quradi.",
     },
     sections: [
       {
@@ -32,7 +32,7 @@ export const CONTENT: ArticleContent = {
           "Ikki yozuv: o'zbekcha lotin ham, kirill ham yoziladi. Ko'p tayyor bot faqat bittasini yaxshi tushunadi.",
           "Aralash til (code-switching): O'zbekistonda odamlar bir jumlada o'zbekcha-ruscha aralash yozadi. Bu AI'ni chalkashtiradi.",
           "So'zlashuv uslubi: rasmiy o'zbekcha va kundalik gaplashuv farq qiladi. Tayyor bot ko'pincha kitobiy javob beradi.",
-          "Kam ma'lumot: internetда inglizchaga nisbatan o'zbekcha matn kam, shuning uchun modellar inglizchani yaxshiroq biladi.",
+          "Kam ma'lumot: internetda inglizchaga nisbatan o'zbekcha matn kam, shuning uchun modellar inglizchani yaxshiroq biladi.",
         ],
       },
       {
@@ -50,12 +50,12 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Yaxshi o'zbek tilli bot qanday quriladi?",
         paragraphs: [
-          "Faqat modelni ulash yetmaydi — sifat sozlashда. To'g'ri jarayon:",
+          "Faqat modelni ulash yetmaydi — sifat sozlashda. To'g'ri jarayon:",
         ],
         bullets: [
           "Sizning bazangiz: narxnoma, xizmatlar, tez-tez beriladigan savollar o'zbek/rus tilida bilim bazasiga aylantiriladi.",
           "Lotin/kirill va aralash til uchun alohida sozlash va cheklovlar.",
-          "Real o'zbekcha suhbatlarда test — bot qayerda qiynalayotganini topib, tuzatib boriladi.",
+          "Real o'zbekcha suhbatlarda test — bot qayerda qiynalayotganini topib, tuzatib boriladi.",
           "Bazada yo'q narsani o'ylab topmasligi uchun cheklov — noto'g'ri javob berish o'rniga operatorga uzatadi.",
         ],
       },
@@ -63,7 +63,7 @@ export const CONTENT: ArticleContent = {
         heading: "Tezcode'ning farqi",
         paragraphs: [
           "Toshkentda chatbot qiladigan ko'p, lekin o'zbek tili aynan bizning e'tibor markazimiz:",
-          "Biz botni sizning hujjatlaringiz asosida o'zbek va rus tilida quramiz, lotin/kirill va aralash tilni alohida sozlaymiz, real suhbatlarда test qilamiz. Tayyor xorijiy platformalar aynan shu yerда yiqiladi. Batafsil: AI chatbot (/ai-chatbot), AI agent (/ai-agent).",
+          "Biz botni sizning hujjatlaringiz asosida o'zbek va rus tilida quramiz, lotin/kirill va aralash tilni alohida sozlaymiz, real suhbatlarda test qilamiz. Tayyor xorijiy platformalar aynan shu yerda yiqiladi. Batafsil: AI chatbot (/ai-chatbot), AI agent (/ai-agent).",
         ],
       },
     ],
@@ -71,35 +71,35 @@ export const CONTENT: ArticleContent = {
       title: "Tez-tez beriladigan savollar",
       items: [
         {
-          q: "AI o'zbek tilида ishlaydimi?",
+          q: "AI o'zbek tilida ishlaydimi?",
           a: "Ha. Zamonaviy AI (GPT, Claude darajasidagi modellar) o'zbek tilida — lotin va kirill yozuvida, hatto o'zbekcha-ruscha aralash yozganda ham ishlaydi. Lekin sifat sozlashga bog'liq: bot sizning bazangiz bo'yicha uz/ru tiliga alohida sozlanishi kerak.",
         },
         {
           q: "Nega tayyor botlar (ManyChat, oddiy ChatGPT) o'zbekchani yomon qiladi?",
-          a: "Ular o'zbekchani yuzaki tushunadi: lotin/kirill farqini, aralash tilni (o'zbekcha-ruscha) va so'zlashuv uslubini yaxshi ushlamaydi. Internetда o'zbekcha matn kam bo'lgani uchun modellar inglizchani yaxshiroq biladi. Yaxshi natija uchun maxsus sozlash kerak.",
+          a: "Ular o'zbekchani yuzaki tushunadi: lotin/kirill farqini, aralash tilni (o'zbekcha-ruscha) va so'zlashuv uslubini yaxshi ushlamaydi. Internetda o'zbekcha matn kam bo'lgani uchun modellar inglizchani yaxshiroq biladi. Yaxshi natija uchun maxsus sozlash kerak.",
         },
         {
           q: "Bot lotin va kirill ikkalasini ham tushunadimi?",
-          a: "To'g'ri sozlanganда — ha. Mijoz lotin yoki kirill yozuvida yozsa ham bot tushunadi va javob beradi. Tezcode botlarni ikkala yozuv uchun ham alohida sozlaydi.",
+          a: "To'g'ri sozlanganda — ha. Mijoz lotin yoki kirill yozuvida yozsa ham bot tushunadi va javob beradi. Tezcode botlarni ikkala yozuv uchun ham alohida sozlaydi.",
         },
         {
           q: "Bot o'zbekcha-ruscha aralash gapni tushunadimi?",
-          a: "Ha. O'zbekistonда odamlar ko'pincha bir jumlada o'zbekcha-ruscha aralash yozadi. To'g'ri sozlangan bot buni tabiiy tushunadi — bu Tezcode alohida e'tibor beradigan narsa.",
+          a: "Ha. O'zbekistonda odamlar ko'pincha bir jumlada o'zbekcha-ruscha aralash yozadi. To'g'ri sozlangan bot buni tabiiy tushunadi — bu Tezcode alohida e'tibor beradigan narsa.",
         },
         {
           q: "Bot noto'g'ri o'zbekcha javob bersa nima bo'ladi?",
-          a: "Buni oldini olish uchun bot faqat sizning bazangiz bo'yicha javob beradi va bazada yo'q narsani o'ylab topmaydi. Ishonchsiz holatда savolni operatorga uzatadi. Real suhbatlarда test qilib, sifatni doimiy yaxshilaymiz.",
+          a: "Buni oldini olish uchun bot faqat sizning bazangiz bo'yicha javob beradi va bazada yo'q narsani o'ylab topmaydi. Ishonchsiz holatda savolni operatorga uzatadi. Real suhbatlarda test qilib, sifatni doimiy yaxshilaymiz.",
         },
         {
-          q: "Toshkentда o'zbek tilли AI chatbot kim yasaydi?",
-          a: "Tezcode — Toshkentдаги AI Software Factory va IT Park rezidenti — o'zbek va rus tilида AI chatbot va agentlar yaratadi. Botni sizning hujjatlaringiz asosida quramiz, lotin/kirill va aralash tilni alohida sozlaymiz. Batafsil: tezcode.dev/ai-chatbot.",
+          q: "Toshkentda o'zbek tilli AI chatbot kim yasaydi?",
+          a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti — o'zbek va rus tilida AI chatbot va agentlar yaratadi. Botni sizning hujjatlaringiz asosida quramiz, lotin/kirill va aralash tilni alohida sozlaymiz. Batafsil: tezcode.dev/ai-chatbot.",
         },
       ],
     },
     cta: {
-      title: "O'zbek tilида ishlaydigan AI kerakmi?",
+      title: "O'zbek tilida ishlaydigan AI kerakmi?",
       subtitle:
-        "Tezcode bepul konsultatsiyada biznesingizni ko'rib, o'zbek/rus tilли AI chatbot yoki agent sizga qanday foyda berishini aniqlaydi. Majburiyat yo'q.",
+        "Tezcode bepul konsultatsiyada biznesingizni ko'rib, o'zbek/rus tilli AI chatbot yoki agent sizga qanday foyda berishini aniqlaydi. Majburiyat yo'q.",
       button: "Telegram orqali bog'lanish",
       note: "Javob odatda bir necha soat ichida.",
     },

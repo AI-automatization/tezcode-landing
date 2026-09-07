@@ -19,7 +19,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Qisqacha javob",
       text:
-        "AI video analitika — bu mavjud IP kameralaringizdan kelayotgan tasvirni sun'iy intellekt yordamida real vaqtda tahlil qilish. Yangi kamera olish shart emas — dasturiy qatlam eski kameralar ustiga qo'shiladi. Asosiy imkoniyatlar: odam aniqlash va sanash (footfall — do'konga qancha mijoz kirgani), yuzni tanish orqali xodim davomati, ish xavfsizligi nazorati (kaska/forma, taqiqlangan hududga kirish), avto raqam tanish (ANPR — avtoturargoh, kirish-chiqish). Anomaliya bo'lsa Telegram yoki dashboardга real-time ogohlantirish keladi. Tezcode buni Toshkentда $990 dan (bir martalik ulash) o'rnatadi.",
+        "AI video analitika — bu mavjud IP kameralaringizdan kelayotgan tasvirni sun'iy intellekt yordamida real vaqtda tahlil qilish. Yangi kamera olish shart emas — dasturiy qatlam eski kameralar ustiga qo'shiladi. Asosiy imkoniyatlar: odam aniqlash va sanash (footfall — do'konga qancha mijoz kirgani), yuzni tanish orqali xodim davomati, ish xavfsizligi nazorati (kaska/forma, taqiqlangan hududga kirish), avto raqam tanish (ANPR — avtoturargoh, kirish-chiqish). Anomaliya bo'lsa Telegram yoki dashboardga real-time ogohlantirish keladi. Tezcode buni Toshkentda $990 dan (bir martalik ulash) o'rnatadi.",
     },
     sections: [
       {
@@ -32,7 +32,7 @@ export const CONTENT: ArticleContent = {
           "Yuzni tanish orqali davomat: xodim kelgan-ketgan vaqti avtomatik qayd etiladi — qo'lda jurnal yoki barmoq skaner shart emas.",
           "Ish xavfsizligi: kaska yoki forma yo'qligini, taqiqlangan hududga kirishni aniqlaydi va ogohlantiradi.",
           "Avto raqam tanish (ANPR): avtoturargoh, kirish-chiqish, ruxsat berilgan mashinalar nazorati.",
-          "Real-time ogohlantirish: anomaliya (odam yiqildi, ruxsatsiz kirish, olomon) bo'lsa darhol Telegram/dashboardга signal.",
+          "Real-time ogohlantirish: anomaliya (odam yiqildi, ruxsatsiz kirish, olomon) bo'lsa darhol Telegram/dashboardga signal.",
         ],
       },
       {
@@ -62,7 +62,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Ma'lumot xavfsizmi?",
         paragraphs: [
-          "Video va tahlil sizning tizimingiz doirasida qoladi, uchinchi tomonga berilmaydi. Tezcode — IT Park rasmiy rezidenti (guvohnoma №6237), rasmiy shartnoma va maxfiylik majburiyatlari bilan ishlaydi. Tizim lokal serverда yoki sizning infratuzilmangizда ishlashi mumkin.",
+          "Video va tahlil sizning tizimingiz doirasida qoladi, uchinchi tomonga berilmaydi. Tezcode — IT Park rasmiy rezidenti (guvohnoma №6237), rasmiy shartnoma va maxfiylik majburiyatlari bilan ishlaydi. Tizim lokal serverda yoki sizning infratuzilmangizda ishlashi mumkin.",
         ],
       },
     ],
@@ -71,27 +71,27 @@ export const CONTENT: ArticleContent = {
       items: [
         {
           q: "AI video analitika nima?",
-          a: "Bu mavjud IP kameralaringizdan kelayotgan tasvirni AI yordamida real vaqtда tahlil qilish: odam sanash, yuz tanish orqali davomat, ish xavfsizligi nazorati, avto raqam tanish (ANPR). Yangi kamera shart emas — dasturiy qatlam eski kameralar ustiga qo'shiladi.",
+          a: "Bu mavjud IP kameralaringizdan kelayotgan tasvirni AI yordamida real vaqtda tahlil qilish: odam sanash, yuz tanish orqali davomat, ish xavfsizligi nazorati, avto raqam tanish (ANPR). Yangi kamera shart emas — dasturiy qatlam eski kameralar ustiga qo'shiladi.",
         },
         {
           q: "Mavjud kameralarimni almashtirishim kerakmi?",
-          a: "Yo'q. AI qatlami sizning mavjud IP kameralaringiz (Hikvision, Dahua va boshqalar) bilan ishlaydi. Kamera va NVR o'z joyida qoladi, faqat dasturiy qatlam qo'shiladi. Bu yangi tizim olishдан ancha tejamli.",
+          a: "Yo'q. AI qatlami sizning mavjud IP kameralaringiz (Hikvision, Dahua va boshqalar) bilan ishlaydi. Kamera va NVR o'z joyida qoladi, faqat dasturiy qatlam qo'shiladi. Bu yangi tizim olishdan ancha tejamli.",
         },
         {
-          q: "Do'konда odam sanash qanday ishlaydi?",
+          q: "Do'konda odam sanash qanday ishlaydi?",
           a: "AI kameradagi tasvirdan odamlarni aniqlaydi va kirgan/chiqqanlarni sanaydi. Natijada kun va soat bo'yicha aniq footfall raqami olasiz — band soatlar, smena rejasi va konversiya (necha kishi kirib, necha xarid qilgani) uchun.",
         },
         {
           q: "Yuz tanish orqali davomat ishonchli mi?",
-          a: "Ha. Xodim kamera oldidan o'tganda yuzi tanib olinadi va kelgan-ketgan vaqti avtomatik qayd etiladi. Barmoq skaner yoki qo'lda jurnal shart emas. Aniqlik yorug'lik va kamera joylashuviga bog'liq — o'rnatishда buni sozlaymiz.",
+          a: "Ha. Xodim kamera oldidan o'tganda yuzi tanib olinadi va kelgan-ketgan vaqti avtomatik qayd etiladi. Barmoq skaner yoki qo'lda jurnal shart emas. Aniqlik yorug'lik va kamera joylashuviga bog'liq — o'rnatishda buni sozlaymiz.",
         },
         {
           q: "Narxi qancha?",
-          a: "AI video analitika $990 dan boshlanadi — bu bir martalik ulash. Mavjud kameralaringiz bilan ishlaydi, keyin tizimni o'zingiz boshqarasiz. Aniq narx kamera soni va vazifalarга (odam sanash, davomat, ANPR) bog'liq.",
+          a: "AI video analitika $990 dan boshlanadi — bu bir martalik ulash. Mavjud kameralaringiz bilan ishlaydi, keyin tizimni o'zingiz boshqarasiz. Aniq narx kamera soni va vazifalarga (odam sanash, davomat, ANPR) bog'liq.",
         },
         {
-          q: "Toshkentда kamerani AI bilan kim aqlli qiladi?",
-          a: "Tezcode — Toshkentдаги AI Software Factory va IT Park rezidenti — mavjud kameralarni AI bilan aqlli qiladi: odam sanash, yuz tanish davomati, ish xavfsizligi, ANPR. Batafsil: tezcode.dev/ai-video-analitika.",
+          q: "Toshkentda kamerani AI bilan kim aqlli qiladi?",
+          a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti — mavjud kameralarni AI bilan aqlli qiladi: odam sanash, yuz tanish davomati, ish xavfsizligi, ANPR. Batafsil: tezcode.dev/ai-video-analitika.",
         },
       ],
     },
