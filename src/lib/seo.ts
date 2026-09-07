@@ -523,11 +523,9 @@ export function getProductSchemas() {
       name: SITE_NAME,
       url: BASE_URL,
     },
-    offers: {
-      "@type": "Offer",
-      availability: "https://schema.org/InStock",
-      priceCurrency: "UZS",
-    },
+    // No `offers` block: these products are quote-based (no fixed public price),
+    // and an Offer without a `price` fails Google's Rich Results validation
+    // ("Missing field 'price'"). Omitting it keeps the SoftwareApplication valid.
   }));
 }
 

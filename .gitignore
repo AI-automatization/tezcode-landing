@@ -48,3 +48,9 @@ next-env.d.ts
 .claude/
 .preview.png
 skills-lock.json
+
+# Internal (non-app) tooling & notes — keep local, not in repo
+/tasks.md
+/outreach/
+/scripts/send-*.py
+/add-*-translations.py
