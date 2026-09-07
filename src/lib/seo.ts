@@ -230,6 +230,7 @@ export function getOrganizationSchema() {
         name: "Sardor Madaliyev",
         alternateName: "Sardor Madaliev",
         jobTitle: "AI Engineer",
+        image: `${BASE_URL}/team/sardor-madaliyev-v3.jpg`,
         url: `${BASE_URL}/sardor-madaliyev`,
         sameAs: [
           "https://www.linkedin.com/in/sardor-madaliyev-566601377/",

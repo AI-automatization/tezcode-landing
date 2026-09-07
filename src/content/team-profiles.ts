@@ -206,6 +206,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
     slug: "diyor-raxmatullayev",
     name: "Diyor Raxmatullayev",
     role: "CoreMed Founder · Tezcode Team Lead",
+    photo: "/team/diyor-raxmatullayev-v2.jpg",
     bio: [
       "Diyor Raxmatullayev — CoreMed healthtech holdingi asoschisi (HamshiraGo, ClinicaGo, Salomat AI) va Tezcode jamoasida Team Lead.",
       "Next.js, NestJS va TypeScript asosida full-stack ishlaydi; PostgreSQL, Railway, Remotion va AI/Claude integratsiyasi bilan klinikalar uchun CRM hamda tibbiy xizmat mahsulotlarini quradi.",

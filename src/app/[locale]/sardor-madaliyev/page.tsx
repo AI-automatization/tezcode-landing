@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import {
@@ -106,6 +107,7 @@ export default function SardorMadaliyevPage() {
       "https://instagram.com/_madaliev_s",
       "https://www.linkedin.com/in/sardor-madaliyev-566601377/",
     ],
+    image: "/team/sardor-madaliyev-v3.jpg",
   });
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: "Tezcode", url: BASE_URL },
@@ -127,8 +129,15 @@ export default function SardorMadaliyevPage() {
         <div className="max-w-3xl mx-auto px-6">
           {/* Hero */}
           <div className="mb-12 text-center">
-            <div className="mx-auto mb-6 w-40 h-40 rounded-full flex items-center justify-center border-2 border-[var(--tc-gold)]/30 bg-[var(--tc-surface-2)] text-[var(--tc-blue-text)] text-4xl font-700 shadow-[var(--tc-shadow-card)]">
-              SM
+            <div className="mx-auto mb-6 w-40 h-40 rounded-full overflow-hidden border-2 border-[var(--tc-gold)]/30 shadow-[var(--tc-shadow-card)]">
+              <Image
+                src="/team/sardor-madaliyev-v3.jpg"
+                alt="Sardor Madaliyev — Tezcode AI Engineer"
+                width={160}
+                height={160}
+                priority
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
               AI Engineer · AI Video Analitika

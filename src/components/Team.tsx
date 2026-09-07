@@ -47,12 +47,14 @@ const TEAM: Member[] = [
     role: "CoreMed Founder · Tezcode Team Lead",
     telegram: "@diyor_011",
     profileSlug: "diyor-raxmatullayev",
+    photo: "/team/diyor-raxmatullayev-v2.jpg",
   },
   {
     name: "Sardor Madaliyev",
     role: "AI Engineer · AI Video Analitika",
     telegram: "@madaliev_s",
     profileHref: "/sardor-madaliyev",
+    photo: "/team/sardor-madaliyev-v3.jpg",
   },
   {
     name: "Ziyoda Mirzakirova",
