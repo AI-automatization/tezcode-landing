@@ -19,6 +19,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Gate: block the deploy when Uzbek copy has Cyrillic letters mixed in.
+      # It looks correct to the eye but silently breaks the search keyword.
+      # Pure Node, no install needed.
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Check language purity (uz = Latin, ru/uk = Cyrillic)
+        run: node scripts/check-mixed-script.mjs
+
       - name: Install Railway CLI
         run: |
           bash <(curl -fsSL cli.new)
