@@ -194,6 +194,13 @@ export function getOrganizationSchema() {
       "Тезкоуд",
       "тезкод дев",
       "tezcode.dev",
+      // Bind the org NAME to "AI" the way every cited competitor does
+      // (Repli AI, Lynx AI, ZBEKZ "AI Systems"). Without an AI token in the
+      // name itself, entity extraction never files us under "AI company".
+      "Tezcode AI",
+      "Tezcode AI avtomatlashtirish",
+      "Tezcode AI automation",
+      "Тезкод ИИ",
     ],
     url: BASE_URL,
     logo: `${BASE_URL}/icon.png`,
@@ -274,6 +281,26 @@ export function getOrganizationSchema() {
       },
     ],
     priceRange: "$$",
+    // Explicit service area. Apple documents "user location based signals"
+    // as one of its five ranking factors, and .dev gives us none of the
+    // free geo association a .uz ccTLD would.
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Tashkent",
+        alternateName: ["Toshkent", "Ташкент"],
+      },
+      {
+        "@type": "City",
+        name: "Samarkand",
+        alternateName: ["Samarqand", "Самарканд"],
+      },
+      {
+        "@type": "Country",
+        name: "Uzbekistan",
+        alternateName: ["O'zbekiston", "Узбекистан"],
+      },
+    ],
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -321,6 +348,35 @@ export function getOrganizationSchema() {
       "SaaS",
       "Custom Development",
     ],
+    // Machine-readable "what we do and what it costs". Prices mirror the
+    // per-service pages and /tariflar exactly. minPrice (not price) because
+    // every figure on the site is a "from" price, not a fixed one.
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "AI va avtomatlashtirish xizmatlari",
+      itemListElement: [
+        ["AI agent yaratish", "ai-agent", "400"],
+        ["AI chatbot yaratish", "ai-chatbot", "339"],
+        ["Biznesni AI bilan avtomatlashtirish", "biznes-avtomatlashtirish", "400"],
+        ["Telegram bot yaratish", "telegram-bot-biznes", "279"],
+        ["CRM integratsiya", "crm-integratsiya", "700"],
+        ["AI video analitika", "ai-video-analitika", "990"],
+      ].map(([name, slug, minPrice]) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name,
+          url: `${BASE_URL}/${slug}`,
+          provider: { "@id": `${BASE_URL}#organization` },
+          areaServed: { "@type": "City", name: "Tashkent" },
+        },
+        priceSpecification: {
+          "@type": "PriceSpecification",
+          minPrice,
+          priceCurrency: "USD",
+        },
+      })),
+    },
     // Real Google Business Profile reviews (maps.app.goo.gl/pwDZT8ePLFy4wx9JA),
     // mirrored in the visible Testimonials section so structured data matches
     // on-page content (Google's rich-results requirement). All 5★.
