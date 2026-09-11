@@ -7,6 +7,32 @@ import type { ArticleLang, ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "gpt-6-astra",
+    datePublished: "2026-09-11",
+    category: "AI dunyosida / Yangilik",
+    relatedService: { href: "/ai-agent", label: "AI agent yaratish" },
+    list: {
+      uz: {
+        title:
+          "GPT-6 Astra chiqdi: O'zbekistondagi biznes uchun bu nimani anglatadi",
+        excerpt:
+          "OpenAI GPT-6 Astra'ni 3-4-sentabrda chiqardi: narxi 2.5 barobar oshdi, kompyuterni o'zi boshqaradi, lekin mustaqil reytingda Claude Fable 5.1 bilan teng chiqdi. Biznes uchun amaliy xulosa.",
+      },
+      ru: {
+        title:
+          "Вышла GPT-6 Astra: что это значит для бизнеса в Узбекистане",
+        excerpt:
+          "OpenAI выпустила GPT-6 Astra 3-4 сентября: цена выросла в 2,5 раза, модель сама управляет компьютером, но в независимом рейтинге идёт вровень с Claude Fable 5.1. Практический вывод для бизнеса.",
+      },
+      en: {
+        title:
+          "GPT-6 Astra is out: what it means for business in Uzbekistan",
+        excerpt:
+          "OpenAI shipped GPT-6 Astra on 3-4 September: 2.5 times the price, it drives a computer on its own, yet the independent index has it level with Claude Fable 5.1. A practical takeaway for business.",
+      },
+    },
+  },
+  {
     slug: "suniy-intellekt-xizmatlari",
     datePublished: "2026-08-26",
     category: "Sun'iy intellekt / Qo'llanma",
