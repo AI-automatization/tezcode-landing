@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+import { EUROPE_PATH, REGION_PATH } from "@/lib/markets";
 import { ArrowRight, Check, Mail, MapPin, Phone, Send } from "lucide-react";
 import { InstagramIcon, LinkedinIcon } from "@/components/icons/BrandIcons";
 
@@ -8,6 +9,21 @@ import { InstagramIcon, LinkedinIcon } from "@/components/icons/BrandIcons";
 // Contact hub copy (pre-footer block) — per-locale, uz fallback
 // ─────────────────────────────────────────────────────────
 type HubLang = "uz" | "ru" | "en" | "ar" | "uk";
+
+const REGION_LABEL: Record<HubLang, string> = {
+  uz: "Markaziy Osiyo bizneslari uchun",
+  ru: "Для бизнеса в Центральной Азии",
+  en: "For business in Central Asia",
+  ar: "للأعمال في آسيا الوسطى",
+  uk: "Для бізнесу в Центральній Азії",
+};
+const EUROPE_LABEL: Record<HubLang, string> = {
+  uz: "Yevropa bizneslari uchun",
+  ru: "Для бизнеса в Европе",
+  en: "For business in Europe",
+  ar: "للأعمال في أوروبا",
+  uk: "Для бізнесу в Європі",
+};
 
 const HUB_COPY: Record<
   HubLang,
@@ -415,6 +431,16 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link href={REGION_PATH} locale={loc} className="text-sm text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] tc-link-underline transition-colors">
+                  {REGION_LABEL[loc]}
+                </Link>
+              </li>
+              <li>
+                <Link href={EUROPE_PATH} locale={loc} className="text-sm text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] tc-link-underline transition-colors">
+                  {EUROPE_LABEL[loc]}
+                </Link>
+              </li>
             </ul>
           </div>
 

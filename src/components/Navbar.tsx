@@ -133,6 +133,13 @@ export function Navbar() {
   const [langOpen, setLangOpen] = useState(false);
   const [mobileSection, setMobileSection] = useState<null | "divisions" | "solutions">(null);
 
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 40);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const switchLocale = (newLocale: Locale) => {
     setLangOpen(false);
     router.replace(pathname, { locale: newLocale });
@@ -142,13 +149,6 @@ export function Navbar() {
     setMobileOpen(false);
     setMobileSection(null);
   };
-
-  // Scroll effect for navbar background
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const divisionItems = DIVISIONS.map((d) => ({
     ...d,

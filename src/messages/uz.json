@@ -138,6 +138,11 @@
     }
   },
   "products": {
+    "badge": "Mahsulotlar",
+    "pipeline": "Kelgusi mahsulotlar · R&D",
+    "learn_more": "Batafsil",
+    "visit_site": "Saytga",
+    "request_demo": "Demo so'rang",
     "title": "Bizning Mahsulotlar",
     "subtitle": "8 ta mahsulot — har biri o'z sohada ekspert",
     "raos": {
@@ -271,6 +276,18 @@
     "title": "Bizga bog'laning",
     "subtitle": "Loyiha haqida gaplashamiz — bepul konsultatsiya",
     "form": {
+      "contact_hint": "Javob olish uchun email yoki telefon kiriting. Kamida bittasi kerak.",
+      "country": "Davlat (ixtiyoriy)",
+      "country_placeholder": "Masalan, O'zbekiston",
+      "service": "Qaysi xizmat kerak? (ixtiyoriy)",
+      "service_placeholder": "Kerakli xizmat yoki vazifani yozing",
+      "validation": {
+        "name_length": "Ism kamida 2 belgidan iborat bo'lsin.",
+        "too_long": "Matn juda uzun.",
+        "email_invalid": "To'g'ri email manzilini kiriting.",
+        "phone_invalid": "Davlat kodi bilan telefon raqamini kiriting (kamida 7 raqam).",
+        "contact_required": "Email yoki telefon kiriting."
+      },
       "name": "Ismingiz",
       "name_placeholder": "Aziz Karimov",
       "email": "Email",

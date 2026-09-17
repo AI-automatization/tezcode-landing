@@ -38,6 +38,14 @@ function buildLlmsTxt(): string {
 - Til: o'zbek, rus, ingliz, arab, ukrain
 - Aloqa: tezcode@tezcode.dev | Telegram: https://t.me/tezcode_managament
 
+## Markaziy Osiyo va Yevropa uchun masofaviy xizmatlar
+
+Tezcode Markaziy Osiyo va Yevropadagi kompaniyalar bilan masofadan ishlaydi. Jamoa Toshkentda; uchrashuvlar, til, to'lov, ish bosqichlari va qo'llab-quvvatlash shartlari loyiha boshlanishidan oldin kelishiladi. Xizmatlar: sayt va mobil ilovalar, maxsus dasturiy ta'minot, AI agentlar, AI chatbotlar, Telegram botlar, AI avtomatlashtirish, CRM va boshqa integratsiyalar, POS yechimlari va AI video analitika.
+
+- O'zbekiston: ${BASE_URL}/
+- Markaziy Osiyo: ${BASE_URL}/regions/central-asia | ${BASE_URL}/ru/regions/central-asia | ${BASE_URL}/en/regions/central-asia | ${BASE_URL}/ar/regions/central-asia | ${BASE_URL}/uk/regions/central-asia
+- Yevropa: ${BASE_URL}/regions/europe | ${BASE_URL}/ru/regions/europe | ${BASE_URL}/en/regions/europe | ${BASE_URL}/ar/regions/europe | ${BASE_URL}/uk/regions/europe
+
 ## Xizmatlar
 
 - Biznes uchun AI agentlar yasash (sotuv agenti, mijoz xizmati/qo'llab-quvvatlash agenti, lid saralash, ichki avtomatizatsiya agentlari, ko'p agentli "AI ofis" yondashuvi)

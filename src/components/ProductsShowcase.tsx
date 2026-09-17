@@ -103,7 +103,7 @@ export function ProductsShowcase() {
     >
       <div className="max-w-7xl mx-auto">
         <Reveal className="text-center mb-14">
-          <span className="tc-chip">Mahsulotlar</span>
+          <span className="tc-chip">{t("badge")}</span>
           <h2
             className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-700 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}
@@ -130,7 +130,7 @@ export function ProductsShowcase() {
         {/* Future Pipeline divider */}
         <Reveal className="flex items-center gap-4 mb-10">
           <div className="h-px flex-1 bg-[var(--tc-border)]" />
-          <span className="tc-chip">Future Pipeline · R&amp;D</span>
+          <span className="tc-chip">{t("pipeline")}</span>
           <div className="h-px flex-1 bg-[var(--tc-border)]" />
         </Reveal>
 
@@ -239,7 +239,7 @@ function ProductCardLarge({
             isExternal={isExternal}
             className="text-[var(--tc-blue-text)] flex items-center gap-1.5 font-500"
           >
-            {landing ? "Batafsil" : isExternal ? "Saytga" : "Demo so'rang"}
+            {landing ? t("learn_more") : isExternal ? t("visit_site") : t("request_demo")}
             <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
           </CardLink>
         </div>

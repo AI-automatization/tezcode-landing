@@ -62,7 +62,7 @@ export const HOME_FAQ: Record<FaqLang, FaqBlock> = {
       },
       {
         q: "Где находится Tezcode?",
-        a: "В Ташкенте — улица Амира Темура, 10. Работаем удалённо по всему Узбекистану.",
+        a: "Наша команда находится в Ташкенте — улица Амира Темура, 10. Обсуждаем проекты с компаниями Узбекистана, Казахстана, Кыргызстана, Таджикистана и Туркменистана. Встречи, демонстрации и согласование этапов могут проходить удалённо; условия работы определяем под проект.",
       },
       {
         q: "Как начать сотрудничество с Tezcode?",
@@ -90,7 +90,7 @@ export const HOME_FAQ: Record<FaqLang, FaqBlock> = {
       },
       {
         q: "Where is Tezcode located?",
-        a: "In Tashkent — 10 Amir Temur Avenue. We serve clients remotely across all of Uzbekistan.",
+        a: "Our team is based in Tashkent, Uzbekistan, at 10 Amir Temur Avenue. We work remotely. Contact us to discuss your location, project requirements and delivery arrangements.",
       },
       {
         q: "How do I start working with Tezcode?",

@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { Navbar } from "@/components/Navbar";
+import { RemoteDelivery } from "@/components/RemoteDelivery";
 import { Hero } from "@/components/Hero";
 import { TechStackMarquee } from "@/components/TechStackMarquee";
 import { ProductsGrid } from "@/components/ProductsGrid";
@@ -13,7 +14,6 @@ import { LatestNews } from "@/components/LatestNews";
 import { PricingTiers } from "@/components/PricingTiers";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
-import { CookieConsent } from "@/components/CookieConsent";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { HOME_FAQ, type FaqLang } from "@/content/faq";
 import { BASE_URL, getBreadcrumbSchema, getFaqSchema } from "@/lib/seo";
@@ -45,6 +45,7 @@ export default async function HomePage({
 
       {/* Hero — above the fold */}
       <Hero />
+      <RemoteDelivery locale={locale} />
 
       {/* Tech stack marquee — social proof */}
       <TechStackMarquee />
@@ -106,7 +107,6 @@ export default async function HomePage({
       <FloatingContact />
 
       {/* Cookie consent (GDPR + UZ legal) */}
-      <CookieConsent />
     </main>
   );
 }

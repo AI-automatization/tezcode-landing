@@ -21,6 +21,7 @@ export async function generateMetadata({
   const { locale } = await params;
   return buildPageMetadata({
     locale,
+    availableLocales: ["uz"],
     path: PATH,
     title: "Sardor Madaliyev — Tezcode AI Engineer, AI Video Analitika",
     description:

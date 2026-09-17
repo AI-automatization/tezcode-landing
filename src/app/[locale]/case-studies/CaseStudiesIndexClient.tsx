@@ -71,7 +71,7 @@ type CopyShape = {
 const COPY: Record<Lang, CopyShape> = {
   uz: {
     badge: "Case Studies",
-    title: "Real natijalar — real biznes egalari",
+    title: "Amaliy natijalar — anonim biznes misollari",
     subtitle:
       "Tezcode mahsulotlari bilan ishlagan o'zbek tadbirkorlar — qancha tejagani, qancha o'sgani, qanday tezroq ishlagani.",
     filterAll: "Hammasi",
@@ -113,7 +113,7 @@ const COPY: Record<Lang, CopyShape> = {
   },
   ru: {
     badge: "Кейсы",
-    title: "Реальные результаты — реальные владельцы бизнеса",
+    title: "Практические результаты — анонимные бизнес-кейсы",
     subtitle:
       "Узбекские предприниматели, работавшие с продуктами Tezcode — сколько сэкономили, насколько выросли, как стали работать быстрее.",
     filterAll: "Все",
@@ -155,7 +155,7 @@ const COPY: Record<Lang, CopyShape> = {
   },
   en: {
     badge: "Case Studies",
-    title: "Real results — real business owners",
+    title: "Practical results — anonymized business cases",
     subtitle:
       "Uzbek entrepreneurs who worked with Tezcode products — what they saved, how much they grew, how fast they now operate.",
     filterAll: "All",
@@ -280,6 +280,14 @@ const COPY: Record<Lang, CopyShape> = {
   },
 };
 
+const EVIDENCE_NOTE: Record<Lang, string> = {
+  uz: "Misollar anonimlashtirilgan. Ko'rsatkichlar mijoz tasdig'i va loyiha hisobotlari bilan yangilanadi.",
+  ru: "Кейсы обезличены. Показатели будут обновлены после подтверждения клиента и проектными отчётами.",
+  en: "Cases are anonymized. Metrics will be updated after client confirmation and project reports.",
+  ar: "الحالات مجهّلة. سيتم تحديث المؤشرات بعد تأكيد العميل وتقارير المشروع.",
+  uk: "Кейси знеособлено. Показники оновимо після підтвердження клієнта та звітів проєкту.",
+};
+
 export function CaseStudiesIndexClient() {
   const locale = useLocale() as Lang;
   const t = COPY[locale] ?? COPY.uz;
@@ -320,6 +328,9 @@ export function CaseStudiesIndexClient() {
           </h1>
           <p className="text-[var(--tc-text-secondary)] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             {t.subtitle}
+          </p>
+          <p className="mt-4 text-xs text-[var(--tc-text-muted)] max-w-2xl mx-auto leading-relaxed">
+            {EVIDENCE_NOTE[locale as Lang] ?? EVIDENCE_NOTE.uz}
           </p>
           <m.div
             initial={{ scaleX: 0 }}

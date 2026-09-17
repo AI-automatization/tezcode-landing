@@ -12,9 +12,9 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: "/case-studies",
-    title: "Case Studies — Real natijalar",
+    title: "Case Studies — Amaliy natijalar",
     description:
-      "Tezcode mahsulotlari bilan real biznes egalari erishgan natijalar — RAOS, AI Office, ClinicaGo + HamshiraGo case study'lar.",
+      "Tezcode mahsulotlari bo'yicha anonimlashtirilgan amaliy misollar — RAOS, AI Office, ClinicaGo + HamshiraGo case study'lar.",
   });
 }
 

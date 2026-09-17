@@ -11,6 +11,7 @@ export async function generateMetadata({
   const { locale } = await params;
   return buildPageMetadata({
     locale,
+    availableLocales: ["uz"],
     path: "/tools/free-code-review",
     title: "Bepul AI Kod Tekshiruvi — GitHub Repo Tahlil",
     description:

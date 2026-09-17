@@ -2,7 +2,6 @@ import { Navbar } from "@/components/Navbar";
 import { ROICalculator } from "@/components/ROICalculator";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
-import { CookieConsent } from "@/components/CookieConsent";
 import { buildPageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -13,6 +12,7 @@ export async function generateMetadata({
   const { locale } = await params;
   return buildPageMetadata({
     locale,
+    availableLocales: ["uz"],
     path: "/tools/roi-calculator",
     title: "ROI Kalkulyator — Tezcode bilan qancha tejaysiz?",
     description:
@@ -40,7 +40,6 @@ export default function RoiCalculatorPage() {
 
       <Footer />
       <FloatingContact />
-      <CookieConsent />
     </main>
   );
 }

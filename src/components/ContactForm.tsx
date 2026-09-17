@@ -3,23 +3,11 @@
 import { useTranslations, useLocale } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { contactSchema, type ContactData } from "@/lib/contact";
+import { getLeadAttribution, trackLead } from "@/lib/lead-analytics";
+import { getMarketFromPath } from "@/lib/markets";
 import { Send } from "lucide-react";
-
-// Deliberately minimal: a business owner only needs to leave a name and
-// a phone number — everything else is optional. (Kept subject hidden with
-// the "demo" default so the Telegram notification stays informative.)
-const contactSchema = z.object({
-  name: z.string().min(2, "Min 2 chars"),
-  phone: z.string().min(7, "Min 7 digits").max(50),
-  subject: z.enum(["demo", "partnership", "investor", "career", "other"]),
-  message: z.string().max(2000, "Max 2000 chars").optional(),
-  _hp: z.string().optional(),
-  _hp2: z.string().optional(),
-});
-
-type ContactFormData = z.infer<typeof contactSchema>;
 
 const CHIP_LABEL: Record<string, string> = {
   uz: "Aloqa",
@@ -29,12 +17,25 @@ const CHIP_LABEL: Record<string, string> = {
   uk: "Контакти",
 };
 
+const DEFAULT_COUNTRY: Record<string, string> = {
+  uz: "O'zbekiston",
+  ru: "Узбекистан",
+  en: "Uzbekistan",
+  ar: "أوزبكستان",
+  uk: "Узбекистан",
+};
+
 const inputClasses =
   "w-full px-4 py-3 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-2)] border border-[var(--tc-border)] text-[var(--tc-text-primary)] placeholder:text-[var(--tc-text-muted)] text-sm outline-none transition-colors focus:border-[var(--tc-blue)] focus:ring-2 focus:ring-[var(--tc-blue)]/20";
 
-export function ContactForm({ hideHeader = false }: { hideHeader?: boolean }) {
+export function ContactForm({
+  hideHeader = false,
+}: {
+  hideHeader?: boolean;
+}) {
   const t = useTranslations("contact");
   const locale = useLocale();
+  const submitting = useRef(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const {
@@ -42,31 +43,51 @@ export function ContactForm({ hideHeader = false }: { hideHeader?: boolean }) {
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm<ContactFormData>({
+  } = useForm<ContactData>({
     resolver: zodResolver(contactSchema),
-    defaultValues: { subject: "demo" },
+    defaultValues: { subject: "demo", email: "", phone: "", country: DEFAULT_COUNTRY[locale] ?? "O'zbekiston", service: "" },
   });
 
-  async function onSubmit(data: ContactFormData) {
+  const validationMessage = (code?: string) => code ? t(`form.validation.${code}`) : undefined;
+
+  async function onSubmit(data: ContactData) {
+    if (submitting.current) return;
+    submitting.current = true;
     setStatus("loading");
     try {
+      const pathname = window.location.pathname;
+      const sourcePage = /^\/(?!\/)[a-zA-Z0-9/_-]{0,299}$/.test(pathname) ? pathname : undefined;
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          ...data,
+          locale,
+          sourcePage,
+          attribution: getLeadAttribution(),
+        }),
       });
-      if (!res.ok) throw new Error("Failed");
+      const result: unknown = await res.json();
+      if (!res.ok || !result || typeof result !== "object" || !("success" in result) || result.success !== true) {
+        throw new Error("Contact delivery failed");
+      }
       setStatus("success");
-      reset();
+      trackLead({
+        language: locale,
+        market: getMarketFromPath(pathname),
+      });
+      reset({ subject: "demo", email: "", phone: "", country: DEFAULT_COUNTRY[locale] ?? "O'zbekiston", service: "" });
     } catch {
       setStatus("error");
+    } finally {
+      submitting.current = false;
     }
   }
 
   return (
     <section
       id="contact"
-      className="py-20 sm:py-28 px-6 bg-[var(--tc-ink)] border-t border-[var(--tc-border)]"
+      className="scroll-mt-20 py-20 sm:py-28 px-6 bg-[var(--tc-ink)] border-t border-[var(--tc-border)]"
     >
       <div className="max-w-3xl mx-auto">
         {!hideHeader && (
@@ -88,13 +109,16 @@ export function ContactForm({ hideHeader = false }: { hideHeader?: boolean }) {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
+          noValidate
           className="tc-card relative space-y-5 p-8 sm:p-10"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <Field id="contact-name" label={t("form.name")} error={errors.name?.message}>
+            <Field id="contact-name" label={t("form.name")} error={validationMessage(errors.name?.message)}>
               <input
                 {...register("name")}
                 id="contact-name"
+                autoComplete="name"
+                maxLength={100}
                 placeholder={t("form.name_placeholder")}
                 className={inputClasses}
                 required
@@ -104,17 +128,58 @@ export function ContactForm({ hideHeader = false }: { hideHeader?: boolean }) {
               />
             </Field>
 
-            <Field id="contact-phone" label={t("form.phone")} error={errors.phone?.message}>
+            <Field id="contact-phone" label={t("form.phone")} error={validationMessage(errors.phone?.message)}>
               <input
                 {...register("phone")}
                 id="contact-phone"
                 type="tel"
+                autoComplete="tel"
+                maxLength={50}
                 placeholder={t("form.phone_placeholder")}
                 className={inputClasses}
-                required
-                aria-required
                 aria-invalid={errors.phone ? true : undefined}
                 aria-describedby={errors.phone ? "contact-phone-error" : undefined}
+              />
+            </Field>
+          </div>
+
+          <p className="text-sm text-[var(--tc-text-muted)]">{t("form.contact_hint")}</p>
+          <Field id="contact-email" label={t("form.email")} error={validationMessage(errors.email?.message)}>
+            <input
+              {...register("email")}
+              id="contact-email"
+              type="email"
+              autoComplete="email"
+              maxLength={200}
+              placeholder={t("form.email_placeholder")}
+              className={inputClasses}
+              aria-invalid={errors.email ? true : undefined}
+              aria-describedby={errors.email ? "contact-email-error" : undefined}
+            />
+          </Field>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <Field id="contact-country" label={t("form.country")} error={validationMessage(errors.country?.message)}>
+              <input
+                {...register("country")}
+                id="contact-country"
+                autoComplete="country-name"
+                maxLength={80}
+                placeholder={t("form.country_placeholder")}
+                className={inputClasses}
+                aria-invalid={errors.country ? true : undefined}
+                aria-describedby={errors.country ? "contact-country-error" : undefined}
+              />
+            </Field>
+            <Field id="contact-service" label={t("form.service")} error={validationMessage(errors.service?.message)}>
+              <input
+                {...register("service")}
+                id="contact-service"
+                type="text"
+                maxLength={200}
+                placeholder={t("form.service_placeholder")}
+                className={inputClasses}
+                aria-invalid={errors.service ? true : undefined}
+                aria-describedby={errors.service ? "contact-service-error" : undefined}
               />
             </Field>
           </div>
@@ -122,11 +187,12 @@ export function ContactForm({ hideHeader = false }: { hideHeader?: boolean }) {
           {/* Subject stays fixed to "demo" — the dropdown was one field too many */}
           <input type="hidden" {...register("subject")} value="demo" />
 
-          <Field id="contact-message" label={t("form.message")} error={errors.message?.message}>
+          <Field id="contact-message" label={t("form.message")} error={validationMessage(errors.message?.message)}>
             <textarea
               {...register("message")}
               id="contact-message"
               rows={3}
+              maxLength={2000}
               placeholder={t("form.message_placeholder")}
               className={`${inputClasses} resize-y`}
               aria-invalid={errors.message ? true : undefined}
@@ -134,7 +200,9 @@ export function ContactForm({ hideHeader = false }: { hideHeader?: boolean }) {
             />
           </Field>
 
-          {/* Honeypot fields — hidden, bots fill them */}
+          {/* Honeypot fields — hidden, bots fill them. Both are plain text and
+              carry the password-manager opt-outs: an autofilled `type="email"`
+              input here would get a real visitor's lead silently dropped. */}
           <div
             aria-hidden
             style={{
@@ -152,15 +220,21 @@ export function ContactForm({ hideHeader = false }: { hideHeader?: boolean }) {
                 type="text"
                 tabIndex={-1}
                 autoComplete="off"
+                data-lpignore="true"
+                data-1p-ignore=""
+                data-form-type="other"
                 {...register("_hp")}
               />
             </label>
             <label>
               Leave blank
               <input
-                type="email"
+                type="text"
                 tabIndex={-1}
                 autoComplete="off"
+                data-lpignore="true"
+                data-1p-ignore=""
+                data-form-type="other"
                 {...register("_hp2")}
               />
             </label>

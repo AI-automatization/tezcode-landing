@@ -3,6 +3,14 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
+// These city landing pages were intentionally removed from the sitemap because
+// they were thin duplicates. Keep their old URLs useful for crawlers and
+// backlinks by sending them to the stronger parent service page.
+const RETIRED_CITY_SLUGS = [
+  "buxoro", "andijon", "namangan", "fargona", "nukus", "qarshi",
+  "jizzax", "navoiy", "urganch", "termiz",
+] as const;
+
 const nextConfig: NextConfig = {
   // Compression for faster delivery
   compress: true,
@@ -37,7 +45,7 @@ const nextConfig: NextConfig = {
   // backlink equity is wasted. 301 those /jamoa/<founder> URLs to the real
   // pages so the inbound links resolve and pass authority to the profiles.
   async redirects() {
-    return [
+    const founderRedirects = [
       {
         source: "/jamoa/sardor-madaliyev",
         destination: "/sardor-madaliyev",
@@ -59,6 +67,13 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
     ];
+    const retiredCityRedirects = RETIRED_CITY_SLUGS.flatMap((city) =>
+      ["/pos-tizimi", "/ai-avtomatizatsiya"].flatMap((service) => [
+        { source: `${service}/${city}`, destination: service, permanent: true },
+        { source: `/:locale${service}/${city}`, destination: "/:locale" + service, permanent: true },
+      ]),
+    );
+    return [...founderRedirects, ...retiredCityRedirects];
   },
   // Headers for security + performance
   async headers() {

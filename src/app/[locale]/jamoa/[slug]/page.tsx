@@ -34,6 +34,7 @@ export async function generateMetadata({
   if (!p) return {};
   return buildPageMetadata({
     locale,
+    availableLocales: ["uz"],
     path: `/jamoa/${slug}`,
     title: p.metaTitle,
     description: p.metaDescription,

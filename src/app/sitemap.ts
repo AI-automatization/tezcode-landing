@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
-import { BASE_URL, LOCALES } from "@/lib/seo";
+import { BASE_URL, LOCALES, getAlternateUrls, getDefaultPageLocale } from "@/lib/seo";
 import { ARTICLES } from "./[locale]/blog/articles";
 import { TEAM_PROFILES } from "@/content/team-profiles";
+import { EUROPE_PATH, REGION_PATH } from "@/lib/markets";
 
 // Site-wide lastModified for non-blog pages. Bump this date on real releases
 // (content/design changes worth re-crawling) — NOT on every build. Using a
@@ -23,6 +24,7 @@ const TEAM_UPDATED = new Date("2026-08-26");
 // entity pages we actively want re-crawled and ranked for the person's name.
 // Fresher date + higher priority than the /jamoa registry pages.
 const FOUNDER_UPDATED = new Date("2026-09-06");
+const MARKETS_UPDATED = new Date("2026-09-15");
 
 // City slugs with live pages for the newer per-city service landings.
 // Must mirror ACTIVE_CITY_SLUGS in each service's [city]/page.tsx
@@ -43,11 +45,16 @@ type Route = {
   changeFrequency: "weekly" | "monthly" | "yearly";
   // Per-route override (blog posts use their publish date); defaults to SITE_UPDATED.
   lastModified?: Date;
+  availableLocales?: readonly string[];
 };
 
 // Static routes under app/[locale]/**.
 // Add new pages here when a route is introduced.
 const ROUTES: Route[] = [
+  ...[REGION_PATH, EUROPE_PATH].map((path) => ({
+    path, priority: 0.8, changeFrequency: "monthly" as const,
+    availableLocales: LOCALES, lastModified: MARKETS_UPDATED,
+  })),
   { path: "", priority: 1.0, changeFrequency: "weekly" as const },
   { path: "/for-businesses", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/hire-developers", priority: 0.9, changeFrequency: "monthly" as const },
@@ -111,6 +118,9 @@ const ROUTES: Route[] = [
     priority: 0.7,
     changeFrequency: "monthly" as const,
     lastModified: new Date(a.datePublished),
+    // Only published body translations belong in locale sitemaps.
+    // scripts/check-seo.mjs verifies this against every published CONTENT file.
+    availableLocales: a.availableLocales,
   })),
   // Per-city landings for every service (/<service>/<city>) — only the city
   // slugs that actually have live pages (ACTIVE_CITY_SLUGS = Tashkent +
@@ -133,7 +143,7 @@ function buildUrl(locale: string, path: string): string {
 
 // One sitemap per locale (served at /sitemap/<locale>.xml) so each language
 // can be submitted and monitored separately in Search Console instead of one
-// 285-URL blob. Every entry still carries the full hreflang alternate set.
+// combined sitemap. Entries advertise only actual translated variants.
 export async function generateSitemaps() {
   return LOCALES.map((locale) => ({ id: locale }));
 }
@@ -144,16 +154,19 @@ export default async function sitemap(props: {
   const id = await props.id;
   const locale = (LOCALES as readonly string[]).includes(id) ? id : "uz";
 
-  return ROUTES.map((route) => ({
+  return ROUTES.filter((route) =>
+    (route.availableLocales ?? LOCALES).includes(locale),
+  ).map((route) => ({
     url: buildUrl(locale, route.path),
     lastModified: route.lastModified ?? SITE_UPDATED,
     changeFrequency: route.changeFrequency,
     // Slight preference for default locale (uz) over translations
     priority: locale === "uz" ? route.priority : Math.max(0.1, route.priority - 0.1),
     alternates: {
-      languages: Object.fromEntries(
-        LOCALES.map((l) => [l, buildUrl(l, route.path)]),
-      ),
+      languages: {
+        ...getAlternateUrls(route.path, route.availableLocales),
+        "x-default": buildUrl(getDefaultPageLocale(route.availableLocales), route.path),
+      },
     },
   }));
 }

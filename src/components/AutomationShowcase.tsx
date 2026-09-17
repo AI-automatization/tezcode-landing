@@ -18,6 +18,7 @@ const META = [
 ] as const;
 
 type Content = {
+  badge: string;
   heading: string;
   subtitle: string;
   cta: string;
@@ -26,6 +27,7 @@ type Content = {
 
 const CONTENT: Record<string, Content> = {
   uz: {
+    badge: "Yechimlar",
     heading: "Bizning yechimlar — har soha uchun",
     subtitle: "AI bilan biznesingizning har bir jarayonini avtomatlashtiramiz.",
     cta: "Batafsil",
@@ -39,6 +41,7 @@ const CONTENT: Record<string, Content> = {
     ],
   },
   ru: {
+    badge: "Решения",
     heading: "Наши решения — для любой сферы",
     subtitle: "Автоматизируем каждый процесс вашего бизнеса с помощью ИИ.",
     cta: "Подробнее",
@@ -52,6 +55,7 @@ const CONTENT: Record<string, Content> = {
     ],
   },
   en: {
+    badge: "Solutions",
     heading: "Our solutions — for every industry",
     subtitle: "We automate every process of your business with AI.",
     cta: "Learn more",
@@ -65,6 +69,7 @@ const CONTENT: Record<string, Content> = {
     ],
   },
   ar: {
+    badge: "الحلول",
     heading: "حلولنا — لكل مجال",
     subtitle: "نُؤتمت كل عملية في عملك باستخدام الذكاء الاصطناعي.",
     cta: "اعرف المزيد",
@@ -78,6 +83,7 @@ const CONTENT: Record<string, Content> = {
     ],
   },
   uk: {
+    badge: "Рішення",
     heading: "Наші рішення — для будь-якої сфери",
     subtitle: "Автоматизуємо кожен процес вашого бізнесу за допомогою AI.",
     cta: "Детальніше",
@@ -124,7 +130,7 @@ export function AutomationShowcase() {
     >
       <div className="max-w-7xl mx-auto px-6">
         <Reveal className="mb-14 max-w-2xl">
-          <span className="tc-chip">Yechimlar</span>
+          <span className="tc-chip">{c.badge}</span>
           <h2
             className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-700 tracking-tight text-[var(--tc-text-primary)]"
             style={{ fontFamily: "var(--font-display)" }}

@@ -8,6 +8,7 @@ import type { ArticleLang, ArticleMeta } from "@/components/blog/types";
 export const ARTICLES: ArticleMeta[] = [
   {
     slug: "gpt-6-astra",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-09-11",
     category: "AI dunyosida / Yangilik",
     relatedService: { href: "/ai-agent", label: "AI agent yaratish" },
@@ -34,6 +35,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "suniy-intellekt-xizmatlari",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-08-26",
     category: "Sun'iy intellekt / Qo'llanma",
     relatedService: { href: "/ai-avtomatizatsiya", label: "AI avtomatizatsiya" },
@@ -60,6 +62,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "kamerani-ai-bilan-aqlli-qilish",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-08-15",
     category: "AI video analitika / Qo'llanma",
     relatedService: { href: "/ai-video-analitika", label: "AI video analitika" },
@@ -83,6 +86,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "ai-ozbek-tilida",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-08-15",
     category: "AI / O'zbek tili",
     relatedService: { href: "/ai-chatbot", label: "AI chatbot" },
@@ -106,6 +110,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "sotuvni-avtomatlashtirish",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-08-15",
     category: "Sotuv / Avtomatizatsiya",
     relatedService: { href: "/crm-integratsiya", label: "CRM integratsiya" },
@@ -129,6 +134,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "biznes-uchun-telegram-bot",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-08-15",
     category: "Telegram bot / Qo'llanma",
     relatedService: { href: "/telegram-bot-biznes", label: "Telegram bot" },
@@ -152,6 +158,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "ai-chatbot-vs-jonli-operator",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-08-15",
     category: "AI chatbot / Taqqoslash",
     relatedService: { href: "/ai-chatbot", label: "AI chatbot" },
@@ -175,6 +182,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "1c-crm-ai-integratsiya",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-08-14",
     category: "CRM / Integratsiya",
     relatedService: { href: "/crm-integratsiya", label: "CRM integratsiya" },
@@ -198,6 +206,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "ai-yechimlar-narxi-2026",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-08-14",
     category: "Narxlar / AI",
     relatedService: { href: "/tariflar", label: "Tariflar" },
@@ -224,6 +233,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "biznesni-ai-bilan-avtomatlashtirish",
+    availableLocales: ["uz", "ru"],
     datePublished: "2026-07-18",
     category: "AI / Avtomatizatsiya",
     relatedService: { href: "/ai-avtomatizatsiya", label: "AI avtomatizatsiya" },
@@ -250,6 +260,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "claude-fable-5",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-07-02",
     category: "AI dunyosida / Yangilik",
     relatedService: { href: "/ai-agent", label: "AI agent yasash" },
@@ -273,6 +284,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "it-park-schwarz-digits-uchrashuv",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-07-02",
     category: "Hamkorlik / IT Park",
     relatedService: { href: "/it-xizmatlar", label: "IT xizmatlar" },
@@ -296,6 +308,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "ai-avtomatizatsiya-kompaniya-tanlash",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-06-25",
     category: "AI / Avtomatizatsiya",
     relatedService: { href: "/ai-avtomatizatsiya", label: "AI avtomatizatsiya" },
@@ -319,6 +332,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "biznes-uchun-ai-agent-yaratish",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-06-14",
     category: "AI Agent / 2026",
     relatedService: { href: "/ai-agent", label: "AI agent yasash" },
@@ -337,6 +351,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "ai-chatbot-va-ai-agent-farqi",
+    availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-06-17",
     category: "AI Agent / 2026",
     relatedService: { href: "/ai-chatbot", label: "AI chatbot" },
@@ -360,6 +375,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "online-birga-film-korish",
+    availableLocales: ["uz", "ru"],
     datePublished: "2026-06-07",
     category: "Video / Watch Party",
     list: {
@@ -377,6 +393,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "xodim-nazorati-tizimi",
+    availableLocales: ["uz", "ru"],
     datePublished: "2026-06-07",
     category: "HR / Nazorat",
     relatedService: { href: "/xodim-nazorati", label: "Xodim nazorati (WorkControl)" },
@@ -395,6 +412,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "klinika-uchun-crm",
+    availableLocales: ["uz", "ru"],
     datePublished: "2026-06-07",
     category: "CRM / Klinika",
     relatedService: { href: "/klinika-crm", label: "Klinika CRM (ClinicaGo)" },
@@ -413,6 +431,7 @@ export const ARTICLES: ArticleMeta[] = [
   },
   {
     slug: "pos-tizimi-tanlash",
+    availableLocales: ["uz", "ru"],
     datePublished: "2026-06-07",
     category: "POS / Savdo",
     relatedService: { href: "/pos-tizimi", label: "POS tizimi (RAOS)" },
@@ -445,7 +464,9 @@ export function localizeArticleMeta(
   fallback: { title: string; description: string },
 ): { title: string; description: string } {
   if (locale === "uz") return fallback;
-  const listed = getArticle(slug)?.list[locale as ArticleLang];
+  const article = getArticle(slug);
+  if (!article?.availableLocales.includes(locale as ArticleLang)) return fallback;
+  const listed = article.list[locale as ArticleLang];
   if (!listed) return fallback;
   return { title: `${listed.title} | Tezcode`, description: listed.excerpt };
 }

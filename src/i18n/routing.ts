@@ -5,6 +5,9 @@ export const routing = defineRouting({
   locales: ["uz", "ru", "en", "ar", "uk"],
   defaultLocale: "uz",
   localePrefix: "as-needed",
+  // Pages and sitemaps publish only their actual translations. The default
+  // HTTP Link header advertises every configured locale, including fallbacks.
+  alternateLinks: false,
   // First visit: pick the locale from the browser's Accept-Language header
   // (a ru-language browser lands on /ru, etc.). This is the Google-safe way
   // to auto-localize — crawlers send no Accept-Language, so they always get

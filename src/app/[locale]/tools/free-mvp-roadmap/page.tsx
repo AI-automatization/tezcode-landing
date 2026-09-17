@@ -11,6 +11,7 @@ export async function generateMetadata({
   const { locale } = await params;
   return buildPageMetadata({
     locale,
+    availableLocales: ["uz"],
     path: "/tools/free-mvp-roadmap",
     title: "Bepul MVP Yo'l Xaritasi Generatori — Startup G'oyangiz Uchun",
     description:

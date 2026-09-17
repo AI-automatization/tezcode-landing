@@ -1,3 +1,4 @@
+import { CENTRAL_ASIA_COUNTRIES } from "@/lib/markets";
 import { ServicePageClient } from "@/components/service-page/ServicePageClient";
 import type { ServiceLang } from "@/components/service-page/types";
 import {
@@ -16,31 +17,15 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const copy = CONTENT[locale as ServiceLang] ?? CONTENT.uz;
   return buildPageMetadata({
     locale,
     path: PATH,
-    // { absolute } bypasses the layout's `%s | Tezcode` template so the
-    // rendered title ends with a single "— Tezcode".
-    title: {
-      absolute: "IT xizmatlar — Toshkent: dastur, mobil ilova, AI — Tezcode",
-    },
-    description:
-      "Toshkentda IT xizmatlar: dasturiy ta'minot ishlab chiqish, mobil ilova, veb-sayt, AI va avtomatizatsiya, integratsiya va qo'llab-quvvatlash. Tezcode Software Factory, 14 in-house dasturchi. Bepul konsultatsiya.",
-    keywords: [
-      "IT xizmatlar Toshkent",
-      "IT kompaniya Toshkent",
-      "dasturiy ta'minot ishlab chiqish",
-      "veb sayt yaratish Toshkent",
-      "mobil ilova yasatish",
-      "IT autsorsing O'zbekiston",
-      "IT услуги Ташкент",
-      "IT компания Ташкент",
-      "IT аутсорсинг Узбекистан",
-      "IT services Tashkent",
-    ],
-    ogTitle: "IT xizmatlar — Toshkent",
-    ogDescription:
-      "Dastur, mobil ilova, veb-sayt, AI va qo'llab-quvvatlash — bitta ishonchli jamoadan. Bepul konsultatsiya.",
+    title: { absolute: copy.service.name },
+    description: copy.service.description,
+    ogTitle: copy.service.name,
+    ogDescription: copy.service.description,
+    availableLocales: Object.keys(CONTENT),
   });
 }
 
@@ -57,6 +42,7 @@ export default async function ItXizmatlarPage({
     description: copy.service.description,
     serviceType: copy.service.serviceType,
     path: PATH,
+    areaServed: locale === "ru" ? CENTRAL_ASIA_COUNTRIES : undefined,
   });
   const faqSchema = getFaqSchema(copy.faq.items);
   // HowTo mirrors the visible process steps, so "how to start with an IT

@@ -21,6 +21,7 @@ export async function generateMetadata({
   const { locale } = await params;
   return buildPageMetadata({
     locale,
+    availableLocales: ["uz"],
     path: PATH,
     title: "Bekzod Mirzaaliyev — Tezcode asoschisi va CEO",
     description:

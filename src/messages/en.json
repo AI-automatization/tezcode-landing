@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "AI Business Automation — Tashkent, Uzbekistan | Tezcode",
-    "description": "TezCode — AI Software Factory. AI automation for business in Tashkent: AI agents, chatbots and process automation.",
-    "ogTitle": "AI Business Automation — Tezcode, Tashkent",
-    "ogDescription": "Systematizing Uzbekistan's business with AI. RAOS POS, AI Office, HamshiraGo and 5 more products."
+    "title": "AI Business Automation & Custom AI Agents | Tezcode",
+    "description": "Tezcode builds AI agents, chatbots and workflow integrations for business. Based in Tashkent, with remote delivery. Discuss your project with our team.",
+    "ogTitle": "AI Business Automation & Custom AI Agents | Tezcode",
+    "ogDescription": "AI agents, chatbots and workflow integrations built around your business. Meet the Tezcode team, explore our work and discuss your project."
   },
   "nav": {
     "divisions": "Divisions",
@@ -107,6 +107,11 @@
     }
   },
   "products": {
+    "badge": "Products",
+    "pipeline": "Future products · R&D",
+    "learn_more": "Learn more",
+    "visit_site": "Visit website",
+    "request_demo": "Request a demo",
     "title": "Our Products",
     "subtitle": "8 products — each an expert in its field",
     "raos": {
@@ -240,6 +245,18 @@
     "title": "Get in touch",
     "subtitle": "Let's talk about your project — free consultation",
     "form": {
+      "contact_hint": "Enter an email address or phone number so we can reply. One is enough.",
+      "country": "Country (optional)",
+      "country_placeholder": "For example, Uzbekistan",
+      "service": "What do you need? (optional)",
+      "service_placeholder": "Describe the service or task you need",
+      "validation": {
+        "name_length": "Enter at least 2 characters for your name.",
+        "too_long": "This text is too long.",
+        "email_invalid": "Enter a valid email address.",
+        "phone_invalid": "Enter a phone number with country code (at least 7 digits).",
+        "contact_required": "Enter an email address or phone number."
+      },
       "name": "Your name",
       "name_placeholder": "Aziz Karimov",
       "email": "Email",

@@ -1,6 +1,10 @@
 "use client";
 
 import Script from "next/script";
+import { useEffect, useSyncExternalStore } from "react";
+import { readConsent, subscribeConsent } from "@/lib/cookie-consent";
+import { getLeadAttribution, trackContactClick } from "@/lib/lead-analytics";
+import { getMarketFromPath } from "@/lib/markets";
 
 // Tracking services (all env-driven, no-op if not configured)
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
@@ -10,6 +14,66 @@ const POSTHOG_HOST =
   process.env.NEXT_PUBLIC_POSTHOG_HOST ?? "https://app.posthog.com";
 
 export function Analytics() {
+  const consent = useSyncExternalStore(subscribeConsent, readConsent, () => null);
+  useEffect(() => {
+    const allowed = readConsent() === "all";
+    const providers = window as Window & {
+      gtag?: (...args: unknown[]) => void;
+      clarity?: (...args: unknown[]) => void;
+      posthog?: { opt_in_capturing: () => void; opt_out_capturing: () => void };
+    };
+    if (GA_ID) Reflect.set(window, `ga-disable-${GA_ID}`, !allowed);
+    providers.gtag?.("consent", "update", {
+      analytics_storage: allowed ? "granted" : "denied",
+      ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied",
+    });
+    providers.clarity?.("consentv2", {
+      analytics_Storage: allowed ? "granted" : "denied", ad_Storage: "denied",
+    });
+    if (allowed) {
+      providers.posthog?.opt_in_capturing();
+      getLeadAttribution();
+    } else {
+      providers.posthog?.opt_out_capturing();
+      try { sessionStorage.removeItem("tc_lead_attribution"); } catch { /* Optional storage. */ }
+    }
+  }, [consent]);
+
+  useEffect(() => {
+    if (consent !== "all") return;
+    const onClick = (event: MouseEvent) => {
+      if (!(event.target instanceof Element)) return;
+      const link = event.target.closest("a");
+      if (!link) return;
+      const url = new URL(link.href, window.location.origin);
+      const channel = url.protocol === "mailto:" ? "email"
+        : url.protocol === "tel:" ? "phone"
+        : url.hostname === "t.me" ? "telegram"
+        : url.origin === window.location.origin && (url.hash === "#contact" || /\/aloqa\/?$/.test(url.pathname)) ? "form"
+        : null;
+      if (channel) trackContactClick({
+        channel,
+        language: document.documentElement.lang,
+        market: getMarketFromPath(window.location.pathname),
+      });
+    };
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, [consent]);
+
+  // Dev-only: without ids the whole layer is a silent no-op, and NEXT_PUBLIC_*
+  // values are baked in at build time — a missing key looks exactly like
+  // "consent not granted", which is how it went unnoticed before.
+  useEffect(() => {
+    if (process.env.NODE_ENV === "production") return;
+    if (consent === "all" && !GA_ID && !CLARITY_ID && !POSTHOG_KEY) {
+      console.warn(
+        "[Analytics] Consent granted but no NEXT_PUBLIC_GA_ID / NEXT_PUBLIC_CLARITY_ID / NEXT_PUBLIC_POSTHOG_KEY is set — nothing is being tracked. See README → Environment Variables.",
+      );
+    }
+  }, [consent]);
+
+  if (consent !== "all") return null;
   return (
     <>
       {/* Google Analytics 4 — traffic source, search keywords, demographics */}
@@ -23,6 +87,10 @@ export function Analytics() {
             {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
+              gtag('consent', 'default', {
+                analytics_storage: 'granted', ad_storage: 'denied',
+                ad_user_data: 'denied', ad_personalization: 'denied'
+              });
               gtag('js', new Date());
               gtag('config', '${GA_ID}', {
                 anonymize_ip: true,
@@ -42,6 +110,7 @@ export function Analytics() {
               t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
               y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             })(window,document,"clarity","script","${CLARITY_ID}");
+            clarity('consentv2', { analytics_Storage: 'granted', ad_Storage: 'denied' });
           `}
         </Script>
       )}
@@ -54,9 +123,11 @@ export function Analytics() {
             posthog.init('${POSTHOG_KEY}', {
               api_host: '${POSTHOG_HOST}',
               person_profiles: 'identified_only',
+              autocapture: false,
               capture_pageview: true,
               capture_pageleave: true,
             });
+            posthog.opt_in_capturing();
           `}
         </Script>
       )}

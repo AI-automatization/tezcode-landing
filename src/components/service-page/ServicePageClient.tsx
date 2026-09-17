@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 import { ArrowRight, Plus } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
+import { RemoteDelivery } from "@/components/RemoteDelivery";
 import { Footer } from "@/components/Footer";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Link } from "@/i18n/routing";
@@ -745,6 +746,7 @@ export function ServicePageClient({
       <RelatedSection copy={copy} />
       <CityLinksSection serviceSlug={serviceSlug} locale={locale} />
       <RelatedServicesSection serviceSlug={serviceSlug} locale={locale} />
+      {serviceSlug && <RemoteDelivery locale={locale} />}
       <FinalCtaSection copy={copy} />
       <Footer />
 

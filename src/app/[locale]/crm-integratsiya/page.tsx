@@ -1,3 +1,4 @@
+import { CENTRAL_ASIA_COUNTRIES } from "@/lib/markets";
 import { ServicePageClient } from "@/components/service-page/ServicePageClient";
 import type { ServiceLang } from "@/components/service-page/types";
 import {
@@ -28,12 +29,10 @@ const META: Record<
       "amoCRM, Bitrix24, HubSpot, 1C, Sales Doctor — barcha kanallarni bitta CRM'ga ulaymiz, voronka sozlaymiz, bazani ko'chiramiz. $700 dan. Bepul konsultatsiya.",
   },
   ru: {
-    title: "Интеграция CRM — Ташкент",
-    description:
-      "Интеграция CRM в Ташкенте от $700 (≈ от 8.5 млн сум): подключение amoCRM, Bitrix24, HubSpot, 1C и Sales Doctor к Telegram, Instagram, WhatsApp, сайту и телефонии, настройка воронки, миграция данных, ИИ-слой (AI). Tezcode — резидент IT Park. Бесплатная консультация, оплата 30% предоплата.",
-    ogTitle: "Интеграция CRM — Ташкент | Tezcode",
-    ogDescription:
-      "amoCRM, Bitrix24, HubSpot, 1C, Sales Doctor — подключаем все каналы к одной CRM, настраиваем воронку, переносим базу, добавляем ИИ (AI). От $700 (≈ от 8.5 млн сум). Бесплатная консультация.",
+    title: "Интеграция CRM — заявки, продажи и учёт",
+    description: "Подключение CRM к сайту, каналам обращений и системе учёта. Команда Tezcode в Ташкенте, удалённая работа с бизнесом Центральной Азии.",
+    ogTitle: "CRM и интеграции для бизнеса — Tezcode",
+    ogDescription: "Настройка воронки, перенос данных и автоматизация согласованных процессов. Проверяем доступы и интеграции, показываем результат по этапам.",
   },
   en: {
     title: "CRM integration — Tashkent",
@@ -108,6 +107,7 @@ export default async function CrmIntegratsiyaPage({
     description: copy.service.description,
     serviceType: copy.service.serviceType,
     path: PATH,
+    areaServed: locale === "ru" ? CENTRAL_ASIA_COUNTRIES : undefined,
     offers: { price: "700", priceCurrency: "USD" },
   });
   const faqSchema = getFaqSchema(copy.faq.items);

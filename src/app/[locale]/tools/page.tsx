@@ -13,6 +13,7 @@ export async function generateMetadata({
   const { locale } = await params;
   return buildPageMetadata({
     locale,
+    availableLocales: ["uz"],
     path: "/tools",
     title: "Bepul AI Vositalar — MVP Roadmap, Kod Tahlili",
     description:

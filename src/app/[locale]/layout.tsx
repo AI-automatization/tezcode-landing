@@ -12,6 +12,7 @@ import {
   getWebsiteSchema,
 } from "@/lib/seo";
 import { Analytics } from "@/components/Analytics";
+import { CookieConsent } from "@/components/CookieConsent";
 import "./globals.css";
 
 const syne = Syne({
@@ -193,7 +194,13 @@ export default async function LocaleLayout({
       </head>
       <body className="bg-[var(--tc-ink)] text-[var(--tc-text-primary)] antialiased">
         <NextIntlClientProvider messages={messages}>
-          <MotionProvider>{children}</MotionProvider>
+          <MotionProvider>
+            {children}
+            {/* Global: Analytics only loads once consent is granted, so the
+                banner has to reach every page, not just the four that used to
+                mount it themselves. */}
+            <CookieConsent />
+          </MotionProvider>
         </NextIntlClientProvider>
         <Analytics />
       </body>

@@ -3,48 +3,47 @@
 import { m, AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
 import { useLocale } from "next-intl";
+import { readConsent, saveConsent, type Consent } from "@/lib/cookie-consent";
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
 
 const COPY: Record<Lang, { title: string; body: string; accept: string; decline: string; learn: string }> = {
   uz: {
     title: "Cookie va analitika",
-    body: "Saytni yaxshilash uchun cookie ishlatamiz. Davom etish bilan rozilik bildirasiz.",
+    body: "Ruxsat bersangiz, saytni yaxshilash uchun analitika vositalarini yoqamiz. Faqat zarur cookie bilan ham murojaat yuborishingiz mumkin.",
     accept: "Roziman",
     decline: "Faqat zarur",
     learn: "Batafsil",
   },
   ru: {
     title: "Cookie и аналитика",
-    body: "Мы используем cookie для улучшения сайта. Продолжая, вы соглашаетесь.",
+    body: "С вашего согласия включим аналитику для улучшения сайта. Отправить заявку можно и без аналитики.",
     accept: "Согласен",
     decline: "Только нужные",
     learn: "Подробнее",
   },
   en: {
     title: "Cookies & Analytics",
-    body: "We use cookies to improve your experience. By continuing, you agree to our cookie policy.",
+    body: "With your permission, we use analytics to improve this site. You can send an enquiry with essential cookies only.",
     accept: "Accept all",
     decline: "Essential only",
     learn: "Learn more",
   },
   ar: {
     title: "ملفات تعريف الارتباط والتحليلات",
-    body: "نستخدم ملفات تعريف الارتباط لتحسين تجربتك. باستمرارك، فإنك توافق على سياستنا.",
+    body: "بموافقتك، نستخدم التحليلات لتحسين الموقع. يمكنك إرسال طلب باستخدام ملفات تعريف الارتباط الضرورية فقط.",
     accept: "أوافق",
     decline: "الضروري فقط",
     learn: "اعرف المزيد",
   },
   uk: {
     title: "Cookie та аналітика",
-    body: "Ми використовуємо cookie, щоб покращити сайт. Продовжуючи, ви погоджуєтесь.",
+    body: "За вашою згодою ввімкнемо аналітику для покращення сайту. Надіслати запит можна й без аналітики.",
     accept: "Згоден",
     decline: "Тільки необхідні",
     learn: "Детальніше",
   },
 };
-
-const STORAGE_KEY = "tc_cookie_consent";
 
 export function CookieConsent() {
   const locale = useLocale() as Lang;
@@ -53,7 +52,7 @@ export function CookieConsent() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const stored = localStorage.getItem(STORAGE_KEY);
+    const stored = readConsent();
     if (!stored) {
       // Delay show 1.5s so it doesn't compete with Hero animation
       const id = setTimeout(() => setShow(true), 1500);
@@ -61,16 +60,9 @@ export function CookieConsent() {
     }
   }, []);
 
-  function decide(value: "all" | "essential") {
-    localStorage.setItem(
-      STORAGE_KEY,
-      JSON.stringify({ value, ts: Date.now() }),
-    );
+  function decide(value: Consent) {
+    saveConsent(value);
     setShow(false);
-    // Notify analytics scripts
-    window.dispatchEvent(
-      new CustomEvent("tc:cookie-consent", { detail: { value } }),
-    );
   }
 
   const policyHref = locale === "uz" ? "/privacy" : `/${locale}/privacy`;

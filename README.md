@@ -102,6 +102,15 @@ NEXT_PUBLIC_BASE_URL=https://www.tezcode.dev
 # Without these the limiter falls back to in-memory per-instance counters.
 UPSTASH_REDIS_REST_URL=https://your-db.upstash.io
 UPSTASH_REDIS_REST_TOKEN=your_token
+
+# Analytics — each one is independent, an unset id just disables that tool.
+# NEXT_PUBLIC_* values are inlined at BUILD time, so setting them only in the
+# Railway runtime environment is not enough: the build has to see them.
+# Nothing loads until the visitor accepts analytics in the cookie banner.
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_CLARITY_ID=xxxxxxxxxx
+NEXT_PUBLIC_POSTHOG_KEY=phc_xxxxxxxx
+NEXT_PUBLIC_POSTHOG_HOST=https://app.posthog.com   # optional, this is the default
 ```
 
 ## What's Skeleton (TODO next phase)
@@ -125,6 +134,9 @@ Required production env vars:
 - `NEXT_PUBLIC_BASE_URL=https://tezcode.dev`
 - `TELEGRAM_BOT_TOKEN` (if contact form notifications are enabled)
 - `UPSTASH_REDIS_REST_URL` + `UPSTASH_REDIS_REST_TOKEN` (when running >1 replica)
+- `NEXT_PUBLIC_GA_ID` / `NEXT_PUBLIC_CLARITY_ID` / `NEXT_PUBLIC_POSTHOG_KEY`
+  (analytics; build-time values — redeploy after changing them, a restart
+  will not pick them up)
 
 ```bash
 # CLI deploy

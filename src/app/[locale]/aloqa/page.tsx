@@ -5,7 +5,6 @@ import { Navbar } from "@/components/Navbar";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
-import { CookieConsent } from "@/components/CookieConsent";
 import { buildPageMetadata } from "@/lib/seo";
 
 const PATH = "/aloqa";
@@ -321,7 +320,6 @@ export default async function AloqaPage({
 
       <FloatingContact />
 
-      <CookieConsent />
     </main>
   );
 }

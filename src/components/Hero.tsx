@@ -1,6 +1,6 @@
 "use client";
 
-import { m } from "motion/react";
+import { m, useReducedMotion } from "motion/react";
 import { useTranslations, useLocale } from "next-intl";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "motion/react";
@@ -673,6 +673,7 @@ export function Hero() {
 // the old way → the automated result. ──
 function HeroVisual() {
   const locale = useLocale();
+  const shouldReduceMotion = useReducedMotion();
   const c = VISUAL_COPY[locale] ?? VISUAL_COPY.uz;
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -814,9 +815,13 @@ function HeroVisual() {
 
       {/* floating chip — top-right */}
       <m.div
-        animate={{ y: [0, -8, 0] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="tc-card absolute -top-4 -end-3 hidden sm:inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-600 text-[var(--tc-text-primary)]"
+        animate={{ y: shouldReduceMotion ? 0 : [0, -6, 0] }}
+        transition={{
+          duration: 5.5,
+          repeat: Infinity,
+          ease: [0.45, 0, 0.55, 1],
+        }}
+        className="tc-card absolute -top-4 -end-3 hidden sm:inline-flex will-change-transform items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-600 text-[var(--tc-text-primary)]"
       >
         <Bot className="w-3.5 h-3.5 text-[var(--tc-blue-text)]" />
         {c.chip1}
@@ -824,9 +829,13 @@ function HeroVisual() {
 
       {/* floating stat — bottom-left */}
       <m.div
-        animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
-        className="tc-card absolute -bottom-4 -start-3 hidden sm:inline-flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs font-600 text-[var(--tc-text-primary)]"
+        animate={{ y: shouldReduceMotion ? 0 : [0, 6, 0] }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+          ease: [0.45, 0, 0.55, 1],
+        }}
+        className="tc-card absolute -bottom-4 -start-3 hidden sm:inline-flex will-change-transform items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs font-600 text-[var(--tc-text-primary)]"
       >
         <ArrowUp className="w-3.5 h-3.5 text-[var(--tc-success)]" strokeWidth={2.5} />
         <span className="text-[var(--tc-success)]">{c.statVal}</span>

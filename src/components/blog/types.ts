@@ -66,6 +66,8 @@ export type ArticleListLang = Record<
 > & { uz: { title: string; excerpt: string } };
 
 export type ArticleMeta = {
+  // Published body translations; a translated listing alone is not sufficient.
+  availableLocales: readonly ArticleLang[];
   slug: string; // URL segment under /blog/<slug>
   datePublished: string; // ISO, e.g. "2026-06-07"
   category: string; // shown as a tag

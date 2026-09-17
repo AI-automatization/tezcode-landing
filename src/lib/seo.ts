@@ -10,14 +10,18 @@ export type Locale = (typeof LOCALES)[number];
 export const SITE_NAME = "Tezcode";
 export const SITE_TAGLINE = "AI Software Factory";
 
-export function getAlternateUrls(path = "") {
-  return LOCALES.reduce(
+export function getDefaultPageLocale(availableLocales: readonly string[] = LOCALES) {
+  return availableLocales.includes("uz") ? "uz" : (LOCALES.find((locale) => availableLocales.includes(locale)) ?? "uz");
+}
+
+export function getAlternateUrls(path = "", availableLocales: readonly string[] = LOCALES) {
+  return LOCALES.filter((locale) => availableLocales.includes(locale)).reduce(
     (acc, locale) => {
       acc[locale] =
         locale === "uz" ? `${BASE_URL}${path}` : `${BASE_URL}/${locale}${path}`;
       return acc;
     },
-    {} as Record<Locale, string>,
+    {} as Partial<Record<Locale, string>>,
   );
 }
 
@@ -106,12 +110,14 @@ export function buildPageMetadata(input: {
   const locale = input.locale ?? "uz";
   const isFallback =
     input.availableLocales !== undefined &&
-    locale !== "uz" &&
     !input.availableLocales.includes(locale);
   // Locale-aware canonical: /ru/... pages must declare /ru/... as canonical,
   // never the uz URL, or search engines drop the localized page from the index.
   // Exception: untranslated fallback locales canonicalize to the uz original.
-  const canonicalLocale = isFallback ? "uz" : locale;
+  const defaultPageLocale = getDefaultPageLocale(input.availableLocales);
+  const canonicalLocale = isFallback ? defaultPageLocale : locale;
+  const defaultPageUrl = defaultPageLocale === "uz"
+    ? `${BASE_URL}${input.path}` : `${BASE_URL}/${defaultPageLocale}${input.path}`;
   const url =
     canonicalLocale === "uz"
       ? `${BASE_URL}${input.path}`
@@ -139,10 +145,11 @@ export function buildPageMetadata(input: {
     ...(input.keywords ? { keywords: input.keywords } : {}),
     alternates: {
       canonical: url,
-      // x-default always points at the unprefixed uz URL regardless of locale.
+      // Prefer the Uzbek original when available; single-language market
+      // pages use their actual published language instead of a missing URL.
       languages: {
-        ...getAlternateUrls(input.path),
-        "x-default": `${BASE_URL}${input.path}`,
+        ...getAlternateUrls(input.path, input.availableLocales),
+        "x-default": defaultPageUrl,
       },
     },
     openGraph: {
