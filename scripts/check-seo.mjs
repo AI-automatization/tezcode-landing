@@ -46,6 +46,13 @@ process.stdout.write(`Verified translation coverage for ${articles.elements.leng
 
 const origin = process.argv[2];
 if (origin) {
+  const profiles = initializer("src/content/team-profiles.ts", "TEAM_PROFILES");
+  assert.ok(ts.isArrayLiteralExpression(profiles));
+  const uzOnlyPaths = [
+    "/tools", "/tools/free-code-review", "/tools/free-mvp-roadmap", "/tools/roi-calculator",
+    "/bekzod-mirzaaliyev", "/sardor-madaliyev",
+    ...profiles.elements.map((profile) => `/jamoa/${property(profile, "slug").text}`),
+  ];
   const locales = ["uz", "ru", "en", "ar", "uk"];
   const marketPaths = ["/regions/central-asia", "/regions/europe"];
   const canonicalOrigin = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.tezcode.dev";
@@ -68,6 +75,14 @@ if (origin) {
   for (const locale of locales) {
     const xml = await get(`/sitemap/${locale}.xml`);
     const entries = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((match) => match[1]);
+    for (const path of uzOnlyPaths) {
+      const entry = entries.find((item) => item.includes(`<loc>${urlFor(locale, path)}</loc>`));
+      assert.equal(Boolean(entry), locale === "uz", `${locale}${path}: only published translations in sitemap`);
+      if (entry) {
+        assert.deepEqual([...entry.matchAll(/hreflang="([^"]+)"/g)].map((match) => match[1]).sort(),
+          ["uz", "x-default"], `${path}: no untranslated sitemap alternates`);
+      }
+    }
     for (const path of marketPaths) {
       const marketEntry = entries.find((item) => item.includes(`<loc>${urlFor(locale, path)}</loc>`));
       assert.equal(Boolean(marketEntry), true, `Market sitemap: ${locale}${path}`);

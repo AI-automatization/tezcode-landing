@@ -85,18 +85,20 @@ const ROUTES: Route[] = [
   { path: "/sharhlar", priority: 0.6, changeFrequency: "monthly" as const },
   { path: "/biz-haqimizda", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/blog", priority: 0.8, changeFrequency: "weekly" as const },
-  { path: "/tools", priority: 0.8, changeFrequency: "monthly" as const },
-  { path: "/tools/free-code-review", priority: 0.8, changeFrequency: "monthly" as const },
-  { path: "/tools/free-mvp-roadmap", priority: 0.8, changeFrequency: "monthly" as const },
-  { path: "/tools/roi-calculator", priority: 0.8, changeFrequency: "monthly" as const },
+  // Tool and profile bodies are currently Uzbek-only. Their translated URL
+  // shells canonicalize to Uzbek and must not be advertised as translations.
+  { path: "/tools", priority: 0.8, changeFrequency: "monthly" as const, availableLocales: ["uz"] },
+  { path: "/tools/free-code-review", priority: 0.8, changeFrequency: "monthly" as const, availableLocales: ["uz"] },
+  { path: "/tools/free-mvp-roadmap", priority: 0.8, changeFrequency: "monthly" as const, availableLocales: ["uz"] },
+  { path: "/tools/roi-calculator", priority: 0.8, changeFrequency: "monthly" as const, availableLocales: ["uz"] },
   { path: "/case-studies", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/case-studies/aziz-electronics", priority: 0.7, changeFrequency: "yearly" as const },
   { path: "/case-studies/dilfuza-grocery", priority: 0.7, changeFrequency: "yearly" as const },
   { path: "/case-studies/munira-clinic", priority: 0.7, changeFrequency: "yearly" as const },
   { path: "/roadmap", priority: 0.6, changeFrequency: "monthly" as const },
   { path: "/changelog", priority: 0.6, changeFrequency: "weekly" as const },
-  { path: "/bekzod-mirzaaliyev", priority: 0.8, changeFrequency: "monthly" as const, lastModified: FOUNDER_UPDATED },
-  { path: "/sardor-madaliyev", priority: 0.8, changeFrequency: "monthly" as const, lastModified: FOUNDER_UPDATED },
+  { path: "/bekzod-mirzaaliyev", priority: 0.8, changeFrequency: "monthly" as const, lastModified: FOUNDER_UPDATED, availableLocales: ["uz"] },
+  { path: "/sardor-madaliyev", priority: 0.8, changeFrequency: "monthly" as const, lastModified: FOUNDER_UPDATED, availableLocales: ["uz"] },
   // Team member profiles (/jamoa/<slug>) — derived from the profile registry so
   // new teammates auto-appear in the sitemap. Fresh lastModified nudges crawling.
   ...TEAM_PROFILES.map((p) => ({
@@ -104,6 +106,7 @@ const ROUTES: Route[] = [
     priority: 0.5,
     changeFrequency: "monthly" as const,
     lastModified: TEAM_UPDATED,
+    availableLocales: ["uz"],
   })),
   { path: "/partnery/aisolution", priority: 0.6, changeFrequency: "monthly" as const },
   { path: "/partnery/schwarz-digits", priority: 0.6, changeFrequency: "monthly" as const },
