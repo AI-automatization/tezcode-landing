@@ -293,6 +293,11 @@ export const CONTENT: ServicePageContent = {
       subtitle: "AI agentga yaqin yechimlar va foydali qo'llanmalar.",
       links: [
         {
+          href: "/ai-ozbekistonda",
+          label: "AI kompaniya O'zbekiston",
+          desc: "O'zbekistonda biznes uchun AI agentlar, chatbotlar va avtomatizatsiya yechimlari.",
+        },
+        {
           href: "/ai-chatbot",
           label: "AI chatbot xizmati",
           desc: "24/7 mijoz xizmati va lid yig'ish uchun AI chatbot — agentning eng keng tarqalgan ko'rinishi.",
@@ -608,6 +613,11 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "быть полезно",
       subtitle: "Близкие к AI-агенту решения и полезные руководства.",
       links: [
+        {
+          href: "/ai-ozbekistonda",
+          label: "AI-компания в Узбекистане",
+          desc: "ИИ-агенты, чат-боты и автоматизация для бизнеса в Узбекистане.",
+        },
         {
           href: "/ai-chatbot",
           label: "AI-чат-бот",
@@ -925,6 +935,11 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Solutions close to AI agents, plus helpful guides.",
       links: [
         {
+          href: "/ai-ozbekistonda",
+          label: "AI company in Uzbekistan",
+          desc: "AI agents, chatbots and automation solutions for businesses in Uzbekistan.",
+        },
+        {
           href: "/ai-chatbot",
           label: "AI chatbot service",
           desc: "An AI chatbot for 24/7 support and lead capture — the most common form of agent.",
@@ -1241,6 +1256,11 @@ export const CONTENT: ServicePageContent = {
       subtitle: "حلول قريبة من وكيل الذكاء الاصطناعي وأدلة مفيدة.",
       links: [
         {
+          href: "/ai-ozbekistonda",
+          label: "شركة AI في أوزبكستان",
+          desc: "وكلاء AI وروبوتات محادثة وأتمتة للأعمال في أوزبكستان.",
+        },
+        {
           href: "/ai-chatbot",
           label: "خدمة شات بوت ذكي",
           desc: "شات بوت ذكي للدعم 24/7 وجمع العملاء المحتملين — أكثر أشكال الوكيل شيوعاً.",
@@ -1556,6 +1576,11 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "бути корисно",
       subtitle: "Близькі до AI-агента рішення та корисні посібники.",
       links: [
+        {
+          href: "/ai-ozbekistonda",
+          label: "AI-компанія в Узбекистані",
+          desc: "AI-агенти, чат-боти та автоматизація для бізнесу в Узбекистані.",
+        },
         {
           href: "/ai-chatbot",
           label: "AI-чат-бот",
