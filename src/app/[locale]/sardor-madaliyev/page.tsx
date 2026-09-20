@@ -119,6 +119,10 @@ export default function SardorMadaliyevPage() {
       "https://t.me/madaliev_s",
       "https://instagram.com/_madaliev_s",
       "https://www.linkedin.com/in/sardor-madaliyev-566601377/",
+      // Second domain naming the same person, pointing back here. A name that
+      // appears on one site only reads to a search engine as a misspelling of
+      // a better-known one; corroboration across domains is what stops that.
+      "https://maxsavdo.uz/jamoa/sardor-madaliyev",
     ],
     image: "/team/sardor-madaliyev-v3.jpg",
   });
