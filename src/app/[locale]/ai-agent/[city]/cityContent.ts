@@ -26,23 +26,23 @@ const CITY_FAQ: Record<string, Record<ServiceLang, { q: string; a: string }>> = 
   toshkent: {
     uz: {
       q: "Toshkentdagi bizneslar uchun AI agent qancha turadi?",
-      a: "Narx loyiha hajmiga bog'liq: oddiy savol-javob agenti — 500–1500 USD, CRM/1C integratsiyali sotuv agenti — 1500–4000 USD. Bepul 30 daqiqa konsultatsiyada aniq hisob-kitob qilamiz.",
+      a: "Tezcode'da AI agent yaratish $400 dan boshlanadi, asosiy AI agent va tariflar sahifalaridagi kabi. Yakuniy narx vazifa, integratsiyalar va kanallarga bog'liq. Bepul konsultatsiyadan keyin ish hajmi, muddat hamda doimiy foydalanish xarajatlari yozma taklifda aniqlashtiriladi.",
     },
     ru: {
       q: "Сколько стоит ИИ-агент для бизнеса в Ташкенте?",
-      a: "Цена зависит от объёма: простой агент для ответов на вопросы — 500–1500 USD, агент продаж с интеграцией CRM/1С — 1500–4000 USD. На бесплатной 30-минутной консультации рассчитаем точно.",
+      a: "Разработка ИИ-агента в Tezcode начинается от $400, как указано на основной странице услуги и в тарифах. Итоговая цена зависит от задачи, интеграций и каналов. После бесплатной консультации уточняем объём, сроки и регулярные расходы в письменном предложении.",
     },
     en: {
       q: "How much does an AI agent cost for businesses in Tashkent?",
-      a: "Price depends on scope: a simple Q&A agent — $500–$1,500; a sales agent with CRM/1C integration — $1,500–$4,000. We'll give you an exact estimate on the free 30-min consultation.",
+      a: "AI agent development at Tezcode starts at $400, as listed on our main service and pricing pages. The final price depends on the task, integrations and channels. After a free consultation, the written proposal clarifies the scope, timeline and recurring operating costs.",
     },
     ar: {
       q: "كم تكلفة وكيل الذكاء الاصطناعي للشركات في طشقند؟",
-      a: "يعتمد السعر على النطاق: وكيل بسيط للإجابة على الأسئلة — 500–1500 دولار؛ وكيل مبيعات مع تكامل CRM/1C — 1500–4000 دولار. سنقدّم لك تقديراً دقيقاً في الاستشارة المجانية لمدة 30 دقيقة.",
+      a: "يبدأ تطوير وكيل الذكاء الاصطناعي لدى Tezcode من 400 دولار، كما هو موضح في صفحة الخدمة الرئيسية والأسعار. تعتمد التكلفة النهائية على المهمة والتكاملات والقنوات. بعد الاستشارة المجانية، نوضح النطاق والمدة وتكاليف التشغيل المتكررة في عرض مكتوب.",
     },
     uk: {
       q: "Скільки коштує AI-агент для бізнесу в Ташкенті?",
-      a: "Ціна залежить від обсягу: простий агент для відповідей на запитання — 500–1500 USD; агент продажів з інтеграцією CRM/1C — 1500–4000 USD. На безкоштовній 30-хвилинній консультації розрахуємо точно.",
+      a: "Розробка AI-агента в Tezcode починається від $400, як зазначено на основній сторінці послуги та в тарифах. Остаточна ціна залежить від завдання, інтеграцій і каналів. Після безкоштовної консультації уточнюємо обсяг, строки та регулярні витрати в письмовій пропозиції.",
     },
   },
   samarqand: {
@@ -83,10 +83,9 @@ export function buildAiAgentCityContent(city: City): ServicePageContent {
       ...base,
       hero: {
         ...base.hero,
-        badge: `${cityName}da AI agent — Tezcode`,
+        badge: `${base.hero.badge} · ${cityName}`,
         title2: `— ${cityName}`,
         subtitle: `${intro}\n\n${base.hero.subtitle}`,
-        trust: `${cityName} va butun O'zbekiston • Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan`,
       },
       faq: {
         ...base.faq,
@@ -97,7 +96,7 @@ export function buildAiAgentCityContent(city: City): ServicePageContent {
       },
       service: {
         ...base.service,
-        description: `${cityName} bizneslari uchun AI agent: sotuv agenti, qo'llab-quvvatlash agenti, lid saralash va ichki avtomatlashtirish. CRM/1C/Telegram integratsiyasi. Tezcode, ${cityName} va butun O'zbekiston.`,
+        description: `${intro} ${base.service.description}`.trim(),
       },
     };
   }

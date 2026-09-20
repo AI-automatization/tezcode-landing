@@ -11,8 +11,9 @@ import type { ServicePageContent } from "@/components/service-page/types";
 //   - AI Office (12 department agents) is our OWN product, status: in development —
 //     an R&D approach/capability, NOT a finished/live product. Never oversell it.
 //   - IT Park Uzbekistan resident (certificate №6237, 2026).
-//   - Honest outcome ranges from the home page: "10 manual tasks → 1 AI agent",
-//     manual routine typically −60–70% (ROI calculator range). No invented stats.
+//   - Published starting price: $400, also shown on /tariflar.
+//   - Scenario examples are not measured client results. Quantified savings
+//     require a documented baseline and a measured pilot.
 //   - Payment: 30% upfront. Phone +998917776609 (recently updated — keep).
 export const CONTENT: ServicePageContent = {
   uz: {
@@ -22,7 +23,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "AI agent",
       title2: "yaratish",
       subtitle:
-        "AI agent (sun'iy intellekt agenti) nima? Bu — savolga javob berib qo'ya qoladigan chatbot emas, balki ishni o'zi bajaradigan raqamli xodim: mijoz nima xohlayotganini tushunadi, o'zi qaror qabul qiladi, CRM, Telegram va 1C kabi tizimlaringizda amal bajaradi va jarayonni boshidan oxirigacha o'zi olib boradi. Tezcode savdo, buyurtma, hisobot va HR jarayonlari uchun o'zbek tilini tushunadigan AI agentlar quradi — bitta agentdan tortib ko'p agentli 'AI ofis' yondashuvigacha.",
+        "Tezcode Toshkent va butun O'zbekistondagi bizneslar uchun buyurtma asosida AI agentlar yaratadi. Agent Telegram yoki saytdagi so'rovni tushunadi, ma'lumotni CRMga yozadi va kelishilgan amallarni bajaradi. O'zbek va rus tillaridagi savdo, buyurtma hamda hisobot jarayonlaridan bitta vazifani tanlab boshlaymiz. Dastlabki narx $400 dan; aniq ish hajmi, integratsiyalar va muddat bepul konsultatsiyadan keyin yozma taklifda belgilanadi.",
       trust:
         "Toshkent va butun O'zbekiston • IT Park rasmiy rezidenti • Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan",
       ctaPrimary: "Bepul konsultatsiya so'rang",
@@ -111,7 +112,7 @@ export const CONTENT: ServicePageContent = {
       title: "Qanday sun'iy intellekt",
       titleAccent: "agentlarini quramiz",
       subtitle:
-        "Quyidagilar biz quradigan agentlarning real ko'rinishlari. Natija bo'yicha halol mo'ljal: 10 ta qo'l ishi o'rnini 1 ta AI agent bosadi, takroriy qo'l mehnati odatda 60–70% ga kamayadi — aniq raqam sizning jarayonlaringizga bog'liq va konsultatsiyada birga hisoblanadi.",
+        "Quyidagilar buyurtma asosida qurilishi mumkin bo'lgan ish ssenariylari. Pilot uchun bitta vazifa tanlanadi: avval sarflanayotgan vaqt va xatolar qayd etiladi, keyin agent natijasi shu mezonlar bilan solishtiriladi. Tejaladigan vaqt yoki sotuv o'sishi oldindan kafolatlanmaydi.",
       items: [
         {
           tag: "01",
@@ -268,7 +269,7 @@ export const CONTENT: ServicePageContent = {
       title: "Narx nimaga",
       titleAccent: "bog'liq?",
       subtitle:
-        "Aniq narxni bepul konsultatsiyadan keyin yozma taklifda beramiz — auditgacha havoga raqam aytmaymiz. Narx asosan uchta narsaga bog'liq:",
+        "AI agent yaratish $400 dan boshlanadi. Bu boshlang'ich narx: yakuniy ish hajmi va narx bepul konsultatsiyadan keyin yozma taklifda belgilanadi. Hisob-kitobda quyidagilarni aniqlashtiramiz:",
       factors: [
         {
           title: "Vazifa murakkabligi",
@@ -283,7 +284,7 @@ export const CONTENT: ServicePageContent = {
           desc: "Necha tilda (uz/ru/en) va necha kanalda (Telegram, Instagram, sayt, WhatsApp) ishlaydi — har kanal alohida ulanish va sinov demak.",
         },
       ],
-      note: "To'lov 30% oldindan boshlanadi — qolgani loyiha bosqichlari bo'yicha to'lanadi. Har bosqich natijasini ko'rib, keyin to'laysiz.",
+      note: "To'lov: 30% oldindan, qolgani loyiha bosqichlari bo'yicha. AI modelidan foydalanish, server, tashqi servislar va keyingi qo'llab-quvvatlash xarajatlari taklifga kirishi yoki alohida hisoblanishi yozma aniqlashtiriladi.",
     },
     related: {
       badge: "Bog'liq xizmatlar",
@@ -338,7 +339,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "ИИ-агента",
       title2: "для бизнеса",
       subtitle:
-        "Что такое ИИ-агент (AI-агент)? Это не чат-бот, который просто отвечает на вопрос, а цифровой сотрудник, который сам выполняет работу: понимает, чего хочет клиент, сам принимает решения, действует в ваших системах — CRM, Telegram, 1C — и ведёт процесс от начала до конца. Tezcode строит ИИ-агентов (AI-агентов), понимающих узбекский язык, для продаж, заказов, отчётов и HR-процессов — от одного агента до мультиагентного подхода «ИИ-офис (AI Office)».",
+        "Tezcode разрабатывает ИИ-агентов на заказ для бизнеса в Ташкенте и по всему Узбекистану. Агент обрабатывает обращение в Telegram или на сайте, записывает данные в CRM и выполняет согласованные действия. Начинаем с одной задачи в продажах, заказах или отчётности на узбекском и русском языках. Стоимость — от $400; объём работ, интеграции и сроки фиксируем в письменном предложении после бесплатной консультации.",
       trust:
         "Ташкент и весь Узбекистан • Официальный резидент IT Park • Бесплатная 30-мин консультация • Оплата: 30% предоплата",
       ctaPrimary: "Бесплатная консультация",
@@ -427,7 +428,7 @@ export const CONTENT: ServicePageContent = {
       title: "Каких агентов",
       titleAccent: "мы строим",
       subtitle:
-        "Ниже — реальные варианты агентов, которых мы строим. Честный ориентир по результату: 1 ИИ-агент (AI-агент) заменяет 10 ручных операций, повторяющийся ручной труд обычно снижается на 60–70% — точная цифра зависит от ваших процессов и считается вместе на консультации.",
+        "Ниже — сценарии, которые можно реализовать на заказ. Для пилота выбираем одну задачу: фиксируем затраты времени и ошибки до внедрения, затем сравниваем работу агента по тем же критериям. Экономия времени и рост продаж заранее не гарантируются.",
       items: [
         {
           tag: "01",
@@ -584,7 +585,7 @@ export const CONTENT: ServicePageContent = {
       title: "От чего зависит",
       titleAccent: "цена?",
       subtitle:
-        "Точную цену даём в письменном предложении после бесплатной консультации — не называем цифру «в воздух» до аудита. Цена зависит в основном от трёх вещей:",
+        "Разработка ИИ-агента начинается от $400. Это стартовая стоимость: окончательный объём работ и цену фиксируем в письменном предложении после бесплатной консультации. При расчёте уточняем:",
       factors: [
         {
           title: "Сложность задачи",
@@ -599,7 +600,7 @@ export const CONTENT: ServicePageContent = {
           desc: "На скольких языках (uz/ru/en) и в скольких каналах (Telegram, Instagram, сайт, WhatsApp) работает: каждый канал — это отдельное подключение и отдельные тесты.",
         },
       ],
-      note: "Оплата начинается с 30% предоплаты — остальное по этапам проекта. Видите результат этапа — тогда и платите.",
+      note: "Оплата: 30% предоплата, остальное по этапам проекта. В предложении отдельно уточняем, входят ли использование AI-модели, сервер, внешние сервисы и дальнейшая поддержка в указанную стоимость или оплачиваются дополнительно.",
     },
     related: {
       badge: "Связанные услуги",
@@ -743,7 +744,7 @@ export const CONTENT: ServicePageContent = {
       title: "The agents",
       titleAccent: "we build",
       subtitle:
-        "Below are real shapes of the agents we build. An honest outcome benchmark: 1 AI agent replaces 10 manual tasks, and repetitive manual work typically drops by 60–70% — the exact number depends on your processes and is calculated together in the consultation.",
+        "These are scenarios that can be built to order. A pilot starts with one task: record the time spent and errors before implementation, then compare the agent against the same criteria. Time savings and sales growth are not guaranteed in advance.",
       items: [
         {
           tag: "01",
@@ -1059,7 +1060,7 @@ export const CONTENT: ServicePageContent = {
       title: "الوكلاء الذين",
       titleAccent: "نبنيهم",
       subtitle:
-        "فيما يلي صور حقيقية للوكلاء الذين نبنيهم. مؤشر نتائج صادق: وكيل ذكاء اصطناعي واحد يحل محل 10 مهام يدوية، والعمل اليدوي المتكرر ينخفض عادة بنسبة 60–70% — الرقم الدقيق يعتمد على عملياتك ويُحسب معاً في الاستشارة.",
+        "هذه سيناريوهات يمكن تطويرها حسب الطلب. نبدأ التجربة بمهمة واحدة: نسجّل الوقت المستغرق والأخطاء قبل التنفيذ، ثم نقارن أداء الوكيل بالمعايير نفسها. لا نضمن مسبقاً توفير الوقت أو نمو المبيعات.",
       items: [
         {
           tag: "01",
@@ -1375,7 +1376,7 @@ export const CONTENT: ServicePageContent = {
       title: "Яких агентів",
       titleAccent: "ми будуємо",
       subtitle:
-        "Нижче — реальні варіанти агентів, яких ми будуємо. Чесний орієнтир за результатом: 1 AI-агент замінює 10 ручних операцій, повторювана ручна праця зазвичай знижується на 60–70% — точна цифра залежить від ваших процесів і рахується разом на консультації.",
+        "Нижче — сценарії, які можна реалізувати на замовлення. Для пілота обираємо одне завдання: фіксуємо витрати часу й помилки до впровадження, потім порівнюємо роботу агента за тими самими критеріями. Економія часу та зростання продажів заздалегідь не гарантуються.",
       items: [
         {
           tag: "01",

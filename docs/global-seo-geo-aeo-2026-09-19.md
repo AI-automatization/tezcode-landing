@@ -4,6 +4,23 @@ Sana: 2026-09-19. Maqsad: Tezcode xizmatlarini qidirayotgan xalqaro bizneslardan
 
 Global ko'lam barcha davlat uchun nusxa landing yaratishni anglatmaydi. EN asosiy xalqaro kirish nuqtasi; mavjud UZ/RU/AR/UK sahifalar haqiqiy tarjima va xizmat imkoniyatiga mos bo'lishi kerak. Markaziy Osiyoning besh davlati hamda Yevropa sahifalari allaqachon jonli. Keyingi bozorlar qidiruv va real murojaat dalili asosida tanlanadi.
 
+## 2026-09-20: O'zbekiston va Toshkent ustuvorligi
+
+Sardorning yangi yo'nalishi: AI kompaniya va AI xizmatlari bo'yicha O'zbekiston, ayniqsa Toshkent qidiruvida yetakchilik va saytga mahalliy tashriflarni oshirish. Xalqaro sahifalar saqlanadi, keyingi ijroda UZ/RU mahalliy xarid niyatlari birinchi o'rinda. Top-1 maqsad; muddat yoki natija kafolati emas. Organic qidiruv, Maps va AI javoblari alohida o'lchanadi. Raqiblarning yopiq analyticsisiz eng ko'p trafik aynan bizda ekanini tasdiqlab bo'lmaydi.
+
+2026-09-20 ochiq qidiruv namunasida Tezcode AI agent xizmat sahifasi va qo'llanmasi, GreatSoft, VOX va Innosoft sahifalari topildi. Natijalar mahalliy Google reytingi yoki so'rov hajmi hisoboti emas. Mahalliy kodda country hub va Toshkent sahifalari allaqachon mavjud; yangi takroriy landing talab qilinmaydi. Keys kodida mijoz nomi/roziligi va natija raqamlarini tekshirish TODOlari mavjud.
+
+Keyingi 30 kun uchun tartib:
+1. GSC: O'zbekiston filtri bilan 28 kun / oldingi 28 kun; UZ/RU brendsiz so'rov, sahifa, qurilma. Toshkent kesimi uchun GA4 va mahalliy reyting tekshiruvi; GSC mamlakat filtrini shahar deb talqin qilmaslik.
+2. Niyat xaritasi: bosh sahifa — kompaniya; `/ai-ozbekistonda` — mamlakat bo'ylab AI joriy qilish; `/ai-avtomatizatsiya/toshkent` — Toshkent xizmati; `/ai-agent`, `/ai-chatbot` — tegishli xizmat; blog — tushuntirish va tanlash. Bir xil niyatdagi sahifalarni GSC dalili bilan farqlash, hozircha o'chirmaslik.
+3. Avval 3 asosiy xizmatning UZ/RU matni: qisqa javob, mos mijoz, yetkaziladigan natija, haqiqiy demo, narx omillari, jarayon, FAQ va aloqa. Dalilsiz ustunlik va yangi natija raqami qo'shilmasin.
+4. 2 ta tekshirilgan loyiha misoli: muammo, amalga oshirilgan yechim, demo va tekshirilgan natija; mijoz nomi rozilik bilan. Mavjud saytdagi raqam o'z-o'zidan dalil hisoblanmaydi.
+5. Google Business Profile: mavjud profil to'g'riligi, mos mavjud kategoriya/xizmatlar, manzil, ish vaqti, surat va haqiqiy sharhlar. 2GIS/Yandex/LinkedIn kontakt izchilligi. Hisoblarga o'zgartirish va mijozlarga xabar yuborish bu bosqichda bajarilmadi.
+6. Haftasiga 1-2 foydali UZ/RU material: AI agent narxiga ta'sir qiluvchi omillar, chatbot/agent farqi, Telegram va CRM integratsiyasi; xizmat va keysga ichki havola. Rasmiy hamkorlar va mijozlarning haqiqiy loyiha materiallaridan havolalar; pullik link sxemalari yo'q.
+7. Haftalik natija: O'zbekistondan brendsiz kliklar, Toshkent organik seanslari (o'lchash cheklovlari bilan), sifatli murojaat va uchrashuvlar; kelishilgan savollarda AI eslatmalari va havolalari. Boshlang'ich raqamsiz sun'iy o'sish maqsadi qo'yilmaydi.
+
+Manbalar: https://www.tezcode.dev/ai-agent ; https://greatsoft.uz/ ; https://vox.uz/xizmatlar/ai-agent ; https://innosoft.uz/xizmatlar/ai-agent ; https://support.google.com/business/answer/7091 .
+
 ## Boshlang'ich dalillar
 
 - Foydalanuvchi skrinshotidagi oxirgi 7 kun: Organic Search 57 seans (-45,7%), Direct 47 (+23,7%), AI Assistant 13 (-35%). O'zbekiston 58 faol foydalanuvchi, AQSh 16. Faol foydalanuvchi va seans boshqa-boshqa o'lchovlar.

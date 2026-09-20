@@ -25,6 +25,7 @@ const TEAM_UPDATED = new Date("2026-08-26");
 // Fresher date + higher priority than the /jamoa registry pages.
 const FOUNDER_UPDATED = new Date("2026-09-06");
 const MARKETS_UPDATED = new Date("2026-09-15");
+const AI_AGENT_UPDATED = new Date("2026-09-20");
 
 // City slugs with live pages for the newer per-city service landings.
 // Must mirror ACTIVE_CITY_SLUGS in each service's [city]/page.tsx
@@ -62,7 +63,7 @@ const ROUTES: Route[] = [
   { path: "/ai-ozbekistonda", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/ai-chatbot", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/ai-video-analitika", priority: 0.9, changeFrequency: "monthly" as const },
-  { path: "/ai-agent", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/ai-agent", priority: 0.9, changeFrequency: "monthly" as const, lastModified: AI_AGENT_UPDATED },
   { path: "/telegram-bot-biznes", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/pos-tizimi", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/klinika-crm", priority: 0.9, changeFrequency: "monthly" as const },
@@ -136,6 +137,7 @@ const ROUTES: Route[] = [
       path: `${service}/${slug}`,
       priority: 0.7,
       changeFrequency: "monthly" as const,
+      ...(service === "/ai-agent" ? { lastModified: AI_AGENT_UPDATED } : {}),
     })),
   ),
 ];
