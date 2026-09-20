@@ -23,31 +23,35 @@ export async function generateMetadata({
     locale,
     availableLocales: ["uz"],
     path: PATH,
-    title: "Sardor Madaliyev — Tezcode AI Engineer, AI Video Analitika",
+    title: "Sardor Madaliyev — Tezcode AI Engineer, AI agent va video analitika",
     description:
-      "Sardor Madaliyev — Tezcode (AI Software Factory, Toshkent) jamoasida AI Engineer. AI video analitika bo'yicha mutaxassis: kameradan real vaqtda odam aniqlash, xatti-harakat tahlili va biznes uchun avtomatik nazorat tizimlari.",
+      "Sardor Madaliyev — Tezcode (AI Software Factory, Toshkent) jamoasida AI Engineer. Biznes uchun AI agentlar quradi va AI video analitika bo'yicha ishlaydi: kameradan real vaqtda odam aniqlash, xatti-harakat tahlili va avtomatik nazorat tizimlari.",
     keywords: [
       "Sardor Madaliyev",
       "Sardor Madaliyev Tezcode",
       "Tezcode AI Engineer",
+      "AI agent ishlab chiquvchi",
+      "AI agent Toshkent",
       "AI video analitika mutaxassis",
       "AI video analytics engineer",
       "Computer Vision Toshkent",
     ],
     ogTitle: "Sardor Madaliyev — Tezcode AI Engineer",
     ogDescription:
-      "AI Engineer · AI video analitika bo'yicha mutaxassis. Kameradan odam aniqlash va biznes nazorati.",
+      "AI Engineer · AI agentlar va AI video analitika. Biznes jarayonlarini avtomatlashtirish.",
   });
 }
 
 const FACTS = [
-  { label: "Lavozim", value: "AI Engineer · AI Video Analitika" },
+  { label: "Lavozim", value: "AI Engineer · AI agentlar va video analitika" },
   { label: "Kompaniya", value: "Tezcode — AI Software Factory" },
   { label: "Joylashuv", value: "Toshkent, O'zbekiston" },
-  { label: "Yo'nalish", value: "AI video analitika, computer vision, biznes avtomatlashtirish" },
+  { label: "Yo'nalish", value: "AI agentlar, AI video analitika, computer vision, biznes avtomatlashtirish" },
 ];
 
 const SKILLS = [
+  "AI agentlar (LLM)",
+  "AI chatbotlar",
   "AI video analitika",
   "Computer Vision (odam aniqlash)",
   "AI integratsiya",
@@ -59,6 +63,11 @@ const SKILLS = [
 ];
 
 const PROJECTS = [
+  {
+    name: "AI Agentlar",
+    role: "Biznes jarayonlarini o'zi bajaradigan LLM agentlari va chatbotlar",
+    href: `${BASE_URL}/ai-agent`,
+  },
   {
     name: "AI Video Analitika",
     role: "Kameradan real vaqtda odam aniqlash va biznes nazorati",
@@ -75,7 +84,7 @@ const LINKS = [
   { label: "Telegram: @madaliev_s", href: "https://t.me/madaliev_s" },
   { label: "Instagram: @_madaliev_s", href: "https://instagram.com/_madaliev_s" },
   {
-    label: "LinkedIn: Sardor Madaliev",
+    label: "LinkedIn: Sardor Madaliyev",
     href: "https://www.linkedin.com/in/sardor-madaliyev-566601377/",
   },
   { label: "Email: madalievsardor33@gmail.com", href: "mailto:madalievsardor33@gmail.com" },
@@ -91,12 +100,15 @@ export default function SardorMadaliyevPage() {
     // Explicitly separates this AI Engineer from the same-named Uzbek singer
     // (Sardor Mamadaliyev) so Google/answer engines don't merge the entities.
     disambiguatingDescription:
-      "Sardor Madaliyev — Tezcode kompaniyasida ishlaydigan AI Engineer va IT mutaxassisi (Toshkent). Bu shaxs xonanda Sardor Mamadaliyev emas — u texnologiya va sun'iy intellekt sohasidagi dasturchi. AI Engineer at Tezcode, not the similarly-named singer.",
+      "Sardor Madaliyev — Tezcode kompaniyasida ishlaydigan AI Engineer va IT mutaxassisi (Toshkent): AI agentlar va AI video analitika quradi. Bu shaxs xonanda Sardor Mamadaliyev emas — u texnologiya va sun'iy intellekt sohasidagi dasturchi. AI Engineer at Tezcode, not the similarly-named singer.",
     jobTitle: "AI Engineer",
     description:
-      "Sardor Madaliyev — Tezcode (AI Software Factory, Toshkent) jamoasida AI Engineer. AI video analitika bo'yicha mutaxassis: kameradan real vaqtda odam aniqlash, xatti-harakat tahlili va biznes uchun avtomatik nazorat tizimlari ustida ishlaydi. AI Engineer specializing in AI video analytics at Tezcode, Tashkent.",
+      "Sardor Madaliyev — Tezcode (AI Software Factory, Toshkent) jamoasida AI Engineer. Biznes uchun AI agentlar va chatbotlar quradi, AI video analitika bo'yicha ishlaydi: kameradan real vaqtda odam aniqlash, xatti-harakat tahlili va avtomatik nazorat tizimlari. AI Engineer building AI agents and AI video analytics at Tezcode, Tashkent.",
     knowsAbout: [
       "Artificial Intelligence",
+      "AI Agents",
+      "Large Language Models",
+      "Conversational AI",
       "Computer Vision",
       "AI Video Analytics",
       "Object Detection",
@@ -141,7 +153,7 @@ export default function SardorMadaliyevPage() {
               />
             </div>
             <div className="text-xs text-[var(--tc-gold)] uppercase tracking-[0.3em] mb-3">
-              AI Engineer · AI Video Analitika
+              AI Engineer · AI agentlar va video analitika
             </div>
             <h1
               className="text-4xl md:text-6xl font-700 mb-4 tracking-tight text-[var(--tc-text-primary)]"
@@ -150,9 +162,10 @@ export default function SardorMadaliyevPage() {
               Sardor Madaliyev
             </h1>
             <p className="text-[var(--tc-text-secondary)] text-lg leading-relaxed max-w-xl mx-auto">
-              <strong className="text-[var(--tc-text-primary)]">Tezcode</strong> —
-              Toshkentda joylashgan AI Software Factory jamoasida AI Engineer, AI
-              video analitika bo&apos;yicha mutaxassis.
+              <strong className="text-[var(--tc-text-primary)]">Tezcode</strong>{" "}
+              — Toshkentda joylashgan AI Software Factory jamoasida AI Engineer.
+              Biznes uchun AI agentlar quradi va AI video analitika bo&apos;yicha
+              ishlaydi.
             </p>
             <div className="mt-6 mx-auto w-24 h-0.5 bg-gradient-to-r from-transparent via-[var(--tc-gold)] to-transparent" />
           </div>
@@ -162,7 +175,14 @@ export default function SardorMadaliyevPage() {
             <div className="p-7 rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] bg-[var(--tc-surface-2)] text-[var(--tc-text-secondary)] leading-relaxed space-y-4">
               <p>
                 Sardor Madaliyev — <strong className="text-[var(--tc-text-primary)]">Tezcode</strong>{" "}
-                jamoasida AI Engineer. Asosiy yo&apos;nalishi —{" "}
+                jamoasida AI Engineer. Ikki yo&apos;nalishda ishlaydi:{" "}
+                <strong className="text-[var(--tc-blue-text)]">AI agentlar</strong>{" "}
+                — savolga javob berish bilan cheklanmay, ishni o&apos;zi bajaradigan
+                yordamchilar: murojaatni qabul qiladi, CRM va Telegram kabi
+                tizimlarga ulanadi, takroriy jarayonlarni odam o&apos;rniga yuritadi.
+              </p>
+              <p>
+                Ikkinchi yo&apos;nalish —{" "}
                 <strong className="text-[var(--tc-blue-text)]">AI video
                 analitika</strong>: kameradan real vaqtda odam aniqlash,
                 xatti-harakat tahlili va biznes uchun avtomatik nazorat tizimlari.

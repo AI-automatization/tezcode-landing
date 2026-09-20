@@ -680,6 +680,17 @@ export function getServiceSchema(input: {
 // (ChatGPT, Perplexity, Google AI Overviews) prefer to cite article pages over
 // sales pages — this schema tells them the headline, author, publisher and dates
 // so the piece is attributable and quotable. Pair with FAQPage + Breadcrumb.
+// Articles are bylined to a real person, not the company. A named author is
+// what lets Google and answer engines resolve the piece to a human entity, and
+// the @id here is the exact one the Person schema on /sardor-madaliyev emits,
+// so every article ties back to that single entity instead of a loose name.
+export const ARTICLE_AUTHOR = {
+  name: "Sardor Madaliyev",
+  path: "/sardor-madaliyev",
+  jobTitle: "AI Engineer",
+  image: "/team/sardor-madaliyev-v3.jpg",
+} as const;
+
 export function getArticleSchema(input: {
   headline: string;
   description: string;
@@ -688,7 +699,10 @@ export function getArticleSchema(input: {
   datePublished: string; // ISO date, e.g. "2026-06-07"
   dateModified?: string;
   image?: string;
+  // Defaults to ARTICLE_AUTHOR; pass another team member when they wrote it.
+  author?: { name: string; path: string; jobTitle?: string };
 }) {
+  const author = input.author ?? ARTICLE_AUTHOR;
   const url =
     input.locale === "uz"
       ? `${BASE_URL}${input.path}`
@@ -705,9 +719,12 @@ export function getArticleSchema(input: {
     datePublished: input.datePublished,
     dateModified: input.dateModified ?? input.datePublished,
     author: {
-      "@type": "Organization",
-      name: SITE_NAME,
-      url: BASE_URL,
+      "@type": "Person",
+      "@id": `${BASE_URL}${author.path}#person`,
+      name: author.name,
+      url: `${BASE_URL}${author.path}`,
+      ...(author.jobTitle ? { jobTitle: author.jobTitle } : {}),
+      worksFor: { "@type": "Organization", name: SITE_NAME, url: BASE_URL },
     },
     publisher: {
       "@type": "Organization",
