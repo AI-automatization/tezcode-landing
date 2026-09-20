@@ -26,6 +26,7 @@ const TEAM_UPDATED = new Date("2026-08-26");
 const FOUNDER_UPDATED = new Date("2026-09-06");
 const MARKETS_UPDATED = new Date("2026-09-15");
 const AI_AGENT_UPDATED = new Date("2026-09-20");
+const COUNTRY_AI_UPDATED = new Date("2026-09-20");
 
 // City slugs with live pages for the newer per-city service landings.
 // Must mirror ACTIVE_CITY_SLUGS in each service's [city]/page.tsx
@@ -60,7 +61,7 @@ const ROUTES: Route[] = [
   { path: "/for-businesses", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/hire-developers", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/ai-avtomatizatsiya", priority: 0.9, changeFrequency: "monthly" as const },
-  { path: "/ai-ozbekistonda", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/ai-ozbekistonda", priority: 0.9, changeFrequency: "monthly" as const, lastModified: COUNTRY_AI_UPDATED },
   { path: "/ai-chatbot", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/ai-video-analitika", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/ai-agent", priority: 0.9, changeFrequency: "monthly" as const, lastModified: AI_AGENT_UPDATED },

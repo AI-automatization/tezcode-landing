@@ -19,7 +19,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "AI joriy qilish",
       title2: "",
       subtitle:
-        "O'zbekistonda AI joriy qilish — bu takroriy ishlarni (mijozga javob, hisobot, buyurtma qayd etish, kamera nazorati) sun'iy intellektga topshirib, jamoani asosiy ishga bo'shatish. Tezcode — Toshkentdagi AI Software Factory va IT Park Uzbekistan rasmiy rezidenti — AI agentlar, chatbotlar, jarayon avtomatizatsiyasi, AI video analitika va ovozli assistentlarni butun O'zbekiston bo'ylab joriy qiladi: yechimlar o'zbek (lotin va kiril), rus va ingliz tillarida ishlaydi, mavjud tizimlaringiz (1C, CRM, Telegram, Click/Payme) bilan integratsiya qilinadi.",
+        "Tezcode — Toshkentdagi AI kompaniya va AI Software Factory. Biz O'zbekistonda biznesga AI joriy qilamiz: takroriy ishlarni (mijozga javob, hisobot, buyurtma qayd etish, kamera nazorati) sun'iy intellektga topshirib, jamoani asosiy ishga bo'shatamiz. AI agentlar, chatbotlar, jarayon avtomatizatsiyasi, AI video analitika va ovozli assistentlar o'zbek (lotin va kiril), rus va ingliz tillarida ishlaydi hamda 1C, CRM, Telegram, Click/Payme bilan integratsiya qilinadi.",
       // TODO(Sardor): real raqam qo'yish — nechta loyiha/joriy etish bo'lganini
       // trust satriga qo'shish (raqobatchi "120+ внедрений" deb yozadi).
       trust: "IT Park rezidenti (№6237) • 16 kishilik jamoa • Google reytingi 5.0 • Bepul 30 daqiqa konsultatsiya",
@@ -131,7 +131,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "Qaysi shaharlarda ishlaysizlar?",
-          a: "Ofisimiz Toshkentda, lekin butun O'zbekiston bo'ylab ishlaymiz: joriy etish va qo'llab-quvvatlash masofadan amalga oshiriladi. Toshkent va Samarqand uchun alohida sahifalarimiz bor; Buxoro, Andijon, Namangan, Farg'ona va boshqa hududlardan ham onlayn boshlash mumkin.",
+          a: "Ofisimiz Toshkentda, lekin O'zbekiston bo'ylab va xalqaro loyihalarda ishlaymiz: joriy etish va qo'llab-quvvatlash masofadan amalga oshiriladi. Toshkent va Samarqand uchun alohida sahifalarimiz bor; boshqa hududlar va davlatlardan ham onlayn boshlash mumkin.",
         },
         {
           q: "Mavjud tizimlarimni (1C, CRM) almashtirish kerakmi?",
@@ -160,9 +160,9 @@ export const CONTENT: ServicePageContent = {
     },
     updated: "Yangilangan: 2026-yil 26-avgust",
     service: {
-      name: "O'zbekistonda biznesga AI joriy qilish — Tezcode",
+      name: "O'zbekistondagi AI kompaniya — Tezcode",
       description:
-        "Butun O'zbekiston bo'ylab biznesga AI joriy qilish: AI agentlar, chatbotlar, jarayon avtomatizatsiyasi, AI video analitika, ovozli assistentlar. O'zbek va rus tillarida, 1C/CRM integratsiyasi bilan. Tezcode — IT Park rezidenti, Toshkent.",
+        "Tezcode — Toshkentdagi AI kompaniya va AI Software Factory. Butun O'zbekiston bo'ylab AI agentlar, chatbotlar, jarayon avtomatizatsiyasi, video analitika va ovozli assistentlarni joriy qilamiz.",
       serviceType: "AI joriy qilish / sun'iy intellekt yechimlari",
     },
   },
@@ -174,7 +174,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "в Узбекистане",
       title2: "",
       subtitle:
-        "Внедрение ИИ в бизнес в Узбекистане — это передача рутинных задач (ответы клиентам, отчёты, регистрация заказов, контроль по камерам) искусственному интеллекту, чтобы команда занималась главным. Tezcode — AI Software Factory в Ташкенте и официальный резидент IT Park Uzbekistan — внедряет ИИ-агентов (AI), чат-ботов, автоматизацию процессов, ИИ-видеоаналитику и голосовых ассистентов по всей стране: решения работают на узбекском (латиница и кириллица), русском и английском и интегрируются с вашими системами — 1C, CRM, Telegram, Click/Payme.",
+        "Tezcode — AI-компания и AI Software Factory в Ташкенте. Мы внедряем ИИ в бизнес в Узбекистане: передаём рутинные задачи (ответы клиентам, отчёты, регистрация заказов, контроль по камерам) искусственному интеллекту. ИИ-агенты, чат-боты, автоматизация процессов, видеоаналитика и голосовые ассистенты работают на узбекском (латиница и кириллица), русском и английском и интегрируются с 1C, CRM, Telegram, Click/Payme.",
       // TODO(Sardor): real raqam qo'yish — количество реализованных внедрений
       // для trust-строки (у конкурента цитируется «120+ внедрений»).
       trust: "Резидент IT Park (№6237) • Команда 16 человек • Рейтинг Google 5.0 • Бесплатная 30-мин консультация",
@@ -286,7 +286,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "В каких городах Узбекистана вы работаете?",
-          a: "Офис находится в Ташкенте, но работаем по всей стране: внедрение и поддержка выполняются удалённо. Для Ташкента и Самарканда есть отдельные страницы; из Бухары, Андижана, Намангана, Ферганы и других регионов можно начать онлайн.",
+          a: "Офис находится в Ташкенте, но мы работаем по всему Узбекистану и с международными клиентами: внедрение и поддержка выполняются удалённо. Для Ташкента и Самарканда есть отдельные страницы; из других регионов и стран можно начать онлайн.",
         },
         {
           q: "Нужно ли менять существующие системы (1C, CRM)?",
@@ -315,9 +315,9 @@ export const CONTENT: ServicePageContent = {
     },
     updated: "Обновлено: 26 августа 2026",
     service: {
-      name: "Внедрение ИИ в бизнес в Узбекистане — Tezcode",
+      name: "AI-компания в Узбекистане — Tezcode",
       description:
-        "Внедрение ИИ (AI) в бизнес по всему Узбекистану: ИИ-агенты, чат-боты, автоматизация процессов, ИИ-видеоаналитика, голосовые ассистенты. На узбекском и русском, с интеграцией 1C/CRM. Tezcode — резидент IT Park, Ташкент.",
+        "Tezcode — AI-компания и AI Software Factory в Ташкенте. Внедряем ИИ-агентов, чат-ботов, автоматизацию, видеоаналитику и голосовых ассистентов для бизнеса по всему Узбекистану.",
       serviceType: "Внедрение ИИ / решения на основе искусственного интеллекта",
     },
   },

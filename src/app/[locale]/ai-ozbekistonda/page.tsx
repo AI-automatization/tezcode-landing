@@ -25,20 +25,20 @@ const META: Record<
   { title: string; description: string; ogTitle: string; ogDescription: string }
 > = {
   uz: {
-    title: "O'zbekistonda biznesga AI joriy qilish — Tezcode",
+    title: "O'zbekistondagi AI kompaniya — biznes uchun AI yechimlar | Tezcode",
     description:
-      "Butun O'zbekiston bo'ylab biznesga AI joriy qilish: AI agentlar, chatbotlar, jarayon avtomatizatsiyasi, AI video analitika, ovozli assistentlar. O'zbek/rus tillarida, 1C/CRM integratsiya. IT Park rezidenti. Bepul 30 daqiqa konsultatsiya.",
-    ogTitle: "O'zbekistonda biznesga AI joriy qilish — Tezcode",
+      "Tezcode — Toshkentdagi AI kompaniya va AI Software Factory. O'zbekiston bo'ylab AI agentlar, chatbotlar, avtomatizatsiya, video analitika va 1C/CRM integratsiyasi. Bepul konsultatsiya.",
+    ogTitle: "O'zbekistondagi AI kompaniya — Tezcode",
     ogDescription:
-      "AI agentlar, chatbotlar, jarayon avtomatizatsiyasi va AI video analitika — butun O'zbekiston bo'ylab. O'zbek va rus tillarida. Bepul konsultatsiya.",
+      "Toshkentdagi AI Software Factory: O'zbekiston bizneslari uchun AI agentlar, chatbotlar, avtomatizatsiya va integratsiyalar.",
   },
   ru: {
-    title: "Внедрение ИИ (AI) в бизнес в Узбекистане — Tezcode",
+    title: "AI-компания в Узбекистане — решения для бизнеса | Tezcode",
     description:
-      "Внедрение ИИ (AI) в бизнес по всему Узбекистану: ИИ-агенты, чат-боты, автоматизация процессов, ИИ-видеоаналитика, голосовые ассистенты. На узбекском и русском, интеграция с 1C/CRM. Резидент IT Park. Бесплатная 30-мин консультация.",
-    ogTitle: "Внедрение ИИ (AI) в бизнес в Узбекистане — Tezcode",
+      "Tezcode — AI-компания и AI Software Factory в Ташкенте. ИИ-агенты, чат-боты, автоматизация, видеоаналитика и интеграции 1C/CRM по всему Узбекистану. Бесплатная консультация.",
+    ogTitle: "AI-компания в Узбекистане — Tezcode",
     ogDescription:
-      "ИИ-агенты (AI), чат-боты, автоматизация процессов и ИИ-видеоаналитика — по всему Узбекистану. На узбекском и русском. Бесплатная консультация.",
+      "AI Software Factory в Ташкенте: ИИ-агенты, чат-боты, автоматизация и интеграции для бизнеса по всему Узбекистану.",
   },
   en: {
     title: "AI Implementation for Business in Uzbekistan — Tezcode",
@@ -81,6 +81,12 @@ export async function generateMetadata({
     title: { absolute: meta.title },
     description: meta.description,
     keywords: [
+      "AI kompaniya O'zbekiston",
+      "AI kompaniya Toshkent",
+      "O'zbekistondagi AI kompaniyalar",
+      "sun'iy intellekt kompaniyasi O'zbekiston",
+      "AI-компания Узбекистан",
+      "AI-компания Ташкент",
       "внедрение ИИ Узбекистан",
       "внедрение ИИ в бизнес Узбекистан",
       "ИИ для бизнеса Узбекистан",
