@@ -109,6 +109,7 @@ const ROUTES: Route[] = [
     availableLocales: ["uz"],
   })),
   { path: "/partnery/aisolution", priority: 0.6, changeFrequency: "monthly" as const },
+  { path: "/partnery/frontix", priority: 0.6, changeFrequency: "monthly" as const },
   { path: "/partnery/schwarz-digits", priority: 0.6, changeFrequency: "monthly" as const },
   { path: "/press", priority: 0.5, changeFrequency: "monthly" as const },
   { path: "/privacy", priority: 0.3, changeFrequency: "yearly" as const },
