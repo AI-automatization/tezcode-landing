@@ -182,7 +182,7 @@ etgan; RAOS, CoreMed/ClinicaGo, WeWatch va WorkControl mahsulotlari ortidagi
 
 ## Google baholari (Google Business Profile)
 
-- Reyting: 5.0 / 5.0 (6 ta sharh, hammasi 5 yulduz).
+- Reyting: 5.0 / 5.0 (25 ta Google sharhi, hammasi 5 yulduz).
 - Gulyuz Zokirova (5★): "Tezcode bilan ishlash qulay — professional va mas'uliyatli."
 - Dilshod Toriev (5★): "Telegram bot va admin-panelni tez va sifatli qilishdi, narx adekvat. Keyingi loyihani ham shu jamoaga ishonamiz."
 - Botir Jomirzayev (5★): "Do'konim uchun POS va hisob tizimi kerak edi — Tezcode a'lo yechim taklif qildi. Endi savdo, kassa va hisobot bir joydan boshqariladi."

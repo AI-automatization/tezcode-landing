@@ -16,7 +16,7 @@ export async function generateMetadata({
     path: PATH,
     title: "Mijozlar sharhlari — Tezcode",
     description:
-      "Tezcode mijozlarining sharhlari — real biznes egalari. Google'da 5.0 reyting, 6 ta sharh.",
+      "Tezcode mijozlarining sharhlari — real biznes egalari. Google'da 5.0 reyting, 25 ta sharh.",
     ogTitle: "Mijozlar sharhlari — Tezcode",
     ogDescription: "Real biznes egalarining sharhlari. Google 5.0 reyting.",
   });
