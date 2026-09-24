@@ -102,13 +102,26 @@ export default async function AiAgentPage({
   const { locale } = await params;
   const copy = CONTENT[locale as ServiceLang] ?? CONTENT.uz;
 
-  const serviceSchema = getServiceSchema({
-    name: copy.service.name,
-    description: copy.service.description,
-    serviceType: copy.service.serviceType,
-    path: PATH,
-    offers: { price: "400", priceCurrency: "USD" },
-  });
+  const serviceSchema = {
+    ...getServiceSchema({
+      name: copy.service.name,
+      description: copy.service.description,
+      serviceType: copy.service.serviceType,
+      path: PATH,
+      offers: { price: "400", priceCurrency: "USD" },
+    }),
+    // Make the service intent explicit for answer engines: this is a custom
+    // B2B implementation service, not a generic chatbot or a SaaS directory.
+    audience: {
+      "@type": "BusinessAudience",
+      audienceType: "Businesses and organizations",
+    },
+    category: [
+      "AI agent development",
+      "Business process automation",
+      "CRM integration",
+    ],
+  };
   const faqSchema = getFaqSchema(copy.faq.items);
   const howToSchema = getHowToSchema({
     name: `${copy.process.title} ${copy.process.titleAccent}`.trim(),
