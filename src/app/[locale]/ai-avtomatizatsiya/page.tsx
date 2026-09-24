@@ -17,7 +17,7 @@ const META: Record<ServiceLang, { title: string; description: string }> = {
   uz: {
     title: "AI avtomatizatsiya — Toshkentda biznes uchun",
     description:
-      "Toshkent va O'zbekiston bizneslari uchun AI avtomatizatsiya: mijoz savollari, hujjat va hisobotlar, CRM integratsiyasi. Bepul 30 daqiqalik konsultatsiya.",
+      "Toshkent va O'zbekiston bizneslari uchun AI avtomatlashtirish va AI yechimlar: mijoz savollari, hujjat va hisobotlar, CRM integratsiyasi. Bepul 30 daqiqalik konsultatsiya.",
   },
   ru: {
     title: "Разработка AI-решений в Ташкенте для бизнеса",
@@ -53,6 +53,13 @@ export async function generateMetadata({
     locale,
     path: PATH,
     ...meta,
+    keywords: [
+      "AI avtomatlashtirish Toshkent",
+      "AI avtomatlashtirish biznes",
+      "AI yechimlar Toshkent",
+      "biznesni AI bilan avtomatlashtirish",
+      "sun'iy intellekt xizmatlari O'zbekiston",
+    ],
     availableLocales: Object.keys(CONTENT),
   });
 }
