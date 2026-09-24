@@ -15,14 +15,14 @@ const PATH = "/ai-avtomatizatsiya";
 
 const META: Record<ServiceLang, { title: string; description: string }> = {
   uz: {
-    title: "AI avtomatlashtirish Toshkentda — biznes uchun AI yechimlar",
+    title: "AI avtomatizatsiya — Toshkentda biznes uchun",
     description:
-      "Toshkentda biznes uchun AI avtomatlashtirish: avtomatik hisobot, AI chatbot, sotuv va ombor avtomatizatsiyasi, 1C/CRM integratsiya. Bepul 30 daqiqa konsultatsiya. Tezcode Software Factory.",
+      "Toshkent va O'zbekiston bizneslari uchun AI avtomatizatsiya: mijoz savollari, hujjat va hisobotlar, CRM integratsiyasi. Bepul 30 daqiqalik konsultatsiya.",
   },
   ru: {
-    title: "ИИ-автоматизация бизнеса — отчёты, продажи и CRM",
+    title: "Разработка AI-решений в Ташкенте для бизнеса",
     description:
-      "ИИ для отчётов, клиентского сервиса и продаж, интеграция с CRM. Команда Tezcode в Ташкенте, удалённые проекты для бизнеса Центральной Азии.",
+      "Разработка AI-решений: чат-боты, обработка документов и отчётов, интеграция с CRM и 1С. Команда в Ташкенте. Начните с бесплатной консультации.",
   },
   en: {
     title: "AI Business Automation — Reporting, Sales & CRM",

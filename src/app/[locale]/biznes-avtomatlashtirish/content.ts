@@ -14,7 +14,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "avtomatlashtirish",
       title2: "— sohangiz uchun",
       subtitle:
-        "Savdo, xizmat ko'rsatish, ombor va hisobot jarayonlarini sohangizga moslab avtomatlashtiramiz. Qo'lda Excel, Telegram va qog'ozda olib boriladigan ishlar bitta tizimda. Tezcode Software Factory.",
+        "O'zbekistondagi savdo va xizmat ko'rsatish bizneslari uchun buyurtma, ombor, CRM va hisobot jarayonlarini bog'laymiz. Masalan, sotuv kassada qayd etiladi, qoldiq yangilanadi va rahbar hisobot oladi — bir ma'lumotni uch joyga qo'lda kiritish kamayadi. Toshkentdagi Tezcode jamoasi avval mavjud dasturlaringizni tekshiradi: tayyor tizim, integratsiya yoki maxsus ishlab chiqishdan mosini tanlaymiz.",
       trust: "Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan",
       ctaPrimary: "Bepul konsultatsiya so'rang",
       ctaSecondary: "Nimani avtomatlashtiramiz?",
@@ -86,6 +86,14 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "javoblar",
       subtitle: "Biznes avtomatlashtirish haqida ko'p so'raladigan savollar.",
       items: [
+        {
+          q: "Avtomatizatsiyani O'zbekistondagi biznesda nimadan boshlash kerak?",
+          a: "Bitta jarayonni boshidan oxirigacha yozing: buyurtma qayerdan keladi, kim kiritadi, qaysi dasturga o'tadi va hisobotni kim tayyorlaydi. Takroriy kiritishlar va kechikishlarni belgilang. Tezcode konsultatsiyasida shu xarita va mavjud tizimlar asosida birinchi bosqichni tanlaymiz."
+        },
+        {
+          q: "Avtomatlashtirish uchun AI yoki yangi dastur shartmi?",
+          a: "Yo'q. Mavjud CRM, 1C yoki POS imkoniyatlari yetarli bo'lsa, ularni sozlash va bog'lashdan boshlash mumkin. AI erkin matnni tushunish yoki hujjatni tahlil qilish zarur bo'lganda qo'shiladi. Faqat oddiy qoida asosidagi vazifa uchun ortiqcha murakkablik kerak emas."
+        },
         { q: "Biznes avtomatlashtirish nima?", a: "Biznes avtomatlashtirish — bu qo'lda bajariladigan takroriy ishlarni (hisobot, buyurtma, ombor nazorati, mijoz bilan aloqa) dasturiy tizim yordamida avtomatik bajartirish. Maqsad: vaqtni tejash, xatoni kamaytirish va real raqamlarni ko'rish." },
         { q: "O'zbekistonda biznesni avtomatlashtirishni kimga buyurtma qilgan ma'qul?", a: "Tanlashda uchta narsani tekshiring: kompaniyaning real ishlayotgan mahsulotlari bormi, mahalliy tizimlar (Soliq.uz, Payme/Click, 1C) bilan integratsiya qila oladimi va narxni yozma taklifda beradimi. Tezcode — IT Park rezidenti (№6237), o'z mahsulotlari jonli ishlaydi (RAOS POS, ClinicaGo CRM, WorkControl), AI avtomatlashtirishni Claude va GPT asosida quradi. Birinchi qadam — 30 daqiqalik bepul konsultatsiya." },
         { q: "Kichik biznesga ham kerakmi?", a: "Ha. Aynan kichik biznesda har bir soat qimmat. Telegram bot yoki avtomatik hisobot kabi arzon yechimdan boshlab, eng ko'p vaqt oladigan bitta jarayonni avtomatlashtirsangiz — natija darrov seziladi." },
@@ -98,13 +106,13 @@ export const CONTENT: ServicePageContent = {
     },
     related: {
       badge: "Katta rasm",
-      title: "Bu — soha yechimlari.",
-      titleAccent: "Asosiy xizmat: AI avtomatlashtirish",
+      title: "Jarayoningizga mos",
+      titleAccent: "yechimni tanlang",
       subtitle:
-        "Jarayonlarni avtomatlashtirish — Tezcode'ning \"AI avtomatlashtirish\" xizmatining bir qismi. To'liq ko'lam va bog'liq yechimlar quyida.",
+        "Kassa va ombor uchun tayyor POS, mijoz murojaatlari uchun bot yoki matn bilan ishlash uchun AI yechimlarini ko'rib chiqing.",
       links: [
-        { href: "/ai-avtomatizatsiya", label: "AI avtomatlashtirish xizmati haqida to'liq", desc: "Asosiy (umbrella) xizmat sahifasi: AI agentlar, chatbotlar va jarayonlar avtomatizatsiyasi — barcha imkoniyatlar bir joyda." },
-        { href: "/pos-tizimi", label: "POS tizimi (RAOS)", desc: "Savdo nuqtasi uchun tayyor yechim — kassa, ombor, mijoz va hisobot bitta dasturda." },
+        { href: "/ai-avtomatizatsiya", label: "AI bilan ishlaydigan yechimlar", desc: "Mijoz savollarini tushunish, hujjatdan ma'lumot ajratish va matnli hisobot tayyorlash uchun AI imkoniyatlari." },
+        { href: "/pos-tizimi", label: "POS tizimi va ombor qoldig'i dasturi", desc: "Savdo nuqtasi uchun tayyor yechim — kassa, ombor, mijoz va hisobot bitta dasturda." },
         { href: "/telegram-bot-biznes", label: "Telegram bot biznes uchun", desc: "Buyurtma qabul qilish va to'lovlarni Telegram orqali avtomatlashtirish — arzon birinchi qadam." },
       ],
     },
@@ -118,12 +126,12 @@ export const CONTENT: ServicePageContent = {
 
   ru: {
     hero: {
-      badge: "ИИ-автоматизация (AI) — отраслевые решения",
-      title1: "ИИ-автоматизация",
+      badge: "Бизнес-процессы — Tezcode, Ташкент",
+      title1: "Автоматизация",
       titleAccent: "бизнес-процессов",
-      title2: "— под вашу отрасль",
+      title2: "в Ташкенте",
       subtitle:
-        "Автоматизируем процессы торговли, сферы услуг, склада и отчётности под вашу отрасль с помощью ИИ (AI). Работа, которая ведётся вручную в Excel, Telegram и на бумаге, — в одной системе. Tezcode Software Factory.",
+        "Связываем заказы, склад, CRM и отчётность для торговли и сферы услуг. Например, продажа на кассе обновляет остаток и попадает в отчёт руководителя без повторного ввода в Excel. Команда Tezcode в Ташкенте сначала проверяет существующие системы: где достаточно настройки или интеграции, а где нужна разработка. Работаем с бизнесом по всему Узбекистану.",
       trust: "Бесплатная 30-мин консультация • Оплата: 30% предоплата",
       ctaPrimary: "Бесплатная консультация",
       ctaSecondary: "Что автоматизируем?",
@@ -131,8 +139,8 @@ export const CONTENT: ServicePageContent = {
     capabilities: {
       badge: "Отрасли и процессы",
       title: "Какие процессы",
-      titleAccent: "автоматизируем с ИИ?",
-      subtitle: "Торговля, сфера услуг, склад, отчётность — любая ручная работа, которая отнимает много времени и порождает ошибки, заслуживает ИИ-автоматизации (AI). Самые частые запросы.",
+      titleAccent: "автоматизируем?",
+      subtitle: "Начинаем с участка, где данные вводят несколько раз или теряют при передаче между сотрудниками. Для каждого шага определяем источник данных, ответственного и правило обработки.",
       items: [
         { icon: "bar-chart-2", title: "Отчёты и аналитика", desc: "Продажи, расходы, прибыль в одном месте. Ежедневный и месячный отчёт строится автоматически — не нужно вручную обновлять Excel." },
         { icon: "receipt", title: "Заказы и продажи", desc: "Приём заказа, отслеживание статуса, автоуведомление клиенту. Ни один заказ не теряется и не забывается." },
@@ -192,35 +200,55 @@ export const CONTENT: ServicePageContent = {
       badge: "Частые вопросы",
       title: "Вопросы и",
       titleAccent: "ответы",
-      subtitle: "Частые вопросы об ИИ-автоматизации (AI) бизнеса.",
+      subtitle: "Частые вопросы о внедрении, интеграциях и стоимости автоматизации процессов.",
       items: [
-        { q: "Что такое ИИ-автоматизация бизнеса (AI)?", a: "ИИ-автоматизация (AI) бизнеса — это когда повторяющаяся ручная работа (отчёты, заказы, контроль склада, связь с клиентом) выполняется программной системой автоматически. Цель: экономить время, снижать ошибки и видеть реальные цифры." },
-        { q: "Кому заказать ИИ-автоматизацию бизнеса в Узбекистане?", a: "При выборе проверьте три вещи: есть ли у компании реально работающие продукты, умеет ли она интегрироваться с локальными системами (Soliq.uz, Payme/Click, 1C) и даёт ли цену в письменном предложении. Tezcode — резидент IT Park (№6237), собственные продукты работают вживую (RAOS POS, ClinicaGo CRM, WorkControl), ИИ-автоматизацию (AI) строит на Claude и GPT. Первый шаг — бесплатная 30-минутная консультация." },
+        {
+          q: "Как начать автоматизацию бизнес-процессов в Ташкенте?",
+          a: "Выберите один процесс: откуда приходит заказ, кто переносит его в CRM, когда меняется остаток и как составляется отчёт. Подготовьте список программ и примеры повторного ввода данных. На консультации Tezcode определим первый этап, критерии приёмки и необходимые интеграции."
+        },
+        {
+          q: "Нужно ли менять CRM или внедрять AI для автоматизации?",
+          a: "Не обязательно. Сначала проверяем настройки и API существующих систем. Иногда достаточно связать кассу, CRM и отчётность. AI рассматриваем отдельно, если нужно понимать свободный текст или анализировать документы; обычные операции можно выполнять по правилам."
+        },
+        {
+          q: "Что такое автоматизация бизнес-процессов?",
+          a: "Это передача повторяющихся операций программной системе: создание заказа, обновление остатка, напоминание сотруднику или сбор отчёта. Для каждого шага задают источник данных, правило обработки и ответственного. AI нужен лишь для задач, в которых требуется работа со свободным текстом или документами."
+        },
+        {
+          q: "Кому заказать автоматизацию бизнеса в Узбекистане?",
+          a: "Проверьте, понимает ли исполнитель ваш процесс, может ли работать с существующими системами и фиксирует ли объём работ письменно. Tezcode начинает с консультации и карты процесса, затем предлагает настройку готового решения, интеграцию или разработку с критериями приёмки."
+        },
         { q: "Нужна ли она малому бизнесу?", a: "Да. Именно в малом бизнесе каждый час ценен. Начав с недорогого решения вроде Telegram-бота или автоматического отчёта и автоматизировав один самый затратный процесс, вы сразу почувствуете результат." },
-        { q: "Зачем заказная система вместо готовой (Bitrix, AmoCRM)?", a: "Готовый SaaS универсален — он подходит вашему уникальному процессу примерно на 60%, остальное лишнее. Tezcode строит с нуля под ваш рабочий поток, поэтому система используется полностью." },
+        {
+          q: "Когда нужна заказная система вместо готовой CRM?",
+          a: "Сначала проверяем, можно ли решить задачу настройкой существующей CRM и доступными интеграциями. Заказная разработка имеет смысл, если нужный процесс не покрывается готовыми возможностями или требует особых правил доступа и обработки данных. Выбор фиксируем после разбора требований."
+        },
         { q: "Сколько времени занимает?", a: "Простая автоматизация — 1-2 недели. Более полная система — MVP за 2-4 недели, затем расширяется поэтапно. Каждую неделю показываем рабочую версию." },
         { q: "Сколько это стоит?", a: "От $400 (≈ от 5 млн сум). Точная цена зависит от количества процессов и их сложности, ведь бизнесы разные — после бесплатного аудита даём письменное предложение. Консультация бесплатна, оплата — 30% предоплата, остальное поэтапно." },
-        { q: "Сколько стоит ИИ-автоматизация бизнес-процессов?", a: "От $400 (≈ от 5 млн сум). Точная цена зависит от количества процессов и их сложности — после бесплатного аудита даём письменное предложение." },
+        {
+          q: "Какие данные понадобятся для внедрения?",
+          a: "Список используемых программ, схема процесса, роли сотрудников и обезличенные примеры заказов или отчётов. Перед переносом нужно проверить дубли, обязательные поля и начальные остатки. Доступы и ответственность за корректность исходных данных согласуем до запуска."
+        },
         { q: "Работает ли с моими системами (1C, касса, Telegram)?", a: "Да. Мы строим интеграцию с Telegram, Google Sheets, 1C, платёжными и кассовыми системами, чтобы автоматизация работала внутри вашего текущего процесса." },
       ],
     },
     related: {
       badge: "Общая картина",
-      title: "Это — отраслевые решения.",
-      titleAccent: "Основная услуга: ИИ-автоматизация (AI)",
+      title: "Решения для",
+      titleAccent: "вашего процесса",
       subtitle:
-        "Автоматизация процессов — часть услуги Tezcode «ИИ-автоматизация (AI)». Полный охват и связанные решения ниже.",
+        "Готовая POS-система для кассы и склада, бот для заказов или AI для работы с текстом — в зависимости от задачи.",
       links: [
-        { href: "/ai-avtomatizatsiya", label: "Всё об услуге ИИ-автоматизации (AI)", desc: "Основная (зонтичная) страница услуги: ИИ-агенты (AI), чат-боты и автоматизация процессов — все возможности в одном месте." },
+        { href: "/ai-avtomatizatsiya", label: "Разработка AI-решений", desc: "Обработка свободного текста, вопросов клиентов и документов с помощью AI." },
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Готовое решение для точки продаж — касса, склад, клиенты и отчёты в одной программе." },
         { href: "/telegram-bot-biznes", label: "Telegram-бот для бизнеса", desc: "Автоматизация приёма заказов и платежей через Telegram — недорогой первый шаг." },
       ],
     },
     service: {
-      name: "ИИ-автоматизация бизнес-процессов (AI) — Tezcode",
+      name: "Автоматизация бизнес-процессов — Tezcode",
       description:
-        "Отраслевая ИИ-автоматизация (AI) бизнес-процессов: торговля, сфера услуг, склад, отчётность, CRM, финансы и интеграция. Система на заказ, Ташкент, Узбекистан.",
-      serviceType: "ИИ-автоматизация бизнес-процессов / AI business process automation",
+        "Автоматизация заказов, склада, CRM и отчётности. Настройка готовых решений, интеграции и разработка под рабочий процесс. Команда в Ташкенте, проекты по Узбекистану.",
+      serviceType: "Автоматизация бизнес-процессов",
     },
   },
 

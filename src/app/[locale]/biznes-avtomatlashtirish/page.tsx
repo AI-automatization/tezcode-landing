@@ -20,21 +20,21 @@ const META: Record<
 > = {
   uz: {
     title:
-      "Biznes jarayonlarini avtomatlashtirish — soha bo'yicha yechimlar — Tezcode",
+      "Biznes avtomatlashtirish — O'zbekiston uchun",
     description:
-      "Savdo, xizmat ko'rsatish, ombor va hisobot jarayonlarini avtomatlashtirish — sohangizga moslangan tizim: buyurtma, CRM, moliya va integratsiya. Tezcode, Toshkent. Narx $400 dan. Bepul 30 daqiqa konsultatsiya.",
-    ogTitle: "Biznes jarayonlarini avtomatlashtirish — soha bo'yicha yechimlar",
+      "O'zbekistonda savdo, ombor va hisobot jarayonlarini avtomatlashtirish. Mavjud CRM, 1C va kassani bog'laymiz. $400 dan. Bepul konsultatsiya.",
+    ogTitle: "Biznes jarayonlarini avtomatlashtirish — O'zbekiston",
     ogDescription:
       "Savdo, xizmat ko'rsatish, ombor va hisobot jarayonlari — sohangizga moslangan bitta tizimda. Bepul konsultatsiya.",
   },
   ru: {
     title:
-      "Автоматизация бизнеса с помощью ИИ (AI) — отраслевые решения — Tezcode",
+      "Автоматизация бизнес-процессов в Ташкенте",
     description:
-      "ИИ-автоматизация (AI) бизнес-процессов: торговля, сфера услуг, склад и отчётность — система под вашу отрасль: заказы, CRM, финансы и интеграции. Tezcode, Ташкент. Цена от $400 (≈ от 5 млн сум). Бесплатная 30-минутная консультация.",
-    ogTitle: "Автоматизация бизнеса с помощью ИИ (AI) — отраслевые решения",
+      "Автоматизация бизнес-процессов: заказы, склад, CRM и отчётность. Связываем ваши системы и убираем повторный ввод данных. Ташкент. Разработка от $400.",
+    ogTitle: "Автоматизация бизнес-процессов в Ташкенте",
     ogDescription:
-      "Торговля, сфера услуг, склад и отчётность — в одной системе под вашу отрасль. ИИ-автоматизация. Бесплатная консультация.",
+      "Заказы, склад, CRM и отчётность в согласованном рабочем процессе. Готовое решение или интеграция под вашу задачу. Бесплатная консультация.",
   },
   en: {
     title: "Business process automation — industry solutions — Tezcode",

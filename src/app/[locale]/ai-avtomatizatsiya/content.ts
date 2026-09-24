@@ -16,7 +16,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "AI bilan avtomatlashtiring",
       title2: "",
       subtitle:
-        "AI avtomatlashtirish — bu hisobot tuzish, mijoz savollariga javob berish, buyurtmani qayd etish kabi takroriy ishlarni sun'iy intellektga topshirish. AI Excel va 1C'dan ma'lumotni o'zi yig'adi, Telegram'da 24/7 javob beradi, sotuv va omborni kuzatadi — odam faqat nazorat qiladi va qaror qabul qiladi. Tezcode Software Factory Toshkentda biznes uchun AI avtomatlashtirish yechimlarini jarayoningizga moslab quradi: 3 soatlik hisobot 1 daqiqada tayyor bo'ladi, mijozga javob 2 soatdan soniyalarga tushadi, qo'lda kiritishdagi xatolar 90% gacha kamayadi.",
+        "Tezcode Toshkent va O'zbekiston bizneslari uchun AI avtomatizatsiya yechimlarini yaratadi: mijoz savollariga javob, hujjatdan ma'lumot ajratish va hisobot tayyorlash. Avval bitta jarayonni tanlab, mavjud CRM yoki 1C bilan ulanishini tekshiramiz. Pilot natijasini javob sifati, sarflangan vaqt va xatolar bo'yicha baholaymiz; muhim amallar xodim tasdig'idan o'tadi.",
       trust: "Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan",
       ctaPrimary: "Bepul konsultatsiya so'rang",
       ctaSecondary: "Nima avtomatlashtira olamiz?",
@@ -197,6 +197,10 @@ export const CONTENT: ServicePageContent = {
         "Toshkentda biznes uchun AI avtomatlashtirish haqida mijozlardan eng ko'p eshitadigan savollarimiz — qisqa va aniq javoblar bilan.",
       items: [
         {
+          q: "Biznesimga AI kerakmi yoki oddiy avtomatlashtirish yetarlimi?",
+          a: "Vazifa aniq qoidalardan iborat bo'lsa — masalan, sotuvdan keyin qoldiqni kamaytirish — oddiy dastur yoki integratsiya yetishi mumkin. Erkin yozilgan savolni tushunish, hujjatdan ma'lumot ajratish yoki matnli xulosa tayyorlash uchun AI ko'rib chiqiladi. Konsultatsiyada vazifa, ma'lumot va xato oqibatini baholab, mos yondashuvni tanlaymiz."
+        },
+        {
           q: "AI avtomatlashtirish nima va oddiy dasturdan farqi nimada?",
           a: "AI avtomatlashtirish — takroriy ishlarni (hisobot tuzish, savolga javob berish, ma'lumot kiritish) sun'iy intellekt yordamida odam aralashuvisiz bajartirish. Oddiy dastur faqat oldindan yozilgan qat'iy qoidalar bo'yicha ishlaydi, AI esa erkin yozilgan matnni tushunadi, vaziyatga qarab javob tanlaydi va yangi holatlarga moslashadi. Shuning uchun mijoz bilan suhbat yoki hujjat tahlili kabi ishlarni faqat AI uddalaydi.",
         },
@@ -269,6 +273,11 @@ export const CONTENT: ServicePageContent = {
       subtitle: "AI avtomatlashtirishga yaqin Tezcode yechimlari — har biri alohida sahifada batafsil.",
       links: [
         {
+          href: "/blog/ai-ozbek-tilida",
+          label: "AI o'zbek tilida ishlashi va sinov misollari",
+          desc: "Mijozlaringizning tili va savollarida javob sifatini qanday tekshirish mumkin?"
+        },
+        {
           href: "/ai-agent",
           label: "AI agent",
           desc: "O'zi qaror qabul qiladigan va vazifani boshidan oxirigacha bajaradigan AI agentlar — avtomatlashtirishning keyingi darajasi.",
@@ -301,11 +310,11 @@ export const CONTENT: ServicePageContent = {
   ru: {
     hero: {
       badge: "ИИ-автоматизация (AI-автоматизация) — Tezcode, Ташкент",
-      title1: "Автоматизируйте бизнес",
-      titleAccent: "с помощью ИИ",
-      title2: "",
+      title1: "Разработка",
+      titleAccent: "AI-решений",
+      title2: "для бизнеса",
       subtitle:
-        "Автоматизируем согласованные задачи: обработку обращений, подготовку отчётов, работу с документами и CRM. Сначала проверяем данные и критерии качества, затем показываем пилот. Команда Tezcode в Ташкенте работает удалённо с бизнесом Центральной Азии; результат оцениваем на ваших примерах.",
+        "Команда Tezcode в Ташкенте разрабатывает AI-решения для обработки обращений, документов и отчётов. Начинаем с одной задачи: проверяем исходные данные, возможность интеграции с CRM или 1С и критерии качества. Затем показываем пилот на ваших примерах. Работаем с компаниями Узбекистана и удалённо с бизнесом Центральной Азии.",
       trust: "Бесплатная 30-мин консультация • Оплата: 30% предоплата",
       ctaPrimary: "Бесплатная консультация",
       ctaSecondary: "Что можем автоматизировать?",
@@ -485,6 +494,14 @@ export const CONTENT: ServicePageContent = {
         "Вопросы об ИИ-автоматизации (AI-автоматизации) бизнеса в Ташкенте, которые мы слышим от клиентов чаще всего — с короткими и конкретными ответами.",
       items: [
         {
+          q: "Что подготовить для разработки AI-решения в Ташкенте?",
+          a: "Опишите одну задачу, приложите обезличенные примеры обращений или документов и список систем: CRM, 1С, Telegram. На консультации уточним доступ к данным, действия, требующие подтверждения сотрудника, и критерии пилота. После этого согласуем объём разработки, стоимость и срок в письменном предложении."
+        },
+        {
+          q: "Когда бизнесу нужна AI-разработка, а когда достаточно обычной автоматизации?",
+          a: "Если процесс состоит из однозначных правил — создать задачу после заказа или обновить остаток — обычно достаточно интеграции. AI полезен при работе со свободным текстом, документами и вопросами клиентов. Выбор делаем по задаче и результатам теста, а не по наличию AI в названии продукта."
+        },
+        {
           q: "Что такое ИИ-автоматизация и чем она отличается от обычной программы?",
           a: "ИИ-автоматизация — это выполнение рутинных задач (отчёты, ответы на вопросы, ввод данных) искусственным интеллектом без участия человека. Обычная программа работает только по жёстко заданным правилам, а ИИ понимает свободный текст, подбирает ответ по ситуации и адаптируется к новым случаям. Поэтому диалог с клиентом или анализ документов под силу только ИИ.",
         },
@@ -573,8 +590,8 @@ export const CONTENT: ServicePageContent = {
         },
         {
           href: "/biznes-avtomatlashtirish",
-          label: "Автоматизация бизнеса",
-          desc: "Классическая автоматизация рутинных ручных задач — экономия времени и расходов.",
+          label: "Автоматизация бизнес-процессов",
+          desc: "Заказы, склад и отчётность по заданным правилам: когда достаточно CRM, готовой системы или интеграции без AI.",
         },
       ],
     },
