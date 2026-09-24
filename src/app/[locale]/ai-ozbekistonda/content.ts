@@ -114,6 +114,10 @@ export const CONTENT: ServicePageContent = {
         "O'zbekistonda AI joriy qilish haqida eng ko'p so'raladigan savollar — qisqa va aniq javoblar bilan.",
       items: [
         {
+          q: "Biznesim uchun sun'iy intellekt kerak — nimadan boshlayman?",
+          a: "Avval biznesingizdagi eng ko'p takrorlanadigan yoki ko'p vaqt oladigan bitta jarayonni tanlaymiz: mijozlarga javob berish, buyurtma qabul qilish, hisobot, lidlarni CRMga yozish yoki hujjatlarni qayta ishlash. 30 daqiqalik bepul konsultatsiyada jarayonni tahlil qilib, sizga AI agent, chatbot, avtomatizatsiya yoki boshqa yechimdan qaysi biri mosligini aytamiz. Keyin aniq vazifa, integratsiyalar, narx va muddat yozma taklifda belgilanadi.",
+        },
+        {
           q: "O'zbekistonda biznesga AI joriy qilish qancha turadi?",
           a: "Tayyor yechimlar: Telegram bot $279 dan, AI chatbot $339 dan, AI agent $400 dan, AI video analitika $990 dan, individual loyiha (MVP) $1000 dan. Obuna tariflari: Starter $0, Pro $200/oy. Aniq narx bepul konsultatsiya va TZ'dan keyin yozma taklifda beriladi. To'lov 30% oldindan, qolgani bosqichma-bosqich — yashirin qo'shimchalar yo'q.",
         },
