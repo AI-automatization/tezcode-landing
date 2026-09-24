@@ -23,6 +23,19 @@ export const CONTENT: ArticleContent = {
     },
     sections: [
       {
+        heading: "Demoda ombor qoldig'ini qanday tekshirish kerak?",
+        paragraphs: [
+          "Faqat kassada chek chiqarishni ko'rish yetarli emas. Bitta mahsulotning boshlang'ich qoldig'ini kiriting, yangi kirimni qayd eting va sinov sotuvini bajaring. Masalan, 50 dona + 20 dona kirim − 8 dona sotuv = 62 dona qoldiq. Keyin inventarizatsiyada amalda sanalgan miqdor bilan farq qanday ko'rsatilishini tekshiring.",
+          "Filiallar bo'lsa, internet uzilganda kassadagi va markaziy paneldagi hisob qachon yangilanishini so'rang. Qaytarish, hisobdan chiqarish va xato yozuvni tuzatish ssenariylarini ham o'z jarayoningiz misolida ko'ring."
+        ],
+        links: [
+          {
+            href: "/pos-tizimi",
+            label: "RAOS POS: kassa va ombor qoldig'i imkoniyatlari"
+          }
+        ]
+      },
+      {
         heading: "POS tizimi nima va nega kerak?",
         paragraphs: [
           "POS (Point of Sale — sotuv nuqtasi) tizimi — bu do'konda sotuvni qabul qiladigan, qoldiqni hisoblaydigan va savdo ma'lumotlarini yig'adigan dastur. Oddiy qilib aytganda, kassa + ombor + hisobot bitta tizimda.",

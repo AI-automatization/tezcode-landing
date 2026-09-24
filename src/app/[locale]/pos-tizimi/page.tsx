@@ -20,12 +20,12 @@ const META: Record<
   { title: string; description: string; ogTitle: string; ogDescription: string }
 > = {
   uz: {
-    title: "POS tizimi O'zbekiston — RAOS: kassa, internetsiz ishlaydi",
+    title: "POS tizimi — kassa va ombor qoldig'i | RAOS",
     description:
-      "O'zbekiston do'konlari uchun POS tizimi RAOS 249 000 so'm/oydan: kassa, ombor, mijoz, hisobot, ko'p filial va internetsiz (offline-first) ishlash. Barkod skaner va chek printer bilan. Tezcode — IT Park rezidenti. Toshkent va butun O'zbekiston. 30 kun bepul.",
-    ogTitle: "POS tizimi — RAOS: do'kon uchun kassa dasturi | Tezcode",
+      "RAOS POS tizimi: kassa, ombor qoldig'i, kirim-chiqim va inventarizatsiya bir joyda. Internetsiz kassa, filiallar nazorati. 249 000 so'm/oydan. Bepul demo.",
+    ogTitle: "RAOS POS — kassa va ombor qoldig'i dasturi",
     ogDescription:
-      "Kassa, ombor, mijoz va hisobot bitta dasturda. Internetsiz ham ishlaydi, ko'p filialni bitta dashboardda birlashtiradi. Bepul demo.",
+      "Sotuvdan ombor qoldig'igacha bitta tizim: kirim-chiqim, inventarizatsiya va filiallar hisobi. 249 000 so'm/oydan, bepul demo.",
   },
   ru: {
     title: "POS-система Узбекистан — RAOS: касса, работает без интернета",

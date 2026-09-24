@@ -16,7 +16,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "POS tizimi — RAOS",
       title2: "",
       subtitle:
-        "POS tizimi — bu do'kon kassasida sotuvni soniyalarda rasmiylashtiradigan, ayni paytda ombor qoldig'i, mijozlar va hisobotlarni bitta joyda yuritadigan dastur. RAOS — internetsiz ham ishlaydigan (offline-first) POS tizimi: barkod skaner va chek printer bilan ishlaydi, ko'p filialni bitta dashboardda birlashtiradi. Uni Tezcode — Toshkentdagi AI Software Factory — O'zbekiston do'konlari uchun yaratgan va o'zi qo'llab-quvvatlaydi. Excel va daftarga qaytmaysiz.",
+        "POS tizimi kassadagi sotuvni ombor qoldig'i va hisobot bilan bog'laydi. RAOS'da sotuvchi mahsulotni skanerlaydi, sotuv qayd etiladi va qoldiq yangilanadi. Kassa internetsiz ham ishlaydi; aloqa tiklangach ma'lumotlar sinxronlanadi. Tezcode tizimni Toshkent va butun O'zbekiston do'konlariga joriy qiladi. Obuna 249 000 so'm/oydan, boshlash uchun bepul demo bor.",
       trust: "IT Park rezidenti • Bepul demo • Internetsiz ishlaydi • Toshkent va butun O'zbekiston",
       ctaPrimary: "Bepul demo so'rang",
       ctaSecondary: "RAOS nima qila oladi?",
@@ -29,7 +29,7 @@ export const CONTENT: ServicePageContent = {
         "Bitta do'kondan tarmoqgacha — sotuv, ombor, mijoz va hisobotni bir joydan boshqaring. Kassa internetsiz ham to'xtamaydi.",
       items: [
         { icon: "receipt", title: "Kassa (POS)", desc: "Tez sotuv: barkod skaner, chek chiqarish, naqd/karta/aralash to'lov, smena yopish. Interfeys sodda — sotuvchi bir necha daqiqada o'rganadi." },
-        { icon: "package", title: "Ombor va qoldiq", desc: "Har mahsulot qoldig'i real vaqtda: sotuv qoldiqni avtomatik kamaytiradi. Kam qolganda ogohlantirish, kirim/chiqim, inventarizatsiya." },
+        { icon: "package", title: "Ombor qoldig'i, kirim va chiqim", desc: "Mahsulot kirimi qoldiqni oshiradi, sotuv esa kamaytiradi. Inventarizatsiyada dasturdagi miqdorni amalda sanalgan tovar bilan solishtirasiz. Kam qolganda ogohlantirish va filiallar kesimidagi hisob xaridni rejalashga yordam beradi." },
         { icon: "wifi", title: "Internetsiz ishlaydi (offline-first)", desc: "Internet uzilsa ham kassa ishlaydi — ma'lumot lokalda saqlanadi, ulanish tiklanganda avtomatik sinxronlanadi. O'zbekiston sharoiti uchun muhim." },
         { icon: "users", title: "Mijozlar va sodiqlik", desc: "Mijoz bazasi, qarz/nasiya daftari, chegirma va sodiqlik (loyalty) dasturi. Mijoz tarixi va qarzi bir bosishda ko'rinadi." },
         { icon: "bar-chart-2", title: "Hisobot va analitika", desc: "Kunlik sotuv, foyda, eng ko'p sotilgan mahsulot, sotuvchi samaradorligi — hisobotlar avtomatik yig'iladi, qo'lda hech narsa hisoblamaysiz." },
@@ -82,7 +82,7 @@ export const CONTENT: ServicePageContent = {
       title: "Narx nimaga",
       titleAccent: "bog'liq?",
       subtitle:
-        "RAOS obuna (oylik to'lov) modelida ishlaydi — katta bir martalik xarid emas. Bitta universal narx yo'q: obuna do'kon hajmiga qarab belgilanadi, shuning uchun aniq taklifni bepul demodan keyin yozma beramiz.",
+        "RAOS obunasi 249 000 so'm/oydan boshlanadi. Yakuniy tarif kassalar, filiallar va kerakli moslashtirishga bog'liq. Dastur obunasi, uskunalar va joriy etish ishlarining narxini demodan keyingi yozma taklifda aniqlashtiramiz.",
       factors: [
         { title: "Do'kon hajmi va kassalar soni", desc: "Bitta kichik do'konmi yoki bir nechta kassali yirik savdo nuqtasimi — obuna narxi shu hajmga mos belgilanadi. Kichik do'kon katta tarmoq narxini to'lamaydi." },
         { title: "Filiallar soni", desc: "Ko'p filialli tarmoqda har filial tizimga ulanadi va markaziy dashboardda ko'rinadi — narx filiallar soniga qarab hisoblanadi." },
@@ -103,8 +103,20 @@ export const CONTENT: ServicePageContent = {
       badge: "Tez-tez beriladigan savollar",
       title: "Savol va",
       titleAccent: "javoblar",
-      subtitle: "RAOS POS tizimi haqida ko'p so'raladigan 16 savol.",
+      subtitle: "POS tanlash, ombor qoldig'i, narx va joriy etish haqida savol-javoblar.",
       items: [
+        {
+          q: "Ombor qoldig'i dasturi qoldiqni qanday hisoblaydi?",
+          a: "Asosiy hisob: boshlang'ich qoldiq + kirim − chiqim. Masalan, 50 dona mahsulot bor, 20 dona keldi va 8 dona sotildi — qoldiq 62 dona. Qaytarish, hisobdan chiqarish va inventarizatsiya farqlari ham hisobga olinishi kerak. RAOS demosi paytida o'zingizning mahsulot misolingizda kirim, sotuv va qoldiqni tekshirib ko'ring."
+        },
+        {
+          q: "POS tizimi va alohida ombor dasturidan qaysi biri kerak?",
+          a: "Do'konda kassa bilan ombor birga yuritilsa, POS sotuvni qoldiq bilan bog'laydi va takroriy kiritishni kamaytiradi. Faqat ombor, ishlab chiqarish yoki murakkab logistika hisobi kerak bo'lsa, talablarni alohida baholash lozim. Demoga kirim, chiqim va inventarizatsiya misollaringizni olib keling — RAOS imkoniyatlari bilan solishtiramiz."
+        },
+        {
+          q: "Internet uzilganda filiallar qoldig'i darhol yangilanadimi?",
+          a: "Offline rejimda kassa ma'lumotni qurilmada saqlaydi. Boshqa filial yoki markaziy panel eng yangi ma'lumotni sinxronizatsiyadan keyin oladi. Shu sababli aloqa uzilgan davrda markazdagi qoldiq oxirgi sinxronlash holatini aks ettirishi mumkin."
+        },
         { q: "POS tizimi nima?", a: "POS tizimi (point of sale) — do'kon kassasida sotuvni rasmiylashtiradigan va ayni paytda ombor, mijozlar hamda hisobotni yuritadigan dastur. Sotuvchi mahsulotni skanerlaydi va chek chiqaradi — tizim esa qoldiqni avtomatik kamaytiradi, sotuvni hisobotga yozadi va foydani hisoblaydi. RAOS — Tezcode'ning O'zbekiston do'konlari uchun yaratgan ana shunday POS tizimi." },
         { q: "O'zbekistonda qaysi POS tizimni tanlagan ma'qul?", a: "Tanlov do'koningizga bog'liq: bulutli tizimlar (MoySklad, Paloma365) barqaror internet talab qiladi, RAOS esa offline-first ishlaydi — aloqa uzilsa ham kassa to'xtamaydi. Bundan tashqari Soliq.uz (fiskalizatsiya) integratsiyasi va Telegram'ga AI hisobotlar bor. Narxi 249 000 so'm/oydan, 30 kun bepul (karta shart emas). Internet beqaror sharoitda offline rejim — hal qiluvchi ustunlik." },
         { q: "RAOS internetsiz ishlaydimi?", a: "Ha. RAOS offline-first — internet uzilsa ham kassa to'xtamaydi: ma'lumot qurilmaning o'zida saqlanadi va ulanish tiklanganda avtomatik sinxronlanadi. Hech bir sotuv yo'qolmaydi. Bu O'zbekiston sharoiti uchun ayniqsa muhim." },
@@ -129,6 +141,11 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "foydali bo'lishi mumkin",
       subtitle: "POS bilan birga ko'p ishlatiladigan Tezcode yechimlari.",
       links: [
+        {
+          href: "/blog/pos-tizimi-tanlash",
+          label: "POS tizimini tanlash mezonlari",
+          desc: "Narx, offline ishlash, savdo uskunalari va ombor hisobini demoda qanday solishtirish kerak?"
+        },
         { href: "/biznes-avtomatlashtirish", label: "Biznes avtomatlashtirish", desc: "Kassadan tashqari jarayonlarni ham avtomatlashtiring — hisobot, buyurtma oqimi va takroriy ishlar bitta tizimda." },
         { href: "/ai-chatbot", label: "AI chatbot", desc: "Do'koningiz uchun 24/7 mijoz xizmati — savollarga javob beradi, buyurtma va lid yig'adi." },
         { href: "/xodim-nazorati", label: "Xodim nazorati", desc: "Sotuvchilar davomati, vazifalari va samaradorligini bitta tizimda kuzating." },
