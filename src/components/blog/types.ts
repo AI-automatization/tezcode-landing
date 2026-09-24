@@ -18,6 +18,8 @@ export type ArticleSection = {
   paragraphs: string[];
   // Optional bullet list rendered under the paragraphs.
   bullets?: string[];
+  // Locale-relative links rendered as crawlable anchors beside the explanation.
+  links?: { href: string; label: string }[];
 };
 
 export type ArticleCopy = {

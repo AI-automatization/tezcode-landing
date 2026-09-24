@@ -11,28 +11,50 @@ export const CONTENT: ArticleContent = {
   uz: {
     hero: {
       badge: "AI / O'zbek tili",
-      title: "AI o'zbek tilida ishlaydimi? Chatbot va agentlar uchun to'liq javob (2026)",
+      title: "AI o'zbek tilida: foydalanish va tekshirish misollari",
       subtitle:
-        "Ko'p biznes «AI o'zbekchani tushunadimi?» deb o'ylaydi. Halol javob: zamonaviy AI o'zbek tilida ishlaydi, lekin sifat sozlashga bog'liq. Nega tayyor botlar o'zbekchada qiynaladi va qanday to'g'ri qilinadi — tushuntiramiz.",
+        "AIga o'zbekcha savol berish, javob uslubini belgilash va biznes ma'lumotlari bilan sinash uchun amaliy namunalar. Chatbot va agent tanlashda nimalarni tekshirish kerak?",
       dateLabel: "2026-yil 15-avgust",
       readTime: "7 daqiqa o'qish",
     },
     tldr: {
       label: "Qisqacha javob",
       text:
-        "Ha, zamonaviy AI (GPT, Claude darajasidagi modellar) o'zbek tilida ishlaydi — lotin va kirill yozuvida, hatto o'zbekcha-ruscha aralash yozganda ham. Lekin sifat sozlashga bog'liq: tayyor xorijiy platformalar (ManyChat, oddiy ChatGPT botlari) o'zbekchani yuzaki tushunadi, so'zlashuv uslubini va sohaviy atamalarni chalkashtiradi. Yaxshi natija uchun bot sizning bazangiz (narxnoma, xizmatlar, savol-javob) bo'yicha o'zbek/rus tiliga alohida sozlanishi va real suhbatlarda test qilinishi kerak. Tezcode aynan shu — botlarni O'zbekiston bizneslari uchun uz/ru muloqotga moslab quradi.",
+        "AI bilan o'zbek tilida savol-javob qilish, matn tayyorlash va hujjatni qisqartirish mumkin. Natija model, topshiriq va berilgan ma'lumotga bog'liq: ism, raqam va mazmunni tekshiring. Biznes chatboti uchun esa narxnoma, xizmatlar va ko'p beriladigan savollarni bilim bazasiga kiritib, mijozlaringiz yozadigan uslubda sinov o'tkazing.",
     },
     sections: [
       {
-        heading: "Nega tayyor botlar o'zbekchada qiynaladi?",
+        heading: "AIga o'zbek tilida qanday topshiriq berish kerak?",
         paragraphs: [
-          "O'zbek tili AI uchun oson emas — bir necha sabab bor:",
+          "Vazifa, kerakli ma'lumot va javob shaklini birga yozing. Masalan: «Quyidagi mahsulot tavsifini o'zbek lotin yozuvida 3 gapga qisqartir. Narx yoki yangi xususiyat qo'shma: [tavsif]». Bu topshiriqda til, uzunlik va manbadan chiqmaslik talabi aniq.",
+          "Biznes savol-javobi uchun: «Faqat quyidagi narxnomaga tayanib javob ber. Ma'lumot bo'lmasa, bilmasligingni ayt va operatorga murojaat qilishni taklif et: [narxnoma]. Mijoz savoli: yetkazib berish qancha?» Natijani narxnoma bilan solishtiring; ko'rsatma berishning o'zi xatosiz javobni kafolatlamaydi."
         ],
         bullets: [
-          "Ikki yozuv: o'zbekcha lotin ham, kirill ham yoziladi. Ko'p tayyor bot faqat bittasini yaxshi tushunadi.",
-          "Aralash til (code-switching): O'zbekistonda odamlar bir jumlada o'zbekcha-ruscha aralash yozadi. Bu AI'ni chalkashtiradi.",
-          "So'zlashuv uslubi: rasmiy o'zbekcha va kundalik gaplashuv farq qiladi. Tayyor bot ko'pincha kitobiy javob beradi.",
-          "Kam ma'lumot: internetda inglizchaga nisbatan o'zbekcha matn kam, shuning uchun modellar inglizchani yaxshiroq biladi.",
+          "Bitta savolni rasmiy va kundalik uslubda yozib, javoblar bir xil ma'noni berishini tekshiring.",
+          "Mahsulot nomi, narx va sanalar o'zgarmaganini solishtiring.",
+          "Bazada yo'q xizmat haqida so'rang: tizim javob to'qimasdan, aniqlashtirish so'rashi kerak."
+        ],
+        links: [
+          {
+            href: "/ai-chatbot",
+            label: "Biznes uchun o'zbekcha AI chatbot"
+          },
+          {
+            href: "/ai-agent",
+            label: "CRM bilan ishlaydigan AI agent"
+          }
+        ]
+      },
+      {
+        heading: "O'zbekcha javob sifatini nima belgilaydi?",
+        paragraphs: [
+          "Tayyor botni baholashda uning nomidan ko'ra, sizning savollaringizga bergan javobini tekshirish foydaliroq. Sinov to'plamiga quyidagilarni kiriting:"
+        ],
+        bullets: [
+          "Yozuv: mijoz ishlatadigan alifbo va apostrof variantlarini tekshiring.",
+          "Aralash til: o'zbekcha gap ichidagi ruscha atama ma'nosini saqlaydimi?",
+          "So'zlashuv: qisqartmalar va imlo xatolari bilan yozilgan savolni tushunadimi?",
+          "Sohaviy ma'lumot: narx va xizmat shartlarini berilgan manbaga mos qaytaradimi?"
         ],
       },
       {
@@ -62,8 +84,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Tezcode'ning farqi",
         paragraphs: [
-          "Toshkentda chatbot qiladigan ko'p, lekin o'zbek tili aynan bizning e'tibor markazimiz:",
-          "Biz botni sizning hujjatlaringiz asosida o'zbek va rus tilida quramiz, lotin/kirill va aralash tilni alohida sozlaymiz, real suhbatlarda test qilamiz. Tayyor xorijiy platformalar aynan shu yerda yiqiladi. Batafsil: AI chatbot (/ai-chatbot), AI agent (/ai-agent).",
+          "Tezcode botni biznes hujjatlari asosida o'zbek va rus tillarida sozlaydi. Ishga tushirishdan oldin yozuv variantlari, aralash til, narx savollari va operatorga uzatish holatlarini tekshiramiz. Faqat javob berish kerak bo'lsa chatbot, CRMda amal bajarish kerak bo'lsa agent ssenariysi ko'rib chiqiladi."
         ],
       },
     ],
@@ -75,8 +96,8 @@ export const CONTENT: ArticleContent = {
           a: "Ha. Zamonaviy AI (GPT, Claude darajasidagi modellar) o'zbek tilida — lotin va kirill yozuvida, hatto o'zbekcha-ruscha aralash yozganda ham ishlaydi. Lekin sifat sozlashga bog'liq: bot sizning bazangiz bo'yicha uz/ru tiliga alohida sozlanishi kerak.",
         },
         {
-          q: "Nega tayyor botlar (ManyChat, oddiy ChatGPT) o'zbekchani yomon qiladi?",
-          a: "Ular o'zbekchani yuzaki tushunadi: lotin/kirill farqini, aralash tilni (o'zbekcha-ruscha) va so'zlashuv uslubini yaxshi ushlamaydi. Internetda o'zbekcha matn kam bo'lgani uchun modellar inglizchani yaxshiroq biladi. Yaxshi natija uchun maxsus sozlash kerak.",
+          q: "O'zbekcha AI javobining sifatini qanday tekshiraman?",
+          a: "Mijozlaringizning odatiy savollaridan sinov to'plami tuzing: imlo xatosi, aralash til, narx va bazada yo'q xizmat haqidagi savollar bo'lsin. Har javobni manba bilan solishtiring. To'g'rilik, tushunarlilik va operatorga o'z vaqtida uzatishni alohida baholang."
         },
         {
           q: "Bot lotin va kirill ikkalasini ham tushunadimi?",
@@ -88,7 +109,7 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Bot noto'g'ri o'zbekcha javob bersa nima bo'ladi?",
-          a: "Buni oldini olish uchun bot faqat sizning bazangiz bo'yicha javob beradi va bazada yo'q narsani o'ylab topmaydi. Ishonchsiz holatda savolni operatorga uzatadi. Real suhbatlarda test qilib, sifatni doimiy yaxshilaymiz.",
+          a: "Botni tasdiqlangan bilim bazasiga tayantirish xatolarni kamaytirishi mumkin, lekin butunlay yo'q qilmaydi. Muhim javoblarni tekshirish, yetarli ma'lumot bo'lmaganda operatorga uzatish va xato suhbatlarni qayta sinash kerak.",
         },
         {
           q: "Toshkentda o'zbek tilli AI chatbot kim yasaydi?",

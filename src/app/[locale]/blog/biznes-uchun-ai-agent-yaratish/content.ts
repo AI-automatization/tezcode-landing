@@ -16,9 +16,9 @@ export const CONTENT: ArticleContent = {
   uz: {
     hero: {
       badge: "AI Agent / 2026",
-      title: "Toshkentda biznes uchun AI agent yaratish: to'liq qo'llanma (2026)",
+      title: "AI agent qanday yaratiladi? Biznes uchun 6 qadam",
       subtitle:
-        "AI agent nima, chatbotdan farqi, qaysi biznesga kerak, qanday ishlaydi, qancha turadi va uni 6 qadamda qanday yaratish kerak — O'zbekiston bizneslari uchun amaliy qo'llanma.",
+        "Vazifani tanlashdan ishga tushirishgacha: agent yaratish bosqichlari, bepul sinov chegaralari va narxga ta'sir qiladigan omillar. Avval biznesingizga agent kerakmi, shuni aniqlang.",
       dateLabel: "2026-yil 14-iyun",
       readTime: "14 daqiqa o'qish",
     },
@@ -28,6 +28,24 @@ export const CONTENT: ArticleContent = {
         "AI agent — bu nafaqat javob beradigan, balki vazifani oxirigacha bajaradigan dastur: mijozga javob beradi, ma'lumotni CRM yoki 1C ga yozadi, buyurtma rasmiylashtiradi va xodimni faqat zarur bo'lganda jalb qiladi. Toshkentda biznes uchun AI agent yaratish odatda 6 qadamda kechadi: tahlil → dizayn → integratsiya → test → ishga tushirish → qo'llab-quvvatlash. Narx tayyor shablon emas, balki sizning ehtiyojingizga (qaysi model, qanday integratsiya, qancha murakkablik) bog'liq. Tezcode — 2024-yilda Toshkentda tashkil topgan 16 kishilik jamoa — Claude va GPT asosida o'zbek va rus tilida ishlaydigan AI agentlar quradi va bepul konsultatsiya beradi.",
     },
     sections: [
+      {
+        heading: "Bepul agent bilan boshlash mumkinmi?",
+        paragraphs: [
+          "Bepul agent izlayotgan bo'lsangiz, avval kerakli vazifani ajrating: matn yozish va savol-javob uchun yordamchi yetishi mumkin; buyurtmani CRMga yozish uchun esa tashqi tizimda amal bajaradigan agent kerak. Bepul foydalanish rejimi mavjud bo'lsa ham, API so'rovlari, server va integratsiya xarajatlari alohida bo'lishi mumkin.",
+          "Birinchi sinov uchun bitta vazifa va shaxsiy ma'lumotlarsiz 10 ta misol tayyorlang. Agentdan avval taklifni ko'rsatishni so'rang, amallarni odam tasdig'i bilan bajaring va xato javoblarni qayd eting. Shundan keyin pullik integratsiya kerakmi, aniqlash osonroq bo'ladi.",
+          "Tezcode'da ehtiyojni aniqlash konsultatsiyasi bepul. Buyurtma asosida AI agent yaratish $400 dan boshlanadi; modeldan foydalanish va qo'llab-quvvatlash xarajatlarini yozma taklifda aniqlashtiramiz."
+        ],
+        links: [
+          {
+            href: "/ai-agent",
+            label: "AI agent yaratish xizmati va narx omillari"
+          },
+          {
+            href: "/blog/ai-ozbek-tilida",
+            label: "O'zbekcha AI javoblarini sinash"
+          }
+        ]
+      },
       {
         heading: "AI agent nima va chatbotdan farqi nimada?",
         paragraphs: [
@@ -181,6 +199,10 @@ export const CONTENT: ArticleContent = {
     faq: {
       title: "Tez-tez beriladigan savollar",
       items: [
+        {
+          q: "Bepul agent va bepul konsultatsiya nimasi bilan farq qiladi?",
+          a: "Bepul agent — foydalanish shartlari doirasida ishlatiladigan vosita; bepul konsultatsiya esa vazifangizni mutaxassis bilan muhokama qilish. Tezcode konsultatsiyasi agentni tekin yaratish degani emas: ishlab chiqish $400 dan boshlanadi, integratsiya va doimiy xarajatlar taklifda alohida belgilanadi."
+        },
         {
           q: "AI agent nima?",
           a: "AI agent — bu nafaqat javob beradigan, balki vazifani bajaradigan dastur. U mijozga javob beradi, ma'lumotni CRM yoki 1C ga yozadi, buyurtma rasmiylashtiradi va kerak bo'lsa xodimga uzatadi. Asosi — GPT yoki Claude kabi katta til modeli, sizning bilim bazangiz va biznes tizimlaringizga integratsiya.",

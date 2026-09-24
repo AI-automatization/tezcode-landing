@@ -20,9 +20,9 @@ const META: Record<
   { title: string; description: string; ogTitle: string; ogDescription: string }
 > = {
   uz: {
-    title: "AI agent yaratish biznes uchun — Toshkent",
+    title: "AI agent yaratish — biznes uchun $400 dan",
     description:
-      "Toshkent va O'zbekiston bizneslari uchun AI agent yaratish — $400 dan. Telegram, CRM va 1C integratsiyasi, o'zbek/rus tillari. Bepul konsultatsiya.",
+      "AI agent yaratish: Telegram so'rovlarini CRMga yozish, buyurtma va hisobotlarni boshqarish. Toshkent va O'zbekiston uchun. $400 dan, konsultatsiya bepul.",
     ogTitle: "AI agent yaratish biznes uchun — Tezcode, Toshkent",
     ogDescription:
       "Ishni o'zi bajaradigan AI agentlar: savdo, buyurtma, hisobot, HR. Telegram/CRM/1C/POS integratsiyasi, uz/ru. Bepul konsultatsiya.",

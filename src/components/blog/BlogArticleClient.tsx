@@ -141,6 +141,20 @@ function ArticleBody({ copy }: { copy: ArticleCopy }) {
                   ))}
                 </ul>
               ) : null}
+              {section.links?.length ? (
+                <ul className="mt-5 space-y-3">
+                  {section.links.map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        className="text-[var(--tc-blue-text)] underline underline-offset-4 hover:no-underline"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
             </article>
           </Reveal>
         ))}

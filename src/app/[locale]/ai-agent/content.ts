@@ -159,8 +159,12 @@ export const CONTENT: ServicePageContent = {
       badge: "Tez-tez beriladigan savollar",
       title: "Savol va",
       titleAccent: "javoblar",
-      subtitle: "AI agent yaratish haqida eng ko'p so'raladigan 17 savol.",
+      subtitle: "AI agent yaratish, bepul imkoniyatlar, narx va integratsiya haqida savol-javoblar.",
       items: [
+        {
+          q: "Bepul AI agent bormi? Tezcode xizmatida nima bepul?",
+          a: "Tezcode'da 30 daqiqalik dastlabki konsultatsiya bepul; biznesingizga mos agentni ishlab chiqish $400 dan boshlanadi. Tayyor vositaning bepul rejimi bilan buyurtma asosida CRM yoki 1Cga ulanadigan agent bir xil xizmat emas. Mustaqil sinovda foydalanish limiti, model yoki API to'lovi, hosting va ma'lumot saqlash shartlarini alohida tekshiring."
+        },
         {
           q: "AI agent nima?",
           a: "AI agent — bu ishni o'zi bajaradigan AI tizim: mijoz yoki xodim so'rovini tushunadi, o'zi qaror qabul qiladi, ulangan tizimlarda (CRM, Telegram, 1C) amal bajaradi va jarayonni boshidan oxirigacha olib boradi. Oddiy misol: lid keldi — agent gaplashdi, ma'lumotni CRMga yozdi, taklif yubordi, follow-up qildi. Menejerga tayyor 'issiq' mijoz keladi, xolos.",
@@ -292,6 +296,11 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "foydali bo'lishi mumkin",
       subtitle: "AI agentga yaqin yechimlar va foydali qo'llanmalar.",
       links: [
+        {
+          href: "/blog/ai-ozbek-tilida",
+          label: "AI o'zbek tilida: qanday sinash kerak?",
+          desc: "Lotin yozuvi, aralash til va biznes savollari uchun amaliy tekshiruv namunalari."
+        },
         {
           href: "/ai-ozbekistonda",
           label: "AI kompaniya O'zbekiston",

@@ -92,9 +92,9 @@ export const ARTICLES: ArticleMeta[] = [
     relatedService: { href: "/ai-chatbot", label: "AI chatbot" },
     list: {
       uz: {
-        title: "AI o'zbek tilida ishlaydimi? Chatbot va agentlar uchun to'liq javob (2026)",
+        title: "AI o'zbek tilida: foydalanish va tekshirish misollari",
         excerpt:
-          "AI o'zbek tilida (lotin/kirill, aralash uz-ru) ishlaydi, lekin sifat sozlashga bog'liq. Nega tayyor botlar o'zbekchada qiynaladi va yaxshi o'zbek tilli chatbot qanday quriladi.",
+          "Tayyor so'rov namunalari, javob sifatini tekshirish va biznes uchun o'zbekcha chatbot yoki agent tanlash.",
       },
       ru: {
         title: "Работает ли ИИ на узбекском? Полный ответ для чат-ботов и агентов (2026)",
@@ -338,9 +338,9 @@ export const ARTICLES: ArticleMeta[] = [
     relatedService: { href: "/ai-agent", label: "AI agent yasash" },
     list: {
       uz: {
-        title: "Toshkentda biznes uchun AI agent yaratish: to'liq qo'llanma (2026)",
+        title: "AI agent qanday yaratiladi? Biznes uchun 6 qadam",
         excerpt:
-          "AI agent nima, chatbotdan farqi, qaysi biznesga kerak, qanday ishlaydi, narxi nimaga bog'liq va uni 6 qadamda qanday yaratish — Toshkent va O'zbekiston bizneslari uchun amaliy qo'llanma.",
+          "Vazifani tanlash, bepul sinov chegaralari, integratsiya va xarajatlar: AI agent yaratish bo'yicha amaliy qo'llanma.",
       },
       ru: {
         title: "Создание ИИ-агента для бизнеса в Ташкенте: полное руководство (2026)",
