@@ -12,7 +12,7 @@ import { EUROPE_PATH, REGION_PATH } from "@/lib/markets";
 // internal linking added to every service page, new CRM/comparison pages;
 // 2026-09-05: full RU "AI"→"ИИ" localization + native-RU quality pass across
 // every page — signal search engines to re-crawl the updated Russian titles).
-const SITE_UPDATED = new Date("2026-09-22");
+const SITE_UPDATED = new Date("2026-09-05");
 
 // Team profile pages (founder + /jamoa/* developers) are newly created and
 // actively updated as members submit info. A fresh, honest lastModified here
