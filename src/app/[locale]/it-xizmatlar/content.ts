@@ -69,6 +69,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "javoblar",
       subtitle: "Toshkentda IT xizmatlar haqida ko'p so'raladigan savollar.",
       items: [
+        { q: "Toshkentda maxsus dasturiy ta'minot ishlab chiqasizmi?", a: "Ha. Tezcode web, backend, mobil ilova, CRM, ERP va AI yechimlarni biznes vazifasiga moslab ishlab chiqadi. Avval texnik talab va integratsiyalarni aniqlaymiz, keyin narx va muddatni yozma taklifda beramiz." },
         { q: "Tezcode qanday IT xizmatlarni ko'rsatadi?", a: "Tezcode to'liq tsikl IT xizmatlarini ko'rsatadi: dasturiy ta'minot ishlab chiqish (web, backend), mobil ilovalar, veb-sayt va landing, AI va avtomatizatsiya, integratsiya/API va texnik qo'llab-quvvatlash. Hammasi bitta jamoadan." },
         { q: "Toshkentda joylashganmisiz?", a: "Ha. Tezcode Toshkentda joylashgan AI Software Factory, 14 nafar in-house dasturchidan iborat jamoa. Founder — Bekzod Mirzaaliyev. Lokal jamoa bo'lgani uchun til va vaqt mintaqasi muammosi yo'q." },
         { q: "Qancha vaqtda ishni boshlaysiz?", a: "Konsultatsiyadan keyin 3-5 kun ichida texnik taklif beramiz, kelishilgach darrov boshlaymiz. Birinchi ishlovchi versiya odatda 2-4 hafta ichida tayyor bo'ladi." },
