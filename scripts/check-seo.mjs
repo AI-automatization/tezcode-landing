@@ -141,6 +141,53 @@ if (origin) {
     assert.deepEqual(tags.filter((tag) => tag.hreflang).map((tag) => tag.hreflang).sort(), [...alternateLocales, "x-default"].sort(), `${locale}${path}: fallback alternates`);
   }
   const home = await get("/en");
+  // Priority articles must serve metadata and JSON-LD in the rendered language,
+  // including the Uzbek fallback on untranslated URLs.
+  for (const slug of ["ai-ozbek-tilida", "biznes-uchun-ai-agent-yaratish"]) {
+    const content = initializer(`src/app/[locale]/blog/${slug}/content.ts`, "CONTENT");
+    const metadata = initializer(`src/app/[locale]/blog/${slug}/page.tsx`, "META");
+    for (const locale of locales) {
+      const effectiveLocale = keys(content).includes(locale) ? locale : "uz";
+      const copy = property(content, effectiveLocale);
+      const path = `/blog/${slug}`;
+      const html = await get(pathFor(locale, path));
+      const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+        .map((match) => JSON.parse(match[1]));
+      const article = schemas.find((schema) => schema["@type"] === "BlogPosting");
+      assert.ok(article, `${locale}${path}: article schema`);
+      assert.equal(article.inLanguage, effectiveLocale);
+      assert.equal(article.url, urlFor(effectiveLocale, path));
+      assert.equal(article.headline, property(property(copy, "hero"), "title").text);
+      const faq = schemas.find((schema) => schema["@type"] === "FAQPage");
+      const items = property(property(copy, "faq"), "items");
+      assert.ok(faq);
+      assert.deepEqual(faq.mainEntity.map((item) => [item.name, item.acceptedAnswer.text]),
+        items.elements.map((item) => [property(item, "q").text, property(item, "a").text]));
+      const title = property(property(metadata, effectiveLocale), "title").text;
+      const escapedTitle = title.replaceAll("&", "&amp;").replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#x27;");
+      assert.ok(html.includes(`<title>${escapedTitle} | Tezcode</title>`), `${locale}${path}: localized title`);
+      assert.equal(links(html).find((tag) => tag.rel === "canonical")?.href, urlFor(effectiveLocale, path));
+      const breadcrumb = schemas.find((schema) => schema["@type"] === "BreadcrumbList");
+      assert.equal(breadcrumb?.itemListElement.at(-1)?.item, article.url);
+    }
+  }
+  // These must be actual anchors in the rendered article body, not URL text
+  // or links that exist only inside React's serialized data.
+  for (const [slug, destinations] of [
+    ["ai-ozbek-tilida", ["/ai-chatbot", "/ai-agent"]],
+    ["biznes-uchun-ai-agent-yaratish", ["/ai-agent", "/blog/ai-ozbek-tilida"]],
+    ["pos-tizimi-tanlash", ["/pos-tizimi"]],
+  ]) {
+    const html = await get(`/blog/${slug}`);
+    const visible = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, "");
+    const bodyArticles = [...visible.matchAll(/<article\b[^>]*>([\s\S]*?)<\/article>/g)]
+      .map((match) => match[1]).join(" ");
+    for (const path of destinations) {
+      assert.ok(bodyArticles.includes(`href="${path}"`), `${slug}: contextual link to ${path}`);
+    }
+  }
+  process.stdout.write("Verified priority article metadata, localized schemas, fallback URLs and contextual links.\n");
   assert.match(home, /<title>AI Business Automation &amp; Custom AI Agents \| Tezcode<\/title>/);
   const visible = home.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, "").replace(/<[^>]+>/g, " ");
   assert.doesNotMatch(visible, /\b(?:Yechimlar|Mahsulotlar|Batafsil)\b/);

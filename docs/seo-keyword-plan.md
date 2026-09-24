@@ -4,10 +4,13 @@
 > xizmatlar bilan bog'liq so'zlarni yozganda — Tezcode birinchi sahifada (eng yaxshi
 > 1–3 o'rinda) chiqishi.
 >
-> Tamoyil: har bir muhim qidiruv so'zi uchun **maxsus sahifa** kerak. So'z sahifaning
-> sarlavhasida (H1, `<title>`), URL'da va kontentida bo'lishi shart. Sayt i18n bo'lgani
-> uchun har sahifa avtomatik uz/ru/en versiyaga ega — lekin ru kontent rus tilida
-> yozilishi kerak (rus qidiruvida chiqishi uchun).
+> Tamoyil: avval qidiruv niyatiga mos mavjud sahifani kuchaytiramiz. Bir mavzudagi
+> yaqin so'rovlar uchun alohida takroriy sahifalar yaratmaymiz. Sarlavha va matn
+> foydalanuvchi savoliga tabiiy javob berishi kerak. Til versiyasi faqat haqiqiy
+> tarjima mavjud bo'lganda qidiruvga taqdim etiladi.
+
+> 2026-09-24: quyidagi dastlabki reja tarixiy. Mavjud sahifalar bo'yicha yangi
+> audit va GSC boshlang'ich ko'rsatkichlari: [qidiruv niyati auditi](seo-search-intent-2026-09-24.md).
 >
 > ⚠️ Eslatma: "keywords" meta tegi ishlamaydi (Google 2009-dan o'qimaydi). Reyting =
 > maqsadli sahifa + sifatli kontent + vaqt + boshqa saytlardan havola (backlink).
