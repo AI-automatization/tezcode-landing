@@ -66,6 +66,57 @@ const CITY_FAQ: Record<string, Record<ServiceLang, { q: string; a: string }>> = 
   },
 };
 
+type LocalCityCopy = {
+  capabilitySubtitle: string;
+  exampleSubtitle: string;
+  ctaSubtitle: string;
+  faq: { q: string; a: string }[];
+};
+
+// City pages need genuinely local information, not only a replaced city name.
+const LOCAL_CITY_COPY: Record<string, Partial<Record<ServiceLang, LocalCityCopy>>> = {
+  toshkent: {
+    uz: {
+      capabilitySubtitle: "Toshkentdagi restoran, klinika, o'quv markazi, internet-do'kon va xizmat ko'rsatish bizneslari uchun botni real ish oqimiga moslaymiz. U buyurtma yoki bronni qabul qiladi, Click/Payme orqali to'lov oladi va ma'lumotni CRM, 1C yoki Google Sheets'ga uzatadi.",
+      exampleSubtitle: "Toshkentda tezkor javob va ko'p sonli murojaatlarni boshqarish muhim. Telegram bot filiallar bo'yicha buyurtmalarni ajratishi, Yunusoboddan Sergeligacha yetkazib berish hududini tekshirishi va kerakli operatorga murojaatni avtomatik yo'naltirishi mumkin.",
+      ctaSubtitle: "Toshkentda Telegram bot yaratish bo'yicha 30 daqiqalik bepul konsultatsiyada jarayoningiz, kerakli integratsiyalar va MVP muddatini aniqlaymiz.",
+      faq: [
+        { q: "Toshkentda Telegram bot yaratishni kimga buyurtma qilish mumkin?", a: "Tezcode Toshkentdagi bizneslar uchun buyurtma, bron, to'lov va mijozlarga xizmat ko'rsatish botlarini ishlab chiqadi. Avval jarayonni bepul tahlil qilamiz, keyin funksiyalar, narx va muddat ko'rsatilgan yozma taklif beramiz. Ofisimiz Amir Temur shoh ko'chasi, 10-manzilda." },
+        { q: "Toshkentdagi bir nechta filial uchun bitta Telegram bot ishlaydimi?", a: "Ha. Bot mijoz joylashuvi yoki tanlagan filialiga qarab buyurtmani kerakli nuqtaga yuboradi, filiallar kesimida CRM yoki admin panelga yozadi va har bir jamoaga alohida xabarnoma jo'natadi." },
+      ],
+    },
+    ru: {
+      capabilitySubtitle: "Для ресторанов, клиник, учебных центров, интернет-магазинов и сервисных компаний Ташкента мы встраиваем бота в реальный рабочий процесс. Он принимает заказ или бронь, оплату через Click/Payme и передаёт данные в CRM, 1C или Google Sheets.",
+      exampleSubtitle: "В Ташкенте особенно важны быстрый ответ и обработка большого числа обращений. Telegram-бот может разделять заказы по филиалам, проверять зону доставки от Юнусабада до Сергели и автоматически направлять обращение нужному оператору.",
+      ctaSubtitle: "На бесплатной 30-минутной консультации по разработке Telegram-бота в Ташкенте определим ваш сценарий, нужные интеграции и срок MVP.",
+      faq: [
+        { q: "Где заказать разработку Telegram-бота для бизнеса в Ташкенте?", a: "Tezcode разрабатывает в Ташкенте ботов для заказов, бронирования, оплаты и поддержки клиентов. Сначала бесплатно разбираем процесс, затем даём письменное предложение с функциями, ценой и сроком. Наш офис находится по адресу: проспект Амира Темура, 10." },
+        { q: "Может ли один Telegram-бот обслуживать несколько филиалов в Ташкенте?", a: "Да. Бот определяет выбранный филиал или локацию клиента, отправляет заказ в нужную точку, записывает данные в CRM или админ-панель по филиалам и уведомляет соответствующую команду." },
+      ],
+    },
+  },
+  samarqand: {
+    uz: {
+      capabilitySubtitle: "Samarqanddagi mehmonxona, turagentlik, restoran va hunarmandchilik do'konlari uchun bot bron, menyu yoki katalog, Click/Payme to'lovi va mehmonlarga avtomatik eslatmani birlashtiradi. O'zbek, rus va ingliz tilidagi alohida oqimlarni ham sozlash mumkin.",
+      exampleSubtitle: "Samarqandda turistik mavsum va ko'p tilli mijoz oqimi alohida yondashuv talab qiladi. Bot ekskursiya vaqtlarini ko'rsatadi, mehmonxona yoki restoran bronini qabul qiladi, lokatsiya yuboradi va administratorga tayyor buyurtmani uzatadi.",
+      ctaSubtitle: "Samarqanddagi turizm, ovqatlanish yoki savdo biznesingiz uchun Telegram bot ssenariysini bepul konsultatsiyada birga tuzamiz.",
+      faq: [
+        { q: "Samarqandda mehmonxona yoki restoran uchun Telegram bot yaratish mumkinmi?", a: "Ha. Bot bo'sh vaqt yoki joylarni ko'rsatadi, bronni qabul qiladi, Click/Payme orqali oldindan to'lov oladi, manzil va eslatma yuboradi. Buyurtmalar administrator paneli, CRM yoki Google Sheets'ga tushadi." },
+        { q: "Telegram bot xorijiy sayyohlarga bir necha tilda xizmat qila oladimi?", a: "Ha. O'zbek, rus va ingliz tillari uchun alohida menyu va xabarlarni sozlaymiz. Zarur bo'lsa, erkin yozilgan savollarga xizmatlaringiz haqidagi ma'lumot asosida javob beradigan AI qatlamini qo'shamiz." },
+      ],
+    },
+    ru: {
+      capabilitySubtitle: "Для гостиниц, турфирм, ресторанов и ремесленных магазинов Самарканда бот объединяет бронирование, меню или каталог, оплату Click/Payme и автоматические напоминания гостям. Можно настроить отдельные сценарии на русском, узбекском и английском языках.",
+      exampleSubtitle: "Туристический сезон и многоязычный поток гостей в Самарканде требуют отдельного сценария. Бот показывает время экскурсий, принимает бронь отеля или ресторана, отправляет геолокацию и передаёт готовый заказ администратору.",
+      ctaSubtitle: "На бесплатной консультации составим сценарий Telegram-бота для вашего туристического, ресторанного или торгового бизнеса в Самарканде.",
+      faq: [
+        { q: "Можно ли создать Telegram-бота для гостиницы или ресторана в Самарканде?", a: "Да. Бот показывает свободное время или места, принимает бронь и предоплату через Click/Payme, отправляет адрес и напоминание. Заказы поступают в админ-панель, CRM или Google Sheets." },
+        { q: "Может ли Telegram-бот обслуживать иностранных туристов на нескольких языках?", a: "Да. Настроим отдельные меню и сообщения на русском, узбекском и английском. При необходимости добавим AI-слой, который отвечает на свободно заданные вопросы по информации о ваших услугах." },
+      ],
+    },
+  },
+};
+
 export function buildTelegramBotCityContent(city: City): ServicePageContent {
   const result: ServicePageContent = {} as ServicePageContent;
   const langs: ServiceLang[] = ["uz", "ru", "en", "ar", "uk"];
@@ -75,6 +126,7 @@ export function buildTelegramBotCityContent(city: City): ServicePageContent {
     const intro = (TELEGRAM_BOT_INTRO[city.slug]?.[lang] ?? TELEGRAM_BOT_INTRO[city.slug]?.uz) ?? "";
     const cityFaq = (CITY_FAQ[city.slug]?.[lang] ?? CITY_FAQ[city.slug]?.uz) ?? { q: "", a: "" };
     const cityName = city.name[lang] ?? city.name.uz;
+    const localCopy = LOCAL_CITY_COPY[city.slug]?.[lang];
 
     result[lang] = {
       ...base,
@@ -84,9 +136,12 @@ export function buildTelegramBotCityContent(city: City): ServicePageContent {
         subtitle: `${intro}\n\n${base.hero.subtitle}`,
         trust: `${cityName} va butun O'zbekiston • Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan`,
       },
+      capabilities: localCopy ? { ...base.capabilities, subtitle: localCopy.capabilitySubtitle } : base.capabilities,
+      examples: localCopy ? { ...base.examples, subtitle: localCopy.exampleSubtitle } : base.examples,
+      cta: localCopy ? { ...base.cta, subtitle: localCopy.ctaSubtitle } : base.cta,
       faq: {
         ...base.faq,
-        items: [{ q: cityFaq.q, a: cityFaq.a }, ...base.faq.items],
+        items: [{ q: cityFaq.q, a: cityFaq.a }, ...(localCopy?.faq ?? []), ...base.faq.items],
       },
       service: {
         ...base.service,
