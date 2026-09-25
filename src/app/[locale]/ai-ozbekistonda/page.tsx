@@ -25,12 +25,12 @@ const META: Record<
   { title: string; description: string; ogTitle: string; ogDescription: string }
 > = {
   uz: {
-    title: "Biznes uchun sun'iy intellekt — AI yechimlar | Tezcode",
+    title: "O'zbekistondagi AI kompaniya — biznes uchun AI yechimlar | Tezcode",
     description:
-      "Biznes uchun sun'iy intellekt: AI agentlar, chatbotlar, jarayon avtomatizatsiyasi, video analitika va CRM/1C integratsiyasi. Toshkent, O'zbekiston va global loyihalar. Bepul konsultatsiya.",
-    ogTitle: "Biznes uchun sun'iy intellekt — Tezcode",
+      "Tezcode — Toshkentdagi AI kompaniya va AI Software Factory. O'zbekiston bo'ylab AI agentlar, chatbotlar, avtomatizatsiya, video analitika va 1C/CRM integratsiyasi. Bepul konsultatsiya.",
+    ogTitle: "O'zbekistondagi AI kompaniya — Tezcode",
     ogDescription:
-      "Biznesingizga mos AI agent, chatbot, avtomatizatsiya va CRM/1C integratsiyasi. Toshkentdan O'zbekiston va global loyihalarga.",
+      "Toshkentdagi AI Software Factory: O'zbekiston bizneslari uchun AI agentlar, chatbotlar, avtomatizatsiya va integratsiyalar.",
   },
   ru: {
     title: "AI-компания в Узбекистане — решения для бизнеса | Tezcode",
@@ -81,10 +81,6 @@ export async function generateMetadata({
     title: { absolute: meta.title },
     description: meta.description,
     keywords: [
-      "biznes uchun sun'iy intellekt",
-      "biznesim uchun sun'iy intellekt",
-      "sun'iy intellekt xizmatlari biznes uchun",
-      "biznes uchun AI yechimlar",
       "AI kompaniya O'zbekiston",
       "AI kompaniya Toshkent",
       "O'zbekistondagi AI kompaniyalar",
