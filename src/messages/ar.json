@@ -245,7 +245,7 @@
     "title": "تواصل معنا",
     "subtitle": "دعنا نتحدث عن مشروعك — استشارة مجانية",
     "form": {
-      "contact_hint": "أدخل البريد الإلكتروني أو رقم الهاتف للرد عليك. تكفي وسيلة اتصال واحدة.",
+      "contact_hint": "أدخل البريد الإلكتروني أو رقم الهاتف أو اسم مستخدم Telegram للرد عليك. تكفي وسيلة اتصال واحدة.",
       "country": "الدولة (اختياري)",
       "country_placeholder": "مثلاً، أوزبكستان",
       "service": "ما الخدمة التي تحتاجها؟ (اختياري)",
@@ -255,7 +255,8 @@
         "too_long": "النص طويل جداً.",
         "email_invalid": "أدخل بريداً إلكترونياً صالحاً.",
         "phone_invalid": "أدخل رقم الهاتف مع رمز الدولة (7 أرقام على الأقل).",
-        "contact_required": "أدخل البريد الإلكتروني أو رقم الهاتف."
+        "contact_required": "أدخل البريد الإلكتروني أو رقم الهاتف أو اسم مستخدم Telegram.",
+        "telegram_invalid": "أدخل اسم مستخدم Telegram صالحاً (مثال: @azizdev)."
       },
       "name": "اسمك",
       "name_placeholder": "Aziz Karimov",
@@ -263,6 +264,8 @@
       "email_placeholder": "aziz@example.com",
       "phone": "الهاتف",
       "phone_placeholder": "+998 90 123 45 67",
+      "telegram": "اسم مستخدم Telegram (اختياري)",
+      "telegram_placeholder": "@azizdev",
       "subject": "الموضوع",
       "subjects": {
         "demo": "طلب عرض تجريبي",

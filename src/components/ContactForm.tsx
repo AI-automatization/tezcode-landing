@@ -45,7 +45,7 @@ export function ContactForm({
     formState: { errors },
   } = useForm<ContactData>({
     resolver: zodResolver(contactSchema),
-    defaultValues: { subject: "demo", email: "", phone: "", country: DEFAULT_COUNTRY[locale] ?? "O'zbekiston", service: "" },
+    defaultValues: { subject: "demo", email: "", phone: "", telegramUsername: "", country: DEFAULT_COUNTRY[locale] ?? "O'zbekiston", service: "" },
   });
 
   const validationMessage = (code?: string) => code ? t(`form.validation.${code}`) : undefined;
@@ -76,7 +76,7 @@ export function ContactForm({
         language: locale,
         market: getMarketFromPath(pathname),
       });
-      reset({ subject: "demo", email: "", phone: "", country: DEFAULT_COUNTRY[locale] ?? "O'zbekiston", service: "" });
+      reset({ subject: "demo", email: "", phone: "", telegramUsername: "", country: DEFAULT_COUNTRY[locale] ?? "O'zbekiston", service: "" });
     } catch {
       setStatus("error");
     } finally {
@@ -144,6 +144,19 @@ export function ContactForm({
           </div>
 
           <p className="text-sm text-[var(--tc-text-muted)]">{t("form.contact_hint")}</p>
+          <Field id="contact-telegram" label={t("form.telegram")} error={validationMessage(errors.telegramUsername?.message)}>
+            <input
+              {...register("telegramUsername")}
+              id="contact-telegram"
+              type="text"
+              autoComplete="off"
+              maxLength={33}
+              placeholder={t("form.telegram_placeholder")}
+              className={inputClasses}
+              aria-invalid={errors.telegramUsername ? true : undefined}
+              aria-describedby={errors.telegramUsername ? "contact-telegram-error" : undefined}
+            />
+          </Field>
           <Field id="contact-email" label={t("form.email")} error={validationMessage(errors.email?.message)}>
             <input
               {...register("email")}

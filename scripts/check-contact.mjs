@@ -45,8 +45,10 @@ assert.equal(contact.contactSchema.safeParse({ ...valid, service: "" }).success,
 assert.equal(contact.contactSchema.parse({ ...valid, service: `  ${valid.service}  ` }).service, valid.service);
 assert.equal(contact.contactSchema.safeParse({ ...valid, email: "", phone: "+7 (700) 123-45-67" }).success, true);
 assert.equal(contact.contactSchema.safeParse({ ...valid, email: "   ", phone: "+44 20 7946 0123" }).success, true);
+assert.equal(contact.contactSchema.safeParse({ ...valid, email: "", phone: "", telegramUsername: "@azizdev" }).success, true);
 for (const patch of [
-  { email: "", phone: "" }, { email: "invalid" }, { phone: "abcdefg" },
+  { email: "", phone: "", telegramUsername: "" }, { email: "invalid" }, { phone: "abcdefg" },
+  { email: "", phone: "", telegramUsername: "@ab" },
   { phone: "123" }, { name: " " }, { locale: "invalid" },
   { service: "x".repeat(201) }, { service: ["automation"] },
   { sourcePage: "/contact?email=private@example.com" },
@@ -127,6 +129,9 @@ assert.match(outgoing.text, /A_\[B\]/);
 assert.match(outgoing.text, /Узбекистан/);
 assert.ok(outgoing.text.includes(`Xizmat: ${valid.service}`));
 assert.match(outgoing.text, /kz-pilot/);
+const telegramOnly = { ...valid, email: "", phone: "", telegramUsername: "@azizdev" };
+assert.equal(await telegram.sendTelegramNotification(telegramOnly), true);
+assert.match(outgoing.text, /✈️ Telegram: @azizdev/);
 const noToken = load("src/lib/telegram.ts", {}, { process: { env: {} }, fetch: () => { throw new Error("Must not call transport"); } });
 assert.equal(await noToken.sendTelegramNotification(valid), false);
 

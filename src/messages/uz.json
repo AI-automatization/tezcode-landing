@@ -276,7 +276,7 @@
     "title": "Bizga bog'laning",
     "subtitle": "Loyiha haqida gaplashamiz — bepul konsultatsiya",
     "form": {
-      "contact_hint": "Javob olish uchun email yoki telefon kiriting. Kamida bittasi kerak.",
+      "contact_hint": "Javob olish uchun email, telefon yoki Telegram username kiriting. Kamida bittasi kerak.",
       "country": "Davlat (ixtiyoriy)",
       "country_placeholder": "Masalan, O'zbekiston",
       "service": "Qaysi xizmat kerak? (ixtiyoriy)",
@@ -286,7 +286,8 @@
         "too_long": "Matn juda uzun.",
         "email_invalid": "To'g'ri email manzilini kiriting.",
         "phone_invalid": "Davlat kodi bilan telefon raqamini kiriting (kamida 7 raqam).",
-        "contact_required": "Email yoki telefon kiriting."
+        "contact_required": "Email, telefon yoki Telegram username kiriting.",
+        "telegram_invalid": "To'g'ri Telegram username kiriting (masalan, @azizdev)."
       },
       "name": "Ismingiz",
       "name_placeholder": "Aziz Karimov",
@@ -294,6 +295,8 @@
       "email_placeholder": "aziz@example.com",
       "phone": "Telefon",
       "phone_placeholder": "+998 90 123 45 67",
+      "telegram": "Telegram username (ixtiyoriy)",
+      "telegram_placeholder": "@azizdev",
       "subject": "Mavzu",
       "subjects": {
         "demo": "Demo so'rash",

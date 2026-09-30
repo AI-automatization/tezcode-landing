@@ -245,7 +245,7 @@
     "title": "Get in touch",
     "subtitle": "Let's talk about your project — free consultation",
     "form": {
-      "contact_hint": "Enter an email address or phone number so we can reply. One is enough.",
+      "contact_hint": "Enter an email, phone number, or Telegram username so we can reply. One is enough.",
       "country": "Country (optional)",
       "country_placeholder": "For example, Uzbekistan",
       "service": "What do you need? (optional)",
@@ -255,7 +255,8 @@
         "too_long": "This text is too long.",
         "email_invalid": "Enter a valid email address.",
         "phone_invalid": "Enter a phone number with country code (at least 7 digits).",
-        "contact_required": "Enter an email address or phone number."
+        "contact_required": "Enter an email, phone number, or Telegram username.",
+        "telegram_invalid": "Enter a valid Telegram username (for example, @azizdev)."
       },
       "name": "Your name",
       "name_placeholder": "Aziz Karimov",
@@ -263,6 +264,8 @@
       "email_placeholder": "aziz@example.com",
       "phone": "Phone",
       "phone_placeholder": "+998 90 123 45 67",
+      "telegram": "Telegram username (optional)",
+      "telegram_placeholder": "@azizdev",
       "subject": "Subject",
       "subjects": {
         "demo": "Request a demo",

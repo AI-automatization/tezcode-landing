@@ -25,6 +25,7 @@ export async function sendTelegramNotification(data: ContactData & { locale: str
     `👤 Ism: ${data.name}`,
     `📞 Telefon: ${data.phone || "—"}`,
     `📧 Email: ${data.email || "—"}`,
+    `✈️ Telegram: ${data.telegramUsername || "—"}`,
     `🌐 Til: ${data.locale.toUpperCase()}`,
     `📋 Mavzu: ${subjectLabel}`,
     `Davlat: ${data.country || "—"}`,

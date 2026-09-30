@@ -10,6 +10,10 @@ export const contactSchema = z.object({
     (value) => !value || (/^\+?[\d\s().-]+$/.test(value) && value.replace(/\D/g, "").length >= 7),
     "phone_invalid",
   ).optional(),
+  telegramUsername: z.string().trim().max(33, "too_long").refine(
+    (value) => !value || /^@?[A-Za-z][A-Za-z0-9_]{4,31}$/.test(value),
+    "telegram_invalid",
+  ).optional(),
   subject: z.enum(["demo", "partnership", "investor", "career", "other"]).optional(),
   message: optionalText(2000),
   country: optionalText(80),
@@ -30,7 +34,7 @@ export const contactSchema = z.object({
   _hp: z.string().max(200).optional(),
   _hp2: z.string().max(200).optional(),
 }).superRefine((data, context) => {
-  if (!data.email && !data.phone) {
+  if (!data.email && !data.phone && !data.telegramUsername) {
     context.addIssue({ code: "custom", path: ["email"], message: "contact_required" });
   }
 });

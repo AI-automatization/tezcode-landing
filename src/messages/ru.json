@@ -245,7 +245,7 @@
     "title": "Свяжитесь с нами",
     "subtitle": "Обсудим ваш проект — бесплатная консультация",
     "form": {
-      "contact_hint": "Укажите email или телефон для ответа. Достаточно одного способа связи.",
+      "contact_hint": "Укажите email, телефон или имя пользователя Telegram для ответа. Достаточно одного способа связи.",
       "country": "Страна (необязательно)",
       "country_placeholder": "Например, Узбекистан",
       "service": "Какая услуга нужна? (необязательно)",
@@ -255,7 +255,8 @@
         "too_long": "Слишком длинный текст.",
         "email_invalid": "Введите корректный email.",
         "phone_invalid": "Введите телефон с кодом страны (не менее 7 цифр).",
-        "contact_required": "Укажите email или телефон."
+        "contact_required": "Укажите email, телефон или имя пользователя Telegram.",
+        "telegram_invalid": "Введите корректное имя пользователя Telegram (например, @azizdev)."
       },
       "name": "Ваше имя",
       "name_placeholder": "Aziz Karimov",
@@ -263,6 +264,8 @@
       "email_placeholder": "aziz@example.com",
       "phone": "Телефон",
       "phone_placeholder": "+998 90 123 45 67",
+      "telegram": "Имя пользователя Telegram (необязательно)",
+      "telegram_placeholder": "@azizdev",
       "subject": "Тема",
       "subjects": {
         "demo": "Запросить демо",
