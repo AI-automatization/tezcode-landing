@@ -619,6 +619,7 @@ export function getServiceSchema(input: {
   description: string;
   serviceType: string;
   path: string; // no locale prefix, e.g. "/ai-avtomatizatsiya"
+  locale?: string;
   areaServed?: string[];
   // Optional "from" price so answer engines (Google AI Overview, ChatGPT,
   // Perplexity) can read a machine-readable price — the ClinicaGo signal that
@@ -626,13 +627,17 @@ export function getServiceSchema(input: {
   // "MONTH") turns it into a UnitPriceSpecification for subscriptions.
   offers?: { price: string; priceCurrency?: string; billingPeriod?: string };
 }) {
+  const locale = input.locale ?? "uz";
+  const url = locale === "uz"
+    ? `${BASE_URL}${input.path}`
+    : `${BASE_URL}/${locale}${input.path}`;
   return {
     "@context": "https://schema.org",
     "@type": "Service",
     name: input.name,
     description: input.description,
     serviceType: input.serviceType,
-    url: `${BASE_URL}${input.path}`,
+    url,
     provider: {
       "@type": "Organization",
       name: SITE_NAME,
@@ -645,7 +650,7 @@ export function getServiceSchema(input: {
             price: input.offers.price,
             priceCurrency: input.offers.priceCurrency ?? "USD",
             availability: "https://schema.org/InStock",
-            url: `${BASE_URL}${input.path}`,
+            url,
             ...(input.offers.billingPeriod
               ? {
                   priceSpecification: {

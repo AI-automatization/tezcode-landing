@@ -28,10 +28,10 @@ const META: Record<
       "24/7 mijoz xizmati, buyurtma qabul, lid saralash, CRM/1C integratsiyasi — Telegram, Instagram, WhatsApp va veb-saytda. O'zbek va rus tillarida. Bepul konsultatsiya.",
   },
   ru: {
-    title: "ИИ-чат-бот (AI-чат-бот) для бизнеса — Ташкент",
+    title: "Разработка ИИ-чат-ботов для бизнеса — Ташкент",
     description:
-      "ИИ-чат-бот (AI-чат-бот) для бизнеса в Ташкенте от $339 (≈ от 4 млн сум): поддержка клиентов 24/7 в Telegram, Instagram, WhatsApp и на сайте, приём заказов, интеграция с CRM/1C, узбекский и русский языки. Tezcode — резидент IT Park. Бесплатная консультация, предоплата 30%.",
-    ogTitle: "ИИ-чат-бот (AI) для бизнеса — Ташкент | Tezcode",
+      "Разработка ИИ-чат-ботов в Ташкенте от $339: ответы клиентам, приём заказов и CRM-интеграция. На узбекском и русском. Обсудите задачу на бесплатной консультации.",
+    ogTitle: "Разработка ИИ-чат-ботов для бизнеса — Ташкент | Tezcode",
     ogDescription:
       "ИИ-чат-бот для бизнеса: поддержка 24/7, приём заказов, квалификация лидов, интеграция с CRM/1C — Telegram, Instagram, WhatsApp и сайт. На узбекском и русском. Бесплатная консультация.",
   },
@@ -102,12 +102,14 @@ export default async function AiChatbotPage({
 }) {
   const { locale } = await params;
   const copy = CONTENT[locale as ServiceLang] ?? CONTENT.uz;
+  const localePrefix = locale === "uz" ? "" : `/${locale}`;
 
   const serviceSchema = getServiceSchema({
     name: copy.service.name,
     description: copy.service.description,
     serviceType: copy.service.serviceType,
     path: PATH,
+    locale,
     offers: { price: "339", priceCurrency: "USD" },
   });
   const faqSchema = getFaqSchema(copy.faq.items);
@@ -121,8 +123,8 @@ export default async function AiChatbotPage({
   // BreadcrumbList so answer engines see the page's place in the site
   // hierarchy (Home → AI chatbot) — same SSR JSON-LD pattern as /ai-agent.
   const breadcrumb = getBreadcrumbSchema([
-    { name: "Tezcode", url: BASE_URL },
-    { name: copy.service.name, url: `${BASE_URL}${PATH}` },
+    { name: "Tezcode", url: `${BASE_URL}${localePrefix}` },
+    { name: copy.service.name, url: `${BASE_URL}${localePrefix}${PATH}` },
   ]);
 
   return (

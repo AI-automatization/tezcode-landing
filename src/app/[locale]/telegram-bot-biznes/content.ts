@@ -382,7 +382,7 @@ export const CONTENT: ServicePageContent = {
         { q: "What information do you need from me to start?", a: "Not much: what the bot should do (orders, bookings, Q&A), a list of products or services with prices, your FAQs, and — if you need payments — your Click/Payme merchant details. No ready-made spec is required — we'll define the rest together in a free 30-minute consultation." },
         { q: "I want to get a Telegram bot built for my business — who should I contact?", a: "Contact Tezcode — a Tashkent-based team and official IT Park resident that builds custom Telegram bots for business. The first step is a free 30-minute consultation: if a bot won't pay off for you, we'll say so honestly. Call +998 91 777 66 09 or write to us on Telegram." },
         { q: "How does ordering a Telegram bot work in Uzbekistan?", a: "The process is simple: a free consultation to define the task, then a scenario and spec, and the bot is built in 1–2 weeks and connected to Click/Payme, CRM or Sheets. Payment: 30% upfront, the rest step by step. The bot and its token are registered in your name from the start." },
-        { q: "How much does it cost to build a Telegram bot?", a: "A Telegram bot starts from $279. The exact price depends on the features: a simple order bot and a bot with payments, a Mini App or AI answers cost very differently. You get the exact figure in a written proposal after the free consultation and spec — with no hidden fees." },
+        { q: "What ongoing costs should I plan for after launch?", a: "Development starts from $279; this is not a quote for ongoing operation. Before launch, we agree which hosting, maintenance, payment-provider fees and optional AI API usage apply to your project, who pays them and what is included in the proposal. The recurring budget depends on the agreed scope and usage." },
       ],
     },
     related: {
@@ -396,7 +396,7 @@ export const CONTENT: ServicePageContent = {
         { href: "/biznes-avtomatlashtirish", label: "Business automation", desc: "Automate beyond the bot — reports, order flow and repetitive tasks." },
       ],
     },
-    updated: "Updated: July 5, 2026",
+    updated: "Updated: September 29, 2026",
     service: {
       name: "Telegram bot development — Tezcode",
       description:

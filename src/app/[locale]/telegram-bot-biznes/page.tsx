@@ -37,10 +37,10 @@ const META: Record<
       "Заказы, оплата Click/Payme, уведомления, Telegram-магазин (Mini App), интеграция с CRM и ИИ-слой (AI) — под ваш бизнес. Бесплатная консультация.",
   },
   en: {
-    title: "Telegram bot development for business — Uzbekistan",
+    title: "Telegram Bot Development for Business in Uzbekistan",
     description:
-      "Telegram bot development for business in Tashkent, Uzbekistan from $279: order taking, Click/Payme payments, support, notifications, a Telegram store (Mini App), CRM integration. Tezcode — IT Park resident. Free consultation, 30% upfront payment.",
-    ogTitle: "Telegram bot for business — Tashkent | Tezcode",
+      "Custom Telegram bots from $279: orders, Click/Payme payments and CRM integration. Built by Tezcode in Tashkent, Uzbekistan. Book a free consultation.",
+    ogTitle: "Telegram Bot Development for Business | Tezcode",
     ogDescription:
       "Orders, Click/Payme payments, notifications, a Telegram store (Mini App), CRM integration and an AI layer — built around your business. Free consultation.",
   },
@@ -103,20 +103,22 @@ export default async function TelegramBotBiznesPage({
 }) {
   const { locale } = await params;
   const copy = CONTENT[locale as ServiceLang] ?? CONTENT.uz;
+  const localePrefix = locale === "uz" ? "" : `/${locale}`;
 
   const serviceSchema = getServiceSchema({
     name: copy.service.name,
     description: copy.service.description,
     serviceType: copy.service.serviceType,
     path: PATH,
+    locale,
     offers: { price: "279", priceCurrency: "USD" },
   });
   const faqSchema = getFaqSchema(copy.faq.items);
   // BreadcrumbList so answer engines see the page's place in the site
   // hierarchy (Home → Telegram bot) — same SSR JSON-LD pattern as /ai-chatbot.
   const breadcrumb = getBreadcrumbSchema([
-    { name: "Tezcode", url: BASE_URL },
-    { name: copy.service.name, url: `${BASE_URL}${PATH}` },
+    { name: "Tezcode", url: `${BASE_URL}${localePrefix}` },
+    { name: copy.service.name, url: `${BASE_URL}${localePrefix}${PATH}` },
   ]);
   // HowTo from the visible 4-step process — answer engines quote step-by-step
   // processes verbatim, so "how do we start?" can be answered with our steps.
