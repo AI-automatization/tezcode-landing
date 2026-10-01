@@ -10,16 +10,16 @@ export const CONTENT: ArticleContent = {
   uz: {
     hero: {
       badge: "AI video analitika / Qo'llanma",
-      title: "Kamerangizni AI bilan aqlli qilish: odam sanash, davomat va xavfsizlik (2026)",
+      title: "Kameraga AI qanday ulanadi: kamera talablari va narxi (2026)",
       subtitle:
-        "Sizda kameralar bor, lekin ular faqat yozib turadi. AI video analitika o'sha kameralarni aqlli qiladi: odam sanaydi, yuzni tanib davomat yuritadi, xavfsizlikni nazorat qiladi. Yangi kamera shart emas.",
+        "Kameraga AI ulash uchun avval vazifa, tasvir tiniqligi, rakurs, yorug'lik va IP oqim tekshiriladi. Mavjud kamera mos bo'lsa, undan foydalaniladi; xira yoki mos kelmaydigan kamera sozlanishi, qo'shilishi yoki almashtirilishi mumkin.",
       dateLabel: "2026-yil 15-avgust",
       readTime: "7 daqiqa o'qish",
     },
     tldr: {
       label: "Qisqacha javob",
       text:
-        "AI video analitika — bu mavjud IP kameralaringizdan kelayotgan tasvirni sun'iy intellekt yordamida real vaqtda tahlil qilish. Yangi kamera olish shart emas — dasturiy qatlam eski kameralar ustiga qo'shiladi. Asosiy imkoniyatlar: odam aniqlash va sanash (footfall — do'konga qancha mijoz kirgani), yuzni tanish orqali xodim davomati, ish xavfsizligi nazorati (kaska/forma, taqiqlangan hududga kirish), avto raqam tanish (ANPR — avtoturargoh, kirish-chiqish). Anomaliya bo'lsa Telegram yoki dashboardga real-time ogohlantirish keladi. Tezcode buni Toshkentda $990 dan (bir martalik ulash) o'rnatadi.",
+        "Kameraga AI ulash jarayoni vazifani aniqlash va kamera oqimini tekshirishdan boshlanadi. IP kamera RTSP/ONVIF orqali video bersa ham, xira tasvir yoki noto'g'ri rakurs aniqlikka xalaqit qilishi mumkin. Auditdan keyin mavjud kamerani ulash, uni sozlash yoki qo'shimcha/yangi kamera kerakligi aytiladi. AI odam sanashi, yuz orqali davomat, kaska nazorati yoki ANPR ni bajarishi mumkin. Toshkentda Tezcode integratsiyasi $990 dan boshlanadi; server va foydalanish xarajatlari alohida hisoblanadi.",
     },
     sections: [
       {
@@ -36,14 +36,14 @@ export const CONTENT: ArticleContent = {
         ],
       },
       {
-        heading: "Nega yangi kamera shart emas?",
+        heading: "Mavjud kamerani ishlatish mumkinmi?",
         paragraphs: [
-          "Eng katta afzallik: AI qatlami sizning mavjud kameralaringiz ustiga qo'shiladi.",
+          "Buni faqat kamera oqimi va tasviri tanlangan vazifaga mos bo'lsa aytish mumkin. RTSP/ONVIF mosligi zarur, lekin o'zi yetarli emas.",
         ],
         bullets: [
-          "Mavjud IP kameralar (Hikvision, Dahua va boshqalar) bilan ishlaydi — ularni almashtirmaysiz.",
-          "Faqat dasturiy qatlam qo'shiladi, kamera va NVR o'z joyida qoladi.",
-          "Bu tejamli: minglab dollarlik yangi kamera tizimi o'rniga mavjudini aqlli qilasiz.",
+          "Tasvir tiniqligi, rakurs, yorug'lik, kamera modeli va RTSP/ONVIF oqimi tekshiriladi.",
+          "Kamera mos bo'lsa, AI mavjud oqimga ulanadi va NVR qolishi mumkin.",
+          "Tasvir xira yoki vazifa uchun rakurs noto'g'ri bo'lsa, kamera sozlanadi, qo'shiladi yoki almashtiriladi.",
         ],
       },
       {
@@ -71,11 +71,11 @@ export const CONTENT: ArticleContent = {
       items: [
         {
           q: "AI video analitika nima?",
-          a: "Bu mavjud IP kameralaringizdan kelayotgan tasvirni AI yordamida real vaqtda tahlil qilish: odam sanash, yuz tanish orqali davomat, ish xavfsizligi nazorati, avto raqam tanish (ANPR). Yangi kamera shart emas — dasturiy qatlam eski kameralar ustiga qo'shiladi.",
+          a: "Bu kamera oqimini AI yordamida real vaqtda tahlil qilish: odam sanash, yuz tanish orqali davomat, ish xavfsizligi nazorati va avto raqam tanish (ANPR). Mavjud kamera faqat vazifaga mos tasvir sifati va oqimni bersa ishlatiladi; xira tasvirda sozlash yoki kamera yangilash kerak bo'lishi mumkin.",
         },
         {
-          q: "Mavjud kameralarimni almashtirishim kerakmi?",
-          a: "Yo'q. AI qatlami sizning mavjud IP kameralaringiz (Hikvision, Dahua va boshqalar) bilan ishlaydi. Kamera va NVR o'z joyida qoladi, faqat dasturiy qatlam qo'shiladi. Bu yangi tizim olishdan ancha tejamli.",
+          q: "Mavjud kameramga AI ulash mumkinmi?",
+          a: "Bu kamera modeli va tanlangan vazifaga bog'liq. Avval RTSP/ONVIF oqimi, tasvir tiniqligi, rakurs va yorug'lik tekshiriladi. Xira tasvir AI aniqligini pasaytirishi mumkin; audit natijasiga qarab sozlash, qo'shimcha kamera yoki almashtirish tavsiya qilinadi. Mos kamera bo'lsa, odatda AI ni mavjud oqimga ulash mumkin.",
         },
         {
           q: "Do'konda odam sanash qanday ishlaydi?",
@@ -87,18 +87,18 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Narxi qancha?",
-          a: "AI video analitika $990 dan boshlanadi — bu bir martalik ulash. Mavjud kameralaringiz bilan ishlaydi, keyin tizimni o'zingiz boshqarasiz. Aniq narx kamera soni va vazifalarga (odam sanash, davomat, ANPR) bog'liq.",
+          a: "AI video analitika $990 dan boshlanadi — bu bir martalik ulash. Yakuniy narx kamera soni va vazifalarga bog'liq; auditda mavjud kameralar mosligi ham tekshiriladi. Qo'shimcha kamera yoki server kerak bo'lsa, xarajatlar alohida hisoblanadi.",
         },
         {
           q: "Toshkentda kamerani AI bilan kim aqlli qiladi?",
-          a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti — mavjud kameralarni AI bilan aqlli qiladi: odam sanash, yuz tanish davomati, ish xavfsizligi, ANPR. Batafsil: tezcode.dev/ai-video-analitika.",
+          a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti — kamera mosligini avval tekshirib, AI video analitika ulaydi: odam sanash, yuz orqali davomat, ish xavfsizligi va ANPR. Batafsil: tezcode.dev/ai-video-analitika.",
         },
       ],
     },
     cta: {
       title: "Kameralaringizni AI bilan aqlli qilaymizmi?",
       subtitle:
-        "Tezcode bepul konsultatsiyada mavjud kameralaringizni ko'rib, qaysi AI imkoniyatlari (odam sanash, davomat, ANPR) sizga foyda berishini aniqlaydi. Majburiyat yo'q.",
+        "Tezcode bepul auditda kamera tasviri va oqimini tekshirib, qaysi vazifalar ishlashi hamda qo'shimcha jihoz kerakligini aniqlaydi. Majburiyat yo'q.",
       button: "Telegram orqali bog'lanish",
       note: "Javob odatda bir necha soat ichida.",
     },
@@ -107,16 +107,16 @@ export const CONTENT: ArticleContent = {
   ru: {
     hero: {
       badge: "ИИ-видеоаналитика / Руководство",
-      title: "Сделайте камеры умными с ИИ: подсчёт людей, посещаемость и безопасность (2026)",
+      title: "Как подключить ИИ к камере видеонаблюдения: требования и цена в Ташкенте (2026)",
       subtitle:
-        "У вас есть камеры, но они только записывают. ИИ-видеоаналитика делает их умными: считает людей, ведёт учёт посещаемости по лицу, контролирует безопасность. Новые камеры не нужны.",
+        "Чтобы подключить ИИ к камере, сначала проверяют задачу, чёткость изображения, ракурс, освещение и видеопоток. Подходящую камеру можно использовать; размытое или неподходящее изображение может потребовать настройки, дополнительной или новой камеры.",
       dateLabel: "15 августа 2026",
       readTime: "7 минут чтения",
     },
     tldr: {
       label: "Короткий ответ",
       text:
-        "ИИ-видеоаналитика — это анализ изображения с ваших существующих IP-камер с помощью ИИ в реальном времени. Новые камеры не нужны — программный слой добавляется поверх старых. Основные возможности: детекция и подсчёт людей (footfall — сколько клиентов зашло), учёт посещаемости сотрудников по лицу, контроль охраны труда (каска/форма, вход в запретную зону), распознавание автономеров (ANPR — парковка, въезд-выезд). При аномалии приходит уведомление в Telegram или на дашборд. Tezcode внедряет это в Ташкенте от $990 (разовое подключение).",
+        "Подключение ИИ к камере начинается с выбора задачи и проверки видеопотока. Поддержки RTSP/ONVIF недостаточно: размытое изображение, плохое освещение или неподходящий ракурс могут снизить точность. После аудита определяют, можно ли подключить существующую камеру, нужно ли её настроить или потребуется дополнительная/новая камера. ИИ может считать людей, отмечать посещаемость по лицу, контролировать каски и распознавать номера (ANPR). Интеграция Tezcode в Ташкенте — от $990; сервер и использование оплачиваются отдельно.",
     },
     sections: [
       {
@@ -133,14 +133,14 @@ export const CONTENT: ArticleContent = {
         ],
       },
       {
-        heading: "Почему не нужны новые камеры?",
+        heading: "Можно ли использовать существующую камеру?",
         paragraphs: [
-          "Главное преимущество: ИИ-слой добавляется поверх ваших существующих камер.",
+          "Это зависит от задачи и качества видеопотока. Поддержка RTSP/ONVIF необходима, но сама по себе не гарантирует точное распознавание.",
         ],
         bullets: [
-          "Работает с существующими IP-камерами (Hikvision, Dahua и др.) — их не меняют.",
-          "Добавляется только программный слой, камеры и NVR остаются на месте.",
-          "Это экономно: вместо новой системы за тысячи долларов вы делаете умной существующую.",
+          "Проверяем чёткость изображения, ракурс, освещение, модель камеры и поток RTSP/ONVIF.",
+          "Если камера подходит, ИИ подключается к существующему потоку, а NVR обычно остаётся.",
+          "Если изображение размыто или ракурс не подходит, рекомендуем настройку, дополнительную камеру или замену.",
         ],
       },
       {
@@ -167,12 +167,12 @@ export const CONTENT: ArticleContent = {
       title: "Часто задаваемые вопросы",
       items: [
         {
-          q: "Что такое ИИ-видеоаналитика?",
-          a: "Это анализ изображения с ваших существующих IP-камер с помощью ИИ в реальном времени: подсчёт людей, учёт посещаемости по лицу, контроль охраны труда, распознавание автономеров (ANPR). Новые камеры не нужны — программный слой добавляется поверх старых.",
+          q: "Как подключить ИИ к существующей камере?",
+          a: "Сначала определяют задачу и проверяют модель камеры, RTSP/ONVIF-поток, чёткость изображения, ракурс и освещение. Если видео подходит, ИИ подключают к существующему потоку. Размытая картинка может мешать надёжному распознаванию, поэтому иногда требуется настройка, дополнительная камера или замена.",
         },
         {
           q: "Нужно ли менять существующие камеры?",
-          a: "Нет. ИИ-слой работает с вашими существующими IP-камерами (Hikvision, Dahua и др.). Камеры и NVR остаются на месте, добавляется только программный слой. Это гораздо экономнее покупки новой системы.",
+          a: "Это зависит от качества изображения и задачи. На аудите проверяем RTSP/ONVIF, резкость, ракурс и освещение. Если камера подходит, её можно оставить. При размытом изображении или неподходящем ракурсе может понадобиться настройка, дополнительная камера или замена.",
         },
         {
           q: "Как работает подсчёт людей в магазине?",
@@ -184,18 +184,18 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Сколько это стоит?",
-          a: "ИИ-видеоаналитика от $990 — это разовое подключение. Работает с вашими существующими камерами, дальше системой управляете сами. Точная цена зависит от числа камер и задач (подсчёт людей, посещаемость, ANPR).",
+          a: "Интеграция начинается от $990 разово. Итог зависит от числа камер и задач; сервер и использование оплачиваются отдельно. Сначала проводится аудит камер, потому что неподходящее качество изображения может потребовать дополнительного оборудования.",
         },
         {
           q: "Кто делает камеры умными с ИИ в Ташкенте?",
-          a: "Tezcode — AI Software Factory в Ташкенте и резидент IT Park — делает существующие камеры умными с ИИ: подсчёт людей, посещаемость по лицу, охрана труда, ANPR. Подробнее: tezcode.dev/ru/ai-video-analitika.",
+          a: "Tezcode — AI Software Factory в Ташкенте и резидент IT Park — сначала проверяет пригодность камер, затем внедряет ИИ-видеоаналитику для подсчёта людей, посещаемости по лицу, охраны труда и ANPR. Подробнее: tezcode.dev/ru/ai-video-analitika.",
         },
       ],
     },
     cta: {
       title: "Сделаем ваши камеры умными с ИИ?",
       subtitle:
-        "На бесплатной консультации Tezcode посмотрит ваши существующие камеры и определит, какие возможности ИИ (подсчёт людей, посещаемость, ANPR) дадут вам пользу. Без обязательств.",
+        "На бесплатном аудите Tezcode проверит качество и совместимость камер, уточнит задачу и скажет, можно ли использовать текущий поток или потребуется настройка/дополнительная камера. Без обязательств.",
       button: "Связаться в Telegram",
       note: "Ответ обычно в течение нескольких часов.",
     },
@@ -204,16 +204,16 @@ export const CONTENT: ArticleContent = {
   en: {
     hero: {
       badge: "AI video analytics / Guide",
-      title: "Make your cameras smart with AI: people counting, attendance and safety (2026)",
+      title: "How to connect AI to a CCTV camera: requirements and cost (2026)",
       subtitle:
-        "You have cameras, but they only record. AI video analytics makes them smart: it counts people, tracks attendance by face, and monitors safety. No new cameras needed.",
+        "To connect AI to a camera, first check the task, image clarity, angle, lighting and video stream. A suitable camera can be reused; blurry or unsuitable footage may require adjustment, an additional camera or replacement.",
       dateLabel: "August 15, 2026",
       readTime: "7 min read",
     },
     tldr: {
       label: "Quick answer",
       text:
-        "AI video analytics is real-time AI analysis of the feed from your existing IP cameras. No new cameras needed — a software layer is added on top of the old ones. Core capabilities: person detection and counting (footfall — how many customers entered), attendance via face recognition, workplace-safety monitoring (helmet/uniform, entry into restricted zones), and license-plate recognition (ANPR — parking, entry/exit). On an anomaly, an alert goes to Telegram or a dashboard. Tezcode deploys this in Tashkent from $990 (one-time setup).",
+        "Connecting AI to a camera starts by choosing a task and checking the video stream. RTSP/ONVIF support alone is not enough: blur, poor lighting or an unsuitable angle can lower accuracy. An audit determines whether the current camera can be used, adjusted or supplemented/replaced. AI can count people, record attendance by face, check helmets and read number plates (ANPR). Tezcode integration in Tashkent starts at $990; server and usage are billed separately.",
     },
     sections: [
       {
@@ -230,14 +230,14 @@ export const CONTENT: ArticleContent = {
         ],
       },
       {
-        heading: "Why no new cameras are needed",
+        heading: "Can I use my existing camera?",
         paragraphs: [
-          "The biggest advantage: the AI layer is added on top of your existing cameras.",
+          "It depends on the task and video quality. RTSP/ONVIF support is necessary, but it does not guarantee accurate recognition by itself.",
         ],
         bullets: [
-          "Works with existing IP cameras (Hikvision, Dahua and others) — you don't replace them.",
-          "Only a software layer is added; cameras and NVR stay in place.",
-          "It's economical: instead of a new camera system for thousands of dollars, you make your existing one smart.",
+          "We check image clarity, angle, lighting, camera model and RTSP/ONVIF stream.",
+          "If a camera suits the task, AI can use its existing stream and the NVR can usually stay.",
+          "Blurry footage or a poor angle may require adjustment, an additional camera or replacement.",
         ],
       },
       {
@@ -265,11 +265,11 @@ export const CONTENT: ArticleContent = {
       items: [
         {
           q: "What is AI video analytics?",
-          a: "It's real-time AI analysis of the feed from your existing IP cameras: people counting, attendance by face, workplace-safety monitoring, license-plate recognition (ANPR). No new cameras needed — a software layer is added on top of the old ones.",
+          a: "It's real-time AI analysis of camera footage: people counting, attendance by face, workplace-safety monitoring and license-plate recognition (ANPR). Existing cameras can be reused only if their image quality and stream suit the task; blurry footage may require adjustment or replacement.",
         },
         {
           q: "Do I need to replace my existing cameras?",
-          a: "No. The AI layer works with your existing IP cameras (Hikvision, Dahua and others). Cameras and NVR stay in place; only a software layer is added. This is far more economical than buying a new system.",
+          a: "It depends on the task and image quality. We check the camera model, RTSP/ONVIF stream, clarity, angle and lighting. If the camera suits the task, it can stay; blurry or unsuitable footage may require adjustment, an additional camera or replacement.",
         },
         {
           q: "How does people counting work in a store?",
@@ -281,18 +281,18 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "How much does it cost?",
-          a: "AI video analytics starts from $990 — a one-time setup. It works with your existing cameras, and then you manage the system yourself. The exact price depends on the number of cameras and tasks (people counting, attendance, ANPR).",
+          a: "AI video analytics starts from $990 for one-time integration. The exact price depends on camera count and tasks; the audit also checks camera suitability. Any additional camera or server costs are estimated separately.",
         },
         {
           q: "Who makes cameras smart with AI in Tashkent?",
-          a: "Tezcode — an AI Software Factory in Tashkent and IT Park resident — makes existing cameras smart with AI: people counting, face-based attendance, workplace safety, ANPR. More: tezcode.dev/en/ai-video-analitika.",
+          a: "Tezcode — an AI Software Factory in Tashkent and IT Park resident — audits camera suitability before integrating AI for people counting, face-based attendance, workplace safety and ANPR. More: tezcode.dev/en/ai-video-analitika.",
         },
       ],
     },
     cta: {
       title: "Shall we make your cameras smart with AI?",
       subtitle:
-        "In a free consultation Tezcode will look at your existing cameras and determine which AI capabilities (people counting, attendance, ANPR) will benefit you. No obligation.",
+        "In a free audit Tezcode checks camera footage and stream quality, identifies suitable tasks and explains whether extra equipment may be needed. No obligation.",
       button: "Contact us on Telegram",
       note: "We usually reply within a few hours.",
     },

@@ -19,13 +19,22 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const titles: Record<string, string> = {
+    uz: "Kameraga AI qanday ulanadi: kamera talablari va narxi (2026) | Tezcode",
+    ru: "Как подключить ИИ к камере видеонаблюдения: требования и цена в Ташкенте (2026) | Tezcode",
+    en: "How to connect AI to a CCTV camera: requirements and cost (2026) | Tezcode",
+  };
+  const descriptions: Record<string, string> = {
+    uz: "Kameraga AI ulashdan oldin tasvir tiniqligi, rakurs, yorug'lik va RTSP/ONVIF tekshiriladi. Toshkentda AI video analitika $990 dan; bepul kamera auditi.",
+    ru: "Как подключить ИИ к камере: проверка чёткости изображения, ракурса, освещения и RTSP/ONVIF. Внедрение в Ташкенте от $990; бесплатный аудит камер.",
+    en: "Learn how to connect AI to CCTV: check image clarity, angle, lighting and RTSP/ONVIF first. Tashkent integration from $990 with a free camera audit.",
+  };
   return buildPageMetadata({
     locale,
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title: "Kamerangizni AI bilan aqlli qilish: odam sanash, davomat, ANPR (2026) | Tezcode",
-    description:
-      "Mavjud IP kameralarni AI bilan aqlli qilish: odam sanash (footfall), yuz tanish davomat, ish xavfsizligi (kaska/forma), avto raqam (ANPR). Yangi kamera shart emas. $990 dan. Tezcode qo'llanmasi.",
+    title: titles[locale] ?? titles.uz,
+    description: descriptions[locale] ?? descriptions.uz,
     keywords: [
       "kamera AI",
       "odam sanash",
@@ -40,12 +49,19 @@ export async function generateMetadata({
   });
 }
 
-export default function KameraniAiBilanAqlliQilishPage() {
+export default async function KameraniAiBilanAqlliQilishPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale: requestedLocale } = await params;
   const meta = getArticle(SLUG);
   const datePublished = meta?.datePublished ?? "2026-08-15";
 
-  const copy = CONTENT.uz;
-  const locale: ArticleLang = "uz";
+  const supportedLocale: ArticleLang =
+    requestedLocale === "ru" || requestedLocale === "en" ? requestedLocale : "uz";
+  const copy = CONTENT[supportedLocale] ?? CONTENT.uz;
+  const locale = supportedLocale;
 
   const articleSchema = getArticleSchema({
     headline: copy.hero.title,

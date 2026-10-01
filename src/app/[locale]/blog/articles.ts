@@ -68,19 +68,19 @@ export const ARTICLES: ArticleMeta[] = [
     relatedService: { href: "/ai-video-analitika", label: "AI video analitika" },
     list: {
       uz: {
-        title: "Kamerangizni AI bilan aqlli qilish: odam sanash, davomat va xavfsizlik (2026)",
+        title: "Kameraga AI qanday ulanadi: kamera talablari va narxi (2026)",
         excerpt:
-          "Mavjud IP kameralarni AI bilan aqlli qilish: odam sanash (footfall), yuz tanish davomat, ish xavfsizligi, ANPR. Yangi kamera shart emas, $990 dan.",
+          "AI ulashdan oldin kamera tasviri, rakursi, yorug'ligi va RTSP/ONVIF tekshiriladi. Mos kamera ishlatiladi; xira bo'lsa yangilash kerak bo'lishi mumkin. $990 dan.",
       },
       ru: {
-        title: "Сделайте камеры умными с ИИ: подсчёт людей, посещаемость и безопасность (2026)",
+        title: "Как подключить ИИ к камере видеонаблюдения: требования и цена (2026)",
         excerpt:
-          "Сделать существующие IP-камеры умными с ИИ: подсчёт людей (footfall), посещаемость по лицу, охрана труда, ANPR. Новые камеры не нужны, от $990.",
+          "Перед подключением проверяем качество изображения, ракурс, освещение и RTSP/ONVIF. Размытое видео может потребовать настройки или замены камеры. От $990.",
       },
       en: {
-        title: "Make your cameras smart with AI: people counting, attendance and safety (2026)",
+        title: "How to connect AI to a CCTV camera: requirements and cost (2026)",
         excerpt:
-          "Make existing IP cameras smart with AI: people counting (footfall), face attendance, workplace safety, ANPR. No new cameras needed, from $990.",
+          "We check image clarity, angle, lighting and RTSP/ONVIF before connecting AI. Blurry footage may need adjustment or camera replacement. From $990.",
       },
     },
   },
