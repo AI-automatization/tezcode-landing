@@ -5,7 +5,8 @@ import type { ServicePageContent } from "@/components/service-page/types";
 // "AI kamera Toshkent", "yuz tanish davomat", "kaska nazorati". Only confirmed
 // Tezcode facts: we make EXISTING IP cameras smart with AI as a SERVICE — four
 // use cases (people counting, face recognition attendance, workplace safety/PPE,
-// ANPR). Works with existing cameras, real-time alerts, on-prem or cloud.
+// ANPR). Camera compatibility and image quality must be audited per use case;
+// some cameras may need adjustment, supplementation, or replacement.
 // Quote-based pricing only (no fixed price) — 30% upfront, rest in stages.
 export const CONTENT: ServicePageContent = {
   uz: {
@@ -15,8 +16,8 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "AI bilan avtomatlashtirish",
       title2: "",
       subtitle:
-        "AI video analitika — bu kameralaringizdagi tasvirni real vaqtda tahlil qiladigan sun'iy intellekt: odamlarni sanaydi, yuz orqali davomatni belgilaydi, kaska va himoya kiyimini nazorat qiladi va avto raqamlarni o'qiydi. Yangi jihoz sotib olish shart emas — biz sizning mavjud IP kameralaringizga ulanib, ular ko'rgan narsani hodisaga aylantiramiz va Telegram yoki dashboardga darhol xabar yuboramiz. On-premise (ichki server) yoki bulutda ishlaydi.",
-      trust: "IT Park rezidenti • Mavjud kameralar bilan ishlaydi • To'lov: 30% oldindan",
+        "AI video analitika — kameralar tasvirini real vaqtda tahlil qilib, odamlarni sanaydi, yuz orqali davomatni belgilaydi, kaska va himoya kiyimini nazorat qiladi hamda avto raqamlarni o'qiydi. Avval kamera modeli, tasvir tiniqligi, rakursi va yorug'ligini tekshiramiz: mos IP kameraga ulanib, hodisalar haqida Telegram yoki dashboardga xabar yuboramiz. Tasvir sifati vazifaga yetmasa, kamerani sozlash, qo'shimcha kamera yoki almashtirish kerak bo'lishi mumkin. On-premise yoki bulutda ishlaydi.",
+      trust: "IT Park rezidenti • Kameralar auditdan keyin ulanadi • To'lov: 30% oldindan",
       ctaPrimary: "Bepul konsultatsiya so'rang",
       ctaSecondary: "AI kamera nima qila oladi?",
     },
@@ -31,7 +32,7 @@ export const CONTENT: ServicePageContent = {
         { icon: "clipboard-list", title: "Yuz tanish orqali davomat", desc: "Xodim yoki mehmon yuzini tanib, kirish-chiqishni avtomatik belgilaydi — turniketsiz. Davomat jurnali, ruxsat nazorati, qora ro'yxat (blacklist) va VIP mijozni tanib xabar berish." },
         { icon: "life-buoy", title: "Ish xavfsizligi nazorati", desc: "Zavod va qurilishda kaska, jilet va himoya kiyimini kiymagan xodimni aniqlaydi; xavfli zonaga (stanok, yuk ko'targich) kirishni sezadi va darhol ogohlantiradi. Baxtsiz hodisa oldini olish." },
         { icon: "search", title: "Avto raqam tanish (ANPR)", desc: "Avtomobil davlat raqamini o'qiydi va bazaga yozadi: parkovka va hudud kirishini avtomatlashtirish, shlagbaumni ruxsat etilgan mashinaga ochish, mehmon va o'z transportini ajratish." },
-        { icon: "wifi", title: "Mavjud kameralar bilan ishlaydi", desc: "Yangi kamera yoki maxsus jihoz sotib olish shart emas. RTSP/ONVIF ni qo'llaydigan IP kameralaringizga ulanamiz — AI qatlami mavjud videokuzatuv tizimingiz ustiga qo'shiladi." },
+        { icon: "wifi", title: "Kameralar auditidan boshlaymiz", desc: "RTSP/ONVIF qo'llab-quvvatlashi bilan birga tasvir tiniqligi, rakurs va yorug'likni ham tekshiramiz. Kamera vazifaga mos bo'lsa mavjud tizimga ulanadi; tasvir xira yoki sifati past bo'lsa, sozlash, qo'shimcha kamera yoki almashtirish tavsiya qilinishi mumkin." },
         { icon: "bell", title: "Real vaqtda ogohlantirish", desc: "Hodisa yuz berganda — kaskasiz xodim, notanish yuz, ruxsatsiz mashina — Telegram, dashboard yoki xavfsizlik pultiga soniyalarda xabar boradi, skrinshot va vaqt bilan. Yozuvni keyin ham arxivdan topasiz." },
       ],
     },
@@ -67,7 +68,7 @@ export const CONTENT: ServicePageContent = {
       title: "Qaysi biznesga",
       titleAccent: "qanday foyda?",
       subtitle:
-        "To'rt asosiy use-case turli sohalarda qanday ishlashi. Har bir misol mavjud kameralar ustiga qo'shiladi — yangi jihoz talab qilinmaydi.",
+        "To'rt asosiy use-case turli sohalarda qanday ishlashi. Qaysi kameralar mos kelishini auditda aniqlaymiz; ayrim nuqtalarda qo'shimcha yoki yangi kamera kerak bo'lishi mumkin.",
       items: [
         { tag: "01", title: "Do'kon va savdo markazi", desc: "Kirgan tashrifchilar sonini sanaydi, eng gavjum soatlarni va kassa oldidagi navbatni ko'rsatadi. Marketing samarasini (konversiya) va smenaga qancha xodim kerakligini aniq raqam bilan bilib olasiz." },
         { tag: "02", title: "Zavod va qurilish maydoni", desc: "Kaska va jiletsiz xodimni, xavfli zonaga kirishni real vaqtda aniqlaydi va usta yoki xavfsizlik bo'limiga darhol xabar yuboradi. Buzilishlar jurnali va baxtsiz hodisa oldini olish." },
@@ -105,9 +106,9 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "javoblar",
       subtitle: "AI video analitika haqida ko'p so'raladigan savollar.",
       items: [
-        { q: "Kameralarni AI bilan qanday avtomatlashtirish mumkin?", a: "Mavjud IP kameralaringizga AI (computer vision) qatlamini ulash orqali — yangi jihoz sotib olish shart emas. Asosiy 4 yo'nalish: 1) Odam aniqlash va sanash (footfall, navbat, eng gavjum soatlar); 2) Yuz tanish orqali davomat va kirish nazorati (turniketsiz); 3) Ish xavfsizligi nazorati (kaska/jilet, xavfli zonaga kirish); 4) Avto raqam tanish (ANPR) — shlagbaum va parkovkani avtomatlashtirish. Biz kameralaringizga RTSP/ONVIF orqali ulanamiz, hodisani real vaqtda aniqlaymiz va Telegram yoki dashboardga soniyalarda xabar yuboramiz. On-premise (ichki server) yoki bulutda ishlaydi." },
+        { q: "Kameralarni AI bilan qanday avtomatlashtirish mumkin?", a: "Avval kameralar tanlangan vazifaga mosligini tekshiramiz: model, RTSP/ONVIF oqimi, tasvir tiniqligi, rakurs va yorug'lik muhim. Mos kameraga AI (computer vision) qatlamini ulab, odam sanash, yuz orqali davomat, kaska nazorati yoki ANPR ni sozlaymiz. Tasvir sifati yetarli bo'lmasa, kamerani sozlash, qo'shimcha kamera yoki almashtirish kerak bo'lishi mumkin. Hodisalar Telegram yoki dashboardga yuboriladi; tizim ichki serverda yoki bulutda ishlaydi." },
         { q: "AI video analitika qancha turadi?", a: "$990 dan (bir martalik ulash) boshlanadi — bu AI ni mavjud kameralaringizga ulash uchun bir martalik to'lov, obuna emas. Ulashdan keyin AI ishlashini o'zingiz boshqarasiz: hosting va foydalanishni (API/server) o'zingiz to'laysiz. Aniq narx kameralar soni va vazifa murakkabligiga (odam sanash, yuz tanish yoki ANPR) bog'liq — bepul konsultatsiya va kameralar auditidan keyin yozma taklifda aniqlaymiz." },
-        { q: "Mavjud kameralar bilan ishlaydimi?", a: "Ha — bu xizmatning asosiy g'oyasi. Yangi kamera yoki maxsus jihoz sotib olish shart emas. RTSP/ONVIF ni qo'llaydigan IP kameralaringizga (Hikvision, Dahua va boshqalar) to'g'ridan-to'g'ri ulanamiz. AI qatlami mavjud videokuzatuv ustiga qo'shiladi, videoregistrator o'z joyida qoladi." },
+        { q: "Mavjud kameralar bilan ishlaydimi?", a: "Ba'zi holatlarda. Avval model, RTSP/ONVIF oqimi, tasvir tiniqligi, rakurs va yorug'likni tekshiramiz. Xira yoki vazifaga mos kelmaydigan tasvirda AI ishonchli ishlamasligi mumkin; kamera sozlanadi yoki qo'shimcha/yangi kamera tavsiya qilinadi. Mos kelgan kamerada videoregistratorni saqlab, AI ni mavjud oqimga ulash mumkin." },
         { q: "Yuz tanish qonuniymi?", a: "Yuz tanishni qonuniy asosda qo'llash mumkin: xodimlar davomati uchun ularning roziligi bilan, o'z hududingizda xavfsizlik maqsadida. Muhimi — ma'lumotlarni himoya qilish va faqat kelishilgan maqsadda ishlatish. Biz tizimni sizning ichki serveringizda (on-premise) qurishimiz mumkin, shunda yuz ma'lumotlari tashqariga umuman chiqmaydi. Aniq huquqiy tafsilotlarni loyihaga qarab kelishamiz." },
         { q: "Yangi kamera o'rnatish kerakmi?", a: "Odatda yo'q. Agar mavjud kameralar kerakli burchak va sifatni bersa — ular yetarli. Faqat ba'zi nuqtada (masalan, avto raqam uchun to'g'ri burchak yoki past yorug'lik) qo'shimcha kamera tavsiya qilinishi mumkin. Buni kameralar auditida ochiq aytamiz, majburlamaymiz." },
         { q: "Ma'lumotlar qayerda saqlanadi — bulutdami?", a: "Ikkala variant ham bor. Maxfiylik muhim bo'lsa, hamma tahlil sizning ichki serveringizda (on-premise) ishlaydi va video tashqariga chiqmaydi. Yengilroq holatlarda bulutli ishlov arzonroq bo'ladi. Qaysi biri to'g'ri kelishini birga hal qilamiz." },
@@ -174,7 +175,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "для камер видеонаблюдения",
       title2: "",
       subtitle:
-        "ИИ-видеоаналитика в реальном времени анализирует поток с существующих IP-камер видеонаблюдения. Подключаем камеры по RTSP/ONVIF без замены работающей системы: считаем посетителей, фиксируем посещаемость по лицу, выявляем отсутствие касок и считываем номера авто (ANPR). События сразу поступают в Telegram или дашборд. Обработка работает на вашем сервере (on-premise) или в облаке.",
+        "ИИ-видеоаналитика в реальном времени анализирует поток с камер видеонаблюдения: считает посетителей, фиксирует посещаемость по лицу, выявляет отсутствие касок и считывает номера авто (ANPR). Сначала проверяем модель камеры, чёткость изображения, ракурс, освещение и RTSP/ONVIF. Если качество не подходит для задачи, может потребоваться настройка, дополнительная или новая камера. События поступают в Telegram или дашборд; обработка работает на вашем сервере или в облаке.",
       trust: "Подключение по RTSP/ONVIF • От $990 • Резидент IT Park",
       ctaPrimary: "Заказать бесплатный аудит камер",
       ctaSecondary: "Возможности ИИ-видеоаналитики",
@@ -190,7 +191,7 @@ export const CONTENT: ServicePageContent = {
         { icon: "clipboard-list", title: "Посещаемость по распознаванию лиц", desc: "Узнаёт лицо сотрудника или гостя и автоматически фиксирует вход-выход — без турникета. Журнал посещаемости, контроль доступа, чёрный список (blacklist) и уведомление о VIP-клиенте." },
         { icon: "life-buoy", title: "Контроль охраны труда", desc: "На заводе и стройке выявляет сотрудника без каски, жилета или спецодежды; замечает вход в опасную зону (станок, кран) и сразу предупреждает. Профилактика несчастных случаев." },
         { icon: "search", title: "Распознавание автономеров (ANPR)", desc: "Читает госномер автомобиля и пишет в базу: автоматизация парковки и въезда, открытие шлагбаума разрешённой машине, разделение гостевого и служебного транспорта." },
-        { icon: "wifi", title: "Работает с существующими камерами", desc: "Покупать новые камеры или специальное оборудование не нужно. Подключаемся к вашим IP-камерам по RTSP/ONVIF — слой ИИ добавляется поверх существующего видеонаблюдения." },
+        { icon: "wifi", title: "Сначала аудит камер", desc: "Проверяем не только RTSP/ONVIF, но и чёткость изображения, ракурс и освещение. Если камера подходит под задачу, подключаем ИИ к существующему потоку. При плохом качестве изображения рекомендуем настройку, дополнительную или новую камеру." },
         { icon: "bell", title: "Уведомления в реальном времени", desc: "Когда происходит событие — сотрудник без каски, незнакомое лицо, машина без доступа — уведомление за секунды уходит в Telegram, на дашборд или пульт охраны, со скриншотом и временем. Запись потом найдёте в архиве." },
       ],
     },
@@ -226,7 +227,7 @@ export const CONTENT: ServicePageContent = {
       title: "Какому бизнесу",
       titleAccent: "какая польза?",
       subtitle:
-        "Как четыре основных use-case работают в разных отраслях. Каждый пример добавляется поверх существующих камер — новое оборудование не требуется.",
+        "Как четыре основных use-case работают в разных отраслях. На аудите определяем, какие камеры подходят; в отдельных точках может понадобиться дополнительная или новая камера.",
       items: [
         { tag: "01", title: "Магазин и торговый центр", desc: "Считает вошедших посетителей, показывает часы пик и очередь у кассы. Вы в точных цифрах видите эффективность маркетинга (конверсию) и сколько сотрудников нужно в смену." },
         { tag: "02", title: "Завод и стройплощадка", desc: "В реальном времени выявляет сотрудника без каски и жилета, вход в опасную зону и сразу шлёт сигнал мастеру или в отдел ТБ. Журнал нарушений и профилактика несчастных случаев." },
@@ -268,7 +269,7 @@ export const CONTENT: ServicePageContent = {
         { q: "Сколько стоит внедрение ИИ-видеоаналитики?", a: "Разовое подключение начинается от $990 (≈ от 12 млн сум) — это стоимость настройки и интеграции, а не ежемесячная подписка. После запуска заказчик отдельно оплачивает сервер, облачную обработку или API, если они нужны выбранной архитектуре. Итоговая цена зависит от числа камер и задач; её фиксируем письменно после бесплатного аудита." },
         { q: "Подойдут ли камеры видеонаблюдения Hikvision и Dahua?", a: "Да, если конкретная модель передаёт видеопоток по RTSP или поддерживает ONVIF. Подключаемся к существующей системе, видеорегистратор обычно остаётся на месте. Во время аудита проверяем модель, качество изображения, ракурс и освещение: совместимость зависит от оборудования и выбранной задачи." },
         { q: "Законно ли распознавание лиц?", a: "Распознавание лиц можно применять на законных основаниях: для учёта посещаемости сотрудников с их согласия, для безопасности на вашей территории. Важно защищать данные и использовать их только в согласованных целях. Мы можем построить систему на вашем внутреннем сервере (on-premise), тогда данные о лицах вообще не выходят наружу. Конкретные юридические детали согласуем под проект." },
-        { q: "Нужно ли менять камеры для ИИ-видеоаналитики?", a: "Обычно нет. На аудите проверяем модель, разрешение, угол обзора, освещение и поддержку RTSP/ONVIF. Если существующая камера подходит, подключаем ИИ к её видеопотоку. Дополнительную камеру рекомендуем только там, где текущего ракурса или качества не хватает для выбранной задачи." },
+        { q: "Нужно ли менять камеры для ИИ-видеоаналитики?", a: "Это зависит от задачи и качества изображения. На аудите проверяем модель, разрешение, чёткость, угол обзора, освещение и поддержку RTSP/ONVIF. Размытое изображение может мешать надёжному распознаванию; тогда рекомендуем перенастроить или заменить камеру либо добавить камеру с подходящим ракурсом." },
         { q: "Где хранятся данные — в облаке?", a: "Есть оба варианта. Если важна приватность, весь анализ работает на вашем внутреннем сервере (on-premise) и видео не выходит наружу. В более лёгких случаях облачная обработка дешевле. Что подходит именно вам — решаем вместе." },
         { q: "Как приходят уведомления?", a: "Когда происходит событие — сотрудник без каски, незнакомое лицо, машина без доступа или растущая очередь — уведомление за секунды уходит в Telegram, на дашборд или пульт охраны. В уведомлении есть скриншот, время и место; запись потом найдёте в архиве." },
         { q: "Может ли контролировать каски и спецодежду?", a: "Да. Система выявляет сотрудника без каски, жилета или спецодежды и замечает вход в опасную зону. При нарушении сразу идёт сигнал мастеру или в отдел ТБ и запись в журнал — это помогает предотвращать несчастные случаи." },
@@ -333,8 +334,8 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "with AI",
       title2: "",
       subtitle:
-        "AI video analytics is artificial intelligence that analyses your camera feed in real time: it counts people, marks attendance by face, checks helmets and workwear, and reads vehicle number plates. No new hardware to buy — we connect to your existing IP cameras, turn what they see into events, and send an instant alert to Telegram or a dashboard. Runs on-premise (on your server) or in the cloud.",
-      trust: "IT Park resident • Works with existing cameras • Payment: 30% upfront",
+        "AI video analytics analyses camera footage in real time to count people, log attendance by face, check helmets and workwear, and read number plates. We first audit camera model, image clarity, angle, lighting and stream support. If footage is too blurry for the task, adjustment, an additional camera or replacement may be needed. Alerts go to Telegram or a dashboard; processing runs on-premise or in the cloud.",
+      trust: "IT Park resident • Camera audit before connection • Payment: 30% upfront",
       ctaPrimary: "Book free consultation",
       ctaSecondary: "What can an AI camera do?",
     },
@@ -343,13 +344,13 @@ export const CONTENT: ServicePageContent = {
       title: "What can",
       titleAccent: "AI video analytics do?",
       subtitle:
-        "One AI layer teaches your existing cameras several jobs — from counting people to reading number plates. All in real time, without an operator staring at a screen.",
+        "After checking camera suitability, we configure AI for tasks such as people counting and number-plate recognition — in real time, without an operator staring at a screen.",
       items: [
         { icon: "users", title: "People detection & counting", desc: "Counts people in and out automatically: store footfall, queue length, room occupancy and peak hours. Precise numbers for marketing and staff planning." },
         { icon: "clipboard-list", title: "Attendance by face recognition", desc: "Recognises a staff member or guest and logs entry and exit automatically — no turnstile. Attendance log, access control, blacklist and VIP-customer alerts." },
         { icon: "life-buoy", title: "Workplace safety control", desc: "On factories and construction sites it spots workers without a helmet, vest or workwear; detects entry into a danger zone (machine, crane) and alerts instantly. Accident prevention." },
         { icon: "search", title: "Number-plate recognition (ANPR)", desc: "Reads a vehicle's plate and logs it to a database: parking and access automation, opening the barrier for an allowed car, separating guest and company transport." },
-        { icon: "wifi", title: "Works with existing cameras", desc: "No need to buy new cameras or special hardware. We connect to your IP cameras over RTSP/ONVIF — the AI layer is added on top of your existing CCTV." },
+        { icon: "wifi", title: "Camera audit comes first", desc: "We check RTSP/ONVIF support as well as image clarity, angle and lighting. If a camera suits the task, we connect AI to its existing stream. Poor image quality may require adjustment, an additional camera or replacement." },
         { icon: "bell", title: "Real-time alerts", desc: "When an event happens — a worker without a helmet, an unknown face, a car without access — an alert reaches Telegram, a dashboard or the security desk within seconds, with a screenshot and timestamp. The recording stays in the archive." },
       ],
     },
@@ -385,7 +386,7 @@ export const CONTENT: ServicePageContent = {
       title: "Which business gets",
       titleAccent: "which benefit?",
       subtitle:
-        "How the four core use cases work across industries. Each example is added on top of existing cameras — no new hardware required.",
+        "How the four core use cases work across industries. The camera audit determines what is suitable; some locations may need an additional or replacement camera.",
       items: [
         { tag: "01", title: "Retail & shopping malls", desc: "Counts visitors coming in, shows peak hours and the queue at the till. You learn marketing effectiveness (conversion) and how many staff a shift needs — in hard numbers." },
         { tag: "02", title: "Factory & construction site", desc: "Spots workers without a helmet or vest and entries into danger zones in real time, alerting the foreman or safety team instantly. Violation log and accident prevention." },
@@ -423,11 +424,11 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "answers",
       subtitle: "Common questions about AI video analytics.",
       items: [
-        { q: "How can I automate cameras with AI?", a: "By adding an AI (computer vision) layer to your existing IP cameras — no new hardware required. Four main directions: 1) People detection and counting (footfall, queues, peak hours); 2) Face-recognition attendance and access control (no turnstile); 3) Workplace safety monitoring (helmet/vest, danger zones); 4) Automatic number-plate recognition (ANPR) — barrier and parking automation. We connect to your cameras via RTSP/ONVIF, detect the event in real time and send an alert to Telegram or a dashboard within seconds. Runs on-premise or in the cloud." },
+        { q: "How can I automate cameras with AI?", a: "First we check whether each camera's image quality, angle, lighting and RTSP/ONVIF stream suit the task. For suitable cameras, we configure people counting, face-recognition attendance, helmet checks or ANPR, then send event alerts to Telegram or a dashboard. Blurry footage may require camera adjustment, an additional camera or replacement. The system runs on-premise or in the cloud." },
         { q: "How much does AI video analytics cost?", a: "From $990 (one-time setup) — a single connection fee to link AI to your existing cameras, not a subscription. After setup you run the AI yourself: you pay for your own hosting and usage (API/server). The exact price depends on the number of cameras and the complexity of the task (people counting, face recognition or ANPR) — we confirm it in a written proposal after a free consultation and camera audit." },
-        { q: "Does it work with existing cameras?", a: "Yes — that's the whole idea of the service. There's no need to buy new cameras or special hardware. We connect directly to your IP cameras over RTSP/ONVIF (Hikvision, Dahua and others). The AI layer is added on top of your existing CCTV; the NVR stays in place." },
+        { q: "Can it work with my existing cameras?", a: "It depends on the camera and the task. We check the model, RTSP/ONVIF stream, image clarity, angle and lighting first. Blurry footage may prevent reliable recognition; we may recommend adjusting or replacing a camera, or adding one with a suitable view. Compatible cameras can usually be connected while keeping the existing recorder." },
         { q: "Is face recognition legal?", a: "Face recognition can be used on legal grounds: for staff attendance with their consent, and for security on your own premises. The key is protecting the data and using it only for the agreed purpose. We can build the system on your internal server (on-premise), so face data never leaves the premises. Specific legal details are agreed per project." },
-        { q: "Do I need to install new cameras?", a: "Usually not. If your existing cameras give the needed angle and quality, they are enough. Only at certain points (for example, the right angle for a number plate, or low light) might an extra camera be recommended. We say this openly during the camera audit, without pushing." },
+        { q: "Do I need to install new cameras?", a: "The audit determines that. If the current image is clear and the angle and lighting suit the task, we can use the existing camera. If footage is blurry or the view is unsuitable, adjustment, an additional camera or replacement may be needed." },
         { q: "Where is the data stored — in the cloud?", a: "Both options exist. If privacy matters, all analysis runs on your internal server (on-premise) and video never leaves the premises. In lighter cases, cloud processing is cheaper. We decide together what fits you." },
         { q: "How do alerts arrive?", a: "When an event happens — a worker without a helmet, an unknown face, a car without access, or a growing queue — an alert reaches Telegram, a dashboard or the security desk within seconds. The alert includes a screenshot, time and place; the recording is later found in the archive." },
         { q: "Can it monitor helmets and workwear?", a: "Yes. The system detects a worker without a helmet, vest or workwear and notices entry into a danger zone. On a violation, an alert goes to the foreman or safety team at once and is logged — this helps prevent accidents." },
@@ -492,7 +493,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "بالذكاء الاصطناعي",
       title2: "",
       subtitle:
-        "تحليلات الفيديو بالذكاء الاصطناعي هي ذكاء اصطناعي يحلل بث كاميراتك في الوقت الحقيقي: يعدّ الأشخاص، ويسجّل الحضور بالوجه، ويراقب الخوذ وملابس العمل، ويقرأ لوحات أرقام المركبات. لا حاجة لشراء أجهزة جديدة — نتصل بكاميرات IP الحالية لديك، ونحوّل ما تراه إلى أحداث، ونرسل تنبيهًا فوريًا إلى Telegram أو لوحة التحكم. يعمل on-premise (على خادمك) أو في السحابة.",
+        "تحليلات الفيديو بالذكاء الاصطناعي تحلل بث الكاميرات في الوقت الحقيقي لعدّ الأشخاص وتسجيل الحضور ومراقبة الخوذ وقراءة لوحات المركبات. نفحص أولًا وضوح الصورة والزاوية والإضاءة ودعم RTSP/ONVIF. إذا كانت الصورة ضبابية أو غير مناسبة للمهمة، فقد يلزم ضبط الكاميرا أو إضافة كاميرا أو استبدالها. تُرسل التنبيهات إلى Telegram أو لوحة التحكم، وتعمل المعالجة على خادمك أو في السحابة.",
       trust: "مقيم في IT Park • يعمل مع الكاميرات الحالية • الدفع: 30% مقدمًا",
       ctaPrimary: "احجز استشارة مجانية",
       ctaSecondary: "ماذا تفعل الكاميرا الذكية؟",
@@ -508,7 +509,7 @@ export const CONTENT: ServicePageContent = {
         { icon: "clipboard-list", title: "الحضور عبر التعرف على الوجه", desc: "يتعرف على وجه الموظف أو الضيف ويسجّل الدخول والخروج تلقائيًا — دون بوابة. سجل الحضور، التحكم في الوصول، القائمة السوداء وتنبيه العميل المميز (VIP)." },
         { icon: "life-buoy", title: "مراقبة سلامة العمل", desc: "في المصنع وموقع البناء يكتشف الموظف بلا خوذة أو سترة أو ملابس واقية؛ يلاحظ الدخول إلى منطقة خطرة (آلة، رافعة) ويحذّر فورًا. الوقاية من الحوادث." },
         { icon: "search", title: "التعرف على لوحات المركبات (ANPR)", desc: "يقرأ لوحة رقم السيارة ويسجلها في قاعدة البيانات: أتمتة المواقف والدخول، فتح الحاجز للسيارة المسموح لها، فصل مركبات الضيوف عن مركبات العمل." },
-        { icon: "wifi", title: "يعمل مع الكاميرات الحالية", desc: "لا حاجة لشراء كاميرات جديدة أو أجهزة خاصة. نتصل بكاميرات IP لديك عبر RTSP/ONVIF — تُضاف طبقة AI فوق نظام المراقبة الحالي." },
+        { icon: "wifi", title: "نبدأ بفحص الكاميرات", desc: "نفحص دعم RTSP/ONVIF ووضوح الصورة والزاوية والإضاءة. إذا كانت الكاميرا مناسبة للمهمة، نربط الذكاء الاصطناعي بالبث الحالي. قد تتطلب الصورة غير الواضحة ضبط الكاميرا أو إضافة كاميرا أو استبدالها." },
         { icon: "bell", title: "تنبيهات في الوقت الحقيقي", desc: "عند وقوع حدث — موظف بلا خوذة، وجه غير معروف، سيارة بلا صلاحية — يصل التنبيه خلال ثوانٍ إلى Telegram أو لوحة التحكم أو مركز الأمن، مع لقطة شاشة ووقت. يبقى التسجيل في الأرشيف." },
       ],
     },
@@ -584,7 +585,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { q: "كيف يمكن أتمتة الكاميرات بالذكاء الاصطناعي؟", a: "من خلال إضافة طبقة ذكاء اصطناعي (رؤية حاسوبية) إلى كاميرات IP الحالية لديك — دون الحاجة إلى أجهزة جديدة. أربعة اتجاهات رئيسية: 1) اكتشاف الأشخاص وعدّهم (عدد الزوار، الطوابير، ساعات الذروة)؛ 2) الحضور والتحكم في الدخول عبر الوجه (بدون بوابة)؛ 3) مراقبة السلامة المهنية (الخوذة/السترة، المناطق الخطرة)؛ 4) التعرف على لوحات المركبات (ANPR) — أتمتة الحاجز ومواقف السيارات. نتصل بكاميراتك عبر RTSP/ONVIF، ونكتشف الحدث في الوقت الفعلي ونرسل تنبيهًا خلال ثوانٍ إلى Telegram أو لوحة المعلومات. يعمل محليًا (on-premise) أو في السحابة." },
         { q: "كم تكلف تحليلات الفيديو الذكية؟", a: "من 990$ (تركيب لمرة واحدة) — وهي رسوم لمرة واحدة لربط الذكاء الاصطناعي بكاميراتك الحالية، وليست اشتراكًا. بعد التركيب تدير عمل الذكاء الاصطناعي بنفسك: تدفع الاستضافة والاستخدام (API/الخادم) بنفسك. السعر الدقيق يعتمد على عدد الكاميرات وتعقيد المهمة (عدّ الأشخاص، التعرف على الوجه أو ANPR) — نحدده في عرض مكتوب بعد استشارة مجانية وتدقيق الكاميرات." },
-        { q: "هل يعمل مع الكاميرات الحالية؟", a: "نعم — هذه هي الفكرة الأساسية للخدمة. لا حاجة لشراء كاميرات جديدة أو أجهزة خاصة. نتصل مباشرة بكاميرات IP لديك عبر RTSP/ONVIF (Hikvision وDahua وغيرها). تُضاف طبقة AI فوق نظام المراقبة الحالي، ويبقى مسجل الفيديو في مكانه." },
+        { q: "هل يمكن استخدام كاميراتي الحالية؟", a: "يعتمد ذلك على الكاميرا والمهمة. نفحص الطراز وبث RTSP/ONVIF ووضوح الصورة والزاوية والإضاءة أولًا. قد تمنع الصورة الضبابية التعرف الموثوق؛ عندها قد نوصي بضبط الكاميرا أو استبدالها أو إضافة كاميرا مناسبة. يمكن توصيل الكاميرات المتوافقة مع إبقاء جهاز التسجيل الحالي." },
         { q: "هل التعرف على الوجه قانوني؟", a: "يمكن استخدام التعرف على الوجه على أسس قانونية: لتسجيل حضور الموظفين بموافقتهم، وللأمن في منطقتك الخاصة. المهم حماية البيانات واستخدامها للغرض المتفق عليه فقط. يمكننا بناء النظام على خادمك الداخلي (on-premise)، فلا تخرج بيانات الوجوه للخارج إطلاقًا. نتفق على التفاصيل القانونية الدقيقة حسب المشروع." },
         { q: "هل يجب تركيب كاميرات جديدة؟", a: "عادة لا. إذا أعطت الكاميرات الحالية الزاوية والجودة المطلوبة فهي كافية. فقط في نقاط معينة (مثل الزاوية الصحيحة للوحة السيارة أو الإضاءة الضعيفة) قد نوصي بكاميرا إضافية. نقول ذلك بصراحة في تدقيق الكاميرات دون إلزام." },
         { q: "أين تُحفظ البيانات — في السحابة؟", a: "يتوفر الخياران. إذا كانت الخصوصية مهمة، يعمل كل التحليل على خادمك الداخلي (on-premise) ولا يخرج الفيديو للخارج. في الحالات الأخف تكون المعالجة السحابية أرخص. نقرر معًا ما يناسبك." },
@@ -651,7 +652,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "за допомогою ШІ",
       title2: "",
       subtitle:
-        "AI-відеоаналітика — це штучний інтелект, який у реальному часі аналізує зображення з ваших камер: рахує людей, відмічає відвідуваність за обличчям, контролює каски й спецодяг і розпізнає автомобільні номери. Купувати нове обладнання не потрібно — ми підключаємося до ваших наявних IP-камер, перетворюємо те, що вони бачать, на події й миттєво надсилаємо сповіщення в Telegram або на дашборд. Працює on-premise (на вашому сервері) або в хмарі.",
+        "AI-відеоаналітика в реальному часі аналізує відео з камер: рахує людей, фіксує відвідуваність за обличчям, контролює каски й спецодяг та розпізнає автомобільні номери. Спочатку перевіряємо модель камери, чіткість зображення, ракурс, освітлення й підтримку RTSP/ONVIF. Якщо якість не підходить для завдання, може знадобитися налаштування, додаткова або нова камера. Сповіщення надходять у Telegram чи на дашборд; обробка працює на вашому сервері або в хмарі.",
       trust: "Резидент IT Park • Працює з наявними камерами • Оплата: 30% передоплата",
       ctaPrimary: "Безкоштовна консультація",
       ctaSecondary: "Що вміє AI-камера?",
@@ -667,7 +668,7 @@ export const CONTENT: ServicePageContent = {
         { icon: "clipboard-list", title: "Відвідуваність за розпізнаванням облич", desc: "Розпізнає обличчя співробітника чи гостя й автоматично фіксує вхід-вихід — без турнікета. Журнал відвідуваності, контроль доступу, чорний список і сповіщення про VIP-клієнта." },
         { icon: "life-buoy", title: "Контроль охорони праці", desc: "На заводі та будівництві виявляє співробітника без каски, жилета чи спецодягу; помічає вхід у небезпечну зону (верстат, кран) і одразу попереджає. Профілактика нещасних випадків." },
         { icon: "search", title: "Розпізнавання автономерів (ANPR)", desc: "Читає держномер автомобіля й пише в базу: автоматизація паркування та в'їзду, відкриття шлагбаума дозволеній машині, розділення гостьового та службового транспорту." },
-        { icon: "wifi", title: "Працює з наявними камерами", desc: "Купувати нові камери чи спеціальне обладнання не потрібно. Підключаємося до ваших IP-камер по RTSP/ONVIF — шар AI додається поверх наявного відеоспостереження." },
+        { icon: "wifi", title: "Спочатку аудит камер", desc: "Перевіряємо підтримку RTSP/ONVIF, чіткість зображення, ракурс та освітлення. Якщо камера підходить для завдання, підключаємо AI до наявного потоку. Низька якість може вимагати налаштування, додаткової або нової камери." },
         { icon: "bell", title: "Сповіщення в реальному часі", desc: "Коли стається подія — співробітник без каски, незнайоме обличчя, машина без доступу — сповіщення за секунди йде в Telegram, на дашборд або пульт охорони, зі скріншотом і часом. Запис потім знайдете в архіві." },
       ],
     },
@@ -703,7 +704,7 @@ export const CONTENT: ServicePageContent = {
       title: "Якому бізнесу",
       titleAccent: "яка користь?",
       subtitle:
-        "Як чотири основні use-case працюють у різних галузях. Кожен приклад додається поверх наявних камер — нове обладнання не потрібне.",
+        "Як чотири основні сценарії працюють у різних галузях. Під час аудиту визначаємо, які камери підходять; в окремих місцях може знадобитися додаткова або нова камера.",
       items: [
         { tag: "01", title: "Магазин і торговий центр", desc: "Рахує відвідувачів, що заходять, показує години пік і чергу біля каси. Ви точними цифрами дізнаєтеся ефективність маркетингу (конверсію) і скільки співробітників потрібно на зміну." },
         { tag: "02", title: "Завод і будмайданчик", desc: "У реальному часі виявляє співробітника без каски й жилета, вхід у небезпечну зону і одразу шле сигнал майстру або у відділ ОП. Журнал порушень і профілактика нещасних випадків." },
@@ -741,9 +742,9 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "відповіді",
       subtitle: "Часті запитання про AI-відеоаналітику.",
       items: [
-        { q: "Як автоматизувати камери за допомогою AI?", a: "Підключивши до ваших наявних IP-камер шар AI (комп'ютерний зір) — нове обладнання не потрібне. 4 основні напрями: 1) Виявлення та підрахунок людей (відвідуваність, черги, години пік); 2) Відвідуваність і контроль доступу за обличчям (без турнікета); 3) Контроль охорони праці (каска/жилет, небезпечні зони); 4) Розпізнавання автономерів (ANPR) — автоматизація шлагбаума та парковки. Підключаємось до камер через RTSP/ONVIF, розпізнаємо подію в реальному часі та за секунди надсилаємо сповіщення в Telegram або дашборд. Працює on-premise або у хмарі." },
+        { q: "Як автоматизувати камери за допомогою AI?", a: "Спочатку перевіряємо, чи підходять якість зображення, ракурс, освітлення та потік RTSP/ONVIF для потрібного завдання. Для сумісних камер налаштовуємо підрахунок людей, облік за обличчям, контроль касок або ANPR і надсилаємо сповіщення в Telegram чи на дашборд. Розмите зображення може вимагати налаштування, додаткової або нової камери." },
         { q: "Скільки коштує AI-відеоаналітика?", a: "Від $990 (разове підключення) — це одноразова плата за підключення AI до ваших наявних камер, а не підписка. Після підключення ви самі керуєте роботою AI: хостинг і використання (API/сервер) оплачуєте самостійно. Точна ціна залежить від кількості камер і складності завдання (підрахунок людей, розпізнавання облич або ANPR) — уточнюємо в письмовій пропозиції після безкоштовної консультації та аудиту камер." },
-        { q: "Чи працює з наявними камерами?", a: "Так — це основна ідея послуги. Купувати нові камери чи спеціальне обладнання не потрібно. Підключаємося напряму до ваших IP-камер по RTSP/ONVIF (Hikvision, Dahua та інші). Шар AI додається поверх наявного відеоспостереження, відеореєстратор залишається на місці." },
+        { q: "Чи можна використовувати наявні камери?", a: "Це залежить від камери та завдання. Спочатку перевіряємо модель, потік RTSP/ONVIF, чіткість зображення, ракурс і освітлення. Розмите зображення може завадити надійному розпізнаванню; тоді рекомендуємо налаштувати або замінити камеру чи додати камеру з відповідним ракурсом. Сумісну камеру зазвичай можна підключити, залишивши наявний реєстратор." },
         { q: "Чи законне розпізнавання облич?", a: "Розпізнавання облич можна застосовувати на законних підставах: для обліку відвідуваності співробітників за їхньою згодою, для безпеки на вашій території. Важливо захищати дані й використовувати їх лише за узгодженою метою. Ми можемо побудувати систему на вашому внутрішньому сервері (on-premise), тоді дані про обличчя взагалі не виходять назовні. Конкретні юридичні деталі узгоджуємо під проєкт." },
         { q: "Чи потрібно ставити нові камери?", a: "Зазвичай ні. Якщо наявні камери дають потрібний кут і якість — їх достатньо. Лише в окремих точках (наприклад, правильний кут для автономера чи слабке освітлення) може знадобитися додаткова камера. Скажемо про це прямо на аудиті камер, без нав'язування." },
         { q: "Де зберігаються дані — у хмарі?", a: "Є обидва варіанти. Якщо важлива приватність, весь аналіз працює на вашому внутрішньому сервері (on-premise) і відео не виходить назовні. У легших випадках хмарна обробка дешевша. Що підходить саме вам — вирішуємо разом." },
