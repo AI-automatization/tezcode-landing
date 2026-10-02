@@ -23,7 +23,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "AI agent",
       title2: "yaratish",
       subtitle:
-        "Tezcode Toshkent va butun O'zbekistondagi bizneslar uchun buyurtma asosida AI agentlar yaratadi. Agent Telegram yoki saytdagi so'rovni tushunadi, ma'lumotni CRMga yozadi va kelishilgan amallarni bajaradi. O'zbek va rus tillaridagi savdo, buyurtma hamda hisobot jarayonlaridan bitta vazifani tanlab boshlaymiz. Dastlabki narx $400 dan; aniq ish hajmi, integratsiyalar va muddat bepul konsultatsiyadan keyin yozma taklifda belgilanadi.",
+        "Biznesingizga AI agent kerakmi? Tezcode Telegram yoki saytda mijozlarga javob beradigan, buyurtmalarni qabul qilib CRMga yozadigan va hisobot tayyorlaydigan agentlarni buyurtma asosida yaratadi. Toshkent va butun O'zbekiston uchun, o'zbek va rus tillarida. Narx $400 dan. Bepul konsultatsiyada bitta vazifani tanlaymiz; ish hajmi, integratsiyalar va muddatni yozma taklifda belgilaymiz.",
       trust:
         "Toshkent va butun O'zbekiston • IT Park rasmiy rezidenti • Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan",
       ctaPrimary: "Bepul konsultatsiya so'rang",
@@ -161,6 +161,10 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "javoblar",
       subtitle: "AI agent yaratish, bepul imkoniyatlar, narx va integratsiya haqida savol-javoblar.",
       items: [
+        {
+          q: "Menga AI agent kerak — nimadan boshlayman?",
+          a: "Avval agent bajarishi kerak bo'lgan bitta vazifani ayting: mijozlarga javob berish, buyurtma qabul qilish, CRMga yozish yoki hisobot tayyorlash. Tezcode'ga Telegram orqali yozing yoki +998 91 777 66 09 ga qo'ng'iroq qiling. Bepul 30 daqiqalik konsultatsiyada ish jarayoningiz, foydalanayotgan tizimlaringiz va byudjetingizni aniqlaymiz; tayyor vosita yetarlimi yoki maxsus agent kerakmi, shuni baholaymiz. Maxsus AI agent yaratish $400 dan, oddiy agent uchun odatiy muddat 1–2 hafta. Aniq narx, muddat hamda model/API va hosting xarajatlari yozma taklifda kelishiladi.",
+        },
         {
           q: "Bepul AI agent bormi? Tezcode xizmatida nima bepul?",
           a: "Tezcode'da 30 daqiqalik dastlabki konsultatsiya bepul; biznesingizga mos agentni ishlab chiqish $400 dan boshlanadi. Tayyor vositaning bepul rejimi bilan buyurtma asosida CRM yoki 1Cga ulanadigan agent bir xil xizmat emas. Mustaqil sinovda foydalanish limiti, model yoki API to'lovi, hosting va ma'lumot saqlash shartlarini alohida tekshiring."
