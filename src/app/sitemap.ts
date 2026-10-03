@@ -134,7 +134,7 @@ const ROUTES: Route[] = [
   // cities here, but those small-city pages were thin template duplicates that
   // Google refused to index, so they're trimmed to the two real cities too.
   ...CITY_SERVICES.flatMap((service) =>
-    ACTIVE_CITY_SLUGS.map((slug) => ({
+    ACTIVE_CITY_SLUGS.filter((slug) => service !== "/ai-agent" || slug !== "toshkent").map((slug) => ({
       path: `${service}/${slug}`,
       priority: 0.7,
       changeFrequency: "monthly" as const,

@@ -1,6 +1,5 @@
 import { Suspense } from "react";
 import { Navbar } from "@/components/Navbar";
-import { RemoteDelivery } from "@/components/RemoteDelivery";
 import { Hero } from "@/components/Hero";
 import { TechStackMarquee } from "@/components/TechStackMarquee";
 import { ProductsGrid } from "@/components/ProductsGrid";
@@ -45,7 +44,6 @@ export default async function HomePage({
 
       {/* Hero — above the fold */}
       <Hero />
-      <RemoteDelivery locale={locale} />
 
       {/* Tech stack marquee — social proof */}
       <TechStackMarquee />

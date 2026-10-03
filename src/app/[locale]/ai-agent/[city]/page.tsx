@@ -7,8 +7,8 @@ import { getCity } from "@/data/cities";
 import { buildAiAgentCityContent } from "./cityContent";
 
 // Per-city AI-agent landing pages: /ai-agent/<city>.
-// Only the two largest cities for now.
-const ACTIVE_CITY_SLUGS = ["toshkent", "samarqand"];
+// Tashkent is consolidated into /ai-agent via next.config.ts redirects.
+const ACTIVE_CITY_SLUGS = ["samarqand"];
 
 export const dynamicParams = false;
 

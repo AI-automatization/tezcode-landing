@@ -527,7 +527,7 @@ const SERVICE_CITY_SLUGS: Record<string, string[]> = {
   "pos-tizimi": ["toshkent", "samarqand"], // trimmed from 12: small-city pages were thin duplicates
   "ai-avtomatizatsiya": ["toshkent", "samarqand"], // trimmed from 12: small-city pages were thin duplicates
   "ai-chatbot": ["toshkent", "samarqand"],
-  "ai-agent": ["toshkent", "samarqand"],
+  "ai-agent": ["samarqand"],
   "telegram-bot-biznes": ["toshkent", "samarqand"],
   "biznes-avtomatlashtirish": ["toshkent", "samarqand"],
 };

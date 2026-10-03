@@ -73,7 +73,12 @@ const nextConfig: NextConfig = {
         { source: `/:locale${service}/${city}`, destination: "/:locale" + service, permanent: true },
       ]),
     );
-    return [...founderRedirects, ...retiredCityRedirects];
+    const aiAgentTashkentRedirects = ["", "/uz", "/ru", "/en", "/ar", "/uk"].map((prefix) => ({
+      source: `${prefix}/ai-agent/toshkent`,
+      destination: `${prefix === "/uz" ? "" : prefix}/ai-agent`,
+      statusCode: 301,
+    }));
+    return [...founderRedirects, ...retiredCityRedirects, ...aiAgentTashkentRedirects];
   },
   // Headers for security + performance
   async headers() {
