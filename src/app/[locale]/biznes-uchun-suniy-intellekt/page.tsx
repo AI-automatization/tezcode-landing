@@ -56,6 +56,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return buildPageMetadata({
     locale,
     path: PATH,
+    // Only the uz copy is unique; other locales reuse /ai-ozbekistonda content,
+    // so they canonicalize to the uz original instead of competing with it.
+    availableLocales: ["uz"],
     title: { absolute: meta.title },
     description: meta.description,
     keywords: [

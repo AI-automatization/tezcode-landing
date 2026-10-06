@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle } from "../articles";
+import { getArticle, localizeArticleMeta } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "sotuvni-avtomatlashtirish";
@@ -19,13 +19,18 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const localized = localizeArticleMeta(SLUG, locale, {
+    title:
+      "Sotuvni avtomatlashtirish: Telegram, Instagram va CRM (2026) | Tezcode",
+    description:
+      "Sotuvni avtomatlashtirish: barcha kanal (Telegram, Instagram, WhatsApp, sayt) → bitta CRM, AI chatbot 24/7 javob va lid saralash, buyurtma avtomatik 1C/CRM'ga. Bironta lid yo'qolmaydi. Tezcode qo'llanmasi.",
+  });
   return buildPageMetadata({
     locale,
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title: "Sotuvni avtomatlashtirish: Telegram, Instagram va CRM (2026) | Tezcode",
-    description:
-      "Sotuvni avtomatlashtirish: barcha kanal (Telegram, Instagram, WhatsApp, sayt) → bitta CRM, AI chatbot 24/7 javob va lid saralash, buyurtma avtomatik 1C/CRM'ga. Bironta lid yo'qolmaydi. Tezcode qo'llanmasi.",
+    title: localized.title,
+    description: localized.description,
     keywords: [
       "sotuvni avtomatlashtirish",
       "instagram orqali sotuv avtomatlashtirish",

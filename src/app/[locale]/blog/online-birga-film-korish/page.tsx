@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle } from "../articles";
+import { getArticle, localizeArticleMeta } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "online-birga-film-korish";
@@ -19,15 +19,19 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const localized = localizeArticleMeta(SLUG, locale, {
+    title:
+      "Do'stlar bilan online birga film ko'rish: Watch Party qanday ishlaydi | Tezcode",
+    description:
+      "Do'stlar bilan masofadan turib bir vaqtda film va video ko'rish (Watch Party) qanday ishlaydi, nima kerak va qaysi manbalardan ko'rish mumkin. WeWatch misolida.",
+  });
   return buildPageMetadata({
     locale,
     // untranslated locales canonicalize to the uz original (see lib/seo.ts)
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title:
-      "Do'stlar bilan online birga film ko'rish: Watch Party qanday ishlaydi | Tezcode",
-    description:
-      "Do'stlar bilan masofadan turib bir vaqtda film va video ko'rish (Watch Party) qanday ishlaydi, nima kerak va qaysi manbalardan ko'rish mumkin. WeWatch misolida.",
+    title: localized.title,
+    description: localized.description,
     keywords: [
       "online birga film ko'rish",
       "watch party",

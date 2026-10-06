@@ -320,7 +320,7 @@ export function getOrganizationSchema() {
       },
       {
         "@type": "ContactPoint",
-        telephone: "+998993151516",
+        telephone: "+998917776609",
         contactType: "sales",
         areaServed: ["UZ", "RU", "KZ", "TJ", "KG", "TM"],
         availableLanguage: ["uz", "ru", "en"],

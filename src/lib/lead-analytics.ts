@@ -51,14 +51,18 @@ type ContactClickProperties = {
   market: LeadMarket;
 };
 
+// GA4 receives lead events regardless of the banner choice: it runs in Consent
+// Mode v2, so without consent Google only gets a cookieless ping. PostHog has
+// no such mode and stays strictly behind full consent.
 function trackEvent(name: "generate_lead" | "contact_click", properties: LeadProperties | ContactClickProperties) {
-  if (typeof window === "undefined" || readConsent() !== "all") return;
+  if (typeof window === "undefined") return;
   const analyticsWindow = window as Window & {
     gtag?: (command: "event", name: string, parameters: LeadProperties | ContactClickProperties) => void;
     posthog?: { capture: (name: string, parameters: LeadProperties | ContactClickProperties) => void };
   };
   // Analytics failures must never turn an accepted enquiry into an error.
   try { analyticsWindow.gtag?.("event", name, properties); } catch { /* Optional provider. */ }
+  if (readConsent() !== "all") return;
   try { analyticsWindow.posthog?.capture(name, properties); } catch { /* Optional provider. */ }
 }
 

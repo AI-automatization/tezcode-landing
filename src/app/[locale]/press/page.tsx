@@ -12,6 +12,8 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: "/press",
+    // Body is Uzbek-only; other locales canonicalize to the uz original.
+    availableLocales: ["uz"],
     title: "Press Kit — Tezcode Brand Assets va Media Kit",
     description:
       "Tezcode brand assets: logo PNG/SVG (TC monogram), brand ranglar (Ink #0a0a0f + Gold #d4a017), founder Bekzod Mirzaaliyev fotosurat, brand book, prezentatsiya, press release shablonlari.",

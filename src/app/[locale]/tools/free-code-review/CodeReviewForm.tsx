@@ -5,12 +5,16 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { useLocale } from "next-intl";
+import { trackLead } from "@/lib/lead-analytics";
+import { getMarketFromPath } from "@/lib/markets";
 
 const schema = z.object({
   name: z.string().min(2),
   email: z.string().email(),
   repo: z
     .string()
+    .max(500, "URL juda uzun")
     .url("To'liq URL kerak (https://github.com/...)")
     .refine((v) => /github\.com|gitlab\.com|bitbucket\.org/.test(v), {
       message: "GitHub/GitLab/Bitbucket URL kiriting",
@@ -23,6 +27,7 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 export function CodeReviewForm() {
+  const locale = useLocale();
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const {
@@ -55,12 +60,13 @@ export function CodeReviewForm() {
           email: data.email,
           subject: "other",
           message,
-          locale: "uz",
+          locale,
           _hp: data._hp,
         }),
       });
       if (!res.ok) throw new Error("Failed");
       setStatus("success");
+      trackLead({ language: locale, market: getMarketFromPath(window.location.pathname) });
       reset();
     } catch {
       setStatus("error");

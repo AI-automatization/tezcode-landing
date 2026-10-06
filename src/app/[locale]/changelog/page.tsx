@@ -11,6 +11,8 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: "/changelog",
+    // Body is Uzbek-only; other locales canonicalize to the uz original.
+    availableLocales: ["uz"],
     title: "Changelog — Tezcode Mahsulot Yangilanishlari",
     description:
       "Tezcode platforma va mahsulot yangilanishlari: yangi feature, bug fix, performance optimizatsiya. Har release haqida shaffof hisobot 2024-yildan beri.",

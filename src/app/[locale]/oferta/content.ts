@@ -86,7 +86,7 @@ export const OFERTA_CONTENT: LegalContent = {
     ],
   },
   ru: {
-    metaTitle: "Публичная оферта — Tezcode",
+    metaTitle: "Публичная оферта",
     metaDescription:
       "Публичная оферта TEZ KOD на предоставление подписочных услуг: предмет оферты, цена и порядок оплаты, антифрод-меры, реквизиты сторон.",
     versionLabel: "Правовой документ · v1.1 — 22.07.2026",
@@ -165,7 +165,7 @@ export const OFERTA_CONTENT: LegalContent = {
     ],
   },
   en: {
-    metaTitle: "Public Offer — Tezcode",
+    metaTitle: "Public Offer",
     metaDescription:
       "TEZ KOD public offer for subscription services: subject of the offer, price and payment terms, anti-fraud measures, contracting parties' details.",
     versionLabel: "Legal · v1.1 — 2026-07-22",
@@ -244,7 +244,7 @@ export const OFERTA_CONTENT: LegalContent = {
     ],
   },
   uk: {
-    metaTitle: "Публічна оферта — Tezcode",
+    metaTitle: "Публічна оферта",
     metaDescription:
       "Публічна оферта TEZ KOD на надання послуг за підпискою: предмет оферти, ціна та порядок оплати, антифрод-заходи, реквізити сторін.",
     versionLabel: "Правовий документ · v1.1 — 22.07.2026",
@@ -323,7 +323,7 @@ export const OFERTA_CONTENT: LegalContent = {
     ],
   },
   ar: {
-    metaTitle: "العرض العام — Tezcode",
+    metaTitle: "العرض العام",
     metaDescription:
       "العرض العام لشركة TEZ KOD لتقديم خدمات الاشتراك: موضوع العرض، السعر وطريقة الدفع، إجراءات مكافحة الاحتيال، بيانات الأطراف.",
     versionLabel: "وثيقة قانونية · الإصدار 1.1 — 2026-07-22",

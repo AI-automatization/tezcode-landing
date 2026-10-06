@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 import { contactSchema, type ContactData } from "@/lib/contact";
 import { getLeadAttribution, trackLead } from "@/lib/lead-analytics";
 import { getMarketFromPath } from "@/lib/markets";
-import { Send } from "lucide-react";
+import { ChevronDown, Send } from "lucide-react";
 
 const CHIP_LABEL: Record<string, string> = {
   uz: "Aloqa",
@@ -17,13 +17,10 @@ const CHIP_LABEL: Record<string, string> = {
   uk: "Контакти",
 };
 
-const DEFAULT_COUNTRY: Record<string, string> = {
-  uz: "O'zbekiston",
-  ru: "Узбекистан",
-  en: "Uzbekistan",
-  ar: "أوزبكستان",
-  uk: "Узбекистан",
-};
+// Country/service/email are optional and collapsed: every extra visible field
+// costs leads. Country is no longer pre-filled — a hidden guess (Uzbekistan for
+// an Arabic visitor) is worse than no answer; locale + sourcePage give context.
+const EMPTY_VALUES = { subject: "demo", email: "", phone: "", telegramUsername: "", country: "", service: "", message: "" } as const;
 
 const inputClasses =
   "w-full px-4 py-3 rounded-[var(--tc-radius-md)] bg-[var(--tc-surface-2)] border border-[var(--tc-border)] text-[var(--tc-text-primary)] placeholder:text-[var(--tc-text-muted)] text-sm outline-none transition-colors focus:border-[var(--tc-blue)] focus:ring-2 focus:ring-[var(--tc-blue)]/20";
@@ -37,6 +34,7 @@ export function ContactForm({
   const locale = useLocale();
   const submitting = useRef(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [showMore, setShowMore] = useState(false);
 
   const {
     register,
@@ -45,8 +43,10 @@ export function ContactForm({
     formState: { errors },
   } = useForm<ContactData>({
     resolver: zodResolver(contactSchema),
-    defaultValues: { subject: "demo", email: "", phone: "", telegramUsername: "", country: DEFAULT_COUNTRY[locale] ?? "O'zbekiston", service: "" },
+    defaultValues: EMPTY_VALUES,
   });
+  // Never hide a validation error inside the collapsed section.
+  const moreOpen = showMore || Boolean(errors.email || errors.country || errors.service);
 
   const validationMessage = (code?: string) => code ? t(`form.validation.${code}`) : undefined;
 
@@ -76,7 +76,7 @@ export function ContactForm({
         language: locale,
         market: getMarketFromPath(pathname),
       });
-      reset({ subject: "demo", email: "", phone: "", telegramUsername: "", country: DEFAULT_COUNTRY[locale] ?? "O'zbekiston", service: "" });
+      reset(EMPTY_VALUES);
     } catch {
       setStatus("error");
     } finally {
@@ -143,59 +143,22 @@ export function ContactForm({
             </Field>
           </div>
 
-          <p className="text-sm text-[var(--tc-text-muted)]">{t("form.contact_hint")}</p>
           <Field id="contact-telegram" label={t("form.telegram")} error={validationMessage(errors.telegramUsername?.message)}>
             <input
               {...register("telegramUsername")}
               id="contact-telegram"
               type="text"
               autoComplete="off"
-              maxLength={33}
+              autoCapitalize="none"
+              spellCheck={false}
+              maxLength={100}
               placeholder={t("form.telegram_placeholder")}
               className={inputClasses}
               aria-invalid={errors.telegramUsername ? true : undefined}
               aria-describedby={errors.telegramUsername ? "contact-telegram-error" : undefined}
             />
           </Field>
-          <Field id="contact-email" label={t("form.email")} error={validationMessage(errors.email?.message)}>
-            <input
-              {...register("email")}
-              id="contact-email"
-              type="email"
-              autoComplete="email"
-              maxLength={200}
-              placeholder={t("form.email_placeholder")}
-              className={inputClasses}
-              aria-invalid={errors.email ? true : undefined}
-              aria-describedby={errors.email ? "contact-email-error" : undefined}
-            />
-          </Field>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <Field id="contact-country" label={t("form.country")} error={validationMessage(errors.country?.message)}>
-              <input
-                {...register("country")}
-                id="contact-country"
-                autoComplete="country-name"
-                maxLength={80}
-                placeholder={t("form.country_placeholder")}
-                className={inputClasses}
-                aria-invalid={errors.country ? true : undefined}
-                aria-describedby={errors.country ? "contact-country-error" : undefined}
-              />
-            </Field>
-            <Field id="contact-service" label={t("form.service")} error={validationMessage(errors.service?.message)}>
-              <input
-                {...register("service")}
-                id="contact-service"
-                type="text"
-                maxLength={200}
-                placeholder={t("form.service_placeholder")}
-                className={inputClasses}
-                aria-invalid={errors.service ? true : undefined}
-                aria-describedby={errors.service ? "contact-service-error" : undefined}
-              />
-            </Field>
-          </div>
+          <p className="-mt-2 text-xs text-[var(--tc-text-muted)]">{t("form.contact_hint")}</p>
 
           {/* Subject stays fixed to "demo" — the dropdown was one field too many */}
           <input type="hidden" {...register("subject")} value="demo" />
@@ -212,6 +175,64 @@ export function ContactForm({
               aria-describedby={errors.message ? "contact-message-error" : undefined}
             />
           </Field>
+
+          <div>
+            <button
+              type="button"
+              onClick={() => setShowMore((open) => !open)}
+              aria-expanded={moreOpen}
+              aria-controls="contact-more"
+              className="inline-flex items-center gap-1.5 text-sm font-500 text-[var(--tc-blue-text)] hover:underline"
+            >
+              <ChevronDown
+                className={`w-4 h-4 transition-transform ${moreOpen ? "rotate-180" : ""}`}
+                strokeWidth={2}
+                aria-hidden
+              />
+              {t("form.more_details")}
+            </button>
+            <div id="contact-more" hidden={!moreOpen} className="mt-4 space-y-5">
+              <Field id="contact-email" label={t("form.email")} error={validationMessage(errors.email?.message)}>
+                <input
+                  {...register("email")}
+                  id="contact-email"
+                  type="email"
+                  autoComplete="email"
+                  maxLength={200}
+                  placeholder={t("form.email_placeholder")}
+                  className={inputClasses}
+                  aria-invalid={errors.email ? true : undefined}
+                  aria-describedby={errors.email ? "contact-email-error" : undefined}
+                />
+              </Field>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <Field id="contact-country" label={t("form.country")} error={validationMessage(errors.country?.message)}>
+                  <input
+                    {...register("country")}
+                    id="contact-country"
+                    autoComplete="country-name"
+                    maxLength={80}
+                    placeholder={t("form.country_placeholder")}
+                    className={inputClasses}
+                    aria-invalid={errors.country ? true : undefined}
+                    aria-describedby={errors.country ? "contact-country-error" : undefined}
+                  />
+                </Field>
+                <Field id="contact-service" label={t("form.service")} error={validationMessage(errors.service?.message)}>
+                  <input
+                    {...register("service")}
+                    id="contact-service"
+                    type="text"
+                    maxLength={200}
+                    placeholder={t("form.service_placeholder")}
+                    className={inputClasses}
+                    aria-invalid={errors.service ? true : undefined}
+                    aria-describedby={errors.service ? "contact-service-error" : undefined}
+                  />
+                </Field>
+              </div>
+            </div>
+          </div>
 
           {/* Honeypot fields — hidden, bots fill them. Both are plain text and
               carry the password-manager opt-outs: an autofilled `type="email"`

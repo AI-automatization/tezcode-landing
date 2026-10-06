@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle } from "../articles";
+import { getArticle, localizeArticleMeta } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "it-park-schwarz-digits-uchrashuv";
@@ -22,15 +22,19 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const localized = localizeArticleMeta(SLUG, locale, {
+    title:
+      "IT Park va Schwarz Digits: O'zbekiston IT sektori uchun Yevropa imkoniyati | Tezcode",
+    description:
+      "IT Park Uzbekistan'da Tezcode Schwarz Digits (Schwarz Group — Lidl va Kaufland egasi) vakili bilan tanishdi. Yevropa suveren AI ekotizimi va O'zbekiston IT sektori uchun imkoniyat haqida.",
+  });
   return buildPageMetadata({
     locale,
     // untranslated locales canonicalize to the uz original (see lib/seo.ts)
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title:
-      "IT Park va Schwarz Digits: O'zbekiston IT sektori uchun Yevropa imkoniyati | Tezcode",
-    description:
-      "IT Park Uzbekistan'da Tezcode Schwarz Digits (Schwarz Group — Lidl va Kaufland egasi) vakili bilan tanishdi. Yevropa suveren AI ekotizimi va O'zbekiston IT sektori uchun imkoniyat haqida.",
+    title: localized.title,
+    description: localized.description,
     keywords: [
       "IT Park Uzbekistan",
       "Schwarz Digits",

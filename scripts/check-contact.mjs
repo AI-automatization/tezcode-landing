@@ -46,6 +46,19 @@ assert.equal(contact.contactSchema.parse({ ...valid, service: `  ${valid.service
 assert.equal(contact.contactSchema.safeParse({ ...valid, email: "", phone: "+7 (700) 123-45-67" }).success, true);
 assert.equal(contact.contactSchema.safeParse({ ...valid, email: "   ", phone: "+44 20 7946 0123" }).success, true);
 assert.equal(contact.contactSchema.safeParse({ ...valid, email: "", phone: "", telegramUsername: "@azizdev" }).success, true);
+// Pasted Telegram links/handles are normalized to "@name" before validation.
+for (const pasted of ["azizdev", "@azizdev", " t.me/azizdev ", "t.me/azizdev/", "https://t.me/azizdev", "http://www.t.me/azizdev?start=1", "https://telegram.me/azizdev"]) {
+  const parsed = contact.contactSchema.safeParse({ ...valid, email: "", phone: "", telegramUsername: pasted });
+  assert.equal(parsed.success, true, pasted);
+  assert.equal(parsed.data.telegramUsername, "@azizdev", pasted);
+}
+for (const bad of ["https://t.me/+AbCdEf", "t.me/joinchat/abc", "https://example.com/azizdev", "@ab"]) {
+  assert.equal(contact.contactSchema.safeParse({ ...valid, email: "", phone: "", telegramUsername: bad }).success, false, bad);
+}
+// "No contact given" is reported under the phone field (email is collapsed in the UI).
+const noContact = contact.contactSchema.safeParse({ ...valid, email: "", phone: "", telegramUsername: "" });
+assert.equal(noContact.success, false);
+assert.deepEqual(noContact.error.issues.map((issue) => [issue.path.join("."), issue.message]), [["phone", "contact_required"]]);
 for (const patch of [
   { email: "", phone: "", telegramUsername: "" }, { email: "invalid" }, { phone: "abcdefg" },
   { email: "", phone: "", telegramUsername: "@ab" },
@@ -152,13 +165,20 @@ const captured = [];
 window.gtag = (...args) => captured.push(args);
 window.posthog = { capture: (...args) => captured.push(args) };
 const properties = { language: "ru", service: "Contact private@example.com about our website", market: "central-asia" };
+// Consent Mode v2: GA (gtag) always gets lead events — without consent Google
+// only receives a cookieless ping. PostHog stays behind full consent.
+const gtagCalls = () => captured.filter((call) => call[0] === "event");
 assert.equal(consent.readConsent(), null);
 assert.equal(analytics.getLeadAttribution(), undefined);
 analytics.trackLead(properties);
-assert.equal(captured.length, 0);
+assert.equal(captured.length, 1);
+assert.equal(gtagCalls().length, 1);
 consent.saveConsent("essential");
 analytics.trackLead(properties);
-assert.equal(captured.length, 0);
+assert.equal(captured.length, 2);
+assert.equal(gtagCalls().length, 2);
+assert.equal(Object.keys(captured[1][2]).sort().join(","), "language,market");
+captured.length = 0;
 consent.saveConsent("all");
 const attribution = analytics.getLeadAttribution();
 assert.equal(attribution.source, "google");
@@ -176,10 +196,12 @@ assert.equal(captured[2][1], "contact_click");
 window.gtag = () => { throw new Error("Test blocked provider"); };
 assert.doesNotThrow(() => analytics.trackLead(properties));
 consent.saveConsent("essential");
+window.gtag = (...args) => captured.push(args);
 const count = captured.length;
 analytics.trackLead(properties);
-assert.equal(captured.length, count);
+assert.equal(captured.length, count + 1);
+assert.equal(captured.at(-1)[0], "event"); // gtag only, no PostHog capture
 window.localStorage = { getItem() { throw new Error("Blocked"); }, setItem() { throw new Error("Blocked"); } };
 assert.doesNotThrow(() => consent.saveConsent("all"));
 assert.equal(consent.readConsent(), "all");
-process.stdout.write("Contact checks passed: email/phone, validation, API failures, rate limits, mocked delivery, consent and attribution. No external messages sent.\n");
+process.stdout.write("Contact checks passed: email/phone, validation, API failures, rate limits, mocked delivery, Telegram normalization, consent mode and attribution. No external messages sent.\n");

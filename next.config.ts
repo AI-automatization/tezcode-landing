@@ -78,7 +78,13 @@ const nextConfig: NextConfig = {
       destination: `${prefix === "/uz" ? "" : prefix}/ai-agent`,
       statusCode: 301,
     }));
-    return [...founderRedirects, ...retiredCityRedirects, ...aiAgentTashkentRedirects];
+    // English-style /contact is a common guess and backlink target; the real
+    // page is /aloqa.
+    const contactRedirects = [
+      { source: "/contact", destination: "/aloqa", permanent: true },
+      { source: "/:locale(uz|ru|en|ar|uk)/contact", destination: "/:locale/aloqa", permanent: true },
+    ];
+    return [...founderRedirects, ...retiredCityRedirects, ...aiAgentTashkentRedirects, ...contactRedirects];
   },
   // Headers for security + performance
   async headers() {

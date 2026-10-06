@@ -45,7 +45,7 @@
     "headline": "نحن نؤتمت\nأي عمل تجاري\nبالذكاء الاصطناعي",
     "subheadline": "8 منتجات. 6 أقسام. مهمة واحدة — تنظيم كل عمل تجاري.",
     "cta_primary": "استشارة مجانية",
-    "cta_secondary": "استعرض منتجاتنا",
+    "cta_secondary": "راسلنا على Telegram",
     "directions_aria": "الخدمات",
     "dir_web": "موقع ويب و MVP",
     "dir_bot": "بوت Telegram",
@@ -245,7 +245,8 @@
     "title": "تواصل معنا",
     "subtitle": "دعنا نتحدث عن مشروعك — استشارة مجانية",
     "form": {
-      "contact_hint": "أدخل البريد الإلكتروني أو رقم الهاتف أو اسم مستخدم Telegram للرد عليك. تكفي وسيلة اتصال واحدة.",
+      "contact_hint": "الهاتف أو Telegram — تكفي وسيلة واحدة للرد عليك.",
+      "more_details": "تفاصيل إضافية (اختياري)",
       "country": "الدولة (اختياري)",
       "country_placeholder": "مثلاً، أوزبكستان",
       "service": "ما الخدمة التي تحتاجها؟ (اختياري)",
@@ -255,12 +256,12 @@
         "too_long": "النص طويل جداً.",
         "email_invalid": "أدخل بريداً إلكترونياً صالحاً.",
         "phone_invalid": "أدخل رقم الهاتف مع رمز الدولة (7 أرقام على الأقل).",
-        "contact_required": "أدخل البريد الإلكتروني أو رقم الهاتف أو اسم مستخدم Telegram.",
-        "telegram_invalid": "أدخل اسم مستخدم Telegram صالحاً (مثال: @azizdev)."
+        "contact_required": "أدخل رقم الهاتف أو اسم مستخدم Telegram.",
+        "telegram_invalid": "أدخل اسم مستخدم Telegram صالحاً (مثال: @azizdev أو t.me/azizdev)."
       },
       "name": "اسمك",
       "name_placeholder": "Aziz Karimov",
-      "email": "البريد الإلكتروني",
+      "email": "البريد الإلكتروني (اختياري)",
       "email_placeholder": "aziz@example.com",
       "phone": "الهاتف",
       "phone_placeholder": "+998 90 123 45 67",
@@ -313,7 +314,7 @@
   "testimonials": {
     "title": "عملاؤنا عنا",
     "subtitle": "نتائج حقيقية من رواد أعمال حقيقيين",
-    "google_count": "٦ مراجعات على Google",
+    "google_count": "٢٥ مراجعة على Google",
     "google_label": "مراجعة على Google",
     "items": {
       "dilfuza": {
@@ -338,6 +339,7 @@
   },
   "floating": {
     "telegram": "الكتابة عبر Telegram",
+    "mobile_bar": "عرض تجريبي مجاني — راسلنا على Telegram",
     "whatsapp": "الكتابة عبر WhatsApp",
     "label": "اتصل بنا"
   }

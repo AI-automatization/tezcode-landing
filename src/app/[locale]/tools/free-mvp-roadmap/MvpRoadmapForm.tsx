@@ -5,12 +5,19 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { useLocale } from "next-intl";
+import { trackLead } from "@/lib/lead-analytics";
+import { getMarketFromPath } from "@/lib/markets";
+
+const IDEA_MAX = 1800;
 
 const schema = z.object({
   name: z.string().min(2, "Ism kiriting"),
   email: z.string().email("Email noto'g'ri"),
   phone: z.string().optional(),
-  idea: z.string().min(50, "Kamida 50 belgi — g'oyangizni batafsil yozing").max(3000),
+  // The API caps `message` at 2000 chars and this form prepends a ~120-char
+  // header (platform/audience/budget/timeline), so the idea itself gets 1800.
+  idea: z.string().min(50, "Kamida 50 belgi — g'oyangizni batafsil yozing").max(IDEA_MAX, `Ko'pi bilan ${IDEA_MAX} belgi`),
   platform: z.enum(["web", "mobile", "both", "unknown"]),
   audience: z.enum(["uz", "ru-region", "global"]),
   budget: z.enum(["1-5k", "5-20k", "20-50k", "50k+", "unknown"]),
@@ -50,6 +57,7 @@ const TIMELINES = [
 ];
 
 export function MvpRoadmapForm() {
+  const locale = useLocale();
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const {
@@ -87,12 +95,13 @@ export function MvpRoadmapForm() {
           phone: data.phone || undefined,
           subject,
           message,
-          locale: "uz",
+          locale,
           _hp: data._hp,
         }),
       });
       if (!res.ok) throw new Error("Failed");
       setStatus("success");
+      trackLead({ language: locale, market: getMarketFromPath(window.location.pathname) });
       reset();
     } catch {
       setStatus("error");
@@ -167,6 +176,7 @@ export function MvpRoadmapForm() {
         <textarea
           {...register("idea")}
           rows={6}
+          maxLength={IDEA_MAX}
           placeholder="Misol: O'zbekistondagi do'konlar uchun AI-powered POS dasturi. Mijoz egasi ko'p Excel'da ishlaydi, kassir xato qiladi, ombor ko'rinmaydi. Men shu muammoni AI yordamida..."
           className="w-full px-4 py-3 rounded-[var(--tc-radius-sm)] bg-[var(--tc-surface-0)] border border-[var(--tc-border)] focus:border-[var(--tc-blue)] focus:outline-none text-white placeholder:text-[var(--tc-text-muted)] text-sm resize-y leading-relaxed"
         />

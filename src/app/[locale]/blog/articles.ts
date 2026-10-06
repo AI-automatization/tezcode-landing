@@ -210,6 +210,18 @@ export const ARTICLES: ArticleMeta[] = [
     datePublished: "2026-08-14",
     category: "Narxlar / AI",
     relatedService: { href: "/tariflar", label: "Tariflar" },
+    seo: {
+      ru: {
+        title: "Цены на ИИ-решения 2026: сколько стоит каждая услуга",
+        description:
+          "ИИ-чат-бот от $339, ИИ-агент от $400, интеграция CRM от $700, видеоаналитика от $990 — цены на ИИ-решения 2026, что влияет на цену и порядок оплаты.",
+      },
+      en: {
+        title: "AI solution prices 2026: what each service costs",
+        description:
+          "AI chatbot from $339, AI agent from $400, CRM integration from $700, AI video analytics from $990 — 2026 prices, what drives them and payment terms.",
+      },
+    },
     list: {
       uz: {
         title:
@@ -264,6 +276,18 @@ export const ARTICLES: ArticleMeta[] = [
     datePublished: "2026-07-02",
     category: "AI dunyosida / Yangilik",
     relatedService: { href: "/ai-agent", label: "AI agent yasash" },
+    seo: {
+      ru: {
+        title: "Claude Fable 5: что новая модель Anthropic значит для бизнеса",
+        description:
+          "Anthropic выпустила Claude Fable 5, приостановила доступ из-за экспортного контроля США и снова открыла его. Что это значит для ИИ-автоматизации в Узбекистане.",
+      },
+      en: {
+        title: "Claude Fable 5: what Anthropic's new model means for business",
+        description:
+          "Anthropic launched Claude Fable 5, pulled it under US export controls, then relaunched it globally. What it means for AI automation projects in Uzbekistan.",
+      },
+    },
     list: {
       uz: {
         title: "Claude Fable 5: Anthropic'ning eng kuchli modeli va bu biznes uchun nimani anglatadi",
@@ -288,6 +312,18 @@ export const ARTICLES: ArticleMeta[] = [
     datePublished: "2026-07-02",
     category: "Hamkorlik / IT Park",
     relatedService: { href: "/it-xizmatlar", label: "IT xizmatlar" },
+    seo: {
+      ru: {
+        title: "IT Park и Schwarz Digits: шанс для IT-сектора Узбекистана",
+        description:
+          "В IT Park Uzbekistan Tezcode встретился с представителем Schwarz Digits — IT-подразделения Schwarz Group (Lidl, Kaufland). Что это даёт узбекским разработчикам.",
+      },
+      en: {
+        title: "IT Park and Schwarz Digits: a European opening for Uzbek IT",
+        description:
+          "At IT Park Uzbekistan, Tezcode met Schwarz Digits — the technology arm of Schwarz Group, owner of Lidl and Kaufland. What it means for Uzbek developers.",
+      },
+    },
     list: {
       uz: {
         title: "IT Park va Schwarz Digits: O'zbekiston IT sektori uchun Yevropa imkoniyati",
@@ -312,6 +348,18 @@ export const ARTICLES: ArticleMeta[] = [
     datePublished: "2026-06-25",
     category: "AI / Avtomatizatsiya",
     relatedService: { href: "/ai-avtomatizatsiya", label: "AI avtomatizatsiya" },
+    seo: {
+      ru: {
+        title: "Как выбрать компанию по ИИ-автоматизации в Ташкенте (2026)",
+        description:
+          "Практическое руководство по выбору компании ИИ-автоматизации в Узбекистане: критерии, от чего зависит цена, частые ошибки и вопросы подрядчику.",
+      },
+      en: {
+        title: "How to choose an AI automation company in Tashkent (2026)",
+        description:
+          "A practical guide to choosing an AI automation company in Uzbekistan: criteria, what drives the price, common mistakes and questions to ask.",
+      },
+    },
     list: {
       uz: {
         title: "Toshkentda AI avtomatizatsiya kompaniyasini qanday tanlash (2026)",
@@ -378,6 +426,13 @@ export const ARTICLES: ArticleMeta[] = [
     availableLocales: ["uz", "ru"],
     datePublished: "2026-06-07",
     category: "Video / Watch Party",
+    seo: {
+      ru: {
+        title: "Смотреть фильмы онлайн с друзьями: как работает Watch Party",
+        description:
+          "Как работает совместный просмотр фильмов и видео с друзьями (Watch Party), что нужно и какие источники поддерживаются. На примере WeWatch.",
+      },
+    },
     list: {
       uz: {
         title: "Do'stlar bilan online birga film ko'rish: Watch Party qanday ishlaydi",
@@ -397,6 +452,13 @@ export const ARTICLES: ArticleMeta[] = [
     datePublished: "2026-06-07",
     category: "HR / Nazorat",
     relatedService: { href: "/xodim-nazorati", label: "Xodim nazorati (WorkControl)" },
+    seo: {
+      ru: {
+        title: "Как выбрать систему контроля времени и задач сотрудников",
+        description:
+          "Руководство по выбору системы контроля рабочего времени, задач и продуктивности: управление задачами, посещаемость, отчёты и баланс контроля и доверия.",
+      },
+    },
     list: {
       uz: {
         title: "Xodimlar ish vaqti va vazifalarini nazorat qilish tizimi qanday tanlanadi",
@@ -466,6 +528,8 @@ export function localizeArticleMeta(
   if (locale === "uz") return fallback;
   const article = getArticle(slug);
   if (!article?.availableLocales.includes(locale as ArticleLang)) return fallback;
+  const seo = article.seo?.[locale as ArticleLang];
+  if (seo) return { title: `${seo.title} | Tezcode`, description: seo.description };
   const listed = article.list[locale as ArticleLang];
   if (!listed) return fallback;
   return { title: `${listed.title} | Tezcode`, description: listed.excerpt };

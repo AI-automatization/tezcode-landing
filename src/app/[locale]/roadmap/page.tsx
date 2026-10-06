@@ -11,6 +11,8 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: "/roadmap",
+    // Body is Uzbek-only; other locales canonicalize to the uz original.
+    availableLocales: ["uz"],
     title: "Ochiq Yo'l Xaritasi — Tezcode Mahsulotlari Roadmap",
     description:
       "Tezcode Software Factory yo'l xaritasi: RAOS POS, AI Office, CoreMed/HamshiraGo va boshqa mahsulotlar — qaysi feature qachon chiqadi. Shaffof Q2-Q4 2026 reja.",

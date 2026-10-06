@@ -2,7 +2,22 @@ import createIntlMiddleware from "next-intl/middleware";
 import { NextRequest, NextResponse } from "next/server";
 import { routing, type Locale } from "./i18n/routing";
 
+// Language auto-detection (Accept-Language + NEXT_LOCALE cookie) runs only on
+// the bare homepage. Deep links — what search results point to — always serve
+// the URL that was clicked, otherwise a ru/en browser never sees the uz page
+// that actually ranked.
 const intlMiddleware = createIntlMiddleware(routing);
+const deepLinkMiddleware = createIntlMiddleware({
+  ...routing,
+  localeDetection: false,
+});
+// Unprefixed deep pages are uz content; viewing one must not overwrite the
+// visitor's saved language choice.
+const uzDeepLinkMiddleware = createIntlMiddleware({
+  ...routing,
+  localeDetection: false,
+  localeCookie: false,
+});
 
 // Country → Locale map for IP-based fallback (when Accept-Language missing/ambiguous)
 const COUNTRY_TO_LOCALE: Record<string, Locale> = {
@@ -78,8 +93,13 @@ export default function middleware(request: NextRequest) {
     }
   }
 
-  // Fallback to standard next-intl middleware (handles Accept-Language)
-  return intlMiddleware(request);
+  if (pathname === "/") {
+    const response = intlMiddleware(request);
+    response.headers.set("Vary", "Accept-Language, Cookie");
+    return response;
+  }
+  if (hasLocalePrefix) return deepLinkMiddleware(request);
+  return uzDeepLinkMiddleware(request);
 }
 
 export const config = {

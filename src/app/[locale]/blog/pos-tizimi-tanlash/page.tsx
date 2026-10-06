@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle } from "../articles";
+import { getArticle, localizeArticleMeta } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "pos-tizimi-tanlash";
@@ -22,15 +22,19 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const localized = localizeArticleMeta(SLUG, locale, {
+    title:
+      "O'zbekistonda do'kon uchun POS tizimi qanday tanlanadi (2026) | Tezcode",
+    description:
+      "Do'kon, market yoki kosmetika do'koni uchun POS tizimi tanlash qo'llanmasi: offline ishlash, ombor nazorati, fiskal talablar va eng ko'p uchraydigan xatolar.",
+  });
   return buildPageMetadata({
     locale,
     // untranslated locales canonicalize to the uz original (see lib/seo.ts)
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title:
-      "O'zbekistonda do'kon uchun POS tizimi qanday tanlanadi (2026) | Tezcode",
-    description:
-      "Do'kon, market yoki kosmetika do'koni uchun POS tizimi tanlash qo'llanmasi: offline ishlash, ombor nazorati, fiskal talablar va eng ko'p uchraydigan xatolar.",
+    title: localized.title,
+    description: localized.description,
     keywords: [
       "POS tizimi tanlash",
       "do'kon uchun POS",

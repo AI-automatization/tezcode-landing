@@ -7,7 +7,7 @@ import {
   getBreadcrumbSchema,
   BASE_URL,
 } from "@/lib/seo";
-import { getArticle } from "../articles";
+import { getArticle, localizeArticleMeta } from "../articles";
 import { CONTENT } from "./content";
 
 const SLUG = "ai-chatbot-va-ai-agent-farqi";
@@ -22,14 +22,19 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const localized = localizeArticleMeta(SLUG, locale, {
+    title:
+      "AI chatbot va AI agent farqi nima? (2026) | Tezcode",
+    description:
+      "AI chatbot gaplashadi, AI agent ish bajaradi. Farqni misollar bilan tushuntiramiz, taqqoslash jadvali va qaysi biri sizning biznesingizga kerakligi — Tezcode qo'llanmasi.",
+  });
   return buildPageMetadata({
     locale,
     // untranslated locales canonicalize to the uz original (see lib/seo.ts)
     availableLocales: Object.keys(CONTENT),
     path: PATH,
-    title: "AI chatbot va AI agent farqi nima? (2026) | Tezcode",
-    description:
-      "AI chatbot gaplashadi, AI agent ish bajaradi. Farqni misollar bilan tushuntiramiz, taqqoslash jadvali va qaysi biri sizning biznesingizga kerakligi — Tezcode qo'llanmasi.",
+    title: localized.title,
+    description: localized.description,
     keywords: [
       "AI chatbot va AI agent farqi",
       "chatbot vs agent",

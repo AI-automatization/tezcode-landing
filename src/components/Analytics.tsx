@@ -2,11 +2,11 @@
 
 import Script from "next/script";
 import { useEffect, useSyncExternalStore } from "react";
-import { readConsent, subscribeConsent } from "@/lib/cookie-consent";
+import { CONSENT_KEY, readConsent, subscribeConsent } from "@/lib/cookie-consent";
 import { getLeadAttribution, trackContactClick } from "@/lib/lead-analytics";
 import { getMarketFromPath } from "@/lib/markets";
 
-// Tracking services (all env-driven, no-op if not configured)
+// Tracking services (all env-driven, no-op if not configured).
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID;
 const POSTHOG_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY;
@@ -16,14 +16,18 @@ const POSTHOG_HOST =
 export function Analytics() {
   const consent = useSyncExternalStore(subscribeConsent, readConsent, () => null);
   useEffect(() => {
-    const allowed = readConsent() === "all";
+    const current = readConsent();
+    const allowed = current === "all";
     const providers = window as Window & {
       gtag?: (...args: unknown[]) => void;
       clarity?: (...args: unknown[]) => void;
       posthog?: { opt_in_capturing: () => void; opt_out_capturing: () => void };
     };
-    if (GA_ID) Reflect.set(window, `ga-disable-${GA_ID}`, !allowed);
-    providers.gtag?.("consent", "update", {
+    // GA4 runs in Consent Mode v2: it is always loaded with everything denied
+    // (cookieless pings only) and upgraded here once the visitor accepts.
+    // Never set `ga-disable-*` — that would also drop the cookieless pings.
+    // No choice yet (null) = the denied defaults from the init script stand.
+    if (current) providers.gtag?.("consent", "update", {
       analytics_storage: allowed ? "granted" : "denied",
       ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied",
     });
@@ -39,8 +43,9 @@ export function Analytics() {
     }
   }, [consent]);
 
+  // Contact clicks are always reported: lead-analytics sends them to GA
+  // (consent-mode aware) and only forwards to PostHog after full consent.
   useEffect(() => {
-    if (consent !== "all") return;
     const onClick = (event: MouseEvent) => {
       if (!(event.target instanceof Element)) return;
       const link = event.target.closest("a");
@@ -59,7 +64,7 @@ export function Analytics() {
     };
     document.addEventListener("click", onClick);
     return () => document.removeEventListener("click", onClick);
-  }, [consent]);
+  }, []);
 
   // Dev-only: without ids the whole layer is a silent no-op, and NEXT_PUBLIC_*
   // values are baked in at build time — a missing key looks exactly like
@@ -73,10 +78,12 @@ export function Analytics() {
     }
   }, [consent]);
 
-  if (consent !== "all") return null;
+  const allowed = consent === "all";
   return (
     <>
-      {/* Google Analytics 4 — traffic source, search keywords, demographics */}
+      {/* Google Analytics 4 with Consent Mode v2 — loaded for every visitor.
+          Defaults are denied BEFORE config; a stored "all" choice is applied
+          synchronously so returning visitors are measured from the first hit. */}
       {GA_ID && (
         <>
           <Script
@@ -88,9 +95,16 @@ export function Analytics() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('consent', 'default', {
-                analytics_storage: 'granted', ad_storage: 'denied',
-                ad_user_data: 'denied', ad_personalization: 'denied'
+                analytics_storage: 'denied', ad_storage: 'denied',
+                ad_user_data: 'denied', ad_personalization: 'denied',
+                wait_for_update: 500
               });
+              try {
+                var tcConsent = JSON.parse(localStorage.getItem('${CONSENT_KEY}') || 'null');
+                if (tcConsent && tcConsent.value === 'all') {
+                  gtag('consent', 'update', { analytics_storage: 'granted' });
+                }
+              } catch (e) {}
               gtag('js', new Date());
               gtag('config', '${GA_ID}', {
                 anonymize_ip: true,
@@ -101,8 +115,8 @@ export function Analytics() {
         </>
       )}
 
-      {/* Microsoft Clarity — heatmaps + session recording (FREE forever) */}
-      {CLARITY_ID && (
+      {/* Microsoft Clarity — heatmaps + session recording. Consent-gated. */}
+      {allowed && CLARITY_ID && (
         <Script id="clarity-init" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){
@@ -115,8 +129,8 @@ export function Analytics() {
         </Script>
       )}
 
-      {/* PostHog — product analytics, funnels, A/B tests, feature flags */}
-      {POSTHOG_KEY && (
+      {/* PostHog — product analytics, funnels. Consent-gated. */}
+      {allowed && POSTHOG_KEY && (
         <Script id="posthog-init" strategy="afterInteractive">
           {`
             !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);

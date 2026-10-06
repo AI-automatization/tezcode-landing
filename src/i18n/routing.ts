@@ -8,13 +8,10 @@ export const routing = defineRouting({
   // Pages and sitemaps publish only their actual translations. The default
   // HTTP Link header advertises every configured locale, including fallbacks.
   alternateLinks: false,
-  // First visit: pick the locale from the browser's Accept-Language header
-  // (a ru-language browser lands on /ru, etc.). This is the Google-safe way
-  // to auto-localize — crawlers send no Accept-Language, so they always get
-  // the default uz tree and every locale URL stays directly crawlable (a
-  // hard IP-geo redirect would instead funnel US-based crawlers into one
-  // locale and hurt indexation). A manual switch persists via the locale
-  // cookie below and overrides detection on later visits.
+  // Homepage only (see src/proxy.ts): pick the locale from the browser's
+  // Accept-Language header or the saved cookie, so a ru-language browser
+  // opening tezcode.dev lands on /ru. Deep links are never redirected — a
+  // search result must open the page that ranked.
   localeDetection: true,
   localeCookie: {
     maxAge: 60 * 60 * 24 * 365, // 1 year

@@ -3,7 +3,8 @@ import { getLocale } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 
 export const metadata: Metadata = {
-  title: "404 — Sahifa topilmadi | Tezcode",
+  // absolute: the [locale] layout template would otherwise append "| Tezcode" again.
+  title: { absolute: "404 — Sahifa topilmadi | Tezcode" },
   robots: { index: false, follow: true },
 };
 

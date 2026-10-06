@@ -94,7 +94,7 @@ export const PRIVACY_CONTENT: LegalContent = {
     ],
   },
   ru: {
-    metaTitle: "Политика конфиденциальности — Tezcode",
+    metaTitle: "Политика конфиденциальности",
     metaDescription:
       "Политика конфиденциальности Tezcode: сбор и использование персональных данных, cookie, требования GDPR/законодательства Узбекистана, права пользователя. Последнее обновление 2026 год.",
     versionLabel: "Правовой документ · v1.0 — 14.05.2026",
@@ -186,7 +186,7 @@ export const PRIVACY_CONTENT: LegalContent = {
     ],
   },
   en: {
-    metaTitle: "Privacy Policy — Tezcode",
+    metaTitle: "Privacy Policy",
     metaDescription:
       "Tezcode privacy policy: collection and use of personal data, cookies, GDPR/Uzbekistan legal requirements, user rights. Last updated 2026.",
     versionLabel: "Legal · v1.0 — 2026-05-14",
@@ -278,7 +278,7 @@ export const PRIVACY_CONTENT: LegalContent = {
     ],
   },
   uk: {
-    metaTitle: "Політика конфіденційності — Tezcode",
+    metaTitle: "Політика конфіденційності",
     metaDescription:
       "Політика конфіденційності Tezcode: збір та використання персональних даних, cookie, вимоги GDPR/законодавства Узбекистану, права користувача. Останнє оновлення 2026 рік.",
     versionLabel: "Правовий документ · v1.0 — 14.05.2026",
@@ -370,7 +370,7 @@ export const PRIVACY_CONTENT: LegalContent = {
     ],
   },
   ar: {
-    metaTitle: "سياسة الخصوصية — Tezcode",
+    metaTitle: "سياسة الخصوصية",
     metaDescription:
       "سياسة خصوصية Tezcode: جمع واستخدام البيانات الشخصية، ملفات تعريف الارتباط، متطلبات GDPR وقانون أوزبكستان، حقوق المستخدم. آخر تحديث 2026.",
     versionLabel: "وثيقة قانونية · الإصدار 1.0 — 2026-05-14",

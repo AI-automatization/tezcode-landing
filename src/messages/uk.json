@@ -45,7 +45,7 @@
     "headline": "Будь-який бізнес\nавтоматизуємо з AI",
     "subheadline": "8 продуктів. 6 напрямків. 1 місія — систематизувати кожен бізнес.",
     "cta_primary": "Безкоштовна консультація",
-    "cta_secondary": "Дивитися продукти",
+    "cta_secondary": "Написати в Telegram",
     "directions_aria": "Напрямки",
     "dir_web": "Сайт і MVP",
     "dir_bot": "Telegram-бот",
@@ -245,7 +245,8 @@
     "title": "Зв'яжіться з нами",
     "subtitle": "Обговоримо ваш проєкт — безкоштовна консультація",
     "form": {
-      "contact_hint": "Вкажіть email, телефон або ім'я користувача Telegram для відповіді. Достатньо одного способу зв'язку.",
+      "contact_hint": "Телефон або Telegram — для відповіді достатньо одного.",
+      "more_details": "Додатково (необов'язково)",
       "country": "Країна (необов'язково)",
       "country_placeholder": "Наприклад, Узбекистан",
       "service": "Яка послуга потрібна? (необов'язково)",
@@ -255,12 +256,12 @@
         "too_long": "Занадто довгий текст.",
         "email_invalid": "Введіть коректний email.",
         "phone_invalid": "Введіть телефон із кодом країни (щонайменше 7 цифр).",
-        "contact_required": "Вкажіть email, телефон або ім'я користувача Telegram.",
-        "telegram_invalid": "Введіть коректне ім'я користувача Telegram (наприклад, @azizdev)."
+        "contact_required": "Вкажіть телефон або ім'я користувача Telegram.",
+        "telegram_invalid": "Введіть коректне ім'я користувача Telegram (наприклад, @azizdev або t.me/azizdev)."
       },
       "name": "Ваше ім'я",
       "name_placeholder": "Aziz Karimov",
-      "email": "Email",
+      "email": "Email (необов'язково)",
       "email_placeholder": "aziz@example.com",
       "phone": "Телефон",
       "phone_placeholder": "+998 90 123 45 67",
@@ -338,6 +339,7 @@
   },
   "floating": {
     "telegram": "Написати в Telegram",
+    "mobile_bar": "Безкоштовне демо — напишіть у Telegram",
     "whatsapp": "Написати у WhatsApp",
     "label": "Зв'язатися"
   }

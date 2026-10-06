@@ -141,6 +141,38 @@ if (origin) {
     assert.deepEqual(tags.filter((tag) => tag.hreflang).map((tag) => tag.hreflang).sort(), [...alternateLocales, "x-default"].sort(), `${locale}${path}: fallback alternates`);
   }
   const home = await get("/en");
+  // Existing service pages own distinct intents in both primary languages.
+  // Catch missing headings, duplicated titles/questions and schema-copy drift.
+  const serviceTitles = new Set();
+  for (const slug of ["ai-agent", "ai-avtomatizatsiya", "biznes-avtomatlashtirish", "ai-chatbot", "telegram-bot-biznes", "pos-tizimi"]) {
+    const content = initializer(`src/app/[locale]/${slug}/content.ts`, "CONTENT");
+    for (const locale of ["uz", "ru"]) {
+      const path = `/${slug}`;
+      const html = await get(pathFor(locale, path));
+      const copy = property(content, locale);
+      const title = html.match(/<title>(.*?)<\/title>/)?.[1];
+      assert.ok(title);
+      assert.ok(!serviceTitles.has(title), `${locale}${path}: unique service title`);
+      serviceTitles.add(title);
+      assert.equal([...html.matchAll(/<h1\b/g)].length, 1, `${locale}${path}: one H1`);
+      assert.equal(links(html).find((tag) => tag.rel === "canonical")?.href, urlFor(locale, path));
+      const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+        .map((match) => JSON.parse(match[1]));
+      const faq = schemas.find((schema) => schema["@type"] === "FAQPage");
+      const items = property(property(copy, "faq"), "items");
+      const expected = items.elements.map((item) => [property(item, "q").text, property(item, "a").text]);
+      assert.ok(faq);
+      assert.deepEqual(faq.mainEntity.map((item) => [item.name, item.acceptedAnswer.text]), expected);
+      assert.equal(new Set(expected.map(([question]) => question)).size, expected.length, `${locale}${path}: no duplicate FAQs`);
+      const visible = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, "");
+      const related = property(property(copy, "related"), "links");
+      for (const link of related.elements) {
+        const destination = property(link, "href").text;
+        assert.ok(visible.includes(`href="${pathFor(locale, destination)}"`), `${locale}${path}: localized link to ${destination}`);
+      }
+    }
+  }
+  process.stdout.write("Verified 12 service variants: unique titles, headings, canonical URLs, FAQs and internal links.\n");
   // Priority articles must serve metadata and JSON-LD in the rendered language,
   // including the Uzbek fallback on untranslated URLs.
   for (const slug of ["ai-ozbek-tilida", "biznes-uchun-ai-agent-yaratish"]) {
@@ -188,7 +220,7 @@ if (origin) {
     }
   }
   process.stdout.write("Verified priority article metadata, localized schemas, fallback URLs and contextual links.\n");
-  assert.match(home, /<title>AI Business Automation &amp; Custom AI Agents \| Tezcode<\/title>/);
+  assert.match(home, /<title>AI Business Automation — Tashkent, Uzbekistan \| Tezcode<\/title>/);
   const visible = home.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, "").replace(/<[^>]+>/g, " ");
   assert.doesNotMatch(visible, /\b(?:Yechimlar|Mahsulotlar|Batafsil)\b/);
   const marketTitles = new Set();

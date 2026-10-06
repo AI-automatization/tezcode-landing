@@ -109,7 +109,7 @@ export const TERMS_CONTENT: LegalContent = {
     ],
   },
   ru: {
-    metaTitle: "Условия использования — Tezcode",
+    metaTitle: "Условия использования",
     metaDescription:
       "Условия использования сервисов Tezcode: права и обязанности, условия оплаты, антифрод-меры, ограничение ответственности, порядок разрешения споров. Последнее обновление 2026 год.",
     versionLabel: "Правовой документ · v1.3 — 22.07.2026",
@@ -216,7 +216,7 @@ export const TERMS_CONTENT: LegalContent = {
     ],
   },
   en: {
-    metaTitle: "Terms of Service — Tezcode",
+    metaTitle: "Terms of Service",
     metaDescription:
       "Tezcode terms of service: rights and obligations, payment terms, anti-fraud measures, limitation of liability, dispute resolution. Last updated 2026.",
     versionLabel: "Legal · v1.3 — 2026-07-22",
@@ -323,7 +323,7 @@ export const TERMS_CONTENT: LegalContent = {
     ],
   },
   uk: {
-    metaTitle: "Умови використання — Tezcode",
+    metaTitle: "Умови використання",
     metaDescription:
       "Умови використання сервісів Tezcode: права та обов'язки, умови оплати, антифрод-заходи, обмеження відповідальності, порядок вирішення спорів. Останнє оновлення 2026 рік.",
     versionLabel: "Правовий документ · v1.3 — 22.07.2026",
@@ -430,7 +430,7 @@ export const TERMS_CONTENT: LegalContent = {
     ],
   },
   ar: {
-    metaTitle: "شروط الاستخدام — Tezcode",
+    metaTitle: "شروط الاستخدام",
     metaDescription:
       "شروط استخدام خدمات Tezcode: الحقوق والالتزامات، شروط الدفع، إجراءات مكافحة الاحتيال، حدود المسؤولية، تسوية المنازعات. آخر تحديث 2026.",
     versionLabel: "وثيقة قانونية · الإصدار 1.3 — 2026-07-22",

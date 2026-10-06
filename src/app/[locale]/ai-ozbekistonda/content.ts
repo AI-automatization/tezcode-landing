@@ -153,6 +153,7 @@ export const CONTENT: ServicePageContent = {
         { href: "/ai-avtomatizatsiya", label: "AI avtomatlashtirish", desc: "Jarayonlarni AI bilan avtomatlashtirish — asosiy xizmat sahifasi." },
         { href: "/ai-agent", label: "AI agent yasash", desc: "O'zi qaror qabul qiladigan AI agentlar — sotuv, qo'llab-quvvatlash, ichki avtomatizatsiya." },
         { href: "/ai-chatbot", label: "AI chatbot", desc: "Telegram/Instagram/sayt uchun 24/7 AI chatbot — eng tez boshlanadigan yechim." },
+        { href: "/biznes-uchun-suniy-intellekt", label: "Biznes uchun sun'iy intellekt", desc: "Qaysi AI yechim biznesingizga mos — agent, chatbot yoki avtomatizatsiya." },
         { href: "/ai-avtomatizatsiya/toshkent", label: "AI avtomatlashtirish — Toshkent", desc: "Poytaxtdagi bizneslar uchun AI avtomatlashtirish sahifasi." },
         { href: "/ai-avtomatizatsiya/samarqand", label: "AI avtomatlashtirish — Samarqand", desc: "Samarqanddagi bizneslar uchun AI avtomatlashtirish sahifasi." },
         { href: "/ai-chatbot/toshkent", label: "AI chatbot — Toshkent", desc: "Toshkent bizneslari uchun AI chatbot yasatish." },

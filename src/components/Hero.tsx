@@ -12,7 +12,6 @@ import {
   Check,
   FileText,
   Globe,
-  LayoutGrid,
   Megaphone,
   MessageSquare,
   Phone,
@@ -629,13 +628,18 @@ export function Hero() {
                 {t("cta_primary")}
                 <ArrowRight className="w-4 h-4 rtl:rotate-180" />
               </m.a>
+              {/* Telegram is where most leads actually start a conversation —
+                  clicks are tracked as contact_click by the global listener in
+                  Analytics.tsx (any t.me link), so no handler is needed here. */}
               <m.a
-                href="#products"
+                href="https://t.me/tezcode_managament"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="tc-btn-secondary text-sm"
               >
-                <LayoutGrid className="w-4 h-4 text-[var(--tc-blue-text)]" />
+                <Send className="w-4 h-4 text-[var(--tc-blue-text)]" />
                 {t("cta_secondary")}
               </m.a>
             </m.div>
