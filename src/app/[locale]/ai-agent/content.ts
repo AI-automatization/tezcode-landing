@@ -301,6 +301,11 @@ export const CONTENT: ServicePageContent = {
       subtitle: "AI agentga yaqin yechimlar va foydali qo'llanmalar.",
       links: [
         {
+          href: "/blog/biznesga-ai-agent-kerakmi",
+          label: "Biznesingizga AI agent kerakmi?",
+          desc: "5 ta belgi: qachon AI agent foyda beradi, qachon oddiy chatbot yetarli.",
+        },
+        {
           href: "/blog/ai-ozbek-tilida",
           label: "AI o'zbek tilida: qanday sinash kerak?",
           desc: "Lotin yozuvi, aralash til va biznes savollari uchun amaliy tekshiruv namunalari."
@@ -626,6 +631,11 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "быть полезно",
       subtitle: "Близкие к AI-агенту решения и полезные руководства.",
       links: [
+        {
+          href: "/blog/biznesga-ai-agent-kerakmi",
+          label: "Нужен ли бизнесу ИИ-агент?",
+          desc: "5 признаков: когда ИИ-агент приносит пользу, а когда хватит чат-бота.",
+        },
         {
           href: "/ai-ozbekistonda",
           label: "AI-компания в Узбекистане",

@@ -7,6 +7,32 @@ import type { ArticleLang, ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "biznesga-ai-agent-kerakmi",
+    availableLocales: ["uz", "ru"],
+    datePublished: "2026-10-06",
+    category: "AI Agent / Qo'llanma",
+    relatedService: { href: "/ai-agent", label: "AI agent yaratish" },
+    seo: {
+      ru: {
+        title: "Нужен ли бизнесу ИИ-агент? 5 признаков и цены",
+        description:
+          "Когда бизнесу нужен ИИ-агент, а когда хватит чат-бота: 5 признаков, полезные задачи, цена от $400 и сроки запуска. Руководство Tezcode, Ташкент.",
+      },
+    },
+    list: {
+      uz: {
+        title: "Biznesingizga AI agent kerakmi? 5 ta belgi va narxlar (2026)",
+        excerpt:
+          "AI agent qachon haqiqiy foyda beradi, qachon oddiy chatbot yetarli: 5 ta belgi, eng foydali vazifalar, narx va muddatlar.",
+      },
+      ru: {
+        title: "Нужен ли вашему бизнесу ИИ-агент? 5 признаков и цены (2026)",
+        excerpt:
+          "Когда ИИ-агент действительно приносит пользу, а когда хватит чат-бота: 5 признаков, полезные задачи, цены и сроки.",
+      },
+    },
+  },
+  {
     slug: "gpt-6-astra",
     availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-09-11",
