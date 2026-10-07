@@ -12,6 +12,7 @@ import { Clients } from "@/components/Clients";
 import { LatestNews } from "@/components/LatestNews";
 import { PricingTiers } from "@/components/PricingTiers";
 import { Footer } from "@/components/Footer";
+import { InstagramReels } from "@/components/InstagramReels";
 import { FloatingContact } from "@/components/FloatingContact";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { HOME_FAQ, type FaqLang } from "@/content/faq";
@@ -97,6 +98,9 @@ export default async function HomePage({
         subtitle={faq.subtitle}
         items={faq.items}
       />
+
+      {/* Instagram reels — low on the page so leads see the offer first */}
+      <InstagramReels />
 
       {/* Footer */}
       <Footer />
