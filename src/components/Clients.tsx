@@ -23,6 +23,17 @@ const BRANDS: Brand[] = [
   { name: "AI Solution", logo: "/clients/aisolution.png", w: 719, h: 834 },
 ];
 
+// The last tile stretches across the empty cells of its row so the grid never
+// ends with a blank cell (e.g. 5 brands in 2 columns on mobile, 3 on sm).
+// md shows all brands in one row, so no stretch there.
+function lastCellSpan(i: number): string {
+  if (i !== BRANDS.length - 1) return "";
+  const mobile = BRANDS.length % 2 === 1 ? "col-span-2" : "";
+  const rem3 = BRANDS.length % 3;
+  const sm = rem3 === 0 ? "sm:col-span-1" : rem3 === 1 ? "sm:col-span-3" : "sm:col-span-2";
+  return `${mobile} ${sm} md:col-span-1`;
+}
+
 const LABELS: Record<string, { chip: string; title: string; subtitle: string }> = {
   uz: {
     chip: "Hamkor va mijozlar",
@@ -82,10 +93,10 @@ export function Clients() {
               className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 -me-px -mb-px"
               stagger={0.08}
             >
-              {BRANDS.map((b) => (
+              {BRANDS.map((b, i) => (
                 <RevealItem
                   key={b.name}
-                  className="flex flex-col items-center justify-center gap-5 py-12 px-6 group border-e border-b border-[var(--tc-border)]"
+                  className={`flex flex-col items-center justify-center gap-5 py-12 px-6 group border-e border-b border-[var(--tc-border)] ${lastCellSpan(i)}`}
                 >
                   <div className="flex h-16 items-center justify-center">
                     <Image
