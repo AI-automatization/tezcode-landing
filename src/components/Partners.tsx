@@ -56,36 +56,31 @@ const ITPARK = {
   } as Record<Lang, string[]>,
 };
 
-const OPENAI_NETWORK: Record<Lang, { role: string; description: string; more: string; badge: string }> = {
+const OPENAI_NETWORK: Record<Lang, { role: string; description: string; tags: string[] }> = {
   uz: {
-    role: "Tezcode — OpenAI Partner Network a'zosi",
+    role: "OpenAI Partner Network a'zosi",
     description: "Tezcode OpenAI hamkorlar tarmog'iga qo'shildi. Jamoamiz uchun tarmoq resurslari, savdo va texnik o'quv materiallaridan foydalanish imkoniyati ochildi.",
-    more: "Dastur haqida — OpenAI",
-    badge: "Tarmoq a'zosi",
+    tags: ["OpenAI", "Partner Network", "AI"],
   },
   ru: {
-    role: "Tezcode — участник OpenAI Partner Network",
+    role: "Участник OpenAI Partner Network",
     description: "Tezcode присоединился к партнёрской сети OpenAI. Наша команда получила доступ к ресурсам сети, учебным материалам по продажам и технической подготовке.",
-    more: "О программе — OpenAI",
-    badge: "Участник сети",
+    tags: ["OpenAI", "Partner Network", "ИИ"],
   },
   en: {
-    role: "Tezcode is a member of the OpenAI Partner Network",
+    role: "Member of the OpenAI Partner Network",
     description: "Tezcode has joined the OpenAI Partner Network. Our team now has access to network resources, sales enablement and technical training materials.",
-    more: "About the program — OpenAI",
-    badge: "Network member",
+    tags: ["OpenAI", "Partner Network", "AI"],
   },
   ar: {
-    role: "Tezcode عضو في شبكة شركاء OpenAI",
+    role: "عضو في شبكة شركاء OpenAI",
     description: "انضمت Tezcode إلى شبكة شركاء OpenAI. أصبح بإمكان فريقنا الوصول إلى موارد الشبكة ومواد التدريب على المبيعات والتدريب التقني.",
-    more: "عن البرنامج — OpenAI",
-    badge: "عضو في الشبكة",
+    tags: ["OpenAI", "Partner Network", "الذكاء الاصطناعي"],
   },
   uk: {
-    role: "Tezcode — учасник OpenAI Partner Network",
+    role: "Учасник OpenAI Partner Network",
     description: "Tezcode приєднався до партнерської мережі OpenAI. Наша команда отримала доступ до ресурсів мережі, навчальних матеріалів із продажів і технічної підготовки.",
-    more: "Про програму — OpenAI",
-    badge: "Учасник мережі",
+    tags: ["OpenAI", "Partner Network", "AI"],
   },
 };
 
@@ -311,7 +306,7 @@ export function Partners() {
           {/* Featured — IT Park residency */}
           <ItParkCard locale={locale} more={l.more} resident={l.resident} />
 
-          <OpenAiNetworkCard locale={locale} />
+          <OpenAiNetworkCard locale={locale} more={l.more} badge={l.badge} />
 
           {/* Partner cards */}
           {PARTNERS.map((partner) => (
@@ -347,32 +342,60 @@ export function Partners() {
   );
 }
 
-function OpenAiNetworkCard({ locale }: { locale: Lang }) {
+// Same layout as PartnerCard; links out to the official program page.
+function OpenAiNetworkCard({ locale, more, badge }: { locale: Lang; more: string; badge: string }) {
   const copy = OPENAI_NETWORK[locale] ?? OPENAI_NETWORK.uz;
 
   return (
     <a
       href="https://openai.com/business/partners/"
+      target="_blank"
+      rel="noopener noreferrer"
       className="group tc-card tc-card-hover relative flex w-[300px] sm:w-[380px] shrink-0 snap-start flex-col overflow-hidden"
     >
-      <div className="relative flex h-52 w-full shrink-0 flex-col items-center justify-center bg-white px-6 pt-8">
-        <span className="absolute end-3 top-3 rounded-full border border-[var(--tc-border)] bg-[var(--tc-surface-1)] px-3 py-1 text-[11px] text-[var(--tc-text-secondary)]">
-          {copy.badge}
-        </span>
+      {/* Media banner */}
+      <div className="relative flex h-52 w-full shrink-0 flex-col items-center justify-center gap-3 overflow-hidden bg-white">
         <Image
           src="/partners/openai-blossom.svg"
           alt="OpenAI"
           width={721}
           height={721}
-          className="h-32 w-32 shrink-0 object-contain"
+          draggable={false}
+          className="h-28 w-28 shrink-0 object-contain select-none pointer-events-none"
         />
-        <p className="mb-5 text-sm tracking-wide text-neutral-600" dir="ltr">Partner Network</p>
+        <p className="text-sm tracking-wide text-neutral-600" dir="ltr">Partner Network</p>
+
+        <span className="absolute end-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-[var(--tc-border)] bg-[var(--tc-surface-1)]/90 px-3 py-1 text-[11px] font-500 text-[var(--tc-text-primary)] backdrop-blur">
+          <span className="h-1.5 w-1.5 rounded-full bg-[var(--tc-blue)]" />
+          {badge}
+        </span>
       </div>
-      <div className="flex flex-1 flex-col gap-3 p-6 text-start">
-        <h3 className="text-lg font-700 tracking-tight text-[var(--tc-text-primary)]">{copy.role}</h3>
-        <p className="text-sm leading-relaxed text-[var(--tc-text-muted)]">{copy.description}</p>
-        <span className="mt-auto inline-flex items-center gap-1.5 pt-3 text-sm font-500 text-[var(--tc-blue-text)]">
-          {copy.more}
+
+      {/* Content */}
+      <div className="relative flex flex-1 flex-col gap-3 p-6 text-start">
+        <div>
+          <div
+            className="text-lg font-700 tracking-tight text-[var(--tc-text-primary)]"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            OpenAI
+          </div>
+          <p className="mt-1.5 text-sm leading-relaxed text-[var(--tc-text-secondary)]">{copy.role}</p>
+          <p className="mt-3 text-sm leading-relaxed text-[var(--tc-text-muted)]">{copy.description}</p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {copy.tags.map((tag) => (
+              <span
+                key={tag}
+                className="rounded-full border border-[var(--tc-border)] bg-[var(--tc-surface-2)] px-2.5 py-1 text-xs text-[var(--tc-text-secondary)]"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <span className="relative mt-auto inline-flex items-center gap-1.5 pt-3 text-sm font-500 text-[var(--tc-blue-text)]">
+          {more}
           <ArrowRight aria-hidden="true" className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
         </span>
       </div>
