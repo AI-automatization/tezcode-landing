@@ -4,6 +4,7 @@ import { ServicePageClient } from "@/components/service-page/ServicePageClient";
 import type { ServiceLang } from "@/components/service-page/types";
 import { buildPageMetadata, getFaqSchema, getServiceSchema, getBreadcrumbSchema, BASE_URL } from "@/lib/seo";
 import { getCity } from "@/data/cities";
+import { ruLocative } from "@/data/cityLocal";
 import { buildAiChatbotCityContent } from "./cityContent";
 
 const ACTIVE_CITY_SLUGS = ["toshkent", "samarqand"];
@@ -37,11 +38,11 @@ export async function generateMetadata({
       ogDescription: `24/7 javob, lid saralash, buyurtma qabul qilish. Telegram/Instagram/WhatsApp. ${cityName}. Bepul konsultatsiya.`,
     },
     ru: {
-      title: `ИИ-чатбот ${cityName} — ИИ-ассистент для бизнеса | Tezcode`,
-      description: `ИИ-чатбот для бизнеса в ${cityName}: ответы 24/7, квалификация лидов, приём заказов. Telegram, Instagram, WhatsApp, сайт. ${cityName} и весь Узбекистан. Бесплатная консультация.`,
-      keywords: [`ИИ-чатбот ${cityName}`, `чатбот для бизнеса ${cityName}`, `ИИ ассистент ${cityName}`, "ИИ-чатбот Узбекистан"],
-      ogTitle: `ИИ-чатбот для бизнеса в ${cityName} — Tezcode`,
-      ogDescription: `Ответы 24/7, квалификация лидов, приём заказов. Telegram/Instagram/WhatsApp. ${cityName}. Бесплатная консультация.`,
+      title: `Чат-бот для бизнеса ${ruLocative(city)} — разработка ИИ-бота | Tezcode`,
+      description: `Разработка чат-бота для бизнеса ${ruLocative(city)} от $339: ответы клиентам 24/7, приём заказов, квалификация лидов, интеграция с CRM и 1С. Telegram, Instagram, WhatsApp, сайт. Бесплатная консультация.`,
+      keywords: [`чат бот для бизнеса ${cityName}`, `чат-бот ${cityName}`, `разработка чат-бота ${cityName}`, `ИИ-чат-бот ${cityName}`, "чат-бот для бизнеса Узбекистан"],
+      ogTitle: `Чат-бот для бизнеса ${ruLocative(city)} — Tezcode`,
+      ogDescription: `Ответы клиентам 24/7, приём заказов, интеграция с CRM. Telegram, Instagram, WhatsApp. От $339. Бесплатная консультация.`,
     },
     en: {
       title: `AI chatbot ${cityName} — AI assistant for business | Tezcode`,

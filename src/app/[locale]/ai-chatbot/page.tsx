@@ -28,10 +28,10 @@ const META: Record<
       "24/7 mijoz xizmati, buyurtma qabul, lid saralash, CRM/1C integratsiyasi — Telegram, Instagram, WhatsApp va veb-saytda. O'zbek va rus tillarida. Bepul konsultatsiya.",
   },
   ru: {
-    title: "Разработка ИИ-чат-ботов для бизнеса — Ташкент",
+    title: "Разработка ИИ-чат-ботов для бизнеса в Узбекистане",
     description:
       "Разработка ИИ-чат-ботов в Ташкенте от $339: ответы клиентам, приём заказов и CRM-интеграция. На узбекском и русском. Обсудите задачу на бесплатной консультации.",
-    ogTitle: "Разработка ИИ-чат-ботов для бизнеса — Ташкент | Tezcode",
+    ogTitle: "Разработка ИИ-чат-ботов для бизнеса в Узбекистане | Tezcode",
     ogDescription:
       "ИИ-чат-бот для бизнеса: поддержка 24/7, приём заказов, квалификация лидов, интеграция с CRM/1C — Telegram, Instagram, WhatsApp и сайт. На узбекском и русском. Бесплатная консультация.",
   },

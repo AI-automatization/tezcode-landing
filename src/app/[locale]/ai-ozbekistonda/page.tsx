@@ -33,10 +33,10 @@ const META: Record<
       "Toshkentdagi AI Software Factory: O'zbekiston bizneslari uchun AI agentlar, chatbotlar, avtomatizatsiya va integratsiyalar.",
   },
   ru: {
-    title: "AI-компания в Узбекистане — решения для бизнеса | Tezcode",
+    title: "Внедрение ИИ в бизнес в Ташкенте и Узбекистане | Tezcode",
     description:
       "Tezcode — AI-компания и AI Software Factory в Ташкенте. ИИ-агенты, чат-боты, автоматизация, видеоаналитика и интеграции 1C/CRM по всему Узбекистану. Бесплатная консультация.",
-    ogTitle: "AI-компания в Узбекистане — Tezcode",
+    ogTitle: "Внедрение ИИ в бизнес в Ташкенте и Узбекистане — Tezcode",
     ogDescription:
       "AI Software Factory в Ташкенте: ИИ-агенты, чат-боты, автоматизация и интеграции для бизнеса по всему Узбекистану.",
   },

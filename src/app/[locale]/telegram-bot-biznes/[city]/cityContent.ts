@@ -1,6 +1,7 @@
 import type { ServicePageContent, ServiceLang } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
 import { CONTENT } from "../content";
+import { cityOfficeFaq, cityTrust, ruLocative } from "@/data/cityLocal";
 
 const TELEGRAM_BOT_INTRO: Record<string, Record<ServiceLang, string>> = {
   toshkent: {
@@ -23,23 +24,23 @@ const CITY_FAQ: Record<string, Record<ServiceLang, { q: string; a: string }>> = 
   toshkent: {
     uz: {
       q: "Toshkentdagi bizneslar uchun Telegram bot qancha turadi?",
-      a: "Oddiy buyurtma/savol boti — 200–600 USD, Click/Payme to'lov va CRM integratsiyali bot — 600–2000 USD. Bepul konsultatsiyada aniq hisob-kitob qilamiz.",
+      a: "Telegram bot yaratish $279 dan boshlanadi. Click/Payme to'lov yoki CRM integratsiyasi qo'shilsa narx oshadi — aniq summani bepul konsultatsiyadan keyin yozma taklifda beramiz. To'lov: 30% oldindan.",
     },
     ru: {
       q: "Сколько стоит Telegram-бот для бизнеса в Ташкенте?",
-      a: "Простой бот для заказов/вопросов — 200–600 USD, бот с оплатой Click/Payme и интеграцией CRM — 600–2000 USD. На бесплатной консультации рассчитаем точно.",
+      a: "Разработка Telegram-бота стоит от $279. С оплатой Click/Payme или интеграцией CRM цена выше — точную сумму фиксируем в письменном предложении после бесплатной консультации. Оплата: 30% предоплата.",
     },
     en: {
       q: "How much does a Telegram bot cost for businesses in Tashkent?",
-      a: "A simple order/Q&A bot — $200–$600; a bot with Click/Payme payment and CRM integration — $600–$2,000. Exact estimate on the free consultation.",
+      a: "A Telegram bot starts from $279. Click/Payme payments or CRM integration raise the price — we confirm the exact amount in a written proposal after the free consultation. Payment: 30% upfront.",
     },
     ar: {
       q: "كم تكلفة روبوت تيليغرام للشركات في طشقند؟",
-      a: "روبوت بسيط للطلبات والأسئلة — 200–600 دولار؛ روبوت مع دفع Click/Payme وتكامل CRM — 600–2000 دولار. تقدير دقيق في الاستشارة المجانية.",
+      a: "يبدأ روبوت تيليغرام من 279 دولاراً. يرتفع السعر مع الدفع عبر Click/Payme أو تكامل CRM — نحدد المبلغ الدقيق في عرض مكتوب بعد الاستشارة المجانية. الدفع: 30% مقدماً.",
     },
     uk: {
       q: "Скільки коштує Telegram-бот для бізнесу в Ташкенті?",
-      a: "Простий бот для замовлень/запитань — 200–600 USD; бот з оплатою Click/Payme та інтеграцією CRM — 600–2000 USD. Точний розрахунок на безкоштовній консультації.",
+      a: "Telegram-бот коштує від $279. З оплатою Click/Payme або інтеграцією CRM ціна вища — точну суму фіксуємо в письмовій пропозиції після безкоштовної консультації. Оплата: 30% передоплата.",
     },
   },
   samarqand: {
@@ -126,26 +127,35 @@ export function buildTelegramBotCityContent(city: City): ServicePageContent {
     const intro = (TELEGRAM_BOT_INTRO[city.slug]?.[lang] ?? TELEGRAM_BOT_INTRO[city.slug]?.uz) ?? "";
     const cityFaq = (CITY_FAQ[city.slug]?.[lang] ?? CITY_FAQ[city.slug]?.uz) ?? { q: "", a: "" };
     const cityName = city.name[lang] ?? city.name.uz;
+    const SERVICE_DESCRIPTION: Record<ServiceLang, string> = {
+      uz: `${cityName} bizneslari uchun Telegram bot: buyurtma, to'lov (Click/Payme), eslatma, CRM integratsiyasi. Tezcode, ${cityName} va butun O'zbekiston.`,
+      ru: `Telegram-бот для бизнеса ${ruLocative(city)}: заказы, оплата Click/Payme, напоминания, интеграция с CRM. Tezcode.`,
+      en: `Telegram bot for businesses in ${cityName}: orders, Click/Payme payments, reminders, CRM integration. Tezcode.`,
+      ar: `بوت تيليغرام للشركات في ${cityName}: الطلبات، الدفع عبر Click/Payme، التذكيرات، تكامل CRM. Tezcode.`,
+      uk: `Telegram-бот для бізнесу в ${cityName}: замовлення, оплата Click/Payme, нагадування, інтеграція з CRM. Tezcode.`,
+    };
     const localCopy = LOCAL_CITY_COPY[city.slug]?.[lang];
 
     result[lang] = {
       ...base,
       hero: {
         ...base.hero,
-        badge: `${cityName}da Telegram bot — Tezcode`,
+        ...(lang === "ru"
+          ? { badge: `Разработка Telegram-ботов — ${cityName}`, title1: "Телеграм-бот для бизнеса", titleAccent: ruLocative(city), title2: "" }
+          : { badge: `${cityName}da Telegram bot — Tezcode` }),
         subtitle: `${intro}\n\n${base.hero.subtitle}`,
-        trust: `${cityName} va butun O'zbekiston • Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan`,
+        trust: cityTrust(city, lang),
       },
       capabilities: localCopy ? { ...base.capabilities, subtitle: localCopy.capabilitySubtitle } : base.capabilities,
       examples: localCopy ? { ...base.examples, subtitle: localCopy.exampleSubtitle } : base.examples,
       cta: localCopy ? { ...base.cta, subtitle: localCopy.ctaSubtitle } : base.cta,
       faq: {
         ...base.faq,
-        items: [{ q: cityFaq.q, a: cityFaq.a }, ...(localCopy?.faq ?? []), ...base.faq.items],
+        items: [{ q: cityFaq.q, a: cityFaq.a }, ...cityOfficeFaq(city, lang), ...(localCopy?.faq ?? []), ...base.faq.items],
       },
       service: {
         ...base.service,
-        description: `${cityName} bizneslari uchun Telegram bot: buyurtma, to'lov (Click/Payme), eslatma, CRM integratsiyasi. Tezcode, ${cityName} va butun O'zbekiston.`,
+        description: SERVICE_DESCRIPTION[lang],
       },
     };
   }

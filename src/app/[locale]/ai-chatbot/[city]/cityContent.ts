@@ -1,6 +1,7 @@
 import type { ServicePageContent, ServiceLang } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
 import { CONTENT } from "../content";
+import { cityOfficeFaq, cityTrust, ruLocative } from "@/data/cityLocal";
 
 const AI_CHATBOT_INTRO: Record<string, Record<ServiceLang, string>> = {
   toshkent: {
@@ -23,23 +24,23 @@ const CITY_FAQ: Record<string, Record<ServiceLang, { q: string; a: string }>> = 
   toshkent: {
     uz: {
       q: "Toshkentdagi bizneslar uchun AI chatbot qancha turadi?",
-      a: "Oddiy FAQ chatbot — 300–800 USD, CRM/1C integratsiyali chatbot — 800–2500 USD. Bepul konsultatsiyada aniq hisob-kitob qilamiz.",
+      a: "AI chatbot yaratish $339 dan boshlanadi. CRM yoki 1C integratsiyasi qo'shilsa narx oshadi — aniq summani bepul konsultatsiyadan keyin yozma taklifda beramiz. To'lov: 30% oldindan.",
     },
     ru: {
       q: "Сколько стоит ИИ-чатбот для бизнеса в Ташкенте?",
-      a: "Простой FAQ-чатбот — 300–800 USD, чатбот с интеграцией CRM/1С — 800–2500 USD. На бесплатной консультации рассчитаем точно.",
+      a: "Разработка ИИ-чат-бота стоит от $339. С интеграцией CRM или 1С цена выше — точную сумму фиксируем в письменном предложении после бесплатной консультации. Оплата: 30% предоплата.",
     },
     en: {
       q: "How much does an AI chatbot cost for businesses in Tashkent?",
-      a: "A simple FAQ chatbot — $300–$800; a chatbot with CRM/1C integration — $800–$2,500. We'll give an exact estimate on the free consultation.",
+      a: "An AI chatbot starts from $339. CRM or 1C integration raises the price — we confirm the exact amount in a written proposal after the free consultation. Payment: 30% upfront.",
     },
     ar: {
       q: "كم تكلفة شات بوت الذكاء الاصطناعي للشركات في طشقند؟",
-      a: "شات بوت أسئلة شائعة بسيط — 300–800 دولار؛ شات بوت مع تكامل CRM/1C — 800–2500 دولار. سنقدّم تقديراً دقيقاً في الاستشارة المجانية.",
+      a: "يبدأ شات بوت الذكاء الاصطناعي من 339 دولاراً. يرتفع السعر مع تكامل CRM أو 1C — نحدد المبلغ الدقيق في عرض مكتوب بعد الاستشارة المجانية. الدفع: 30% مقدماً.",
     },
     uk: {
       q: "Скільки коштує AI-чатбот для бізнесу в Ташкенті?",
-      a: "Простий FAQ-чатбот — 300–800 USD; чатбот з інтеграцією CRM/1С — 800–2500 USD. На безкоштовній консультації розрахуємо точно.",
+      a: "AI-чатбот коштує від $339. З інтеграцією CRM або 1С ціна вища — точну суму фіксуємо в письмовій пропозиції після безкоштовної консультації. Оплата: 30% передоплата.",
     },
   },
   samarqand: {
@@ -75,22 +76,31 @@ export function buildAiChatbotCityContent(city: City): ServicePageContent {
     const intro = (AI_CHATBOT_INTRO[city.slug]?.[lang] ?? AI_CHATBOT_INTRO[city.slug]?.uz) ?? "";
     const cityFaq = (CITY_FAQ[city.slug]?.[lang] ?? CITY_FAQ[city.slug]?.uz) ?? { q: "", a: "" };
     const cityName = city.name[lang] ?? city.name.uz;
+    const SERVICE_DESCRIPTION: Record<ServiceLang, string> = {
+      uz: `${cityName} bizneslari uchun AI chatbot va yordamchi: 24/7 javob, lid saralash, buyurtma qabul qilish. Telegram, Instagram, WhatsApp, veb-sayt. Tezcode.`,
+      ru: `ИИ-чат-бот для бизнеса ${ruLocative(city)}: ответы 24/7, квалификация лидов, приём заказов. Telegram, Instagram, WhatsApp, сайт. Tezcode.`,
+      en: `AI chatbot for businesses in ${cityName}: 24/7 replies, lead qualification, order intake. Telegram, Instagram, WhatsApp, website. Tezcode.`,
+      ar: `شات بوت ذكاء اصطناعي للشركات في ${cityName}: ردود على مدار الساعة، تأهيل العملاء، استقبال الطلبات. تيليغرام، إنستغرام، واتساب، موقع. Tezcode.`,
+      uk: `AI-чатбот для бізнесу в ${cityName}: відповіді 24/7, кваліфікація лідів, приймання замовлень. Telegram, Instagram, WhatsApp, сайт. Tezcode.`,
+    };
 
     result[lang] = {
       ...base,
       hero: {
         ...base.hero,
-        badge: `${cityName}da AI chatbot — Tezcode`,
+        ...(lang === "ru"
+          ? { badge: `Разработка чат-ботов — ${cityName}`, title1: "Чат-бот для бизнеса", titleAccent: ruLocative(city), title2: "" }
+          : { badge: `${cityName}da AI chatbot — Tezcode` }),
         subtitle: `${intro}\n\n${base.hero.subtitle}`,
-        trust: `${cityName} va butun O'zbekiston • Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan`,
+        trust: cityTrust(city, lang),
       },
       faq: {
         ...base.faq,
-        items: [{ q: cityFaq.q, a: cityFaq.a }, ...base.faq.items],
+        items: [{ q: cityFaq.q, a: cityFaq.a }, ...cityOfficeFaq(city, lang), ...base.faq.items],
       },
       service: {
         ...base.service,
-        description: `${cityName} bizneslari uchun AI chatbot va yordamchi: 24/7 javob, lid saralash, buyurtma qabul qilish. Telegram, Instagram, WhatsApp, veb-sayt. Tezcode.`,
+        description: SERVICE_DESCRIPTION[lang],
       },
     };
   }

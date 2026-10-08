@@ -4,6 +4,7 @@ import { ServicePageClient } from "@/components/service-page/ServicePageClient";
 import type { ServiceLang } from "@/components/service-page/types";
 import { buildPageMetadata, getFaqSchema, getServiceSchema, getBreadcrumbSchema, BASE_URL } from "@/lib/seo";
 import { getCity } from "@/data/cities";
+import { ruLocative } from "@/data/cityLocal";
 import { buildTelegramBotCityContent } from "./cityContent";
 
 const ACTIVE_CITY_SLUGS = ["toshkent", "samarqand"];
@@ -37,11 +38,11 @@ export async function generateMetadata({
       ogDescription: `Buyurtma, to'lov, eslatma, CRM. ${cityName}. Bepul konsultatsiya.`,
     },
     ru: {
-      title: `Telegram бот ${cityName} — Telegram-бот для бизнеса | Tezcode`,
-      description: `Telegram-бот для бизнеса в ${cityName}: заказы, оплата (Click/Payme), напоминания, интеграция с CRM. ${cityName} и весь Узбекистан. Бесплатная консультация.`,
-      keywords: [`Telegram бот ${cityName}`, `Telegram-бот для бизнеса ${cityName}`, "Telegram бот Узбекистан"],
-      ogTitle: `Telegram-бот для бизнеса в ${cityName} — Tezcode`,
-      ogDescription: `Заказы, оплата, напоминания, CRM. ${cityName}. Бесплатная консультация.`,
+      title: `Телеграм-бот для бизнеса ${ruLocative(city)} — заказы и оплата | Tezcode`,
+      description: `Разработка Telegram-бота для бизнеса ${ruLocative(city)} от $279: приём заказов, оплата Click/Payme, уведомления, интеграция с CRM. Бесплатная консультация, оплата 30% предоплата.`,
+      keywords: [`телеграм бот для бизнеса ${cityName}`, `Telegram-бот ${cityName}`, `разработка телеграм бота ${cityName}`, "телеграм бот для бизнеса Узбекистан"],
+      ogTitle: `Телеграм-бот для бизнеса ${ruLocative(city)} — Tezcode`,
+      ogDescription: `Заказы, оплата Click/Payme, уведомления, интеграция с CRM. От $279. Бесплатная консультация.`,
     },
     en: {
       title: `Telegram bot ${cityName} — Telegram bot for business | Tezcode`,
