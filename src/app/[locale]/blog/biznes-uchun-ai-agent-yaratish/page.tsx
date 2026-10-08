@@ -20,8 +20,8 @@ const META: Partial<Record<ArticleLang, ArticleMetadata>> & { uz: ArticleMetadat
     description: "AI agent yaratish bosqichlari, bepul sinov chegaralari, CRM integratsiyasi va xarajatlar. Biznesingiz uchun agent kerakligini aniqlash qo'llanmasi.",
   },
   ru: {
-    title: "Как создать AI-агента: 6 шагов и факторы стоимости",
-    description: "Руководство по созданию AI-агента для бизнеса: выбор задачи, интеграция с CRM, тестирование и запуск. От чего зависит стоимость разработки.",
+    title: "ИИ-агент для бизнеса в Ташкенте: полное руководство (2026)",
+    description: "Полное руководство по ИИ-агентам для бизнеса в Ташкенте: что умеет агент, виды, интеграция с CRM и 1С, цена от $400, сроки запуска и частые ошибки.",
   },
   en: {
     title: "How to Build an AI Agent: 6 Steps and Cost Factors",
