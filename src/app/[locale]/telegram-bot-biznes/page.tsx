@@ -21,10 +21,10 @@ const META: Record<
   { title: string; description: string; ogTitle: string; ogDescription: string }
 > = {
   uz: {
-    title: "Telegram bot biznes uchun — Toshkent: buyurtma, to'lov",
+    title: "Telegram bot yaratish biznes uchun — buyurtma, to'lov",
     description:
       "Biznes uchun Telegram bot yaratish Toshkentda $279 dan: buyurtma qabul qilish, Click/Payme to'lov, qo'llab-quvvatlash, eslatma, Telegram do'kon (Mini App), CRM integratsiyasi. Tezcode — IT Park rezidenti. Bepul konsultatsiya, to'lov 30% oldindan.",
-    ogTitle: "Telegram bot biznes uchun — Toshkent | Tezcode",
+    ogTitle: "Telegram bot yaratish biznes uchun — O'zbekiston | Tezcode",
     ogDescription:
       "Buyurtma, Click/Payme to'lov, eslatma, Telegram do'kon (Mini App), CRM integratsiyasi va AI qatlami — biznesingizga moslab. Bepul konsultatsiya.",
   },

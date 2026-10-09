@@ -143,6 +143,9 @@ export function buildTelegramBotCityContent(city: City): ServicePageContent {
         ...(lang === "ru"
           ? { badge: `Разработка Telegram-ботов — ${cityName}`, title1: "Телеграм-бот для бизнеса", titleAccent: ruLocative(city), title2: "" }
           : { badge: `${cityName}da Telegram bot — Tezcode` }),
+        ...(lang === "uz"
+          ? { badge: `Telegram bot yaratish — ${cityName}`, title1: `${cityName}da biznes uchun`, titleAccent: "Telegram bot yaratish", title2: "" }
+          : {}),
         subtitle: `${intro}\n\n${base.hero.subtitle}`,
         trust: cityTrust(city, lang),
       },

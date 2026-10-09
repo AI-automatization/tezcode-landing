@@ -31,7 +31,7 @@ export async function generateMetadata({
 
   const META: Record<ServiceLang, { title: string; description: string; keywords: string[]; ogTitle: string; ogDescription: string }> = {
     uz: {
-      title: `AI chatbot ${cityName} — biznes uchun AI yordamchi | Tezcode`,
+      title: `${cityName}da chatbot yaratish — biznes uchun AI chatbot | Tezcode`,
       description: `${cityName} bizneslari uchun AI chatbot: 24/7 javob, lid saralash, buyurtma qabul qilish. Telegram, Instagram, WhatsApp, veb-sayt. ${cityName} va butun O'zbekiston. Bepul konsultatsiya.`,
       keywords: [`AI chatbot ${cityName}`, `${cityName}da AI chatbot`, `chatbot ${cityName}`, `AI yordamchi ${cityName}`, "AI chatbot O'zbekiston"],
       ogTitle: `${cityName}da biznes uchun AI chatbot — Tezcode`,

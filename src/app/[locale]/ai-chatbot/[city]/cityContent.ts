@@ -91,6 +91,9 @@ export function buildAiChatbotCityContent(city: City): ServicePageContent {
         ...(lang === "ru"
           ? { badge: `Разработка чат-ботов — ${cityName}`, title1: "Чат-бот для бизнеса", titleAccent: ruLocative(city), title2: "" }
           : { badge: `${cityName}da AI chatbot — Tezcode` }),
+        ...(lang === "uz"
+          ? { badge: `Chatbot yaratish — ${cityName}`, title1: `${cityName}da biznes uchun`, titleAccent: "chatbot yaratish", title2: "" }
+          : {}),
         subtitle: `${intro}\n\n${base.hero.subtitle}`,
         trust: cityTrust(city, lang),
       },

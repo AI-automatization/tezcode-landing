@@ -8,9 +8,9 @@ import type { ServicePageContent } from "@/components/service-page/types";
 export const CONTENT: ServicePageContent = {
   uz: {
     hero: {
-      badge: "Telegram bot biznes uchun — Toshkent",
-      title1: "Biznesingiz uchun",
-      titleAccent: "Telegram bot yasaymiz",
+      badge: "Telegram bot biznes uchun — O'zbekiston",
+      title1: "Biznes uchun",
+      titleAccent: "Telegram bot yaratish",
       title2: "",
       subtitle:
         "Biznes uchun Telegram bot — bu buyurtma qabul qiladigan, Click/Payme orqali to'lov oladigan, savollarga javob beradigan va mijozga eslatma yuboradigan dastur — operatorsiz, 24/7. Telegram O'zbekistonda eng ko'p ishlatiladigan messenjer, shuning uchun mijozga yangi ilova yuklatish shart emas — bot uni o'z kanalida kutib oladi. Tezcode — Toshkentdagi AI Software Factory — botni katalog, CRM, Telegram do'kon (Mini App) va kerak bo'lsa AI qatlami bilan biznesingizga moslab quradi.",

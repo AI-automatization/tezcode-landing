@@ -20,10 +20,10 @@ const META: Record<
   { title: string; description: string; ogTitle: string; ogDescription: string }
 > = {
   uz: {
-    title: "AI chatbot biznes uchun — Toshkent",
+    title: "AI chatbot yaratish biznes uchun — O'zbekiston",
     description:
       "Biznes uchun AI chatbot Toshkentda $339 dan: Telegram, Instagram, WhatsApp va veb-saytda 24/7 mijoz xizmati, buyurtma qabul qilish, CRM/1C integratsiyasi, o'zbek va rus tillari. IT Park rezidenti Tezcode. Bepul konsultatsiya, to'lov 30% oldindan.",
-    ogTitle: "AI chatbot biznes uchun — Toshkent | Tezcode",
+    ogTitle: "AI chatbot yaratish biznes uchun — O'zbekiston | Tezcode",
     ogDescription:
       "24/7 mijoz xizmati, buyurtma qabul, lid saralash, CRM/1C integratsiyasi — Telegram, Instagram, WhatsApp va veb-saytda. O'zbek va rus tillarida. Bepul konsultatsiya.",
   },

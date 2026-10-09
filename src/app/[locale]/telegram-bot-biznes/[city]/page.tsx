@@ -31,7 +31,7 @@ export async function generateMetadata({
 
   const META: Record<ServiceLang, { title: string; description: string; keywords: string[]; ogTitle: string; ogDescription: string }> = {
     uz: {
-      title: `Telegram bot ${cityName} — biznes uchun Telegram bot | Tezcode`,
+      title: `${cityName}da Telegram bot yaratish — buyurtma va to'lov | Tezcode`,
       description: `${cityName} bizneslari uchun Telegram bot: buyurtma, to'lov (Click/Payme), eslatma, CRM integratsiyasi. ${cityName} va butun O'zbekiston. Bepul konsultatsiya.`,
       keywords: [`Telegram bot ${cityName}`, `${cityName}da Telegram bot`, `Telegram bot biznes ${cityName}`, "Telegram bot O'zbekiston"],
       ogTitle: `${cityName}da biznes uchun Telegram bot — Tezcode`,

@@ -9,9 +9,9 @@ import type { ServicePageContent } from "@/components/service-page/types";
 export const CONTENT: ServicePageContent = {
   uz: {
     hero: {
-      badge: "AI chatbot biznes uchun — Toshkent",
-      title1: "Biznesingiz uchun",
-      titleAccent: "AI chatbot va yordamchi",
+      badge: "AI chatbot biznes uchun — O'zbekiston",
+      title1: "Biznes uchun",
+      titleAccent: "AI chatbot yaratish",
       title2: "",
       subtitle:
         "AI chatbot — bu mijozlaringiz bilan Telegram, Instagram, WhatsApp va veb-saytda tabiiy tilda yozishadigan dastur: savollarga 24/7 soniyalarda javob beradi, buyurtma va bron qabul qiladi, mijozni CRM yoki 1C ga avtomatik yozadi va tayyor xaridorni operatorga uzatadi. Tezcode — Toshkentdagi AI Software Factory — chatbotni sizning hujjatlaringiz, narxlaringiz va xizmatlaringiz asosida o'zbek va rus tilida quradi.",
