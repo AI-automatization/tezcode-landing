@@ -5,6 +5,7 @@ import type {
 } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
 import { CONTENT } from "./content";
+import { ruGen, ruPrep, ukGen, ukPrep } from "@/data/cityLocal";
 
 // Builds a full 5-locale ServicePageContent for a single city by deep-cloning the
 // base AI-automation copy and overriding the city-aware fields. A UNIQUE per-city
@@ -114,8 +115,8 @@ const CITY_FAQ: Record<ServiceLang, (city: string) => { q: string; a: string }> 
     a: `Ha. Tezcode butun O'zbekiston bo'ylab, jumladan ${city}da ham AI avtomatizatsiya xizmatini ko'rsatadi. Konsultatsiya, audit, ishlab chiqish va qo'llab-quvvatlash masofadan amalga oshiriladi — biznesingiz ${city}ning istalgan nuqtasida bo'lsa ham. Yechimni jarayoningizga moslab quramiz va Telegram, CRM, 1C yoki Google Sheets kabi tizimlaringizga ulaymiz.`,
   }),
   ru: (city) => ({
-    q: `Tezcode внедряет ИИ-автоматизацию в ${city}?`,
-    a: `Да. Tezcode оказывает услуги ИИ-автоматизации по всему Узбекистану, в том числе в ${city}. Консультация, аудит, разработка и поддержка проводятся удалённо — где бы ни находился ваш бизнес в ${city}. Решение настраивается под ваши процессы и подключается к таким системам, как Telegram, CRM, 1C или Google Sheets.`,
+    q: `Tezcode внедряет ИИ-автоматизацию в ${ruPrep(city)}?`,
+    a: `Да. Tezcode оказывает услуги ИИ-автоматизации по всему Узбекистану, в том числе в ${ruPrep(city)}. Консультация, аудит, разработка и поддержка проводятся удалённо — где бы ни находился ваш бизнес в ${ruPrep(city)}. Решение настраивается под ваши процессы и подключается к таким системам, как Telegram, CRM, 1C или Google Sheets.`,
   }),
   en: (city) => ({
     q: `Does Tezcode do AI automation in ${city}?`,
@@ -126,8 +127,8 @@ const CITY_FAQ: Record<ServiceLang, (city: string) => { q: string; a: string }> 
     a: `نعم. تقدّم Tezcode خدمات أتمتة الذكاء الاصطناعي في جميع أنحاء أوزبكستان، بما في ذلك ${city}. تتم الاستشارة والتدقيق والتطوير والدعم عن بُعد — أينما كان عملك في ${city}. نُصمّم الحل وفق عملياتك ونربطه بأنظمة مثل Telegram وCRM و1C أو Google Sheets.`,
   }),
   uk: (city) => ({
-    q: `Tezcode впроваджує AI-автоматизацію в ${city}?`,
-    a: `Так. Tezcode надає послуги AI-автоматизації по всьому Узбекистану, зокрема в ${city}. Консультація, аудит, розробка та підтримка проводяться віддалено — де б не був ваш бізнес у ${city}. Рішення налаштовується під ваші процеси та підключається до таких систем, як Telegram, CRM, 1C або Google Sheets.`,
+    q: `Tezcode впроваджує AI-автоматизацію в ${ukPrep(city)}?`,
+    a: `Так. Tezcode надає послуги AI-автоматизації по всьому Узбекистану, зокрема в ${ukPrep(city)}. Консультація, аудит, розробка та підтримка проводяться віддалено — де б не був ваш бізнес у ${ukPrep(city)}. Рішення налаштовується під ваші процеси та підключається до таких систем, як Telegram, CRM, 1C або Google Sheets.`,
   }),
 };
 
@@ -148,10 +149,10 @@ const HERO_TITLE: Record<
   (city: string) => { title1: string; titleAccent: string }
 > = {
   uz: (city) => ({ title1: `${city}da biznesni`, titleAccent: "AI bilan avtomatlashtiring" }),
-  ru: (city) => ({ title1: "ИИ-автоматизация бизнеса в", titleAccent: city }),
+  ru: (city) => ({ title1: "ИИ-автоматизация бизнеса в", titleAccent: ruPrep(city) }),
   en: (city) => ({ title1: "AI business automation in", titleAccent: city }),
   ar: (city) => ({ title1: "أتمتة الأعمال بالذكاء الاصطناعي في", titleAccent: city }),
-  uk: (city) => ({ title1: "AI-автоматизація бізнесу в", titleAccent: city }),
+  uk: (city) => ({ title1: "AI-автоматизація бізнесу в", titleAccent: ukPrep(city) }),
 };
 
 // City-aware service schema name / description / type.
@@ -165,8 +166,8 @@ const SERVICE_TEXT: Record<
     serviceType: `AI avtomatizatsiya / biznes jarayonlarini avtomatlashtirish — ${city}`,
   }),
   ru: (city, region) => ({
-    name: `ИИ-автоматизация — для ${city} | Tezcode`,
-    description: `ИИ-автоматизация для бизнеса ${city} (${region}): автоматизация клиентского сервиса, отчётности, продаж и работы с документами с помощью искусственного интеллекта. Удалённая консультация, разработка и поддержка в ${city} и по всему Узбекистану.`,
+    name: `ИИ-автоматизация — для ${ruGen(city)} | Tezcode`,
+    description: `ИИ-автоматизация для бизнеса ${ruGen(city)} (${region}): автоматизация клиентского сервиса, отчётности, продаж и работы с документами с помощью искусственного интеллекта. Удалённая консультация, разработка и поддержка в ${ruPrep(city)} и по всему Узбекистану.`,
     serviceType: `ИИ-автоматизация / автоматизация бизнес-процессов — ${city}`,
   }),
   en: (city, region) => ({
@@ -180,8 +181,8 @@ const SERVICE_TEXT: Record<
     serviceType: `أتمتة الذكاء الاصطناعي / أتمتة العمليات — ${city}`,
   }),
   uk: (city, region) => ({
-    name: `AI-автоматизація — для ${city} | Tezcode`,
-    description: `AI-автоматизація для бізнесу ${city} (${region}): автоматизація клієнтського сервісу, звітності, продажів і роботи з документами за допомогою штучного інтелекту. Віддалена консультація, розробка та підтримка в ${city} і по всьому Узбекистану.`,
+    name: `AI-автоматизація — для ${ukGen(city)} | Tezcode`,
+    description: `AI-автоматизація для бізнесу ${ukGen(city)} (${region}): автоматизація клієнтського сервісу, звітності, продажів і роботи з документами за допомогою штучного інтелекту. Віддалена консультація, розробка та підтримка в ${ukPrep(city)} і по всьому Узбекистану.`,
     serviceType: `AI-автоматизація / автоматизація бізнес-процесів — ${city}`,
   }),
 };

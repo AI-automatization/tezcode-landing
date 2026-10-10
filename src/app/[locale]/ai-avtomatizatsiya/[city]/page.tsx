@@ -5,6 +5,7 @@ import type { ServiceLang } from "@/components/service-page/types";
 import { buildPageMetadata, getFaqSchema, getServiceSchema } from "@/lib/seo";
 import { getCity } from "@/data/cities";
 import { buildCityContent } from "../cityContent";
+import { ruGen, ruPrep, ukGen, ukPrep } from "@/data/cityLocal";
 
 // Dynamic per-city AI-automation landing pages: /ai-avtomatizatsiya/<city>.
 // Mirrors ../page.tsx (the base /ai-avtomatizatsiya) but injects a unique, per-city
@@ -62,7 +63,7 @@ export async function generateMetadata({
     },
     ru: {
       title: `ИИ-автоматизация ${cityName} — автоматизация бизнеса с искусственным интеллектом | Tezcode`,
-      description: `ИИ-автоматизация для бизнеса ${cityName}: ИИ-чатбот, автоматические отчёты, автоматизация продаж и работы с документами. ${cityName} и весь Узбекистан. Бесплатная 30-минутная консультация.`,
+      description: `ИИ-автоматизация для бизнеса ${ruGen(cityName)}: ИИ-чатбот, автоматические отчёты, автоматизация продаж и работы с документами. ${cityName} и весь Узбекистан. Бесплатная 30-минутная консультация.`,
       keywords: [
         `ИИ-автоматизация ${cityName}`,
         `искусственный интеллект ${cityName}`,
@@ -71,7 +72,7 @@ export async function generateMetadata({
         `ИИ для бизнеса ${cityName}`,
         "ИИ-решение Узбекистан",
       ],
-      ogTitle: `Автоматизируйте бизнес в ${cityName} с помощью ИИ`,
+      ogTitle: `Автоматизируйте бизнес в ${ruPrep(cityName)} с помощью ИИ`,
       ogDescription: `ИИ-чатбот, автоматические отчёты, автоматизация продаж и склада — под ваш бизнес. ${cityName} и весь Узбекистан. Бесплатная консультация.`,
     },
     en: {
@@ -104,7 +105,7 @@ export async function generateMetadata({
     },
     uk: {
       title: `AI-автоматизація ${cityName} — автоматизація бізнесу зі штучним інтелектом | Tezcode`,
-      description: `AI-автоматизація для бізнесу ${cityName}: AI-чатбот, автоматичні звіти, автоматизація продажів і роботи з документами. ${cityName} і весь Узбекистан. Безкоштовна 30-хвилинна консультація.`,
+      description: `AI-автоматизація для бізнесу ${ukGen(cityName)}: AI-чатбот, автоматичні звіти, автоматизація продажів і роботи з документами. ${cityName} і весь Узбекистан. Безкоштовна 30-хвилинна консультація.`,
       keywords: [
         `AI автоматизація ${cityName}`,
         `штучний інтелект ${cityName}`,
@@ -113,7 +114,7 @@ export async function generateMetadata({
         `AI агент ${cityName}`,
         "AI рішення Узбекистан",
       ],
-      ogTitle: `Автоматизуйте бізнес у ${cityName} за допомогою AI`,
+      ogTitle: `Автоматизуйте бізнес у ${ukPrep(cityName)} за допомогою AI`,
       ogDescription: `AI-чатбот, автоматичні звіти, автоматизація продажів і складу — під ваш бізнес. ${cityName} і весь Узбекистан. Безкоштовна консультація.`,
     },
   };

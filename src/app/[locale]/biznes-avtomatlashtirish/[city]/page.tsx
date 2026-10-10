@@ -5,6 +5,7 @@ import type { ServiceLang } from "@/components/service-page/types";
 import { buildPageMetadata, getFaqSchema, getServiceSchema, getBreadcrumbSchema, BASE_URL } from "@/lib/seo";
 import { getCity } from "@/data/cities";
 import { buildBiznesAvtoCityContent } from "./cityContent";
+import { ruPrep, ukPrep } from "@/data/cityLocal";
 
 const ACTIVE_CITY_SLUGS = ["toshkent", "samarqand"];
 
@@ -44,14 +45,14 @@ export async function generateMetadata({
     },
     ru: {
       title: `Автоматизация бизнеса ${cityName} — автоматизация процессов | Tezcode`,
-      description: `Автоматизация бизнес-процессов для компаний в ${cityName}: заказы, склад, CRM, отчёты, платежи. ИИ и программные решения. ${cityName} и весь Узбекистан. Бесплатная консультация.`,
+      description: `Автоматизация бизнес-процессов для компаний в ${ruPrep(cityName)}: заказы, склад, CRM, отчёты, платежи. ИИ и программные решения. ${cityName} и весь Узбекистан. Бесплатная консультация.`,
       keywords: [
         `автоматизация бизнеса ${cityName}`,
         `автоматизация процессов ${cityName}`,
         `бизнес автоматизация ${cityName}`,
         "автоматизация бизнеса Узбекистан",
       ],
-      ogTitle: `Автоматизация бизнеса в ${cityName} — Tezcode`,
+      ogTitle: `Автоматизация бизнеса в ${ruPrep(cityName)} — Tezcode`,
       ogDescription: `Заказы, склад, CRM, отчёты, платежи — всё автоматически. ${cityName}. Бесплатная консультация.`,
     },
     en: {
@@ -74,9 +75,9 @@ export async function generateMetadata({
     },
     uk: {
       title: `Автоматизація бізнесу ${cityName} — автоматизація процесів | Tezcode`,
-      description: `Автоматизація бізнес-процесів для компаній у ${cityName}: замовлення, склад, CRM, звіти, платежі. AI та програмні рішення. ${cityName} і весь Узбекистан.`,
+      description: `Автоматизація бізнес-процесів для компаній у ${ukPrep(cityName)}: замовлення, склад, CRM, звіти, платежі. AI та програмні рішення. ${cityName} і весь Узбекистан.`,
       keywords: [`автоматизація бізнесу ${cityName}`, "автоматизація бізнесу Узбекистан"],
-      ogTitle: `Автоматизація бізнесу в ${cityName} — Tezcode`,
+      ogTitle: `Автоматизація бізнесу в ${ukPrep(cityName)} — Tezcode`,
       ogDescription: `Замовлення, склад, CRM, звіти, платежі — все автоматично. ${cityName}.`,
     },
   };

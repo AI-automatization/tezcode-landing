@@ -1,7 +1,7 @@
 import type { ServicePageContent, ServiceLang } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
 import { CONTENT } from "../content";
-import { cityOfficeFaq, cityTrust, ruLocative } from "@/data/cityLocal";
+import { cityOfficeFaq, cityTrust, ruLocative, ukPrep } from "@/data/cityLocal";
 
 const TELEGRAM_BOT_INTRO: Record<string, Record<ServiceLang, string>> = {
   toshkent: {
@@ -132,7 +132,7 @@ export function buildTelegramBotCityContent(city: City): ServicePageContent {
       ru: `Telegram-бот для бизнеса ${ruLocative(city)}: заказы, оплата Click/Payme, напоминания, интеграция с CRM. Tezcode.`,
       en: `Telegram bot for businesses in ${cityName}: orders, Click/Payme payments, reminders, CRM integration. Tezcode.`,
       ar: `بوت تيليغرام للشركات في ${cityName}: الطلبات، الدفع عبر Click/Payme، التذكيرات، تكامل CRM. Tezcode.`,
-      uk: `Telegram-бот для бізнесу в ${cityName}: замовлення, оплата Click/Payme, нагадування, інтеграція з CRM. Tezcode.`,
+      uk: `Telegram-бот для бізнесу в ${ukPrep(cityName)}: замовлення, оплата Click/Payme, нагадування, інтеграція з CRM. Tezcode.`,
     };
     const localCopy = LOCAL_CITY_COPY[city.slug]?.[lang];
 

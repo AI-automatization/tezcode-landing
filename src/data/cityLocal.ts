@@ -5,15 +5,26 @@ import type { City } from "@/data/cities";
 // /telegram-bot-biznes/[city]). Keeps the trust line and Tashkent office FAQ
 // in the visitor's language instead of falling back to Uzbek.
 
-// Russian needs the prepositional case ("в Ташкенте"), which can't be built
-// from the nominative city name.
-const RU_LOCATIVE: Record<string, string> = {
-  toshkent: "в Ташкенте",
-  samarqand: "в Самарканде",
+// Russian and Ukrainian need declined city names ("в Ташкенте", "для
+// Ташкента", "у Ташкенті"), which can't be built from the nominative name.
+// Keyed by the nominative form so templates that only hold the name string
+// can decline it; unknown names fall back to the nominative.
+const CASES: Record<string, { ruPrep: string; ruGen: string; ukPrep: string; ukGen: string }> = {
+  Ташкент: { ruPrep: "Ташкенте", ruGen: "Ташкента", ukPrep: "Ташкенті", ukGen: "Ташкента" },
+  Самарканд: { ruPrep: "Самарканде", ruGen: "Самарканда", ukPrep: "Самарканді", ukGen: "Самарканда" },
+  Бухара: { ruPrep: "Бухаре", ruGen: "Бухары", ukPrep: "Бухарі", ukGen: "Бухари" },
+  Андижан: { ruPrep: "Андижане", ruGen: "Андижана", ukPrep: "Андижані", ukGen: "Андижана" },
+  Наманган: { ruPrep: "Намангане", ruGen: "Намангана", ukPrep: "Намангані", ukGen: "Намангана" },
+  Фергана: { ruPrep: "Фергане", ruGen: "Ферганы", ukPrep: "Фергані", ukGen: "Фергани" },
 };
 
+export const ruPrep = (name: string): string => CASES[name]?.ruPrep ?? name;
+export const ruGen = (name: string): string => CASES[name]?.ruGen ?? name;
+export const ukPrep = (name: string): string => CASES[name]?.ukPrep ?? name;
+export const ukGen = (name: string): string => CASES[name]?.ukGen ?? name;
+
 export function ruLocative(city: City): string {
-  return RU_LOCATIVE[city.slug] ?? `в г. ${city.name.ru}`;
+  return `в ${ruPrep(city.name.ru)}`;
 }
 
 export function cityTrust(city: City, lang: ServiceLang): string {

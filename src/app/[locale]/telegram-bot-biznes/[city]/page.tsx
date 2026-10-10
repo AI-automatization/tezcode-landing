@@ -4,7 +4,7 @@ import { ServicePageClient } from "@/components/service-page/ServicePageClient";
 import type { ServiceLang } from "@/components/service-page/types";
 import { buildPageMetadata, getFaqSchema, getServiceSchema, getBreadcrumbSchema, BASE_URL } from "@/lib/seo";
 import { getCity } from "@/data/cities";
-import { ruLocative } from "@/data/cityLocal";
+import { ruGen, ruLocative, ukPrep } from "@/data/cityLocal";
 import { buildTelegramBotCityContent } from "./cityContent";
 
 const ACTIVE_CITY_SLUGS = ["toshkent", "samarqand"];
@@ -40,7 +40,7 @@ export async function generateMetadata({
     ru: {
       title: `Телеграм-бот для бизнеса ${ruLocative(city)} — заказы и оплата | Tezcode`,
       description: `Разработка Telegram-бота для бизнеса ${ruLocative(city)} от $279: приём заказов, оплата Click/Payme, уведомления, интеграция с CRM. Бесплатная консультация, оплата 30% предоплата.`,
-      keywords: [`телеграм бот для бизнеса ${cityName}`, `Telegram-бот ${cityName}`, `разработка телеграм бота ${cityName}`, "телеграм бот для бизнеса Узбекистан"],
+      keywords: [`телеграм бот для бизнеса ${ruGen(cityName)}`, `Telegram-бот ${cityName}`, `разработка телеграм бота ${cityName}`, "телеграм бот для бизнеса Узбекистан"],
       ogTitle: `Телеграм-бот для бизнеса ${ruLocative(city)} — Tezcode`,
       ogDescription: `Заказы, оплата Click/Payme, уведомления, интеграция с CRM. От $279. Бесплатная консультация.`,
     },
@@ -60,9 +60,9 @@ export async function generateMetadata({
     },
     uk: {
       title: `Telegram бот ${cityName} — Telegram-бот для бізнесу | Tezcode`,
-      description: `Telegram-бот для бізнесу в ${cityName}: замовлення, оплата (Click/Payme), нагадування, інтеграція з CRM. ${cityName} і весь Узбекистан.`,
+      description: `Telegram-бот для бізнесу в ${ukPrep(cityName)}: замовлення, оплата (Click/Payme), нагадування, інтеграція з CRM. ${cityName} і весь Узбекистан.`,
       keywords: [`Telegram бот ${cityName}`, "Telegram бот Узбекистан"],
-      ogTitle: `Telegram-бот для бізнесу в ${cityName} — Tezcode`,
+      ogTitle: `Telegram-бот для бізнесу в ${ukPrep(cityName)} — Tezcode`,
       ogDescription: `Замовлення, оплата, нагадування, CRM. ${cityName}.`,
     },
   };

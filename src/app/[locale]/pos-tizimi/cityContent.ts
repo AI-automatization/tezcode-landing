@@ -5,6 +5,7 @@ import type {
 } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
 import { CONTENT } from "./content";
+import { ruGen, ruPrep, ukGen, ukPrep } from "@/data/cityLocal";
 
 // Builds a full 5-locale ServicePageContent for a single city by deep-cloning the
 // base RAOS POS copy and overriding the city-aware fields. The unique per-city
@@ -25,8 +26,8 @@ const CITY_FAQ: Record<
     a: `Ha. RAOS butun O'zbekiston bo'ylab, jumladan ${city}da ham ishlaydi. U offline-first — internet uzilsa ham kassa to'xtamaydi, ma'lumot lokalda saqlanadi va ulanish tiklanganda avtomatik sinxronlanadi. Demo, sozlash va qo'llab-quvvatlash masofadan amalga oshiriladi, do'koningiz ${city}ning istalgan nuqtasida bo'lsa ham.`,
   }),
   ru: (city) => ({
-    q: `RAOS работает в ${city}?`,
-    a: `Да. RAOS работает по всему Узбекистану, в том числе в ${city}. Он offline-first — при обрыве интернета касса не останавливается, данные хранятся локально и автоматически синхронизируются при восстановлении связи. Демо, настройка и поддержка проводятся удалённо, где бы ни находился ваш магазин в ${city}.`,
+    q: `RAOS работает в ${ruPrep(city)}?`,
+    a: `Да. RAOS работает по всему Узбекистану, в том числе в ${ruPrep(city)}. Он offline-first — при обрыве интернета касса не останавливается, данные хранятся локально и автоматически синхронизируются при восстановлении связи. Демо, настройка и поддержка проводятся удалённо, где бы ни находился ваш магазин в ${ruPrep(city)}.`,
   }),
   en: (city) => ({
     q: `Does RAOS work in ${city}?`,
@@ -37,8 +38,8 @@ const CITY_FAQ: Record<
     a: `نعم. يعمل RAOS في جميع أنحاء أوزبكستان، بما في ذلك ${city}. وهو offline-first — عند انقطاع الإنترنت لا يتوقف الكاشير، وتُحفظ البيانات محلياً وتُزامَن تلقائياً عند عودة الاتصال. يتم العرض التجريبي والإعداد والدعم عن بُعد، أينما كان متجرك في ${city}.`,
   }),
   uk: (city) => ({
-    q: `RAOS працює в ${city}?`,
-    a: `Так. RAOS працює по всьому Узбекистану, зокрема в ${city}. Він offline-first — при обриві інтернету каса не зупиняється, дані зберігаються локально й автоматично синхронізуються при відновленні зв'язку. Демо, налаштування та підтримка проводяться віддалено, де б не був ваш магазин у ${city}.`,
+    q: `RAOS працює в ${ukPrep(city)}?`,
+    a: `Так. RAOS працює по всьому Узбекистану, зокрема в ${ukPrep(city)}. Він offline-first — при обриві інтернету каса не зупиняється, дані зберігаються локально й автоматично синхронізуються при відновленні зв'язку. Демо, налаштування та підтримка проводяться віддалено, де б не був ваш магазин у ${ukPrep(city)}.`,
   }),
 };
 
@@ -59,10 +60,10 @@ const HERO_TITLE: Record<
   (city: string) => { title1: string; titleAccent: string }
 > = {
   uz: (city) => ({ title1: `${city} uchun`, titleAccent: "POS tizimi — RAOS" }),
-  ru: (city) => ({ title1: "POS-система для", titleAccent: `${city} — RAOS` }),
+  ru: (city) => ({ title1: "POS-система для", titleAccent: `${ruGen(city)} — RAOS` }),
   en: (city) => ({ title1: "POS system for", titleAccent: `${city} — RAOS` }),
   ar: (city) => ({ title1: "نظام POS", titleAccent: `لـ ${city} — RAOS` }),
-  uk: (city) => ({ title1: "POS-система для", titleAccent: `${city} — RAOS` }),
+  uk: (city) => ({ title1: "POS-система для", titleAccent: `${ukGen(city)} — RAOS` }),
 };
 
 // City-aware service schema name / description / type.
@@ -76,8 +77,8 @@ const SERVICE_TEXT: Record<
     serviceType: `POS tizimi / do'kon avtomatlashtirish — ${city}`,
   }),
   ru: (city, region) => ({
-    name: `RAOS — POS-система для ${city} | Tezcode`,
-    description: `POS-система RAOS для магазинов ${city} (${region}): касса, склад, клиенты, отчёты, мультифилиал и работа без интернета (offline-first). Демо, настройка и поддержка в ${city} и по всему Узбекистану.`,
+    name: `RAOS — POS-система для ${ruGen(city)} | Tezcode`,
+    description: `POS-система RAOS для магазинов ${ruGen(city)} (${region}): касса, склад, клиенты, отчёты, мультифилиал и работа без интернета (offline-first). Демо, настройка и поддержка в ${ruPrep(city)} и по всему Узбекистану.`,
     serviceType: `POS-система / автоматизация магазина — ${city}`,
   }),
   en: (city, region) => ({
@@ -91,8 +92,8 @@ const SERVICE_TEXT: Record<
     serviceType: `نظام POS / أتمتة المتجر — ${city}`,
   }),
   uk: (city, region) => ({
-    name: `RAOS — POS-система для ${city} | Tezcode`,
-    description: `POS-система RAOS для магазинів ${city} (${region}): каса, склад, клієнти, звіти, мультифілія та робота без інтернету (offline-first). Демо, налаштування та підтримка в ${city} і по всьому Узбекистану.`,
+    name: `RAOS — POS-система для ${ukGen(city)} | Tezcode`,
+    description: `POS-система RAOS для магазинів ${ukGen(city)} (${region}): каса, склад, клієнти, звіти, мультифілія та робота без інтернету (offline-first). Демо, налаштування та підтримка в ${ukPrep(city)} і по всьому Узбекистану.`,
     serviceType: `POS-система / автоматизація магазину — ${city}`,
   }),
 };

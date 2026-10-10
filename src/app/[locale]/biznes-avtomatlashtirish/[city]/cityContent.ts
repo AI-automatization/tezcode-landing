@@ -1,6 +1,7 @@
 import type { ServicePageContent, ServiceLang } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
 import { CONTENT } from "../content";
+import { cityTrust, ruPrep, ukPrep } from "@/data/cityLocal";
 
 const BIZ_AUTO_INTRO: Record<string, Record<ServiceLang, string>> = {
   toshkent: {
@@ -75,14 +76,30 @@ export function buildBiznesAvtoCityContent(city: City): ServicePageContent {
     const intro = (BIZ_AUTO_INTRO[city.slug]?.[lang] ?? BIZ_AUTO_INTRO[city.slug]?.uz) ?? "";
     const cityFaq = (CITY_FAQ[city.slug]?.[lang] ?? CITY_FAQ[city.slug]?.uz) ?? { q: "", a: "" };
     const cityName = city.name[lang] ?? city.name.uz;
+    const CITY_BADGE: Record<ServiceLang, string> = {
+      uz: `${cityName}da biznes avtomatlashtirish — Tezcode`,
+      ru: `Автоматизация бизнеса в ${ruPrep(cityName)} — Tezcode`,
+      en: `Business automation in ${cityName} — Tezcode`,
+      ar: `أتمتة الأعمال في ${cityName} — Tezcode`,
+      uk: `Автоматизація бізнесу в ${ukPrep(cityName)} — Tezcode`,
+    };
+    const SERVICE_DESCRIPTION: Record<ServiceLang, string> = {
+      uz: `${cityName} bizneslari uchun jarayon avtomatlashtirish: buyurtma, ombor, CRM, hisobot, to'lov. Tezcode Software Factory. ${cityName} va butun O'zbekiston.`,
+      ru: `Автоматизация бизнес-процессов для компаний в ${ruPrep(cityName)}: заказы, склад, CRM, отчёты, платежи. Tezcode Software Factory.`,
+      en: `Business process automation for companies in ${cityName}: orders, inventory, CRM, reports, payments. Tezcode Software Factory.`,
+      ar: `أتمتة العمليات للشركات في ${cityName}: الطلبات، المخزون، CRM، التقارير، المدفوعات. Tezcode Software Factory.`,
+      uk: `Автоматизація бізнес-процесів для компаній у ${ukPrep(cityName)}: замовлення, склад, CRM, звіти, платежі. Tezcode Software Factory.`,
+    };
 
     result[lang] = {
       ...base,
       hero: {
         ...base.hero,
-        badge: `${cityName}da biznes avtomatlashtirish — Tezcode`,
+        badge: CITY_BADGE[lang],
+        // The base RU title ends with "в Ташкенте"; city pages name their own city.
+        ...(lang === "ru" ? { title2: `в ${ruPrep(cityName)}` } : {}),
         subtitle: `${intro}\n\n${base.hero.subtitle}`,
-        trust: `${cityName} va butun O'zbekiston • Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan`,
+        trust: cityTrust(city, lang),
       },
       faq: {
         ...base.faq,
@@ -90,7 +107,7 @@ export function buildBiznesAvtoCityContent(city: City): ServicePageContent {
       },
       service: {
         ...base.service,
-        description: `${cityName} bizneslari uchun jarayon avtomatlashtirish: buyurtma, ombor, CRM, hisobot, to'lov. Tezcode Software Factory. ${cityName} va butun O'zbekiston.`,
+        description: SERVICE_DESCRIPTION[lang],
       },
     };
   }

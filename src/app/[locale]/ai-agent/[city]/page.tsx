@@ -5,6 +5,7 @@ import type { ServiceLang } from "@/components/service-page/types";
 import { buildPageMetadata, getFaqSchema, getServiceSchema, getBreadcrumbSchema, BASE_URL } from "@/lib/seo";
 import { getCity } from "@/data/cities";
 import { buildAiAgentCityContent } from "./cityContent";
+import { ruPrep, ukPrep } from "@/data/cityLocal";
 
 // Per-city AI-agent landing pages: /ai-agent/<city>.
 // Tashkent is consolidated into /ai-agent via next.config.ts redirects.
@@ -47,7 +48,7 @@ export async function generateMetadata({
     },
     ru: {
       title: `ИИ (AI) агент ${cityName} — ИИ-агент для бизнеса | Tezcode`,
-      description: `ИИ-агент для бизнеса в ${cityName}: агент продаж, агент поддержки, квалификация лидов, внутренняя автоматизация. Интеграция CRM/1С/Telegram. ${cityName} и весь Узбекистан. Бесплатная консультация.`,
+      description: `ИИ-агент для бизнеса в ${ruPrep(cityName)}: агент продаж, агент поддержки, квалификация лидов, внутренняя автоматизация. Интеграция CRM/1С/Telegram. ${cityName} и весь Узбекистан. Бесплатная консультация.`,
       keywords: [
         `ИИ-агент ${cityName}`,
         `ИИ-агент для бизнеса ${cityName}`,
@@ -55,7 +56,7 @@ export async function generateMetadata({
         `ИИ-агент ${cityName}`,
         "ИИ-агент Узбекистан",
       ],
-      ogTitle: `ИИ-агент для бизнеса в ${cityName} — Tezcode`,
+      ogTitle: `ИИ-агент для бизнеса в ${ruPrep(cityName)} — Tezcode`,
       ogDescription: `Агенты продаж, поддержки и автоматизации. Интеграция CRM/1С/Telegram, uz/ru. ${cityName}. Бесплатная консультация.`,
     },
     en: {
@@ -79,9 +80,9 @@ export async function generateMetadata({
     },
     uk: {
       title: `AI агент ${cityName} — AI-агент для бізнесу | Tezcode`,
-      description: `AI-агент для бізнесу в ${cityName}: агент продажів, агент підтримки, кваліфікація лідів, внутрішня автоматизація. Інтеграція CRM/1С/Telegram. ${cityName} і весь Узбекистан. Безкоштовна консультація.`,
+      description: `AI-агент для бізнесу в ${ukPrep(cityName)}: агент продажів, агент підтримки, кваліфікація лідів, внутрішня автоматизація. Інтеграція CRM/1С/Telegram. ${cityName} і весь Узбекистан. Безкоштовна консультація.`,
       keywords: [`AI агент ${cityName}`, "AI агент Узбекистан"],
-      ogTitle: `AI-агент для бізнесу в ${cityName} — Tezcode`,
+      ogTitle: `AI-агент для бізнесу в ${ukPrep(cityName)} — Tezcode`,
       ogDescription: `Агенти продажів, підтримки та автоматизації. Інтеграція CRM/1С/Telegram. ${cityName}. Безкоштовна консультація.`,
     },
   };

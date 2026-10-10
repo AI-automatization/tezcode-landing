@@ -1,7 +1,7 @@
 import type { ServicePageContent, ServiceLang } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
 import { CONTENT } from "../content";
-import { cityOfficeFaq, cityTrust, ruLocative } from "@/data/cityLocal";
+import { cityOfficeFaq, cityTrust, ruLocative, ukPrep } from "@/data/cityLocal";
 
 const AI_CHATBOT_INTRO: Record<string, Record<ServiceLang, string>> = {
   toshkent: {
@@ -81,7 +81,7 @@ export function buildAiChatbotCityContent(city: City): ServicePageContent {
       ru: `ИИ-чат-бот для бизнеса ${ruLocative(city)}: ответы 24/7, квалификация лидов, приём заказов. Telegram, Instagram, WhatsApp, сайт. Tezcode.`,
       en: `AI chatbot for businesses in ${cityName}: 24/7 replies, lead qualification, order intake. Telegram, Instagram, WhatsApp, website. Tezcode.`,
       ar: `شات بوت ذكاء اصطناعي للشركات في ${cityName}: ردود على مدار الساعة، تأهيل العملاء، استقبال الطلبات. تيليغرام، إنستغرام، واتساب، موقع. Tezcode.`,
-      uk: `AI-чатбот для бізнесу в ${cityName}: відповіді 24/7, кваліфікація лідів, приймання замовлень. Telegram, Instagram, WhatsApp, сайт. Tezcode.`,
+      uk: `AI-чатбот для бізнесу в ${ukPrep(cityName)}: відповіді 24/7, кваліфікація лідів, приймання замовлень. Telegram, Instagram, WhatsApp, сайт. Tezcode.`,
     };
 
     result[lang] = {

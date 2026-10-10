@@ -4,7 +4,7 @@ import { ServicePageClient } from "@/components/service-page/ServicePageClient";
 import type { ServiceLang } from "@/components/service-page/types";
 import { buildPageMetadata, getFaqSchema, getServiceSchema, getBreadcrumbSchema, BASE_URL } from "@/lib/seo";
 import { getCity } from "@/data/cities";
-import { ruLocative } from "@/data/cityLocal";
+import { ruGen, ruLocative, ukPrep } from "@/data/cityLocal";
 import { buildAiChatbotCityContent } from "./cityContent";
 
 const ACTIVE_CITY_SLUGS = ["toshkent", "samarqand"];
@@ -40,7 +40,7 @@ export async function generateMetadata({
     ru: {
       title: `Чат-бот для бизнеса ${ruLocative(city)} — разработка ИИ-бота | Tezcode`,
       description: `Разработка чат-бота для бизнеса ${ruLocative(city)} от $339: ответы клиентам 24/7, приём заказов, квалификация лидов, интеграция с CRM и 1С. Telegram, Instagram, WhatsApp, сайт. Бесплатная консультация.`,
-      keywords: [`чат бот для бизнеса ${cityName}`, `чат-бот ${cityName}`, `разработка чат-бота ${cityName}`, `ИИ-чат-бот ${cityName}`, "чат-бот для бизнеса Узбекистан"],
+      keywords: [`чат бот для бизнеса ${ruGen(cityName)}`, `чат-бот ${cityName}`, `разработка чат-бота ${cityName}`, `ИИ-чат-бот ${cityName}`, "чат-бот для бизнеса Узбекистан"],
       ogTitle: `Чат-бот для бизнеса ${ruLocative(city)} — Tezcode`,
       ogDescription: `Ответы клиентам 24/7, приём заказов, интеграция с CRM. Telegram, Instagram, WhatsApp. От $339. Бесплатная консультация.`,
     },
@@ -60,9 +60,9 @@ export async function generateMetadata({
     },
     uk: {
       title: `AI чатбот ${cityName} — AI-асистент для бізнесу | Tezcode`,
-      description: `AI-чатбот для бізнесу в ${cityName}: відповіді 24/7, кваліфікація лідів, приймання замовлень. Telegram, Instagram, WhatsApp, сайт. ${cityName} і весь Узбекистан.`,
+      description: `AI-чатбот для бізнесу в ${ukPrep(cityName)}: відповіді 24/7, кваліфікація лідів, приймання замовлень. Telegram, Instagram, WhatsApp, сайт. ${cityName} і весь Узбекистан.`,
       keywords: [`AI чатбот ${cityName}`, "AI чатбот Узбекистан"],
-      ogTitle: `AI-чатбот для бізнесу в ${cityName} — Tezcode`,
+      ogTitle: `AI-чатбот для бізнесу в ${ukPrep(cityName)} — Tezcode`,
       ogDescription: `Відповіді 24/7, кваліфікація лідів, приймання замовлень. ${cityName}. Безкоштовна консультація.`,
     },
   };

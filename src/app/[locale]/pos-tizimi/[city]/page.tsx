@@ -5,6 +5,7 @@ import type { ServiceLang } from "@/components/service-page/types";
 import { buildPageMetadata, getFaqSchema, getServiceSchema } from "@/lib/seo";
 import { getCity } from "@/data/cities";
 import { buildCityContent } from "../cityContent";
+import { ruGen, ukGen } from "@/data/cityLocal";
 
 // Dynamic per-city POS landing pages: /pos-tizimi/<city>.
 // Mirrors ../page.tsx (the base /pos-tizimi) but injects unique, per-city local
@@ -62,7 +63,7 @@ export async function generateMetadata({
     },
     ru: {
       title: `POS-система ${cityName} — RAOS: касса, склад, работает без интернета | Tezcode`,
-      description: `POS-система RAOS для магазинов ${cityName}: касса, склад, клиенты, отчёты, мультифилиал и работа без интернета (offline-first). ${cityName} и весь Узбекистан. Бесплатное демо.`,
+      description: `POS-система RAOS для магазинов ${ruGen(cityName)}: касса, склад, клиенты, отчёты, мультифилиал и работа без интернета (offline-first). ${cityName} и весь Узбекистан. Бесплатное демо.`,
       keywords: [
         `POS система ${cityName}`,
         `касса программа ${cityName}`,
@@ -70,7 +71,7 @@ export async function generateMetadata({
         "RAOS POS",
         "программа склада",
       ],
-      ogTitle: `RAOS — POS-система для магазинов ${cityName}`,
+      ogTitle: `RAOS — POS-система для магазинов ${ruGen(cityName)}`,
       ogDescription: `Касса, склад, клиенты, отчёты в одной программе. Работает без интернета. ${cityName} и весь Узбекистан. Бесплатное демо.`,
     },
     en: {
@@ -101,7 +102,7 @@ export async function generateMetadata({
     },
     uk: {
       title: `POS-система ${cityName} — RAOS: каса, склад, працює без інтернету | Tezcode`,
-      description: `POS-система RAOS для магазинів ${cityName}: каса, склад, клієнти, звіти, мультифілія та робота без інтернету (offline-first). ${cityName} і весь Узбекистан. Безкоштовне демо.`,
+      description: `POS-система RAOS для магазинів ${ukGen(cityName)}: каса, склад, клієнти, звіти, мультифілія та робота без інтернету (offline-first). ${cityName} і весь Узбекистан. Безкоштовне демо.`,
       keywords: [
         `POS система ${cityName}`,
         `програма каси ${cityName}`,
@@ -109,7 +110,7 @@ export async function generateMetadata({
         "RAOS POS",
         "програма складу",
       ],
-      ogTitle: `RAOS — POS-система для магазинів ${cityName}`,
+      ogTitle: `RAOS — POS-система для магазинів ${ukGen(cityName)}`,
       ogDescription: `Каса, склад, клієнти, звіти в одній програмі. Працює без інтернету. ${cityName} і весь Узбекистан. Безкоштовне демо.`,
     },
   };
