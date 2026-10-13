@@ -52,7 +52,7 @@ export default async function MaxSavdoLayout({
     { name: SITE_NAME, url: BASE_URL },
     { name: "MaxSavdo", url: `${BASE_URL}${PATH}` },
   ]);
-  // MaxSavdo is a Tezcode Labs venture (Free Beta); SoftwareApplication ties the
+  // MaxSavdo is a Tezcode Labs venture (Free / Pro / Studio plans, see maxsavdo.uz/pricing); SoftwareApplication ties the
   // tezcode.dev page to the real product site (maxsavdo.uz) for AI engines.
   const appSchema = {
     "@context": "https://schema.org",
@@ -68,10 +68,13 @@ export default async function MaxSavdoLayout({
       name: SITE_NAME,
       url: BASE_URL,
     },
+    // Mirrors maxsavdo.uz/pricing: Free 0, Pro 149 000, Studio 399 000 UZS/month.
     offers: {
-      "@type": "Offer",
-      price: "0",
+      "@type": "AggregateOffer",
+      lowPrice: "0",
+      highPrice: "399000",
       priceCurrency: "UZS",
+      offerCount: 3,
       availability: "https://schema.org/InStock",
     },
   };

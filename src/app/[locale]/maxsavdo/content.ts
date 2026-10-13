@@ -1,4 +1,4 @@
-// Lighter product page for MaxSavdo — a TezCode Labs venture (Free Beta).
+// Lighter product page for MaxSavdo — a TezCode Labs venture. Pricing mirrors maxsavdo.uz/pricing (Free / Pro / Studio).
 // Introduces the product on tezcode.dev and links out to maxsavdo.uz.
 export type MaxSavdoLang = "uz" | "ru" | "en" | "ar" | "uk";
 
@@ -33,7 +33,7 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
         "MaxSavdo — Telegram'ga o'rnatilgan do'kon va checkout platformasi. Telegram Mini App do'kon, sotuvchi kabineti (tovar, buyurtma, analitika) va real-time xaridor↔sotuvchi chat. Tezcode Labs mahsuloti.",
       ogTitle: "MaxSavdo — Telegram'da do'kon ochish | Tezcode",
       ogDescription:
-        "Telegram'da 5 daqiqada do'kon oching: tovar, buyurtma, to'lov va chat — bitta joyda. Free Beta.",
+        "Telegram'da 5 daqiqada do'kon oching: tovar, buyurtma, to'lov va chat — bitta joyda. Bepul tarif bor.",
     },
     hero: {
       badge: "E-commerce · Telegram",
@@ -42,8 +42,8 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
       subtitle:
         "5 daqiqada Telegram'da do'kon oching. Tovar joylang, buyurtma qabul qiling, xaridor bilan yozishing — DM-savdo bilan yirik marketpleys o'rtasidagi bo'shliqni to'ldiradi.",
       cta: "maxsavdo.uz saytiga o'tish",
-      ctaNote: "Free Beta · Komissiyasiz · O'zbek va rus tilida",
-      statusLabel: "Beta",
+      ctaNote: "Bepul Pro sinov · Karta shart emas · O'zbek va rus tilida",
+      statusLabel: "Ishlamoqda",
     },
     features: {
       badge: "Imkoniyatlar",
@@ -74,13 +74,13 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
       items: [
         { q: "MaxSavdo nima?", a: "MaxSavdo — Telegram'ga o'rnatilgan do'kon va checkout platformasi. O'zbekistondagi kichik sotuvchilar Telegram'da 5 daqiqada do'kon ochib, tovar joylaydi, buyurtma qabul qiladi va xaridor bilan yozishadi. Tezcode Labs mahsuloti, sayti: maxsavdo.uz." },
         { q: "Telegram do'koni oddiy kanaldan nimasi bilan farq qiladi?", a: "Kanalda tovar tarqoq, buyurtma DM'da adashadi. MaxSavdo'da to'liq do'kon (katalog, savat, buyurtma, to'lov) Telegram Mini App ichida ishlaydi, sotuvchi kabineti esa hamma buyurtma va mijozni bir joyda saqlaydi." },
-        { q: "MaxSavdo qancha turadi?", a: "Hozir MaxSavdo Free Beta bosqichida — bepul. O'zbek va rus tillarida ishlaydi. Boshlash uchun maxsavdo.uz saytiga kiring." },
+        { q: "MaxSavdo qancha turadi?", a: "Free tarif — 0 so'm (mahsulotlar cheklanmagan, oyiga 15 ta buyurtma). Pro — 149 000 so'm/oy, Studio — 399 000 so'm/oy. Ro'yxatdan o'tganda 15-buyurtmagacha bepul Pro sinov beriladi, karta talab qilinmaydi. O'zbek va rus tillarida ishlaydi. Boshlash: maxsavdo.uz." },
         { q: "Kimlar uchun mos?", a: "Instagram/Telegram orqali DM-savdo qiladigan kichik sotuvchilar uchun: kiyim, kosmetika, aksessuar, oziq-ovqat va boshqalar. Yirik marketpleysga o'tishga tayyor bo'lmagan, lekin tartibli do'kon xohlaganlar uchun." },
       ],
     },
     ctaBlock: {
       title: "Telegram'da do'koningizni oching",
-      subtitle: "MaxSavdo hozir Free Beta — bepul. maxsavdo.uz'da 5 daqiqada boshlang.",
+      subtitle: "Bepul Pro sinov bilan maxsavdo.uz'da 5 daqiqada boshlang.",
       button: "maxsavdo.uz'ga o'tish",
     },
   },
@@ -91,7 +91,7 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
         "MaxSavdo — платформа магазина и checkout, встроенная в Telegram. Telegram Mini App магазин, кабинет продавца (товары, заказы, аналитика) и real-time чат покупатель↔продавец. Продукт Tezcode Labs.",
       ogTitle: "MaxSavdo — открыть магазин в Telegram | Tezcode",
       ogDescription:
-        "Откройте магазин в Telegram за 5 минут: товары, заказы, оплата и чат — в одном месте. Free Beta.",
+        "Откройте магазин в Telegram за 5 минут: товары, заказы, оплата и чат — в одном месте. Есть бесплатный тариф.",
     },
     hero: {
       badge: "E-commerce · Telegram",
@@ -100,8 +100,8 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
       subtitle:
         "Откройте магазин в Telegram за 5 минут. Размещайте товары, принимайте заказы, общайтесь с покупателем — закрывает разрыв между DM-продажами и крупным маркетплейсом.",
       cta: "Перейти на maxsavdo.uz",
-      ctaNote: "Free Beta · Без комиссии · На узбекском и русском",
-      statusLabel: "Beta",
+      ctaNote: "Бесплатный пробный Pro · Без карты · На узбекском и русском",
+      statusLabel: "Работает",
     },
     features: {
       badge: "Возможности",
@@ -132,13 +132,13 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
       items: [
         { q: "Что такое MaxSavdo?", a: "MaxSavdo — платформа магазина и checkout, встроенная в Telegram. Мелкие продавцы в Узбекистане за 5 минут открывают магазин в Telegram, размещают товары, принимают заказы и общаются с покупателем. Продукт Tezcode Labs, сайт: maxsavdo.uz." },
         { q: "Чем магазин в Telegram отличается от обычного канала?", a: "В канале товары разрознены, заказы теряются в DM. В MaxSavdo полноценный магазин (каталог, корзина, заказ, оплата) работает внутри Telegram Mini App, а кабинет продавца хранит все заказы и клиентов в одном месте." },
-        { q: "Сколько стоит MaxSavdo?", a: "Сейчас MaxSavdo на этапе Free Beta — бесплатно. Работает на узбекском и русском. Чтобы начать, зайдите на maxsavdo.uz." },
+        { q: "Сколько стоит MaxSavdo?", a: "Тариф Free — 0 сум (товары без ограничений, 15 заказов в месяц). Pro — 149 000 сум/мес, Studio — 399 000 сум/мес. При регистрации даётся бесплатный пробный период Pro до 15-го заказа, карта не нужна. Работает на узбекском и русском. Начать: maxsavdo.uz." },
         { q: "Кому подходит?", a: "Мелким продавцам, которые продают через DM в Instagram/Telegram: одежда, косметика, аксессуары, продукты и другое. Тем, кто ещё не готов к крупному маркетплейсу, но хочет упорядоченный магазин." },
       ],
     },
     ctaBlock: {
       title: "Откройте свой магазин в Telegram",
-      subtitle: "MaxSavdo сейчас Free Beta — бесплатно. Начните за 5 минут на maxsavdo.uz.",
+      subtitle: "Начните за 5 минут на maxsavdo.uz с бесплатным пробным периодом Pro.",
       button: "Перейти на maxsavdo.uz",
     },
   },
@@ -149,7 +149,7 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
         "MaxSavdo is a store & checkout platform built into Telegram. A Telegram Mini App storefront, a seller cabinet (products, orders, analytics) and a real-time buyer↔seller chat. A Tezcode Labs product.",
       ogTitle: "MaxSavdo — open a store in Telegram | Tezcode",
       ogDescription:
-        "Open a store in Telegram in 5 minutes: products, orders, payments and chat — in one place. Free Beta.",
+        "Open a store in Telegram in 5 minutes: products, orders, payments and chat — in one place. Free plan available.",
     },
     hero: {
       badge: "E-commerce · Telegram",
@@ -158,8 +158,8 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
       subtitle:
         "Open a store in Telegram in 5 minutes. List products, take orders, chat with the buyer — it closes the gap between DM-selling and a big marketplace.",
       cta: "Go to maxsavdo.uz",
-      ctaNote: "Free Beta · No commission · In Uzbek and Russian",
-      statusLabel: "Beta",
+      ctaNote: "Free Pro trial · No card needed · In Uzbek and Russian",
+      statusLabel: "Live",
     },
     features: {
       badge: "Features",
@@ -190,13 +190,13 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
       items: [
         { q: "What is MaxSavdo?", a: "MaxSavdo is a store & checkout platform built into Telegram. Small sellers in Uzbekistan open a store in Telegram in 5 minutes, list products, take orders and chat with the buyer. A Tezcode Labs product, site: maxsavdo.uz." },
         { q: "How is a Telegram store different from a regular channel?", a: "In a channel products are scattered and orders get lost in DMs. In MaxSavdo a full store (catalogue, cart, order, payment) runs inside a Telegram Mini App, and the seller cabinet keeps every order and customer in one place." },
-        { q: "How much does MaxSavdo cost?", a: "MaxSavdo is currently in Free Beta — free. It works in Uzbek and Russian. To start, go to maxsavdo.uz." },
+        { q: "How much does MaxSavdo cost?", a: "The Free plan is 0 UZS (unlimited products, 15 orders a month). Pro is 149,000 UZS/month, Studio 399,000 UZS/month. New sellers get a free Pro trial up to their 15th order, no card required. Works in Uzbek and Russian. Start at maxsavdo.uz." },
         { q: "Who is it for?", a: "Small sellers who sell via DMs on Instagram/Telegram: clothing, cosmetics, accessories, food and more. For those not yet ready for a big marketplace but who want an organized store." },
       ],
     },
     ctaBlock: {
       title: "Open your store in Telegram",
-      subtitle: "MaxSavdo is currently Free Beta — free. Start in 5 minutes on maxsavdo.uz.",
+      subtitle: "Start in 5 minutes on maxsavdo.uz with a free Pro trial.",
       button: "Go to maxsavdo.uz",
     },
   },
@@ -207,7 +207,7 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
         "MaxSavdo منصّة متجر ودفع مدمجة في تيليجرام. واجهة متجر Telegram Mini App، لوحة بائع (منتجات، طلبات، تحليلات) ودردشة فورية بين المشتري والبائع. منتج من Tezcode Labs.",
       ogTitle: "MaxSavdo — افتح متجرًا في تيليجرام | Tezcode",
       ogDescription:
-        "افتح متجرًا في تيليجرام خلال 5 دقائق: منتجات وطلبات ودفع ودردشة — في مكان واحد. نسخة تجريبية مجانية.",
+        "افتح متجرًا في تيليجرام خلال 5 دقائق: منتجات وطلبات ودفع ودردشة — في مكان واحد. تتوفر خطة مجانية.",
     },
     hero: {
       badge: "تجارة إلكترونية · تيليجرام",
@@ -216,8 +216,8 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
       subtitle:
         "افتح متجرًا في تيليجرام خلال 5 دقائق. اعرض المنتجات، استقبل الطلبات، وتحدّث مع المشتري — يسدّ الفجوة بين البيع عبر الرسائل والأسواق الكبيرة.",
       cta: "الانتقال إلى maxsavdo.uz",
-      ctaNote: "نسخة تجريبية مجانية · بدون عمولة · بالأوزبكية والروسية",
-      statusLabel: "Beta",
+      ctaNote: "تجربة Pro مجانية · بدون بطاقة · بالأوزبكية والروسية",
+      statusLabel: "نشط",
     },
     features: {
       badge: "الإمكانيات",
@@ -248,13 +248,13 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
       items: [
         { q: "ما هو MaxSavdo؟", a: "MaxSavdo منصّة متجر ودفع مدمجة في تيليجرام. يفتح صغار البائعين في أوزبكستان متجرًا في تيليجرام خلال 5 دقائق، ويعرضون المنتجات ويستقبلون الطلبات ويتحدثون مع المشتري. منتج من Tezcode Labs، الموقع: maxsavdo.uz." },
         { q: "بمَ يختلف متجر تيليجرام عن قناة عادية؟", a: "في القناة تكون المنتجات مبعثرة وتضيع الطلبات في الرسائل. في MaxSavdo يعمل متجر كامل (كتالوج، سلة، طلب، دفع) داخل Telegram Mini App، وتحفظ لوحة البائع كل الطلبات والعملاء في مكان واحد." },
-        { q: "كم تكلفة MaxSavdo؟", a: "MaxSavdo حاليًا في نسخة تجريبية مجانية (Free Beta) — مجانًا. يعمل بالأوزبكية والروسية. للبدء، انتقل إلى maxsavdo.uz." },
+        { q: "كم تكلفة MaxSavdo؟", a: "خطة Free مجانية (منتجات غير محدودة، 15 طلبًا شهريًا). Pro — 149,000 سوم شهريًا، Studio — 399,000 سوم شهريًا. يحصل البائع الجديد على تجربة Pro مجانية حتى الطلب الخامس عشر دون بطاقة. يعمل بالأوزبكية والروسية. للبدء: maxsavdo.uz." },
         { q: "لمن هو مناسب؟", a: "لصغار البائعين الذين يبيعون عبر الرسائل في إنستغرام/تيليجرام: ملابس ومستحضرات تجميل وإكسسوارات وأطعمة وغيرها. لمن لم يستعدّوا بعد لسوق كبير لكنهم يريدون متجرًا منظّمًا." },
       ],
     },
     ctaBlock: {
       title: "افتح متجرك في تيليجرام",
-      subtitle: "MaxSavdo حاليًا نسخة تجريبية مجانية — مجانًا. ابدأ خلال 5 دقائق على maxsavdo.uz.",
+      subtitle: "ابدأ خلال 5 دقائق على maxsavdo.uz مع تجربة Pro مجانية.",
       button: "الانتقال إلى maxsavdo.uz",
     },
   },
@@ -265,7 +265,7 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
         "MaxSavdo — платформа магазину та checkout, вбудована в Telegram. Магазин Telegram Mini App, кабінет продавця (товари, замовлення, аналітика) і real-time чат покупець↔продавець. Продукт Tezcode Labs.",
       ogTitle: "MaxSavdo — відкрити магазин у Telegram | Tezcode",
       ogDescription:
-        "Відкрийте магазин у Telegram за 5 хвилин: товари, замовлення, оплата і чат — в одному місці. Free Beta.",
+        "Відкрийте магазин у Telegram за 5 хвилин: товари, замовлення, оплата і чат — в одному місці. Є безкоштовний тариф.",
     },
     hero: {
       badge: "E-commerce · Telegram",
@@ -274,8 +274,8 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
       subtitle:
         "Відкрийте магазин у Telegram за 5 хвилин. Розміщуйте товари, приймайте замовлення, спілкуйтеся з покупцем — закриває розрив між DM-продажами і великим маркетплейсом.",
       cta: "Перейти на maxsavdo.uz",
-      ctaNote: "Free Beta · Без комісії · Узбецькою та російською",
-      statusLabel: "Beta",
+      ctaNote: "Безкоштовний пробний Pro · Без картки · Узбецькою та російською",
+      statusLabel: "Працює",
     },
     features: {
       badge: "Можливості",
@@ -306,13 +306,13 @@ export const MAXSAVDO_CONTENT: Record<MaxSavdoLang, MaxSavdoCopy> = {
       items: [
         { q: "Що таке MaxSavdo?", a: "MaxSavdo — платформа магазину та checkout, вбудована в Telegram. Дрібні продавці в Узбекистані за 5 хвилин відкривають магазин у Telegram, розміщують товари, приймають замовлення і спілкуються з покупцем. Продукт Tezcode Labs, сайт: maxsavdo.uz." },
         { q: "Чим магазин у Telegram відрізняється від звичайного каналу?", a: "У каналі товари розрізнені, замовлення губляться в DM. У MaxSavdo повноцінний магазин (каталог, кошик, замовлення, оплата) працює всередині Telegram Mini App, а кабінет продавця зберігає всі замовлення і клієнтів в одному місці." },
-        { q: "Скільки коштує MaxSavdo?", a: "Зараз MaxSavdo на етапі Free Beta — безкоштовно. Працює узбецькою та російською. Щоб почати, зайдіть на maxsavdo.uz." },
+        { q: "Скільки коштує MaxSavdo?", a: "Тариф Free — 0 сум (товари без обмежень, 15 замовлень на місяць). Pro — 149 000 сум/міс, Studio — 399 000 сум/міс. Під час реєстрації надається безкоштовний пробний Pro до 15-го замовлення, картка не потрібна. Працює узбецькою та російською. Почати: maxsavdo.uz." },
         { q: "Кому підходить?", a: "Дрібним продавцям, які продають через DM в Instagram/Telegram: одяг, косметика, аксесуари, продукти та інше. Тим, хто ще не готовий до великого маркетплейсу, але хоче впорядкований магазин." },
       ],
     },
     ctaBlock: {
       title: "Відкрийте свій магазин у Telegram",
-      subtitle: "MaxSavdo зараз Free Beta — безкоштовно. Почніть за 5 хвилин на maxsavdo.uz.",
+      subtitle: "Почніть за 5 хвилин на maxsavdo.uz з безкоштовним пробним Pro.",
       button: "Перейти на maxsavdo.uz",
     },
   },
