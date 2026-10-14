@@ -41,7 +41,7 @@ const HUB_COPY: Record<
     auditDesc:
       "30 daqiqada AI biznesingizning qaysi qismiga eng katta foyda berishini aniqlab beramiz: savdo, mijozlar, hisobotlar yoki jarayonlar.",
     points: [
-      "14 kun bepul sinov — karta talab qilinmaydi",
+      "30 daqiqalik konsultatsiya bepul — majburiyatsiz",
       "Qo'llab-quvvatlash: UZ / RU / EN",
       "POS, CRM va Telegram integratsiyalari",
     ],
@@ -53,7 +53,7 @@ const HUB_COPY: Record<
     auditDesc:
       "За 30 минут определим, где ИИ даст вашему бизнесу наибольший эффект: продажи, клиенты, отчёты или процессы.",
     points: [
-      "14 дней бесплатно — карта не нужна",
+      "30-минутная консультация бесплатно — без обязательств",
       "Поддержка: UZ / RU / EN",
       "Интеграции: POS, CRM и Telegram",
     ],
@@ -65,7 +65,7 @@ const HUB_COPY: Record<
     auditDesc:
       "In 30 minutes we'll pinpoint where AI delivers the biggest impact for your business: sales, customers, reporting or operations.",
     points: [
-      "14-day free trial — no card required",
+      "Free 30-minute consultation — no commitment",
       "Support: UZ / RU / EN",
       "POS, CRM and Telegram integrations",
     ],
@@ -77,7 +77,7 @@ const HUB_COPY: Record<
     auditDesc:
       "خلال 30 دقيقة نحدد أين يحقق الذكاء الاصطناعي أكبر أثر في عملك: المبيعات، العملاء، التقارير أو العمليات.",
     points: [
-      "تجربة مجانية لمدة 14 يومًا — بدون بطاقة",
+      "استشارة مجانية لمدة 30 دقيقة — دون التزام",
       "الدعم: UZ / RU / EN",
       "تكاملات POS وCRM وTelegram",
     ],
@@ -89,7 +89,7 @@ const HUB_COPY: Record<
     auditDesc:
       "За 30 хвилин визначимо, де AI дасть вашому бізнесу найбільший ефект: продажі, клієнти, звіти чи процеси.",
     points: [
-      "14 днів безкоштовно — картка не потрібна",
+      "30-хвилинна консультація безкоштовно — без зобов'язань",
       "Підтримка: UZ / RU / EN",
       "Інтеграції: POS, CRM і Telegram",
     ],

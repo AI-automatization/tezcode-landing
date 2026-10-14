@@ -7,19 +7,19 @@ import { CaseStudiesIndexClient } from "./CaseStudiesIndexClient";
 // CaseStudiesIndexClient (no extra claims). The layout template appends "| Tezcode".
 const META: Record<string, { title: string; description: string }> = {
   uz: {
-    title: "Case Studies — Amaliy natijalar",
+    title: "Keyslar (case study) — amaliy natijalar",
     description:
-      "Tezcode mahsulotlari bo'yicha anonimlashtirilgan amaliy misollar — RAOS, AI Office, ClinicaGo + HamshiraGo case study'lar.",
+      "Tezcode loyihalari: Hoffen uchun Telegram'da 7 ta AI agent va Dantes qurilish kompaniyasi uchun hisobotlarni tahlil qiladigan AI yordamchilar.",
   },
   ru: {
     title: "Кейсы — практические результаты бизнеса в Ташкенте",
     description:
-      "Анонимные бизнес-кейсы предпринимателей Узбекистана, работавших с продуктами Tezcode: сколько сэкономили, насколько выросли и ускорились.",
+      "Проекты Tezcode: 7 ИИ-агентов в Telegram для Hoffen и ИИ-помощники для анализа отчётов в строительной компании Dantes.",
   },
   en: {
     title: "Case Studies — Practical Business Results",
     description:
-      "Anonymized cases of Uzbek entrepreneurs who worked with Tezcode products — what they saved, how much they grew and how fast they now operate.",
+      "Tezcode projects: 7 AI agents in Telegram for Hoffen and report-analysis AI assistants for the construction company Dantes.",
   },
   ar: {
     title: "دراسات الحالة — نتائج حقيقية لأصحاب الأعمال",

@@ -2,22 +2,24 @@
 
 import Image from "next/image";
 import { useLocale } from "next-intl";
+import { Link } from "@/i18n/routing";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
 // "Trusted by" wall — partners + clients Tezcode works with. Each tile is a
-// logo + brand name, and is intentionally NOT a link (no navigation to their
-// sites). Distinct from the Partners carousel (detailed cards) and Testimonials
+// logo + brand name. Tiles never link to the brands' own sites; a brand with a
+// case study links to its page on our site (caseHref). Distinct from the Partners carousel (detailed cards) and Testimonials
 // (reviews). Add a brand here as new ones come in. Logos live in public/clients/.
 type Brand = {
   name: string;
   logo: string; // /clients/<file> (transparent PNG preferred)
   w: number; // intrinsic logo width
   h: number; // intrinsic logo height
+  caseHref?: string; // our case study page for this brand, if one exists
 };
 
 const BRANDS: Brand[] = [
-  { name: "Hoffen", logo: "/clients/hoffen1.png", w: 432, h: 182 },
-  { name: "Dantes", logo: "/clients/dantes.png", w: 250, h: 265 },
+  { name: "Hoffen", logo: "/clients/hoffen1.png", w: 432, h: 182, caseHref: "/case-studies/hoffen" },
+  { name: "Dantes", logo: "/clients/dantes.png", w: 425, h: 425, caseHref: "/case-studies/dantes" },
   { name: "Mars IT School", logo: "/clients/mars-it-school.png", w: 560, h: 118 },
   { name: "AI Solution", logo: "/clients/aisolution.png", w: 719, h: 834 },
 ];
@@ -61,6 +63,25 @@ const LABELS: Record<string, { chip: string; title: string; subtitle: string }> 
   },
 };
 
+function BrandTile({ brand: b }: { brand: Brand }) {
+  return (
+    <>
+      <div className="flex h-16 items-center justify-center">
+        <Image
+          src={b.logo}
+          alt={b.name}
+          width={b.w}
+          height={b.h}
+          className="h-14 w-auto max-h-14 max-w-[170px] object-contain transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
+      <span className="text-sm font-600 tracking-wide text-[var(--tc-text-secondary)] text-center">
+        {b.name}
+      </span>
+    </>
+  );
+}
+
 export function Clients() {
   const locale = useLocale();
   const t = LABELS[locale] ?? LABELS.uz;
@@ -82,7 +103,7 @@ export function Clients() {
         </Reveal>
 
         {/* Single unified panel — logos in one row split by dividers.
-            Intentionally not links (no navigation to their sites). The inner
+            Brands with a case study link to it; others are plain tiles. The inner
             grid is pulled 1px past the card on the end/bottom edges so the
             outer cell borders get clipped by overflow-hidden (leaving only the
             inner dividers), which works for any number of brands. */}
@@ -95,20 +116,20 @@ export function Clients() {
               {BRANDS.map((b, i) => (
                 <RevealItem
                   key={b.name}
-                  className={`flex flex-col items-center justify-center gap-5 py-12 px-6 group border-e border-b border-[var(--tc-border)] ${lastCellSpan(i)}`}
+                  className={`border-e border-b border-[var(--tc-border)] ${lastCellSpan(i)}`}
                 >
-                  <div className="flex h-16 items-center justify-center">
-                    <Image
-                      src={b.logo}
-                      alt={b.name}
-                      width={b.w}
-                      height={b.h}
-                      className="h-14 w-auto max-h-14 max-w-[170px] object-contain transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                  <span className="text-sm font-600 tracking-wide text-[var(--tc-text-secondary)] text-center">
-                    {b.name}
-                  </span>
+                  {b.caseHref ? (
+                    <Link
+                      href={b.caseHref}
+                      className="group flex h-full flex-col items-center justify-center gap-5 px-6 py-12 transition-colors hover:bg-[var(--tc-surface-1)]"
+                    >
+                      <BrandTile brand={b} />
+                    </Link>
+                  ) : (
+                    <div className="group flex h-full flex-col items-center justify-center gap-5 px-6 py-12">
+                      <BrandTile brand={b} />
+                    </div>
+                  )}
                 </RevealItem>
               ))}
             </RevealStagger>

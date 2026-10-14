@@ -1,9 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { m } from "motion/react";
-import { Inbox, MonitorSmartphone, Stethoscope, Store, type LucideIcon } from "lucide-react";
+import { Bot, Building2, Inbox, type LucideIcon } from "lucide-react";
 import { useLocale } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Tilt3D } from "@/components/motion/Tilt3D";
@@ -16,15 +17,16 @@ type Case = {
   icon: LucideIcon;
   category: Exclude<FilterKey, "all">;
   accent: "amber" | "blue" | "emerald";
+  // Named clients show their real logo instead of the sector icon.
+  logo?: { src: string; width: number; height: number };
 };
 
 // TODO(Sardor): mijoz nomi va rozilik — real mijoz nomlari va roziligi
 // olingach, sektor yorliqlari o'rniga qo'yiladi. Stok foto mijoz sifatida
 // ko'rsatilmaydi — o'rniga sektor ikonkasi ishlatiladi.
 const CASES: readonly Case[] = [
-  { slug: "dilfuza-grocery", icon: Store, category: "retail", accent: "amber" },
-  { slug: "aziz-electronics", icon: MonitorSmartphone, category: "retail", accent: "blue" },
-  { slug: "munira-clinic", icon: Stethoscope, category: "clinic", accent: "emerald" },
+  { slug: "hoffen", icon: Bot, category: "custom", accent: "blue", logo: { src: "/cases/hoffen/logo.png", width: 346, height: 79 } },
+  { slug: "dantes", icon: Building2, category: "custom", accent: "amber", logo: { src: "/cases/dantes/logo.png", width: 425, height: 425 } },
 ] as const;
 
 const ACCENT: Record<Case["accent"], { text: string; ring: string; bg: string }> = {
@@ -63,17 +65,14 @@ type CopyShape = {
     metric: string;
     metricCaption: string;
   }>;
-  ctaTitle: string;
-  ctaText: string;
-  ctaBtn: string;
 };
 
 const COPY: Record<Lang, CopyShape> = {
   uz: {
-    badge: "Case Studies",
-    title: "Amaliy natijalar — anonim biznes misollari",
+    badge: "Keyslar",
+    title: "Amaliy natijalar — real loyihalarimiz",
     subtitle:
-      "Tezcode mahsulotlari bilan ishlagan o'zbek tadbirkorlar — qancha tejagani, qancha o'sgani, qanday tezroq ishlagani.",
+      "Mijozlarimiz uchun qurgan tizimlarimiz: qanday muammo bilan kelishdi, nima qurdik va u qanday ishlayapti.",
     filterAll: "Hammasi",
     filterRetail: "Savdo",
     filterClinic: "Klinika",
@@ -81,41 +80,29 @@ const COPY: Record<Lang, CopyShape> = {
     readMore: "To'liq o'qish",
     resultLabel: "Natija",
     cards: {
-      "dilfuza-grocery": {
-        name: "Oziq-ovqat do'koni",
-        role: "Do'kon egasi · Yunusobod",
-        product: "RAOS POS",
-        headline: "30 kun ichida Excel'dan POS'ga o'tdi va kassasi tartibga keldi",
-        metric: "+800K so'm/oy",
-        metricCaption: "tejov",
+      "hoffen": {
+        name: "Hoffen",
+        role: "Avtokimyo ishlab chiqaruvchi · Toshkent",
+        product: "AI agentlar",
+        headline: "Savdo, ombor, moliya va HR uchun 7 ta AI agent Telegram'da",
+        metric: "7 ta agent",
+        metricCaption: "har kuni 80+ avtomatik ish",
       },
-      "aziz-electronics": {
-        name: "Elektronika do'koni",
-        role: "2 ta filial · Chilonzor",
-        product: "RAOS POS",
-        headline: "Buxgalterga to'lov o'rniga RAOS o'zi hisobot chiqaradi",
-        metric: "−2M so'm/oy",
-        metricCaption: "buxgalter xarajati o'rniga",
-      },
-      "munira-clinic": {
-        name: "Xususiy klinika",
-        role: "Klinika rahbari · Mirzo Ulug'bek",
-        product: "ClinicaGo + HamshiraGo",
-        headline: "Navbat vaqti 40% qisqardi, bemor sadoqati 2x oshdi",
-        metric: "−40% navbat",
-        metricCaption: "kunlik bemor 32 → 45",
+      "dantes": {
+        name: "Dantes Construction",
+        role: "Qurilish kompaniyasi",
+        product: "AI yordamchilar",
+        headline: "Hisobotlarni tahlil qilib, rahbarga muhimini yetkazadigan AI",
+        metric: "Jarayonda",
+        metricCaption: "natijalar tez orada",
       },
     },
-    ctaTitle: "Sizda ham shunday natija bo'lishi mumkin",
-    ctaText:
-      "Demo so'rang — 24 soat ichida sizning biznesingiz uchun mos yechim taqdim etamiz.",
-    ctaBtn: "Demo so'rash",
   },
   ru: {
     badge: "Кейсы",
-    title: "Практические результаты — анонимные бизнес-кейсы",
+    title: "Практические результаты — наши реальные проекты",
     subtitle:
-      "Узбекские предприниматели, работавшие с продуктами Tezcode — сколько сэкономили, насколько выросли, как стали работать быстрее.",
+      "Системы, которые мы построили для клиентов: с какой задачей пришли, что мы сделали и как это работает.",
     filterAll: "Все",
     filterRetail: "Торговля",
     filterClinic: "Клиника",
@@ -123,41 +110,29 @@ const COPY: Record<Lang, CopyShape> = {
     readMore: "Читать полностью",
     resultLabel: "Результат",
     cards: {
-      "dilfuza-grocery": {
-        name: "Продуктовый магазин",
-        role: "Владелица · Юнусабад",
-        product: "RAOS POS",
-        headline: "За 30 дней перешла с Excel на POS — касса стала прозрачной",
-        metric: "+800K сум/мес",
-        metricCaption: "экономия",
+      "hoffen": {
+        name: "Hoffen",
+        role: "Производитель автохимии · Ташкент",
+        product: "ИИ-агенты",
+        headline: "7 ИИ-агентов в Telegram для продаж, склада, финансов и HR",
+        metric: "7 агентов",
+        metricCaption: "80+ автоматических задач в день",
       },
-      "aziz-electronics": {
-        name: "Магазин электроники",
-        role: "2 филиала · Чиланзар",
-        product: "RAOS POS",
-        headline: "Вместо бухгалтера — RAOS сам делает отчёты",
-        metric: "−2M сум/мес",
-        metricCaption: "вместо зарплаты бухгалтера",
-      },
-      "munira-clinic": {
-        name: "Частная клиника",
-        role: "Руководитель клиники · Мирзо-Улугбек",
-        product: "ClinicaGo + HamshiraGo",
-        headline: "Очередь сократилась на 40%, лояльность пациентов 2x",
-        metric: "−40% очередь",
-        metricCaption: "32 → 45 пациентов/день",
+      "dantes": {
+        name: "Dantes Construction",
+        role: "Строительная компания",
+        product: "ИИ-помощники",
+        headline: "ИИ анализирует отчёты и доносит главное до руководителя",
+        metric: "В работе",
+        metricCaption: "результаты скоро",
       },
     },
-    ctaTitle: "У вас тоже может быть такой результат",
-    ctaText:
-      "Запросите демо — в течение 24 часов предложим решение для вашего бизнеса.",
-    ctaBtn: "Запросить демо",
   },
   en: {
     badge: "Case Studies",
-    title: "Practical results — anonymized business cases",
+    title: "Practical results — our real projects",
     subtitle:
-      "Uzbek entrepreneurs who worked with Tezcode products — what they saved, how much they grew, how fast they now operate.",
+      "Systems we built for our clients: the problem they came with, what we built and how it works.",
     filterAll: "All",
     filterRetail: "Retail",
     filterClinic: "Clinic",
@@ -165,41 +140,29 @@ const COPY: Record<Lang, CopyShape> = {
     readMore: "Read full story",
     resultLabel: "Result",
     cards: {
-      "dilfuza-grocery": {
-        name: "Grocery store",
-        role: "Owner · Yunusabad",
-        product: "RAOS POS",
-        headline: "Moved from Excel to POS in 30 days — cash register cleared up",
-        metric: "+800K UZS/mo",
-        metricCaption: "savings",
+      "hoffen": {
+        name: "Hoffen",
+        role: "Automotive chemicals maker · Tashkent",
+        product: "AI agents",
+        headline: "7 AI agents in Telegram for sales, inventory, finance and HR",
+        metric: "7 agents",
+        metricCaption: "80+ automations every day",
       },
-      "aziz-electronics": {
-        name: "Electronics store",
-        role: "2 branches · Chilanzar",
-        product: "RAOS POS",
-        headline: "Instead of an accountant — RAOS files reports itself",
-        metric: "−2M UZS/mo",
-        metricCaption: "replaces accountant salary",
-      },
-      "munira-clinic": {
-        name: "Private clinic",
-        role: "Clinic director · Mirzo Ulugbek",
-        product: "ClinicaGo + HamshiraGo",
-        headline: "Queue time down 40%, patient loyalty 2x",
-        metric: "−40% queue",
-        metricCaption: "32 → 45 patients/day",
+      "dantes": {
+        name: "Dantes Construction",
+        role: "Construction company",
+        product: "AI assistants",
+        headline: "AI that analyzes reports and tells management what matters",
+        metric: "In progress",
+        metricCaption: "results coming soon",
       },
     },
-    ctaTitle: "You can have results like this too",
-    ctaText:
-      "Request a demo — within 24 hours we'll propose the right solution for your business.",
-    ctaBtn: "Request demo",
   },
   ar: {
     badge: "دراسات الحالة",
     title: "نتائج حقيقية — أصحاب أعمال حقيقيون",
     subtitle:
-      "رواد أعمال أوزبكيون عملوا مع منتجات Tezcode — كم وفّروا، وكم نموا، وكم أصبحوا أسرع.",
+      "أنظمة بنيناها لعملائنا: المشكلة التي جاؤوا بها، وما بنيناه، وكيف يعمل.",
     filterAll: "الكل",
     filterRetail: "تجزئة",
     filterClinic: "عيادة",
@@ -207,40 +170,29 @@ const COPY: Record<Lang, CopyShape> = {
     readMore: "اقرأ المقال كاملاً",
     resultLabel: "النتيجة",
     cards: {
-      "dilfuza-grocery": {
-        name: "بقالة",
-        role: "مالكة المتجر · يونسآباد",
-        product: "RAOS POS",
-        headline: "انتقلت من Excel إلى نقاط البيع خلال 30 يومًا",
-        metric: "+800 ألف سوم/شهر",
-        metricCaption: "توفير",
+      "hoffen": {
+        name: "Hoffen",
+        role: "مصنّع كيماويات السيارات · طشقند",
+        product: "وكلاء ذكاء اصطناعي",
+        headline: "7 وكلاء ذكاء اصطناعي في تيليغرام للمبيعات والمخزون والمالية والموارد البشرية",
+        metric: "7 وكلاء",
+        metricCaption: "أكثر من 80 مهمة آلية يوميًا",
       },
-      "aziz-electronics": {
-        name: "متجر إلكترونيات",
-        role: "فرعان · شيلانزار",
-        product: "RAOS POS",
-        headline: "بدل المحاسب — RAOS يصدر التقارير بنفسه",
-        metric: "−2 مليون سوم/شهر",
-        metricCaption: "بدل راتب المحاسب",
-      },
-      "munira-clinic": {
-        name: "عيادة خاصة",
-        role: "مدير العيادة · ميرزو أولوغبيك",
-        product: "ClinicaGo + HamshiraGo",
-        headline: "تقليل وقت الانتظار 40٪، ولاء المرضى ضعفان",
-        metric: "−40٪ انتظار",
-        metricCaption: "32 → 45 مريض/يوم",
+      "dantes": {
+        name: "Dantes Construction",
+        role: "شركة بناء",
+        product: "مساعدون بالذكاء الاصطناعي",
+        headline: "ذكاء اصطناعي يحلل التقارير ويوصل الأهم إلى الإدارة",
+        metric: "قيد التنفيذ",
+        metricCaption: "النتائج قريبًا",
       },
     },
-    ctaTitle: "يمكنك تحقيق نتيجة مماثلة",
-    ctaText: "اطلب عرضًا — سنقترح حلًا مناسبًا لعملك خلال 24 ساعة.",
-    ctaBtn: "اطلب عرضًا",
   },
   uk: {
     badge: "Кейси",
     title: "Реальні результати — реальні підприємці",
     subtitle:
-      "Узбецькі підприємці, які працювали з продуктами Tezcode — скільки заощадили, як виросли, як стали працювати швидше.",
+      "Системи, які ми побудували для клієнтів: з якою задачею прийшли, що ми зробили і як це працює.",
     filterAll: "Усі",
     filterRetail: "Торгівля",
     filterClinic: "Клініка",
@@ -248,44 +200,32 @@ const COPY: Record<Lang, CopyShape> = {
     readMore: "Читати повністю",
     resultLabel: "Результат",
     cards: {
-      "dilfuza-grocery": {
-        name: "Продуктовий магазин",
-        role: "Власниця · Юнусабад",
-        product: "RAOS POS",
-        headline: "За 30 днів перейшла з Excel на POS",
-        metric: "+800K сум/міс",
-        metricCaption: "економія",
+      "hoffen": {
+        name: "Hoffen",
+        role: "Виробник автохімії · Ташкент",
+        product: "AI-агенти",
+        headline: "7 AI-агентів у Telegram для продажів, складу, фінансів і HR",
+        metric: "7 агентів",
+        metricCaption: "80+ автоматичних задач щодня",
       },
-      "aziz-electronics": {
-        name: "Магазин електроніки",
-        role: "2 філії · Чиланзар",
-        product: "RAOS POS",
-        headline: "Замість бухгалтера — RAOS сам робить звіти",
-        metric: "−2M сум/міс",
-        metricCaption: "замість зарплати бухгалтера",
-      },
-      "munira-clinic": {
-        name: "Приватна клініка",
-        role: "Керівник клініки · Мірзо-Улугбек",
-        product: "ClinicaGo + HamshiraGo",
-        headline: "Черга скоротилася на 40%, лояльність пацієнтів 2x",
-        metric: "−40% черга",
-        metricCaption: "32 → 45 пацієнтів/день",
+      "dantes": {
+        name: "Dantes Construction",
+        role: "Будівельна компанія",
+        product: "AI-помічники",
+        headline: "AI аналізує звіти й доносить головне до керівника",
+        metric: "У роботі",
+        metricCaption: "результати незабаром",
       },
     },
-    ctaTitle: "У вас теж може бути такий результат",
-    ctaText:
-      "Запросіть демо — упродовж 24 годин запропонуємо рішення для вашого бізнесу.",
-    ctaBtn: "Запросити демо",
   },
 };
 
 const EVIDENCE_NOTE: Record<Lang, string> = {
-  uz: "Misollar anonimlashtirilgan. Ko'rsatkichlar mijoz tasdig'i va loyiha hisobotlari bilan yangilanadi.",
-  ru: "Кейсы обезличены. Показатели будут обновлены после подтверждения клиента и проектными отчётами.",
-  en: "Cases are anonymized. Metrics will be updated after client confirmation and project reports.",
-  ar: "الحالات مجهّلة. سيتم تحديث المؤشرات بعد تأكيد العميل وتقارير المشروع.",
-  uk: "Кейси знеособлено. Показники оновимо після підтвердження клієнта та звітів проєкту.",
+  uz: "Ayrim keyslarda mijoz nomi uning roziligisiz ko'rsatilmaydi. Ko'rsatkichlar mijoz tasdig'i va loyiha hisobotlari bilan yangilanadi.",
+  ru: "В части кейсов имя клиента не указано без его согласия. Показатели обновляются по подтверждению клиента и отчётам проекта.",
+  en: "Some cases omit the client's name without their consent. Metrics are updated with client confirmation and project reports.",
+  ar: "في بعض الحالات لا يُذكر اسم العميل دون موافقته. يتم تحديث المؤشرات بعد تأكيد العميل وتقارير المشروع.",
+  uk: "У частині кейсів ім'я клієнта не вказано без його згоди. Показники оновлюються після підтвердження клієнта та звітів проєкту.",
 };
 
 export function CaseStudiesIndexClient() {
@@ -298,12 +238,14 @@ export function CaseStudiesIndexClient() {
     [filter],
   );
 
+  // Only offer a category filter when at least one case is in it; the whole
+  // bar is hidden while every case sits in a single category.
   const filters: { key: FilterKey; label: string }[] = [
     { key: "all", label: t.filterAll },
     { key: "retail", label: t.filterRetail },
     { key: "clinic", label: t.filterClinic },
     { key: "custom", label: t.filterCustom },
-  ];
+  ].filter((f) => f.key === "all" || CASES.some((c) => c.category === f.key)) as { key: FilterKey; label: string }[];
 
   return (
     <main
@@ -342,6 +284,7 @@ export function CaseStudiesIndexClient() {
         </Reveal>
 
         {/* Filters */}
+        {filters.length > 2 && (
         <Reveal>
           <div className="flex flex-wrap justify-center gap-2 mb-12">
             {filters.map((f) => {
@@ -363,11 +306,12 @@ export function CaseStudiesIndexClient() {
             })}
           </div>
         </Reveal>
+        )}
 
         {/* Cards */}
         {visible.length > 0 ? (
           <RevealStagger
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            className={`grid grid-cols-1 md:grid-cols-2 gap-6 ${visible.length >= 3 ? "lg:grid-cols-3" : "mx-auto max-w-5xl"}`}
             stagger={0.1}
           >
             {visible.map((c) => {
@@ -383,11 +327,17 @@ export function CaseStudiesIndexClient() {
                       className="tc-card tc-card-hover relative block h-full p-7 overflow-hidden"
                     >
                       <div className="relative flex items-center gap-4 mb-5" style={{ transform: "translateZ(30px)" }}>
-                        <div
-                          className={`relative shrink-0 w-16 h-16 rounded-full flex items-center justify-center ring-2 ${accent.ring} ${accent.bg}`}
-                        >
-                          <Icon aria-hidden className={`h-7 w-7 ${accent.text}`} strokeWidth={1.75} />
-                        </div>
+                        {c.logo ? (
+                          <div className="relative shrink-0 w-20 h-16 rounded-2xl flex items-center justify-center bg-white ring-1 ring-[var(--tc-border)] p-2">
+                            <Image src={c.logo.src} alt={card.name} width={c.logo.width} height={c.logo.height} className="max-h-12 w-auto object-contain" />
+                          </div>
+                        ) : (
+                          <div
+                            className={`relative shrink-0 w-16 h-16 rounded-full flex items-center justify-center ring-2 ${accent.ring} ${accent.bg}`}
+                          >
+                            <Icon aria-hidden className={`h-7 w-7 ${accent.text}`} strokeWidth={1.75} />
+                          </div>
+                        )}
                         <div className="flex-1 min-w-0">
                           <div
                             className="text-[var(--tc-text-primary)] font-700 text-lg leading-tight"
@@ -450,33 +400,6 @@ export function CaseStudiesIndexClient() {
             <Inbox aria-hidden className="mx-auto h-6 w-6" strokeWidth={1.75} />
           </div>
         )}
-
-        {/* CTA */}
-        <Reveal className="mt-24">
-          <div className="tc-navy-section relative p-10 md:p-14 rounded-[var(--tc-radius-xl)] text-center overflow-hidden">
-            <div
-              aria-hidden
-              className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-[var(--tc-blue)] opacity-20 blur-3xl"
-            />
-            <h2
-              className="text-3xl md:text-4xl font-700 mb-4 relative text-[var(--tc-text-primary)]"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              {t.ctaTitle}
-            </h2>
-            <p className="text-[var(--tc-text-secondary)] text-base md:text-lg max-w-2xl mx-auto mb-8 relative">
-              {t.ctaText}
-            </p>
-            <m.a
-              href="/aloqa"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              className="tc-btn-primary text-sm relative"
-            >
-              {t.ctaBtn}
-            </m.a>
-          </div>
-        </Reveal>
       </div>
 
       </main>

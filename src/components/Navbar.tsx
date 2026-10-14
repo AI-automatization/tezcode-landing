@@ -128,17 +128,9 @@ export function Navbar() {
   const locale = useLocale() as Locale;
   const pathname = usePathname();
   const router = useRouter();
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [mobileSection, setMobileSection] = useState<null | "divisions" | "solutions">(null);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40);
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const switchLocale = (newLocale: Locale) => {
     setLangOpen(false);
@@ -162,12 +154,7 @@ export function Navbar() {
 
   return (
     <header
-      className={[
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled
-          ? "bg-[color-mix(in_srgb,var(--tc-ink)_85%,transparent)] backdrop-blur-xl border-b border-[var(--tc-border)]"
-          : "bg-transparent",
-      ].join(" ")}
+      className="fixed top-0 left-0 right-0 z-50 bg-[color-mix(in_srgb,var(--tc-ink)_85%,transparent)] backdrop-blur-xl border-b border-[var(--tc-border)]"
     >
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo — click returns home and scrolls to top. */}
