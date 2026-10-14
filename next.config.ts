@@ -84,7 +84,12 @@ const nextConfig: NextConfig = {
       { source: "/contact", destination: "/aloqa", permanent: true },
       { source: "/:locale(uz|ru|en|ar|uk)/contact", destination: "/:locale/aloqa", permanent: true },
     ];
-    return [...founderRedirects, ...retiredCityRedirects, ...aiAgentTashkentRedirects, ...contactRedirects];
+    // Former team members: keep their old profile URLs pointing at the team page.
+    const formerTeamRedirects = ["saidazim-buriboyev"].flatMap((slug) => [
+      { source: `/jamoa/${slug}`, destination: "/biz-haqimizda", permanent: true },
+      { source: `/:locale(uz|ru|en|ar|uk)/jamoa/${slug}`, destination: "/:locale/biz-haqimizda", permanent: true },
+    ]);
+    return [...founderRedirects, ...retiredCityRedirects, ...aiAgentTashkentRedirects, ...contactRedirects, ...formerTeamRedirects];
   },
   // Headers for security + performance
   async headers() {

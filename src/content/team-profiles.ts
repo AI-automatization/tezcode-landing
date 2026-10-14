@@ -83,37 +83,6 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "Javodbek Abdusalimov — Tezcode jamoasida Full-Stack Developer. Next.js, React, Node.js, TypeScript. TezDetal loyihasi.",
   },
   {
-    slug: "saidazim-buriboyev",
-    name: "Saidazim Buriboyev",
-    role: "Backend Developer",
-    bio: [
-      "Saidazim Buriboyev — Tezcode jamoasida Backend Developer. Node.js va Express asosida serverli tizimlar hamda mikroservislar quradi.",
-      "WeWatch (ijtimoiy onlayn kinoteatr) loyihasida ishlaydi — services va admin paneli zonasi. Redis, MongoDB, real vaqt (Socket.io) va Docker bilan ishlaydi.",
-    ],
-    skills: [
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Redis",
-      "Socket.io",
-      "Docker",
-      "Mikroservislar",
-    ],
-    projects: [{ name: "WeWatch", role: "Backend — services va admin panel" }],
-    telegram: "forgerjunior",
-    knowsAbout: [
-      "Backend Development",
-      "Node.js",
-      "Microservices",
-      "MongoDB",
-      "Redis",
-      "Docker",
-    ],
-    metaTitle: "Saidazim Buriboyev — Tezcode Backend Developer",
-    metaDescription:
-      "Saidazim Buriboyev — Tezcode jamoasida Backend Developer. Node.js, Express, MongoDB, Redis, Docker, mikroservislar. WeWatch loyihasi.",
-  },
-  {
     slug: "abdulaziz-yormatov",
     name: "Abdulaziz Yormatov",
     role: "COO",

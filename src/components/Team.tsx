@@ -119,12 +119,6 @@ const TEAM: Member[] = [
     profileSlug: "habibulloh-shuhratov",
   },
   {
-    name: "Saidazim Buriboyev",
-    role: "Backend Developer",
-    telegram: "@forgerjunior",
-    profileSlug: "saidazim-buriboyev",
-  },
-  {
     name: "Abdulaziz Atxamov",
     role: "Marketing · QA · Developer",
     telegram: "@abdulazizatxamov262",
@@ -163,7 +157,6 @@ const ROLE_RU: Record<string, string> = {
   "Jafarbek Ulugbekov": "Full-Stack разработчик",
   "Javodbek Abdusalimov": "Full-Stack разработчик",
   "Habibulloh Shuhratov": "Full-Stack разработчик",
-  "Saidazim Buriboyev": "Backend-разработчик",
   "Abdulaziz Atxamov": "Маркетинг · QA · разработчик",
   "Ibrohim Sobirov": "Full-Stack разработчик",
   "Yusuf Kasimov": "Full-Stack разработчик",
@@ -189,7 +182,6 @@ const NAME_RU: Record<string, string> = {
   "Jafarbek Ulugbekov": "Джафарбек Улугбеков",
   "Javodbek Abdusalimov": "Джаводбек Абдусалимов",
   "Habibulloh Shuhratov": "Хабибулло Шухратов",
-  "Saidazim Buriboyev": "Саидазим Бурибоев",
   "Abdulaziz Atxamov": "Абдулазиз Атхамов",
   "Ibrohim Sobirov": "Иброхим Собиров",
   "Yusuf Kasimov": "Юсуф Касимов",
