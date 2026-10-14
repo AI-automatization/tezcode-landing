@@ -1,6 +1,7 @@
 import type { ServicePageContent, ServiceLang } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
 import { CONTENT } from "../content";
+import { CHATBOT_TASHKENT_ANSWERS } from "@/content/serviceAnswers";
 import { cityOfficeFaq, cityTrust, ruLocative, ukPrep } from "@/data/cityLocal";
 
 const AI_CHATBOT_INTRO: Record<string, Record<ServiceLang, string>> = {
@@ -86,6 +87,7 @@ export function buildAiChatbotCityContent(city: City): ServicePageContent {
 
     result[lang] = {
       ...base,
+      answers: city.slug === "toshkent" ? CHATBOT_TASHKENT_ANSWERS[lang] : base.answers,
       hero: {
         ...base.hero,
         ...(lang === "ru"

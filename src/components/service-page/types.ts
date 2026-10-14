@@ -102,6 +102,13 @@ export type ServicePageCopy = {
     subtitle: string;
     items: { src: string; alt: string; caption: string }[];
   };
+  // Short answer-first block right under the hero: each question is its own
+  // H2 with a 2–3 sentence answer, so search snippets and AI answers can quote
+  // one exact reply (price, timeline, channels) without reading the whole page.
+  answers?: {
+    badge: string;
+    items: { q: string; a: string }[];
+  };
   // Drives the Service JSON-LD (server-side). Localised so the structured data
   // matches the page language.
   service: {

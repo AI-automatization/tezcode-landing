@@ -1,4 +1,5 @@
 import type { ServicePageContent } from "@/components/service-page/types";
+import { AI_AGENT_ANSWERS } from "@/content/serviceAnswers";
 
 // Content for /ai-agent — Tezcode's SPEARHEAD page. Target keywords:
 // "AI agent yaratish", "AI agentlar", "biznes uchun AI agent", "AI agent Toshkent",
@@ -1644,3 +1645,7 @@ export const CONTENT: ServicePageContent = {
     },
   },
 };
+
+// Answer-first block under the hero (uz/ru) — see src/content/serviceAnswers.ts.
+CONTENT.uz = { ...CONTENT.uz, answers: AI_AGENT_ANSWERS.uz };
+CONTENT.ru = { ...CONTENT.ru, answers: AI_AGENT_ANSWERS.ru };

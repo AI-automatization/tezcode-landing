@@ -398,6 +398,36 @@ function FaqSection({ copy }: { copy: ServicePageCopy }) {
   );
 }
 
+// ─────────────────────────── Short answers ───────────────────────────
+function AnswersSection({ copy }: { copy: ServicePageCopy }) {
+  if (!copy.answers) return null;
+  const answers = copy.answers;
+  return (
+    <section className="relative py-16 sm:py-20 px-6 bg-[var(--tc-ink)]">
+      <div className="max-w-5xl mx-auto">
+        <Reveal className="mb-8">
+          <span className="tc-chip">{answers.badge}</span>
+        </Reveal>
+        <RevealStagger className="grid grid-cols-1 md:grid-cols-2 gap-5" stagger={0.06}>
+          {answers.items.map((item) => (
+            <RevealItem key={item.q}>
+              <div className="tc-card h-full p-6">
+                <h2
+                  className="text-lg font-700 text-[var(--tc-text-primary)] mb-2 tracking-tight leading-snug"
+                  style={{ fontFamily: "var(--font-display)" }}
+                >
+                  {item.q}
+                </h2>
+                <p className="text-sm text-[var(--tc-text-secondary)] leading-relaxed">{item.a}</p>
+              </div>
+            </RevealItem>
+          ))}
+        </RevealStagger>
+      </div>
+    </section>
+  );
+}
+
 // ─────────────────────────── Tech stack ───────────────────────────
 function TechSection({ copy }: { copy: ServicePageCopy }) {
   if (!copy.tech) return null;
@@ -736,6 +766,7 @@ export function ServicePageClient({
     >
       <Navbar />
       <HeroSection copy={copy} />
+      <AnswersSection copy={copy} />
       <CapabilitiesSection copy={copy} />
       <ShowcaseSection copy={copy} />
       <TechSection copy={copy} />

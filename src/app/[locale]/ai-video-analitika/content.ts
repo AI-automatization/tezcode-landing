@@ -1,4 +1,5 @@
 import type { ServicePageContent } from "@/components/service-page/types";
+import { VIDEO_ANALYTICS_ANSWERS } from "@/content/serviceAnswers";
 
 // Content for /ai-video-analitika — target keywords: "AI video analitika Toshkent",
 // "видеоаналитика Ташкент", "распознавание лиц", "ANPR Узбекистан",
@@ -804,3 +805,7 @@ export const CONTENT: ServicePageContent = {
     },
   },
 };
+
+// Answer-first block under the hero (uz/ru) — see src/content/serviceAnswers.ts.
+CONTENT.uz = { ...CONTENT.uz, answers: VIDEO_ANALYTICS_ANSWERS.uz };
+CONTENT.ru = { ...CONTENT.ru, answers: VIDEO_ANALYTICS_ANSWERS.ru };
