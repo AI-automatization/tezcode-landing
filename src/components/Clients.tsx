@@ -16,7 +16,6 @@ type Brand = {
 };
 
 const BRANDS: Brand[] = [
-  { name: "Biznes Bomond", logo: "/clients/bomond.png", w: 776, h: 257 },
   { name: "Hoffen", logo: "/clients/hoffen1.png", w: 432, h: 182 },
   { name: "Dantes", logo: "/clients/dantes.png", w: 250, h: 265 },
   { name: "Mars IT School", logo: "/clients/mars-it-school.png", w: 560, h: 118 },
@@ -24,8 +23,8 @@ const BRANDS: Brand[] = [
 ];
 
 // The last tile stretches across the empty cells of its row so the grid never
-// ends with a blank cell (e.g. 5 brands in 2 columns on mobile, 3 on sm).
-// md shows all brands in one row, so no stretch there.
+// ends with a blank cell (e.g. an odd count in 2 columns on mobile, 3 on sm).
+// md shows all brands in one row (md:grid-cols-* must match BRANDS.length).
 function lastCellSpan(i: number): string {
   if (i !== BRANDS.length - 1) return "";
   const mobile = BRANDS.length % 2 === 1 ? "col-span-2" : "";
@@ -90,7 +89,7 @@ export function Clients() {
         <Reveal className="max-w-6xl mx-auto">
           <div className="tc-card overflow-hidden !p-0">
             <RevealStagger
-              className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 -me-px -mb-px"
+              className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 -me-px -mb-px"
               stagger={0.08}
             >
               {BRANDS.map((b, i) => (
