@@ -96,7 +96,6 @@ const ROUTES: Route[] = [
   { path: "/tools/roi-calculator", priority: 0.8, changeFrequency: "monthly" as const, availableLocales: ["uz"] },
   { path: "/case-studies", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/case-studies/hoffen", priority: 0.8, changeFrequency: "monthly" as const, availableLocales: ["uz", "ru", "en"] },
-  { path: "/case-studies/dantes", priority: 0.7, changeFrequency: "monthly" as const, availableLocales: ["uz", "ru", "en"] },
   { path: "/roadmap", priority: 0.6, changeFrequency: "monthly" as const, availableLocales: ["uz"] },
   { path: "/changelog", priority: 0.6, changeFrequency: "weekly" as const, availableLocales: ["uz"] },
   { path: "/bekzod-mirzaaliyev", priority: 0.8, changeFrequency: "monthly" as const, lastModified: FOUNDER_UPDATED, availableLocales: ["uz"] },
