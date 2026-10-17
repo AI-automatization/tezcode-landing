@@ -91,10 +91,6 @@ export const CONTENT: ArticleContent = {
           a: "Yaxshi CRM rol asosidagi kirish beradi — har xodim faqat o'ziga keragini ko'radi. Bu bemor maxfiyligini saqlaydi va tasodifiy xatolarni kamaytiradi.",
         },
         {
-          q: "CRM klinika daromadini oshirishga qanday yordam beradi?",
-          a: "Eslatmalar orqali bemorning kelmaslik (no-show) holatlarini kamaytiradi, qayta yozilishni osonlashtiradi va moliyaviy ko'rinish orqali qaysi xizmat foydali ekanini ko'rsatadi.",
-        },
-        {
           q: "Mavjud bemor bazamizni yangi CRM'ga ko'chira olamizmi?",
           a: "Ha. Yaxshi tizim mavjud bemor ma'lumotlarini import qilish imkonini beradi, shunda noldan boshlamaysiz.",
         },
@@ -196,10 +192,6 @@ export const CONTENT: ArticleContent = {
         {
           q: "Безопасно ли хранятся данные пациентов?",
           a: "Хорошая CRM даёт доступ по ролям — каждый сотрудник видит только нужное ему. Это сохраняет конфиденциальность пациентов и снижает случайные ошибки.",
-        },
-        {
-          q: "Как CRM помогает увеличить доход клиники?",
-          a: "Через напоминания снижает неявки (no-show), упрощает повторную запись и через финансовую картину показывает, какая услуга прибыльна.",
         },
         {
           q: "Можно ли перенести существующую базу пациентов в новую CRM?",

@@ -2,7 +2,7 @@ import type { ServicePageContent } from "@/components/service-page/types";
 
 // Content for /tezcode-labs — Tezcode's internal venture studio / innovation lab.
 // Only confirmed Tezcode facts (AI Software Factory, Tashkent, 2024, founder
-// Bekzod Mirzaaliyev, ~14 in-house developers, IT Park resident). Internal
+// Bekzod Mirzaaliyev, 19-person in-house team, IT Park resident). Internal
 // ventures referenced: WeWatch, CoreMed/ClinicaGo/HamshiraGo, Ventra,
 // MaxSavdo, AI-Trade, AI Office, RAOS. Model: investment + equity.
 export const CONTENT: ServicePageContent = {
@@ -76,7 +76,6 @@ export const CONTENT: ServicePageContent = {
         { q: "Model qanday — investitsiya va ulush qanday ishlaydi?", a: "Biz asosan naqd pul emas, resurs va ekspertiza bilan investitsiya qilamiz: dasturchilar, dizayn, mahsulot va go-to-market. Buning evaziga startapda ulush olamiz — ya'ni sizning muvaffaqiyatingizga bevosita bog'lanamiz." },
         { q: "Qaysi bosqichda qo'shilasiz?", a: "Turli bosqichlarda: sof g'oyadan validatsiyaga, prototipdan MVP'ga yoki mavjud mahsulotni miqyoslashga. Bosqichni birgalikda baholaymiz va keyin hamkorlik shaklini kelishamiz." },
         { q: "Bu odatiy buyurtma (custom) ishlab chiqishdan nimasi bilan farq qiladi?", a: "Custom'da siz to'laysiz, biz mijoz sifatida ishlab beramiz va kod sizniki. Labs'da esa biz hamkor bo'lamiz: birga risk ko'taramiz, resurs va investitsiya qo'shamiz va startap ulushi orqali natijaga bog'lanamiz." },
-        { q: "Nega ichki lab muhim?", a: "Chunki o'z mahsulotlarimizni o'zimiz quramiz va ishlatamiz (dogfooding). Bu bizga isbotlangan playbook, real product tajriba va AI bilan tezlashtirilgan development beradi — buni founder'larga ham olib kelamiz." },
       ],
     },
     related: {
@@ -168,7 +167,6 @@ export const CONTENT: ServicePageContent = {
         { q: "Как работает модель — инвестиции и доля?", a: "Мы инвестируем в основном не деньгами, а ресурсами и экспертизой: разработчики, дизайн, продукт и go-to-market. Взамен получаем долю в стартапе — то есть напрямую привязаны к вашему успеху." },
         { q: "На каком этапе вы подключаетесь?", a: "На разных: от чистой идеи к валидации, от прототипа к MVP или к масштабированию существующего продукта. Этап оцениваем вместе, затем согласуем форму партнёрства." },
         { q: "Чем это отличается от обычной (custom) разработки?", a: "В custom вы платите, мы разрабатываем как подрядчик, и код ваш. В Labs мы становимся партнёром: берём риск вместе, вкладываем ресурсы и инвестиции, а к результату привязаны долей в стартапе." },
-        { q: "Почему внутренняя лаборатория важна?", a: "Потому что мы сами строим и используем свои продукты (dogfooding). Это даёт нам проверенный playbook, реальный продуктовый опыт и ИИ-ускоренную разработку — которые мы приносим и фаундерам." },
       ],
     },
     related: {
@@ -260,7 +258,6 @@ export const CONTENT: ServicePageContent = {
         { q: "How does the model work — investment and equity?", a: "We invest mostly with resources and expertise, not cash: developers, design, product and go-to-market. In return we take equity in the startup — meaning we're directly tied to your success." },
         { q: "At which stage do you join?", a: "At different stages: from a raw idea to validation, from a prototype to an MVP, or scaling an existing product. We assess the stage together, then agree on the form of partnership." },
         { q: "How is this different from custom development?", a: "In custom, you pay, we build as a contractor, and the code is yours. In Labs we become a partner: we take the risk with you, put in resources and investment, and are tied to the outcome through equity in the startup." },
-        { q: "Why does an in-house lab matter?", a: "Because we build and use our own products (dogfooding). That gives us a proven playbook, real product experience and AI-accelerated development — which we bring to founders too." },
       ],
     },
     related: {
@@ -352,7 +349,6 @@ export const CONTENT: ServicePageContent = {
         { q: "كيف يعمل النموذج — الاستثمار والحصة؟", a: "نستثمر غالباً بالموارد والخبرة لا بالنقد: مطورون، تصميم، منتج ووصول إلى السوق. في المقابل نأخذ حصة في الشركة — أي أننا مرتبطون مباشرة بنجاحك." },
         { q: "في أي مرحلة تنضمّون؟", a: "في مراحل مختلفة: من فكرة خام إلى التحقق، من نموذج أولي إلى MVP، أو توسيع منتج قائم. نقيّم المرحلة معاً ثم نتفق على شكل الشراكة." },
         { q: "بماذا يختلف هذا عن التطوير المخصّص (custom)؟", a: "في المخصّص تدفع أنت، ونطوّر كمقاول، والكود لك. أما في Labs فنصبح شريكاً: نتحمّل المخاطرة معك، ونضخّ الموارد والاستثمار، ونرتبط بالنتيجة عبر حصة في الشركة." },
-        { q: "لماذا المختبر الداخلي مهم؟", a: "لأننا نبني منتجاتنا ونستخدمها بأنفسنا (الاستخدام الذاتي). هذا يمنحنا دليل عمل مُثبتاً وخبرة منتج حقيقية وتطويراً مُسرّعاً بالذكاء الاصطناعي — نقدّمها لرواد الأعمال أيضاً." },
       ],
     },
     related: {
@@ -444,7 +440,6 @@ export const CONTENT: ServicePageContent = {
         { q: "Як працює модель — інвестиції та частка?", a: "Ми інвестуємо переважно не грошима, а ресурсами та експертизою: розробники, дизайн, продукт і go-to-market. Натомість отримуємо частку в стартапі — тобто напряму прив'язані до вашого успіху." },
         { q: "На якому етапі ви підключаєтеся?", a: "На різних: від чистої ідеї до валідації, від прототипу до MVP або масштабування наявного продукту. Етап оцінюємо разом, потім узгоджуємо форму партнерства." },
         { q: "Чим це відрізняється від звичайної (custom) розробки?", a: "У custom ви платите, ми розробляємо як підрядник, і код ваш. У Labs ми стаємо партнером: беремо ризик разом, вкладаємо ресурси та інвестиції і прив'язані до результату через частку в стартапі." },
-        { q: "Чому внутрішня лабораторія важлива?", a: "Бо ми самі будуємо й використовуємо свої продукти (dogfooding). Це дає нам перевірений playbook, реальний продуктовий досвід і AI-прискорену розробку — які ми приносимо й фаундерам." },
       ],
     },
     related: {

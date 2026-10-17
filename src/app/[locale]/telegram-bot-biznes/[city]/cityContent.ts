@@ -1,8 +1,7 @@
 import type { ServicePageContent, ServiceLang } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
 import { CONTENT } from "../content";
-import { TELEGRAM_TASHKENT_ANSWERS } from "@/content/serviceAnswers";
-import { cityOfficeFaq, cityTrust, ruLocative, ukPrep } from "@/data/cityLocal";
+import { cityOfficeFaq, cityTrust, composeCityFaq, ruLocative, ukPrep } from "@/data/cityLocal";
 
 const TELEGRAM_BOT_INTRO: Record<string, Record<ServiceLang, string>> = {
   toshkent: {
@@ -21,37 +20,17 @@ const TELEGRAM_BOT_INTRO: Record<string, Record<ServiceLang, string>> = {
   },
 };
 
+// City-specific questions prepended to the base FAQ. Only add intents the
+// base FAQ does not already cover (no second price / who-to-contact question).
 const CITY_FAQ: Record<string, Record<ServiceLang, { q: string; a: string }>> = {
-  toshkent: {
-    uz: {
-      q: "Toshkentdagi bizneslar uchun Telegram bot qancha turadi?",
-      a: "Telegram bot yaratish $279 dan boshlanadi. Click/Payme to'lov yoki CRM integratsiyasi qo'shilsa narx oshadi — aniq summani bepul konsultatsiyadan keyin yozma taklifda beramiz. To'lov: 30% oldindan.",
-    },
-    ru: {
-      q: "Сколько стоит Telegram-бот для бизнеса в Ташкенте?",
-      a: "Разработка Telegram-бота стоит от $279. С оплатой Click/Payme или интеграцией CRM цена выше — точную сумму фиксируем в письменном предложении после бесплатной консультации. Оплата: 30% предоплата.",
-    },
-    en: {
-      q: "How much does a Telegram bot cost for businesses in Tashkent?",
-      a: "A Telegram bot starts from $279. Click/Payme payments or CRM integration raise the price — we confirm the exact amount in a written proposal after the free consultation. Payment: 30% upfront.",
-    },
-    ar: {
-      q: "كم تكلفة روبوت تيليغرام للشركات في طشقند؟",
-      a: "يبدأ روبوت تيليغرام من 279 دولاراً. يرتفع السعر مع الدفع عبر Click/Payme أو تكامل CRM — نحدد المبلغ الدقيق في عرض مكتوب بعد الاستشارة المجانية. الدفع: 30% مقدماً.",
-    },
-    uk: {
-      q: "Скільки коштує Telegram-бот для бізнесу в Ташкенті?",
-      a: "Telegram-бот коштує від $279. З оплатою Click/Payme або інтеграцією CRM ціна вища — точну суму фіксуємо в письмовій пропозиції після безкоштовної консультації. Оплата: 30% передоплата.",
-    },
-  },
   samarqand: {
     uz: {
       q: "Samarqanddagi turizm biznesi uchun Telegram bot qilasizmi?",
-      a: "Ha — bron, to'lov (Click/Payme), ekskursiya jadvali, mijozlarga eslatma. Tezcode shunga o'xshash botlar qurgan. Bepul konsultatsiyada ko'ramiz.",
+      a: "Ha — mehmonxona, restoran va ekskursiya bizneslari uchun: bot bo'sh vaqt yoki joylarni ko'rsatadi, bronni qabul qiladi, Click/Payme orqali oldindan to'lov oladi, ekskursiya jadvali, manzil va eslatma yuboradi. Buyurtmalar administrator paneli, CRM yoki Google Sheets'ga tushadi. Tezcode shunga o'xshash botlar qurgan — bepul konsultatsiyada ko'ramiz.",
     },
     ru: {
       q: "Делаете ли вы Telegram-бот для туристического бизнеса в Самарканде?",
-      a: "Да — бронирование, оплата (Click/Payme), расписание экскурсий, напоминания клиентам. Tezcode строил подобные боты. На бесплатной консультации разберёмся.",
+      a: "Да — для отелей, ресторанов и экскурсий: бот показывает свободное время или места, принимает бронь и предоплату через Click/Payme, отправляет расписание экскурсий, адрес и напоминание. Заказы поступают в админ-панель, CRM или Google Sheets. Tezcode строил подобные боты — на бесплатной консультации разберёмся.",
     },
     en: {
       q: "Do you build Telegram bots for tourism businesses in Samarkand?",
@@ -83,7 +62,6 @@ const LOCAL_CITY_COPY: Record<string, Partial<Record<ServiceLang, LocalCityCopy>
       exampleSubtitle: "Toshkentda tezkor javob va ko'p sonli murojaatlarni boshqarish muhim. Telegram bot filiallar bo'yicha buyurtmalarni ajratishi, Yunusoboddan Sergeligacha yetkazib berish hududini tekshirishi va kerakli operatorga murojaatni avtomatik yo'naltirishi mumkin.",
       ctaSubtitle: "Toshkentda Telegram bot yaratish bo'yicha 30 daqiqalik bepul konsultatsiyada jarayoningiz, kerakli integratsiyalar va MVP muddatini aniqlaymiz.",
       faq: [
-        { q: "Toshkentda Telegram bot yaratishni kimga buyurtma qilish mumkin?", a: "Tezcode Toshkentdagi bizneslar uchun buyurtma, bron, to'lov va mijozlarga xizmat ko'rsatish botlarini ishlab chiqadi. Avval jarayonni bepul tahlil qilamiz, keyin funksiyalar, narx va muddat ko'rsatilgan yozma taklif beramiz. Ofisimiz Amir Temur shoh ko'chasi, 10-manzilda." },
         { q: "Toshkentdagi bir nechta filial uchun bitta Telegram bot ishlaydimi?", a: "Ha. Bot mijoz joylashuvi yoki tanlagan filialiga qarab buyurtmani kerakli nuqtaga yuboradi, filiallar kesimida CRM yoki admin panelga yozadi va har bir jamoaga alohida xabarnoma jo'natadi." },
       ],
     },
@@ -92,7 +70,6 @@ const LOCAL_CITY_COPY: Record<string, Partial<Record<ServiceLang, LocalCityCopy>
       exampleSubtitle: "В Ташкенте особенно важны быстрый ответ и обработка большого числа обращений. Telegram-бот может разделять заказы по филиалам, проверять зону доставки от Юнусабада до Сергели и автоматически направлять обращение нужному оператору.",
       ctaSubtitle: "На бесплатной 30-минутной консультации по разработке Telegram-бота в Ташкенте определим ваш сценарий, нужные интеграции и срок MVP.",
       faq: [
-        { q: "Где заказать разработку Telegram-бота для бизнеса в Ташкенте?", a: "Tezcode разрабатывает в Ташкенте ботов для заказов, бронирования, оплаты и поддержки клиентов. Сначала бесплатно разбираем процесс, затем даём письменное предложение с функциями, ценой и сроком. Наш офис находится по адресу: проспект Амира Темура, 10." },
         { q: "Может ли один Telegram-бот обслуживать несколько филиалов в Ташкенте?", a: "Да. Бот определяет выбранный филиал или локацию клиента, отправляет заказ в нужную точку, записывает данные в CRM или админ-панель по филиалам и уведомляет соответствующую команду." },
       ],
     },
@@ -103,7 +80,6 @@ const LOCAL_CITY_COPY: Record<string, Partial<Record<ServiceLang, LocalCityCopy>
       exampleSubtitle: "Samarqandda turistik mavsum va ko'p tilli mijoz oqimi alohida yondashuv talab qiladi. Bot ekskursiya vaqtlarini ko'rsatadi, mehmonxona yoki restoran bronini qabul qiladi, lokatsiya yuboradi va administratorga tayyor buyurtmani uzatadi.",
       ctaSubtitle: "Samarqanddagi turizm, ovqatlanish yoki savdo biznesingiz uchun Telegram bot ssenariysini bepul konsultatsiyada birga tuzamiz.",
       faq: [
-        { q: "Samarqandda mehmonxona yoki restoran uchun Telegram bot yaratish mumkinmi?", a: "Ha. Bot bo'sh vaqt yoki joylarni ko'rsatadi, bronni qabul qiladi, Click/Payme orqali oldindan to'lov oladi, manzil va eslatma yuboradi. Buyurtmalar administrator paneli, CRM yoki Google Sheets'ga tushadi." },
         { q: "Telegram bot xorijiy sayyohlarga bir necha tilda xizmat qila oladimi?", a: "Ha. O'zbek, rus va ingliz tillari uchun alohida menyu va xabarlarni sozlaymiz. Zarur bo'lsa, erkin yozilgan savollarga xizmatlaringiz haqidagi ma'lumot asosida javob beradigan AI qatlamini qo'shamiz." },
       ],
     },
@@ -112,12 +88,16 @@ const LOCAL_CITY_COPY: Record<string, Partial<Record<ServiceLang, LocalCityCopy>
       exampleSubtitle: "Туристический сезон и многоязычный поток гостей в Самарканде требуют отдельного сценария. Бот показывает время экскурсий, принимает бронь отеля или ресторана, отправляет геолокацию и передаёт готовый заказ администратору.",
       ctaSubtitle: "На бесплатной консультации составим сценарий Telegram-бота для вашего туристического, ресторанного или торгового бизнеса в Самарканде.",
       faq: [
-        { q: "Можно ли создать Telegram-бота для гостиницы или ресторана в Самарканде?", a: "Да. Бот показывает свободное время или места, принимает бронь и предоплату через Click/Payme, отправляет адрес и напоминание. Заказы поступают в админ-панель, CRM или Google Sheets." },
         { q: "Может ли Telegram-бот обслуживать иностранных туристов на нескольких языках?", a: "Да. Настроим отдельные меню и сообщения на русском, узбекском и английском. При необходимости добавим AI-слой, который отвечает на свободно заданные вопросы по информации о ваших услугах." },
       ],
     },
   },
 };
+
+// Final FAQ = exactly 5: at most 2 city-specific questions (most useful first)
+// + base questions, trimmed from the end while keeping the base price and
+// start/contact questions. Empty and duplicate items are dropped.
+const dedupeFaq = composeCityFaq;
 
 export function buildTelegramBotCityContent(city: City): ServicePageContent {
   const result: ServicePageContent = {} as ServicePageContent;
@@ -126,7 +106,7 @@ export function buildTelegramBotCityContent(city: City): ServicePageContent {
   for (const lang of langs) {
     const base = CONTENT[lang] ?? CONTENT.uz;
     const intro = (TELEGRAM_BOT_INTRO[city.slug]?.[lang] ?? TELEGRAM_BOT_INTRO[city.slug]?.uz) ?? "";
-    const cityFaq = (CITY_FAQ[city.slug]?.[lang] ?? CITY_FAQ[city.slug]?.uz) ?? { q: "", a: "" };
+    const cityFaq = CITY_FAQ[city.slug]?.[lang] ?? CITY_FAQ[city.slug]?.uz;
     const cityName = city.name[lang] ?? city.name.uz;
     const SERVICE_DESCRIPTION: Record<ServiceLang, string> = {
       uz: `${cityName} bizneslari uchun Telegram bot: buyurtma, to'lov (Click/Payme), eslatma, CRM integratsiyasi. Tezcode, ${cityName} va butun O'zbekiston.`,
@@ -139,7 +119,6 @@ export function buildTelegramBotCityContent(city: City): ServicePageContent {
 
     result[lang] = {
       ...base,
-      answers: city.slug === "toshkent" ? TELEGRAM_TASHKENT_ANSWERS[lang] : base.answers,
       hero: {
         ...base.hero,
         ...(lang === "ru"
@@ -156,7 +135,7 @@ export function buildTelegramBotCityContent(city: City): ServicePageContent {
       cta: localCopy ? { ...base.cta, subtitle: localCopy.ctaSubtitle } : base.cta,
       faq: {
         ...base.faq,
-        items: [{ q: cityFaq.q, a: cityFaq.a }, ...cityOfficeFaq(city, lang), ...(localCopy?.faq ?? []), ...base.faq.items],
+        items: dedupeFaq([...(cityFaq ? [cityFaq] : []), ...cityOfficeFaq(city, lang), ...(localCopy?.faq ?? [])], base.faq.items),
       },
       service: {
         ...base.service,

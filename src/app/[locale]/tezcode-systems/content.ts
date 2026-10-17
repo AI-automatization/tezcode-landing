@@ -4,7 +4,7 @@ import type { ServicePageContent } from "@/components/service-page/types";
 // SaaS products on monthly subscription. Flagship products: RAOS (retail POS)
 // and WorkControl (employee monitoring). Angle: turnkey SaaS you connect today
 // and profit tomorrow — no long custom build. Only confirmed Tezcode facts
-// (AI Software Factory, 2024, founder Bekzod Mirzaaliyev, 14 in-house developers,
+// (AI Software Factory, 2024, founder Bekzod Mirzaaliyev, 19-person in-house team,
 // Tashkent, IT Park resident). No fabricated metrics or clients.
 export const CONTENT: ServicePageContent = {
   uz: {
@@ -76,7 +76,6 @@ export const CONTENT: ServicePageContent = {
         { q: "Qaysi bizneslar uchun mos?", a: "RAOS — do'kon, retail va savdo nuqtalari uchun (kassa, ombor, mijozlar, soliq hisoboti). WorkControl — kompyuterda ishlaydigan jamoalarga (ofis, IT, call-markaz) xodim nazorati va samaradorlik uchun mos." },
         { q: "Excel yoki 1C'dan ko'chib o'ta olamanmi?", a: "Ha. Setup bosqichida mavjud ma'lumotlaringizni (mahsulotlar, qoldiq, mijozlar) tizimga ko'chirishga yordam beramiz. Noldan qayta kiritish shart emas." },
         { q: "Ulanish qancha vaqt oladi?", a: "Tayyor mahsulot bo'lgani uchun uzoq ishlab chiqish yo'q. Demodan keyin sozlash, o'qitish va jonli ishga tushish odatda bir necha kun ichida bo'ladi." },
-        { q: "Qo'llab-quvvatlash bormi?", a: "Ha. Texnik yordam, yangilanishlar va nazorat obunaga kiradi. Savol yoki muammo bo'lsa, jamoamiz Telegram va email orqali yordam beradi." },
         { q: "Buyurtma dasturi ham kerak bo'lsa-chi?", a: "TezCode Systems tayyor SaaS'ga qaratilgan. Agar sizga to'liq noldan, biznesingizga xos tizim kerak bo'lsa, Tezcode buyurtma asosidagi ishlab chiqishni ham taklif qiladi — to'lov 30% oldindan." },
       ],
     },
@@ -168,7 +167,6 @@ export const CONTENT: ServicePageContent = {
         { q: "Каким бизнесам подходит?", a: "RAOS — для магазинов, ритейла и торговых точек (касса, склад, клиенты, налоговая отчётность). WorkControl — для команд, работающих за компьютером (офис, IT, call-центр), для контроля сотрудников и продуктивности." },
         { q: "Можно ли перейти из Excel или 1C?", a: "Да. На этапе настройки поможем перенести ваши данные (товары, остатки, клиенты) в систему. Не нужно вводить всё заново." },
         { q: "Сколько времени занимает подключение?", a: "Поскольку продукт готов, долгой разработки нет. После демо настройка, обучение и запуск обычно занимают несколько дней." },
-        { q: "Есть ли поддержка?", a: "Да. Техподдержка, обновления и мониторинг входят в подписку. При вопросах или проблемах наша команда помогает через Telegram и email." },
         { q: "А если нужна и заказная разработка?", a: "TezCode Systems сфокусирован на готовом SaaS. Если вам нужна полностью индивидуальная система с нуля, Tezcode предлагает и заказную разработку — оплата: 30% предоплата." },
       ],
     },
@@ -260,7 +258,6 @@ export const CONTENT: ServicePageContent = {
         { q: "Which businesses fit?", a: "RAOS is for shops, retail and points of sale (cashier, inventory, customers, tax reporting). WorkControl is for teams that work on computers (office, IT, call center) for employee monitoring and productivity." },
         { q: "Can I migrate from Excel or 1C?", a: "Yes. During setup we help migrate your existing data (products, stock, customers) into the system. No need to re-enter everything." },
         { q: "How long does onboarding take?", a: "Since the product is ready, there's no long development. After the demo, setup, training and go-live usually take a few days." },
-        { q: "Is there support?", a: "Yes. Technical support, updates and monitoring are included in the subscription. For questions or issues, our team helps via Telegram and email." },
         { q: "What if I also need a custom build?", a: "TezCode Systems focuses on ready SaaS. If you need a fully custom system from scratch, Tezcode also offers custom development — payment starts with a 30% deposit." },
       ],
     },
@@ -352,7 +349,6 @@ export const CONTENT: ServicePageContent = {
         { q: "لأي الأعمال تناسب؟", a: "RAOS للمتاجر والتجزئة ونقاط البيع (كاشير، مخزون، عملاء، تقارير ضريبية). WorkControl للفرق التي تعمل على الحاسوب (مكتب، IT، مركز اتصال) لمراقبة الموظفين والإنتاجية." },
         { q: "هل يمكنني الانتقال من Excel أو 1C؟", a: "نعم. في مرحلة الإعداد نساعد في نقل بياناتك (المنتجات، الرصيد، العملاء) إلى النظام. لا حاجة لإدخال كل شيء من جديد." },
         { q: "كم يستغرق التفعيل؟", a: "بما أن المنتج جاهز، لا يوجد تطوير طويل. بعد العرض التجريبي، الإعداد والتدريب والانطلاق يستغرق عادة أياماً قليلة." },
-        { q: "هل يوجد دعم؟", a: "نعم. الدعم الفني والتحديثات والمراقبة ضمن الاشتراك. عند الأسئلة أو المشاكل يساعدك فريقنا عبر Telegram والبريد الإلكتروني." },
         { q: "وماذا لو احتجت تطويراً مخصصاً أيضاً؟", a: "تركّز TezCode Systems على SaaS الجاهز. إذا احتجت نظاماً مخصصاً بالكامل من الصفر، تقدّم Tezcode أيضاً التطوير المخصص — الدفع: 30% مقدمًا." },
       ],
     },
@@ -444,7 +440,6 @@ export const CONTENT: ServicePageContent = {
         { q: "Яким бізнесам підходить?", a: "RAOS — для магазинів, ритейлу та торгових точок (каса, склад, клієнти, податкова звітність). WorkControl — для команд, що працюють за комп'ютером (офіс, IT, call-центр), для контролю співробітників і продуктивності." },
         { q: "Чи можна перейти з Excel або 1C?", a: "Так. На етапі налаштування допоможемо перенести ваші дані (товари, залишки, клієнти) в систему. Не потрібно вводити все заново." },
         { q: "Скільки часу займає підключення?", a: "Оскільки продукт готовий, довгої розробки немає. Після демо налаштування, навчання та запуск зазвичай займають кілька днів." },
-        { q: "Чи є підтримка?", a: "Так. Техпідтримка, оновлення та моніторинг входять у підписку. За питаннями чи проблемами наша команда допомагає через Telegram та email." },
         { q: "А якщо потрібна й замовна розробка?", a: "TezCode Systems сфокусований на готовому SaaS. Якщо вам потрібна повністю індивідуальна система з нуля, Tezcode пропонує й замовну розробку — оплата: 30% передоплата." },
       ],
     },

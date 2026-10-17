@@ -25,7 +25,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Qisqacha javob",
       text:
-        "AI agent — bu nafaqat javob beradigan, balki vazifani oxirigacha bajaradigan dastur: mijozga javob beradi, ma'lumotni CRM yoki 1C ga yozadi, buyurtma rasmiylashtiradi va xodimni faqat zarur bo'lganda jalb qiladi. Toshkentda biznes uchun AI agent yaratish odatda 6 qadamda kechadi: tahlil → dizayn → integratsiya → test → ishga tushirish → qo'llab-quvvatlash. Narx tayyor shablon emas, balki sizning ehtiyojingizga (qaysi model, qanday integratsiya, qancha murakkablik) bog'liq. Tezcode — 2024-yilda Toshkentda tashkil topgan 16 kishilik jamoa — Claude va GPT asosida o'zbek va rus tilida ishlaydigan AI agentlar quradi va bepul konsultatsiya beradi.",
+        "AI agent — bu nafaqat javob beradigan, balki vazifani oxirigacha bajaradigan dastur: mijozga javob beradi, ma'lumotni CRM yoki 1C ga yozadi, buyurtma rasmiylashtiradi va xodimni faqat zarur bo'lganda jalb qiladi. Toshkentda biznes uchun AI agent yaratish odatda 6 qadamda kechadi: tahlil → dizayn → integratsiya → test → ishga tushirish → qo'llab-quvvatlash. Narx tayyor shablon emas, balki sizning ehtiyojingizga (qaysi model, qanday integratsiya, qancha murakkablik) bog'liq. Tezcode — 2024-yilda Toshkentda tashkil topgan 19 kishilik jamoa — Claude va GPT asosida o'zbek va rus tilida ishlaydigan AI agentlar quradi va bepul konsultatsiya beradi.",
     },
     sections: [
       {
@@ -189,7 +189,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Tezcode bilan AI agent yaratish",
         paragraphs: [
-          "Tezcode — 2024-yilda Toshkentda tashkil topgan, 16 kishilik AI Software Factory jamoasi. Biznes uchun AI agentlar, AI chatbotlar va buyurtma dasturlar quramiz. Asoschi — Bekzod Mirzaaliyev.",
+          "Tezcode — 2024-yilda Toshkentda tashkil topgan, 19 kishilik AI Software Factory jamoasi. Biznes uchun AI agentlar, AI chatbotlar va buyurtma dasturlar quramiz. Asoschi — Bekzod Mirzaaliyev.",
           "Biz agentlarni Claude (Anthropic) va GPT (OpenAI) modellari asosida quramiz, o'zbek va rus tilida ishlashga sozlaymiz va sizning mavjud tizimingizga — CRM, 1C, Telegram, sayt — ulaymiz. Ish yuqorida tasvirlangan 6 qadam bo'yicha kechadi, har bosqichda siz bilan kelishib.",
           "Bizning R&D yo'nalishimizda \"AI ofis\" yondashuvi ham bor — bunda bir nechta agent (sotuv, qo'llab-quvvatlash, hisobot va boshqa bo'limlar) o'zaro ish bo'lishadi. Bu hozircha ishlab chiqilayotgan yondashuv, tugallangan qutiga solingan mahsulot emas — lekin biznesingiz uchun shu yo'nalishda yechim qurish mumkin.",
           "Boshlash uchun siz aniq biror narsa sotib olishingiz shart emas: avval bepul konsultatsiyada biznesingizga AI agent mosligini va undan qanday foyda olishingiz mumkinligini birga baholaymiz.",
@@ -200,10 +200,6 @@ export const CONTENT: ArticleContent = {
       title: "Tez-tez beriladigan savollar",
       items: [
         {
-          q: "Bepul agent va bepul konsultatsiya nimasi bilan farq qiladi?",
-          a: "Bepul agent — foydalanish shartlari doirasida ishlatiladigan vosita; bepul konsultatsiya esa vazifangizni mutaxassis bilan muhokama qilish. Tezcode konsultatsiyasi agentni tekin yaratish degani emas: ishlab chiqish $400 dan boshlanadi, integratsiya va doimiy xarajatlar taklifda alohida belgilanadi."
-        },
-        {
           q: "AI agent nima?",
           a: "AI agent — bu nafaqat javob beradigan, balki vazifani bajaradigan dastur. U mijozga javob beradi, ma'lumotni CRM yoki 1C ga yozadi, buyurtma rasmiylashtiradi va kerak bo'lsa xodimga uzatadi. Asosi — GPT yoki Claude kabi katta til modeli, sizning bilim bazangiz va biznes tizimlaringizga integratsiya.",
         },
@@ -212,28 +208,16 @@ export const CONTENT: ArticleContent = {
           a: "Chatbot savolga matn bilan javob beradi va shu yerda to'xtaydi. AI agent esa harakat qiladi: ombordan qoldiqni tekshiradi, buyurtma yaratadi, ma'lumotni tizimga yozadi va murakkab holatni operatorga uzatadi. Sodda qilib: chatbot gaplashadi, agent ish bajaradi.",
         },
         {
-          q: "Qaysi biznesga AI agent kerak?",
-          a: "Takroriy savollar va jarayonlar ko'p bo'lgan bizneslarga — savdo va e-commerce, klinika, restoran, ta'lim, go'zallik va xizmat ko'rsatish sohalariga. Agar kuniga o'nlab bir xil savolga javob bersangiz, kechqurun lidlar javobsiz qolsa yoki ma'lumotni qo'lda bir tizimdan ikkinchisiga ko'chirsangiz — AI agent foyda beradi.",
-        },
-        {
-          q: "AI agent mavjud CRM, 1C yoki Telegram bilan ishlaydimi?",
-          a: "Ha. To'g'ri qurilgan AI agent integratsiya orqali mavjud CRM, 1C, ombor bazasi, sayt va Telegram bilan ishlaydi. Aynan shu integratsiya agentni oddiy chatbotdan farqlaydi — u nafaqat gapiradi, balki sizning tizimlaringizda real harakat qiladi.",
-        },
-        {
           q: "AI agent o'zbek tilida ishlaydimi?",
           a: "Ha. Zamonaviy til modellari o'zbek va rus tilida, ko'pincha bitta suhbatda aralash, tabiiy ishlaydi. Tezcode agentlarni aynan O'zbekiston bizneslari uchun uz/ru muloqotga sozlaydi va testdan o'tkazadi.",
         },
         {
           q: "AI agent narxi qancha?",
-          a: "Aniq tayyor narx yo'q — u modelga, integratsiyalar soniga, murakkablikka va bilim bazasi hajmiga bog'liq. To'g'ri yo'l — bepul konsultatsiyada ehtiyojni aniqlab, shu ehtiyojga mos aniq taklif olish. \"Hammaga bir xil narx\" odatda real jarayonga to'g'ri kelmaydi.",
+          a: "Ishlab chiqish $400 dan boshlanadi, integratsiya va doimiy xarajatlar taklifda alohida belgilanadi; aniq narx modelga, integratsiyalar soniga, murakkablikka va bilim bazasi hajmiga bog'liq. To'g'ri yo'l — bepul konsultatsiyada ehtiyojni aniqlab, shu ehtiyojga mos aniq taklif olish. \"Hammaga bir xil narx\" odatda real jarayonga to'g'ri kelmaydi.",
         },
         {
           q: "AI agent qancha vaqtda tayyor bo'ladi?",
           a: "Bu agent murakkabligiga bog'liq. Oddiy FAQ va lid agenti nisbatan tez ishga tushadi; CRM/1C va buyurtma jarayoniga chuqur ulangan ko'p qadamli agent ko'proq vaqt oladi. Aniq muddat tahlil bosqichidan keyin beriladi.",
-        },
-        {
-          q: "Ma'lumotlarim xavfsizmi?",
-          a: "Ha, bu jiddiy yondashuvni talab qiladi. Yaxshi qurilgan agentda kirish huquqlari cheklanadi, maxfiy ma'lumotlar himoyalanadi va agent faqat o'ziga ruxsat berilgan tizimlarga murojaat qiladi. Xavfsizlik talablari loyihaning boshida kelishiladi.",
         },
       ],
     },
@@ -258,7 +242,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Краткий ответ",
       text:
-        "ИИ-агент — это программа, которая не просто отвечает, а доводит задачу до конца: отвечает клиенту, записывает данные в CRM или 1С, оформляет заказ и привлекает сотрудника только при необходимости. Создание ИИ-агента для бизнеса в Ташкенте обычно проходит за 6 шагов: анализ → дизайн → интеграция → тестирование → запуск → поддержка. Цена — это не готовый шаблон, она зависит от ваших потребностей (какая модель, какие интеграции, какая сложность). Tezcode — команда из 16 человек, основанная в Ташкенте в 2024 году — создаёт ИИ-агентов на базе Claude и GPT, работающих на узбекском и русском, и даёт бесплатную консультацию.",
+        "ИИ-агент — это программа, которая не просто отвечает, а доводит задачу до конца: отвечает клиенту, записывает данные в CRM или 1С, оформляет заказ и привлекает сотрудника только при необходимости. Создание ИИ-агента для бизнеса в Ташкенте обычно проходит за 6 шагов: анализ → дизайн → интеграция → тестирование → запуск → поддержка. Цена — это не готовый шаблон, она зависит от ваших потребностей (какая модель, какие интеграции, какая сложность). Tezcode — команда из 19 человек, основанная в Ташкенте в 2024 году — создаёт ИИ-агентов на базе Claude и GPT, работающих на узбекском и русском, и даёт бесплатную консультацию.",
     },
     sections: [
       {
@@ -405,7 +389,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Создание ИИ-агента с Tezcode",
         paragraphs: [
-          "Tezcode — команда AI Software Factory из 16 человек, основанная в Ташкенте в 2024 году. Мы создаём ИИ-агентов, ИИ-чат-ботов и заказное ПО для бизнеса. Основатель — Бекзод Мирзаалиев.",
+          "Tezcode — команда AI Software Factory из 19 человек, основанная в Ташкенте в 2024 году. Мы создаём ИИ-агентов, ИИ-чат-ботов и заказное ПО для бизнеса. Основатель — Бекзод Мирзаалиев.",
           "Мы строим агентов на базе моделей Claude (Anthropic) и GPT (OpenAI), настраиваем их на работу на узбекском и русском и подключаем к вашим существующим системам — CRM, 1С, Telegram, сайту. Работа идёт по описанным выше 6 шагам, согласовывая каждый этап с вами.",
           "В нашем R&D-направлении есть и подход «AI-офис» — когда несколько агентов (продажи, поддержка, отчёты и другие отделы) делят работу между собой. Это пока разрабатываемый подход, а не готовый коробочный продукт — но под ваш бизнес можно построить решение в этом направлении.",
           "Чтобы начать, вам необязательно сразу что-то покупать: сначала на бесплатной консультации мы вместе оценим, подходит ли вашему бизнесу ИИ-агент и какую пользу вы можете из него извлечь.",
@@ -424,28 +408,16 @@ export const CONTENT: ArticleContent = {
           a: "Чат-бот отвечает на вопрос текстом и на этом останавливается. ИИ-агент действует: проверяет остаток на складе, создаёт заказ, записывает данные в систему и передаёт сложный случай оператору. Проще говоря: чат-бот разговаривает, агент выполняет работу.",
         },
         {
-          q: "Какому бизнесу нужен ИИ-агент?",
-          a: "Бизнесам с большим количеством повторяющихся вопросов и процессов — торговле и e-commerce, клиникам, ресторанам, образованию, красоте и сфере услуг. Если вы по десятку раз в день отвечаете на одни и те же вопросы, вечером лиды остаются без ответа или вы вручную переносите данные между системами — ИИ-агент будет полезен.",
-        },
-        {
-          q: "Работает ли ИИ-агент с существующими CRM, 1С или Telegram?",
-          a: "Да. Правильно построенный ИИ-агент через интеграцию работает с существующими CRM, 1С, складской базой, сайтом и Telegram. Именно эта интеграция отличает агента от обычного чат-бота — он не просто говорит, а реально действует в ваших системах.",
-        },
-        {
           q: "Работает ли ИИ-агент на узбекском языке?",
           a: "Да. Современные языковые модели естественно работают на узбекском и русском, часто вперемешку в одном разговоре. Tezcode настраивает и тестирует агентов именно под uz/ru-общение для бизнеса в Узбекистане.",
         },
         {
           q: "Сколько стоит ИИ-агент?",
-          a: "Готовой фиксированной цены нет — она зависит от модели, количества интеграций, сложности и объёма базы знаний. Правильный путь — на бесплатной консультации определить потребность и получить точное предложение под неё. «Единая цена для всех» обычно не подходит под реальный процесс.",
+          a: "Разработка начинается от $400, интеграции и постоянные расходы указываются в предложении отдельно; точная цена зависит от модели, количества интеграций, сложности и объёма базы знаний. Правильный путь — на бесплатной консультации определить потребность и получить точное предложение под неё. «Единая цена для всех» обычно не подходит под реальный процесс.",
         },
         {
           q: "За какое время будет готов ИИ-агент?",
           a: "Это зависит от сложности агента. Простой FAQ- и лид-агент запускается относительно быстро; многошаговый агент, глубоко подключённый к CRM/1С и процессу заказов, занимает больше времени. Точный срок даётся после этапа анализа.",
-        },
-        {
-          q: "Мои данные в безопасности?",
-          a: "Да, это требует серьёзного подхода. В хорошо построенном агенте ограничиваются права доступа, защищаются конфиденциальные данные, и агент обращается только к разрешённым ему системам. Требования к безопасности согласуются в начале проекта.",
         },
       ],
     },
@@ -470,7 +442,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Short answer",
       text:
-        "An AI agent is software that does not just answer but carries a task through to the end: it replies to the customer, writes data into your CRM or 1C, places the order and brings in a human only when needed. Building an AI agent for business in Tashkent usually takes 6 steps: analysis → design → integration → testing → launch → support. The price is not a ready-made template — it depends on your needs (which model, which integrations, how much complexity). Tezcode — a 16-person team founded in Tashkent in 2024 — builds AI agents on top of Claude and GPT that work in Uzbek and Russian, and offers a free consultation.",
+        "An AI agent is software that does not just answer but carries a task through to the end: it replies to the customer, writes data into your CRM or 1C, places the order and brings in a human only when needed. Building an AI agent for business in Tashkent usually takes 6 steps: analysis → design → integration → testing → launch → support. The price is not a ready-made template — it depends on your needs (which model, which integrations, how much complexity). Tezcode — a 19-person team founded in Tashkent in 2024 — builds AI agents on top of Claude and GPT that work in Uzbek and Russian, and offers a free consultation.",
     },
     sections: [
       {
@@ -616,7 +588,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Building an AI agent with Tezcode",
         paragraphs: [
-          "Tezcode is a 16-person AI Software Factory team founded in Tashkent in 2024. We build AI agents, AI chatbots and custom software for business. The founder is Bekzod Mirzaaliyev.",
+          "Tezcode is a 19-person AI Software Factory team founded in Tashkent in 2024. We build AI agents, AI chatbots and custom software for business. The founder is Bekzod Mirzaaliyev.",
           "We build agents on top of Claude (Anthropic) and GPT (OpenAI) models, tune them to work in Uzbek and Russian, and connect them to your existing systems — CRM, 1C, Telegram, website. The work follows the 6 steps described above, agreeing each stage with you.",
           "Our R&D direction also includes the \"AI office\" approach — where several agents (sales, support, reporting and other departments) share the work between them. This is still a developing approach, not a finished boxed product — but a solution in this direction can be built for your business.",
           "To get started you do not have to buy anything right away: first, in a free consultation, we assess together whether an AI agent fits your business and what benefit you can get from it.",
@@ -635,28 +607,16 @@ export const CONTENT: ArticleContent = {
           a: "A chatbot answers a question with text and stops there. An AI agent acts: it checks stock in the warehouse, creates an order, writes data to the system and hands a complex case to an operator. Simply put: a chatbot talks, an agent does the work.",
         },
         {
-          q: "Which business needs an AI agent?",
-          a: "Businesses with a lot of repetitive questions and processes — retail and e-commerce, clinics, restaurants, education, beauty and the service sector. If you answer the same questions dozens of times a day, leads go unanswered in the evening, or you manually move data between systems, an AI agent will be useful.",
-        },
-        {
-          q: "Does an AI agent work with existing CRM, 1C or Telegram?",
-          a: "Yes. A properly built AI agent works through integration with your existing CRM, 1C, inventory database, website and Telegram. This integration is exactly what distinguishes an agent from an ordinary chatbot — it does not just talk, it really acts in your systems.",
-        },
-        {
           q: "Does the AI agent work in the Uzbek language?",
           a: "Yes. Modern language models work naturally in Uzbek and Russian, often mixed within a single conversation. Tezcode tunes and tests agents specifically for uz/ru communication for businesses in Uzbekistan.",
         },
         {
           q: "How much does an AI agent cost?",
-          a: "There is no fixed ready price — it depends on the model, the number of integrations, the complexity and the size of the knowledge base. The right path is to identify the need in a free consultation and get a precise proposal tailored to it. \"One price for everyone\" usually does not fit a real process.",
+          a: "Development starts from $400, with integrations and ongoing costs listed separately in the proposal; the exact price depends on the model, the number of integrations, the complexity and the size of the knowledge base. The right path is to identify the need in a free consultation and get a precise proposal tailored to it. \"One price for everyone\" usually does not fit a real process.",
         },
         {
           q: "How long does it take to build an AI agent?",
           a: "It depends on the agent's complexity. A simple FAQ and lead agent launches relatively quickly; a multi-step agent deeply connected to CRM/1C and the order process takes longer. The exact timeline is given after the analysis stage.",
-        },
-        {
-          q: "Is my data safe?",
-          a: "Yes, this requires a serious approach. In a well-built agent, access rights are restricted, confidential data is protected, and the agent only queries the systems it is allowed to. Security requirements are agreed at the start of the project.",
         },
       ],
     },

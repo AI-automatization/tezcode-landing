@@ -23,7 +23,7 @@ const META: Record<
   uz: {
     title: "Telegram bot yaratish biznes uchun — buyurtma, to'lov",
     description:
-      "Biznes uchun Telegram bot yaratish Toshkentda $279 dan: buyurtma qabul qilish, Click/Payme to'lov, qo'llab-quvvatlash, eslatma, Telegram do'kon (Mini App), CRM integratsiyasi. Tezcode — IT Park rezidenti. Bepul konsultatsiya, to'lov 30% oldindan.",
+      "Biznes uchun Telegram bot Toshkentda — $279 dan. Buyurtma, Click/Payme to'lov, Mini App do'kon va CRM integratsiyasi. Bepul konsultatsiya.",
     ogTitle: "Telegram bot yaratish biznes uchun — O'zbekiston | Tezcode",
     ogDescription:
       "Buyurtma, Click/Payme to'lov, eslatma, Telegram do'kon (Mini App), CRM integratsiyasi va AI qatlami — biznesingizga moslab. Bepul konsultatsiya.",
@@ -31,7 +31,7 @@ const META: Record<
   ru: {
     title: "Разработка Telegram-бота для бизнеса в Узбекистане",
     description:
-      "Создание Telegram-бота для бизнеса в Ташкенте от $279 (≈ от 3.5 млн сум): приём заказов, оплата Click/Payme, поддержка, уведомления, Telegram-магазин (Mini App), интеграция с CRM. Tezcode — резидент IT Park. Бесплатная консультация, оплата 30% предоплата.",
+      "Telegram-бот для бизнеса в Ташкенте от $279: заказы, оплата Click/Payme, Mini App магазин и интеграция с CRM. Бесплатная консультация.",
     ogTitle: "Разработка Telegram-бота для бизнеса в Узбекистане | Tezcode",
     ogDescription:
       "Заказы, оплата Click/Payme, уведомления, Telegram-магазин (Mini App), интеграция с CRM и ИИ-слой (AI) — под ваш бизнес. Бесплатная консультация.",

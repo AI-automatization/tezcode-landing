@@ -110,10 +110,6 @@ export const CONTENT: ArticleContent = {
           q: "Bizning loyihamizga GPT-6 Astra kerakmi?",
           a: "Agar vazifa oddiy bo'lsa, masalan mijozga narx va ish vaqti haqida javob berish, kerak emas, arzon model yetadi. Astra murakkab, ko'p bosqichli ishda o'zini oqlaydi: eski tizimlar bilan ishlash, brauzerda uzoq jarayonni oxirigacha olib borish, katta hajmdagi hujjat va kod bilan ishlash.",
         },
-        {
-          q: "Tezcode yangi model chiqishi bilan loyihalarni ko'chiradimi?",
-          a: "Yo'q. Biz yangi modelni avval o'z sinovimizdan o'tkazamiz: natija, narx va tezlikni real vazifada solishtiramiz. Faqat shundan keyin, agar mijozga chin foyda bo'lsa, ko'chiramiz. Bitta loyihada bir necha model birga ishlaydi, har biri o'z bo'lagida.",
-        },
       ],
     },
     cta: {
@@ -224,10 +220,6 @@ export const CONTENT: ArticleContent = {
           q: "Нужна ли GPT-6 Astra нашему проекту?",
           a: "Если задача простая, например ответить клиенту о ценах и часах работы, не нужна, хватит недорогой модели. Astra оправдывает себя в сложной многошаговой работе: взаимодействие со старыми системами, доведение долгого процесса в браузере до конца, работа с большими объёмами документов и кода.",
         },
-        {
-          q: "Переводит ли Tezcode проекты на новую модель сразу после выхода?",
-          a: "Нет. Сначала мы прогоняем новую модель через собственные тесты: сравниваем результат, цену и скорость на реальной задаче. Только потом, если клиент получает реальную пользу, переводим. В одном проекте работают несколько моделей, каждая на своём участке.",
-        },
       ],
     },
     cta: {
@@ -337,10 +329,6 @@ export const CONTENT: ArticleContent = {
         {
           q: "Does our project need GPT-6 Astra?",
           a: "If the task is simple, such as telling a customer your prices and opening hours, no: a cheap model is enough. Astra earns its cost on complex multi-step work: dealing with legacy systems, carrying a long browser process through to the end, and working across large volumes of documents and code.",
-        },
-        {
-          q: "Does Tezcode move projects to a new model as soon as it ships?",
-          a: "No. We run the new model through our own tests first, comparing quality, cost and speed on a real task. Only then, and only if the client genuinely gains, do we move. A single project runs several models, each on the part it suits.",
         },
       ],
     },

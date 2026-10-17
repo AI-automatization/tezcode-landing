@@ -4,7 +4,7 @@ import type { ServicePageContent } from "@/components/service-page/types";
 // Courses, bootcamps, workshops and corporate trainings for developers and
 // business owners, focused on AI, automation and modern software engineering.
 // Only confirmed Tezcode facts (AI Software Factory in Tashkent, 2024, founder
-// Bekzod Mirzaaliyev, ~14 in-house developers, IT Park resident, real products
+// Bekzod Mirzaaliyev, 19-person in-house team, IT Park resident, real products
 // RAOS / AI Office / CoreMed as teaching material). No prices, dates or student
 // counts are promised — CTAs are about consultation / enrollment interest.
 export const CONTENT: ServicePageContent = {
@@ -77,7 +77,6 @@ export const CONTENT: ServicePageContent = {
         { q: "Oldindan bilim kerakmi?", a: "Formatga bog'liq. AI kurslari va biznes workshop yangi boshlovchilar uchun ochiq. Bootcamp uchun kompyuter bilan ishlash va asosiy mantiq yetarli — qolganini birga o'rganamiz." },
         { q: "Online yoki offline o'qitasizmi?", a: "Ikkalasi ham. Toshkentdagi ofisimizda offline dars, shuningdek online format mavjud. Korporativ trening bo'lsa, jamoangiz joyiga ham chiqamiz." },
         { q: "Korporativ trening tashkil qilasizmi?", a: "Ha. Kompaniyangiz jamoasini AI va zamonaviy muhandislik bo'yicha o'qitamiz — sizning ehtiyoj va texnologiyalaringizga moslab dastur tuzamiz. Batafsili konsultatsiyada kelishamiz." },
-        { q: "Sertifikat beriladimi?", a: "Ha. Kursni real loyiha bilan yakunlagan o'quvchi Tezcode sertifikatini oladi. Muhimi — portfolioda ishlaydigan mahsulot va real amaliyot tajribasi qoladi." },
         { q: "Narx qancha?", a: "Aniq narx format, davomiylik va guruh/individual tanloviga bog'liq. Konsultatsiya bepul — u yerda sizga mos yo'nalish va shartlarni birga aniqlaymiz." },
       ],
     },
@@ -169,7 +168,6 @@ export const CONTENT: ServicePageContent = {
         { q: "Нужны ли предварительные знания?", a: "Зависит от формата. ИИ-курсы и бизнес-воркшоп открыты для новичков. Для буткемпа достаточно уверенно работать за компьютером и понимать базовую логику — остальному научим вместе." },
         { q: "Обучение онлайн или офлайн?", a: "И то, и другое. Офлайн-занятия в нашем офисе в Ташкенте, а также онлайн-формат. При корпоративном тренинге выезжаем к вашей команде." },
         { q: "Проводите ли корпоративные тренинги?", a: "Да. Обучаем команду вашей компании по ИИ и современной инженерии — составляем программу под ваши потребности и технологии. Детали согласуем на консультации." },
-        { q: "Выдаёте ли сертификат?", a: "Да. Ученик, завершивший курс реальным проектом, получает сертификат Tezcode. Главное — в портфолио остаётся рабочий продукт и реальный практический опыт." },
         { q: "Сколько это стоит?", a: "Точная цена зависит от формата, длительности и того, групповое обучение или индивидуальное. Консультация бесплатна — на ней вместе определим подходящее направление и условия." },
       ],
     },
@@ -261,7 +259,6 @@ export const CONTENT: ServicePageContent = {
         { q: "Do I need prior knowledge?", a: "It depends on the format. AI courses and the business workshop are open to beginners. For the bootcamp, being comfortable with a computer and basic logic is enough — we learn the rest together." },
         { q: "Is training online or offline?", a: "Both. Offline sessions at our Tashkent office, plus an online format. For corporate training we can also come to your team's location." },
         { q: "Do you run corporate trainings?", a: "Yes. We train your company's team on AI and modern engineering — we design the program around your needs and stack. We agree on details during the consultation." },
-        { q: "Do you issue a certificate?", a: "Yes. A student who finishes the course with a real project receives a Tezcode certificate. Most importantly, you keep a working product in your portfolio and real hands-on experience." },
         { q: "How much does it cost?", a: "The exact price depends on the format, duration and group vs. one-on-one. The consultation is free — there we define the right track and terms together." },
       ],
     },
@@ -353,7 +350,6 @@ export const CONTENT: ServicePageContent = {
         { q: "هل أحتاج معرفة مسبقة؟", a: "يعتمد على الصيغة. دورات AI وورشة الأعمال مفتوحة للمبتدئين. للمعسكر التدريبي يكفي التعامل بثقة مع الحاسوب وفهم المنطق الأساسي — نتعلّم الباقي معاً." },
         { q: "هل التدريب عبر الإنترنت أم حضوري؟", a: "كلاهما. جلسات حضورية في مكتبنا بطشقند، إضافة إلى صيغة عبر الإنترنت. وفي التدريب المؤسسي يمكننا الحضور إلى مقر فريقك." },
         { q: "هل تقدّمون تدريباً مؤسسياً؟", a: "نعم. ندرّب فريق شركتك على الذكاء الاصطناعي والهندسة الحديثة — نصمّم البرنامج حول احتياجاتك وتقنياتك. نتفق على التفاصيل في الاستشارة." },
-        { q: "هل تصدرون شهادة؟", a: "نعم. الطالب الذي ينهي الدورة بمشروع حقيقي يحصل على شهادة Tezcode. والأهم أنه يحتفظ بمنتج يعمل في معرض أعماله وخبرة عملية حقيقية." },
         { q: "كم التكلفة؟", a: "السعر الدقيق يعتمد على الصيغة والمدة والاختيار بين مجموعة أو فردي. الاستشارة مجانية — نحدّد فيها المسار والشروط المناسبة معاً." },
       ],
     },
@@ -445,7 +441,6 @@ export const CONTENT: ServicePageContent = {
         { q: "Чи потрібні попередні знання?", a: "Залежить від формату. AI-курси та бізнес-воркшоп відкриті для новачків. Для буткемпу достатньо впевнено працювати за комп'ютером і розуміти базову логіку — решти навчимо разом." },
         { q: "Навчання онлайн чи офлайн?", a: "І те, і те. Офлайн-заняття в нашому офісі в Ташкенті, а також онлайн-формат. За корпоративного тренінгу виїжджаємо до вашої команди." },
         { q: "Чи проводите корпоративні тренінги?", a: "Так. Навчаємо команду вашої компанії з AI та сучасної інженерії — складаємо програму під ваші потреби й технології. Деталі узгоджуємо на консультації." },
-        { q: "Чи видаєте сертифікат?", a: "Так. Учень, який завершив курс реальним проектом, отримує сертифікат Tezcode. Головне — у портфоліо залишається робочий продукт і реальний практичний досвід." },
         { q: "Скільки це коштує?", a: "Точна ціна залежить від формату, тривалості та вибору група/індивідуально. Консультація безкоштовна — на ній разом визначимо відповідний напрям та умови." },
       ],
     },

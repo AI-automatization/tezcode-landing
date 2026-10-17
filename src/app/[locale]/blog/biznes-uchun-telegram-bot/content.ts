@@ -97,16 +97,8 @@ export const CONTENT: ArticleContent = {
           a: "Oddiy buyurtma/FAQ boti $279 dan. Mini App do'kon (to'lov bilan) va AI qatlami qo'shilsa narx oshadi. AI chatbot $339 dan, CRM integratsiya $700 dan. Aniq summa bepul konsultatsiya va TZ'dan keyin yozma beriladi.",
         },
         {
-          q: "Telegram do'kon (Mini App) nima?",
-          a: "Mini App — Telegram ichida ochiladigan to'liq do'kon: katalog, savat, buyurtma va Click/Payme to'lov. Mijoz saytga o'tmaydi, hammasi Telegram'da bo'ladi. Instagram'ni komissiyasiz Telegram do'koniga aylantirish uchun ideal.",
-        },
-        {
           q: "Botga AI qo'shsa bo'ladimi?",
           a: "Ha. Oddiy tugmali bot faqat menyu bo'yicha yuradi; AI qatlami qo'shilsa, bot erkin savolni tabiiy tilda tushunadi va sizning bazangiz bo'yicha javob beradi (o'zbek va rus tilida). Ko'p biznes oddiy botdan boshlab, keyin AI qo'shadi.",
-        },
-        {
-          q: "Bot to'lovni qabul qila oladimi?",
-          a: "Ha. Click va Payme to'lov tizimlari botga ulanadi — mijoz to'lovni to'g'ridan chatda amalga oshiradi, buyurtma esa sizga (yoki CRM'ga) tushadi.",
         },
         {
           q: "Qancha vaqtda tayyor bo'ladi?",
@@ -215,16 +207,8 @@ export const CONTENT: ArticleContent = {
           a: "Простой бот заказов/FAQ от $279. С Mini App магазином (с оплатой) и ИИ-слоем цена растёт. ИИ-чат-бот от $339, интеграция CRM от $700. Точная сумма — письменно после бесплатной консультации и ТЗ.",
         },
         {
-          q: "Что такое Telegram-магазин (Mini App)?",
-          a: "Mini App — полноценный магазин внутри Telegram: каталог, корзина, заказ и оплата Click/Payme. Клиент не уходит на сайт, всё в Telegram. Идеально, чтобы превратить Instagram в Telegram-магазин без комиссии.",
-        },
-        {
           q: "Можно добавить ИИ к боту?",
           a: "Да. Простой кнопочный бот работает по меню; с ИИ-слоем бот понимает произвольные вопросы на естественном языке и отвечает по вашей базе (на узбекском и русском). Многие начинают с простого бота и потом добавляют ИИ.",
-        },
-        {
-          q: "Может ли бот принимать оплату?",
-          a: "Да. Click и Payme подключаются к боту — клиент оплачивает прямо в чате, а заказ приходит вам (или в CRM).",
         },
         {
           q: "За сколько времени будет готов?",
@@ -333,16 +317,8 @@ export const CONTENT: ArticleContent = {
           a: "A simple orders/FAQ bot from $279. With a Mini App store (with payments) and an AI layer the price rises. AI chatbot from $339, CRM integration from $700. The exact figure is quoted in writing after a free consultation and spec.",
         },
         {
-          q: "What is a Telegram store (Mini App)?",
-          a: "A Mini App is a full store inside Telegram: catalog, cart, order and Click/Payme payment. The customer doesn't leave for a website — everything is in Telegram. Ideal to turn Instagram into a commission-free Telegram store.",
-        },
-        {
           q: "Can AI be added to the bot?",
           a: "Yes. A simple button bot follows a menu; with an AI layer the bot understands free-form questions in natural language and answers from your knowledge base (in Uzbek and Russian). Many start with a simple bot and add AI later.",
-        },
-        {
-          q: "Can the bot take payments?",
-          a: "Yes. Click and Payme connect to the bot — the customer pays right in the chat, and the order comes to you (or your CRM).",
         },
         {
           q: "How long does it take to be ready?",

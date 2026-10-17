@@ -90,17 +90,9 @@ export const CONTENT: ServicePageContent = {
           q: "Avtomatizatsiyani O'zbekistondagi biznesda nimadan boshlash kerak?",
           a: "Bitta jarayonni boshidan oxirigacha yozing: buyurtma qayerdan keladi, kim kiritadi, qaysi dasturga o'tadi va hisobotni kim tayyorlaydi. Takroriy kiritishlar va kechikishlarni belgilang. Tezcode konsultatsiyasida shu xarita va mavjud tizimlar asosida birinchi bosqichni tanlaymiz."
         },
-        {
-          q: "Avtomatlashtirish uchun AI yoki yangi dastur shartmi?",
-          a: "Yo'q. Mavjud CRM, 1C yoki POS imkoniyatlari yetarli bo'lsa, ularni sozlash va bog'lashdan boshlash mumkin. AI erkin matnni tushunish yoki hujjatni tahlil qilish zarur bo'lganda qo'shiladi. Faqat oddiy qoida asosidagi vazifa uchun ortiqcha murakkablik kerak emas."
-        },
         { q: "Biznes avtomatlashtirish nima?", a: "Biznes avtomatlashtirish — bu qo'lda bajariladigan takroriy ishlarni (hisobot, buyurtma, ombor nazorati, mijoz bilan aloqa) dasturiy tizim yordamida avtomatik bajartirish. Maqsad: vaqtni tejash, xatoni kamaytirish va real raqamlarni ko'rish." },
-        { q: "O'zbekistonda biznesni avtomatlashtirishni kimga buyurtma qilgan ma'qul?", a: "Tanlashda uchta narsani tekshiring: kompaniyaning real ishlayotgan mahsulotlari bormi, mahalliy tizimlar (Soliq.uz, Payme/Click, 1C) bilan integratsiya qila oladimi va narxni yozma taklifda beradimi. Tezcode — IT Park rezidenti (№6237), o'z mahsulotlari jonli ishlaydi (RAOS POS, ClinicaGo CRM, WorkControl), AI avtomatlashtirishni Claude va GPT asosida quradi. Birinchi qadam — 30 daqiqalik bepul konsultatsiya." },
-        { q: "Kichik biznesga ham kerakmi?", a: "Ha. Aynan kichik biznesda har bir soat qimmat. Telegram bot yoki avtomatik hisobot kabi arzon yechimdan boshlab, eng ko'p vaqt oladigan bitta jarayonni avtomatlashtirsangiz — natija darrov seziladi." },
-        { q: "Tayyor dastur (Bitrix, AmoCRM) o'rniga nega buyurtma tizim?", a: "Tayyor SaaS universal — sizning o'ziga xos jarayoningizga 60% mos keladi, qolgani ortiqcha. Tezcode noldan sizning ish oqimingizga moslab quradi, shuning uchun tizim to'liq ishlatiladi." },
         { q: "Qancha vaqtda tayyor bo'ladi?", a: "Oddiy avtomatizatsiya — 1-2 hafta. To'liqroq tizim — 2-4 hafta MVP, keyin bosqichma-bosqich kengaytiriladi. Har hafta ishlovchi versiyani ko'rsatamiz." },
         { q: "Narxi qancha?", a: "$400 dan boshlanadi. Aniq narx jarayonlar soni va murakkabligiga bog'liq, chunki har biznes har xil — bepul auditdan keyin yozma taklif beramiz. Konsultatsiya bepul, to'lov 30% oldindan, qolgani bosqichma-bosqich." },
-        { q: "Biznes jarayonlarini avtomatlashtirish qancha turadi?", a: "$400 dan boshlanadi. Aniq narx jarayonlar soni va murakkabligiga bog'liq — bepul auditdan keyin yozma taklif beramiz." },
         { q: "Hozirgi tizimlarim (1C, kassa, Telegram) bilan ishlaydimi?", a: "Ha. Biz Telegram, Google Sheets, 1C, to'lov va kassa tizimlari bilan integratsiya quramiz, shunda avtomatizatsiya hozirgi ish oqimingiz ichida ishlaydi." },
       ],
     },
@@ -169,7 +161,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Tezcode автоматизировал процессы в собственных продуктах — вот реально работающие примеры.",
       items: [
         { tag: "01", title: "RAOS — автоматизация магазина", desc: "Касса, склад, CRM, отчёты в одной программе. Продажи и остатки считаются автоматически, без ручного Excel." },
-        { tag: "02", title: "AI Office — автоматизация управления", desc: "Виртуальный офис из 12 отделов. С его помощью Tezcode управляет 14 разработчиками и множеством проектов." },
+        { tag: "02", title: "AI Office — автоматизация управления", desc: "Виртуальный офис из 12 отделов. С его помощью Tezcode управляет командой из 19 человек и множеством проектов." },
         { tag: "03", title: "CoreMed — процессы клиники", desc: "Приём, расписание, отчёты и финансы в одной системе. Полная автоматизация для медицинского бизнеса." },
         { tag: "04", title: "Автоматизация через Telegram", desc: "Приём заказов, напоминания, отправка отчётов в Telegram — недорогой первый шаг для малого бизнеса." },
       ],
@@ -207,28 +199,11 @@ export const CONTENT: ServicePageContent = {
           a: "Выберите один процесс: откуда приходит заказ, кто переносит его в CRM, когда меняется остаток и как составляется отчёт. Подготовьте список программ и примеры повторного ввода данных. На консультации Tezcode определим первый этап, критерии приёмки и необходимые интеграции."
         },
         {
-          q: "Нужно ли менять CRM или внедрять AI для автоматизации?",
-          a: "Не обязательно. Сначала проверяем настройки и API существующих систем. Иногда достаточно связать кассу, CRM и отчётность. AI рассматриваем отдельно, если нужно понимать свободный текст или анализировать документы; обычные операции можно выполнять по правилам."
-        },
-        {
           q: "Что такое автоматизация бизнес-процессов?",
           a: "Это передача повторяющихся операций программной системе: создание заказа, обновление остатка, напоминание сотруднику или сбор отчёта. Для каждого шага задают источник данных, правило обработки и ответственного. AI нужен лишь для задач, в которых требуется работа со свободным текстом или документами."
         },
-        {
-          q: "Кому заказать автоматизацию бизнеса в Узбекистане?",
-          a: "Проверьте, понимает ли исполнитель ваш процесс, может ли работать с существующими системами и фиксирует ли объём работ письменно. Tezcode начинает с консультации и карты процесса, затем предлагает настройку готового решения, интеграцию или разработку с критериями приёмки."
-        },
-        { q: "Нужна ли она малому бизнесу?", a: "Да. Именно в малом бизнесе каждый час ценен. Начав с недорогого решения вроде Telegram-бота или автоматического отчёта и автоматизировав один самый затратный процесс, вы сразу почувствуете результат." },
-        {
-          q: "Когда нужна заказная система вместо готовой CRM?",
-          a: "Сначала проверяем, можно ли решить задачу настройкой существующей CRM и доступными интеграциями. Заказная разработка имеет смысл, если нужный процесс не покрывается готовыми возможностями или требует особых правил доступа и обработки данных. Выбор фиксируем после разбора требований."
-        },
         { q: "Сколько времени занимает?", a: "Простая автоматизация — 1-2 недели. Более полная система — MVP за 2-4 недели, затем расширяется поэтапно. Каждую неделю показываем рабочую версию." },
         { q: "Сколько это стоит?", a: "От $400 (≈ от 5 млн сум). Точная цена зависит от количества процессов и их сложности, ведь бизнесы разные — после бесплатного аудита даём письменное предложение. Консультация бесплатна, оплата — 30% предоплата, остальное поэтапно." },
-        {
-          q: "Какие данные понадобятся для внедрения?",
-          a: "Список используемых программ, схема процесса, роли сотрудников и обезличенные примеры заказов или отчётов. Перед переносом нужно проверить дубли, обязательные поля и начальные остатки. Доступы и ответственность за корректность исходных данных согласуем до запуска."
-        },
         { q: "Работает ли с моими системами (1C, касса, Telegram)?", a: "Да. Мы строим интеграцию с Telegram, Google Sheets, 1C, платёжными и кассовыми системами, чтобы автоматизация работала внутри вашего текущего процесса." },
       ],
     },
@@ -297,7 +272,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Tezcode automated business in its own products — these are real, working examples.",
       items: [
         { tag: "01", title: "RAOS — store automation", desc: "Register, inventory, CRM, reports in one app. Sales and stock are calculated automatically, no manual Excel." },
-        { tag: "02", title: "AI Office — management automation", desc: "A 12-department virtual office. Tezcode itself runs 14 developers and many projects with it." },
+        { tag: "02", title: "AI Office — management automation", desc: "A 12-department virtual office. Tezcode itself runs its 19-person team and many projects with it." },
         { tag: "03", title: "CoreMed — clinic processes", desc: "Appointments, schedules, reports and finance in one system. Full automation for the medical business." },
         { tag: "04", title: "Automation via Telegram", desc: "Take orders, send reminders, push reports to Telegram — an affordable first step for small business." },
       ],
@@ -332,11 +307,8 @@ export const CONTENT: ServicePageContent = {
       items: [
         { q: "What is business automation?", a: "Business automation means having a software system perform repetitive manual work (reports, orders, inventory control, customer communication) automatically. The goal: save time, reduce errors and see real numbers." },
         { q: "Who should I hire for business automation in Uzbekistan?", a: "When choosing, check three things: does the company have real working products, can it integrate with local systems (Soliq.uz, Payme/Click, 1C), and does it give the price in a written proposal. Tezcode is an IT Park resident (No. 6237) with its own live products (RAOS POS, ClinicaGo CRM, WorkControl), building AI automation on Claude and GPT. The first step is a free 30-minute consultation." },
-        { q: "Does a small business need it?", a: "Yes. In a small business every hour is precious. Starting with an affordable solution like a Telegram bot or automated report and automating your single most time-consuming process, you feel the result immediately." },
-        { q: "Why custom instead of ready tools (Bitrix, AmoCRM)?", a: "Off-the-shelf SaaS is generic — it fits your unique process about 60%, the rest is overhead. Tezcode builds from scratch around your workflow, so the system is fully used." },
         { q: "How long does it take?", a: "Simple automation — 1-2 weeks. A fuller system — an MVP in 2-4 weeks, then expanded step by step. We show a working version every week." },
         { q: "How much does it cost?", a: "From $400. The exact price depends on the number of processes and their complexity, since businesses differ — after a free audit we send a written proposal. The consultation is free, payment starts with a 30% deposit, the rest per stage." },
-        { q: "How much does business process automation cost?", a: "From $400. The exact price depends on the number of processes and their complexity — after a free audit we send a written proposal." },
         { q: "Will it work with my systems (1C, POS, Telegram)?", a: "Yes. We build integrations with Telegram, Google Sheets, 1C, payment and POS systems so the automation works inside your current process." },
       ],
     },
@@ -405,7 +377,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "أتمتت Tezcode الأعمال في منتجاتها — هذه أمثلة عاملة حقيقية.",
       items: [
         { tag: "01", title: "RAOS — أتمتة المتجر", desc: "كاشير، مخزون، CRM، تقارير في تطبيق واحد. تُحسب المبيعات والأرصدة تلقائياً بلا Excel يدوي." },
-        { tag: "02", title: "AI Office — أتمتة الإدارة", desc: "مكتب افتراضي بـ 12 قسماً. تدير Tezcode به 14 مطوراً ومشاريع كثيرة." },
+        { tag: "02", title: "AI Office — أتمتة الإدارة", desc: "مكتب افتراضي بـ 12 قسماً. تدير Tezcode به فريقها المكوّن من 19 شخصًا ومشاريع كثيرة." },
         { tag: "03", title: "CoreMed — عمليات العيادة", desc: "المواعيد والجداول والتقارير والمالية في نظام واحد. أتمتة كاملة للأعمال الطبية." },
         { tag: "04", title: "أتمتة عبر Telegram", desc: "استقبال الطلبات، التذكيرات، إرسال التقارير إلى Telegram — خطوة أولى ميسورة للأعمال الصغيرة." },
       ],
@@ -440,11 +412,8 @@ export const CONTENT: ServicePageContent = {
       items: [
         { q: "ما هي أتمتة الأعمال؟", a: "أتمتة الأعمال تعني جعل نظام برمجي ينفّذ العمل اليدوي المتكرر (التقارير، الطلبات، مراقبة المخزون، التواصل مع العميل) تلقائياً. الهدف: توفير الوقت، تقليل الأخطاء، ورؤية أرقام حقيقية." },
         { q: "لمن أطلب أتمتة الأعمال في أوزبكستان؟", a: "عند الاختيار تحقق من ثلاثة أمور: هل لدى الشركة منتجات تعمل فعلياً، وهل تستطيع التكامل مع الأنظمة المحلية (Soliq.uz وPayme/Click و1C)، وهل تقدم السعر في عرض مكتوب. Tezcode مقيم في IT Park (رقم 6237)، ولديها منتجات تعمل فعلياً (RAOS POS وClinicaGo CRM وWorkControl)، وتبني أتمتة AI على Claude وGPT. الخطوة الأولى — استشارة مجانية لمدة 30 دقيقة." },
-        { q: "هل تحتاجها الأعمال الصغيرة؟", a: "نعم. في الأعمال الصغيرة كل ساعة ثمينة. بالبدء بحل ميسور مثل بوت Telegram أو تقرير تلقائي وأتمتة أكثر عملية تستهلك وقتك، تشعر بالنتيجة فوراً." },
-        { q: "لماذا نظام مخصص بدل أدوات جاهزة (Bitrix، AmoCRM)؟", a: "الـ SaaS الجاهز عام — يناسب عمليتك الفريدة بنحو 60٪، والباقي زائد. تبني Tezcode من الصفر حول سير عملك، فيُستخدم النظام بالكامل." },
         { q: "كم يستغرق؟", a: "أتمتة بسيطة — 1-2 أسبوع. نظام أكمل — MVP خلال 2-4 أسابيع ثم يُوسّع تدريجياً. نعرض نسخة عاملة كل أسبوع." },
         { q: "كم التكلفة؟", a: "من 400$. يعتمد السعر الدقيق على عدد العمليات وتعقيدها لأن الأعمال تختلف — بعد تدقيق مجاني نرسل عرضاً مكتوباً. الاستشارة مجانية، والدفع يبدأ بدفعة مقدمة 30% والباقي على مراحل." },
-        { q: "كم تكلفة أتمتة عمليات الأعمال؟", a: "من 400$. يعتمد السعر الدقيق على عدد العمليات وتعقيدها — بعد تدقيق مجاني نرسل عرضاً مكتوباً." },
         { q: "هل يعمل مع أنظمتي (1C، نقطة البيع، Telegram)؟", a: "نعم. نبني تكاملاً مع Telegram وGoogle Sheets و1C وأنظمة الدفع ونقاط البيع لتعمل الأتمتة داخل عمليتك الحالية." },
       ],
     },
@@ -513,7 +482,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Tezcode автоматизував бізнес у своїх продуктах — ось реально працюючі приклади.",
       items: [
         { tag: "01", title: "RAOS — автоматизація магазину", desc: "Каса, склад, CRM, звіти в одному додатку. Продажі та залишки рахуються автоматично, без ручного Excel." },
-        { tag: "02", title: "AI Office — автоматизація управління", desc: "Віртуальний офіс із 12 відділів. Tezcode сам керує ним 14 розробниками та багатьма проектами." },
+        { tag: "02", title: "AI Office — автоматизація управління", desc: "Віртуальний офіс із 12 відділів. Tezcode сам керує ним командою з 19 осіб та багатьма проектами." },
         { tag: "03", title: "CoreMed — процеси клініки", desc: "Прийом, розклад, звіти і фінанси в одній системі. Повна автоматизація для медичного бізнесу." },
         { tag: "04", title: "Автоматизація через Telegram", desc: "Прийом замовлень, нагадування, надсилання звітів у Telegram — недорогий перший крок для малого бізнесу." },
       ],
@@ -548,11 +517,8 @@ export const CONTENT: ServicePageContent = {
       items: [
         { q: "Що таке автоматизація бізнесу?", a: "Автоматизація бізнесу — це виконання повторюваної ручної роботи (звіти, замовлення, контроль складу, зв'язок із клієнтом) за допомогою програмної системи автоматично. Мета: економити час, знижувати помилки і бачити реальні цифри." },
         { q: "Кому замовити автоматизацію бізнесу в Узбекистані?", a: "Під час вибору перевірте три речі: чи має компанія реально працюючі продукти, чи вміє інтегруватися з локальними системами (Soliq.uz, Payme/Click, 1C) і чи дає ціну в письмовій пропозиції. Tezcode — резидент IT Park (№6237), власні продукти працюють наживо (RAOS POS, ClinicaGo CRM, WorkControl), AI-автоматизацію будує на Claude і GPT. Перший крок — безкоштовна 30-хвилинна консультація." },
-        { q: "Чи потрібна вона малому бізнесу?", a: "Так. Саме в малому бізнесі кожна година цінна. Почавши з недорогого рішення на кшталт Telegram-бота чи автоматичного звіту й автоматизувавши один найбільш витратний процес, ви одразу відчуєте результат." },
-        { q: "Навіщо замовна система замість готової (Bitrix, AmoCRM)?", a: "Готовий SaaS універсальний — він підходить вашому унікальному процесу приблизно на 60%, решта зайве. Tezcode будує з нуля під ваш робочий потік, тому система використовується повністю." },
         { q: "Скільки часу займає?", a: "Проста автоматизація — 1-2 тижні. Повніша система — MVP за 2-4 тижні, потім розширюється поетапно. Щотижня показуємо робочу версію." },
         { q: "Скільки це коштує?", a: "Від $400. Точна ціна залежить від кількості процесів та їх складності, адже бізнеси різні — після безкоштовного аудиту надсилаємо письмову пропозицію. Консультація безкоштовна, оплата — 30% передоплати, решта поетапно." },
-        { q: "Скільки коштує автоматизація бізнес-процесів?", a: "Від $400. Точна ціна залежить від кількості процесів та їх складності — після безкоштовного аудиту надсилаємо письмову пропозицію." },
         { q: "Чи працює з моїми системами (1C, каса, Telegram)?", a: "Так. Ми будуємо інтеграцію з Telegram, Google Sheets, 1C, платіжними та касовими системами, щоб автоматизація працювала всередині вашого поточного процесу." },
       ],
     },

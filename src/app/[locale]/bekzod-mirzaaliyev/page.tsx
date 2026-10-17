@@ -111,7 +111,7 @@ export default function BekzodMirzaaliyevPage() {
                 <strong className="text-[var(--tc-text-primary)]">Tezcode</strong>'ni tashkil etgan —
                 kichik biznesdan korporatsiyagacha sun'iy intellekt asosidagi
                 dasturiy mahsulotlar va biznes avtomatlashtirish yechimlarini
-                yaratuvchi kompaniya. Bugun Tezcode 16 kishilik jamoaga ega.
+                yaratuvchi kompaniya. Bugun Tezcode 19 kishilik jamoaga ega.
               </p>
               <p>
                 Uning rahbarligida Tezcode bir nechta tayyor mahsulotni ishga

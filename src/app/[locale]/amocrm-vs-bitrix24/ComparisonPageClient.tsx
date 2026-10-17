@@ -149,40 +149,26 @@ export function ComparisonPageClient() {
         items={copy.faq.items}
       />
 
-      {/* CTA → CRM integration */}
-      <section className="tc-navy-section relative py-20 sm:py-28 px-6 overflow-hidden">
-        <div
-          aria-hidden
-          className="absolute inset-0 pointer-events-none opacity-[0.35]"
-          style={{
-            background:
-              "radial-gradient(ellipse 70% 55% at 50% 0%, rgba(0,64,255,0.45), transparent 70%)",
-          }}
-        />
-        <div className="max-w-4xl mx-auto relative z-10 text-center">
-          <Reveal>
-            <span className="tc-chip mb-6">{copy.cta.badge}</span>
-            <h2
-              className="text-3xl sm:text-4xl lg:text-5xl font-800 mb-6 tracking-tight leading-[1.08] text-[var(--tc-text-primary)]"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              {copy.cta.title}{" "}
-              <span className="text-[var(--tc-blue-text)]">{copy.cta.titleAccent}</span>
-            </h2>
-            <p className="text-lg md:text-xl text-[var(--tc-text-secondary)] mb-10 max-w-2xl mx-auto leading-relaxed">
-              {copy.cta.subtitle}
-            </p>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <Link href="/crm-integratsiya" className="tc-btn-primary group text-base">
+      {/* Next step → CRM integration. Light strip: the footer already carries the
+          consultation CTA, this only points to the service page. */}
+      <section className="px-6 pb-20">
+        <Reveal>
+          <div className="mx-auto flex max-w-6xl flex-col gap-5 rounded-[var(--tc-radius-xl)] border border-[var(--tc-border)] bg-[var(--tc-surface-1)] p-6 md:flex-row md:items-center md:justify-between md:p-8">
+            <div>
+              <h2
+                className="text-xl font-700 text-[var(--tc-text-primary)] md:text-2xl"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                {copy.cta.title} <span className="text-[var(--tc-blue-text)]">{copy.cta.titleAccent}</span>
+              </h2>
+              <p className="mt-2 text-sm text-[var(--tc-text-secondary)] md:text-base">{copy.cta.subtitle}</p>
+            </div>
+            <Link href="/crm-integratsiya" className="tc-btn-primary group shrink-0 text-sm">
               {copy.cta.button}
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 rtl:rotate-180" />
             </Link>
-          </Reveal>
-          <Reveal delay={0.2}>
-            <p className="mt-6 text-sm text-[var(--tc-text-muted)]">{copy.cta.note}</p>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
       </section>
 
       <Footer />

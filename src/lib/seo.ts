@@ -223,7 +223,7 @@ export function getOrganizationSchema() {
     foundingDate: "2024",
     numberOfEmployees: {
       "@type": "QuantitativeValue",
-      value: "16",
+      value: "19",
     },
     founder: {
       "@type": "Person",
@@ -333,6 +333,7 @@ export function getOrganizationSchema() {
       "https://t.me/tezcode_managament",
       "https://www.instagram.com/tezcode_dev/",
       "https://www.linkedin.com/company/tezcode-dev",
+      "https://www.youtube.com/@tezcode_dev",
       "https://github.com/AI-automatization",
       "https://clutch.co/profile/tezcode",
       "https://www.goodfirms.co/company/tezcode",

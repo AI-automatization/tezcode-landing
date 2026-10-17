@@ -1,5 +1,4 @@
 import type { ServicePageContent } from "@/components/service-page/types";
-import { AI_AGENT_ANSWERS } from "@/content/serviceAnswers";
 
 // Content for /ai-agent — Tezcode's SPEARHEAD page. Target keywords:
 // "AI agent yaratish", "AI agentlar", "biznes uchun AI agent", "AI agent Toshkent",
@@ -16,6 +15,16 @@ import { AI_AGENT_ANSWERS } from "@/content/serviceAnswers";
 //   - Scenario examples are not measured client results. Quantified savings
 //     require a documented baseline and a measured pilot.
 //   - Payment: 30% upfront. Phone +998917776609 (recently updated — keep).
+// Shared price-question text per locale. City pages (./[city]/cityContent.ts) use it to
+// swap the base price question for a city-worded one instead of showing price twice.
+export const AI_AGENT_PRICE_Q = {
+  uz: "Narxi qancha turadi? Bepul variant bormi?",
+  ru: "Сколько это стоит?",
+  en: "How much does it cost?",
+  ar: "كم التكلفة؟",
+  uk: "Скільки це коштує?",
+} as const;
+
 export const CONTENT: ServicePageContent = {
   uz: {
     hero: {
@@ -164,79 +173,23 @@ export const CONTENT: ServicePageContent = {
       items: [
         {
           q: "Menga AI agent kerak — nimadan boshlayman?",
-          a: "Avval agent bajarishi kerak bo'lgan bitta vazifani ayting: mijozlarga javob berish, buyurtma qabul qilish, CRMga yozish yoki hisobot tayyorlash. Tezcode'ga Telegram orqali yozing yoki +998 91 777 66 09 ga qo'ng'iroq qiling. Bepul 30 daqiqalik konsultatsiyada ish jarayoningiz, foydalanayotgan tizimlaringiz va byudjetingizni aniqlaymiz; tayyor vosita yetarlimi yoki maxsus agent kerakmi, shuni baholaymiz. Maxsus AI agent yaratish $400 dan, oddiy agent uchun odatiy muddat 1–2 hafta. Aniq narx, muddat hamda model/API va hosting xarajatlari yozma taklifda kelishiladi.",
-        },
-        {
-          q: "Bepul AI agent bormi? Tezcode xizmatida nima bepul?",
-          a: "Tezcode'da 30 daqiqalik dastlabki konsultatsiya bepul; biznesingizga mos agentni ishlab chiqish $400 dan boshlanadi. Tayyor vositaning bepul rejimi bilan buyurtma asosida CRM yoki 1Cga ulanadigan agent bir xil xizmat emas. Mustaqil sinovda foydalanish limiti, model yoki API to'lovi, hosting va ma'lumot saqlash shartlarini alohida tekshiring."
-        },
-        {
-          q: "AI agent nima?",
-          a: "AI agent — bu ishni o'zi bajaradigan AI tizim: mijoz yoki xodim so'rovini tushunadi, o'zi qaror qabul qiladi, ulangan tizimlarda (CRM, Telegram, 1C) amal bajaradi va jarayonni boshidan oxirigacha olib boradi. Oddiy misol: lid keldi — agent gaplashdi, ma'lumotni CRMga yozdi, taklif yubordi, follow-up qildi. Menejerga tayyor 'issiq' mijoz keladi, xolos.",
-        },
-        {
-          q: "Sun'iy intellekt agenti va AI agent bir xilmi?",
-          a: "Ha, bu bir tushuncha: AI — inglizcha artificial intelligence, ya'ni sun'iy intellekt degani. Shuning uchun sun'iy intellekt agenti, AI agent yoki aqlli yordamchi deyilganda odatda bitta narsa nazarda tutiladi — ishni o'zi tushunib, o'zi bajaradigan dastur. Qaysi atama bilan qidirsangiz ham mohiyat o'zgarmaydi: agent vaziyatni tushunadi, qaror qabul qiladi va vazifani oxirigacha bajaradi.",
+          a: "Avval agent bajarishi kerak bo'lgan bitta vazifani ayting: mijozlarga javob berish, buyurtma qabul qilish, CRMga yozish yoki hisobot tayyorlash. Tezcode'ga (Toshkent, Amir Temur shoh ko'chasi, 10; IT Park Uzbekistan rasmiy rezidenti) Telegram orqali yozing yoki +998 91 777 66 09 ga qo'ng'iroq qiling. Bepul 30 daqiqalik konsultatsiyada ish jarayoningiz, foydalanayotgan tizimlaringiz va byudjetingizni aniqlaymiz; tayyor vosita yetarlimi yoki maxsus agent kerakmi, shuni baholaymiz. Aniq narx, muddat hamda model/API va hosting xarajatlari yozma taklifda kelishiladi.",
         },
         {
           q: "AI agent chatbotdan nimasi bilan farq qiladi?",
           a: "Farqni uch qatorda aytish mumkin. Oddiy avtomatizatsiya: qat'iy qoida bo'yicha bajaradi, vaziyatni tushunmaydi. Chatbot: savolga javob beradi, lekin keyingi ish odamda qoladi. AI agent: tushunadi, qaror qiladi va ishni o'zi bajaradi — CRMga yozadi, to'lovni tekshiradi, hisobot tuzadi. Batafsil taqqoslash 'chatbot va AI agent farqi' maqolamizda bor.",
         },
         {
-          q: "Narxi qancha turadi?",
-          a: "AI agent $400 dan boshlanadi. Aniq narx vazifa murakkabligi, integratsiyalar soni va kanallariga bog'liq — oddiy savol-javob agenti bilan ko'p tizimga ulanadigan, qaror qabul qiladigan agent narxi boshqa-boshqa. Aniq summani bepul konsultatsiyadan keyin yozma taklifda beramiz. To'lov 30% oldindan, qolgani loyiha bosqichlari bo'yicha.",
-        },
-        {
-          q: "Tayyor AI agent bilan buyurtma asosida qurilgan agent farqi nimada?",
-          a: "Tayyor (shablon) agent tez ishga tushadi, lekin faqat umumiy vazifalarni biladi — sizning CRM, 1C va ish jarayoningizni tanimaydi. Buyurtma asosidagi agent esa aynan sizning tizimlaringizga ulanadi va sizning qoidalaringiz bo'yicha ishlaydi. Muhimi: buyurtma agent juda qimmat bo'lishi shart emas — bizda $400 dan boshlanadi, to'lov 30% oldindan, ko'p loyihani esa bitta kichik vazifadan boshlab bosqichma-bosqich kengaytiramiz. O'zingiz uchun to'g'ri variantni bepul konsultatsiyada halol aytamiz — ba'zida arzonroq chatbot ham yetarli bo'ladi.",
+          q: "Narxi qancha turadi? Bepul variant bormi?",
+          a: "AI agent $400 dan boshlanadi, 30 daqiqalik dastlabki konsultatsiya esa bepul. Aniq narx vazifa murakkabligi, integratsiyalar soni va kanallariga bog'liq — uni konsultatsiyadan keyin yozma taklifda beramiz. To'lov 30% oldindan, qolgani loyiha bosqichlari bo'yicha. Tayyor vositaning bepul rejimi buyurtma asosida CRM yoki 1Cga ulanadigan agent bilan bir xil emas — undagi foydalanish limiti, model yoki API to'lovi, hosting va ma'lumot saqlash shartlarini alohida tekshiring.",
         },
         {
           q: "Qancha vaqtda tayyor bo'ladi?",
-          a: "Oddiy agent — 1-2 hafta. Bir nechta tizimga ulanadigan, murakkabroq agent — 2-4 haftada ishlaydigan MVP. Keyin agent real ishda sinaladi va bosqichma-bosqich kengaytiriladi. Aniq muddat stsenariy tasdiqlangach yozma beriladi.",
+          a: "Oddiy agent — 1-2 hafta. Bir nechta tizimga ulanadigan, murakkabroq agent — 2-4 haftada ishlaydigan MVP. Keyin agent real ishda sinaladi va bosqichma-bosqich kengaytiriladi, muhim qarorlar (masalan, katta chegirma yoki pul qaytarish) esa odam tasdig'iga chiqariladi. Aniq muddat stsenariy tasdiqlangach yozma beriladi.",
         },
         {
           q: "Qaysi tizimlar bilan ishlaydi?",
-          a: "Telegram, AmoCRM, Bitrix24, 1C, POS tizimlari, Google Sheets, Click/Payme to'lovlari va veb-saytingiz bilan integratsiya quramiz. Tizimingizda API bo'lsa, agentni unga ham ulash mumkin — konsultatsiyada ro'yxatni birga tekshiramiz.",
-        },
-        {
-          q: "Agent xato qilsa kim javob beradi?",
-          a: "Agentning vakolati stsenariyda oldindan cheklanadi: muhim qarorlar (masalan, katta chegirma, pul qaytarish) odam tasdig'iga chiqariladi, qolganini agent o'zi bajaradi. Ishga tushirishdan oldin sinov davri bo'ladi, keyin biz qarorlar sifatini monitoring qilamiz va xatoni tuzatamiz. Tomonlarning javobgarligi shartnomada yozma belgilanadi.",
-        },
-        {
-          q: "Ma'lumotlarim qayerda saqlanadi?",
-          a: "Agent faqat siz bergan ma'lumot doirasida ishlaydi. Ma'lumotlar kelishilgan serverda saqlanadi — talab qilsangiz, o'z serveringizda yoki yopiq muhitda joylashtiramiz. Maxfiylik shartlari shartnomada belgilanadi va mijoz bazangiz uchinchi tomonlarga berilmaydi.",
-        },
-        {
-          q: "Kichik biznesga arziydimi?",
-          a: "Ko'pincha aynan kichik biznesda agent ta'siri tezroq seziladi — 2-3 kishilik jamoada takroriy ishni agent olsa, jamoa sotuvga vaqt ajratadi. Bitta tor vazifadan boshlash mumkin (masalan, faqat buyurtma qabul qilish). Agar sizga faqat savol-javob kerak bo'lsa, agent emas, arzonroq chatbot yetadi — buni halol aytamiz.",
-        },
-        {
-          q: "Agentni qanday nazorat qilaman?",
-          a: "Agentning barcha suhbatlari va amallari qayd etib boriladi (log). Xohlasangiz 'odam tasdiqlaydi' rejimini yoqamiz — agent muhim amallarni faqat sizning tasdig'ingiz bilan bajaradi. Kunlik yoki haftalik xulosalarni ham agent o'zi yuboradi, istalgan paytda uni to'xtatib turishingiz mumkin.",
-        },
-        {
-          q: "Menda texnik bilim yo'q — muammomi?",
-          a: "Yo'q. Agentni qurish, ulash va sozlash — bizning ishimiz. Sizdan jarayonni bilish yetarli: mijoz bilan qanday ishlaysiz, buyurtma qanday yuradi. Telegram ishlatishni bilsangiz, agentdan foydalanishni ham 15 daqiqada o'rganasiz — jamoangizni biz o'rgatamiz.",
-        },
-        {
-          q: "O'zbek tilini tushunadimi?",
-          a: "Ha — bu bizning asosiy ustunligimiz. Agent o'zbek tilida (lotin va kiril) hamda rus tilida ishlaydi, kerak bo'lsa ingliz tili ham qo'shiladi. Mijoz qaysi tilda va qanday uslubda yozsa, agent shu tilda tabiiy javob beradi.",
-        },
-        {
-          q: "Nega aynan Tezcode?",
-          a: "Biz AI agentlarni faqat mijozlarga qurmaymiz — o'zimiz ham kunlik ishlatamiz va o'z mahsulotimiz AI Office (12 bo'lim agentli AI orkestrator) ustida ishlayapmiz, ya'ni agentlar qayerda sinishini amalda bilamiz. Tezcode — IT Park Uzbekistan rasmiy rezidenti (guvohnoma №6237). To'lov 30% oldindan — natijani ko'rmaguningizcha katta summa so'ramaymiz.",
-        },
-        {
-          q: "Biznesim uchun AI agent qildirmoqchiman — kimga murojaat qilaman?",
-          a: "Tezcode'ga murojaat qiling — Toshkentdagi AI Software Factory, IT Park Uzbekistan rasmiy rezidenti. Biz agentni tayyor shablondan emas, aynan sizning tizimlaringizga (CRM, 1C, Google Sheets, Telegram) ulangan holda quramiz. +998 91 777 66 09 ga qo'ng'iroq qiling yoki Telegram'da yozing — avval 30 daqiqalik bepul konsultatsiyada vazifangizni birga aniqlaymiz.",
-        },
-        {
-          q: "AI agent yasab beradigan kompaniya Toshkentda bormi?",
-          a: "Ha — Tezcode, manzil: Toshkent, Amir Temur shoh ko'chasi, 10. Biz biznesdagi takroriy, ko'p bosqichli ishlarni — lidlar bilan yozishma, buyurtma qabul qilish, CRMga yozish, hisobot tuzish — o'z bo'yniga oladigan AI agentlar quramiz. Bepul konsultatsiyada qaysi vazifani agentga topshirish mumkinligini birga ko'rib chiqamiz.",
-        },
-        {
-          q: "AI agent buyurtma qilsam narxi qancha, qancha vaqtda tayyor bo'ladi?",
-          a: "AI agent $400 dan boshlanadi. Aniq summa integratsiyalar soni va stsenariy murakkabligiga bog'liq — uni bepul konsultatsiyadan keyin yozma taklifda beramiz. Muddat: ishlaydigan MVP odatda bir necha haftada tayyor bo'ladi (oddiy agent — 1-2 hafta, murakkabrog'i — 2-4 hafta). To'lov 30% oldindan, qolgani loyiha bosqichlari bo'yicha.",
+          a: "Telegram, AmoCRM, Bitrix24, 1C, POS tizimlari, Google Sheets, Click/Payme to'lovlari va veb-saytingiz bilan integratsiya quramiz. Tizimingizda API bo'lsa, agentni unga ham ulash mumkin — konsultatsiyada ro'yxatni birga tekshiramiz. Agent o'zbek (lotin va kiril) hamda rus tilida ishlaydi, ma'lumotlar esa kelishilgan serverda yoki talab qilsangiz o'z serveringizda saqlanadi.",
         },
       ],
     },
@@ -499,16 +452,8 @@ export const CONTENT: ServicePageContent = {
       badge: "Частые вопросы",
       title: "Вопросы и",
       titleAccent: "ответы",
-      subtitle: "17 самых частых вопросов о создании ИИ-агентов (AI-агентов).",
+      subtitle: "Самые частые вопросы о создании ИИ-агентов (AI-агентов).",
       items: [
-        {
-          q: "Что такое ИИ-агент (AI-агент)?",
-          a: "ИИ-агент (AI-агент) — это ИИ-система, которая сама выполняет работу: понимает запрос клиента или сотрудника, сама принимает решения, действует в подключённых системах (CRM, Telegram, 1C) и ведёт процесс от начала до конца. Простой пример: пришёл лид — агент пообщался, записал данные в CRM, отправил предложение, сделал follow-up. Менеджеру приходит уже готовый «горячий» клиент.",
-        },
-        {
-          q: "ИИ-агент, AI-агент и агент на основе искусственного интеллекта — одно и то же?",
-          a: "Да, это одно понятие: AI — сокращение от artificial intelligence, то есть искусственный интеллект. «Агент на искусственном интеллекте», «AI-агент» и «умный помощник» обычно означают одно — программу, которая сама понимает задачу и сама её выполняет. Каким бы термином вы ни искали, суть не меняется: агент понимает ситуацию, принимает решение и доводит работу до конца.",
-        },
         {
           q: "Чем ИИ-агент (AI-агент) отличается от чат-бота?",
           a: "Разницу можно уложить в три строки. Простая автоматизация: выполняет по жёсткому правилу, ситуацию не понимает. Чат-бот: отвечает на вопрос, но дальнейшая работа остаётся на человеке. AI-агент: понимает, решает и сам выполняет работу — пишет в CRM, проверяет оплату, готовит отчёт. Подробное сравнение — в нашей статье «разница между чат-ботом и AI-агентом».",
@@ -518,56 +463,16 @@ export const CONTENT: ServicePageContent = {
           a: "ИИ-агент (AI-агент) от $400 (≈ от 5 млн сум). Точная цена зависит от сложности задачи, количества интеграций и каналов — простой агент вопрос-ответ и агент, подключённый к нескольким системам и принимающий решения, стоят по-разному. Точную сумму даём в письменном предложении после бесплатной консультации. Оплата — 30% предоплата, остальное по этапам проекта.",
         },
         {
-          q: "Чем готовый AI-агент отличается от агента на заказ?",
-          a: "Готовый (шаблонный) агент запускается быстро, но знает только общие задачи — ваши CRM, 1C и рабочий процесс ему незнакомы. Агент на заказ подключается именно к вашим системам и работает по вашим правилам. Важно: заказная разработка не обязана быть «очень дорогой» — у нас агент начинается от $400, оплата — 30% предоплата, а многие проекты мы начинаем с одной небольшой задачи и расширяем поэтапно. Какой вариант правильный именно для вас — честно скажем на бесплатной консультации; иногда достаточно более дешёвого чат-бота.",
-        },
-        {
           q: "За какое время будет готов?",
-          a: "Простой агент — 1-2 недели. Более сложный, подключённый к нескольким системам — рабочий MVP за 2-4 недели. Затем агент проверяется в реальной работе и расширяется поэтапно. Точный срок даётся письменно после утверждения сценария.",
+          a: "Простой агент — 1-2 недели. Более сложный, подключённый к нескольким системам — рабочий MVP за 2-4 недели. Затем агент проверяется в реальной работе и расширяется поэтапно, а важные решения (например, крупная скидка или возврат денег) выносятся на подтверждение человеку. Точный срок даётся письменно после утверждения сценария.",
         },
         {
           q: "С какими системами работает?",
-          a: "Строим интеграции с Telegram, AmoCRM, Bitrix24, 1C, POS-системами, Google Sheets, оплатами Click/Payme и вашим сайтом. Если у вашей системы есть API, агента можно подключить и к ней — список проверим вместе на консультации.",
-        },
-        {
-          q: "Если агент ошибётся — кто отвечает?",
-          a: "Полномочия агента заранее ограничиваются в сценарии: важные решения (например, крупная скидка, возврат денег) выносятся на подтверждение человеку, остальное агент делает сам. Перед запуском есть тестовый период, затем мы мониторим качество решений и исправляем ошибки. Ответственность сторон письменно фиксируется в договоре.",
-        },
-        {
-          q: "Где хранятся мои данные?",
-          a: "Агент работает только в рамках предоставленных вами данных. Данные хранятся на согласованном сервере — по требованию размещаем на вашем сервере или в закрытой среде. Условия конфиденциальности фиксируются в договоре, ваша клиентская база третьим лицам не передаётся.",
-        },
-        {
-          q: "Стоит ли это малому бизнесу?",
-          a: "Часто именно в малом бизнесе эффект агента заметнее — если в команде из 2-3 человек рутину заберёт агент, у команды освободится время на продажи. Начать можно с одной узкой задачи (например, только приём заказов). А если вам нужны только вопросы-ответы, хватит более дешёвого чат-бота — говорим это честно.",
-        },
-        {
-          q: "Как я контролирую агента?",
-          a: "Все диалоги и действия агента протоколируются (лог). По желанию включаем режим «человек подтверждает» — важные действия агент выполняет только с вашего подтверждения. Ежедневные или еженедельные сводки агент тоже отправляет сам, и в любой момент его можно приостановить.",
-        },
-        {
-          q: "У меня нет технических знаний — это проблема?",
-          a: "Нет. Построить, подключить и настроить агента — наша работа. От вас достаточно знания процесса: как вы работаете с клиентом, как идёт заказ. Если умеете пользоваться Telegram, работу с агентом освоите за 15 минут — вашу команду обучим мы.",
-        },
-        {
-          q: "Понимает ли узбекский язык?",
-          a: "Да — это наше ключевое преимущество. Агент работает на узбекском (латиница и кириллица) и русском, при необходимости добавляется английский. На каком языке и в каком стиле пишет клиент — на том языке агент и отвечает, естественно.",
-        },
-        {
-          q: "Почему именно Tezcode?",
-          a: "Мы строим AI-агентов не только клиентам — сами пользуемся ими ежедневно и развиваем собственный продукт AI Office (AI-оркестратор с агентами 12 отделов), то есть на практике знаем, где агенты ломаются. Tezcode — официальный резидент IT Park Uzbekistan (свидетельство №6237). Оплата — 30% предоплата: не просим крупную сумму, пока вы не увидите результат.",
+          a: "Строим интеграции с Telegram, AmoCRM, Bitrix24, 1C, POS-системами, Google Sheets, оплатами Click/Payme и вашим сайтом. Если у вашей системы есть API, агента можно подключить и к ней — список проверим вместе на консультации. Агент работает на узбекском (латиница и кириллица) и русском, а данные хранятся на согласованном сервере или, по требованию, на вашем собственном.",
         },
         {
           q: "Хочу заказать AI-агента для бизнеса — к кому обратиться в Ташкенте?",
-          a: "Обратитесь в Tezcode — AI Software Factory в Ташкенте, официальный резидент IT Park Uzbekistan. Мы строим AI-агентов не по шаблону, а под ваши системы: CRM, 1C, Google Sheets, Telegram. Позвоните на +998 91 777 66 09 или напишите в Telegram — сначала на бесплатной 30-минутной консультации вместе определим задачу.",
-        },
-        {
-          q: "Есть ли в Ташкенте компания, которая делает AI-агентов?",
-          a: "Да — Tezcode, адрес: Ташкент, проспект Амира Темура, 10. Мы строим AI-агентов, которые берут на себя повторяющуюся многошаговую работу: переписку с лидами, приём заказов, запись в CRM, отчёты. На бесплатной консультации вместе разберём, какую задачу можно передать агенту.",
-        },
-        {
-          q: "Сколько стоит AI-агент и как быстро он будет готов?",
-          a: "AI-агент от $400. Точная сумма зависит от количества интеграций и сложности сценария — её даём в письменном предложении после бесплатной консультации. По срокам: рабочий MVP обычно готов за несколько недель (простой агент — 1-2 недели, посложнее — 2-4 недели). Оплата — 30% предоплата, остальное по этапам проекта.",
+          a: "Обратитесь в Tezcode — AI Software Factory в Ташкенте (проспект Амира Темура, 10), официальный резидент IT Park Uzbekistan. Мы строим AI-агентов не по шаблону, а под ваши системы: CRM, 1C, Google Sheets, Telegram. Позвоните на +998 91 777 66 09 или напишите в Telegram — сначала на бесплатной 30-минутной консультации вместе определим задачу.",
         },
       ],
     },
@@ -825,16 +730,8 @@ export const CONTENT: ServicePageContent = {
       badge: "Frequently asked",
       title: "Questions &",
       titleAccent: "answers",
-      subtitle: "The 17 most common questions about AI agent development.",
+      subtitle: "The most common questions about AI agent development.",
       items: [
-        {
-          q: "What is an AI agent?",
-          a: "An AI agent is an AI system that does the work itself: it understands a customer's or employee's request, makes its own decisions, acts in the connected systems (CRM, Telegram, 1C) and carries the process from start to finish. Simple example: a lead arrives — the agent talks, logs the data to CRM, sends an offer, follows up. The manager just receives a ready 'hot' customer.",
-        },
-        {
-          q: "Is an 'artificial intelligence agent' the same as an 'AI agent'?",
-          a: "Yes — it is the same concept: AI stands for artificial intelligence. 'Artificial intelligence agent', 'AI agent' and 'smart assistant' usually mean the same thing — software that understands a task on its own and completes it on its own. Whichever term you search for, the essence doesn't change: the agent understands the situation, makes a decision and carries the work through to the end.",
-        },
         {
           q: "How is an AI agent different from a chatbot?",
           a: "The difference fits in three lines. Plain automation: executes a rigid rule, understands nothing outside it. Chatbot: answers the question, but the follow-on work stays with a human. AI agent: understands, decides and does the work itself — writes to CRM, verifies payment, builds reports. See our 'chatbot vs AI agent' article for the full comparison.",
@@ -844,56 +741,16 @@ export const CONTENT: ServicePageContent = {
           a: "An AI agent starts from $400. The exact price depends on task complexity, number of integrations and channels — a simple Q&A agent and a decision-making agent connected to several systems cost very differently. We give the exact figure in a written proposal after the free consultation. Payment: 30% upfront, the rest per project stage.",
         },
         {
-          q: "What's the difference between an off-the-shelf AI agent and a custom-built one?",
-          a: "An off-the-shelf (template) agent launches fast but only knows generic tasks — it doesn't know your CRM, 1C or workflow. A custom agent is wired to your own systems and works by your rules. Importantly, custom doesn't have to mean 'very expensive' — ours start from $400, payment is 30% upfront, and we begin many projects with one small task and extend step by step. Which option is right for you we'll tell you honestly in the free consultation — sometimes a cheaper chatbot is enough.",
-        },
-        {
           q: "How long until it's ready?",
-          a: "A simple agent — 1-2 weeks. A more complex one connected to several systems — a working MVP in 2-4 weeks. The agent is then proven in real work and extended step by step. An exact deadline is given in writing once the scenario is approved.",
+          a: "A simple agent — 1-2 weeks. A more complex one connected to several systems — a working MVP in 2-4 weeks. The agent is then proven in real work and extended step by step, while important decisions (such as a large discount or a refund) go to a human for approval. An exact deadline is given in writing once the scenario is approved.",
         },
         {
           q: "Which systems does it work with?",
-          a: "We build integrations with Telegram, AmoCRM, Bitrix24, 1C, POS systems, Google Sheets, Click/Payme payments and your website. If your system has an API, the agent can be connected to it too — we check the list together in the consultation.",
-        },
-        {
-          q: "If the agent makes a mistake — who is responsible?",
-          a: "The agent's authority is limited upfront in the scenario: important decisions (e.g. a large discount, a refund) go to a human for approval, the rest the agent handles itself. There is a test period before launch, then we monitor decision quality and fix errors. Each side's responsibility is fixed in writing in the contract.",
-        },
-        {
-          q: "Where is my data stored?",
-          a: "The agent works only within the data you provide. Data lives on an agreed server — on request we deploy on your own server or in a closed environment. Confidentiality terms are fixed in the contract, and your customer base is never shared with third parties.",
-        },
-        {
-          q: "Is it worth it for a small business?",
-          a: "Often the agent's impact shows fastest in small businesses — if an agent takes the routine off a 2-3 person team, the team gets its time back for selling. You can start with one narrow task (e.g. order intake only). And if all you need is Q&A, a cheaper chatbot is enough — we say so honestly.",
-        },
-        {
-          q: "How do I control the agent?",
-          a: "Every conversation and action of the agent is logged. If you want, we enable a 'human approves' mode — the agent performs important actions only with your confirmation. It also sends daily or weekly summaries itself, and you can pause it at any moment.",
-        },
-        {
-          q: "I have no technical background — is that a problem?",
-          a: "No. Building, connecting and tuning the agent is our job. From you, knowing the process is enough: how you work with customers, how an order flows. If you can use Telegram, you'll learn to work with the agent in 15 minutes — we train your team.",
-        },
-        {
-          q: "Does it understand Uzbek?",
-          a: "Yes — that is our key advantage. The agent works in Uzbek (Latin and Cyrillic) and Russian, with English added when needed. Whatever language and style the customer writes in, the agent replies naturally in the same language.",
-        },
-        {
-          q: "Why Tezcode?",
-          a: "We don't just build AI agents for clients — we use them daily ourselves and are developing our own product, AI Office (an AI orchestrator with 12 department agents), so we know in practice where agents break. Tezcode is an official IT Park Uzbekistan resident (certificate No. 6237). Payment starts at 30% upfront — we don't ask for a large sum before you see results.",
+          a: "We build integrations with Telegram, AmoCRM, Bitrix24, 1C, POS systems, Google Sheets, Click/Payme payments and your website. If your system has an API, the agent can be connected to it too — we check the list together in the consultation. The agent works in Uzbek (Latin and Cyrillic) and Russian, and data is stored on an agreed server or, if you require, on your own.",
         },
         {
           q: "I want to get an AI agent built for my business — who do I contact?",
-          a: "Contact Tezcode — an AI Software Factory in Tashkent and an official IT Park Uzbekistan resident. We build AI agents wired to your own systems — CRM, 1C, Google Sheets, Telegram — not from a template. Call +998 91 777 66 09 or message us on Telegram; we start with a free 30-minute consultation to define the task together.",
-        },
-        {
-          q: "Is there a company in Tashkent that builds AI agents?",
-          a: "Yes — Tezcode, at Amir Temur Avenue 10, Tashkent. We build AI agents that take over repetitive multi-step work: talking to leads, taking orders, logging to CRM, preparing reports. In a free consultation we work out together which task is worth handing to an agent.",
-        },
-        {
-          q: "If I order an AI agent, how much does it cost and how fast is it ready?",
-          a: "An AI agent starts from $400. The exact sum depends on the number of integrations and scenario complexity — you get it in a written proposal after the free consultation. Timeline: a working MVP is typically ready in a few weeks (a simple agent in 1-2 weeks, a more complex one in 2-4). Payment is 30% upfront, the rest per project stage.",
+          a: "Contact Tezcode — an AI Software Factory at Amir Temur Avenue 10, Tashkent, and an official IT Park Uzbekistan resident. We build AI agents wired to your own systems — CRM, 1C, Google Sheets, Telegram — not from a template. Call +998 91 777 66 09 or message us on Telegram; we start with a free 30-minute consultation to define the task together.",
         },
       ],
     },
@@ -1146,16 +1003,8 @@ export const CONTENT: ServicePageContent = {
       badge: "أسئلة شائعة",
       title: "أسئلة و",
       titleAccent: "إجابات",
-      subtitle: "أكثر 17 سؤالاً شيوعاً عن تطوير وكلاء الذكاء الاصطناعي.",
+      subtitle: "الأسئلة الأكثر شيوعاً عن تطوير وكلاء الذكاء الاصطناعي.",
       items: [
-        {
-          q: "ما هو وكيل الذكاء الاصطناعي؟",
-          a: "وكيل الذكاء الاصطناعي نظام ذكاء اصطناعي ينفّذ العمل بنفسه: يفهم طلب العميل أو الموظف، يتخذ قراراته بنفسه، يتصرف في الأنظمة المتصلة (CRM، Telegram، 1C) ويقود العملية من البداية إلى النهاية. مثال بسيط: وصل عميل محتمل — تحدث الوكيل، سجّل البيانات في CRM، أرسل عرضاً، وتابع. يصل إلى المدير عميل «ساخن» جاهز فحسب.",
-        },
-        {
-          q: "هل «وكيل الذكاء الاصطناعي» هو نفسه «AI agent»؟",
-          a: "نعم — المفهوم واحد: AI اختصار artificial intelligence أي الذكاء الاصطناعي. «وكيل الذكاء الاصطناعي» و«AI agent» و«المساعد الذكي» تعني عادة الشيء نفسه — برنامجاً يفهم المهمة بنفسه وينجزها بنفسه. أياً كان المصطلح الذي تبحث به، الجوهر لا يتغير: الوكيل يفهم الموقف ويتخذ القرار ويُكمل العمل حتى النهاية.",
-        },
         {
           q: "بماذا يختلف وكيل الذكاء الاصطناعي عن الشات بوت؟",
           a: "يمكن تلخيص الفرق في ثلاثة أسطر. الأتمتة البسيطة: تنفّذ قاعدة صارمة ولا تفهم الموقف. الشات بوت: يجيب عن السؤال لكن العمل التالي يبقى على الإنسان. وكيل الذكاء الاصطناعي: يفهم ويقرر وينفّذ العمل بنفسه — يكتب في CRM، يتحقق من الدفع، يعدّ التقارير. المقارنة الكاملة في مقالنا «الفرق بين الشات بوت ووكيل الذكاء الاصطناعي».",
@@ -1165,56 +1014,16 @@ export const CONTENT: ServicePageContent = {
           a: "يبدأ وكيل الذكاء الاصطناعي من $400. يعتمد السعر الدقيق على تعقيد المهمة وعدد التكاملات والقنوات — وكيل سؤال-جواب بسيط ووكيل يتخذ القرارات ومتصل بعدة أنظمة يختلفان في السعر كثيراً. نعطي الرقم الدقيق في عرض مكتوب بعد الاستشارة المجانية. الدفع: 30% مقدماً والباقي حسب مراحل المشروع.",
         },
         {
-          q: "ما الفرق بين وكيل جاهز ووكيل مبني حسب الطلب؟",
-          a: "الوكيل الجاهز (القالب) ينطلق بسرعة لكنه يعرف المهام العامة فقط — لا يعرف CRM و1C وسير عملك. أما الوكيل حسب الطلب فيُربط بأنظمتك أنت ويعمل وفق قواعدك. المهم: التطوير حسب الطلب لا يجب أن يكون «باهظاً» — عندنا يبدأ الوكيل من $400، والدفع 30% مقدماً، ونبدأ كثيراً من المشاريع بمهمة صغيرة واحدة ثم نوسّعها تدريجياً. أي خيار هو الصحيح لك — نقوله بصدق في الاستشارة المجانية؛ أحياناً يكفي شات بوت أرخص.",
-        },
-        {
           q: "كم يستغرق حتى يجهز؟",
-          a: "وكيل بسيط — 1-2 أسبوع. وكيل أكثر تعقيداً متصل بعدة أنظمة — MVP عامل خلال 2-4 أسابيع. ثم يُختبر الوكيل في العمل الحقيقي ويُوسَّع تدريجياً. يُعطى الموعد الدقيق كتابةً بعد اعتماد السيناريو.",
+          a: "وكيل بسيط — 1-2 أسبوع. وكيل أكثر تعقيداً متصل بعدة أنظمة — MVP عامل خلال 2-4 أسابيع. ثم يُختبر الوكيل في العمل الحقيقي ويُوسَّع تدريجياً، بينما تُحال القرارات المهمة (مثل خصم كبير أو استرداد مبلغ) إلى موافقة بشرية. يُعطى الموعد الدقيق كتابةً بعد اعتماد السيناريو.",
         },
         {
           q: "مع أي أنظمة يعمل؟",
-          a: "نبني تكاملات مع Telegram وAmoCRM وBitrix24 و1C وأنظمة POS وGoogle Sheets ومدفوعات Click/Payme وموقعك. إذا كان لنظامك API فيمكن ربط الوكيل به أيضاً — نراجع القائمة معاً في الاستشارة.",
-        },
-        {
-          q: "إذا أخطأ الوكيل — من المسؤول؟",
-          a: "تُحدَّد صلاحيات الوكيل مسبقاً في السيناريو: القرارات المهمة (مثل خصم كبير أو استرداد مال) تُرفع لموافقة إنسان، والباقي ينفّذه الوكيل بنفسه. قبل الإطلاق توجد فترة اختبار، ثم نراقب جودة القرارات ونصحح الأخطاء. مسؤولية الطرفين تُثبَّت كتابةً في العقد.",
-        },
-        {
-          q: "أين تُخزَّن بياناتي؟",
-          a: "يعمل الوكيل فقط ضمن البيانات التي تقدّمها. تُخزَّن البيانات على خادم متفق عليه — وعند الطلب ننشرها على خادمك الخاص أو في بيئة مغلقة. شروط السرية تُثبَّت في العقد، وقاعدة عملائك لا تُشارك مع أطراف ثالثة.",
-        },
-        {
-          q: "هل يستحق للأعمال الصغيرة؟",
-          a: "غالباً يظهر أثر الوكيل أسرع في الأعمال الصغيرة — إذا أخذ الوكيل الروتين عن فريق من 2-3 أشخاص، يتفرغ الفريق للبيع. يمكن البدء بمهمة ضيقة واحدة (مثل استقبال الطلبات فقط). وإذا كنت تحتاج سؤالاً وجواباً فقط، فيكفي شات بوت أرخص — نقول ذلك بصدق.",
-        },
-        {
-          q: "كيف أراقب الوكيل؟",
-          a: "تُسجَّل جميع محادثات الوكيل وأفعاله (سجل). إن رغبت نفعّل وضع «الإنسان يوافق» — لا ينفّذ الوكيل الأفعال المهمة إلا بموافقتك. كما يرسل الخلاصات اليومية أو الأسبوعية بنفسه، ويمكنك إيقافه مؤقتاً في أي لحظة.",
-        },
-        {
-          q: "ليست لدي معرفة تقنية — هل هذه مشكلة؟",
-          a: "لا. بناء الوكيل وربطه وضبطه — عملنا نحن. يكفي منك معرفة العملية: كيف تتعامل مع العميل، كيف يسير الطلب. إن كنت تستخدم Telegram فستتقن التعامل مع الوكيل خلال 15 دقيقة — وندرّب فريقك نحن.",
-        },
-        {
-          q: "هل يفهم اللغة الأوزبكية؟",
-          a: "نعم — وهذه ميزتنا الأساسية. يعمل الوكيل بالأوزبكية (اللاتينية والسيريلية) والروسية، وتُضاف الإنجليزية عند الحاجة. بأي لغة وبأي أسلوب يكتب العميل، يرد الوكيل بشكل طبيعي باللغة نفسها.",
-        },
-        {
-          q: "لماذا Tezcode بالذات؟",
-          a: "نحن لا نبني وكلاء الذكاء الاصطناعي للعملاء فقط — بل نستخدمهم يومياً ونطوّر منتجنا الخاص AI Office (منسّق ذكاء اصطناعي بوكلاء 12 قسماً)، أي نعرف عملياً أين يتعطل الوكلاء. Tezcode عضو رسمي في IT Park Uzbekistan (شهادة رقم 6237). الدفع يبدأ بـ30% مقدماً — لا نطلب مبلغاً كبيراً قبل أن ترى النتيجة.",
+          a: "نبني تكاملات مع Telegram وAmoCRM وBitrix24 و1C وأنظمة POS وGoogle Sheets ومدفوعات Click/Payme وموقعك. إذا كان لنظامك API فيمكن ربط الوكيل به أيضاً — نراجع القائمة معاً في الاستشارة. يعمل الوكيل بالأوزبكية (اللاتينية والسيريلية) والروسية، وتُخزَّن البيانات على خادم متفق عليه أو على خادمك الخاص عند الطلب.",
         },
         {
           q: "أريد بناء وكيل ذكاء اصطناعي لشركتي — بمن أتصل؟",
-          a: "تواصل مع Tezcode — مصنع برمجيات ذكاء اصطناعي في طشقند وعضو رسمي في IT Park Uzbekistan. نبني وكلاء ذكاء اصطناعي مرتبطين بأنظمتك أنت — CRM و1C وGoogle Sheets وTelegram — وليس من قالب جاهز. اتصل على ‎+998 91 777 66 09 أو راسلنا على Telegram — نبدأ باستشارة مجانية لمدة 30 دقيقة لتحديد المهمة معاً.",
-        },
-        {
-          q: "هل توجد في طشقند شركة تبني وكلاء ذكاء اصطناعي؟",
-          a: "نعم — Tezcode، العنوان: طشقند، شارع أمير تيمور 10. نبني وكلاء ذكاء اصطناعي يتولون العمل المتكرر متعدد الخطوات: التحدث مع العملاء المحتملين، استقبال الطلبات، التسجيل في CRM، إعداد التقارير. في استشارة مجانية نحدد معاً أي مهمة يستحق تسليمها للوكيل.",
-        },
-        {
-          q: "إذا طلبت وكيل ذكاء اصطناعي — كم التكلفة ومتى يجهز؟",
-          a: "يبدأ وكيل الذكاء الاصطناعي من $400. يعتمد المبلغ الدقيق على عدد التكاملات وتعقيد السيناريو — نعطيه في عرض مكتوب بعد الاستشارة المجانية. المدة: MVP عامل يجهز عادةً خلال بضعة أسابيع (وكيل بسيط في 1-2 أسبوع، والأكثر تعقيداً في 2-4 أسابيع). الدفع 30% مقدماً والباقي حسب مراحل المشروع.",
+          a: "تواصل مع Tezcode — مصنع برمجيات ذكاء اصطناعي في طشقند (شارع أمير تيمور 10) وعضو رسمي في IT Park Uzbekistan. نبني وكلاء ذكاء اصطناعي مرتبطين بأنظمتك أنت — CRM و1C وGoogle Sheets وTelegram — وليس من قالب جاهز. اتصل على ‎+998 91 777 66 09 أو راسلنا على Telegram — نبدأ باستشارة مجانية لمدة 30 دقيقة لتحديد المهمة معاً.",
         },
       ],
     },
@@ -1467,16 +1276,8 @@ export const CONTENT: ServicePageContent = {
       badge: "Часті запитання",
       title: "Запитання та",
       titleAccent: "відповіді",
-      subtitle: "17 найчастіших запитань про створення AI-агентів.",
+      subtitle: "Найчастіші запитання про створення AI-агентів.",
       items: [
-        {
-          q: "Що таке AI-агент?",
-          a: "AI-агент — це AI-система, яка сама виконує роботу: розуміє запит клієнта чи співробітника, сама ухвалює рішення, діє в підключених системах (CRM, Telegram, 1C) і веде процес від початку до кінця. Простий приклад: прийшов лід — агент поспілкувався, записав дані в CRM, надіслав пропозицію, зробив follow-up. Менеджеру приходить уже готовий «гарячий» клієнт.",
-        },
-        {
-          q: "AI-агент і агент на основі штучного інтелекту — це одне й те саме?",
-          a: "Так, це одне поняття: AI — скорочення від artificial intelligence, тобто штучний інтелект. «Агент на штучному інтелекті», «AI-агент» і «розумний помічник» зазвичай означають одне — програму, яка сама розуміє завдання і сама його виконує. Яким би терміном ви не шукали, суть не змінюється: агент розуміє ситуацію, ухвалює рішення і доводить роботу до кінця.",
-        },
         {
           q: "Чим AI-агент відрізняється від чат-бота?",
           a: "Різницю можна вкласти у три рядки. Проста автоматизація: виконує за жорстким правилом, ситуацію не розуміє. Чат-бот: відповідає на запитання, але подальша робота лишається на людині. AI-агент: розуміє, вирішує і сам виконує роботу — пише в CRM, перевіряє оплату, готує звіт. Детальне порівняння — у нашій статті «різниця між чат-ботом і AI-агентом».",
@@ -1486,56 +1287,16 @@ export const CONTENT: ServicePageContent = {
           a: "AI-агент від $400. Точна ціна залежить від складності завдання, кількості інтеграцій і каналів — простий агент запитання-відповідь і агент, підключений до кількох систем та здатний ухвалювати рішення, коштують по-різному. Точну суму даємо в письмовій пропозиції після безкоштовної консультації. Оплата — 30% передоплата, решта за етапами проєкту.",
         },
         {
-          q: "Чим готовий AI-агент відрізняється від агента на замовлення?",
-          a: "Готовий (шаблонний) агент запускається швидко, але знає лише загальні завдання — ваші CRM, 1C і робочий процес йому незнайомі. Агент на замовлення підключається саме до ваших систем і працює за вашими правилами. Важливо: замовна розробка не мусить бути «дуже дорогою» — у нас агент починається від $400, оплата — 30% передоплата, а багато проєктів ми починаємо з одного невеликого завдання і розширюємо поетапно. Який варіант правильний саме для вас — чесно скажемо на безкоштовній консультації; іноді достатньо дешевшого чат-бота.",
-        },
-        {
           q: "За який час буде готовий?",
-          a: "Простий агент — 1-2 тижні. Складніший, підключений до кількох систем — робочий MVP за 2-4 тижні. Далі агент перевіряється в реальній роботі та розширюється поетапно. Точний термін дається письмово після затвердження сценарію.",
+          a: "Простий агент — 1-2 тижні. Складніший, підключений до кількох систем — робочий MVP за 2-4 тижні. Далі агент перевіряється в реальній роботі та розширюється поетапно, а важливі рішення (наприклад, велика знижка чи повернення коштів) виносяться на підтвердження людині. Точний термін дається письмово після затвердження сценарію.",
         },
         {
           q: "З якими системами працює?",
-          a: "Будуємо інтеграції з Telegram, AmoCRM, Bitrix24, 1C, POS-системами, Google Sheets, оплатами Click/Payme та вашим сайтом. Якщо у вашої системи є API, агента можна підключити і до неї — список перевіримо разом на консультації.",
-        },
-        {
-          q: "Якщо агент помилиться — хто відповідає?",
-          a: "Повноваження агента заздалегідь обмежуються у сценарії: важливі рішення (наприклад, велика знижка, повернення грошей) виносяться на підтвердження людині, решту агент робить сам. Перед запуском є тестовий період, потім ми моніторимо якість рішень і виправляємо помилки. Відповідальність сторін письмово фіксується в договорі.",
-        },
-        {
-          q: "Де зберігаються мої дані?",
-          a: "Агент працює лише в межах наданих вами даних. Дані зберігаються на погодженому сервері — на вимогу розміщуємо на вашому сервері або в закритому середовищі. Умови конфіденційності фіксуються в договорі, ваша клієнтська база третім особам не передається.",
-        },
-        {
-          q: "Чи варте це малому бізнесу?",
-          a: "Часто саме в малому бізнесі ефект агента помітніший — якщо в команді з 2-3 людей рутину забере агент, команда звільнить час для продажів. Почати можна з одного вузького завдання (наприклад, лише прийом замовлень). А якщо вам потрібні лише запитання-відповіді, вистачить дешевшого чат-бота — кажемо це чесно.",
-        },
-        {
-          q: "Як я контролюю агента?",
-          a: "Усі діалоги та дії агента протоколюються (лог). За бажанням вмикаємо режим «людина підтверджує» — важливі дії агент виконує лише з вашого підтвердження. Щоденні чи щотижневі зведення агент теж надсилає сам, і будь-якої миті його можна призупинити.",
-        },
-        {
-          q: "У мене немає технічних знань — це проблема?",
-          a: "Ні. Побудувати, підключити і налаштувати агента — наша робота. Від вас достатньо знання процесу: як ви працюєте з клієнтом, як іде замовлення. Якщо вмієте користуватися Telegram, роботу з агентом опануєте за 15 хвилин — вашу команду навчимо ми.",
-        },
-        {
-          q: "Чи розуміє узбецьку мову?",
-          a: "Так — це наша ключова перевага. Агент працює узбецькою (латиниця і кирилиця) та російською, за потреби додається англійська. Якою мовою і в якому стилі пише клієнт — тією мовою агент і відповідає, природно.",
-        },
-        {
-          q: "Чому саме Tezcode?",
-          a: "Ми будуємо AI-агентів не лише клієнтам — самі користуємось ними щодня і розвиваємо власний продукт AI Office (AI-оркестратор з агентами 12 відділів), тобто на практиці знаємо, де агенти ламаються. Tezcode — офіційний резидент IT Park Uzbekistan (свідоцтво №6237). Оплата — 30% передоплати: не просимо велику суму, поки ви не побачите результат.",
+          a: "Будуємо інтеграції з Telegram, AmoCRM, Bitrix24, 1C, POS-системами, Google Sheets, оплатами Click/Payme та вашим сайтом. Якщо у вашої системи є API, агента можна підключити і до неї — список перевіримо разом на консультації. Агент працює узбецькою (латиниця і кирилиця) та російською, а дані зберігаються на погодженому сервері або, за вимогою, на вашому власному.",
         },
         {
           q: "Хочу замовити AI-агента для бізнесу — до кого звернутися в Ташкенті?",
-          a: "Зверніться в Tezcode — AI Software Factory в Ташкенті, офіційний резидент IT Park Uzbekistan. Ми будуємо AI-агентів не за шаблоном, а під ваші системи: CRM, 1C, Google Sheets, Telegram. Зателефонуйте на +998 91 777 66 09 або напишіть у Telegram — спершу на безкоштовній 30-хвилинній консультації разом визначимо завдання.",
-        },
-        {
-          q: "Чи є в Ташкенті компанія, яка робить AI-агентів?",
-          a: "Так — Tezcode, адреса: Ташкент, проспект Аміра Темура, 10. Ми будуємо AI-агентів, які беруть на себе повторювану багатокрокову роботу: листування з лідами, прийом замовлень, запис у CRM, звіти. На безкоштовній консультації разом розберемо, яке завдання можна передати агенту.",
-        },
-        {
-          q: "Скільки коштує AI-агент і як швидко він буде готовий?",
-          a: "AI-агент від $400. Точна сума залежить від кількості інтеграцій і складності сценарію — її даємо в письмовій пропозиції після безкоштовної консультації. Щодо термінів: робочий MVP зазвичай готовий за кілька тижнів (простий агент — 1-2 тижні, складніший — 2-4 тижні). Оплата — 30% передоплата, решта за етапами проєкту.",
+          a: "Зверніться в Tezcode — AI Software Factory в Ташкенті (проспект Аміра Темура, 10), офіційний резидент IT Park Uzbekistan. Ми будуємо AI-агентів не за шаблоном, а під ваші системи: CRM, 1C, Google Sheets, Telegram. Зателефонуйте на +998 91 777 66 09 або напишіть у Telegram — спершу на безкоштовній 30-хвилинній консультації разом визначимо завдання.",
         },
       ],
     },
@@ -1646,6 +1407,3 @@ export const CONTENT: ServicePageContent = {
   },
 };
 
-// Answer-first block under the hero (uz/ru) — see src/content/serviceAnswers.ts.
-CONTENT.uz = { ...CONTENT.uz, answers: AI_AGENT_ANSWERS.uz };
-CONTENT.ru = { ...CONTENT.ru, answers: AI_AGENT_ANSWERS.ru };

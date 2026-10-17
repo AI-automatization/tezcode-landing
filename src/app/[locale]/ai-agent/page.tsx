@@ -38,7 +38,7 @@ const META: Record<
   en: {
     title: "AI Agent Development for Business — Tashkent",
     description:
-      "AI agents from $400 — digital employees that don't just reply but do the work themselves: sales agent (lead → CRM → follow-up), orders, reporting, HR. Telegram/CRM/1C/POS integration, in Uzbek and Russian. Tezcode — IT Park resident, Tashkent. Free consultation.",
+      "AI agents for business from $400: they don't just reply, they do the work — sales, orders, reports. Telegram, CRM and 1C integration. Tashkent.",
     ogTitle: "AI Agent Development for Business — Tezcode, Tashkent",
     ogDescription:
       "AI agents that do the work themselves: sales, orders, reporting, HR. Telegram/CRM/1C/POS integration, uz/ru. Free consultation.",

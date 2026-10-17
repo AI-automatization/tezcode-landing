@@ -5,7 +5,6 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { PricingTiers } from "@/components/PricingTiers";
 import { Reveal } from "@/components/motion/Reveal";
-import { Magnetic } from "@/components/motion/Magnetic";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { PRICING_FAQ, type FaqLang } from "@/content/faq";
 import { CustomWorkSection } from "./CustomWorkSection";
@@ -22,11 +21,6 @@ type Copy = {
   selectCustom: string;
   saasTitle: string;
   saasAccent: string;
-  saasSub: string;
-  ctaTitle: string;
-  ctaSubtitle: string;
-  ctaButton: string;
-  ctaNote: string;
 };
 
 const COPY: Record<Lang, Copy> = {
@@ -41,13 +35,6 @@ const COPY: Record<Lang, Copy> = {
     selectCustom: "Buyurtma ishlar (bir martalik)",
     saasTitle: "Tayyor mahsulotlar",
     saasAccent: "(obuna)",
-    saasSub:
-      "RAOS, AI Office va boshqa tayyor SaaS mahsulotlarimiz — oylik obuna, bepul boshlanadi.",
-    ctaTitle: "Aniq narxni",
-    ctaSubtitle:
-      "30 daqiqalik bepul konsultatsiyada vazifangizga eng mos tarifni birga tanlaymiz. Hech qanday majburiyat yo'q.",
-    ctaButton: "Telegram'da gaplashish",
-    ctaNote: "Yoki tezcode@tezcode.dev ga yozing — Bekzod bilan bevosita bog'lanasiz.",
   },
   ru: {
     badge: "Тарифы",
@@ -60,13 +47,6 @@ const COPY: Record<Lang, Copy> = {
     selectCustom: "Работы на заказ (разово)",
     saasTitle: "Готовые продукты",
     saasAccent: "(подписка)",
-    saasSub:
-      "RAOS, AI Office и другие наши готовые SaaS-продукты — месячная подписка, старт бесплатный.",
-    ctaTitle: "Узнать точную",
-    ctaSubtitle:
-      "На бесплатной 30-минутной консультации вместе подберём тариф под вашу задачу. Без обязательств.",
-    ctaButton: "Написать в Telegram",
-    ctaNote: "Или пишите на tezcode@tezcode.dev — свяжетесь напрямую с Бекзодом.",
   },
   en: {
     badge: "Pricing",
@@ -79,13 +59,6 @@ const COPY: Record<Lang, Copy> = {
     selectCustom: "Custom work (one-time)",
     saasTitle: "Ready products",
     saasAccent: "(subscription)",
-    saasSub:
-      "RAOS, AI Office and our other ready SaaS products — monthly subscription, free to start.",
-    ctaTitle: "Get an exact",
-    ctaSubtitle:
-      "In a free 30-minute consultation we'll pick the right plan for your task together. No commitment.",
-    ctaButton: "Chat on Telegram",
-    ctaNote: "Or email tezcode@tezcode.dev — you'll reach Bekzod directly.",
   },
   ar: {
     badge: "الأسعار",
@@ -98,13 +71,6 @@ const COPY: Record<Lang, Copy> = {
     selectCustom: "أعمال حسب الطلب (مرة واحدة)",
     saasTitle: "منتجات جاهزة",
     saasAccent: "(اشتراك)",
-    saasSub:
-      "RAOS وAI Office وغيرها من منتجات SaaS الجاهزة لدينا — اشتراك شهري والبداية مجانية.",
-    ctaTitle: "احصل على سعر",
-    ctaSubtitle:
-      "في استشارة مجانية مدتها 30 دقيقة سنختار معًا الخطة المناسبة لمهمتك. دون أي التزام.",
-    ctaButton: "تحدث عبر تيليجرام",
-    ctaNote: "أو راسلنا على tezcode@tezcode.dev — ستصل إلى بكزود مباشرة.",
   },
   uk: {
     badge: "Тарифи",
@@ -117,13 +83,6 @@ const COPY: Record<Lang, Copy> = {
     selectCustom: "Роботи на замовлення (разово)",
     saasTitle: "Готові продукти",
     saasAccent: "(підписка)",
-    saasSub:
-      "RAOS, AI Office та інші наші готові SaaS-продукти — місячна підписка, старт безкоштовний.",
-    ctaTitle: "Дізнатися точну",
-    ctaSubtitle:
-      "На безкоштовній 30-хвилинній консультації разом підберемо тариф під ваше завдання. Без зобов'язань.",
-    ctaButton: "Написати в Telegram",
-    ctaNote: "Або пишіть на tezcode@tezcode.dev — зв'яжетеся напряму з Бекзодом.",
   },
 };
 
@@ -180,7 +139,6 @@ export default function TariflarPage() {
             {t.saasTitle}{" "}
             <span className="text-[var(--tc-blue-text)]">{t.saasAccent}</span>
           </h2>
-          <p className="text-[var(--tc-text-secondary)]">{t.saasSub}</p>
         </Reveal>
       </section>
       <PricingTiers />
@@ -196,33 +154,6 @@ export default function TariflarPage() {
         subtitle={pfaq.subtitle}
         items={pfaq.items}
       />
-
-      {/* Final CTA */}
-      <section className="tc-navy-section py-20 sm:py-28 px-6">
-        <Reveal className="max-w-3xl mx-auto text-center">
-          <h2
-            className="text-3xl md:text-5xl font-700 mb-4 tracking-tight"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            {t.ctaTitle}{" "}
-            <span className="text-[var(--tc-blue-text)]">{t.badge.toLowerCase()}</span>
-          </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg mb-8">
-            {t.ctaSubtitle}
-          </p>
-          <Magnetic>
-            <a
-              href="https://t.me/tezcode_managament"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="tc-btn-primary inline-flex items-center gap-2"
-            >
-              {t.ctaButton}
-            </a>
-          </Magnetic>
-          <p className="text-[var(--tc-text-muted)] text-sm mt-5">{t.ctaNote}</p>
-        </Reveal>
-      </section>
 
       <Footer />
 

@@ -99,10 +99,6 @@ export const CONTENT: ArticleContent = {
           a: "Agar sizga faqat saytda yoki Telegram'da savol-javob kerak bo'lsa — chatbot yetarli. Agar agent ombor, buyurtma yoki CRM/1C bilan real ishlashi kerak bo'lsa — AI agent kerak. Ko'pchilik biznes chatbotdan boshlab, keyin uni agentga o'stiradi.",
         },
         {
-          q: "AI chatbot ham GPT yoki Claude asosida ishlaydimi?",
-          a: "Ha. Zamonaviy AI chatbot ham, AI agent ham GPT (OpenAI) yoki Claude (Anthropic) kabi katta til modeli asosida ishlaydi. Farq modelda emas, balki agentning tashqi tizimlarga ulanib amaliy harakat qila olishida.",
-        },
-        {
           q: "AI agent chatbotdan qimmatroqmi?",
           a: "Odatda ha, chunki agent qo'shimcha integratsiya va test talab qiladi (CRM, 1C, ombor, to'lov). Lekin u shuncha ko'p foyda beradi — buyurtmani o'zi rasmiylashtiradi, ma'lumotni avtomatik yozadi. Aniq narx ehtiyojga bog'liq; bepul konsultatsiyada baholanadi.",
         },
@@ -213,10 +209,6 @@ export const CONTENT: ArticleContent = {
           a: "Если вам нужны только вопросы-ответы на сайте или в Telegram — достаточно чат-бота. Если агент должен реально работать со складом, заказами или CRM/1С — нужен ИИ-агент. Многие бизнесы начинают с чат-бота, а затем выращивают его в агента.",
         },
         {
-          q: "ИИ-чат-бот тоже работает на базе GPT или Claude?",
-          a: "Да. И современный ИИ-чат-бот, и ИИ-агент работают на базе большой языковой модели вроде GPT (OpenAI) или Claude (Anthropic). Разница не в модели, а в том, что агент подключается к внешним системам и может выполнять практические действия.",
-        },
-        {
           q: "ИИ-агент дороже чат-бота?",
           a: "Обычно да, потому что агент требует дополнительной интеграции и тестирования (CRM, 1С, склад, оплата). Но он и пользы даёт больше — сам оформляет заказ, автоматически записывает данные. Точная цена зависит от потребности; оценивается на бесплатной консультации.",
         },
@@ -325,10 +317,6 @@ export const CONTENT: ArticleContent = {
         {
           q: "Is a chatbot enough for me, or do I need an AI agent?",
           a: "If you only need Q&A on your website or Telegram, a chatbot is enough. If the agent must really work with your inventory, orders or CRM/1C, you need an AI agent. Many businesses start with a chatbot and then grow it into an agent.",
-        },
-        {
-          q: "Does an AI chatbot also run on GPT or Claude?",
-          a: "Yes. Both a modern AI chatbot and an AI agent run on a large language model like GPT (OpenAI) or Claude (Anthropic). The difference is not the model but the fact that the agent connects to external systems and can perform practical actions.",
         },
         {
           q: "Is an AI agent more expensive than a chatbot?",

@@ -59,7 +59,7 @@ const FACTS = [
   { label: "Founded", value: "2024" },
   { label: "HQ", value: "Toshkent, O'zbekiston" },
   { label: "Founder", value: "Bekzod Mirzaaliyev" },
-  { label: "Team", value: "16 ta dasturchi" },
+  { label: "Team", value: "19 kishilik jamoa" },
   { label: "Products", value: "8 ta (3 live, 5 R&D)" },
   { label: "Divisions", value: "6 (Systems / Custom / AI / Teams / Labs / Academy)" },
   { label: "Languages", value: "UZ · RU · EN · AR · UK" },

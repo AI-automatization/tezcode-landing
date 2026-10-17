@@ -108,10 +108,6 @@ export const CONTENT: ArticleContent = {
           a: "Ha. O'zbekistonda odamlar ko'pincha bir jumlada o'zbekcha-ruscha aralash yozadi. To'g'ri sozlangan bot buni tabiiy tushunadi — bu Tezcode alohida e'tibor beradigan narsa.",
         },
         {
-          q: "Bot noto'g'ri o'zbekcha javob bersa nima bo'ladi?",
-          a: "Botni tasdiqlangan bilim bazasiga tayantirish xatolarni kamaytirishi mumkin, lekin butunlay yo'q qilmaydi. Muhim javoblarni tekshirish, yetarli ma'lumot bo'lmaganda operatorga uzatish va xato suhbatlarni qayta sinash kerak.",
-        },
-        {
           q: "Toshkentda o'zbek tilli AI chatbot kim yasaydi?",
           a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti — o'zbek va rus tilida AI chatbot va agentlar yaratadi. Botni sizning hujjatlaringiz asosida quramiz, lotin/kirill va aralash tilni alohida sozlaymiz. Batafsil: tezcode.dev/ai-chatbot.",
         },
@@ -205,10 +201,6 @@ export const CONTENT: ArticleContent = {
           a: "Да. В Узбекистане часто смешивают узбекский и русский в одном предложении. Правильно настроенный бот понимает это естественно — и именно на это Tezcode делает особый упор.",
         },
         {
-          q: "Что если бот ответит неправильно по-узбекски?",
-          a: "Чтобы этого избежать, бот отвечает только по вашей базе и не выдумывает то, чего в ней нет. Если он не уверен — передаёт вопрос оператору. Тестируем на реальных диалогах и постоянно улучшаем качество.",
-        },
-        {
           q: "Кто делает узбекоязычный ИИ-чат-бот в Ташкенте?",
           a: "Tezcode — AI Software Factory в Ташкенте и резидент IT Park — создаёт ИИ-чат-ботов и агентов на узбекском и русском. Строим бота на основе ваших документов, отдельно настраиваем латиницу/кириллицу и смешанный язык. Подробнее: tezcode.dev/ru/ai-chatbot.",
         },
@@ -300,10 +292,6 @@ export const CONTENT: ArticleContent = {
         {
           q: "Does the bot understand mixed Uzbek-Russian?",
           a: "Yes. In Uzbekistan people often write a mix of Uzbek and Russian in one sentence. A properly tuned bot understands this naturally — something Tezcode puts special focus on.",
-        },
-        {
-          q: "What if the bot answers incorrectly in Uzbek?",
-          a: "To prevent that, the bot only answers from your base and doesn't invent what isn't there. When unsure, it hands the question to an agent. We test on real conversations and continuously improve quality.",
         },
         {
           q: "Who builds an Uzbek-language AI chatbot in Tashkent?",

@@ -7,7 +7,7 @@ import type { ServicePageContent } from "@/components/service-page/types";
 // (/ai-avtomatizatsiya/[city]) — this is the country-wide hub that links down
 // to the city and service pages. RU copy is the PRIMARY target.
 // FACTS RULE: only claims already published on the site / llms.txt are used
-// (founded 2024, 16-person team, IT Park resident №6237, Google 5.0 (6 reviews),
+// (founded 2024, 19-person team, IT Park resident №6237, Google 5.0 (6 reviews),
 // RAOS / WeWatch / ClinicaGo / WorkControl / Salomat AI, prices from /tariflar,
 // case numbers from /case-studies). NO invented totals — competitor-style
 // "120+ внедрений" counters are left as TODO placeholders below.
@@ -22,7 +22,7 @@ export const CONTENT: ServicePageContent = {
         "Tezcode — Toshkentdagi AI kompaniya va AI Software Factory. Biz O'zbekistonda biznesga AI joriy qilamiz: takroriy ishlarni (mijozga javob, hisobot, buyurtma qayd etish, kamera nazorati) sun'iy intellektga topshirib, jamoani asosiy ishga bo'shatamiz. AI agentlar, chatbotlar, jarayon avtomatizatsiyasi, AI video analitika va ovozli assistentlar o'zbek (lotin va kiril), rus va ingliz tillarida ishlaydi hamda 1C, CRM, Telegram, Click/Payme bilan integratsiya qilinadi.",
       // TODO(Sardor): real raqam qo'yish — nechta loyiha/joriy etish bo'lganini
       // trust satriga qo'shish (raqobatchi "120+ внедрений" deb yozadi).
-      trust: "IT Park rezidenti (№6237) • 16 kishilik jamoa • Google reytingi 5.0 • Bepul 30 daqiqa konsultatsiya",
+      trust: "IT Park rezidenti (№6237) • 19 kishilik jamoa • Google reytingi 5.0 • Bepul 30 daqiqa konsultatsiya",
       ctaPrimary: "Bepul konsultatsiya so'rang",
       ctaSecondary: "Nimalarni joriy qilamiz?",
     },
@@ -126,20 +126,12 @@ export const CONTENT: ServicePageContent = {
           a: "Oddiy avtomatlashtirish (Telegram bot, avtomatik hisobot) — 1-2 hafta. To'liqroq AI yechimning ishlovchi MVP versiyasi — 2-4 hafta. Har hafta demo ko'rsatamiz, natijani jarayonda kuzatib borasiz.",
         },
         {
-          q: "O'zbekistonda AI joriy qilishni kim qiladi?",
-          a: "Tezcode — Toshkentdagi AI Software Factory: 2024-yilda tashkil topgan, IT Park Uzbekistan rasmiy rezidenti (guvohnoma №6237), 16 kishilik jamoa, Google Business reytingi 5.0. Ishlab turgan mahsulotlar: RAOS (POS), ClinicaGo (klinika CRM), WeWatch, WorkControl. Manzil: Toshkent, Amir Temur shoh ko'chasi, 10. Telefon: +998 91 777 66 09.",
-        },
-        {
-          q: "Qaysi shaharlarda ishlaysizlar?",
-          a: "Ofisimiz Toshkentda, lekin O'zbekiston bo'ylab va xalqaro loyihalarda ishlaymiz: joriy etish va qo'llab-quvvatlash masofadan amalga oshiriladi. Toshkent va Samarqand uchun alohida sahifalarimiz bor; boshqa hududlar va davlatlardan ham onlayn boshlash mumkin.",
-        },
-        {
           q: "Mavjud tizimlarimni (1C, CRM) almashtirish kerakmi?",
           a: "Yo'q. AI'ni mavjud ish oqimingiz ichiga joriy qilamiz: 1C, amoCRM, Bitrix24, Google Sheets, Telegram, Click/Payme bilan integratsiya quramiz. Maqsad — jamoani yangi dasturga majburlamasdan, hozirgi tizimlaringizni aqlli qilish.",
         },
         {
           q: "Nimadan boshlash kerak?",
-          a: "30 daqiqalik bepul konsultatsiyadan. Unda qaysi takroriy jarayon eng ko'p vaqt olayotganini aniqlaymiz va qaysi AI yechim eng tez natija berishini aytamiz. Texnik bilim shart emas — jarayoningizni oddiy so'zlab bersangiz kifoya.",
+          a: "30 daqiqalik bepul konsultatsiyadan. Unda qaysi takroriy jarayon eng ko'p vaqt olayotganini aniqlaymiz va qaysi AI yechim eng tez natija berishini aytamiz. Texnik bilim shart emas — jarayoningizni oddiy so'zlab bersangiz kifoya. Konsultatsiya onlayn yoki Tezcode'ning (IT Park rezidenti) Toshkentdagi ofisida — Amir Temur shoh ko'chasi, 10 — o'tadi.",
         },
       ],
     },
@@ -178,7 +170,7 @@ export const CONTENT: ServicePageContent = {
         "Tezcode — AI-компания и AI Software Factory в Ташкенте. Мы внедряем ИИ в бизнес в Узбекистане: передаём рутинные задачи (ответы клиентам, отчёты, регистрация заказов, контроль по камерам) искусственному интеллекту. ИИ-агенты, чат-боты, автоматизация процессов, видеоаналитика и голосовые ассистенты работают на узбекском (латиница и кириллица), русском и английском и интегрируются с 1C, CRM, Telegram, Click/Payme.",
       // TODO(Sardor): real raqam qo'yish — количество реализованных внедрений
       // для trust-строки (у конкурента цитируется «120+ внедрений»).
-      trust: "Резидент IT Park (№6237) • Команда 16 человек • Рейтинг Google 5.0 • Бесплатная 30-мин консультация",
+      trust: "Резидент IT Park (№6237) • Команда 19 человек • Рейтинг Google 5.0 • Бесплатная 30-мин консультация",
       ctaPrimary: "Бесплатная консультация",
       ctaSecondary: "Что мы внедряем?",
     },
@@ -282,20 +274,12 @@ export const CONTENT: ServicePageContent = {
           a: "Простая автоматизация (Telegram-бот, автоматический отчёт) — 1-2 недели. Рабочий MVP более полного ИИ-решения — 2-4 недели. Каждую неделю показываем демо, поэтому вы видите результат в процессе, а не в последний день.",
         },
         {
-          q: "Кто внедряет ИИ в бизнес в Узбекистане?",
-          a: "Tezcode — AI Software Factory в Ташкенте: основана в 2024 году, официальный резидент IT Park Uzbekistan (свидетельство №6237), команда 16 человек, рейтинг Google Business 5.0. Работающие продукты: RAOS (POS), ClinicaGo (CRM для клиник, live), WeWatch, WorkControl. Адрес: Ташкент, проспект Амира Темура, 10. Телефон: +998 91 777 66 09.",
-        },
-        {
-          q: "В каких городах Узбекистана вы работаете?",
-          a: "Офис находится в Ташкенте, но мы работаем по всему Узбекистану и с международными клиентами: внедрение и поддержка выполняются удалённо. Для Ташкента и Самарканда есть отдельные страницы; из других регионов и стран можно начать онлайн.",
-        },
-        {
           q: "Нужно ли менять существующие системы (1C, CRM)?",
           a: "Нет. Мы внедряем ИИ внутрь вашего текущего рабочего потока: строим интеграции с 1C, amoCRM, Bitrix24, Google Sheets, Telegram и платёжными системами Click/Payme. Цель — сделать умными ваши нынешние системы, а не заставлять команду переучиваться.",
         },
         {
           q: "С чего начать внедрение ИИ?",
-          a: "С бесплатной 30-минутной консультации. На ней определяем, какой повторяющийся процесс съедает больше всего времени, и говорим, какое ИИ-решение окупится быстрее всего. Технические знания не нужны — достаточно описать процесс простыми словами.",
+          a: "С бесплатной 30-минутной консультации. На ней определяем, какой повторяющийся процесс съедает больше всего времени, и говорим, какое ИИ-решение окупится быстрее всего. Технические знания не нужны — достаточно описать процесс простыми словами. Консультация проходит онлайн или в офисе Tezcode (резидент IT Park): Ташкент, проспект Амира Темура, 10.",
         },
       ],
     },
@@ -333,7 +317,7 @@ export const CONTENT: ServicePageContent = {
         "AI implementation for business in Uzbekistan means handing repetitive work — customer replies, reports, order intake, camera monitoring — to artificial intelligence so your team can focus on what matters. Tezcode, an AI Software Factory in Tashkent and an official IT Park Uzbekistan resident, implements AI agents, chatbots, process automation, AI video analytics and voice assistants nationwide: solutions work in Uzbek (Latin and Cyrillic), Russian and English, and integrate with the systems you already run — 1C, CRM, Telegram, Click/Payme.",
       // TODO(Sardor): real raqam qo'yish — number of completed implementations
       // for the trust line (the competitor quotes "120+ implementations").
-      trust: "IT Park resident (No. 6237) • 16-person team • Google rating 5.0 • Free 30-min consultation",
+      trust: "IT Park resident (No. 6237) • 19-person team • Google rating 5.0 • Free 30-min consultation",
       ctaPrimary: "Book free consultation",
       ctaSecondary: "What do we implement?",
     },
@@ -437,20 +421,12 @@ export const CONTENT: ServicePageContent = {
           a: "Simple automation (a Telegram bot, an automated report) — 1-2 weeks. A working MVP of a fuller AI solution — 2-4 weeks. We demo weekly, so you watch the result take shape instead of waiting for the last day.",
         },
         {
-          q: "Who implements AI for business in Uzbekistan?",
-          a: "Tezcode — an AI Software Factory in Tashkent: founded in 2024, an official IT Park Uzbekistan resident (certificate No. 6237), a 16-person team, a 5.0 Google Business rating. Live products: RAOS (POS), ClinicaGo (clinic CRM), WeWatch, WorkControl. Address: 10 Amir Temur Avenue, Tashkent. Phone: +998 91 777 66 09.",
-        },
-        {
-          q: "Which cities of Uzbekistan do you work in?",
-          a: "Our office is in Tashkent, but we work nationwide: implementation and support are delivered remotely. Tashkent and Samarkand have dedicated pages; from Bukhara, Andijan, Namangan, Fergana and other regions you can start online.",
-        },
-        {
           q: "Do I need to replace my existing systems (1C, CRM)?",
           a: "No. We implement AI inside your current workflow: we build integrations with 1C, amoCRM, Bitrix24, Google Sheets, Telegram and the Click/Payme payment systems. The goal is to make your current systems smart, not to force your team onto new software.",
         },
         {
           q: "Where should I start?",
-          a: "With a free 30-minute consultation. There we identify which repetitive process consumes the most time and tell you which AI solution will pay off fastest. No technical knowledge needed — describing your process in plain words is enough.",
+          a: "With a free 30-minute consultation. There we identify which repetitive process consumes the most time and tell you which AI solution will pay off fastest. No technical knowledge needed — describing your process in plain words is enough. The consultation is online or at the Tezcode office (IT Park resident): 10 Amir Temur Avenue, Tashkent.",
         },
       ],
     },
@@ -486,7 +462,7 @@ export const CONTENT: ServicePageContent = {
       title2: "",
       subtitle:
         "تطبيق الذكاء الاصطناعي في الأعمال في أوزبكستان يعني تسليم المهام المتكررة — الرد على العملاء، التقارير، تسجيل الطلبات، مراقبة الكاميرات — إلى الذكاء الاصطناعي ليتفرغ فريقك للأهم. Tezcode — مصنع برمجيات الذكاء الاصطناعي في طشقند ومقيم رسمي في IT Park Uzbekistan — يطبّق وكلاء AI وروبوتات المحادثة وأتمتة العمليات وتحليلات الفيديو والمساعدين الصوتيين في كل البلاد: تعمل الحلول بالأوزبكية والروسية والإنجليزية وتتكامل مع أنظمتك الحالية — 1C وCRM وTelegram وClick/Payme.",
-      trust: "مقيم في IT Park (رقم 6237) • فريق من 16 شخصًا • تقييم Google ‏5.0 • استشارة 30 دقيقة مجانية",
+      trust: "مقيم في IT Park (رقم 6237) • فريق من 19 شخصًا • تقييم Google ‏5.0 • استشارة 30 دقيقة مجانية",
       ctaPrimary: "اطلب استشارة مجانية",
       ctaSecondary: "ماذا نطبّق؟",
     },
@@ -565,10 +541,8 @@ export const CONTENT: ServicePageContent = {
         { q: "كم يكلف تطبيق الذكاء الاصطناعي في أوزبكستان؟", a: "حلول جاهزة: روبوت Telegram من 279$، روبوت محادثة AI من 339$، وكيل AI من 400$، تحليلات فيديو من 990$، مشروع مخصص (MVP) من 1000$. اشتراكات: Starter ‏0$، Pro ‏200$/شهر. السعر الدقيق في عرض مكتوب بعد الاستشارة المجانية والمواصفات. الدفع: 30% مقدمًا والباقي على مراحل." },
         { q: "هل يعمل الذكاء الاصطناعي بالأوزبكية؟", a: "نعم. تعمل حلول Tezcode بالأوزبكية (لاتينية وسيريلية) والروسية والإنجليزية — يجيب الروبوت باللغة التي يكتب بها العميل. مساعدنا الصوتي Salomat AI يتحدث الأوزبكية والروسية أيضًا." },
         { q: "كم يستغرق التطبيق؟", a: "أتمتة بسيطة (روبوت Telegram، تقرير تلقائي) — 1-2 أسبوع. نسخة MVP عاملة لحل أشمل — 2-4 أسابيع. نعرض تجريبيًا كل أسبوع فترى النتيجة أثناء العمل." },
-        { q: "من يطبّق الذكاء الاصطناعي في الأعمال في أوزبكستان؟", a: "Tezcode — مصنع برمجيات الذكاء الاصطناعي في طشقند: تأسس 2024، مقيم رسمي في IT Park Uzbekistan (شهادة رقم 6237)، فريق من 16 شخصًا، تقييم Google ‏5.0. منتجات تعمل: RAOS وClinicaGo وWeWatch وWorkControl. الهاتف: ‎+998 91 777 66 09." },
-        { q: "في أي مدن أوزبكستان تعملون؟", a: "مكتبنا في طشقند لكننا نعمل في كل البلاد: التطبيق والدعم عن بُعد. لطشقند وسمرقند صفحات مخصصة؛ ومن بخارى وأنديجان ونمنغان وفرغانة وغيرها يمكن البدء أونلاين." },
         { q: "هل يجب استبدال أنظمتي الحالية (1C، CRM)؟", a: "لا. نطبّق الذكاء الاصطناعي داخل تدفق عملك الحالي: تكامل مع 1C وamoCRM وBitrix24 وGoogle Sheets وTelegram وClick/Payme. الهدف جعل أنظمتك الحالية ذكية لا إجبار الفريق على برامج جديدة." },
-        { q: "من أين أبدأ؟", a: "من استشارة مجانية مدتها 30 دقيقة: نحدد فيها العملية المتكررة الأكثر استهلاكًا للوقت ونخبرك أي حل يؤتي ثماره أسرع. لا حاجة لمعرفة تقنية — يكفي وصف عمليتك بكلمات بسيطة." },
+        { q: "من أين أبدأ؟", a: "من استشارة مجانية مدتها 30 دقيقة: نحدد فيها العملية المتكررة الأكثر استهلاكًا للوقت ونخبرك أي حل يؤتي ثماره أسرع. لا حاجة لمعرفة تقنية — يكفي وصف عمليتك بكلمات بسيطة. تتم الاستشارة أونلاين أو في مكتب Tezcode (مقيم IT Park): طشقند، شارع أمير تيمور، 10." },
       ],
     },
     related: {
@@ -680,10 +654,8 @@ export const CONTENT: ServicePageContent = {
         { q: "Скільки коштує впровадження ШІ в Узбекистані?", a: "Готові рішення: Telegram-бот від $279, AI-чат-бот від $339, AI-агент від $400, AI-відеоаналітика від $990, індивідуальний проєкт (MVP) від $1000. Підписки: Starter $0, Pro $200/міс. Точна ціна — у письмовій пропозиції після безкоштовної консультації та ТЗ. Оплата: 30% передоплата, решта поетапно." },
         { q: "Чи працює AI узбецькою мовою?", a: "Так. Рішення Tezcode працюють узбецькою (латиниця та кирилиця), російською й англійською — бот відповідає тією мовою, якою пише клієнт. Голосовий асистент Salomat AI також говорить узбецькою та російською." },
         { q: "Скільки триває впровадження?", a: "Проста автоматизація (Telegram-бот, автоматичний звіт) — 1-2 тижні. Робочий MVP повнішого ШІ-рішення — 2-4 тижні. Щотижня показуємо демо, тож ви бачите результат у процесі." },
-        { q: "Хто впроваджує ШІ в бізнес в Узбекистані?", a: "Tezcode — AI Software Factory в Ташкенті: заснована 2024 року, офіційний резидент IT Park Uzbekistan (свідоцтво №6237), команда 16 людей, рейтинг Google 5.0. Працюючі продукти: RAOS, ClinicaGo, WeWatch, WorkControl. Телефон: +998 91 777 66 09." },
-        { q: "У яких містах Узбекистану ви працюєте?", a: "Офіс у Ташкенті, але працюємо по всій країні: впровадження та підтримка виконуються віддалено. Для Ташкента й Самарканда є окремі сторінки; з Бухари, Андижана, Намангана, Фергани та інших регіонів можна почати онлайн." },
         { q: "Чи потрібно міняти наявні системи (1C, CRM)?", a: "Ні. Ми впроваджуємо ШІ всередину вашого поточного робочого потоку: будуємо інтеграції з 1C, amoCRM, Bitrix24, Google Sheets, Telegram і платіжними системами Click/Payme. Мета — зробити розумними ваші нинішні системи." },
-        { q: "З чого почати?", a: "З безкоштовної 30-хвилинної консультації. На ній визначаємо, який повторюваний процес з'їдає найбільше часу, і кажемо, яке ШІ-рішення окупиться найшвидше. Технічні знання не потрібні." },
+        { q: "З чого почати?", a: "З безкоштовної 30-хвилинної консультації. На ній визначаємо, який повторюваний процес з'їдає найбільше часу, і кажемо, яке ШІ-рішення окупиться найшвидше. Технічні знання не потрібні. Консультація проходить онлайн або в офісі Tezcode (резидент IT Park): Ташкент, просп. Аміра Темура, 10." },
       ],
     },
     related: {

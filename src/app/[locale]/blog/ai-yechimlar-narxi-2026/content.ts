@@ -92,12 +92,8 @@ export const CONTENT: ArticleContent = {
           a: "CRM integratsiya (amoCRM, Bitrix24, HubSpot, 1C) $700 dan boshlanadi. Bu bir martalik ulash ishi — voronka sozlash, kanallarni ulash, ma'lumot ko'chirish. CRM litsenziyasi alohida, uni mijoz to'laydi.",
         },
         {
-          q: "AI video analitika narxi qancha?",
-          a: "AI video analitika $990 dan boshlanadi — bu bir martalik ulash (odam sanash, yuz tanish orqali davomat, ANPR). Mavjud IP kameralaringiz bilan ishlaydi, keyin tizimni o'zingiz boshqarasiz.",
-        },
-        {
           q: "Nega ba'zi yechimlar oylik, ba'zilari bir martalik?",
-          a: "Bir martalik yechimlar (CRM integratsiya, video analitika ulash, custom dastur) — bir marta to'lanadi va tizim sizniki bo'ladi. Obuna mahsulotlar (klinika CRM $25/oy, POS 249 000 so'm/oy, xodim nazorati $35/oy) — oylik to'lov evaziga doimiy yangilanish va qo'llab-quvvatlash olasiz.",
+          a: "Bir martalik yechimlar (CRM integratsiya, video analitika ulash — $990 dan, custom dastur) — bir marta to'lanadi va tizim sizniki bo'ladi. Obuna mahsulotlar (klinika CRM $25/oy, POS 249 000 so'm/oy, xodim nazorati $35/oy) — oylik to'lov evaziga doimiy yangilanish va qo'llab-quvvatlash olasiz.",
         },
         {
           q: "To'lov qanday amalga oshiriladi?",
@@ -197,12 +193,8 @@ export const CONTENT: ArticleContent = {
           a: "Интеграция CRM (amoCRM, Bitrix24, HubSpot, 1C) стоит от $700. Это разовая работа по подключению — настройка воронки, подключение каналов, перенос данных. Лицензия CRM отдельно, её оплачивает клиент.",
         },
         {
-          q: "Сколько стоит ИИ-видеоаналитика?",
-          a: "ИИ-видеоаналитика стоит от $990 — это разовое подключение (подсчёт людей, распознавание лиц для учёта посещаемости, ANPR). Работает с вашими существующими IP-камерами, затем системой управляете сами.",
-        },
-        {
           q: "Почему одни решения помесячные, другие разовые?",
-          a: "Разовые решения (интеграция CRM, подключение видеоаналитики, custom-разработка) оплачиваются один раз, и система ваша. Подписочные продукты (CRM для клиники $25/мес, POS от 249 000 сум/мес, контроль сотрудников $35/мес) — за ежемесячную оплату вы получаете постоянные обновления и поддержку.",
+          a: "Разовые решения (интеграция CRM, подключение видеоаналитики — от $990, custom-разработка) оплачиваются один раз, и система ваша. Подписочные продукты (CRM для клиники $25/мес, POS от 249 000 сум/мес, контроль сотрудников $35/мес) — за ежемесячную оплату вы получаете постоянные обновления и поддержку.",
         },
         {
           q: "Как происходит оплата?",
@@ -302,12 +294,8 @@ export const CONTENT: ArticleContent = {
           a: "CRM integration (amoCRM, Bitrix24, HubSpot, 1C) costs from $700. It's a one-time connection job — pipeline setup, channel connection, data migration. The CRM license is separate, paid by the client.",
         },
         {
-          q: "How much does AI video analytics cost?",
-          a: "AI video analytics costs from $990 — a one-time setup (people counting, face-recognition attendance, ANPR). It works with your existing IP cameras, then you manage the system yourself.",
-        },
-        {
           q: "Why are some solutions monthly and others one-time?",
-          a: "One-time solutions (CRM integration, video-analytics setup, custom development) are paid once and the system is yours. Subscription products (clinic CRM $25/mo, POS from 249,000 UZS/mo, employee monitoring $35/mo) give you continuous updates and support for a monthly fee.",
+          a: "One-time solutions (CRM integration, video-analytics setup from $990, custom development) are paid once and the system is yours. Subscription products (clinic CRM $25/mo, POS from 249,000 UZS/mo, employee monitoring $35/mo) give you continuous updates and support for a monthly fee.",
         },
         {
           q: "How is payment made?",

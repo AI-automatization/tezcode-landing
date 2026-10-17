@@ -79,10 +79,6 @@ export const CONTENT: ArticleContent = {
           a: "To'g'ri ishlatilsa — yo'q. Maqsad ayblash emas, vazifa va natijani shaffof qilish: kim nima ustida ishlayapti, qayerda yordam kerak. Shaffoflik jamoa ishonchini oshiradi.",
         },
         {
-          q: "Tizim ish samaradorligini qanday oshiradi?",
-          a: "Vazifalar aniq ko'rinadi, muddatlar nazoratda bo'ladi, kechikishlar sezilib turadi va hisobotlar orqali rahbar to'g'ri qaror qabul qiladi.",
-        },
-        {
           q: "Bir nechta bo'lim yoki filialni kuzatsa bo'ladimi?",
           a: "Ha. Zamonaviy tizimlar bir nechta bo'lim yoki jamoani bitta joydan, bo'lim kesimida hisobot bilan kuzatish imkonini beradi.",
         },
@@ -176,10 +172,6 @@ export const CONTENT: ArticleContent = {
         {
           q: "Это ведь не «слежка» за сотрудниками?",
           a: "При правильном использовании — нет. Цель не обвинять, а сделать задачи и результат прозрачными: кто над чем работает, где нужна помощь. Прозрачность повышает доверие в команде.",
-        },
-        {
-          q: "Как система повышает продуктивность?",
-          a: "Задачи видны ясно, сроки под контролем, просрочки заметны, а отчёты помогают руководителю принимать верные решения.",
         },
         {
           q: "Можно ли контролировать несколько отделов или филиалов?",

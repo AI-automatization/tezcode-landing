@@ -7,7 +7,6 @@ import { Footer } from "@/components/Footer";
 import { Team } from "@/components/Team";
 import { ServiceIcon } from "@/components/service-page/ServiceIcon";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
-import { Magnetic } from "@/components/motion/Magnetic";
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
 
@@ -36,7 +35,7 @@ const COPY: Record<Lang, Copy> = {
     },
     stats: [
       { value: "2024", label: "Ta'sis yili" },
-      { value: "14+", label: "In-house dasturchi" },
+      { value: "19", label: "kishilik in-house jamoa" },
       { value: "8+", label: "Mahsulot" },
       { value: "6", label: "Yo'nalish" },
     ],
@@ -80,7 +79,7 @@ const COPY: Record<Lang, Copy> = {
     },
     stats: [
       { value: "2024", label: "Год основания" },
-      { value: "14+", label: "In-house разработчиков" },
+      { value: "19", label: "человек в in-house команде" },
       { value: "8+", label: "Продуктов" },
       { value: "6", label: "Направлений" },
     ],
@@ -90,7 +89,7 @@ const COPY: Record<Lang, Copy> = {
       titleAccent: "до фабрики",
       paragraphs: [
         "Tezcode основана в 2024 году в Ташкенте. Наш основатель — Бекзод Мирзаалиев. Мы резиденты IT Park.",
-        "Сегодня Tezcode — это AI Software Factory из более чем 14 in-house разработчиков: 6 направлений (Systems, Custom, AI, Teams, Labs, Academy) и продукты RAOS, AI Office, CoreMed, WorkControl.",
+        "Сегодня Tezcode — это AI Software Factory с in-house командой из 19 человек: 6 направлений (Systems, Custom, AI, Teams, Labs, Academy) и продукты RAOS, AI Office, CoreMed, WorkControl.",
         "Наша миссия проста: систематизировать каждый бизнес с помощью ИИ. Не фрилансеры — весь процесс в одной надёжной команде.",
       ],
     },
@@ -124,7 +123,7 @@ const COPY: Record<Lang, Copy> = {
     },
     stats: [
       { value: "2024", label: "Founded" },
-      { value: "14+", label: "In-house developers" },
+      { value: "19", label: "people in-house" },
       { value: "8+", label: "Products" },
       { value: "6", label: "Divisions" },
     ],
@@ -134,7 +133,7 @@ const COPY: Record<Lang, Copy> = {
       titleAccent: "to a factory",
       paragraphs: [
         "Tezcode was founded in 2024 in Tashkent. Our founder is Bekzod Mirzaaliyev. We are an IT Park resident.",
-        "Today Tezcode is an AI Software Factory of 14+ in-house developers: 6 divisions (Systems, Custom, AI, Teams, Labs, Academy) and products like RAOS, AI Office, CoreMed and WorkControl.",
+        "Today Tezcode is an AI Software Factory with a 19-person in-house team: 6 divisions (Systems, Custom, AI, Teams, Labs, Academy) and products like RAOS, AI Office, CoreMed and WorkControl.",
         "Our mission is simple: systematize every business with AI. Not freelancers — the whole process in one reliable team.",
       ],
     },
@@ -168,7 +167,7 @@ const COPY: Record<Lang, Copy> = {
     },
     stats: [
       { value: "2024", label: "سنة التأسيس" },
-      { value: "+14", label: "مطور داخلي" },
+      { value: "19", label: "شخصًا في الفريق الداخلي" },
       { value: "+8", label: "منتجات" },
       { value: "6", label: "أقسام" },
     ],
@@ -178,7 +177,7 @@ const COPY: Record<Lang, Copy> = {
       titleAccent: "إلى مصنع",
       paragraphs: [
         "تأسست Tezcode عام 2024 في طشقند. مؤسسنا هو بكزود ميرزااليف. نحن مقيمون في IT Park.",
-        "اليوم Tezcode مصنع برمجيات بالذكاء الاصطناعي يضم أكثر من 14 مطورًا داخليًا: 6 أقسام (Systems وCustom وAI وTeams وLabs وAcademy) ومنتجات مثل RAOS وAI Office وCoreMed وWorkControl.",
+        "اليوم Tezcode مصنع برمجيات بالذكاء الاصطناعي يضم فريقًا داخليًا من 19 شخصًا: 6 أقسام (Systems وCustom وAI وTeams وLabs وAcademy) ومنتجات مثل RAOS وAI Office وCoreMed وWorkControl.",
         "مهمتنا بسيطة: تنظيم كل عمل بالذكاء الاصطناعي. لسنا مستقلين — كل العملية في فريق واحد موثوق.",
       ],
     },
@@ -212,7 +211,7 @@ const COPY: Record<Lang, Copy> = {
     },
     stats: [
       { value: "2024", label: "Рік заснування" },
-      { value: "14+", label: "In-house розробників" },
+      { value: "19", label: "осіб в in-house команді" },
       { value: "8+", label: "Продуктів" },
       { value: "6", label: "Напрямків" },
     ],
@@ -222,7 +221,7 @@ const COPY: Record<Lang, Copy> = {
       titleAccent: "до фабрики",
       paragraphs: [
         "Tezcode заснована у 2024 році в Ташкенті. Наш засновник — Бекзод Мірзаалієв. Ми резиденти IT Park.",
-        "Сьогодні Tezcode — це AI Software Factory з понад 14 in-house розробників: 6 напрямків (Systems, Custom, AI, Teams, Labs, Academy) та продукти RAOS, AI Office, CoreMed, WorkControl.",
+        "Сьогодні Tezcode — це AI Software Factory з in-house командою з 19 осіб: 6 напрямків (Systems, Custom, AI, Teams, Labs, Academy) та продукти RAOS, AI Office, CoreMed, WorkControl.",
         "Наша місія проста: систематизувати кожен бізнес за допомогою AI. Не фрілансери — весь процес в одній надійній команді.",
       ],
     },
@@ -433,31 +432,6 @@ export default function AboutPage() {
 
       {/* Team — every developer with brief info; click a card for the full profile */}
       <Team />
-
-      {/* CTA */}
-      <section className="tc-navy-section py-20 sm:py-28 px-6">
-        <Reveal className="max-w-3xl mx-auto text-center">
-          <h2
-            className="text-3xl md:text-5xl font-700 mb-4 tracking-tight"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            {t.cta.title}{" "}
-            <span className="text-[var(--tc-blue-text)]">{t.cta.titleAccent}</span>
-          </h2>
-          <p className="text-[var(--tc-text-secondary)] text-lg mb-8">{t.cta.subtitle}</p>
-          <Magnetic>
-            <a
-              href="https://t.me/tezcode_managament"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="tc-btn-primary inline-flex items-center gap-2"
-            >
-              {t.cta.button}
-            </a>
-          </Magnetic>
-          <p className="text-[var(--tc-text-muted)] text-sm mt-5">{t.cta.note}</p>
-        </Reveal>
-      </section>
 
       <Footer />
 

@@ -70,10 +70,6 @@ export const CONTENT: ArticleContent = {
       title: "Tez-tez beriladigan savollar",
       items: [
         {
-          q: "AI video analitika nima?",
-          a: "Bu kamera oqimini AI yordamida real vaqtda tahlil qilish: odam sanash, yuz tanish orqali davomat, ish xavfsizligi nazorati va avto raqam tanish (ANPR). Mavjud kamera faqat vazifaga mos tasvir sifati va oqimni bersa ishlatiladi; xira tasvirda sozlash yoki kamera yangilash kerak bo'lishi mumkin.",
-        },
-        {
           q: "Mavjud kameramga AI ulash mumkinmi?",
           a: "Bu kamera modeli va tanlangan vazifaga bog'liq. Avval RTSP/ONVIF oqimi, tasvir tiniqligi, rakurs va yorug'lik tekshiriladi. Xira tasvir AI aniqligini pasaytirishi mumkin; audit natijasiga qarab sozlash, qo'shimcha kamera yoki almashtirish tavsiya qilinadi. Mos kamera bo'lsa, odatda AI ni mavjud oqimga ulash mumkin.",
         },
@@ -171,10 +167,6 @@ export const CONTENT: ArticleContent = {
           a: "Сначала определяют задачу и проверяют модель камеры, RTSP/ONVIF-поток, чёткость изображения, ракурс и освещение. Если видео подходит, ИИ подключают к существующему потоку. Размытая картинка может мешать надёжному распознаванию, поэтому иногда требуется настройка, дополнительная камера или замена.",
         },
         {
-          q: "Нужно ли менять существующие камеры?",
-          a: "Это зависит от качества изображения и задачи. На аудите проверяем RTSP/ONVIF, резкость, ракурс и освещение. Если камера подходит, её можно оставить. При размытом изображении или неподходящем ракурсе может понадобиться настройка, дополнительная камера или замена.",
-        },
-        {
           q: "Как работает подсчёт людей в магазине?",
           a: "ИИ определяет людей на изображении с камеры и считает зашедших/вышедших. В итоге вы получаете точную цифру footfall по дням и часам — для часов пик, плана смен и конверсии (сколько зашло и сколько купило).",
         },
@@ -263,10 +255,6 @@ export const CONTENT: ArticleContent = {
     faq: {
       title: "Frequently asked questions",
       items: [
-        {
-          q: "What is AI video analytics?",
-          a: "It's real-time AI analysis of camera footage: people counting, attendance by face, workplace-safety monitoring and license-plate recognition (ANPR). Existing cameras can be reused only if their image quality and stream suit the task; blurry footage may require adjustment or replacement.",
-        },
         {
           q: "Do I need to replace my existing cameras?",
           a: "It depends on the task and image quality. We check the camera model, RTSP/ONVIF stream, clarity, angle and lighting. If the camera suits the task, it can stay; blurry or unsuitable footage may require adjustment, an additional camera or replacement.",

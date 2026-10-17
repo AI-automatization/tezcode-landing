@@ -78,10 +78,6 @@ export const CONTENT: ArticleContent = {
           a: "Bu mijoz bilan aloqa, lid yig'ish, javob berish va bitimni yakunlashni bitta tizimda, qo'l mehnatisiz birlashtirishdir. Amalda: barcha kanal (Telegram, Instagram, WhatsApp, sayt) CRM'ga ulanadi, AI chatbot 24/7 javob beradi va lid saralaydi, issiq lid menejerga uzatiladi.",
         },
         {
-          q: "Instagram va Telegram sotuvini qanday avtomatlashtiraman?",
-          a: "Instagram Direct va Telegram'ni AI chatbot va CRM bilan bog'laymiz: bot savollarga darhol javob beradi, buyurtmani qabul qiladi, mijozni CRM'ga yozadi. Telegram'da to'liq Mini App do'kon (to'lov bilan) ham quriladi. Ikkala kanal bitta oqimda birlashadi.",
-        },
-        {
           q: "AI chatbot lidni qanday saralaydi?",
           a: "Suhbat davomida AI mijozning qiziqish darajasini aniqlaydi: kim shunchaki so'rayapti, kim sotib olishga tayyor. Issiq lidni darhol menejeringizga to'liq suhbat konteksti bilan uzatadi, sovuqlariga esa avtomatik eslatma/taklif yuboriladi.",
         },
@@ -178,10 +174,6 @@ export const CONTENT: ArticleContent = {
           a: "Это объединение общения с клиентом, сбора лидов, ответов и закрытия сделки в одной системе без ручного труда. На практике: все каналы (Telegram, Instagram, WhatsApp, сайт) подключаются к CRM, ИИ-чат-бот отвечает 24/7 и квалифицирует лиды, горячий лид передаётся менеджеру.",
         },
         {
-          q: "Как автоматизировать продажи через Instagram и Telegram?",
-          a: "Мы связываем Instagram Direct и Telegram с ИИ-чат-ботом и CRM: бот мгновенно отвечает, принимает заказ, пишет клиента в CRM. В Telegram также строится полноценный магазин Mini App (с оплатой). Оба канала объединяются в один поток.",
-        },
-        {
           q: "Как ИИ-чат-бот квалифицирует лид?",
           a: "В ходе диалога ИИ определяет уровень интереса клиента: кто просто спрашивает, кто готов купить. Горячий лид сразу передаётся менеджеру с полным контекстом, а холодным уходят авто-напоминания/предложения.",
         },
@@ -276,10 +268,6 @@ export const CONTENT: ArticleContent = {
         {
           q: "What is sales automation?",
           a: "It's uniting customer communication, lead capture, replies and closing the deal in one system without manual work. In practice: all channels (Telegram, Instagram, WhatsApp, website) connect to a CRM, an AI chatbot answers 24/7 and qualifies leads, and hot leads are handed to a manager.",
-        },
-        {
-          q: "How do I automate sales via Instagram and Telegram?",
-          a: "We connect Instagram Direct and Telegram with an AI chatbot and CRM: the bot answers instantly, takes the order, writes the customer to the CRM. In Telegram a full Mini App store (with payments) is also built. Both channels merge into one flow.",
         },
         {
           q: "How does the AI chatbot qualify a lead?",

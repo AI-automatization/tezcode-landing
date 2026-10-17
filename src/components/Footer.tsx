@@ -225,7 +225,7 @@ export function Footer() {
   return (
     <>
       {/* ── Contact hub — pre-footer: single navy panel ──── */}
-      <section className="bg-[var(--tc-ink)] border-t border-[var(--tc-border)] py-16 sm:py-20 px-6">
+      <section id="contact-hub" className="bg-[var(--tc-ink)] border-t border-[var(--tc-border)] py-16 sm:py-20 px-6 scroll-mt-16">
         <div className="max-w-7xl mx-auto">
           <div className="tc-navy-section relative overflow-hidden rounded-[28px] border border-[rgba(255,255,255,0.12)] p-8 sm:p-12 lg:p-14">
             {/* Soft corner glow */}

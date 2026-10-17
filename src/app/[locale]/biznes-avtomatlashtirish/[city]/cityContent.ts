@@ -1,7 +1,7 @@
 import type { ServicePageContent, ServiceLang } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
 import { CONTENT } from "../content";
-import { cityTrust, ruPrep, ukPrep } from "@/data/cityLocal";
+import { cityTrust, composeCityFaq, ruPrep, ukPrep } from "@/data/cityLocal";
 
 const BIZ_AUTO_INTRO: Record<string, Record<ServiceLang, string>> = {
   toshkent: {
@@ -74,7 +74,7 @@ export function buildBiznesAvtoCityContent(city: City): ServicePageContent {
   for (const lang of langs) {
     const base = CONTENT[lang] ?? CONTENT.uz;
     const intro = (BIZ_AUTO_INTRO[city.slug]?.[lang] ?? BIZ_AUTO_INTRO[city.slug]?.uz) ?? "";
-    const cityFaq = (CITY_FAQ[city.slug]?.[lang] ?? CITY_FAQ[city.slug]?.uz) ?? { q: "", a: "" };
+    const cityFaq = CITY_FAQ[city.slug]?.[lang] ?? CITY_FAQ[city.slug]?.uz;
     const cityName = city.name[lang] ?? city.name.uz;
     const CITY_BADGE: Record<ServiceLang, string> = {
       uz: `${cityName}da biznes avtomatlashtirish — Tezcode`,
@@ -103,7 +103,9 @@ export function buildBiznesAvtoCityContent(city: City): ServicePageContent {
       },
       faq: {
         ...base.faq,
-        items: [{ q: cityFaq.q, a: cityFaq.a }, ...base.faq.items],
+        // Exactly 5: city question (if any — never an empty item) + base
+        // questions trimmed from the end, keeping price and start/contact.
+        items: composeCityFaq(cityFaq?.q ? [{ q: cityFaq.q, a: cityFaq.a }] : [], base.faq.items),
       },
       service: {
         ...base.service,

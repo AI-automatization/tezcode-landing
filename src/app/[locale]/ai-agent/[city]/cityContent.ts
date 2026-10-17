@@ -1,6 +1,7 @@
 import type { ServicePageContent, ServiceLang } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
-import { CONTENT } from "../content";
+import { AI_AGENT_PRICE_Q, CONTENT } from "../content";
+import { composeCityFaq } from "@/data/cityLocal";
 
 // Per-city AI-agent intro blurbs — each describes the city's real business character
 // and how a custom AI agent applies. Only factual descriptions, no fabricated metrics.
@@ -21,8 +22,15 @@ const AI_AGENT_INTRO: Record<string, Record<ServiceLang, string>> = {
   },
 };
 
-// Per-city FAQ items (prepended to base FAQ so each city page has a unique question)
-const CITY_FAQ: Record<string, Record<ServiceLang, { q: string; a: string }>> = {
+// Per-city FAQ items (prepended to base FAQ so each city page has a unique question).
+// A city question that covers the same intent as a base question replaces it
+// (`replaces: "price"` drops the base price question) so no intent appears twice.
+type CityFaq = { q: string; a: string };
+const CITY_FAQ_REPLACES: Record<string, "price"> = {
+  toshkent: "price",
+};
+
+const CITY_FAQ: Record<string, Record<ServiceLang, CityFaq>> = {
   toshkent: {
     uz: {
       q: "Toshkentdagi bizneslar uchun AI agent qancha turadi?",
@@ -76,7 +84,7 @@ export function buildAiAgentCityContent(city: City): ServicePageContent {
   for (const lang of langs) {
     const base = CONTENT[lang] ?? CONTENT.uz;
     const intro = (AI_AGENT_INTRO[city.slug]?.[lang] ?? AI_AGENT_INTRO[city.slug]?.uz) ?? "";
-    const cityFaq = (CITY_FAQ[city.slug]?.[lang] ?? CITY_FAQ[city.slug]?.uz) ?? { q: "", a: "" };
+    const cityFaq = CITY_FAQ[city.slug]?.[lang] ?? CITY_FAQ[city.slug]?.uz;
     const cityName = city.name[lang] ?? city.name.uz;
 
     result[lang] = {
@@ -89,10 +97,15 @@ export function buildAiAgentCityContent(city: City): ServicePageContent {
       },
       faq: {
         ...base.faq,
-        items: [
-          { q: cityFaq.q, a: cityFaq.a },
-          ...base.faq.items,
-        ],
+        // Exactly 5: city question + base questions (see composeCityFaq). A city
+        // question that replaces the base price question removes it first.
+        items: composeCityFaq(
+          cityFaq ? [cityFaq] : [],
+          base.faq.items.filter(
+            (item) =>
+              !(cityFaq?.q && cityFaq.a && CITY_FAQ_REPLACES[city.slug] === "price" && item.q === AI_AGENT_PRICE_Q[lang]),
+          ),
+        ),
       },
       service: {
         ...base.service,

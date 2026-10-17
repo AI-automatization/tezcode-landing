@@ -22,7 +22,7 @@ const META: Record<
   uz: {
     title: "AI video analitika — Toshkent",
     description:
-      "AI video analitika Toshkentda: mavjud IP kameralarni AI bilan aqlli qilamiz — odam sanash, yuz tanish orqali davomat, kaska/ish xavfsizligi nazorati va avto raqam tanish (ANPR). Real vaqtda ogohlantirish, on-premise yoki bulut. Narx: $990 dan (bir martalik ulash). IT Park rezidenti Tezcode. Bepul konsultatsiya.",
+      "AI video analitika Toshkentda — $990 dan. Mavjud kameralarda odam sanash, yuz orqali davomat, kaska nazorati va ANPR. Bepul kamera auditi.",
     ogTitle: "AI video analitika — Toshkent | Tezcode",
     ogDescription:
       "Mavjud kameralaringizni AI bilan aqlli qiling: odam sanash, yuz tanish davomat, kaska nazorati, ANPR. Real vaqtda xabar, on-premise yoki bulut. Bepul konsultatsiya.",
@@ -30,7 +30,7 @@ const META: Record<
   ru: {
     title: "ИИ-видеоаналитика для камер — Ташкент",
     description:
-      "Подключаем ИИ к существующим IP-камерам в Ташкенте: подсчёт посетителей, распознавание лиц, контроль касок и ANPR. Hikvision/Dahua через RTSP/ONVIF. Разовый запуск от $990; сервер и использование оплачиваются отдельно. Бесплатный аудит камер.",
+      "ИИ-видеоаналитика в Ташкенте от $990: подсчёт людей, распознавание лиц, контроль касок и ANPR на ваших IP-камерах. Бесплатный аудит камер.",
     ogTitle: "ИИ-видеоаналитика для камер — Ташкент | Tezcode",
     ogDescription:
       "Добавляем ИИ к существующим камерам видеонаблюдения: считаем посетителей, отмечаем нарушения касок, распознаём лица и номера авто. Hikvision/Dahua, RTSP/ONVIF, Telegram-уведомления. От $990 за подключение.",
@@ -38,7 +38,7 @@ const META: Record<
   en: {
     title: "AI video analytics — Tashkent",
     description:
-      "AI video analytics in Tashkent: make existing IP cameras smart — people counting, attendance by face recognition, helmet/workplace-safety control and number-plate recognition (ANPR). Real-time alerts, on-premise or cloud. Price: from $990 (one-time setup). Tezcode — IT Park resident. Free consultation.",
+      "AI video analytics in Tashkent from $990: people counting, face-based attendance, helmet control and ANPR on your existing IP cameras. Free camera audit.",
     ogTitle: "AI video analytics — Tashkent | Tezcode",
     ogDescription:
       "Make your existing cameras smart with AI: people counting, attendance by face, helmet control, ANPR. Real-time alerts, on-premise or cloud. Free consultation.",

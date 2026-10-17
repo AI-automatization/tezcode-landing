@@ -60,3 +60,50 @@ export function cityOfficeFaq(city: City, lang: ServiceLang): { q: string; a: st
   const item = TASHKENT_OFFICE_FAQ[lang];
   return item ? [item] : [];
 }
+
+// ---------------------------------------------------------------------------
+// City FAQ composition: every city page shows exactly CITY_FAQ_TOTAL questions.
+// Rule: keep at most 2 city-specific items (in the order given — put the most
+// useful first), then fill from the base FAQ. Surplus base items are dropped
+// from the END, but the base price question and the base "how to start / who to
+// contact" question are never dropped (matched per locale by PROTECTED_BASE_Q).
+// Empty items and duplicate question texts are always removed.
+// ---------------------------------------------------------------------------
+export type FaqItem = { q: string; a: string };
+
+export const CITY_FAQ_TOTAL = 5;
+
+// Price + start/contact intents across uz/ru/en/ar/uk base FAQs.
+const PROTECTED_BASE_Q =
+  /narx|boshla|стоит|начать|обратиться|коштує|почати|звернутися|замовити|\bcost|\bprice|\bstart|\bcontact|\bhire|التكلفة|السعر|أبدأ|لبدء|أتصل|أطلب/i;
+
+export function isProtectedBaseFaq(q: string): boolean {
+  return PROTECTED_BASE_Q.test(q);
+}
+
+export function composeCityFaq(
+  cityItems: FaqItem[],
+  baseItems: FaqItem[],
+  total: number = CITY_FAQ_TOTAL,
+): FaqItem[] {
+  const seen = new Set<string>();
+  const keep = (item: FaqItem | undefined): item is FaqItem => {
+    if (!item?.q?.trim() || !item.a?.trim() || seen.has(item.q)) return false;
+    seen.add(item.q);
+    return true;
+  };
+  const city = cityItems.filter(keep).slice(0, 2);
+  // Re-sync `seen` so city items beyond the 2-item cap don't block base items.
+  seen.clear();
+  city.forEach((i) => seen.add(i.q));
+  const base = baseItems.filter(keep);
+
+  let surplus = city.length + base.length - total;
+  const dropped = new Set<number>();
+  for (let i = base.length - 1; i >= 0 && surplus > 0; i--) {
+    if (isProtectedBaseFaq(base[i].q)) continue;
+    dropped.add(i);
+    surplus--;
+  }
+  return [...city, ...base.filter((_, i) => !dropped.has(i))];
+}

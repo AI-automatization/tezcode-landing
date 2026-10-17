@@ -1,8 +1,7 @@
 import type { ServicePageContent, ServiceLang } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
 import { CONTENT } from "../content";
-import { CHATBOT_TASHKENT_ANSWERS } from "@/content/serviceAnswers";
-import { cityOfficeFaq, cityTrust, ruLocative, ukPrep } from "@/data/cityLocal";
+import { cityOfficeFaq, cityTrust, composeCityFaq, ruLocative, ukPrep } from "@/data/cityLocal";
 
 const AI_CHATBOT_INTRO: Record<string, Record<ServiceLang, string>> = {
   toshkent: {
@@ -21,29 +20,9 @@ const AI_CHATBOT_INTRO: Record<string, Record<ServiceLang, string>> = {
   },
 };
 
+// City-specific questions prepended to the base FAQ. Only add intents the
+// base FAQ does not already cover (no second price / who-to-contact question).
 const CITY_FAQ: Record<string, Record<ServiceLang, { q: string; a: string }>> = {
-  toshkent: {
-    uz: {
-      q: "Toshkentdagi bizneslar uchun AI chatbot qancha turadi?",
-      a: "AI chatbot yaratish $339 dan boshlanadi. CRM yoki 1C integratsiyasi qo'shilsa narx oshadi — aniq summani bepul konsultatsiyadan keyin yozma taklifda beramiz. To'lov: 30% oldindan.",
-    },
-    ru: {
-      q: "Сколько стоит ИИ-чатбот для бизнеса в Ташкенте?",
-      a: "Разработка ИИ-чат-бота стоит от $339. С интеграцией CRM или 1С цена выше — точную сумму фиксируем в письменном предложении после бесплатной консультации. Оплата: 30% предоплата.",
-    },
-    en: {
-      q: "How much does an AI chatbot cost for businesses in Tashkent?",
-      a: "An AI chatbot starts from $339. CRM or 1C integration raises the price — we confirm the exact amount in a written proposal after the free consultation. Payment: 30% upfront.",
-    },
-    ar: {
-      q: "كم تكلفة شات بوت الذكاء الاصطناعي للشركات في طشقند؟",
-      a: "يبدأ شات بوت الذكاء الاصطناعي من 339 دولاراً. يرتفع السعر مع تكامل CRM أو 1C — نحدد المبلغ الدقيق في عرض مكتوب بعد الاستشارة المجانية. الدفع: 30% مقدماً.",
-    },
-    uk: {
-      q: "Скільки коштує AI-чатбот для бізнесу в Ташкенті?",
-      a: "AI-чатбот коштує від $339. З інтеграцією CRM або 1С ціна вища — точну суму фіксуємо в письмовій пропозиції після безкоштовної консультації. Оплата: 30% передоплата.",
-    },
-  },
   samarqand: {
     uz: {
       q: "Samarqanddagi turizm biznesi uchun AI chatbot ishlayaptimi?",
@@ -68,6 +47,11 @@ const CITY_FAQ: Record<string, Record<ServiceLang, { q: string; a: string }>> = 
   },
 };
 
+// Final FAQ = exactly 5: at most 2 city-specific questions (most useful first)
+// + base questions, trimmed from the end while keeping the base price and
+// start/contact questions. Empty and duplicate items are dropped.
+const dedupeFaq = composeCityFaq;
+
 export function buildAiChatbotCityContent(city: City): ServicePageContent {
   const result: ServicePageContent = {} as ServicePageContent;
   const langs: ServiceLang[] = ["uz", "ru", "en", "ar", "uk"];
@@ -75,7 +59,7 @@ export function buildAiChatbotCityContent(city: City): ServicePageContent {
   for (const lang of langs) {
     const base = CONTENT[lang] ?? CONTENT.uz;
     const intro = (AI_CHATBOT_INTRO[city.slug]?.[lang] ?? AI_CHATBOT_INTRO[city.slug]?.uz) ?? "";
-    const cityFaq = (CITY_FAQ[city.slug]?.[lang] ?? CITY_FAQ[city.slug]?.uz) ?? { q: "", a: "" };
+    const cityFaq = CITY_FAQ[city.slug]?.[lang] ?? CITY_FAQ[city.slug]?.uz;
     const cityName = city.name[lang] ?? city.name.uz;
     const SERVICE_DESCRIPTION: Record<ServiceLang, string> = {
       uz: `${cityName} bizneslari uchun AI chatbot va yordamchi: 24/7 javob, lid saralash, buyurtma qabul qilish. Telegram, Instagram, WhatsApp, veb-sayt. Tezcode.`,
@@ -87,7 +71,6 @@ export function buildAiChatbotCityContent(city: City): ServicePageContent {
 
     result[lang] = {
       ...base,
-      answers: city.slug === "toshkent" ? CHATBOT_TASHKENT_ANSWERS[lang] : base.answers,
       hero: {
         ...base.hero,
         ...(lang === "ru"
@@ -101,7 +84,7 @@ export function buildAiChatbotCityContent(city: City): ServicePageContent {
       },
       faq: {
         ...base.faq,
-        items: [{ q: cityFaq.q, a: cityFaq.a }, ...cityOfficeFaq(city, lang), ...base.faq.items],
+        items: dedupeFaq([...(cityFaq ? [cityFaq] : []), ...cityOfficeFaq(city, lang)], base.faq.items),
       },
       service: {
         ...base.service,

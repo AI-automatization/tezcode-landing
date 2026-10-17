@@ -97,10 +97,6 @@ export const CONTENT: ArticleContent = {
           q: "Bu pulli xizmatmi?",
           a: "WeWatch'ga kirib ko'rishingiz mumkin — wewatch.uz orqali xona ochib, do'stlaringizni taklif qilib sinab ko'ring.",
         },
-        {
-          q: "Telefon orqali ham ishlaydimi?",
-          a: "Ha, xizmat brauzerda ishlagani uchun telefon yoki kompyuterdan foydalanish mumkin.",
-        },
       ],
     },
     cta: {
@@ -199,10 +195,6 @@ export const CONTENT: ArticleContent = {
         {
           q: "Это платный сервис?",
           a: "Зайдите на WeWatch и попробуйте — создайте комнату на wewatch.uz и пригласите друзей.",
-        },
-        {
-          q: "Работает ли через телефон?",
-          a: "Да, сервис работает в браузере, поэтому можно пользоваться с телефона или компьютера.",
         },
       ],
     },

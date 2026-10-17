@@ -68,12 +68,10 @@ export const CONTENT: ComparisonContent = {
       subtitle: "CRM tanlashda ko'p so'raladigan savollar.",
       items: [
         { q: "amoCRM yoki Bitrix24 — qaysi biri yaxshi?", a: "Universal 'yaxshiroq' yo'q — biznesingizga bog'liq. amoCRM sof sotuvga fokuslangan, sodda va tez o'rganiladi — sotuv jamoalari uchun. Bitrix24 kengroq (CRM + loyiha + portal + telefoniya) va bepul tarifi bor — yirik yoki ko'p bo'limli jamoalar uchun. Agar asosiy maqsad sotuv bo'lsa — amoCRM; agar bir tizimda hammasi kerak bo'lsa — Bitrix24." },
-        { q: "O'zbekistonda qaysi CRM ko'proq ishlatiladi?", a: "Toshkentda ham amoCRM, ham Bitrix24 keng tarqalgan. Bitrix24 bepul tarifi tufayli kichik bizneslarda ko'p uchraydi, amoCRM esa sotuvga yo'naltirilgan jamoalarda mashhur. Ikkalasi ham o'zbek va rus tilida ishlaydi va mahalliy telefoniya bilan ulanadi." },
         { q: "amoCRM va Bitrix24 narxi qancha?", a: "amoCRM ~$15/foydalanuvchi/oy dan boshlanadi (bepul tarif yo'q, faqat sinov). Bitrix24'da 12 foydalanuvchigacha bepul tarif bor, keyin ~$19/foydalanuvchi/oy dan. Aniq narx foydalanuvchilar soni va tarifga bog'liq. Litsenziyani doim mijoz to'laydi — Tezcode faqat ulash va sozlash ishini bajaradi ($700 dan)." },
         { q: "Ikkalasi o'zbek va rus tilida ishlaydimi?", a: "Ha, amoCRM ham, Bitrix24 ham rus tilida to'liq, o'zbek tilida esa interfeys va ish jarayonlari darajasida ishlaydi. Mijozlar bilan yozishmalar (Telegram, Instagram) istalgan tilda bo'lishi mumkin. Tezcode ikkalasini ham o'zbek/rus jarayonlaringizga moslab sozlaydi." },
         { q: "Telefoniya qaysida bor?", a: "Ikkalasida ham bor. Bitrix24'da ichki telefoniya mavjud, amoCRM esa tashqi IP-telefoniya (SIP) bilan ulanadi. Tezcode har ikkalasida ham qo'ng'iroq yozish, karta avtomatik ochilishi va javobsiz qo'ng'iroqdan vazifa yaratishni sozlaydi." },
-        { q: "Menga qaysi biri kerakligini qanday bilaman?", a: "Bepul 30 daqiqalik konsultatsiyada biznesingizni ko'rib, aynan sizga qaysi CRM mosligini aytamiz — sotuvchi manfaati emas, sizning ehtiyojingizdan kelib chiqib. Tezcode ikkalasini ham ulaydi va sozlaydi, shuning uchun tavsiyamiz xolis." },
-        { q: "amoCRM yoki Bitrix24 ni kim ulab beradi (Toshkent)?", a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti — amoCRM va Bitrix24 (shuningdek HubSpot, 1C, Sales Doctor) ni Telegram, Instagram, WhatsApp, sayt va telefoniya bilan ulaydi, voronka sozlaydi va eski bazani ko'chiradi. Narx $700 dan." },
+        { q: "Menga qaysi biri kerakligini qanday bilaman?", a: "Bepul 30 daqiqalik konsultatsiyada biznesingizni ko'rib, aynan sizga qaysi CRM mosligini aytamiz — sotuvchi manfaati emas, sizning ehtiyojingizdan kelib chiqib. Tezcode (Toshkentdagi IT Park rezidenti) ikkalasini ham ulaydi va sozlaydi, shuning uchun tavsiyamiz xolis." },
       ],
     },
     cta: {
@@ -124,12 +122,10 @@ export const CONTENT: ComparisonContent = {
       subtitle: "Частые вопросы при выборе CRM.",
       items: [
         { q: "amoCRM или Bitrix24 — что лучше?", a: "Универсального «лучше» нет — зависит от вашего бизнеса. amoCRM заточен под продажи, прост и быстро осваивается — для отделов продаж. Bitrix24 шире (CRM + проекты + портал + телефония) и имеет бесплатный тариф — для крупных команд с отделами. Если главная цель продажи — amoCRM; если нужно всё в одной системе — Bitrix24." },
-        { q: "Какую CRM чаще используют в Узбекистане?", a: "В Ташкенте распространены обе — amoCRM и Bitrix24. Bitrix24 благодаря бесплатному тарифу часто встречается у малого бизнеса, amoCRM популярен в командах, ориентированных на продажи. Обе работают на узбекском и русском и подключаются к местной телефонии." },
         { q: "Сколько стоят amoCRM и Bitrix24?", a: "amoCRM — от ~$15/пользователь/мес (бесплатного тарифа нет, только пробный). У Bitrix24 есть бесплатный тариф до 12 пользователей, далее от ~$19/пользователь/мес. Точная цена зависит от числа пользователей и тарифа. Лицензию всегда оплачивает клиент — Tezcode делает только подключение и настройку (от $700, ≈ от 8.5 млн сум)." },
         { q: "Обе работают на узбекском и русском?", a: "Да, и amoCRM, и Bitrix24 полностью на русском, а на узбекском — на уровне интерфейса и рабочих процессов. Переписка с клиентами (Telegram, Instagram) может быть на любом языке. Tezcode настраивает обе под ваши узбекские/русские процессы." },
         { q: "В какой из них есть телефония?", a: "В обеих. У Bitrix24 есть встроенная телефония, amoCRM подключается к внешней IP-телефонии (SIP). Tezcode в обеих настраивает запись звонков, автооткрытие карточки и создание задачи из пропущенного звонка." },
-        { q: "Как понять, какая нужна именно мне?", a: "На бесплатной 30-минутной консультации мы смотрим ваш бизнес и говорим, какая CRM подходит именно вам — исходя из ваших нужд, а не интереса продавца. Tezcode подключает и настраивает обе, поэтому наша рекомендация честная." },
-        { q: "Кто подключит amoCRM или Bitrix24 в Ташкенте?", a: "Tezcode — ИИ-фабрика ПО (AI Software Factory) в Ташкенте и резидент IT Park — подключает amoCRM и Bitrix24 (а также HubSpot, 1C, Sales Doctor) к Telegram, Instagram, WhatsApp, сайту и телефонии, настраивает воронку, переносит старую базу и может добавить ИИ-слой (AI). Цена от $700 (≈ от 8.5 млн сум)." },
+        { q: "Как понять, какая нужна именно мне?", a: "На бесплатной 30-минутной консультации мы смотрим ваш бизнес и говорим, какая CRM подходит именно вам — исходя из ваших нужд, а не интереса продавца. Tezcode (резидент IT Park в Ташкенте) подключает и настраивает обе, поэтому наша рекомендация честная." },
       ],
     },
     cta: {
@@ -180,12 +176,10 @@ export const CONTENT: ComparisonContent = {
       subtitle: "Common questions when choosing a CRM.",
       items: [
         { q: "amoCRM or Bitrix24 — which is better?", a: "There's no universal 'better' — it depends on your business. amoCRM is sales-focused, simple and quick to learn — for sales teams. Bitrix24 is broader (CRM + projects + portal + telephony) and has a free tier — for larger, multi-department teams. If sales is the main goal — amoCRM; if you need everything in one system — Bitrix24." },
-        { q: "Which CRM is used more in Uzbekistan?", a: "Both amoCRM and Bitrix24 are widespread in Tashkent. Bitrix24, thanks to its free tier, is common among small businesses, while amoCRM is popular with sales-driven teams. Both work in Uzbek and Russian and connect to local telephony." },
         { q: "How much do amoCRM and Bitrix24 cost?", a: "amoCRM starts at ~$15/user/mo (no free tier, trial only). Bitrix24 has a free tier for up to 12 users, then from ~$19/user/mo. The exact price depends on user count and plan. The license is always paid by the client — Tezcode only does the connection and setup (from $700)." },
         { q: "Do both work in Uzbek and Russian?", a: "Yes, both amoCRM and Bitrix24 are fully in Russian, and in Uzbek at the interface and workflow level. Customer chats (Telegram, Instagram) can be in any language. Tezcode configures both to your Uzbek/Russian processes." },
         { q: "Which one has telephony?", a: "Both do. Bitrix24 has built-in telephony; amoCRM connects to external IP telephony (SIP). In both, Tezcode sets up call recording, automatic card opening and creating a task from a missed call." },
-        { q: "How do I know which one I need?", a: "In a free 30-minute consultation we look at your business and tell you which CRM fits you — based on your needs, not a vendor's interest. Tezcode connects and configures both, so our recommendation is neutral." },
-        { q: "Who sets up amoCRM or Bitrix24 in Tashkent?", a: "Tezcode — an AI Software Factory in Tashkent and IT Park resident — connects amoCRM and Bitrix24 (as well as HubSpot, 1C, Sales Doctor) to Telegram, Instagram, WhatsApp, website and telephony, sets up the pipeline and migrates the old base. Price from $700." },
+        { q: "How do I know which one I need?", a: "In a free 30-minute consultation we look at your business and tell you which CRM fits you — based on your needs, not a vendor's interest. Tezcode (an IT Park resident in Tashkent) connects and configures both, so our recommendation is neutral." },
       ],
     },
     cta: {
@@ -236,12 +230,10 @@ export const CONTENT: ComparisonContent = {
       subtitle: "أسئلة شائعة عند اختيار CRM.",
       items: [
         { q: "amoCRM أم Bitrix24 — أيّهما أفضل؟", a: "لا يوجد 'أفضل' مطلق — يعتمد على عملك. amoCRM مركّز على المبيعات، بسيط وسريع التعلّم — لفرق المبيعات. Bitrix24 أوسع (CRM + مشاريع + بوابة + هاتف) وله باقة مجانية — للفرق الكبيرة متعددة الأقسام. إن كان الهدف المبيعات — amoCRM؛ وإن أردت كل شيء في نظام واحد — Bitrix24." },
-        { q: "أيّ CRM أكثر استخدامًا في أوزبكستان؟", a: "كلاهما amoCRM وBitrix24 منتشران في طشقند. Bitrix24 بفضل باقته المجانية شائع لدى الأعمال الصغيرة، وamoCRM شائع لدى الفرق المركّزة على المبيعات. كلاهما يعمل بالأوزبكية والروسية ويُربط بالهاتف المحلي." },
         { q: "كم تكلفة amoCRM وBitrix24؟", a: "يبدأ amoCRM من ~15$/مستخدم/شهر (لا باقة مجانية، تجريبية فقط). لدى Bitrix24 باقة مجانية حتى 12 مستخدمًا، ثم من ~19$/مستخدم/شهر. يعتمد السعر الدقيق على عدد المستخدمين والباقة. يدفع العميل الترخيص دائمًا — Tezcode ينفّذ الربط والإعداد فقط (من 700$)." },
         { q: "هل يعمل كلاهما بالأوزبكية والروسية؟", a: "نعم، كلاهما amoCRM وBitrix24 بالروسية بالكامل، وبالأوزبكية على مستوى الواجهة وسير العمل. مراسلة العملاء (Telegram، Instagram) بأي لغة. Tezcode يعدّ كليهما وفق عملياتك الأوزبكية/الروسية." },
         { q: "أيّهما فيه هاتف؟", a: "كلاهما. Bitrix24 فيه هاتف مدمج، وamoCRM يُربط بهاتف IP خارجي (SIP). في كليهما يعدّ Tezcode تسجيل المكالمات وفتح البطاقة تلقائيًا وإنشاء مهمة من المكالمة الفائتة." },
-        { q: "كيف أعرف أيّهما يناسبني؟", a: "في استشارة مجانية 30 دقيقة ننظر في عملك ونخبرك أيّ CRM يناسبك — بناءً على احتياجك لا مصلحة بائع. Tezcode يربط ويعدّ كليهما، لذا توصيتنا محايدة." },
-        { q: "من يُعدّ amoCRM أو Bitrix24 في طشقند؟", a: "Tezcode — مصنع برمجيات ذكاء اصطناعي في طشقند ومقيم IT Park — يربط amoCRM وBitrix24 (وكذلك HubSpot و1C وSales Doctor) بـ Telegram وInstagram وWhatsApp والموقع والهاتف، ويعدّ المسار وينقل القاعدة القديمة. السعر من 700$." },
+        { q: "كيف أعرف أيّهما يناسبني؟", a: "في استشارة مجانية 30 دقيقة ننظر في عملك ونخبرك أيّ CRM يناسبك — بناءً على احتياجك لا مصلحة بائع. Tezcode (مقيم IT Park في طشقند) يربط ويعدّ كليهما، لذا توصيتنا محايدة." },
       ],
     },
     cta: {
@@ -292,12 +284,10 @@ export const CONTENT: ComparisonContent = {
       subtitle: "Часті запитання при виборі CRM.",
       items: [
         { q: "amoCRM чи Bitrix24 — що краще?", a: "Універсального «краще» немає — залежить від вашого бізнесу. amoCRM заточений під продажі, простий і швидко освоюється — для відділів продажів. Bitrix24 ширший (CRM + проєкти + портал + телефонія) і має безкоштовний тариф — для великих команд із відділами. Якщо головна мета продажі — amoCRM; якщо потрібно все в одній системі — Bitrix24." },
-        { q: "Яку CRM частіше використовують в Узбекистані?", a: "У Ташкенті поширені обидві — amoCRM та Bitrix24. Bitrix24 завдяки безкоштовному тарифу часто зустрічається в малому бізнесі, amoCRM популярний у командах, орієнтованих на продажі. Обидві працюють узбецькою та російською і підключаються до місцевої телефонії." },
         { q: "Скільки коштують amoCRM та Bitrix24?", a: "amoCRM — від ~$15/користувач/міс (безкоштовного тарифу немає, лише пробний). У Bitrix24 є безкоштовний тариф до 12 користувачів, далі від ~$19/користувач/міс. Точна ціна залежить від кількості користувачів і тарифу. Ліцензію завжди оплачує клієнт — Tezcode робить лише підключення та налаштування (від $700)." },
         { q: "Обидві працюють узбецькою та російською?", a: "Так, і amoCRM, і Bitrix24 повністю російською, а узбецькою — на рівні інтерфейсу та робочих процесів. Листування з клієнтами (Telegram, Instagram) може бути будь-якою мовою. Tezcode налаштовує обидві під ваші узбецькі/російські процеси." },
         { q: "У якій із них є телефонія?", a: "В обох. У Bitrix24 є вбудована телефонія, amoCRM підключається до зовнішньої IP-телефонії (SIP). В обох Tezcode налаштовує запис дзвінків, автовідкриття картки та створення задачі з пропущеного дзвінка." },
-        { q: "Як зрозуміти, яка потрібна саме мені?", a: "На безкоштовній 30-хвилинній консультації ми дивимося ваш бізнес і кажемо, яка CRM підходить саме вам — виходячи з ваших потреб, а не інтересу продавця. Tezcode підключає та налаштовує обидві, тож наша рекомендація чесна." },
-        { q: "Хто підключить amoCRM або Bitrix24 в Ташкенті?", a: "Tezcode — AI Software Factory у Ташкенті та резидент IT Park — підключає amoCRM та Bitrix24 (а також HubSpot, 1C, Sales Doctor) до Telegram, Instagram, WhatsApp, сайту та телефонії, налаштовує воронку й переносить стару базу. Ціна від $700." },
+        { q: "Як зрозуміти, яка потрібна саме мені?", a: "На безкоштовній 30-хвилинній консультації ми дивимося ваш бізнес і кажемо, яка CRM підходить саме вам — виходячи з ваших потреб, а не інтересу продавця. Tezcode (резидент IT Park у Ташкенті) підключає та налаштовує обидві, тож наша рекомендація чесна." },
       ],
     },
     cta: {

@@ -350,12 +350,8 @@ const COPY: Record<Lang, Copy> = {
           a: "1–2 weeks. Week 1: intake call + matching + interviews. Week 2: contract + onboarding to your tools (Slack, Linear, GitHub). Most clients have their dev in standup on day 8.",
         },
         {
-          q: "What about time zones?",
-          a: "Tashkent is GMT+5. We overlap 5 hours with US East coast (15:00–20:00 EST = 03:00–08:00 next day in UZ — we shift schedules) and 4 hours with US West coast. Full overlap with Europe and the UK.",
-        },
-        {
           q: "How good is the English?",
-          a: "B2–C1 across all 8 engineers. Daily standups, code reviews, and async docs all happen in English. CEO Bekzod is C1 fluent for executive-level calls.",
+          a: "B2–C1 across all 8 engineers. Daily standups, code reviews, and async docs all happen in English. CEO Bekzod is C1 fluent for executive-level calls. Tashkent is GMT+5: 4–5 hours of overlap with the US and full overlap with Europe and the UK.",
         },
         {
           q: "How do contracts and invoicing work?",
@@ -592,12 +588,8 @@ const COPY: Record<Lang, Copy> = {
           a: "1–2 hafta. 1-hafta: tanishuv + moslashtirish + intervyu. 2-hafta: shartnoma + sizning vositalaringizga (Slack, Linear, GitHub) onboarding. Aksariyat mijoz 8-kuni standup'da dasturchini ko'radi.",
         },
         {
-          q: "Timezone qanday?",
-          a: "Toshkent GMT+5. AQSh Sharqiy qirg'oq bilan 5 soat mos (15:00–20:00 EST = ertasi 03:00–08:00 UZ — biz jadval o'zgartiramiz), G'arbiy qirg'oq bilan 4 soat. Yevropa va Buyuk Britaniya bilan to'liq mos.",
-        },
-        {
           q: "Ingliz tili darajasi qanday?",
-          a: "Hamma 8 dasturchida B2–C1. Kunlik standup, code review, async hujjat hammasi ingliz tilida. CEO Bekzod C1 — yuqori darajadagi qo'ng'iroq'lar uchun.",
+          a: "Hamma 8 dasturchida B2–C1. Kunlik standup, code review, async hujjat hammasi ingliz tilida. CEO Bekzod C1 — yuqori darajadagi qo'ng'iroq'lar uchun. Toshkent GMT+5: AQSh bilan 4–5 soat, Yevropa va Buyuk Britaniya bilan to'liq mos.",
         },
         {
           q: "Shartnoma va invoice qanday ishlaydi?",
@@ -772,8 +764,7 @@ const COPY: Record<Lang, Copy> = {
       subtitle: "Если чего-то не хватает — пишите Бекзоду в Telegram, отвечает в течение часа.",
       items: [
         { q: "Когда можно начать?", a: "1–2 недели. Неделя 1: вводный звонок + подбор + интервью. Неделя 2: договор + onboarding (Slack, Linear, GitHub). Большинство клиентов видят разработчика на standup уже на 8-й день." },
-        { q: "Что с timezone?", a: "Ташкент GMT+5. С восточным побережьем США пересекаемся 5 часов (15:00–20:00 EST), с западным — 4 часа. Полное пересечение с Европой и Британией." },
-        { q: "Какой уровень английского?", a: "B2–C1 у всех 8 инженеров. Ежедневные standup, code review, async-документация — на английском. CEO Бекзод — C1." },
+        { q: "Какой уровень английского?", a: "B2–C1 у всех 8 инженеров. Ежедневные standup, code review, async-документация — на английском. CEO Бекзод — C1. Ташкент GMT+5: пересечение с США 4–5 часов, с Европой и Британией — полное." },
         { q: "Как с договорами и инвойсами?", a: "Tezcode — резидент IT Park. Стандартный USD-инвойс от зарегистрированной компании. Wire transfer или Stripe. Стандартный MSA + SOW или подпишем ваш." },
         { q: "Если разработчик не подошёл?", a: "2 недели trial с полным возвратом. После — замена за 5 рабочих дней бесплатно. У нас bench (резерв), а не маркетплейс." },
         { q: "Кому принадлежит код / IP?", a: "Вам, полностью. NDA подписывается до начала работы. Все IP передаются клиенту после оплаты. Личный IP transfer + NDA на уровне компании." },
@@ -901,8 +892,7 @@ const COPY: Record<Lang, Copy> = {
       subtitle: "لو نقص شيء — راسل بكزود في Telegram، يرد خلال ساعة.",
       items: [
         { q: "متى نبدأ؟", a: "1–2 أسبوع. الأسبوع 1: مقابلة وتطابق. الأسبوع 2: عقد و onboarding." },
-        { q: "ماذا عن المنطقة الزمنية؟", a: "طشقند GMT+5. تقاطع 5 ساعات مع EST، 4 مع PST، كامل مع أوروبا." },
-        { q: "مستوى الإنجليزية؟", a: "B2–C1 في الفريق كله. اجتماعات يومية بالإنجليزية." },
+        { q: "مستوى الإنجليزية؟", a: "B2–C1 في الفريق كله. اجتماعات يومية بالإنجليزية. طشقند GMT+5: تقاطع 4–5 ساعات مع الولايات المتحدة، كامل مع أوروبا." },
         { q: "كيف العقود والفواتير؟", a: "مقيم IT Park. فاتورة USD قياسية. MSA + SOW قياسي." },
         { q: "لو لم يناسب المطور؟", a: "تجربة أسبوعين باسترداد كامل. استبدال خلال 5 أيام عمل." },
         { q: "ملكية الكود / IP؟", a: "لكم بالكامل. NDA قبل أي كود. IP ينتقل عند الدفع." },
@@ -1028,8 +1018,7 @@ const COPY: Record<Lang, Copy> = {
       subtitle: "Якщо чогось бракує — пишіть Бекзоду в Telegram, відповідає протягом години.",
       items: [
         { q: "Коли можемо почати?", a: "1–2 тижні. Тиждень 1: intake + матчинг + інтерв'ю. Тиждень 2: договір + onboarding." },
-        { q: "Що з timezone?", a: "Ташкент GMT+5. Зі східним узбережжям США перетин 5 годин, із західним — 4. Повний перетин з Європою." },
-        { q: "Який рівень англійської?", a: "B2–C1 у всіх 8 інженерів. Щоденні standup, code review, документація — англійською." },
+        { q: "Який рівень англійської?", a: "B2–C1 у всіх 8 інженерів. Щоденні standup, code review, документація — англійською. Ташкент GMT+5: перетин зі США 4–5 годин, з Європою — повний." },
         { q: "Як з контрактами та інвойсами?", a: "Tezcode — резидент IT Park. Стандартний USD-інвойс. Wire transfer або Stripe." },
         { q: "Якщо розробник не підійшов?", a: "2 тижні trial з повним поверненням. Заміна за 5 робочих днів безкоштовно." },
         { q: "Кому належить код / IP?", a: "Вам, повністю. NDA до початку роботи. Усі IP передаються після оплати." },
@@ -1083,7 +1072,6 @@ export function HireDevelopersClient() {
       <VettingSection t={t} />
       <TeamSection t={t} />
       <FAQSection t={t} />
-      <FinalCTASection t={t} />
       <Footer />
 
       </main>
@@ -1720,68 +1708,3 @@ function FAQSection({ t }: { t: Copy }) {
   );
 }
 
-// ─────────────────────────────────────────────────────────
-// 9. Final CTA
-// ─────────────────────────────────────────────────────────
-function FinalCTASection({ t }: { t: Copy }) {
-  return (
-    <section id="contact" className="tc-navy-section relative py-20 sm:py-28 px-6 overflow-hidden">
-      <div
-        aria-hidden
-        className="absolute inset-0 pointer-events-none opacity-[0.35]"
-        style={{
-          background:
-            "radial-gradient(ellipse 70% 55% at 50% 0%, rgba(0,64,255,0.45), transparent 70%)",
-        }}
-      />
-      <div className="relative max-w-4xl mx-auto text-center">
-        <Reveal>
-          <div className="tc-chip mb-6">
-            {t.finalCta.sectionTag}
-          </div>
-          <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-700 mb-5 tracking-tight text-[var(--tc-text-primary)]"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            {t.finalCta.title}
-          </h2>
-          <p className="text-[var(--tc-text-secondary)] text-base md:text-lg max-w-2xl mx-auto mb-10">
-            {t.finalCta.subtitle}
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-            <Magnetic strength={12}>
-              <m.a
-                href={TELEGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.97 }}
-                className="tc-btn-primary group w-full sm:w-auto justify-center gap-2"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-                </svg>
-                {t.finalCta.ctaPrimary}
-              </m.a>
-            </Magnetic>
-            <Magnetic strength={10}>
-              <m.a
-                href={TELEGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="tc-btn-secondary w-full sm:w-auto justify-center gap-2"
-              >
-                {t.finalCta.ctaSecondary}
-              </m.a>
-            </Magnetic>
-          </div>
-
-          <p className="text-sm text-[var(--tc-text-muted)] font-500">{t.finalCta.trust}</p>
-        </Reveal>
-      </div>
-    </section>
-  );
-}

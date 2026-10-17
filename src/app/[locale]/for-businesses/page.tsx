@@ -164,11 +164,11 @@ const COPY: Record<Lang, Copy> = {
       badge: "Tezcode farqi",
       title: "Nima uchun",
       titleAccent: "Tezcode Custom",
-      subtitle: "14 nafar in-house (ichki) dasturchi, AI (sun'iy intellekt) tool'lari, lokal CEO, yagona javobgarlik.",
+      subtitle: "19 kishilik in-house (ichki) jamoa, AI (sun'iy intellekt) tool'lari, lokal CEO, yagona javobgarlik.",
       items: [
         {
           icon: "users",
-          title: "14 nafar in-house dasturchi",
+          title: "19 kishilik in-house jamoa",
           desc: "Toshkentdagi ofisimizda. Freelancer emas, jamoa. Birovi kasal bo'lsa boshqa qo'llab turadi. Backend, frontend, mobil, AI, DevOps — barchasi bizda.",
         },
         {
@@ -213,7 +213,7 @@ const COPY: Record<Lang, Copy> = {
           name: "AI Office (OpenClaw)",
           tagline: "AI 12-bo'lim virtual ofis — har biznes uchun",
           summary:
-            "12 ta AI bo'lim (sales, HR, marketing, ...). Bekzod o'zi foydalanadi — 14 nafar dasturchi 50 ta loyiha bilan boshqaradi.",
+            "12 ta AI bo'lim (sales, HR, marketing, ...). Bekzod o'zi foydalanadi — 19 kishilik jamoa 50 ta loyiha bilan boshqaradi.",
           duration: "12 hafta MVP",
           saved: "$120K (in-house team)",
           tags: ["FastAPI", "Claude API", "i18n 3 til", "Multi-agent"],
@@ -321,7 +321,7 @@ const COPY: Record<Lang, Copy> = {
       title: "5+ yil tajriba,",
       titleAccent: "150+ loyiha",
       stats: [
-        { value: "14", label: "In-house dasturchi" },
+        { value: "19", label: "kishilik in-house jamoa" },
         { value: "150+", label: "Ishlangan loyiha" },
         { value: "5+", label: "Yillik tajriba" },
         { value: "8", label: "O'z mahsulotimiz" },
@@ -332,12 +332,8 @@ const COPY: Record<Lang, Copy> = {
       badge: "Tez-tez beriladigan savollar",
       title: "Savollar va",
       titleAccent: "javoblar",
-      subtitle: "Sizdan ham eshitganmiz. Mana eng muhim 6 tasi.",
+      subtitle: "Sizdan ham eshitganmiz. Mana eng muhim 5 tasi.",
       items: [
-        {
-          q: "Sizni boshqalardan nima ajratib turadi?",
-          a: "Uchta narsa: (1) 14 nafar in-house dasturchi — freelancer emas, jamoa, (2) AI bilan 3x tezroq — Claude/Cursor kundalik ishchi vositamiz, (3) CEO Bekzod Telegram'da 24/7 — buyurokratiya yo'q.",
-        },
         {
           q: "Loyiha qachon tugaydi?",
           a: "MVP — 2-4 hafta, to'liq mahsulot — 2-3 oy, korporativ ERP — 4-6 oy. Har hafta demo va aniq progress (taraqqiyot) hisobot beramiz. Kechiksak — sabab tushuntiramiz va sanani yangilaymiz.",
@@ -356,7 +352,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           q: "Sifat kafolati qanday?",
-          a: "To'lov bosqichma-bosqich: 30% oldindan, keyingi to'lovlar faqat siz bosqich natijasini qabul qilganingizdan keyin. Har bosqichda jonli natijani ko'rib borasiz.",
+          a: "To'lov bosqichma-bosqich: 30% oldindan, keyingi to'lovlar faqat siz bosqich natijasini qabul qilganingizdan keyin. Har bosqichda jonli natijani ko'rib borasiz. CEO Bekzod Telegram'da 24/7 aloqada — byurokratiya yo'q.",
         },
       ],
     },
@@ -418,11 +414,11 @@ const COPY: Record<Lang, Copy> = {
       badge: "Отличие Tezcode",
       title: "Почему",
       titleAccent: "Tezcode Custom",
-      subtitle: "14 in-house разработчиков, ИИ-инструменты, локальный CEO, единая ответственность.",
+      subtitle: "in-house команда из 19 человек, ИИ-инструменты, локальный CEO, единая ответственность.",
       items: [
         {
           icon: "users",
-          title: "14 in-house разработчиков",
+          title: "in-house команда из 19 человек",
           desc: "В офисе в Ташкенте. Не фрилансеры — команда. Заболеет один — другие подстрахуют. Backend, frontend, mobile, ИИ, DevOps — всё у нас.",
         },
         {
@@ -467,7 +463,7 @@ const COPY: Record<Lang, Copy> = {
           name: "AI Office (OpenClaw)",
           tagline: "Виртуальный ИИ-офис из 12 отделов",
           summary:
-            "12 ИИ-отделов (sales, HR, marketing...). Бекзод пользуется им сам — управляет 14 разработчиками и 50+ проектами.",
+            "12 ИИ-отделов (sales, HR, marketing...). Бекзод пользуется им сам — управляет командой из 19 человек и 50+ проектами.",
           duration: "12 недель MVP",
           saved: "$120K (in-house team)",
           tags: ["FastAPI", "Claude API", "i18n 3 яз.", "Multi-agent"],
@@ -575,7 +571,7 @@ const COPY: Record<Lang, Copy> = {
       title: "5+ лет опыта,",
       titleAccent: "150+ проектов",
       stats: [
-        { value: "14", label: "In-house разработчиков" },
+        { value: "19", label: "человек в in-house команде" },
         { value: "150+", label: "Проектов выполнено" },
         { value: "5+", label: "Лет опыта" },
         { value: "8", label: "Своих продуктов" },
@@ -586,12 +582,8 @@ const COPY: Record<Lang, Copy> = {
       badge: "Частые вопросы",
       title: "Вопросы и",
       titleAccent: "ответы",
-      subtitle: "Самые важные 6.",
+      subtitle: "Самые важные 5.",
       items: [
-        {
-          q: "Чем отличаетесь от других?",
-          a: "Три вещи: (1) 14 in-house разработчиков, а не фрилансеры, (2) ИИ в 3 раза быстрее — Claude/Cursor каждый день, (3) CEO Бекзод в Telegram 24/7, без бюрократии.",
-        },
         {
           q: "Когда будет готово?",
           a: "MVP — 2-4 недели, полный продукт — 2-3 мес., корпоративный — 4-6 мес. Каждую неделю — демо и отчёт о ходе работ.",
@@ -610,7 +602,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           q: "Какие гарантии качества?",
-          a: "Оплата поэтапная: 30% предоплата, следующие платежи — только после того, как вы приняли результат этапа. На каждом этапе вы видите живой результат.",
+          a: "Оплата поэтапная: 30% предоплата, следующие платежи — только после того, как вы приняли результат этапа. На каждом этапе вы видите живой результат. CEO Бекзод на связи в Telegram 24/7 — без бюрократии.",
         },
       ],
     },
@@ -671,11 +663,11 @@ const COPY: Record<Lang, Copy> = {
       badge: "The Tezcode edge",
       title: "Why",
       titleAccent: "Tezcode Custom",
-      subtitle: "14 in-house developers, AI tooling, local CEO, single accountability.",
+      subtitle: "19-person in-house team, AI tooling, local CEO, single accountability.",
       items: [
         {
           icon: "users",
-          title: "14 in-house developers",
+          title: "19-person in-house team",
           desc: "In our Tashkent office. Not freelancers — a team. If one is sick, others cover. Backend, frontend, mobile, AI, DevOps — all in-house.",
         },
         {
@@ -827,7 +819,7 @@ const COPY: Record<Lang, Copy> = {
       title: "5+ years experience,",
       titleAccent: "150+ projects",
       stats: [
-        { value: "14", label: "In-house developers" },
+        { value: "19", label: "people in-house" },
         { value: "150+", label: "Projects delivered" },
         { value: "5+", label: "Years of experience" },
         { value: "8", label: "Own products" },
@@ -838,12 +830,8 @@ const COPY: Record<Lang, Copy> = {
       badge: "Frequently asked",
       title: "Questions &",
       titleAccent: "answers",
-      subtitle: "The 6 we hear most.",
+      subtitle: "The 5 we hear most.",
       items: [
-        {
-          q: "How are you different?",
-          a: "Three things: (1) 14 in-house developers, not freelancers, (2) 3x faster with AI — Claude/Cursor daily, (3) CEO Bekzod on Telegram 24/7, no bureaucracy.",
-        },
         {
           q: "When will it be done?",
           a: "MVP — 2-4 weeks, full product — 2-3 months, enterprise — 4-6 months. Weekly demos and progress reports.",
@@ -862,7 +850,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           q: "What guarantees do I get?",
-          a: "Payment is staged: 30% upfront, and each next payment comes only after you've accepted that stage's result. You see live progress at every step.",
+          a: "Payment is staged: 30% upfront, and each next payment comes only after you've accepted that stage's result. You see live progress at every step. CEO Bekzod is on Telegram 24/7 — no bureaucracy.",
         },
       ],
     },
@@ -923,11 +911,11 @@ const COPY: Record<Lang, Copy> = {
       badge: "ميزة Tezcode",
       title: "لماذا",
       titleAccent: "Tezcode Custom",
-      subtitle: "14 مطور داخلي، أدوات AI، مدير محلي، مسؤولية واحدة.",
+      subtitle: "فريق داخلي من 19 شخصًا، أدوات AI، مدير محلي، مسؤولية واحدة.",
       items: [
         {
           icon: "users",
-          title: "14 مطور داخلي",
+          title: "فريق داخلي من 19 شخصًا",
           desc: "في مكتبنا بطشقند. ليس مستقلين — فريق. إذا مرض أحدهم، يعوض الآخرون.",
         },
         {
@@ -970,7 +958,7 @@ const COPY: Record<Lang, Copy> = {
           slug: "ai-office",
           name: "AI Office (OpenClaw)",
           tagline: "مكتب AI افتراضي بـ 12 قسماً",
-          summary: "12 قسم AI. بكزود يستخدمه ليدير 14 مطور و 50+ مشروع.",
+          summary: "12 قسم AI. بكزود يستخدمه ليدير فريقًا من 19 شخصًا و 50+ مشروع.",
           duration: "12 أسبوع MVP",
           saved: "$120K",
           tags: ["FastAPI", "Claude API", "i18n", "Multi-agent"],
@@ -1077,7 +1065,7 @@ const COPY: Record<Lang, Copy> = {
       title: "5+ سنوات خبرة،",
       titleAccent: "150+ مشروع",
       stats: [
-        { value: "14", label: "مطور داخلي" },
+        { value: "19", label: "شخصًا في الفريق الداخلي" },
         { value: "150+", label: "مشروع مسلم" },
         { value: "5+", label: "سنوات خبرة" },
         { value: "8", label: "منتج خاص" },
@@ -1088,12 +1076,8 @@ const COPY: Record<Lang, Copy> = {
       badge: "أسئلة شائعة",
       title: "أسئلة و",
       titleAccent: "إجابات",
-      subtitle: "أكثر 6 أسئلة شيوعاً.",
+      subtitle: "أكثر 5 أسئلة شيوعاً.",
       items: [
-        {
-          q: "بماذا تختلفون؟",
-          a: "ثلاثة أشياء: 14 مطور داخلي، أسرع 3 أضعاف مع AI، CEO على Telegram 24/7 بلا بيروقراطية.",
-        },
         {
           q: "متى سيكون جاهزاً؟",
           a: "MVP — 2-4 أسابيع، منتج كامل — 2-3 أشهر، enterprise — 4-6 أشهر. عروض وتقارير أسبوعية.",
@@ -1112,7 +1096,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           q: "ما الضمانات المتوفرة؟",
-          a: "الدفع على مراحل: 30% مقدمًا، والدفعات التالية فقط بعد قبولك نتيجة كل مرحلة. ترى تقدمًا حيًا في كل خطوة.",
+          a: "الدفع على مراحل: 30% مقدمًا، والدفعات التالية فقط بعد قبولك نتيجة كل مرحلة. ترى تقدمًا حيًا في كل خطوة. الـ CEO على Telegram 24/7 بلا بيروقراطية.",
         },
       ],
     },
@@ -1173,11 +1157,11 @@ const COPY: Record<Lang, Copy> = {
       badge: "Відмінність Tezcode",
       title: "Чому",
       titleAccent: "Tezcode Custom",
-      subtitle: "14 in-house розробників, AI інструменти, локальний CEO, єдина відповідальність.",
+      subtitle: "in-house команда з 19 осіб, AI інструменти, локальний CEO, єдина відповідальність.",
       items: [
         {
           icon: "users",
-          title: "14 in-house розробників",
+          title: "in-house команда з 19 осіб",
           desc: "В офісі у Ташкенті. Не фрілансери — команда. Backend, frontend, mobile, AI, DevOps — все у нас.",
         },
         {
@@ -1220,7 +1204,7 @@ const COPY: Record<Lang, Copy> = {
           slug: "ai-office",
           name: "AI Office (OpenClaw)",
           tagline: "AI віртуальний офіс із 12 відділами",
-          summary: "12 AI-відділів. Бекзод використовує сам — керує 14 розробниками та 50+ проектами.",
+          summary: "12 AI-відділів. Бекзод використовує сам — керує командою з 19 осіб та 50+ проектами.",
           duration: "12 тижнів MVP",
           saved: "$120K",
           tags: ["FastAPI", "Claude API", "i18n", "Multi-agent"],
@@ -1327,7 +1311,7 @@ const COPY: Record<Lang, Copy> = {
       title: "5+ років досвіду,",
       titleAccent: "150+ проектів",
       stats: [
-        { value: "14", label: "In-house розробників" },
+        { value: "19", label: "осіб в in-house команді" },
         { value: "150+", label: "Зроблено проектів" },
         { value: "5+", label: "Років досвіду" },
         { value: "8", label: "Власних продуктів" },
@@ -1338,12 +1322,8 @@ const COPY: Record<Lang, Copy> = {
       badge: "Часті запитання",
       title: "Питання та",
       titleAccent: "відповіді",
-      subtitle: "Найважливіші 6.",
+      subtitle: "Найважливіші 5.",
       items: [
-        {
-          q: "Чим відрізняєтесь?",
-          a: "Три речі: 14 in-house розробників, втричі швидше з AI, CEO у Telegram 24/7.",
-        },
         {
           q: "Коли буде готово?",
           a: "MVP — 2-4 тижні, повний продукт — 2-3 міс., корпоративний — 4-6 міс. Щотижневі демо.",
@@ -1362,7 +1342,7 @@ const COPY: Record<Lang, Copy> = {
         },
         {
           q: "Які гарантії якості?",
-          a: "Оплата поетапна: 30% передоплата, наступні платежі — лише після того, як ви прийняли результат етапу. На кожному етапі ви бачите живий результат.",
+          a: "Оплата поетапна: 30% передоплата, наступні платежі — лише після того, як ви прийняли результат етапу. На кожному етапі ви бачите живий результат. CEO на зв'язку в Telegram 24/7.",
         },
       ],
     },
@@ -1467,7 +1447,7 @@ function HeroSection({ copy }: { copy: Copy }) {
         >
           <Magnetic strength={12}>
             <m.a
-              href="#consult"
+              href="#contact-hub"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="tc-btn-primary group relative w-full sm:w-auto text-sm"
@@ -1882,7 +1862,7 @@ function PricingSection({ copy }: { copy: Copy }) {
 
                     <Magnetic strength={10}>
                       <a
-                        href="#consult"
+                        href="#contact-hub"
                         className={[
                           "w-full text-sm",
                           featured ? "tc-btn-primary" : "tc-btn-secondary",
@@ -2075,79 +2055,6 @@ function FaqSection({ copy }: { copy: Copy }) {
 }
 
 // ─────────────────────────────────────────────────────────────────────
-// Section: Final CTA
-// ─────────────────────────────────────────────────────────────────────
-function FinalCtaSection({ copy }: { copy: Copy }) {
-  return (
-    <section
-      id="consult"
-      className="tc-navy-section relative py-20 sm:py-28 px-6 overflow-hidden"
-    >
-      <div
-        aria-hidden
-        className="absolute inset-0 opacity-[0.18] pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,64,255,0.5), transparent 70%)",
-          filter: "blur(60px)",
-        }}
-      />
-
-      <div className="max-w-4xl mx-auto relative z-10 text-center">
-        <Reveal>
-          <div className="mb-6">
-            <span className="tc-chip">{copy.finalCta.badge}</span>
-          </div>
-          <h2
-            className="text-4xl sm:text-5xl lg:text-6xl font-800 text-[var(--tc-text-primary)] mb-6 tracking-tight leading-[1.05]"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            <span className="block">{copy.finalCta.title}</span>
-            <span className="text-[var(--tc-blue-text)] block">{copy.finalCta.titleAccent}</span>
-          </h2>
-          <p className="text-lg md:text-xl text-[var(--tc-text-secondary)] mb-12 max-w-2xl mx-auto leading-relaxed">
-            {copy.finalCta.subtitle}
-          </p>
-        </Reveal>
-
-        <Reveal delay={0.1}>
-          <Magnetic strength={12}>
-            <m.a
-              href="https://t.me/tezcode_managament"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.97 }}
-              className="tc-btn-primary group text-base gap-3"
-            >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-              </svg>
-              {copy.finalCta.button}
-              <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </m.a>
-          </Magnetic>
-        </Reveal>
-
-        <Reveal delay={0.2}>
-          <p className="mt-6 text-sm text-[var(--tc-text-muted)]">
-            {copy.finalCta.note}
-          </p>
-          <p
-            className="mt-10 text-xl md:text-2xl text-[var(--tc-text-primary)] font-700"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            {copy.finalCta.pitch}
-          </p>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
-
-// ─────────────────────────────────────────────────────────────────────
 // Page entry
 // ─────────────────────────────────────────────────────────────────────
 export default function ForBusinessesPage() {
@@ -2168,7 +2075,6 @@ export default function ForBusinessesPage() {
       <PricingSection copy={copy} />
       <TrustSection copy={copy} />
       <FaqSection copy={copy} />
-      <FinalCtaSection copy={copy} />
       <Footer />
 
       </main>

@@ -115,7 +115,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Tezcode sun'iy intellekt xizmatlari",
         paragraphs: [
-          "Tezcode — 2024-yilda Toshkentda tashkil topgan, 16 kishilik AI Software Factory jamoasi. Yuqorida sanab o'tilgan sun'iy intellekt xizmatlarining barchasini qilamiz: AI chatbot va AI agentlar, jarayon avtomatizatsiyasi, AI video analitika, CRM/1C integratsiya va buyurtma AI ilovalar.",
+          "Tezcode — 2024-yilda Toshkentda tashkil topgan, 19 kishilik AI Software Factory jamoasi. Yuqorida sanab o'tilgan sun'iy intellekt xizmatlarining barchasini qilamiz: AI chatbot va AI agentlar, jarayon avtomatizatsiyasi, AI video analitika, CRM/1C integratsiya va buyurtma AI ilovalar.",
           "Yechimlarni Claude (Anthropic) va GPT (OpenAI) modellari asosida quramiz, o'zbek va rus tilida (bitta suhbatda aralash bo'lsa ham) ishlashga sozlaymiz va mavjud tizimlaringizga — Telegram, Instagram, sayt, CRM, 1C — ulaymiz. Xizmatlar ro'yxati: tezcode.dev/ai-avtomatizatsiya, tezcode.dev/ai-chatbot va tezcode.dev/ai-agent sahifalarida.",
           "Boshlash uchun biror narsa sotib olish shart emas: avval bepul konsultatsiyada biznesingizga sun'iy intellekt qaysi ko'rinishda foyda berishini birga baholaymiz va yozma taklif tayyorlaymiz.",
         ],
@@ -135,10 +135,6 @@ export const CONTENT: ArticleContent = {
         {
           q: "AI o'zbek tilida ishlaydimi?",
           a: "Ha. Zamonaviy modellar (Claude, GPT) o'zbek tilida — lotin va kirill yozuvida, hatto bitta suhbatda o'zbek-rus aralash bo'lsa ham — ishlaydi. Sifat sozlashga bog'liq: tayyor xorijiy platformalar o'zbekchada ko'pincha qiynaladi, shuning uchun provayderdan o'zbekcha demo so'rang.",
-        },
-        {
-          q: "Kichik biznesga sun'iy intellekt kerakmi?",
-          a: "Agar kuniga o'nlab bir xil savolga javob bersangiz, kechqurun mijozlar javobsiz qolsa yoki ma'lumotni qo'lda ko'chirsangiz — ha, foyda beradi. Kichik biznes uchun kirish narxi ham past: Telegram bot $279 dan, AI chatbot $339 dan. Katta byudjet emas, to'g'ri tanlangan bitta yo'nalish muhim.",
         },
         {
           q: "Sun'iy intellekt xodimlarni almashtiradimi?",
@@ -261,7 +257,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Услуги искусственного интеллекта от Tezcode",
         paragraphs: [
-          "Tezcode — команда AI Software Factory из 16 человек, основанная в Ташкенте в 2024 году. Мы делаем все перечисленные выше услуги искусственного интеллекта: ИИ-чат-боты и ИИ-агенты, автоматизацию процессов, ИИ-видеоаналитику, интеграцию CRM/1С и заказные ИИ-приложения.",
+          "Tezcode — команда AI Software Factory из 19 человек, основанная в Ташкенте в 2024 году. Мы делаем все перечисленные выше услуги искусственного интеллекта: ИИ-чат-боты и ИИ-агенты, автоматизацию процессов, ИИ-видеоаналитику, интеграцию CRM/1С и заказные ИИ-приложения.",
           "Решения строим на моделях Claude (Anthropic) и GPT (OpenAI), настраиваем работу на узбекском и русском (даже вперемешку в одном разговоре) и подключаем к вашим существующим системам — Telegram, Instagram, сайту, CRM, 1С. Список услуг — на страницах tezcode.dev/ai-avtomatizatsiya, tezcode.dev/ai-chatbot и tezcode.dev/ai-agent.",
           "Чтобы начать, ничего покупать не нужно: сначала на бесплатной консультации мы вместе оценим, в каком виде искусственный интеллект принесёт пользу вашему бизнесу, и подготовим письменное предложение.",
         ],
@@ -281,10 +277,6 @@ export const CONTENT: ArticleContent = {
         {
           q: "Работает ли ИИ на узбекском языке?",
           a: "Да. Современные модели (Claude, GPT) работают на узбекском — на латинице и кириллице, даже при смешанном узбекско-русском общении в одном разговоре. Качество зависит от настройки: готовые зарубежные платформы часто плохо справляются с узбекским, поэтому просите у подрядчика демо на узбекском.",
-        },
-        {
-          q: "Нужен ли искусственный интеллект малому бизнесу?",
-          a: "Если вы по десятку раз в день отвечаете на одни и те же вопросы, клиенты вечером остаются без ответа или вы вручную переносите данные — да, польза будет. Порог входа для малого бизнеса невысокий: Telegram-бот от $279, ИИ-чат-бот от $339. Важен не большой бюджет, а одно правильно выбранное направление.",
         },
         {
           q: "Заменит ли искусственный интеллект сотрудников?",
@@ -407,7 +399,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Artificial intelligence services from Tezcode",
         paragraphs: [
-          "Tezcode is a 16-person AI Software Factory team founded in Tashkent in 2024. We deliver all the artificial intelligence services listed above: AI chatbots and AI agents, process automation, AI video analytics, CRM/1C integration and custom AI applications.",
+          "Tezcode is a 19-person AI Software Factory team founded in Tashkent in 2024. We deliver all the artificial intelligence services listed above: AI chatbots and AI agents, process automation, AI video analytics, CRM/1C integration and custom AI applications.",
           "We build the solutions on Claude (Anthropic) and GPT (OpenAI) models, tune them to work in Uzbek and Russian (even mixed within one conversation) and connect them to your existing systems — Telegram, Instagram, website, CRM, 1C. The service list is on the tezcode.dev/ai-avtomatizatsiya, tezcode.dev/ai-chatbot and tezcode.dev/ai-agent pages.",
           "To get started you do not have to buy anything: first, in a free consultation, we assess together in what form artificial intelligence will benefit your business, and prepare a written proposal.",
         ],
@@ -427,10 +419,6 @@ export const CONTENT: ArticleContent = {
         {
           q: "Does AI work in the Uzbek language?",
           a: "Yes. Modern models (Claude, GPT) work in Uzbek — in Latin and Cyrillic script, even with mixed Uzbek-Russian within one conversation. Quality depends on the tuning: off-the-shelf foreign platforms often struggle with Uzbek, so ask the provider for a demo in Uzbek.",
-        },
-        {
-          q: "Does a small business need artificial intelligence?",
-          a: "If you answer the same questions dozens of times a day, customers go unanswered in the evening, or you move data by hand — yes, it will help. The entry price for small business is low: a Telegram bot from $279, an AI chatbot from $339. What matters is not a big budget but one well-chosen direction.",
         },
         {
           q: "Will artificial intelligence replace employees?",

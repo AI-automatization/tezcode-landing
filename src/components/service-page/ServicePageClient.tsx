@@ -124,7 +124,7 @@ function HeroSection({ copy }: { copy: ServicePageCopy }) {
           animate={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE, delay: 0.5 } }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a href="#consult" className="tc-btn-primary group w-full sm:w-auto text-sm">
+          <a href="#contact-hub" className="tc-btn-primary group w-full sm:w-auto text-sm">
             {copy.hero.ctaPrimary}
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 rtl:rotate-180" />
           </a>
@@ -398,36 +398,6 @@ function FaqSection({ copy }: { copy: ServicePageCopy }) {
   );
 }
 
-// ─────────────────────────── Short answers ───────────────────────────
-function AnswersSection({ copy }: { copy: ServicePageCopy }) {
-  if (!copy.answers) return null;
-  const answers = copy.answers;
-  return (
-    <section className="relative py-16 sm:py-20 px-6 bg-[var(--tc-ink)]">
-      <div className="max-w-5xl mx-auto">
-        <Reveal className="mb-8">
-          <span className="tc-chip">{answers.badge}</span>
-        </Reveal>
-        <RevealStagger className="grid grid-cols-1 md:grid-cols-2 gap-5" stagger={0.06}>
-          {answers.items.map((item) => (
-            <RevealItem key={item.q}>
-              <div className="tc-card h-full p-6">
-                <h2
-                  className="text-lg font-700 text-[var(--tc-text-primary)] mb-2 tracking-tight leading-snug"
-                  style={{ fontFamily: "var(--font-display)" }}
-                >
-                  {item.q}
-                </h2>
-                <p className="text-sm text-[var(--tc-text-secondary)] leading-relaxed">{item.a}</p>
-              </div>
-            </RevealItem>
-          ))}
-        </RevealStagger>
-      </div>
-    </section>
-  );
-}
-
 // ─────────────────────────── Tech stack ───────────────────────────
 function TechSection({ copy }: { copy: ServicePageCopy }) {
   if (!copy.tech) return null;
@@ -570,6 +540,29 @@ const CITY_ROW_HEADING: Record<ServiceLang, string> = {
   uk: "За містами",
 };
 
+// Descriptive anchors ("Toshkentda Telegram bot") instead of bare city names,
+// so readers and search engines see where each link leads.
+const CITY_SERVICE_NAME: Record<string, Record<ServiceLang, string>> = {
+  "pos-tizimi": { uz: "POS tizimi", ru: "POS-система", en: "POS system", ar: "نظام نقاط البيع", uk: "POS-система" },
+  "ai-avtomatizatsiya": { uz: "AI avtomatizatsiya", ru: "ИИ-автоматизация", en: "AI automation", ar: "الأتمتة بالذكاء الاصطناعي", uk: "ШІ-автоматизація" },
+  "ai-chatbot": { uz: "AI chatbot", ru: "ИИ-чат-бот", en: "AI chatbot", ar: "روبوت محادثة بالذكاء الاصطناعي", uk: "ШІ-чат-бот" },
+  "ai-agent": { uz: "AI agent", ru: "ИИ-агент", en: "AI agent", ar: "وكيل ذكاء اصطناعي", uk: "ШІ-агент" },
+  "telegram-bot-biznes": { uz: "Telegram bot", ru: "Telegram-бот", en: "Telegram bot", ar: "بوت تيليجرام", uk: "Telegram-бот" },
+  "biznes-avtomatlashtirish": { uz: "biznes avtomatlashtirish", ru: "Автоматизация бизнеса", en: "Business automation", ar: "أتمتة الأعمال", uk: "Автоматизація бізнесу" },
+};
+
+const CITY_IN: Record<string, Record<ServiceLang, string>> = {
+  toshkent: { uz: "Toshkentda", ru: "в Ташкенте", en: "in Tashkent", ar: "في طشقند", uk: "у Ташкенті" },
+  samarqand: { uz: "Samarqandda", ru: "в Самарканде", en: "in Samarkand", ar: "في سمرقند", uk: "у Самарканді" },
+};
+
+function cityLinkLabel(serviceSlug: string, citySlug: string, fallback: string, locale: ServiceLang): string {
+  const service = CITY_SERVICE_NAME[serviceSlug]?.[locale];
+  const where = CITY_IN[citySlug]?.[locale];
+  if (!service || !where) return fallback;
+  return locale === "uz" ? `${where} ${service}` : `${service} ${where}`;
+}
+
 function CityLinksSection({
   serviceSlug,
   locale,
@@ -599,7 +592,7 @@ function CityLinksSection({
                 href={`/${serviceSlug}/${city.slug}`}
                 className="text-sm text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] tc-link-underline transition-colors"
               >
-                {city.name[locale] ?? city.name.uz}
+                {cityLinkLabel(serviceSlug, city.slug, city.name[locale] ?? city.name.uz, locale)}
               </Link>
             </li>
           ))}
@@ -699,53 +692,6 @@ function RelatedServicesSection({
   );
 }
 
-// ─────────────────────────── Final CTA (navy anchor) ───────────────────────────
-function FinalCtaSection({ copy }: { copy: ServicePageCopy }) {
-  return (
-    <section id="consult" className="tc-navy-section relative py-20 sm:py-28 px-6 overflow-hidden">
-      <div
-        aria-hidden
-        className="absolute inset-0 pointer-events-none opacity-[0.35]"
-        style={{
-          background: "radial-gradient(ellipse 70% 55% at 50% 0%, rgba(0,64,255,0.45), transparent 70%)",
-        }}
-      />
-      <div className="max-w-4xl mx-auto relative z-10 text-center">
-        <Reveal>
-          <span className="tc-chip mb-6">{copy.cta.badge}</span>
-          <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-800 mb-6 tracking-tight leading-[1.08] text-[var(--tc-text-primary)]"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            {copy.cta.title}{" "}
-            <span className="text-[var(--tc-blue-text)]">{copy.cta.titleAccent}</span>
-          </h2>
-          <p className="text-lg md:text-xl text-[var(--tc-text-secondary)] mb-10 max-w-2xl mx-auto leading-relaxed">
-            {copy.cta.subtitle}
-          </p>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <a
-            href="https://t.me/tezcode_managament"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="tc-btn-primary group text-base"
-          >
-            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-            </svg>
-            {copy.cta.button}
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 rtl:rotate-180" />
-          </a>
-        </Reveal>
-        <Reveal delay={0.2}>
-          <p className="mt-6 text-sm text-[var(--tc-text-muted)]">{copy.cta.note}</p>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
-
 // ─────────────────────────── Page entry ───────────────────────────
 export function ServicePageClient({
   content,
@@ -766,7 +712,6 @@ export function ServicePageClient({
     >
       <Navbar />
       <HeroSection copy={copy} />
-      <AnswersSection copy={copy} />
       <CapabilitiesSection copy={copy} />
       <ShowcaseSection copy={copy} />
       <TechSection copy={copy} />
@@ -776,9 +721,9 @@ export function ServicePageClient({
       <FaqSection copy={copy} />
       <RelatedSection copy={copy} />
       <CityLinksSection serviceSlug={serviceSlug} locale={locale} />
-      <RelatedServicesSection serviceSlug={serviceSlug} locale={locale} />
+      {/* Fallback row only for pages without their own curated "related" block — otherwise the two repeat each other. */}
+      {!copy.related && <RelatedServicesSection serviceSlug={serviceSlug} locale={locale} />}
       {serviceSlug && <RemoteDelivery locale={locale} />}
-      <FinalCtaSection copy={copy} />
       <Footer />
 
       </main>

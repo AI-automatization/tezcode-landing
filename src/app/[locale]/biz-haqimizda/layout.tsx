@@ -6,31 +6,31 @@ import { buildPageMetadata } from "@/lib/seo";
 const META: Record<string, { title: string; description: string; ogTitle: string; ogDescription: string }> = {
   uz: {
     title: "Biz haqimizda — AI Software Factory, Toshkent",
-    description: "Tezcode — 2024-yilda Toshkentda tashkil etilgan AI Software Factory. Asoschisi Bekzod Mirzaaliyev, IT Park rezidenti, 14+ in-house dasturchi. 6 yo'nalish, 8+ mahsulot. Bizning missiya, qadriyatlar va jamoa.",
+    description: "Tezcode — 2024-yilda Toshkentda tashkil etilgan AI Software Factory. Asoschisi Bekzod Mirzaaliyev, IT Park rezidenti, 19 kishilik in-house jamoa. 6 yo'nalish, 8+ mahsulot. Bizning missiya, qadriyatlar va jamoa.",
     ogTitle: "Biz haqimizda — Tezcode",
     ogDescription: "Toshkentdagi AI Software Factory. 2024, asoschi Bekzod Mirzaaliyev, IT Park rezidenti, 6 yo'nalish, 8+ mahsulot.",
   },
   ru: {
     title: "О компании — AI Software Factory в Ташкенте",
-    description: "Tezcode — AI Software Factory, основана в 2024 году в Ташкенте. Основатель Бекзод Мирзаалиев, резидент IT Park, 14+ in-house разработчиков, 6 направлений.",
+    description: "Tezcode — AI Software Factory, основана в 2024 году в Ташкенте. Основатель Бекзод Мирзаалиев, резидент IT Park, in-house команда из 19 человек, 6 направлений.",
     ogTitle: "О компании Tezcode — AI Software Factory в Ташкенте",
     ogDescription: "Основана в 2024 году в Ташкенте, основатель Бекзод Мирзаалиев, резидент IT Park. 6 направлений, 8+ продуктов.",
   },
   en: {
     title: "About us — AI Software Factory in Tashkent",
-    description: "Tezcode is an AI Software Factory founded in 2024 in Tashkent. Founder Bekzod Mirzaaliyev, IT Park resident, 14+ in-house developers, 6 divisions, 8+ products.",
+    description: "Tezcode is an AI Software Factory founded in 2024 in Tashkent. Founder Bekzod Mirzaaliyev, IT Park resident, 19-person in-house team, 6 divisions, 8+ products.",
     ogTitle: "About Tezcode — an AI Software Factory in Tashkent",
     ogDescription: "Founded in 2024 in Tashkent by Bekzod Mirzaaliyev, IT Park resident. 6 divisions, 8+ products.",
   },
   ar: {
     title: "من نحن — مصنع برمجيات بالذكاء الاصطناعي في طشقند",
-    description: "تأسست Tezcode عام 2024 في طشقند. مؤسسها بكزود ميرزااليف، مقيمة في IT Park، أكثر من 14 مطورًا داخليًا، 6 أقسام و8+ منتجات.",
+    description: "تأسست Tezcode عام 2024 في طشقند. مؤسسها بكزود ميرزااليف، مقيمة في IT Park، فريق داخلي من 19 شخصًا، 6 أقسام و8+ منتجات.",
     ogTitle: "من نحن — Tezcode، مصنع برمجيات بالذكاء الاصطناعي في طشقند",
     ogDescription: "تأسست عام 2024 في طشقند على يد بكزود ميرزااليف، مقيمة في IT Park. 6 أقسام و8+ منتجات.",
   },
   uk: {
     title: "Про компанію — AI Software Factory у Ташкенті",
-    description: "Tezcode — AI Software Factory, заснована у 2024 році в Ташкенті. Засновник Бекзод Мірзаалієв, резидент IT Park, 14+ in-house розробників, 6 напрямків.",
+    description: "Tezcode — AI Software Factory, заснована у 2024 році в Ташкенті. Засновник Бекзод Мірзаалієв, резидент IT Park, in-house команда з 19 осіб, 6 напрямків.",
     ogTitle: "Про компанію Tezcode — AI Software Factory у Ташкенті",
     ogDescription: "Заснована у 2024 році в Ташкенті, засновник Бекзод Мірзаалієв, резидент IT Park. 6 напрямків, 8+ продуктів.",
   },

@@ -22,7 +22,7 @@ const META: Record<
   uz: {
     title: "AI chatbot yaratish biznes uchun — O'zbekiston",
     description:
-      "Biznes uchun AI chatbot Toshkentda $339 dan: Telegram, Instagram, WhatsApp va veb-saytda 24/7 mijoz xizmati, buyurtma qabul qilish, CRM/1C integratsiyasi, o'zbek va rus tillari. IT Park rezidenti Tezcode. Bepul konsultatsiya, to'lov 30% oldindan.",
+      "Biznes uchun AI chatbot Toshkentda — $339 dan. Telegram, Instagram, WhatsApp va saytda 24/7 javob, CRM integratsiyasi. Bepul konsultatsiya.",
     ogTitle: "AI chatbot yaratish biznes uchun — O'zbekiston | Tezcode",
     ogDescription:
       "24/7 mijoz xizmati, buyurtma qabul, lid saralash, CRM/1C integratsiyasi — Telegram, Instagram, WhatsApp va veb-saytda. O'zbek va rus tillarida. Bepul konsultatsiya.",
@@ -38,7 +38,7 @@ const META: Record<
   en: {
     title: "AI chatbot for business — Tashkent",
     description:
-      "AI chatbot for business in Tashkent from $339: 24/7 customer support on Telegram, Instagram, WhatsApp and websites, order taking, CRM/1C integration, Uzbek and Russian languages. Tezcode — IT Park resident. Free consultation, 30% upfront payment.",
+      "AI chatbot for business in Tashkent from $339: 24/7 replies on Telegram, Instagram, WhatsApp and your website, CRM integration. Free consultation.",
     ogTitle: "AI chatbot for business — Tashkent | Tezcode",
     ogDescription:
       "24/7 support, order taking, lead qualification, CRM/1C integration — on Telegram, Instagram, WhatsApp and your website. In Uzbek and Russian. Free consultation.",

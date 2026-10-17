@@ -112,10 +112,6 @@ export const CONTENT: ArticleContent = {
           a: "Xodimlaringiz har kuni bir xil ishni qo'lda takrorlasa (bir xil savollarga javob, buyurtmani CRM yoki 1C ga yozish, lidlarni saralash, hisobot yig'ish), AI agent foyda beradi. Murojaatlar kam bo'lsa yoki faqat savol-javob kerak bo'lsa, oddiy AI chatbot yetarli.",
         },
         {
-          q: "AI agent bilan AI chatbotning farqi nima?",
-          a: "Chatbot savolga javob beradi va to'xtaydi. AI agent javobdan keyin amal ham qiladi: buyurtma yaratadi, ma'lumotni CRM yoki 1C ga yozadi, menejerga vazifa beradi. Sodda qilib: chatbot gaplashadi, agent ish bajaradi.",
-        },
-        {
           q: "Biznes uchun AI agent qancha turadi?",
           a: "Tezcode'da maxsus AI agent yaratish $400 dan boshlanadi. Aniq narx integratsiyalar va stsenariy murakkabligiga bog'liq. AI model (API) va hosting xarajatlari alohida bo'lib, taklifda oldindan hisoblanadi. Dastlabki 30 daqiqalik konsultatsiya bepul.",
         },
@@ -241,10 +237,6 @@ export const CONTENT: ArticleContent = {
         {
           q: "Как понять, нужен ли моему бизнесу ИИ-агент?",
           a: "Если сотрудники каждый день вручную повторяют одну и ту же работу (отвечают на одинаковые вопросы, переносят заказы в CRM или 1С, сортируют лиды, собирают отчёты), ИИ-агент принесёт пользу. Если обращений мало или нужны только ответы на вопросы, достаточно обычного ИИ-чат-бота.",
-        },
-        {
-          q: "Чем ИИ-агент отличается от ИИ-чат-бота?",
-          a: "Чат-бот отвечает на вопрос и на этом останавливается. ИИ-агент после ответа ещё и действует: создаёт заказ, записывает данные в CRM или 1С, ставит задачу менеджеру. Проще говоря: чат-бот разговаривает, агент выполняет работу.",
         },
         {
           q: "Сколько стоит ИИ-агент для бизнеса?",

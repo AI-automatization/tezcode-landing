@@ -5,7 +5,7 @@ import type {
 } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
 import { CONTENT } from "./content";
-import { ruGen, ruPrep, ukGen, ukPrep } from "@/data/cityLocal";
+import { composeCityFaq, ruGen, ruPrep, ukGen, ukPrep } from "@/data/cityLocal";
 
 // Builds a full 5-locale ServicePageContent for a single city by deep-cloning the
 // base AI-automation copy and overriding the city-aware fields. A UNIQUE per-city
@@ -207,8 +207,9 @@ function buildCopyForLocale(locale: ServiceLang, city: City): ServicePageCopy {
   // Examples subtitle = the unique blurb too (second visible placement).
   if (intro) base.examples.subtitle = intro;
 
-  // Prepend a city-specific FAQ item (also enriches the FAQ schema per city).
-  base.faq.items = [CITY_FAQ[locale](cityName), ...base.faq.items];
+  // City-specific FAQ item first (also enriches the FAQ schema per city), then
+  // base questions trimmed from the end to exactly 5, keeping price and start.
+  base.faq.items = composeCityFaq([CITY_FAQ[locale](cityName)], base.faq.items);
 
   // City-aware Service schema text.
   base.service = SERVICE_TEXT[locale](cityName, region);

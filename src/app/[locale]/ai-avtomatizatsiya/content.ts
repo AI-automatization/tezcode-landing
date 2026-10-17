@@ -197,72 +197,24 @@ export const CONTENT: ServicePageContent = {
         "Toshkentda biznes uchun AI avtomatlashtirish haqida mijozlardan eng ko'p eshitadigan savollarimiz — qisqa va aniq javoblar bilan.",
       items: [
         {
-          q: "Biznesimga AI kerakmi yoki oddiy avtomatlashtirish yetarlimi?",
-          a: "Vazifa aniq qoidalardan iborat bo'lsa — masalan, sotuvdan keyin qoldiqni kamaytirish — oddiy dastur yoki integratsiya yetishi mumkin. Erkin yozilgan savolni tushunish, hujjatdan ma'lumot ajratish yoki matnli xulosa tayyorlash uchun AI ko'rib chiqiladi. Konsultatsiyada vazifa, ma'lumot va xato oqibatini baholab, mos yondashuvni tanlaymiz."
-        },
-        {
           q: "AI avtomatlashtirish nima va oddiy dasturdan farqi nimada?",
-          a: "AI avtomatlashtirish — takroriy ishlarni (hisobot tuzish, savolga javob berish, ma'lumot kiritish) sun'iy intellekt yordamida odam aralashuvisiz bajartirish. Oddiy dastur faqat oldindan yozilgan qat'iy qoidalar bo'yicha ishlaydi, AI esa erkin yozilgan matnni tushunadi, vaziyatga qarab javob tanlaydi va yangi holatlarga moslashadi. Shuning uchun mijoz bilan suhbat yoki hujjat tahlili kabi ishlarni faqat AI uddalaydi.",
-        },
-        {
-          q: "Sun'iy intellekt va AI bir xilmi?",
-          a: "Ha, ikkalasi bitta tushuncha: AI — inglizcha artificial intelligence so'zining qisqartmasi, o'zbekchasi — sun'iy intellekt. Kundalik gapda AI avtomatizatsiya, sun'iy intellekt bilan avtomatlashtirish yoki aqlli dastur deyilganda bir xil narsa nazarda tutiladi: takroriy ishni odam o'rniga dastur bajarishi. Shuning uchun qaysi atamada qidirsangiz ham javob bitta — muhimi, yechim sizning jarayoningizga ulanib real ish bajarishi.",
+          a: "AI avtomatlashtirish — takroriy ishlarni (hisobot tuzish, savolga javob berish, ma'lumot kiritish) sun'iy intellekt yordamida odam aralashuvisiz bajartirish. Oddiy dastur faqat oldindan yozilgan qat'iy qoidalar bo'yicha ishlaydi, AI esa erkin yozilgan matnni tushunadi, hujjatdan ma'lumot ajratadi va yangi holatlarga moslashadi. Vazifa aniq qoidalardan iborat bo'lsa (masalan, sotuvdan keyin qoldiqni kamaytirish), oddiy dastur yoki integratsiya yetishi mumkin — konsultatsiyada vazifa, ma'lumot va xato oqibatini baholab, mos yondashuvni tanlaymiz. AI o'zbek (lotin va kiril), rus va ingliz tillarida ishlaydi — mijoz qaysi tilda yozsa, o'sha tilda javob beradi.",
         },
         {
           q: "Narxi qancha?",
-          a: "Tayyor tariflar: Starter — $0 (kichik biznes uchun boshlang'ich imkoniyatlar), Pro — $200/oy (kengaytirilgan AI, 30 xodimgacha, 24/7 qo'llab-quvvatlash). Jarayoningizga maxsus quriladigan individual yechim narxi texnik topshiriq (TZ) tasdiqlangandan keyin qat'iy belgilanadi. To'lov 30% oldindan, qolgani bosqichma-bosqich.",
+          a: "Tayyor tariflar: Starter — $0 (kichik biznes uchun boshlang'ich imkoniyatlar), Pro — $200/oy (kengaytirilgan AI, 30 xodimgacha, 24/7 qo'llab-quvvatlash). Individual yechim narxi avtomatlashtiriladigan jarayonlar soni va integratsiyalar murakkabligiga bog'liq va texnik topshiriq (TZ) tasdiqlangandan keyin yozma taklifda qat'iy belgilanadi. To'lov 30% oldindan, qolgani bosqichma-bosqich — yashirin qo'shimchalar yo'q. Konsultatsiyada sizning raqamlaringiz bilan taxminiy ROI hisobini ham birga qilamiz.",
         },
         {
           q: "Qancha vaqtda tayyor bo'ladi?",
-          a: "Oddiy avtomatlashtirish (Telegram bot, avtomatik hisobot) — 1-2 hafta. To'liqroq AI yechimning ishlovchi MVP versiyasi — 2-4 hafta. Har hafta demo ko'rsatamiz, shuning uchun natijani oxirgi kunni kutmasdan kuzatib borasiz.",
-        },
-        {
-          q: "Qaysi sohalarga to'g'ri keladi?",
-          a: "Takroriy jarayoni bor har qanday soha: savdo va do'konlar (kassa, ombor, hisobot), klinikalar (yozilish, navbat, eslatma), ta'lim markazlari (lidlar, to'lov nazorati), logistika (buyurtma holati, xabarnoma), xizmat ko'rsatish (mijoz savollari, band qilish). Konsultatsiyada aynan sizning sohangizdagi eng foydali nuqtani aniqlab beramiz.",
+          a: "Oddiy avtomatlashtirish (Telegram bot, avtomatik hisobot) — 1-2 hafta. To'liqroq AI yechimning ishlovchi MVP versiyasi — 2-4 hafta. Har hafta demo ko'rsatamiz, shuning uchun natijani oxirgi kunni kutmasdan kuzatib borasiz. Har loyiha yozma shartnoma bilan boshlanadi, topshirgandan keyin jamoangizni o'rgatamiz va tizim ishlashini kuzatamiz.",
         },
         {
           q: "1C, CRM va mavjud tizimlarim bilan integratsiya bo'ladimi?",
           a: "Ha, bu bizning asosiy ishimiz. Telegram, Google Sheets, 1C, AmoCRM, Bitrix24, Click/Payme kabi to'lov tizimlari bilan integratsiya quramiz. Maqsad — AI sizni yangi dasturga majburlamasdan, hozirgi ish oqimingiz ichida ishlashi. Tizimlaringiz ro'yxatini konsultatsiyada ko'rib chiqamiz.",
         },
         {
-          q: "AI o'zbek tilida ishlaydimi?",
-          a: "Ha. Bizning AI yechimlar o'zbek (lotin va kiril), rus va ingliz tillarida mijoz bilan muloqot qila oladi. Mijoz qaysi tilda yozsa, bot o'sha tilda javob beradi. O'zbekiston bozori uchun bu bizda standart talab sifatida hisobga olinadi.",
-        },
-        {
-          q: "Ma'lumotlarim xavfsizligi qanday ta'minlanadi?",
-          a: "Maxfiy ma'lumotlar siz nazorat qiladigan muhitda saqlanadi, kirish huquqlari rollar bo'yicha cheklanadi. AI modelga faqat vazifa uchun zarur ma'lumot uzatiladi. Talab bo'lsa, ma'lumotni tashqariga chiqarmaydigan arxitektura variantini ham ko'rib chiqamiz — xavfsizlik talablari konsultatsiyada yozma kelishiladi.",
-        },
-        {
-          q: "Kichik biznesga to'g'ri keladimi?",
-          a: "Ha, hatto eng ko'p aynan kichik biznes murojaat qiladi. Starter tarif $0 dan boshlanadi, Telegram bot yoki avtomatik hisobot kabi yechimlar katta byudjetsiz joriy etiladi. Hammasini birdan avtomatlashtirish shart emas — eng ko'p vaqt oladigan bitta jarayondan boshlaymiz, natijani ko'rgach kengaytirasiz.",
-        },
-        {
-          q: "Sarflangan pul qachon qaytadi (ROI)?",
-          a: "Bu avtomatlashtirilayotgan jarayonga bog'liq. Hisob oddiy: agar xodim har kuni 3 soatini hisobotga sarflasa va AI buni 1 daqiqaga tushirsa, oyiga ~60 soat ish vaqti bo'shaydi — buni xodim maoshiga ko'paytirib, tejamni o'zingiz ko'rasiz. Konsultatsiyada sizning raqamlaringiz bilan taxminiy ROI hisobini birga qilamiz.",
-        },
-        {
-          q: "Shartnoma va qo'llab-quvvatlash qanday bo'ladi?",
-          a: "Har loyiha yozma shartnoma bilan boshlanadi: unda ish hajmi, muddat, narx va to'lov bosqichlari (30% oldindan) aniq yoziladi. Topshirgandan keyin tashlab ketmaymiz: jamoangizni o'rgatamiz, ishlashini kuzatamiz, Pro tarifda 24/7 qo'llab-quvvatlash kiradi.",
-        },
-        {
-          q: "AI xato qilsa nima bo'ladi?",
-          a: "AI'ni nazoratsiz qoldirmaymiz. Muhim qarorlar (to'lov, shartnoma, katta chegirma) doim odam tasdig'idan o'tadi, AI ishonchsiz holatda javobni operatorga uzatadi. RAG texnologiyasi tufayli bot faqat sizning bazangizdagi ma'lumotga tayanadi — o'zidan to'qib javob bermaydi. Joriy etishdan keyin javoblar sifatini birga kuzatib, sozlab boramiz.",
-        },
-        {
           q: "Nimadan boshlash kerak?",
-          a: "Eng to'g'ri boshlanish — 30 daqiqalik bepul konsultatsiya. Unda jamoangiz qaysi ishga eng ko'p vaqt sarflashini aniqlaymiz va qaysi avtomatlashtirish eng tez natija berishini aytamiz. Texnik bilim talab qilinmaydi — jarayoningizni oddiy so'zlab bersangiz kifoya.",
-        },
-        {
-          q: "Biznesni AI bilan avtomatlashtirishni Toshkentda kim qiladi?",
-          a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti: biznes uchun AI agentlar, chatbotlar va jarayon avtomatizatsiyasini quramiz. Hisobot, mijozlarga javob, buyurtma qayd etish kabi takroriy ishlarni AI'ga topshiramiz, mavjud tizimlaringiz (1C, CRM, Telegram) bilan integratsiya qilamiz. Manzil: Toshkent, Amir Temur shoh ko'chasi, 10. Telefon: +998 91 777 66 09 — bepul konsultatsiyaga yozilishingiz mumkin.",
-        },
-        {
-          q: "Biznesimni AI bilan avtomatlashtirmoqchiman — nimadan boshlayman?",
-          a: "30 daqiqalik bepul diagnostika-konsultatsiyadan boshlang — bu birinchi va yagona zarur qadam. Unda Tezcode jamoasi qaysi takroriy jarayonlar eng ko'p vaqtingizni yeyayotganini tahlil qiladi va qaysi avtomatlashtirish eng tez natija berishini aytadi. Keyin aniq narx va muddat yozilgan taklif olasiz — rozi bo'lsangiz, ish 30% oldindan to'lov bilan boshlanadi.",
-        },
-        {
-          q: "AI avtomatlashtirish xizmati O'zbekistonda qancha turadi?",
-          a: "Yagona narx yo'q — summa avtomatlashtiriladigan jarayonlar soni va integratsiyalar murakkabligiga bog'liq. Mo'ljal uchun: tayyor tariflar Starter ($0) va Pro ($200/oy), individual yechim narxi esa texnik topshiriq tasdiqlangach qat'iy yoziladi. Aniq raqamni bepul konsultatsiyadan keyin yozma taklifda beramiz, to'lov 30% oldindan — yashirin qo'shimchalar bo'lmaydi.",
+          a: "Eng to'g'ri boshlanish — 30 daqiqalik bepul konsultatsiya: jamoangiz qaysi ishga eng ko'p vaqt sarflashini aniqlaymiz, qaysi avtomatlashtirish eng tez natija berishini aytamiz, keyin aniq narx va muddat yozilgan taklif olasiz. Texnik bilim talab qilinmaydi — jarayoningizni oddiy so'zlab bersangiz kifoya. Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti: Amir Temur shoh ko'chasi, 10, telefon +998 91 777 66 09. Maxfiy ma'lumotlar siz nazorat qiladigan muhitda saqlanadi, xavfsizlik talablari yozma kelishiladi.",
         },
       ],
     },
@@ -434,7 +386,7 @@ export const CONTENT: ServicePageContent = {
         {
           tag: "01",
           title: "AI Office — виртуальный офис из 12 отделов",
-          desc: "Система AI-агентов для продаж, HR, маркетинга и других отделов. С её помощью Tezcode сам управляет 14 разработчиками и множеством проектов — то есть решение, которое мы вам предлагаем, мы сначала проверили на себе.",
+          desc: "Система AI-агентов для продаж, HR, маркетинга и других отделов. С её помощью Tezcode сам управляет командой из 19 человек и множеством проектов — то есть решение, которое мы вам предлагаем, мы сначала проверили на себе.",
         },
         {
           tag: "02",
@@ -494,76 +446,24 @@ export const CONTENT: ServicePageContent = {
         "Вопросы об ИИ-автоматизации (AI-автоматизации) бизнеса в Ташкенте, которые мы слышим от клиентов чаще всего — с короткими и конкретными ответами.",
       items: [
         {
-          q: "Что подготовить для разработки AI-решения в Ташкенте?",
-          a: "Опишите одну задачу, приложите обезличенные примеры обращений или документов и список систем: CRM, 1С, Telegram. На консультации уточним доступ к данным, действия, требующие подтверждения сотрудника, и критерии пилота. После этого согласуем объём разработки, стоимость и срок в письменном предложении."
-        },
-        {
-          q: "Когда бизнесу нужна AI-разработка, а когда достаточно обычной автоматизации?",
-          a: "Если процесс состоит из однозначных правил — создать задачу после заказа или обновить остаток — обычно достаточно интеграции. AI полезен при работе со свободным текстом, документами и вопросами клиентов. Выбор делаем по задаче и результатам теста, а не по наличию AI в названии продукта."
-        },
-        {
           q: "Что такое ИИ-автоматизация и чем она отличается от обычной программы?",
-          a: "ИИ-автоматизация — это выполнение рутинных задач (отчёты, ответы на вопросы, ввод данных) искусственным интеллектом без участия человека. Обычная программа работает только по жёстко заданным правилам, а ИИ понимает свободный текст, подбирает ответ по ситуации и адаптируется к новым случаям. Поэтому диалог с клиентом или анализ документов под силу только ИИ.",
-        },
-        {
-          q: "Искусственный интеллект (ИИ) и AI — это одно и то же?",
-          a: "Да, это одно понятие: AI — сокращение от artificial intelligence, по-русски — искусственный интеллект. «AI-автоматизация», «автоматизация с помощью искусственного интеллекта» или «умная программа» в обычной речи означают одно: рутинную работу вместо человека выполняет программа. Поэтому каким бы термином вы ни пользовались, ответ один — важно, чтобы решение подключалось к вашему процессу и выполняло реальную работу.",
+          a: "ИИ-автоматизация — это выполнение рутинных задач (отчёты, ответы на вопросы, ввод данных) искусственным интеллектом без участия человека. Обычная программа работает только по жёстко заданным правилам, а ИИ понимает свободный текст, работает с документами и адаптируется к новым случаям. Если процесс состоит из однозначных правил — создать задачу после заказа или обновить остаток, — обычно достаточно интеграции; выбор делаем по задаче и результатам теста, а не по наличию AI в названии продукта. ИИ работает на узбекском (латиница и кириллица), русском и английском — отвечает на языке клиента.",
         },
         {
           q: "Сколько это стоит?",
-          a: "Готовые тарифы: Starter — $0 (базовые возможности для малого бизнеса), Pro — $200/мес (≈ 2.5 млн сум/мес) (продвинутый ИИ (AI), до 30 сотрудников, поддержка 24/7). Цена индивидуального решения под ваш процесс фиксируется после утверждения технического задания (ТЗ). Оплата — 30% предоплата, остальное поэтапно.",
+          a: "Готовые тарифы: Starter — $0 (базовые возможности для малого бизнеса), Pro — $200/мес (≈ 2.5 млн сум/мес) (продвинутый ИИ (AI), до 30 сотрудников, поддержка 24/7). Цена индивидуального решения зависит от числа автоматизируемых процессов и сложности интеграций и фиксируется в письменном предложении после утверждения технического задания (ТЗ). Оплата — 30% предоплата, остальное поэтапно, без скрытых доплат. На консультации вместе посчитаем ориентировочный ROI на ваших цифрах.",
         },
         {
           q: "Сколько времени занимает разработка?",
-          a: "Простая автоматизация (Telegram-бот, автоматический отчёт) — 1-2 недели. Рабочая MVP-версия более полного ИИ-решения — 2-4 недели. Каждую неделю показываем демо, поэтому результат вы видите по ходу, а не в последний день.",
-        },
-        {
-          q: "Каким сферам это подходит?",
-          a: "Любой сфере с повторяющимися процессами: торговля и магазины (касса, склад, отчёты), клиники (запись, очередь, напоминания), учебные центры (лиды, контроль оплат), логистика (статус заказа, уведомления), сервис (вопросы клиентов, бронирование). На консультации определим, с чего выгоднее всего начать именно в вашей сфере.",
+          a: "Простая автоматизация (Telegram-бот, автоматический отчёт) — 1-2 недели. Рабочая MVP-версия более полного ИИ-решения — 2-4 недели. Каждую неделю показываем демо, поэтому результат вы видите по ходу, а не в последний день. Каждый проект начинается с письменного договора, а после сдачи обучаем команду и следим за работой системы.",
         },
         {
           q: "Будет ли интеграция с 1C, CRM и моими системами?",
           a: "Да, это наша основная работа. Строим интеграции с Telegram, Google Sheets, 1C, AmoCRM, Bitrix24, платёжными системами Click/Payme. Цель — чтобы ИИ работал внутри вашего текущего процесса, не заставляя переходить на новую программу. Список ваших систем разберём на консультации.",
         },
         {
-          q: "Работает ли ИИ на узбекском языке?",
-          a: "Да. Наши ИИ-решения общаются с клиентами на узбекском (латиница и кириллица), русском и английском. На каком языке пишет клиент — на том бот и отвечает. Для рынка Узбекистана это у нас стандартное требование.",
-        },
-        {
-          q: "Как обеспечивается безопасность моих данных?",
-          a: "Конфиденциальные данные хранятся в среде, которую контролируете вы, доступы ограничены по ролям. В ИИ-модель передаётся только то, что необходимо для задачи. При необходимости рассмотрим архитектуру, при которой данные не покидают ваш контур — требования к безопасности фиксируем письменно на консультации.",
-        },
-        {
-          q: "Подходит ли это малому бизнесу?",
-          a: "Да, чаще всего к нам обращается именно малый бизнес. Тариф Starter начинается с $0, а решения вроде Telegram-бота или автоматического отчёта внедряются без большого бюджета. Не обязательно автоматизировать всё сразу — начинаем с одного самого затратного по времени процесса, а увидев результат — расширяете дальше.",
-        },
-        {
-          q: "Когда окупятся вложения (ROI)?",
-          a: "Зависит от автоматизируемого процесса. Расчёт простой: если сотрудник тратит на отчёт 3 часа в день, а ИИ сокращает это до 1 минуты, освобождается ~60 часов работы в месяц — умножьте на зарплату сотрудника и увидите экономию. На консультации посчитаем ориентировочный ROI на ваших цифрах.",
-        },
-        {
-          q: "Как устроены договор и поддержка?",
-          a: "Каждый проект начинается с письменного договора: объём работ, срок, цена и этапы оплаты (30% предоплата) фиксируются явно. После сдачи не исчезаем: обучаем команду, следим за работой, в тарифе Pro включена поддержка 24/7.",
-        },
-        {
-          q: "Что будет, если ИИ ошибётся?",
-          a: "Мы не оставляем ИИ без контроля. Важные решения (оплата, договор, крупная скидка) всегда проходят подтверждение человеком, а в неуверенных случаях ИИ передаёт вопрос оператору. Благодаря технологии RAG бот опирается только на данные вашей базы — не выдумывает ответы. После внедрения вместе отслеживаем качество ответов и донастраиваем.",
-        },
-        {
           q: "С чего начать?",
-          a: "Правильный старт — бесплатная 30-минутная консультация. На ней определяем, на какую работу ваша команда тратит больше всего времени, и какая автоматизация даст самый быстрый результат. Технические знания не нужны — достаточно простыми словами описать ваш процесс.",
-        },
-        {
-          q: "Кто в Ташкенте занимается ИИ-автоматизацией (AI) бизнеса?",
-          a: "Tezcode — AI Software Factory в Ташкенте и резидент IT Park: строим AI-агентов, чат-ботов и автоматизацию процессов для бизнеса. Передаём ИИ рутинные задачи — отчёты, ответы клиентам, приём заказов — и интегрируем его с вашими системами (1C, CRM, Telegram). Адрес: Ташкент, проспект Амира Темура, 10. Телефон: +998 91 777 66 09 — можно записаться на бесплатную консультацию.",
-        },
-        {
-          q: "Хочу автоматизировать бизнес с помощью ИИ (AI) — с чего начать?",
-          a: "Начните с бесплатной 30-минутной диагностики-консультации — это первый и единственный необходимый шаг. На ней команда Tezcode разбирает, какие повторяющиеся процессы съедают больше всего вашего времени, и какая автоматизация даст самый быстрый результат. Затем вы получаете письменное предложение с конкретной ценой и сроком — при согласии работа начинается с предоплаты 30%.",
-        },
-        {
-          q: "Сколько стоит ИИ-автоматизация (AI) бизнеса в Узбекистане?",
-          a: "Единой цены нет — сумма зависит от числа автоматизируемых процессов и сложности интеграций. Для ориентира: готовые тарифы Starter ($0) и Pro ($200/мес, ≈ 2.5 млн сум/мес), а цена индивидуального решения фиксируется после утверждения технического задания. Точную цифру даём в письменном предложении после бесплатной консультации, оплата — 30% предоплата, без скрытых доплат.",
+          a: "Правильный старт — бесплатная 30-минутная консультация: определяем, на какую работу команда тратит больше всего времени и какая автоматизация даст самый быстрый результат, затем вы получаете письменное предложение с ценой и сроком. Технические знания не нужны — достаточно простыми словами описать одну задачу и перечислить ваши системы (CRM, 1С, Telegram), по возможности с обезличенными примерами обращений или документов. Tezcode — AI Software Factory в Ташкенте и резидент IT Park: проспект Амира Темура, 10, телефон +998 91 777 66 09. Конфиденциальные данные хранятся в среде, которую контролируете вы, требования к безопасности фиксируем письменно.",
         },
       ],
     },
@@ -730,7 +630,7 @@ export const CONTENT: ServicePageContent = {
         {
           tag: "01",
           title: "AI Office — a 12-department virtual office",
-          desc: "A system of AI agents for sales, HR, marketing and more. Tezcode itself runs 14 developers and many projects with it — meaning the solution we offer you was tested on ourselves first.",
+          desc: "A system of AI agents for sales, HR, marketing and more. Tezcode itself runs its 19-person team and many projects with it — meaning the solution we offer you was tested on ourselves first.",
         },
         {
           tag: "02",
@@ -791,67 +691,23 @@ export const CONTENT: ServicePageContent = {
       items: [
         {
           q: "What is AI automation and how is it different from regular software?",
-          a: "AI automation means having artificial intelligence perform repetitive tasks (reports, answering questions, data entry) without human involvement. Regular software only follows rigid, pre-written rules; AI understands free-form text, picks the right response for the situation and adapts to new cases. That is why customer conversations or document analysis are only feasible with AI.",
-        },
-        {
-          q: "Are 'artificial intelligence' and 'AI' the same thing?",
-          a: "Yes — AI is simply the abbreviation of artificial intelligence. 'AI automation', 'automation with artificial intelligence' or 'smart software' usually mean the same thing: software doing the repetitive work instead of a person. So whichever term you search for, the answer is the same — what matters is that the solution plugs into your process and does real work.",
+          a: "AI automation means having artificial intelligence perform repetitive tasks (reports, answering questions, data entry) without human involvement. Regular software only follows rigid, pre-written rules; AI understands free-form text, picks the right response for the situation and adapts to new cases. That is why customer conversations or document analysis are only feasible with AI. The AI works in Uzbek (Latin and Cyrillic), Russian and English, replying in the customer's language.",
         },
         {
           q: "How much does it cost?",
-          a: "Standard plans: Starter — $0 (entry features for small business), Pro — $200/mo (advanced AI, up to 30 staff, 24/7 support). The price of a custom solution built for your process is fixed after the technical specification is approved. Payment is 30% upfront, the rest per stage.",
+          a: "Standard plans: Starter — $0 (entry features for small business), Pro — $200/mo (advanced AI, up to 30 staff, 24/7 support). The price of a custom solution depends on how many processes you automate and how complex the integrations are; it is fixed in a written proposal after the technical specification is approved. Payment is 30% upfront, the rest per stage, with no hidden extras. In the consultation we also estimate ROI together using your numbers.",
         },
         {
           q: "How long does it take?",
-          a: "Simple automation (a Telegram bot, an automated report) — 1-2 weeks. A working MVP of a fuller AI solution — 2-4 weeks. We demo every week, so you watch the result take shape instead of waiting for the last day.",
-        },
-        {
-          q: "Which industries does it fit?",
-          a: "Any industry with repetitive processes: retail and stores (register, inventory, reports), clinics (booking, queues, reminders), education centres (leads, payment tracking), logistics (order status, notifications), services (customer questions, reservations). In the consultation we pinpoint the most profitable spot in your specific field.",
+          a: "Simple automation (a Telegram bot, an automated report) — 1-2 weeks. A working MVP of a fuller AI solution — 2-4 weeks. We demo every week, so you watch the result take shape instead of waiting for the last day. Every project starts with a written contract, and after delivery we train your team and monitor the system.",
         },
         {
           q: "Will it integrate with 1C, CRM and my existing systems?",
           a: "Yes — that is our core work. We build integrations with Telegram, Google Sheets, 1C, AmoCRM, Bitrix24 and payment systems like Click/Payme. The goal is for AI to work inside your current workflow instead of forcing you onto new software. We review your list of systems in the consultation.",
         },
         {
-          q: "Does the AI work in Uzbek?",
-          a: "Yes. Our AI solutions converse with customers in Uzbek (Latin and Cyrillic), Russian and English. Whatever language the customer writes in, the bot answers in the same one. For the Uzbekistan market we treat this as a standard requirement.",
-        },
-        {
-          q: "How is my data kept safe?",
-          a: "Sensitive data is stored in an environment you control, with role-based access restrictions. Only the data required for the task is passed to the AI model. If needed, we can design an architecture where data never leaves your perimeter — security requirements are agreed in writing during the consultation.",
-        },
-        {
-          q: "Is it suitable for a small business?",
-          a: "Yes — small businesses are actually our most frequent clients. The Starter plan begins at $0, and solutions like a Telegram bot or an automated report roll out without a big budget. You don't have to automate everything at once — we start with the one process that costs you the most time, and you expand after seeing results.",
-        },
-        {
-          q: "When does the investment pay off (ROI)?",
-          a: "It depends on the process being automated. The math is simple: if an employee spends 3 hours a day on a report and AI cuts that to 1 minute, about 60 working hours a month are freed — multiply by the employee's salary and you see the savings. In the consultation we estimate ROI together using your numbers.",
-        },
-        {
-          q: "How do the contract and support work?",
-          a: "Every project starts with a written contract: scope, timeline, price and payment stages (30% upfront) are stated explicitly. We don't disappear after delivery: we train your team, monitor the system, and the Pro plan includes 24/7 support.",
-        },
-        {
-          q: "What happens if the AI makes a mistake?",
-          a: "We never leave AI unsupervised. Important decisions (payments, contracts, large discounts) always pass through human confirmation, and in uncertain cases the AI hands the question to an operator. Thanks to RAG, the bot relies only on your knowledge base — it doesn't invent answers. After rollout we monitor answer quality together and keep tuning.",
-        },
-        {
           q: "Where should I start?",
-          a: "The right start is a free 30-minute consultation. There we identify which work consumes most of your team's time and which automation will pay off fastest. No technical knowledge required — describing your process in plain words is enough.",
-        },
-        {
-          q: "Who does AI business automation in Tashkent?",
-          a: "Tezcode — an AI Software Factory in Tashkent and an IT Park resident: we build AI agents, chatbots and process automation for business. We hand repetitive work — reports, customer replies, order intake — to AI and integrate it with your existing systems (1C, CRM, Telegram). Address: 10 Amir Temur Avenue, Tashkent. Phone: +998 91 777 66 09 — you can book a free consultation.",
-        },
-        {
-          q: "I want to automate my business with AI — where do I start?",
-          a: "Start with the free 30-minute diagnostic consultation — that is the first and only step you need. In it the Tezcode team analyses which repetitive processes eat the most of your time and which automation will pay off fastest. You then receive a written proposal with a clear price and timeline — if you agree, work starts with a 30% upfront payment.",
-        },
-        {
-          q: "How much does AI automation cost in Uzbekistan?",
-          a: "There is no single price — the amount depends on how many processes you automate and how complex the integrations are. As a reference: standard plans are Starter ($0) and Pro ($200/mo), while the price of a custom solution is fixed after the technical specification is approved. You get the exact figure in a written proposal after the free consultation; payment is 30% upfront, with no hidden extras.",
+          a: "The right start is a free 30-minute consultation: we identify which work consumes most of your team's time and which automation will pay off fastest, then you receive a written proposal with a clear price and timeline. No technical knowledge required — describing your process in plain words is enough. Tezcode is an AI Software Factory in Tashkent and an IT Park resident: 10 Amir Temur Avenue, phone +998 91 777 66 09. Sensitive data is stored in an environment you control, and security requirements are agreed in writing.",
         },
       ],
     },
@@ -1018,7 +874,7 @@ export const CONTENT: ServicePageContent = {
         {
           tag: "01",
           title: "AI Office — مكتب افتراضي بـ 12 قسماً",
-          desc: "منظومة وكلاء ذكاء اصطناعي للمبيعات والموارد البشرية والتسويق وغيرها. تدير Tezcode بها 14 مطوراً ومشاريع كثيرة — أي أن الحل الذي نعرضه عليك جرّبناه على أنفسنا أولاً.",
+          desc: "منظومة وكلاء ذكاء اصطناعي للمبيعات والموارد البشرية والتسويق وغيرها. تدير Tezcode بها فريقها المكوّن من 19 شخصًا ومشاريع كثيرة — أي أن الحل الذي نعرضه عليك جرّبناه على أنفسنا أولاً.",
         },
         {
           tag: "02",
@@ -1079,67 +935,23 @@ export const CONTENT: ServicePageContent = {
       items: [
         {
           q: "ما هي أتمتة الذكاء الاصطناعي وما الفرق عن البرنامج العادي؟",
-          a: "أتمتة الذكاء الاصطناعي تعني تنفيذ المهام المتكررة (التقارير، الرد على الأسئلة، إدخال البيانات) بالذكاء الاصطناعي دون تدخل بشري. البرنامج العادي يعمل بقواعد جامدة مكتوبة مسبقاً فقط، أما الذكاء الاصطناعي فيفهم النص الحر ويختار الرد المناسب للموقف ويتكيف مع الحالات الجديدة. لذلك محادثة العميل أو تحليل المستندات لا يقدر عليهما إلا الذكاء الاصطناعي.",
-        },
-        {
-          q: "هل «الذكاء الاصطناعي» و«AI» شيء واحد؟",
-          a: "نعم — AI هو اختصار artificial intelligence أي الذكاء الاصطناعي. «أتمتة AI» و«الأتمتة بالذكاء الاصطناعي» و«البرنامج الذكي» تعني عادة الشيء نفسه: برنامج يؤدي العمل المتكرر بدل الإنسان. فأياً كان المصطلح الذي تبحث به، الجواب واحد — المهم أن يرتبط الحل بعمليتك وينجز عملاً حقيقياً.",
+          a: "أتمتة الذكاء الاصطناعي تعني تنفيذ المهام المتكررة (التقارير، الرد على الأسئلة، إدخال البيانات) بالذكاء الاصطناعي دون تدخل بشري. البرنامج العادي يعمل بقواعد جامدة مكتوبة مسبقاً فقط، أما الذكاء الاصطناعي فيفهم النص الحر ويختار الرد المناسب للموقف ويتكيف مع الحالات الجديدة. لذلك محادثة العميل أو تحليل المستندات لا يقدر عليهما إلا الذكاء الاصطناعي. ويعمل الذكاء الاصطناعي بالأوزبكية (لاتينية وسيريلية) والروسية والإنجليزية، فيرد بلغة العميل.",
         },
         {
           q: "كم التكلفة؟",
-          a: "الباقات الجاهزة: Starter — $0 (إمكانيات أساسية للأعمال الصغيرة)، Pro — $200 شهرياً (AI متقدم، حتى 30 موظفاً، دعم 24/7). سعر الحل المخصص لعمليتك يُثبَّت بعد اعتماد المواصفات الفنية. الدفع 30% مقدماً والباقي على مراحل.",
+          a: "الباقات الجاهزة: Starter — $0 (إمكانيات أساسية للأعمال الصغيرة)، Pro — $200 شهرياً (AI متقدم، حتى 30 موظفاً، دعم 24/7). يعتمد سعر الحل المخصص على عدد العمليات المؤتمتة وتعقيد التكاملات، ويُثبَّت في عرض مكتوب بعد اعتماد المواصفات الفنية. الدفع 30% مقدماً والباقي على مراحل — دون أي إضافات خفية. وفي الاستشارة نحسب معاً ROI تقريبياً بأرقامك أنت.",
         },
         {
           q: "كم يستغرق التطوير؟",
-          a: "أتمتة بسيطة (بوت Telegram، تقرير تلقائي) — 1-2 أسبوع. نسخة MVP عاملة لحل أكمل — 2-4 أسابيع. نعرض عرضاً تجريبياً كل أسبوع، فترى النتيجة أثناء العمل لا في اليوم الأخير.",
-        },
-        {
-          q: "أي المجالات تناسبها؟",
-          a: "أي مجال فيه عمليات متكررة: التجارة والمتاجر (كاشير، مخزون، تقارير)، العيادات (حجز، طابور، تذكير)، مراكز التعليم (عملاء محتملون، متابعة الدفع)، اللوجستيات (حالة الطلب، إشعارات)، الخدمات (أسئلة العملاء، الحجز). في الاستشارة نحدد النقطة الأكثر ربحية في مجالك بالذات.",
+          a: "أتمتة بسيطة (بوت Telegram، تقرير تلقائي) — 1-2 أسبوع. نسخة MVP عاملة لحل أكمل — 2-4 أسابيع. نعرض عرضاً تجريبياً كل أسبوع، فترى النتيجة أثناء العمل لا في اليوم الأخير. يبدأ كل مشروع بعقد مكتوب، وبعد التسليم ندرّب فريقك ونراقب النظام.",
         },
         {
           q: "هل يتكامل مع 1C وCRM وأنظمتي الحالية؟",
           a: "نعم، هذا عملنا الأساسي. نبني تكاملات مع Telegram وGoogle Sheets و1C وAmoCRM وBitrix24 وأنظمة الدفع Click/Payme. الهدف أن يعمل الذكاء الاصطناعي داخل سير عملك الحالي دون إجبارك على برنامج جديد. نراجع قائمة أنظمتك في الاستشارة.",
         },
         {
-          q: "هل يعمل الذكاء الاصطناعي بالأوزبكية؟",
-          a: "نعم. تتحاور حلولنا مع العملاء بالأوزبكية (لاتينية وسيريلية) والروسية والإنجليزية. بأي لغة يكتب العميل، يرد البوت بنفس اللغة. نعتبر ذلك متطلباً قياسياً لسوق أوزبكستان.",
-        },
-        {
-          q: "كيف تُضمن سلامة بياناتي؟",
-          a: "تُخزَّن البيانات الحساسة في بيئة تتحكم بها أنت، مع تقييد الصلاحيات حسب الأدوار. لا يُمرَّر إلى نموذج الذكاء الاصطناعي إلا ما تتطلبه المهمة. عند الحاجة ندرس بنية لا تغادر فيها البيانات نطاقك — نثبّت متطلبات الأمان كتابياً في الاستشارة.",
-        },
-        {
-          q: "هل يناسب الأعمال الصغيرة؟",
-          a: "نعم — الأعمال الصغيرة هي الأكثر لجوءاً إلينا. باقة Starter تبدأ من $0، وحلول مثل بوت Telegram أو التقرير التلقائي تُطبَّق بلا ميزانية كبيرة. لا يلزم أتمتة كل شيء دفعة واحدة — نبدأ بالعملية الأكثر استهلاكاً للوقت، وتتوسع بعد رؤية النتيجة.",
-        },
-        {
-          q: "متى يسترد الاستثمار (ROI)؟",
-          a: "يعتمد على العملية المؤتمتة. الحساب بسيط: إذا كان الموظف يقضي 3 ساعات يومياً في التقرير وخفّضها الذكاء الاصطناعي إلى دقيقة، يتحرر نحو 60 ساعة عمل شهرياً — اضربها في راتب الموظف لترى التوفير. في الاستشارة نحسب معاً ROI تقريبياً بأرقامك أنت.",
-        },
-        {
-          q: "كيف يكون العقد والدعم؟",
-          a: "يبدأ كل مشروع بعقد مكتوب: يُثبَّت فيه نطاق العمل والموعد والسعر ومراحل الدفع (30% مقدماً) بوضوح. لا نختفي بعد التسليم: ندرّب فريقك ونراقب النظام، وباقة Pro تشمل دعماً 24/7.",
-        },
-        {
-          q: "ماذا يحدث إذا أخطأ الذكاء الاصطناعي؟",
-          a: "لا نترك الذكاء الاصطناعي بلا رقابة. القرارات المهمة (الدفع، العقد، الخصم الكبير) تمر دائماً بتأكيد بشري، وفي الحالات غير المؤكدة يحيل الذكاء الاصطناعي السؤال إلى موظف. وبفضل تقنية RAG يعتمد البوت على بيانات قاعدتك فقط — لا يختلق إجابات. بعد التطبيق نراقب جودة الإجابات معاً ونواصل الضبط.",
-        },
-        {
           q: "من أين أبدأ؟",
-          a: "البداية الصحيحة استشارة مجانية مدتها 30 دقيقة. نحدد فيها أي عمل يستهلك معظم وقت فريقك وأي أتمتة تعطي أسرع نتيجة. لا حاجة لمعرفة تقنية — يكفي وصف عمليتك بكلمات بسيطة.",
-        },
-        {
-          q: "من يقوم بأتمتة الأعمال بالذكاء الاصطناعي في طشقند؟",
-          a: "Tezcode — مصنع برمجيات ذكاء اصطناعي (AI Software Factory) في طشقند ومقيم في IT Park: نبني وكلاء ذكاء اصطناعي وروبوتات محادثة وأتمتة عمليات للأعمال. نسلّم المهام المتكررة — التقارير، الرد على العملاء، استقبال الطلبات — للذكاء الاصطناعي وندمجه مع أنظمتك الحالية (1C وCRM وTelegram). العنوان: طشقند، شارع أمير تيمور 10. الهاتف: ‎+998 91 777 66 09 — يمكنك حجز استشارة مجانية.",
-        },
-        {
-          q: "أريد أتمتة أعمالي بالذكاء الاصطناعي — من أين أبدأ؟",
-          a: "ابدأ بالاستشارة التشخيصية المجانية لمدة 30 دقيقة — هذه هي الخطوة الأولى والوحيدة المطلوبة. فيها يحلل فريق Tezcode أي العمليات المتكررة تستهلك معظم وقتك وأي أتمتة تعطي أسرع نتيجة. ثم تستلم عرضاً مكتوباً بسعر وموعد واضحين — وعند الموافقة يبدأ العمل بدفعة مقدمة 30%.",
-        },
-        {
-          q: "كم تكلف أتمتة الأعمال بالذكاء الاصطناعي في أوزبكستان؟",
-          a: "لا يوجد سعر موحد — يعتمد المبلغ على عدد العمليات المؤتمتة وتعقيد التكاملات. للاسترشاد: الباقات الجاهزة Starter ($0) وPro ($200 شهرياً)، أما سعر الحل المخصص فيُثبَّت بعد اعتماد المواصفات الفنية. نعطيك الرقم الدقيق في عرض مكتوب بعد الاستشارة المجانية، والدفع 30% مقدماً — دون أي إضافات خفية.",
+          a: "البداية الصحيحة استشارة مجانية مدتها 30 دقيقة: نحدد فيها أي عمل يستهلك معظم وقت فريقك وأي أتمتة تعطي أسرع نتيجة، ثم تستلم عرضاً مكتوباً بسعر وموعد واضحين. لا حاجة لمعرفة تقنية — يكفي وصف عمليتك بكلمات بسيطة. Tezcode مصنع برمجيات ذكاء اصطناعي (AI Software Factory) في طشقند ومقيم في IT Park: شارع أمير تيمور 10، الهاتف: ‎+998 91 777 66 09. تُخزَّن البيانات الحساسة في بيئة تتحكم بها أنت، ونثبّت متطلبات الأمان كتابياً.",
         },
       ],
     },
@@ -1306,7 +1118,7 @@ export const CONTENT: ServicePageContent = {
         {
           tag: "01",
           title: "AI Office — віртуальний офіс із 12 відділів",
-          desc: "Система AI-агентів для продажів, HR, маркетингу та інших відділів. Tezcode сам керує з її допомогою 14 розробниками і багатьма проєктами — тобто рішення, яке ми вам пропонуємо, ми спершу перевірили на собі.",
+          desc: "Система AI-агентів для продажів, HR, маркетингу та інших відділів. Tezcode сам керує з її допомогою командою з 19 осіб і багатьма проєктами — тобто рішення, яке ми вам пропонуємо, ми спершу перевірили на собі.",
         },
         {
           tag: "02",
@@ -1367,67 +1179,23 @@ export const CONTENT: ServicePageContent = {
       items: [
         {
           q: "Що таке ШІ-автоматизація і чим вона відрізняється від звичайної програми?",
-          a: "ШІ-автоматизація — це виконання рутинних завдань (звіти, відповіді на питання, введення даних) штучним інтелектом без участі людини. Звичайна програма працює лише за жорстко заданими правилами, а ШІ розуміє вільний текст, підбирає відповідь за ситуацією і адаптується до нових випадків. Тому діалог із клієнтом або аналіз документів під силу лише ШІ.",
-        },
-        {
-          q: "Штучний інтелект і AI — це одне й те саме?",
-          a: "Так, це одне поняття: AI — скорочення від artificial intelligence, українською — штучний інтелект. «AI-автоматизація», «автоматизація за допомогою штучного інтелекту» чи «розумна програма» у звичайній мові означають одне: рутинну роботу замість людини виконує програма. Тож яким би терміном ви не шукали, відповідь одна — важливо, щоб рішення підключалося до вашого процесу і виконувало реальну роботу.",
+          a: "ШІ-автоматизація — це виконання рутинних завдань (звіти, відповіді на питання, введення даних) штучним інтелектом без участі людини. Звичайна програма працює лише за жорстко заданими правилами, а ШІ розуміє вільний текст, підбирає відповідь за ситуацією і адаптується до нових випадків. Тому діалог із клієнтом або аналіз документів під силу лише ШІ. ШІ працює узбецькою (латиниця і кирилиця), російською та англійською — відповідає мовою клієнта.",
         },
         {
           q: "Скільки це коштує?",
-          a: "Готові тарифи: Starter — $0 (базові можливості для малого бізнесу), Pro — $200/міс (просунутий AI, до 30 співробітників, підтримка 24/7). Ціна індивідуального рішення під ваш процес фіксується після затвердження технічного завдання (ТЗ). Оплата — 30% передоплата, решта поетапно.",
+          a: "Готові тарифи: Starter — $0 (базові можливості для малого бізнесу), Pro — $200/міс (просунутий AI, до 30 співробітників, підтримка 24/7). Ціна індивідуального рішення залежить від кількості автоматизовуваних процесів і складності інтеграцій та фіксується в письмовій пропозиції після затвердження технічного завдання (ТЗ). Оплата — 30% передоплата, решта поетапно, без прихованих доплат. На консультації разом порахуємо орієнтовний ROI на ваших цифрах.",
         },
         {
           q: "Скільки часу займає розробка?",
-          a: "Проста автоматизація (Telegram-бот, автоматичний звіт) — 1-2 тижні. Робоча MVP-версія повнішого ШІ-рішення — 2-4 тижні. Щотижня показуємо демо, тож результат ви бачите в процесі, а не в останній день.",
-        },
-        {
-          q: "Яким сферам це підходить?",
-          a: "Будь-якій сфері з повторюваними процесами: торгівля і магазини (каса, склад, звіти), клініки (запис, черга, нагадування), навчальні центри (ліди, контроль оплат), логістика (статус замовлення, повідомлення), сервіс (питання клієнтів, бронювання). На консультації визначимо найвигіднішу точку саме у вашій сфері.",
+          a: "Проста автоматизація (Telegram-бот, автоматичний звіт) — 1-2 тижні. Робоча MVP-версія повнішого ШІ-рішення — 2-4 тижні. Щотижня показуємо демо, тож результат ви бачите в процесі, а не в останній день. Кожен проєкт починається з письмового договору, а після здачі навчаємо команду й стежимо за роботою системи.",
         },
         {
           q: "Чи буде інтеграція з 1C, CRM і моїми системами?",
           a: "Так, це наша основна робота. Будуємо інтеграції з Telegram, Google Sheets, 1C, AmoCRM, Bitrix24, платіжними системами Click/Payme. Мета — щоб ШІ працював усередині вашого поточного процесу, не змушуючи переходити на нову програму. Список ваших систем розберемо на консультації.",
         },
         {
-          q: "Чи працює ШІ узбецькою мовою?",
-          a: "Так. Наші ШІ-рішення спілкуються з клієнтами узбецькою (латиниця і кирилиця), російською та англійською. Якою мовою пише клієнт — тією бот і відповідає. Для ринку Узбекистану це у нас стандартна вимога.",
-        },
-        {
-          q: "Як забезпечується безпека моїх даних?",
-          a: "Конфіденційні дані зберігаються в середовищі, яке контролюєте ви, доступи обмежені за ролями. У ШІ-модель передається лише те, що необхідно для задачі. За потреби розглянемо архітектуру, за якої дані не залишають ваш контур — вимоги до безпеки фіксуємо письмово на консультації.",
-        },
-        {
-          q: "Чи підходить це малому бізнесу?",
-          a: "Так, найчастіше до нас звертається саме малий бізнес. Тариф Starter починається з $0, а рішення на кшталт Telegram-бота чи автоматичного звіту впроваджуються без великого бюджету. Не обов'язково автоматизувати все одразу — починаємо з одного найвитратнішого за часом процесу, а після результату розширюєте.",
-        },
-        {
-          q: "Коли окупляться вкладення (ROI)?",
-          a: "Залежить від процесу, що автоматизується. Розрахунок простий: якщо співробітник витрачає на звіт 3 години на день, а ШІ скорочує це до 1 хвилини, звільняється ~60 годин роботи на місяць — помножте на зарплату співробітника і побачите економію. На консультації порахуємо орієнтовний ROI на ваших цифрах.",
-        },
-        {
-          q: "Як влаштовані договір і підтримка?",
-          a: "Кожен проєкт починається з письмового договору: обсяг робіт, термін, ціна та етапи оплати (30% передоплата) фіксуються явно. Після здачі не зникаємо: навчаємо команду, стежимо за роботою, у тарифі Pro включена підтримка 24/7.",
-        },
-        {
-          q: "Що буде, якщо ШІ помилиться?",
-          a: "Ми не залишаємо ШІ без контролю. Важливі рішення (оплата, договір, велика знижка) завжди проходять підтвердження людиною, а в непевних випадках ШІ передає питання оператору. Завдяки технології RAG бот спирається лише на дані вашої бази — не вигадує відповіді. Після впровадження разом відстежуємо якість відповідей і доналаштовуємо.",
-        },
-        {
           q: "З чого почати?",
-          a: "Правильний старт — безкоштовна 30-хвилинна консультація. На ній визначаємо, на яку роботу ваша команда витрачає найбільше часу, і яка автоматизація дасть найшвидший результат. Технічні знання не потрібні — достатньо простими словами описати ваш процес.",
-        },
-        {
-          q: "Хто в Ташкенті займається AI-автоматизацією бізнесу?",
-          a: "Tezcode — AI Software Factory в Ташкенті та резидент IT Park: будуємо AI-агентів, чат-ботів і автоматизацію процесів для бізнесу. Передаємо ШІ рутинні завдання — звіти, відповіді клієнтам, приймання замовлень — та інтегруємо його з вашими системами (1C, CRM, Telegram). Адреса: Ташкент, проспект Аміра Темура, 10. Телефон: +998 91 777 66 09 — можна записатися на безкоштовну консультацію.",
-        },
-        {
-          q: "Хочу автоматизувати бізнес за допомогою AI — з чого почати?",
-          a: "Почніть із безкоштовної 30-хвилинної діагностики-консультації — це перший і єдиний необхідний крок. На ній команда Tezcode аналізує, які повторювані процеси з'їдають найбільше вашого часу, і яка автоматизація дасть найшвидший результат. Потім ви отримуєте письмову пропозицію з конкретною ціною і терміном — за згоди робота починається з передоплати 30%.",
-        },
-        {
-          q: "Скільки коштує AI-автоматизація бізнесу в Узбекистані?",
-          a: "Єдиної ціни немає — сума залежить від кількості автоматизовуваних процесів і складності інтеграцій. Для орієнтиру: готові тарифи Starter ($0) і Pro ($200/міс), а ціна індивідуального рішення фіксується після затвердження технічного завдання. Точну цифру даємо в письмовій пропозиції після безкоштовної консультації, оплата — 30% передоплата, без прихованих доплат.",
+          a: "Правильний старт — безкоштовна 30-хвилинна консультація: визначаємо, на яку роботу ваша команда витрачає найбільше часу і яка автоматизація дасть найшвидший результат, після чого ви отримуєте письмову пропозицію з конкретною ціною і терміном. Технічні знання не потрібні — достатньо простими словами описати ваш процес. Tezcode — AI Software Factory у Ташкенті та резидент IT Park: проспект Аміра Темура, 10, телефон +998 91 777 66 09. Конфіденційні дані зберігаються в середовищі, яке контролюєте ви, вимоги до безпеки фіксуємо письмово.",
         },
       ],
     },

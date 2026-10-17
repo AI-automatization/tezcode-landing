@@ -104,10 +104,6 @@ export const CONTENT: ArticleContent = {
           a: "Narx imkoniyatlar, kassa va filial soniga bog'liq. To'g'ri yondashuv — avval do'koningiz ehtiyojini aniqlab, keyin shu ehtiyojga mos yechim narxini so'rash. Tezcode bilan bog'lansangiz, ehtiyojingizga qarab aniq taklif beramiz.",
         },
         {
-          q: "Mavjud do'konimni yangi POS tizimiga ko'chira olamizmi?",
-          a: "Ha. Yaxshi tizim mavjud tovar bazasi, qoldiq va mijoz ma'lumotlarini import qilish imkonini beradi, shunda noldan boshlamaysiz.",
-        },
-        {
           q: "Bir nechta filialni bitta joydan boshqarsa bo'ladimi?",
           a: "Ha, bu zamonaviy POS tizimlarining asosiy imkoniyati. RAOS bir nechta kassa va filialni bitta hisobdan, real vaqtda boshqarish imkonini beradi.",
         },
@@ -208,10 +204,6 @@ export const CONTENT: ArticleContent = {
         {
           q: "Сколько стоит POS-система в Узбекистане?",
           a: "Цена зависит от функций, количества касс и филиалов. Правильный подход — сначала определить потребности магазина, а затем узнать цену подходящего решения. Свяжитесь с Tezcode, и мы дадим точное предложение под ваши задачи.",
-        },
-        {
-          q: "Можно ли перенести существующий магазин на новую POS?",
-          a: "Да. Хорошая система позволяет импортировать существующую базу товаров, остатки и данные клиентов, чтобы не начинать с нуля.",
         },
         {
           q: "Можно ли управлять несколькими филиалами из одного места?",

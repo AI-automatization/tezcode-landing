@@ -46,9 +46,24 @@ const uz: ServicePageCopy = {
     items: [
       {
         q: "Biznesim uchun sun'iy intellekt kerak — nimadan boshlayman?",
-        a: "Avval eng ko'p vaqt oladigan bitta jarayonni tanlaymiz: mijozlarga javob berish, buyurtma qabul qilish, hisobot, lidlarni CRMga yozish yoki hujjatlarni qayta ishlash. Bepul konsultatsiyada jarayonni tahlil qilib, AI agent, chatbot yoki avtomatizatsiyadan qaysi biri mosligini aytamiz. Keyin vazifa, integratsiya, narx va muddat yozma taklifda belgilanadi.",
+        a: "Avval eng ko'p vaqt oladigan bitta jarayonni tanlaymiz: mijozlarga javob berish, buyurtma qabul qilish, hisobot, lidlarni CRMga yozish yoki hujjatlarni qayta ishlash. Bepul konsultatsiyada jarayonni tahlil qilib, AI agent, chatbot yoki avtomatizatsiyadan qaysi biri mosligini aytamiz. Keyin vazifa, integratsiya, narx va muddat yozma taklifda belgilanadi. Konsultatsiya onlayn yoki Tezcode'ning (IT Park rezidenti) Toshkentdagi ofisida — Amir Temur shoh ko'chasi, 10 — o'tadi.",
       },
-      ...COUNTRY_CONTENT.uz.faq.items,
+      {
+        q: "O'zbekistonda biznesga AI joriy qilish qancha turadi?",
+        a: "Tayyor yechimlar: Telegram bot $279 dan, AI chatbot $339 dan, AI agent $400 dan, AI video analitika $990 dan, individual loyiha (MVP) $1000 dan. Obuna tariflari: Starter $0, Pro $200/oy. Aniq narx bepul konsultatsiya va TZ'dan keyin yozma taklifda beriladi. To'lov 30% oldindan, qolgani bosqichma-bosqich — yashirin qo'shimchalar yo'q.",
+      },
+      {
+        q: "AI o'zbek tilida ishlaydimi?",
+        a: "Ha. Tezcode yechimlari o'zbek (lotin va kiril), rus va ingliz tillarida ishlaydi — mijoz qaysi tilda yozsa, bot o'sha tilda javob beradi. O'zbekiston bozori uchun bu bizda standart talab: Salomat AI ovozli assistentimiz ham o'zbek va rus tillarida gaplashadi.",
+      },
+      {
+        q: "AI joriy qilish qancha vaqt oladi?",
+        a: "Oddiy avtomatlashtirish (Telegram bot, avtomatik hisobot) — 1-2 hafta. To'liqroq AI yechimning ishlovchi MVP versiyasi — 2-4 hafta. Har hafta demo ko'rsatamiz, natijani jarayonda kuzatib borasiz.",
+      },
+      {
+        q: "Mavjud tizimlarimni (1C, CRM) almashtirish kerakmi?",
+        a: "Yo'q. AI'ni mavjud ish oqimingiz ichiga joriy qilamiz: 1C, amoCRM, Bitrix24, Google Sheets, Telegram, Click/Payme bilan integratsiya quramiz. Maqsad — jamoani yangi dasturga majburlamasdan, hozirgi tizimlaringizni aqlli qilish.",
+      },
     ],
   },
   related: {
