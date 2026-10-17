@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { m } from "motion/react";
-import { Bot, Building2, Inbox, type LucideIcon } from "lucide-react";
+import { Bot, Inbox, type LucideIcon } from "lucide-react";
 import { useLocale } from "next-intl";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Tilt3D } from "@/components/motion/Tilt3D";
@@ -26,7 +26,6 @@ type Case = {
 // ko'rsatilmaydi — o'rniga sektor ikonkasi ishlatiladi.
 const CASES: readonly Case[] = [
   { slug: "hoffen", icon: Bot, category: "custom", accent: "blue", logo: { src: "/cases/hoffen/logo.png", width: 346, height: 79 } },
-  { slug: "dantes", icon: Building2, category: "custom", accent: "amber", logo: { src: "/cases/dantes/logo.png", width: 425, height: 425 } },
 ] as const;
 
 const ACCENT: Record<Case["accent"], { text: string; ring: string; bg: string }> = {
@@ -88,14 +87,6 @@ const COPY: Record<Lang, CopyShape> = {
         metric: "7 ta agent",
         metricCaption: "har kuni 80+ avtomatik ish",
       },
-      "dantes": {
-        name: "Dantes Construction",
-        role: "Qurilish kompaniyasi",
-        product: "AI yordamchilar",
-        headline: "Hisobotlarni tahlil qilib, rahbarga muhimini yetkazadigan AI",
-        metric: "Jarayonda",
-        metricCaption: "natijalar tez orada",
-      },
     },
   },
   ru: {
@@ -117,14 +108,6 @@ const COPY: Record<Lang, CopyShape> = {
         headline: "7 ИИ-агентов в Telegram для продаж, склада, финансов и HR",
         metric: "7 агентов",
         metricCaption: "80+ автоматических задач в день",
-      },
-      "dantes": {
-        name: "Dantes Construction",
-        role: "Строительная компания",
-        product: "ИИ-помощники",
-        headline: "ИИ анализирует отчёты и доносит главное до руководителя",
-        metric: "В работе",
-        metricCaption: "результаты скоро",
       },
     },
   },
@@ -148,14 +131,6 @@ const COPY: Record<Lang, CopyShape> = {
         metric: "7 agents",
         metricCaption: "80+ automations every day",
       },
-      "dantes": {
-        name: "Dantes Construction",
-        role: "Construction company",
-        product: "AI assistants",
-        headline: "AI that analyzes reports and tells management what matters",
-        metric: "In progress",
-        metricCaption: "results coming soon",
-      },
     },
   },
   ar: {
@@ -178,14 +153,6 @@ const COPY: Record<Lang, CopyShape> = {
         metric: "7 وكلاء",
         metricCaption: "أكثر من 80 مهمة آلية يوميًا",
       },
-      "dantes": {
-        name: "Dantes Construction",
-        role: "شركة بناء",
-        product: "مساعدون بالذكاء الاصطناعي",
-        headline: "ذكاء اصطناعي يحلل التقارير ويوصل الأهم إلى الإدارة",
-        metric: "قيد التنفيذ",
-        metricCaption: "النتائج قريبًا",
-      },
     },
   },
   uk: {
@@ -207,14 +174,6 @@ const COPY: Record<Lang, CopyShape> = {
         headline: "7 AI-агентів у Telegram для продажів, складу, фінансів і HR",
         metric: "7 агентів",
         metricCaption: "80+ автоматичних задач щодня",
-      },
-      "dantes": {
-        name: "Dantes Construction",
-        role: "Будівельна компанія",
-        product: "AI-помічники",
-        headline: "AI аналізує звіти й доносить головне до керівника",
-        metric: "У роботі",
-        metricCaption: "результати незабаром",
       },
     },
   },
@@ -311,7 +270,13 @@ export function CaseStudiesIndexClient() {
         {/* Cards */}
         {visible.length > 0 ? (
           <RevealStagger
-            className={`grid grid-cols-1 md:grid-cols-2 gap-6 ${visible.length >= 3 ? "lg:grid-cols-3" : "mx-auto max-w-5xl"}`}
+            className={`grid grid-cols-1 gap-6 ${
+              visible.length >= 3
+                ? "md:grid-cols-2 lg:grid-cols-3"
+                : visible.length === 2
+                  ? "md:grid-cols-2 mx-auto max-w-5xl"
+                  : "mx-auto max-w-lg" // one case: a single centered card, about one 2-up column wide
+            }`}
             stagger={0.1}
           >
             {visible.map((c) => {
