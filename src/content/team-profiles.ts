@@ -26,7 +26,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
   {
     slug: "behruz-satimboyev",
     name: "Behruz Satimboyev",
-    role: "Team Lead · AI Engineer",
+    role: "AI Engineer",
     bio: [
       "Behruz Satimboyev — Tezcode jamoasida Team Lead va AI Engineer. React, Next.js va Node.js asosida to'liq mahsulotlar quradi hamda jamoa ishini boshqaradi.",
       "TezDetal loyihasi ustida ishlaydi. REST API, real vaqt (Socket.io), autentifikatsiya (JWT) va CI/CD bo'yicha tajribaga ega; mobil uchun React Native va AI prompt engineering bilan ishlaydi.",
@@ -55,7 +55,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "REST API",
       "React Native",
     ],
-    metaTitle: "Behruz Satimboyev — Tezcode Team Lead, AI Engineer",
+    metaTitle: "Behruz Satimboyev — Tezcode AI Engineer",
     metaDescription:
       "Behruz Satimboyev — Tezcode jamoasida Team Lead va AI Engineer. React, Next.js, Node.js, React Native. TezDetal loyihasi.",
   },
@@ -125,7 +125,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
   {
     slug: "abdulaziz-atxamov",
     name: "Abdulaziz Atxamov",
-    role: "Marketing · QA · Developer",
+    role: "AI Engineer",
     photo: "/team/abdulaziz-atxamov.jpg",
     bio: [
       "Abdulaziz Atxamov — Tezcode jamoasida marketing, QA va development bo'yicha ishlaydi. Node.js va React asosida veb-mahsulotlar quradi hamda sifat nazorati (QA) qiladi.",
@@ -152,7 +152,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "Marketing",
       "Remotion",
     ],
-    metaTitle: "Abdulaziz Atxamov — Tezcode Marketing, QA & Developer",
+    metaTitle: "Abdulaziz Atxamov — Tezcode AI Engineer",
     metaDescription:
       "Abdulaziz Atxamov — Tezcode jamoasida marketing, QA va developer. Node.js, React, Redux, Remotion. MaxSavdo loyihasi.",
   },
@@ -175,7 +175,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
   {
     slug: "diyor-raxmatullayev",
     name: "Diyor Raxmatullayev",
-    role: "CoreMed Founder · Tezcode Team Lead",
+    role: "AI Engineer",
     photo: "/team/diyor-raxmatullayev-v2.jpg",
     bio: [
       "Diyor Raxmatullayev — CoreMed healthtech holdingi asoschisi (HamshiraGo, ClinicaGo, Salomat AI) va Tezcode jamoasida Team Lead.",
@@ -208,7 +208,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "PostgreSQL",
       "AI Integration",
     ],
-    metaTitle: "Diyor Raxmatullayev — CoreMed Founder, Tezcode Team Lead",
+    metaTitle: "Diyor Raxmatullayev — Tezcode AI Engineer",
     metaDescription:
       "Diyor Raxmatullayev — CoreMed healthtech holdingi asoschisi (HamshiraGo, ClinicaGo) va Tezcode Team Lead. Next.js, NestJS, TypeScript, AI integratsiya.",
   },
@@ -363,7 +363,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
   {
     slug: "abdulaziz-mirzayev",
     name: "Abdulaziz Mirzayev",
-    role: "Frontend & Mobile Developer",
+    role: "AI Engineer",
     photo: "/team/abdulaziz-mirzayev-v2.jpg",
     bio: [
       "Abdulaziz Mirzayev — Tezcode jamoasida frontend va mobil developer. React va Next.js frontend hamda React Native (iOS & Android) mobil ilovalar quradi.",
@@ -391,7 +391,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "React Native",
       "TypeScript",
     ],
-    metaTitle: "Abdulaziz Mirzayev — Tezcode Frontend & Mobile Developer",
+    metaTitle: "Abdulaziz Mirzayev — Tezcode AI Engineer",
     metaDescription:
       "Abdulaziz Mirzayev — Tezcode jamoasida frontend va mobil developer. React, Next.js, React Native (iOS & Android), TypeScript. RAOS loyihasi.",
   },
@@ -430,7 +430,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
   {
     slug: "abdulloh-isroilov",
     name: "Abdulloh Isroilov",
-    role: "AI-Trade Co-founder · AI Engineer",
+    role: "AI Engineer",
     bio: [
       "Abdulloh Isroilov — Tezcode jamoasida AI Engineer va AI-Trade co-founder. React frontend hamda Node.js/Express backend bilan ishlaydi.",
       "AI-Trade savdo agenti loyihasida ishlaydi. MongoDB va zamonaviy JavaScript bilan mahsulot quradi.",
@@ -445,14 +445,14 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "MongoDB",
       "Trading",
     ],
-    metaTitle: "Abdulloh Isroilov — Tezcode AI Engineer, AI-Trade",
+    metaTitle: "Abdulloh Isroilov — Tezcode AI Engineer",
     metaDescription:
       "Abdulloh Isroilov — Tezcode jamoasida AI Engineer va AI-Trade co-founder. React, Node.js, Express, MongoDB.",
   },
   {
     slug: "polatbek-ismoilov",
     name: "Polatbek Ismoilov",
-    role: "Tech Lead",
+    role: "AI Engineer",
     bio: [
       "Polatbek Ismoilov — Tezcode jamoasida MaxSavdo bo'yicha Tech Lead. NestJS backend, admin panel, Telegram bot va mini-app — to'liq platformani boshqaradi.",
       "TypeScript, PostgreSQL/Prisma, Redis/BullMQ va Socket.IO bilan ishlaydi; Turborepo monorepo, Railway va Cloudflare R2. RAOS bilan Partner API integratsiyasi.",
@@ -484,7 +484,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "PostgreSQL",
       "System Architecture",
     ],
-    metaTitle: "Polatbek Ismoilov — Tezcode Tech Lead",
+    metaTitle: "Polatbek Ismoilov — Tezcode AI Engineer",
     metaDescription:
       "Polatbek Ismoilov — Tezcode jamoasida Tech Lead (MaxSavdo). NestJS, TypeScript, PostgreSQL, Prisma, Redis. MaxSavdo va RAOS integratsiyasi.",
   },
@@ -527,7 +527,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
   {
     slug: "emirhan-ertan",
     name: "Emirhan Ertan",
-    role: "WeWatch Co-founder · SEO",
+    role: "AI Engineer",
     bio: [
       "Emirhan Ertan — Tezcode jamoasida WeWatch co-founder va SEO mutaxassisi. WeWatch.uz (ijtimoiy onlayn kinoteatr) o'sishi va qidiruv optimizatsiyasi bilan shug'ullanadi.",
       "HTML, CSS, JavaScript va React Native bilan ishlaydi. WeWatch va Uy Savdo loyihalarida.",
@@ -539,7 +539,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
     ],
     telegram: "Emirhan7788",
     knowsAbout: ["SEO", "WeWatch", "React Native", "Web Development"],
-    metaTitle: "Emirhan Ertan — Tezcode WeWatch Co-founder, SEO",
+    metaTitle: "Emirhan Ertan — Tezcode AI Engineer",
     metaDescription:
       "Emirhan Ertan — Tezcode jamoasida WeWatch co-founder va SEO mutaxassisi. WeWatch.uz. HTML, CSS, JavaScript, React Native.",
   },
