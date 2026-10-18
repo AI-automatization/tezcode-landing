@@ -63,6 +63,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
     slug: "javodbek-abdusalimov",
     name: "Javodbek Abdusalimov",
     role: "Full-Stack Developer",
+    photo: "/team/javodbek-abdusalimov-v2.jpg",
     bio: [
       "Javodbek Abdusalimov — Tezcode jamoasida Full-Stack Developer. Next.js, React va Node.js asosida veb-mahsulotlar quradi.",
       "TezDetal loyihasi ustida ishlaydi. TypeScript va zamonaviy JavaScript bilan frontend hamda backend qismlarini ishlab chiqadi.",

@@ -112,6 +112,7 @@ const TEAM: Member[] = [
     role: "Full-Stack Developer",
     telegram: "@Javodbe411",
     profileSlug: "javodbek-abdusalimov",
+    photo: "/team/javodbek-abdusalimov-v2.jpg",
   },
   {
     name: "Habibulloh Shuhratov",
