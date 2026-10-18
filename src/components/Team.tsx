@@ -41,6 +41,7 @@ const TEAM: Member[] = [
     name: "Azimjon Qurbonov",
     role: "Savdo Builder Co-founder · Developer",
     telegram: "@Azim090",
+    photo: "/team/azimjon-qurbonov.jpg",
   },
   {
     name: "Diyor Raxmatullayev",
