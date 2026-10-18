@@ -73,6 +73,11 @@ const nextConfig: NextConfig = {
         { source: `/:locale${service}/${city}`, destination: "/:locale" + service, permanent: true },
       ]),
     );
+    // Samarqand city pages retired 2026-10-19: never indexed, no local presence.
+    const samarqandRedirects = ["/ai-chatbot", "/ai-agent", "/telegram-bot-biznes", "/biznes-avtomatlashtirish", "/pos-tizimi", "/ai-avtomatizatsiya"].flatMap((service) => [
+      { source: `${service}/samarqand`, destination: service, permanent: true },
+      { source: `/:locale(uz|ru|en|ar|uk)${service}/samarqand`, destination: `/:locale${service}`, permanent: true },
+    ]);
     const aiAgentTashkentRedirects = ["", "/uz", "/ru", "/en", "/ar", "/uk"].map((prefix) => ({
       source: `${prefix}/ai-agent/toshkent`,
       destination: `${prefix === "/uz" ? "" : prefix}/ai-agent`,
@@ -97,6 +102,7 @@ const nextConfig: NextConfig = {
     return [
       ...founderRedirects,
       ...retiredCityRedirects,
+      ...samarqandRedirects,
       ...aiAgentTashkentRedirects,
       ...contactRedirects,
       ...formerTeamRedirects,

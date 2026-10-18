@@ -524,12 +524,12 @@ function RelatedSection({ copy }: { copy: ServicePageCopy }) {
 // service (/pos-tizimi/toshkent, …). Static map mirrors each route's
 // generateStaticParams so we only link city pages that actually exist.
 const SERVICE_CITY_SLUGS: Record<string, string[]> = {
-  "pos-tizimi": ["toshkent", "samarqand"], // trimmed from 12: small-city pages were thin duplicates
-  "ai-avtomatizatsiya": ["toshkent", "samarqand"], // trimmed from 12: small-city pages were thin duplicates
-  "ai-chatbot": ["toshkent", "samarqand"],
-  "ai-agent": ["samarqand"],
-  "telegram-bot-biznes": ["toshkent", "samarqand"],
-  "biznes-avtomatlashtirish": ["toshkent", "samarqand"],
+  "pos-tizimi": ["toshkent"], // trimmed from 12: small-city pages were thin duplicates
+  "ai-avtomatizatsiya": ["toshkent"], // trimmed from 12: small-city pages were thin duplicates
+  "ai-chatbot": ["toshkent"],
+  "ai-agent": [],
+  "telegram-bot-biznes": ["toshkent"],
+  "biznes-avtomatlashtirish": ["toshkent"],
 };
 
 const CITY_ROW_HEADING: Record<ServiceLang, string> = {

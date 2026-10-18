@@ -7,7 +7,7 @@ import { getCity } from "@/data/cities";
 import { ruGen, ruLocative, ukPrep } from "@/data/cityLocal";
 import { buildTelegramBotCityContent } from "./cityContent";
 
-const ACTIVE_CITY_SLUGS = ["toshkent", "samarqand"];
+const ACTIVE_CITY_SLUGS = ["toshkent"];
 
 export const dynamicParams = false;
 

@@ -7,7 +7,7 @@ import { getCity } from "@/data/cities";
 import { buildBiznesAvtoCityContent } from "./cityContent";
 import { ruPrep, ukPrep } from "@/data/cityLocal";
 
-const ACTIVE_CITY_SLUGS = ["toshkent", "samarqand"];
+const ACTIVE_CITY_SLUGS = ["toshkent"];
 
 export const dynamicParams = false;
 

@@ -31,7 +31,7 @@ const COUNTRY_AI_UPDATED = new Date("2026-09-20");
 // City slugs with live pages for the newer per-city service landings.
 // Must mirror ACTIVE_CITY_SLUGS in each service's [city]/page.tsx
 // (ai-chatbot, ai-agent, telegram-bot-biznes, biznes-avtomatlashtirish).
-const ACTIVE_CITY_SLUGS = ["toshkent", "samarqand"];
+const ACTIVE_CITY_SLUGS = ["toshkent"]; // Samarqand retired 2026-10-19 (not indexed, no local presence)
 const CITY_SERVICES = [
   "/ai-chatbot",
   "/ai-agent",

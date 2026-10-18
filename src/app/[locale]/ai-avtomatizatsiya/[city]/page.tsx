@@ -21,7 +21,7 @@ export const dynamicParams = false;
 // that Google discovered but refused to index. getCity() alone still resolves
 // them, so we gate on this allowlist everywhere to 404 the doorway pages and let
 // Google drop them.
-const ACTIVE_CITIES = ["toshkent", "samarqand"];
+const ACTIVE_CITIES = ["toshkent"];
 
 // The parent [locale] segment fans out locales; this child fans out city slugs.
 export function generateStaticParams() {

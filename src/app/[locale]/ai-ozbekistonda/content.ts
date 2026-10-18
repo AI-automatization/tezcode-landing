@@ -147,11 +147,9 @@ export const CONTENT: ServicePageContent = {
         { href: "/ai-chatbot", label: "AI chatbot", desc: "Telegram/Instagram/sayt uchun 24/7 AI chatbot — eng tez boshlanadigan yechim." },
         { href: "/biznes-uchun-suniy-intellekt", label: "Biznes uchun sun'iy intellekt", desc: "Qaysi AI yechim biznesingizga mos — agent, chatbot yoki avtomatizatsiya." },
         { href: "/ai-avtomatizatsiya/toshkent", label: "AI avtomatlashtirish — Toshkent", desc: "Poytaxtdagi bizneslar uchun AI avtomatlashtirish sahifasi." },
-        { href: "/ai-avtomatizatsiya/samarqand", label: "AI avtomatlashtirish — Samarqand", desc: "Samarqanddagi bizneslar uchun AI avtomatlashtirish sahifasi." },
         { href: "/ai-chatbot/toshkent", label: "AI chatbot — Toshkent", desc: "Toshkent bizneslari uchun AI chatbot yasatish." },
       ],
     },
-    updated: "Yangilangan: 2026-yil 26-avgust",
     service: {
       name: "O'zbekistondagi AI kompaniya — Tezcode",
       description:
@@ -294,11 +292,9 @@ export const CONTENT: ServicePageContent = {
         { href: "/ai-agent", label: "Создание AI-агентов", desc: "AI-агенты, которые сами принимают решения — продажи, поддержка, внутренняя автоматизация." },
         { href: "/ai-chatbot", label: "AI-чат-бот", desc: "AI-чат-бот 24/7 для Telegram/Instagram/сайта — самое быстрое решение для старта." },
         { href: "/ai-avtomatizatsiya/toshkent", label: "AI-автоматизация — Ташкент", desc: "Страница AI-автоматизации для бизнеса в столице." },
-        { href: "/ai-avtomatizatsiya/samarqand", label: "AI-автоматизация — Самарканд", desc: "Страница AI-автоматизации для бизнеса в Самарканде." },
         { href: "/ai-chatbot/toshkent", label: "AI-чат-бот — Ташкент", desc: "Заказать AI-чат-бота для бизнеса в Ташкенте." },
       ],
     },
-    updated: "Обновлено: 26 августа 2026",
     service: {
       name: "AI-компания в Узбекистане — Tezcode",
       description:
@@ -441,11 +437,9 @@ export const CONTENT: ServicePageContent = {
         { href: "/ai-agent", label: "AI agent development", desc: "AI agents that make decisions on their own — sales, support, internal automation." },
         { href: "/ai-chatbot", label: "AI chatbot", desc: "A 24/7 AI chatbot for Telegram/Instagram/website — the fastest solution to start with." },
         { href: "/ai-avtomatizatsiya/toshkent", label: "AI automation — Tashkent", desc: "The AI automation page for businesses in the capital." },
-        { href: "/ai-avtomatizatsiya/samarqand", label: "AI automation — Samarkand", desc: "The AI automation page for businesses in Samarkand." },
         { href: "/ai-chatbot/toshkent", label: "AI chatbot — Tashkent", desc: "Order an AI chatbot for a business in Tashkent." },
       ],
     },
-    updated: "Updated: August 26, 2026",
     service: {
       name: "AI implementation for business in Uzbekistan — Tezcode",
       description:
@@ -555,7 +549,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/ai-agent", label: "بناء وكلاء AI", desc: "وكلاء AI يتخذون القرار بأنفسهم — المبيعات والدعم والأتمتة الداخلية." },
         { href: "/ai-chatbot", label: "روبوت محادثة AI", desc: "روبوت AI على مدار الساعة لـ Telegram/Instagram/الموقع — أسرع حل للبدء." },
         { href: "/ai-avtomatizatsiya/toshkent", label: "أتمتة AI — طشقند", desc: "صفحة أتمتة AI لأعمال العاصمة." },
-        { href: "/ai-avtomatizatsiya/samarqand", label: "أتمتة AI — سمرقند", desc: "صفحة أتمتة AI لأعمال سمرقند." },
         { href: "/ai-chatbot/toshkent", label: "روبوت AI — طشقند", desc: "اطلب روبوت محادثة AI لعملك في طشقند." },
       ],
     },
@@ -668,7 +661,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/ai-agent", label: "Створення AI-агентів", desc: "AI-агенти, що самі ухвалюють рішення — продажі, підтримка, внутрішня автоматизація." },
         { href: "/ai-chatbot", label: "AI-чат-бот", desc: "AI-чат-бот 24/7 для Telegram/Instagram/сайту — найшвидше рішення для старту." },
         { href: "/ai-avtomatizatsiya/toshkent", label: "AI-автоматизація — Ташкент", desc: "Сторінка AI-автоматизації для бізнесу в столиці." },
-        { href: "/ai-avtomatizatsiya/samarqand", label: "AI-автоматизація — Самарканд", desc: "Сторінка AI-автоматизації для бізнесу в Самарканді." },
         { href: "/ai-chatbot/toshkent", label: "AI-чат-бот — Ташкент", desc: "Замовити AI-чат-бота для бізнесу в Ташкенті." },
       ],
     },

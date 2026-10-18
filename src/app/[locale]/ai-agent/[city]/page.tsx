@@ -9,7 +9,7 @@ import { ruPrep, ukPrep } from "@/data/cityLocal";
 
 // Per-city AI-agent landing pages: /ai-agent/<city>.
 // Tashkent is consolidated into /ai-agent via next.config.ts redirects.
-const ACTIVE_CITY_SLUGS = ["samarqand"];
+const ACTIVE_CITY_SLUGS: string[] = [];
 
 export const dynamicParams = false;
 
