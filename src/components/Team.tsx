@@ -99,6 +99,7 @@ const TEAM: Member[] = [
     role: "Frontend & Mobile Developer",
     telegram: "@mirzaevvv011",
     profileSlug: "abdulaziz-mirzayev",
+    photo: "/team/abdulaziz-mirzayev-v2.jpg",
   },
   {
     name: "Jafarbek Ulugbekov",
@@ -135,6 +136,7 @@ const TEAM: Member[] = [
     role: "Full-Stack Developer",
     telegram: "@ky_747",
     profileSlug: "yusuf-kasimov",
+    photo: "/team/yusuf-kasimov.jpg",
   },
 ];
 

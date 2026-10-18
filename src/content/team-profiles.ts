@@ -327,6 +327,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
     slug: "yusuf-kasimov",
     name: "Yusuf Kasimov",
     role: "Full-Stack Developer",
+    photo: "/team/yusuf-kasimov.jpg",
     bio: [
       "Yusuf Kasimov — Tezcode jamoasida Full-Stack Developer. React frontend va Node.js backend bilan veb-mahsulotlar quradi.",
       "MaxSavdo va AviaTamir loyihalarida ishlaydi. MongoDB, Mongoose va Tailwind CSS bilan ishlaydi.",
@@ -361,6 +362,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
     slug: "abdulaziz-mirzayev",
     name: "Abdulaziz Mirzayev",
     role: "Frontend & Mobile Developer",
+    photo: "/team/abdulaziz-mirzayev-v2.jpg",
     bio: [
       "Abdulaziz Mirzayev — Tezcode jamoasida frontend va mobil developer. React va Next.js frontend hamda React Native (iOS & Android) mobil ilovalar quradi.",
       "RAOS (POS/kassa) mahsulotida ishlaydi. TypeScript, Redux, Chart.js, Socket.io va i18n bilan ishlaydi.",
