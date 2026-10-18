@@ -124,7 +124,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/for-businesses", label: "Biznes uchun", desc: "AI biznesingizning qaysi qismiga eng katta foyda berishini — savdo, xavfsizlik yoki jarayonlar — bepul auditda aniqlaymiz." },
       ],
     },
-    updated: "Yangilangan: 2026-yil 23-iyul",
     heroImage: {
       src: "/images/ai-video/hero.jpg",
       alt: "AI video analitika — kameralarni AI bilan avtomatlashtirish, operatorlar markazi",
@@ -275,7 +274,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/for-businesses", label: "Для бизнеса", desc: "На бесплатном аудите определим, где ИИ даст бизнесу наибольший эффект — продажи, безопасность или процессы." },
       ],
     },
-    updated: "Обновлено: 30 сентября 2026",
     heroImage: {
       src: "/images/ai-video/hero.jpg",
       alt: "AI-видеоаналитика — автоматизация камер с помощью AI, операторский центр",
@@ -426,7 +424,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/for-businesses", label: "For business", desc: "In a free audit we'll pinpoint where AI delivers the biggest impact — sales, security or operations." },
       ],
     },
-    updated: "Updated: July 23, 2026",
     heroImage: {
       src: "/images/ai-video/hero.jpg",
       alt: "AI video analytics — automating cameras with AI, a security operations room",
@@ -577,7 +574,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/for-businesses", label: "للأعمال", desc: "في تدقيق مجاني نحدد أين يحقق AI أكبر أثر — المبيعات أو الأمن أو العمليات." },
       ],
     },
-    updated: "آخر تحديث: 23 يوليو 2026",
     heroImage: {
       src: "/images/ai-video/hero.jpg",
       alt: "تحليلات الفيديو بالذكاء الاصطناعي — أتمتة الكاميرات بالذكاء الاصطناعي، غرفة عمليات الأمن",
@@ -728,7 +724,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/for-businesses", label: "Для бізнесу", desc: "На безкоштовному аудиті визначимо, де AI дасть бізнесу найбільший ефект — продажі, безпека чи процеси." },
       ],
     },
-    updated: "Оновлено: 23 липня 2026",
     heroImage: {
       src: "/images/ai-video/hero.jpg",
       alt: "AI-відеоаналітика — автоматизація камер за допомогою AI, операторський центр",

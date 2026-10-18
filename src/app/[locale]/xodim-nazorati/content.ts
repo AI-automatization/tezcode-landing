@@ -123,7 +123,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/ai-avtomatizatsiya", label: "AI avtomatizatsiya", desc: "Takroriy ishlar va hisobotlarni AI bilan avtomatlashtirish — jamoa vaqtini yanada tejang." },
       ],
     },
-    updated: "Yangilangan: 2026-yil 5-iyul",
     service: {
       name: "WorkControl — xodimlar ish nazorati tizimi | Tezcode",
       description:
@@ -245,7 +244,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/ai-avtomatizatsiya", label: "ИИ-автоматизация", desc: "Автоматизация рутины и отчётов с помощью ИИ — сэкономьте время команды ещё больше." },
       ],
     },
-    updated: "Обновлено: 5 июля 2026",
     service: {
       name: "WorkControl — система контроля сотрудников | Tezcode",
       description:
@@ -367,7 +365,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/ai-avtomatizatsiya", label: "AI automation", desc: "Automate routine work and reports with AI — save your team even more time." },
       ],
     },
-    updated: "Updated: July 5, 2026",
     service: {
       name: "WorkControl — staff monitoring system | Tezcode",
       description:
@@ -488,7 +485,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/ai-avtomatizatsiya", label: "أتمتة بالذكاء الاصطناعي", desc: "أتمتة الروتين والتقارير بالذكاء الاصطناعي — وفّر وقت فريقك أكثر." },
       ],
     },
-    updated: "آخر تحديث: 5 يوليو 2026",
     service: {
       name: "WorkControl — نظام مراقبة الموظفين | Tezcode",
       description:
@@ -610,7 +606,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/ai-avtomatizatsiya", label: "AI-автоматизація", desc: "Автоматизація рутини та звітів за допомогою AI — заощадьте час команди ще більше." },
       ],
     },
-    updated: "Оновлено: 5 липня 2026",
     service: {
       name: "WorkControl — система контролю роботи співробітників | Tezcode",
       description:

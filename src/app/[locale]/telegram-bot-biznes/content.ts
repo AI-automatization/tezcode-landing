@@ -120,7 +120,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/biznes-avtomatlashtirish", label: "Biznes avtomatlashtirish", desc: "Botdan tashqari jarayonlarni ham avtomatlashtiring — hisobot, buyurtma oqimi, takroriy ishlar." },
       ],
     },
-    updated: "Yangilangan: 2026-yil 5-iyul",
     service: {
       name: "Telegram bot yaratish — Tezcode",
       description:
@@ -243,7 +242,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/biznes-avtomatlashtirish", label: "Автоматизация бизнеса", desc: "Автоматизируйте процессы за пределами бота — отчёты, поток заказов, рутинные задачи." },
       ],
     },
-    updated: "Обновлено: 5 июля 2026",
     service: {
       name: "Создание Telegram-бота — Tezcode",
       description:
@@ -366,7 +364,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/biznes-avtomatlashtirish", label: "Business automation", desc: "Automate beyond the bot — reports, order flow and repetitive tasks." },
       ],
     },
-    updated: "Updated: September 29, 2026",
     service: {
       name: "Telegram bot development — Tezcode",
       description:
@@ -489,7 +486,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/biznes-avtomatlashtirish", label: "أتمتة الأعمال", desc: "أتمتة ما هو أبعد من البوت — التقارير وتدفق الطلبات والمهام المتكررة." },
       ],
     },
-    updated: "آخر تحديث: 5 يوليو 2026",
     service: {
       name: "تطوير بوت تيليجرام — Tezcode",
       description:
@@ -612,7 +608,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/biznes-avtomatlashtirish", label: "Автоматизація бізнесу", desc: "Автоматизуйте процеси поза ботом — звіти, потік замовлень, рутинні задачі." },
       ],
     },
-    updated: "Оновлено: 5 липня 2026",
     service: {
       name: "Створення Telegram-бота — Tezcode",
       description:

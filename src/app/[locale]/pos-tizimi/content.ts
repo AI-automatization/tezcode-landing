@@ -128,7 +128,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/xodim-nazorati", label: "Xodim nazorati", desc: "Sotuvchilar davomati, vazifalari va samaradorligini bitta tizimda kuzating." },
       ],
     },
-    updated: "Yangilangan: 2026-yil 5-iyul",
     service: {
       name: "RAOS — do'kon uchun POS tizimi — Tezcode",
       description:
@@ -249,7 +248,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/xodim-nazorati", label: "Контроль сотрудников", desc: "Посещаемость, задачи и продуктивность продавцов в одной системе." },
       ],
     },
-    updated: "Обновлено: 5 июля 2026",
     service: {
       name: "RAOS — POS-система для магазина — Tezcode",
       description:
@@ -370,7 +368,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/xodim-nazorati", label: "Employee monitoring", desc: "Attendance, tasks and productivity of your staff in one system." },
       ],
     },
-    updated: "Updated: July 5, 2026",
     service: {
       name: "RAOS — POS system for retail — Tezcode",
       description:
@@ -491,7 +488,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/xodim-nazorati", label: "مراقبة الموظفين", desc: "الحضور والمهام وإنتاجية البائعين في نظام واحد." },
       ],
     },
-    updated: "آخر تحديث: 5 يوليو 2026",
     service: {
       name: "RAOS — نظام POS للمتاجر — Tezcode",
       description:
@@ -612,7 +608,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/xodim-nazorati", label: "Контроль співробітників", desc: "Відвідуваність, задачі та продуктивність продавців в одній системі." },
       ],
     },
-    updated: "Оновлено: 5 липня 2026",
     service: {
       name: "RAOS — POS-система для магазину — Tezcode",
       description:

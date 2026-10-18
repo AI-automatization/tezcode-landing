@@ -119,7 +119,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/xodim-nazorati", label: "Xodim nazorati", desc: "Shifokor va xodimlar davomati, vazifalari va samaradorligini bitta tizimda kuzating." },
       ],
     },
-    updated: "Yangilangan: 2026-yil 5-iyul",
     service: {
       name: "ClinicaGo — klinika uchun CRM | Tezcode",
       description:
@@ -241,7 +240,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/xodim-nazorati", label: "Контроль сотрудников", desc: "Посещаемость, задачи и продуктивность врачей и персонала в одной системе." },
       ],
     },
-    updated: "Обновлено: 5 июля 2026",
     service: {
       name: "ClinicaGo — CRM для клиники | Tezcode",
       description:
@@ -363,7 +361,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/xodim-nazorati", label: "Employee monitoring", desc: "Attendance, tasks and productivity of doctors and staff in one system." },
       ],
     },
-    updated: "Updated: July 5, 2026",
     service: {
       name: "ClinicaGo — CRM for clinics | Tezcode",
       description:
@@ -484,7 +481,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/xodim-nazorati", label: "مراقبة الموظفين", desc: "الحضور والمهام وإنتاجية الأطباء والموظفين في نظام واحد." },
       ],
     },
-    updated: "آخر تحديث: 5 يوليو 2026",
     service: {
       name: "ClinicaGo — CRM للعيادات | Tezcode",
       description:
@@ -606,7 +602,6 @@ export const CONTENT: ServicePageContent = {
         { href: "/xodim-nazorati", label: "Контроль співробітників", desc: "Відвідуваність, задачі та продуктивність лікарів і персоналу в одній системі." },
       ],
     },
-    updated: "Оновлено: 5 липня 2026",
     service: {
       name: "ClinicaGo — CRM для клініки | Tezcode",
       description:
