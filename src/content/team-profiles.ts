@@ -26,9 +26,9 @@ export const TEAM_PROFILES: TeamProfile[] = [
   {
     slug: "behruz-satimboyev",
     name: "Behruz Satimboyev",
-    role: "Team Lead · Full-Stack Developer",
+    role: "Team Lead · AI Engineer",
     bio: [
-      "Behruz Satimboyev — Tezcode jamoasida Team Lead va Full-Stack Developer. React, Next.js va Node.js asosida to'liq mahsulotlar quradi hamda jamoa ishini boshqaradi.",
+      "Behruz Satimboyev — Tezcode jamoasida Team Lead va AI Engineer. React, Next.js va Node.js asosida to'liq mahsulotlar quradi hamda jamoa ishini boshqaradi.",
       "TezDetal loyihasi ustida ishlaydi. REST API, real vaqt (Socket.io), autentifikatsiya (JWT) va CI/CD bo'yicha tajribaga ega; mobil uchun React Native va AI prompt engineering bilan ishlaydi.",
     ],
     skills: [
@@ -55,17 +55,17 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "REST API",
       "React Native",
     ],
-    metaTitle: "Behruz Satimboyev — Tezcode Team Lead, Full-Stack Developer",
+    metaTitle: "Behruz Satimboyev — Tezcode Team Lead, AI Engineer",
     metaDescription:
-      "Behruz Satimboyev — Tezcode jamoasida Team Lead va Full-Stack Developer. React, Next.js, Node.js, React Native. TezDetal loyihasi.",
+      "Behruz Satimboyev — Tezcode jamoasida Team Lead va AI Engineer. React, Next.js, Node.js, React Native. TezDetal loyihasi.",
   },
   {
     slug: "javodbek-abdusalimov",
     name: "Javodbek Abdusalimov",
-    role: "Full-Stack Developer",
+    role: "AI Engineer",
     photo: "/team/javodbek-abdusalimov-v2.jpg",
     bio: [
-      "Javodbek Abdusalimov — Tezcode jamoasida Full-Stack Developer. Next.js, React va Node.js asosida veb-mahsulotlar quradi.",
+      "Javodbek Abdusalimov — Tezcode jamoasida AI Engineer. Next.js, React va Node.js asosida veb-mahsulotlar quradi.",
       "TezDetal loyihasi ustida ishlaydi. TypeScript va zamonaviy JavaScript bilan frontend hamda backend qismlarini ishlab chiqadi.",
     ],
     skills: ["Next.js", "React", "Node.js", "TypeScript", "JavaScript"],
@@ -78,9 +78,9 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "Node.js",
       "TypeScript",
     ],
-    metaTitle: "Javodbek Abdusalimov — Tezcode Full-Stack Developer",
+    metaTitle: "Javodbek Abdusalimov — Tezcode AI Engineer",
     metaDescription:
-      "Javodbek Abdusalimov — Tezcode jamoasida Full-Stack Developer. Next.js, React, Node.js, TypeScript. TezDetal loyihasi.",
+      "Javodbek Abdusalimov — Tezcode jamoasida AI Engineer. Next.js, React, Node.js, TypeScript. TezDetal loyihasi.",
   },
   {
     slug: "abdulaziz-yormatov",
@@ -159,18 +159,18 @@ export const TEAM_PROFILES: TeamProfile[] = [
   {
     slug: "ibrohim-sobirov",
     name: "Ibrohim Sobirov",
-    role: "Full-Stack Developer",
+    role: "AI Engineer",
     bio: [
-      "Ibrohim Sobirov — Tezcode jamoasida Full-Stack Developer. React va Node.js asosida veb-mahsulotlar quradi.",
+      "Ibrohim Sobirov — Tezcode jamoasida AI Engineer. React va Node.js asosida veb-mahsulotlar quradi.",
       "ClinicaGo (klinika CRM) loyihasida ishlaydi — frontend va backend qismlarini ishlab chiqadi.",
     ],
     skills: ["React", "Node.js", "JavaScript"],
     projects: [{ name: "ClinicaGo", role: "Full-stack veb ishlab chiqish" }],
     telegram: "Sinus_30gradus",
     knowsAbout: ["Full-Stack Development", "React", "Node.js"],
-    metaTitle: "Ibrohim Sobirov — Tezcode Full-Stack Developer",
+    metaTitle: "Ibrohim Sobirov — Tezcode AI Engineer",
     metaDescription:
-      "Ibrohim Sobirov — Tezcode jamoasida Full-Stack Developer. React, Node.js. ClinicaGo loyihasi.",
+      "Ibrohim Sobirov — Tezcode jamoasida AI Engineer. React, Node.js. ClinicaGo loyihasi.",
   },
   {
     slug: "diyor-raxmatullayev",
@@ -215,9 +215,9 @@ export const TEAM_PROFILES: TeamProfile[] = [
   {
     slug: "jafarbek-ulugbekov",
     name: "Jafarbek Ulugbekov",
-    role: "Full-Stack Developer",
+    role: "AI Engineer",
     bio: [
-      "Jafarbek Ulugbekov — Tezcode jamoasida Full-Stack Developer. Next.js, React va TypeScript asosida veb-ilovalar quradi.",
+      "Jafarbek Ulugbekov — Tezcode jamoasida AI Engineer. Next.js, React va TypeScript asosida veb-ilovalar quradi.",
       "ClinicaGo (clinicago.uz) mahsuloti bo'yicha mas'ul; HamshiraGo, CoreMed va Salomat AI loyihalarida ishlaydi. Tailwind, NestJS, Telegram Bot API va Railway bilan ishlaydi.",
     ],
     skills: [
@@ -244,16 +244,16 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "TypeScript",
       "NestJS",
     ],
-    metaTitle: "Jafarbek Ulugbekov — Tezcode Full-Stack Developer",
+    metaTitle: "Jafarbek Ulugbekov — Tezcode AI Engineer",
     metaDescription:
-      "Jafarbek Ulugbekov — Tezcode jamoasida Full-Stack Developer. Next.js, React, TypeScript, NestJS. ClinicaGo, HamshiraGo loyihalari.",
+      "Jafarbek Ulugbekov — Tezcode jamoasida AI Engineer. Next.js, React, TypeScript, NestJS. ClinicaGo, HamshiraGo loyihalari.",
   },
   {
     slug: "abubakir-ilhomov",
     name: "Abubakir Ilhomov",
-    role: "Full-Stack & AI Developer",
+    role: "AI Engineer",
     bio: [
-      "Abubakir Ilhomov — Tezcode jamoasida full-stack va AI developer. Frontend (React, Next.js, Vue) hamda backend (Node.js, NestJS, Python/FastAPI) bo'yicha production tajribaga ega.",
+      "Abubakir Ilhomov — Tezcode jamoasida AI Engineer. Frontend (React, Next.js, Vue) hamda backend (Node.js, NestJS, Python/FastAPI) bo'yicha production tajribaga ega.",
       "AI agentlar (Claude Agent SDK), MCP server/client va prompt engineering bilan ishlaydi. ClinicaGo va HamshiraGo loyihalarida; MARS IT School'da Head of Interns.",
     ],
     skills: [
@@ -284,16 +284,16 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "Node.js",
       "Python",
     ],
-    metaTitle: "Abubakir Ilhomov — Tezcode Full-Stack & AI Developer",
+    metaTitle: "Abubakir Ilhomov — Tezcode AI Engineer",
     metaDescription:
-      "Abubakir Ilhomov — Tezcode jamoasida full-stack va AI developer. React, Next.js, Node.js, Python, AI agentlar (Claude SDK), MCP. ClinicaGo, HamshiraGo.",
+      "Abubakir Ilhomov — Tezcode jamoasida AI Engineer. React, Next.js, Node.js, Python, AI agentlar (Claude SDK), MCP. ClinicaGo, HamshiraGo.",
   },
   {
     slug: "habibulloh-shuhratov",
     name: "Habibulloh Shuhratov",
-    role: "Full-Stack Developer",
+    role: "AI Engineer",
     bio: [
-      "Habibulloh Shuhratov — Tezcode jamoasida Full-Stack Developer. React va Next.js frontend hamda Node.js/NestJS backend bilan ishlaydi.",
+      "Habibulloh Shuhratov — Tezcode jamoasida AI Engineer. React va Next.js frontend hamda Node.js/NestJS backend bilan ishlaydi.",
       "TypeScript, Prisma, PostgreSQL va Redis asosida to'liq stack quradi; Telegram Bot API integratsiyasi bilan ham ishlaydi.",
     ],
     skills: [
@@ -321,17 +321,17 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "NestJS",
       "TypeScript",
     ],
-    metaTitle: "Habibulloh Shuhratov — Tezcode Full-Stack Developer",
+    metaTitle: "Habibulloh Shuhratov — Tezcode AI Engineer",
     metaDescription:
-      "Habibulloh Shuhratov — Tezcode jamoasida Full-Stack Developer. React, Next.js, Node.js, NestJS, TypeScript, Prisma.",
+      "Habibulloh Shuhratov — Tezcode jamoasida AI Engineer. React, Next.js, Node.js, NestJS, TypeScript, Prisma.",
   },
   {
     slug: "yusuf-kasimov",
     name: "Yusuf Kasimov",
-    role: "Full-Stack Developer",
+    role: "AI Engineer",
     photo: "/team/yusuf-kasimov.jpg",
     bio: [
-      "Yusuf Kasimov — Tezcode jamoasida Full-Stack Developer. React frontend va Node.js backend bilan veb-mahsulotlar quradi.",
+      "Yusuf Kasimov — Tezcode jamoasida AI Engineer. React frontend va Node.js backend bilan veb-mahsulotlar quradi.",
       "MaxSavdo va AviaTamir loyihalarida ishlaydi. MongoDB, Mongoose va Tailwind CSS bilan ishlaydi.",
     ],
     skills: [
@@ -356,9 +356,9 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "MongoDB",
       "JavaScript",
     ],
-    metaTitle: "Yusuf Kasimov — Tezcode Full-Stack Developer",
+    metaTitle: "Yusuf Kasimov — Tezcode AI Engineer",
     metaDescription:
-      "Yusuf Kasimov — Tezcode jamoasida Full-Stack Developer. React, Node.js, MongoDB. MaxSavdo, AviaTamir loyihalari.",
+      "Yusuf Kasimov — Tezcode jamoasida AI Engineer. React, Node.js, MongoDB. MaxSavdo, AviaTamir loyihalari.",
   },
   {
     slug: "abdulaziz-mirzayev",
@@ -398,9 +398,9 @@ export const TEAM_PROFILES: TeamProfile[] = [
   {
     slug: "ziyoda-mirzakirova",
     name: "Ziyoda Mirzakirova",
-    role: "Full Stack Developer",
+    role: "AI Engineer",
     bio: [
-      "Ziyoda Mirzakirova — Tezcode jamoasida Full Stack Developer. React va Redux asosida frontend hamda Node.js backend bilan ishlaydi.",
+      "Ziyoda Mirzakirova — Tezcode jamoasida AI Engineer. React va Redux asosida frontend hamda Node.js backend bilan ishlaydi.",
       "HTML, CSS, Tailwind CSS va zamonaviy JavaScript bilan veb-mahsulotlar quradi.",
     ],
     skills: [
@@ -423,16 +423,16 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "Node.js",
       "JavaScript",
     ],
-    metaTitle: "Ziyoda Mirzakirova — Tezcode Full Stack Developer",
+    metaTitle: "Ziyoda Mirzakirova — Tezcode AI Engineer",
     metaDescription:
-      "Ziyoda Mirzakirova — Tezcode jamoasida Full Stack Developer. React, Redux, Node.js, Tailwind CSS.",
+      "Ziyoda Mirzakirova — Tezcode jamoasida AI Engineer. React, Redux, Node.js, Tailwind CSS.",
   },
   {
     slug: "abdulloh-isroilov",
     name: "Abdulloh Isroilov",
-    role: "AI-Trade Co-founder · Full-Stack Developer",
+    role: "AI-Trade Co-founder · AI Engineer",
     bio: [
-      "Abdulloh Isroilov — Tezcode jamoasida Full-Stack Developer va AI-Trade co-founder. React frontend hamda Node.js/Express backend bilan ishlaydi.",
+      "Abdulloh Isroilov — Tezcode jamoasida AI Engineer va AI-Trade co-founder. React frontend hamda Node.js/Express backend bilan ishlaydi.",
       "AI-Trade savdo agenti loyihasida ishlaydi. MongoDB va zamonaviy JavaScript bilan mahsulot quradi.",
     ],
     skills: ["React", "Node.js", "Express.js", "MongoDB", "JavaScript"],
@@ -445,9 +445,9 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "MongoDB",
       "Trading",
     ],
-    metaTitle: "Abdulloh Isroilov — Tezcode Full-Stack Developer, AI-Trade",
+    metaTitle: "Abdulloh Isroilov — Tezcode AI Engineer, AI-Trade",
     metaDescription:
-      "Abdulloh Isroilov — Tezcode jamoasida Full-Stack Developer va AI-Trade co-founder. React, Node.js, Express, MongoDB.",
+      "Abdulloh Isroilov — Tezcode jamoasida AI Engineer va AI-Trade co-founder. React, Node.js, Express, MongoDB.",
   },
   {
     slug: "polatbek-ismoilov",
@@ -491,9 +491,9 @@ export const TEAM_PROFILES: TeamProfile[] = [
   {
     slug: "ibrat-tursunov",
     name: "Ibrat Tursunov",
-    role: "Full-Stack Developer",
+    role: "AI Engineer",
     bio: [
-      "Ibrat Tursunov — Tezcode jamoasida Full-Stack Developer. RAOS savdo va inventarizatsiya tizimini quradi — backend API, web admin, POS desktop, worker va Telegram botlar.",
+      "Ibrat Tursunov — Tezcode jamoasida AI Engineer. RAOS savdo va inventarizatsiya tizimini quradi — backend API, web admin, POS desktop, worker va Telegram botlar.",
       "TypeScript, NestJS, Next.js va React Native; Tauri bilan desktop POS. Hozirgi yo'nalishi — fiskal modul va virtual kassalarni Davlat reestriga integratsiya.",
     ],
     skills: [
@@ -520,9 +520,9 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "TypeScript",
       "DevOps",
     ],
-    metaTitle: "Ibrat Tursunov — Tezcode Full-Stack Developer",
+    metaTitle: "Ibrat Tursunov — Tezcode AI Engineer",
     metaDescription:
-      "Ibrat Tursunov — Tezcode jamoasida Full-Stack Developer. TypeScript, NestJS, Next.js, React Native, Tauri. RAOS loyihasi.",
+      "Ibrat Tursunov — Tezcode jamoasida AI Engineer. TypeScript, NestJS, Next.js, React Native, Tauri. RAOS loyihasi.",
   },
   {
     slug: "emirhan-ertan",
