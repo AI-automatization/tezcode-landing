@@ -22,7 +22,7 @@ const META: Record<
   uz: {
     title: "AI agent yaratish — biznes uchun $400 dan",
     description:
-      "Biznesingizga AI agent kerakmi? Telegram, sayt va CRM uchun buyurtma asosida yaratamiz. $400 dan. Toshkent va butun O'zbekiston. Bepul konsultatsiya.",
+      "Biznes uchun AI agent: mijoz javobsiz qolmaydi, buyurtma yo'qolmaydi, kunlik hisobot Telegramga o'zi keladi. $400 dan, 1–2 haftada. Butun O'zbekiston.",
     ogTitle: "AI agent yaratish biznes uchun — Tezcode, Toshkent",
     ogDescription:
       "Ishni o'zi bajaradigan AI agentlar: savdo, buyurtma, hisobot, HR. Telegram/CRM/1C/POS integratsiyasi, uz/ru. Bepul konsultatsiya.",
@@ -30,7 +30,7 @@ const META: Record<
   ru: {
     title: "Создание ИИ-агента (AI-агента) для бизнеса — Ташкент",
     description:
-      "Разработка ИИ-агентов для бизнеса в Ташкенте и Узбекистане — от $400. Интеграция Telegram, CRM и 1С, узбекский и русский языки. Бесплатная консультация.",
+      "ИИ-агент для бизнеса: клиент не ждёт ответа, заказ не теряется, отчёт за день сам приходит в Telegram. От $400, запуск за 1–2 недели. Весь Узбекистан.",
     ogTitle: "Создание ИИ-агента (AI) для бизнеса — Tezcode, Ташкент",
     ogDescription:
       "ИИ-агенты (AI-агенты), которые сами выполняют работу: продажи, заказы, отчёты, HR. Интеграция Telegram/CRM/1C/POS, uz/ru. Бесплатная консультация.",
