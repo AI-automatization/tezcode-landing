@@ -70,7 +70,6 @@ export const TEAM_PROFILES: TeamProfile[] = [
     skills: ["Next.js", "React", "Node.js", "TypeScript", "JavaScript"],
     projects: [{ name: "TezDetal", role: "Full-stack veb ishlab chiqish" }],
     telegram: "Javodbe411",
-    photo: "/team/javodbek-abdusalimov.jpg",
     knowsAbout: [
       "Full-Stack Development",
       "React",
