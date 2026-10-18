@@ -125,6 +125,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
     slug: "abdulaziz-atxamov",
     name: "Abdulaziz Atxamov",
     role: "Marketing · QA · Developer",
+    photo: "/team/abdulaziz-atxamov.jpg",
     bio: [
       "Abdulaziz Atxamov — Tezcode jamoasida marketing, QA va development bo'yicha ishlaydi. Node.js va React asosida veb-mahsulotlar quradi hamda sifat nazorati (QA) qiladi.",
       "MaxSavdo loyihasida ishlaydi. Redux, JavaScript va Remotion (video) bilan ishlaydi; GitHub CLI orqali kod boshqaruvi.",
