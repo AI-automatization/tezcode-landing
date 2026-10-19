@@ -36,6 +36,7 @@ const TEAM: Member[] = [
     role: "AI Engineer",
     telegram: "@abufdx",
     profileSlug: "abdulloh-isroilov",
+    photo: "/team/abdulloh-isroilov-v2.jpg",
   },
   {
     name: "Azimjon Qurbonov",

@@ -432,6 +432,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
     slug: "abdulloh-isroilov",
     name: "Abdulloh Isroilov",
     role: "AI Engineer",
+    photo: "/team/abdulloh-isroilov-v2.jpg",
     bio: [
       "Abdulloh Isroilov — Tezcode jamoasida AI Engineer va AI-Trade co-founder. React frontend hamda Node.js/Express backend bilan ishlaydi.",
       "AI-Trade savdo agenti loyihasida ishlaydi. MongoDB va zamonaviy JavaScript bilan mahsulot quradi.",
