@@ -252,6 +252,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
     slug: "abubakir-ilhomov",
     name: "Abubakir Ilhomov",
     role: "AI Engineer",
+    photo: "/team/abubakir-ilhomov-v2.jpg",
     bio: [
       "Abubakir Ilhomov — Tezcode jamoasida AI Engineer. Frontend (React, Next.js, Vue) hamda backend (Node.js, NestJS, Python/FastAPI) bo'yicha production tajribaga ega.",
       "AI agentlar (Claude Agent SDK), MCP server/client va prompt engineering bilan ishlaydi. ClinicaGo va HamshiraGo loyihalarida; MARS IT School'da Head of Interns.",

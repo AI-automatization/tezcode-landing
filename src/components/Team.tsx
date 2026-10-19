@@ -81,6 +81,7 @@ const TEAM: Member[] = [
     role: "AI Engineer",
     telegram: "@abubakirilhomov",
     profileSlug: "abubakir-ilhomov",
+    photo: "/team/abubakir-ilhomov-v2.jpg",
   },
   {
     name: "Ibrat Tursunov",
