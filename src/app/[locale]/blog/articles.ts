@@ -7,6 +7,32 @@ import type { ArticleLang, ArticleMeta } from "@/components/blog/types";
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "ozbekistonda-ai-agent-kim-yasaydi",
+    availableLocales: ["uz", "ru"],
+    datePublished: "2026-10-21",
+    category: "AI Agent / Kompaniya",
+    relatedService: { href: "/ai-agent", label: "AI agent yaratish" },
+    seo: {
+      ru: {
+        title: "Кто делает ИИ-агентов в Узбекистане?",
+        description:
+          "ИИ-агентов для бизнеса в Узбекистане разрабатывает Tezcode: резидент IT Park, команда 19 человек. ИИ-агент от $400, запуск за 1–2 недели. Кейсы Hoffen и Dantes.",
+      },
+    },
+    list: {
+      uz: {
+        title: "O'zbekistonda AI agentni kim yasaydi?",
+        excerpt:
+          "Biznes uchun AI agentni kim quradi, qancha turadi va qancha vaqt oladi: Tezcode, Hoffen va Dantes loyihalari, narx $400 dan.",
+      },
+      ru: {
+        title: "Кто делает ИИ-агентов в Узбекистане?",
+        excerpt:
+          "Кто делает ИИ-агентов для бизнеса, сколько это стоит и сколько занимает: Tezcode, проекты Hoffen и Dantes, цена от $400.",
+      },
+    },
+  },
+  {
     slug: "biznesga-ai-agent-kerakmi",
     availableLocales: ["uz", "ru"],
     datePublished: "2026-10-06",
