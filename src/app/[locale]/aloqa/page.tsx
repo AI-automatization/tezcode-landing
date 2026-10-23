@@ -97,17 +97,17 @@ const META: Record<
   { title: string; description: string; ogTitle: string; ogDescription: string }
 > = {
   uz: {
-    title: "Aloqa — Telegram, telefon, email",
+    title: "Aloqa va manzil — telefon, Telegram, ofis",
     description:
-      "Tezcode bilan bog'laning: Telegram (@tezcode_managament), telefon +998 91 777 66 09, email tezcode@tezcode.dev. Toshkent, O'zbekiston. Bepul konsultatsiya uchun yozing.",
+      "Tezcode manzili: Toshkent, Amir Temur shoh ko'chasi, 10. Telefon +998 91 777 66 09, Telegram @tezcode_managament, tezcode@tezcode.dev. Bepul konsultatsiya.",
     ogTitle: "Aloqa — Tezcode",
     ogDescription:
       "Telegram, telefon yoki email orqali bog'laning — bepul konsultatsiya. Toshkent, O'zbekiston.",
   },
   ru: {
-    title: "Контакты — Telegram, телефон, email",
+    title: "Контакты и адрес — телефон, Telegram, офис",
     description:
-      "Свяжитесь с Tezcode: Telegram (@tezcode_managament), telefon +998 91 777 66 09, email tezcode@tezcode.dev. Ташкент, Узбекистан. Напишите для бесплатной консультации.",
+      "Адрес Tezcode: Ташкент, проспект Амира Темура, 10. Телефон +998 91 777 66 09, Telegram @tezcode_managament, email tezcode@tezcode.dev. Бесплатная консультация.",
     ogTitle: "Контакты — Tezcode",
     ogDescription:
       "Свяжитесь через Telegram, телефон или email — бесплатная консультация. Ташкент, Узбекистан.",
