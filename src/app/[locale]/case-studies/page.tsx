@@ -9,17 +9,17 @@ const META: Record<string, { title: string; description: string }> = {
   uz: {
     title: "Keyslar (case study) — amaliy natijalar",
     description:
-      "Tezcode loyihalari: Hoffen uchun Telegram'da 7 ta AI agent.",
+      "Tezcode loyihalari: Hoffen uchun Telegram'da 7 ta AI agent va Dantes qurilish kompaniyasi uchun hisobotlarni tahlil qiladigan AI yordamchilar.",
   },
   ru: {
     title: "Кейсы — практические результаты бизнеса в Ташкенте",
     description:
-      "Проекты Tezcode: 7 ИИ-агентов в Telegram для Hoffen.",
+      "Проекты Tezcode: 7 ИИ-агентов в Telegram для Hoffen и ИИ-помощники для анализа отчётов в строительной компании Dantes.",
   },
   en: {
     title: "Case Studies — Practical Business Results",
     description:
-      "Tezcode projects: 7 AI agents in Telegram for Hoffen.",
+      "Tezcode projects: 7 AI agents in Telegram for Hoffen and report-analysis AI assistants for the construction company Dantes.",
   },
   ar: {
     title: "دراسات الحالة — نتائج حقيقية لأصحاب الأعمال",

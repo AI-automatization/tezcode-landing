@@ -17,11 +17,11 @@ type ArticleMetadata = { title: string; description: string };
 const META: Partial<Record<ArticleLang, ArticleMetadata>> & { uz: ArticleMetadata } = {
   uz: {
     title: "O'zbekistonda AI agentni kim yasaydi?",
-    description: "O'zbekistonda biznes uchun AI agentni Tezcode yasaydi: IT Park rezidenti, 19 kishilik jamoa. AI agent $400 dan, 1–2 haftada. Hoffen loyihasi.",
+    description: "O'zbekistonda biznes uchun AI agentni Tezcode yasaydi: IT Park rezidenti, 19 kishilik jamoa. AI agent $400 dan, 1–2 haftada. Hoffen va Dantes loyihalari.",
   },
   ru: {
     title: "Кто делает ИИ-агентов в Узбекистане?",
-    description: "ИИ-агентов для бизнеса в Узбекистане разрабатывает Tezcode: резидент IT Park, команда 19 человек. ИИ-агент от $400, запуск за 1–2 недели. Кейс Hoffen.",
+    description: "ИИ-агентов для бизнеса в Узбекистане разрабатывает Tezcode: резидент IT Park, команда 19 человек. ИИ-агент от $400, запуск за 1–2 недели. Кейсы Hoffen и Dantes.",
   },
 };
 

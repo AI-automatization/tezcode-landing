@@ -9,7 +9,7 @@ import type { ArticleContent } from "@/components/blog/types";
 // Facts only from the site: IT Park resident No. 6237, 19-person team, Amir Temur
 // shoh ko'chasi 10; prices from tariflar/CustomWorkSection ($279 / $339 / $400);
 // 1–2 / 2–4 week timelines and 30% deposit from /ai-agent and /tariflar; Hoffen
-// (7 agents, 80+ daily automated jobs) from the case page.
+// (7 agents, 80+ daily automated jobs) and Dantes (in development) from the case pages.
 
 export const CONTENT: ArticleContent = {
   uz: {
@@ -55,12 +55,14 @@ export const CONTENT: ArticleContent = {
         ],
       },
       {
-        heading: "Real loyiha: Hoffen",
+        heading: "Real loyihalar: Hoffen va Dantes",
         paragraphs: [
           "Hoffen — avtokimyo mahsulotlarini ishlab chiqaruvchi va distribyutor. Tezcode savdo, ombor, ishlab chiqarish va GPS ma'lumotlarini bitta bazaga yig'ib, ustiga Telegram'da ishlaydigan 7 ta AI agent qurdi: rahbar yordamchisi, savdo agentlari intizomini kuzatuvchi auditor, ombor, moliya, HR va boshqalar. Har kuni 80 dan ortiq ish avtomatik bajariladi.",
+          "Dantes — qurilish kompaniyasi. Kompaniya hisobotlarini tahlil qilib, rahbarga eng muhim ma'lumotni yetkazadigan AI yordamchilar hozir ishlab chiqilmoqda.",
         ],
         links: [
           { href: "/case-studies/hoffen", label: "Hoffen keysi" },
+          { href: "/case-studies/dantes", label: "Dantes keysi" },
         ],
       },
       {
@@ -172,12 +174,14 @@ export const CONTENT: ArticleContent = {
         ],
       },
       {
-        heading: "Реальный проект: Hoffen",
+        heading: "Реальные проекты: Hoffen и Dantes",
         paragraphs: [
           "Hoffen — производитель и дистрибьютор автохимии. Tezcode собрал данные продаж, склада, производства и GPS в одну базу и построил поверх неё 7 ИИ-агентов в Telegram: помощник руководителя, аудитор дисциплины торговых агентов, склад, финансы, HR и другие. Каждый день автоматически выполняется более 80 задач.",
+          "Dantes — строительная компания. Сейчас в разработке ИИ-помощники, которые анализируют отчёты компании и доносят до руководителя самое важное.",
         ],
         links: [
           { href: "/case-studies/hoffen", label: "Кейс Hoffen" },
+          { href: "/case-studies/dantes", label: "Кейс Dantes" },
         ],
       },
       {

@@ -6,7 +6,7 @@ import { ArrowRight, Play } from "lucide-react";
 import { InstagramIcon } from "@/components/icons/BrandIcons";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
-// Homepage strip with three recent reels. Plain cover images + outbound links
+// Homepage strip with four recent reels. Plain cover images + outbound links
 // (no Instagram embed script), placed below the lead-capture sections so it
 // grows the account without pulling visitors away from the offer first.
 
@@ -19,6 +19,11 @@ const REELS: { href: string; cover: string; alt: string }[] = [
     href: "https://www.instagram.com/reel/DeLlAuok2If/",
     cover: "/instagram/savollar.jpg",
     alt: "Har kuni bir xil savol — AI agent mijozlarga o'zi javob beradi",
+  },
+  {
+    href: "https://www.instagram.com/reel/Dd00KJjsRSu/",
+    cover: "/instagram/dantes.jpg",
+    alt: "Tezcode, AI Solution va Dantes Construction hamkorligi",
   },
   {
     href: "https://www.instagram.com/reel/DdL42WLgcUh/",
@@ -86,13 +91,9 @@ export function InstagramReels() {
           <p className="text-[var(--tc-text-muted)] max-w-2xl leading-relaxed">{l.subtitle}</p>
         </Reveal>
 
-        <RevealStagger className="mx-auto grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6">
-          {REELS.map((reel, i) => (
-            <RevealItem
-              key={reel.href}
-              // Odd count in the 2-column mobile grid: centre the last cover instead of leaving a hole.
-              className={i === REELS.length - 1 && REELS.length % 2 === 1 ? "col-span-2 mx-auto w-[calc(50%_-_0.5rem)] sm:col-span-1 sm:w-full" : ""}
-            >
+        <RevealStagger className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+          {REELS.map((reel) => (
+            <RevealItem key={reel.href}>
               <a
                 href={reel.href}
                 target="_blank"
