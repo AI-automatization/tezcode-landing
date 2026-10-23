@@ -105,7 +105,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-avtomatizatsiya", label: "AI bilan ishlaydigan yechimlar", desc: "Mijoz savollarini tushunish, hujjatdan ma'lumot ajratish va matnli hisobot tayyorlash uchun AI imkoniyatlari." },
         { href: "/pos-tizimi", label: "POS tizimi va ombor qoldig'i dasturi", desc: "Savdo nuqtasi uchun tayyor yechim — kassa, ombor, mijoz va hisobot bitta dasturda." },
-        { href: "/telegram-bot-biznes", label: "Telegram bot biznes uchun", desc: "Buyurtma qabul qilish va to'lovlarni Telegram orqali avtomatlashtirish — arzon birinchi qadam." },
       ],
     },
     service: {
@@ -216,7 +215,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-avtomatizatsiya", label: "Разработка AI-решений", desc: "Обработка свободного текста, вопросов клиентов и документов с помощью AI." },
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Готовое решение для точки продаж — касса, склад, клиенты и отчёты в одной программе." },
-        { href: "/telegram-bot-biznes", label: "Telegram-бот для бизнеса", desc: "Автоматизация приёма заказов и платежей через Telegram — недорогой первый шаг." },
       ],
     },
     service: {
@@ -321,7 +319,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-avtomatizatsiya", label: "Everything about the AI automation service", desc: "The main (umbrella) service page: AI agents, chatbots and process automation — all capabilities in one place." },
         { href: "/pos-tizimi", label: "POS system (RAOS)", desc: "A ready solution for the point of sale — register, inventory, customers and reports in one app." },
-        { href: "/telegram-bot-biznes", label: "Telegram bot for business", desc: "Automate order intake and payments via Telegram — an affordable first step." },
       ],
     },
     service: {
@@ -426,7 +423,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-avtomatizatsiya", label: "كل شيء عن خدمة الأتمتة بالذكاء الاصطناعي", desc: "الصفحة الرئيسية (المظلة) للخدمة: وكلاء AI وروبوتات الدردشة وأتمتة العمليات — كل الإمكانات في مكان واحد." },
         { href: "/pos-tizimi", label: "نظام نقاط البيع (RAOS)", desc: "حل جاهز لنقطة البيع — كاشير ومخزون وعملاء وتقارير في تطبيق واحد." },
-        { href: "/telegram-bot-biznes", label: "بوت Telegram للأعمال", desc: "أتمتة استقبال الطلبات والمدفوعات عبر Telegram — خطوة أولى ميسورة." },
       ],
     },
     service: {
@@ -531,7 +527,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-avtomatizatsiya", label: "Усе про послугу AI-автоматизації", desc: "Основна (парасолькова) сторінка послуги: AI-агенти, чат-боти й автоматизація процесів — усі можливості в одному місці." },
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Готове рішення для точки продажу — каса, склад, клієнти та звіти в одному додатку." },
-        { href: "/telegram-bot-biznes", label: "Telegram-бот для бізнесу", desc: "Автоматизація прийому замовлень і платежів через Telegram — недорогий перший крок." },
       ],
     },
     service: {

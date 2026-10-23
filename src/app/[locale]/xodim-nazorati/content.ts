@@ -120,7 +120,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS tizimi (RAOS)", desc: "Savdo nuqtasi uchun kassa, ombor va hisobot — xodim nazorati bilan birga do'kon to'liq nazoratda." },
         { href: "/biznes-avtomatlashtirish", label: "Biznes avtomatlashtirish", desc: "Hujjat, hisobot va jarayonlarni tartibga solish — nazorat tizimiga tabiiy davom." },
-        { href: "/ai-avtomatizatsiya", label: "AI avtomatizatsiya", desc: "Takroriy ishlar va hisobotlarni AI bilan avtomatlashtirish — jamoa vaqtini yanada tejang." },
       ],
     },
     service: {
@@ -241,7 +240,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Касса, склад и отчёты для торговой точки — вместе с контролем сотрудников магазин полностью под контролем." },
         { href: "/biznes-avtomatlashtirish", label: "Автоматизация бизнеса", desc: "Порядок в документах, отчётах и процессах — естественное продолжение системы контроля." },
-        { href: "/ai-avtomatizatsiya", label: "ИИ-автоматизация", desc: "Автоматизация рутины и отчётов с помощью ИИ — сэкономьте время команды ещё больше." },
       ],
     },
     service: {
@@ -362,7 +360,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS system (RAOS)", desc: "Checkout, inventory and reports for a retail point — together with staff monitoring, the store is fully under control." },
         { href: "/biznes-avtomatlashtirish", label: "Business automation", desc: "Order in documents, reports and processes — a natural continuation of the monitoring system." },
-        { href: "/ai-avtomatizatsiya", label: "AI automation", desc: "Automate routine work and reports with AI — save your team even more time." },
       ],
     },
     service: {
@@ -482,7 +479,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "نظام POS (RAOS)", desc: "كاشير ومخزون وتقارير لنقطة البيع — مع مراقبة الموظفين يصبح المتجر تحت السيطرة الكاملة." },
         { href: "/biznes-avtomatlashtirish", label: "أتمتة الأعمال", desc: "نظام في المستندات والتقارير والعمليات — امتداد طبيعي لنظام المراقبة." },
-        { href: "/ai-avtomatizatsiya", label: "أتمتة بالذكاء الاصطناعي", desc: "أتمتة الروتين والتقارير بالذكاء الاصطناعي — وفّر وقت فريقك أكثر." },
       ],
     },
     service: {
@@ -603,7 +599,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Каса, склад і звіти для торгової точки — разом із контролем співробітників магазин повністю під контролем." },
         { href: "/biznes-avtomatlashtirish", label: "Автоматизація бізнесу", desc: "Порядок у документах, звітах і процесах — природне продовження системи контролю." },
-        { href: "/ai-avtomatizatsiya", label: "AI-автоматизація", desc: "Автоматизація рутини та звітів за допомогою AI — заощадьте час команди ще більше." },
       ],
     },
     service: {

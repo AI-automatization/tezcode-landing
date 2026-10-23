@@ -124,7 +124,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "AI chatbot", desc: "CRM ustiga AI chatbot: lidlarni saralaydi, savollarga javob beradi va suhbatni CRM'ga yozadi." },
         { href: "/biznes-avtomatlashtirish", label: "Biznes avtomatlashtirish", desc: "CRM'dan tashqari jarayonlarni ham avtomatlashtiring — hisobot, hujjat, ombor va ish oqimlari." },
-        { href: "/telegram-bot-biznes", label: "Telegram bot", desc: "Buyurtma va murojaatlarni qabul qilib, to'g'ridan-to'g'ri CRM voronkangizga uzatuvchi Telegram bot." },
       ],
     },
     service: {
@@ -250,7 +249,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "ИИ-чат-бот (AI)", desc: "ИИ (AI) поверх CRM: квалифицирует лиды, отвечает на вопросы и пишет диалог в CRM." },
         { href: "/biznes-avtomatlashtirish", label: "Автоматизация бизнеса", desc: "Автоматизируйте и процессы вне CRM — отчёты, документы, склад и рабочие потоки." },
-        { href: "/telegram-bot-biznes", label: "Telegram-бот", desc: "Telegram-бот, который принимает обращения и передаёт их прямо в вашу воронку CRM." },
       ],
     },
     service: {
@@ -376,7 +374,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "AI chatbot", desc: "AI on top of the CRM: qualifies leads, answers questions and writes the dialog into the CRM." },
         { href: "/biznes-avtomatlashtirish", label: "Business automation", desc: "Automate processes beyond the CRM too — reports, documents, inventory and workflows." },
-        { href: "/telegram-bot-biznes", label: "Telegram bot", desc: "A Telegram bot that takes inquiries and passes them straight into your CRM pipeline." },
       ],
     },
     service: {
@@ -502,7 +499,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "روبوت محادثة AI", desc: "ذكاء اصطناعي فوق CRM: يفرز العملاء المحتملين ويجيب عن الأسئلة ويكتب الحوار في CRM." },
         { href: "/biznes-avtomatlashtirish", label: "أتمتة الأعمال", desc: "أتمِت العمليات خارج CRM أيضًا — التقارير والمستندات والمخزون وسير العمل." },
-        { href: "/telegram-bot-biznes", label: "روبوت Telegram", desc: "روبوت Telegram يستقبل الاستفسارات ويمرّرها مباشرة إلى مسار CRM لديك." },
       ],
     },
     service: {
@@ -628,7 +624,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "AI чат-бот", desc: "AI поверх CRM: кваліфікує ліди, відповідає на питання та пише діалог у CRM." },
         { href: "/biznes-avtomatlashtirish", label: "Автоматизація бізнесу", desc: "Автоматизуйте й процеси поза CRM — звіти, документи, склад і робочі потоки." },
-        { href: "/telegram-bot-biznes", label: "Telegram-бот", desc: "Telegram-бот, який приймає звернення й передає їх прямо у вашу воронку CRM." },
       ],
     },
     service: {

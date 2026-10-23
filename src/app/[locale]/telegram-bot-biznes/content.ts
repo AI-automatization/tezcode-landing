@@ -117,7 +117,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "AI chatbot", desc: "Botingizni aqlli qiling — AI erkin savollarga sizning bazangiz asosida javob beradi, lidlarni saralaydi va operatorga uzatadi." },
         { href: "/pos-tizimi", label: "POS tizimi (RAOS)", desc: "Bot orqali kelgan buyurtmalarni kassaga ulang — kassa, ombor va hisobot bitta dasturda." },
-        { href: "/biznes-avtomatlashtirish", label: "Biznes avtomatlashtirish", desc: "Botdan tashqari jarayonlarni ham avtomatlashtiring — hisobot, buyurtma oqimi, takroriy ishlar." },
       ],
     },
     service: {
@@ -239,7 +238,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "AI-чат-бот", desc: "Сделайте бота умным — AI отвечает на свободные вопросы по вашей базе, квалифицирует лиды и передаёт оператору." },
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Подключите заказы из бота к кассе — касса, склад и отчёты в одной программе." },
-        { href: "/biznes-avtomatlashtirish", label: "Автоматизация бизнеса", desc: "Автоматизируйте процессы за пределами бота — отчёты, поток заказов, рутинные задачи." },
       ],
     },
     service: {
@@ -361,7 +359,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "AI chatbot", desc: "Make your bot smart — AI answers free-form questions from your knowledge base, qualifies leads and hands off to an operator." },
         { href: "/pos-tizimi", label: "POS system (RAOS)", desc: "Connect bot orders to your register — POS, inventory and reports in one app." },
-        { href: "/biznes-avtomatlashtirish", label: "Business automation", desc: "Automate beyond the bot — reports, order flow and repetitive tasks." },
       ],
     },
     service: {
@@ -483,7 +480,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "شات بوت AI", desc: "اجعل بوتك ذكيًا — يجيب الـAI عن الأسئلة الحرة من قاعدتك ويصنّف العملاء المحتملين ويحوّل إلى الموظف." },
         { href: "/pos-tizimi", label: "نظام POS ‏(RAOS)", desc: "اربط طلبات البوت بالكاشير — الكاشير والمخزون والتقارير في برنامج واحد." },
-        { href: "/biznes-avtomatlashtirish", label: "أتمتة الأعمال", desc: "أتمتة ما هو أبعد من البوت — التقارير وتدفق الطلبات والمهام المتكررة." },
       ],
     },
     service: {
@@ -605,7 +601,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "AI-чат-бот", desc: "Зробіть бота розумним — AI відповідає на вільні питання за вашою базою, кваліфікує ліди й передає оператору." },
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Підключіть замовлення з бота до каси — каса, склад і звіти в одній програмі." },
-        { href: "/biznes-avtomatlashtirish", label: "Автоматизація бізнесу", desc: "Автоматизуйте процеси поза ботом — звіти, потік замовлень, рутинні задачі." },
       ],
     },
     service: {

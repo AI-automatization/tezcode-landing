@@ -264,41 +264,6 @@ export const CONTENT: ServicePageContent = {
           label: "AI o'zbek tilida: qanday sinash kerak?",
           desc: "Lotin yozuvi, aralash til va biznes savollari uchun amaliy tekshiruv namunalari."
         },
-        {
-          href: "/ai-ozbekistonda",
-          label: "AI kompaniya O'zbekiston",
-          desc: "O'zbekistonda biznes uchun AI agentlar, chatbotlar va avtomatizatsiya yechimlari.",
-        },
-        {
-          href: "/ai-chatbot",
-          label: "AI chatbot xizmati",
-          desc: "24/7 mijoz xizmati va lid yig'ish uchun AI chatbot — agentning eng keng tarqalgan ko'rinishi.",
-        },
-        {
-          href: "/telegram-bot-biznes",
-          label: "Telegram bot",
-          desc: "Buyurtma, to'lov va Mini App bilan biznes uchun Telegram bot.",
-        },
-        {
-          href: "/ai-avtomatizatsiya",
-          label: "AI avtomatizatsiya",
-          desc: "Biznes jarayonlarini sun'iy intellekt bilan avtomatlashtirish.",
-        },
-        {
-          href: "/biznes-avtomatlashtirish",
-          label: "Biznes avtomatlashtirish",
-          desc: "Takroriy qo'l ishlarini avtomatlashtirib, vaqt va xarajatni tejash.",
-        },
-        {
-          href: "/blog/biznes-uchun-ai-agent-yaratish",
-          label: "Qo'llanma: AI agent yaratish",
-          desc: "AI agent nima, qanday ishlaydi va 6 qadamda qanday yaratiladi — to'liq qo'llanma.",
-        },
-        {
-          href: "/blog/ai-chatbot-va-ai-agent-farqi",
-          label: "Chatbot va AI agent farqi",
-          desc: "Farqi nimada va qaysi biri aynan sizning biznesingizga kerak.",
-        },
       ],
     },
     service: {
@@ -546,36 +511,6 @@ export const CONTENT: ServicePageContent = {
           href: "/ai-ozbekistonda",
           label: "AI-компания в Узбекистане",
           desc: "ИИ-агенты, чат-боты и автоматизация для бизнеса в Узбекистане.",
-        },
-        {
-          href: "/ai-chatbot",
-          label: "AI-чат-бот",
-          desc: "AI-чат-бот для поддержки 24/7 и сбора лидов — самая частая форма агента.",
-        },
-        {
-          href: "/telegram-bot-biznes",
-          label: "Telegram-бот",
-          desc: "Telegram-бот для бизнеса с заказами, оплатой и Mini App.",
-        },
-        {
-          href: "/ai-avtomatizatsiya",
-          label: "AI-автоматизация",
-          desc: "Автоматизация бизнес-процессов с помощью искусственного интеллекта.",
-        },
-        {
-          href: "/biznes-avtomatlashtirish",
-          label: "Автоматизация бизнеса",
-          desc: "Автоматизируем рутину, экономим время и расходы.",
-        },
-        {
-          href: "/blog/biznes-uchun-ai-agent-yaratish",
-          label: "Гид: создание AI-агента",
-          desc: "Что такое AI-агент, как работает и как создаётся за 6 шагов — полное руководство.",
-        },
-        {
-          href: "/blog/ai-chatbot-va-ai-agent-farqi",
-          label: "Чат-бот vs AI-агент",
-          desc: "В чём разница и что именно нужно вашему бизнесу.",
         },
       ],
     },
@@ -825,31 +760,6 @@ export const CONTENT: ServicePageContent = {
           label: "AI chatbot service",
           desc: "An AI chatbot for 24/7 support and lead capture — the most common form of agent.",
         },
-        {
-          href: "/telegram-bot-biznes",
-          label: "Telegram bot",
-          desc: "A Telegram bot for business with orders, payments and Mini App.",
-        },
-        {
-          href: "/ai-avtomatizatsiya",
-          label: "AI automation",
-          desc: "Automating business processes with artificial intelligence.",
-        },
-        {
-          href: "/biznes-avtomatlashtirish",
-          label: "Business automation",
-          desc: "Automate routine work to save time and cost.",
-        },
-        {
-          href: "/blog/biznes-uchun-ai-agent-yaratish",
-          label: "Guide: building an AI agent",
-          desc: "What an AI agent is, how it works and how it's built in 6 steps — full guide.",
-        },
-        {
-          href: "/blog/ai-chatbot-va-ai-agent-farqi",
-          label: "Chatbot vs AI agent",
-          desc: "What the difference is and which one your business needs.",
-        },
       ],
     },
     service: {
@@ -1098,31 +1008,6 @@ export const CONTENT: ServicePageContent = {
           label: "خدمة شات بوت ذكي",
           desc: "شات بوت ذكي للدعم 24/7 وجمع العملاء المحتملين — أكثر أشكال الوكيل شيوعاً.",
         },
-        {
-          href: "/telegram-bot-biznes",
-          label: "بوت تيليجرام",
-          desc: "بوت تيليجرام للأعمال مع الطلبات والدفع وتطبيق مصغّر.",
-        },
-        {
-          href: "/ai-avtomatizatsiya",
-          label: "أتمتة بالذكاء الاصطناعي",
-          desc: "أتمتة عمليات الأعمال بالذكاء الاصطناعي.",
-        },
-        {
-          href: "/biznes-avtomatlashtirish",
-          label: "أتمتة الأعمال",
-          desc: "أتمتة العمل الروتيني لتوفير الوقت والتكلفة.",
-        },
-        {
-          href: "/blog/biznes-uchun-ai-agent-yaratish",
-          label: "دليل: بناء وكيل ذكي",
-          desc: "ما هو وكيل الذكاء الاصطناعي وكيف يعمل وكيف يُبنى في 6 خطوات — دليل كامل.",
-        },
-        {
-          href: "/blog/ai-chatbot-va-ai-agent-farqi",
-          label: "شات بوت أم وكيل ذكي",
-          desc: "ما الفرق وأيهما يحتاجه عملك.",
-        },
       ],
     },
     service: {
@@ -1370,31 +1255,6 @@ export const CONTENT: ServicePageContent = {
           href: "/ai-chatbot",
           label: "AI-чат-бот",
           desc: "AI-чат-бот для підтримки 24/7 і збору лідів — найпоширеніша форма агента.",
-        },
-        {
-          href: "/telegram-bot-biznes",
-          label: "Telegram-бот",
-          desc: "Telegram-бот для бізнесу із замовленнями, оплатою та Mini App.",
-        },
-        {
-          href: "/ai-avtomatizatsiya",
-          label: "AI-автоматизація",
-          desc: "Автоматизація бізнес-процесів за допомогою штучного інтелекту.",
-        },
-        {
-          href: "/biznes-avtomatlashtirish",
-          label: "Автоматизація бізнесу",
-          desc: "Автоматизуємо рутину, заощаджуємо час і витрати.",
-        },
-        {
-          href: "/blog/biznes-uchun-ai-agent-yaratish",
-          label: "Гід: створення AI-агента",
-          desc: "Що таке AI-агент, як працює і як створюється за 6 кроків — повний посібник.",
-        },
-        {
-          href: "/blog/ai-chatbot-va-ai-agent-farqi",
-          label: "Чат-бот vs AI-агент",
-          desc: "У чому різниця і що саме потрібно вашому бізнесу.",
         },
       ],
     },

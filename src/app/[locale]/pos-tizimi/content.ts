@@ -124,8 +124,6 @@ export const CONTENT: ServicePageContent = {
           desc: "Narx, offline ishlash, savdo uskunalari va ombor hisobini demoda qanday solishtirish kerak?"
         },
         { href: "/biznes-avtomatlashtirish", label: "Biznes avtomatlashtirish", desc: "Kassadan tashqari jarayonlarni ham avtomatlashtiring — hisobot, buyurtma oqimi va takroriy ishlar bitta tizimda." },
-        { href: "/ai-chatbot", label: "AI chatbot", desc: "Do'koningiz uchun 24/7 mijoz xizmati — savollarga javob beradi, buyurtma va lid yig'adi." },
-        { href: "/xodim-nazorati", label: "Xodim nazorati", desc: "Sotuvchilar davomati, vazifalari va samaradorligini bitta tizimda kuzating." },
       ],
     },
     service: {
@@ -245,7 +243,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/biznes-avtomatlashtirish", label: "Автоматизация бизнеса", desc: "Автоматизируйте процессы за пределами кассы — отчёты, поток заказов и рутинные задачи в одной системе." },
         { href: "/ai-chatbot", label: "ИИ-чат-бот (AI)", desc: "Клиентский сервис 24/7 для вашего магазина — отвечает на вопросы, собирает заказы и лиды." },
-        { href: "/xodim-nazorati", label: "Контроль сотрудников", desc: "Посещаемость, задачи и продуктивность продавцов в одной системе." },
       ],
     },
     service: {
@@ -365,7 +362,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/biznes-avtomatlashtirish", label: "Business automation", desc: "Automate beyond the register — reports, order flow and repetitive tasks in one system." },
         { href: "/ai-chatbot", label: "AI chatbot", desc: "24/7 customer service for your store — answers questions, collects orders and leads." },
-        { href: "/xodim-nazorati", label: "Employee monitoring", desc: "Attendance, tasks and productivity of your staff in one system." },
       ],
     },
     service: {
@@ -485,7 +481,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/biznes-avtomatlashtirish", label: "أتمتة الأعمال", desc: "أتمتة ما بعد الكاشير — التقارير وتدفق الطلبات والمهام المتكررة في نظام واحد." },
         { href: "/ai-chatbot", label: "شات بوت AI", desc: "خدمة عملاء 24/7 لمتجرك — يجيب عن الأسئلة ويجمع الطلبات والعملاء المحتملين." },
-        { href: "/xodim-nazorati", label: "مراقبة الموظفين", desc: "الحضور والمهام وإنتاجية البائعين في نظام واحد." },
       ],
     },
     service: {
@@ -605,7 +600,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/biznes-avtomatlashtirish", label: "Автоматизація бізнесу", desc: "Автоматизуйте процеси поза касою — звіти, потік замовлень і рутинні задачі в одній системі." },
         { href: "/ai-chatbot", label: "AI-чат-бот", desc: "Клієнтський сервіс 24/7 для вашого магазину — відповідає на питання, збирає замовлення та ліди." },
-        { href: "/xodim-nazorati", label: "Контроль співробітників", desc: "Відвідуваність, задачі та продуктивність продавців в одній системі." },
       ],
     },
     service: {

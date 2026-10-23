@@ -119,7 +119,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "AI chatbot", desc: "Telegram/Instagram'da bron, savol-javob va eslatma boti — 24/7." },
         { href: "/telegram-bot-biznes", label: "Telegram bot", desc: "Bron va to'lovni qabul qiluvchi biznes uchun Telegram bot." },
-        { href: "/crm-integratsiya", label: "CRM integratsiya", desc: "Mijozlar bazasi, tarix va sodiqlikni CRM bilan bog'lash." },
       ],
     },
     service: {
@@ -239,7 +238,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "AI чат-бот", desc: "Бот записи, вопросов-ответов и напоминаний в Telegram/Instagram — 24/7." },
         { href: "/telegram-bot-biznes", label: "Telegram-бот", desc: "Telegram-бот для бизнеса, принимающий запись и оплату." },
-        { href: "/crm-integratsiya", label: "Интеграция CRM", desc: "Связка базы клиентов, истории и лояльности с CRM." },
       ],
     },
     service: {
@@ -358,7 +356,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "AI chatbot", desc: "A booking, Q&A and reminder bot on Telegram/Instagram — 24/7." },
         { href: "/telegram-bot-biznes", label: "Telegram bot", desc: "A business Telegram bot that takes bookings and payments." },
-        { href: "/crm-integratsiya", label: "CRM integration", desc: "Tying the customer base, history and loyalty into a CRM." },
       ],
     },
     service: {
@@ -477,7 +474,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "روبوت محادثة AI", desc: "روبوت حجز وأسئلة وتذكيرات على Telegram/Instagram — 24/7." },
         { href: "/telegram-bot-biznes", label: "روبوت Telegram", desc: "روبوت Telegram للأعمال يستقبل الحجز والدفع." },
-        { href: "/crm-integratsiya", label: "تكامل CRM", desc: "ربط قاعدة العملاء والسجل والولاء بـ CRM." },
       ],
     },
     service: {
@@ -596,7 +592,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/ai-chatbot", label: "AI чат-бот", desc: "Бот запису, питань-відповідей і нагадувань у Telegram/Instagram — 24/7." },
         { href: "/telegram-bot-biznes", label: "Telegram-бот", desc: "Telegram-бот для бізнесу, що приймає запис і оплату." },
-        { href: "/crm-integratsiya", label: "Інтеграція CRM", desc: "Пов'язування бази клієнтів, історії та лояльності з CRM." },
       ],
     },
     service: {

@@ -87,7 +87,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/hire-developers", label: "Dasturchi yollash", desc: "O'z jamoangizga in-house dasturchi kerakmi — bizning mutaxassislarni jalb qiling." },
         { href: "/ai-agent", label: "AI agent", desc: "Biznesingiz uchun AI agent va avtomatizatsiya yechimlari." },
-        { href: "/it-xizmatlar", label: "IT xizmatlar", desc: "To'liq tsikl IT xizmatlar: veb, mobil, integratsiya va support." },
       ],
     },
     service: {
@@ -179,7 +178,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/hire-developers", label: "Нанять разработчиков", desc: "Нужны in-house разработчики в вашу команду — подключите наших специалистов." },
         { href: "/ai-agent", label: "ИИ-агент", desc: "ИИ-агенты и автоматизация для вашего бизнеса." },
-        { href: "/it-xizmatlar", label: "IT-услуги", desc: "Полный цикл IT-услуг: веб, мобайл, интеграции и поддержка." },
       ],
     },
     service: {
@@ -271,7 +269,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/hire-developers", label: "Hire developers", desc: "Need in-house developers for your own team — bring in our specialists." },
         { href: "/ai-agent", label: "AI agent", desc: "AI agents and automation solutions for your business." },
-        { href: "/it-xizmatlar", label: "IT services", desc: "Full-cycle IT services: web, mobile, integrations and support." },
       ],
     },
     service: {
@@ -363,7 +360,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/hire-developers", label: "توظيف مطورين", desc: "تحتاج مطورين داخليين لفريقك — استعن بمتخصصينا." },
         { href: "/ai-agent", label: "وكيل AI", desc: "وكلاء ذكاء اصطناعي وحلول أتمتة لأعمالك." },
-        { href: "/it-xizmatlar", label: "خدمات IT", desc: "خدمات IT كاملة: ويب، جوال، تكاملات ودعم." },
       ],
     },
     service: {
@@ -455,7 +451,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/hire-developers", label: "Найняти розробників", desc: "Потрібні in-house розробники у вашу команду — залучіть наших фахівців." },
         { href: "/ai-agent", label: "AI-агент", desc: "AI-агенти та автоматизація для вашого бізнесу." },
-        { href: "/it-xizmatlar", label: "IT-послуги", desc: "Повний цикл IT-послуг: веб, мобайл, інтеграції та підтримка." },
       ],
     },
     service: {

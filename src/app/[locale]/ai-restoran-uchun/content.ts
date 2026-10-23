@@ -120,7 +120,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS tizimi (RAOS)", desc: "Restoran kassasi, ombor, o'zannoma va hisobot — offline-first POS." },
         { href: "/ai-chatbot", label: "AI chatbot", desc: "Telegram/Instagram'da stol bron, menyu va buyurtma boti — 24/7." },
-        { href: "/ai-video-analitika", label: "AI video analitika", desc: "Mehmonlar oqimini sanash — smena va zaxira rejasi uchun aniq raqam." },
       ],
     },
     service: {
@@ -240,7 +239,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Касса ресторана, склад, калькуляция и отчёты — offline-first POS." },
         { href: "/ai-chatbot", label: "AI чат-бот", desc: "Бронь стола, меню и заказы в Telegram/Instagram — 24/7." },
-        { href: "/ai-video-analitika", label: "AI видеоаналитика", desc: "Подсчёт потока гостей — точная цифра для смен и запасов." },
       ],
     },
     service: {
@@ -359,7 +357,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS system (RAOS)", desc: "Restaurant register, inventory, recipe costing and reports — offline-first POS." },
         { href: "/ai-chatbot", label: "AI chatbot", desc: "Table booking, menu and orders on Telegram/Instagram — 24/7." },
-        { href: "/ai-video-analitika", label: "AI video analytics", desc: "Guest footfall counting — an exact number for shifts and stock." },
       ],
     },
     service: {
@@ -478,7 +475,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "نظام POS‏ (RAOS)", desc: "كاشير المطعم والمخزون وحساب التكلفة والتقارير — POS يعمل offline-first." },
         { href: "/ai-chatbot", label: "روبوت محادثة AI", desc: "حجز الطاولة والقائمة والطلبات على Telegram/Instagram — 24/7." },
-        { href: "/ai-video-analitika", label: "تحليلات فيديو AI", desc: "حساب تدفّق الضيوف — رقم دقيق للمناوبات والمخزون." },
       ],
     },
     service: {
@@ -597,7 +593,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Каса ресторану, склад, калькуляція та звіти — offline-first POS." },
         { href: "/ai-chatbot", label: "AI чат-бот", desc: "Бронь столу, меню та замовлення в Telegram/Instagram — 24/7." },
-        { href: "/ai-video-analitika", label: "AI відеоаналітика", desc: "Підрахунок потоку гостей — точна цифра для змін і запасів." },
       ],
     },
     service: {

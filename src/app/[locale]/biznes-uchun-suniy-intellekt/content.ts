@@ -75,9 +75,6 @@ const uz: ServicePageCopy = {
     links: [
       { href: "/ai-agent", label: "AI agent yaratish", desc: "O'zi qaror qabul qilib, CRM va boshqa tizimlarda ish bajaradigan agent." },
       { href: "/ai-chatbot", label: "AI chatbot yaratish", desc: "Telegram, Instagram, sayt va boshqa kanallarda 24/7 javob beradigan chatbot." },
-      { href: "/ai-avtomatizatsiya", label: "AI avtomatlashtirish", desc: "Hisobot, sotuv, buyurtma va hujjat jarayonlarini avtomatlashtirish." },
-      { href: "/crm-integratsiya", label: "CRM integratsiya", desc: "AI va mavjud CRM, 1C, Google Sheets hamda to'lov tizimlarini ulash." },
-      { href: "/ai-ozbekistonda", label: "O'zbekistondagi AI kompaniya", desc: "Tezcode, xizmat hududi va O'zbekiston bozoridagi AI yo'nalishlari." },
     ],
   },
   service: {

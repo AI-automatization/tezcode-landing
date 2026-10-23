@@ -121,7 +121,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/xodim-nazorati", label: "Xodim nazorati", desc: "Ish vaqti, davomat va samaradorlikni raqamli nazorat — video davomat bilan tabiiy birlashadi." },
         { href: "/ai-agent", label: "AI agent", desc: "Kamera ko'rgan hodisani keyingi harakatga aylantiradigan AI agent — o'zi qaror qabul qiladi va vazifani bajaradi." },
-        { href: "/for-businesses", label: "Biznes uchun", desc: "AI biznesingizning qaysi qismiga eng katta foyda berishini — savdo, xavfsizlik yoki jarayonlar — bepul auditda aniqlaymiz." },
       ],
     },
     heroImage: {
@@ -271,7 +270,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/xodim-nazorati", label: "Контроль сотрудников", desc: "Цифровой контроль рабочего времени, посещаемости и эффективности — естественно объединяется с видео-посещаемостью." },
         { href: "/ai-agent", label: "AI-агент", desc: "AI-агент, превращающий увиденное камерой событие в следующее действие — сам принимает решение и выполняет задачу." },
-        { href: "/for-businesses", label: "Для бизнеса", desc: "На бесплатном аудите определим, где ИИ даст бизнесу наибольший эффект — продажи, безопасность или процессы." },
       ],
     },
     heroImage: {
@@ -421,7 +419,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/xodim-nazorati", label: "Employee monitoring", desc: "Digital control of work time, attendance and productivity — a natural fit with video attendance." },
         { href: "/ai-agent", label: "AI agent", desc: "An AI agent that turns an event a camera sees into the next action — it decides and completes the task itself." },
-        { href: "/for-businesses", label: "For business", desc: "In a free audit we'll pinpoint where AI delivers the biggest impact — sales, security or operations." },
       ],
     },
     heroImage: {
@@ -571,7 +568,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/xodim-nazorati", label: "مراقبة الموظفين", desc: "تحكم رقمي في وقت العمل والحضور والإنتاجية — يتكامل طبيعيًا مع الحضور بالفيديو." },
         { href: "/ai-agent", label: "وكيل AI", desc: "وكيل AI يحوّل الحدث الذي تراه الكاميرا إلى الإجراء التالي — يقرر وينفذ المهمة بنفسه." },
-        { href: "/for-businesses", label: "للأعمال", desc: "في تدقيق مجاني نحدد أين يحقق AI أكبر أثر — المبيعات أو الأمن أو العمليات." },
       ],
     },
     heroImage: {
@@ -721,7 +717,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/xodim-nazorati", label: "Контроль співробітників", desc: "Цифровий контроль робочого часу, відвідуваності та ефективності — природно поєднується з відео-відвідуваністю." },
         { href: "/ai-agent", label: "AI-агент", desc: "AI-агент, що перетворює побачену камерою подію на наступну дію — сам ухвалює рішення і виконує завдання." },
-        { href: "/for-businesses", label: "Для бізнесу", desc: "На безкоштовному аудиті визначимо, де AI дасть бізнесу найбільший ефект — продажі, безпека чи процеси." },
       ],
     },
     heroImage: {

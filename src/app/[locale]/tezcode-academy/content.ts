@@ -88,7 +88,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/hire-developers", label: "Dasturchi yollash", desc: "Tayyor, kuchli jamoa kerakmi? In-house dasturchilarni yollash yoki jamoa kuchaytirish." },
         { href: "/blog", label: "Blog", desc: "AI, avtomatizatsiya va zamonaviy muhandislik bo'yicha amaliy maqolalar va qo'llanmalar." },
-        { href: "/ai-agent", label: "AI agentlar", desc: "AI agentlar biznesda qanday ishlaydi — real yechimlarni ko'rib chiqing." },
       ],
     },
     service: {
@@ -179,7 +178,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/hire-developers", label: "Нанять разработчиков", desc: "Нужна готовая сильная команда? Наём in-house разработчиков или усиление вашей команды." },
         { href: "/blog", label: "Блог", desc: "Практические статьи и руководства по ИИ, автоматизации и современной инженерии." },
-        { href: "/ai-agent", label: "ИИ-агенты", desc: "Как ИИ-агенты работают в бизнесе — посмотрите реальные решения." },
       ],
     },
     service: {
@@ -270,7 +268,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/hire-developers", label: "Hire developers", desc: "Need a ready, strong team? Hire in-house developers or strengthen your team." },
         { href: "/blog", label: "Blog", desc: "Practical articles and guides on AI, automation and modern engineering." },
-        { href: "/ai-agent", label: "AI agents", desc: "How AI agents work in business — explore real solutions." },
       ],
     },
     service: {
@@ -361,7 +358,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/hire-developers", label: "توظيف مطورين", desc: "تحتاج فريقاً جاهزاً وقوياً؟ توظيف مطورين داخليين أو تعزيز فريقك." },
         { href: "/blog", label: "المدونة", desc: "مقالات وأدلة عملية عن الذكاء الاصطناعي والأتمتة والهندسة الحديثة." },
-        { href: "/ai-agent", label: "وكلاء AI", desc: "كيف يعمل وكلاء الذكاء الاصطناعي في الأعمال — استكشف حلولاً حقيقية." },
       ],
     },
     service: {
@@ -452,7 +448,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/hire-developers", label: "Найняти розробників", desc: "Потрібна готова сильна команда? Найм in-house розробників або посилення вашої команди." },
         { href: "/blog", label: "Блог", desc: "Практичні статті та посібники з AI, автоматизації та сучасної інженерії." },
-        { href: "/ai-agent", label: "AI-агенти", desc: "Як AI-агенти працюють у бізнесі — перегляньте реальні рішення." },
       ],
     },
     service: {

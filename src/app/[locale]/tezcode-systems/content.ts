@@ -87,7 +87,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS tizimi", desc: "RAOS — do'kon va retail uchun tayyor kassa, ombor va savdo tizimi." },
         { href: "/xodim-nazorati", label: "Xodim nazorati", desc: "WorkControl — xodim samaradorligi va ish vaqti nazorati." },
-        { href: "/tariflar", label: "Tariflar", desc: "Obuna narxlari va tariflar bilan tanishing." },
       ],
     },
     service: {
@@ -178,7 +177,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS-система", desc: "RAOS — готовая касса, склад и продажи для магазинов и ритейла." },
         { href: "/xodim-nazorati", label: "Контроль сотрудников", desc: "WorkControl — продуктивность сотрудников и контроль рабочего времени." },
-        { href: "/tariflar", label: "Тарифы", desc: "Ознакомьтесь с ценами на подписку и тарифами." },
       ],
     },
     service: {
@@ -269,7 +267,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS system", desc: "RAOS — ready cashier, inventory and sales for shops and retail." },
         { href: "/xodim-nazorati", label: "Employee monitoring", desc: "WorkControl — employee productivity and working-time control." },
-        { href: "/tariflar", label: "Pricing", desc: "See subscription prices and plans." },
       ],
     },
     service: {
@@ -360,7 +357,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "نظام نقاط البيع", desc: "RAOS — كاشير ومخزون ومبيعات جاهزة للمتاجر والتجزئة." },
         { href: "/xodim-nazorati", label: "مراقبة الموظفين", desc: "WorkControl — إنتاجية الموظفين ومراقبة وقت العمل." },
-        { href: "/tariflar", label: "الباقات", desc: "اطّلع على أسعار الاشتراك والباقات." },
       ],
     },
     service: {
@@ -451,7 +447,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS-система", desc: "RAOS — готова каса, склад і продажі для магазинів та ритейлу." },
         { href: "/xodim-nazorati", label: "Контроль співробітників", desc: "WorkControl — продуктивність співробітників і контроль робочого часу." },
-        { href: "/tariflar", label: "Тарифи", desc: "Ознайомтеся з цінами на підписку та тарифами." },
       ],
     },
     service: {

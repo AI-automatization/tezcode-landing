@@ -116,7 +116,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS tizimi (RAOS)", desc: "Dorixona yoki klinika do'koni uchun kassa, ombor va hisobot — internetsiz ham ishlaydi." },
         { href: "/ai-chatbot", label: "AI chatbot", desc: "Bemorlar savollariga 24/7 javob beradigan, qabulga yozadigan AI yordamchi." },
-        { href: "/xodim-nazorati", label: "Xodim nazorati", desc: "Shifokor va xodimlar davomati, vazifalari va samaradorligini bitta tizimda kuzating." },
       ],
     },
     service: {
@@ -237,7 +236,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Касса, склад и отчёты для аптеки или магазина при клинике — работает даже без интернета." },
         { href: "/ai-chatbot", label: "ИИ-чат-бот (AI)", desc: "ИИ-ассистент, который отвечает пациентам 24/7 и записывает на приём." },
-        { href: "/xodim-nazorati", label: "Контроль сотрудников", desc: "Посещаемость, задачи и продуктивность врачей и персонала в одной системе." },
       ],
     },
     service: {
@@ -358,7 +356,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS system (RAOS)", desc: "Register, inventory and reports for a pharmacy or clinic shop — works even offline." },
         { href: "/ai-chatbot", label: "AI chatbot", desc: "An AI assistant that answers patients 24/7 and books appointments." },
-        { href: "/xodim-nazorati", label: "Employee monitoring", desc: "Attendance, tasks and productivity of doctors and staff in one system." },
       ],
     },
     service: {
@@ -478,7 +475,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "نظام POS ‏(RAOS)", desc: "كاشير ومخزون وتقارير لصيدلية أو متجر العيادة — يعمل حتى بدون إنترنت." },
         { href: "/ai-chatbot", label: "شات بوت AI", desc: "مساعد AI يجيب المرضى 24/7 ويحجز المواعيد." },
-        { href: "/xodim-nazorati", label: "مراقبة الموظفين", desc: "الحضور والمهام وإنتاجية الأطباء والموظفين في نظام واحد." },
       ],
     },
     service: {
@@ -599,7 +595,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Каса, склад і звіти для аптеки чи магазину при клініці — працює навіть без інтернету." },
         { href: "/ai-chatbot", label: "AI-чат-бот", desc: "AI-асистент, який відповідає пацієнтам 24/7 і записує на прийом." },
-        { href: "/xodim-nazorati", label: "Контроль співробітників", desc: "Відвідуваність, задачі та продуктивність лікарів і персоналу в одній системі." },
       ],
     },
     service: {

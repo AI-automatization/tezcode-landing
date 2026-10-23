@@ -234,21 +234,6 @@ export const CONTENT: ServicePageContent = {
           label: "AI agent",
           desc: "O'zi qaror qabul qiladigan va vazifani boshidan oxirigacha bajaradigan AI agentlar — avtomatlashtirishning keyingi darajasi.",
         },
-        {
-          href: "/ai-chatbot",
-          label: "AI chatbot",
-          desc: "24/7 mijoz xizmati va lid yig'ish uchun AI chatbot — avtomatlashtirishning eng tez natija beradigan qismi.",
-        },
-        {
-          href: "/telegram-bot-biznes",
-          label: "Biznes uchun Telegram bot",
-          desc: "Buyurtma, to'lov va xabarnomalarni Telegram orqali avtomatlashtirish — O'zbekistonda eng ommabop kanal.",
-        },
-        {
-          href: "/biznes-avtomatlashtirish",
-          label: "Biznes avtomatlashtirish",
-          desc: "Takroriy qo'l ishlarini tizimlashtirib, vaqt va xarajatni tejaydigan klassik avtomatlashtirish.",
-        },
       ],
     },
     service: {
@@ -482,16 +467,6 @@ export const CONTENT: ServicePageContent = {
           href: "/ai-chatbot",
           label: "AI-чат-бот",
           desc: "AI-чат-бот для сервиса 24/7 и сбора лидов — самая быстрая по результату часть автоматизации.",
-        },
-        {
-          href: "/telegram-bot-biznes",
-          label: "Telegram-бот для бизнеса",
-          desc: "Автоматизация заказов, оплат и уведомлений через Telegram — самый популярный канал в Узбекистане.",
-        },
-        {
-          href: "/biznes-avtomatlashtirish",
-          label: "Автоматизация бизнес-процессов",
-          desc: "Заказы, склад и отчётность по заданным правилам: когда достаточно CRM, готовой системы или интеграции без AI.",
         },
       ],
     },
@@ -727,16 +702,6 @@ export const CONTENT: ServicePageContent = {
           label: "AI chatbot",
           desc: "An AI chatbot for 24/7 customer service and lead capture — the fastest-payoff part of automation.",
         },
-        {
-          href: "/telegram-bot-biznes",
-          label: "Telegram bot for business",
-          desc: "Automating orders, payments and notifications via Telegram — the most popular channel in Uzbekistan.",
-        },
-        {
-          href: "/biznes-avtomatlashtirish",
-          label: "Business automation",
-          desc: "Classic automation of repetitive manual work — saving time and costs.",
-        },
       ],
     },
     service: {
@@ -971,16 +936,6 @@ export const CONTENT: ServicePageContent = {
           label: "شات بوت AI",
           desc: "شات بوت AI لخدمة العملاء 24/7 وجمع العملاء المحتملين — أسرع جزء من الأتمتة نتيجةً.",
         },
-        {
-          href: "/telegram-bot-biznes",
-          label: "بوت Telegram للأعمال",
-          desc: "أتمتة الطلبات والمدفوعات والإشعارات عبر Telegram — القناة الأكثر شعبية في أوزبكستان.",
-        },
-        {
-          href: "/biznes-avtomatlashtirish",
-          label: "أتمتة الأعمال",
-          desc: "الأتمتة الكلاسيكية للمهام اليدوية المتكررة — توفير الوقت والتكاليف.",
-        },
       ],
     },
     service: {
@@ -1214,16 +1169,6 @@ export const CONTENT: ServicePageContent = {
           href: "/ai-chatbot",
           label: "AI-чат-бот",
           desc: "AI-чат-бот для сервісу 24/7 і збору лідів — найшвидша за результатом частина автоматизації.",
-        },
-        {
-          href: "/telegram-bot-biznes",
-          label: "Telegram-бот для бізнесу",
-          desc: "Автоматизація замовлень, оплат і повідомлень через Telegram — найпопулярніший канал в Узбекистані.",
-        },
-        {
-          href: "/biznes-avtomatlashtirish",
-          label: "Автоматизація бізнесу",
-          desc: "Класична автоматизація рутинної ручної роботи — економія часу та витрат.",
         },
       ],
     },

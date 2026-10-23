@@ -123,7 +123,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/telegram-bot-biznes", label: "Telegram bot", desc: "Buyurtma, to'lov va Mini App bilan biznes uchun Telegram bot — chatbot eng ko'p ishlaydigan kanal." },
         { href: "/ai-agent", label: "AI agent", desc: "Chatbotdan bir qadam yuqori: o'zi qaror qabul qiladigan va vazifani oxirigacha bajaradigan AI agent." },
-        { href: "/ai-avtomatizatsiya", label: "AI avtomatizatsiya", desc: "Suhbatdan tashqari jarayonlarni ham AI bilan avtomatlashtiring — hisobot, lid saralash, integratsiya." },
       ],
     },
     service: {
@@ -250,7 +249,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/telegram-bot-biznes", label: "Telegram-бот", desc: "Telegram-бот для бизнеса с заказами, оплатой и Mini App — главный канал для чат-бота." },
         { href: "/ai-agent", label: "AI-агент", desc: "На шаг выше чат-бота: AI-агент сам принимает решения и доводит задачу до конца." },
-        { href: "/ai-avtomatizatsiya", label: "AI-автоматизация", desc: "Автоматизируйте с помощью ИИ не только диалог — отчёты, квалификация лидов, интеграции." },
       ],
     },
     service: {
@@ -377,7 +375,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/telegram-bot-biznes", label: "Telegram bot", desc: "A business Telegram bot with orders, payments and Mini App — the chatbot's main channel." },
         { href: "/ai-agent", label: "AI agent", desc: "One step beyond a chatbot: an AI agent that makes decisions and completes tasks end to end." },
-        { href: "/ai-avtomatizatsiya", label: "AI automation", desc: "Automate more than the conversation — reports, lead qualification and integrations with AI." },
       ],
     },
     service: {
@@ -502,7 +499,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/telegram-bot-biznes", label: "بوت تيليجرام", desc: "بوت تيليجرام للأعمال مع الطلبات والدفع وMini App — القناة الرئيسية للشات بوت." },
         { href: "/ai-agent", label: "وكيل AI", desc: "خطوة أبعد من الشات بوت: وكيل AI يتخذ القرارات وينجز المهمة من البداية إلى النهاية." },
-        { href: "/ai-avtomatizatsiya", label: "أتمتة AI", desc: "أتمتة ما هو أبعد من المحادثة — التقارير وتصنيف العملاء والتكاملات بالذكاء الاصطناعي." },
       ],
     },
     service: {
@@ -628,7 +624,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/telegram-bot-biznes", label: "Telegram-бот", desc: "Telegram-бот для бізнесу із замовленнями, оплатою та Mini App — головний канал для чат-бота." },
         { href: "/ai-agent", label: "AI-агент", desc: "На крок вище за чат-бота: AI-агент сам ухвалює рішення і доводить задачу до кінця." },
-        { href: "/ai-avtomatizatsiya", label: "AI-автоматизація", desc: "Автоматизуйте не лише діалог — звіти, кваліфікація лідів та інтеграції за допомогою ШІ." },
       ],
     },
     service: {

@@ -86,7 +86,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/case-studies", label: "Case studies", desc: "Bizning loyihalarimiz va real natijalar." },
         { href: "/for-businesses", label: "Bizneslar uchun", desc: "Mijozlar uchun to'liq tsikl mahsulot ishlab chiqish." },
-        { href: "/ai-agent", label: "AI agentlar", desc: "AI bilan tezlashtirilgan development va avtomatizatsiya." },
       ],
     },
     service: {
@@ -177,7 +176,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/case-studies", label: "Кейсы", desc: "Наши проекты и реальные результаты." },
         { href: "/for-businesses", label: "Для бизнеса", desc: "Полный цикл разработки продукта для клиентов." },
-        { href: "/ai-agent", label: "ИИ-агенты", desc: "ИИ-ускоренная разработка и автоматизация." },
       ],
     },
     service: {
@@ -268,7 +266,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/case-studies", label: "Case studies", desc: "Our projects and real results." },
         { href: "/for-businesses", label: "For businesses", desc: "Full-cycle product development for clients." },
-        { href: "/ai-agent", label: "AI agents", desc: "AI-accelerated development and automation." },
       ],
     },
     service: {
@@ -359,7 +356,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/case-studies", label: "دراسات الحالة", desc: "مشاريعنا ونتائج حقيقية." },
         { href: "/for-businesses", label: "للشركات", desc: "تطوير منتج بدورة كاملة للعملاء." },
-        { href: "/ai-agent", label: "وكلاء AI", desc: "تطوير وأتمتة مُسرّعان بالذكاء الاصطناعي." },
       ],
     },
     service: {
@@ -450,7 +446,6 @@ export const CONTENT: ServicePageContent = {
       links: [
         { href: "/case-studies", label: "Кейси", desc: "Наші проекти та реальні результати." },
         { href: "/for-businesses", label: "Для бізнесу", desc: "Повний цикл розробки продукту для клієнтів." },
-        { href: "/ai-agent", label: "AI-агенти", desc: "AI-прискорена розробка та автоматизація." },
       ],
     },
     service: {
