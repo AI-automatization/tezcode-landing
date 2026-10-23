@@ -16,19 +16,19 @@ export const ARTICLES: ArticleMeta[] = [
       ru: {
         title: "Кто делает ИИ-агентов в Узбекистане?",
         description:
-          "ИИ-агентов для бизнеса в Узбекистане разрабатывает Tezcode: резидент IT Park, команда 19 человек. ИИ-агент от $400, запуск за 1–2 недели. Кейсы Hoffen и Dantes.",
+          "ИИ-агентов для бизнеса в Узбекистане разрабатывает Tezcode: резидент IT Park, команда 19 человек. ИИ-агент от $400, запуск за 1–2 недели. Кейс Hoffen.",
       },
     },
     list: {
       uz: {
         title: "O'zbekistonda AI agentni kim yasaydi?",
         excerpt:
-          "Biznes uchun AI agentni kim quradi, qancha turadi va qancha vaqt oladi: Tezcode, Hoffen va Dantes loyihalari, narx $400 dan.",
+          "Biznes uchun AI agentni kim quradi, qancha turadi va qancha vaqt oladi: Tezcode, Hoffen loyihasi, narx $400 dan.",
       },
       ru: {
         title: "Кто делает ИИ-агентов в Узбекистане?",
         excerpt:
-          "Кто делает ИИ-агентов для бизнеса, сколько это стоит и сколько занимает: Tezcode, проекты Hoffen и Dantes, цена от $400.",
+          "Кто делает ИИ-агентов для бизнеса, сколько это стоит и сколько занимает: Tezcode, проект Hoffen, цена от $400.",
       },
     },
   },
