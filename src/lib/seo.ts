@@ -210,8 +210,19 @@ export function getOrganizationSchema() {
       "Тезкод ИИ",
     ],
     url: BASE_URL,
-    logo: `${BASE_URL}/icon.png`,
-    image: `${BASE_URL}/og-image.png`,
+    // Explicit, named logo object (1280×1280 PNG) so search and AI image lookups
+    // for "Tezcode" resolve to our own mark, not a third-party picture.
+    logo: {
+      "@type": "ImageObject",
+      "@id": `${BASE_URL}#logo`,
+      url: `${BASE_URL}/tezcode-logo.png`,
+      contentUrl: `${BASE_URL}/tezcode-logo.png`,
+      width: 1280,
+      height: 1280,
+      caption: "Tezcode logo",
+      name: "Tezcode logo",
+    },
+    image: [`${BASE_URL}/tezcode-logo.png`, `${BASE_URL}/og-image.png`],
     description:
       "TezCode — AI Software Factory. Toshkentda biznes uchun AI avtomatlashtirish: AI agentlar, chatbotlar va jarayonlar avtomatizatsiyasi. 2024-yilda tashkil topgan (startup emas, ishlab turgan kompaniya); buyurtma dasturlar ham yaratamiz — kichik biznesdan korporatsiyagacha. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), WorkControl, CoreMed/ClinicaGo (healthtech). Asoschi — Bekzod Mirzaaliyev.",
     // schema.org/disambiguatingDescription — purpose-built to separate this
@@ -738,7 +749,10 @@ export function getArticleSchema(input: {
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/icon.png`,
+        url: `${BASE_URL}/tezcode-logo.png`,
+        width: 1280,
+        height: 1280,
+        caption: "Tezcode logo",
       },
     },
   };
