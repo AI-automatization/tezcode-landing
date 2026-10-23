@@ -867,12 +867,10 @@ function HeroStats({ t }: { t: ReturnType<typeof useTranslations<"hero">> }) {
       {stats.map((stat, i) => (
         <div key={i} className="p-6 text-center">
           <div style={{ fontFamily: "var(--font-display)" }}>
-            <CountUp
-              value={stat.value}
-              suffix={stat.suffix}
-              duration={2.2}
-              className="text-4xl font-800 text-[var(--tc-text-primary)] tabular-nums"
-            />
+            <span className="text-4xl font-800 text-[var(--tc-text-primary)] tabular-nums">
+              {stat.value}
+              {stat.suffix}
+            </span>
           </div>
           <div className="text-xs uppercase tracking-widest text-[var(--tc-text-muted)] mt-1">
             {stat.label}

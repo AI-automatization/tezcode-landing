@@ -8,11 +8,9 @@ import { AutomationShowcase } from "@/components/AutomationShowcase";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { ROICalculator } from "@/components/ROICalculator";
 import { Partners } from "@/components/Partners";
-import { Clients } from "@/components/Clients";
 import { LatestNews } from "@/components/LatestNews";
 import { PricingTiers } from "@/components/PricingTiers";
 import { Footer } from "@/components/Footer";
-import { InstagramReels } from "@/components/InstagramReels";
 import { FloatingContact } from "@/components/FloatingContact";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { HOME_FAQ, type FaqLang } from "@/content/faq";
@@ -49,8 +47,6 @@ export default async function HomePage({
       {/* Tech stack marquee — social proof */}
       <TechStackMarquee />
 
-      {/* Clients — brands Tezcode has built for (logo wall) — high social proof */}
-      <Clients />
 
       {/* 6 Divisions */}
       <Suspense fallback={<div className="h-96 bg-[var(--tc-surface-1)]" />}>
@@ -99,8 +95,6 @@ export default async function HomePage({
         items={faq.items}
       />
 
-      {/* Instagram reels — low on the page so leads see the offer first */}
-      <InstagramReels />
 
       {/* Footer */}
       <Footer />
