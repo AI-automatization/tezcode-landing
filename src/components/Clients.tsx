@@ -19,6 +19,7 @@ type Brand = {
 
 const BRANDS: Brand[] = [
   { name: "Hoffen", logo: "/clients/hoffen1.png", w: 432, h: 182, caseHref: "/case-studies/hoffen" },
+  { name: "Dantes", logo: "/clients/dantes.png", w: 425, h: 425, caseHref: "/case-studies/dantes" },
   { name: "Mars IT School", logo: "/clients/mars-it-school.png", w: 560, h: 118 },
   { name: "AI Solution", logo: "/clients/aisolution.png", w: 719, h: 834 },
 ];
@@ -109,7 +110,7 @@ export function Clients() {
         <Reveal className="max-w-6xl mx-auto">
           <div className="tc-card overflow-hidden !p-0">
             <RevealStagger
-              className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 -me-px -mb-px"
+              className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 -me-px -mb-px"
               stagger={0.08}
             >
               {BRANDS.map((b, i) => (

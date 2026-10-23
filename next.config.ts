@@ -94,8 +94,8 @@ const nextConfig: NextConfig = {
       { source: `/jamoa/${slug}`, destination: "/biz-haqimizda", permanent: true },
       { source: `/:locale(uz|ru|en|ar|uk)/jamoa/${slug}`, destination: "/:locale/biz-haqimizda", permanent: true },
     ]);
-    // Retired case studies — keep old URLs alive.
-    const retiredCaseRedirects = ["dilfuza-grocery", "aziz-electronics", "munira-clinic", "dantes"].flatMap((slug) => [
+    // Retired sample case studies (unverified figures) — keep old URLs alive.
+    const retiredCaseRedirects = ["dilfuza-grocery", "aziz-electronics", "munira-clinic"].flatMap((slug) => [
       { source: `/case-studies/${slug}`, destination: "/case-studies", permanent: true },
       { source: `/:locale(uz|ru|en|ar|uk)/case-studies/${slug}`, destination: "/:locale/case-studies", permanent: true },
     ]);
