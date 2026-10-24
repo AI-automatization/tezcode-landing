@@ -3,7 +3,7 @@
     "title": "ИИ-автоматизация бизнеса — Ташкент, Узбекистан | Tezcode",
     "description": "TezCode — AI Software Factory. ИИ-автоматизация бизнеса в Ташкенте: ИИ-агенты, чат-боты и автоматизация процессов.",
     "ogTitle": "ИИ-автоматизация бизнеса — Tezcode, Ташкент",
-    "ogDescription": "Систематизация бизнеса в Узбекистане с помощью ИИ. RAOS POS, AI Office, HamshiraGo и 5 других продуктов."
+    "ogDescription": "Систематизация бизнеса в Узбекистане с помощью ИИ. RAOS POS, HamshiraGo и 5 других продуктов."
   },
   "nav": {
     "divisions": "Направления",
@@ -67,7 +67,7 @@
       "name": "TezCode Systems",
       "tagline": "Готовые SaaS-продукты",
       "description": "Готовые бизнес-решения на основе ежемесячной подписки. Подключитесь сегодня — получите результат завтра.",
-      "products": "RAOS · WorkControl",
+      "products": "RAOS",
       "model": "Ежемесячная подписка"
     },
     "custom": {
@@ -81,7 +81,7 @@
       "name": "Tezcode",
       "tagline": "ИИ-агенты и платформы",
       "description": "Интеллектуальные помощники, ИИ-агенты и решения для автоматизации рабочих процессов.",
-      "products": "AI Office · AI-Trade",
+      "products": "ИИ-агент · ИИ-чат-бот",
       "model": "SaaS + Token-based"
     },
     "teams": {
@@ -95,7 +95,7 @@
       "name": "TezCode Labs",
       "tagline": "Внутренние стартапы",
       "description": "Наша инновационная лаборатория — здесь рождаются новые продукты и экспериментальные решения.",
-      "products": "WeWatch · CoreMed · Ventra · MaxSavdo",
+      "products": "WeWatch · CoreMed · MaxSavdo",
       "model": "Инвестиции + Equity"
     },
     "academy": {
@@ -112,8 +112,8 @@
     "learn_more": "Подробнее",
     "visit_site": "На сайт",
     "request_demo": "Запросить демо",
-    "title": "Наши продукты",
-    "subtitle": "8 продуктов — каждый эксперт в своей области",
+    "title": "Системы, которые мы построили и которые работают",
+    "subtitle": "Магазины, клиники, торговля в Telegram и автозапчасти — наши работающие продукты.",
     "raos": {
       "name": "RAOS",
       "tagline": "Торговая программа",
@@ -121,14 +121,6 @@
       "status": "Live",
       "division": "Systems",
       "url": "https://raos.uz"
-    },
-    "ai_office": {
-      "name": "AI Office",
-      "tagline": "ИИ-оркестратор",
-      "description": "Агенты для 12 отделов — chat-first, без регистрации.",
-      "status": "Beta",
-      "division": "AI",
-      "url": "#"
     },
     "hamshirago": {
       "name": "CoreMed",
@@ -146,30 +138,6 @@
       "division": "Labs",
       "url": "https://wewatch.uz"
     },
-    "workcontrol": {
-      "name": "WorkControl",
-      "tagline": "Контроль команды",
-      "description": "Время, задачи, отчёты сотрудников — в одной панели.",
-      "status": "Live",
-      "division": "Systems",
-      "url": "#"
-    },
-    "ventra": {
-      "name": "Ventra",
-      "tagline": "Анализ трендов",
-      "description": "Тренды e-commerce, мониторинг конкурентов, отслеживание цен.",
-      "status": "Soon",
-      "division": "Labs",
-      "url": "#"
-    },
-    "ai_trade": {
-      "name": "AI-Trade",
-      "tagline": "Торговый бот",
-      "description": "Автоматизированная торговля с ИИ — рыночные сигналы и портфель.",
-      "status": "Beta",
-      "division": "AI",
-      "url": "#"
-    },
     "savdo_builder": {
       "name": "MaxSavdo",
       "tagline": "Магазин в Telegram",
@@ -183,7 +151,16 @@
       "Beta": "Бета",
       "Soon": "Скоро"
     },
-    "view_all": "Смотреть все"
+    "view_all": "Смотреть все",
+    "more_link": "Другие проекты и R&D",
+    "tezdetal": {
+      "name": "TezDetal",
+      "tagline": "Маркетплейс автозапчастей",
+      "description": "Поиск запчасти по модели и VIN, ближайшие магазины и заказ — в одном месте.",
+      "status": "Live",
+      "division": "",
+      "url": "https://tezdetal.uz"
+    }
   },
   "solutions": {
     "title": "Наши решения — для каждой отрасли",
@@ -195,8 +172,8 @@
     },
     "office": {
       "title": "Для офисов",
-      "description": "ИИ-оркестратор с 12 агентами по отделам. Управляйте через чат — система делает всё сама.",
-      "product": "AI Office"
+      "description": "Интеллектуальные помощники, ИИ-агенты и решения для автоматизации рабочих процессов.",
+      "product": "ИИ-автоматизация"
     },
     "clinic": {
       "title": "Для клиник",
@@ -294,7 +271,7 @@
     "legal": "Правовая информация",
     "privacy": "Политика конфиденциальности",
     "terms": "Условия использования",
-  "oferta": "Публичная оферта",
+    "oferta": "Публичная оферта",
     "rights": "Все права защищены",
     "made_in": "Ташкент · С любовью из Узбекистана",
     "product": "Продукт",

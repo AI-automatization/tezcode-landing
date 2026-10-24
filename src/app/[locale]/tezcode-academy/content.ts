@@ -5,7 +5,7 @@ import type { ServicePageContent } from "@/components/service-page/types";
 // business owners, focused on AI, automation and modern software engineering.
 // Only confirmed Tezcode facts (AI Software Factory in Tashkent, 2024, founder
 // Bekzod Mirzaaliyev, 19-person in-house team, IT Park resident, real products
-// RAOS / AI Office / CoreMed as teaching material). No prices, dates or student
+// RAOS / CoreMed as teaching material). No prices, dates or student
 // counts are promised — CTAs are about consultation / enrollment interest.
 export const CONTENT: ServicePageContent = {
   uz: {
@@ -43,7 +43,7 @@ export const CONTENT: ServicePageContent = {
       steps: [
         { num: "01", title: "Yozilish va tanishuv", desc: "Darajangiz va maqsadingizni aniqlaymiz, mos formatni tanlaymiz. Bepul konsultatsiya, majburiyat yo'q.", icon: "message-circle" },
         { num: "02", title: "Qurish orqali o'rganish", desc: "Har dars real kod va real vazifa. AI vositalari bilan zamonaviy usulda ishlaymiz.", icon: "zap" },
-        { num: "03", title: "Real loyiha", desc: "Kurs oxirida ishlaydigan mahsulot quramiz — RAOS va AI Office kabi real Tezcode mahsulotlari misol bo'ladi.", icon: "rocket" },
+        { num: "03", title: "Real loyiha", desc: "Kurs oxirida ishlaydigan mahsulot quramiz — RAOS va CoreMed kabi real Tezcode mahsulotlari misol bo'ladi.", icon: "rocket" },
         { num: "04", title: "Sertifikat va keyingi qadam", desc: "Yakuniy sertifikat, portfolio va o'sish yo'li: staj, hamkorlik yoki ishga qabul imkoniyati.", icon: "check-circle-2" },
       ],
     },
@@ -55,7 +55,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "Amaliyotchilar o'qitadi", desc: "Nazariyotchi emas — har kuni real mahsulot yozadigan Tezcode muhandislari dars beradi. O'rgatilgan narsa amalda ishlaydi." },
         { tag: "02", title: "AI-first dastur", desc: "Dasturimiz zamonaviy AI vositalari atrofida qurilgan. Siz kelajakning ish uslubini bugundan o'rganasiz." },
-        { tag: "03", title: "Real mahsulotlar o'quv materiali", desc: "RAOS, AI Office va CoreMed kabi real Tezcode mahsulotlari case sifatida ochib beriladi — kitobdagi soxta misol emas." },
+        { tag: "03", title: "Real mahsulotlar o'quv materiali", desc: "RAOS va CoreMed kabi real Tezcode mahsulotlari case sifatida ochib beriladi — kitobdagi soxta misol emas." },
         { tag: "04", title: "Ishga va hamkorlikka yo'l", desc: "Eng kuchli o'quvchilar uchun staj, loyihada ishtirok yoki jamoaga qo'shilish imkoniyati ochiq. Founder Bekzod Mirzaaliyev Telegram'da." },
       ],
     },
@@ -133,7 +133,7 @@ export const CONTENT: ServicePageContent = {
       steps: [
         { num: "01", title: "Запись и знакомство", desc: "Определяем ваш уровень и цель, подбираем подходящий формат. Консультация бесплатна, без обязательств.", icon: "message-circle" },
         { num: "02", title: "Учимся, создавая", desc: "Каждый урок — реальный код и реальная задача. Работаем современно, с ИИ-инструментами.", icon: "zap" },
-        { num: "03", title: "Реальный проект", desc: "В конце курса строим рабочий продукт — реальные продукты Tezcode вроде RAOS и AI Office служат примером.", icon: "rocket" },
+        { num: "03", title: "Реальный проект", desc: "В конце курса строим рабочий продукт — реальные продукты Tezcode вроде RAOS и CoreMed служат примером.", icon: "rocket" },
         { num: "04", title: "Сертификат и следующий шаг", desc: "Итоговый сертификат, портфолио и путь роста: стажировка, сотрудничество или возможность найма.", icon: "check-circle-2" },
       ],
     },
@@ -145,7 +145,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "Преподают практики", desc: "Не теоретики — инженеры Tezcode, которые каждый день пишут реальный продукт. То, чему учат, работает на практике." },
         { tag: "02", title: "AI-first программа", desc: "Наша программа построена вокруг современных ИИ-инструментов. Вы осваиваете способ работы будущего уже сегодня." },
-        { tag: "03", title: "Реальные продукты как материал", desc: "Реальные продукты Tezcode — RAOS, AI Office и CoreMed — разбираются как кейсы, а не выдуманные примеры из учебника." },
+        { tag: "03", title: "Реальные продукты как материал", desc: "Реальные продукты Tezcode — RAOS и CoreMed — разбираются как кейсы, а не выдуманные примеры из учебника." },
         { tag: "04", title: "Путь к работе и сотрудничеству", desc: "Для сильнейших учеников открыты стажировка, участие в проекте или присоединение к команде. Основатель Бекзод Мирзаалиев в Telegram." },
       ],
     },
@@ -223,7 +223,7 @@ export const CONTENT: ServicePageContent = {
       steps: [
         { num: "01", title: "Enroll & intro", desc: "We assess your level and goal and pick the right format. The consultation is free, no obligations.", icon: "message-circle" },
         { num: "02", title: "Learn by building", desc: "Every lesson is real code and a real task. We work the modern way, with AI tooling.", icon: "zap" },
-        { num: "03", title: "Real project", desc: "By the end of the course we build a working product — real Tezcode products like RAOS and AI Office serve as case material.", icon: "rocket" },
+        { num: "03", title: "Real project", desc: "By the end of the course we build a working product — real Tezcode products like RAOS and CoreMed serve as case material.", icon: "rocket" },
         { num: "04", title: "Certificate & next step", desc: "A final certificate, a portfolio and a growth path: internship, collaboration or a hiring opportunity.", icon: "check-circle-2" },
       ],
     },
@@ -235,7 +235,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "Taught by practitioners", desc: "Not theorists — Tezcode engineers who ship real products every day. What they teach works in practice." },
         { tag: "02", title: "AI-first curriculum", desc: "Our curriculum is built around modern AI tools. You learn the way of working of the future, today." },
-        { tag: "03", title: "Real products as material", desc: "Real Tezcode products — RAOS, AI Office and CoreMed — are broken down as cases, not made-up textbook examples." },
+        { tag: "03", title: "Real products as material", desc: "Real Tezcode products — RAOS and CoreMed — are broken down as cases, not made-up textbook examples." },
         { tag: "04", title: "Path to hiring & collaboration", desc: "For the strongest students, an internship, project involvement or joining the team is open. Founder Bekzod Mirzaaliyev is on Telegram." },
       ],
     },
@@ -313,7 +313,7 @@ export const CONTENT: ServicePageContent = {
       steps: [
         { num: "01", title: "التسجيل والتعارف", desc: "نحدد مستواك وهدفك ونختار الصيغة المناسبة. الاستشارة مجانية، بلا التزام.", icon: "message-circle" },
         { num: "02", title: "التعلّم بالبناء", desc: "كل درس كود حقيقي ومهمة حقيقية. نعمل بالطريقة الحديثة، بأدوات الذكاء الاصطناعي.", icon: "zap" },
-        { num: "03", title: "مشروع حقيقي", desc: "في نهاية الدورة نبني منتجاً يعمل — منتجات Tezcode الحقيقية مثل RAOS وAI Office تُستخدم كحالات دراسية.", icon: "rocket" },
+        { num: "03", title: "مشروع حقيقي", desc: "في نهاية الدورة نبني منتجاً يعمل — منتجات Tezcode الحقيقية مثل RAOS وCoreMed تُستخدم كحالات دراسية.", icon: "rocket" },
         { num: "04", title: "شهادة والخطوة التالية", desc: "شهادة ختامية، معرض أعمال ومسار نمو: تدريب، تعاون أو فرصة توظيف.", icon: "check-circle-2" },
       ],
     },
@@ -325,7 +325,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "يدرّس ممارسون", desc: "ليسوا منظّرين — مهندسو Tezcode الذين يبنون منتجات حقيقية كل يوم. ما يعلّمونه يعمل في الواقع." },
         { tag: "02", title: "منهج AI-first", desc: "منهجنا مبني حول أدوات الذكاء الاصطناعي الحديثة. تتعلّم أسلوب عمل المستقبل اليوم." },
-        { tag: "03", title: "منتجات حقيقية كمادة", desc: "منتجات Tezcode الحقيقية — RAOS وAI Office وCoreMed — تُحلَّل كحالات، لا أمثلة كتب مصطنعة." },
+        { tag: "03", title: "منتجات حقيقية كمادة", desc: "منتجات Tezcode الحقيقية — RAOS وCoreMed — تُحلَّل كحالات، لا أمثلة كتب مصطنعة." },
         { tag: "04", title: "طريق إلى التوظيف والتعاون", desc: "للطلاب الأقوى فرصة تدريب أو مشاركة في مشروع أو الانضمام للفريق. المؤسس بكزود ميرزااليف على Telegram." },
       ],
     },
@@ -403,7 +403,7 @@ export const CONTENT: ServicePageContent = {
       steps: [
         { num: "01", title: "Запис і знайомство", desc: "Визначаємо ваш рівень і мету, добираємо відповідний формат. Консультація безкоштовна, без зобов'язань.", icon: "message-circle" },
         { num: "02", title: "Навчання через створення", desc: "Кожен урок — реальний код і реальне завдання. Працюємо сучасно, з AI-інструментами.", icon: "zap" },
-        { num: "03", title: "Реальний проект", desc: "Наприкінці курсу будуємо робочий продукт — реальні продукти Tezcode як RAOS та AI Office слугують прикладом.", icon: "rocket" },
+        { num: "03", title: "Реальний проект", desc: "Наприкінці курсу будуємо робочий продукт — реальні продукти Tezcode як RAOS та CoreMed слугують прикладом.", icon: "rocket" },
         { num: "04", title: "Сертифікат і наступний крок", desc: "Підсумковий сертифікат, портфоліо та шлях зростання: стажування, співпраця чи можливість найму.", icon: "check-circle-2" },
       ],
     },
@@ -415,7 +415,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "Викладають практики", desc: "Не теоретики — інженери Tezcode, які щодня створюють реальний продукт. Те, чого навчають, працює на практиці." },
         { tag: "02", title: "AI-first програма", desc: "Наша програма побудована навколо сучасних AI-інструментів. Ви опановуєте спосіб роботи майбутнього вже сьогодні." },
-        { tag: "03", title: "Реальні продукти як матеріал", desc: "Реальні продукти Tezcode — RAOS, AI Office і CoreMed — розбираються як кейси, а не вигадані приклади з підручника." },
+        { tag: "03", title: "Реальні продукти як матеріал", desc: "Реальні продукти Tezcode — RAOS і CoreMed — розбираються як кейси, а не вигадані приклади з підручника." },
         { tag: "04", title: "Шлях до роботи та співпраці", desc: "Для найсильніших учнів відкриті стажування, участь у проекті чи приєднання до команди. Засновник Бекзод Мірзаалієв у Telegram." },
       ],
     },

@@ -74,8 +74,18 @@ export type ServicePageCopy = {
     title: string;
     titleAccent: string;
     subtitle: string;
-    factors: { title: string; price?: string; desc: string }[];
+    factors: {
+      title: string;
+      price?: string;
+      desc: string;
+      // "factors" layout only: what drives the price, with a 1–3 weight bar.
+      icon?: "integrations" | "logic" | "channels";
+      level?: 1 | 2 | 3;
+    }[];
     note?: string;
+    // When set, the section renders as "what drives the price" factor cards
+    // plus one summary bar (starting price + payment terms + CTA).
+    summary?: { price: string; label: string; text: string; button: string };
   };
   // Contextual internal links to sibling pages — the single biggest on-page
   // gap vs competitors (we had 0 internal links between service pages).

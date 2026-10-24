@@ -1,9 +1,9 @@
 "use client";
 
 import { useLocale } from "next-intl";
+import { Link } from "@/i18n/routing";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { PricingTiers } from "@/components/PricingTiers";
 import { Reveal } from "@/components/motion/Reveal";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { PRICING_FAQ, type FaqLang } from "@/content/faq";
@@ -119,29 +119,15 @@ export default function TariflarPage() {
             {t.selectTitle}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a href="#obuna" className="tc-btn-secondary text-sm">
+            <Link href="/pos-tizimi" className="tc-btn-secondary text-sm">
               {t.selectSaas}
-            </a>
+            </Link>
             <a href="#buyurtma" className="tc-btn-secondary text-sm">
               {t.selectCustom}
             </a>
           </div>
         </Reveal>
       </section>
-
-      {/* Section 1: ready SaaS products (subscription) — reuses homepage tiers */}
-      <section id="obuna" className="relative pt-16 pb-2 px-6 text-center">
-        <Reveal className="max-w-3xl mx-auto">
-          <h2
-            className="text-2xl md:text-3xl font-700 mb-2 tracking-tight"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            {t.saasTitle}{" "}
-            <span className="text-[var(--tc-blue-text)]">{t.saasAccent}</span>
-          </h2>
-        </Reveal>
-      </section>
-      <PricingTiers />
 
       {/* Section 2: one-time custom work with published "from" prices */}
       <CustomWorkSection />

@@ -196,8 +196,8 @@ export function Footer() {
 
   // Section anchors (#...) live on the home page — prefix with "/" so they
   // navigate home from sub-pages instead of appending to the current URL.
-  // Services we build for clients on request. (Products like RAOS / ClinicaGo /
-  // WorkControl are surfaced on the homepage products section, whose cards link
+  // Services we build for clients on request. (Products like RAOS / ClinicaGo
+  // are surfaced on the homepage products section, whose cards link
   // to their dedicated landing pages — so they don't need a footer column.)
   const loc = (locale as HubLang) in HUB_COPY ? (locale as HubLang) : "uz";
   const serviceLinks = SERVICE_LINKS.map((l) => ({

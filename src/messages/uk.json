@@ -3,7 +3,7 @@
     "title": "AI-автоматизація бізнесу — Ташкент, Узбекистан | Tezcode",
     "description": "TezCode — AI Software Factory. AI-автоматизація бізнесу в Ташкенті: AI-агенти, чат-боти й автоматизація процесів.",
     "ogTitle": "AI-автоматизація бізнесу — Tezcode, Ташкент",
-    "ogDescription": "Систематизація бізнесу Узбекистану за допомогою AI. RAOS POS, AI Office, HamshiraGo та 5 інших продуктів."
+    "ogDescription": "Систематизація бізнесу Узбекистану за допомогою AI. RAOS POS, HamshiraGo та 5 інших продуктів."
   },
   "nav": {
     "divisions": "Напрямки",
@@ -67,7 +67,7 @@
       "name": "TezCode Systems",
       "tagline": "Готові SaaS-продукти",
       "description": "Готові бізнес-рішення на основі щомісячної підписки. Підключіться сьогодні — отримайте результат завтра.",
-      "products": "RAOS · WorkControl",
+      "products": "RAOS",
       "model": "Щомісячна підписка"
     },
     "custom": {
@@ -81,7 +81,7 @@
       "name": "Tezcode",
       "tagline": "AI-агенти та платформи",
       "description": "Інтелектуальні помічники, AI-агенти та рішення для автоматизації робочих процесів.",
-      "products": "AI Office · AI-Trade",
+      "products": "AI агент · AI чат-бот",
       "model": "SaaS + Token-based"
     },
     "teams": {
@@ -95,7 +95,7 @@
       "name": "TezCode Labs",
       "tagline": "Внутрішні стартапи",
       "description": "Наша інноваційна лабораторія — тут народжуються нові продукти та експериментальні рішення.",
-      "products": "WeWatch · CoreMed · Ventra · MaxSavdo",
+      "products": "WeWatch · CoreMed · MaxSavdo",
       "model": "Інвестиції + Equity"
     },
     "academy": {
@@ -112,8 +112,8 @@
     "learn_more": "Детальніше",
     "visit_site": "На сайт",
     "request_demo": "Замовити демо",
-    "title": "Наші Продукти",
-    "subtitle": "8 продуктів — кожен експерт у своїй галузі",
+    "title": "Системи, які ми побудували і які працюють",
+    "subtitle": "Магазини, клініки, торгівля в Telegram та автозапчастини — наші робочі продукти.",
     "raos": {
       "name": "RAOS",
       "tagline": "Програма продажів",
@@ -121,14 +121,6 @@
       "status": "Live",
       "division": "Systems",
       "url": "https://raos.uz"
-    },
-    "ai_office": {
-      "name": "AI Office",
-      "tagline": "AI оркестратор",
-      "description": "Агенти 12 відділів — chat-first.",
-      "status": "Beta",
-      "division": "AI",
-      "url": "#"
     },
     "hamshirago": {
       "name": "CoreMed",
@@ -146,30 +138,6 @@
       "division": "Labs",
       "url": "https://wewatch.uz"
     },
-    "workcontrol": {
-      "name": "WorkControl",
-      "tagline": "Контроль команди",
-      "description": "Час, завдання співробітників — в одній панелі.",
-      "status": "Live",
-      "division": "Systems",
-      "url": "#"
-    },
-    "ventra": {
-      "name": "Ventra",
-      "tagline": "Аналіз трендів",
-      "description": "Тренди e-commerce, моніторинг конкурентів.",
-      "status": "Soon",
-      "division": "Labs",
-      "url": "#"
-    },
-    "ai_trade": {
-      "name": "AI-Trade",
-      "tagline": "Торговий бот",
-      "description": "AI-автоматизована торгівля.",
-      "status": "Beta",
-      "division": "AI",
-      "url": "#"
-    },
     "savdo_builder": {
       "name": "MaxSavdo",
       "tagline": "Магазин у Telegram",
@@ -183,7 +151,16 @@
       "Beta": "Бета",
       "Soon": "Скоро"
     },
-    "view_all": "Дивитись усі"
+    "view_all": "Дивитись усі",
+    "more_link": "Інші проєкти та R&D",
+    "tezdetal": {
+      "name": "TezDetal",
+      "tagline": "Маркетплейс автозапчастин",
+      "description": "Пошук запчастини за моделлю та VIN, найближчі магазини й замовлення — в одному місці.",
+      "status": "Live",
+      "division": "",
+      "url": "https://tezdetal.uz"
+    }
   },
   "solutions": {
     "title": "Наші рішення — для кожної галузі",
@@ -195,8 +172,8 @@
     },
     "office": {
       "title": "Для офісів",
-      "description": "AI-оркестратор з 12 агентами за відділами. Керуйте через чат — система робить усе сама.",
-      "product": "AI Office"
+      "description": "Інтелектуальні помічники, AI-агенти та рішення для автоматизації робочих процесів.",
+      "product": "AI автоматизація"
     },
     "clinic": {
       "title": "Для клінік",
@@ -294,7 +271,7 @@
     "legal": "Правова інформація",
     "privacy": "Політика конфіденційності",
     "terms": "Умови використання",
-  "oferta": "Публічна оферта",
+    "oferta": "Публічна оферта",
     "rights": "Усі права захищені",
     "made_in": "Ташкент · Зроблено в Узбекистані",
     "product": "Продукт",

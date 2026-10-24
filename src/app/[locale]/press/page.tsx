@@ -199,8 +199,7 @@ export default function PressPage() {
                 sun'iy intellekt asosida ishlovchi mahsulotlar yaratamiz.
               </p>
               <p className="mb-3">
-                3 ta asosiy mahsulot ishga tushgan: <strong className="text-[var(--tc-blue-text)]">RAOS</strong> (har do'kon uchun POS),{" "}
-                <strong className="text-[var(--tc-blue-text)]">AI Office</strong> (12 ta bo'lim AI agentlari) va{" "}
+                Ishga tushgan asosiy mahsulotlar: <strong className="text-[var(--tc-blue-text)]">RAOS</strong> (har do'kon uchun POS) va{" "}
                 <strong className="text-[var(--tc-blue-text)]">CoreMed</strong> (uy hamshira va klinika boshqaruvi).
                 5 ta yangi mahsulot R&D'da.
               </p>

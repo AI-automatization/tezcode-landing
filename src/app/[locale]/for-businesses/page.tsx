@@ -192,7 +192,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "Real loyihalar",
       title: "Biz nima",
       titleAccent: "qurdik",
-      subtitle: "3 ta canonical (asosiy) misol. Real mijoz, real raqam, real natija.",
+      subtitle: "Canonical (asosiy) misollar. Real mijoz, real raqam, real natija.",
       caseLabel: "Case study (loyiha tahlili)",
       durationLabel: "Muddat",
       savedLabel: "Tejov",
@@ -207,16 +207,6 @@ const COPY: Record<Lang, Copy> = {
           duration: "8 hafta",
           saved: "$80K (xorijiy alternativa)",
           tags: ["Next.js", "Postgres", "POS", "Multi-tenant"],
-        },
-        {
-          slug: "ai-office",
-          name: "AI Office (OpenClaw)",
-          tagline: "AI 12-bo'lim virtual ofis — har biznes uchun",
-          summary:
-            "12 ta AI bo'lim (sales, HR, marketing, ...). Bekzod o'zi foydalanadi — 19 kishilik jamoa 50 ta loyiha bilan boshqaradi.",
-          duration: "12 hafta MVP",
-          saved: "$120K (in-house team)",
-          tags: ["FastAPI", "Claude API", "i18n 3 til", "Multi-agent"],
         },
         {
           slug: "hamshirago",
@@ -442,7 +432,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "Реальные проекты",
       title: "Что мы",
       titleAccent: "построили",
-      subtitle: "3 канонических примера. Реальные клиенты, цифры, результаты.",
+      subtitle: "Канонические примеры. Реальные клиенты, цифры, результаты.",
       caseLabel: "Case study (разбор проекта)",
       durationLabel: "Срок",
       savedLabel: "Экономия",
@@ -457,16 +447,6 @@ const COPY: Record<Lang, Copy> = {
           duration: "8 недель",
           saved: "$80K (vs зарубежная альтернатива)",
           tags: ["Next.js", "Postgres", "POS", "Multi-tenant"],
-        },
-        {
-          slug: "ai-office",
-          name: "AI Office (OpenClaw)",
-          tagline: "Виртуальный ИИ-офис из 12 отделов",
-          summary:
-            "12 ИИ-отделов (sales, HR, marketing...). Бекзод пользуется им сам — управляет командой из 19 человек и 50+ проектами.",
-          duration: "12 недель MVP",
-          saved: "$120K (in-house team)",
-          tags: ["FastAPI", "Claude API", "i18n 3 яз.", "Multi-agent"],
         },
         {
           slug: "hamshirago",
@@ -691,7 +671,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "Real projects",
       title: "What we",
       titleAccent: "built",
-      subtitle: "3 canonical examples. Real clients, real numbers, real results.",
+      subtitle: "Canonical examples. Real clients, real numbers, real results.",
       caseLabel: "Case study",
       durationLabel: "Duration",
       savedLabel: "Savings",
@@ -705,16 +685,6 @@ const COPY: Record<Lang, Copy> = {
           duration: "8 weeks",
           saved: "$80K (vs foreign alt.)",
           tags: ["Next.js", "Postgres", "POS", "Multi-tenant"],
-        },
-        {
-          slug: "ai-office",
-          name: "AI Office (OpenClaw)",
-          tagline: "AI virtual office with 12 departments",
-          summary:
-            "12 AI departments (sales, HR, marketing...). Bekzod uses it himself to run 14 devs and 50+ projects.",
-          duration: "12 weeks MVP",
-          saved: "$120K (in-house team)",
-          tags: ["FastAPI", "Claude API", "i18n 3 langs", "Multi-agent"],
         },
         {
           slug: "hamshirago",
@@ -939,7 +909,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "مشاريع حقيقية",
       title: "ما الذي",
       titleAccent: "بنيناه",
-      subtitle: "3 أمثلة كنموذج. عملاء، أرقام، نتائج حقيقية.",
+      subtitle: "أمثلة نموذجية. عملاء، أرقام، نتائج حقيقية.",
       caseLabel: "دراسة الحالة",
       durationLabel: "المدة",
       savedLabel: "التوفير",
@@ -953,15 +923,6 @@ const COPY: Record<Lang, Copy> = {
           duration: "8 أسابيع",
           saved: "$80K",
           tags: ["Next.js", "Postgres", "POS", "Multi-tenant"],
-        },
-        {
-          slug: "ai-office",
-          name: "AI Office (OpenClaw)",
-          tagline: "مكتب AI افتراضي بـ 12 قسماً",
-          summary: "12 قسم AI. بكزود يستخدمه ليدير فريقًا من 19 شخصًا و 50+ مشروع.",
-          duration: "12 أسبوع MVP",
-          saved: "$120K",
-          tags: ["FastAPI", "Claude API", "i18n", "Multi-agent"],
         },
         {
           slug: "hamshirago",
@@ -1185,7 +1146,7 @@ const COPY: Record<Lang, Copy> = {
       badge: "Реальні проекти",
       title: "Що ми",
       titleAccent: "збудували",
-      subtitle: "3 канонічні приклади. Реальні клієнти, цифри, результати.",
+      subtitle: "Канонічні приклади. Реальні клієнти, цифри, результати.",
       caseLabel: "Case study",
       durationLabel: "Термін",
       savedLabel: "Економія",
@@ -1199,15 +1160,6 @@ const COPY: Record<Lang, Copy> = {
           duration: "8 тижнів",
           saved: "$80K",
           tags: ["Next.js", "Postgres", "POS", "Multi-tenant"],
-        },
-        {
-          slug: "ai-office",
-          name: "AI Office (OpenClaw)",
-          tagline: "AI віртуальний офіс із 12 відділами",
-          summary: "12 AI-відділів. Бекзод використовує сам — керує командою з 19 осіб та 50+ проектами.",
-          duration: "12 тижнів MVP",
-          saved: "$120K",
-          tags: ["FastAPI", "Claude API", "i18n", "Multi-agent"],
         },
         {
           slug: "hamshirago",
@@ -1364,10 +1316,7 @@ const COPY: Record<Lang, Copy> = {
 const PARTNERS: { name: string; sector: string }[] = [
   { name: "Pos-Cosmetics", sector: "Retail" },
   { name: "CoreMed", sector: "Healthcare" },
-  { name: "OpenClaw", sector: "AI Office" },
-  { name: "Ventra", sector: "Analytics" },
   { name: "MaxSavdo", sector: "No-code" },
-  { name: "Work-Control", sector: "HR Tech" },
 ];
 
 // ─────────────────────────────────────────────────────────────────────

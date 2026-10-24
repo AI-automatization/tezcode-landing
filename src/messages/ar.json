@@ -3,7 +3,7 @@
     "title": "أتمتة الأعمال بالذكاء الاصطناعي — طشقند، أوزبكستان | Tezcode",
     "description": "TezCode — AI Software Factory. أتمتة الأعمال بالذكاء الاصطناعي في طشقند: وكلاء AI وروبوتات الدردشة وأتمتة العمليات.",
     "ogTitle": "أتمتة الأعمال بالذكاء الاصطناعي — Tezcode، طشقند",
-    "ogDescription": "تنظيم أعمال أوزبكستان بالذكاء الاصطناعي. RAOS POS وAI Office وHamshiraGo و5 منتجات أخرى."
+    "ogDescription": "تنظيم أعمال أوزبكستان بالذكاء الاصطناعي. RAOS POS وHamshiraGo و5 منتجات أخرى."
   },
   "nav": {
     "divisions": "الأقسام",
@@ -67,7 +67,7 @@
       "name": "TezCode Systems",
       "tagline": "منتجات SaaS جاهزة للاستخدام",
       "description": "حلول أعمال جاهزة بنظام اشتراك شهري. انضم اليوم واحصد النتائج غداً.",
-      "products": "RAOS · WorkControl",
+      "products": "RAOS",
       "model": "اشتراك شهري"
     },
     "custom": {
@@ -81,7 +81,7 @@
       "name": "Tezcode",
       "tagline": "وكلاء الذكاء الاصطناعي والمنصات",
       "description": "مساعدون ذكيون ووكلاء AI وحلول لأتمتة سير العمل.",
-      "products": "AI Office · AI-Trade",
+      "products": "وكيل ذكاء اصطناعي · روبوت دردشة بالذكاء الاصطناعي",
       "model": "SaaS + Token-based"
     },
     "teams": {
@@ -95,7 +95,7 @@
       "name": "TezCode Labs",
       "tagline": "شركات ناشئة داخلية",
       "description": "مختبرنا للابتكار — هنا تولد المنتجات الجديدة والحلول التجريبية.",
-      "products": "WeWatch · CoreMed · Ventra · MaxSavdo",
+      "products": "WeWatch · CoreMed · MaxSavdo",
       "model": "استثمار + حصة في الملكية"
     },
     "academy": {
@@ -112,8 +112,8 @@
     "learn_more": "اعرف المزيد",
     "visit_site": "زيارة الموقع",
     "request_demo": "طلب عرض توضيحي",
-    "title": "منتجاتنا",
-    "subtitle": "8 منتجات — كل واحد خبير في مجاله",
+    "title": "أنظمة بنيناها وتعمل الآن",
+    "subtitle": "متاجر وعيادات وتجارة عبر تيليجرام وقطع غيار السيارات — منتجاتنا العاملة.",
     "raos": {
       "name": "RAOS",
       "tagline": "برنامج المبيعات",
@@ -121,14 +121,6 @@
       "status": "Live",
       "division": "Systems",
       "url": "https://raos.uz"
-    },
-    "ai_office": {
-      "name": "AI Office",
-      "tagline": "منسق الذكاء الاصطناعي",
-      "description": "وكلاء 12 قسماً.",
-      "status": "Beta",
-      "division": "AI",
-      "url": "#"
     },
     "hamshirago": {
       "name": "CoreMed",
@@ -146,30 +138,6 @@
       "division": "Labs",
       "url": "https://wewatch.uz"
     },
-    "workcontrol": {
-      "name": "WorkControl",
-      "tagline": "إدارة الفريق",
-      "description": "وقت الموظفين والمهام — في لوحة واحدة.",
-      "status": "Live",
-      "division": "Systems",
-      "url": "#"
-    },
-    "ventra": {
-      "name": "Ventra",
-      "tagline": "تحليل الاتجاهات",
-      "description": "اتجاهات التجارة الإلكترونية ومراقبة المنافسين.",
-      "status": "Soon",
-      "division": "Labs",
-      "url": "#"
-    },
-    "ai_trade": {
-      "name": "AI-Trade",
-      "tagline": "روبوت تداول",
-      "description": "تداول آلي بالذكاء الاصطناعي.",
-      "status": "Beta",
-      "division": "AI",
-      "url": "#"
-    },
     "savdo_builder": {
       "name": "MaxSavdo",
       "tagline": "متجر في تيليجرام",
@@ -183,7 +151,16 @@
       "Beta": "بيتا",
       "Soon": "قريباً"
     },
-    "view_all": "عرض الكل"
+    "view_all": "عرض الكل",
+    "more_link": "مشاريع أخرى والبحث والتطوير",
+    "tezdetal": {
+      "name": "TezDetal",
+      "tagline": "سوق قطع غيار السيارات",
+      "description": "ابحث عن القطعة حسب الطراز أو رقم VIN، وشاهد أقرب المتاجر واطلب — في مكان واحد.",
+      "status": "Live",
+      "division": "",
+      "url": "https://tezdetal.uz"
+    }
   },
   "solutions": {
     "title": "حلولنا — لكل قطاع",
@@ -195,8 +172,8 @@
     },
     "office": {
       "title": "للمكاتب",
-      "description": "منسق AI مع 12 وكيلاً لكل قسم. أدر عملك عبر المحادثة والعمل يُنجز تلقائياً.",
-      "product": "AI Office"
+      "description": "مساعدون ذكيون ووكلاء AI وحلول لأتمتة سير العمل.",
+      "product": "الأتمتة بالذكاء الاصطناعي"
     },
     "clinic": {
       "title": "للعيادات",
@@ -294,7 +271,7 @@
     "legal": "المعلومات القانونية",
     "privacy": "سياسة الخصوصية",
     "terms": "شروط الاستخدام",
-  "oferta": "العرض العام",
+    "oferta": "العرض العام",
     "rights": "جميع الحقوق محفوظة",
     "made_in": "طشقند · صُنع في أوزبكستان",
     "product": "المنتج",

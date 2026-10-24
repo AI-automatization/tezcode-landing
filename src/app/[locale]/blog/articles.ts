@@ -503,7 +503,7 @@ export const ARTICLES: ArticleMeta[] = [
     availableLocales: ["uz", "ru"],
     datePublished: "2026-06-07",
     category: "HR / Nazorat",
-    relatedService: { href: "/xodim-nazorati", label: "Xodim nazorati (WorkControl)" },
+    relatedService: { href: "/xodim-nazorati", label: "Xodim nazorati tizimi" },
     seo: {
       ru: {
         title: "Как выбрать систему контроля времени и задач сотрудников",

@@ -6,7 +6,7 @@ import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
 
-// Real customer reviews from Tezcode products (RAOS, AI Office, HamshiraGo)
+// Real customer reviews from Tezcode products (RAOS, HamshiraGo)
 // Source: Telegram feedback + form submissions
 const REVIEWS = [
   {
@@ -47,19 +47,6 @@ const REVIEWS = [
     product: "ClinicaGo",
     verified: true,
     date: "2026-04",
-  },
-  {
-    name: "Sherzod K.",
-    role: { uz: "Restoran · Yashnobod", ru: "Ресторан · Яшнабад", en: "Restaurant · Yashnabod" },
-    text: {
-      uz: "AI Office mening 3 nafar yordamchimni almashtirdi. CEO bo'lib biznes haqida o'ylayman, har xil tashkiliy ishlar haqida emas.",
-      ru: "AI Office заменил 3 моих помощников. Я как CEO думаю о бизнесе, а не об оргвопросах.",
-      en: "AI Office replaced my 3 assistants. As CEO I think about business, not org issues.",
-    },
-    stars: 5,
-    product: "AI Office",
-    verified: true,
-    date: "2026-05",
   },
   {
     name: "Gulnoza opa",

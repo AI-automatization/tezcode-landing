@@ -53,24 +53,6 @@ export function HeroWorkStack() {
     });
   }, [active]);
 
-  // Live price ticker on the trading terminal.
-  useEffect(() => {
-    const idx = SCREENS.findIndex((s) => s.nm === "AI-Trade");
-    const el = slotRefs.current[idx];
-    const price = el?.querySelector<HTMLElement>("#xp");
-    const pl = el?.querySelector<HTMLElement>("#xpl");
-    if (!price || !pl) return;
-    let k = 0;
-    const id = setInterval(() => {
-      k++;
-      const v = 4128.4 + Math.sin(k * 1.3) * 1.6 + (k % 7) * 0.12;
-      price.textContent = v.toFixed(2).replace(/^(\d)/, "$1 ");
-      price.style.color = Math.sin(k * 1.3) >= 0 ? "#2bd38a" : "#ff5d6c";
-      pl.textContent = "+$" + ((v - 4121.8) * 10).toFixed(1);
-    }, 900);
-    return () => clearInterval(id);
-  }, []);
-
   return (
     <div
       ref={wrapRef}

@@ -15,9 +15,9 @@ export async function generateMetadata({
     availableLocales: ["uz"],
     title: "Ochiq Yo'l Xaritasi — Tezcode Mahsulotlari Roadmap",
     description:
-      "Tezcode Software Factory yo'l xaritasi: RAOS POS, AI Office, CoreMed/HamshiraGo va boshqa mahsulotlar — qaysi feature qachon chiqadi. Shaffof Q2-Q4 2026 reja.",
+      "Tezcode Software Factory yo'l xaritasi: RAOS POS, CoreMed/HamshiraGo va boshqa mahsulotlar — qaysi feature qachon chiqadi. Shaffof Q2-Q4 2026 reja.",
     ogTitle: "Tezcode Yo'l Xaritasi — Mahsulot Reja",
-    ogDescription: "RAOS, AI Office, CoreMed yangiliklari va kelajak rejasi.",
+    ogDescription: "RAOS, CoreMed yangiliklari va kelajak rejasi.",
   });
 }
 
@@ -34,27 +34,21 @@ const ITEMS: { quarter: string; status: Status; title: string; desc: string; pro
   // Q2 2026 done
   { quarter: "Q2 2026", status: "done", title: "Tezcode brand + landing live", desc: "Brand foundation, 5 til landing, Railway deploy", product: "Tezcode" },
   { quarter: "Q2 2026", status: "done", title: "RAOS v3 public release", desc: "POS to'liq + multi-tenant + AI hisobot", product: "RAOS" },
-  { quarter: "Q2 2026", status: "done", title: "AI Office Sprint 4 — i18n", desc: "Frontend + Backend 3 til (UZ/RU/EN)", product: "AI Office" },
 
   // Q3 2026 in progress
-  { quarter: "Q3 2026", status: "in_progress", title: "AI Office Sprint 5 — Component i18n", desc: "333 ta HTTPException → t() migration", product: "AI Office" },
   { quarter: "Q3 2026", status: "in_progress", title: "CoreMed/HamshiraGo public launch", desc: "Uy hamshira + klinika boshqaruv", product: "CoreMed" },
   { quarter: "Q3 2026", status: "in_progress", title: "Landing v2 — Pricing + Blog + Case studies", desc: "Conversion optimization", product: "Tezcode" },
 
   // Q4 2026 planned
-  { quarter: "Q4 2026", status: "planned", title: "AI-Trade beta", desc: "Trading bot O'zbek bozori uchun", product: "AI-Trade" },
   { quarter: "Q4 2026", status: "planned", title: "WeWatch private launch", desc: "Video birga ko'rish + chat", product: "WeWatch" },
-  { quarter: "Q4 2026", status: "planned", title: "Work-Control v1", desc: "Xodim nazorat tizimi", product: "Work-Control" },
   { quarter: "Q4 2026", status: "planned", title: "Tezcode Academy MVP", desc: "AI/coding bepul kurslar", product: "Academy" },
 
   // Q1 2027 planned
-  { quarter: "Q1 2027", status: "planned", title: "Ventra public launch", desc: "Trend tahlili AI", product: "Ventra" },
   { quarter: "Q1 2027", status: "planned", title: "MaxSavdo no-code", desc: "Drag-drop biznes dastur quruvchi", product: "MaxSavdo" },
-  { quarter: "Q1 2027", status: "planned", title: "Mobile apps (iOS + Android)", desc: "RAOS + AI Office native", product: "Tezcode" },
+  { quarter: "Q1 2027", status: "planned", title: "Mobile apps (iOS + Android)", desc: "RAOS native", product: "Tezcode" },
   { quarter: "Q1 2027", status: "planned", title: "API marketplace", desc: "Tezcode API'lar uchinchi tomonlarga", product: "Tezcode" },
 
   // 2027+ explore
-  { quarter: "2027+", status: "explore", title: "Voice AI agents", desc: "Telefon orqali AI yordamchi (O'zbek+ Russian)", product: "AI Office" },
   { quarter: "2027+", status: "explore", title: "Global expansion (RU/KZ/UA market)", desc: "Tezcode O'rta Osiyo uchun", product: "Tezcode" },
   { quarter: "2027+", status: "explore", title: "Tezcode Pay", desc: "B2B payment infrastructure", product: "Tezcode" },
 ];

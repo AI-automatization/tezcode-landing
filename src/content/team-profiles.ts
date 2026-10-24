@@ -434,22 +434,21 @@ export const TEAM_PROFILES: TeamProfile[] = [
     role: "AI Engineer",
     photo: "/team/abdulloh-isroilov-v2.jpg",
     bio: [
-      "Abdulloh Isroilov — Tezcode jamoasida AI Engineer va AI-Trade co-founder. React frontend hamda Node.js/Express backend bilan ishlaydi.",
-      "AI-Trade savdo agenti loyihasida ishlaydi. MongoDB va zamonaviy JavaScript bilan mahsulot quradi.",
+      "Abdulloh Isroilov — Tezcode jamoasida AI Engineer. React frontend hamda Node.js/Express backend bilan ishlaydi.",
+      "MongoDB va zamonaviy JavaScript bilan mahsulot quradi.",
     ],
     skills: ["React", "Node.js", "Express.js", "MongoDB", "JavaScript"],
-    projects: [{ name: "AI-Trade", role: "Savdo agenti — full-stack" }],
+    projects: [],
     telegram: "abufdx",
     knowsAbout: [
       "Full-Stack Development",
       "React",
       "Node.js",
       "MongoDB",
-      "Trading",
     ],
     metaTitle: "Abdulloh Isroilov — Tezcode AI Engineer",
     metaDescription:
-      "Abdulloh Isroilov — Tezcode jamoasida AI Engineer va AI-Trade co-founder. React, Node.js, Express, MongoDB.",
+      "Abdulloh Isroilov — Tezcode jamoasida AI Engineer. React, Node.js, Express, MongoDB.",
   },
   {
     slug: "polatbek-ismoilov",

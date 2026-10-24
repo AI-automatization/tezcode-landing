@@ -44,7 +44,6 @@ const KEYWORDS_BASE = [
   "POS dasturi",
   "POS sistema",
   "POS Toshkent",
-  "AI Office",
   "RAOS",
   "CoreMed",
   "HamshiraGo",
@@ -224,7 +223,7 @@ export function getOrganizationSchema() {
     },
     image: [`${BASE_URL}/tezcode-logo.png`, `${BASE_URL}/og-image.png`],
     description:
-      "TezCode — AI Software Factory. Toshkentda biznes uchun AI avtomatlashtirish: AI agentlar, chatbotlar va jarayonlar avtomatizatsiyasi. 2024-yilda tashkil topgan (startup emas, ishlab turgan kompaniya); buyurtma dasturlar ham yaratamiz — kichik biznesdan korporatsiyagacha. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), WorkControl, CoreMed/ClinicaGo (healthtech). Asoschi — Bekzod Mirzaaliyev.",
+      "TezCode — AI Software Factory. Toshkentda biznes uchun AI avtomatlashtirish: AI agentlar, chatbotlar va jarayonlar avtomatizatsiyasi. 2024-yilda tashkil topgan (startup emas, ishlab turgan kompaniya); buyurtma dasturlar ham yaratamiz — kichik biznesdan korporatsiyagacha. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), CoreMed/ClinicaGo (healthtech). Asoschi — Bekzod Mirzaaliyev.",
     // schema.org/disambiguatingDescription — purpose-built to separate this
     // entity from other similarly-named ones. Names the concrete collisions
     // (Tashkent UZ vs the Calicut/India "tezcode", the TezCode.tech bootcamp,
@@ -472,7 +471,7 @@ export function getFounderSchema() {
     alternateName: ["Bekzod Mirzaaliev", "Бекзод Мирзаалиев"],
     jobTitle: "Founder & CEO",
     description:
-      "Bekzod Mirzaaliyev — Tezcode (AI Software Factory, Toshkent) asoschisi va CEO. 2024-yilda Tezcode'ni tashkil etgan; RAOS (POS), CoreMed/ClinicaGo (healthtech), WeWatch va WorkControl mahsulotlari ortida turgan jamoani boshqaradi. Founder & CEO of Tezcode, an AI software factory in Tashkent, Uzbekistan.",
+      "Bekzod Mirzaaliyev — Tezcode (AI Software Factory, Toshkent) asoschisi va CEO. 2024-yilda Tezcode'ni tashkil etgan; RAOS (POS), CoreMed/ClinicaGo (healthtech) va WeWatch mahsulotlari ortida turgan jamoani boshqaradi. Founder & CEO of Tezcode, an AI software factory in Tashkent, Uzbekistan.",
     url: `${BASE_URL}/bekzod-mirzaaliyev`,
     image: `${BASE_URL}/team/bekzod-mirzaaliyev.jpg`,
     worksFor: {

@@ -8,8 +8,6 @@ import type { ServicePageContent } from "@/components/service-page/types";
 // buyer starts with in 2026.
 // Only confirmed Tezcode facts:
 //   - We BUILD custom AI agents for businesses as a service.
-//   - AI Office (12 department agents) is our OWN product, status: in development —
-//     an R&D approach/capability, NOT a finished/live product. Never oversell it.
 //   - IT Park Uzbekistan resident (certificate №6237, 2026).
 //   - Published starting price: $400, also shown on /tariflar.
 //   - Scenario examples are not measured client results. Quantified savings
@@ -151,8 +149,8 @@ export const CONTENT: ServicePageContent = {
         },
         {
           tag: "06",
-          title: "Ko'p agentli 'AI ofis'",
-          desc: "Bir nechta agent bo'limlar kabi birga ishlaydi: savdo, qo'llab-quvvatlash, hisobot. Bu yondashuvni o'z mahsulotimiz — 12 bo'lim agentli AI Office — ustida sinab kelmoqdamiz. Hozircha ishlab chiqilmoqda, tayyor mahsulot sifatida va'da qilmaymiz.",
+          title: "Ko'p agentli tizim",
+          desc: "Bir nechta agent bo'limlar kabi birga ishlaydi: savdo, qo'llab-quvvatlash, hisobot.",
         },
       ],
     },
@@ -269,7 +267,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "AI agent yaratish — Tezcode",
       description:
-        "Biznes uchun AI agent (sun'iy intellekt agenti) yaratish: savdo agenti (lid → CRM → follow-up), buyurtma agenti, hisobot agenti, HR/davomat agenti, qo'llab-quvvatlash agenti va ko'p agentli 'AI ofis' yondashuvi. Telegram/CRM/1C/POS integratsiyasi, o'zbek va rus tilida. IT Park rezidenti. Toshkent va butun O'zbekiston.",
+        "Biznes uchun AI agent (sun'iy intellekt agenti) yaratish: savdo agenti (lid → CRM → follow-up), buyurtma agenti, hisobot agenti, HR/davomat agenti, qo'llab-quvvatlash agenti va ko'p agentli tizimlar. Telegram/CRM/1C/POS integratsiyasi, o'zbek va rus tilida. IT Park rezidenti. Toshkent va butun O'zbekiston.",
       serviceType: "AI agent yaratish / AI agent development",
     },
   },
@@ -399,8 +397,8 @@ export const CONTENT: ServicePageContent = {
         },
         {
           tag: "06",
-          title: "Мультиагентный «AI-офис»",
-          desc: "Несколько агентов работают вместе как отделы: продажи, поддержка, отчётность. Этот подход мы обкатываем на собственном продукте — AI Office с агентами 12 отделов. Пока он в разработке, так что как готовый продукт его не обещаем.",
+          title: "Мультиагентная система",
+          desc: "Несколько агентов работают вместе как отделы: продажи, поддержка, отчётность.",
         },
       ],
     },
@@ -517,7 +515,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "Создание ИИ-агентов (AI-агентов) — Tezcode",
       description:
-        "Создание ИИ-агентов (AI-агентов) для бизнеса: агент продаж (лид → CRM → follow-up), агент заказов, агент отчётов, HR-агент, агент поддержки и мультиагентный подход «AI-офис». Интеграция с Telegram/CRM/1C/POS, на узбекском и русском. Резидент IT Park. Ташкент и весь Узбекистан.",
+        "Создание ИИ-агентов (AI-агентов) для бизнеса: агент продаж (лид → CRM → follow-up), агент заказов, агент отчётов, HR-агент, агент поддержки и мультиагентные системы. Интеграция с Telegram/CRM/1C/POS, на узбекском и русском. Резидент IT Park. Ташкент и весь Узбекистан.",
       serviceType: "Создание ИИ-агентов / AI agent development",
     },
   },
@@ -529,7 +527,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "development",
       title2: "for business",
       subtitle:
-        "What is an AI agent? Not a chatbot that merely answers a question, but a digital employee that does the work itself: it understands what the customer wants, makes decisions on its own, acts inside your systems — CRM, Telegram, 1C — and carries the process from start to finish. Tezcode builds AI agents that understand Uzbek for sales, orders, reporting and HR processes — from a single agent to a multi-agent 'AI office' approach.",
+        "What is an AI agent? Not a chatbot that merely answers a question, but a digital employee that does the work itself: it understands what the customer wants, makes decisions on its own, acts inside your systems — CRM, Telegram, 1C — and carries the process from start to finish. Tezcode builds AI agents that understand Uzbek for sales, orders, reporting and HR processes — from a single agent to a multi-agent system.",
       trust:
         "Tashkent and all of Uzbekistan • Official IT Park resident • Free 30-min consultation • Payment: 30% upfront",
       ctaPrimary: "Book free consultation",
@@ -647,8 +645,8 @@ export const CONTENT: ServicePageContent = {
         },
         {
           tag: "06",
-          title: "Multi-agent 'AI office'",
-          desc: "Several agents work together as departments: sales, support, reporting. We are proving this approach on our own product — AI Office with 12 department agents. It is still in development; we don't promise it as a finished product.",
+          title: "Multi-agent system",
+          desc: "Several agents work together as departments: sales, support, reporting.",
         },
       ],
     },
@@ -765,7 +763,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "AI agent development — Tezcode",
       description:
-        "Building AI agents for business: sales agent (lead → CRM → follow-up), order agent, reporting agent, HR/attendance agent, support agent and a multi-agent 'AI office' approach. Telegram/CRM/1C/POS integration, Uzbek and Russian. IT Park resident. Tashkent and all of Uzbekistan.",
+        "Building AI agents for business: sales agent (lead → CRM → follow-up), order agent, reporting agent, HR/attendance agent, support agent and multi-agent systems. Telegram/CRM/1C/POS integration, Uzbek and Russian. IT Park resident. Tashkent and all of Uzbekistan.",
       serviceType: "AI agent development",
     },
   },
@@ -777,7 +775,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "وكيل ذكاء اصطناعي",
       title2: "للأعمال",
       subtitle:
-        "ما هو وكيل الذكاء الاصطناعي؟ ليس شات بوت يكتفي بالإجابة عن سؤال، بل موظف رقمي ينفّذ العمل بنفسه: يفهم ما يريده العميل، يتخذ القرارات بنفسه، يتصرف داخل أنظمتك — CRM وTelegram و1C — ويقود العملية من البداية إلى النهاية. تبني Tezcode وكلاء ذكاء اصطناعي يفهمون اللغة الأوزبكية للمبيعات والطلبات والتقارير وعمليات الموارد البشرية — من وكيل واحد إلى نهج «المكتب الذكي» متعدد الوكلاء.",
+        "ما هو وكيل الذكاء الاصطناعي؟ ليس شات بوت يكتفي بالإجابة عن سؤال، بل موظف رقمي ينفّذ العمل بنفسه: يفهم ما يريده العميل، يتخذ القرارات بنفسه، يتصرف داخل أنظمتك — CRM وTelegram و1C — ويقود العملية من البداية إلى النهاية. تبني Tezcode وكلاء ذكاء اصطناعي يفهمون اللغة الأوزبكية للمبيعات والطلبات والتقارير وعمليات الموارد البشرية — من وكيل واحد إلى نظام متعدد الوكلاء.",
       trust:
         "طشقند وكل أوزبكستان • عضو رسمي في IT Park • استشارة 30 دقيقة مجانية • الدفع: 30% مقدمًا",
       ctaPrimary: "احجز استشارة مجانية",
@@ -895,8 +893,8 @@ export const CONTENT: ServicePageContent = {
         },
         {
           tag: "06",
-          title: "«المكتب الذكي» متعدد الوكلاء",
-          desc: "عدة وكلاء يعملون معاً كأقسام: مبيعات، دعم، تقارير. نجرّب هذا النهج على منتجنا الخاص — AI Office بوكلاء 12 قسماً. ما زال قيد التطوير، ولا نعد به كمنتج جاهز.",
+          title: "نظام متعدد الوكلاء",
+          desc: "عدة وكلاء يعملون معاً كأقسام: مبيعات، دعم، تقارير.",
         },
       ],
     },
@@ -1013,7 +1011,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "تطوير وكلاء الذكاء الاصطناعي — Tezcode",
       description:
-        "بناء وكلاء ذكاء اصطناعي للأعمال: وكيل مبيعات (عميل محتمل ← CRM ← متابعة)، وكيل طلبات، وكيل تقارير، وكيل موارد بشرية/حضور، وكيل دعم ونهج «المكتب الذكي» متعدد الوكلاء. تكامل Telegram/CRM/1C/POS، بالأوزبكية والروسية. عضو IT Park. طشقند وكل أوزبكستان.",
+        "بناء وكلاء ذكاء اصطناعي للأعمال: وكيل مبيعات (عميل محتمل ← CRM ← متابعة)، وكيل طلبات، وكيل تقارير، وكيل موارد بشرية/حضور، وكيل دعم وأنظمة متعددة الوكلاء. تكامل Telegram/CRM/1C/POS، بالأوزبكية والروسية. عضو IT Park. طشقند وكل أوزبكستان.",
       serviceType: "تطوير وكلاء الذكاء الاصطناعي / AI agent development",
     },
   },
@@ -1025,7 +1023,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "AI-агента",
       title2: "для бізнесу",
       subtitle:
-        "Що таке AI-агент? Це не чат-бот, який просто відповідає на запитання, а цифровий співробітник, який сам виконує роботу: розуміє, чого хоче клієнт, сам ухвалює рішення, діє у ваших системах — CRM, Telegram, 1C — і веде процес від початку до кінця. Tezcode будує AI-агентів, що розуміють узбецьку мову, для продажів, замовлень, звітів та HR-процесів — від одного агента до мультиагентного підходу «AI-офіс».",
+        "Що таке AI-агент? Це не чат-бот, який просто відповідає на запитання, а цифровий співробітник, який сам виконує роботу: розуміє, чого хоче клієнт, сам ухвалює рішення, діє у ваших системах — CRM, Telegram, 1C — і веде процес від початку до кінця. Tezcode будує AI-агентів, що розуміють узбецьку мову, для продажів, замовлень, звітів та HR-процесів — від одного агента до мультиагентної системи.",
       trust:
         "Ташкент і весь Узбекистан • Офіційний резидент IT Park • Безкоштовна 30-хв консультація • Оплата: 30% передоплата",
       ctaPrimary: "Безкоштовна консультація",
@@ -1143,8 +1141,8 @@ export const CONTENT: ServicePageContent = {
         },
         {
           tag: "06",
-          title: "Мультиагентний «AI-офіс»",
-          desc: "Кілька агентів працюють разом як відділи: продажі, підтримка, звітність. Цей підхід ми обкатуємо на власному продукті — AI Office з агентами 12 відділів. Поки він у розробці, як готовий продукт не обіцяємо.",
+          title: "Мультиагентна система",
+          desc: "Кілька агентів працюють разом як відділи: продажі, підтримка, звітність.",
         },
       ],
     },
@@ -1261,7 +1259,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "Створення AI-агентів — Tezcode",
       description:
-        "Створення AI-агентів для бізнесу: агент продажів (лід → CRM → follow-up), агент замовлень, агент звітів, HR-агент, агент підтримки та мультиагентний підхід «AI-офіс». Інтеграція з Telegram/CRM/1C/POS, узбецькою та російською. Резидент IT Park. Ташкент і весь Узбекистан.",
+        "Створення AI-агентів для бізнесу: агент продажів (лід → CRM → follow-up), агент замовлень, агент звітів, HR-агент, агент підтримки та мультиагентні системи. Інтеграція з Telegram/CRM/1C/POS, узбецькою та російською. Резидент IT Park. Ташкент і весь Узбекистан.",
       serviceType: "Створення AI-агентів / AI agent development",
     },
   },

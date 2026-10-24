@@ -26,7 +26,7 @@ export const HOME_FAQ: Record<FaqLang, FaqBlock> = {
       },
       {
         q: "Tezcode qaysi mahsulotlarni taklif qiladi?",
-        a: "Tayyor mahsulotlar: RAOS (do'kon uchun POS tizimi), ClinicaGo (klinika CRM), WorkControl (xodim nazorati), HamshiraGo (tibbiy platforma) va WeWatch. Bundan tashqari buyurtma dasturlar va AI avtomatlashtirish xizmatlari.",
+        a: "Tayyor mahsulotlar: RAOS (do'kon uchun POS tizimi), ClinicaGo (klinika CRM), HamshiraGo (tibbiy platforma) va WeWatch. Bundan tashqari buyurtma dasturlar va AI avtomatlashtirish xizmatlari.",
       },
       {
         q: "Tezcode qanday AI texnologiyalaridan foydalanadi?",
@@ -54,7 +54,7 @@ export const HOME_FAQ: Record<FaqLang, FaqBlock> = {
       },
       {
         q: "Какие продукты предлагает Tezcode?",
-        a: "Готовые продукты: RAOS (POS-система для магазинов), ClinicaGo (CRM для клиник), WorkControl (контроль сотрудников), HamshiraGo (медицинская платформа) и WeWatch. А также заказная разработка и услуги ИИ-автоматизации.",
+        a: "Готовые продукты: RAOS (POS-система для магазинов), ClinicaGo (CRM для клиник), HamshiraGo (медицинская платформа) и WeWatch. А также заказная разработка и услуги ИИ-автоматизации.",
       },
       {
         q: "Какие ИИ-технологии использует Tezcode?",
@@ -82,7 +82,7 @@ export const HOME_FAQ: Record<FaqLang, FaqBlock> = {
       },
       {
         q: "What products does Tezcode offer?",
-        a: "Ready-made products: RAOS (POS system for stores), ClinicaGo (clinic CRM), WorkControl (employee monitoring), HamshiraGo (medical platform) and WeWatch. Plus custom development and AI automation services.",
+        a: "Ready-made products: RAOS (POS system for stores), ClinicaGo (clinic CRM), HamshiraGo (medical platform) and WeWatch. Plus custom development and AI automation services.",
       },
       {
         q: "What AI technologies does Tezcode use?",
@@ -110,7 +110,7 @@ export const HOME_FAQ: Record<FaqLang, FaqBlock> = {
       },
       {
         q: "ما المنتجات التي تقدّمها Tezcode؟",
-        a: "منتجات جاهزة: RAOS (نظام POS للمتاجر)، ClinicaGo (CRM للعيادات)، WorkControl (مراقبة الموظفين)، HamshiraGo (منصة طبية) وWeWatch. بالإضافة إلى التطوير المخصص وخدمات أتمتة الذكاء الاصطناعي.",
+        a: "منتجات جاهزة: RAOS (نظام POS للمتاجر)، ClinicaGo (CRM للعيادات)، HamshiraGo (منصة طبية) وWeWatch. بالإضافة إلى التطوير المخصص وخدمات أتمتة الذكاء الاصطناعي.",
       },
       {
         q: "ما تقنيات الذكاء الاصطناعي التي تستخدمها Tezcode؟",
@@ -138,7 +138,7 @@ export const HOME_FAQ: Record<FaqLang, FaqBlock> = {
       },
       {
         q: "Які продукти пропонує Tezcode?",
-        a: "Готові продукти: RAOS (POS-система для магазинів), ClinicaGo (CRM для клінік), WorkControl (контроль співробітників), HamshiraGo (медична платформа) та WeWatch. А також замовна розробка й послуги AI-автоматизації.",
+        a: "Готові продукти: RAOS (POS-система для магазинів), ClinicaGo (CRM для клінік), HamshiraGo (медична платформа) та WeWatch. А також замовна розробка й послуги AI-автоматизації.",
       },
       {
         q: "Які AI-технології використовує Tezcode?",

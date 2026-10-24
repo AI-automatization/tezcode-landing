@@ -5,8 +5,7 @@ import type { ServicePageContent } from "@/components/service-page/types";
 // "AI-автоматизация бизнеса Ташкент". Entity phrase woven in:
 // "Toshkentda biznes uchun AI avtomatlashtirish".
 // Only confirmed Tezcode facts are used (home Hero: javob 2 soat→1 soniya,
-// hisobot 3 soat→1 daqiqa; ROICalculator: xatolar −90%; PricingTiers:
-// Starter $0 / Pro $200/oy / Enterprise custom; to'lov 30% oldindan).
+// hisobot 3 soat→1 daqiqa; ROICalculator: xatolar −90%; to'lov 30% oldindan).
 // No fabricated client counts or percentages.
 export const CONTENT: ServicePageContent = {
   uz: {
@@ -126,59 +125,24 @@ export const CONTENT: ServicePageContent = {
         },
       ],
     },
-    examples: {
-      badge: "Real misollar",
-      title: "Biz qurgan",
-      titleAccent: "AI yechimlar",
-      subtitle:
-        "Tezcode sun'iy intellektni mijozlarga sotibgina qolmaydi — o'z mahsulotlarida har kuni ishlatadi. Quyidagilar real ishlab turgan misollar.",
-      items: [
-        {
-          tag: "01",
-          title: "AI Office — 12 bo'limli virtual ofis",
-          desc: "Sotuv, HR, marketing va boshqa bo'limlar uchun AI agentlar tizimi. Tezcode o'zi aynan shu tizim bilan 14 dasturchi va ko'plab loyihani boshqaradi — ya'ni sizga taklif qilayotgan yechimimizni avval o'zimizda sinaganmiz.",
-        },
-        {
-          tag: "02",
-          title: "RAOS — savdo avtomatizatsiyasi",
-          desc: "Do'konlar uchun POS tizimi: kassa, ombor va hisobot bir joyda. Sotuv ma'lumoti avtomatik yig'iladi, kunlik xulosa o'zi tuziladi — qo'lda Excel to'ldirish umuman yo'q.",
-        },
-        {
-          tag: "03",
-          title: "Salomat AI — ovozli tibbiy yordamchi",
-          desc: "CoreMed ekotizimida bemor bilan ovoz orqali gaplashadigan AI assistent. Bu oddiy chatbotdan ancha murakkab daraja — jiddiy AI mahsulotni ham boshidan oxirigacha qura olishimizning isboti.",
-        },
-        {
-          tag: "04",
-          title: "Telegram bot avtomatizatsiyasi",
-          desc: "Buyurtma qabul qilish, to'lovni tekshirish, eslatma yuborish, kunlik hisobotni Telegram'ga jo'natish. Kichik biznes uchun eng arzon va eng tez boshlanadigan avtomatlashtirish yo'li.",
-        },
-      ],
-    },
+    // Examples block removed (2026-10-24): few cases next to "150+" hurt trust.
+    examples: { badge: "", title: "", titleAccent: "", subtitle: "", items: [] },
     pricing: {
       badge: "Narxlar",
       title: "Narx qanday",
       titleAccent: "shakllanadi?",
-      subtitle:
-        "Yashirin to'lovlar yo'q: tayyor tariflar ochiq, individual loyiha narxi esa texnik topshiriq (TZ) tasdiqlangandan keyin qat'iy belgilanadi.",
+      subtitle: "Narxni uchta narsa belgilaydi. Aniq summa texnik topshiriq (TZ) tasdiqlangandan keyin qat'iy yoziladi.",
       factors: [
-        {
-          title: "Starter",
-          price: "$0",
-          desc: "Kichik biznes uchun boshlang'ich daraja: 1 mahsulot, 3 xodimgacha, bazaviy AI yordamchi va Telegram orqali qo'llab-quvvatlash. AI avtomatlashtirishni xarajatsiz sinab ko'rish uchun eng qulay yo'l.",
-        },
-        {
-          title: "Pro",
-          price: "$200/oy",
-          desc: "O'sayotgan biznes uchun: cheksiz mahsulot, 30 xodimgacha, kengaytirilgan AI (12 agent), WhatsApp + Telegram bot, o'z domeningiz va 24/7 qo'llab-quvvatlash.",
-        },
-        {
-          title: "Individual loyiha",
-          price: "TZ'dan keyin",
-          desc: "Jarayoningizga noldan quriladigan AI yechim: chuqur integratsiya (1C, CRM, to'lov tizimlari), maxsus mantiqlar. Aniq narx va muddat AI audit hamda TZ tasdiqlangach yoziladi.",
-        },
+        { title: "Integratsiyalar soni", desc: "1C, CRM, to'lov tizimi, Google Sheets — yechim nechta tizim bilan ishlaydi.", icon: "integrations", level: 2 },
+        { title: "Stsenariy murakkabligi", desc: "Faqat javob beradimi yoki buyurtma, to'lov, hisobot kabi ishlarni ham bajaradimi.", icon: "logic", level: 3 },
+        { title: "Kanallar va til", desc: "Telegram, sayt, Instagram; o'zbek va rus tilida ishlash.", icon: "channels", level: 1 },
       ],
-      note: "To'lov tartibi: 30% oldindan, qolgani bosqichma-bosqich — har bosqichda ishlovchi natijani ko'rasiz. Konsultatsiya va dastlabki baholash bepul.",
+      summary: {
+        price: "$400 dan",
+        label: "individual AI yechim",
+        text: "To'lov 30% oldindan, qolgani bosqichma-bosqich — har bosqichda ishlovchi natijani ko'rasiz. Konsultatsiya va dastlabki baholash bepul.",
+        button: "Bepul baholash",
+      },
     },
     cta: {
       badge: "Boshlash vaqti",
@@ -202,7 +166,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "Narxi qancha?",
-          a: "Tayyor tariflar: Starter — $0 (kichik biznes uchun boshlang'ich imkoniyatlar), Pro — $200/oy (kengaytirilgan AI, 30 xodimgacha, 24/7 qo'llab-quvvatlash). Individual yechim narxi avtomatlashtiriladigan jarayonlar soni va integratsiyalar murakkabligiga bog'liq va texnik topshiriq (TZ) tasdiqlangandan keyin yozma taklifda qat'iy belgilanadi. To'lov 30% oldindan, qolgani bosqichma-bosqich — yashirin qo'shimchalar yo'q. Konsultatsiyada sizning raqamlaringiz bilan taxminiy ROI hisobini ham birga qilamiz.",
+          a: "Individual yechim narxi avtomatlashtiriladigan jarayonlar soni va integratsiyalar murakkabligiga bog'liq va texnik topshiriq (TZ) tasdiqlangandan keyin yozma taklifda qat'iy belgilanadi. To'lov 30% oldindan, qolgani bosqichma-bosqich — yashirin qo'shimchalar yo'q. Konsultatsiyada sizning raqamlaringiz bilan taxminiy ROI hisobini ham birga qilamiz.",
         },
         {
           q: "Qancha vaqtda tayyor bo'ladi?",
@@ -361,59 +325,24 @@ export const CONTENT: ServicePageContent = {
         },
       ],
     },
-    examples: {
-      badge: "Реальные примеры",
-      title: "ИИ-решения,",
-      titleAccent: "которые мы построили",
-      subtitle:
-        "Tezcode не только продаёт ИИ клиентам — мы используем его в своих продуктах каждый день. Ниже реально работающие примеры.",
-      items: [
-        {
-          tag: "01",
-          title: "AI Office — виртуальный офис из 12 отделов",
-          desc: "Система AI-агентов для продаж, HR, маркетинга и других отделов. С её помощью Tezcode сам управляет командой из 19 человек и множеством проектов — то есть решение, которое мы вам предлагаем, мы сначала проверили на себе.",
-        },
-        {
-          tag: "02",
-          title: "RAOS — автоматизация торговли",
-          desc: "POS-система для магазинов: касса, склад и отчёты в одном месте. Данные о продажах собираются автоматически, дневная сводка формируется сама — ручного Excel нет вообще.",
-        },
-        {
-          tag: "03",
-          title: "Salomat AI — голосовой медицинский ассистент",
-          desc: "В экосистеме CoreMed ИИ-ассистент общается с пациентом голосом. Это заметно сложнее обычного чат-бота — доказательство того, что мы способны построить серьёзный ИИ-продукт от начала до конца.",
-        },
-        {
-          tag: "04",
-          title: "Автоматизация через Telegram-бота",
-          desc: "Приём заказов, проверка оплаты, напоминания, отправка дневного отчёта в Telegram. Самый доступный и быстрый способ начать автоматизацию для малого бизнеса.",
-        },
-      ],
-    },
+    // Examples block removed (2026-10-24): few cases next to "150+" hurt trust.
+    examples: { badge: "", title: "", titleAccent: "", subtitle: "", items: [] },
     pricing: {
       badge: "Цены",
       title: "Как формируется",
       titleAccent: "цена?",
-      subtitle:
-        "Никаких скрытых платежей: готовые тарифы открыты, а цена индивидуального проекта фиксируется после утверждения технического задания (ТЗ).",
+      subtitle: "Цену определяют три вещи. Точная сумма фиксируется после утверждения технического задания (ТЗ).",
       factors: [
-        {
-          title: "Starter",
-          price: "$0",
-          desc: "Стартовый уровень для малого бизнеса: 1 продукт, до 3 сотрудников, базовый AI-помощник и поддержка в Telegram. Самый удобный способ попробовать AI-автоматизацию без затрат.",
-        },
-        {
-          title: "Pro",
-          price: "$200/мес (≈ 2.5 млн сум/мес)",
-          desc: "Для растущего бизнеса: безлимитные продукты, до 30 сотрудников, продвинутый AI (12 агентов), WhatsApp + Telegram-бот, свой домен и поддержка 24/7.",
-        },
-        {
-          title: "Индивидуальный проект",
-          price: "После ТЗ",
-          desc: "ИИ-решение, построенное с нуля под ваш процесс: глубокая интеграция (1C, CRM, платёжные системы), особая логика. Точная цена и срок фиксируются после ИИ-аудита и утверждения ТЗ.",
-        },
+        { title: "Количество интеграций", desc: "1С, CRM, платёжная система, Google Sheets — со сколькими системами работает решение.", icon: "integrations", level: 2 },
+        { title: "Сложность сценария", desc: "Только отвечает или ещё оформляет заказы, принимает оплату, собирает отчёты.", icon: "logic", level: 3 },
+        { title: "Каналы и язык", desc: "Telegram, сайт, Instagram; работа на узбекском и русском.", icon: "channels", level: 1 },
       ],
-      note: "Порядок оплаты: 30% предоплата, остальное поэтапно — на каждом этапе вы видите рабочий результат. Консультация и первичная оценка бесплатны.",
+      summary: {
+        price: "от $400",
+        label: "индивидуальное ИИ-решение",
+        text: "Оплата: 30% предоплата, остальное поэтапно — на каждом этапе вы видите рабочий результат. Консультация и первичная оценка бесплатны.",
+        button: "Бесплатная оценка",
+      },
     },
     cta: {
       badge: "Время начать",
@@ -436,7 +365,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "Сколько это стоит?",
-          a: "Готовые тарифы: Starter — $0 (базовые возможности для малого бизнеса), Pro — $200/мес (≈ 2.5 млн сум/мес) (продвинутый ИИ (AI), до 30 сотрудников, поддержка 24/7). Цена индивидуального решения зависит от числа автоматизируемых процессов и сложности интеграций и фиксируется в письменном предложении после утверждения технического задания (ТЗ). Оплата — 30% предоплата, остальное поэтапно, без скрытых доплат. На консультации вместе посчитаем ориентировочный ROI на ваших цифрах.",
+          a: "Цена индивидуального решения зависит от числа автоматизируемых процессов и сложности интеграций и фиксируется в письменном предложении после утверждения технического задания (ТЗ). Оплата — 30% предоплата, остальное поэтапно, без скрытых доплат. На консультации вместе посчитаем ориентировочный ROI на ваших цифрах.",
         },
         {
           q: "Сколько времени занимает разработка?",
@@ -595,59 +524,24 @@ export const CONTENT: ServicePageContent = {
         },
       ],
     },
-    examples: {
-      badge: "Real examples",
-      title: "AI solutions",
-      titleAccent: "we have built",
-      subtitle:
-        "Tezcode doesn't just sell AI to clients — we use it in our own products every day. These are real, working examples.",
-      items: [
-        {
-          tag: "01",
-          title: "AI Office — a 12-department virtual office",
-          desc: "A system of AI agents for sales, HR, marketing and more. Tezcode itself runs its 19-person team and many projects with it — meaning the solution we offer you was tested on ourselves first.",
-        },
-        {
-          tag: "02",
-          title: "RAOS — retail automation",
-          desc: "A POS system for stores: register, inventory and reports in one place. Sales data is gathered automatically and the daily summary builds itself — no manual Excel at all.",
-        },
-        {
-          tag: "03",
-          title: "Salomat AI — voice medical assistant",
-          desc: "In the CoreMed ecosystem, an AI assistant talks to patients by voice. That is a level well beyond a simple chatbot — proof that we can build a serious AI product end to end.",
-        },
-        {
-          tag: "04",
-          title: "Telegram bot automation",
-          desc: "Taking orders, verifying payments, sending reminders, pushing the daily report to Telegram. The most affordable and fastest way for a small business to start automating.",
-        },
-      ],
-    },
+    // Examples block removed (2026-10-24): few cases next to "150+" hurt trust.
+    examples: { badge: "", title: "", titleAccent: "", subtitle: "", items: [] },
     pricing: {
       badge: "Pricing",
       title: "How is the price",
       titleAccent: "formed?",
-      subtitle:
-        "No hidden fees: the standard plans are public, and the price of a custom project is fixed after the technical specification is approved.",
+      subtitle: "Three things set the price. The exact amount is fixed once the technical specification is approved.",
       factors: [
-        {
-          title: "Starter",
-          price: "$0",
-          desc: "Entry level for small business: 1 product, up to 3 staff, a basic AI assistant and Telegram support. The easiest way to try AI automation at no cost.",
-        },
-        {
-          title: "Pro",
-          price: "$200/mo",
-          desc: "For growing businesses: unlimited products, up to 30 staff, advanced AI (12 agents), WhatsApp + Telegram bot, your own domain and 24/7 support.",
-        },
-        {
-          title: "Custom project",
-          price: "After the spec",
-          desc: "An AI solution built from scratch for your process: deep integration (1C, CRM, payment systems), custom logic. The exact price and timeline are fixed after the AI audit and spec approval.",
-        },
+        { title: "Number of integrations", desc: "1C, CRM, payment system, Google Sheets — how many systems the solution works with.", icon: "integrations", level: 2 },
+        { title: "Scenario complexity", desc: "Does it only answer, or also take orders, accept payments and build reports.", icon: "logic", level: 3 },
+        { title: "Channels and language", desc: "Telegram, website, Instagram; working in Uzbek and Russian.", icon: "channels", level: 1 },
       ],
-      note: "Payment terms: 30% upfront, the rest per stage — you see a working result at every stage. The consultation and initial assessment are free.",
+      summary: {
+        price: "from $400",
+        label: "custom AI solution",
+        text: "Payment: 30% upfront, the rest in stages — you see a working result at every stage. Consultation and initial estimate are free.",
+        button: "Free estimate",
+      },
     },
     cta: {
       badge: "Time to start",
@@ -670,7 +564,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "How much does it cost?",
-          a: "Standard plans: Starter — $0 (entry features for small business), Pro — $200/mo (advanced AI, up to 30 staff, 24/7 support). The price of a custom solution depends on how many processes you automate and how complex the integrations are; it is fixed in a written proposal after the technical specification is approved. Payment is 30% upfront, the rest per stage, with no hidden extras. In the consultation we also estimate ROI together using your numbers.",
+          a: "The price of a custom solution depends on how many processes you automate and how complex the integrations are; it is fixed in a written proposal after the technical specification is approved. Payment is 30% upfront, the rest per stage, with no hidden extras. In the consultation we also estimate ROI together using your numbers.",
         },
         {
           q: "How long does it take?",
@@ -829,59 +723,24 @@ export const CONTENT: ServicePageContent = {
         },
       ],
     },
-    examples: {
-      badge: "أمثلة حقيقية",
-      title: "حلول ذكاء اصطناعي",
-      titleAccent: "بنيناها",
-      subtitle:
-        "لا تكتفي Tezcode ببيع الذكاء الاصطناعي للعملاء — بل نستخدمه في منتجاتنا يومياً. هذه أمثلة عاملة حقيقية.",
-      items: [
-        {
-          tag: "01",
-          title: "AI Office — مكتب افتراضي بـ 12 قسماً",
-          desc: "منظومة وكلاء ذكاء اصطناعي للمبيعات والموارد البشرية والتسويق وغيرها. تدير Tezcode بها فريقها المكوّن من 19 شخصًا ومشاريع كثيرة — أي أن الحل الذي نعرضه عليك جرّبناه على أنفسنا أولاً.",
-        },
-        {
-          tag: "02",
-          title: "RAOS — أتمتة التجارة",
-          desc: "نظام POS للمتاجر: الكاشير والمخزون والتقارير في مكان واحد. تُجمع بيانات المبيعات تلقائياً ويتكوّن الملخص اليومي بنفسه — بلا Excel يدوي إطلاقاً.",
-        },
-        {
-          tag: "03",
-          title: "Salomat AI — مساعد طبي صوتي",
-          desc: "في منظومة CoreMed مساعد ذكي يحادث المريض بالصوت. هذا مستوى أعقد بكثير من شات بوت عادي — دليل على قدرتنا على بناء منتج ذكاء اصطناعي جاد من البداية إلى النهاية.",
-        },
-        {
-          tag: "04",
-          title: "أتمتة عبر بوت Telegram",
-          desc: "استقبال الطلبات، التحقق من الدفع، التذكيرات، إرسال التقرير اليومي إلى Telegram. أرخص وأسرع طريقة للأعمال الصغيرة لبدء الأتمتة.",
-        },
-      ],
-    },
+    // Examples block removed (2026-10-24): few cases next to "150+" hurt trust.
+    examples: { badge: "", title: "", titleAccent: "", subtitle: "", items: [] },
     pricing: {
       badge: "الأسعار",
       title: "كيف يتشكل",
       titleAccent: "السعر؟",
-      subtitle:
-        "لا رسوم خفية: الباقات الجاهزة معلنة، وسعر المشروع المخصص يُثبَّت بعد اعتماد المواصفات الفنية.",
+      subtitle: "ثلاثة أمور تحدد السعر. يُثبَّت المبلغ الدقيق بعد اعتماد المواصفات الفنية.",
       factors: [
-        {
-          title: "Starter",
-          price: "$0",
-          desc: "المستوى الأول للأعمال الصغيرة: منتج واحد، حتى 3 موظفين، مساعد AI أساسي ودعم عبر Telegram. أسهل طريقة لتجربة أتمتة الذكاء الاصطناعي بلا تكلفة.",
-        },
-        {
-          title: "Pro",
-          price: "$200/شهرياً",
-          desc: "للأعمال النامية: منتجات غير محدودة، حتى 30 موظفاً، AI متقدم (12 وكيلاً)، بوت WhatsApp + Telegram، نطاق خاص ودعم 24/7.",
-        },
-        {
-          title: "مشروع مخصص",
-          price: "بعد المواصفات",
-          desc: "حل ذكاء اصطناعي يُبنى من الصفر لعمليتك: تكامل عميق (1C، CRM، أنظمة الدفع)، منطق خاص. يُثبَّت السعر والموعد الدقيقان بعد تدقيق AI واعتماد المواصفات.",
-        },
+        { title: "عدد التكاملات", desc: "1C وCRM ونظام الدفع وGoogle Sheets — مع كم نظامًا يعمل الحل.", icon: "integrations", level: 2 },
+        { title: "تعقيد السيناريو", desc: "هل يجيب فقط أم ينفذ أيضًا الطلبات والدفع والتقارير.", icon: "logic", level: 3 },
+        { title: "القنوات واللغة", desc: "تيليغرام والموقع وإنستغرام؛ العمل بالأوزبكية والروسية.", icon: "channels", level: 1 },
       ],
-      note: "نظام الدفع: 30% مقدماً والباقي على مراحل — ترى نتيجة عاملة في كل مرحلة. الاستشارة والتقييم الأولي مجانيان.",
+      summary: {
+        price: "من $400",
+        label: "حل ذكاء اصطناعي مخصص",
+        text: "الدفع: 30% مقدمًا والباقي على مراحل — ترى نتيجة عاملة في كل مرحلة. الاستشارة والتقييم الأولي مجانيان.",
+        button: "تقييم مجاني",
+      },
     },
     cta: {
       badge: "وقت البدء",
@@ -904,7 +763,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "كم التكلفة؟",
-          a: "الباقات الجاهزة: Starter — $0 (إمكانيات أساسية للأعمال الصغيرة)، Pro — $200 شهرياً (AI متقدم، حتى 30 موظفاً، دعم 24/7). يعتمد سعر الحل المخصص على عدد العمليات المؤتمتة وتعقيد التكاملات، ويُثبَّت في عرض مكتوب بعد اعتماد المواصفات الفنية. الدفع 30% مقدماً والباقي على مراحل — دون أي إضافات خفية. وفي الاستشارة نحسب معاً ROI تقريبياً بأرقامك أنت.",
+          a: "يعتمد سعر الحل المخصص على عدد العمليات المؤتمتة وتعقيد التكاملات، ويُثبَّت في عرض مكتوب بعد اعتماد المواصفات الفنية. الدفع 30% مقدماً والباقي على مراحل — دون أي إضافات خفية. وفي الاستشارة نحسب معاً ROI تقريبياً بأرقامك أنت.",
         },
         {
           q: "كم يستغرق التطوير؟",
@@ -1063,59 +922,24 @@ export const CONTENT: ServicePageContent = {
         },
       ],
     },
-    examples: {
-      badge: "Реальні приклади",
-      title: "ШІ-рішення,",
-      titleAccent: "які ми побудували",
-      subtitle:
-        "Tezcode не лише продає ШІ клієнтам — ми використовуємо його у своїх продуктах щодня. Нижче реально працюючі приклади.",
-      items: [
-        {
-          tag: "01",
-          title: "AI Office — віртуальний офіс із 12 відділів",
-          desc: "Система AI-агентів для продажів, HR, маркетингу та інших відділів. Tezcode сам керує з її допомогою командою з 19 осіб і багатьма проєктами — тобто рішення, яке ми вам пропонуємо, ми спершу перевірили на собі.",
-        },
-        {
-          tag: "02",
-          title: "RAOS — автоматизація торгівлі",
-          desc: "POS-система для магазинів: каса, склад і звіти в одному місці. Дані про продажі збираються автоматично, денне зведення формується саме — ручного Excel немає взагалі.",
-        },
-        {
-          tag: "03",
-          title: "Salomat AI — голосовий медичний асистент",
-          desc: "В екосистемі CoreMed ШІ-асистент спілкується з пацієнтом голосом. Це рівень значно складніший за звичайний чатбот — доказ, що ми здатні побудувати серйозний ШІ-продукт від початку до кінця.",
-        },
-        {
-          tag: "04",
-          title: "Автоматизація через Telegram-бота",
-          desc: "Прийом замовлень, перевірка оплати, нагадування, надсилання денного звіту в Telegram. Найдоступніший і найшвидший спосіб для малого бізнесу почати автоматизацію.",
-        },
-      ],
-    },
+    // Examples block removed (2026-10-24): few cases next to "150+" hurt trust.
+    examples: { badge: "", title: "", titleAccent: "", subtitle: "", items: [] },
     pricing: {
       badge: "Ціни",
       title: "Як формується",
       titleAccent: "ціна?",
-      subtitle:
-        "Жодних прихованих платежів: готові тарифи відкриті, а ціна індивідуального проєкту фіксується після затвердження технічного завдання (ТЗ).",
+      subtitle: "Ціну визначають три речі. Точна сума фіксується після затвердження технічного завдання (ТЗ).",
       factors: [
-        {
-          title: "Starter",
-          price: "$0",
-          desc: "Стартовий рівень для малого бізнесу: 1 продукт, до 3 співробітників, базовий AI-помічник і підтримка в Telegram. Найзручніший спосіб спробувати AI-автоматизацію без витрат.",
-        },
-        {
-          title: "Pro",
-          price: "$200/міс",
-          desc: "Для зростаючого бізнесу: безлімітні продукти, до 30 співробітників, просунутий AI (12 агентів), WhatsApp + Telegram бот, свій домен і підтримка 24/7.",
-        },
-        {
-          title: "Індивідуальний проєкт",
-          price: "Після ТЗ",
-          desc: "ШІ-рішення, побудоване з нуля під ваш процес: глибока інтеграція (1C, CRM, платіжні системи), особлива логіка. Точна ціна і термін фіксуються після ШІ-аудиту і затвердження ТЗ.",
-        },
+        { title: "Кількість інтеграцій", desc: "1С, CRM, платіжна система, Google Sheets — зі скількома системами працює рішення.", icon: "integrations", level: 2 },
+        { title: "Складність сценарію", desc: "Лише відповідає чи ще оформлює замовлення, приймає оплату, збирає звіти.", icon: "logic", level: 3 },
+        { title: "Канали та мова", desc: "Telegram, сайт, Instagram; робота узбецькою та російською.", icon: "channels", level: 1 },
       ],
-      note: "Порядок оплати: 30% передоплата, решта поетапно — на кожному етапі ви бачите робочий результат. Консультація і первинна оцінка безкоштовні.",
+      summary: {
+        price: "від $400",
+        label: "індивідуальне AI-рішення",
+        text: "Оплата: 30% передоплата, решта поетапно — на кожному етапі ви бачите робочий результат. Консультація та первинна оцінка безкоштовні.",
+        button: "Безкоштовна оцінка",
+      },
     },
     cta: {
       badge: "Час починати",
@@ -1138,7 +962,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "Скільки це коштує?",
-          a: "Готові тарифи: Starter — $0 (базові можливості для малого бізнесу), Pro — $200/міс (просунутий AI, до 30 співробітників, підтримка 24/7). Ціна індивідуального рішення залежить від кількості автоматизовуваних процесів і складності інтеграцій та фіксується в письмовій пропозиції після затвердження технічного завдання (ТЗ). Оплата — 30% передоплата, решта поетапно, без прихованих доплат. На консультації разом порахуємо орієнтовний ROI на ваших цифрах.",
+          a: "Ціна індивідуального рішення залежить від кількості автоматизовуваних процесів і складності інтеграцій та фіксується в письмовій пропозиції після затвердження технічного завдання (ТЗ). Оплата — 30% передоплата, решта поетапно, без прихованих доплат. На консультації разом порахуємо орієнтовний ROI на ваших цифрах.",
         },
         {
           q: "Скільки часу займає розробка?",

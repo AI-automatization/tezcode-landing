@@ -4,7 +4,7 @@ import Image from "next/image";
 import { m } from "motion/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
-import { ArrowRight, Plus } from "lucide-react";
+import { ArrowRight, Plus, Plug, Workflow, MessagesSquare } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { RemoteDelivery } from "@/components/RemoteDelivery";
 import { Footer } from "@/components/Footer";
@@ -293,18 +293,21 @@ function ProcessSection({ copy }: { copy: ServicePageCopy }) {
 
 // ─────────────────────────── Examples ───────────────────────────
 function ExamplesSection({ copy }: { copy: ServicePageCopy }) {
+  // A page can opt out of the examples block by leaving items empty.
+  if (!copy.examples.items.length) return null;
+  const examples = copy.examples;
   return (
     <section className="relative py-20 sm:py-28 px-6 bg-[var(--tc-ink)] overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <SectionHeader
-          badge={copy.examples.badge}
-          title={copy.examples.title}
-          titleAccent={copy.examples.titleAccent}
-          subtitle={copy.examples.subtitle}
+          badge={examples.badge}
+          title={examples.title}
+          titleAccent={examples.titleAccent}
+          subtitle={examples.subtitle}
         />
 
         <RevealStagger className="grid grid-cols-1 md:grid-cols-2 gap-6" stagger={0.12}>
-          {copy.examples.items.map((item) => (
+          {examples.items.map((item) => (
             <RevealItem key={item.tag}>
               <div className="tc-card tc-card-hover relative h-full p-8 overflow-hidden">
                 <span
@@ -432,10 +435,91 @@ function TechSection({ copy }: { copy: ServicePageCopy }) {
   );
 }
 
+// "What drives the price": factor cards with a weight bar + one summary bar.
+const FACTOR_ICONS = { integrations: Plug, logic: Workflow, channels: MessagesSquare } as const;
+
+function PricingFactorsSection({
+  pricing,
+  summary,
+}: {
+  pricing: NonNullable<ServicePageCopy["pricing"]>;
+  summary: NonNullable<NonNullable<ServicePageCopy["pricing"]>["summary"]>;
+}) {
+  return (
+    <section
+      className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] overflow-hidden"
+      style={{ borderTop: "1px solid var(--tc-border)", borderBottom: "1px solid var(--tc-border)" }}
+    >
+      <div className="max-w-6xl mx-auto relative z-10">
+        <SectionHeader
+          badge={pricing.badge}
+          title={pricing.title}
+          titleAccent={pricing.titleAccent}
+          subtitle={pricing.subtitle}
+          centered
+        />
+
+        <RevealStagger className="grid grid-cols-1 md:grid-cols-3 gap-5" stagger={0.1}>
+          {pricing.factors.map((f) => {
+            const Icon = f.icon ? FACTOR_ICONS[f.icon] : Plug;
+            const level = f.level ?? 1;
+            return (
+              <RevealItem key={f.title}>
+                <div className="tc-card h-full p-6 flex flex-col">
+                  <div className="w-11 h-11 rounded-xl bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] flex items-center justify-center mb-4">
+                    <Icon className="w-5 h-5" strokeWidth={1.8} />
+                  </div>
+                  <h3
+                    className="text-lg font-700 text-[var(--tc-text-primary)] mb-1.5 tracking-tight"
+                    style={{ fontFamily: "var(--font-display)" }}
+                  >
+                    {f.title}
+                  </h3>
+                  <p className="text-sm text-[var(--tc-text-secondary)] leading-relaxed flex-1">{f.desc}</p>
+                  <div className="flex gap-1 mt-5" aria-hidden>
+                    {[1, 2, 3].map((n) => (
+                      <span
+                        key={n}
+                        className="h-1.5 flex-1 rounded-full"
+                        style={{ background: n <= level ? "var(--tc-blue)" : "var(--tc-border)" }}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </RevealItem>
+            );
+          })}
+        </RevealStagger>
+
+        <Reveal delay={0.15}>
+          <div className="tc-card mt-5 p-6 sm:px-7 flex flex-col md:flex-row md:items-center gap-5 md:gap-7">
+            <div className="shrink-0">
+              <p
+                className="text-3xl font-700 text-[var(--tc-text-primary)] tracking-tight"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                {summary.price}
+              </p>
+              <p className="text-xs text-[var(--tc-text-muted)] mt-1">{summary.label}</p>
+            </div>
+            <span className="hidden md:block w-px self-stretch bg-[var(--tc-border)]" />
+            <p className="flex-1 text-sm text-[var(--tc-text-secondary)] leading-relaxed">{summary.text}</p>
+            <a href="#contact-hub" className="tc-btn-primary text-sm shrink-0 self-start md:self-auto">
+              {summary.button}
+              <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+            </a>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 // ─────────────────────────── Pricing factors ───────────────────────────
 function PricingSection({ copy }: { copy: ServicePageCopy }) {
   if (!copy.pricing) return null;
   const pricing = copy.pricing;
+  if (pricing.summary) return <PricingFactorsSection pricing={pricing} summary={pricing.summary} />;
   return (
     <section
       className="relative py-20 sm:py-28 px-6 bg-[var(--tc-surface-0)] overflow-hidden"
@@ -450,7 +534,16 @@ function PricingSection({ copy }: { copy: ServicePageCopy }) {
           centered
         />
 
-        <RevealStagger className="grid grid-cols-1 md:grid-cols-3 gap-6" stagger={0.1}>
+        <RevealStagger
+          className={`grid grid-cols-1 gap-6 ${
+            pricing.factors.length === 1
+              ? "max-w-xl mx-auto"
+              : pricing.factors.length === 2
+                ? "md:grid-cols-2 max-w-4xl mx-auto"
+                : "md:grid-cols-3"
+          }`}
+          stagger={0.1}
+        >
           {pricing.factors.map((f) => (
             <RevealItem key={f.title}>
               <div className="tc-card tc-card-hover h-full p-7">
@@ -498,7 +591,10 @@ function RelatedSection({ copy }: { copy: ServicePageCopy }) {
           subtitle={related.subtitle}
         />
 
-        <RevealStagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" stagger={0.08}>
+        <RevealStagger
+          className={`grid grid-cols-1 sm:grid-cols-2 gap-5 ${related.links.length > 2 ? "lg:grid-cols-3" : ""}`}
+          stagger={0.08}
+        >
           {related.links.map((link) => (
             <RevealItem key={link.href}>
               <Link href={link.href} className="tc-card tc-card-hover group flex flex-col h-full p-6">

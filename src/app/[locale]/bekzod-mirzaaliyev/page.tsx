@@ -25,7 +25,7 @@ export async function generateMetadata({
     path: PATH,
     title: "Bekzod Mirzaaliyev — Tezcode asoschisi va CEO",
     description:
-      "Bekzod Mirzaaliyev — Tezcode (AI Software Factory, Toshkent) asoschisi va CEO. 2024-yilda Tezcode'ni tashkil etgan; RAOS, CoreMed/ClinicaGo, WeWatch va WorkControl mahsulotlari ortidagi jamoani boshqaradi.",
+      "Bekzod Mirzaaliyev — Tezcode (AI Software Factory, Toshkent) asoschisi va CEO. 2024-yilda Tezcode'ni tashkil etgan; RAOS, CoreMed/ClinicaGo va WeWatch mahsulotlari ortidagi jamoani boshqaradi.",
     keywords: [
       "Bekzod Mirzaaliyev",
       "Tezcode asoschisi",
@@ -52,7 +52,6 @@ const PRODUCTS = [
   { name: "RAOS", role: "Offline-first POS / savdo platformasi", href: "https://raos.uz" },
   { name: "CoreMed / ClinicaGo", role: "Healthtech ekotizimi — klinika CRM (live)", href: "https://coremed.uz" },
   { name: "WeWatch", role: "Ijtimoiy onlayn kinoteatr (Watch Party)", href: "https://wewatch.uz" },
-  { name: "WorkControl", role: "Xodimlar ish nazorati tizimi", href: BASE_URL },
 ];
 
 export default function BekzodMirzaaliyevPage() {
@@ -119,11 +118,9 @@ export default function BekzodMirzaaliyevPage() {
                 <strong className="text-[var(--tc-blue-text)]">RAOS</strong> (har
                 do'kon uchun POS / savdo platformasi),{" "}
                 <strong className="text-[var(--tc-blue-text)]">CoreMed/ClinicaGo</strong>{" "}
-                (klinikalar uchun healthtech ekotizimi),{" "}
+                (klinikalar uchun healthtech ekotizimi) va{" "}
                 <strong className="text-[var(--tc-blue-text)]">WeWatch</strong>{" "}
-                (ijtimoiy onlayn kinoteatr) va{" "}
-                <strong className="text-[var(--tc-blue-text)]">WorkControl</strong>{" "}
-                (xodimlar ish nazorati).
+                (ijtimoiy onlayn kinoteatr).
               </p>
               <p>
                 Bekzodning maqsadi — O'zbekistondagi bizneslarga jahon darajasidagi

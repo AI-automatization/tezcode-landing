@@ -3,7 +3,7 @@
     "title": "Biznesni AI bilan avtomatlashtirish — Toshkent, O'zbekiston | Tezcode",
     "description": "TezCode — AI Software Factory. Toshkentda biznes uchun AI avtomatlashtirish: AI agentlar, chatbotlar va jarayonlar avtomatizatsiyasi.",
     "ogTitle": "Biznesni AI bilan avtomatlashtirish — Tezcode, Toshkent",
-    "ogDescription": "O'zbekiston biznesini AI bilan tizimlash. RAOS POS, AI Office, HamshiraGo va 5 boshqa mahsulot."
+    "ogDescription": "O'zbekiston biznesini AI bilan tizimlash. RAOS POS, HamshiraGo va 5 boshqa mahsulot."
   },
   "nav": {
     "divisions": "Bo'limlar",
@@ -99,7 +99,7 @@
       "name": "TezCode Systems",
       "tagline": "Tayyor SaaS mahsulotlar",
       "description": "Oylik obuna asosida ishlovchi tayyor biznes yechimlar. Bugun ulang, ertaga foyda.",
-      "products": "RAOS · WorkControl",
+      "products": "RAOS",
       "model": "Oylik obuna"
     },
     "custom": {
@@ -113,7 +113,7 @@
       "name": "Tezcode",
       "tagline": "AI agentlar va platformalar",
       "description": "Sun'iy intellekt yordamchilari, AI agentlar, ish jarayonlarini avtomatlashtiruvchi yechimlar.",
-      "products": "AI Office · AI-Trade",
+      "products": "AI agent · AI chatbot",
       "model": "SaaS + Token-based"
     },
     "teams": {
@@ -127,7 +127,7 @@
       "name": "TezCode Labs",
       "tagline": "Ichki startaplar",
       "description": "Bizning innovatsiya laboratoriyasi — yangi mahsulotlar, eksperimental yechimlar bu yerda tug'iladi.",
-      "products": "WeWatch · CoreMed · Ventra · MaxSavdo",
+      "products": "WeWatch · CoreMed · MaxSavdo",
       "model": "Investitsiya + Equity"
     },
     "academy": {
@@ -144,8 +144,8 @@
     "learn_more": "Batafsil",
     "visit_site": "Saytga",
     "request_demo": "Demo so'rang",
-    "title": "Bizning Mahsulotlar",
-    "subtitle": "8 ta mahsulot — har biri o'z sohada ekspert",
+    "title": "Biz qurgan va ishlayotgan tizimlar",
+    "subtitle": "Do'kon, klinika, Telegram savdo va avto ehtiyot qismlar — ishlab turgan mahsulotlarimiz.",
     "raos": {
       "name": "RAOS",
       "tagline": "Savdo dasturi",
@@ -153,14 +153,6 @@
       "status": "Live",
       "division": "Systems",
       "url": "https://raos.uz"
-    },
-    "ai_office": {
-      "name": "AI Office",
-      "tagline": "AI orkestrator",
-      "description": "12 bo'lim agentlari — chat-first, 0 step signup. CEO yordamchi bilan biznes boshqarish.",
-      "status": "Beta",
-      "division": "AI",
-      "url": "#"
     },
     "hamshirago": {
       "name": "CoreMed",
@@ -178,30 +170,6 @@
       "division": "Labs",
       "url": "https://wewatch.uz"
     },
-    "workcontrol": {
-      "name": "WorkControl",
-      "tagline": "Jamoa nazorat",
-      "description": "Xodimlar vaqt, vazifa, hisobot — bitta dashboard.",
-      "status": "Live",
-      "division": "Systems",
-      "url": "#"
-    },
-    "ventra": {
-      "name": "Ventra",
-      "tagline": "Trend tahlil",
-      "description": "E-commerce trendlari, raqib monitoring, narx kuzatuv.",
-      "status": "Soon",
-      "division": "Labs",
-      "url": "#"
-    },
-    "ai_trade": {
-      "name": "AI-Trade",
-      "tagline": "Trading bot",
-      "description": "AI bilan automated trading — market signal va portfolio.",
-      "status": "Beta",
-      "division": "AI",
-      "url": "#"
-    },
     "savdo_builder": {
       "name": "MaxSavdo",
       "tagline": "Telegram'da do'kon",
@@ -215,7 +183,16 @@
       "Beta": "Beta",
       "Soon": "Yaqinda"
     },
-    "view_all": "Hammasini ko'rish"
+    "view_all": "Hammasini ko'rish",
+    "more_link": "Boshqa loyihalar va R&D",
+    "tezdetal": {
+      "name": "TezDetal",
+      "tagline": "Avto ehtiyot qismlar bozori",
+      "description": "Zapchastni model va VIN bo'yicha topish, yaqin do'konni ko'rish va buyurtma berish — bitta joyda.",
+      "status": "Live",
+      "division": "",
+      "url": "https://tezdetal.uz"
+    }
   },
   "solutions": {
     "title": "Bizning yechimlar — har soha uchun",
@@ -227,8 +204,8 @@
     },
     "office": {
       "title": "Ofislar uchun",
-      "description": "AI yordamchi orkestrator — 12 bo'lim agentlari. Chat orqali boshqaring, ish o'zi bajariladi.",
-      "product": "AI Office"
+      "description": "Sun'iy intellekt yordamchilari, AI agentlar, ish jarayonlarini avtomatlashtiruvchi yechimlar.",
+      "product": "AI avtomatizatsiya"
     },
     "clinic": {
       "title": "Klinikalar uchun",

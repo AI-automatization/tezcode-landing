@@ -3,7 +3,7 @@
     "title": "AI Business Automation — Tashkent, Uzbekistan | Tezcode",
     "description": "TezCode — AI Software Factory. AI automation for business in Tashkent: AI agents, chatbots and process automation.",
     "ogTitle": "AI Business Automation — Tezcode, Tashkent",
-    "ogDescription": "Systematizing Uzbekistan's business with AI. RAOS POS, AI Office, HamshiraGo and 5 more products."
+    "ogDescription": "Systematizing Uzbekistan's business with AI. RAOS POS, HamshiraGo and 5 more products."
   },
   "nav": {
     "divisions": "Divisions",
@@ -67,7 +67,7 @@
       "name": "TezCode Systems",
       "tagline": "Ready-to-use SaaS products",
       "description": "Production-ready business solutions on a monthly subscription. Connect today, see results tomorrow.",
-      "products": "RAOS · WorkControl",
+      "products": "RAOS",
       "model": "Monthly subscription"
     },
     "custom": {
@@ -81,7 +81,7 @@
       "name": "Tezcode",
       "tagline": "AI agents and platforms",
       "description": "Intelligent assistants, AI agents, and workflow automation solutions for modern teams.",
-      "products": "AI Office · AI-Trade",
+      "products": "AI agent · AI chatbot",
       "model": "SaaS + Token-based"
     },
     "teams": {
@@ -95,7 +95,7 @@
       "name": "TezCode Labs",
       "tagline": "Internal startups",
       "description": "Our innovation lab — where new products and experimental ideas are born.",
-      "products": "WeWatch · CoreMed · Ventra · MaxSavdo",
+      "products": "WeWatch · CoreMed · MaxSavdo",
       "model": "Investment + Equity"
     },
     "academy": {
@@ -112,8 +112,8 @@
     "learn_more": "Learn more",
     "visit_site": "Visit website",
     "request_demo": "Request a demo",
-    "title": "Our Products",
-    "subtitle": "8 products — each an expert in its field",
+    "title": "Systems we built that are live",
+    "subtitle": "Retail, clinics, Telegram commerce and auto parts — our products in operation.",
     "raos": {
       "name": "RAOS",
       "tagline": "Trading software",
@@ -121,14 +121,6 @@
       "status": "Live",
       "division": "Systems",
       "url": "https://raos.uz"
-    },
-    "ai_office": {
-      "name": "AI Office",
-      "tagline": "AI orchestrator",
-      "description": "12 department agents — chat-first, 0-step signup.",
-      "status": "Beta",
-      "division": "AI",
-      "url": "#"
     },
     "hamshirago": {
       "name": "CoreMed",
@@ -146,30 +138,6 @@
       "division": "Labs",
       "url": "https://wewatch.uz"
     },
-    "workcontrol": {
-      "name": "WorkControl",
-      "tagline": "Team control",
-      "description": "Employee time, tasks, reports — in one dashboard.",
-      "status": "Live",
-      "division": "Systems",
-      "url": "#"
-    },
-    "ventra": {
-      "name": "Ventra",
-      "tagline": "Trend analysis",
-      "description": "E-commerce trends, competitor monitoring, price tracking.",
-      "status": "Soon",
-      "division": "Labs",
-      "url": "#"
-    },
-    "ai_trade": {
-      "name": "AI-Trade",
-      "tagline": "Trading bot",
-      "description": "AI-powered automated trading — market signals and portfolio.",
-      "status": "Beta",
-      "division": "AI",
-      "url": "#"
-    },
     "savdo_builder": {
       "name": "MaxSavdo",
       "tagline": "Store in Telegram",
@@ -183,7 +151,16 @@
       "Beta": "Beta",
       "Soon": "Soon"
     },
-    "view_all": "View all"
+    "view_all": "View all",
+    "more_link": "Other projects and R&D",
+    "tezdetal": {
+      "name": "TezDetal",
+      "tagline": "Auto parts marketplace",
+      "description": "Find a part by model or VIN, see nearby stores and order — all in one place.",
+      "status": "Live",
+      "division": "",
+      "url": "https://tezdetal.uz"
+    }
   },
   "solutions": {
     "title": "Our solutions — for every industry",
@@ -195,8 +172,8 @@
     },
     "office": {
       "title": "For offices",
-      "description": "AI orchestrator with 12 department agents. Manage via chat — the work gets done automatically.",
-      "product": "AI Office"
+      "description": "Intelligent assistants, AI agents, and workflow automation solutions for modern teams.",
+      "product": "AI automation"
     },
     "clinic": {
       "title": "For clinics",
@@ -294,7 +271,7 @@
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
-  "oferta": "Public Offer",
+    "oferta": "Public Offer",
     "rights": "All rights reserved",
     "made_in": "Tashkent · Built in Uzbekistan",
     "product": "Product",

@@ -23,7 +23,7 @@ const COPY: Record<Lang, {
         price: "$0",
         tagline: "Kichik biznes uchun",
         features: [
-          "1 ta mahsulot (RAOS / AI Office)",
+          "1 ta mahsulot (RAOS)",
           "3 ta xodim",
           "Bazaviy AI yordamchi",
           "Telegram orqali support",
@@ -72,7 +72,7 @@ const COPY: Record<Lang, {
         price: "$0",
         tagline: "Для малого бизнеса",
         features: [
-          "1 продукт (RAOS / AI Office)",
+          "1 продукт (RAOS)",
           "До 3 сотрудников",
           "Базовый ИИ-помощник",
           "Поддержка в Telegram",
@@ -121,7 +121,7 @@ const COPY: Record<Lang, {
         price: "$0",
         tagline: "For small business",
         features: [
-          "1 product (RAOS / AI Office)",
+          "1 product (RAOS)",
           "Up to 3 employees",
           "Basic AI assistant",
           "Telegram support",

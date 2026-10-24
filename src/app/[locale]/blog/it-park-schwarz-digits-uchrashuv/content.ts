@@ -49,7 +49,7 @@ export const CONTENT: ArticleContent = {
         heading: "Bu Tezcode uchun nimani anglatadi?",
         paragraphs: [
           "Tezcode asoschisi Bekzod Mirzaaliyevning so'zlariga ko'ra, uchrashuv natijasi — \"hamkor bo'lib ishlaymiz\" degan kelishuv. Ochig'ini aytganda, Tezcode hozir Yevropaga shoshilmayapti — ustuvor vazifa O'zbekistonda AI-avtomatlashtirish bo'yicha №1 bo'lish. Lekin bunday uchrashuvlar muhim: ular yo'nalish to'g'ri ekanini ko'rsatadi, va vaqti kelganda aloqalar allaqachon tayyor bo'ladi.",
-          "Tezcode uchun bunday uchrashuvlarning qiymati shunda: mahalliy AI Software Factory sifatida ishlab chiqilgan tajriba va mahsulotlarni (RAOS, ClinicaGo, WorkControl va boshqalar) xalqaro miqyosdagi hamkorlar bilan tanishtirish.",
+          "Tezcode uchun bunday uchrashuvlarning qiymati shunda: mahalliy AI Software Factory sifatida ishlab chiqilgan tajriba va mahsulotlarni (RAOS, ClinicaGo va boshqalar) xalqaro miqyosdagi hamkorlar bilan tanishtirish.",
         ],
       },
       {
@@ -133,7 +133,7 @@ export const CONTENT: ArticleContent = {
         heading: "Что это значит для Tezcode?",
         paragraphs: [
           "По словам основателя Tezcode Бекзода Мирзаалиева, итог встречи — договорённость «будем работать как партнёры». Честно говоря, Tezcode пока не рвётся в Европу: приоритет — стать №1 по ИИ-автоматизации бизнеса в Узбекистане. Но такие встречи важны: они показывают, что вектор верный, и когда придёт время — связи уже будут готовы.",
-          "Ценность таких встреч для Tezcode — в возможности представить международным партнёрам опыт и продукты, созданные локальной AI Software Factory (RAOS, ClinicaGo, WorkControl и другие).",
+          "Ценность таких встреч для Tezcode — в возможности представить международным партнёрам опыт и продукты, созданные локальной AI Software Factory (RAOS, ClinicaGo и другие).",
         ],
       },
       {
@@ -217,7 +217,7 @@ export const CONTENT: ArticleContent = {
         heading: "What does this mean for Tezcode?",
         paragraphs: [
           "In the words of Tezcode founder Bekzod Mirzaaliyev, the outcome of the meeting was an agreement to \"work as partners.\" Honestly, Tezcode isn't chasing Europe right now — the priority is becoming the #1 AI automation company in Uzbekistan. But meetings like this matter: they confirm the direction is right, and when the time comes, the connections will already be in place.",
-          "The value of meetings like this for Tezcode lies in introducing the experience and products built as a local AI Software Factory (RAOS, ClinicaGo, WorkControl and others) to international partners.",
+          "The value of meetings like this for Tezcode lies in introducing the experience and products built as a local AI Software Factory (RAOS, ClinicaGo and others) to international partners.",
         ],
       },
       {

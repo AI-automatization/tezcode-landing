@@ -3,8 +3,8 @@ import type { ServicePageContent } from "@/components/service-page/types";
 // Content for /tezcode-labs — Tezcode's internal venture studio / innovation lab.
 // Only confirmed Tezcode facts (AI Software Factory, Tashkent, 2024, founder
 // Bekzod Mirzaaliyev, 19-person in-house team, IT Park resident). Internal
-// ventures referenced: WeWatch, CoreMed/ClinicaGo/HamshiraGo, Ventra,
-// MaxSavdo, AI-Trade, AI Office, RAOS. Model: investment + equity.
+// ventures referenced: WeWatch, CoreMed/ClinicaGo/HamshiraGo,
+// MaxSavdo, RAOS. Model: investment + equity.
 export const CONTENT: ServicePageContent = {
   uz: {
     hero: {
@@ -13,7 +13,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "o'z mahsulotlarimizni",
       title2: "quramiz",
       subtitle:
-        "TezCode Labs — Tezcode ichki innovatsiya laboratoriyasi va venture studiyasi. Biz faqat mijozlar uchun ishlab bermaymiz — o'z startaplarimizni tug'diramiz, sinovdan o'tkazamiz va miqyoslaymiz. WeWatch, CoreMed, Ventra va boshqalar shu yerda tug'ilgan.",
+        "TezCode Labs — Tezcode ichki innovatsiya laboratoriyasi va venture studiyasi. Biz faqat mijozlar uchun ishlab bermaymiz — o'z startaplarimizni tug'diramiz, sinovdan o'tkazamiz va miqyoslaymiz. WeWatch, CoreMed va boshqalar shu yerda tug'ilgan.",
       trust: "Investitsiya + ulush modeli • Founder'lar bilan birga asos solamiz",
       ctaPrimary: "G'oyangizni muhokama qiling",
       ctaSecondary: "Mahsulotlarni ko'rish",
@@ -53,8 +53,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "WeWatch", title: "Social media / birga tomosha", desc: "Do'stlar bilan real vaqtda birga video ko'rish ijtimoiy platformasi. Bizning consumer-product tajribamiz." },
         { tag: "CoreMed", title: "Healthtech ekotizim", desc: "CoreMed, ClinicaGo va HamshiraGo — klinikalar, shifokorlar va hamshiralar uchun raqamli tizim." },
-        { tag: "Ventra", title: "Analitika platformasi", desc: "Marketplace savdo analitikasi. Data-heavy SaaS qurish bo'yicha ichki ekspertizamiz." },
-        { tag: "AI-Trade / MaxSavdo", title: "AI va commerce", desc: "AI-Trade va MaxSavdo — savdo va commerce yo'nalishidagi eksperimental mahsulotlarimiz. Dogfooding orqali isbotlangan." },
+        { tag: "MaxSavdo", title: "AI va commerce", desc: "MaxSavdo — savdo va commerce yo'nalishidagi eksperimental mahsulotimiz. Dogfooding orqali isbotlangan." },
       ],
     },
     cta: {
@@ -71,7 +70,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "javoblar",
       subtitle: "TezCode Labs va co-founding modeli haqida ko'p so'raladigan savollar.",
       items: [
-        { q: "TezCode Labs nima?", a: "TezCode Labs — Tezcode ichki venture studiyasi va innovatsiya laboratoriyasi. Bu yerda o'z startaplarimiz va eksperimental mahsulotlarimiz tug'iladi, sinovdan o'tadi va miqyoslanadi. WeWatch, CoreMed, Ventra va boshqalar shu labda yaratilgan." },
+        { q: "TezCode Labs nima?", a: "TezCode Labs — Tezcode ichki venture studiyasi va innovatsiya laboratoriyasi. Bu yerda o'z startaplarimiz va eksperimental mahsulotlarimiz tug'iladi, sinovdan o'tadi va miqyoslanadi. WeWatch, CoreMed va boshqalar shu labda yaratilgan." },
         { q: "Men o'z g'oyamni olib kelib, birga asos sola olamanmi?", a: "Ha. Agar sizda g'oya bo'lsa-yu, kuchli texnik jamoa yetishmayotgan bo'lsa, biz co-founder sifatida kirishimiz mumkin. Jamoa, texnologiya, mahsulot tajribasi va bozorga chiqish ekspertizasini beramiz." },
         { q: "Model qanday — investitsiya va ulush qanday ishlaydi?", a: "Biz asosan naqd pul emas, resurs va ekspertiza bilan investitsiya qilamiz: dasturchilar, dizayn, mahsulot va go-to-market. Buning evaziga startapda ulush olamiz — ya'ni sizning muvaffaqiyatingizga bevosita bog'lanamiz." },
         { q: "Qaysi bosqichda qo'shilasiz?", a: "Turli bosqichlarda: sof g'oyadan validatsiyaga, prototipdan MVP'ga yoki mavjud mahsulotni miqyoslashga. Bosqichni birgalikda baholaymiz va keyin hamkorlik shaklini kelishamiz." },
@@ -103,7 +102,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "строим собственные",
       title2: "продукты",
       subtitle:
-        "TezCode Labs — внутренняя инновационная лаборатория и венчурная студия Tezcode. Мы не только разрабатываем для клиентов — мы запускаем, валидируем и масштабируем собственные стартапы. WeWatch, CoreMed, Ventra и другие родились здесь.",
+        "TezCode Labs — внутренняя инновационная лаборатория и венчурная студия Tezcode. Мы не только разрабатываем для клиентов — мы запускаем, валидируем и масштабируем собственные стартапы. WeWatch, CoreMed и другие родились здесь.",
       trust: "Модель инвестиции + доля • Становимся сооснователями вместе с фаундерами",
       ctaPrimary: "Обсудить вашу идею",
       ctaSecondary: "Смотреть продукты",
@@ -143,8 +142,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "WeWatch", title: "Social media / совместный просмотр", desc: "Соцплатформа для совместного просмотра видео с друзьями в реальном времени. Наш опыт в consumer-продуктах." },
         { tag: "CoreMed", title: "Healthtech-экосистема", desc: "CoreMed, ClinicaGo и HamshiraGo — цифровая система для клиник, врачей и медсестёр." },
-        { tag: "Ventra", title: "Аналитическая платформа", desc: "Аналитика продаж на маркетплейсах. Наша внутренняя экспертиза в построении data-heavy SaaS." },
-        { tag: "AI-Trade / MaxSavdo", title: "ИИ и commerce", desc: "AI-Trade и MaxSavdo — наши экспериментальные продукты в сфере торговли и commerce. Проверены через dogfooding." },
+        { tag: "MaxSavdo", title: "ИИ и commerce", desc: "MaxSavdo — наш экспериментальный продукт в сфере торговли и commerce. Проверен через dogfooding." },
       ],
     },
     cta: {
@@ -161,7 +159,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "ответы",
       subtitle: "Частые вопросы о TezCode Labs и модели co-founding.",
       items: [
-        { q: "Что такое TezCode Labs?", a: "TezCode Labs — внутренняя венчурная студия и инновационная лаборатория Tezcode. Здесь рождаются, валидируются и масштабируются наши собственные стартапы и экспериментальные продукты. WeWatch, CoreMed, Ventra и другие созданы в этой лаборатории." },
+        { q: "Что такое TezCode Labs?", a: "TezCode Labs — внутренняя венчурная студия и инновационная лаборатория Tezcode. Здесь рождаются, валидируются и масштабируются наши собственные стартапы и экспериментальные продукты. WeWatch, CoreMed и другие созданы в этой лаборатории." },
         { q: "Могу ли я принести свою идею и стать сооснователем?", a: "Да. Если у вас есть идея, но не хватает сильной техкоманды, мы можем войти как сооснователь. Даём команду, технологию, продуктовый опыт и экспертизу выхода на рынок." },
         { q: "Как работает модель — инвестиции и доля?", a: "Мы инвестируем в основном не деньгами, а ресурсами и экспертизой: разработчики, дизайн, продукт и go-to-market. Взамен получаем долю в стартапе — то есть напрямую привязаны к вашему успеху." },
         { q: "На каком этапе вы подключаетесь?", a: "На разных: от чистой идеи к валидации, от прототипа к MVP или к масштабированию существующего продукта. Этап оцениваем вместе, затем согласуем форму партнёрства." },
@@ -193,7 +191,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "we build our own",
       title2: "products",
       subtitle:
-        "TezCode Labs is Tezcode's internal innovation lab and venture studio. We don't just build for clients — we launch, validate and scale our own startups. WeWatch, CoreMed, Ventra and more were born here.",
+        "TezCode Labs is Tezcode's internal innovation lab and venture studio. We don't just build for clients — we launch, validate and scale our own startups. WeWatch, CoreMed and more were born here.",
       trust: "Investment + equity model • We co-found alongside founders",
       ctaPrimary: "Discuss your idea",
       ctaSecondary: "See our products",
@@ -233,8 +231,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "WeWatch", title: "Social media / watch-together", desc: "A social platform for watching video together with friends in real time. Our consumer-product experience." },
         { tag: "CoreMed", title: "Healthtech ecosystem", desc: "CoreMed, ClinicaGo and HamshiraGo — a digital system for clinics, doctors and nurses." },
-        { tag: "Ventra", title: "Analytics platform", desc: "Marketplace sales analytics. Our in-house expertise in building data-heavy SaaS." },
-        { tag: "AI-Trade / MaxSavdo", title: "AI & commerce", desc: "AI-Trade and MaxSavdo — our experimental products in trade and commerce. Proven through dogfooding." },
+        { tag: "MaxSavdo", title: "AI & commerce", desc: "MaxSavdo — our experimental product in trade and commerce. Proven through dogfooding." },
       ],
     },
     cta: {
@@ -251,7 +248,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "answers",
       subtitle: "Common questions about TezCode Labs and the co-founding model.",
       items: [
-        { q: "What is TezCode Labs?", a: "TezCode Labs is Tezcode's internal venture studio and innovation lab. It's where our own startups and experimental products are born, validated and scaled. WeWatch, CoreMed, Ventra and others were created in this lab." },
+        { q: "What is TezCode Labs?", a: "TezCode Labs is Tezcode's internal venture studio and innovation lab. It's where our own startups and experimental products are born, validated and scaled. WeWatch, CoreMed and others were created in this lab." },
         { q: "Can I bring my idea and co-found?", a: "Yes. If you have an idea but lack a strong tech team, we can come in as a co-founder. We bring the team, the technology, product experience and go-to-market expertise." },
         { q: "How does the model work — investment and equity?", a: "We invest mostly with resources and expertise, not cash: developers, design, product and go-to-market. In return we take equity in the startup — meaning we're directly tied to your success." },
         { q: "At which stage do you join?", a: "At different stages: from a raw idea to validation, from a prototype to an MVP, or scaling an existing product. We assess the stage together, then agree on the form of partnership." },
@@ -283,7 +280,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "نبني منتجاتنا",
       title2: "الخاصة",
       subtitle:
-        "TezCode Labs مختبر الابتكار الداخلي واستوديو المشاريع الريادية لدى Tezcode. لا نطوّر للعملاء فقط — بل نُطلق ونتحقق ونوسّع شركاتنا الناشئة. WeWatch وCoreMed وVentra وغيرها وُلدت هنا.",
+        "TezCode Labs مختبر الابتكار الداخلي واستوديو المشاريع الريادية لدى Tezcode. لا نطوّر للعملاء فقط — بل نُطلق ونتحقق ونوسّع شركاتنا الناشئة. WeWatch وCoreMed وغيرها وُلدت هنا.",
       trust: "نموذج استثمار + حصة • نؤسّس مع رواد الأعمال جنباً إلى جنب",
       ctaPrimary: "ناقش فكرتك",
       ctaSecondary: "شاهد منتجاتنا",
@@ -323,8 +320,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "WeWatch", title: "تواصل اجتماعي / مشاهدة مشتركة", desc: "منصة اجتماعية لمشاهدة الفيديو مع الأصدقاء في الوقت الفعلي. خبرتنا في منتجات المستهلك." },
         { tag: "CoreMed", title: "منظومة صحية تقنية", desc: "CoreMed وClinicaGo وHamshiraGo — نظام رقمي للعيادات والأطباء والممرضين." },
-        { tag: "Ventra", title: "منصة تحليلات", desc: "تحليلات مبيعات الأسواق الإلكترونية. خبرتنا الداخلية في بناء SaaS كثيف البيانات." },
-        { tag: "AI-Trade / MaxSavdo", title: "الذكاء الاصطناعي والتجارة", desc: "AI-Trade وMaxSavdo — منتجاتنا التجريبية في مجال التجارة. مُثبتة عبر الاستخدام الذاتي." },
+        { tag: "MaxSavdo", title: "الذكاء الاصطناعي والتجارة", desc: "MaxSavdo — منتجنا التجريبي في مجال التجارة. مُثبت عبر الاستخدام الذاتي." },
       ],
     },
     cta: {
@@ -341,7 +337,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "إجابات",
       subtitle: "أسئلة شائعة عن TezCode Labs ونموذج التأسيس المشترك.",
       items: [
-        { q: "ما هو TezCode Labs؟", a: "TezCode Labs هو استوديو المشاريع الريادية ومختبر الابتكار الداخلي لدى Tezcode. هنا تُولد شركاتنا الناشئة ومنتجاتنا التجريبية وتُختبر وتتوسّع. WeWatch وCoreMed وVentra وغيرها أُنشئت في هذا المختبر." },
+        { q: "ما هو TezCode Labs؟", a: "TezCode Labs هو استوديو المشاريع الريادية ومختبر الابتكار الداخلي لدى Tezcode. هنا تُولد شركاتنا الناشئة ومنتجاتنا التجريبية وتُختبر وتتوسّع. WeWatch وCoreMed وغيرها أُنشئت في هذا المختبر." },
         { q: "هل يمكنني إحضار فكرتي والتأسيس المشترك؟", a: "نعم. إن كانت لديك فكرة لكن يعوزك فريق تقني قوي، يمكننا الدخول كشريك مؤسس. نقدّم الفريق والتقنية وخبرة المنتج وخبرة الوصول إلى السوق." },
         { q: "كيف يعمل النموذج — الاستثمار والحصة؟", a: "نستثمر غالباً بالموارد والخبرة لا بالنقد: مطورون، تصميم، منتج ووصول إلى السوق. في المقابل نأخذ حصة في الشركة — أي أننا مرتبطون مباشرة بنجاحك." },
         { q: "في أي مرحلة تنضمّون؟", a: "في مراحل مختلفة: من فكرة خام إلى التحقق، من نموذج أولي إلى MVP، أو توسيع منتج قائم. نقيّم المرحلة معاً ثم نتفق على شكل الشراكة." },
@@ -373,7 +369,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "будуємо власні",
       title2: "продукти",
       subtitle:
-        "TezCode Labs — внутрішня інноваційна лабораторія та венчурна студія Tezcode. Ми не лише розробляємо для клієнтів — ми народжуємо, валідуємо та масштабуємо власні стартапи. WeWatch, CoreMed, Ventra та інші народилися тут.",
+        "TezCode Labs — внутрішня інноваційна лабораторія та венчурна студія Tezcode. Ми не лише розробляємо для клієнтів — ми народжуємо, валідуємо та масштабуємо власні стартапи. WeWatch, CoreMed та інші народилися тут.",
       trust: "Модель інвестиції + частка • Стаємо співзасновниками разом із фаундерами",
       ctaPrimary: "Обговорити вашу ідею",
       ctaSecondary: "Дивитись продукти",
@@ -413,8 +409,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "WeWatch", title: "Social media / спільний перегляд", desc: "Соцплатформа для спільного перегляду відео з друзями в реальному часі. Наш досвід у consumer-продуктах." },
         { tag: "CoreMed", title: "Healthtech-екосистема", desc: "CoreMed, ClinicaGo та HamshiraGo — цифрова система для клінік, лікарів і медсестер." },
-        { tag: "Ventra", title: "Аналітична платформа", desc: "Аналітика продажів на маркетплейсах. Наша внутрішня експертиза в побудові data-heavy SaaS." },
-        { tag: "AI-Trade / MaxSavdo", title: "AI та commerce", desc: "AI-Trade і MaxSavdo — наші експериментальні продукти у сфері торгівлі та commerce. Перевірені через dogfooding." },
+        { tag: "MaxSavdo", title: "AI та commerce", desc: "MaxSavdo — наш експериментальний продукт у сфері торгівлі та commerce. Перевірений через dogfooding." },
       ],
     },
     cta: {
@@ -431,7 +426,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "відповіді",
       subtitle: "Часті запитання про TezCode Labs і модель co-founding.",
       items: [
-        { q: "Що таке TezCode Labs?", a: "TezCode Labs — внутрішня венчурна студія та інноваційна лабораторія Tezcode. Тут народжуються, валідуються та масштабуються наші власні стартапи й експериментальні продукти. WeWatch, CoreMed, Ventra та інші створені в цій лабораторії." },
+        { q: "Що таке TezCode Labs?", a: "TezCode Labs — внутрішня венчурна студія та інноваційна лабораторія Tezcode. Тут народжуються, валідуються та масштабуються наші власні стартапи й експериментальні продукти. WeWatch, CoreMed та інші створені в цій лабораторії." },
         { q: "Чи можу я принести свою ідею й стати співзасновником?", a: "Так. Якщо у вас є ідея, але бракує сильної техкоманди, ми можемо увійти як співзасновник. Даємо команду, технологію, продуктовий досвід і експертизу виходу на ринок." },
         { q: "Як працює модель — інвестиції та частка?", a: "Ми інвестуємо переважно не грошима, а ресурсами та експертизою: розробники, дизайн, продукт і go-to-market. Натомість отримуємо частку в стартапі — тобто напряму прив'язані до вашого успіху." },
         { q: "На якому етапі ви підключаєтеся?", a: "На різних: від чистої ідеї до валідації, від прототипу до MVP або масштабування наявного продукту. Етап оцінюємо разом, потім узгоджуємо форму партнерства." },

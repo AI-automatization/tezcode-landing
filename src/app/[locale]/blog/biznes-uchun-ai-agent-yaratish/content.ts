@@ -9,8 +9,7 @@ import type { ArticleContent } from "@/components/blog/types";
 //
 // Honesty rules respected: no fabricated Tezcode client numbers, no fake
 // testimonials. Industry-level ("24/7 javob", "takroriy ishlarni avtomatlashtirish")
-// framing only. The "AI Office" 12-department product is described as an
-// approach in R&D, not a finished product.
+// framing only. Multi-agent setups are mentioned only as a generic approach.
 
 export const CONTENT: ArticleContent = {
   uz: {
@@ -82,7 +81,7 @@ export const CONTENT: ArticleContent = {
           "Sotuv / lid agenti — kiruvchi mijozni \"qizdiradi\", ehtiyojini aniqlaydi, mos taklif beradi va aloqa ma'lumotini CRM ga yozadi.",
           "Buyurtma agenti — mahsulot tanlashdan to to'lov va yetkazishgacha bo'lgan jarayonni boshqaradi, qoldiq va narxni real bazadan tekshiradi.",
           "Ichki avtomatizatsiya agenti — xodimlar uchun: hujjat tayyorlaydi, hisobotni yig'adi, ma'lumotni tizimlar o'rtasida ko'chiradi, vazifalarni taqsimlaydi.",
-          "Ko'p agentli \"AI ofis\" yondashuvi — bir nechta agent o'zaro ish bo'lishadi (biri sotuv, biri qo'llab-quvvatlash, biri hisobot) va dirijyor-agent ularni boshqaradi.",
+          "Ko'p agentli yondashuv — bir nechta agent o'zaro ish bo'lishadi (biri sotuv, biri qo'llab-quvvatlash, biri hisobot) va dirijyor-agent ularni boshqaradi.",
         ],
       },
       {
@@ -191,7 +190,6 @@ export const CONTENT: ArticleContent = {
         paragraphs: [
           "Tezcode — 2024-yilda Toshkentda tashkil topgan, 19 kishilik AI Software Factory jamoasi. Biznes uchun AI agentlar, AI chatbotlar va buyurtma dasturlar quramiz. Asoschi — Bekzod Mirzaaliyev.",
           "Biz agentlarni Claude (Anthropic) va GPT (OpenAI) modellari asosida quramiz, o'zbek va rus tilida ishlashga sozlaymiz va sizning mavjud tizimingizga — CRM, 1C, Telegram, sayt — ulaymiz. Ish yuqorida tasvirlangan 6 qadam bo'yicha kechadi, har bosqichda siz bilan kelishib.",
-          "Bizning R&D yo'nalishimizda \"AI ofis\" yondashuvi ham bor — bunda bir nechta agent (sotuv, qo'llab-quvvatlash, hisobot va boshqa bo'limlar) o'zaro ish bo'lishadi. Bu hozircha ishlab chiqilayotgan yondashuv, tugallangan qutiga solingan mahsulot emas — lekin biznesingiz uchun shu yo'nalishda yechim qurish mumkin.",
           "Boshlash uchun siz aniq biror narsa sotib olishingiz shart emas: avval bepul konsultatsiyada biznesingizga AI agent mosligini va undan qanday foyda olishingiz mumkinligini birga baholaymiz.",
         ],
       },
@@ -281,7 +279,7 @@ export const CONTENT: ArticleContent = {
           "Агент продаж / лидов — «прогревает» входящего клиента, выявляет потребность, даёт подходящее предложение и записывает контакт в CRM.",
           "Агент заказов — ведёт процесс от выбора товара до оплаты и доставки, проверяет остаток и цену по реальной базе.",
           "Агент внутренней автоматизации — для сотрудников: готовит документы, собирает отчёты, переносит данные между системами, распределяет задачи.",
-          "Подход «AI-офис» с несколькими агентами — несколько агентов делят работу (один — продажи, другой — поддержка, третий — отчёты), а агент-дирижёр управляет ими.",
+          "Мультиагентный подход — несколько агентов делят работу (один — продажи, другой — поддержка, третий — отчёты), а агент-дирижёр управляет ими.",
         ],
       },
       {
@@ -391,7 +389,6 @@ export const CONTENT: ArticleContent = {
         paragraphs: [
           "Tezcode — команда AI Software Factory из 19 человек, основанная в Ташкенте в 2024 году. Мы создаём ИИ-агентов, ИИ-чат-ботов и заказное ПО для бизнеса. Основатель — Бекзод Мирзаалиев.",
           "Мы строим агентов на базе моделей Claude (Anthropic) и GPT (OpenAI), настраиваем их на работу на узбекском и русском и подключаем к вашим существующим системам — CRM, 1С, Telegram, сайту. Работа идёт по описанным выше 6 шагам, согласовывая каждый этап с вами.",
-          "В нашем R&D-направлении есть и подход «AI-офис» — когда несколько агентов (продажи, поддержка, отчёты и другие отделы) делят работу между собой. Это пока разрабатываемый подход, а не готовый коробочный продукт — но под ваш бизнес можно построить решение в этом направлении.",
           "Чтобы начать, вам необязательно сразу что-то покупать: сначала на бесплатной консультации мы вместе оценим, подходит ли вашему бизнесу ИИ-агент и какую пользу вы можете из него извлечь.",
         ],
       },
@@ -481,7 +478,7 @@ export const CONTENT: ArticleContent = {
           "Sales / lead agent — \"warms up\" an incoming customer, identifies the need, offers a suitable option and writes the contact into the CRM.",
           "Order agent — runs the process from product selection to payment and delivery, checking stock and price against the real database.",
           "Internal automation agent — for employees: prepares documents, gathers reports, moves data between systems and distributes tasks.",
-          "Multi-agent \"AI office\" approach — several agents share the work (one for sales, one for support, one for reporting) while an orchestrator agent manages them.",
+          "Multi-agent approach — several agents share the work (one for sales, one for support, one for reporting) while an orchestrator agent manages them.",
         ],
       },
       {
@@ -590,7 +587,6 @@ export const CONTENT: ArticleContent = {
         paragraphs: [
           "Tezcode is a 19-person AI Software Factory team founded in Tashkent in 2024. We build AI agents, AI chatbots and custom software for business. The founder is Bekzod Mirzaaliyev.",
           "We build agents on top of Claude (Anthropic) and GPT (OpenAI) models, tune them to work in Uzbek and Russian, and connect them to your existing systems — CRM, 1C, Telegram, website. The work follows the 6 steps described above, agreeing each stage with you.",
-          "Our R&D direction also includes the \"AI office\" approach — where several agents (sales, support, reporting and other departments) share the work between them. This is still a developing approach, not a finished boxed product — but a solution in this direction can be built for your business.",
           "To get started you do not have to buy anything right away: first, in a free consultation, we assess together whether an AI agent fits your business and what benefit you can get from it.",
         ],
       },

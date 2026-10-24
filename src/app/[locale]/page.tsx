@@ -9,7 +9,6 @@ import { ProcessSteps } from "@/components/ProcessSteps";
 import { ROICalculator } from "@/components/ROICalculator";
 import { Partners } from "@/components/Partners";
 import { LatestNews } from "@/components/LatestNews";
-import { PricingTiers } from "@/components/PricingTiers";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
 import { FaqAccordion } from "@/components/FaqAccordion";
@@ -74,9 +73,6 @@ export default async function HomePage({
 
       {/* Latest news — recent blog posts, AI-industry + partnership updates */}
       <LatestNews />
-
-      {/* Pricing Tiers */}
-      <PricingTiers />
 
       {/* FAQ — visible Q&A that mirrors the FAQPage JSON-LD below */}
       <script

@@ -74,7 +74,7 @@ export const CONTENT: ServicePageContent = {
         "Toshkentda CRM ulaydigan kompaniya ko'p. Tanlashda mana bu farqlarga qarang.",
       items: [
         { name: "5 xil CRM bilan tajriba", desc: "amoCRM, Bitrix24, HubSpot, 1C va Sales Doctor — bittasiga bog'lanib qolmaymiz. Biznesingizga qaysi biri mos bo'lsa, o'shani tavsiya qilamiz va sozlaymiz, sotuvchi manfaati emas, sizniki." },
-        { name: "O'z CRM va POS tizimlarimiz bor", desc: "RAOS (POS), AI Office va CoreMed — o'z mahsulotlarimiz. CRM va integratsiya ichini ichkaridan bilamiz, shuning uchun ulashni tez va to'g'ri quramiz." },
+        { name: "O'z CRM va POS tizimlarimiz bor", desc: "RAOS (POS) va CoreMed — o'z mahsulotlarimiz. CRM va integratsiya ichini ichkaridan bilamiz, shuning uchun ulashni tez va to'g'ri quramiz." },
         { name: "IT Park rasmiy rezidenti", desc: "Tezcode — IT Park Uzbekistan rezidenti (guvohnoma №6237). Rasmiy shartnoma, O'zbekiston yurisdiksiyasi va hujjatlashtirilgan majburiyatlar bilan ishlaymiz." },
         { name: "19 kishilik in-house jamoa", desc: "Frilanser emas — Toshkentdagi doimiy jamoa. Integratsiya topshirilgandan keyin ham qo'llab-quvvatlash va rivojlantirish davom etadi." },
         { name: "AI qatlamini qo'sha olamiz", desc: "Oddiy integratsiyadan tashqari CRM ustiga AI qo'shamiz: chatbot lidlarni saralaydi, suhbatlarni tahlil qiladi, avtomatik javob beradi. Ko'p integrator buni qila olmaydi." },
@@ -199,7 +199,7 @@ export const CONTENT: ServicePageContent = {
         "В Ташкенте много компаний, подключающих CRM. При выборе смотрите на эти отличия.",
       items: [
         { name: "Опыт с 5 разными CRM", desc: "amoCRM, Bitrix24, HubSpot, 1C и Sales Doctor — мы не привязаны к одной. Рекомендуем и настраиваем ту, что подходит вам, исходя из вашей выгоды, а не интереса продавца." },
-        { name: "У нас есть свои CRM и POS", desc: "RAOS (POS), AI Office и CoreMed — наши продукты. Мы знаем CRM и интеграции изнутри, поэтому строим связки быстро и правильно." },
+        { name: "У нас есть свои CRM и POS", desc: "RAOS (POS) и CoreMed — наши продукты. Мы знаем CRM и интеграции изнутри, поэтому строим связки быстро и правильно." },
         { name: "Официальный резидент IT Park", desc: "Tezcode — резидент IT Park Uzbekistan (свидетельство №6237). Работаем по официальному договору, в юрисдикции Узбекистана, с задокументированными обязательствами." },
         { name: "In-house команда из 19 человек", desc: "Не фрилансер — постоянная команда в Ташкенте. Поддержка и развитие продолжаются и после сдачи интеграции." },
         { name: "Можем добавить ИИ-слой (AI)", desc: "Помимо обычной интеграции добавляем поверх CRM ИИ (AI): чат-бот квалифицирует лиды, анализирует диалоги и отвечает автоматически. Многие интеграторы этого не умеют." },
@@ -324,7 +324,7 @@ export const CONTENT: ServicePageContent = {
         "Many companies in Tashkent connect CRMs. When choosing, look at these differences.",
       items: [
         { name: "Experience with 5 different CRMs", desc: "amoCRM, Bitrix24, HubSpot, 1C and Sales Doctor — we're not locked to one. We recommend and configure the one that fits you, based on your benefit, not a vendor's interest." },
-        { name: "We have our own CRM & POS", desc: "RAOS (POS), AI Office and CoreMed are our own products. We know CRMs and integrations from the inside, so we build connections fast and right." },
+        { name: "We have our own CRM & POS", desc: "RAOS (POS) and CoreMed are our own products. We know CRMs and integrations from the inside, so we build connections fast and right." },
         { name: "Official IT Park resident", desc: "Tezcode is a resident of IT Park Uzbekistan (certificate №6237). We work under an official contract, in Uzbek jurisdiction, with documented commitments." },
         { name: "14+ person in-house team", desc: "Not a freelancer — a permanent team in Tashkent. Support and development continue after the integration is delivered." },
         { name: "We can add an AI layer", desc: "Beyond plain integration, we build AI on top of the CRM: a chatbot qualifies leads, analyzes conversations and replies automatically. Many integrators can't do this." },
@@ -449,7 +449,7 @@ export const CONTENT: ServicePageContent = {
         "توجد شركات كثيرة في طشقند تربط CRM. عند الاختيار انظر إلى هذه الفروق.",
       items: [
         { name: "خبرة مع 5 أنظمة CRM مختلفة", desc: "amoCRM و Bitrix24 و HubSpot و 1C و Sales Doctor — لسنا مرتبطين بواحد. نوصي ونعدّ المناسب لك بناءً على مصلحتك، لا مصلحة بائع." },
-        { name: "لدينا أنظمة CRM و POS خاصة", desc: "RAOS‏ (POS) و AI Office و CoreMed منتجاتنا. نعرف أنظمة CRM والتكامل من الداخل، لذا نبني الروابط بسرعة وصواب." },
+        { name: "لدينا أنظمة CRM و POS خاصة", desc: "RAOS‏ (POS) و CoreMed منتجاتنا. نعرف أنظمة CRM والتكامل من الداخل، لذا نبني الروابط بسرعة وصواب." },
         { name: "مقيم رسمي في IT Park", desc: "Tezcode مقيم في IT Park Uzbekistan (شهادة №6237). نعمل بعقد رسمي ضمن الاختصاص القضائي لأوزبكستان وبالتزامات موثّقة." },
         { name: "فريق داخلي من 19 شخصًا", desc: "لسنا مستقلين — فريق دائم في طشقند. يستمر الدعم والتطوير بعد تسليم التكامل." },
         { name: "يمكننا إضافة طبقة ذكاء اصطناعي", desc: "إلى جانب التكامل العادي نبني ذكاءً اصطناعيًا فوق CRM: روبوت محادثة يفرز العملاء المحتملين ويحلّل الحوارات ويرد تلقائيًا. كثير من المتكاملين لا يستطيعون ذلك." },
@@ -574,7 +574,7 @@ export const CONTENT: ServicePageContent = {
         "У Ташкенті багато компаній, що підключають CRM. Обираючи, дивіться на ці відмінності.",
       items: [
         { name: "Досвід з 5 різними CRM", desc: "amoCRM, Bitrix24, HubSpot, 1C та Sales Doctor — ми не прив'язані до однієї. Рекомендуємо й налаштовуємо ту, що підходить вам, з вашої вигоди, а не інтересу продавця." },
-        { name: "У нас є власні CRM та POS", desc: "RAOS (POS), AI Office і CoreMed — наші продукти. Ми знаємо CRM та інтеграції зсередини, тому будуємо зв'язки швидко й правильно." },
+        { name: "У нас є власні CRM та POS", desc: "RAOS (POS) і CoreMed — наші продукти. Ми знаємо CRM та інтеграції зсередини, тому будуємо зв'язки швидко й правильно." },
         { name: "Офіційний резидент IT Park", desc: "Tezcode — резидент IT Park Uzbekistan (свідоцтво №6237). Працюємо за офіційним договором, у юрисдикції Узбекистану, із задокументованими зобов'язаннями." },
         { name: "In-house команда з 19 осіб", desc: "Не фрилансер — постійна команда в Ташкенті. Підтримка й розвиток тривають і після здачі інтеграції." },
         { name: "Можемо додати AI-шар", desc: "Крім звичайної інтеграції надбудовуємо над CRM AI: чат-бот кваліфікує ліди, аналізує діалоги, відповідає автоматично. Багато інтеграторів цього не вміють." },

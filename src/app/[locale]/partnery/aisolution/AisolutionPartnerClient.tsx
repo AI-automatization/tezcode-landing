@@ -52,7 +52,7 @@ const COPY: Record<Lang, CopyShape> = {
     offerings: [
       { title: "Ovozli AI-agentlar", desc: "Qo'ng'iroqlarni qabul qiladi, maslahat beradi va mijozlarni jonli operatorsiz yozib oladi." },
       { title: "AI chatbotlar", desc: "Telegram, Instagram va WhatsApp'da 24/7 mijozlar bilan ishlaydi." },
-      { title: "tezcode mahsulotlari", desc: "AI Office, RAOS va boshqa tezcode yechimlarini kalit topshiriq sozlaydi." },
+      { title: "tezcode mahsulotlari", desc: "RAOS va boshqa tezcode yechimlarini kalit topshiriq sozlaydi." },
       { title: "Analitika va integratsiya", desc: "CRM, to'lov va biznes tizimlarini bir joyga bog'laydi." },
     ],
     partnershipTitle: "Hamkorlik qanday ishlaydi",
@@ -88,7 +88,7 @@ const COPY: Record<Lang, CopyShape> = {
     offerings: [
       { title: "Голосовые ИИ-агенты", desc: "Принимают звонки, консультируют и фиксируют клиентов без живого оператора." },
       { title: "ИИ-чат-боты", desc: "Работают с клиентами 24/7 в Telegram, Instagram и WhatsApp." },
-      { title: "Продукты tezcode", desc: "Внедряют AI Office, RAOS и другие решения tezcode под ключ." },
+      { title: "Продукты tezcode", desc: "Внедряют RAOS и другие решения tezcode под ключ." },
       { title: "Аналитика и интеграции", desc: "Связывают CRM, платежи и бизнес-системы в единый контур." },
     ],
     partnershipTitle: "Как устроено партнёрство",
@@ -124,7 +124,7 @@ const COPY: Record<Lang, CopyShape> = {
     offerings: [
       { title: "Voice AI agents", desc: "Answer calls, advise and capture customers without a live operator." },
       { title: "AI chatbots", desc: "Work with customers 24/7 on Telegram, Instagram and WhatsApp." },
-      { title: "tezcode products", desc: "Deploy AI Office, RAOS and other tezcode solutions end-to-end." },
+      { title: "tezcode products", desc: "Deploy RAOS and other tezcode solutions end-to-end." },
       { title: "Analytics & integrations", desc: "Connect CRM, payments and business systems into one loop." },
     ],
     partnershipTitle: "How the partnership works",
@@ -160,7 +160,7 @@ const COPY: Record<Lang, CopyShape> = {
     offerings: [
       { title: "وكلاء صوتيون بالذكاء الاصطناعي", desc: "يردّون على المكالمات ويقدّمون المشورة ويسجّلون العملاء دون مشغّل بشري." },
       { title: "روبوتات محادثة ذكية", desc: "تعمل مع العملاء على مدار الساعة عبر Telegram وInstagram وWhatsApp." },
-      { title: "منتجات tezcode", desc: "تنفيذ AI Office وRAOS وحلول tezcode الأخرى بشكل كامل." },
+      { title: "منتجات tezcode", desc: "تنفيذ RAOS وحلول tezcode الأخرى بشكل كامل." },
       { title: "التحليلات والتكاملات", desc: "تربط CRM والمدفوعات وأنظمة الأعمال في حلقة واحدة." },
     ],
     partnershipTitle: "كيف تعمل الشراكة",
@@ -195,7 +195,7 @@ const COPY: Record<Lang, CopyShape> = {
     offerings: [
       { title: "Голосові AI-агенти", desc: "Приймають дзвінки, консультують і фіксують клієнтів без живого оператора." },
       { title: "AI чат-боти", desc: "Працюють із клієнтами 24/7 у Telegram, Instagram і WhatsApp." },
-      { title: "Продукти tezcode", desc: "Впроваджують AI Office, RAOS та інші рішення tezcode під ключ." },
+      { title: "Продукти tezcode", desc: "Впроваджують RAOS та інші рішення tezcode під ключ." },
       { title: "Аналітика та інтеграції", desc: "Поєднують CRM, платежі й бізнес-системи в єдиний контур." },
     ],
     partnershipTitle: "Як працює партнерство",

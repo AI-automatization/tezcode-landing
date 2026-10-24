@@ -1,7 +1,7 @@
 import type { ArticleContent } from "@/components/blog/types";
 
 // Article: "How to choose an employee monitoring / task-tracking system"
-// (WorkControl as the worked example). Answer-first (TL;DR + question H2s + FAQ)
+// (neutral guide; ends with a CTA that Tezcode builds such systems). Answer-first (TL;DR + question H2s + FAQ)
 // for answer-engine citation. uz master; ru full translation; other locales
 // fall back to uz at render time.
 
@@ -46,7 +46,7 @@ export const CONTENT: ArticleContent = {
         heading: "Nazorat va ishonch muvozanati nega muhim?",
         paragraphs: [
           "Bu — ko'pchilik e'tibordan chetda qoldiradigan, lekin eng nozik nuqta. Agar tizim faqat \"kuzatuv\" sifatida joriy etilsa, xodimlar bezadi, ishonchsizlik paydo bo'ladi va samaradorlik tushadi.",
-          "To'g'ri yondashuv — tizimni shaffoflik vositasi sifatida ko'rsatish: kim nima ustida ishlayapti, qaysi vazifa qanchaga cho'zildi, qayerda yordam kerak. Maqsad — xodimni ayblash emas, jamoaning ishini ravon qilish. WorkControl aynan shu yondashuvga — vazifa va natijani ko'rsatishga — qaratilgan.",
+          "To'g'ri yondashuv — tizimni shaffoflik vositasi sifatida ko'rsatish: kim nima ustida ishlayapti, qaysi vazifa qanchaga cho'zildi, qayerda yordam kerak. Maqsad — xodimni ayblash emas, jamoaning ishini ravon qilish.",
         ],
       },
       {
@@ -60,10 +60,10 @@ export const CONTENT: ArticleContent = {
         ],
       },
       {
-        heading: "WorkControl — xodim va vazifa nazorati misolida",
+        heading: "Mos tayyor tizim topilmasa nima qilish kerak?",
         paragraphs: [
-          "WorkControl — Tezcode tomonidan yaratilgan, xodimlarning ish va vazifalarini nazorat qilish tizimi. Vazifalarni topshirish, bajarilishini kuzatish va jamoaning ish ko'rinishini bitta joydan boshqarish imkonini beradi.",
-          "U vazifa va natijani shaffof qilishga qaratilgan: rahbar umumiy holatni ko'radi, xodim o'z vazifalarini biladi. Agar jamoangiz uchun mos nazorat tizimini tanlashda yordam kerak bo'lsa, jamoamiz bilan bog'lanib bepul maslahat olishingiz mumkin.",
+          "Tayyor dasturlar har doim ham jamoaning ish jarayoniga to'liq mos kelavermaydi: bo'limlar tuzilmasi, hisobot shakllari yoki vazifalarni Telegram orqali berish odati boshqacha bo'lishi mumkin. Bunday holda tizimni biznesingizga moslab qurish mumkin — yuqoridagi imkoniyatlardan faqat sizga keraklilari bilan.",
+          "Tezcode xodim nazorati tizimlarini buyurtma asosida ishlab chiqadi: vazifa boshqaruvi, ish vaqti va davomat, samaradorlik hisobotlari va Telegram bildirishnomalari. Agar jamoangizga qanday tizim kerakligini aniqlashda yordam kerak bo'lsa, jamoamiz bilan bog'lanib bepul maslahat olishingiz mumkin.",
         ],
       },
     ],
@@ -93,9 +93,9 @@ export const CONTENT: ArticleContent = {
       ],
     },
     cta: {
-      title: "Jamoangiz uchun mos nazorat tizimini tanlashda yordam kerakmi?",
+      title: "Jamoangiz uchun xodim nazorati tizimi kerakmi?",
       subtitle:
-        "Tezcode jamoasi ish jarayoningizni tahlil qilib, WorkControl asosida mos yechimni tavsiya qiladi. Bepul maslahat oling.",
+        "Tezcode jamoasi ish jarayoningizni tahlil qilib, biznesingizga moslab xodim nazorati tizimini quradi. Bepul maslahat oling.",
       button: "Telegram orqali bog'lanish",
       note: "Javob odatda bir necha soat ichida.",
     },
@@ -141,7 +141,7 @@ export const CONTENT: ArticleContent = {
         heading: "Почему важен баланс контроля и доверия?",
         paragraphs: [
           "Это самый тонкий момент, который многие упускают. Если систему внедряют только как «слежку», сотрудники демотивируются, появляется недоверие и продуктивность падает.",
-          "Правильный подход — показать систему как инструмент прозрачности: кто над чем работает, какая задача затянулась, где нужна помощь. Цель — не обвинять сотрудника, а сделать работу команды слаженной. WorkControl ориентирован именно на это — показать задачи и результат.",
+          "Правильный подход — показать систему как инструмент прозрачности: кто над чем работает, какая задача затянулась, где нужна помощь. Цель — не обвинять сотрудника, а сделать работу команды слаженной.",
         ],
       },
       {
@@ -155,10 +155,10 @@ export const CONTENT: ArticleContent = {
         ],
       },
       {
-        heading: "На примере WorkControl — контроль сотрудников и задач",
+        heading: "Что делать, если готовая система не подходит?",
         paragraphs: [
-          "WorkControl — система контроля работы и задач сотрудников, созданная Tezcode. Позволяет ставить задачи, отслеживать их выполнение и управлять рабочей картиной команды из одного места.",
-          "Она ориентирована на прозрачность задач и результата: руководитель видит общую картину, сотрудник знает свои задачи. Если нужна помощь в выборе подходящей системы контроля для вашей команды, свяжитесь с нашей командой и получите бесплатную консультацию.",
+          "Готовые программы не всегда полностью подходят под рабочие процессы команды: структура отделов, формы отчётов или привычка ставить задачи в Telegram могут отличаться. В таком случае систему можно построить под ваш бизнес — только с теми функциями из списка выше, которые нужны именно вам.",
+          "Tezcode разрабатывает системы контроля сотрудников на заказ: управление задачами, рабочее время и посещаемость, отчёты по продуктивности и уведомления в Telegram. Если нужна помощь в определении, какая система подойдёт вашей команде, свяжитесь с нашей командой и получите бесплатную консультацию.",
         ],
       },
     ],
@@ -188,9 +188,9 @@ export const CONTENT: ArticleContent = {
       ],
     },
     cta: {
-      title: "Нужна помощь в выборе подходящей системы контроля для вашей команды?",
+      title: "Нужна система контроля сотрудников для вашей команды?",
       subtitle:
-        "Команда Tezcode проанализирует ваши рабочие процессы и порекомендует решение на базе WorkControl. Получите бесплатную консультацию.",
+        "Команда Tezcode проанализирует ваши рабочие процессы и построит систему контроля сотрудников под ваш бизнес. Получите бесплатную консультацию.",
       button: "Связаться через Telegram",
       note: "Обычно отвечаем в течение нескольких часов.",
     },

@@ -18,7 +18,7 @@ export const CONTENT: ArticleContent = {
     },
     tldr: {
       label: "Qisqacha javob",
-      text: "O'zbekistonda biznesni AI bilan avtomatlashtirish eng ko'p vaqt oladigan bitta jarayondan boshlanadi: mijozlarga javob (AI chatbot $339 dan), buyurtma qabul qilish (Telegram bot $279 dan) yoki hisobot/jarayonlar (AI agent $400 dan). Oddiy yechim 1–2 haftada, to'liq MVP 2–4 haftada ishga tushadi, to'lov 30% oldindan. Toshkentda buni Tezcode qiladi — IT Park rasmiy rezidenti (№6237), o'z mahsulotlari (RAOS POS, ClinicaGo CRM, WorkControl) jonli ishlab turibdi. Birinchi qadam — 30 daqiqalik bepul konsultatsiya.",
+      text: "O'zbekistonda biznesni AI bilan avtomatlashtirish eng ko'p vaqt oladigan bitta jarayondan boshlanadi: mijozlarga javob (AI chatbot $339 dan), buyurtma qabul qilish (Telegram bot $279 dan) yoki hisobot/jarayonlar (AI agent $400 dan). Oddiy yechim 1–2 haftada, to'liq MVP 2–4 haftada ishga tushadi, to'lov 30% oldindan. Toshkentda buni Tezcode qiladi — IT Park rasmiy rezidenti (№6237), o'z mahsulotlari (RAOS POS, ClinicaGo CRM) jonli ishlab turibdi. Birinchi qadam — 30 daqiqalik bepul konsultatsiya.",
     },
     sections: [
       {
@@ -37,7 +37,7 @@ export const CONTENT: ArticleContent = {
           "Mijozlar bilan yozishma — AI chatbot Telegram, Instagram va saytda 24/7 javob beradi, lidlarni saralaydi, buyurtma qabul qiladi (o'zbek va rus tilida)",
           "Savdo va kassa — POS tizimi sotuv, ombor va Soliq.uz hisobotini avtomatik yuritadi (masalan RAOS internetsiz ham ishlaydi)",
           "Klinika navbati va qabul — ClinicaGo + HamshiraGo joriy etilgan klinikada navbat vaqti 40% qisqargan, kunlik bemor 32 tadan 45 taga oshgan",
-          "Xodimlar nazorati — vazifa, davomat va KPI bitta tizimda, hisobot Telegram'ga keladi (WorkControl)",
+          "Xodimlar nazorati — vazifa, davomat va KPI bitta tizimda, hisobot Telegram'ga keladi",
           "Hisobot va hujjatlar — AI agent sotuv ma'lumotini o'zi yig'ib, har kuni ertalab tayyor hisobot yuboradi",
         ],
       },
@@ -58,7 +58,7 @@ export const CONTENT: ArticleContent = {
         heading: "Toshkentda AI avtomatlashtirish kompaniyasini qanday tanlayman?",
         paragraphs: [
           "Uch narsani tekshiring: kompaniyaning o'zi ishlab turgan real mahsulotlari bormi (slaydlar emas), mahalliy tizimlar bilan integratsiya qila oladimi (Soliq.uz, Payme/Click, 1C) va narxni yozma taklifda beradimi. Bu uch savol «faqat gapiradigan»larni «quradigan»lardan darrov ajratadi.",
-          "Tezcode shu mezonlarning har biriga hujjat bilan javob beradi: IT Park rasmiy rezidenti (guvohnoma №6237), o'z mahsulotlari — RAOS POS, ClinicaGo klinika CRM, WorkControl — Toshkentda jonli ishlab turibdi, AI yechimlar esa Claude va GPT modellari asosida quriladi. Ya'ni sizga taklif qilinadigan texnologiya avval o'z biznesimizda sinalgan bo'ladi.",
+          "Tezcode shu mezonlarning har biriga hujjat bilan javob beradi: IT Park rasmiy rezidenti (guvohnoma №6237), o'z mahsulotlari — RAOS POS va ClinicaGo klinika CRM — Toshkentda jonli ishlab turibdi, AI yechimlar esa Claude va GPT modellari asosida quriladi. Ya'ni sizga taklif qilinadigan texnologiya avval o'z biznesimizda sinalgan bo'ladi.",
         ],
       },
     ],
@@ -107,7 +107,7 @@ export const CONTENT: ArticleContent = {
     },
     tldr: {
       label: "Краткий ответ",
-      text: "Автоматизация бизнеса с ИИ в Узбекистане начинается с одного самого затратного по времени процесса: ответы клиентам (ИИ-чатбот от $339), приём заказов (Telegram-бот от $279) или отчёты и процессы (ИИ-агент от $400). Простое решение запускается за 1–2 недели, полноценный MVP — за 2–4 недели, предоплата 30%. В Ташкенте это делает Tezcode — официальный резидент IT Park (№6237) с действующими собственными продуктами (RAOS POS, ClinicaGo CRM, WorkControl). Первый шаг — бесплатная 30-минутная консультация.",
+      text: "Автоматизация бизнеса с ИИ в Узбекистане начинается с одного самого затратного по времени процесса: ответы клиентам (ИИ-чатбот от $339), приём заказов (Telegram-бот от $279) или отчёты и процессы (ИИ-агент от $400). Простое решение запускается за 1–2 недели, полноценный MVP — за 2–4 недели, предоплата 30%. В Ташкенте это делает Tezcode — официальный резидент IT Park (№6237) с действующими собственными продуктами (RAOS POS, ClinicaGo CRM). Первый шаг — бесплатная 30-минутная консультация.",
     },
     sections: [
       {
@@ -126,7 +126,7 @@ export const CONTENT: ArticleContent = {
           "Переписка с клиентами — ИИ-чатбот отвечает 24/7 в Telegram, Instagram и на сайте, квалифицирует лиды и принимает заказы (на узбекском и русском)",
           "Продажи и касса — POS-система автоматически ведёт продажи, склад и отчётность Soliq.uz (например, RAOS работает даже без интернета)",
           "Очередь и приём в клинике — после внедрения ClinicaGo + HamshiraGo время ожидания сократилось на 40%, дневной поток вырос с 32 до 45 пациентов",
-          "Контроль сотрудников — задачи, посещаемость и KPI в одной системе, отчёты приходят в Telegram (WorkControl)",
+          "Контроль сотрудников — задачи, посещаемость и KPI в одной системе, отчёты приходят в Telegram",
           "Отчёты и документы — ИИ-агент сам собирает данные о продажах и каждое утро присылает готовый отчёт",
         ],
       },
@@ -147,7 +147,7 @@ export const CONTENT: ArticleContent = {
         heading: "Как выбрать компанию по ИИ-автоматизации в Ташкенте?",
         paragraphs: [
           "Проверьте три вещи: есть ли у компании реально работающие собственные продукты (а не слайды), умеет ли она интегрироваться с локальными системами (Soliq.uz, Payme/Click, 1C) и даёт ли цену в письменном предложении. Эти три вопроса быстро отделяют тех, кто «рассказывает», от тех, кто «строит».",
-          "Tezcode отвечает каждому из этих критериев документально: официальный резидент IT Park (свидетельство №6237), собственные продукты — RAOS POS, клиника-CRM ClinicaGo, WorkControl — уже работают в Ташкенте, а ИИ-решения строятся на моделях Claude и GPT. Технология, которую мы предлагаем, сначала проверена на нашем собственном бизнесе.",
+          "Tezcode отвечает каждому из этих критериев документально: официальный резидент IT Park (свидетельство №6237), собственные продукты — RAOS POS и клиника-CRM ClinicaGo — уже работают в Ташкенте, а ИИ-решения строятся на моделях Claude и GPT. Технология, которую мы предлагаем, сначала проверена на нашем собственном бизнесе.",
         ],
       },
     ],

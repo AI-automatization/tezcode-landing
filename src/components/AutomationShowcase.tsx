@@ -10,7 +10,7 @@ import { Reveal } from "@/components/motion/Reveal";
 // Structural data (same across languages); text comes from CONTENT per locale.
 const META = [
   { img: "/showcase/ai-agent.jpeg", badge: "AI Agent", href: "/ai-agent" },
-  { img: "/showcase/biznes-avtomatlashtirish.jpeg", badge: "AI Office", href: "/ai-avtomatizatsiya" },
+  { img: "/showcase/biznes-avtomatlashtirish.jpeg", badge: "AI avtomatizatsiya", href: "/ai-avtomatizatsiya" },
   { img: "/showcase/raos-dokon.jpeg", badge: "RAOS", href: "/pos-tizimi" },
   { img: "/showcase/ai-chatbot.jpeg", badge: "24/7", href: "/ai-chatbot" },
   { img: "/showcase/klinika-coremed.jpeg", badge: "CoreMed", href: "/klinika-crm" },

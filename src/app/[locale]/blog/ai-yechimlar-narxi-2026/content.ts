@@ -21,7 +21,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Qisqacha javob",
       text:
-        "O'zbekistonda AI yechimlar narxi 2026-yilda odatda quyidagicha boshlanadi: AI chatbot — $339 dan, AI agent — $400 dan, Telegram bot — $279 dan, biznes avtomatlashtirish — $400 dan, CRM integratsiya (amoCRM, Bitrix24, 1C) — $700 dan, AI video analitika — $990 dan (bir martalik ulash), buyurtma dastur (custom) — $1000 dan. Obuna asosidagi mahsulotlar: klinika CRM $25/oy dan, xodim nazorati $35/oy dan, POS tizimi 249 000 so'm/oy dan. Aniq narx kanallar soni, integratsiyalar va murakkablikka bog'liq — to'liq summa bepul konsultatsiya va texnik topshiriq (TZ) dan keyin yozma beriladi. To'lov odatda: 30% oldindan, qolgani bosqichma-bosqich.",
+        "O'zbekistonda AI yechimlar narxi 2026-yilda odatda quyidagicha boshlanadi: AI chatbot — $339 dan, AI agent — $400 dan, Telegram bot — $279 dan, biznes avtomatlashtirish — $400 dan, CRM integratsiya (amoCRM, Bitrix24, 1C) — $700 dan, AI video analitika — $990 dan (bir martalik ulash), buyurtma dastur (custom) — $1000 dan. Obuna asosidagi mahsulotlar: klinika CRM $25/oy dan, POS tizimi 249 000 so'm/oy dan. Aniq narx kanallar soni, integratsiyalar va murakkablikka bog'liq — to'liq summa bepul konsultatsiya va texnik topshiriq (TZ) dan keyin yozma beriladi. To'lov odatda: 30% oldindan, qolgani bosqichma-bosqich.",
     },
     sections: [
       {
@@ -50,14 +50,14 @@ export const CONTENT: ArticleContent = {
           "AI video analitika (odam sanash, yuz tanish, ANPR): $990 dan, bir martalik ulash — tezcode.dev/ai-video-analitika",
           "Buyurtma dastur (custom, web/mobil/desktop): MVP $1000 dan — tezcode.dev/tezcode-custom",
           "Klinika CRM (ClinicaGo): $25/oy dan (1-oy bepul) — tezcode.dev/klinika-crm",
-          "Xodim nazorati (WorkControl): $35/oy dan — tezcode.dev/xodim-nazorati",
+          "Xodim nazorati tizimi (buyurtma asosida): narx loyiha hajmiga qarab — tezcode.dev/xodim-nazorati",
           "POS tizimi (RAOS): 249 000 so'm/oy dan (30 kun bepul) — tezcode.dev/pos-tizimi",
         ],
       },
       {
         heading: "Nega narxlar shunday farq qiladi?",
         paragraphs: [
-          "Ba'zi yechimlar bir martalik loyiha (masalan CRM integratsiya, video analitika ulash), ba'zilari esa obuna (SaaS mahsulotlar — klinika CRM, POS, xodim nazorati). Bir martalik loyihada siz bir marta to'laysiz va tizim sizniki bo'ladi; obunada oylik to'lov evaziga doimiy yangilanish va qo'llab-quvvatlash olasiz.",
+          "Ba'zi yechimlar bir martalik loyiha (masalan CRM integratsiya, video analitika ulash), ba'zilari esa obuna (SaaS mahsulotlar — klinika CRM, POS). Bir martalik loyihada siz bir marta to'laysiz va tizim sizniki bo'ladi; obunada oylik to'lov evaziga doimiy yangilanish va qo'llab-quvvatlash olasiz.",
           "Muhim: CRM litsenziyasi (amoCRM, Bitrix24 tariflari) integratsiya narxiga kirmaydi — uni mijoz to'g'ridan-to'g'ri provayderiga to'laydi. Tezcode faqat ulash va sozlash ishini bajaradi.",
         ],
       },
@@ -93,7 +93,7 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Nega ba'zi yechimlar oylik, ba'zilari bir martalik?",
-          a: "Bir martalik yechimlar (CRM integratsiya, video analitika ulash — $990 dan, custom dastur) — bir marta to'lanadi va tizim sizniki bo'ladi. Obuna mahsulotlar (klinika CRM $25/oy, POS 249 000 so'm/oy, xodim nazorati $35/oy) — oylik to'lov evaziga doimiy yangilanish va qo'llab-quvvatlash olasiz.",
+          a: "Bir martalik yechimlar (CRM integratsiya, video analitika ulash — $990 dan, custom dastur) — bir marta to'lanadi va tizim sizniki bo'ladi. Obuna mahsulotlar (klinika CRM $25/oy, POS 249 000 so'm/oy) — oylik to'lov evaziga doimiy yangilanish va qo'llab-quvvatlash olasiz.",
         },
         {
           q: "To'lov qanday amalga oshiriladi?",
@@ -122,7 +122,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Короткий ответ",
       text:
-        "В Узбекистане цены на ИИ-решения в 2026 обычно начинаются так: ИИ-чат-бот — от $339, ИИ-агент — от $400, Telegram-бот — от $279, автоматизация бизнеса — от $400, интеграция CRM (amoCRM, Bitrix24, 1C) — от $700, ИИ-видеоаналитика — от $990 (разовое подключение), разработка ПО на заказ — от $1000. Подписочные продукты: CRM для клиники от $25/мес, контроль сотрудников от $35/мес, POS-система от 249 000 сум/мес. Точная цена зависит от числа каналов, интеграций и сложности — итоговая сумма даётся письменно после бесплатной консультации и ТЗ. Оплата обычно: 30% предоплата, остальное поэтапно.",
+        "В Узбекистане цены на ИИ-решения в 2026 обычно начинаются так: ИИ-чат-бот — от $339, ИИ-агент — от $400, Telegram-бот — от $279, автоматизация бизнеса — от $400, интеграция CRM (amoCRM, Bitrix24, 1C) — от $700, ИИ-видеоаналитика — от $990 (разовое подключение), разработка ПО на заказ — от $1000. Подписочные продукты: CRM для клиники от $25/мес, POS-система от 249 000 сум/мес. Точная цена зависит от числа каналов, интеграций и сложности — итоговая сумма даётся письменно после бесплатной консультации и ТЗ. Оплата обычно: 30% предоплата, остальное поэтапно.",
     },
     sections: [
       {
@@ -151,14 +151,14 @@ export const CONTENT: ArticleContent = {
           "ИИ-видеоаналитика (подсчёт людей, распознавание лиц, ANPR): от $990, разовое подключение — tezcode.dev/ru/ai-video-analitika",
           "Разработка ПО на заказ (web/mobile/desktop): MVP от $1000 — tezcode.dev/ru/tezcode-custom",
           "CRM для клиники (ClinicaGo): от $25/мес (1-й месяц бесплатно) — tezcode.dev/ru/klinika-crm",
-          "Контроль сотрудников (WorkControl): от $35/мес — tezcode.dev/ru/xodim-nazorati",
+          "Система контроля сотрудников (на заказ): цена зависит от объёма проекта — tezcode.dev/ru/xodim-nazorati",
           "POS-система (RAOS): от 249 000 сум/мес (30 дней бесплатно) — tezcode.dev/ru/pos-tizimi",
         ],
       },
       {
         heading: "Почему цены так различаются?",
         paragraphs: [
-          "Некоторые решения — разовый проект (например интеграция CRM, подключение видеоаналитики), другие — подписка (SaaS-продукты: CRM для клиники, POS, контроль сотрудников). В разовом проекте вы платите один раз и система ваша; при подписке за ежемесячную оплату получаете постоянные обновления и поддержку.",
+          "Некоторые решения — разовый проект (например интеграция CRM, подключение видеоаналитики), другие — подписка (SaaS-продукты: CRM для клиники, POS). В разовом проекте вы платите один раз и система ваша; при подписке за ежемесячную оплату получаете постоянные обновления и поддержку.",
           "Важно: лицензия CRM (тарифы amoCRM, Bitrix24) не входит в цену интеграции — её клиент оплачивает напрямую провайдеру. Tezcode делает только подключение и настройку.",
         ],
       },
@@ -194,7 +194,7 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Почему одни решения помесячные, другие разовые?",
-          a: "Разовые решения (интеграция CRM, подключение видеоаналитики — от $990, custom-разработка) оплачиваются один раз, и система ваша. Подписочные продукты (CRM для клиники $25/мес, POS от 249 000 сум/мес, контроль сотрудников $35/мес) — за ежемесячную оплату вы получаете постоянные обновления и поддержку.",
+          a: "Разовые решения (интеграция CRM, подключение видеоаналитики — от $990, custom-разработка) оплачиваются один раз, и система ваша. Подписочные продукты (CRM для клиники $25/мес, POS от 249 000 сум/мес) — за ежемесячную оплату вы получаете постоянные обновления и поддержку.",
         },
         {
           q: "Как происходит оплата?",
@@ -223,7 +223,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Quick answer",
       text:
-        "In Uzbekistan, AI solution prices in 2026 typically start like this: AI chatbot from $339, AI agent from $400, Telegram bot from $279, business automation from $400, CRM integration (amoCRM, Bitrix24, 1C) from $700, AI video analytics from $990 (one-time setup), custom software from $1000. Subscription products: clinic CRM from $25/mo, employee monitoring from $35/mo, POS system from 249,000 UZS/mo. The exact price depends on the number of channels, integrations and complexity — the final figure is quoted in writing after a free consultation and spec. Payment is usually 30% upfront, the rest in stages.",
+        "In Uzbekistan, AI solution prices in 2026 typically start like this: AI chatbot from $339, AI agent from $400, Telegram bot from $279, business automation from $400, CRM integration (amoCRM, Bitrix24, 1C) from $700, AI video analytics from $990 (one-time setup), custom software from $1000. Subscription products: clinic CRM from $25/mo, POS system from 249,000 UZS/mo. The exact price depends on the number of channels, integrations and complexity — the final figure is quoted in writing after a free consultation and spec. Payment is usually 30% upfront, the rest in stages.",
     },
     sections: [
       {
@@ -252,14 +252,14 @@ export const CONTENT: ArticleContent = {
           "AI video analytics (people counting, face recognition, ANPR): from $990, one-time setup — tezcode.dev/en/ai-video-analitika",
           "Custom software (web/mobile/desktop): MVP from $1000 — tezcode.dev/en/tezcode-custom",
           "Clinic CRM (ClinicaGo): from $25/mo (first month free) — tezcode.dev/en/klinika-crm",
-          "Employee monitoring (WorkControl): from $35/mo — tezcode.dev/en/xodim-nazorati",
+          "Staff monitoring system (custom-built): price depends on project scope — tezcode.dev/en/xodim-nazorati",
           "POS system (RAOS): from 249,000 UZS/mo (30 days free) — tezcode.dev/en/pos-tizimi",
         ],
       },
       {
         heading: "Why do prices vary so much?",
         paragraphs: [
-          "Some solutions are one-time projects (e.g. CRM integration, video-analytics setup), others are subscriptions (SaaS products: clinic CRM, POS, employee monitoring). With a one-time project you pay once and the system is yours; with a subscription you get continuous updates and support for a monthly fee.",
+          "Some solutions are one-time projects (e.g. CRM integration, video-analytics setup), others are subscriptions (SaaS products: clinic CRM, POS). With a one-time project you pay once and the system is yours; with a subscription you get continuous updates and support for a monthly fee.",
           "Important: the CRM license (amoCRM, Bitrix24 plans) is not included in the integration price — the client pays it directly to the provider. Tezcode only does the connection and setup.",
         ],
       },
@@ -295,7 +295,7 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Why are some solutions monthly and others one-time?",
-          a: "One-time solutions (CRM integration, video-analytics setup from $990, custom development) are paid once and the system is yours. Subscription products (clinic CRM $25/mo, POS from 249,000 UZS/mo, employee monitoring $35/mo) give you continuous updates and support for a monthly fee.",
+          a: "One-time solutions (CRM integration, video-analytics setup from $990, custom development) are paid once and the system is yours. Subscription products (clinic CRM $25/mo, POS from 249,000 UZS/mo) give you continuous updates and support for a monthly fee.",
         },
         {
           q: "How is payment made?",

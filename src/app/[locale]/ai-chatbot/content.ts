@@ -75,9 +75,9 @@ export const CONTENT: ServicePageContent = {
         { name: "O'zbek tilida haqiqiy chatbot", desc: "Ko'p tayyor platformalar o'zbekchani yuzaki tushunadi. Biz lotin/kirill yozuvi, so'zlashuv uslubi va sohaviy atamalarni alohida sozlaymiz — mijozingiz botga o'z tilida bemalol yozadi." },
         { name: "IT Park rasmiy rezidenti", desc: "Tezcode — IT Park Uzbekistan rezidenti (guvohnoma №6237). Rasmiy shartnoma, O'zbekiston yurisdiksiyasi va hujjatlashtirilgan majburiyatlar bilan ishlaymiz." },
         { name: "19 kishilik in-house jamoa", desc: "Frilanser yoki bitta dasturchi emas — Toshkentdagi doimiy jamoa. Loyiha topshirilgandan keyin ham qo'llab-quvvatlash va rivojlantirish davom etadi." },
-        { name: "O'z POS va CRM tizimlarimiz bor", desc: "RAOS (POS), AI Office va CoreMed — o'z mahsulotlarimiz. Chatbot ular bilan native ulanadi; AmoCRM, Bitrix24, 1C kabi tashqi tizimlar bilan esa API orqali integratsiya quramiz." },
+        { name: "O'z POS va CRM tizimlarimiz bor", desc: "RAOS (POS) va CoreMed — o'z mahsulotlarimiz. Chatbot ular bilan native ulanadi; AmoCRM, Bitrix24, 1C kabi tashqi tizimlar bilan esa API orqali integratsiya quramiz." },
         { name: "Zamonaviy AI stack", desc: "GPT-4o va Claude darajasidagi LLM lar, RAG (bilim bazasi bo'yicha javob), ovoz uchun STT → LLM → TTS zanjiri — Salomat AI da real ishlab turgan texnologiyalar." },
-        { name: "Avval o'zimizda sinaymiz", desc: "AI ni har kuni o'z mahsulotlarimizda ishlatamiz — RAOS, AI Office, CoreMed. Sizga taklif qilayotgan yechim nazariya emas, ichkarida sinalgan amaliyot." },
+        { name: "Avval o'zimizda sinaymiz", desc: "AI ni har kuni o'z mahsulotlarimizda ishlatamiz — RAOS va CoreMed. Sizga taklif qilayotgan yechim nazariya emas, ichkarida sinalgan amaliyot." },
       ],
     },
     pricing: {
@@ -92,7 +92,7 @@ export const CONTENT: ServicePageContent = {
         { title: "Ko'p kanalli murakkab yechim", price: "Individual", desc: "Telegram + Instagram + WhatsApp + veb-sayt, bir nechta integratsiya, ovozli qatlam yoki maxsus stsenariylar — muddat va narx TZ asosida belgilanadi." },
       ],
       note:
-        "Aniq narx bepul konsultatsiya va TZ'dan keyin yozma taklifda beriladi. To'lov: 30% oldindan, qolgani bosqichma-bosqich, natijani ko'rib. Tayyor SaaS yechim qiziq bo'lsa — AI Office tariflari alohida (Pro — $200/oy, /tariflar sahifasida).",
+        "Aniq narx bepul konsultatsiya va TZ'dan keyin yozma taklifda beriladi. To'lov: 30% oldindan, qolgani bosqichma-bosqich, natijani ko'rib.",
     },
     cta: {
       badge: "Boshlash vaqti",
@@ -201,9 +201,9 @@ export const CONTENT: ServicePageContent = {
         { name: "Настоящий чат-бот на узбекском", desc: "Многие готовые платформы понимают узбекский поверхностно. Мы отдельно настраиваем латиницу/кириллицу, разговорный стиль и отраслевые термины — ваш клиент свободно пишет боту на своём языке." },
         { name: "Официальный резидент IT Park", desc: "Tezcode — резидент IT Park Uzbekistan (свидетельство №6237). Работаем по официальному договору, в юрисдикции Узбекистана, с задокументированными обязательствами." },
         { name: "In-house команда из 19 человек", desc: "Не фрилансер и не один разработчик — постоянная команда в Ташкенте. После сдачи проекта поддержка и развитие продолжаются." },
-        { name: "Свои POS и CRM системы", desc: "RAOS (POS), AI Office и CoreMed — наши собственные продукты. Чат-бот подключается к ним нативно; с внешними системами (AmoCRM, Bitrix24, 1C) строим интеграцию через API." },
+        { name: "Свои POS и CRM системы", desc: "RAOS (POS) и CoreMed — наши собственные продукты. Чат-бот подключается к ним нативно; с внешними системами (AmoCRM, Bitrix24, 1C) строим интеграцию через API." },
         { name: "Современный AI-стек", desc: "LLM уровня GPT-4o и Claude, RAG (ответы по базе знаний), голосовая цепочка STT → LLM → TTS — технологии, реально работающие в Salomat AI." },
-        { name: "Сначала проверяем на себе", desc: "Мы используем AI в своих продуктах каждый день — RAOS, AI Office, CoreMed. Решение, которое мы вам предлагаем, — не теория, а проверенная внутри практика." },
+        { name: "Сначала проверяем на себе", desc: "Мы используем AI в своих продуктах каждый день — RAOS и CoreMed. Решение, которое мы вам предлагаем, — не теория, а проверенная внутри практика." },
       ],
     },
     pricing: {
@@ -218,7 +218,7 @@ export const CONTENT: ServicePageContent = {
         { title: "Многоканальное сложное решение", price: "Индивидуально", desc: "Telegram + Instagram + WhatsApp + сайт, несколько интеграций, голосовой слой или особые сценарии — срок и цена определяются по ТЗ." },
       ],
       note:
-        "Точная цена даётся письменно после бесплатной консультации и ТЗ. Оплата: 30% предоплата, остальное поэтапно, по результату. Если интересно готовое SaaS-решение — тарифы ИИ-офиса (AI Office) отдельно (Pro — $200/мес (≈ 2.5 млн сум/мес), на странице /tariflar).",
+        "Точная цена даётся письменно после бесплатной консультации и ТЗ. Оплата: 30% предоплата, остальное поэтапно, по результату.",
     },
     cta: {
       badge: "Время начать",
@@ -327,9 +327,9 @@ export const CONTENT: ServicePageContent = {
         { name: "A chatbot that truly speaks Uzbek", desc: "Many off-the-shelf platforms understand Uzbek only superficially. We tune Latin/Cyrillic script, conversational style and industry terms separately — your customers write to the bot comfortably in their own language." },
         { name: "Official IT Park resident", desc: "Tezcode is a resident of IT Park Uzbekistan (certificate No. 6237). We work under an official contract, in Uzbekistan's jurisdiction, with documented obligations." },
         { name: "In-house team of 14+", desc: "Not a freelancer or a single developer — a permanent team in Tashkent. Support and further development continue after the project is delivered." },
-        { name: "Our own POS & CRM systems", desc: "RAOS (POS), AI Office and CoreMed are our own products. The chatbot connects to them natively; with external systems (AmoCRM, Bitrix24, 1C) we build API integrations." },
+        { name: "Our own POS & CRM systems", desc: "RAOS (POS) and CoreMed are our own products. The chatbot connects to them natively; with external systems (AmoCRM, Bitrix24, 1C) we build API integrations." },
         { name: "Modern AI stack", desc: "GPT-4o and Claude-class LLMs, RAG (knowledge-base answers), and an STT → LLM → TTS voice chain — technologies actually running in Salomat AI." },
-        { name: "Tested on ourselves first", desc: "We use AI in our own products every day — RAOS, AI Office, CoreMed. What we offer you is not theory but practice proven in-house." },
+        { name: "Tested on ourselves first", desc: "We use AI in our own products every day — RAOS and CoreMed. What we offer you is not theory but practice proven in-house." },
       ],
     },
     pricing: {
@@ -344,7 +344,7 @@ export const CONTENT: ServicePageContent = {
         { title: "Multichannel complex solution", price: "Custom", desc: "Telegram + Instagram + WhatsApp + website, several integrations, a voice layer or special scenarios — timeline and price are set by the spec." },
       ],
       note:
-        "The exact price comes in a written proposal after the free consultation and spec. Payment: 30% upfront, the rest step by step, based on results. If you'd rather have a ready SaaS product, AI Office plans are separate (Pro — $200/mo, see /tariflar).",
+        "The exact price comes in a written proposal after the free consultation and spec. Payment: 30% upfront, the rest step by step, based on results.",
     },
     cta: {
       badge: "Time to start",
@@ -451,9 +451,9 @@ export const CONTENT: ServicePageContent = {
         { name: "شات بوت يتقن الأوزبكية فعلًا", desc: "منصات جاهزة كثيرة تفهم الأوزبكية سطحيًا. نضبط اللاتينية/السيريلية وأسلوب الحديث والمصطلحات المهنية خصيصًا — يكتب عميلك للبوت بلغته بحرية." },
         { name: "مقيم رسمي في IT Park", desc: "Tezcode مقيم في IT Park Uzbekistan (شهادة رقم 6237). نعمل بعقد رسمي، ضمن قوانين أوزبكستان، وبالتزامات موثقة." },
         { name: "فريق داخلي من 19 شخصًا", desc: "لسنا مستقلًا أو مطورًا واحدًا — فريق دائم في طشقند. يستمر الدعم والتطوير بعد تسليم المشروع." },
-        { name: "أنظمة POS وCRM خاصة بنا", desc: "RAOS (POS) وAI Office وCoreMed منتجاتنا الخاصة. يتصل الشات بوت بها اتصالًا أصليًا؛ ومع الأنظمة الخارجية (AmoCRM وBitrix24 و1C) نبني تكاملًا عبر API." },
+        { name: "أنظمة POS وCRM خاصة بنا", desc: "RAOS (POS) وCoreMed منتجاتنا الخاصة. يتصل الشات بوت بها اتصالًا أصليًا؛ ومع الأنظمة الخارجية (AmoCRM وBitrix24 و1C) نبني تكاملًا عبر API." },
         { name: "حزمة AI حديثة", desc: "نماذج بمستوى GPT-4o وClaude، وRAG (إجابات من قاعدة المعرفة)، وسلسلة صوتية STT → LLM → TTS — تقنيات تعمل فعلًا في Salomat AI." },
-        { name: "نجرّب على أنفسنا أولًا", desc: "نستخدم AI في منتجاتنا يوميًا — RAOS وAI Office وCoreMed. ما نقدمه لك ليس نظرية بل ممارسة مثبتة داخليًا." },
+        { name: "نجرّب على أنفسنا أولًا", desc: "نستخدم AI في منتجاتنا يوميًا — RAOS وCoreMed. ما نقدمه لك ليس نظرية بل ممارسة مثبتة داخليًا." },
       ],
     },
     pricing: {
@@ -468,7 +468,7 @@ export const CONTENT: ServicePageContent = {
         { title: "حل معقد متعدد القنوات", price: "حسب الطلب", desc: "Telegram + Instagram + WhatsApp + الموقع، عدة تكاملات، طبقة صوتية أو سيناريوهات خاصة — يُحدَّد الموعد والسعر حسب المواصفات." },
       ],
       note:
-        "يُعطى السعر الدقيق كتابةً بعد الاستشارة المجانية والمواصفات. الدفع: 30% مقدمًا والباقي على مراحل حسب النتائج. إن أردت حلًا SaaS جاهزًا فتعرفة AI Office منفصلة (Pro — 200$ شهريًا، صفحة ‎/tariflar)." ,
+        "يُعطى السعر الدقيق كتابةً بعد الاستشارة المجانية والمواصفات. الدفع: 30% مقدمًا والباقي على مراحل حسب النتائج." ,
     },
     cta: {
       badge: "وقت البدء",
@@ -576,9 +576,9 @@ export const CONTENT: ServicePageContent = {
         { name: "Справжній чат-бот узбецькою", desc: "Багато готових платформ розуміють узбецьку поверхово. Ми окремо налаштовуємо латиницю/кирилицю, розмовний стиль і галузеві терміни — ваш клієнт вільно пише боту своєю мовою." },
         { name: "Офіційний резидент IT Park", desc: "Tezcode — резидент IT Park Uzbekistan (свідоцтво №6237). Працюємо за офіційним договором, у юрисдикції Узбекистану, із задокументованими зобов'язаннями." },
         { name: "In-house команда з 19 осіб", desc: "Не фрилансер і не один розробник — постійна команда в Ташкенті. Після здачі проєкту підтримка та розвиток тривають." },
-        { name: "Власні POS і CRM системи", desc: "RAOS (POS), AI Office і CoreMed — наші власні продукти. Чат-бот підключається до них нативно; із зовнішніми системами (AmoCRM, Bitrix24, 1C) будуємо інтеграцію через API." },
+        { name: "Власні POS і CRM системи", desc: "RAOS (POS) і CoreMed — наші власні продукти. Чат-бот підключається до них нативно; із зовнішніми системами (AmoCRM, Bitrix24, 1C) будуємо інтеграцію через API." },
         { name: "Сучасний AI-стек", desc: "LLM рівня GPT-4o і Claude, RAG (відповіді за базою знань), голосовий ланцюжок STT → LLM → TTS — технології, що реально працюють у Salomat AI." },
-        { name: "Спочатку перевіряємо на собі", desc: "Ми використовуємо AI у своїх продуктах щодня — RAOS, AI Office, CoreMed. Рішення, яке пропонуємо вам, — не теорія, а перевірена всередині практика." },
+        { name: "Спочатку перевіряємо на собі", desc: "Ми використовуємо AI у своїх продуктах щодня — RAOS і CoreMed. Рішення, яке пропонуємо вам, — не теорія, а перевірена всередині практика." },
       ],
     },
     pricing: {
@@ -593,7 +593,7 @@ export const CONTENT: ServicePageContent = {
         { title: "Багатоканальне складне рішення", price: "Індивідуально", desc: "Telegram + Instagram + WhatsApp + сайт, кілька інтеграцій, голосовий шар або особливі сценарії — термін і ціна визначаються за ТЗ." },
       ],
       note:
-        "Точна ціна дається письмово після безкоштовної консультації та ТЗ. Оплата: 30% передоплата, решта поетапно, за результатом. Якщо цікавить готове SaaS-рішення — тарифи AI Office окремо (Pro — $200/міс, сторінка /tariflar).",
+        "Точна ціна дається письмово після безкоштовної консультації та ТЗ. Оплата: 30% передоплата, решта поетапно, за результатом.",
     },
     cta: {
       badge: "Час починати",

@@ -19,7 +19,7 @@ export const TERMS_CONTENT: LegalContent = {
       {
         title: "2. Xizmatlar",
         body: [
-          "Tezcode mahsulotlari ishlab chiqaradi: RAOS (POS), AI Office (biznes AI), CoreMed (sog'liq), va boshqalar.",
+          "Tezcode mahsulotlari ishlab chiqaradi: RAOS (POS), CoreMed (sog'liq) va boshqalar.",
           "Har mahsulot o'z foydalanish shartlariga ega bo'lishi mumkin — sotib olganda alohida ko'rsatiladi.",
         ],
       },
@@ -126,7 +126,7 @@ export const TERMS_CONTENT: LegalContent = {
       {
         title: "2. Услуги",
         body: [
-          "Tezcode разрабатывает продукты: RAOS (POS), AI Office (бизнес-ИИ), CoreMed (медицина) и другие.",
+          "Tezcode разрабатывает продукты: RAOS (POS), CoreMed (медицина) и другие.",
           "Каждый продукт может иметь собственные условия использования — они указываются отдельно при покупке.",
         ],
       },
@@ -233,7 +233,7 @@ export const TERMS_CONTENT: LegalContent = {
       {
         title: "2. Services",
         body: [
-          "Tezcode builds products: RAOS (POS), AI Office (business AI), CoreMed (healthcare), and others.",
+          "Tezcode builds products: RAOS (POS), CoreMed (healthcare), and others.",
           "Each product may have its own terms of use — shown separately at the point of purchase.",
         ],
       },
@@ -340,7 +340,7 @@ export const TERMS_CONTENT: LegalContent = {
       {
         title: "2. Послуги",
         body: [
-          "Tezcode розробляє продукти: RAOS (POS), AI Office (бізнес-ШІ), CoreMed (медицина) та інші.",
+          "Tezcode розробляє продукти: RAOS (POS), CoreMed (медицина) та інші.",
           "Кожен продукт може мати власні умови використання — вони вказуються окремо під час покупки.",
         ],
       },
@@ -447,7 +447,7 @@ export const TERMS_CONTENT: LegalContent = {
       {
         title: "2. الخدمات",
         body: [
-          "تطوّر Tezcode منتجات مثل: RAOS (نظام نقاط البيع)، وAI Office (الذكاء الاصطناعي للأعمال)، وCoreMed (الرعاية الصحية)، وغيرها.",
+          "تطوّر Tezcode منتجات مثل: RAOS (نظام نقاط البيع)، وCoreMed (الرعاية الصحية)، وغيرها.",
           "قد يكون لكل منتج شروط استخدام خاصة به — تُعرض بشكل منفصل عند الشراء.",
         ],
       },
