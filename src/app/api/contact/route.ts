@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { contactSchema, isHoneypotFilled } from "@/lib/contact";
 import { sendTelegramNotification } from "@/lib/telegram";
+import { forwardToHamshirago } from "@/lib/hamshirago-leads";
 import { getClientIp, rateLimit } from "@/lib/rate-limit";
 
 const RATE_LIMIT_MAX = 5;
@@ -60,6 +61,8 @@ export async function POST(req: NextRequest) {
         { status: 502 },
       );
     }
+
+    await forwardToHamshirago(data).catch(() => {});
 
     return NextResponse.json(
       { success: true },
