@@ -156,8 +156,6 @@ function ProductCardLarge({
   const landing = LANDING_MAP[product];
   const isExternal = !landing && url.startsWith("http");
 
-  // RAOS gets a separate "UZ RAOS" backlink to raos.uz in the footer strip
-  const isRaos = product === "raos";
 
   return (
     <div className="group tc-card tc-card-hover p-8 h-full flex flex-col">
@@ -203,17 +201,6 @@ function ProductCardLarge({
       {/* Footer strip — CTA + optional backlink */}
       <div className="pt-4 border-t border-[var(--tc-border)] flex items-center justify-end text-xs">
         <div className="flex items-center gap-4">
-          {/* UZ RAOS backlink for raos product */}
-          {isRaos && (
-            <a
-              href="https://raos.uz"
-              target="_blank"
-              rel="noopener"
-              className="text-sm text-[var(--tc-text-secondary)] hover:text-[var(--tc-text-primary)] tc-link-underline transition-colors"
-            >
-              UZ RAOS
-            </a>
-          )}
           <CardLink
             landing={landing}
             url={url}

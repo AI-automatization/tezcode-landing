@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { Package, Wrench, Bot, Users, FlaskConical, GraduationCap, ArrowRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Link } from "@/i18n/routing";
-import { Reveal } from "@/components/motion/Reveal";
+import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
 type DivisionKey = "systems" | "custom" | "ai" | "teams" | "labs" | "academy";
 
@@ -40,7 +40,7 @@ export function ProductsGrid() {
   ];
 
   return (
-    <section id="divisions" className="py-20 sm:py-28 bg-[var(--tc-ink)] overflow-hidden">
+    <section id="divisions" className="py-20 sm:py-28 bg-[var(--tc-ink)]">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal className="text-center mb-12">
           <span className="tc-chip">Yo&apos;nalishlar</span>
@@ -56,34 +56,23 @@ export function ProductsGrid() {
         </Reveal>
       </div>
 
-      {/* Slow auto-scrolling swiper — pauses on hover, cards stay clickable */}
-      <Reveal>
-        <div className="relative">
-          {/* edge fades */}
-          <div
-            aria-hidden
-            className="absolute inset-y-0 start-0 w-16 sm:w-32 z-10 pointer-events-none"
-            style={{ background: "linear-gradient(to right, var(--tc-ink), transparent)" }}
-          />
-          <div
-            aria-hidden
-            className="absolute inset-y-0 end-0 w-16 sm:w-32 z-10 pointer-events-none"
-            style={{ background: "linear-gradient(to left, var(--tc-ink), transparent)" }}
-          />
-
-          <div className="tc-marquee-x flex w-max items-stretch gap-5 py-2">
-            {[...divisions, ...divisions].map((d, i) => (
-              <DivisionCard key={`${d}-${i}`} division={d} t={t} />
-            ))}
-          </div>
-        </div>
-      </Reveal>
+      {/* Static 3×2 grid — every direction readable at a glance (the old
+          auto-scrolling swiper moved text while people were reading it). */}
+      <div className="max-w-7xl mx-auto px-6">
+        <RevealStagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" stagger={0.08}>
+          {divisions.map((d) => (
+            <RevealItem key={d} className="h-full">
+              <DivisionCard division={d} t={t} />
+            </RevealItem>
+          ))}
+        </RevealStagger>
+      </div>
     </section>
   );
 }
 
-// Compact swiper card — name, tagline and a clamped description only;
-// the full details live on the division's own page ("Batafsil").
+// Grid card — name, tagline and the full short description;
+// the details live on the division's own page ("Batafsil").
 function DivisionCard({
   division,
   t,
@@ -102,7 +91,7 @@ function DivisionCard({
   return (
     <Link
       href={href}
-      className="group tc-card tc-card-hover w-[260px] sm:w-[300px] shrink-0 p-5 flex flex-col"
+      className="group tc-card tc-card-hover h-full p-6 flex flex-col"
     >
       <div className="flex items-center gap-3 mb-4">
         <div className="w-10 h-10 shrink-0 rounded-xl bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] flex items-center justify-center">
@@ -110,16 +99,16 @@ function DivisionCard({
         </div>
         <div className="min-w-0">
           <h3
-            className="text-base font-700 text-[var(--tc-text-primary)] tracking-tight truncate"
+            className="text-lg font-700 text-[var(--tc-text-primary)] tracking-tight"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {name}
           </h3>
-          <p className="text-xs text-[var(--tc-text-muted)] truncate">{tagline}</p>
+          <p className="text-xs text-[var(--tc-text-muted)]">{tagline}</p>
         </div>
       </div>
 
-      <p className="text-sm text-[var(--tc-text-secondary)] leading-relaxed line-clamp-2 mb-4 flex-1">
+      <p className="text-sm text-[var(--tc-text-secondary)] leading-relaxed mb-5 flex-1">
         {description}
       </p>
 

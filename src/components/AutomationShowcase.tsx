@@ -1,20 +1,19 @@
 "use client";
 
-import Image from "next/image";
 import { useLocale } from "next-intl";
-import { useRef, useEffect, useState } from "react";
-import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/routing";
-import { Reveal } from "@/components/motion/Reveal";
+import { SolutionVisual, type SolutionScene } from "@/components/solutions/SolutionVisual";
+import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 
 // Structural data (same across languages); text comes from CONTENT per locale.
+// Each card shows an animated mini-scene instead of a stock photo.
 const META = [
-  { img: "/showcase/ai-agent.jpeg", badge: "AI Agent", href: "/ai-agent" },
-  { img: "/showcase/biznes-avtomatlashtirish.jpeg", badge: "AI avtomatizatsiya", href: "/ai-avtomatizatsiya" },
-  { img: "/showcase/raos-dokon.jpeg", badge: "RAOS", href: "/pos-tizimi" },
-  { img: "/showcase/ai-chatbot.jpeg", badge: "24/7", href: "/ai-chatbot" },
-  { img: "/showcase/klinika-coremed.jpeg", badge: "CoreMed", href: "/klinika-crm" },
-  { img: "/showcase/ai-video-analitika.jpeg", badge: "AI Kamera", href: "/ai-video-analitika" },
+  { scene: "camera" as SolutionScene, href: "/ai-video-analitika" },
+  { scene: "hr" as SolutionScene, href: "/ai-agent" },
+  { scene: "sales" as SolutionScene, href: "/ai-agent" },
+  { scene: "report" as SolutionScene, href: "/ai-avtomatizatsiya" },
+  { scene: "inventory" as SolutionScene, href: "/ai-avtomatizatsiya" },
+  { scene: "marketing" as SolutionScene, href: "/ai-avtomatizatsiya" },
 ] as const;
 
 type Content = {
@@ -32,12 +31,12 @@ const CONTENT: Record<string, Content> = {
     subtitle: "AI bilan biznesingizning har bir jarayonini avtomatlashtiramiz.",
     cta: "Batafsil",
     cards: [
-      { title: "AI agent yaratish", subtitle: "Biznesingiz uchun aqlli AI agent" },
-      { title: "Biznesni avtomatlashtirish", subtitle: "Jarayonlarni AI bilan avtomatlashtiramiz" },
-      { title: "Savdo va do'kon", subtitle: "Kassa, ombor va sotuv — bir tizimda" },
-      { title: "AI Chatbot", subtitle: "Mijozlarga 24/7 avtomatik javob" },
-      { title: "Klinika va salomatlik", subtitle: "Bemor qabuli va navbatni avtomatlashtirish" },
-      { title: "AI video analitika", subtitle: "Kameralarni AI bilan avtomatlashtirish" },
+      { title: "AI kamera", subtitle: "Tashrif, navbat va xodimlarni kameradan kuzatadi" },
+      { title: "AI HR", subtitle: "Arizalarni saralaydi va nomzodni suhbatga yozadi" },
+      { title: "AI sotuv menejeri", subtitle: "Mijozga javob beradi va lidni CRM'ga yozadi" },
+      { title: "AI hisobotchi", subtitle: "Kunlik hisobotni o'zi tayyorlab Telegram'ga yuboradi" },
+      { title: "AI ombor nazoratchisi", subtitle: "Qoldiqni kuzatadi va tugayotgan mahsulotni ogohlantiradi" },
+      { title: "AI marketing", subtitle: "Post, reklama matni va rasmni tayyorlab, vaqtida joylaydi" },
     ],
   },
   ru: {
@@ -46,12 +45,12 @@ const CONTENT: Record<string, Content> = {
     subtitle: "Автоматизируем каждый процесс вашего бизнеса с помощью ИИ.",
     cta: "Подробнее",
     cards: [
-      { title: "Создание ИИ-агента", subtitle: "Умный ИИ-агент для вашего бизнеса" },
-      { title: "Автоматизация бизнеса", subtitle: "Автоматизируем процессы с помощью ИИ" },
-      { title: "Продажи и магазин", subtitle: "Касса, склад и продажи — в одной системе" },
-      { title: "ИИ-чат-бот", subtitle: "Ответы клиентам 24/7" },
-      { title: "Клиника и здоровье", subtitle: "Запись пациентов и автоматизация очереди" },
-      { title: "ИИ-видеоаналитика", subtitle: "Автоматизация камер с помощью ИИ" },
+      { title: "ИИ-камера", subtitle: "Следит за посещаемостью, очередью и сотрудниками по камерам" },
+      { title: "ИИ-HR", subtitle: "Отбирает отклики и записывает кандидатов на собеседование" },
+      { title: "ИИ-менеджер продаж", subtitle: "Отвечает клиентам и заносит лиды в CRM" },
+      { title: "ИИ-отчёты", subtitle: "Сам готовит ежедневный отчёт и отправляет в Telegram" },
+      { title: "ИИ-контроль склада", subtitle: "Следит за остатками и предупреждает о нехватке товара" },
+      { title: "ИИ-маркетинг", subtitle: "Готовит посты, рекламные тексты и визуалы и публикует по графику" },
     ],
   },
   en: {
@@ -60,12 +59,12 @@ const CONTENT: Record<string, Content> = {
     subtitle: "We automate every process of your business with AI.",
     cta: "Learn more",
     cards: [
-      { title: "Build an AI agent", subtitle: "A smart AI agent for your business" },
-      { title: "Business automation", subtitle: "Automate your processes with AI" },
-      { title: "Sales & retail", subtitle: "POS, inventory and sales in one system" },
-      { title: "AI Chatbot", subtitle: "24/7 automatic replies to customers" },
-      { title: "Clinic & health", subtitle: "Patient booking and queue automation" },
-      { title: "AI video analytics", subtitle: "Make your cameras smart with AI" },
+      { title: "AI camera", subtitle: "Tracks visits, queues and staff from your cameras" },
+      { title: "AI HR", subtitle: "Screens applications and books candidates for interviews" },
+      { title: "AI sales manager", subtitle: "Answers customers and logs leads in your CRM" },
+      { title: "AI reporting", subtitle: "Builds the daily report and sends it to Telegram" },
+      { title: "AI inventory control", subtitle: "Watches stock levels and warns before items run out" },
+      { title: "AI marketing", subtitle: "Drafts posts, ad copy and visuals and publishes them on schedule" },
     ],
   },
   ar: {
@@ -74,12 +73,12 @@ const CONTENT: Record<string, Content> = {
     subtitle: "نُؤتمت كل عملية في عملك باستخدام الذكاء الاصطناعي.",
     cta: "اعرف المزيد",
     cards: [
-      { title: "إنشاء وكيل ذكاء اصطناعي", subtitle: "وكيل ذكاء اصطناعي ذكي لعملك" },
-      { title: "أتمتة الأعمال", subtitle: "نُؤتمت عملياتك بالذكاء الاصطناعي" },
-      { title: "المبيعات والتجزئة", subtitle: "نقاط البيع والمخزون والمبيعات في نظام واحد" },
-      { title: "روبوت دردشة بالذكاء الاصطناعي", subtitle: "ردود تلقائية للعملاء على مدار الساعة" },
-      { title: "العيادة والصحة", subtitle: "حجز المرضى وأتمتة الطابور" },
-      { title: "تحليلات الفيديو بالذكاء الاصطناعي", subtitle: "جعل الكاميرات ذكية بالذكاء الاصطناعي" },
+      { title: "كاميرا بالذكاء الاصطناعي", subtitle: "تتابع الزيارات والطوابير والموظفين عبر الكاميرات" },
+      { title: "موارد بشرية بالذكاء الاصطناعي", subtitle: "تفرز الطلبات وتحجز المقابلات للمرشحين" },
+      { title: "مدير مبيعات بالذكاء الاصطناعي", subtitle: "يرد على العملاء ويسجل العملاء المحتملين في CRM" },
+      { title: "تقارير بالذكاء الاصطناعي", subtitle: "يُعد التقرير اليومي ويرسله إلى تيليغرام" },
+      { title: "مراقبة المخزون بالذكاء الاصطناعي", subtitle: "يراقب المخزون وينبه قبل نفاد المنتجات" },
+      { title: "تسويق بالذكاء الاصطناعي", subtitle: "يُعد المنشورات ونصوص الإعلانات والصور وينشرها في موعدها" },
     ],
   },
   uk: {
@@ -88,12 +87,12 @@ const CONTENT: Record<string, Content> = {
     subtitle: "Автоматизуємо кожен процес вашого бізнесу за допомогою AI.",
     cta: "Детальніше",
     cards: [
-      { title: "Створення AI-агента", subtitle: "Розумний AI-агент для вашого бізнесу" },
-      { title: "Автоматизація бізнесу", subtitle: "Автоматизуємо процеси за допомогою AI" },
-      { title: "Продажі та магазин", subtitle: "Каса, склад і продажі — в одній системі" },
-      { title: "AI-чат-бот", subtitle: "Відповіді клієнтам 24/7" },
-      { title: "Клініка та здоров'я", subtitle: "Запис пацієнтів та автоматизація черги" },
-      { title: "AI-відеоаналітика", subtitle: "Автоматизація камер за допомогою AI" },
+      { title: "AI-камера", subtitle: "Стежить за відвідуваністю, чергою та працівниками з камер" },
+      { title: "AI-HR", subtitle: "Відбирає відгуки та записує кандидатів на співбесіду" },
+      { title: "AI-менеджер продажів", subtitle: "Відповідає клієнтам і заносить ліди в CRM" },
+      { title: "AI-звіти", subtitle: "Сам готує щоденний звіт і надсилає в Telegram" },
+      { title: "AI-контроль складу", subtitle: "Стежить за залишками і попереджає про нестачу товару" },
+      { title: "AI-маркетинг", subtitle: "Готує пости, рекламні тексти й візуали та публікує за графіком" },
     ],
   },
 };
@@ -102,31 +101,10 @@ export function AutomationShowcase() {
   const locale = useLocale();
   const c = CONTENT[locale] ?? CONTENT.en;
 
-  const sectionRef = useRef<HTMLElement>(null);
-  const [inView, setInView] = useState(false);
-
-  // The marquee auto-scrolls right-to-left, but only while the section is on
-  // screen (IntersectionObserver toggles the animation). CSS (.tc-marquee-x)
-  // handles hover-pause and reduced-motion.
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return;
-    const io = new IntersectionObserver(
-      ([entry]) => setInView(entry.isIntersecting),
-      { threshold: 0.15 },
-    );
-    io.observe(section);
-    return () => io.disconnect();
-  }, []);
-
-  // Duplicate the cards once so the marquee can loop seamlessly (translateX -50%).
-  const loop = [...META, ...META];
-
   return (
     <section
-      ref={sectionRef}
       id="solutions"
-      className="scroll-mt-24 py-20 sm:py-28 bg-[var(--tc-ink)] overflow-hidden"
+      className="scroll-mt-24 py-20 sm:py-28 bg-[var(--tc-ink)]"
     >
       <div className="max-w-7xl mx-auto px-6">
         <Reveal className="mb-14 max-w-2xl">
@@ -141,56 +119,32 @@ export function AutomationShowcase() {
         </Reveal>
       </div>
 
-      {/* Continuous right-to-left marquee (cards duplicated for a seamless
-          loop). Pauses when off-screen or on hover. */}
-      <div className="overflow-hidden">
-        <div
-          className={`flex w-max gap-6 px-6 tc-marquee-x ${
-            inView ? "" : "[animation-play-state:paused]"
-          }`}
-        >
-          {loop.map((m, i) => {
-            const meta = c.cards[i % META.length];
-            const dup = i >= META.length;
+      {/* Static 3×2 grid in the site's card style (the old auto-scrolling
+          marquee moved text while people were reading it). */}
+      <div className="max-w-7xl mx-auto px-6">
+        <RevealStagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" stagger={0.08}>
+          {META.map((m, i) => {
+            const card = c.cards[i];
             return (
-              <Link
-                key={i}
-                href={m.href}
-                aria-hidden={dup}
-                tabIndex={dup ? -1 : undefined}
-                className="group relative block aspect-square w-[280px] sm:w-[320px] lg:w-[340px] shrink-0 overflow-hidden rounded-[var(--tc-radius-lg)] border border-[var(--tc-border)] shadow-[var(--tc-shadow-card)] hover:shadow-[var(--tc-shadow-card-hover)] transition-shadow duration-300"
-              >
-                <Image
-                  src={m.img}
-                  alt={meta.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 340px"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-
-                <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
-
-                <div className="absolute bottom-0 inset-x-0 z-20 p-5">
-                  <h3
-                    className="text-2xl font-700 text-white mb-1 tracking-tight"
-                    style={{ fontFamily: "var(--font-display)" }}
-                  >
-                    {meta.title}
-                  </h3>
-                  <div className="flex items-end justify-between gap-2 mt-2">
-                    <p className="text-white/75 text-xs leading-snug line-clamp-2 flex-1">
-                      {meta.subtitle}
-                    </p>
-                    <span className="inline-flex items-center gap-1 text-white/90 text-sm font-600 shrink-0">
-                      {c.cta}
-                      <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
-                    </span>
+              <RevealItem key={m.scene} className="h-full">
+                <Link href={m.href} className="group tc-card tc-card-hover h-full flex flex-col overflow-hidden">
+                  <div className="relative aspect-[16/10] overflow-hidden border-b border-[var(--tc-border)]">
+                    <SolutionVisual scene={m.scene} />
                   </div>
-                </div>
-              </Link>
+                  <div className="p-5 flex flex-col flex-1">
+                    <h3
+                      className="text-lg font-700 text-[var(--tc-text-primary)] tracking-tight"
+                      style={{ fontFamily: "var(--font-display)" }}
+                    >
+                      {card.title}
+                    </h3>
+                    <p className="mt-1 text-sm text-[var(--tc-text-secondary)] leading-relaxed flex-1">{card.subtitle}</p>
+                  </div>
+                </Link>
+              </RevealItem>
             );
           })}
-        </div>
+        </RevealStagger>
       </div>
     </section>
   );

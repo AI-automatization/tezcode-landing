@@ -715,10 +715,9 @@ export function getArticleSchema(input: {
   datePublished: string; // ISO date, e.g. "2026-06-07"
   dateModified?: string;
   image?: string;
-  // Defaults to ARTICLE_AUTHOR; pass another team member when they wrote it.
+  // Omit to publish as the company; pass a team member only when they sign it.
   author?: { name: string; path: string; jobTitle?: string };
 }) {
-  const author = input.author ?? ARTICLE_AUTHOR;
   const url =
     input.locale === "uz"
       ? `${BASE_URL}${input.path}`
@@ -734,14 +733,18 @@ export function getArticleSchema(input: {
     image: input.image ?? getOgImageUrl(),
     datePublished: input.datePublished,
     dateModified: input.dateModified ?? input.datePublished,
-    author: {
-      "@type": "Person",
-      "@id": `${BASE_URL}${author.path}#person`,
-      name: author.name,
-      url: `${BASE_URL}${author.path}`,
-      ...(author.jobTitle ? { jobTitle: author.jobTitle } : {}),
-      worksFor: { "@type": "Organization", name: SITE_NAME, url: BASE_URL },
-    },
+    // Articles are published by the company, not a named person (Sardor,
+    // 2026-10-23). Pass `author` explicitly only when a team member signs one.
+    author: input.author
+      ? {
+          "@type": "Person",
+          "@id": `${BASE_URL}${input.author.path}#person`,
+          name: input.author.name,
+          url: `${BASE_URL}${input.author.path}`,
+          ...(input.author.jobTitle ? { jobTitle: input.author.jobTitle } : {}),
+          worksFor: { "@type": "Organization", name: SITE_NAME, url: BASE_URL },
+        }
+      : { "@type": "Organization", "@id": `${BASE_URL}#organization`, name: SITE_NAME, url: BASE_URL },
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,

@@ -4,7 +4,7 @@ import { useLocale } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
-import { ARTICLES } from "@/app/[locale]/blog/articles";
+import { ARTICLES, categoryLabel } from "@/app/[locale]/blog/articles";
 import type { ArticleLang } from "@/components/blog/types";
 
 // Homepage "latest news" strip — surfaces the most recent blog posts (news,
@@ -81,7 +81,7 @@ export function LatestNews() {
                 >
                   <div className="mb-3 flex items-center justify-between gap-3">
                     <span className="inline-flex rounded-full bg-[var(--tc-blue-dim)] px-2.5 py-1 text-[10px] font-600 uppercase tracking-widest text-[var(--tc-blue-text)]">
-                      {a.category}
+                      {categoryLabel(a.category, locale)}
                     </span>
                     <span className="text-xs text-[var(--tc-text-muted)]">{a.datePublished}</span>
                   </div>

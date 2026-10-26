@@ -9,19 +9,8 @@ import { Footer } from "@/components/Footer";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Magnetic } from "@/components/motion/Magnetic";
 import { Link } from "@/i18n/routing";
-import Image from "next/image";
-import { ARTICLE_AUTHOR } from "@/lib/seo";
 import type { ArticleContent, ArticleCopy, ArticleLang } from "./types";
 
-// Visible byline label. The name itself is never translated — one spelling
-// everywhere is what lets search engines tie the articles to one person.
-const AUTHOR_LABEL: Record<ArticleLang, string> = {
-  uz: "Muallif",
-  ru: "Автор",
-  en: "Author",
-  ar: "الكاتب",
-  uk: "Автор",
-};
 
 // Renderer for a single Tezcode blog / GEO article. Same LIGHT premium design
 // language as the home page (data-theme="light" scope, tc-card surfaces, one
@@ -49,28 +38,7 @@ function ArticleHero({ copy, locale }: { copy: ArticleCopy; locale: ArticleLang 
           <p className="text-lg md:text-xl text-[var(--tc-text-secondary)] leading-relaxed mb-6">
             {copy.hero.subtitle}
           </p>
-          {/* Byline — links to the author's profile so the article, the person
-              and the Person schema on that page resolve to one entity. */}
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-[var(--tc-text-muted)]">
-            <Link
-              href={ARTICLE_AUTHOR.path}
-              className="group flex items-center gap-2 text-[var(--tc-text-secondary)] transition-colors hover:text-[var(--tc-blue-text)]"
-            >
-              <Image
-                src={ARTICLE_AUTHOR.image}
-                alt={ARTICLE_AUTHOR.name}
-                width={28}
-                height={28}
-                className="h-7 w-7 rounded-full object-cover"
-              />
-              <span>
-                {AUTHOR_LABEL[locale] ?? AUTHOR_LABEL.uz}:{" "}
-                <span className="font-500 group-hover:underline">
-                  {ARTICLE_AUTHOR.name}
-                </span>
-              </span>
-            </Link>
-            <span className="w-1 h-1 rounded-full bg-[var(--tc-text-muted)]" />
             <span>{copy.hero.dateLabel}</span>
             <span className="w-1 h-1 rounded-full bg-[var(--tc-text-muted)]" />
             <span>{copy.hero.readTime}</span>

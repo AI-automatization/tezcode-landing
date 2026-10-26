@@ -3,7 +3,7 @@
 import { useLocale } from "next-intl";
 import { useRef, useState, useCallback, useEffect } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { Reveal } from "@/components/motion/Reveal";
 
@@ -394,10 +394,6 @@ function OpenAiNetworkCard({ locale, more, badge }: { locale: Lang; more: string
           </div>
         </div>
 
-        <span className="relative mt-auto inline-flex items-center gap-1.5 pt-3 text-sm font-500 text-[var(--tc-blue-text)]">
-          {more}
-          <ArrowRight aria-hidden="true" className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
-        </span>
       </div>
     </a>
   );
@@ -467,10 +463,6 @@ function ItParkCard({
             ))}
           </div>
         </div>
-        <span className="relative mt-auto inline-flex items-center gap-1.5 pt-3 text-sm font-500 text-[var(--tc-success)]">
-          {more}
-          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
-        </span>
       </div>
     </Link>
   );
@@ -556,10 +548,6 @@ function PartnerCard({
           </div>
         </div>
 
-        <span className="relative mt-auto inline-flex items-center gap-1.5 pt-3 text-sm font-500 text-[var(--tc-blue-text)]">
-          {more}
-          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
-        </span>
       </div>
     </Link>
   );

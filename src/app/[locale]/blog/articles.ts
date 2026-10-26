@@ -586,3 +586,39 @@ export function localizeArticleMeta(
   if (!listed) return fallback;
   return { title: `${listed.title} | Tezcode`, description: listed.excerpt };
 }
+
+// Category labels are authored in Uzbek ("AI Agent / Qo'llanma"); this maps
+// each part to the reader's language so ru/en/ar/uk pages don't show Uzbek.
+const CATEGORY_TERMS: Record<string, Partial<Record<ArticleLang, string>>> = {
+  "Kompaniya": { ru: "Компания", en: "Company", ar: "الشركة", uk: "Компанія" },
+  "Qo'llanma": { ru: "Руководство", en: "Guide", ar: "دليل", uk: "Посібник" },
+  "AI dunyosida": { ru: "Мир ИИ", en: "AI world", ar: "عالم الذكاء الاصطناعي", uk: "Світ AI" },
+  "Yangilik": { ru: "Новость", en: "News", ar: "خبر", uk: "Новина" },
+  "Sun'iy intellekt": { ru: "Искусственный интеллект", en: "Artificial intelligence", ar: "الذكاء الاصطناعي", uk: "Штучний інтелект" },
+  "AI video analitika": { ru: "ИИ-видеоаналитика", en: "AI video analytics", ar: "تحليلات الفيديو بالذكاء الاصطناعي", uk: "AI-відеоаналітика" },
+  "O'zbek tili": { ru: "Узбекский язык", en: "Uzbek language", ar: "اللغة الأوزبكية", uk: "Узбецька мова" },
+  "Sotuv": { ru: "Продажи", en: "Sales", ar: "المبيعات", uk: "Продажі" },
+  "Avtomatizatsiya": { ru: "Автоматизация", en: "Automation", ar: "الأتمتة", uk: "Автоматизація" },
+  "Taqqoslash": { ru: "Сравнение", en: "Comparison", ar: "مقارنة", uk: "Порівняння" },
+  "Integratsiya": { ru: "Интеграция", en: "Integration", ar: "تكامل", uk: "Інтеграція" },
+  "Narxlar": { ru: "Цены", en: "Pricing", ar: "الأسعار", uk: "Ціни" },
+  "Hamkorlik": { ru: "Партнёрство", en: "Partnership", ar: "شراكة", uk: "Партнерство" },
+  "Nazorat": { ru: "Контроль", en: "Monitoring", ar: "المراقبة", uk: "Контроль" },
+  "Klinika": { ru: "Клиника", en: "Clinic", ar: "العيادة", uk: "Клініка" },
+  "Savdo": { ru: "Торговля", en: "Retail", ar: "التجارة", uk: "Торгівля" },
+  "AI Agent": { ru: "ИИ-агент", ar: "وكيل ذكاء اصطناعي", uk: "AI-агент" },
+  "AI chatbot": { ru: "ИИ-чат-бот", ar: "روبوت دردشة", uk: "AI-чат-бот" },
+  "Telegram bot": { ru: "Telegram-бот", ar: "بوت تيليغرام", uk: "Telegram-бот" },
+  "AI": { ru: "ИИ" },
+};
+
+export function categoryLabel(category: string, locale: ArticleLang): string {
+  if (locale === "uz") return category;
+  return category
+    .split("/")
+    .map((part) => {
+      const term = part.trim();
+      return CATEGORY_TERMS[term]?.[locale] ?? term;
+    })
+    .join(" / ");
+}

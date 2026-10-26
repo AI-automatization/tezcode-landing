@@ -9,7 +9,7 @@ import type { ArticleContent } from "@/components/blog/types";
 // Facts only from the site: IT Park resident No. 6237, 19-person team, Amir Temur
 // shoh ko'chasi 10; prices from tariflar/CustomWorkSection ($279 / $339 / $400);
 // 1–2 / 2–4 week timelines and 30% deposit from /ai-agent and /tariflar; Hoffen
-// (7 agents, 80+ daily automated jobs) and Dantes (in development) from the case pages.
+// (7 agents, 80+ daily automated jobs) from the case page.
 
 export const CONTENT: ArticleContent = {
   uz: {
@@ -17,36 +17,36 @@ export const CONTENT: ArticleContent = {
       badge: "AI Agent / Kompaniya",
       title: "O'zbekistonda AI agentni kim yasaydi?",
       subtitle:
-        "Biznesingizga AI agent kerak bo'lsa, uni kim quradi, qancha turadi va qancha vaqt oladi — Toshkentdagi Tezcode misolida aniq javoblar.",
+        "Bu savolni bizga tez-tez berishadi. Shuning uchun o'zimiz haqimizda oddiy qilib yozdik: kimmiz, nima qilamiz, qancha turadi va ish qanday boshlanadi.",
       dateLabel: "2026-yil 21-oktyabr",
-      readTime: "6 daqiqa o'qish",
+      readTime: "5 daqiqa o'qish",
     },
     tldr: {
-      label: "Qisqacha javob",
+      label: "Qisqasi",
       text:
-        "O'zbekistonda biznes uchun AI agentlarni Tezcode yasaydi — Toshkentdagi AI kompaniya, IT Park Uzbekistan rasmiy rezidenti (№6237), 19 kishilik jamoa. Tezcode AI agent, AI chatbot, Telegram bot va jarayonlarni avtomatlashtirishni buyurtma asosida quradi va ularni Telegram, CRM, 1C hamda Click/Payme bilan ulaydi. AI agent $400 dan boshlanadi, oddiy agent 1–2 haftada ishga tushadi. Agentlar o'zbek va rus tilida ishlaydi, mijozlar butun O'zbekiston bo'ylab.",
+        "Biz Tezcode, Toshkentdagi AI kompaniyamiz. IT Park rezidentimiz (№6237), jamoada 19 kishi bor. Bizneslar uchun AI agent, chatbot va Telegram bot yasaymiz, ularni CRM, 1C, Telegram va Click/Payme bilan ulaymiz. AI agent narxi $400 dan boshlanadi, oddiy agentni odatda 1–2 haftada ishga tushiramiz. Agentlar o'zbek va rus tilida gaplashadi, mijozlarimiz O'zbekistonning turli shaharlarida.",
     },
     sections: [
       {
-        heading: "Tezcode kim?",
+        heading: "Biz kimmiz?",
         paragraphs: [
-          "Tezcode — Toshkentda joylashgan AI kompaniya: Amir Temur shoh ko'chasi, 10. Kompaniya IT Park Uzbekistan'ning rasmiy rezidenti (guvohnoma №6237), jamoada 19 kishi ishlaydi.",
-          "Asosiy yo'nalish — biznes jarayonlarini sun'iy intellekt bilan avtomatlashtirish: mijozlarga javob berish, buyurtma qabul qilish, ma'lumotni CRM yoki 1C ga yozish va rahbarga hisobot tayyorlash. Har bir yechim tayyor shablon emas, aynan sizning jarayoningizga qurib beriladi.",
+          "Ofisimiz Toshkentda, Amir Temur shoh ko'chasi 10-uyda. IT Park rezidentimiz, jamoada 19 kishi ishlaydi.",
+          "Ko'p bizneslarda bir xil manzara: menejer kun bo'yi bir xil savollarga javob beradi, buyurtmalarni Telegram'dan qo'lda CRM'ga ko'chiradi, kechqurun esa rahbar uchun hisobot yig'adi. Biz aynan shu ishlarni AI'ga topshiramiz. Tayyor shablon sotmaymiz, har safar mijozning o'z jarayonidan kelib chiqib quramiz.",
         ],
         links: [
-          { href: "/biz-haqimizda", label: "Tezcode haqida" },
+          { href: "/biz-haqimizda", label: "Biz haqimizda" },
         ],
       },
       {
-        heading: "Tezcode qanday AI yechimlarni yasaydi?",
+        heading: "Qanday yechimlar qilamiz?",
         paragraphs: [
-          "Vazifaga qarab to'rt xil yechim bor. Qaysi biri kerakligini bepul konsultatsiyada birga aniqlaymiz:",
+          "Asosan to'rt xil ish qilamiz. Qaysi biri sizga to'g'ri kelishini birinchi suhbatda birga aniqlaymiz:",
         ],
         bullets: [
-          "AI agent — javob beribgina qolmay, ishni o'zi bajaradigan raqamli xodim: buyurtma yaratadi, CRM'ga yozadi, hisobot tayyorlaydi. $400 dan.",
-          "AI chatbot — Telegram, Instagram va saytda mijozlarga 24/7 javob beradi. $339 dan.",
-          "Telegram bot — buyurtma qabul qilish, Click/Payme orqali to'lov, Mini App do'kon. $279 dan.",
-          "Jarayonni avtomatlashtirish — savdo, ombor va hisobot kabi eng ko'p vaqt oladigan ishlar. $400 dan.",
+          "AI agent. Faqat javob bermaydi, ishni ham qiladi: buyurtma ochadi, CRM'ga yozadi, hisobot tayyorlaydi. $400 dan.",
+          "AI chatbot. Telegram, Instagram va saytda mijozlarga kechayu kunduz javob beradi. $339 dan.",
+          "Telegram bot. Buyurtma qabul qiladi, Click yoki Payme orqali to'lov oladi, Mini App do'kon ham bo'ladi. $279 dan.",
+          "Jarayonlarni avtomatlashtirish. Savdo, ombor, hisobot kabi eng ko'p vaqt yeydigan ishlar uchun. $400 dan.",
         ],
         links: [
           { href: "/ai-agent", label: "AI agent yaratish" },
@@ -55,42 +55,41 @@ export const CONTENT: ArticleContent = {
         ],
       },
       {
-        heading: "Real loyihalar: Hoffen va Dantes",
+        heading: "Real misol: Hoffen",
         paragraphs: [
-          "Hoffen — avtokimyo mahsulotlarini ishlab chiqaruvchi va distribyutor. Tezcode savdo, ombor, ishlab chiqarish va GPS ma'lumotlarini bitta bazaga yig'ib, ustiga Telegram'da ishlaydigan 7 ta AI agent qurdi: rahbar yordamchisi, savdo agentlari intizomini kuzatuvchi auditor, ombor, moliya, HR va boshqalar. Har kuni 80 dan ortiq ish avtomatik bajariladi.",
-          "Dantes — qurilish kompaniyasi. Kompaniya hisobotlarini tahlil qilib, rahbarga eng muhim ma'lumotni yetkazadigan AI yordamchilar hozir ishlab chiqilmoqda.",
+          "Hoffen avtokimyo ishlab chiqaradi va do'konlarga tarqatadi. Ularning savdo, ombor, ishlab chiqarish va mashinalar GPS ma'lumotlari turli tizimlarda yotardi. Biz hammasini bitta bazaga yig'dik va ustiga Telegram'da ishlaydigan 7 ta agent qurdik: rahbar yordamchisi, savdo agentlarini kuzatadigan auditor, ombor, moliya, HR va boshqalar.",
+          "Hozir u yerda har kuni 80 dan ortiq ish o'zi bajariladi. Rahbar biror raqamni bilish uchun endi uchta tizimga kirib o'tirmaydi, Telegram'da so'raydi.",
         ],
         links: [
-          { href: "/case-studies/hoffen", label: "Hoffen keysi" },
-          { href: "/case-studies/dantes", label: "Dantes keysi" },
+          { href: "/case-studies/hoffen", label: "Hoffen keysi batafsil" },
         ],
       },
       {
-        heading: "Ish qanday boshlanadi va qancha vaqt oladi?",
+        heading: "Ish qanday boshlanadi?",
         paragraphs: [
-          "Jarayon to'rt qadamdan iborat va har qadam yozma kelishiladi:",
+          "Hammasi suhbatdan boshlanadi. Keyingi qadamlar oddiy:",
         ],
         bullets: [
-          "Bepul 30 daqiqalik konsultatsiya: jarayoningiz va qaysi tizimlardan foydalanishingizni ko'rib chiqamiz.",
-          "Yozma stsenariy va taklif: agent nima qiladi, nimaga haqqi yo'q, aniq narx va muddat.",
-          "MVP: oddiy agent 1–2 haftada, bir nechta tizimga ulanadigan agent 2–4 haftada ishga tushadi.",
-          "Ishga tushirish va kengaytirish: agent real ishda sinaladi, keyingi vazifalar bosqichma-bosqich qo'shiladi.",
+          "30 daqiqalik bepul suhbat. Jarayoningizni va qaysi dasturlardan foydalanishingizni so'raymiz.",
+          "Yozma taklif. Agent nima qiladi, nimaga tegmaydi, narxi va muddati qancha, hammasi qog'ozda bo'ladi.",
+          "Birinchi versiya. Oddiy agent 1–2 haftada, bir nechta tizimga ulanadigani 2–4 haftada tayyor bo'ladi.",
+          "Ishga tushirish. Avval real ishda sinaymiz, keyin yangi vazifalarni asta-sekin qo'shamiz.",
         ],
       },
       {
-        heading: "Narx va to'lov",
+        heading: "Qancha turadi?",
         paragraphs: [
-          "Boshlang'ich narxlar: Telegram bot $279 dan, AI chatbot $339 dan, AI agent $400 dan. Aniq narx integratsiyalar soni va stsenariy murakkabligiga bog'liq va yozma taklifda beriladi.",
-          "Buyurtma ishida to'lov 30% oldindan boshlanadi, qolgani bosqichlar bo'yicha. AI model (API) va server (hosting) xarajatlari alohida bo'lib, taklifda oldindan hisoblab beriladi.",
+          "Boshlang'ich narxlar: Telegram bot $279, AI chatbot $339, AI agent $400 dan. Yakuniy narx nechta tizimga ulanishi va ssenariy qanchalik murakkabligiga qarab o'zgaradi, uni yozma taklifda aytamiz.",
+          "To'lov 30% oldindan, qolgani bosqichma-bosqich. Yana bir narsani oldindan aytib qo'yamiz: AI model va server uchun oylik xarajat alohida bo'ladi. Uni ham taklifda hisoblab beramiz, keyin kutilmagan hisob chiqmasin.",
         ],
         links: [
           { href: "/tariflar", label: "Tariflar va narxlar" },
         ],
       },
       {
-        heading: "Toshkentdan tashqarida ham ishlaysizmi?",
+        heading: "Toshkentdan tashqarida ham ishlaysizlarmi?",
         paragraphs: [
-          "Ha. Ish onlayn olib boriladi: konsultatsiya, stsenariy kelishuvi va ishga tushirish masofadan bo'ladi, shuning uchun O'zbekistonning istalgan shahridagi biznes bilan ishlaymiz. Kerak bo'lsa, Toshkentdagi ofisda yoki mijoz joyida uchrashamiz.",
+          "Ha. Suhbat ham, kelishuv ham, ishga tushirish ham onlayn bo'ladi, shuning uchun qaysi shaharda ekaningiz farq qilmaydi. Kerak bo'lsa, ofisimizga taklif qilamiz yoki o'zimiz borib uchrashamiz.",
         ],
         links: [
           { href: "/ai-ozbekistonda", label: "AI O'zbekistonda" },
@@ -98,39 +97,38 @@ export const CONTENT: ArticleContent = {
       },
     ],
     faq: {
-      title: "Tez-tez beriladigan savollar",
+      title: "Ko'p beriladigan savollar",
       items: [
         {
           q: "O'zbekistonda AI agentni kim yasaydi?",
-          a: "Tezcode — Toshkentdagi AI kompaniya, IT Park Uzbekistan rasmiy rezidenti (№6237), 19 kishilik jamoa. Biznes uchun AI agent, AI chatbot, Telegram bot va jarayonlarni avtomatlashtirishni buyurtma asosida yasaydi va butun O'zbekiston bo'ylab ishlaydi.",
+          a: "Biz, Tezcode. Toshkentdagi AI kompaniyamiz, IT Park rezidentimiz (№6237), jamoada 19 kishi bor. Bizneslar uchun AI agent, chatbot, Telegram bot yasaymiz va jarayonlarni avtomatlashtiramiz. O'zbekistonning istalgan shahridagi kompaniya bilan ishlaymiz.",
         },
         {
-          q: "Tezcode'da AI agent qancha turadi?",
-          a: "AI agent $400 dan, AI chatbot $339 dan, Telegram bot $279 dan boshlanadi. Aniq narx integratsiyalar va stsenariy murakkabligiga bog'liq. AI model (API) va hosting xarajatlari alohida, taklifda oldindan hisoblanadi. Birinchi 30 daqiqalik konsultatsiya bepul.",
+          q: "AI agent qancha turadi?",
+          a: "AI agent $400 dan, chatbot $339 dan, Telegram bot $279 dan boshlanadi. Aniq narx integratsiyalar va ssenariyga bog'liq. AI model va server xarajati alohida, uni ham taklifda oldindan hisoblab beramiz. Birinchi 30 daqiqalik suhbat bepul.",
         },
         {
-          q: "AI agent qancha vaqtda tayyor bo'ladi?",
-          a: "Oddiy agent 1–2 haftada, bir nechta tizimga ulanadigan agent 2–4 haftada ishlaydigan MVP sifatida tayyor bo'ladi. Aniq muddat stsenariy tasdiqlangach yozma beriladi.",
+          q: "Qancha vaqtda tayyor bo'ladi?",
+          a: "Oddiy agent odatda 1–2 haftada, bir nechta tizimga ulanadigani 2–4 haftada ishga tushadi. Aniq muddatni ssenariy kelishilgandan keyin yozib beramiz.",
         },
         {
-          q: "Tezcode qaysi tizimlar bilan ishlaydi?",
-          a: "Telegram, Instagram, sayt, CRM tizimlari (amoCRM, Bitrix24), 1C, Google Sheets va Click/Payme to'lov tizimlari bilan. Agentlar o'zbek va rus tilida ishlaydi.",
+          q: "Qaysi dasturlar bilan ulay olasizlar?",
+          a: "Telegram, Instagram, sayt, amoCRM, Bitrix24, 1C, Google Sheets, Click va Payme. Agentlar o'zbek va rus tilida ishlaydi.",
         },
         {
-          q: "Ma'lumotlarim xavfsizmi?",
-          a: "Agent nimaga kirishi va nimaga haqqi yo'qligi yozma stsenariyda belgilanadi. Muhim amallar (masalan, tizimga yozish) faqat odam tasdig'i bilan bajarilishi mumkin, barcha amallar qayd etiladi va agentni istalgan paytda to'xtatish mumkin.",
+          q: "Ma'lumotlarim xavfsiz bo'ladimi?",
+          a: "Agent nimani ko'ra oladi va nimaga tegmaydi, buni oldindan yozib kelishamiz. Muhim ishlarni, masalan tizimga yozishni, odam tasdiqlagandan keyingina bajaradigan qilib qo'yish mumkin. Har bir amal qayd qilinadi, agentni xohlagan paytda to'xtatsa bo'ladi.",
         },
       ],
     },
     cta: {
-      title: "Biznesingiz uchun AI agent kerakmi?",
+      title: "Sizga AI agent kerakmi, yo'qmi?",
       subtitle:
-        "Bepul 30 daqiqalik konsultatsiyada jarayoningizni ko'rib chiqamiz va qaysi yechim foyda berishini ochiq aytamiz.",
-      button: "Telegram orqali bog'lanish",
-      note: "Javob odatda bir necha soat ichida.",
+        "30 daqiqa gaplashamiz, jarayoningizni ko'ramiz. Agent foyda bermasa, buni ham ochiq aytamiz.",
+      button: "Telegram'da yozish",
+      note: "Odatda bir necha soat ichida javob beramiz.",
     },
   },
-
   ru: {
     hero: {
       badge: "ИИ-агенты / Компания",
@@ -174,14 +172,12 @@ export const CONTENT: ArticleContent = {
         ],
       },
       {
-        heading: "Реальные проекты: Hoffen и Dantes",
+        heading: "Реальный проект: Hoffen",
         paragraphs: [
           "Hoffen — производитель и дистрибьютор автохимии. Tezcode собрал данные продаж, склада, производства и GPS в одну базу и построил поверх неё 7 ИИ-агентов в Telegram: помощник руководителя, аудитор дисциплины торговых агентов, склад, финансы, HR и другие. Каждый день автоматически выполняется более 80 задач.",
-          "Dantes — строительная компания. Сейчас в разработке ИИ-помощники, которые анализируют отчёты компании и доносят до руководителя самое важное.",
         ],
         links: [
           { href: "/case-studies/hoffen", label: "Кейс Hoffen" },
-          { href: "/case-studies/dantes", label: "Кейс Dantes" },
         ],
       },
       {

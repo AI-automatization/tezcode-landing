@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Link } from "@/i18n/routing";
 import type { ArticleLang } from "@/components/blog/types";
-import { ARTICLES } from "./articles";
+import { ARTICLES, categoryLabel } from "./articles";
 
 // Blog index — lists published articles as cards. Chrome (title/subtitle) is
 // localised inline; each card's title/excerpt comes from the ARTICLES registry,
@@ -93,7 +93,7 @@ export function BlogIndexClient() {
                     className="tc-card tc-card-hover group flex flex-col h-full p-7"
                   >
                     <div className="inline-flex self-start px-2.5 py-0.5 rounded-full text-[10px] uppercase tracking-widest font-600 bg-[var(--tc-blue-dim)] text-[var(--tc-blue-text)] mb-4">
-                      {a.category}
+                      {categoryLabel(a.category, locale)}
                     </div>
                     <h2
                       className="text-[var(--tc-text-primary)] text-xl md:text-2xl font-700 leading-snug mb-3 tracking-tight"
