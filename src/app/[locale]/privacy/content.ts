@@ -5,7 +5,7 @@ export const PRIVACY_CONTENT: LegalContent = {
     metaTitle: "Maxfiylik Siyosati — Privacy Policy",
     metaDescription:
       "Tezcode maxfiylik siyosati: shaxsiy ma'lumotlar yig'ish va ishlatish, cookies, GDPR/UZ qonun talablari, foydalanuvchi huquqlari. So'nggi yangilanish 2026-yil.",
-    versionLabel: "Legal · v1.0 — 2026-05-14",
+    versionLabel: "Legal · v1.1 — 2026-11-06",
     heading: "Maxfiylik siyosati",
     subheading: "Tezcode shaxsiy ma'lumotlaringizni qanday ishlatadi.",
     sections: [
@@ -22,7 +22,7 @@ export const PRIVACY_CONTENT: LegalContent = {
           "• Aloqa shaklidan: ism, email, telefon (ixtiyoriy), mavzu, xabar.",
           "• Texnik: IP, brauzer turi, qurilma, sahifa ko'rishlar (analytics).",
           "• Cookie: foydalanish, til tanlovi, sessiya identifikatori.",
-          "Kredit karta yoki to'lov ma'lumotlarini saqlaymaymiz — to'lovlar bevosita yetkazib beruvchi orqali (kelajakda).",
+          "Bank kartasi ma'lumotlarini saqlamaymiz — to'lovlarni litsenziyalangan Payme, Click va Uzum to'lov tashkilotlari qayta ishlaydi.",
         ],
       },
       {
@@ -97,7 +97,7 @@ export const PRIVACY_CONTENT: LegalContent = {
     metaTitle: "Политика конфиденциальности",
     metaDescription:
       "Политика конфиденциальности Tezcode: сбор и использование персональных данных, cookie, требования GDPR/законодательства Узбекистана, права пользователя. Последнее обновление 2026 год.",
-    versionLabel: "Правовой документ · v1.0 — 14.05.2026",
+    versionLabel: "Правовой документ · v1.1 — 06.11.2026",
     heading: "Политика конфиденциальности",
     subheading: "Как Tezcode использует ваши персональные данные.",
     sections: [
@@ -114,7 +114,7 @@ export const PRIVACY_CONTENT: LegalContent = {
           "• Через форму обратной связи: имя, email, телефон (по желанию), тема, сообщение.",
           "• Технические: IP-адрес, тип браузера, устройство, просмотры страниц (аналитика).",
           "• Cookie: использование сайта, выбор языка, идентификатор сессии.",
-          "Мы не храним данные банковских карт или платежей — платежи будут обрабатываться напрямую поставщиком платёжных услуг (в будущем).",
+          "Мы не храним данные банковских карт — платежи обрабатывают лицензированные платёжные организации Payme, Click и Uzum.",
         ],
       },
       {
@@ -189,7 +189,7 @@ export const PRIVACY_CONTENT: LegalContent = {
     metaTitle: "Privacy Policy",
     metaDescription:
       "Tezcode privacy policy: collection and use of personal data, cookies, GDPR/Uzbekistan legal requirements, user rights. Last updated 2026.",
-    versionLabel: "Legal · v1.0 — 2026-05-14",
+    versionLabel: "Legal · v1.1 — 2026-11-06",
     heading: "Privacy Policy",
     subheading: "How Tezcode uses your personal data.",
     sections: [
@@ -206,7 +206,7 @@ export const PRIVACY_CONTENT: LegalContent = {
           "• From the contact form: name, email, phone (optional), subject, message.",
           "• Technical: IP address, browser type, device, page views (analytics).",
           "• Cookies: usage, language preference, session identifier.",
-          "We do not store credit card or payment data — payments will be processed directly by the payment provider (in the future).",
+          "We do not store bank card data — payments are processed by the licensed payment organizations Payme, Click and Uzum.",
         ],
       },
       {
@@ -281,7 +281,7 @@ export const PRIVACY_CONTENT: LegalContent = {
     metaTitle: "Політика конфіденційності",
     metaDescription:
       "Політика конфіденційності Tezcode: збір та використання персональних даних, cookie, вимоги GDPR/законодавства Узбекистану, права користувача. Останнє оновлення 2026 рік.",
-    versionLabel: "Правовий документ · v1.0 — 14.05.2026",
+    versionLabel: "Правовий документ · v1.1 — 06.11.2026",
     heading: "Політика конфіденційності",
     subheading: "Як Tezcode використовує ваші персональні дані.",
     sections: [
@@ -298,7 +298,7 @@ export const PRIVACY_CONTENT: LegalContent = {
           "• З форми зворотного зв'язку: ім'я, email, телефон (за бажанням), тема, повідомлення.",
           "• Технічні: IP-адреса, тип браузера, пристрій, перегляди сторінок (аналітика).",
           "• Cookie: використання сайту, вибір мови, ідентифікатор сесії.",
-          "Ми не зберігаємо дані банківських карток чи платежів — платежі оброблятимуться безпосередньо постачальником платіжних послуг (у майбутньому).",
+          "Ми не зберігаємо дані банківських карток — платежі обробляють ліцензовані платіжні організації Payme, Click та Uzum.",
         ],
       },
       {
@@ -373,7 +373,7 @@ export const PRIVACY_CONTENT: LegalContent = {
     metaTitle: "سياسة الخصوصية",
     metaDescription:
       "سياسة خصوصية Tezcode: جمع واستخدام البيانات الشخصية، ملفات تعريف الارتباط، متطلبات GDPR وقانون أوزبكستان، حقوق المستخدم. آخر تحديث 2026.",
-    versionLabel: "وثيقة قانونية · الإصدار 1.0 — 2026-05-14",
+    versionLabel: "وثيقة قانونية · الإصدار 1.1 — 2026-11-06",
     heading: "سياسة الخصوصية",
     subheading: "كيف تستخدم Tezcode بياناتك الشخصية.",
     sections: [
@@ -390,7 +390,7 @@ export const PRIVACY_CONTENT: LegalContent = {
           "• من نموذج التواصل: الاسم، البريد الإلكتروني، رقم الهاتف (اختياري)، الموضوع، الرسالة.",
           "• بيانات تقنية: عنوان IP، نوع المتصفح، الجهاز، مشاهدات الصفحات (تحليلات).",
           "• ملفات تعريف الارتباط (Cookies): الاستخدام، اختيار اللغة، معرّف الجلسة.",
-          "لا نحتفظ ببيانات بطاقات الدفع — ستتم معالجة المدفوعات مباشرة عبر مزوّد خدمة الدفع (مستقبلًا).",
+          "لا نحتفظ ببيانات البطاقات المصرفية — تعالج المدفوعات مؤسسات الدفع المرخّصة Payme وClick وUzum.",
         ],
       },
       {
