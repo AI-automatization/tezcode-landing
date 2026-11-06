@@ -5,7 +5,7 @@ export const TERMS_CONTENT: LegalContent = {
     metaTitle: "Foydalanish Shartlari — Terms of Service",
     metaDescription:
       "Tezcode xizmatlaridan foydalanish shartlari: huquq va majburiyatlar, to'lov shartlari, javobgarlik chekloyi, nizolar tartibi. So'nggi tahrir 2026-yil.",
-    versionLabel: "Legal · v1.3 — 2026-07-22",
+    versionLabel: "Legal · v1.4 — 2026-11-06",
     heading: "Foydalanish shartlari",
     subheading: "Tezcode xizmatlaridan foydalanish shartlari.",
     sections: [
@@ -43,14 +43,15 @@ export const TERMS_CONTENT: LegalContent = {
       {
         title: "5. Demo va sinov muddati",
         body: [
-          "Bepul demo va 14 kunlik sinov muddati ko'pchilik mahsulot uchun mavjud. Sinov muddatidan keyin to'lov boshlanmasligi uchun obunani bekor qilishingiz mumkin.",
+          "Bepul demo va 14 kunlik sinov muddati ko'pchilik mahsulot uchun mavjud. Sinov muddatidan keyin pul avtomatik yechilmaydi: obuna faqat to'lovdan keyin boshlanadi.",
         ],
       },
       {
         title: "6. To'lovlar va pul qaytarish",
         body: [
           "Pricing sahifasidagi narxlar AQSh dollarida (USD), to'lov soatida valyuta kursi bo'yicha so'mga aylantiriladi. Korxonalar uchun USD invoice mavjud.",
-          "To'lov usullari: Payme, Click va Uzum Pay orqali — mobil ilova yoki bank kartasi (Uzcard, Humo, Visa, Mastercard) bilan.",
+          "To'lov usullari: Payme, Click va Uzum Pay orqali — mobil ilova yoki bank kartasi (Uzcard, Humo) bilan.",
+          "Avtomatik yechib olish yo'q: obunaning har bir davri hisob yoki to'lov havolasi bo'yicha alohida to'lov bilan to'lanadi. Obuna faqat shunday to'lovdan keyin uzaytiriladi; davr to'lanmasa, kirish to'xtatiladi va pul yechilmaydi. Takroriy avtomatik yechib olish faqat Mijozning alohida aniq roziligi bilan ulanishi mumkin va uni istalgan vaqtda o'chirish mumkin.",
           "Pul mablag'larini qaytarish (Refund). Mijoz quyidagi hollarda to'langan mablag'ni qaytarishni so'rashi mumkin: (1) xizmat texnik sabablarga ko'ra ko'rsatilmagan bo'lsa; (2) to'lov xato yoki takroran amalga oshirilgan bo'lsa.",
           "Qaytarish so'rovi tezcode@tezcode.dev manziliga yuboriladi. So'rov ko'rib chiqilgach, mablag' xuddi to'langan usul (karta) orqali, odatda 10 (o'n) ish kuni ichida — bank va to'lov tizimi qoidalariga muvofiq qaytariladi.",
           "Foydalanib bo'lingan obuna davri uchun mablag' qaytarilmaydi. Foydalanilmagan (qolgan) obuna davri uchun mablag' Mijoz so'roviga ko'ra qaytarilishi mumkin.",
@@ -112,7 +113,7 @@ export const TERMS_CONTENT: LegalContent = {
     metaTitle: "Условия использования",
     metaDescription:
       "Условия использования сервисов Tezcode: права и обязанности, условия оплаты, антифрод-меры, ограничение ответственности, порядок разрешения споров. Последнее обновление 2026 год.",
-    versionLabel: "Правовой документ · v1.3 — 22.07.2026",
+    versionLabel: "Правовой документ · v1.4 — 06.11.2026",
     heading: "Условия использования",
     subheading: "Условия использования сервисов Tezcode.",
     sections: [
@@ -150,14 +151,15 @@ export const TERMS_CONTENT: LegalContent = {
       {
         title: "5. Демо и пробный период",
         body: [
-          "Бесплатное демо и 14-дневный пробный период доступны для большинства продуктов. Чтобы после пробного периода не началось списание оплаты, вы можете отменить подписку.",
+          "Бесплатное демо и 14-дневный пробный период доступны для большинства продуктов. После пробного периода автоматического списания нет: подписка начинается только после оплаты.",
         ],
       },
       {
         title: "6. Оплата и возврат средств",
         body: [
           "Цены на странице тарифов указаны в долларах США (USD), при оплате конвертируются в сум по курсу на момент платежа. Для юрлиц доступен инвойс в USD.",
-          "Способы оплаты: через платёжные системы Payme, Click и Uzum Pay — мобильным приложением или банковской картой (Uzcard, Humo, Visa, Mastercard).",
+          "Способы оплаты: через платёжные системы Payme, Click и Uzum Pay — мобильным приложением или банковской картой (Uzcard, Humo).",
+          "Автоматических списаний нет: каждый период подписки оплачивается отдельным платежом по счёту или платёжной ссылке. Подписка продлевается только после такой оплаты; если период не оплачен, доступ приостанавливается, а деньги не списываются. Повторные автоматические списания могут быть подключены только с отдельного явного согласия Клиента, с возможностью отключить их в любой момент.",
           "Возврат денежных средств (Refund). Клиент может запросить возврат оплаченных средств в следующих случаях: (1) если услуга не была оказана по техническим причинам; (2) если платёж совершён ошибочно или повторно (дважды).",
           "Запрос на возврат направляется на tezcode@tezcode.dev. После рассмотрения запроса средства возвращаются тем же способом, которым была произведена оплата (на карту), обычно в течение 10 (десяти) рабочих дней — в соответствии с правилами банка и платёжной системы.",
           "Оплата за уже использованный период подписки возврату не подлежит. Неиспользованный (оставшийся) период подписки может быть возвращён по запросу Клиента.",
@@ -219,7 +221,7 @@ export const TERMS_CONTENT: LegalContent = {
     metaTitle: "Terms of Service",
     metaDescription:
       "Tezcode terms of service: rights and obligations, payment terms, anti-fraud measures, limitation of liability, dispute resolution. Last updated 2026.",
-    versionLabel: "Legal · v1.3 — 2026-07-22",
+    versionLabel: "Legal · v1.4 — 2026-11-06",
     heading: "Terms of Service",
     subheading: "Terms of service for using Tezcode.",
     sections: [
@@ -257,14 +259,15 @@ export const TERMS_CONTENT: LegalContent = {
       {
         title: "5. Demo and trial period",
         body: [
-          "A free demo and a 14-day trial are available for most products. You can cancel the subscription before the trial ends to avoid being charged.",
+          "A free demo and a 14-day trial are available for most products. There is no automatic charge after the trial: the subscription starts only after payment.",
         ],
       },
       {
         title: "6. Payments and refunds",
         body: [
           "Prices on the pricing page are listed in US dollars (USD) and converted to so'm at the exchange rate at the time of payment. A USD invoice is available for businesses.",
-          "Payment methods: Payme, Click and Uzum Pay — via mobile app or bank card (Uzcard, Humo, Visa, Mastercard).",
+          "Payment methods: Payme, Click and Uzum Pay — via mobile app or bank card (Uzcard, Humo).",
+          "There are no automatic charges: each subscription period is paid by a separate payment against an invoice or payment link. The subscription is extended only after such payment; if a period is not paid, access is suspended and nothing is charged. Recurring automatic charges may be enabled only with the Client's separate explicit consent and can be turned off at any time.",
           "Refunds. The customer may request a refund of paid funds in the following cases: (1) if the service was not provided for technical reasons; (2) if the payment was made in error or duplicated (charged twice).",
           "A refund request is sent to tezcode@tezcode.dev. Once reviewed, funds are returned via the same method used for payment (card), typically within 10 (ten) business days — in accordance with the rules of the bank and payment system.",
           "Payment for an already-used subscription period is non-refundable. The unused (remaining) subscription period may be refunded at the customer's request.",
@@ -326,7 +329,7 @@ export const TERMS_CONTENT: LegalContent = {
     metaTitle: "Умови використання",
     metaDescription:
       "Умови використання сервісів Tezcode: права та обов'язки, умови оплати, антифрод-заходи, обмеження відповідальності, порядок вирішення спорів. Останнє оновлення 2026 рік.",
-    versionLabel: "Правовий документ · v1.3 — 22.07.2026",
+    versionLabel: "Правовий документ · v1.4 — 06.11.2026",
     heading: "Умови використання",
     subheading: "Умови використання сервісів Tezcode.",
     sections: [
@@ -364,14 +367,15 @@ export const TERMS_CONTENT: LegalContent = {
       {
         title: "5. Демо та пробний період",
         body: [
-          "Безкоштовне демо та 14-денний пробний період доступні для більшості продуктів. Ви можете скасувати підписку до завершення пробного періоду, щоб уникнути списання оплати.",
+          "Безкоштовне демо та 14-денний пробний період доступні для більшості продуктів. Після пробного періоду автоматичного списання немає: підписка починається лише після оплати.",
         ],
       },
       {
         title: "6. Оплата та повернення коштів",
         body: [
           "Ціни на сторінці тарифів вказані в доларах США (USD) і конвертуються в сум за курсом на момент оплати. Для юридичних осіб доступний інвойс у USD.",
-          "Способи оплати: через платіжні системи Payme, Click та Uzum Pay — мобільним застосунком або банківською карткою (Uzcard, Humo, Visa, Mastercard).",
+          "Способи оплати: через платіжні системи Payme, Click та Uzum Pay — мобільним застосунком або банківською карткою (Uzcard, Humo).",
+          "Автоматичних списань немає: кожен період підписки оплачується окремим платежем за рахунком або платіжним посиланням. Підписка продовжується лише після такої оплати; якщо період не оплачено, доступ призупиняється, а кошти не списуються. Повторні автоматичні списання можуть бути підключені лише за окремою явною згодою Клієнта з можливістю вимкнути їх у будь-який момент.",
           "Повернення коштів (Refund). Клієнт може подати запит на повернення сплачених коштів у таких випадках: (1) якщо послугу не було надано з технічних причин; (2) якщо платіж здійснено помилково або повторно (двічі).",
           "Запит на повернення надсилається на tezcode@tezcode.dev. Після розгляду запиту кошти повертаються тим самим способом, яким було здійснено оплату (на картку), зазвичай протягом 10 (десяти) робочих днів — відповідно до правил банку та платіжної системи.",
           "Оплата за вже використаний період підписки поверненню не підлягає. Невикористаний (залишковий) період підписки може бути повернено за запитом Клієнта.",
@@ -433,7 +437,7 @@ export const TERMS_CONTENT: LegalContent = {
     metaTitle: "شروط الاستخدام",
     metaDescription:
       "شروط استخدام خدمات Tezcode: الحقوق والالتزامات، شروط الدفع، إجراءات مكافحة الاحتيال، حدود المسؤولية، تسوية المنازعات. آخر تحديث 2026.",
-    versionLabel: "وثيقة قانونية · الإصدار 1.3 — 2026-07-22",
+    versionLabel: "وثيقة قانونية · الإصدار 1.4 — 2026-11-06",
     heading: "شروط الاستخدام",
     subheading: "شروط استخدام خدمات Tezcode.",
     sections: [
@@ -471,14 +475,15 @@ export const TERMS_CONTENT: LegalContent = {
       {
         title: "5. النسخة التجريبية وفترة الاختبار",
         body: [
-          "تتوفر نسخة تجريبية مجانية وفترة اختبار مدتها 14 يومًا لمعظم المنتجات. يمكنك إلغاء الاشتراك قبل انتهاء فترة الاختبار لتجنّب بدء الدفع.",
+          "تتوفر نسخة تجريبية مجانية وفترة اختبار مدتها 14 يومًا لمعظم المنتجات. لا يوجد خصم تلقائي بعد انتهاء فترة الاختبار: يبدأ الاشتراك بعد الدفع فقط.",
         ],
       },
       {
         title: "6. الدفع واسترداد الأموال",
         body: [
           "الأسعار الموضحة في صفحة الأسعار بالدولار الأمريكي (USD)، وتُحوَّل إلى السوم بسعر الصرف وقت الدفع. تتوفر فاتورة بالدولار للشركات.",
-          "طرق الدفع: عبر أنظمة الدفع Payme وClick وUzum Pay — من خلال التطبيق أو بطاقة مصرفية (Uzcard وHumo وVisa وMastercard).",
+          "طرق الدفع: عبر أنظمة الدفع Payme وClick وUzum Pay — من خلال التطبيق أو بطاقة مصرفية (Uzcard وHumo).",
+          "لا توجد عمليات خصم تلقائية: تُدفع كل فترة اشتراك بدفعة منفصلة بموجب فاتورة أو رابط دفع. ولا يُمدَّد الاشتراك إلا بعد هذا الدفع؛ وإذا لم تُدفع الفترة يُعلَّق الوصول ولا يُخصم أي مبلغ. ولا يجوز تفعيل الخصم التلقائي المتكرر إلا بموافقة صريحة منفصلة من العميل، مع إمكانية إيقافه في أي وقت.",
           "استرداد الأموال (Refund). يجوز للعميل طلب استرداد المبالغ المدفوعة في الحالات التالية: (1) إذا لم تُقدَّم الخدمة لأسباب تقنية؛ (2) إذا تمّ الدفع بالخطأ أو بشكل مكرَّر (مرتين).",
           "يُرسَل طلب الاسترداد إلى tezcode@tezcode.dev. وبعد مراجعة الطلب، تُعاد الأموال بنفس وسيلة الدفع المستخدمة (إلى البطاقة)، عادةً خلال 10 (عشرة) أيام عمل — وفقًا لقواعد البنك ونظام الدفع.",
           "المبلغ المدفوع عن فترة الاشتراك المُستخدَمة بالفعل غير قابل للاسترداد. أمّا فترة الاشتراك غير المُستخدَمة (المتبقية) فيمكن استردادها بناءً على طلب العميل.",

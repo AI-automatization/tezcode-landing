@@ -10,7 +10,7 @@ export const OFERTA_CONTENT: LegalContent = {
     metaTitle: "Ommaviy oferta — Public Offer",
     metaDescription:
       "TEZ KOD MCHJning obuna xizmatlarini taqdim etish bo'yicha ommaviy offertasi: oferta predmeti, narx va to'lov tartibi, firibgarlikka qarshi choralar, tomonlar rekvizitlari.",
-    versionLabel: "Legal · v1.1 — 2026-07-22",
+    versionLabel: "Legal · v1.2 — 2026-11-06",
     heading: "Ommaviy oferta",
     subheading:
       "TEZ KOD obuna xizmatlarini taqdim etish shartnomasi — FK 369-370-moddalari.",
@@ -19,20 +19,22 @@ export const OFERTA_CONTENT: LegalContent = {
         title: "1. Umumiy qoidalar",
         body: [
           "Ushbu hujjat O'zbekiston Respublikasi Fuqarolik kodeksining 369-moddasiga muvofiq \"TEZ KOD\" MCHJ (STIR 313057467, IT Park rezidenti) tomonidan taqdim etilgan ommaviy oferta (ochiq taklif) hisoblanadi.",
-          "Oferta shartlarini qabul qilish (aksept) — RAOS, CoreMed, WeWatch, Zzone yoki savdo-builder xizmatlaridan biriga to'lov amalga oshirilgan payt hisoblanadi (FK 370-moddasi). To'lov amalga oshirilgan paytdan boshlab shartnoma yozma shaklda tuzilgan deb hisoblanadi.",
+          "Oferta shartlarini qabul qilish (aksept) — RAOS, CoreMed yoki WeWatch xizmatlaridan biriga to'lov amalga oshirilgan payt hisoblanadi (FK 370-moddasi). To'lov amalga oshirilgan paytdan boshlab shartnoma yozma shaklda tuzilgan deb hisoblanadi.",
         ],
       },
       {
         title: "2. Oferta predmeti",
         body: [
-          "TEZ KOD internet orqali (SaaS) dasturiy ta'minotdan foydalanish huquqini obuna (abonent) to'lovi asosida taqdim etadi: RAOS — chakana savdo uchun POS-tizim, CoreMed — tibbiy ekotizim (klinikalar, bemorlar, uyga chaqiruv), WeWatch — ovozli chat bilan birgalikda video ko'rish xizmati, Zzone — avtoehtiyot qismlarni qidirish va sotib olish platformasi, savdo-builder — bozor va savdo nuqtalari uchun platforma.",
+          "TEZ KOD internet orqali (SaaS) o'z dasturiy ta'minotidan foydalanish huquqini obuna (abonent) to'lovi asosida taqdim etadi: RAOS — chakana savdo uchun POS-tizim, CoreMed — klinikalar uchun dasturiy ta'minot, WeWatch — ovozli chat bilan birgalikda video ko'rish xizmati.",
+          "Ushbu oferta bo'yicha TEZ KOD faqat o'zining dasturiy mahsulotlari va xizmatlari uchun to'lov qabul qiladi. Uchinchi shaxslarning tovar va xizmatlari uchun to'lovlar (do'kon xaridorlari, tibbiyot tashkilotlari bemorlari, mustaqil sotuvchi va yetkazib beruvchilar) ushbu oferta bo'yicha qabul qilinmaydi.",
           "Har bir mahsulotning narxlari, funksional imkoniyatlari va tarif rejalari tegishli mahsulot saytida (masalan, raos.uz) ko'rsatiladi va ushbu offertaning ajralmas qismi hisoblanadi.",
         ],
       },
       {
         title: "3. Narx, to'lov va pul qaytarish tartibi",
         body: [
-          "Xizmat narxi tegishli mahsulot saytida ko'rsatilgan tarifga muvofiq belgilanadi. To'lov Payme, Click va Uzum Pay to'lov tizimlari orqali — mobil ilova yoki bank kartasi (Uzcard, Humo, Visa, Mastercard) bilan amalga oshiriladi.",
+          "Xizmat narxi tegishli mahsulot saytida ko'rsatilgan tarifga muvofiq belgilanadi. To'lov Payme, Click va Uzum Pay to'lov tizimlari orqali — mobil ilova yoki bank kartasi (Uzcard, Humo) bilan amalga oshiriladi.",
+          "Avtomatik yechib olish yo'q: obunaning har bir davri hisob yoki to'lov havolasi bo'yicha alohida to'lov bilan to'lanadi. Obuna faqat shunday to'lovdan keyin uzaytiriladi; davr to'lanmasa, kirish to'xtatiladi va pul yechilmaydi. Takroriy avtomatik yechib olish faqat Mijozning alohida aniq roziligi bilan ulanishi mumkin va uni istalgan vaqtda o'chirish mumkin.",
           "TEZ KOD karta rekvizitlarini (raqami, amal qilish muddati, CVV kodi) saqlamaydi va ko'rmaydi — barcha to'lovlar litsenziyalangan to'lov tizimlari infratuzilmasi orqali amalga oshiriladi.",
           "Pul mablag'larini qaytarish (Refund). Mijoz quyidagi hollarda to'langan mablag'ni qaytarishni so'rashi mumkin: (1) xizmat texnik sabablarga ko'ra ko'rsatilmagan bo'lsa; (2) to'lov xato yoki takroran amalga oshirilgan bo'lsa.",
           "Qaytarish so'rovi tezcode@tezcode.dev manziliga yuboriladi. So'rov ko'rib chiqilgach, mablag' xuddi to'langan usul (karta) orqali, odatda 10 (o'n) ish kuni ichida — bank va to'lov tizimi qoidalariga muvofiq qaytariladi.",
@@ -80,7 +82,7 @@ export const OFERTA_CONTENT: LegalContent = {
           "Bank: Davr Bank AT, Olmazor filiali · Hisob raqami: 20208000307472214001 · MFO: 01121",
           "Direktor: Yormatov Abdulaziz G'ayratjon o'g'li",
           "Email: tezcode@tezcode.dev · Telegram: @tezcode_managament · Tel: +998 91 777 66 09",
-          "IT Park Uzbekistan rezidenti (guvohnoma № 7666, 18.06.2026)",
+          "IT Park Uzbekistan rezidenti (guvohnoma № 6237, 18.06.2026)",
         ],
       },
     ],
@@ -89,7 +91,7 @@ export const OFERTA_CONTENT: LegalContent = {
     metaTitle: "Публичная оферта",
     metaDescription:
       "Публичная оферта TEZ KOD на предоставление подписочных услуг: предмет оферты, цена и порядок оплаты, антифрод-меры, реквизиты сторон.",
-    versionLabel: "Правовой документ · v1.1 — 22.07.2026",
+    versionLabel: "Правовой документ · v1.2 — 06.11.2026",
     heading: "Публичная оферта",
     subheading:
       "Договор оферты на предоставление подписочных услуг TEZ KOD — ст. 369-370 ГК Республики Узбекистан.",
@@ -98,20 +100,22 @@ export const OFERTA_CONTENT: LegalContent = {
         title: "1. Общие положения",
         body: [
           "Настоящий документ является публичной офертой ООО «TEZ KOD» (СТИР 313057467, резидент IT Park Узбекистана) в соответствии со ст. 369 Гражданского кодекса Республики Узбекистан.",
-          "Акцептом оферты (ст. 370 ГК) считается момент оплаты одной из услуг — RAOS, CoreMed, WeWatch, Zzone или savdo-builder. С момента оплаты договор считается заключённым в письменной форме.",
+          "Акцептом оферты (ст. 370 ГК) считается момент оплаты одной из услуг — RAOS, CoreMed или WeWatch. С момента оплаты договор считается заключённым в письменной форме.",
         ],
       },
       {
         title: "2. Предмет оферты",
         body: [
-          "TEZ KOD предоставляет право использования программного обеспечения по модели SaaS на условиях подписки: RAOS — POS-система для розничной торговли, CoreMed — медицинская экосистема (клиники, пациенты, вызов на дом), WeWatch — сервис совместного просмотра видео с голосовым чатом, Zzone — платформа поиска и покупки автозапчастей, savdo-builder — платформа для рынков и торговых точек.",
+          "TEZ KOD предоставляет право использования собственного программного обеспечения по модели SaaS на условиях подписки: RAOS — POS-система для розничной торговли, CoreMed — программное обеспечение для клиник, WeWatch — сервис совместного просмотра видео с голосовым чатом.",
+          "По настоящей оферте TEZ KOD принимает оплату только за собственные программные продукты и услуги. Оплата товаров и услуг третьих лиц (покупателей магазинов, пациентов медицинских организаций, независимых продавцов и поставщиков) по настоящей оферте не принимается.",
           "Цены, функциональность и тарифные планы каждого продукта указаны на сайте соответствующего продукта и являются неотъемлемой частью настоящей оферты.",
         ],
       },
       {
         title: "3. Цена, порядок оплаты и возврата средств",
         body: [
-          "Стоимость услуги определяется согласно тарифу, указанному на сайте соответствующего продукта. Оплата производится через платёжные системы Payme, Click и Uzum Pay — банковской картой (Uzcard, Humo, Visa, Mastercard) или через мобильное приложение.",
+          "Стоимость услуги определяется согласно тарифу, указанному на сайте соответствующего продукта. Оплата производится через платёжные системы Payme, Click и Uzum Pay — банковской картой (Uzcard, Humo) или через мобильное приложение.",
+          "Автоматических списаний нет: каждый период подписки оплачивается отдельным платежом по счёту или платёжной ссылке. Подписка продлевается только после такой оплаты; если период не оплачен, доступ приостанавливается, а деньги не списываются. Повторные автоматические списания могут быть подключены только с отдельного явного согласия Клиента, с возможностью отключить их в любой момент.",
           "TEZ KOD не хранит и не видит реквизиты карты (номер, срок действия, CVV) — все платежи проходят через инфраструктуру лицензированных платёжных систем.",
           "Возврат денежных средств (Refund). Клиент может запросить возврат оплаченных средств в следующих случаях: (1) если услуга не была оказана по техническим причинам; (2) если платёж совершён ошибочно или повторно (дважды).",
           "Запрос на возврат направляется на tezcode@tezcode.dev. После рассмотрения запроса средства возвращаются тем же способом, которым была произведена оплата (на карту), обычно в течение 10 (десяти) рабочих дней — в соответствии с правилами банка и платёжной системы.",
@@ -159,7 +163,7 @@ export const OFERTA_CONTENT: LegalContent = {
           "Банк: Davr Bank AT, филиал Olmazor · Расчётный счёт: 20208000307472214001 · МФО: 01121",
           "Директор: Ёрматов Абдулазиз Гайратжонович",
           "Email: tezcode@tezcode.dev · Telegram: @tezcode_managament · Тел: +998 91 777 66 09",
-          "Резидент IT Park Uzbekistan (свидетельство № 7666, 18.06.2026)",
+          "Резидент IT Park Uzbekistan (свидетельство № 6237, 18.06.2026)",
         ],
       },
     ],
@@ -168,7 +172,7 @@ export const OFERTA_CONTENT: LegalContent = {
     metaTitle: "Public Offer",
     metaDescription:
       "TEZ KOD public offer for subscription services: subject of the offer, price and payment terms, anti-fraud measures, contracting parties' details.",
-    versionLabel: "Legal · v1.1 — 2026-07-22",
+    versionLabel: "Legal · v1.2 — 2026-11-06",
     heading: "Public Offer",
     subheading:
       "Public offer agreement for TEZ KOD subscription services — Articles 369-370 of the Civil Code of Uzbekistan.",
@@ -177,20 +181,22 @@ export const OFERTA_CONTENT: LegalContent = {
         title: "1. General provisions",
         body: [
           "This document is a public offer by TEZ KOD LLC (STIR/tax ID 313057467, IT Park Uzbekistan resident) issued under Article 369 of the Civil Code of the Republic of Uzbekistan.",
-          "Acceptance of the offer (Article 370 of the Civil Code) occurs at the moment of payment for one of the services — RAOS, CoreMed, WeWatch, Zzone, or savdo-builder. From the moment of payment, the agreement is deemed concluded in writing.",
+          "Acceptance of the offer (Article 370 of the Civil Code) occurs at the moment of payment for one of the services — RAOS, CoreMed, or WeWatch. From the moment of payment, the agreement is deemed concluded in writing.",
         ],
       },
       {
         title: "2. Subject of the offer",
         body: [
-          "TEZ KOD grants the right to use software on a SaaS subscription basis: RAOS — a POS system for retail, CoreMed — a healthcare ecosystem (clinics, patients, home visits), WeWatch — a co-watching video service with voice chat, Zzone — a platform for finding and buying auto parts, savdo-builder — a platform for markets and points of sale.",
+          "TEZ KOD grants the right to use its own software on a SaaS subscription basis: RAOS — a POS system for retail, CoreMed — software for clinics, WeWatch — a co-watching video service with voice chat.",
+          "Under this offer, TEZ KOD accepts payment only for its own software products and services. Payments for goods or services of third parties (store customers, patients of medical organizations, independent sellers and suppliers) are not accepted under this offer.",
           "Prices, functionality, and pricing plans for each product are listed on that product's website and form an integral part of this offer.",
         ],
       },
       {
         title: "3. Price, payment and refund terms",
         body: [
-          "The service price is set according to the tariff listed on the relevant product's website. Payment is made via Payme, Click, and Uzum Pay — by mobile app or bank card (Uzcard, Humo, Visa, Mastercard).",
+          "The service price is set according to the tariff listed on the relevant product's website. Payment is made via Payme, Click, and Uzum Pay — by mobile app or bank card (Uzcard, Humo).",
+          "There are no automatic charges: each subscription period is paid by a separate payment against an invoice or payment link. The subscription is extended only after such payment; if a period is not paid, access is suspended and nothing is charged. Recurring automatic charges may be enabled only with the Client's separate explicit consent and can be turned off at any time.",
           "TEZ KOD does not store or see card details (number, expiry date, CVV) — all payments are processed through the infrastructure of licensed payment systems.",
           "Refunds. The customer may request a refund of paid funds in the following cases: (1) if the service was not provided for technical reasons; (2) if the payment was made in error or duplicated (charged twice).",
           "A refund request is sent to tezcode@tezcode.dev. Once reviewed, funds are returned via the same method used for payment (card), typically within 10 (ten) business days — in accordance with the rules of the bank and payment system.",
@@ -238,7 +244,7 @@ export const OFERTA_CONTENT: LegalContent = {
           "Bank: Davr Bank AT, Olmazor branch · Account: 20208000307472214001 · MFO: 01121",
           "Director: Yormatov Abdulaziz G'ayratjon o'g'li",
           "Email: tezcode@tezcode.dev · Telegram: @tezcode_managament · Phone: +998 91 777 66 09",
-          "IT Park Uzbekistan resident (certificate No. 7666, 2026-06-18)",
+          "IT Park Uzbekistan resident (certificate No. 6237, 2026-06-18)",
         ],
       },
     ],
@@ -247,7 +253,7 @@ export const OFERTA_CONTENT: LegalContent = {
     metaTitle: "Публічна оферта",
     metaDescription:
       "Публічна оферта TEZ KOD на надання послуг за підпискою: предмет оферти, ціна та порядок оплати, антифрод-заходи, реквізити сторін.",
-    versionLabel: "Правовий документ · v1.1 — 22.07.2026",
+    versionLabel: "Правовий документ · v1.2 — 06.11.2026",
     heading: "Публічна оферта",
     subheading:
       "Договір оферти на надання послуг за підпискою TEZ KOD — ст. 369-370 ЦК Республіки Узбекистан.",
@@ -256,20 +262,22 @@ export const OFERTA_CONTENT: LegalContent = {
         title: "1. Загальні положення",
         body: [
           "Цей документ є публічною офертою ТОВ «TEZ KOD» (СТІР 313057467, резидент IT Park Узбекистану) відповідно до ст. 369 Цивільного кодексу Республіки Узбекистан.",
-          "Акцептом оферти (ст. 370 ЦК) вважається момент оплати однієї з послуг — RAOS, CoreMed, WeWatch, Zzone або savdo-builder. З моменту оплати договір вважається укладеним у письмовій формі.",
+          "Акцептом оферти (ст. 370 ЦК) вважається момент оплати однієї з послуг — RAOS, CoreMed або WeWatch. З моменту оплати договір вважається укладеним у письмовій формі.",
         ],
       },
       {
         title: "2. Предмет оферти",
         body: [
-          "TEZ KOD надає право використання програмного забезпечення за моделлю SaaS на умовах підписки: RAOS — POS-система для роздрібної торгівлі, CoreMed — медична екосистема (клініки, пацієнти, виклик додому), WeWatch — сервіс спільного перегляду відео з голосовим чатом, Zzone — платформа пошуку та купівлі автозапчастин, savdo-builder — платформа для ринків і торгових точок.",
+          "TEZ KOD надає право використання власного програмного забезпечення за моделлю SaaS на умовах підписки: RAOS — POS-система для роздрібної торгівлі, CoreMed — програмне забезпечення для клінік, WeWatch — сервіс спільного перегляду відео з голосовим чатом.",
+          "За цією офертою TEZ KOD приймає оплату лише за власні програмні продукти та послуги. Оплата товарів і послуг третіх осіб (покупців магазинів, пацієнтів медичних організацій, незалежних продавців і постачальників) за цією офертою не приймається.",
           "Ціни, функціональність і тарифні плани кожного продукту вказані на сайті відповідного продукту та є невід'ємною частиною цієї оферти.",
         ],
       },
       {
         title: "3. Ціна, порядок оплати та повернення коштів",
         body: [
-          "Вартість послуги визначається згідно з тарифом, вказаним на сайті відповідного продукту. Оплата здійснюється через платіжні системи Payme, Click та Uzum Pay — мобільним застосунком або банківською карткою (Uzcard, Humo, Visa, Mastercard).",
+          "Вартість послуги визначається згідно з тарифом, вказаним на сайті відповідного продукту. Оплата здійснюється через платіжні системи Payme, Click та Uzum Pay — мобільним застосунком або банківською карткою (Uzcard, Humo).",
+          "Автоматичних списань немає: кожен період підписки оплачується окремим платежем за рахунком або платіжним посиланням. Підписка продовжується лише після такої оплати; якщо період не оплачено, доступ призупиняється, а кошти не списуються. Повторні автоматичні списання можуть бути підключені лише за окремою явною згодою Клієнта з можливістю вимкнути їх у будь-який момент.",
           "TEZ KOD не зберігає і не бачить реквізити картки (номер, термін дії, CVV) — усі платежі проходять через інфраструктуру ліцензованих платіжних систем.",
           "Повернення коштів (Refund). Клієнт може подати запит на повернення сплачених коштів у таких випадках: (1) якщо послугу не було надано з технічних причин; (2) якщо платіж здійснено помилково або повторно (двічі).",
           "Запит на повернення надсилається на tezcode@tezcode.dev. Після розгляду запиту кошти повертаються тим самим способом, яким було здійснено оплату (на картку), зазвичай протягом 10 (десяти) робочих днів — відповідно до правил банку та платіжної системи.",
@@ -317,7 +325,7 @@ export const OFERTA_CONTENT: LegalContent = {
           "Банк: Davr Bank AT, філія Olmazor · Розрахунковий рахунок: 20208000307472214001 · МФО: 01121",
           "Директор: Йорматов Абдулазіз Гайратжонович",
           "Email: tezcode@tezcode.dev · Telegram: @tezcode_managament · Тел: +998 91 777 66 09",
-          "Резидент IT Park Uzbekistan (свідоцтво № 7666, 18.06.2026)",
+          "Резидент IT Park Uzbekistan (свідоцтво № 6237, 18.06.2026)",
         ],
       },
     ],
@@ -326,7 +334,7 @@ export const OFERTA_CONTENT: LegalContent = {
     metaTitle: "العرض العام",
     metaDescription:
       "العرض العام لشركة TEZ KOD لتقديم خدمات الاشتراك: موضوع العرض، السعر وطريقة الدفع، إجراءات مكافحة الاحتيال، بيانات الأطراف.",
-    versionLabel: "وثيقة قانونية · الإصدار 1.1 — 2026-07-22",
+    versionLabel: "وثيقة قانونية · الإصدار 1.2 — 2026-11-06",
     heading: "العرض العام",
     subheading:
       "عقد العرض العام لتقديم خدمات اشتراك TEZ KOD — المادتان 369-370 من القانون المدني لأوزبكستان.",
@@ -335,20 +343,22 @@ export const OFERTA_CONTENT: LegalContent = {
         title: "1. أحكام عامة",
         body: [
           "يُعدّ هذا المستند عرضًا عامًا صادرًا عن شركة TEZ KOD ذ.م.م. (الرقم الضريبي STIR 313057467، مقيمة في IT Park أوزبكستان) وفقًا للمادة 369 من القانون المدني لجمهورية أوزبكستان.",
-          "يُعتبر قبول العرض (المادة 370 من القانون المدني) لحظة سداد قيمة إحدى الخدمات — RAOS أو CoreMed أو WeWatch أو Zzone أو savdo-builder. ومنذ لحظة الدفع يُعدّ العقد مبرمًا كتابيًا.",
+          "يُعتبر قبول العرض (المادة 370 من القانون المدني) لحظة سداد قيمة إحدى الخدمات — RAOS أو CoreMed أو WeWatch. ومنذ لحظة الدفع يُعدّ العقد مبرمًا كتابيًا.",
         ],
       },
       {
         title: "2. موضوع العرض",
         body: [
-          "تمنح TEZ KOD حق استخدام البرمجيات بنموذج SaaS مقابل اشتراك: RAOS — نظام نقاط بيع للتجارة بالتجزئة، CoreMed — منظومة صحية رقمية (عيادات، مرضى، زيارات منزلية)، WeWatch — خدمة مشاهدة الفيديو المشتركة مع دردشة صوتية، Zzone — منصة للبحث عن قطع غيار السيارات وشرائها، savdo-builder — منصة للأسواق ونقاط البيع.",
+          "تمنح TEZ KOD حق استخدام برمجياتها الخاصة بنموذج SaaS مقابل اشتراك: RAOS — نظام نقاط بيع للتجارة بالتجزئة، CoreMed — برمجيات للعيادات، WeWatch — خدمة مشاهدة الفيديو المشتركة مع دردشة صوتية.",
+          "بموجب هذا العرض، تقبل TEZ KOD الدفع مقابل منتجاتها البرمجية وخدماتها الخاصة فقط. ولا تُقبل بموجب هذا العرض مدفوعات مقابل سلع أو خدمات أطراف ثالثة (زبائن المتاجر، مرضى المؤسسات الطبية، البائعين والموردين المستقلين).",
           "تُعرض أسعار كل منتج ووظائفه وخطط أسعاره على موقع المنتج المعني، وتُعدّ جزءًا لا يتجزأ من هذا العرض.",
         ],
       },
       {
         title: "3. السعر وطريقة الدفع واسترداد الأموال",
         body: [
-          "يُحدَّد سعر الخدمة وفق التعرفة المعلنة على موقع المنتج المعني. تتم عملية الدفع عبر أنظمة Payme وClick وUzum Pay — من خلال التطبيق أو بطاقة مصرفية (Uzcard وHumo وVisa وMastercard).",
+          "يُحدَّد سعر الخدمة وفق التعرفة المعلنة على موقع المنتج المعني. تتم عملية الدفع عبر أنظمة Payme وClick وUzum Pay — من خلال التطبيق أو بطاقة مصرفية (Uzcard وHumo).",
+          "لا توجد عمليات خصم تلقائية: تُدفع كل فترة اشتراك بدفعة منفصلة بموجب فاتورة أو رابط دفع. ولا يُمدَّد الاشتراك إلا بعد هذا الدفع؛ وإذا لم تُدفع الفترة يُعلَّق الوصول ولا يُخصم أي مبلغ. ولا يجوز تفعيل الخصم التلقائي المتكرر إلا بموافقة صريحة منفصلة من العميل، مع إمكانية إيقافه في أي وقت.",
           "لا تحتفظ TEZ KOD ببيانات البطاقة (الرقم، تاريخ الانتهاء، رمز CVV) ولا تراها — تمر جميع المدفوعات عبر بنية أنظمة الدفع المرخّصة.",
           "استرداد الأموال (Refund). يجوز للعميل طلب استرداد المبالغ المدفوعة في الحالات التالية: (1) إذا لم تُقدَّم الخدمة لأسباب تقنية؛ (2) إذا تمّ الدفع بالخطأ أو بشكل مكرَّر (مرتين).",
           "يُرسَل طلب الاسترداد إلى tezcode@tezcode.dev. وبعد مراجعة الطلب، تُعاد الأموال بنفس وسيلة الدفع المستخدمة (إلى البطاقة)، عادةً خلال 10 (عشرة) أيام عمل — وفقًا لقواعد البنك ونظام الدفع.",
@@ -396,7 +406,7 @@ export const OFERTA_CONTENT: LegalContent = {
           "البنك: Davr Bank AT، فرع Olmazor · رقم الحساب: 20208000307472214001 · MFO: 01121",
           "المدير: Yormatov Abdulaziz G'ayratjon o'g'li",
           "البريد الإلكتروني: tezcode@tezcode.dev · تيليجرام: @tezcode_managament · الهاتف: +998 91 777 66 09",
-          "مقيمة في IT Park أوزبكستان (شهادة رقم 7666، بتاريخ 2026-06-18)",
+          "مقيمة في IT Park أوزبكستان (شهادة رقم 6237، بتاريخ 2026-06-18)",
         ],
       },
     ],
