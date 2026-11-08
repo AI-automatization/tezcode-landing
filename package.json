@@ -11,7 +11,9 @@
     "indexnow": "node scripts/indexnow.mjs",
     "check:script": "node scripts/check-mixed-script.mjs",
     "check:seo": "node scripts/check-seo.mjs",
-    "check:contact": "node scripts/check-contact.mjs"
+    "check:contact": "node scripts/check-contact.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "test:smoke": "next build && node scripts/smoke.mjs"
   },
   "engines": {
     "node": ">=20.9.0",
