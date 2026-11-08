@@ -1,0 +1,44 @@
+name: CI
+
+# Деплой делает нативная GitHub-интеграция Railway на каждый push в main.
+# Здесь только проверки — на каждом PR и на main. Прежний шаг `railway up`
+# падал на всех прогонах: RAILWAY_TOKEN в репо не заведён, и он не нужен.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Language gate + build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Uzbek copy with Cyrillic letters mixed in looks right to the eye
+      # but silently breaks the search keyword. Pure Node, no install needed.
+      - name: Check language purity (uz = Latin, ru/uk = Cyrillic)
+        run: node scripts/check-mixed-script.mjs
+
+      # Same pnpm as Railway (railway.json); frozen lockfile catches lock drift.
+      - name: Install
+        run: |
+          corepack enable
+          corepack prepare pnpm@10.30.1 --activate
+          pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
