@@ -44,7 +44,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "CI/CD",
       "AI Prompt Engineering",
     ],
-    projects: [{ name: "TezDetal", role: "Full-stack mahsulot ishlab chiqish va jamoa boshqaruvi" }],
+    projects: [],
     telegram: "behruz_237",
     photo: "/team/behruz-satimboyev.jpg",
     knowsAbout: [
@@ -69,7 +69,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "TezDetal loyihasi ustida ishlaydi. TypeScript va zamonaviy JavaScript bilan frontend hamda backend qismlarini ishlab chiqadi.",
     ],
     skills: ["Next.js", "React", "Node.js", "TypeScript", "JavaScript"],
-    projects: [{ name: "TezDetal", role: "Full-stack veb ishlab chiqish" }],
+    projects: [],
     telegram: "Javodbe411",
     knowsAbout: [
       "Full-Stack Development",
@@ -101,12 +101,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "Arxitektura",
       "Code review",
     ],
-    projects: [
-      { name: "RAOS", role: "POS/kassa — arxitektura va texnik qarorlar" },
-      { name: "CoreMed", role: "Healthtech ekotizimi — arxitektura, PR review" },
-      { name: "WeWatch", role: "Ijtimoiy onlayn kinoteatr" },
-      { name: "tezcode-billing", role: "Markazlashtirilgan billing tizimi" },
-    ],
+    projects: [],
     telegram: "mr_abdulaziz_yormatov",
     linkedin: "https://www.linkedin.com/in/abdulaziz-yormatov-724287418/",
     knowsAbout: [
@@ -141,7 +136,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "Remotion",
       "GitHub CLI",
     ],
-    projects: [{ name: "MaxSavdo", role: "Development, QA va marketing" }],
+    projects: [],
     telegram: "abdulazizatxamov262",
     linkedin: "https://www.linkedin.com/in/abdulaziz-atxamov-389ab83b5/",
     knowsAbout: [
@@ -165,7 +160,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "ClinicaGo (klinika CRM) loyihasida ishlaydi — frontend va backend qismlarini ishlab chiqadi.",
     ],
     skills: ["React", "Node.js", "JavaScript"],
-    projects: [{ name: "ClinicaGo", role: "Full-stack veb ishlab chiqish" }],
+    projects: [],
     telegram: "Sinus_30gradus",
     knowsAbout: ["Full-Stack Development", "React", "Node.js"],
     metaTitle: "Ibrohim Sobirov — Tezcode AI Engineer",
@@ -192,12 +187,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "Railway",
       "AI/Claude integration",
     ],
-    projects: [
-      { name: "ClinicaGo", role: "Klinikalar uchun CRM" },
-      { name: "HamshiraGo", role: "Tibbiy xizmat platformasi" },
-      { name: "CoreMed", role: "Healthtech holding" },
-      { name: "Salomat AI", role: "AI tibbiy yordamchi" },
-    ],
+    projects: [],
     telegram: "diyor_011",
     knowsAbout: [
       "Healthtech",
@@ -229,12 +219,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "Telegram Bot API",
       "Railway",
     ],
-    projects: [
-      { name: "ClinicaGo", role: "Klinikalar uchun CRM" },
-      { name: "HamshiraGo", role: "Tibbiy xizmat platformasi" },
-      { name: "CoreMed", role: "Healthtech holding" },
-      { name: "Salomat AI", role: "AI tibbiy yordamchi" },
-    ],
+    projects: [],
     telegram: "JafarbekUlugbekov",
     linkedin: "https://www.linkedin.com/in/jafarbek-ulugbekov-059453341",
     knowsAbout: [
@@ -271,10 +256,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "AI Agents (Claude SDK)",
       "MCP",
     ],
-    projects: [
-      { name: "ClinicaGo", role: "Klinikalar uchun CRM" },
-      { name: "HamshiraGo", role: "Tibbiy xizmat platformasi" },
-    ],
+    projects: [],
     telegram: "abubakirilhomov",
     linkedin: "https://www.linkedin.com/in/abubakir-ilhomov-888131325",
     knowsAbout: [
@@ -345,10 +327,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "Mongoose",
       "Tailwind CSS",
     ],
-    projects: [
-      { name: "MaxSavdo", role: "Full-stack veb ishlab chiqish" },
-      { name: "AviaTamir", role: "Veb ishlab chiqish" },
-    ],
+    projects: [],
     telegram: "ky_747",
     knowsAbout: [
       "Full-Stack Development",
@@ -382,7 +361,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "Axios",
       "Socket.io",
     ],
-    projects: [{ name: "RAOS", role: "POS/kassa — frontend va mobil" }],
+    projects: [],
     telegram: "mirzaevvv011",
     linkedin: "https://www.linkedin.com/in/abdulaziz-mirzayev-b25650379",
     knowsAbout: [
@@ -472,10 +451,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "Turborepo",
       "Railway",
     ],
-    projects: [
-      { name: "MaxSavdo", role: "Telegram-sotuvchilar uchun e-commerce — backend, bot, mini-app" },
-      { name: "RAOS", role: "Partner API integratsiyasi" },
-    ],
+    projects: [],
     telegram: "ismailov_0011",
     linkedin: "https://www.linkedin.com/in/polatbek-ismoilov-b33861404/",
     knowsAbout: [
@@ -510,9 +486,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "Docker",
       "CI/CD",
     ],
-    projects: [
-      { name: "RAOS", role: "Savdo/inventarizatsiya — backend, admin, POS desktop, DevOps" },
-    ],
+    projects: [],
     telegram: "tursunov_078",
     knowsAbout: [
       "Full-Stack Development",
@@ -534,10 +508,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
       "HTML, CSS, JavaScript va React Native bilan ishlaydi. WeWatch va Uy Savdo loyihalarida.",
     ],
     skills: ["SEO", "HTML", "CSS", "JavaScript", "React Native"],
-    projects: [
-      { name: "WeWatch", role: "Ijtimoiy onlayn kinoteatr — co-founder, SEO" },
-      { name: "Uy Savdo", role: "Veb loyiha" },
-    ],
+    projects: [],
     telegram: "Emirhan7788",
     knowsAbout: ["SEO", "WeWatch", "React Native", "Web Development"],
     metaTitle: "Emirhan Ertan — Tezcode AI Engineer",
