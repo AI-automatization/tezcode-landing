@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Biznesni AI bilan avtomatlashtirish — Toshkent, O'zbekiston | Tezcode",
-    "description": "TezCode — AI Software Factory. Toshkentda biznes uchun AI avtomatlashtirish: AI agentlar, chatbotlar va jarayonlar avtomatizatsiyasi.",
+    "description": "TezCode — AI Software Factory. Toshkentda biznes uchun AI avtomatlashtirish: AI agentlar va jarayonlar avtomatizatsiyasi.",
     "ogTitle": "Biznesni AI bilan avtomatlashtirish — Tezcode, Toshkent",
     "ogDescription": "O'zbekiston biznesini AI bilan tizimlash. RAOS POS, HamshiraGo va 5 boshqa mahsulot."
   },
@@ -29,9 +29,7 @@
       "aiSalon": "Salon uchun AI",
       "aiRestaurant": "Restoran uchun AI",
       "crmIntegration": "CRM integratsiya",
-      "aiChatbot": "AI chatbot",
       "aiVideoAnalytics": "AI video analitika",
-      "telegramBot": "Telegram bot",
       "posSystem": "POS tizimi",
       "clinicCrm": "Klinika CRM",
       "employeeMonitoring": "Xodim nazorati",
@@ -49,8 +47,8 @@
     "trust": "✓ Konsultatsiya bepul · ✓ Majburiyatsiz · ✓ 24 soat ichida javob",
     "directions_aria": "Yo'nalishlar",
     "dir_web": "Sayt & MVP",
-    "dir_bot": "Telegram bot",
-    "dir_ai": "AI chatbot & agent",
+    "dir_ai": "AI agent",
+    "dir_auto": "Biznes avtomatlashtirish",
     "dir_crm": "CRM & 1C integratsiya",
     "stat_divisions": "Yo'nalish",
     "stat_products": "Mahsulot",
@@ -113,7 +111,7 @@
       "name": "Tezcode",
       "tagline": "AI agentlar va platformalar",
       "description": "Sun'iy intellekt yordamchilari, AI agentlar, ish jarayonlarini avtomatlashtiruvchi yechimlar.",
-      "products": "AI agent · AI chatbot",
+      "products": "AI agent · AI avtomatlashtirish",
       "model": "SaaS + Token-based"
     },
     "teams": {

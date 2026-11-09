@@ -61,7 +61,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     partnershipTitle: "Hamkorlik qanday ishlaydi",
     partnershipParas: [
-      "Tezcode — AI Software Factory: biz AI-avtomatlashtirish, chatbot, CRM integratsiya va video tahlil yechimlarini quramiz. FRONTIX esa veb va raqamli mahsulot tarafini oladi.",
+      "Tezcode — AI Software Factory: biz AI-avtomatlashtirish, AI agentlar, CRM integratsiya va video tahlil yechimlarini quramiz. FRONTIX esa veb va raqamli mahsulot tarafini oladi.",
       "Ish har bir tomonning kuchli yo'nalishiga qarab taqsimlanadi: sayt yoki buyurtma tizimi kerak bo'lsa — FRONTIX, AI qatlam va integratsiya kerak bo'lsa — Tezcode. Hamkorlik ikki tomonlama: FRONTIX ham o'z saytida Tezcode'ni hamkor sifatida ko'rsatadi.",
     ],
     ctaTitle: "Loyihangiz uchun mos jamoani tanlaymizmi?",
@@ -98,7 +98,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     partnershipTitle: "Как устроено партнёрство",
     partnershipParas: [
-      "Tezcode — AI Software Factory: мы строим ИИ-автоматизацию, чат-ботов, CRM-интеграции и видеоаналитику. FRONTIX берёт на себя веб- и цифровую часть продукта.",
+      "Tezcode — AI Software Factory: мы строим ИИ-автоматизацию, ИИ-агентов, CRM-интеграции и видеоаналитику. FRONTIX берёт на себя веб- и цифровую часть продукта.",
       "Работа распределяется по сильным сторонам каждой стороны: нужен сайт или система заказов — FRONTIX, нужен слой ИИ и интеграции — Tezcode. Партнёрство взаимное: FRONTIX также указывает Tezcode партнёром у себя на сайте.",
     ],
     ctaTitle: "Подобрать команду под ваш проект?",
@@ -135,7 +135,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     partnershipTitle: "How the partnership works",
     partnershipParas: [
-      "Tezcode is an AI Software Factory: we build AI automation, chatbots, CRM integrations and video analytics. FRONTIX takes the web and digital product side.",
+      "Tezcode is an AI Software Factory: we build AI automation, AI agents, CRM integrations and video analytics. FRONTIX takes the web and digital product side.",
       "Work is split by each side's strength: a website or ordering system goes to FRONTIX, the AI layer and integrations go to Tezcode. The partnership is mutual — FRONTIX lists Tezcode as a partner on their site too.",
     ],
     ctaTitle: "Want the right team for your project?",
@@ -172,7 +172,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     partnershipTitle: "كيف تعمل الشراكة",
     partnershipParas: [
-      "Tezcode مصنع برمجيات للذكاء الاصطناعي: نبني الأتمتة بالذكاء الاصطناعي والبوتات وتكاملات CRM وتحليل الفيديو. وتتولى FRONTIX جانب الويب والمنتج الرقمي.",
+      "Tezcode مصنع برمجيات للذكاء الاصطناعي: نبني الأتمتة بالذكاء الاصطناعي ووكلاء الذكاء الاصطناعي وتكاملات CRM وتحليل الفيديو. وتتولى FRONTIX جانب الويب والمنتج الرقمي.",
       "يُقسَّم العمل وفق نقاط قوة كل طرف: الموقع أو نظام الطلبات إلى FRONTIX، وطبقة الذكاء الاصطناعي والتكاملات إلى Tezcode. والشراكة متبادلة — تدرج FRONTIX أيضًا Tezcode كشريك على موقعها.",
     ],
     ctaTitle: "هل تريد الفريق المناسب لمشروعك؟",
@@ -209,7 +209,7 @@ const COPY: Record<Lang, CopyShape> = {
     ],
     partnershipTitle: "Як влаштоване партнерство",
     partnershipParas: [
-      "Tezcode — AI Software Factory: ми будуємо AI-автоматизацію, чат-ботів, CRM-інтеграції та відеоаналітику. FRONTIX бере на себе веб- і цифрову частину продукту.",
+      "Tezcode — AI Software Factory: ми будуємо AI-автоматизацію, AI-агентів, CRM-інтеграції та відеоаналітику. FRONTIX бере на себе веб- і цифрову частину продукту.",
       "Робота розподіляється за сильними сторонами кожної сторони: потрібен сайт чи система замовлень — FRONTIX, потрібен шар AI та інтеграції — Tezcode. Партнерство взаємне: FRONTIX теж вказує Tezcode партнером у себе на сайті.",
     ],
     ctaTitle: "Підібрати команду під ваш проєкт?",

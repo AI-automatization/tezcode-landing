@@ -622,9 +622,7 @@ function RelatedSection({ copy }: { copy: ServicePageCopy }) {
 const SERVICE_CITY_SLUGS: Record<string, string[]> = {
   "pos-tizimi": ["toshkent"], // trimmed from 12: small-city pages were thin duplicates
   "ai-avtomatizatsiya": ["toshkent"], // trimmed from 12: small-city pages were thin duplicates
-  "ai-chatbot": ["toshkent"],
   "ai-agent": [],
-  "telegram-bot-biznes": ["toshkent"],
   "biznes-avtomatlashtirish": ["toshkent"],
 };
 
@@ -636,14 +634,12 @@ const CITY_ROW_HEADING: Record<ServiceLang, string> = {
   uk: "За містами",
 };
 
-// Descriptive anchors ("Toshkentda Telegram bot") instead of bare city names,
+// Descriptive anchors ("Toshkentda AI agent") instead of bare city names,
 // so readers and search engines see where each link leads.
 const CITY_SERVICE_NAME: Record<string, Record<ServiceLang, string>> = {
   "pos-tizimi": { uz: "POS tizimi", ru: "POS-система", en: "POS system", ar: "نظام نقاط البيع", uk: "POS-система" },
   "ai-avtomatizatsiya": { uz: "AI avtomatizatsiya", ru: "ИИ-автоматизация", en: "AI automation", ar: "الأتمتة بالذكاء الاصطناعي", uk: "ШІ-автоматизація" },
-  "ai-chatbot": { uz: "AI chatbot", ru: "ИИ-чат-бот", en: "AI chatbot", ar: "روبوت محادثة بالذكاء الاصطناعي", uk: "ШІ-чат-бот" },
   "ai-agent": { uz: "AI agent", ru: "ИИ-агент", en: "AI agent", ar: "وكيل ذكاء اصطناعي", uk: "ШІ-агент" },
-  "telegram-bot-biznes": { uz: "Telegram bot", ru: "Telegram-бот", en: "Telegram bot", ar: "بوت تيليجرام", uk: "Telegram-бот" },
   "biznes-avtomatlashtirish": { uz: "biznes avtomatlashtirish", ru: "Автоматизация бизнеса", en: "Business automation", ar: "أتمتة الأعمال", uk: "Автоматизація бізнесу" },
 };
 
@@ -703,30 +699,26 @@ function CityLinksSection({
 // at the homepage, so service pages had no inbound authority; cross-linking siblings
 // distributes link equity and builds topical authority for each service cluster.
 const RELATED_SERVICES: Record<string, string[]> = {
-  "ai-chatbot": ["ai-agent", "telegram-bot-biznes", "crm-integratsiya"],
-  "ai-agent": ["ai-chatbot", "ai-avtomatizatsiya", "biznes-avtomatlashtirish"],
-  "ai-avtomatizatsiya": ["ai-agent", "ai-chatbot", "biznes-avtomatlashtirish"],
+  "ai-agent": ["ai-avtomatizatsiya", "biznes-avtomatlashtirish", "crm-integratsiya"],
+  "ai-avtomatizatsiya": ["ai-agent", "biznes-avtomatlashtirish", "crm-integratsiya"],
   "biznes-avtomatlashtirish": ["ai-avtomatizatsiya", "crm-integratsiya", "klinika-crm"],
-  "crm-integratsiya": ["ai-chatbot", "biznes-avtomatlashtirish", "telegram-bot-biznes"],
-  "telegram-bot-biznes": ["ai-chatbot", "ai-agent", "crm-integratsiya"],
+  "crm-integratsiya": ["ai-agent", "biznes-avtomatlashtirish", "klinika-crm"],
   "ai-video-analitika": ["ai-restoran-uchun", "pos-tizimi", "ai-avtomatizatsiya"],
   "xodim-nazorati": ["ai-video-analitika", "biznes-avtomatlashtirish", "pos-tizimi"],
-  "klinika-crm": ["biznes-avtomatlashtirish", "crm-integratsiya", "ai-chatbot"],
+  "klinika-crm": ["biznes-avtomatlashtirish", "crm-integratsiya", "ai-agent"],
   "pos-tizimi": ["ai-restoran-uchun", "klinika-crm", "xodim-nazorati"],
-  "ai-restoran-uchun": ["pos-tizimi", "ai-chatbot", "ai-video-analitika"],
-  "ai-salon-uchun": ["ai-chatbot", "telegram-bot-biznes", "crm-integratsiya"],
+  "ai-restoran-uchun": ["pos-tizimi", "ai-agent", "ai-video-analitika"],
+  "ai-salon-uchun": ["ai-agent", "crm-integratsiya", "biznes-avtomatlashtirish"],
   "it-xizmatlar": ["ai-avtomatizatsiya", "biznes-avtomatlashtirish", "crm-integratsiya"],
 };
 
 // slug → key inside the existing menu.solutions translations (all 5 locales)
 const RELATED_LABEL_KEY: Record<string, string> = {
-  "ai-chatbot": "aiChatbot",
   "ai-agent": "aiAgent",
   "ai-avtomatizatsiya": "aiAutomation",
   "biznes-avtomatlashtirish": "businessAutomation",
   "crm-integratsiya": "crmIntegration",
   "ai-video-analitika": "aiVideoAnalytics",
-  "telegram-bot-biznes": "telegramBot",
   "pos-tizimi": "posSystem",
   "klinika-crm": "clinicCrm",
   "xodim-nazorati": "employeeMonitoring",

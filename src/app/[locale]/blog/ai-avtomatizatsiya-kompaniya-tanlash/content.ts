@@ -84,7 +84,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Tezcode — AI avtomatizatsiya misolida",
         paragraphs: [
-          "Tezcode — Toshkentda joylashgan AI Software Factory. Biz biznes uchun AI agentlar, AI chatbotlar va avtomatizatsiya yechimlarini quramiz va o'z mahsulotlarimizda (RAOS, ClinicaGo, Salomat AI) AI'ni har kuni ishlatamiz — ya'ni faqat va'da emas, ishlab turgan misollar.",
+          "Tezcode — Toshkentda joylashgan AI Software Factory. Biz biznes uchun AI agentlar va avtomatizatsiya yechimlarini quramiz va o'z mahsulotlarimizda (RAOS, ClinicaGo, Salomat AI) AI'ni har kuni ishlatamiz — ya'ni faqat va'da emas, ishlab turgan misollar.",
           "Ishimiz jarayoningizni o'rganishdan boshlanadi: bepul 30 daqiqalik konsultatsiya, keyin aniq taklif (narx va muddat bilan), 2-4 haftada ishlovchi MVP. Yechimni Telegram, CRM, 1C yoki Google Sheets'ga ulaymiz, o'zbek va rus tilida qo'llab-quvvatlaymiz. Agar biznesingiz uchun nimani avtomatlashtirish foydali ekanini bilmoqchi bo'lsangiz, biz bilan bog'lanib bepul maslahat olishingiz mumkin.",
         ],
       },
@@ -94,7 +94,7 @@ export const CONTENT: ArticleContent = {
       items: [
         {
           q: "Toshkentda AI avtomatizatsiya kim qiladi?",
-          a: "O'zbekistonda biznes uchun AI avtomatizatsiya, AI agent va AI chatbot yasaydigan kompaniyalar bor. Tanlashda kompaniyaning ishlab turgan real mahsulotlari, integratsiya imkoniyati va mahalliy (o'zbek/rus) qo'llab-quvvatlashiga e'tibor bering. Tezcode — Toshkentda joylashgan AI Software Factory bo'lib, aynan shu xizmatni ko'rsatadi.",
+          a: "O'zbekistonda biznes uchun AI avtomatizatsiya va AI agent yasaydigan kompaniyalar bor. Tanlashda kompaniyaning ishlab turgan real mahsulotlari, integratsiya imkoniyati va mahalliy (o'zbek/rus) qo'llab-quvvatlashiga e'tibor bering. Tezcode — Toshkentda joylashgan AI Software Factory bo'lib, aynan shu xizmatni ko'rsatadi.",
         },
         {
           q: "AI avtomatizatsiya qancha turadi?",
@@ -102,11 +102,11 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Kichik biznesga AI avtomatizatsiya kerakmi?",
-          a: "Ha, ko'pincha kerak. Hatto kichik biznesda ham mijozga javob berish, buyurtma qayd qilish va hisobot yig'ish kabi takroriy ishlar ko'p vaqt oladi. Bitta eng og'riqli jarayondan boshlab, arzon va tez yechim (masalan Telegram bot) bilan boshlash mumkin.",
+          a: "Ha, ko'pincha kerak. Hatto kichik biznesda ham mijozga javob berish, buyurtma qayd qilish va hisobot yig'ish kabi takroriy ishlar ko'p vaqt oladi. Bitta eng og'riqli jarayondan boshlab, arzon va tez yechim (masalan mijozlarga javob beradigan AI agent) bilan boshlash mumkin.",
         },
         {
           q: "AI avtomatizatsiya qancha vaqt oladi?",
-          a: "Oddiy yechim (masalan AI chatbot) bir necha hafta ichida ishga tushishi mumkin. Tezcode'da odatda 2-4 haftada ishlovchi MVP tayyorlanadi, keyin u sinab ko'riladi va yaxshilab boriladi.",
+          a: "Oddiy yechim (masalan savol-javob AI agenti) bir necha hafta ichida ishga tushishi mumkin. Tezcode'da odatda 2-4 haftada ishlovchi MVP tayyorlanadi, keyin u sinab ko'riladi va yaxshilab boriladi.",
         },
         {
           q: "AI mavjud tizimimga (CRM, 1C, Telegram) ulanadimi?",
@@ -197,7 +197,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Tezcode — на примере ИИ-автоматизации",
         paragraphs: [
-          "Tezcode — AI Software Factory в Ташкенте. Мы создаём ИИ-агентов, ИИ-чат-ботов и решения автоматизации для бизнеса и ежедневно используем ИИ в собственных продуктах (RAOS, ClinicaGo, Salomat AI) — то есть не только обещания, а работающие примеры.",
+          "Tezcode — AI Software Factory в Ташкенте. Мы создаём ИИ-агентов и решения автоматизации для бизнеса и ежедневно используем ИИ в собственных продуктах (RAOS, ClinicaGo, Salomat AI) — то есть не только обещания, а работающие примеры.",
           "Работа начинается с изучения вашего процесса: бесплатная 30-минутная консультация, затем конкретное предложение (с ценой и сроком), работающий MVP за 2-4 недели. Решение подключаем к Telegram, CRM, 1C или Google Sheets, поддержка на узбекском и русском. Если хотите понять, что выгодно автоматизировать в вашем бизнесе, свяжитесь с нами и получите бесплатную консультацию.",
         ],
       },
@@ -207,7 +207,7 @@ export const CONTENT: ArticleContent = {
       items: [
         {
           q: "Кто занимается ИИ-автоматизацией в Ташкенте?",
-          a: "В Узбекистане есть компании, которые делают ИИ-автоматизацию, ИИ-агентов и ИИ-чат-ботов для бизнеса. При выборе обращайте внимание на реально работающие продукты компании, возможность интеграции и локальную (узбекский/русский) поддержку. Tezcode — AI Software Factory в Ташкенте, оказывающая именно эти услуги.",
+          a: "В Узбекистане есть компании, которые делают ИИ-автоматизацию и ИИ-агентов для бизнеса. При выборе обращайте внимание на реально работающие продукты компании, возможность интеграции и локальную (узбекский/русский) поддержку. Tezcode — AI Software Factory в Ташкенте, оказывающая именно эти услуги.",
         },
         {
           q: "Сколько стоит ИИ-автоматизация?",
@@ -215,11 +215,11 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Нужна ли ИИ-автоматизация малому бизнесу?",
-          a: "Да, часто нужна. Даже в малом бизнесе рутинные задачи — ответы клиентам, фиксация заказов, сбор отчётов — отнимают много времени. Можно начать с одного самого болезненного процесса и недорогого быстрого решения (например, Telegram-бота).",
+          a: "Да, часто нужна. Даже в малом бизнесе рутинные задачи — ответы клиентам, фиксация заказов, сбор отчётов — отнимают много времени. Можно начать с одного самого болезненного процесса и недорогого быстрого решения (например, ИИ-агента для ответов клиентам).",
         },
         {
           q: "Сколько времени занимает ИИ-автоматизация?",
-          a: "Простое решение (например, ИИ-чат-бот) может заработать за несколько недель. В Tezcode обычно за 2-4 недели готовится работающий MVP, который затем тестируется и улучшается.",
+          a: "Простое решение (например, ИИ-агент «вопрос-ответ») может заработать за несколько недель. В Tezcode обычно за 2-4 недели готовится работающий MVP, который затем тестируется и улучшается.",
         },
         {
           q: "Подключится ли ИИ к моей системе (CRM, 1C, Telegram)?",
@@ -310,7 +310,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Tezcode — an AI automation example",
         paragraphs: [
-          "Tezcode is an AI Software Factory based in Tashkent. We build AI agents, AI chatbots and automation solutions for businesses, and we use AI every day in our own products (RAOS, ClinicaGo, Salomat AI) — so not just promises, but working examples.",
+          "Tezcode is an AI Software Factory based in Tashkent. We build AI agents and automation solutions for businesses, and we use AI every day in our own products (RAOS, ClinicaGo, Salomat AI) — so not just promises, but working examples.",
           "Our work starts by studying your process: a free 30-minute consultation, then a concrete proposal (with price and timeline), and a working MVP in 2-4 weeks. We connect the solution to Telegram, CRM, 1C or Google Sheets and support it in Uzbek and Russian. If you want to find out what is worth automating in your business, contact us for a free consultation.",
         ],
       },
@@ -320,7 +320,7 @@ export const CONTENT: ArticleContent = {
       items: [
         {
           q: "Who does AI automation in Tashkent?",
-          a: "There are companies in Uzbekistan that build AI automation, AI agents and AI chatbots for business. When choosing, pay attention to the company's real working products, integration capability and local (Uzbek/Russian) support. Tezcode is an AI Software Factory based in Tashkent that provides exactly these services.",
+          a: "There are companies in Uzbekistan that build AI automation and AI agents for business. When choosing, pay attention to the company's real working products, integration capability and local (Uzbek/Russian) support. Tezcode is an AI Software Factory based in Tashkent that provides exactly these services.",
         },
         {
           q: "How much does AI automation cost?",
@@ -328,11 +328,11 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Does a small business need AI automation?",
-          a: "Yes, often it does. Even in a small business, repetitive tasks — answering customers, logging orders, compiling reports — take a lot of time. You can start with the single most painful process and an inexpensive, fast solution (for example, a Telegram bot).",
+          a: "Yes, often it does. Even in a small business, repetitive tasks — answering customers, logging orders, compiling reports — take a lot of time. You can start with the single most painful process and an inexpensive, fast solution (for example, an AI agent that answers customers).",
         },
         {
           q: "How long does AI automation take?",
-          a: "A simple solution (for example, an AI chatbot) can go live within a few weeks. At Tezcode a working MVP is usually ready in 2-4 weeks, then it is tested and improved.",
+          a: "A simple solution (for example, a Q&A AI agent) can go live within a few weeks. At Tezcode a working MVP is usually ready in 2-4 weeks, then it is tested and improved.",
         },
         {
           q: "Will the AI connect to my system (CRM, 1C, Telegram)?",

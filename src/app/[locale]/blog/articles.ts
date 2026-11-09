@@ -96,19 +96,19 @@ export const ARTICLES: ArticleMeta[] = [
         title:
           "Sun'iy intellekt xizmatlari O'zbekistonda: turlari, narxi va qanday tanlash (2026)",
         excerpt:
-          "Sun'iy intellekt (AI) nima, biznes uchun qanday xizmatlar bor — chatbot, AI agent, avtomatizatsiya, video analitika, ovozli assistent — narxlari qancha ($279 dan) va provayderni qanday tanlash.",
+          "Sun'iy intellekt (AI) nima, biznes uchun qanday xizmatlar bor — chatbot, AI agent, avtomatizatsiya, video analitika, ovozli assistent — narxlari qancha ($400 dan) va provayderni qanday tanlash.",
       },
       ru: {
         title:
           "Услуги искусственного интеллекта в Узбекистане: виды, цены и как выбрать (2026)",
         excerpt:
-          "Что такое искусственный интеллект (ИИ), какие услуги есть для бизнеса — чат-бот, ИИ-агент, автоматизация, видеоаналитика, голосовые ассистенты — сколько они стоят (от $279) и как выбрать подрядчика.",
+          "Что такое искусственный интеллект (ИИ), какие услуги есть для бизнеса — чат-бот, ИИ-агент, автоматизация, видеоаналитика, голосовые ассистенты — сколько они стоят (от $400) и как выбрать подрядчика.",
       },
       en: {
         title:
           "Artificial intelligence services in Uzbekistan: types, prices and how to choose (2026)",
         excerpt:
-          "What artificial intelligence (AI) is, which services exist for business — chatbots, AI agents, automation, video analytics, voice assistants — what they cost (from $279) and how to choose a provider.",
+          "What artificial intelligence (AI) is, which services exist for business — chatbots, AI agents, automation, video analytics, voice assistants — what they cost (from $400) and how to choose a provider.",
       },
     },
   },
@@ -141,7 +141,7 @@ export const ARTICLES: ArticleMeta[] = [
     availableLocales: ["uz", "ru", "en"],
     datePublished: "2026-08-15",
     category: "AI / O'zbek tili",
-    relatedService: { href: "/ai-chatbot", label: "AI chatbot" },
+    relatedService: { href: "/ai-agent", label: "AI agent" },
     list: {
       uz: {
         title: "AI o'zbek tilida: foydalanish va tekshirish misollari",
@@ -170,65 +170,17 @@ export const ARTICLES: ArticleMeta[] = [
       uz: {
         title: "Sotuvni avtomatlashtirish: Telegram, Instagram va CRM (2026)",
         excerpt:
-          "Barcha kanal → bitta CRM, AI chatbot 24/7 javob va lid saralash, buyurtma avtomatik 1C/CRM'ga. Bironta lid yo'qolmaydi — sotuvni avtomatlashtirish qo'llanmasi.",
+          "Barcha kanal → bitta CRM, AI agent 24/7 javob va lid saralash, buyurtma avtomatik 1C/CRM'ga. Bironta lid yo'qolmaydi — sotuvni avtomatlashtirish qo'llanmasi.",
       },
       ru: {
         title: "Автоматизация продаж: Telegram, Instagram и CRM (2026)",
         excerpt:
-          "Все каналы → одна CRM, ИИ-чат-бот отвечает 24/7 и квалифицирует лиды, заказ автоматически в 1C/CRM. Ни один лид не теряется — руководство по автоматизации продаж.",
+          "Все каналы → одна CRM, ИИ-агент отвечает 24/7 и квалифицирует лиды, заказ автоматически в 1C/CRM. Ни один лид не теряется — руководство по автоматизации продаж.",
       },
       en: {
         title: "Sales automation: Telegram, Instagram and CRM (2026)",
         excerpt:
-          "All channels → one CRM, an AI chatbot answers 24/7 and qualifies leads, orders written to 1C/CRM automatically. No lead lost — a sales-automation guide.",
-      },
-    },
-  },
-  {
-    slug: "biznes-uchun-telegram-bot",
-    availableLocales: ["uz", "ru", "en"],
-    datePublished: "2026-08-15",
-    category: "Telegram bot / Qo'llanma",
-    relatedService: { href: "/telegram-bot-biznes", label: "Telegram bot" },
-    list: {
-      uz: {
-        title: "Biznes uchun Telegram bot: nima, narxi va qanday yaratiladi (2026)",
-        excerpt:
-          "Buyurtma, Click/Payme to'lov, 24/7 javob va CRM integratsiya — Telegram botda. Narx $279 dan, bot turlari va qanday yaratiladi — amaliy qo'llanma.",
-      },
-      ru: {
-        title: "Telegram-бот для бизнеса: что это, цена и как сделать (2026)",
-        excerpt:
-          "Заказы, оплата Click/Payme, ответы 24/7 и интеграция CRM — в Telegram-боте. Цена от $279, виды ботов и как сделать — практическое руководство.",
-      },
-      en: {
-        title: "A Telegram bot for business: what it is, price and how to build it (2026)",
-        excerpt:
-          "Orders, Click/Payme payment, 24/7 answers and CRM integration — in a Telegram bot. From $279, bot types and how it's built — a practical guide.",
-      },
-    },
-  },
-  {
-    slug: "ai-chatbot-vs-jonli-operator",
-    availableLocales: ["uz", "ru", "en"],
-    datePublished: "2026-08-15",
-    category: "AI chatbot / Taqqoslash",
-    relatedService: { href: "/ai-chatbot", label: "AI chatbot" },
-    list: {
-      uz: {
-        title: "AI chatbot vs jonli operator: qaysi biri, qachon? (2026)",
-        excerpt:
-          "AI chatbot soniyalarda va arzon, jonli operator nozik holatlarda kuchli. Narx, tezlik va sifat taqqoslash — va nega gibrid (AI + operator) model eng samarali.",
-      },
-      ru: {
-        title: "ИИ-чат-бот или живой оператор: что и когда? (2026)",
-        excerpt:
-          "ИИ-чат-бот за секунды и дёшево, живой оператор силён в деликатных ситуациях. Сравнение по цене, скорости и качеству — и почему гибрид эффективнее.",
-      },
-      en: {
-        title: "AI chatbot vs a live agent: which, and when? (2026)",
-        excerpt:
-          "An AI chatbot is fast and cheap; a live agent is strong in delicate cases. A price/speed/quality comparison — and why a hybrid model wins.",
+          "All channels → one CRM, an AI agent answers 24/7 and qualifies leads, orders written to 1C/CRM automatically. No lead lost — a sales-automation guide.",
       },
     },
   },
@@ -266,12 +218,12 @@ export const ARTICLES: ArticleMeta[] = [
       ru: {
         title: "Цены на ИИ-решения 2026: сколько стоит каждая услуга",
         description:
-          "ИИ-чат-бот от $339, ИИ-агент от $400, интеграция CRM от $700, видеоаналитика от $990 — цены на ИИ-решения 2026, что влияет на цену и порядок оплаты.",
+          "ИИ-агент от $400, автоматизация бизнеса от $400, интеграция CRM от $700, видеоаналитика от $990 — цены на ИИ-решения 2026, что влияет на цену и порядок оплаты.",
       },
       en: {
         title: "AI solution prices 2026: what each service costs",
         description:
-          "AI chatbot from $339, AI agent from $400, CRM integration from $700, AI video analytics from $990 — 2026 prices, what drives them and payment terms.",
+          "AI agent from $400, business automation from $400, CRM integration from $700, AI video analytics from $990 — 2026 prices, what drives them and payment terms.",
       },
     },
     list: {
@@ -279,19 +231,19 @@ export const ARTICLES: ArticleMeta[] = [
         title:
           "AI yechimlar narxi 2026: qaysi xizmat qancha turadi? (Toshkent, O'zbekiston)",
         excerpt:
-          "AI chatbot $339 dan, AI agent $400 dan, CRM integratsiya $700 dan, AI video analitika $990 dan — barcha AI yechimlarning aniq 2026 narxlari, narxga nima ta'sir qiladi va to'lov tartibi.",
+          "AI agent $400 dan, biznes avtomatlashtirish $400 dan, CRM integratsiya $700 dan, AI video analitika $990 dan — barcha AI yechimlarning aniq 2026 narxlari, narxga nima ta'sir qiladi va to'lov tartibi.",
       },
       ru: {
         title:
           "Цены на ИИ-решения 2026: сколько стоит каждая услуга? (Ташкент, Узбекистан)",
         excerpt:
-          "ИИ-чат-бот от $339, ИИ-агент от $400, интеграция CRM от $700, ИИ-видеоаналитика от $990 — точные цены на все ИИ-решения на 2026, что влияет на цену и порядок оплаты.",
+          "ИИ-агент от $400, автоматизация бизнеса от $400, интеграция CRM от $700, ИИ-видеоаналитика от $990 — точные цены на все ИИ-решения на 2026, что влияет на цену и порядок оплаты.",
       },
       en: {
         title:
           "AI solution prices 2026: how much does each service cost? (Tashkent, Uzbekistan)",
         excerpt:
-          "AI chatbot from $339, AI agent from $400, CRM integration from $700, AI video analytics from $990 — exact 2026 prices for all AI solutions, what drives the price and payment terms.",
+          "AI agent from $400, business automation from $400, CRM integration from $700, AI video analytics from $990 — exact 2026 prices for all AI solutions, what drives the price and payment terms.",
       },
     },
   },
@@ -306,19 +258,19 @@ export const ARTICLES: ArticleMeta[] = [
         title:
           "Biznesni AI bilan avtomatlashtirish: Toshkent va O'zbekiston uchun to'liq qo'llanma (2026)",
         excerpt:
-          "«Biznesimni AI bilan avtomatlashtirmoqchiman» deganlar uchun amaliy qo'llanma: nimadan boshlash, aniq narxlar (chatbot $339 dan, Telegram bot $279 dan), muddatlar va kompaniya tanlash mezonlari.",
+          "«Biznesimni AI bilan avtomatlashtirmoqchiman» deganlar uchun amaliy qo'llanma: nimadan boshlash, aniq narxlar (AI agent va biznes avtomatlashtirish — $400 dan), muddatlar va kompaniya tanlash mezonlari.",
       },
       ru: {
         title:
           "Автоматизация бизнеса с ИИ: полное руководство для Ташкента и Узбекистана (2026)",
         excerpt:
-          "Практическое руководство для тех, кто хочет автоматизировать бизнес с ИИ: с чего начать, точные цены (чатбот от $339, Telegram-бот от $279), сроки и критерии выбора компании.",
+          "Практическое руководство для тех, кто хочет автоматизировать бизнес с ИИ: с чего начать, точные цены (ИИ-агент и автоматизация бизнеса — от $400), сроки и критерии выбора компании.",
       },
       en: {
         title:
           "Automating your business with AI: the complete guide for Tashkent and Uzbekistan (2026)",
         excerpt:
-          "A practical guide for business owners who want AI automation: where to start, concrete prices (chatbot from $339, Telegram bot from $279), timelines and how to choose a company.",
+          "A practical guide for business owners who want AI automation: where to start, concrete prices (AI agent and business automation from $400), timelines and how to choose a company.",
       },
     },
   },
@@ -446,30 +398,6 @@ export const ARTICLES: ArticleMeta[] = [
         title: "Создание ИИ-агента для бизнеса в Ташкенте: полное руководство (2026)",
         excerpt:
           "Что такое ИИ-агент, чем отличается от чат-бота, какому бизнесу нужен, как работает, от чего зависит цена и как создать его за 6 шагов — практическое руководство для бизнеса в Узбекистане.",
-      },
-    },
-  },
-  {
-    slug: "ai-chatbot-va-ai-agent-farqi",
-    availableLocales: ["uz", "ru", "en"],
-    datePublished: "2026-06-17",
-    category: "AI Agent / 2026",
-    relatedService: { href: "/ai-chatbot", label: "AI chatbot" },
-    list: {
-      uz: {
-        title: "AI chatbot va AI agent farqi nima? (2026)",
-        excerpt:
-          "Chatbot gaplashadi, agent ish bajaradi. Farqni misollar bilan tushuntiramiz, taqqoslash jadvali va qaysi biri sizning biznesingizga kerakligini aniqlashga yordam beramiz.",
-      },
-      ru: {
-        title: "В чём разница между ИИ-чат-ботом и ИИ-агентом? (2026)",
-        excerpt:
-          "Чат-бот разговаривает, агент выполняет работу. Объясняем разницу на примерах, таблица сравнения и что именно нужно вашему бизнесу.",
-      },
-      en: {
-        title: "AI chatbot vs AI agent: what is the difference? (2026)",
-        excerpt:
-          "A chatbot talks, an agent does the work. We explain the difference with examples, a comparison table, and which one your business needs.",
       },
     },
   },
@@ -607,8 +535,6 @@ const CATEGORY_TERMS: Record<string, Partial<Record<ArticleLang, string>>> = {
   "Klinika": { ru: "Клиника", en: "Clinic", ar: "العيادة", uk: "Клініка" },
   "Savdo": { ru: "Торговля", en: "Retail", ar: "التجارة", uk: "Торгівля" },
   "AI Agent": { ru: "ИИ-агент", ar: "وكيل ذكاء اصطناعي", uk: "AI-агент" },
-  "AI chatbot": { ru: "ИИ-чат-бот", ar: "روبوت دردشة", uk: "AI-чат-бот" },
-  "Telegram bot": { ru: "Telegram-бот", ar: "بوت تيليغرام", uk: "Telegram-бот" },
   "AI": { ru: "ИИ" },
 };
 

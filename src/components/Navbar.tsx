@@ -12,9 +12,7 @@ import {
   GraduationCap,
   Sparkles,
   Workflow,
-  MessageSquare,
   Video,
-  Send,
   ShoppingCart,
   Stethoscope,
   UserCheck,
@@ -101,9 +99,7 @@ const SOLUTION_GROUPS: { headerKey: string; items: SolutionItem[] }[] = [
     items: [
       { key: "aiAutomation", href: "/ai-avtomatizatsiya", icon: Sparkles },
       { key: "aiAgent", href: "/ai-agent", icon: Bot },
-      { key: "aiChatbot", href: "/ai-chatbot", icon: MessageSquare },
       { key: "aiVideoAnalytics", href: "/ai-video-analitika", icon: Video },
-      { key: "telegramBot", href: "/telegram-bot-biznes", icon: Send },
     ],
   },
   {

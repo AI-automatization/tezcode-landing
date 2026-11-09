@@ -16,7 +16,7 @@ const PATH = "/klinika-crm";
 // Ташкент" (ru) and "clinic CRM Tashkent" (en) — the exact intents this page
 // competes for. Plain (non-absolute) titles go through the layout's
 // "%s | Tezcode" template, so no brand suffix is added here — same pattern
-// as /ai-chatbot, avoiding a duplicated " | Tezcode".
+// as /ai-agent, avoiding a duplicated " | Tezcode".
 const META: Record<
   ServiceLang,
   { title: string; description: string; ogTitle: string; ogDescription: string }
@@ -116,7 +116,7 @@ export default async function KlinikaCrmPage({
   });
   const faqSchema = getFaqSchema(copy.faq.items);
   // BreadcrumbList so answer engines see the page's place in the site
-  // hierarchy (Home → Klinika CRM) — same SSR JSON-LD pattern as /ai-chatbot.
+  // hierarchy (Home → Klinika CRM) — same SSR JSON-LD pattern as /ai-agent.
   const breadcrumb = getBreadcrumbSchema([
     { name: "Tezcode", url: BASE_URL },
     { name: copy.service.name, url: `${BASE_URL}${PATH}` },

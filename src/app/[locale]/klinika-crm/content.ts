@@ -115,7 +115,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Klinika CRM bilan birga ko'p ishlatiladigan Tezcode yechimlari.",
       links: [
         { href: "/pos-tizimi", label: "POS tizimi (RAOS)", desc: "Dorixona yoki klinika do'koni uchun kassa, ombor va hisobot — internetsiz ham ishlaydi." },
-        { href: "/ai-chatbot", label: "AI chatbot", desc: "Bemorlar savollariga 24/7 javob beradigan, qabulga yozadigan AI yordamchi." },
+        { href: "/ai-agent", label: "AI agent", desc: "Bemorlar savollariga 24/7 javob beradigan, qabulga yozadigan AI yordamchi." },
       ],
     },
     service: {
@@ -235,7 +235,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Решения Tezcode, которые часто используют вместе с CRM для клиники.",
       links: [
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Касса, склад и отчёты для аптеки или магазина при клинике — работает даже без интернета." },
-        { href: "/ai-chatbot", label: "ИИ-чат-бот (AI)", desc: "ИИ-ассистент, который отвечает пациентам 24/7 и записывает на приём." },
+        { href: "/ai-agent", label: "ИИ-агент (AI)", desc: "ИИ-ассистент, который отвечает пациентам 24/7 и записывает на приём." },
       ],
     },
     service: {
@@ -355,7 +355,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Tezcode solutions often used together with a clinic CRM.",
       links: [
         { href: "/pos-tizimi", label: "POS system (RAOS)", desc: "Register, inventory and reports for a pharmacy or clinic shop — works even offline." },
-        { href: "/ai-chatbot", label: "AI chatbot", desc: "An AI assistant that answers patients 24/7 and books appointments." },
+        { href: "/ai-agent", label: "AI agent", desc: "An AI assistant that answers patients 24/7 and books appointments." },
       ],
     },
     service: {
@@ -474,7 +474,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "حلول Tezcode التي تُستخدم غالباً مع CRM العيادات.",
       links: [
         { href: "/pos-tizimi", label: "نظام POS ‏(RAOS)", desc: "كاشير ومخزون وتقارير لصيدلية أو متجر العيادة — يعمل حتى بدون إنترنت." },
-        { href: "/ai-chatbot", label: "شات بوت AI", desc: "مساعد AI يجيب المرضى 24/7 ويحجز المواعيد." },
+        { href: "/ai-agent", label: "وكيل AI", desc: "مساعد AI يجيب المرضى 24/7 ويحجز المواعيد." },
       ],
     },
     service: {
@@ -594,7 +594,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Рішення Tezcode, які часто використовують разом із CRM для клініки.",
       links: [
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Каса, склад і звіти для аптеки чи магазину при клініці — працює навіть без інтернету." },
-        { href: "/ai-chatbot", label: "AI-чат-бот", desc: "AI-асистент, який відповідає пацієнтам 24/7 і записує на прийом." },
+        { href: "/ai-agent", label: "AI-агент", desc: "AI-асистент, який відповідає пацієнтам 24/7 і записує на прийом." },
       ],
     },
     service: {

@@ -64,7 +64,7 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "Loyiha uchun narx $400 dan boshlanadi. Aniq summa jarayonlar soni va murakkabligiga bog'liq — bepul auditdan keyin yozma taklif beramiz.",
       factors: [
-        { title: "Oddiy avtomatizatsiya", price: "$400 dan", desc: "Telegram bot yoki avtomatik hisobot — eng ko'p vaqt oladigan bitta jarayon. Kichik biznes uchun tez start, 1-2 hafta." },
+        { title: "Oddiy avtomatizatsiya", price: "$400 dan", desc: "AI agent yoki avtomatik hisobot — eng ko'p vaqt oladigan bitta jarayon. Kichik biznes uchun tez start, 1-2 hafta." },
         { title: "To'liq tizim (CRM + ombor + hisobot)", price: "Jarayonga qarab", desc: "Bir nechta jarayon bitta tizimda, integratsiya bilan. 2-4 hafta MVP, keyin bosqichma-bosqich kengaytiriladi." },
         { title: "Murakkab / integratsiyali yechim", price: "Individual", desc: "1C, kassa, to'lov tizimi va bir nechta bo'lim — hajm va narx audit asosida belgilanadi." },
       ],
@@ -100,7 +100,7 @@ export const CONTENT: ServicePageContent = {
       title: "Jarayoningizga mos",
       titleAccent: "yechimni tanlang",
       subtitle:
-        "Kassa va ombor uchun tayyor POS, mijoz murojaatlari uchun bot yoki matn bilan ishlash uchun AI yechimlarini ko'rib chiqing.",
+        "Kassa va ombor uchun tayyor POS, mijoz murojaatlari uchun AI agent yoki matn bilan ishlash uchun AI yechimlarini ko'rib chiqing.",
       links: [
         { href: "/ai-avtomatizatsiya", label: "AI bilan ishlaydigan yechimlar", desc: "Mijoz savollarini tushunish, hujjatdan ma'lumot ajratish va matnli hisobot tayyorlash uchun AI imkoniyatlari." },
         { href: "/pos-tizimi", label: "POS tizimi va ombor qoldig'i dasturi", desc: "Savdo nuqtasi uchun tayyor yechim — kassa, ombor, mijoz va hisobot bitta dasturda." },
@@ -170,7 +170,7 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "Цена за проект начинается от $400 (≈ от 5 млн сум). Точная сумма зависит от количества процессов и их сложности — после бесплатного аудита даём письменное предложение.",
       factors: [
-        { title: "Простая ИИ-автоматизация", price: "от $400 (≈ от 5 млн сум)", desc: "Telegram-бот или автоматический отчёт — один самый затратный по времени процесс. Быстрый старт для малого бизнеса, 1-2 недели." },
+        { title: "Простая ИИ-автоматизация", price: "от $400 (≈ от 5 млн сум)", desc: "ИИ-агент или автоматический отчёт — один самый затратный по времени процесс. Быстрый старт для малого бизнеса, 1-2 недели." },
         { title: "Полная система (CRM + склад + отчёты)", price: "По процессам", desc: "Несколько процессов в одной системе с интеграциями. MVP за 2-4 недели, затем расширение поэтапно." },
         { title: "Сложное / интеграционное решение", price: "Индивидуально", desc: "1C, касса, платёжная система и несколько отделов — объём и цена определяются по аудиту." },
       ],
@@ -209,7 +209,7 @@ export const CONTENT: ServicePageContent = {
       title: "Решения для",
       titleAccent: "вашего процесса",
       subtitle:
-        "Готовая POS-система для кассы и склада, бот для заказов или AI для работы с текстом — в зависимости от задачи.",
+        "Готовая POS-система для кассы и склада, ИИ-агент для заказов или AI для работы с текстом — в зависимости от задачи.",
       links: [
         { href: "/ai-avtomatizatsiya", label: "Разработка AI-решений", desc: "Обработка свободного текста, вопросов клиентов и документов с помощью AI." },
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Готовое решение для точки продаж — касса, склад, клиенты и отчёты в одной программе." },
@@ -279,7 +279,7 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "Project pricing starts from $400. The exact figure depends on the number of processes and their complexity — after a free audit we send a written proposal.",
       factors: [
-        { title: "Simple automation", price: "from $400", desc: "A Telegram bot or automated report — your single most time-consuming process. A fast start for small business, 1-2 weeks." },
+        { title: "Simple automation", price: "from $400", desc: "An AI agent or automated report — your single most time-consuming process. A fast start for small business, 1-2 weeks." },
         { title: "Full system (CRM + inventory + reports)", price: "By process", desc: "Several processes in one system with integrations. MVP in 2-4 weeks, then expanded step by step." },
         { title: "Complex / integrated solution", price: "Custom", desc: "1C, POS, payment system and several departments — scope and price set after the audit." },
       ],
@@ -314,7 +314,7 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "Process automation is part of Tezcode's \"AI automation\" service. See the full scope and related solutions below.",
       links: [
-        { href: "/ai-avtomatizatsiya", label: "Everything about the AI automation service", desc: "The main (umbrella) service page: AI agents, chatbots and process automation — all capabilities in one place." },
+        { href: "/ai-avtomatizatsiya", label: "Everything about the AI automation service", desc: "The main (umbrella) service page: AI agents and process automation — all capabilities in one place." },
         { href: "/pos-tizimi", label: "POS system (RAOS)", desc: "A ready solution for the point of sale — register, inventory, customers and reports in one app." },
       ],
     },
@@ -382,7 +382,7 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "يبدأ سعر المشروع من 400$. يعتمد المبلغ الدقيق على عدد العمليات وتعقيدها — بعد تدقيق مجاني نرسل عرضاً مكتوباً.",
       factors: [
-        { title: "أتمتة بسيطة", price: "من 400$", desc: "بوت Telegram أو تقرير تلقائي — أكثر عملية تستهلك وقتك. بداية سريعة للأعمال الصغيرة، 1-2 أسبوع." },
+        { title: "أتمتة بسيطة", price: "من 400$", desc: "وكيل AI أو تقرير تلقائي — أكثر عملية تستهلك وقتك. بداية سريعة للأعمال الصغيرة، 1-2 أسبوع." },
         { title: "نظام كامل (CRM + مخزون + تقارير)", price: "حسب العمليات", desc: "عدة عمليات في نظام واحد مع تكاملات. MVP خلال 2-4 أسابيع ثم توسّع تدريجياً." },
         { title: "حل معقّد / متكامل", price: "مخصّص", desc: "1C ونقطة البيع ونظام الدفع وعدة أقسام — يُحدّد النطاق والسعر بعد التدقيق." },
       ],
@@ -417,7 +417,7 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "أتمتة العمليات جزء من خدمة Tezcode \"الأتمتة بالذكاء الاصطناعي\". النطاق الكامل والحلول ذات الصلة أدناه.",
       links: [
-        { href: "/ai-avtomatizatsiya", label: "كل شيء عن خدمة الأتمتة بالذكاء الاصطناعي", desc: "الصفحة الرئيسية (المظلة) للخدمة: وكلاء AI وروبوتات الدردشة وأتمتة العمليات — كل الإمكانات في مكان واحد." },
+        { href: "/ai-avtomatizatsiya", label: "كل شيء عن خدمة الأتمتة بالذكاء الاصطناعي", desc: "الصفحة الرئيسية (المظلة) للخدمة: وكلاء AI وأتمتة العمليات — كل الإمكانات في مكان واحد." },
         { href: "/pos-tizimi", label: "نظام نقاط البيع (RAOS)", desc: "حل جاهز لنقطة البيع — كاشير ومخزون وعملاء وتقارير في تطبيق واحد." },
       ],
     },
@@ -485,7 +485,7 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "Ціна за проект починається від $400. Точна сума залежить від кількості процесів та їх складності — після безкоштовного аудиту надсилаємо письмову пропозицію.",
       factors: [
-        { title: "Проста автоматизація", price: "від $400", desc: "Telegram-бот або автоматичний звіт — один найбільш витратний за часом процес. Швидкий старт для малого бізнесу, 1-2 тижні." },
+        { title: "Проста автоматизація", price: "від $400", desc: "AI-агент або автоматичний звіт — один найбільш витратний за часом процес. Швидкий старт для малого бізнесу, 1-2 тижні." },
         { title: "Повна система (CRM + склад + звіти)", price: "За процесами", desc: "Кілька процесів в одній системі з інтеграціями. MVP за 2-4 тижні, потім розширення поетапно." },
         { title: "Складне / інтеграційне рішення", price: "Індивідуально", desc: "1C, каса, платіжна система та кілька відділів — обсяг і ціна визначаються за аудитом." },
       ],
@@ -520,7 +520,7 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "Автоматизація процесів — частина послуги Tezcode «AI-автоматизація». Повний обсяг і пов'язані рішення нижче.",
       links: [
-        { href: "/ai-avtomatizatsiya", label: "Усе про послугу AI-автоматизації", desc: "Основна (парасолькова) сторінка послуги: AI-агенти, чат-боти й автоматизація процесів — усі можливості в одному місці." },
+        { href: "/ai-avtomatizatsiya", label: "Усе про послугу AI-автоматизації", desc: "Основна (парасолькова) сторінка послуги: AI-агенти й автоматизація процесів — усі можливості в одному місці." },
         { href: "/pos-tizimi", label: "POS-система (RAOS)", desc: "Готове рішення для точки продажу — каса, склад, клієнти та звіти в одному додатку." },
       ],
     },

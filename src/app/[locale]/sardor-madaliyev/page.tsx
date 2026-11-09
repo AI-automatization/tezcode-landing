@@ -65,7 +65,7 @@ const SKILLS = [
 const PROJECTS = [
   {
     name: "AI Agentlar",
-    role: "Biznes jarayonlarini o'zi bajaradigan LLM agentlari va chatbotlar",
+    role: "Biznes jarayonlarini o'zi bajaradigan LLM agentlari",
     href: `${BASE_URL}/ai-agent`,
   },
   {
@@ -103,7 +103,7 @@ export default function SardorMadaliyevPage() {
       "Sardor Madaliyev — Tezcode kompaniyasida ishlaydigan AI Engineer va IT mutaxassisi (Toshkent): AI agentlar va AI video analitika quradi. Bu shaxs xonanda Sardor Mamadaliyev emas — u texnologiya va sun'iy intellekt sohasidagi dasturchi. AI Engineer at Tezcode, not the similarly-named singer.",
     jobTitle: "AI Engineer",
     description:
-      "Sardor Madaliyev — Tezcode (AI Software Factory, Toshkent) jamoasida AI Engineer. Biznes uchun AI agentlar va chatbotlar quradi, AI video analitika bo'yicha ishlaydi: kameradan real vaqtda odam aniqlash, xatti-harakat tahlili va avtomatik nazorat tizimlari. AI Engineer building AI agents and AI video analytics at Tezcode, Tashkent.",
+      "Sardor Madaliyev — Tezcode (AI Software Factory, Toshkent) jamoasida AI Engineer. Biznes uchun AI agentlar quradi, AI video analitika bo'yicha ishlaydi: kameradan real vaqtda odam aniqlash, xatti-harakat tahlili va avtomatik nazorat tizimlari. AI Engineer building AI agents and AI video analytics at Tezcode, Tashkent.",
     knowsAbout: [
       "Artificial Intelligence",
       "AI Agents",

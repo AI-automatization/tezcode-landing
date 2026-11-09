@@ -13,7 +13,7 @@ const uz: ServicePageCopy = {
     titleAccent: "sun'iy intellekt",
     title2: "yechimlar",
     subtitle:
-      "Tezcode bizneslar uchun sun'iy intellekt yechimlarini quradi: AI agent mijoz bilan gaplashadi va ishni bajaradi, chatbot savollarga javob beradi, avtomatizatsiya esa takroriy jarayonlarni qisqartiradi. Toshkentdan O'zbekiston va global loyihalarga xizmat qilamiz. Avval bitta aniq vazifani tanlaymiz, keyin uni CRM, 1C, Telegram yoki saytingizga ulaymiz.",
+      "Tezcode bizneslar uchun sun'iy intellekt yechimlarini quradi: AI agent mijoz bilan gaplashadi va ishni bajaradi, avtomatizatsiya esa takroriy jarayonlarni qisqartiradi. Toshkentdan O'zbekiston va global loyihalarga xizmat qilamiz. Avval bitta aniq vazifani tanlaymiz, keyin uni CRM, 1C, Telegram yoki saytingizga ulaymiz.",
     ctaSecondary: "Qaysi AI yechim menga mos?",
   },
   capabilities: {
@@ -46,19 +46,19 @@ const uz: ServicePageCopy = {
     items: [
       {
         q: "Biznesim uchun sun'iy intellekt kerak — nimadan boshlayman?",
-        a: "Avval eng ko'p vaqt oladigan bitta jarayonni tanlaymiz: mijozlarga javob berish, buyurtma qabul qilish, hisobot, lidlarni CRMga yozish yoki hujjatlarni qayta ishlash. Bepul konsultatsiyada jarayonni tahlil qilib, AI agent, chatbot yoki avtomatizatsiyadan qaysi biri mosligini aytamiz. Keyin vazifa, integratsiya, narx va muddat yozma taklifda belgilanadi. Konsultatsiya onlayn yoki Tezcode'ning (IT Park rezidenti) Toshkentdagi ofisida — Amir Temur shoh ko'chasi, 10 — o'tadi.",
+        a: "Avval eng ko'p vaqt oladigan bitta jarayonni tanlaymiz: mijozlarga javob berish, buyurtma qabul qilish, hisobot, lidlarni CRMga yozish yoki hujjatlarni qayta ishlash. Bepul konsultatsiyada jarayonni tahlil qilib, AI agent yoki avtomatizatsiyadan qaysi biri mosligini aytamiz. Keyin vazifa, integratsiya, narx va muddat yozma taklifda belgilanadi. Konsultatsiya onlayn yoki Tezcode'ning (IT Park rezidenti) Toshkentdagi ofisida — Amir Temur shoh ko'chasi, 10 — o'tadi.",
       },
       {
         q: "O'zbekistonda biznesga AI joriy qilish qancha turadi?",
-        a: "Tayyor yechimlar: Telegram bot $279 dan, AI chatbot $339 dan, AI agent $400 dan, AI video analitika $990 dan, individual loyiha (MVP) $1000 dan. Obuna tariflari: Starter $0, Pro $200/oy. Aniq narx bepul konsultatsiya va TZ'dan keyin yozma taklifda beriladi. To'lov 30% oldindan, qolgani bosqichma-bosqich — yashirin qo'shimchalar yo'q.",
+        a: "Tayyor yechimlar: AI agent $400 dan, AI video analitika $990 dan, individual loyiha (MVP) $1000 dan. Obuna tariflari: Starter $0, Pro $200/oy. Aniq narx bepul konsultatsiya va TZ'dan keyin yozma taklifda beriladi. To'lov 30% oldindan, qolgani bosqichma-bosqich — yashirin qo'shimchalar yo'q.",
       },
       {
         q: "AI o'zbek tilida ishlaydimi?",
-        a: "Ha. Tezcode yechimlari o'zbek (lotin va kiril), rus va ingliz tillarida ishlaydi — mijoz qaysi tilda yozsa, bot o'sha tilda javob beradi. O'zbekiston bozori uchun bu bizda standart talab: Salomat AI ovozli assistentimiz ham o'zbek va rus tillarida gaplashadi.",
+        a: "Ha. Tezcode yechimlari o'zbek (lotin va kiril), rus va ingliz tillarida ishlaydi — mijoz qaysi tilda yozsa, AI agent o'sha tilda javob beradi. O'zbekiston bozori uchun bu bizda standart talab: Salomat AI ovozli assistentimiz ham o'zbek va rus tillarida gaplashadi.",
       },
       {
         q: "AI joriy qilish qancha vaqt oladi?",
-        a: "Oddiy avtomatlashtirish (Telegram bot, avtomatik hisobot) — 1-2 hafta. To'liqroq AI yechimning ishlovchi MVP versiyasi — 2-4 hafta. Har hafta demo ko'rsatamiz, natijani jarayonda kuzatib borasiz.",
+        a: "Oddiy avtomatlashtirish (masalan, avtomatik hisobot) — 1-2 hafta. To'liqroq AI yechimning ishlovchi MVP versiyasi — 2-4 hafta. Har hafta demo ko'rsatamiz, natijani jarayonda kuzatib borasiz.",
       },
       {
         q: "Mavjud tizimlarimni (1C, CRM) almashtirish kerakmi?",
@@ -71,16 +71,16 @@ const uz: ServicePageCopy = {
     badge: "AI yo'nalishlari",
     title: "Sizga mos AI",
     titleAccent: "xizmatini tanlang",
-    subtitle: "Vazifangizga mos AI agent, chatbot, avtomatizatsiya yoki integratsiya yo'nalishini tanlang.",
+    subtitle: "Vazifangizga mos AI agent, avtomatizatsiya yoki integratsiya yo'nalishini tanlang.",
     links: [
       { href: "/ai-agent", label: "AI agent yaratish", desc: "O'zi qaror qabul qilib, CRM va boshqa tizimlarda ish bajaradigan agent." },
-      { href: "/ai-chatbot", label: "AI chatbot yaratish", desc: "Telegram, Instagram, sayt va boshqa kanallarda 24/7 javob beradigan chatbot." },
+      { href: "/biznes-avtomatlashtirish", label: "Biznes avtomatlashtirish", desc: "Savdo, xizmat ko'rsatish, ombor va hisobot jarayonlari — sohangizga moslangan bitta tizimda." },
     ],
   },
   service: {
     name: "Biznes uchun sun'iy intellekt — Tezcode",
     description:
-      "Biznes uchun sun'iy intellekt yechimlari: AI agentlar, chatbotlar, jarayon avtomatizatsiyasi, AI video analitika va CRM/1C integratsiyasi. Toshkentdan O'zbekiston va global loyihalarga.",
+      "Biznes uchun sun'iy intellekt yechimlari: AI agentlar, jarayon avtomatizatsiyasi, AI video analitika va CRM/1C integratsiyasi. Toshkentdan O'zbekiston va global loyihalarga.",
     serviceType: "Sun'iy intellekt yechimlari / AI for business",
   },
 };

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI-автоматизація бізнесу — Ташкент, Узбекистан | Tezcode",
-    "description": "TezCode — AI Software Factory. AI-автоматизація бізнесу в Ташкенті: AI-агенти, чат-боти й автоматизація процесів.",
+    "description": "TezCode — AI Software Factory. AI-автоматизація бізнесу в Ташкенті: AI-агенти й автоматизація процесів.",
     "ogTitle": "AI-автоматизація бізнесу — Tezcode, Ташкент",
     "ogDescription": "Систематизація бізнесу Узбекистану за допомогою AI. RAOS POS, HamshiraGo та 5 інших продуктів."
   },
@@ -29,9 +29,7 @@
       "aiSalon": "AI для салону",
       "aiRestaurant": "AI для ресторану",
       "crmIntegration": "Інтеграція CRM",
-      "aiChatbot": "AI чат-бот",
       "aiVideoAnalytics": "AI-відеоаналітика",
-      "telegramBot": "Telegram-бот",
       "posSystem": "POS-система",
       "clinicCrm": "CRM для клінік",
       "employeeMonitoring": "Контроль співробітників",
@@ -48,8 +46,8 @@
     "cta_secondary": "Написати в Telegram",
     "directions_aria": "Напрямки",
     "dir_web": "Сайт і MVP",
-    "dir_bot": "Telegram-бот",
-    "dir_ai": "AI-чатбот і агенти",
+    "dir_ai": "ШІ-агенти",
+    "dir_auto": "Автоматизація бізнесу",
     "dir_crm": "Інтеграція CRM і 1С",
     "stat_divisions": "Напрямків",
     "stat_products": "Продуктів",
@@ -81,7 +79,7 @@
       "name": "Tezcode",
       "tagline": "AI-агенти та платформи",
       "description": "Інтелектуальні помічники, AI-агенти та рішення для автоматизації робочих процесів.",
-      "products": "AI агент · AI чат-бот",
+      "products": "AI агент · AI-автоматизація",
       "model": "SaaS + Token-based"
     },
     "teams": {

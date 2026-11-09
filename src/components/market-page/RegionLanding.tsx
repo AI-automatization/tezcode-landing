@@ -22,7 +22,7 @@ export function RegionLanding({ locale, region }: Props) {
       ...getServiceSchema({
         name: copy.title,
         description: copy.description,
-        serviceType: "Software development, AI agents, chatbots, integrations and digital products",
+        serviceType: "Software development, AI agents, integrations and digital products",
         path,
         areaServed,
       }),

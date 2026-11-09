@@ -9,6 +9,7 @@ import {
   Globe,
   Send,
   Workflow,
+  Cog,
 } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { HeroWorkStack } from "@/components/hero-work/HeroWorkStack";
@@ -23,11 +24,11 @@ const RESIDENT_LABEL: Record<string, string> = {
 };
 
 // Direction chips under the subheadline — the 4 things visitors actually
-// search for ("sayt", "bot", "chatbot", "CRM"), each linking to its page.
+// search for ("sayt", "AI agent", "avtomatlashtirish", "CRM"), each linking to its page.
 const DIRECTIONS = [
   { key: "dir_web", href: "/tezcode-custom", icon: Globe },
-  { key: "dir_bot", href: "/telegram-bot-biznes", icon: Send },
-  { key: "dir_ai", href: "/ai-chatbot", icon: Bot },
+  { key: "dir_ai", href: "/ai-agent", icon: Bot },
+  { key: "dir_auto", href: "/biznes-avtomatlashtirish", icon: Cog },
   { key: "dir_crm", href: "/crm-integratsiya", icon: Workflow },
 ] as const;
 
@@ -97,7 +98,7 @@ export function Hero() {
               {t("subheadline")}
             </m.p>
 
-            {/* Direction chips — "sayt / bot / chatbot / CRM" self-selection */}
+            {/* Direction chips — direction self-selection */}
             <m.nav
               initial={false}
               animate={fadeUp.visible(0.2)}

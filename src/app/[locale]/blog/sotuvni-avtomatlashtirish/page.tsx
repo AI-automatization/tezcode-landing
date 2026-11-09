@@ -23,7 +23,7 @@ export async function generateMetadata({
     title:
       "Sotuvni avtomatlashtirish: Telegram, Instagram va CRM (2026) | Tezcode",
     description:
-      "Sotuvni avtomatlashtirish: barcha kanal (Telegram, Instagram, WhatsApp, sayt) → bitta CRM, AI chatbot 24/7 javob va lid saralash, buyurtma avtomatik 1C/CRM'ga. Bironta lid yo'qolmaydi. Tezcode qo'llanmasi.",
+      "Sotuvni avtomatlashtirish: barcha kanal (Telegram, Instagram, WhatsApp, sayt) → bitta CRM, AI agent 24/7 javob va lid saralash, buyurtma avtomatik 1C/CRM'ga. Bironta lid yo'qolmaydi. Tezcode qo'llanmasi.",
   });
   return buildPageMetadata({
     locale,

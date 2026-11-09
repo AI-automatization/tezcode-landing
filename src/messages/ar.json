@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "أتمتة الأعمال بالذكاء الاصطناعي — طشقند، أوزبكستان | Tezcode",
-    "description": "TezCode — AI Software Factory. أتمتة الأعمال بالذكاء الاصطناعي في طشقند: وكلاء AI وروبوتات الدردشة وأتمتة العمليات.",
+    "description": "TezCode — AI Software Factory. أتمتة الأعمال بالذكاء الاصطناعي في طشقند: وكلاء AI وأتمتة العمليات.",
     "ogTitle": "أتمتة الأعمال بالذكاء الاصطناعي — Tezcode، طشقند",
     "ogDescription": "تنظيم أعمال أوزبكستان بالذكاء الاصطناعي. RAOS POS وHamshiraGo و5 منتجات أخرى."
   },
@@ -29,9 +29,7 @@
       "aiSalon": "AI للصالونات",
       "aiRestaurant": "AI للمطاعم",
       "crmIntegration": "تكامل CRM",
-      "aiChatbot": "روبوت دردشة بالذكاء الاصطناعي",
       "aiVideoAnalytics": "تحليلات الفيديو بالذكاء الاصطناعي",
-      "telegramBot": "بوت تيليجرام",
       "posSystem": "نظام نقاط البيع",
       "clinicCrm": "CRM للعيادات",
       "employeeMonitoring": "مراقبة الموظفين",
@@ -48,8 +46,8 @@
     "cta_secondary": "راسلنا على Telegram",
     "directions_aria": "الخدمات",
     "dir_web": "موقع ويب و MVP",
-    "dir_bot": "بوت Telegram",
-    "dir_ai": "شات بوت ووكلاء AI",
+    "dir_ai": "وكلاء الذكاء الاصطناعي",
+    "dir_auto": "أتمتة الأعمال",
     "dir_crm": "تكامل CRM و 1C",
     "stat_divisions": "أقسام",
     "stat_products": "منتجات",
@@ -81,7 +79,7 @@
       "name": "Tezcode",
       "tagline": "وكلاء الذكاء الاصطناعي والمنصات",
       "description": "مساعدون ذكيون ووكلاء AI وحلول لأتمتة سير العمل.",
-      "products": "وكيل ذكاء اصطناعي · روبوت دردشة بالذكاء الاصطناعي",
+      "products": "وكيل ذكاء اصطناعي · أتمتة بالذكاء الاصطناعي",
       "model": "SaaS + Token-based"
     },
     "teams": {

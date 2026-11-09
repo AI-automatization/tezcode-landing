@@ -175,7 +175,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "AI agent chatbotdan nimasi bilan farq qiladi?",
-          a: "Farqni uch qatorda aytish mumkin. Oddiy avtomatizatsiya: qat'iy qoida bo'yicha bajaradi, vaziyatni tushunmaydi. Chatbot: savolga javob beradi, lekin keyingi ish odamda qoladi. AI agent: tushunadi, qaror qiladi va ishni o'zi bajaradi — CRMga yozadi, to'lovni tekshiradi, hisobot tuzadi. Batafsil taqqoslash 'chatbot va AI agent farqi' maqolamizda bor.",
+          a: "Farqni uch qatorda aytish mumkin. Oddiy avtomatizatsiya: qat'iy qoida bo'yicha bajaradi, vaziyatni tushunmaydi. Chatbot: savolga javob beradi, lekin keyingi ish odamda qoladi. AI agent: tushunadi, qaror qiladi va ishni o'zi bajaradi — CRMga yozadi, to'lovni tekshiradi, hisobot tuzadi.",
         },
         {
           q: "Narxi qancha turadi? Bepul variant bormi?",
@@ -419,7 +419,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         {
           q: "Чем ИИ-агент (AI-агент) отличается от чат-бота?",
-          a: "Разницу можно уложить в три строки. Простая автоматизация: выполняет по жёсткому правилу, ситуацию не понимает. Чат-бот: отвечает на вопрос, но дальнейшая работа остаётся на человеке. AI-агент: понимает, решает и сам выполняет работу — пишет в CRM, проверяет оплату, готовит отчёт. Подробное сравнение — в нашей статье «разница между чат-ботом и AI-агентом».",
+          a: "Разницу можно уложить в три строки. Простая автоматизация: выполняет по жёсткому правилу, ситуацию не понимает. Чат-бот: отвечает на вопрос, но дальнейшая работа остаётся на человеке. AI-агент: понимает, решает и сам выполняет работу — пишет в CRM, проверяет оплату, готовит отчёт.",
         },
         {
           q: "Сколько это стоит?",
@@ -508,7 +508,7 @@ export const CONTENT: ServicePageContent = {
         {
           href: "/ai-ozbekistonda",
           label: "AI-компания в Узбекистане",
-          desc: "ИИ-агенты, чат-боты и автоматизация для бизнеса в Узбекистане.",
+          desc: "ИИ-агенты и автоматизация для бизнеса в Узбекистане.",
         },
       ],
     },
@@ -667,7 +667,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         {
           q: "How is an AI agent different from a chatbot?",
-          a: "The difference fits in three lines. Plain automation: executes a rigid rule, understands nothing outside it. Chatbot: answers the question, but the follow-on work stays with a human. AI agent: understands, decides and does the work itself — writes to CRM, verifies payment, builds reports. See our 'chatbot vs AI agent' article for the full comparison.",
+          a: "The difference fits in three lines. Plain automation: executes a rigid rule, understands nothing outside it. Chatbot: answers the question, but the follow-on work stays with a human. AI agent: understands, decides and does the work itself — writes to CRM, verifies payment, builds reports.",
         },
         {
           q: "How much does it cost?",
@@ -751,12 +751,12 @@ export const CONTENT: ServicePageContent = {
         {
           href: "/ai-ozbekistonda",
           label: "AI company in Uzbekistan",
-          desc: "AI agents, chatbots and automation solutions for businesses in Uzbekistan.",
+          desc: "AI agents and automation solutions for businesses in Uzbekistan.",
         },
         {
-          href: "/ai-chatbot",
-          label: "AI chatbot service",
-          desc: "An AI chatbot for 24/7 support and lead capture — the most common form of agent.",
+          href: "/biznes-avtomatlashtirish",
+          label: "Business automation",
+          desc: "Sales, service, warehouse and reporting processes — in one system tailored to your industry.",
         },
       ],
     },
@@ -915,7 +915,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         {
           q: "بماذا يختلف وكيل الذكاء الاصطناعي عن الشات بوت؟",
-          a: "يمكن تلخيص الفرق في ثلاثة أسطر. الأتمتة البسيطة: تنفّذ قاعدة صارمة ولا تفهم الموقف. الشات بوت: يجيب عن السؤال لكن العمل التالي يبقى على الإنسان. وكيل الذكاء الاصطناعي: يفهم ويقرر وينفّذ العمل بنفسه — يكتب في CRM، يتحقق من الدفع، يعدّ التقارير. المقارنة الكاملة في مقالنا «الفرق بين الشات بوت ووكيل الذكاء الاصطناعي».",
+          a: "يمكن تلخيص الفرق في ثلاثة أسطر. الأتمتة البسيطة: تنفّذ قاعدة صارمة ولا تفهم الموقف. الشات بوت: يجيب عن السؤال لكن العمل التالي يبقى على الإنسان. وكيل الذكاء الاصطناعي: يفهم ويقرر وينفّذ العمل بنفسه — يكتب في CRM، يتحقق من الدفع، يعدّ التقارير.",
         },
         {
           q: "كم التكلفة؟",
@@ -999,12 +999,12 @@ export const CONTENT: ServicePageContent = {
         {
           href: "/ai-ozbekistonda",
           label: "شركة AI في أوزبكستان",
-          desc: "وكلاء AI وروبوتات محادثة وأتمتة للأعمال في أوزبكستان.",
+          desc: "وكلاء AI وأتمتة للأعمال في أوزبكستان.",
         },
         {
-          href: "/ai-chatbot",
-          label: "خدمة شات بوت ذكي",
-          desc: "شات بوت ذكي للدعم 24/7 وجمع العملاء المحتملين — أكثر أشكال الوكيل شيوعاً.",
+          href: "/biznes-avtomatlashtirish",
+          label: "أتمتة الأعمال",
+          desc: "البيع والخدمات والمخزون والتقارير — في نظام واحد مصمم لمجالك.",
         },
       ],
     },
@@ -1163,7 +1163,7 @@ export const CONTENT: ServicePageContent = {
       items: [
         {
           q: "Чим AI-агент відрізняється від чат-бота?",
-          a: "Різницю можна вкласти у три рядки. Проста автоматизація: виконує за жорстким правилом, ситуацію не розуміє. Чат-бот: відповідає на запитання, але подальша робота лишається на людині. AI-агент: розуміє, вирішує і сам виконує роботу — пише в CRM, перевіряє оплату, готує звіт. Детальне порівняння — у нашій статті «різниця між чат-ботом і AI-агентом».",
+          a: "Різницю можна вкласти у три рядки. Проста автоматизація: виконує за жорстким правилом, ситуацію не розуміє. Чат-бот: відповідає на запитання, але подальша робота лишається на людині. AI-агент: розуміє, вирішує і сам виконує роботу — пише в CRM, перевіряє оплату, готує звіт.",
         },
         {
           q: "Скільки це коштує?",
@@ -1247,12 +1247,12 @@ export const CONTENT: ServicePageContent = {
         {
           href: "/ai-ozbekistonda",
           label: "AI-компанія в Узбекистані",
-          desc: "AI-агенти, чат-боти та автоматизація для бізнесу в Узбекистані.",
+          desc: "AI-агенти та автоматизація для бізнесу в Узбекистані.",
         },
         {
-          href: "/ai-chatbot",
-          label: "AI-чат-бот",
-          desc: "AI-чат-бот для підтримки 24/7 і збору лідів — найпоширеніша форма агента.",
+          href: "/biznes-avtomatlashtirish",
+          label: "Автоматизація бізнесу",
+          desc: "Торгівля, послуги, склад і звітність — в одній системі під вашу галузь.",
         },
       ],
     },

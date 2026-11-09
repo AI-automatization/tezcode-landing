@@ -19,42 +19,42 @@ const META: Record<
   uz: {
     title: "Restoran uchun AI va avtomatlashtirish — Toshkent",
     description:
-      "Restoran va kafe uchun AI va avtomatlashtirish Toshkentda: RAOS POS (kassa, ombor, offline), AI chatbot (bron va buyurtma), AI video analitika (mehmonlar oqimi). POS 249 000 so'm/oy dan, bot $339 dan. IT Park rezidenti Tezcode.",
+      "Restoran va kafe uchun AI va avtomatlashtirish Toshkentda: RAOS POS (kassa, ombor, offline), AI agent (bron va buyurtma), AI video analitika (mehmonlar oqimi). POS 249 000 so'm/oy dan, AI agent $400 dan. IT Park rezidenti Tezcode.",
     ogTitle: "Restoran uchun AI va avtomatlashtirish — Toshkent | Tezcode",
     ogDescription:
-      "RAOS POS + AI bot (bron/buyurtma) + video analitika — restoran va kafe uchun bitta yechim. O'zbek va rus tilida. Bepul konsultatsiya.",
+      "RAOS POS + AI agent (bron/buyurtma) + video analitika — restoran va kafe uchun bitta yechim. O'zbek va rus tilida. Bepul konsultatsiya.",
   },
   ru: {
     title: "ИИ (AI) и автоматизация для ресторана — Ташкент",
     description:
-      "ИИ (AI) и автоматизация для ресторана и кафе в Ташкенте: RAOS POS (касса, склад, офлайн), ИИ-чат-бот (бронь и заказы), ИИ-видеоаналитика (поток гостей). POS от 249 000 сум/мес, бот от $339 (≈ от 4 млн сум). Tezcode — резидент IT Park.",
+      "ИИ (AI) и автоматизация для ресторана и кафе в Ташкенте: RAOS POS (касса, склад, офлайн), ИИ-агент (бронь и заказы), ИИ-видеоаналитика (поток гостей). POS от 249 000 сум/мес, ИИ-агент от $400 (≈ от 5 млн сум). Tezcode — резидент IT Park.",
     ogTitle: "ИИ (AI) и автоматизация для ресторана — Ташкент | Tezcode",
     ogDescription:
-      "RAOS POS + ИИ-бот (AI, бронь/заказы) + видеоаналитика — одно решение для ресторана и кафе. На узбекском и русском. Бесплатная консультация.",
+      "RAOS POS + ИИ-агент (AI, бронь/заказы) + видеоаналитика — одно решение для ресторана и кафе. На узбекском и русском. Бесплатная консультация.",
   },
   en: {
     title: "AI and automation for restaurants — Tashkent",
     description:
-      "AI and automation for restaurants and cafés in Tashkent: RAOS POS (register, inventory, offline), AI chatbot (bookings and orders), AI video analytics (guest footfall). POS from 249,000 UZS/mo, bot from $339. Tezcode — IT Park resident.",
+      "AI and automation for restaurants and cafés in Tashkent: RAOS POS (register, inventory, offline), AI agent (bookings and orders), AI video analytics (guest footfall). POS from 249,000 UZS/mo, AI agent from $400. Tezcode — IT Park resident.",
     ogTitle: "AI and automation for restaurants — Tashkent | Tezcode",
     ogDescription:
-      "RAOS POS + AI bot (bookings/orders) + video analytics — one solution for restaurants and cafés. In Uzbek and Russian. Free consultation.",
+      "RAOS POS + AI agent (bookings/orders) + video analytics — one solution for restaurants and cafés. In Uzbek and Russian. Free consultation.",
   },
   ar: {
     title: "AI والأتمتة للمطاعم — طشقند",
     description:
-      "AI والأتمتة للمطاعم والمقاهي في طشقند: RAOS POS (كاشير، مخزون، بدون إنترنت)، روبوت محادثة AI (حجز وطلبات)، تحليلات فيديو AI (تدفّق الضيوف). POS من 249,000 سوم/شهر، روبوت من 339$. Tezcode — مقيم IT Park.",
+      "AI والأتمتة للمطاعم والمقاهي في طشقند: RAOS POS (كاشير، مخزون، بدون إنترنت)، وكيل AI (حجز وطلبات)، تحليلات فيديو AI (تدفّق الضيوف). POS من 249,000 سوم/شهر، وكيل AI من 400$. Tezcode — مقيم IT Park.",
     ogTitle: "AI والأتمتة للمطاعم — طشقند | Tezcode",
     ogDescription:
-      "RAOS POS + روبوت AI (حجز/طلبات) + تحليلات فيديو — حل واحد للمطاعم والمقاهي. بالأوزبكية والروسية. استشارة مجانية.",
+      "RAOS POS + وكيل AI (حجز/طلبات) + تحليلات فيديو — حل واحد للمطاعم والمقاهي. بالأوزبكية والروسية. استشارة مجانية.",
   },
   uk: {
     title: "AI та автоматизація для ресторану — Ташкент",
     description:
-      "AI та автоматизація для ресторану й кафе в Ташкенті: RAOS POS (каса, склад, офлайн), AI-чат-бот (бронь і замовлення), AI-відеоаналітика (потік гостей). POS від 249 000 сум/міс, бот від $339. Tezcode — резидент IT Park.",
+      "AI та автоматизація для ресторану й кафе в Ташкенті: RAOS POS (каса, склад, офлайн), AI-агент (бронь і замовлення), AI-відеоаналітика (потік гостей). POS від 249 000 сум/міс, AI-агент від $400. Tezcode — резидент IT Park.",
     ogTitle: "AI та автоматизація для ресторану — Ташкент | Tezcode",
     ogDescription:
-      "RAOS POS + AI-бот (бронь/замовлення) + відеоаналітика — одне рішення для ресторану й кафе. Узбецькою та російською. Безкоштовна консультація.",
+      "RAOS POS + AI-агент (бронь/замовлення) + відеоаналітика — одне рішення для ресторану й кафе. Узбецькою та російською. Безкоштовна консультація.",
   },
 };
 
@@ -75,8 +75,6 @@ export async function generateMetadata({
       "restoran avtomatlashtirish",
       "kafe uchun AI",
       "restoran POS tizimi",
-      "restoran uchun bot",
-      "restoran yetkazib berish boti",
       "ресторан автоматизация Ташкент",
       "POS для ресторана",
       "AI для ресторана",

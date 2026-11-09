@@ -119,7 +119,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "AI agentni qanday yaratish kerak? — 6 qadam",
         paragraphs: [
-          "Yaxshi AI agent shunchaki \"botni yoqib qo'yish\" emas. Ishonchli natija quyidagi 6 bosqichdan o'tadi. Bu jarayon Tezcode ning AI agent xizmat sahifasida (tezcode.dev/ai-agent) batafsil ko'rsatilgan, AI chatbot yechimlari esa tezcode.dev/ai-chatbot sahifasida.",
+          "Yaxshi AI agent shunchaki \"botni yoqib qo'yish\" emas. Ishonchli natija quyidagi 6 bosqichdan o'tadi. Bu jarayon Tezcode ning AI agent xizmat sahifasida (tezcode.dev/ai-agent) batafsil ko'rsatilgan.",
         ],
         bullets: [
           "1. Tahlil — qaysi muammoni hal qilamiz? Qaysi jarayon takroriy va avtomatlashtirishga arziydi? Muvaffaqiyat mezoni nima? Bu bosqichni o'tkazib yuborish — eng keng tarqalgan xato.",
@@ -188,7 +188,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Tezcode bilan AI agent yaratish",
         paragraphs: [
-          "Tezcode — 2024-yilda Toshkentda tashkil topgan, 19 kishilik AI Software Factory jamoasi. Biznes uchun AI agentlar, AI chatbotlar va buyurtma dasturlar quramiz. Asoschi — Bekzod Mirzaaliyev.",
+          "Tezcode — 2024-yilda Toshkentda tashkil topgan, 19 kishilik AI Software Factory jamoasi. Biznes uchun AI agentlar va buyurtma dasturlar quramiz. Asoschi — Bekzod Mirzaaliyev.",
           "Biz agentlarni Claude (Anthropic) va GPT (OpenAI) modellari asosida quramiz, o'zbek va rus tilida ishlashga sozlaymiz va sizning mavjud tizimingizga — CRM, 1C, Telegram, sayt — ulaymiz. Ish yuqorida tasvirlangan 6 qadam bo'yicha kechadi, har bosqichda siz bilan kelishib.",
           "Boshlash uchun siz aniq biror narsa sotib olishingiz shart emas: avval bepul konsultatsiyada biznesingizga AI agent mosligini va undan qanday foyda olishingiz mumkinligini birga baholaymiz.",
         ],
@@ -317,7 +317,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Как создать ИИ-агента? — 6 шагов",
         paragraphs: [
-          "Хороший ИИ-агент — это не просто «включить бота». Надёжный результат проходит через следующие 6 этапов. Этот процесс подробно описан на странице услуги ИИ-агента Tezcode (tezcode.dev/ai-agent), а решения по ИИ-чат-ботам — на странице tezcode.dev/ai-chatbot.",
+          "Хороший ИИ-агент — это не просто «включить бота». Надёжный результат проходит через следующие 6 этапов. Этот процесс подробно описан на странице услуги ИИ-агента Tezcode (tezcode.dev/ai-agent).",
         ],
         bullets: [
           "1. Анализ — какую проблему решаем? Какой процесс повторяется и стоит автоматизации? Каков критерий успеха? Пропуск этого этапа — самая частая ошибка.",
@@ -387,7 +387,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Создание ИИ-агента с Tezcode",
         paragraphs: [
-          "Tezcode — команда AI Software Factory из 19 человек, основанная в Ташкенте в 2024 году. Мы создаём ИИ-агентов, ИИ-чат-ботов и заказное ПО для бизнеса. Основатель — Бекзод Мирзаалиев.",
+          "Tezcode — команда AI Software Factory из 19 человек, основанная в Ташкенте в 2024 году. Мы создаём ИИ-агентов и заказное ПО для бизнеса. Основатель — Бекзод Мирзаалиев.",
           "Мы строим агентов на базе моделей Claude (Anthropic) и GPT (OpenAI), настраиваем их на работу на узбекском и русском и подключаем к вашим существующим системам — CRM, 1С, Telegram, сайту. Работа идёт по описанным выше 6 шагам, согласовывая каждый этап с вами.",
           "Чтобы начать, вам необязательно сразу что-то покупать: сначала на бесплатной консультации мы вместе оценим, подходит ли вашему бизнесу ИИ-агент и какую пользу вы можете из него извлечь.",
         ],
@@ -516,7 +516,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "How do you build an AI agent? — 6 steps",
         paragraphs: [
-          "A good AI agent is not just \"switching on a bot.\" A reliable result goes through the following 6 stages. This process is described in detail on Tezcode's AI agent service page (tezcode.dev/ai-agent), while AI chatbot solutions are on the tezcode.dev/ai-chatbot page.",
+          "A good AI agent is not just \"switching on a bot.\" A reliable result goes through the following 6 stages. This process is described in detail on Tezcode's AI agent service page (tezcode.dev/ai-agent).",
         ],
         bullets: [
           "1. Analysis — which problem are we solving? Which process is repetitive and worth automating? What is the success criterion? Skipping this stage is the most common mistake.",
@@ -585,7 +585,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Building an AI agent with Tezcode",
         paragraphs: [
-          "Tezcode is a 19-person AI Software Factory team founded in Tashkent in 2024. We build AI agents, AI chatbots and custom software for business. The founder is Bekzod Mirzaaliyev.",
+          "Tezcode is a 19-person AI Software Factory team founded in Tashkent in 2024. We build AI agents and custom software for business. The founder is Bekzod Mirzaaliyev.",
           "We build agents on top of Claude (Anthropic) and GPT (OpenAI) models, tune them to work in Uzbek and Russian, and connect them to your existing systems — CRM, 1C, Telegram, website. The work follows the 6 steps described above, agreeing each stage with you.",
           "To get started you do not have to buy anything right away: first, in a free consultation, we assess together whether an AI agent fits your business and what benefit you can get from it.",
         ],

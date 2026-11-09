@@ -32,15 +32,14 @@ export async function generateMetadata({
       ? "Автоматизация бизнеса с ИИ в Ташкенте и Узбекистане: руководство (2026) | Tezcode"
       : "Biznesni AI bilan avtomatlashtirish — Toshkent va O'zbekiston qo'llanmasi (2026) | Tezcode",
     description: isRu
-      ? "Хочу автоматизировать бизнес с ИИ — с чего начать, сколько стоит (чатбот от $339, Telegram-бот от $279, ИИ-агент от $400), сроки 1–4 недели и как выбрать компанию в Ташкенте."
-      : "Biznesimni AI bilan avtomatlashtirmoqchiman deganlar uchun: nimadan boshlash, narxlar (chatbot $339 dan, Telegram bot $279 dan, AI agent $400 dan), muddatlar 1–4 hafta va Toshkentda kompaniya tanlash.",
+      ? "Хочу автоматизировать бизнес с ИИ — с чего начать, сколько стоит (ИИ-агент и автоматизация бизнеса — от $400), сроки 1–4 недели и как выбрать компанию в Ташкенте."
+      : "Biznesimni AI bilan avtomatlashtirmoqchiman deganlar uchun: nimadan boshlash, narxlar (AI agent va biznes avtomatlashtirish — $400 dan), muddatlar 1–4 hafta va Toshkentda kompaniya tanlash.",
     keywords: [
       "biznesni AI bilan avtomatlashtirish",
       "biznesimni ai bilan avtomatlashtirmoqchiman",
       "AI avtomatlashtirish Toshkent",
       "AI avtomatlashtirish O'zbekiston",
-      "ai chatbot qildirmoqchiman",
-      "AI chatbot narxi",
+      "AI agent narxi",
       "автоматизация бизнеса с ИИ Ташкент",
       "хочу автоматизировать бизнес",
       "ИИ-агент Узбекистан",

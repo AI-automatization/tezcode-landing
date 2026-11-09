@@ -67,9 +67,32 @@ function detectLocaleFromGeo(request: NextRequest): Locale | null {
   return null;
 }
 
+// Services Tezcode no longer offers (removed 2026-11-09): answer 410 Gone in
+// every locale so search engines drop the URLs instead of treating them as
+// soft 404s. Sub-paths (city pages) are gone too.
+const GONE_PREFIXES = ["/ai-chatbot", "/telegram-bot-biznes"];
+const GONE_EXACT = new Set([
+  "/blog/ai-chatbot-va-ai-agent-farqi",
+  "/blog/ai-chatbot-vs-jonli-operator",
+  "/blog/biznes-uchun-telegram-bot",
+]);
+
+function isGone(pathname: string): boolean {
+  const locale = routing.locales.find((l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`));
+  const path = (locale ? pathname.slice(locale.length + 1) : pathname).replace(/\/$/, "") || "/";
+  return GONE_EXACT.has(path) || GONE_PREFIXES.some((p) => path === p || path.startsWith(`${p}/`));
+}
+
 export default function middleware(request: NextRequest) {
   // Skip middleware for non-matching paths (handled by config below anyway)
   const { pathname } = request.nextUrl;
+
+  if (isGone(pathname)) {
+    return new NextResponse("410 Gone", {
+      status: 410,
+      headers: { "Content-Type": "text/plain; charset=utf-8", "X-Robots-Tag": "noindex" },
+    });
+  }
 
   // If user already has locale cookie OR is on a locale-prefixed path, let next-intl handle it
   const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;

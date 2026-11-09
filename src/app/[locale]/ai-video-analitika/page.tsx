@@ -128,7 +128,7 @@ export default async function AiVideoAnalyticsPage({
     steps: copy.process.steps.map((st) => ({ name: st.title, text: st.desc })),
   });
   // BreadcrumbList so answer engines see the page's place in the site
-  // hierarchy (Home → AI video analitika) — same SSR JSON-LD pattern as /ai-chatbot.
+  // hierarchy (Home → AI video analitika) — same SSR JSON-LD pattern as /ai-agent.
   const breadcrumb = getBreadcrumbSchema([
     { name: "Tezcode", url: BASE_URL },
     { name: copy.service.name, url: `${BASE_URL}${PATH}` },

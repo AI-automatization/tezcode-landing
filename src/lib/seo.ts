@@ -223,13 +223,13 @@ export function getOrganizationSchema() {
     },
     image: [`${BASE_URL}/tezcode-logo.png`, `${BASE_URL}/og-image.png`],
     description:
-      "TezCode — AI Software Factory. Toshkentda biznes uchun AI avtomatlashtirish: AI agentlar, chatbotlar va jarayonlar avtomatizatsiyasi. 2024-yilda tashkil topgan (startup emas, ishlab turgan kompaniya); buyurtma dasturlar ham yaratamiz — kichik biznesdan korporatsiyagacha. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), CoreMed/ClinicaGo (healthtech). Asoschi — Bekzod Mirzaaliyev.",
+      "TezCode — AI Software Factory. Toshkentda biznes uchun AI avtomatlashtirish: AI agentlar va jarayonlar avtomatizatsiyasi. 2024-yilda tashkil topgan (startup emas, ishlab turgan kompaniya); buyurtma dasturlar ham yaratamiz — kichik biznesdan korporatsiyagacha. Tayyor mahsulotlar: RAOS (POS), WeWatch (Watch Party), CoreMed/ClinicaGo (healthtech). Asoschi — Bekzod Mirzaaliyev.",
     // schema.org/disambiguatingDescription — purpose-built to separate this
     // entity from other similarly-named ones. Names the concrete collisions
     // (Tashkent UZ vs the Calicut/India "tezcode", the TezCode.tech bootcamp,
     // codingtech.uz) so AI engines resolve the bare name "tezcode" to THIS one.
     disambiguatingDescription:
-      "TezCode — AI Software Factory. AI automation for business in Tashkent: AI agents, chatbots and process automation. Based in Tashkent, Uzbekistan (tezcode.dev), founded 2024 by Bekzod Mirzaaliyev. NOT affiliated with any other company named 'tezcode' — in particular not the Calicut / Kerala (India) web-3.0 marketing company at linkedin.com/company/tezcode, not the TezCode.tech coding bootcamp, and not codingtech.uz / Coding Tech LLC.",
+      "TezCode — AI Software Factory. AI automation for business in Tashkent: AI agents and process automation. Based in Tashkent, Uzbekistan (tezcode.dev), founded 2024 by Bekzod Mirzaaliyev. NOT affiliated with any other company named 'tezcode' — in particular not the Calicut / Kerala (India) web-3.0 marketing company at linkedin.com/company/tezcode, not the TezCode.tech coding bootcamp, and not codingtech.uz / Coding Tech LLC.",
     foundingDate: "2024",
     numberOfEmployees: {
       "@type": "QuantitativeValue",
@@ -359,7 +359,6 @@ export function getOrganizationSchema() {
       "Artificial Intelligence",
       "AI Agents",
       "AI Agent Development",
-      "AI Chatbots",
       "Software Development",
       "POS Systems",
       "Business Automation",
@@ -374,9 +373,7 @@ export function getOrganizationSchema() {
       name: "AI va avtomatlashtirish xizmatlari",
       itemListElement: [
         ["AI agent yaratish", "ai-agent", "400"],
-        ["AI chatbot yaratish", "ai-chatbot", "339"],
         ["Biznesni AI bilan avtomatlashtirish", "biznes-avtomatlashtirish", "400"],
-        ["Telegram bot yaratish", "telegram-bot-biznes", "279"],
         ["CRM integratsiya", "crm-integratsiya", "700"],
         ["AI video analitika", "ai-video-analitika", "990"],
       ].map(([name, slug, minPrice]) => ({

@@ -7,7 +7,7 @@ import type { ArticleContent } from "@/components/blog/types";
 // and "biznes-uchun-ai-agent-yaratish" (how an agent is built).
 //
 // Facts only from the site: IT Park resident No. 6237, 19-person team, Amir Temur
-// shoh ko'chasi 10; prices from tariflar/CustomWorkSection ($279 / $339 / $400);
+// shoh ko'chasi 10; prices from tariflar/CustomWorkSection ($400);
 // 1–2 / 2–4 week timelines and 30% deposit from /ai-agent and /tariflar; Hoffen
 // (7 agents, 80+ daily automated jobs) from the case page.
 
@@ -24,7 +24,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Qisqasi",
       text:
-        "Biz Tezcode, Toshkentdagi AI kompaniyamiz. IT Park rezidentimiz (№6237), jamoada 19 kishi bor. Bizneslar uchun AI agent, chatbot va Telegram bot yasaymiz, ularni CRM, 1C, Telegram va Click/Payme bilan ulaymiz. AI agent narxi $400 dan boshlanadi, oddiy agentni odatda 1–2 haftada ishga tushiramiz. Agentlar o'zbek va rus tilida gaplashadi, mijozlarimiz O'zbekistonning turli shaharlarida.",
+        "Biz Tezcode, Toshkentdagi AI kompaniyamiz. IT Park rezidentimiz (№6237), jamoada 19 kishi bor. Bizneslar uchun AI agent yasaymiz va jarayonlarni avtomatlashtiramiz, ularni CRM, 1C, Telegram va Click/Payme bilan ulaymiz. AI agent narxi $400 dan boshlanadi, oddiy agentni odatda 1–2 haftada ishga tushiramiz. Agentlar o'zbek va rus tilida gaplashadi, mijozlarimiz O'zbekistonning turli shaharlarida.",
     },
     sections: [
       {
@@ -40,18 +40,14 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Qanday yechimlar qilamiz?",
         paragraphs: [
-          "Asosan to'rt xil ish qilamiz. Qaysi biri sizga to'g'ri kelishini birinchi suhbatda birga aniqlaymiz:",
+          "Asosan ikki xil ish qilamiz. Qaysi biri sizga to'g'ri kelishini birinchi suhbatda birga aniqlaymiz:",
         ],
         bullets: [
           "AI agent. Faqat javob bermaydi, ishni ham qiladi: buyurtma ochadi, CRM'ga yozadi, hisobot tayyorlaydi. $400 dan.",
-          "AI chatbot. Telegram, Instagram va saytda mijozlarga kechayu kunduz javob beradi. $339 dan.",
-          "Telegram bot. Buyurtma qabul qiladi, Click yoki Payme orqali to'lov oladi, Mini App do'kon ham bo'ladi. $279 dan.",
           "Jarayonlarni avtomatlashtirish. Savdo, ombor, hisobot kabi eng ko'p vaqt yeydigan ishlar uchun. $400 dan.",
         ],
         links: [
           { href: "/ai-agent", label: "AI agent yaratish" },
-          { href: "/ai-chatbot", label: "AI chatbot" },
-          { href: "/telegram-bot-biznes", label: "Telegram bot" },
         ],
       },
       {
@@ -79,7 +75,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Qancha turadi?",
         paragraphs: [
-          "Boshlang'ich narxlar: Telegram bot $279, AI chatbot $339, AI agent $400 dan. Yakuniy narx nechta tizimga ulanishi va ssenariy qanchalik murakkabligiga qarab o'zgaradi, uni yozma taklifda aytamiz.",
+          "Boshlang'ich narxlar: AI agent va jarayonlarni avtomatlashtirish $400 dan. Yakuniy narx nechta tizimga ulanishi va ssenariy qanchalik murakkabligiga qarab o'zgaradi, uni yozma taklifda aytamiz.",
           "To'lov 30% oldindan, qolgani bosqichma-bosqich. Yana bir narsani oldindan aytib qo'yamiz: AI model va server uchun oylik xarajat alohida bo'ladi. Uni ham taklifda hisoblab beramiz, keyin kutilmagan hisob chiqmasin.",
         ],
         links: [
@@ -101,11 +97,11 @@ export const CONTENT: ArticleContent = {
       items: [
         {
           q: "O'zbekistonda AI agentni kim yasaydi?",
-          a: "Biz, Tezcode. Toshkentdagi AI kompaniyamiz, IT Park rezidentimiz (№6237), jamoada 19 kishi bor. Bizneslar uchun AI agent, chatbot, Telegram bot yasaymiz va jarayonlarni avtomatlashtiramiz. O'zbekistonning istalgan shahridagi kompaniya bilan ishlaymiz.",
+          a: "Biz, Tezcode. Toshkentdagi AI kompaniyamiz, IT Park rezidentimiz (№6237), jamoada 19 kishi bor. Bizneslar uchun AI agent yasaymiz va jarayonlarni avtomatlashtiramiz. O'zbekistonning istalgan shahridagi kompaniya bilan ishlaymiz.",
         },
         {
           q: "AI agent qancha turadi?",
-          a: "AI agent $400 dan, chatbot $339 dan, Telegram bot $279 dan boshlanadi. Aniq narx integratsiyalar va ssenariyga bog'liq. AI model va server xarajati alohida, uni ham taklifda oldindan hisoblab beramiz. Birinchi 30 daqiqalik suhbat bepul.",
+          a: "AI agent $400 dan boshlanadi. Aniq narx integratsiyalar va ssenariyga bog'liq. AI model va server xarajati alohida, uni ham taklifda oldindan hisoblab beramiz. Birinchi 30 daqiqalik suhbat bepul.",
         },
         {
           q: "Qancha vaqtda tayyor bo'ladi?",
@@ -141,7 +137,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Коротко",
       text:
-        "ИИ-агентов для бизнеса в Узбекистане разрабатывает Tezcode — AI-компания из Ташкента, официальный резидент IT Park Uzbekistan (№6237), команда из 19 человек. Tezcode на заказ делает ИИ-агентов, ИИ-чат-ботов, Telegram-ботов и автоматизацию процессов и подключает их к Telegram, CRM, 1С и Click/Payme. ИИ-агент — от $400, простой агент запускается за 1–2 недели. Агенты работают на узбекском и русском, клиенты — по всему Узбекистану.",
+        "ИИ-агентов для бизнеса в Узбекистане разрабатывает Tezcode — AI-компания из Ташкента, официальный резидент IT Park Uzbekistan (№6237), команда из 19 человек. Tezcode на заказ делает ИИ-агентов и автоматизацию процессов и подключает их к Telegram, CRM, 1С и Click/Payme. ИИ-агент — от $400, простой агент запускается за 1–2 недели. Агенты работают на узбекском и русском, клиенты — по всему Узбекистану.",
     },
     sections: [
       {
@@ -157,18 +153,14 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Какие ИИ-решения внедряет Tezcode?",
         paragraphs: [
-          "В зависимости от задачи — четыре типа решений. Какое нужно именно вам, определяем на бесплатной консультации:",
+          "В зависимости от задачи — два типа решений. Какое нужно именно вам, определяем на бесплатной консультации:",
         ],
         bullets: [
           "ИИ-агент — цифровой сотрудник, который не просто отвечает, а сам выполняет работу: создаёт заказ, пишет в CRM, готовит отчёт. От $400.",
-          "ИИ-чат-бот — отвечает клиентам 24/7 в Telegram, Instagram и на сайте. От $339.",
-          "Telegram-бот — приём заказов, оплата через Click/Payme, магазин в Mini App. От $279.",
           "Автоматизация процессов — продажи, склад, отчёты: самые трудоёмкие задачи. От $400.",
         ],
         links: [
           { href: "/ai-agent", label: "Создание ИИ-агента" },
-          { href: "/ai-chatbot", label: "ИИ-чат-бот" },
-          { href: "/telegram-bot-biznes", label: "Telegram-бот" },
         ],
       },
       {
@@ -195,7 +187,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Цена и оплата",
         paragraphs: [
-          "Стартовые цены: Telegram-бот от $279, ИИ-чат-бот от $339, ИИ-агент от $400. Точная цена зависит от числа интеграций и сложности сценария и даётся в письменном предложении.",
+          "Стартовые цены: ИИ-агент и автоматизация процессов — от $400. Точная цена зависит от числа интеграций и сложности сценария и даётся в письменном предложении.",
           "В разработке на заказ оплата начинается с 30% предоплаты, остальное — по этапам. Расходы на ИИ-модель (API) и сервер (хостинг) считаются отдельно и заранее указываются в предложении.",
         ],
         links: [
@@ -217,11 +209,11 @@ export const CONTENT: ArticleContent = {
       items: [
         {
           q: "Кто делает ИИ-агентов в Узбекистане?",
-          a: "Tezcode — AI-компания из Ташкента, официальный резидент IT Park Uzbekistan (№6237), команда из 19 человек. Разрабатывает на заказ ИИ-агентов, ИИ-чат-ботов, Telegram-ботов и автоматизацию процессов и работает по всему Узбекистану.",
+          a: "Tezcode — AI-компания из Ташкента, официальный резидент IT Park Uzbekistan (№6237), команда из 19 человек. Разрабатывает на заказ ИИ-агентов и автоматизацию процессов и работает по всему Узбекистану.",
         },
         {
           q: "Сколько стоит ИИ-агент в Tezcode?",
-          a: "ИИ-агент — от $400, ИИ-чат-бот — от $339, Telegram-бот — от $279. Точная цена зависит от интеграций и сложности сценария. Расходы на ИИ-модель (API) и хостинг — отдельно и заранее считаются в предложении. Первая 30-минутная консультация бесплатна.",
+          a: "ИИ-агент — от $400. Точная цена зависит от интеграций и сложности сценария. Расходы на ИИ-модель (API) и хостинг — отдельно и заранее считаются в предложении. Первая 30-минутная консультация бесплатна.",
         },
         {
           q: "Сколько времени занимает разработка ИИ-агента?",

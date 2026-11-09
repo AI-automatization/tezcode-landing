@@ -2,7 +2,7 @@ import type { ArticleContent } from "@/components/blog/types";
 
 // Commercial-intent guide targeting the short buyer queries that currently go
 // to competitors: "biznesimni AI bilan avtomatlashtirmoqchiman toshkentda /
-// o'zbekistonda", "AI chatbot qildirmoqchiman" — the copy deliberately uses the
+// o'zbekistonda" — the copy deliberately uses the
 // searcher's own first-person phrasing in headings and FAQ (that's what wins
 // these SERPs: celion/innosoft rank with exact intent language).
 export const CONTENT: ArticleContent = {
@@ -18,7 +18,7 @@ export const CONTENT: ArticleContent = {
     },
     tldr: {
       label: "Qisqacha javob",
-      text: "O'zbekistonda biznesni AI bilan avtomatlashtirish eng ko'p vaqt oladigan bitta jarayondan boshlanadi: mijozlarga javob (AI chatbot $339 dan), buyurtma qabul qilish (Telegram bot $279 dan) yoki hisobot/jarayonlar (AI agent $400 dan). Oddiy yechim 1–2 haftada, to'liq MVP 2–4 haftada ishga tushadi, to'lov 30% oldindan. Toshkentda buni Tezcode qiladi — IT Park rasmiy rezidenti (№6237), o'z mahsulotlari (RAOS POS, ClinicaGo CRM) jonli ishlab turibdi. Birinchi qadam — 30 daqiqalik bepul konsultatsiya.",
+      text: "O'zbekistonda biznesni AI bilan avtomatlashtirish eng ko'p vaqt oladigan bitta jarayondan boshlanadi: mijozlarga javob, buyurtma qabul qilish yoki hisobot/jarayonlar (AI agent va biznes avtomatlashtirish — $400 dan). Oddiy yechim 1–2 haftada, to'liq MVP 2–4 haftada ishga tushadi, to'lov 30% oldindan. Toshkentda buni Tezcode qiladi — IT Park rasmiy rezidenti (№6237), o'z mahsulotlari (RAOS POS, ClinicaGo CRM) jonli ishlab turibdi. Birinchi qadam — 30 daqiqalik bepul konsultatsiya.",
     },
     sections: [
       {
@@ -34,7 +34,7 @@ export const CONTENT: ArticleContent = {
           "O'zbekiston biznesida eng ko'p natija beradigan yo'nalishlar — takroriy, tilga bog'liq va hajmi katta ishlar. Quyidagilar real loyihalarda o'zini oqlagan:",
         ],
         bullets: [
-          "Mijozlar bilan yozishma — AI chatbot Telegram, Instagram va saytda 24/7 javob beradi, lidlarni saralaydi, buyurtma qabul qiladi (o'zbek va rus tilida)",
+          "Mijozlar bilan yozishma — AI agent Telegram, Instagram va saytda 24/7 javob beradi, lidlarni saralaydi, buyurtma qabul qiladi (o'zbek va rus tilida)",
           "Savdo va kassa — POS tizimi sotuv, ombor va Soliq.uz hisobotini avtomatik yuritadi (masalan RAOS internetsiz ham ishlaydi)",
           "Klinika navbati va qabul — ClinicaGo + HamshiraGo joriy etilgan klinikada navbat vaqti 40% qisqargan, kunlik bemor 32 tadan 45 taga oshgan",
           "Xodimlar nazorati — vazifa, davomat va KPI bitta tizimda, hisobot Telegram'ga keladi",
@@ -44,14 +44,14 @@ export const CONTENT: ArticleContent = {
       {
         heading: "O'zbekistonda biznesni AI bilan avtomatlashtirish qancha turadi?",
         paragraphs: [
-          "Halol javob: narx jarayon murakkabligiga bog'liq, lekin boshlang'ich narxlar aniq. Telegram bot — $279 dan, AI chatbot (Telegram/Instagram/sayt, o'zbekcha-ruscha) — $339 dan, ko'p qadamli AI agent — $400 dan. Tayyor mahsulotlar obuna bilan ishlaydi: masalan RAOS POS — oyiga 249 000 so'mdan, 30 kun bepul sinov bilan.",
-          "To'lov tartibi ham shaffof: 30% oldindan, qolgani bosqichma-bosqich, oraliq natijani ko'rib to'laysiz. Yashirin to'lov yo'q — hammasi shartnomada yoziladi. Solishtirish uchun: bitta operator oyiga ~3–5 mln so'mga tushadi; $339 lik chatbot esa bir martalik xarajat bo'lib, 24/7 ishlaydi.",
+          "Halol javob: narx jarayon murakkabligiga bog'liq, lekin boshlang'ich narxlar aniq. AI agent (Telegram/Instagram/sayt, o'zbekcha-ruscha, ko'p qadamli vazifalar) — $400 dan, biznes avtomatlashtirish (jarayon, hisobot, ombor) — $400 dan. Tayyor mahsulotlar obuna bilan ishlaydi: masalan RAOS POS — oyiga 249 000 so'mdan, 30 kun bepul sinov bilan.",
+          "To'lov tartibi ham shaffof: 30% oldindan, qolgani bosqichma-bosqich, oraliq natijani ko'rib to'laysiz. Yashirin to'lov yo'q — hammasi shartnomada yoziladi. Solishtirish uchun: bitta operator oyiga ~3–5 mln so'mga tushadi; $400 lik AI agent esa bir martalik xarajat bo'lib, 24/7 ishlaydi.",
         ],
       },
       {
         heading: "Qancha vaqtda ishga tushadi?",
         paragraphs: [
-          "Oddiy avtomatizatsiya (FAQ-chatbot, buyurtma boti, avtomatik hisobot) — 1–2 hafta. CRM/1C integratsiyali to'liq yechim — 2–4 haftada ishlaydigan MVP, keyin real ma'lumotda sozlanadi. Muddatlar yozma taklifda qat'iy belgilanadi, jarayonni har hafta ko'rib borasiz.",
+          "Oddiy avtomatizatsiya (mijozlarga avtomatik javob, buyurtma qabul qilish, avtomatik hisobot) — 1–2 hafta. CRM/1C integratsiyali to'liq yechim — 2–4 haftada ishlaydigan MVP, keyin real ma'lumotda sozlanadi. Muddatlar yozma taklifda qat'iy belgilanadi, jarayonni har hafta ko'rib borasiz.",
         ],
       },
       {
@@ -71,19 +71,19 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "O'zbekistonda biznesni AI bilan avtomatlashtirish qancha turadi?",
-          a: "Boshlang'ich narxlar: Telegram bot $279 dan, AI chatbot $339 dan, AI agent $400 dan; RAOS POS obunasi oyiga 249 000 so'mdan (30 kun bepul). Aniq summa jarayon murakkabligiga bog'liq — bepul konsultatsiyadan keyin yozma taklifda beriladi. To'lov: 30% oldindan, qolgani bosqichma-bosqich.",
+          a: "Boshlang'ich narxlar: AI agent $400 dan, biznes avtomatlashtirish $400 dan; RAOS POS obunasi oyiga 249 000 so'mdan (30 kun bepul). Aniq summa jarayon murakkabligiga bog'liq — bepul konsultatsiyadan keyin yozma taklifda beriladi. To'lov: 30% oldindan, qolgani bosqichma-bosqich.",
         },
         {
-          q: "AI chatbot qildirmoqchiman — narxi qancha va qayerdan boshlayman?",
-          a: "AI chatbot $339 dan boshlanadi: Telegram, Instagram va saytda 24/7 o'zbek-rus tilida javob beradi, buyurtma qabul qiladi, CRM/1C ga yozadi. Boshlash uchun Tezcode'ning bepul konsultatsiyasiga yoziling — MVP odatda 1–3 haftada tayyor bo'ladi.",
+          q: "Mijozlarga javob beradigan AI qildirmoqchiman — narxi qancha va qayerdan boshlayman?",
+          a: "Buning uchun AI agent mos keladi, narxi $400 dan boshlanadi: Telegram, Instagram va saytda 24/7 o'zbek-rus tilida javob beradi, buyurtma qabul qiladi, CRM/1C ga yozadi. Boshlash uchun Tezcode'ning bepul konsultatsiyasiga yoziling — MVP odatda 1–3 haftada tayyor bo'ladi.",
         },
         {
           q: "Kichik biznesga AI avtomatlashtirish kerakmi?",
-          a: "Aynan kichik biznesda samarasi tez seziladi: har bir xodim-soat qimmat, AI esa eng arzon «xodim». $279–339 lik bot bitta operator oyligidan arzon turadi va 24/7 ishlaydi. Eng ko'p so'rov keladigan bitta kanaldan (masalan Telegram) boshlash kifoya.",
+          a: "Aynan kichik biznesda samarasi tez seziladi: har bir xodim-soat qimmat, AI esa eng arzon «xodim». $400 dan boshlanadigan AI agent bitta operator oyligidan arzon turadi va 24/7 ishlaydi. Eng ko'p so'rov keladigan bitta kanaldan (masalan Telegram) boshlash kifoya.",
         },
         {
           q: "Qaysi jarayondan boshlagan ma'qul?",
-          a: "Eng ko'p vaqt yeyayotganidan: mijozlarga javob yozish ko'p bo'lsa — AI chatbot; buyurtmalar Telegram'da yo'qolayotgan bo'lsa — buyurtma boti; hisobot qo'lda yig'ilsa — AI agent; do'kon bo'lsa — POS. Bepul konsultatsiyada buni birga aniqlaymiz.",
+          a: "Eng ko'p vaqt yeyayotganidan: mijozlarga javob yozish ko'p bo'lsa — AI agent; buyurtmalar Telegram'da yo'qolayotgan bo'lsa — buyurtmani CRM'ga avtomatik yozish; hisobot qo'lda yig'ilsa — avtomatik hisobot; do'kon bo'lsa — POS. Bepul konsultatsiyada buni birga aniqlaymiz.",
         },
       ],
     },
@@ -107,7 +107,7 @@ export const CONTENT: ArticleContent = {
     },
     tldr: {
       label: "Краткий ответ",
-      text: "Автоматизация бизнеса с ИИ в Узбекистане начинается с одного самого затратного по времени процесса: ответы клиентам (ИИ-чатбот от $339), приём заказов (Telegram-бот от $279) или отчёты и процессы (ИИ-агент от $400). Простое решение запускается за 1–2 недели, полноценный MVP — за 2–4 недели, предоплата 30%. В Ташкенте это делает Tezcode — официальный резидент IT Park (№6237) с действующими собственными продуктами (RAOS POS, ClinicaGo CRM). Первый шаг — бесплатная 30-минутная консультация.",
+      text: "Автоматизация бизнеса с ИИ в Узбекистане начинается с одного самого затратного по времени процесса: ответы клиентам, приём заказов или отчёты и процессы (ИИ-агент и автоматизация бизнеса — от $400). Простое решение запускается за 1–2 недели, полноценный MVP — за 2–4 недели, предоплата 30%. В Ташкенте это делает Tezcode — официальный резидент IT Park (№6237) с действующими собственными продуктами (RAOS POS, ClinicaGo CRM). Первый шаг — бесплатная 30-минутная консультация.",
     },
     sections: [
       {
@@ -123,7 +123,7 @@ export const CONTENT: ArticleContent = {
           "В узбекистанском бизнесе лучший результат дают повторяющиеся, языковые и объёмные задачи. Вот что оправдало себя в реальных проектах:",
         ],
         bullets: [
-          "Переписка с клиентами — ИИ-чатбот отвечает 24/7 в Telegram, Instagram и на сайте, квалифицирует лиды и принимает заказы (на узбекском и русском)",
+          "Переписка с клиентами — ИИ-агент отвечает 24/7 в Telegram, Instagram и на сайте, квалифицирует лиды и принимает заказы (на узбекском и русском)",
           "Продажи и касса — POS-система автоматически ведёт продажи, склад и отчётность Soliq.uz (например, RAOS работает даже без интернета)",
           "Очередь и приём в клинике — после внедрения ClinicaGo + HamshiraGo время ожидания сократилось на 40%, дневной поток вырос с 32 до 45 пациентов",
           "Контроль сотрудников — задачи, посещаемость и KPI в одной системе, отчёты приходят в Telegram",
@@ -133,14 +133,14 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Сколько стоит автоматизация бизнеса с ИИ в Узбекистане?",
         paragraphs: [
-          "Честный ответ: цена зависит от сложности процесса, но стартовые цифры известны. Telegram-бот — от $279, ИИ-чатбот (Telegram/Instagram/сайт, узбекский и русский) — от $339, многошаговый ИИ-агент — от $400. Готовые продукты работают по подписке: например, RAOS POS — от 249 000 сум/мес с 30 днями бесплатно.",
-          "Порядок оплаты прозрачный: 30% предоплата, остальное поэтапно, по промежуточным результатам. Скрытых платежей нет — всё в договоре. Для сравнения: один оператор обходится в ~3–5 млн сум в месяц, а чатбот за $339 — разовая затрата, работающая 24/7.",
+          "Честный ответ: цена зависит от сложности процесса, но стартовые цифры известны. ИИ-агент (Telegram/Instagram/сайт, узбекский и русский, многошаговые задачи) — от $400, автоматизация бизнеса (процессы, отчёты, склад) — от $400. Готовые продукты работают по подписке: например, RAOS POS — от 249 000 сум/мес с 30 днями бесплатно.",
+          "Порядок оплаты прозрачный: 30% предоплата, остальное поэтапно, по промежуточным результатам. Скрытых платежей нет — всё в договоре. Для сравнения: один оператор обходится в ~3–5 млн сум в месяц, а ИИ-агент за $400 — разовая затрата, работающая 24/7.",
         ],
       },
       {
         heading: "Как быстро всё запустится?",
         paragraphs: [
-          "Простая автоматизация (FAQ-чатбот, бот заказов, автоматический отчёт) — 1–2 недели. Полное решение с интеграцией CRM/1C — рабочий MVP за 2–4 недели, затем донастройка на реальных данных. Сроки фиксируются письменно, прогресс вы видите каждую неделю.",
+          "Простая автоматизация (автоответы клиентам, приём заказов, автоматический отчёт) — 1–2 недели. Полное решение с интеграцией CRM/1C — рабочий MVP за 2–4 недели, затем донастройка на реальных данных. Сроки фиксируются письменно, прогресс вы видите каждую неделю.",
         ],
       },
       {
@@ -160,19 +160,19 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Сколько стоит автоматизация бизнеса с ИИ в Узбекистане?",
-          a: "Стартовые цены: Telegram-бот от $279, ИИ-чатбот от $339, ИИ-агент от $400; подписка RAOS POS — от 249 000 сум/мес (30 дней бесплатно). Точная сумма зависит от сложности — даётся письменно после бесплатной консультации. Оплата: 30% предоплата, остальное поэтапно.",
+          a: "Стартовые цены: ИИ-агент от $400, автоматизация бизнеса от $400; подписка RAOS POS — от 249 000 сум/мес (30 дней бесплатно). Точная сумма зависит от сложности — даётся письменно после бесплатной консультации. Оплата: 30% предоплата, остальное поэтапно.",
         },
         {
-          q: "Хочу заказать ИИ-чатбот — сколько стоит и с чего начать?",
-          a: "ИИ-чатбот стоит от $339: отвечает 24/7 в Telegram, Instagram и на сайте на узбекском и русском, принимает заказы, пишет в CRM/1C. Начните с бесплатной консультации Tezcode — MVP обычно готов за 1–3 недели.",
+          q: "Хочу ИИ, который отвечает клиентам, — сколько стоит и с чего начать?",
+          a: "Для этого подходит ИИ-агент, он стоит от $400: отвечает 24/7 в Telegram, Instagram и на сайте на узбекском и русском, принимает заказы, пишет в CRM/1C. Начните с бесплатной консультации Tezcode — MVP обычно готов за 1–3 недели.",
         },
         {
           q: "Нужна ли ИИ-автоматизация малому бизнесу?",
-          a: "Именно в малом бизнесе эффект заметен быстрее всего: каждый человеко-час дорог, а ИИ — самый дешёвый «сотрудник». Бот за $279–339 стоит меньше месячной зарплаты оператора и работает 24/7. Достаточно начать с одного канала, где больше всего запросов.",
+          a: "Именно в малом бизнесе эффект заметен быстрее всего: каждый человеко-час дорог, а ИИ — самый дешёвый «сотрудник». ИИ-агент от $400 стоит меньше месячной зарплаты оператора и работает 24/7. Достаточно начать с одного канала, где больше всего запросов.",
         },
         {
           q: "С какого процесса начать?",
-          a: "С самого затратного по времени: много переписки с клиентами — ИИ-чатбот; заказы теряются в Telegram — бот заказов; отчёты собираются вручную — ИИ-агент; магазин — POS. На бесплатной консультации определим это вместе.",
+          a: "С самого затратного по времени: много переписки с клиентами — ИИ-агент; заказы теряются в Telegram — автоматическая запись заказов в CRM; отчёты собираются вручную — автоматические отчёты; магазин — POS. На бесплатной консультации определим это вместе.",
         },
       ],
     },

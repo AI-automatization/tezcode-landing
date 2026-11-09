@@ -27,42 +27,42 @@ const META: Record<
   uz: {
     title: "O'zbekistondagi AI kompaniya — biznes uchun AI yechimlar | Tezcode",
     description:
-      "Tezcode — Toshkentdagi AI kompaniya va AI Software Factory. O'zbekiston bo'ylab AI agentlar, chatbotlar, avtomatizatsiya, video analitika va 1C/CRM integratsiyasi. Bepul konsultatsiya.",
+      "Tezcode — Toshkentdagi AI kompaniya va AI Software Factory. O'zbekiston bo'ylab AI agentlar, avtomatizatsiya, video analitika va 1C/CRM integratsiyasi. Bepul konsultatsiya.",
     ogTitle: "O'zbekistondagi AI kompaniya — Tezcode",
     ogDescription:
-      "Toshkentdagi AI Software Factory: O'zbekiston bizneslari uchun AI agentlar, chatbotlar, avtomatizatsiya va integratsiyalar.",
+      "Toshkentdagi AI Software Factory: O'zbekiston bizneslari uchun AI agentlar, avtomatizatsiya va integratsiyalar.",
   },
   ru: {
     title: "Внедрение ИИ в бизнес в Ташкенте и Узбекистане | Tezcode",
     description:
-      "Tezcode — AI-компания и AI Software Factory в Ташкенте. ИИ-агенты, чат-боты, автоматизация, видеоаналитика и интеграции 1C/CRM по всему Узбекистану. Бесплатная консультация.",
+      "Tezcode — AI-компания и AI Software Factory в Ташкенте. ИИ-агенты, автоматизация, видеоаналитика и интеграции 1C/CRM по всему Узбекистану. Бесплатная консультация.",
     ogTitle: "Внедрение ИИ в бизнес в Ташкенте и Узбекистане — Tezcode",
     ogDescription:
-      "AI Software Factory в Ташкенте: ИИ-агенты, чат-боты, автоматизация и интеграции для бизнеса по всему Узбекистану.",
+      "AI Software Factory в Ташкенте: ИИ-агенты, автоматизация и интеграции для бизнеса по всему Узбекистану.",
   },
   en: {
     title: "AI Implementation for Business in Uzbekistan — Tezcode",
     description:
-      "AI implementation for business across Uzbekistan: AI agents, chatbots, process automation, AI video analytics, voice assistants. In Uzbek and Russian, with 1C/CRM integration. IT Park resident. Free 30-min consultation.",
+      "AI implementation for business across Uzbekistan: AI agents, process automation, AI video analytics, voice assistants. In Uzbek and Russian, with 1C/CRM integration. IT Park resident. Free 30-min consultation.",
     ogTitle: "AI Implementation for Business in Uzbekistan — Tezcode",
     ogDescription:
-      "AI agents, chatbots, process automation and AI video analytics — across Uzbekistan. In Uzbek and Russian. Free consultation.",
+      "AI agents, process automation and AI video analytics — across Uzbekistan. In Uzbek and Russian. Free consultation.",
   },
   ar: {
     title: "تطبيق الذكاء الاصطناعي في الأعمال في أوزبكستان — Tezcode",
     description:
-      "تطبيق الذكاء الاصطناعي في الأعمال في كل أوزبكستان: وكلاء AI، روبوتات محادثة، أتمتة العمليات، تحليلات فيديو AI، مساعدون صوتيون. بالأوزبكية والروسية مع تكامل 1C/CRM. مقيم IT Park. استشارة 30 دقيقة مجانية.",
+      "تطبيق الذكاء الاصطناعي في الأعمال في كل أوزبكستان: وكلاء AI، أتمتة العمليات، تحليلات فيديو AI، مساعدون صوتيون. بالأوزبكية والروسية مع تكامل 1C/CRM. مقيم IT Park. استشارة 30 دقيقة مجانية.",
     ogTitle: "تطبيق الذكاء الاصطناعي في الأعمال في أوزبكستان — Tezcode",
     ogDescription:
-      "وكلاء AI وروبوتات محادثة وأتمتة عمليات وتحليلات فيديو — في كل أوزبكستان. بالأوزبكية والروسية. استشارة مجانية.",
+      "وكلاء AI وأتمتة عمليات وتحليلات فيديو — في كل أوزبكستان. بالأوزبكية والروسية. استشارة مجانية.",
   },
   uk: {
     title: "Впровадження ШІ в бізнес в Узбекистані — Tezcode",
     description:
-      "Впровадження ШІ в бізнес по всьому Узбекистану: AI-агенти, чат-боти, автоматизація процесів, AI-відеоаналітика, голосові асистенти. Узбецькою та російською, інтеграція з 1C/CRM. Резидент IT Park. Безкоштовна 30-хв консультація.",
+      "Впровадження ШІ в бізнес по всьому Узбекистану: AI-агенти, автоматизація процесів, AI-відеоаналітика, голосові асистенти. Узбецькою та російською, інтеграція з 1C/CRM. Резидент IT Park. Безкоштовна 30-хв консультація.",
     ogTitle: "Впровадження ШІ в бізнес в Узбекистані — Tezcode",
     ogDescription:
-      "AI-агенти, чат-боти, автоматизація процесів та AI-відеоаналітика — по всьому Узбекистану. Узбецькою та російською. Безкоштовна консультація.",
+      "AI-агенти, автоматизація процесів та AI-відеоаналітика — по всьому Узбекистану. Узбецькою та російською. Безкоштовна консультація.",
   },
 };
 
@@ -97,7 +97,6 @@ export async function generateMetadata({
       "AI implementation Uzbekistan",
       "AI for business Uzbekistan",
       "ИИ-агенты Узбекистан",
-      "чат-бот Узбекистан",
     ],
     ogTitle: meta.ogTitle,
     ogDescription: meta.ogDescription,
@@ -120,8 +119,8 @@ export default async function AiOzbekistondaPage({
     // Country-level page → country-level areaServed (cities the site has
     // dedicated pages for are named explicitly).
     areaServed: ["Uzbekistan", "Tashkent", "Samarkand"],
-    // "From" price of the cheapest AI implementation on /tariflar (AI chatbot).
-    offers: { price: "339", priceCurrency: "USD" },
+    // "From" price of the cheapest AI implementation on /tariflar (AI agent).
+    offers: { price: "400", priceCurrency: "USD" },
   });
   const faqSchema = getFaqSchema(copy.faq.items);
   const howToSchema = getHowToSchema({

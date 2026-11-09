@@ -10,8 +10,6 @@ type Lang = "uz" | "ru" | "en" | "ar" | "uk";
 // Prices below are the published "from" prices on each service page —
 // keep them in sync with the service pages, never invent new figures here.
 const SERVICE_PATHS = [
-  "/telegram-bot-biznes",
-  "/ai-chatbot",
   "/ai-agent",
   "/biznes-avtomatlashtirish",
   "/crm-integratsiya",
@@ -30,7 +28,7 @@ type Copy = {
   title: string;
   titleAccent: string;
   subtitle: string;
-  items: [Item, Item, Item, Item, Item, Item, Item];
+  items: [Item, Item, Item, Item, Item];
   noteUpfront: string;
   noteSource: string;
   linkLabel: string;
@@ -42,10 +40,8 @@ const COPY: Record<Lang, Copy> = {
     title: "Buyurtma ishlar —",
     titleAccent: "bir martalik loyihalar",
     subtitle:
-      "Bot, chatbot, integratsiya yoki MVP buyurtma qilmoqchimisiz? Boshlang'ich narxlar quyida — aniq summa vazifangizga qarab yozma taklifda beriladi.",
+      "AI agent, avtomatlashtirish, integratsiya yoki MVP buyurtma qilmoqchimisiz? Boshlang'ich narxlar quyida — aniq summa vazifangizga qarab yozma taklifda beriladi.",
     items: [
-      { name: "Telegram bot", desc: "Buyurtma qabul qilish, Click/Payme to'lov, Mini App do'kon", price: "$279 dan" },
-      { name: "AI chatbot", desc: "Telegram, Instagram va saytda 24/7 mijoz xizmati", price: "$339 dan" },
       { name: "AI agent", desc: "Javob beribgina qolmay, ishni o'zi bajaradigan raqamli xodim", price: "$400 dan" },
       { name: "Jarayon avtomatlashtirish", desc: "Savdo, ombor, hisobot — eng ko'p vaqt oladigan jarayonlar", price: "$400 dan" },
       { name: "CRM / 1C integratsiya", desc: "amoCRM, Bitrix24, 1C ni barcha kanallar bilan ulash", price: "$700 dan" },
@@ -61,10 +57,8 @@ const COPY: Record<Lang, Copy> = {
     title: "Работы на заказ —",
     titleAccent: "разовые проекты",
     subtitle:
-      "Хотите заказать бота, чат-бота, интеграцию или MVP? Стартовые цены ниже — точную сумму дадим письменным предложением под вашу задачу.",
+      "Хотите заказать ИИ-агента, автоматизацию, интеграцию или MVP? Стартовые цены ниже — точную сумму дадим письменным предложением под вашу задачу.",
     items: [
-      { name: "Telegram-бот", desc: "Приём заказов, оплата Click/Payme, магазин Mini App", price: "от $279" },
-      { name: "ИИ-чат-бот", desc: "Поддержка клиентов 24/7 в Telegram, Instagram и на сайте", price: "от $339" },
       { name: "ИИ-агент", desc: "Цифровой сотрудник, который не просто отвечает, а сам выполняет работу", price: "от $400" },
       { name: "Автоматизация процессов", desc: "Продажи, склад, отчёты — самые трудоёмкие процессы", price: "от $400" },
       { name: "Интеграция CRM / 1C", desc: "Подключение amoCRM, Bitrix24, 1C ко всем каналам", price: "от $700" },
@@ -80,10 +74,8 @@ const COPY: Record<Lang, Copy> = {
     title: "Custom work —",
     titleAccent: "one-time projects",
     subtitle:
-      "Want to order a bot, chatbot, integration or an MVP? Starting prices are below — the exact quote comes as a written proposal for your task.",
+      "Want to order an AI agent, automation, integration or an MVP? Starting prices are below — the exact quote comes as a written proposal for your task.",
     items: [
-      { name: "Telegram bot", desc: "Order taking, Click/Payme payments, Mini App store", price: "from $279" },
-      { name: "AI chatbot", desc: "24/7 customer support on Telegram, Instagram and your website", price: "from $339" },
       { name: "AI agent", desc: "A digital employee that doesn't just reply but does the work", price: "from $400" },
       { name: "Process automation", desc: "Sales, warehouse, reporting — your most time-consuming processes", price: "from $400" },
       { name: "CRM / 1C integration", desc: "Connecting amoCRM, Bitrix24 and 1C to all your channels", price: "from $700" },
@@ -99,10 +91,8 @@ const COPY: Record<Lang, Copy> = {
     title: "أعمال حسب الطلب —",
     titleAccent: "مشاريع لمرة واحدة",
     subtitle:
-      "تريد طلب بوت أو شات بوت أو تكامل أو MVP؟ الأسعار المبدئية أدناه — السعر الدقيق يأتي كعرض مكتوب حسب مهمتك.",
+      "تريد طلب وكيل AI أو أتمتة أو تكامل أو MVP؟ الأسعار المبدئية أدناه — السعر الدقيق يأتي كعرض مكتوب حسب مهمتك.",
     items: [
-      { name: "بوت تيليجرام", desc: "استقبال الطلبات، دفع Click/Payme، متجر Mini App", price: "من $279" },
-      { name: "شات بوت AI", desc: "دعم عملاء 24/7 على تيليجرام وإنستغرام وموقعك", price: "من $339" },
       { name: "وكيل AI", desc: "موظف رقمي لا يكتفي بالرد بل ينفّذ العمل بنفسه", price: "من $400" },
       { name: "أتمتة العمليات", desc: "المبيعات والمخزون والتقارير — أكثر العمليات استهلاكًا للوقت", price: "من $400" },
       { name: "تكامل CRM / 1C", desc: "ربط amoCRM وBitrix24 و1C بجميع القنوات", price: "من $700" },
@@ -118,10 +108,8 @@ const COPY: Record<Lang, Copy> = {
     title: "Роботи на замовлення —",
     titleAccent: "разові проєкти",
     subtitle:
-      "Хочете замовити бота, чат-бота, інтеграцію чи MVP? Стартові ціни нижче — точну суму дамо письмовою пропозицією під ваше завдання.",
+      "Хочете замовити AI-агента, автоматизацію, інтеграцію чи MVP? Стартові ціни нижче — точну суму дамо письмовою пропозицією під ваше завдання.",
     items: [
-      { name: "Telegram-бот", desc: "Прийом замовлень, оплата Click/Payme, магазин Mini App", price: "від $279" },
-      { name: "AI чат-бот", desc: "Підтримка клієнтів 24/7 у Telegram, Instagram і на сайті", price: "від $339" },
       { name: "AI-агент", desc: "Цифровий співробітник, який не просто відповідає, а сам виконує роботу", price: "від $400" },
       { name: "Автоматизація процесів", desc: "Продажі, склад, звіти — найбільш трудомісткі процеси", price: "від $400" },
       { name: "Інтеграція CRM / 1C", desc: "Підключення amoCRM, Bitrix24 і 1C до всіх каналів", price: "від $700" },

@@ -16,7 +16,7 @@ const PATH = "/xodim-nazorati";
 // "система контроля сотрудников" (ru) and "staff monitoring system
 // Uzbekistan" (en). Service page — Tezcode builds the system for the client
 // (no ready-made product, no subscription price). Plain string titles go
-// through the layout's `%s | Tezcode` template (same pattern as /ai-chatbot).
+// through the layout's `%s | Tezcode` template (same pattern as /ai-agent).
 // Falls back to uz, like the page body.
 const META: Record<
   ServiceLang,
@@ -119,7 +119,7 @@ export default async function XodimNazoratiPage({
   });
   const faqSchema = getFaqSchema(copy.faq.items);
   // BreadcrumbList so answer engines see the page's place in the site
-  // hierarchy (Home → Xodim nazorati) — same SSR JSON-LD pattern as /ai-chatbot.
+  // hierarchy (Home → Xodim nazorati) — same SSR JSON-LD pattern as /ai-agent.
   const breadcrumb = getBreadcrumbSchema([
     { name: "Tezcode", url: BASE_URL },
     { name: copy.service.name, url: `${BASE_URL}${PATH}` },

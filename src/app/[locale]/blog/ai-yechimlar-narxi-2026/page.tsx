@@ -23,7 +23,7 @@ export async function generateMetadata({
     title:
       "AI yechimlar narxi 2026: qaysi xizmat qancha turadi? | Tezcode",
     description:
-      "AI chatbot $339 dan, AI agent $400 dan, CRM integratsiya $700 dan, AI video analitika $990 dan — barcha AI yechimlarning aniq 2026 narxlari, narxga nima ta'sir qiladi va to'lov tartibi. Tezcode ochiq narx qo'llanmasi.",
+      "AI agent $400 dan, biznes avtomatlashtirish $400 dan, CRM integratsiya $700 dan, AI video analitika $990 dan — barcha AI yechimlarning aniq 2026 narxlari, narxga nima ta'sir qiladi va to'lov tartibi. Tezcode ochiq narx qo'llanmasi.",
   });
   return buildPageMetadata({
     locale,
@@ -33,14 +33,12 @@ export async function generateMetadata({
     description: localized.description,
     keywords: [
       "AI yechimlar narxi",
-      "AI chatbot narxi",
       "AI agent narxi",
       "CRM integratsiya narxi",
       "AI video analitika narxi",
-      "chatbot narxi Toshkent",
       "AI narxlari 2026",
       "цены на ИИ-решения",
-      "сколько стоит чат-бот",
+      "сколько стоит ИИ-агент",
       "стоимость ИИ-агента Ташкент",
     ],
   });

@@ -14,7 +14,7 @@ const PATH = "/pos-tizimi";
 
 // Localised meta: the title targets "POS tizimi" + the RAOS product name (uz)
 // and its ru/en/ar/uk equivalents. The layout template appends " | Tezcode",
-// same pattern as /ai-chatbot. Falls back to uz for unknown locales.
+// same pattern as /ai-agent. Falls back to uz for unknown locales.
 const META: Record<
   ServiceLang,
   { title: string; description: string; ogTitle: string; ogDescription: string }
@@ -148,7 +148,7 @@ export default async function PosTizimiPage({
   });
   const faqSchema = getFaqSchema(copy.faq.items);
   // BreadcrumbList so answer engines see the page's place in the site
-  // hierarchy (Home → POS tizimi) — same SSR JSON-LD pattern as /ai-chatbot.
+  // hierarchy (Home → POS tizimi) — same SSR JSON-LD pattern as /ai-agent.
   const breadcrumb = getBreadcrumbSchema([
     { name: "Tezcode", url: BASE_URL },
     { name: copy.service.name, url: `${BASE_URL}${PATH}` },

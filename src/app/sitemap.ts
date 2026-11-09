@@ -30,12 +30,10 @@ const COUNTRY_AI_UPDATED = new Date("2026-09-20");
 
 // City slugs with live pages for the newer per-city service landings.
 // Must mirror ACTIVE_CITY_SLUGS in each service's [city]/page.tsx
-// (ai-chatbot, ai-agent, telegram-bot-biznes, biznes-avtomatlashtirish).
+// (ai-agent, biznes-avtomatlashtirish).
 const ACTIVE_CITY_SLUGS = ["toshkent"]; // Samarqand retired 2026-10-19 (not indexed, no local presence)
 const CITY_SERVICES = [
-  "/ai-chatbot",
   "/ai-agent",
-  "/telegram-bot-biznes",
   "/biznes-avtomatlashtirish",
   "/pos-tizimi",
   "/ai-avtomatizatsiya",
@@ -63,10 +61,8 @@ const ROUTES: Route[] = [
   { path: "/ai-avtomatizatsiya", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/ai-ozbekistonda", priority: 0.9, changeFrequency: "monthly" as const, lastModified: COUNTRY_AI_UPDATED },
   { path: "/biznes-uchun-suniy-intellekt", priority: 0.8, changeFrequency: "monthly" as const, availableLocales: ["uz"] },
-  { path: "/ai-chatbot", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/ai-video-analitika", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/ai-agent", priority: 0.9, changeFrequency: "monthly" as const, lastModified: AI_AGENT_UPDATED },
-  { path: "/telegram-bot-biznes", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/pos-tizimi", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/klinika-crm", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/xodim-nazorati", priority: 0.9, changeFrequency: "monthly" as const },

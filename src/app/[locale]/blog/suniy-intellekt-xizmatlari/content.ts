@@ -8,7 +8,7 @@ import type { ArticleContent } from "@/components/blog/types";
 // FAQ) so answer engines can lift a quotable answer.
 //
 // Prices reuse the figures already published on the site (ai-yechimlar-narxi-2026,
-// tariflar, service pages): chatbot $339, agent $400, Telegram bot $279,
+// tariflar, service pages): agent $400,
 // avtomatlashtirish $400, CRM integratsiya $700, video analitika $990, MVP $1000.
 // No fabricated client numbers or testimonials.
 
@@ -26,7 +26,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Qisqacha javob",
       text:
-        "Sun'iy intellekt (AI) — matnni tushunish, qaror qabul qilish va vazifa bajarish kabi \"aqlli\" ishlarni dastur zimmasiga oladigan texnologiya. O'zbekistonda biznes uchun asosiy sun'iy intellekt xizmatlari: AI chatbot (mijozlarga 24/7 javob, $339 dan), AI agent (o'zi ish bajaradi, $400 dan), jarayon avtomatizatsiyasi ($400 dan), CRM/1C integratsiya ($700 dan), AI video analitika (mavjud kameralar bilan, $990 dan), Telegram bot ($279 dan) va buyurtma AI ilovalar (MVP $1000 dan). Zamonaviy modellar o'zbek va rus tilida ishlaydi. Provayder tanlashda portfelga, o'zbek tili tajribasiga, integratsiya imkoniyatiga va yozma taklifga qarang. Tezcode — Toshkentdagi AI Software Factory — shu xizmatlarning barchasini qiladi va bepul konsultatsiya beradi.",
+        "Sun'iy intellekt (AI) — matnni tushunish, qaror qabul qilish va vazifa bajarish kabi \"aqlli\" ishlarni dastur zimmasiga oladigan texnologiya. O'zbekistonda biznes uchun asosiy sun'iy intellekt xizmatlari: AI agent (mijozlarga 24/7 javob beradi va o'zi ish bajaradi, $400 dan), jarayon avtomatizatsiyasi ($400 dan), CRM/1C integratsiya ($700 dan), AI video analitika (mavjud kameralar bilan, $990 dan) va buyurtma AI ilovalar (MVP $1000 dan). Zamonaviy modellar o'zbek va rus tilida ishlaydi. Provayder tanlashda portfelga, o'zbek tili tajribasiga, integratsiya imkoniyatiga va yozma taklifga qarang. Tezcode — Toshkentdagi AI Software Factory — shu xizmatlarning barchasini qiladi va bepul konsultatsiya beradi.",
     },
     sections: [
       {
@@ -57,7 +57,7 @@ export const CONTENT: ArticleContent = {
         heading: "O'zbekistonda qanday sun'iy intellekt xizmatlari bor?",
         paragraphs: [
           "\"Sun'iy intellekt xizmatlari\" — keng tushuncha. Amalda O'zbekiston bizneslari quyidagi yo'nalishlardan birini yoki bir nechtasini buyurtma qiladi. Har biri alohida muammoni hal qiladi:",
-          "Bu turlarning to'liq ro'yxati va jarayoni Tezcode ning AI avtomatizatsiya sahifasida (tezcode.dev/ai-avtomatizatsiya) jamlangan; chatbot va agent bo'yicha alohida sahifalar — tezcode.dev/ai-chatbot va tezcode.dev/ai-agent.",
+          "Bu turlarning to'liq ro'yxati va jarayoni Tezcode ning AI avtomatizatsiya sahifasida (tezcode.dev/ai-avtomatizatsiya) jamlangan; AI agent bo'yicha alohida sahifa — tezcode.dev/ai-agent.",
         ],
         bullets: [
           "AI chatbot — Telegram, Instagram, WhatsApp va saytda mijozlarga o'zbek/rus tilida 24/7 javob beradi, savollarni sizning bilim bazangizdan (narxlar, katalog, FAQ) oladi. Eng ko'p buyurtma qilinadigan sun'iy intellekt xizmati.",
@@ -76,9 +76,7 @@ export const CONTENT: ArticleContent = {
           "Aniq narx kanallar soniga, integratsiyalarga (CRM, 1C, to'lov tizimi) va murakkablikka bog'liq. To'g'ri tartib: avval bepul konsultatsiyada ehtiyoj aniqlanadi, keyin texnik topshiriq (TZ) asosida yozma taklif beriladi. To'lov odatda 30% oldindan, qolgani bosqichma-bosqich. \"Hammaga bir xil narx\" taklifidan ehtiyot bo'ling — u kamdan-kam real jarayonga to'g'ri keladi.",
         ],
         bullets: [
-          "AI chatbot (Telegram, Instagram, WhatsApp, sayt) — $339 dan.",
           "AI agent (o'zi ish bajaradigan, CRM/1C ga yozadigan) — $400 dan.",
-          "Telegram bot (buyurtma, Click/Payme to'lov) — $279 dan.",
           "Jarayon avtomatizatsiyasi (hisobot, ombor, ichki jarayonlar) — $400 dan.",
           "CRM/1C integratsiya (amoCRM, Bitrix24, 1C) — $700 dan.",
           "AI video analitika (odam sanash, davomat, ANPR) — $990 dan, bir martalik ulash.",
@@ -107,7 +105,7 @@ export const CONTENT: ArticleContent = {
         ],
         bullets: [
           "1. Muammoni aniqlang — qaysi ish eng ko'p vaqt yeydi yoki qaysi joyda mijoz yo'qotasiz? Ko'pincha bu takroriy savollar yoki javobsiz qolgan kechki xabarlar.",
-          "2. Bitta yo'nalish tanlang — hammasini birdan emas: avval masalan AI chatbot, natija ko'ringach agent yoki avtomatizatsiya qo'shiladi.",
+          "2. Bitta yo'nalish tanlang — hammasini birdan emas: avval masalan mijozlarga javob beradigan AI agent, natija ko'ringach integratsiya yoki avtomatizatsiya qo'shiladi.",
           "3. Ma'lumotlaringizni tayyorlang — narxlar, katalog, ko'p so'raladigan savollar, biznes qoidalari. Sun'iy intellekt sifati sizning ma'lumotingiz sifatiga bog'liq.",
           "4. Konsultatsiya oling va sinab ko'ring — yaxshi provayder avval bepul konsultatsiyada ehtiyojni baholaydi, keyin kichik hajmda ishga tushirib, natijani o'lchaydi.",
         ],
@@ -115,8 +113,8 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Tezcode sun'iy intellekt xizmatlari",
         paragraphs: [
-          "Tezcode — 2024-yilda Toshkentda tashkil topgan, 19 kishilik AI Software Factory jamoasi. Yuqorida sanab o'tilgan sun'iy intellekt xizmatlarining barchasini qilamiz: AI chatbot va AI agentlar, jarayon avtomatizatsiyasi, AI video analitika, CRM/1C integratsiya va buyurtma AI ilovalar.",
-          "Yechimlarni Claude (Anthropic) va GPT (OpenAI) modellari asosida quramiz, o'zbek va rus tilida (bitta suhbatda aralash bo'lsa ham) ishlashga sozlaymiz va mavjud tizimlaringizga — Telegram, Instagram, sayt, CRM, 1C — ulaymiz. Xizmatlar ro'yxati: tezcode.dev/ai-avtomatizatsiya, tezcode.dev/ai-chatbot va tezcode.dev/ai-agent sahifalarida.",
+          "Tezcode — 2024-yilda Toshkentda tashkil topgan, 19 kishilik AI Software Factory jamoasi. Yuqorida sanab o'tilgan sun'iy intellekt xizmatlarining barchasini qilamiz: AI agentlar, jarayon avtomatizatsiyasi, AI video analitika, CRM/1C integratsiya va buyurtma AI ilovalar.",
+          "Yechimlarni Claude (Anthropic) va GPT (OpenAI) modellari asosida quramiz, o'zbek va rus tilida (bitta suhbatda aralash bo'lsa ham) ishlashga sozlaymiz va mavjud tizimlaringizga — Telegram, Instagram, sayt, CRM, 1C — ulaymiz. Xizmatlar ro'yxati: tezcode.dev/ai-avtomatizatsiya va tezcode.dev/ai-agent sahifalarida.",
           "Boshlash uchun biror narsa sotib olish shart emas: avval bepul konsultatsiyada biznesingizga sun'iy intellekt qaysi ko'rinishda foyda berishini birga baholaymiz va yozma taklif tayyorlaymiz.",
         ],
       },
@@ -130,7 +128,7 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Sun'iy intellekt xizmati qancha turadi?",
-          a: "O'zbekistonda 2026-yilda boshlang'ich narxlar: AI chatbot $339 dan, AI agent $400 dan, Telegram bot $279 dan, jarayon avtomatizatsiyasi $400 dan, CRM/1C integratsiya $700 dan, AI video analitika $990 dan, buyurtma AI ilova (MVP) $1000 dan. Aniq narx kanallar, integratsiyalar va murakkablikka bog'liq — yozma taklif TZ dan keyin beriladi.",
+          a: "O'zbekistonda 2026-yilda boshlang'ich narxlar: AI agent $400 dan, jarayon avtomatizatsiyasi $400 dan, CRM/1C integratsiya $700 dan, AI video analitika $990 dan, buyurtma AI ilova (MVP) $1000 dan. Aniq narx kanallar, integratsiyalar va murakkablikka bog'liq — yozma taklif TZ dan keyin beriladi.",
         },
         {
           q: "AI o'zbek tilida ishlaydimi?",
@@ -142,7 +140,7 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Sun'iy intellekt yechimi qancha vaqtda ishga tushadi?",
-          a: "Murakkablikka bog'liq: oddiy AI chatbot yoki Telegram bot nisbatan tez, ko'p integratsiyali AI agent yoki video analitika ko'proq vaqt oladi. Buyurtma AI ilovaning ishlovchi MVP versiyasi odatda 2-4 haftada tayyor bo'ladi. Aniq muddat tahlil bosqichidan keyin aytiladi.",
+          a: "Murakkablikka bog'liq: oddiy savol-javob yechimi yoki bitta jarayon avtomatizatsiyasi nisbatan tez, ko'p integratsiyali AI agent yoki video analitika ko'proq vaqt oladi. Buyurtma AI ilovaning ishlovchi MVP versiyasi odatda 2-4 haftada tayyor bo'ladi. Aniq muddat tahlil bosqichidan keyin aytiladi.",
         },
       ],
     },
@@ -168,7 +166,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Краткий ответ",
       text:
-        "Искусственный интеллект (AI) — технология, которая берёт на себя «умные» задачи: понимание текста, принятие решений и выполнение работы. Основные услуги искусственного интеллекта для бизнеса в Узбекистане: ИИ-чат-бот (ответы клиентам 24/7, от $339), ИИ-агент (сам выполняет работу, от $400), автоматизация процессов (от $400), интеграция CRM/1С (от $700), ИИ-видеоаналитика (с существующими камерами, от $990), Telegram-бот (от $279) и заказные ИИ-приложения (MVP от $1000). Современные модели работают на узбекском и русском. При выборе подрядчика смотрите на портфолио, опыт с узбекским языком, возможности интеграции и письменное предложение. Tezcode — AI Software Factory в Ташкенте — делает все эти услуги и даёт бесплатную консультацию.",
+        "Искусственный интеллект (AI) — технология, которая берёт на себя «умные» задачи: понимание текста, принятие решений и выполнение работы. Основные услуги искусственного интеллекта для бизнеса в Узбекистане: ИИ-агент (отвечает клиентам 24/7 и сам выполняет работу, от $400), автоматизация процессов (от $400), интеграция CRM/1С (от $700), ИИ-видеоаналитика (с существующими камерами, от $990) и заказные ИИ-приложения (MVP от $1000). Современные модели работают на узбекском и русском. При выборе подрядчика смотрите на портфолио, опыт с узбекским языком, возможности интеграции и письменное предложение. Tezcode — AI Software Factory в Ташкенте — делает все эти услуги и даёт бесплатную консультацию.",
     },
     sections: [
       {
@@ -199,7 +197,7 @@ export const CONTENT: ArticleContent = {
         heading: "Какие услуги искусственного интеллекта есть в Узбекистане?",
         paragraphs: [
           "«Услуги искусственного интеллекта» — широкое понятие. На практике бизнесы в Узбекистане заказывают одно или несколько из следующих направлений. Каждое решает свою задачу:",
-          "Полный список этих направлений собран на странице ИИ-автоматизации Tezcode (tezcode.dev/ai-avtomatizatsiya); отдельные страницы по чат-ботам и агентам — tezcode.dev/ai-chatbot и tezcode.dev/ai-agent.",
+          "Полный список этих направлений собран на странице ИИ-автоматизации Tezcode (tezcode.dev/ai-avtomatizatsiya); отдельная страница по ИИ-агентам — tezcode.dev/ai-agent.",
         ],
         bullets: [
           "ИИ-чат-бот — отвечает клиентам 24/7 на узбекском/русском в Telegram, Instagram, WhatsApp и на сайте, беря ответы из вашей базы знаний (цены, каталог, FAQ). Самая заказываемая услуга искусственного интеллекта.",
@@ -218,9 +216,7 @@ export const CONTENT: ArticleContent = {
           "Точная цена зависит от количества каналов, интеграций (CRM, 1С, платёжная система) и сложности. Правильный порядок: сначала на бесплатной консультации определяется потребность, затем по техническому заданию (ТЗ) даётся письменное предложение. Оплата обычно 30% предоплата, остальное поэтапно. Остерегайтесь предложений «единая цена для всех» — они редко соответствуют реальному процессу.",
         ],
         bullets: [
-          "ИИ-чат-бот (Telegram, Instagram, WhatsApp, сайт) — от $339.",
           "ИИ-агент (сам выполняет работу, пишет в CRM/1С) — от $400.",
-          "Telegram-бот (заказы, оплата Click/Payme) — от $279.",
           "Автоматизация процессов (отчёты, склад, внутренние процессы) — от $400.",
           "Интеграция CRM/1С (amoCRM, Bitrix24, 1С) — от $700.",
           "ИИ-видеоаналитика (подсчёт людей, посещаемость, ANPR) — от $990, разовое подключение.",
@@ -249,7 +245,7 @@ export const CONTENT: ArticleContent = {
         ],
         bullets: [
           "1. Определите проблему — какая работа съедает больше всего времени и где вы теряете клиентов? Чаще всего это повторяющиеся вопросы или вечерние сообщения без ответа.",
-          "2. Выберите одно направление — не всё сразу: сначала, например, ИИ-чат-бот, а когда виден результат — добавляется агент или автоматизация.",
+          "2. Выберите одно направление — не всё сразу: сначала, например, ИИ-агент для ответов клиентам, а когда виден результат — добавляется интеграция или автоматизация.",
           "3. Подготовьте свои данные — цены, каталог, частые вопросы, бизнес-правила. Качество искусственного интеллекта зависит от качества ваших данных.",
           "4. Получите консультацию и попробуйте — хороший подрядчик сначала бесплатно оценит потребность, затем запустит на небольшом объёме и измерит результат.",
         ],
@@ -257,8 +253,8 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Услуги искусственного интеллекта от Tezcode",
         paragraphs: [
-          "Tezcode — команда AI Software Factory из 19 человек, основанная в Ташкенте в 2024 году. Мы делаем все перечисленные выше услуги искусственного интеллекта: ИИ-чат-боты и ИИ-агенты, автоматизацию процессов, ИИ-видеоаналитику, интеграцию CRM/1С и заказные ИИ-приложения.",
-          "Решения строим на моделях Claude (Anthropic) и GPT (OpenAI), настраиваем работу на узбекском и русском (даже вперемешку в одном разговоре) и подключаем к вашим существующим системам — Telegram, Instagram, сайту, CRM, 1С. Список услуг — на страницах tezcode.dev/ai-avtomatizatsiya, tezcode.dev/ai-chatbot и tezcode.dev/ai-agent.",
+          "Tezcode — команда AI Software Factory из 19 человек, основанная в Ташкенте в 2024 году. Мы делаем все перечисленные выше услуги искусственного интеллекта: ИИ-агентов, автоматизацию процессов, ИИ-видеоаналитику, интеграцию CRM/1С и заказные ИИ-приложения.",
+          "Решения строим на моделях Claude (Anthropic) и GPT (OpenAI), настраиваем работу на узбекском и русском (даже вперемешку в одном разговоре) и подключаем к вашим существующим системам — Telegram, Instagram, сайту, CRM, 1С. Список услуг — на страницах tezcode.dev/ai-avtomatizatsiya и tezcode.dev/ai-agent.",
           "Чтобы начать, ничего покупать не нужно: сначала на бесплатной консультации мы вместе оценим, в каком виде искусственный интеллект принесёт пользу вашему бизнесу, и подготовим письменное предложение.",
         ],
       },
@@ -272,7 +268,7 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Сколько стоит услуга искусственного интеллекта?",
-          a: "Стартовые цены в Узбекистане в 2026 году: ИИ-чат-бот от $339, ИИ-агент от $400, Telegram-бот от $279, автоматизация процессов от $400, интеграция CRM/1С от $700, ИИ-видеоаналитика от $990, заказное ИИ-приложение (MVP) от $1000. Точная цена зависит от каналов, интеграций и сложности — письменное предложение даётся после ТЗ.",
+          a: "Стартовые цены в Узбекистане в 2026 году: ИИ-агент от $400, автоматизация процессов от $400, интеграция CRM/1С от $700, ИИ-видеоаналитика от $990, заказное ИИ-приложение (MVP) от $1000. Точная цена зависит от каналов, интеграций и сложности — письменное предложение даётся после ТЗ.",
         },
         {
           q: "Работает ли ИИ на узбекском языке?",
@@ -284,7 +280,7 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "За какое время запускается решение на искусственном интеллекте?",
-          a: "Зависит от сложности: простой ИИ-чат-бот или Telegram-бот — относительно быстро, ИИ-агент с многими интеграциями или видеоаналитика — дольше. Рабочая MVP-версия заказного ИИ-приложения обычно готова за 2-4 недели. Точный срок называется после этапа анализа.",
+          a: "Зависит от сложности: простое решение «вопрос-ответ» или автоматизация одного процесса — относительно быстро, ИИ-агент с многими интеграциями или видеоаналитика — дольше. Рабочая MVP-версия заказного ИИ-приложения обычно готова за 2-4 недели. Точный срок называется после этапа анализа.",
         },
       ],
     },
@@ -310,7 +306,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Short answer",
       text:
-        "Artificial intelligence (AI) is technology that takes on \"smart\" work: understanding text, making decisions and completing tasks. The main artificial intelligence services for business in Uzbekistan are: AI chatbots (24/7 customer replies, from $339), AI agents (they do the work themselves, from $400), process automation (from $400), CRM/1C integration (from $700), AI video analytics (with your existing cameras, from $990), Telegram bots (from $279) and custom AI applications (MVP from $1000). Modern models work in Uzbek and Russian. When choosing a provider, look at the portfolio, Uzbek-language experience, integration capability and a written proposal. Tezcode — an AI Software Factory in Tashkent — delivers all of these services and offers a free consultation.",
+        "Artificial intelligence (AI) is technology that takes on \"smart\" work: understanding text, making decisions and completing tasks. The main artificial intelligence services for business in Uzbekistan are: AI agents (24/7 customer replies plus doing the work themselves, from $400), process automation (from $400), CRM/1C integration (from $700), AI video analytics (with your existing cameras, from $990) and custom AI applications (MVP from $1000). Modern models work in Uzbek and Russian. When choosing a provider, look at the portfolio, Uzbek-language experience, integration capability and a written proposal. Tezcode — an AI Software Factory in Tashkent — delivers all of these services and offers a free consultation.",
     },
     sections: [
       {
@@ -341,7 +337,7 @@ export const CONTENT: ArticleContent = {
         heading: "Which artificial intelligence services exist in Uzbekistan?",
         paragraphs: [
           "\"Artificial intelligence services\" is a broad concept. In practice, businesses in Uzbekistan order one or several of the following directions. Each solves its own problem:",
-          "The full list of these directions is gathered on Tezcode's AI automation page (tezcode.dev/ai-avtomatizatsiya); dedicated pages for chatbots and agents are at tezcode.dev/ai-chatbot and tezcode.dev/ai-agent.",
+          "The full list of these directions is gathered on Tezcode's AI automation page (tezcode.dev/ai-avtomatizatsiya); the dedicated AI agent page is at tezcode.dev/ai-agent.",
         ],
         bullets: [
           "AI chatbot — answers customers 24/7 in Uzbek/Russian on Telegram, Instagram, WhatsApp and the website, drawing answers from your knowledge base (prices, catalog, FAQ). The most-ordered artificial intelligence service.",
@@ -360,9 +356,7 @@ export const CONTENT: ArticleContent = {
           "The exact price depends on the number of channels, the integrations (CRM, 1C, payment system) and the complexity. The right order: first the need is identified in a free consultation, then a written proposal is given based on a technical specification. Payment is usually 30% upfront, the rest in stages. Be wary of \"one price for everyone\" offers — they rarely match a real process.",
         ],
         bullets: [
-          "AI chatbot (Telegram, Instagram, WhatsApp, website) — from $339.",
           "AI agent (does the work itself, writes to CRM/1C) — from $400.",
-          "Telegram bot (orders, Click/Payme payment) — from $279.",
           "Process automation (reports, inventory, internal processes) — from $400.",
           "CRM/1C integration (amoCRM, Bitrix24, 1C) — from $700.",
           "AI video analytics (people counting, attendance, ANPR) — from $990, one-time setup.",
@@ -391,7 +385,7 @@ export const CONTENT: ArticleContent = {
         ],
         bullets: [
           "1. Identify the problem — which work eats the most time, and where do you lose customers? Most often it is repeated questions or evening messages left unanswered.",
-          "2. Pick one direction — not everything at once: first, for example, an AI chatbot; once the result is visible, an agent or automation is added.",
+          "2. Pick one direction — not everything at once: first, for example, an AI agent that answers customers; once the result is visible, integrations or automation are added.",
           "3. Prepare your data — prices, catalog, common questions, business rules. The quality of artificial intelligence depends on the quality of your data.",
           "4. Get a consultation and try it — a good provider first assesses the need in a free consultation, then launches at a small volume and measures the result.",
         ],
@@ -399,8 +393,8 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Artificial intelligence services from Tezcode",
         paragraphs: [
-          "Tezcode is a 19-person AI Software Factory team founded in Tashkent in 2024. We deliver all the artificial intelligence services listed above: AI chatbots and AI agents, process automation, AI video analytics, CRM/1C integration and custom AI applications.",
-          "We build the solutions on Claude (Anthropic) and GPT (OpenAI) models, tune them to work in Uzbek and Russian (even mixed within one conversation) and connect them to your existing systems — Telegram, Instagram, website, CRM, 1C. The service list is on the tezcode.dev/ai-avtomatizatsiya, tezcode.dev/ai-chatbot and tezcode.dev/ai-agent pages.",
+          "Tezcode is a 19-person AI Software Factory team founded in Tashkent in 2024. We deliver all the artificial intelligence services listed above: AI agents, process automation, AI video analytics, CRM/1C integration and custom AI applications.",
+          "We build the solutions on Claude (Anthropic) and GPT (OpenAI) models, tune them to work in Uzbek and Russian (even mixed within one conversation) and connect them to your existing systems — Telegram, Instagram, website, CRM, 1C. The service list is on the tezcode.dev/ai-avtomatizatsiya and tezcode.dev/ai-agent pages.",
           "To get started you do not have to buy anything: first, in a free consultation, we assess together in what form artificial intelligence will benefit your business, and prepare a written proposal.",
         ],
       },
@@ -414,7 +408,7 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "How much does an artificial intelligence service cost?",
-          a: "Starting prices in Uzbekistan in 2026: AI chatbot from $339, AI agent from $400, Telegram bot from $279, process automation from $400, CRM/1C integration from $700, AI video analytics from $990, custom AI application (MVP) from $1000. The exact price depends on channels, integrations and complexity — a written proposal is given after the specification.",
+          a: "Starting prices in Uzbekistan in 2026: AI agent from $400, process automation from $400, CRM/1C integration from $700, AI video analytics from $990, custom AI application (MVP) from $1000. The exact price depends on channels, integrations and complexity — a written proposal is given after the specification.",
         },
         {
           q: "Does AI work in the Uzbek language?",
@@ -426,7 +420,7 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "How long does an artificial intelligence solution take to launch?",
-          a: "It depends on complexity: a simple AI chatbot or Telegram bot is relatively fast, while an AI agent with many integrations or video analytics takes longer. A working MVP of a custom AI application is usually ready in 2-4 weeks. The exact timeline is given after the analysis stage.",
+          a: "It depends on complexity: a simple Q&A solution or a single-process automation is relatively fast, while an AI agent with many integrations or video analytics takes longer. A working MVP of a custom AI application is usually ready in 2-4 weeks. The exact timeline is given after the analysis stage.",
         },
       ],
     },

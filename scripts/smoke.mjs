@@ -19,6 +19,17 @@ const FIXED = [
   ["/sitemap-index.xml", 200],
   ["/llms.txt", 200],
   ["/__smoke-test-missing-page__", 404],
+  // Services retired 2026-11-09 must answer 410 Gone in every locale.
+  ...["", "/ru", "/en", "/ar", "/uk"].flatMap((prefix) => [
+    [`${prefix}/ai-chatbot`, 410],
+    [`${prefix}/ai-chatbot/toshkent`, 410],
+    [`${prefix}/telegram-bot-biznes`, 410],
+    [`${prefix}/telegram-bot-biznes/toshkent`, 410],
+    [`${prefix}/blog/ai-chatbot-va-ai-agent-farqi`, 410],
+    [`${prefix}/blog/ai-chatbot-vs-jonli-operator`, 410],
+    [`${prefix}/blog/biznes-uchun-telegram-bot`, 410],
+  ]),
+  ["/uz/ai-chatbot", 410],
 ];
 
 function freePort() {

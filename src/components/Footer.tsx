@@ -100,9 +100,7 @@ const HUB_COPY: Record<
 // Localized service links (labels per locale; href stays constant). Previously
 // these were hardcoded Uzbek, so RU/EN/AR/UK footers showed Uzbek labels.
 const SERVICE_LINKS: { href: string; label: Record<HubLang, string> }[] = [
-  { href: "/ai-chatbot", label: { uz: "AI chatbot", ru: "ИИ-чат-бот", en: "AI chatbot", ar: "روبوت دردشة بالذكاء الاصطناعي", uk: "ШІ-чат-бот" } },
   { href: "/ai-video-analitika", label: { uz: "AI video analitika", ru: "ИИ-видеоаналитика", en: "AI video analytics", ar: "تحليلات الفيديو بالذكاء الاصطناعي", uk: "ШІ-відеоаналітика" } },
-  { href: "/telegram-bot-biznes", label: { uz: "Telegram bot", ru: "Telegram-бот", en: "Telegram bot", ar: "بوت تيليجرام", uk: "Telegram-бот" } },
   { href: "/ai-avtomatizatsiya", label: { uz: "AI avtomatizatsiya", ru: "ИИ-автоматизация", en: "AI automation", ar: "الأتمتة بالذكاء الاصطناعي", uk: "ШІ-автоматизація" } },
   { href: "/pos-tizimi", label: { uz: "POS tizimi", ru: "POS-система", en: "POS system", ar: "نظام POS", uk: "POS-система" } },
   { href: "/klinika-crm", label: { uz: "Klinika CRM", ru: "CRM для клиники", en: "Clinic CRM", ar: "CRM للعيادة", uk: "CRM для клініки" } },

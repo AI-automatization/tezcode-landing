@@ -242,7 +242,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Решения Tezcode, которые часто используют вместе с POS.",
       links: [
         { href: "/biznes-avtomatlashtirish", label: "Автоматизация бизнеса", desc: "Автоматизируйте процессы за пределами кассы — отчёты, поток заказов и рутинные задачи в одной системе." },
-        { href: "/ai-chatbot", label: "ИИ-чат-бот (AI)", desc: "Клиентский сервис 24/7 для вашего магазина — отвечает на вопросы, собирает заказы и лиды." },
+        { href: "/ai-agent", label: "ИИ-агент (AI)", desc: "Клиентский сервис 24/7 для вашего магазина — отвечает на вопросы, собирает заказы и лиды." },
       ],
     },
     service: {
@@ -361,7 +361,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Tezcode solutions often used together with a POS.",
       links: [
         { href: "/biznes-avtomatlashtirish", label: "Business automation", desc: "Automate beyond the register — reports, order flow and repetitive tasks in one system." },
-        { href: "/ai-chatbot", label: "AI chatbot", desc: "24/7 customer service for your store — answers questions, collects orders and leads." },
+        { href: "/ai-agent", label: "AI agent", desc: "24/7 customer service for your store — answers questions, collects orders and leads." },
       ],
     },
     service: {
@@ -480,7 +480,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "حلول Tezcode التي تُستخدم غالباً مع نظام POS.",
       links: [
         { href: "/biznes-avtomatlashtirish", label: "أتمتة الأعمال", desc: "أتمتة ما بعد الكاشير — التقارير وتدفق الطلبات والمهام المتكررة في نظام واحد." },
-        { href: "/ai-chatbot", label: "شات بوت AI", desc: "خدمة عملاء 24/7 لمتجرك — يجيب عن الأسئلة ويجمع الطلبات والعملاء المحتملين." },
+        { href: "/ai-agent", label: "وكيل AI", desc: "خدمة عملاء 24/7 لمتجرك — يجيب عن الأسئلة ويجمع الطلبات والعملاء المحتملين." },
       ],
     },
     service: {
@@ -599,7 +599,7 @@ export const CONTENT: ServicePageContent = {
       subtitle: "Рішення Tezcode, які часто використовують разом із POS.",
       links: [
         { href: "/biznes-avtomatlashtirish", label: "Автоматизація бізнесу", desc: "Автоматизуйте процеси поза касою — звіти, потік замовлень і рутинні задачі в одній системі." },
-        { href: "/ai-chatbot", label: "AI-чат-бот", desc: "Клієнтський сервіс 24/7 для вашого магазину — відповідає на питання, збирає замовлення та ліди." },
+        { href: "/ai-agent", label: "AI-агент", desc: "Клієнтський сервіс 24/7 для вашого магазину — відповідає на питання, збирає замовлення та ліди." },
       ],
     },
     service: {

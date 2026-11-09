@@ -3,8 +3,8 @@ import type { ArticleContent } from "@/components/blog/types";
 // Cross-cluster pillar: "sotuvni avtomatlashtirish" (sales automation). One of
 // the founder's original target prompts. Targets "sotuvni avtomatlashtirish",
 // "instagram/telegram orqali sotuv", "lid saralash avtomatlashtirish", RU
-// "автоматизация продаж". Reinforces THREE clusters at once (ai-chatbot,
-// telegram-bot, crm-integratsiya) via internal links, building topical depth
+// "автоматизация продаж". Reinforces the ai-agent and
+// crm-integratsiya clusters via internal links, building topical depth
 // across them. Answer-first TL;DR for AI Overview. uz master + ru + en.
 
 export const CONTENT: ArticleContent = {
@@ -20,7 +20,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Qisqacha javob",
       text:
-        "Sotuvni avtomatlashtirish — bu mijoz bilan aloqa, lid yig'ish, javob berish va bitimni yakunlashni qo'l mehnatisiz, bitta tizimda birlashtirishdir. Amalda bu 3 qismdan iborat: (1) barcha kanal — Telegram, Instagram, WhatsApp, sayt — bitta CRM'ga ulanadi, shunda hech bir murojaat yo'qolmaydi; (2) AI chatbot birinchi javobni 24/7 beradi, tez-tez beriladigan savollarni yopadi va lidni saralaydi (kim sotib olishga tayyor); (3) issiq lid to'liq suhbat tarixi bilan menejerga uzatiladi, buyurtma esa avtomatik CRM va 1C'ga yoziladi. Natijada: javob soniyalarda, menejer faqat tayyor mijoz bilan gaplashadi, sotuv o'sadi.",
+        "Sotuvni avtomatlashtirish — bu mijoz bilan aloqa, lid yig'ish, javob berish va bitimni yakunlashni qo'l mehnatisiz, bitta tizimda birlashtirishdir. Amalda bu 3 qismdan iborat: (1) barcha kanal — Telegram, Instagram, WhatsApp, sayt — bitta CRM'ga ulanadi, shunda hech bir murojaat yo'qolmaydi; (2) AI agent birinchi javobni 24/7 beradi, tez-tez beriladigan savollarni yopadi va lidni saralaydi (kim sotib olishga tayyor); (3) issiq lid to'liq suhbat tarixi bilan menejerga uzatiladi, buyurtma esa avtomatik CRM va 1C'ga yoziladi. Natijada: javob soniyalarda, menejer faqat tayyor mijoz bilan gaplashadi, sotuv o'sadi.",
     },
     sections: [
       {
@@ -42,7 +42,7 @@ export const CONTENT: ArticleContent = {
         ],
         bullets: [
           "1. Barcha kanal → bitta CRM: Telegram, Instagram, WhatsApp va sayt formasidan kelgan murojaat avtomatik CRM'ga tushadi (batafsil: /crm-integratsiya).",
-          "2. AI chatbot birinchi javob: 24/7 javob beradi, narx/mavjudlik/buyurtma savollarini yopadi, lidni saralaydi (/ai-chatbot).",
+          "2. AI agent birinchi javob: 24/7 javob beradi, narx/mavjudlik/buyurtma savollarini yopadi, lidni saralaydi (/ai-agent).",
           "3. Issiq lid → menejer: sotib olishga tayyor mijozni to'liq suhbat tarixi bilan menejerga uzatadi.",
           "4. Buyurtma → CRM/1C: har buyurtma va bitim avtomatik yoziladi, hech narsa yo'qolmaydi.",
         ],
@@ -53,15 +53,15 @@ export const CONTENT: ArticleContent = {
           "O'zbekistonda sotuvning katta qismi Instagram va Telegram'da. Avtomatlashtirish shu yerda ayniqsa foydali:",
         ],
         bullets: [
-          "Instagram Direct'dagi savollarga AI chatbot darhol javob beradi, buyurtmani qabul qiladi.",
-          "Telegram botda to'liq do'kon (Mini App): katalog, savat, Click/Payme to'lov — komissiyasiz (/telegram-bot-biznes).",
+          "Instagram Direct'dagi savollarga AI agent darhol javob beradi, buyurtmani qabul qiladi.",
+          "Telegram'dagi xabarlarga ham AI agent 24/7 javob beradi, buyurtmani to'g'ridan-to'g'ri CRM'ga yozadi.",
           "Ikkala kanaldan kelgan mijoz bitta CRM'da yig'iladi — menejer bir oynadan boshqaradi.",
         ],
       },
       {
         heading: "Lid saralash (qaysi mijoz issiq?)",
         paragraphs: [
-          "Hamma murojaat teng emas: biri shunchaki so'raydi, biri sotib olishga tayyor. AI chatbot suhbat davomida buni aniqlaydi va menejerni faqat issiq lidga yo'naltiradi. Shunda:",
+          "Hamma murojaat teng emas: biri shunchaki so'raydi, biri sotib olishga tayyor. AI agent suhbat davomida buni aniqlaydi va menejerni faqat issiq lidga yo'naltiradi. Shunda:",
         ],
         bullets: [
           "Menejer vaqti tejaladi — u faqat tayyor mijoz bilan ishlaydi.",
@@ -75,10 +75,10 @@ export const CONTENT: ArticleContent = {
       items: [
         {
           q: "Sotuvni avtomatlashtirish nima?",
-          a: "Bu mijoz bilan aloqa, lid yig'ish, javob berish va bitimni yakunlashni bitta tizimda, qo'l mehnatisiz birlashtirishdir. Amalda: barcha kanal (Telegram, Instagram, WhatsApp, sayt) CRM'ga ulanadi, AI chatbot 24/7 javob beradi va lid saralaydi, issiq lid menejerga uzatiladi.",
+          a: "Bu mijoz bilan aloqa, lid yig'ish, javob berish va bitimni yakunlashni bitta tizimda, qo'l mehnatisiz birlashtirishdir. Amalda: barcha kanal (Telegram, Instagram, WhatsApp, sayt) CRM'ga ulanadi, AI agent 24/7 javob beradi va lid saralaydi, issiq lid menejerga uzatiladi.",
         },
         {
-          q: "AI chatbot lidni qanday saralaydi?",
+          q: "AI agent lidni qanday saralaydi?",
           a: "Suhbat davomida AI mijozning qiziqish darajasini aniqlaydi: kim shunchaki so'rayapti, kim sotib olishga tayyor. Issiq lidni darhol menejeringizga to'liq suhbat konteksti bilan uzatadi, sovuqlariga esa avtomatik eslatma/taklif yuboriladi.",
         },
         {
@@ -87,11 +87,11 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Narxi qancha va qancha vaqt oladi?",
-          a: "Sotuvni avtomatlashtirish bir necha qismdan iborat: AI chatbot $339 dan, Telegram bot $279 dan, CRM integratsiya $700 dan. Qaysi qismlarni olishingizga qarab aniq summa TZ'dan keyin beriladi. Muddat odatda 2–4 hafta.",
+          a: "Sotuvni avtomatlashtirish bir necha qismdan iborat: AI agent $400 dan, CRM integratsiya $700 dan. Qaysi qismlarni olishingizga qarab aniq summa TZ'dan keyin beriladi. Muddat odatda 2–4 hafta.",
         },
         {
           q: "Toshkentda sotuvni kim avtomatlashtiradi?",
-          a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti — sotuvni avtomatlashtiradi: Instagram/Telegram/sayt + AI chatbot + CRM/1C ni bitta oqimga bog'laydi. Bepul konsultatsiyaga keling.",
+          a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti — sotuvni avtomatlashtiradi: Instagram/Telegram/sayt + AI agent + CRM/1C ni bitta oqimga bog'laydi. Bepul konsultatsiyaga keling.",
         },
       ],
     },
@@ -116,7 +116,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Короткий ответ",
       text:
-        "Автоматизация продаж — это объединение общения с клиентом, сбора лидов, ответов и закрытия сделки в одной системе без ручного труда. На практике это 3 части: (1) все каналы — Telegram, Instagram, WhatsApp, сайт — подключаются к одной CRM, чтобы ни одно обращение не терялось; (2) ИИ-чат-бот даёт первый ответ 24/7, закрывает частые вопросы и квалифицирует лиды (кто готов купить); (3) горячий лид передаётся менеджеру с полной историей диалога, а заказ автоматически пишется в CRM и 1C. Итог: ответ за секунды, менеджер работает только с готовым клиентом, продажи растут.",
+        "Автоматизация продаж — это объединение общения с клиентом, сбора лидов, ответов и закрытия сделки в одной системе без ручного труда. На практике это 3 части: (1) все каналы — Telegram, Instagram, WhatsApp, сайт — подключаются к одной CRM, чтобы ни одно обращение не терялось; (2) ИИ-агент даёт первый ответ 24/7, закрывает частые вопросы и квалифицирует лиды (кто готов купить); (3) горячий лид передаётся менеджеру с полной историей диалога, а заказ автоматически пишется в CRM и 1C. Итог: ответ за секунды, менеджер работает только с готовым клиентом, продажи растут.",
     },
     sections: [
       {
@@ -138,7 +138,7 @@ export const CONTENT: ArticleContent = {
         ],
         bullets: [
           "1. Все каналы → одна CRM: обращение из Telegram, Instagram, WhatsApp и формы сайта попадает в CRM автоматически (подробнее: /crm-integratsiya).",
-          "2. ИИ-чат-бот — первый ответ: отвечает 24/7, закрывает вопросы цена/наличие/заказ, квалифицирует лид (/ai-chatbot).",
+          "2. ИИ-агент — первый ответ: отвечает 24/7, закрывает вопросы цена/наличие/заказ, квалифицирует лид (/ai-agent).",
           "3. Горячий лид → менеджер: готовый к покупке клиент передаётся менеджеру с полной историей диалога.",
           "4. Заказ → CRM/1C: каждый заказ и сделка пишутся автоматически, ничего не теряется.",
         ],
@@ -149,15 +149,15 @@ export const CONTENT: ArticleContent = {
           "В Узбекистане большая часть продаж — в Instagram и Telegram. Автоматизация особенно полезна здесь:",
         ],
         bullets: [
-          "На вопросы в Instagram Direct ИИ-чат-бот отвечает мгновенно, принимает заказ.",
-          "В Telegram полноценный магазин (Mini App): каталог, корзина, оплата Click/Payme — без комиссии (/telegram-bot-biznes).",
+          "На вопросы в Instagram Direct ИИ-агент отвечает мгновенно, принимает заказ.",
+          "На сообщения в Telegram ИИ-агент тоже отвечает 24/7 и записывает заказ сразу в CRM.",
           "Клиенты из обоих каналов собираются в одной CRM — менеджер работает в одном окне.",
         ],
       },
       {
         heading: "Квалификация лидов (какой клиент горячий?)",
         paragraphs: [
-          "Не все обращения равны: один просто спрашивает, другой готов купить. ИИ-чат-бот определяет это в ходе диалога и направляет менеджера только на горячий лид. Тогда:",
+          "Не все обращения равны: один просто спрашивает, другой готов купить. ИИ-агент определяет это в ходе диалога и направляет менеджера только на горячий лид. Тогда:",
         ],
         bullets: [
           "Время менеджера экономится — он работает только с готовым клиентом.",
@@ -171,10 +171,10 @@ export const CONTENT: ArticleContent = {
       items: [
         {
           q: "Что такое автоматизация продаж?",
-          a: "Это объединение общения с клиентом, сбора лидов, ответов и закрытия сделки в одной системе без ручного труда. На практике: все каналы (Telegram, Instagram, WhatsApp, сайт) подключаются к CRM, ИИ-чат-бот отвечает 24/7 и квалифицирует лиды, горячий лид передаётся менеджеру.",
+          a: "Это объединение общения с клиентом, сбора лидов, ответов и закрытия сделки в одной системе без ручного труда. На практике: все каналы (Telegram, Instagram, WhatsApp, сайт) подключаются к CRM, ИИ-агент отвечает 24/7 и квалифицирует лиды, горячий лид передаётся менеджеру.",
         },
         {
-          q: "Как ИИ-чат-бот квалифицирует лид?",
+          q: "Как ИИ-агент квалифицирует лид?",
           a: "В ходе диалога ИИ определяет уровень интереса клиента: кто просто спрашивает, кто готов купить. Горячий лид сразу передаётся менеджеру с полным контекстом, а холодным уходят авто-напоминания/предложения.",
         },
         {
@@ -183,11 +183,11 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "Сколько стоит и сколько занимает?",
-          a: "Автоматизация продаж состоит из частей: ИИ-чат-бот от $339, Telegram-бот от $279, интеграция CRM от $700. Точная сумма зависит от состава — даётся после ТЗ. Срок обычно 2–4 недели.",
+          a: "Автоматизация продаж состоит из частей: ИИ-агент от $400, интеграция CRM от $700. Точная сумма зависит от состава — даётся после ТЗ. Срок обычно 2–4 недели.",
         },
         {
           q: "Кто автоматизирует продажи в Ташкенте?",
-          a: "Tezcode — AI Software Factory в Ташкенте и резидент IT Park — автоматизирует продажи: связывает Instagram/Telegram/сайт + ИИ-чат-бот + CRM/1C в один поток. Приходите на бесплатную консультацию.",
+          a: "Tezcode — AI Software Factory в Ташкенте и резидент IT Park — автоматизирует продажи: связывает Instagram/Telegram/сайт + ИИ-агент + CRM/1C в один поток. Приходите на бесплатную консультацию.",
         },
       ],
     },
@@ -212,7 +212,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Quick answer",
       text:
-        "Sales automation means uniting customer communication, lead capture, replies and closing the deal in one system without manual work. In practice it's 3 parts: (1) all channels — Telegram, Instagram, WhatsApp, website — connect to one CRM so no inquiry is lost; (2) an AI chatbot gives the first answer 24/7, closes frequent questions and qualifies leads (who's ready to buy); (3) a hot lead is handed to a manager with the full conversation history, and the order is written to CRM and 1C automatically. The result: answers in seconds, managers work only with ready customers, sales grow.",
+        "Sales automation means uniting customer communication, lead capture, replies and closing the deal in one system without manual work. In practice it's 3 parts: (1) all channels — Telegram, Instagram, WhatsApp, website — connect to one CRM so no inquiry is lost; (2) an AI agent gives the first answer 24/7, closes frequent questions and qualifies leads (who's ready to buy); (3) a hot lead is handed to a manager with the full conversation history, and the order is written to CRM and 1C automatically. The result: answers in seconds, managers work only with ready customers, sales grow.",
     },
     sections: [
       {
@@ -234,7 +234,7 @@ export const CONTENT: ArticleContent = {
         ],
         bullets: [
           "1. All channels → one CRM: inquiries from Telegram, Instagram, WhatsApp and website forms land in the CRM automatically (more: /crm-integratsiya).",
-          "2. AI chatbot — the first answer: replies 24/7, closes price/availability/order questions, qualifies the lead (/ai-chatbot).",
+          "2. AI agent — the first answer: replies 24/7, closes price/availability/order questions, qualifies the lead (/ai-agent).",
           "3. Hot lead → manager: a ready-to-buy customer is passed to a manager with the full conversation history.",
           "4. Order → CRM/1C: every order and deal is written automatically, nothing is lost.",
         ],
@@ -245,15 +245,15 @@ export const CONTENT: ArticleContent = {
           "In Uzbekistan a large share of sales happens on Instagram and Telegram. Automation is especially useful here:",
         ],
         bullets: [
-          "An AI chatbot answers Instagram Direct questions instantly and takes the order.",
-          "In Telegram a full store (Mini App): catalog, cart, Click/Payme payment — commission-free (/telegram-bot-biznes).",
+          "An AI agent answers Instagram Direct questions instantly and takes the order.",
+          "In Telegram the AI agent also replies 24/7 and writes the order straight into the CRM.",
           "Customers from both channels collect in one CRM — managers work from a single window.",
         ],
       },
       {
         heading: "Lead qualification (which customer is hot?)",
         paragraphs: [
-          "Not all inquiries are equal: one is just asking, another is ready to buy. The AI chatbot detects this during the conversation and directs managers only to the hot lead. Then:",
+          "Not all inquiries are equal: one is just asking, another is ready to buy. The AI agent detects this during the conversation and directs managers only to the hot lead. Then:",
         ],
         bullets: [
           "Manager time is saved — they work only with ready customers.",
@@ -267,10 +267,10 @@ export const CONTENT: ArticleContent = {
       items: [
         {
           q: "What is sales automation?",
-          a: "It's uniting customer communication, lead capture, replies and closing the deal in one system without manual work. In practice: all channels (Telegram, Instagram, WhatsApp, website) connect to a CRM, an AI chatbot answers 24/7 and qualifies leads, and hot leads are handed to a manager.",
+          a: "It's uniting customer communication, lead capture, replies and closing the deal in one system without manual work. In practice: all channels (Telegram, Instagram, WhatsApp, website) connect to a CRM, an AI agent answers 24/7 and qualifies leads, and hot leads are handed to a manager.",
         },
         {
-          q: "How does the AI chatbot qualify a lead?",
+          q: "How does the AI agent qualify a lead?",
           a: "During the conversation the AI detects the customer's interest level: who's just asking, who's ready to buy. The hot lead is passed to your manager with full context, while cold leads get automatic reminders/offers.",
         },
         {
@@ -279,11 +279,11 @@ export const CONTENT: ArticleContent = {
         },
         {
           q: "How much does it cost and how long does it take?",
-          a: "Sales automation consists of parts: AI chatbot from $339, Telegram bot from $279, CRM integration from $700. The exact figure depends on the scope, quoted after the spec. Timeline is usually 2–4 weeks.",
+          a: "Sales automation consists of parts: AI agent from $400, CRM integration from $700. The exact figure depends on the scope, quoted after the spec. Timeline is usually 2–4 weeks.",
         },
         {
           q: "Who automates sales in Tashkent?",
-          a: "Tezcode — an AI Software Factory in Tashkent and IT Park resident — automates sales: it connects Instagram/Telegram/website + an AI chatbot + CRM/1C into one flow. Come in for a free consultation.",
+          a: "Tezcode — an AI Software Factory in Tashkent and IT Park resident — automates sales: it connects Instagram/Telegram/website + an AI agent + CRM/1C into one flow. Come in for a free consultation.",
         },
       ],
     },

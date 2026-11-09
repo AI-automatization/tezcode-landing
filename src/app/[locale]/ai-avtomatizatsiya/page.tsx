@@ -22,22 +22,22 @@ const META: Record<ServiceLang, { title: string; description: string }> = {
   ru: {
     title: "Разработка AI-решений в Ташкенте для бизнеса",
     description:
-      "Разработка AI-решений: чат-боты, обработка документов и отчётов, интеграция с CRM и 1С. Команда в Ташкенте. Начните с бесплатной консультации.",
+      "Разработка AI-решений: ИИ-агенты, обработка документов и отчётов, интеграция с CRM и 1С. Команда в Ташкенте. Начните с бесплатной консультации.",
   },
   en: {
     title: "AI Business Automation — Reporting, Sales & CRM",
     description:
-      "Automate reports, customer support, sales and inventory with Tezcode. AI chatbots and 1C/CRM integrations built around your business processes. Free consultation.",
+      "Automate reports, customer support, sales and inventory with Tezcode. AI agents and 1C/CRM integrations built around your business processes. Free consultation.",
   },
   ar: {
     title: "أتمتة الأعمال بالذكاء الاصطناعي — التقارير والمبيعات وCRM",
     description:
-      "أتمتة التقارير وخدمة العملاء والمبيعات والمخزون مع Tezcode. روبوتات دردشة وتكامل 1C/CRM مصممة لعمليات عملك. استشارة مجانية.",
+      "أتمتة التقارير وخدمة العملاء والمبيعات والمخزون مع Tezcode. وكلاء AI وتكامل 1C/CRM مصممة لعمليات عملك. استشارة مجانية.",
   },
   uk: {
     title: "AI-автоматизація бізнесу — звіти, продажі та CRM",
     description:
-      "Tezcode автоматизує звіти, відповіді клієнтам, продажі та склад за допомогою AI. Чат-боти й інтеграція 1C/CRM під ваші процеси. Безкоштовна консультація.",
+      "Tezcode автоматизує звіти, відповіді клієнтам, продажі та склад за допомогою AI. AI-агенти й інтеграція 1C/CRM під ваші процеси. Безкоштовна консультація.",
   },
 };
 

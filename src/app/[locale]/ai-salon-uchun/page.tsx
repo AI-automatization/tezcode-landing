@@ -19,42 +19,42 @@ const META: Record<
   uz: {
     title: "Go'zallik saloni uchun AI va onlayn bron — Toshkent",
     description:
-      "Go'zallik saloni, barbershop va klinika uchun onlayn bron va AI Toshkentda: Telegram/Instagram bron, avtomatik eslatma (no-show kamaytirish), AI chatbot, mijozlar bazasi va sodiqlik. Bron boti $279 dan. IT Park rezidenti Tezcode.",
+      "Go'zallik saloni, barbershop va klinika uchun onlayn bron va AI Toshkentda: Telegram/Instagram bron, avtomatik eslatma (no-show kamaytirish), AI agent, mijozlar bazasi va sodiqlik. AI agent $400 dan. IT Park rezidenti Tezcode.",
     ogTitle: "Go'zallik saloni uchun AI va onlayn bron — Toshkent | Tezcode",
     ogDescription:
-      "Telegram/Instagram onlayn bron + eslatma (no-show kamaytiradi) + AI chatbot + CRM. Salon, barbershop, klinika uchun. Bepul konsultatsiya.",
+      "Telegram/Instagram onlayn bron + eslatma (no-show kamaytiradi) + AI agent + CRM. Salon, barbershop, klinika uchun. Bepul konsultatsiya.",
   },
   ru: {
     title: "ИИ (AI) и онлайн-запись для салона красоты — Ташкент",
     description:
-      "Онлайн-запись и ИИ (AI) для салона красоты, барбершопа и клиники в Ташкенте: запись в Telegram/Instagram, автонапоминания (снижение неявок), ИИ-чат-бот, база клиентов и лояльность. Бот записи от $279 (≈ от 3,5 млн сум). Tezcode — резидент IT Park.",
+      "Онлайн-запись и ИИ (AI) для салона красоты, барбершопа и клиники в Ташкенте: запись в Telegram/Instagram, автонапоминания (снижение неявок), ИИ-агент, база клиентов и лояльность. ИИ-агент от $400 (≈ от 5 млн сум). Tezcode — резидент IT Park.",
     ogTitle: "ИИ (AI) и онлайн-запись для салона красоты — Ташкент | Tezcode",
     ogDescription:
-      "Онлайн-запись в Telegram/Instagram + напоминания (снижают неявки) + ИИ-чат-бот (AI) + CRM. Для салона, барбершопа, клиники. Бесплатная консультация.",
+      "Онлайн-запись в Telegram/Instagram + напоминания (снижают неявки) + ИИ-агент (AI) + CRM. Для салона, барбершопа, клиники. Бесплатная консультация.",
   },
   en: {
     title: "AI and online booking for beauty salons — Tashkent",
     description:
-      "Online booking and AI for beauty salons, barbershops and clinics in Tashkent: Telegram/Instagram booking, auto-reminders (cutting no-shows), AI chatbot, customer base and loyalty. Booking bot from $279. Tezcode — IT Park resident.",
+      "Online booking and AI for beauty salons, barbershops and clinics in Tashkent: Telegram/Instagram booking, auto-reminders (cutting no-shows), AI agent, customer base and loyalty. AI agent from $400. Tezcode — IT Park resident.",
     ogTitle: "AI and online booking for beauty salons — Tashkent | Tezcode",
     ogDescription:
-      "Telegram/Instagram online booking + reminders (cut no-shows) + AI chatbot + CRM. For salons, barbershops, clinics. Free consultation.",
+      "Telegram/Instagram online booking + reminders (cut no-shows) + AI agent + CRM. For salons, barbershops, clinics. Free consultation.",
   },
   ar: {
     title: "AI والحجز أونلاين لصالونات التجميل — طشقند",
     description:
-      "الحجز أونلاين وAI لصالونات التجميل والحلاقين والعيادات في طشقند: حجز عبر Telegram/Instagram، تذكيرات تلقائية (تقليل الغياب)، روبوت AI، قاعدة عملاء وولاء. روبوت الحجز من 279$. Tezcode — مقيم IT Park.",
+      "الحجز أونلاين وAI لصالونات التجميل والحلاقين والعيادات في طشقند: حجز عبر Telegram/Instagram، تذكيرات تلقائية (تقليل الغياب)، وكيل AI، قاعدة عملاء وولاء. وكيل AI من 400$. Tezcode — مقيم IT Park.",
     ogTitle: "AI والحجز أونلاين لصالونات التجميل — طشقند | Tezcode",
     ogDescription:
-      "حجز أونلاين عبر Telegram/Instagram + تذكيرات (تقلّل الغياب) + روبوت AI + CRM. للصالونات والحلاقين والعيادات. استشارة مجانية.",
+      "حجز أونلاين عبر Telegram/Instagram + تذكيرات (تقلّل الغياب) + وكيل AI + CRM. للصالونات والحلاقين والعيادات. استشارة مجانية.",
   },
   uk: {
     title: "AI та онлайн-запис для салону краси — Ташкент",
     description:
-      "Онлайн-запис і AI для салону краси, барбершопа та клініки в Ташкенті: запис у Telegram/Instagram, автонагадування (зниження неявок), AI-чат-бот, база клієнтів і лояльність. Бот запису від $279. Tezcode — резидент IT Park.",
+      "Онлайн-запис і AI для салону краси, барбершопа та клініки в Ташкенті: запис у Telegram/Instagram, автонагадування (зниження неявок), AI-агент, база клієнтів і лояльність. AI-агент від $400. Tezcode — резидент IT Park.",
     ogTitle: "AI та онлайн-запис для салону краси — Ташкент | Tezcode",
     ogDescription:
-      "Онлайн-запис у Telegram/Instagram + нагадування (знижують неявки) + AI-чат-бот + CRM. Для салону, барбершопа, клініки. Безкоштовна консультація.",
+      "Онлайн-запис у Telegram/Instagram + нагадування (знижують неявки) + AI-агент + CRM. Для салону, барбершопа, клініки. Безкоштовна консультація.",
   },
 };
 
@@ -73,13 +73,9 @@ export async function generateMetadata({
     keywords: [
       "go'zallik saloni uchun dastur",
       "salon avtomatlashtirish",
-      "salon uchun bot",
       "onlayn bron dasturi",
-      "barbershop bron boti",
       "salon uchun CRM",
       "автоматизация салона красоты",
-      "бот для записи салон",
-      "beauty salon booking bot Uzbekistan",
     ],
     ogTitle: meta.ogTitle,
     ogDescription: meta.ogDescription,

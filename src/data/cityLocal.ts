@@ -1,8 +1,8 @@
 import type { ServiceLang } from "@/components/service-page/types";
 import type { City } from "@/data/cities";
 
-// Shared localized bits for the per-city service pages (/ai-chatbot/[city],
-// /telegram-bot-biznes/[city]). Keeps the trust line and Tashkent office FAQ
+// Shared localized bits for the per-city service pages (/ai-agent/[city],
+// /biznes-avtomatlashtirish/[city], …). Keeps the trust line and Tashkent office FAQ
 // in the visitor's language instead of falling back to Uzbek.
 
 // Russian and Ukrainian need declined city names ("в Ташкенте", "для

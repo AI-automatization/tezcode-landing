@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Business Automation — Tashkent, Uzbekistan | Tezcode",
-    "description": "TezCode — AI Software Factory. AI automation for business in Tashkent: AI agents, chatbots and process automation.",
+    "description": "TezCode — AI Software Factory. AI automation for business in Tashkent: AI agents and process automation.",
     "ogTitle": "AI Business Automation — Tezcode, Tashkent",
     "ogDescription": "Systematizing Uzbekistan's business with AI. RAOS POS, HamshiraGo and 5 more products."
   },
@@ -29,9 +29,7 @@
       "aiSalon": "AI for salons",
       "aiRestaurant": "AI for restaurants",
       "crmIntegration": "CRM integration",
-      "aiChatbot": "AI chatbot",
       "aiVideoAnalytics": "AI video analytics",
-      "telegramBot": "Telegram bot",
       "posSystem": "POS system",
       "clinicCrm": "Clinic CRM",
       "employeeMonitoring": "Employee monitoring",
@@ -48,8 +46,8 @@
     "cta_secondary": "Message us on Telegram",
     "directions_aria": "Services",
     "dir_web": "Website & MVP",
-    "dir_bot": "Telegram bot",
-    "dir_ai": "AI chatbot & agents",
+    "dir_ai": "AI agents",
+    "dir_auto": "Business automation",
     "dir_crm": "CRM & 1C integration",
     "stat_divisions": "Divisions",
     "stat_products": "Products",
@@ -81,7 +79,7 @@
       "name": "Tezcode",
       "tagline": "AI agents and platforms",
       "description": "Intelligent assistants, AI agents, and workflow automation solutions for modern teams.",
-      "products": "AI agent · AI chatbot",
+      "products": "AI agent · AI automation",
       "model": "SaaS + Token-based"
     },
     "teams": {

@@ -35,7 +35,7 @@ export const CONTENT: ServicePageContent = {
         {
           icon: "message-circle",
           title: "AI mijoz xizmati",
-          desc: "Ssenariy: mijoz kechqurun narx so'rab yozadi, operator esa ertalab javob beradi — o'rtacha 2 soat kutish. AI chatbot Telegram va veb-saytda 24/7 ishlaydi: narx, katalog, buyurtma holati kabi savollarga soniyalarda javob beradi, murakkab holatni operatorga to'liq kontekst bilan uzatadi.",
+          desc: "Ssenariy: mijoz kechqurun narx so'rab yozadi, operator esa ertalab javob beradi — o'rtacha 2 soat kutish. AI agent Telegram va veb-saytda 24/7 ishlaydi: narx, katalog, buyurtma holati kabi savollarga soniyalarda javob beradi, murakkab holatni operatorga to'liq kontekst bilan uzatadi.",
         },
         {
           icon: "shopping-cart",
@@ -170,7 +170,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "Qancha vaqtda tayyor bo'ladi?",
-          a: "Oddiy avtomatlashtirish (Telegram bot, avtomatik hisobot) — 1-2 hafta. To'liqroq AI yechimning ishlovchi MVP versiyasi — 2-4 hafta. Har hafta demo ko'rsatamiz, shuning uchun natijani oxirgi kunni kutmasdan kuzatib borasiz. Har loyiha yozma shartnoma bilan boshlanadi, topshirgandan keyin jamoangizni o'rgatamiz va tizim ishlashini kuzatamiz.",
+          a: "Oddiy avtomatlashtirish (masalan, avtomatik hisobot) — 1-2 hafta. To'liqroq AI yechimning ishlovchi MVP versiyasi — 2-4 hafta. Har hafta demo ko'rsatamiz, shuning uchun natijani oxirgi kunni kutmasdan kuzatib borasiz. Har loyiha yozma shartnoma bilan boshlanadi, topshirgandan keyin jamoangizni o'rgatamiz va tizim ishlashini kuzatamiz.",
         },
         {
           q: "1C, CRM va mavjud tizimlarim bilan integratsiya bo'ladimi?",
@@ -203,7 +203,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "AI avtomatlashtirish xizmati — Tezcode",
       description:
-        "Toshkentda biznes uchun AI avtomatlashtirish: avtomatik hisobot, AI chatbot, sotuv va ombor avtomatizatsiyasi, 1C/CRM/Telegram integratsiyasi. Tezcode Software Factory, O'zbekiston.",
+        "Toshkentda biznes uchun AI avtomatlashtirish: avtomatik hisobot, AI agentlar, sotuv va ombor avtomatizatsiyasi, 1C/CRM/Telegram integratsiyasi. Tezcode Software Factory, O'zbekiston.",
       serviceType: "AI avtomatlashtirish / sun'iy intellekt yechimlari",
     },
   },
@@ -235,7 +235,7 @@ export const CONTENT: ServicePageContent = {
         {
           icon: "message-circle",
           title: "ИИ-поддержка клиентов",
-          desc: "Сценарий: клиент пишет вечером и спрашивает цену, оператор отвечает утром — в среднем 2 часа ожидания. AI-чатбот работает в Telegram и на сайте 24/7: отвечает на вопросы о цене, каталоге и статусе заказа за секунды, а сложные случаи передаёт оператору с полным контекстом.",
+          desc: "Сценарий: клиент пишет вечером и спрашивает цену, оператор отвечает утром — в среднем 2 часа ожидания. AI-агент работает в Telegram и на сайте 24/7: отвечает на вопросы о цене, каталоге и статусе заказа за секунды, а сложные случаи передаёт оператору с полным контекстом.",
         },
         {
           icon: "shopping-cart",
@@ -369,7 +369,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "Сколько времени занимает разработка?",
-          a: "Простая автоматизация (Telegram-бот, автоматический отчёт) — 1-2 недели. Рабочая MVP-версия более полного ИИ-решения — 2-4 недели. Каждую неделю показываем демо, поэтому результат вы видите по ходу, а не в последний день. Каждый проект начинается с письменного договора, а после сдачи обучаем команду и следим за работой системы.",
+          a: "Простая автоматизация (например, автоматический отчёт) — 1-2 недели. Рабочая MVP-версия более полного ИИ-решения — 2-4 недели. Каждую неделю показываем демо, поэтому результат вы видите по ходу, а не в последний день. Каждый проект начинается с письменного договора, а после сдачи обучаем команду и следим за работой системы.",
         },
         {
           q: "Будет ли интеграция с 1C, CRM и моими системами?",
@@ -393,16 +393,16 @@ export const CONTENT: ServicePageContent = {
           desc: "AI-агенты, которые сами принимают решения и выполняют задачу от начала до конца — следующий уровень автоматизации.",
         },
         {
-          href: "/ai-chatbot",
-          label: "AI-чат-бот",
-          desc: "AI-чат-бот для сервиса 24/7 и сбора лидов — самая быстрая по результату часть автоматизации.",
+          href: "/biznes-avtomatlashtirish",
+          label: "Автоматизация бизнеса",
+          desc: "Заказы, склад, CRM и отчётность в согласованном рабочем процессе — без повторного ввода данных.",
         },
       ],
     },
     service: {
       name: "Услуга ИИ-автоматизации — Tezcode",
       description:
-        "ИИ-автоматизация (AI-автоматизация) бизнеса в Ташкенте: автоматические отчёты, ИИ-чатбот (AI), автоматизация продаж и склада, интеграция с 1C/CRM/Telegram. Tezcode Software Factory, Узбекистан.",
+        "ИИ-автоматизация (AI-автоматизация) бизнеса в Ташкенте: автоматические отчёты, ИИ-агенты (AI), автоматизация продаж и склада, интеграция с 1C/CRM/Telegram. Tezcode Software Factory, Узбекистан.",
       serviceType: "ИИ-автоматизация (AI) / решения на искусственном интеллекте",
     },
   },
@@ -434,7 +434,7 @@ export const CONTENT: ServicePageContent = {
         {
           icon: "message-circle",
           title: "AI customer support",
-          desc: "Scenario: a customer asks for a price in the evening, the operator answers in the morning — 2 hours of waiting on average. An AI chatbot works on Telegram and your website 24/7: it answers price, catalogue and order-status questions in seconds and escalates complex cases to a human with full context.",
+          desc: "Scenario: a customer asks for a price in the evening, the operator answers in the morning — 2 hours of waiting on average. An AI agent works on Telegram and your website 24/7: it answers price, catalogue and order-status questions in seconds and escalates complex cases to a human with full context.",
         },
         {
           icon: "shopping-cart",
@@ -568,7 +568,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "How long does it take?",
-          a: "Simple automation (a Telegram bot, an automated report) — 1-2 weeks. A working MVP of a fuller AI solution — 2-4 weeks. We demo every week, so you watch the result take shape instead of waiting for the last day. Every project starts with a written contract, and after delivery we train your team and monitor the system.",
+          a: "Simple automation (e.g. an automated report) — 1-2 weeks. A working MVP of a fuller AI solution — 2-4 weeks. We demo every week, so you watch the result take shape instead of waiting for the last day. Every project starts with a written contract, and after delivery we train your team and monitor the system.",
         },
         {
           q: "Will it integrate with 1C, CRM and my existing systems?",
@@ -592,16 +592,16 @@ export const CONTENT: ServicePageContent = {
           desc: "AI agents that make decisions and complete tasks end to end — the next level of automation.",
         },
         {
-          href: "/ai-chatbot",
-          label: "AI chatbot",
-          desc: "An AI chatbot for 24/7 customer service and lead capture — the fastest-payoff part of automation.",
+          href: "/biznes-avtomatlashtirish",
+          label: "Business automation",
+          desc: "Sales, service, warehouse and reporting processes — in one system tailored to your industry.",
         },
       ],
     },
     service: {
       name: "AI automation service — Tezcode",
       description:
-        "AI automation for business in Tashkent: automated reports, AI chatbots, sales and inventory automation, 1C/CRM/Telegram integration. Tezcode Software Factory, Uzbekistan.",
+        "AI automation for business in Tashkent: automated reports, AI agents, sales and inventory automation, 1C/CRM/Telegram integration. Tezcode Software Factory, Uzbekistan.",
       serviceType: "AI automation / artificial intelligence solutions",
     },
   },
@@ -633,7 +633,7 @@ export const CONTENT: ServicePageContent = {
         {
           icon: "message-circle",
           title: "دعم عملاء بالذكاء الاصطناعي",
-          desc: "السيناريو: العميل يسأل عن السعر مساءً، والموظف يرد صباحاً — ساعتا انتظار في المتوسط. شات بوت AI يعمل على Telegram والموقع 24/7: يجيب عن أسئلة السعر والكتالوج وحالة الطلب في ثوانٍ، ويحوّل الحالات المعقدة إلى موظف مع السياق الكامل.",
+          desc: "السيناريو: العميل يسأل عن السعر مساءً، والموظف يرد صباحاً — ساعتا انتظار في المتوسط. وكيل AI يعمل على Telegram والموقع 24/7: يجيب عن أسئلة السعر والكتالوج وحالة الطلب في ثوانٍ، ويحوّل الحالات المعقدة إلى موظف مع السياق الكامل.",
         },
         {
           icon: "shopping-cart",
@@ -767,7 +767,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "كم يستغرق التطوير؟",
-          a: "أتمتة بسيطة (بوت Telegram، تقرير تلقائي) — 1-2 أسبوع. نسخة MVP عاملة لحل أكمل — 2-4 أسابيع. نعرض عرضاً تجريبياً كل أسبوع، فترى النتيجة أثناء العمل لا في اليوم الأخير. يبدأ كل مشروع بعقد مكتوب، وبعد التسليم ندرّب فريقك ونراقب النظام.",
+          a: "أتمتة بسيطة (مثل تقرير تلقائي) — 1-2 أسبوع. نسخة MVP عاملة لحل أكمل — 2-4 أسابيع. نعرض عرضاً تجريبياً كل أسبوع، فترى النتيجة أثناء العمل لا في اليوم الأخير. يبدأ كل مشروع بعقد مكتوب، وبعد التسليم ندرّب فريقك ونراقب النظام.",
         },
         {
           q: "هل يتكامل مع 1C وCRM وأنظمتي الحالية؟",
@@ -791,16 +791,16 @@ export const CONTENT: ServicePageContent = {
           desc: "وكلاء AI يتخذون القرارات وينجزون المهمة من البداية إلى النهاية — المستوى التالي من الأتمتة.",
         },
         {
-          href: "/ai-chatbot",
-          label: "شات بوت AI",
-          desc: "شات بوت AI لخدمة العملاء 24/7 وجمع العملاء المحتملين — أسرع جزء من الأتمتة نتيجةً.",
+          href: "/biznes-avtomatlashtirish",
+          label: "أتمتة الأعمال",
+          desc: "البيع والخدمات والمخزون والتقارير — في نظام واحد مصمم لمجالك.",
         },
       ],
     },
     service: {
       name: "خدمة أتمتة الذكاء الاصطناعي — Tezcode",
       description:
-        "أتمتة الأعمال بالذكاء الاصطناعي في طشقند: تقارير تلقائية، شات بوت AI، أتمتة المبيعات والمخزون، تكامل 1C/CRM/Telegram. Tezcode Software Factory، أوزبكستان.",
+        "أتمتة الأعمال بالذكاء الاصطناعي في طشقند: تقارير تلقائية، وكلاء AI، أتمتة المبيعات والمخزون، تكامل 1C/CRM/Telegram. Tezcode Software Factory، أوزبكستان.",
       serviceType: "أتمتة الذكاء الاصطناعي / حلول الذكاء الاصطناعي",
     },
   },
@@ -832,7 +832,7 @@ export const CONTENT: ServicePageContent = {
         {
           icon: "message-circle",
           title: "ШІ-підтримка клієнтів",
-          desc: "Сценарій: клієнт пише ввечері і питає ціну, оператор відповідає вранці — в середньому 2 години очікування. AI-чатбот працює в Telegram і на сайті 24/7: відповідає на питання про ціну, каталог і статус замовлення за секунди, а складні випадки передає оператору з повним контекстом.",
+          desc: "Сценарій: клієнт пише ввечері і питає ціну, оператор відповідає вранці — в середньому 2 години очікування. AI-агент працює в Telegram і на сайті 24/7: відповідає на питання про ціну, каталог і статус замовлення за секунди, а складні випадки передає оператору з повним контекстом.",
         },
         {
           icon: "shopping-cart",
@@ -966,7 +966,7 @@ export const CONTENT: ServicePageContent = {
         },
         {
           q: "Скільки часу займає розробка?",
-          a: "Проста автоматизація (Telegram-бот, автоматичний звіт) — 1-2 тижні. Робоча MVP-версія повнішого ШІ-рішення — 2-4 тижні. Щотижня показуємо демо, тож результат ви бачите в процесі, а не в останній день. Кожен проєкт починається з письмового договору, а після здачі навчаємо команду й стежимо за роботою системи.",
+          a: "Проста автоматизація (наприклад, автоматичний звіт) — 1-2 тижні. Робоча MVP-версія повнішого ШІ-рішення — 2-4 тижні. Щотижня показуємо демо, тож результат ви бачите в процесі, а не в останній день. Кожен проєкт починається з письмового договору, а після здачі навчаємо команду й стежимо за роботою системи.",
         },
         {
           q: "Чи буде інтеграція з 1C, CRM і моїми системами?",
@@ -990,16 +990,16 @@ export const CONTENT: ServicePageContent = {
           desc: "AI-агенти, що самі ухвалюють рішення і виконують задачу від початку до кінця — наступний рівень автоматизації.",
         },
         {
-          href: "/ai-chatbot",
-          label: "AI-чат-бот",
-          desc: "AI-чат-бот для сервісу 24/7 і збору лідів — найшвидша за результатом частина автоматизації.",
+          href: "/biznes-avtomatlashtirish",
+          label: "Автоматизація бізнесу",
+          desc: "Торгівля, послуги, склад і звітність — в одній системі під вашу галузь.",
         },
       ],
     },
     service: {
       name: "Послуга ШІ-автоматизації — Tezcode",
       description:
-        "AI-автоматизація бізнесу в Ташкенті: автоматичні звіти, AI-чатбот, автоматизація продажів і складу, інтеграція з 1C/CRM/Telegram. Tezcode Software Factory, Узбекистан.",
+        "AI-автоматизація бізнесу в Ташкенті: автоматичні звіти, AI-агенти, автоматизація продажів і складу, інтеграція з 1C/CRM/Telegram. Tezcode Software Factory, Узбекистан.",
       serviceType: "ШІ-автоматизація / рішення на штучному інтелекті",
     },
   },

@@ -1,8 +1,8 @@
 import type { ArticleContent } from "@/components/blog/types";
 
 // Pricing pillar: "AI yechimlar narxi 2026" — targets high-intent price queries
-// ("chatbot narxi", "ai agent narxi", "crm integratsiya narxi", "сколько стоит
-// чат-бот / ai решение"). Answer-first (TL;DR pricing summary + per-service
+// ("ai agent narxi", "crm integratsiya narxi", "сколько стоит
+// ai решение"). Answer-first (TL;DR pricing summary + per-service
 // table) so Google AI Overviews / ChatGPT / Perplexity can lift a clean quotable
 // price — the same pattern that made /ai-video-analitika win the AI Overview.
 // uz master, full ru + en. Real Tezcode prices only; no fabricated figures.
@@ -14,14 +14,14 @@ export const CONTENT: ArticleContent = {
       badge: "Narxlar / 2026",
       title: "AI yechimlar narxi 2026: qaysi xizmat qancha turadi? (Toshkent, O'zbekiston)",
       subtitle:
-        "AI chatbot, AI agent, video analitika, CRM integratsiya va boshqa yechimlarning aniq \"dan boshlab\" narxlari, narxga nima ta'sir qilishi va to'lov tartibi — Tezcode'ning ochiq narx qo'llanmasi.",
+        "AI agent, biznes avtomatlashtirish, video analitika, CRM integratsiya va boshqa yechimlarning aniq \"dan boshlab\" narxlari, narxga nima ta'sir qilishi va to'lov tartibi — Tezcode'ning ochiq narx qo'llanmasi.",
       dateLabel: "2026-yil 14-avgust",
       readTime: "8 daqiqa o'qish",
     },
     tldr: {
       label: "Qisqacha javob",
       text:
-        "O'zbekistonda AI yechimlar narxi 2026-yilda odatda quyidagicha boshlanadi: AI chatbot — $339 dan, AI agent — $400 dan, Telegram bot — $279 dan, biznes avtomatlashtirish — $400 dan, CRM integratsiya (amoCRM, Bitrix24, 1C) — $700 dan, AI video analitika — $990 dan (bir martalik ulash), buyurtma dastur (custom) — $1000 dan. Obuna asosidagi mahsulotlar: klinika CRM $25/oy dan, POS tizimi 249 000 so'm/oy dan. Aniq narx kanallar soni, integratsiyalar va murakkablikka bog'liq — to'liq summa bepul konsultatsiya va texnik topshiriq (TZ) dan keyin yozma beriladi. To'lov odatda: 30% oldindan, qolgani bosqichma-bosqich.",
+        "O'zbekistonda AI yechimlar narxi 2026-yilda odatda quyidagicha boshlanadi: AI agent — $400 dan, biznes avtomatlashtirish — $400 dan, CRM integratsiya (amoCRM, Bitrix24, 1C) — $700 dan, AI video analitika — $990 dan (bir martalik ulash), buyurtma dastur (custom) — $1000 dan. Obuna asosidagi mahsulotlar: klinika CRM $25/oy dan, POS tizimi 249 000 so'm/oy dan. Aniq narx kanallar soni, integratsiyalar va murakkablikka bog'liq — to'liq summa bepul konsultatsiya va texnik topshiriq (TZ) dan keyin yozma beriladi. To'lov odatda: 30% oldindan, qolgani bosqichma-bosqich.",
     },
     sections: [
       {
@@ -42,9 +42,7 @@ export const CONTENT: ArticleContent = {
           "Quyida Tezcode xizmatlarining boshlang'ich narxlari. Bular \"dan boshlab\" — aniq summa loyihaning hajmiga qarab TZ'dan keyin belgilanadi.",
         ],
         bullets: [
-          "AI chatbot (Telegram, Instagram, WhatsApp, sayt): $339 dan — tezcode.dev/ai-chatbot",
           "AI agent (o'zi ish bajaradigan, 24/7): $400 dan — tezcode.dev/ai-agent",
-          "Telegram bot (buyurtma, to'lov, Mini App): $279 dan — tezcode.dev/telegram-bot-biznes",
           "Biznes avtomatlashtirish (jarayon, hisobot, ombor): $400 dan — tezcode.dev/biznes-avtomatlashtirish",
           "CRM integratsiya (amoCRM, Bitrix24, HubSpot, 1C, Sales Doctor): $700 dan — tezcode.dev/crm-integratsiya",
           "AI video analitika (odam sanash, yuz tanish, ANPR): $990 dan, bir martalik ulash — tezcode.dev/ai-video-analitika",
@@ -80,12 +78,8 @@ export const CONTENT: ArticleContent = {
       title: "Tez-tez beriladigan savollar",
       items: [
         {
-          q: "AI chatbot narxi qancha (2026)?",
-          a: "Tezcode'da AI chatbot $339 dan boshlanadi. Aniq narx kanallar soni (Telegram, Instagram, WhatsApp, sayt), integratsiyalar (CRM, 1C) va AI murakkabligiga bog'liq — to'liq summa bepul konsultatsiya va TZ'dan keyin yozma beriladi.",
-        },
-        {
           q: "AI agent narxi qancha?",
-          a: "AI agent $400 dan boshlanadi. Agent chatbotdan qimmatroq, chunki u nafaqat javob beradi, balki real vazifa bajaradi: CRM/1C ga yozadi, buyurtma yaratadi, integratsiya qiladi. Narx ish hajmiga bog'liq.",
+          a: "AI agent $400 dan boshlanadi. Agent nafaqat javob beradi, balki real vazifa bajaradi: CRM/1C ga yozadi, buyurtma yaratadi, integratsiya qiladi. Narx ish hajmiga bog'liq.",
         },
         {
           q: "CRM integratsiya qancha turadi?",
@@ -115,14 +109,14 @@ export const CONTENT: ArticleContent = {
       badge: "Цены / 2026",
       title: "Цены на ИИ-решения 2026: сколько стоит каждая услуга? (Ташкент, Узбекистан)",
       subtitle:
-        "Точные цены «от» на ИИ-чат-бот, ИИ-агента, видеоаналитику, интеграцию CRM и другие решения, что влияет на цену и порядок оплаты — открытое ценовое руководство Tezcode.",
+        "Точные цены «от» на ИИ-агента, автоматизацию бизнеса, видеоаналитику, интеграцию CRM и другие решения, что влияет на цену и порядок оплаты — открытое ценовое руководство Tezcode.",
       dateLabel: "14 августа 2026",
       readTime: "8 минут чтения",
     },
     tldr: {
       label: "Короткий ответ",
       text:
-        "В Узбекистане цены на ИИ-решения в 2026 обычно начинаются так: ИИ-чат-бот — от $339, ИИ-агент — от $400, Telegram-бот — от $279, автоматизация бизнеса — от $400, интеграция CRM (amoCRM, Bitrix24, 1C) — от $700, ИИ-видеоаналитика — от $990 (разовое подключение), разработка ПО на заказ — от $1000. Подписочные продукты: CRM для клиники от $25/мес, POS-система от 249 000 сум/мес. Точная цена зависит от числа каналов, интеграций и сложности — итоговая сумма даётся письменно после бесплатной консультации и ТЗ. Оплата обычно: 30% предоплата, остальное поэтапно.",
+        "В Узбекистане цены на ИИ-решения в 2026 обычно начинаются так: ИИ-агент — от $400, автоматизация бизнеса — от $400, интеграция CRM (amoCRM, Bitrix24, 1C) — от $700, ИИ-видеоаналитика — от $990 (разовое подключение), разработка ПО на заказ — от $1000. Подписочные продукты: CRM для клиники от $25/мес, POS-система от 249 000 сум/мес. Точная цена зависит от числа каналов, интеграций и сложности — итоговая сумма даётся письменно после бесплатной консультации и ТЗ. Оплата обычно: 30% предоплата, остальное поэтапно.",
     },
     sections: [
       {
@@ -143,9 +137,7 @@ export const CONTENT: ArticleContent = {
           "Ниже стартовые цены услуг Tezcode. Это цены «от» — точная сумма определяется по объёму проекта после ТЗ.",
         ],
         bullets: [
-          "ИИ-чат-бот (Telegram, Instagram, WhatsApp, сайт): от $339 — tezcode.dev/ru/ai-chatbot",
           "ИИ-агент (сам выполняет задачи, 24/7): от $400 — tezcode.dev/ru/ai-agent",
-          "Telegram-бот (заказы, оплата, Mini App): от $279 — tezcode.dev/ru/telegram-bot-biznes",
           "Автоматизация бизнеса (процессы, отчёты, склад): от $400 — tezcode.dev/ru/biznes-avtomatlashtirish",
           "Интеграция CRM (amoCRM, Bitrix24, HubSpot, 1C, Sales Doctor): от $700 — tezcode.dev/ru/crm-integratsiya",
           "ИИ-видеоаналитика (подсчёт людей, распознавание лиц, ANPR): от $990, разовое подключение — tezcode.dev/ru/ai-video-analitika",
@@ -181,12 +173,8 @@ export const CONTENT: ArticleContent = {
       title: "Часто задаваемые вопросы",
       items: [
         {
-          q: "Сколько стоит ИИ-чат-бот (2026)?",
-          a: "В Tezcode ИИ-чат-бот стоит от $339. Точная цена зависит от числа каналов (Telegram, Instagram, WhatsApp, сайт), интеграций (CRM, 1C) и сложности ИИ — итоговая сумма даётся письменно после бесплатной консультации и ТЗ.",
-        },
-        {
           q: "Сколько стоит ИИ-агент?",
-          a: "ИИ-агент стоит от $400. Агент дороже чат-бота, потому что не просто отвечает, а выполняет реальные задачи: пишет в CRM/1C, создаёт заказы, интегрируется. Цена зависит от объёма работы.",
+          a: "ИИ-агент стоит от $400. Агент не просто отвечает, а выполняет реальные задачи: пишет в CRM/1C, создаёт заказы, интегрируется. Цена зависит от объёма работы.",
         },
         {
           q: "Сколько стоит интеграция CRM?",
@@ -216,14 +204,14 @@ export const CONTENT: ArticleContent = {
       badge: "Pricing / 2026",
       title: "AI solution prices 2026: how much does each service cost? (Tashkent, Uzbekistan)",
       subtitle:
-        "Exact starting prices for AI chatbots, AI agents, video analytics, CRM integration and more, what drives the price and the payment terms — Tezcode's open pricing guide.",
+        "Exact starting prices for AI agents, business automation, video analytics, CRM integration and more, what drives the price and the payment terms — Tezcode's open pricing guide.",
       dateLabel: "August 14, 2026",
       readTime: "8 min read",
     },
     tldr: {
       label: "Quick answer",
       text:
-        "In Uzbekistan, AI solution prices in 2026 typically start like this: AI chatbot from $339, AI agent from $400, Telegram bot from $279, business automation from $400, CRM integration (amoCRM, Bitrix24, 1C) from $700, AI video analytics from $990 (one-time setup), custom software from $1000. Subscription products: clinic CRM from $25/mo, POS system from 249,000 UZS/mo. The exact price depends on the number of channels, integrations and complexity — the final figure is quoted in writing after a free consultation and spec. Payment is usually 30% upfront, the rest in stages.",
+        "In Uzbekistan, AI solution prices in 2026 typically start like this: AI agent from $400, business automation from $400, CRM integration (amoCRM, Bitrix24, 1C) from $700, AI video analytics from $990 (one-time setup), custom software from $1000. Subscription products: clinic CRM from $25/mo, POS system from 249,000 UZS/mo. The exact price depends on the number of channels, integrations and complexity — the final figure is quoted in writing after a free consultation and spec. Payment is usually 30% upfront, the rest in stages.",
     },
     sections: [
       {
@@ -244,9 +232,7 @@ export const CONTENT: ArticleContent = {
           "Below are Tezcode's starting prices. These are 'from' prices — the exact figure is set by project scope after the spec.",
         ],
         bullets: [
-          "AI chatbot (Telegram, Instagram, WhatsApp, website): from $339 — tezcode.dev/en/ai-chatbot",
           "AI agent (performs tasks itself, 24/7): from $400 — tezcode.dev/en/ai-agent",
-          "Telegram bot (orders, payments, Mini App): from $279 — tezcode.dev/en/telegram-bot-biznes",
           "Business automation (processes, reports, inventory): from $400 — tezcode.dev/en/biznes-avtomatlashtirish",
           "CRM integration (amoCRM, Bitrix24, HubSpot, 1C, Sales Doctor): from $700 — tezcode.dev/en/crm-integratsiya",
           "AI video analytics (people counting, face recognition, ANPR): from $990, one-time setup — tezcode.dev/en/ai-video-analitika",
@@ -282,12 +268,8 @@ export const CONTENT: ArticleContent = {
       title: "Frequently asked questions",
       items: [
         {
-          q: "How much does an AI chatbot cost (2026)?",
-          a: "At Tezcode an AI chatbot costs from $339. The exact price depends on the number of channels (Telegram, Instagram, WhatsApp, website), integrations (CRM, 1C) and AI complexity — the final figure is quoted in writing after a free consultation and spec.",
-        },
-        {
           q: "How much does an AI agent cost?",
-          a: "An AI agent costs from $400. An agent is pricier than a chatbot because it doesn't just answer — it performs real tasks: writes to CRM/1C, creates orders, integrates. The price depends on scope.",
+          a: "An AI agent costs from $400. An agent doesn't just answer — it performs real tasks: writes to CRM/1C, creates orders, integrates. The price depends on scope.",
         },
         {
           q: "How much does CRM integration cost?",

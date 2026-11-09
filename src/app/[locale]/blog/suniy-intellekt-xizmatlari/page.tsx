@@ -26,7 +26,7 @@ export async function generateMetadata({
     title:
       "Sun'iy intellekt xizmatlari O'zbekistonda: turlari, narxi va qanday tanlash (2026) | Tezcode",
     description:
-      "Sun'iy intellekt (AI) nima, biznes uchun qanday xizmatlar bor — chatbot, AI agent, avtomatizatsiya, video analitika — narxlari qancha ($279 dan) va provayderni qanday tanlash — 2026 amaliy qo'llanma.",
+      "Sun'iy intellekt (AI) nima, biznes uchun qanday xizmatlar bor — chatbot, AI agent, avtomatizatsiya, video analitika — narxlari qancha ($400 dan) va provayderni qanday tanlash — 2026 amaliy qo'llanma.",
   });
   return buildPageMetadata({
     locale,

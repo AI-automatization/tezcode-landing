@@ -33,7 +33,7 @@ export const CONTENT: ArticleContent = {
           "Boshqacha aytganda, chatbot faqat gaplashadi, agent esa sizning dasturlaringiz ichida ishni ham qiladi. Bu AmoCRM, Bitrix24, 1C, Google Sheets yoki Click/Payme bo'lishi mumkin. Bu haqda alohida maqolamiz ham bor.",
         ],
         links: [
-          { href: "/blog/ai-chatbot-va-ai-agent-farqi", label: "AI chatbot va AI agent farqi" },
+          { href: "/blog/biznes-uchun-ai-agent-yaratish", label: "AI agent nima va chatbotdan farqi" },
         ],
       },
       {
@@ -50,9 +50,6 @@ export const CONTENT: ArticleContent = {
         paragraphs: [
           "Har kimga ham kerak emas, buni ochiq aytamiz. Kuniga besh-oltita murojaat kelsa va bitta menejer bemalol ulgursa, agent o'zini oqlamaydi.",
           "Faqat ko'p beriladigan savollarga javob kerak bo'lsa, chatbot yetadi, u ancha arzon. Yana bir holat: narxlar, qoldiq yoki mijozlar ro'yxati hech qayerda yozilmagan, hammasi bitta odamning boshida bo'lsa. Unda avval shuni tartibga keltirish kerak. Agent faqat bor tartibni tezlashtiradi, yo'q tartibni yaratib bera olmaydi.",
-        ],
-        links: [
-          { href: "/ai-chatbot", label: "AI chatbot xizmati" },
         ],
       },
       {
@@ -140,7 +137,7 @@ export const CONTENT: ArticleContent = {
           "Обычный чат-бот только разговаривает. ИИ-агент подключается к вашим системам (Telegram, AmoCRM, Bitrix24, 1С, Google Sheets, Click/Payme) и действует внутри них. Подробнее о разнице — в отдельной статье.",
         ],
         links: [
-          { href: "/blog/ai-chatbot-va-ai-agent-farqi", label: "Разница между чат-ботом и ИИ-агентом" },
+          { href: "/blog/biznes-uchun-ai-agent-yaratish", label: "Чем ИИ-агент отличается от чат-бота" },
         ],
       },
       {
@@ -166,9 +163,6 @@ export const CONTENT: ArticleContent = {
           "Если нужны только ответы на частые вопросы, хватит более дешёвого ИИ-чат-бота.",
           "Если сам процесс не упорядочен (цены, остатки или база клиентов нигде не записаны), сначала нужен порядок. Агент не автоматизирует хаос.",
           "Если каждый случай уникален и требует решения эксперта, агент будет только помощником, а не заменой человеку.",
-        ],
-        links: [
-          { href: "/ai-chatbot", label: "Услуга ИИ-чат-бота" },
         ],
       },
       {

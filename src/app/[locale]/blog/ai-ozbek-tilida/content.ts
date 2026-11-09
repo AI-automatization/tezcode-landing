@@ -4,8 +4,8 @@ import type { ArticleContent } from "@/components/blog/types";
 // Plays to Tezcode's real edge — most off-the-shelf tools (ChatGPT wrappers,
 // ManyChat) handle Uzbek poorly; Tezcode tunes uz/ru specifically. Targets
 // "AI o'zbek tilida", "o'zbekcha chatbot", "o'zbek tilida AI agent", RU
-// "AI на узбекском". Answer-first for AI Overview; reinforces the ai-chatbot /
-// ai-agent clusters. uz master + ru + en. Honest, no fabricated claims.
+// "AI на узбекском". Answer-first for AI Overview; reinforces the
+// ai-agent cluster. uz master + ru + en. Honest, no fabricated claims.
 
 export const CONTENT: ArticleContent = {
   uz: {
@@ -35,10 +35,6 @@ export const CONTENT: ArticleContent = {
           "Bazada yo'q xizmat haqida so'rang: tizim javob to'qimasdan, aniqlashtirish so'rashi kerak."
         ],
         links: [
-          {
-            href: "/ai-chatbot",
-            label: "Biznes uchun o'zbekcha AI chatbot"
-          },
           {
             href: "/ai-agent",
             label: "CRM bilan ishlaydigan AI agent"
@@ -84,7 +80,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Tezcode'ning farqi",
         paragraphs: [
-          "Tezcode botni biznes hujjatlari asosida o'zbek va rus tillarida sozlaydi. Ishga tushirishdan oldin yozuv variantlari, aralash til, narx savollari va operatorga uzatish holatlarini tekshiramiz. Faqat javob berish kerak bo'lsa chatbot, CRMda amal bajarish kerak bo'lsa agent ssenariysi ko'rib chiqiladi."
+          "Tezcode botni biznes hujjatlari asosida o'zbek va rus tillarida sozlaydi. Ishga tushirishdan oldin yozuv variantlari, aralash til, narx savollari va operatorga uzatish holatlarini tekshiramiz. Yechim AI agent sifatida quriladi: u mijozga javob beradi, kerak bo'lsa CRMda amal ham bajaradi."
         ],
       },
     ],
@@ -108,15 +104,15 @@ export const CONTENT: ArticleContent = {
           a: "Ha. O'zbekistonda odamlar ko'pincha bir jumlada o'zbekcha-ruscha aralash yozadi. To'g'ri sozlangan bot buni tabiiy tushunadi — bu Tezcode alohida e'tibor beradigan narsa.",
         },
         {
-          q: "Toshkentda o'zbek tilli AI chatbot kim yasaydi?",
-          a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti — o'zbek va rus tilida AI chatbot va agentlar yaratadi. Botni sizning hujjatlaringiz asosida quramiz, lotin/kirill va aralash tilni alohida sozlaymiz. Batafsil: tezcode.dev/ai-chatbot.",
+          q: "Toshkentda o'zbek tilli AI agent kim yasaydi?",
+          a: "Tezcode — Toshkentdagi AI Software Factory va IT Park rezidenti — o'zbek va rus tilida AI agentlar yaratadi. Agentni sizning hujjatlaringiz asosida quramiz, lotin/kirill va aralash tilni alohida sozlaymiz. Batafsil: tezcode.dev/ai-agent.",
         },
       ],
     },
     cta: {
       title: "O'zbek tilida ishlaydigan AI kerakmi?",
       subtitle:
-        "Tezcode bepul konsultatsiyada biznesingizni ko'rib, o'zbek/rus tilli AI chatbot yoki agent sizga qanday foyda berishini aniqlaydi. Majburiyat yo'q.",
+        "Tezcode bepul konsultatsiyada biznesingizni ko'rib, o'zbek/rus tilli AI agent sizga qanday foyda berishini aniqlaydi. Majburiyat yo'q.",
       button: "Telegram orqali bog'lanish",
       note: "Javob odatda bir necha soat ichida.",
     },
@@ -176,8 +172,8 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Отличие Tezcode",
         paragraphs: [
-          "В Ташкенте чат-ботов делают многие, но узбекский язык — именно наш фокус:",
-          "Мы строим бота на основе ваших документов на узбекском и русском, отдельно настраиваем латиницу/кириллицу и смешанный язык, тестируем на реальных диалогах. Готовые зарубежные платформы именно здесь и буксуют. Подробнее: ИИ-чат-бот (/ai-chatbot), ИИ-агент (/ai-agent).",
+          "ИИ-решения в Ташкенте делают многие, но узбекский язык — именно наш фокус:",
+          "Мы строим ИИ-агента на основе ваших документов на узбекском и русском, отдельно настраиваем латиницу/кириллицу и смешанный язык, тестируем на реальных диалогах. Готовые зарубежные платформы именно здесь и буксуют. Подробнее: ИИ-агент (/ai-agent).",
         ],
       },
     ],
@@ -201,15 +197,15 @@ export const CONTENT: ArticleContent = {
           a: "Да. В Узбекистане часто смешивают узбекский и русский в одном предложении. Правильно настроенный бот понимает это естественно — и именно на это Tezcode делает особый упор.",
         },
         {
-          q: "Кто делает узбекоязычный ИИ-чат-бот в Ташкенте?",
-          a: "Tezcode — AI Software Factory в Ташкенте и резидент IT Park — создаёт ИИ-чат-ботов и агентов на узбекском и русском. Строим бота на основе ваших документов, отдельно настраиваем латиницу/кириллицу и смешанный язык. Подробнее: tezcode.dev/ru/ai-chatbot.",
+          q: "Кто делает узбекоязычного ИИ-агента в Ташкенте?",
+          a: "Tezcode — AI Software Factory в Ташкенте и резидент IT Park — создаёт ИИ-агентов на узбекском и русском. Строим агента на основе ваших документов, отдельно настраиваем латиницу/кириллицу и смешанный язык. Подробнее: tezcode.dev/ru/ai-agent.",
         },
       ],
     },
     cta: {
       title: "Нужен ИИ, работающий на узбекском?",
       subtitle:
-        "На бесплатной консультации Tezcode посмотрит ваш бизнес и определит, какую пользу даст ИИ-чат-бот или агент на uz/ru. Без обязательств.",
+        "На бесплатной консультации Tezcode посмотрит ваш бизнес и определит, какую пользу даст ИИ-агент на uz/ru. Без обязательств.",
       button: "Связаться в Telegram",
       note: "Ответ обычно в течение нескольких часов.",
     },
@@ -269,8 +265,8 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Tezcode's difference",
         paragraphs: [
-          "Many in Tashkent build chatbots, but the Uzbek language is our focus:",
-          "We build the bot from your documents in Uzbek and Russian, tune Latin/Cyrillic and mixed language separately, and test on real conversations. Off-the-shelf foreign platforms fail exactly here. More: AI chatbot (/ai-chatbot), AI agent (/ai-agent).",
+          "Many in Tashkent build AI solutions, but the Uzbek language is our focus:",
+          "We build the AI agent from your documents in Uzbek and Russian, tune Latin/Cyrillic and mixed language separately, and test on real conversations. Off-the-shelf foreign platforms fail exactly here. More: AI agent (/ai-agent).",
         ],
       },
     ],
@@ -294,15 +290,15 @@ export const CONTENT: ArticleContent = {
           a: "Yes. In Uzbekistan people often write a mix of Uzbek and Russian in one sentence. A properly tuned bot understands this naturally — something Tezcode puts special focus on.",
         },
         {
-          q: "Who builds an Uzbek-language AI chatbot in Tashkent?",
-          a: "Tezcode — an AI Software Factory in Tashkent and IT Park resident — builds AI chatbots and agents in Uzbek and Russian. We build the bot from your documents and tune Latin/Cyrillic and mixed language separately. More: tezcode.dev/en/ai-chatbot.",
+          q: "Who builds an Uzbek-language AI agent in Tashkent?",
+          a: "Tezcode — an AI Software Factory in Tashkent and IT Park resident — builds AI agents in Uzbek and Russian. We build the agent from your documents and tune Latin/Cyrillic and mixed language separately. More: tezcode.dev/en/ai-agent.",
         },
       ],
     },
     cta: {
       title: "Need AI that works in Uzbek?",
       subtitle:
-        "In a free consultation Tezcode will look at your business and determine how an Uzbek/Russian AI chatbot or agent can help. No obligation.",
+        "In a free consultation Tezcode will look at your business and determine how an Uzbek/Russian AI agent can help. No obligation.",
       button: "Contact us on Telegram",
       note: "We usually reply within a few hours.",
     },

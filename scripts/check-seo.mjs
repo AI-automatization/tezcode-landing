@@ -144,7 +144,7 @@ if (origin) {
   // Existing service pages own distinct intents in both primary languages.
   // Catch missing headings, duplicated titles/questions and schema-copy drift.
   const serviceTitles = new Set();
-  for (const slug of ["ai-agent", "ai-avtomatizatsiya", "biznes-avtomatlashtirish", "ai-chatbot", "telegram-bot-biznes", "pos-tizimi"]) {
+  for (const slug of ["ai-agent", "ai-avtomatizatsiya", "biznes-avtomatlashtirish", "pos-tizimi"]) {
     const content = initializer(`src/app/[locale]/${slug}/content.ts`, "CONTENT");
     for (const locale of ["uz", "ru"]) {
       const path = `/${slug}`;
@@ -207,7 +207,7 @@ if (origin) {
   // These must be actual anchors in the rendered article body, not URL text
   // or links that exist only inside React's serialized data.
   for (const [slug, destinations] of [
-    ["ai-ozbek-tilida", ["/ai-chatbot", "/ai-agent"]],
+    ["ai-ozbek-tilida", ["/ai-agent"]],
     ["biznes-uchun-ai-agent-yaratish", ["/ai-agent", "/blog/ai-ozbek-tilida"]],
     ["pos-tizimi-tanlash", ["/pos-tizimi"]],
   ]) {

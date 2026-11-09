@@ -22,7 +22,7 @@ export const HOME_FAQ: Record<FaqLang, FaqBlock> = {
     items: [
       {
         q: "Tezcode nima bilan shug'ullanadi?",
-        a: "Tezcode — Toshkentda joylashgan AI Software Factory. Biznes uchun AI avtomatlashtirish, AI agentlar, chatbotlar, POS tizimlari, klinika CRM va buyurtma dasturlar ishlab chiqamiz. 2024-yilda tashkil topgan, IT Park rezidenti.",
+        a: "Tezcode — Toshkentda joylashgan AI Software Factory. Biznes uchun AI avtomatlashtirish, AI agentlar, POS tizimlari, klinika CRM va buyurtma dasturlar ishlab chiqamiz. 2024-yilda tashkil topgan, IT Park rezidenti.",
       },
       {
         q: "Tezcode qaysi mahsulotlarni taklif qiladi?",
@@ -50,7 +50,7 @@ export const HOME_FAQ: Record<FaqLang, FaqBlock> = {
     items: [
       {
         q: "Чем занимается Tezcode?",
-        a: "Tezcode — AI Software Factory в Ташкенте. Мы разрабатываем ИИ-автоматизацию для бизнеса, ИИ-агентов, чат-ботов, POS-системы, CRM для клиник и заказные программы. Основана в 2024 году, резидент IT Park.",
+        a: "Tezcode — AI Software Factory в Ташкенте. Мы разрабатываем ИИ-автоматизацию для бизнеса, ИИ-агентов, POS-системы, CRM для клиник и заказные программы. Основана в 2024 году, резидент IT Park.",
       },
       {
         q: "Какие продукты предлагает Tezcode?",
@@ -78,7 +78,7 @@ export const HOME_FAQ: Record<FaqLang, FaqBlock> = {
     items: [
       {
         q: "What does Tezcode do?",
-        a: "Tezcode is an AI Software Factory based in Tashkent. We build AI automation for business, AI agents, chatbots, POS systems, clinic CRM and custom software. Founded in 2024, an IT Park resident.",
+        a: "Tezcode is an AI Software Factory based in Tashkent. We build AI automation for business, AI agents, POS systems, clinic CRM and custom software. Founded in 2024, an IT Park resident.",
       },
       {
         q: "What products does Tezcode offer?",
@@ -106,7 +106,7 @@ export const HOME_FAQ: Record<FaqLang, FaqBlock> = {
     items: [
       {
         q: "ماذا تفعل Tezcode؟",
-        a: "Tezcode هي مصنع برمجيات ذكاء اصطناعي في طشقند. نطوّر أتمتة الأعمال بالذكاء الاصطناعي، ووكلاء الذكاء الاصطناعي، وروبوتات الدردشة، وأنظمة POS، وCRM للعيادات، وبرمجيات مخصصة. تأسست عام 2024، ومقيمة في IT Park.",
+        a: "Tezcode هي مصنع برمجيات ذكاء اصطناعي في طشقند. نطوّر أتمتة الأعمال بالذكاء الاصطناعي، ووكلاء الذكاء الاصطناعي، وأنظمة POS، وCRM للعيادات، وبرمجيات مخصصة. تأسست عام 2024، ومقيمة في IT Park.",
       },
       {
         q: "ما المنتجات التي تقدّمها Tezcode؟",
@@ -134,7 +134,7 @@ export const HOME_FAQ: Record<FaqLang, FaqBlock> = {
     items: [
       {
         q: "Чим займається Tezcode?",
-        a: "Tezcode — AI Software Factory у Ташкенті. Ми розробляємо AI-автоматизацію для бізнесу, AI-агентів, чат-ботів, POS-системи, CRM для клінік і замовні програми. Заснована 2024 року, резидент IT Park.",
+        a: "Tezcode — AI Software Factory у Ташкенті. Ми розробляємо AI-автоматизацію для бізнесу, AI-агентів, POS-системи, CRM для клінік і замовні програми. Заснована 2024 року, резидент IT Park.",
       },
       {
         q: "Які продукти пропонує Tezcode?",

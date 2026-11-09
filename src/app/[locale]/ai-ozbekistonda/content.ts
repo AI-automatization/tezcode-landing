@@ -19,7 +19,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "AI joriy qilish",
       title2: "",
       subtitle:
-        "Tezcode — Toshkentdagi AI kompaniya va AI Software Factory. Biz O'zbekistonda biznesga AI joriy qilamiz: takroriy ishlarni (mijozga javob, hisobot, buyurtma qayd etish, kamera nazorati) sun'iy intellektga topshirib, jamoani asosiy ishga bo'shatamiz. AI agentlar, chatbotlar, jarayon avtomatizatsiyasi, AI video analitika va ovozli assistentlar o'zbek (lotin va kiril), rus va ingliz tillarida ishlaydi hamda 1C, CRM, Telegram, Click/Payme bilan integratsiya qilinadi.",
+        "Tezcode — Toshkentdagi AI kompaniya va AI Software Factory. Biz O'zbekistonda biznesga AI joriy qilamiz: takroriy ishlarni (mijozga javob, hisobot, buyurtma qayd etish, kamera nazorati) sun'iy intellektga topshirib, jamoani asosiy ishga bo'shatamiz. AI agentlar, jarayon avtomatizatsiyasi, AI video analitika va ovozli assistentlar o'zbek (lotin va kiril), rus va ingliz tillarida ishlaydi hamda 1C, CRM, Telegram, Click/Payme bilan integratsiya qilinadi.",
       // TODO(Sardor): real raqam qo'yish — nechta loyiha/joriy etish bo'lganini
       // trust satriga qo'shish (raqobatchi "120+ внедрений" deb yozadi).
       trust: "IT Park rezidenti (№6237) • 19 kishilik jamoa • Google reytingi 5.0 • Bepul 30 daqiqa konsultatsiya",
@@ -34,7 +34,7 @@ export const CONTENT: ServicePageContent = {
         "AI'ni O'zbekiston bozorining realligiga moslab joriy qilamiz: mijozlar Telegram'da yozadi, hisob 1C'da yuritiladi, muloqot o'zbek va rus tillarida ketadi — yechimlarimiz shu muhitda ishlashga qurilgan.",
       items: [
         { icon: "bot", title: "AI agentlar", desc: "O'zi qaror qabul qilib, vazifani boshidan oxirigacha bajaradigan AI agentlar: sotuv, lid saralash, mijoz xizmati, ichki avtomatizatsiya. Narx $400 dan." },
-        { icon: "message-circle", title: "AI chatbotlar", desc: "Telegram, Instagram, WhatsApp va saytda 24/7 javob beradigan chatbot: narx, katalog, buyurtma holati — o'zbek va rus tillarida. Narx $339 dan." },
+        { icon: "puzzle", title: "Individual AI loyiha", desc: "Jarayoningizga noldan quriladigan AI yechim: chuqur integratsiya (1C, CRM, to'lov tizimlari). Narx MVP $1000 dan." },
         { icon: "zap", title: "Jarayonlar avtomatizatsiyasi", desc: "Hisobot, ariza, hujjat aylanishini AI'ga topshirish: 3 soatlik hisobot 1 daqiqada tayyor, qo'lda kiritishdagi xatolar 90% gacha kamayadi." },
         { icon: "monitor", title: "AI video analitika", desc: "Mavjud kameralarni aqlli qilish: odam aniqlash va sanash, yuz orqali davomat, ish xavfsizligi (kaska/forma), avto raqam tanish (ANPR). Narx $990 dan." },
         { icon: "phone", title: "Ovozli assistentlar", desc: "Ovoz orqali gaplashadigan AI (STT → LLM → TTS): o'zimizning Salomat AI tibbiy assistentimiz aynan shu texnologiyada o'zbek va rus tillarida ishlaydi." },
@@ -78,8 +78,8 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "Savdo va do'konlar", desc: "RAOS POS: kassa, ombor, hisobot bir joyda. Keys: Yunusabaddagi oziq-ovqat do'koni 30 kunda Excel'dan POS'ga o'tdi — oyiga ~800 ming so'm tejov." },
         { tag: "02", title: "Klinikalar va tibbiyot", desc: "ClinicaGo CRM (live) + Salomat AI. Keys: Mirzo Ulug'bekdagi klinikada navbat vaqti 40% qisqardi, kunlik bemor 32 tadan 45 taga oshdi." },
-        { tag: "03", title: "Restoran va kafe", desc: "POS + AI chatbot (buyurtma, bron) + video analitika (zal nazorati) — restoran uchun alohida sahifamizda batafsil." },
-        { tag: "04", title: "Salon va xizmat ko'rsatish", desc: "Onlayn bron boti, eslatmalar (kelmay qolishni kamaytiradi), mijozlar bazasi va sodiqlik dasturi." },
+        { tag: "03", title: "Restoran va kafe", desc: "POS + AI agent (buyurtma, bron) + video analitika (zal nazorati) — restoran uchun alohida sahifamizda batafsil." },
+        { tag: "04", title: "Salon va xizmat ko'rsatish", desc: "AI agent orqali onlayn bron, eslatmalar (kelmay qolishni kamaytiradi), mijozlar bazasi va sodiqlik dasturi." },
         { tag: "05", title: "Ta'lim markazlari", desc: "Lidlarni qayd etish va saralash, to'lov nazorati, ota-onalarga avtomatik xabarnoma — Telegram orqali." },
         { tag: "06", title: "Ishlab chiqarish va ofis", desc: "Xodim nazorati tizimi, AI video analitika (davomat, ish xavfsizligi), avtomatik hisobotlar." },
       ],
@@ -91,7 +91,7 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "Yashirin to'lovlar yo'q: tayyor yechimlar narxi ochiq, individual loyiha narxi TZ tasdiqlangach qat'iy belgilanadi.",
       factors: [
-        { title: "Tayyor AI yechimlar", price: "$279 dan", desc: "Telegram bot $279 dan, AI chatbot $339 dan, AI agent $400 dan, AI video analitika $990 dan — eng tez boshlanadigan yo'l." },
+        { title: "Tayyor AI yechimlar", price: "$400 dan", desc: "AI agent $400 dan, AI video analitika $990 dan — eng tez boshlanadigan yo'l." },
         { title: "Individual loyiha", price: "MVP $1000 dan", desc: "Jarayoningizga noldan quriladigan AI yechim: chuqur integratsiya (1C, CRM, to'lov tizimlari). Aniq narx TZ tasdiqlangach yoziladi." },
       ],
       note: "To'lov tartibi: 30% oldindan, qolgani bosqichma-bosqich. Konsultatsiya va dastlabki baholash bepul — O'zbekistonning istalgan hududidan.",
@@ -114,15 +114,15 @@ export const CONTENT: ServicePageContent = {
       items: [
         {
           q: "O'zbekistonda biznesga AI joriy qilish qancha turadi?",
-          a: "Tayyor yechimlar: Telegram bot $279 dan, AI chatbot $339 dan, AI agent $400 dan, AI video analitika $990 dan, individual loyiha (MVP) $1000 dan. Aniq narx bepul konsultatsiya va TZ'dan keyin yozma taklifda beriladi. To'lov 30% oldindan, qolgani bosqichma-bosqich — yashirin qo'shimchalar yo'q.",
+          a: "Tayyor yechimlar: AI agent $400 dan, AI video analitika $990 dan, individual loyiha (MVP) $1000 dan. Aniq narx bepul konsultatsiya va TZ'dan keyin yozma taklifda beriladi. To'lov 30% oldindan, qolgani bosqichma-bosqich — yashirin qo'shimchalar yo'q.",
         },
         {
           q: "AI o'zbek tilida ishlaydimi?",
-          a: "Ha. Tezcode yechimlari o'zbek (lotin va kiril), rus va ingliz tillarida ishlaydi — mijoz qaysi tilda yozsa, bot o'sha tilda javob beradi. O'zbekiston bozori uchun bu bizda standart talab: Salomat AI ovozli assistentimiz ham o'zbek va rus tillarida gaplashadi.",
+          a: "Ha. Tezcode yechimlari o'zbek (lotin va kiril), rus va ingliz tillarida ishlaydi — mijoz qaysi tilda yozsa, AI agent o'sha tilda javob beradi. O'zbekiston bozori uchun bu bizda standart talab: Salomat AI ovozli assistentimiz ham o'zbek va rus tillarida gaplashadi.",
         },
         {
           q: "AI joriy qilish qancha vaqt oladi?",
-          a: "Oddiy avtomatlashtirish (Telegram bot, avtomatik hisobot) — 1-2 hafta. To'liqroq AI yechimning ishlovchi MVP versiyasi — 2-4 hafta. Har hafta demo ko'rsatamiz, natijani jarayonda kuzatib borasiz.",
+          a: "Oddiy avtomatlashtirish (masalan, avtomatik hisobot) — 1-2 hafta. To'liqroq AI yechimning ishlovchi MVP versiyasi — 2-4 hafta. Har hafta demo ko'rsatamiz, natijani jarayonda kuzatib borasiz.",
         },
         {
           q: "Mavjud tizimlarimni (1C, CRM) almashtirish kerakmi?",
@@ -148,7 +148,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "O'zbekistondagi AI kompaniya — Tezcode",
       description:
-        "Tezcode — Toshkentdagi AI kompaniya va AI Software Factory. Butun O'zbekiston bo'ylab AI agentlar, chatbotlar, jarayon avtomatizatsiyasi, video analitika va ovozli assistentlarni joriy qilamiz.",
+        "Tezcode — Toshkentdagi AI kompaniya va AI Software Factory. Butun O'zbekiston bo'ylab AI agentlar, jarayon avtomatizatsiyasi, video analitika va ovozli assistentlarni joriy qilamiz.",
       serviceType: "AI joriy qilish / sun'iy intellekt yechimlari",
     },
   },
@@ -160,7 +160,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "в Ташкенте и Узбекистане",
       title2: "",
       subtitle:
-        "Tezcode — AI-компания и AI Software Factory в Ташкенте. Мы внедряем ИИ в бизнес в Узбекистане: передаём рутинные задачи (ответы клиентам, отчёты, регистрация заказов, контроль по камерам) искусственному интеллекту. ИИ-агенты, чат-боты, автоматизация процессов, видеоаналитика и голосовые ассистенты работают на узбекском (латиница и кириллица), русском и английском и интегрируются с 1C, CRM, Telegram, Click/Payme.",
+        "Tezcode — AI-компания и AI Software Factory в Ташкенте. Мы внедряем ИИ в бизнес в Узбекистане: передаём рутинные задачи (ответы клиентам, отчёты, регистрация заказов, контроль по камерам) искусственному интеллекту. ИИ-агенты, автоматизация процессов, видеоаналитика и голосовые ассистенты работают на узбекском (латиница и кириллица), русском и английском и интегрируются с 1C, CRM, Telegram, Click/Payme.",
       // TODO(Sardor): real raqam qo'yish — количество реализованных внедрений
       // для trust-строки (у конкурента цитируется «120+ внедрений»).
       trust: "Резидент IT Park (№6237) • Команда 19 человек • Рейтинг Google 5.0 • Бесплатная 30-мин консультация",
@@ -175,7 +175,7 @@ export const CONTENT: ServicePageContent = {
         "Мы внедряем ИИ с учётом реальности узбекистанского рынка: клиенты пишут в Telegram, учёт ведётся в 1C, общение идёт на узбекском и русском — наши решения построены именно под эту среду.",
       items: [
         { icon: "bot", title: "ИИ-агенты (AI)", desc: "Агенты, которые сами принимают решения и доводят задачу до конца: продажи, квалификация лидов, поддержка клиентов, внутренняя автоматизация. Цена от $400 (≈ от 5 млн сум)." },
-        { icon: "message-circle", title: "ИИ-чат-боты", desc: "Чат-бот, отвечающий 24/7 в Telegram, Instagram, WhatsApp и на сайте: цены, каталог, статус заказа — на узбекском и русском. Цена от $339 (≈ от 4 млн сум)." },
+        { icon: "puzzle", title: "Индивидуальный ИИ-проект", desc: "ИИ-решение, построенное с нуля под ваш процесс: глубокая интеграция (1C, CRM, платёжные системы). Цена — MVP от $1000 (≈ от 12 млн сум)." },
         { icon: "zap", title: "Автоматизация процессов", desc: "Отчёты, заявки и документооборот передаются ИИ: отчёт, занимавший 3 часа, готов за 1 минуту, а ошибки ручного ввода сокращаются на 90%." },
         { icon: "monitor", title: "ИИ-видеоаналитика", desc: "Существующие камеры становятся умными: детекция и подсчёт людей, учёт посещаемости по лицам, охрана труда (каска/форма), распознавание автономеров (ANPR). Цена от $990 (≈ от 12,5 млн сум)." },
         { icon: "phone", title: "Голосовые ассистенты", desc: "ИИ, который разговаривает голосом (STT → LLM → TTS): наш медицинский ассистент Salomat AI работает именно на этой технологии на узбекском и русском." },
@@ -219,8 +219,8 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "Торговля и магазины", desc: "RAOS POS: касса, склад и отчёты в одном месте. Кейс: продуктовый магазин в Юнусабаде за 30 дней перешёл с Excel на POS — экономия ~800 тыс. сумов в месяц." },
         { tag: "02", title: "Клиники и медицина", desc: "ClinicaGo CRM (live) + Salomat AI. Кейс: в клинике в Мирзо-Улугбекском районе время очереди сократилось на 40%, приём вырос с 32 до 45 пациентов в день." },
-        { tag: "03", title: "Рестораны и кафе", desc: "POS + ИИ-чат-бот (заказы, бронь) + видеоаналитика (контроль зала) — подробно на отдельной странице для ресторанов." },
-        { tag: "04", title: "Салоны и сфера услуг", desc: "Бот онлайн-записи, автонапоминания (снижают неявки), база клиентов и программа лояльности." },
+        { tag: "03", title: "Рестораны и кафе", desc: "POS + ИИ-агент (заказы, бронь) + видеоаналитика (контроль зала) — подробно на отдельной странице для ресторанов." },
+        { tag: "04", title: "Салоны и сфера услуг", desc: "Онлайн-запись через ИИ-агента, автонапоминания (снижают неявки), база клиентов и программа лояльности." },
         { tag: "05", title: "Учебные центры", desc: "Фиксация и квалификация лидов, контроль оплат, автоматические уведомления родителям — через Telegram." },
         { tag: "06", title: "Производство и офисы", desc: "Контроль сотрудников, ИИ-видеоаналитика (посещаемость, охрана труда), автоматические отчёты." },
       ],
@@ -232,7 +232,7 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "Никаких скрытых платежей: цены готовых решений открыты, стоимость индивидуального проекта фиксируется после утверждения ТЗ.",
       factors: [
-        { title: "Готовые ИИ-решения (AI)", price: "от $279 (≈ от 3,5 млн сум)", desc: "Telegram-бот от $279 (≈ от 3,5 млн сум), ИИ-чат-бот от $339 (≈ от 4 млн сум), ИИ-агент от $400 (≈ от 5 млн сум), ИИ-видеоаналитика от $990 (≈ от 12,5 млн сум) — самый быстрый способ начать." },
+        { title: "Готовые ИИ-решения (AI)", price: "от $400 (≈ от 5 млн сум)", desc: "ИИ-агент от $400 (≈ от 5 млн сум), ИИ-видеоаналитика от $990 (≈ от 12,5 млн сум) — самый быстрый способ начать." },
         { title: "Индивидуальный проект", price: "MVP от $1000 (≈ от 12 млн сум)", desc: "ИИ-решение, построенное с нуля под ваш процесс: глубокая интеграция (1C, CRM, платёжные системы). Точная цена — после утверждения ТЗ." },
       ],
       note: "Порядок оплаты: 30% предоплата, остальное поэтапно. Консультация и первичная оценка бесплатны — из любого региона Узбекистана.",
@@ -255,15 +255,15 @@ export const CONTENT: ServicePageContent = {
       items: [
         {
           q: "Сколько стоит внедрение ИИ в Узбекистане?",
-          a: "Готовые решения: Telegram-бот от $279 (≈ от 3,5 млн сум), ИИ-чат-бот от $339 (≈ от 4 млн сум), ИИ-агент от $400 (≈ от 5 млн сум), ИИ-видеоаналитика от $990 (≈ от 12,5 млн сум), индивидуальный проект (MVP) от $1000 (≈ от 12 млн сум). Точная цена даётся в письменном предложении после бесплатной консультации и ТЗ. Оплата: 30% предоплата, остальное поэтапно — без скрытых доплат.",
+          a: "Готовые решения: ИИ-агент от $400 (≈ от 5 млн сум), ИИ-видеоаналитика от $990 (≈ от 12,5 млн сум), индивидуальный проект (MVP) от $1000 (≈ от 12 млн сум). Точная цена даётся в письменном предложении после бесплатной консультации и ТЗ. Оплата: 30% предоплата, остальное поэтапно — без скрытых доплат.",
         },
         {
           q: "Работает ли ИИ (AI) на узбекском языке?",
-          a: "Да. Решения Tezcode работают на узбекском (латиница и кириллица), русском и английском — бот отвечает на том языке, на котором пишет клиент. Для рынка Узбекистана это наш стандарт: голосовой ассистент Salomat AI тоже говорит на узбекском и русском.",
+          a: "Да. Решения Tezcode работают на узбекском (латиница и кириллица), русском и английском — ИИ-агент отвечает на том языке, на котором пишет клиент. Для рынка Узбекистана это наш стандарт: голосовой ассистент Salomat AI тоже говорит на узбекском и русском.",
         },
         {
           q: "Сколько занимает внедрение ИИ?",
-          a: "Простая автоматизация (Telegram-бот, автоматический отчёт) — 1-2 недели. Рабочий MVP более полного ИИ-решения — 2-4 недели. Каждую неделю показываем демо, поэтому вы видите результат в процессе, а не в последний день.",
+          a: "Простая автоматизация (например, автоматический отчёт) — 1-2 недели. Рабочий MVP более полного ИИ-решения — 2-4 недели. Каждую неделю показываем демо, поэтому вы видите результат в процессе, а не в последний день.",
         },
         {
           q: "Нужно ли менять существующие системы (1C, CRM)?",
@@ -289,7 +289,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "AI-компания в Узбекистане — Tezcode",
       description:
-        "Tezcode — AI-компания и AI Software Factory в Ташкенте. Внедряем ИИ-агентов, чат-ботов, автоматизацию, видеоаналитику и голосовых ассистентов для бизнеса по всему Узбекистану.",
+        "Tezcode — AI-компания и AI Software Factory в Ташкенте. Внедряем ИИ-агентов, автоматизацию, видеоаналитику и голосовых ассистентов для бизнеса по всему Узбекистану.",
       serviceType: "Внедрение ИИ / решения на основе искусственного интеллекта",
     },
   },
@@ -301,7 +301,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "in Uzbekistan",
       title2: "",
       subtitle:
-        "AI implementation for business in Uzbekistan means handing repetitive work — customer replies, reports, order intake, camera monitoring — to artificial intelligence so your team can focus on what matters. Tezcode, an AI Software Factory in Tashkent and an official IT Park Uzbekistan resident, implements AI agents, chatbots, process automation, AI video analytics and voice assistants nationwide: solutions work in Uzbek (Latin and Cyrillic), Russian and English, and integrate with the systems you already run — 1C, CRM, Telegram, Click/Payme.",
+        "AI implementation for business in Uzbekistan means handing repetitive work — customer replies, reports, order intake, camera monitoring — to artificial intelligence so your team can focus on what matters. Tezcode, an AI Software Factory in Tashkent and an official IT Park Uzbekistan resident, implements AI agents, process automation, AI video analytics and voice assistants nationwide: solutions work in Uzbek (Latin and Cyrillic), Russian and English, and integrate with the systems you already run — 1C, CRM, Telegram, Click/Payme.",
       // TODO(Sardor): real raqam qo'yish — number of completed implementations
       // for the trust line (the competitor quotes "120+ implementations").
       trust: "IT Park resident (No. 6237) • 19-person team • Google rating 5.0 • Free 30-min consultation",
@@ -316,7 +316,7 @@ export const CONTENT: ServicePageContent = {
         "We implement AI around the realities of the Uzbekistan market: customers write on Telegram, accounting lives in 1C, conversations happen in Uzbek and Russian — our solutions are built for exactly this environment.",
       items: [
         { icon: "bot", title: "AI agents", desc: "Agents that make decisions and complete tasks end to end: sales, lead qualification, customer support, internal automation. From $400." },
-        { icon: "message-circle", title: "AI chatbots", desc: "A chatbot answering 24/7 on Telegram, Instagram, WhatsApp and your website: prices, catalogue, order status — in Uzbek and Russian. From $339." },
+        { icon: "puzzle", title: "Custom AI project", desc: "An AI solution built from scratch for your process: deep integration (1C, CRM, payment systems). MVP from $1000." },
         { icon: "zap", title: "Process automation", desc: "Reports, requests and document flow handed to AI: a report that took 3 hours is ready in 1 minute, manual-entry errors drop by up to 90%." },
         { icon: "monitor", title: "AI video analytics", desc: "Your existing cameras become smart: people detection and counting, face-based attendance, safety compliance (helmet/uniform), licence-plate recognition (ANPR). From $990." },
         { icon: "phone", title: "Voice assistants", desc: "AI that talks (STT → LLM → TTS): our own medical assistant Salomat AI runs on exactly this technology in Uzbek and Russian." },
@@ -360,8 +360,8 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "Retail and stores", desc: "RAOS POS: register, inventory and reports in one place. Case: a grocery store in Yunusabad moved from Excel to POS in 30 days — saving ~800,000 UZS a month." },
         { tag: "02", title: "Clinics and healthcare", desc: "ClinicaGo CRM (live) + Salomat AI. Case: a clinic in the Mirzo-Ulugbek district cut queue time by 40% and grew from 32 to 45 patients a day." },
-        { tag: "03", title: "Restaurants and cafes", desc: "POS + AI chatbot (orders, reservations) + video analytics (floor monitoring) — covered in detail on our restaurant page." },
-        { tag: "04", title: "Salons and services", desc: "An online booking bot, auto-reminders (cutting no-shows), a customer base and a loyalty programme." },
+        { tag: "03", title: "Restaurants and cafes", desc: "POS + AI agent (orders, reservations) + video analytics (floor monitoring) — covered in detail on our restaurant page." },
+        { tag: "04", title: "Salons and services", desc: "Online booking via an AI agent, auto-reminders (cutting no-shows), a customer base and a loyalty programme." },
         { tag: "05", title: "Education centres", desc: "Lead capture and qualification, payment tracking, automatic notifications to parents — via Telegram." },
         { tag: "06", title: "Manufacturing and offices", desc: "Employee monitoring, AI video analytics (attendance, workplace safety), automated reports." },
       ],
@@ -373,7 +373,7 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "No hidden fees: ready-made solution prices are public, and the cost of a custom project is fixed after the spec is approved.",
       factors: [
-        { title: "Ready-made AI solutions", price: "from $279", desc: "Telegram bot from $279, AI chatbot from $339, AI agent from $400, AI video analytics from $990 — the fastest way to start." },
+        { title: "Ready-made AI solutions", price: "from $400", desc: "AI agent from $400, AI video analytics from $990 — the fastest way to start." },
         { title: "Custom project", price: "MVP from $1000", desc: "An AI solution built from scratch for your process: deep integration (1C, CRM, payment systems). The exact price is fixed after the spec." },
       ],
       note: "Payment terms: 30% upfront, the rest per stage. The consultation and initial assessment are free — from any region of Uzbekistan.",
@@ -396,15 +396,15 @@ export const CONTENT: ServicePageContent = {
       items: [
         {
           q: "How much does AI implementation cost in Uzbekistan?",
-          a: "Ready-made solutions: Telegram bot from $279, AI chatbot from $339, AI agent from $400, AI video analytics from $990, custom project (MVP) from $1000. The exact figure comes in a written proposal after the free consultation and spec. Payment: 30% upfront, the rest per stage — no hidden extras.",
+          a: "Ready-made solutions: AI agent from $400, AI video analytics from $990, custom project (MVP) from $1000. The exact figure comes in a written proposal after the free consultation and spec. Payment: 30% upfront, the rest per stage — no hidden extras.",
         },
         {
           q: "Does the AI work in Uzbek?",
-          a: "Yes. Tezcode solutions work in Uzbek (Latin and Cyrillic), Russian and English — the bot answers in whatever language the customer writes in. For the Uzbekistan market this is our standard: our voice assistant Salomat AI also speaks Uzbek and Russian.",
+          a: "Yes. Tezcode solutions work in Uzbek (Latin and Cyrillic), Russian and English — the AI agent answers in whatever language the customer writes in. For the Uzbekistan market this is our standard: our voice assistant Salomat AI also speaks Uzbek and Russian.",
         },
         {
           q: "How long does implementation take?",
-          a: "Simple automation (a Telegram bot, an automated report) — 1-2 weeks. A working MVP of a fuller AI solution — 2-4 weeks. We demo weekly, so you watch the result take shape instead of waiting for the last day.",
+          a: "Simple automation (e.g. an automated report) — 1-2 weeks. A working MVP of a fuller AI solution — 2-4 weeks. We demo weekly, so you watch the result take shape instead of waiting for the last day.",
         },
         {
           q: "Do I need to replace my existing systems (1C, CRM)?",
@@ -430,7 +430,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "AI implementation for business in Uzbekistan — Tezcode",
       description:
-        "AI implementation for business across Uzbekistan: AI agents, chatbots, process automation, AI video analytics, voice assistants. In Uzbek and Russian, with 1C/CRM integration. Tezcode — IT Park resident, Tashkent.",
+        "AI implementation for business across Uzbekistan: AI agents, process automation, AI video analytics, voice assistants. In Uzbek and Russian, with 1C/CRM integration. Tezcode — IT Park resident, Tashkent.",
       serviceType: "AI implementation / artificial intelligence solutions",
     },
   },
@@ -442,7 +442,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "في أوزبكستان",
       title2: "",
       subtitle:
-        "تطبيق الذكاء الاصطناعي في الأعمال في أوزبكستان يعني تسليم المهام المتكررة — الرد على العملاء، التقارير، تسجيل الطلبات، مراقبة الكاميرات — إلى الذكاء الاصطناعي ليتفرغ فريقك للأهم. Tezcode — مصنع برمجيات الذكاء الاصطناعي في طشقند ومقيم رسمي في IT Park Uzbekistan — يطبّق وكلاء AI وروبوتات المحادثة وأتمتة العمليات وتحليلات الفيديو والمساعدين الصوتيين في كل البلاد: تعمل الحلول بالأوزبكية والروسية والإنجليزية وتتكامل مع أنظمتك الحالية — 1C وCRM وTelegram وClick/Payme.",
+        "تطبيق الذكاء الاصطناعي في الأعمال في أوزبكستان يعني تسليم المهام المتكررة — الرد على العملاء، التقارير، تسجيل الطلبات، مراقبة الكاميرات — إلى الذكاء الاصطناعي ليتفرغ فريقك للأهم. Tezcode — مصنع برمجيات الذكاء الاصطناعي في طشقند ومقيم رسمي في IT Park Uzbekistan — يطبّق وكلاء AI وأتمتة العمليات وتحليلات الفيديو والمساعدين الصوتيين في كل البلاد: تعمل الحلول بالأوزبكية والروسية والإنجليزية وتتكامل مع أنظمتك الحالية — 1C وCRM وTelegram وClick/Payme.",
       trust: "مقيم في IT Park (رقم 6237) • فريق من 19 شخصًا • تقييم Google ‏5.0 • استشارة 30 دقيقة مجانية",
       ctaPrimary: "اطلب استشارة مجانية",
       ctaSecondary: "ماذا نطبّق؟",
@@ -455,7 +455,7 @@ export const CONTENT: ServicePageContent = {
         "نطبّق الذكاء الاصطناعي وفق واقع سوق أوزبكستان: العملاء يكتبون على Telegram، والمحاسبة في 1C، والتواصل بالأوزبكية والروسية — حلولنا مبنية لهذه البيئة بالضبط.",
       items: [
         { icon: "bot", title: "وكلاء AI", desc: "وكلاء يتخذون القرار وينجزون المهمة من البداية إلى النهاية: المبيعات، تأهيل العملاء المحتملين، الدعم، الأتمتة الداخلية. من 400$." },
-        { icon: "message-circle", title: "روبوتات محادثة AI", desc: "روبوت يجيب على مدار الساعة في Telegram وInstagram وWhatsApp والموقع: الأسعار والكتالوج وحالة الطلب — بالأوزبكية والروسية. من 339$." },
+        { icon: "puzzle", title: "مشروع AI مخصص", desc: "حل ذكاء اصطناعي يُبنى من الصفر لعملياتك: تكامل عميق (1C، CRM، أنظمة الدفع). MVP من 1000$." },
         { icon: "zap", title: "أتمتة العمليات", desc: "التقارير والطلبات وتدفق المستندات تُسلَّم للذكاء الاصطناعي: تقرير كان يستغرق 3 ساعات يجهز في دقيقة، وأخطاء الإدخال اليدوي تقل حتى 90%." },
         { icon: "monitor", title: "تحليلات فيديو AI", desc: "كاميراتك الحالية تصبح ذكية: كشف وعدّ الأشخاص، حضور بالتعرف على الوجه، سلامة العمل (خوذة/زي)، التعرف على لوحات السيارات (ANPR). من 990$." },
         { icon: "phone", title: "مساعدون صوتيون", desc: "ذكاء اصطناعي يتحدث بالصوت (STT → LLM → TTS): مساعدنا الطبي Salomat AI يعمل بهذه التقنية بالأوزبكية والروسية." },
@@ -484,8 +484,8 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "التجارة والمتاجر", desc: "RAOS POS: الكاشير والمخزون والتقارير في مكان واحد. حالة: متجر بقالة في يونس-آباد انتقل من Excel إلى POS خلال 30 يومًا — توفير ~800 ألف سوم شهريًا." },
         { tag: "02", title: "العيادات والرعاية الصحية", desc: "ClinicaGo CRM (يعمل) + Salomat AI. حالة: عيادة في حي ميرزو-أولوغبيك قلّصت وقت الانتظار 40% وارتفع الاستقبال من 32 إلى 45 مريضًا يوميًا." },
-        { tag: "03", title: "المطاعم والمقاهي", desc: "POS + روبوت AI (طلبات وحجوزات) + تحليلات فيديو (مراقبة الصالة) — التفاصيل على صفحة المطاعم." },
-        { tag: "04", title: "الصالونات والخدمات", desc: "روبوت حجز أونلاين، تذكيرات تلقائية (تقلل الغياب)، قاعدة عملاء وبرنامج ولاء." },
+        { tag: "03", title: "المطاعم والمقاهي", desc: "POS + وكيل AI (طلبات وحجوزات) + تحليلات فيديو (مراقبة الصالة) — التفاصيل على صفحة المطاعم." },
+        { tag: "04", title: "الصالونات والخدمات", desc: "حجز أونلاين عبر وكيل AI، تذكيرات تلقائية (تقلل الغياب)، قاعدة عملاء وبرنامج ولاء." },
         { tag: "05", title: "مراكز التعليم", desc: "تسجيل وتأهيل العملاء المحتملين، متابعة المدفوعات، إشعارات تلقائية لأولياء الأمور — عبر Telegram." },
         { tag: "06", title: "الإنتاج والمكاتب", desc: "مراقبة الموظفين، تحليلات فيديو AI (الحضور وسلامة العمل)، تقارير تلقائية." },
       ],
@@ -497,7 +497,7 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "لا رسوم خفية: أسعار الحلول الجاهزة معلنة، وسعر المشروع المخصص يُثبَّت بعد اعتماد المواصفات.",
       factors: [
-        { title: "حلول AI جاهزة", price: "من 279$", desc: "روبوت Telegram من 279$، روبوت محادثة AI من 339$، وكيل AI من 400$، تحليلات فيديو AI من 990$ — أسرع طريقة للبدء." },
+        { title: "حلول AI جاهزة", price: "من 400$", desc: "وكيل AI من 400$، تحليلات فيديو AI من 990$ — أسرع طريقة للبدء." },
         { title: "مشروع مخصص", price: "MVP من 1000$", desc: "حل ذكاء اصطناعي يُبنى من الصفر لعملياتك: تكامل عميق (1C، CRM، أنظمة الدفع). السعر النهائي بعد المواصفات." },
       ],
       note: "الدفع: 30% مقدمًا والباقي على مراحل. الاستشارة والتقييم الأولي مجانيان — من أي منطقة في أوزبكستان.",
@@ -518,9 +518,9 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "أكثر الأسئلة تكرارًا عن تطبيق الذكاء الاصطناعي في الأعمال في أوزبكستان — بأجوبة قصيرة ومحددة.",
       items: [
-        { q: "كم يكلف تطبيق الذكاء الاصطناعي في أوزبكستان؟", a: "حلول جاهزة: روبوت Telegram من 279$، روبوت محادثة AI من 339$، وكيل AI من 400$، تحليلات فيديو من 990$، مشروع مخصص (MVP) من 1000$. السعر الدقيق في عرض مكتوب بعد الاستشارة المجانية والمواصفات. الدفع: 30% مقدمًا والباقي على مراحل." },
-        { q: "هل يعمل الذكاء الاصطناعي بالأوزبكية؟", a: "نعم. تعمل حلول Tezcode بالأوزبكية (لاتينية وسيريلية) والروسية والإنجليزية — يجيب الروبوت باللغة التي يكتب بها العميل. مساعدنا الصوتي Salomat AI يتحدث الأوزبكية والروسية أيضًا." },
-        { q: "كم يستغرق التطبيق؟", a: "أتمتة بسيطة (روبوت Telegram، تقرير تلقائي) — 1-2 أسبوع. نسخة MVP عاملة لحل أشمل — 2-4 أسابيع. نعرض تجريبيًا كل أسبوع فترى النتيجة أثناء العمل." },
+        { q: "كم يكلف تطبيق الذكاء الاصطناعي في أوزبكستان؟", a: "حلول جاهزة: وكيل AI من 400$، تحليلات فيديو من 990$، مشروع مخصص (MVP) من 1000$. السعر الدقيق في عرض مكتوب بعد الاستشارة المجانية والمواصفات. الدفع: 30% مقدمًا والباقي على مراحل." },
+        { q: "هل يعمل الذكاء الاصطناعي بالأوزبكية؟", a: "نعم. تعمل حلول Tezcode بالأوزبكية (لاتينية وسيريلية) والروسية والإنجليزية — يجيب وكيل AI باللغة التي يكتب بها العميل. مساعدنا الصوتي Salomat AI يتحدث الأوزبكية والروسية أيضًا." },
+        { q: "كم يستغرق التطبيق؟", a: "أتمتة بسيطة (مثل تقرير تلقائي) — 1-2 أسبوع. نسخة MVP عاملة لحل أشمل — 2-4 أسابيع. نعرض تجريبيًا كل أسبوع فترى النتيجة أثناء العمل." },
         { q: "هل يجب استبدال أنظمتي الحالية (1C، CRM)؟", a: "لا. نطبّق الذكاء الاصطناعي داخل تدفق عملك الحالي: تكامل مع 1C وamoCRM وBitrix24 وGoogle Sheets وTelegram وClick/Payme. الهدف جعل أنظمتك الحالية ذكية لا إجبار الفريق على برامج جديدة." },
         { q: "من أين أبدأ؟", a: "من استشارة مجانية مدتها 30 دقيقة: نحدد فيها العملية المتكررة الأكثر استهلاكًا للوقت ونخبرك أي حل يؤتي ثماره أسرع. لا حاجة لمعرفة تقنية — يكفي وصف عمليتك بكلمات بسيطة. تتم الاستشارة أونلاين أو في مكتب Tezcode (مقيم IT Park): طشقند، شارع أمير تيمور، 10." },
       ],
@@ -538,7 +538,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "تطبيق الذكاء الاصطناعي في الأعمال في أوزبكستان — Tezcode",
       description:
-        "تطبيق الذكاء الاصطناعي في الأعمال في كل أوزبكستان: وكلاء AI، روبوتات محادثة، أتمتة العمليات، تحليلات فيديو، مساعدون صوتيون. بالأوزبكية والروسية مع تكامل 1C/CRM. ‏Tezcode — مقيم IT Park، طشقند.",
+        "تطبيق الذكاء الاصطناعي في الأعمال في كل أوزبكستان: وكلاء AI، أتمتة العمليات، تحليلات فيديو، مساعدون صوتيون. بالأوزبكية والروسية مع تكامل 1C/CRM. ‏Tezcode — مقيم IT Park، طشقند.",
       serviceType: "تطبيق الذكاء الاصطناعي / حلول الذكاء الاصطناعي",
     },
   },
@@ -550,7 +550,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "в Узбекистані",
       title2: "",
       subtitle:
-        "Впровадження ШІ в бізнес в Узбекистані — це передача рутинних задач (відповіді клієнтам, звіти, реєстрація замовлень, контроль камер) штучному інтелекту, щоб команда займалася головним. Tezcode — AI Software Factory в Ташкенті та офіційний резидент IT Park Uzbekistan — впроваджує AI-агентів, чат-ботів, автоматизацію процесів, AI-відеоаналітику та голосових асистентів по всій країні: рішення працюють узбецькою (латиниця та кирилиця), російською й англійською та інтегруються з вашими системами — 1C, CRM, Telegram, Click/Payme.",
+        "Впровадження ШІ в бізнес в Узбекистані — це передача рутинних задач (відповіді клієнтам, звіти, реєстрація замовлень, контроль камер) штучному інтелекту, щоб команда займалася головним. Tezcode — AI Software Factory в Ташкенті та офіційний резидент IT Park Uzbekistan — впроваджує AI-агентів, автоматизацію процесів, AI-відеоаналітику та голосових асистентів по всій країні: рішення працюють узбецькою (латиниця та кирилиця), російською й англійською та інтегруються з вашими системами — 1C, CRM, Telegram, Click/Payme.",
       trust: "Резидент IT Park (№6237) • Команда 16 людей • Рейтинг Google 5.0 • Безкоштовна 30-хв консультація",
       ctaPrimary: "Безкоштовна консультація",
       ctaSecondary: "Що ми впроваджуємо?",
@@ -563,7 +563,7 @@ export const CONTENT: ServicePageContent = {
         "Ми впроваджуємо ШІ з урахуванням реалій узбецького ринку: клієнти пишуть у Telegram, облік ведеться в 1C, спілкування йде узбецькою та російською — наші рішення побудовані саме під це середовище.",
       items: [
         { icon: "bot", title: "AI-агенти", desc: "Агенти, що самі ухвалюють рішення й доводять задачу до кінця: продажі, кваліфікація лідів, підтримка клієнтів, внутрішня автоматизація. Від $400." },
-        { icon: "message-circle", title: "AI-чат-боти", desc: "Чат-бот, що відповідає 24/7 у Telegram, Instagram, WhatsApp і на сайті: ціни, каталог, статус замовлення — узбецькою та російською. Від $339." },
+        { icon: "puzzle", title: "Індивідуальний AI-проєкт", desc: "ШІ-рішення, побудоване з нуля під ваш процес: глибока інтеграція (1C, CRM, платіжні системи). MVP від $1000." },
         { icon: "zap", title: "Автоматизація процесів", desc: "Звіти, заявки та документообіг передаються ШІ: звіт, що займав 3 години, готовий за 1 хвилину, помилки ручного введення знижуються до 90%." },
         { icon: "monitor", title: "AI-відеоаналітика", desc: "Наявні камери стають розумними: детекція та підрахунок людей, облік відвідуваності за обличчями, охорона праці (каска/форма), розпізнавання автономерів (ANPR). Від $990." },
         { icon: "phone", title: "Голосові асистенти", desc: "ШІ, що розмовляє голосом (STT → LLM → TTS): наш медичний асистент Salomat AI працює саме на цій технології узбецькою та російською." },
@@ -592,8 +592,8 @@ export const CONTENT: ServicePageContent = {
       items: [
         { tag: "01", title: "Торгівля та магазини", desc: "RAOS POS: каса, склад і звіти в одному місці. Кейс: продуктовий магазин у Юнусабаді за 30 днів перейшов з Excel на POS — економія ~800 тис. сумів на місяць." },
         { tag: "02", title: "Клініки та медицина", desc: "ClinicaGo CRM (live) + Salomat AI. Кейс: у клініці в Мірзо-Улугбецькому районі час черги скоротився на 40%, прийом зріс із 32 до 45 пацієнтів на день." },
-        { tag: "03", title: "Ресторани та кафе", desc: "POS + AI-чат-бот (замовлення, бронь) + відеоаналітика (контроль залу) — детально на окремій сторінці для ресторанів." },
-        { tag: "04", title: "Салони та сфера послуг", desc: "Бот онлайн-запису, автонагадування (знижують неявки), база клієнтів і програма лояльності." },
+        { tag: "03", title: "Ресторани та кафе", desc: "POS + AI-агент (замовлення, бронь) + відеоаналітика (контроль залу) — детально на окремій сторінці для ресторанів." },
+        { tag: "04", title: "Салони та сфера послуг", desc: "Онлайн-запис через AI-агента, автонагадування (знижують неявки), база клієнтів і програма лояльності." },
         { tag: "05", title: "Навчальні центри", desc: "Фіксація та кваліфікація лідів, контроль оплат, автоматичні сповіщення батькам — через Telegram." },
         { tag: "06", title: "Виробництво та офіси", desc: "Контроль співробітників, AI-відеоаналітика (відвідуваність, охорона праці), автоматичні звіти." },
       ],
@@ -605,7 +605,7 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "Жодних прихованих платежів: ціни готових рішень відкриті, вартість індивідуального проєкту фіксується після затвердження ТЗ.",
       factors: [
-        { title: "Готові AI-рішення", price: "від $279", desc: "Telegram-бот від $279, AI-чат-бот від $339, AI-агент від $400, AI-відеоаналітика від $990 — найшвидший спосіб почати." },
+        { title: "Готові AI-рішення", price: "від $400", desc: "AI-агент від $400, AI-відеоаналітика від $990 — найшвидший спосіб почати." },
         { title: "Індивідуальний проєкт", price: "MVP від $1000", desc: "ШІ-рішення, побудоване з нуля під ваш процес: глибока інтеграція (1C, CRM, платіжні системи). Точна ціна — після затвердження ТЗ." },
       ],
       note: "Порядок оплати: 30% передоплата, решта поетапно. Консультація та первинна оцінка безкоштовні — з будь-якого регіону Узбекистану.",
@@ -626,9 +626,9 @@ export const CONTENT: ServicePageContent = {
       subtitle:
         "Найчастіші питання про впровадження ШІ в бізнес в Узбекистані — з короткими та конкретними відповідями.",
       items: [
-        { q: "Скільки коштує впровадження ШІ в Узбекистані?", a: "Готові рішення: Telegram-бот від $279, AI-чат-бот від $339, AI-агент від $400, AI-відеоаналітика від $990, індивідуальний проєкт (MVP) від $1000. Точна ціна — у письмовій пропозиції після безкоштовної консультації та ТЗ. Оплата: 30% передоплата, решта поетапно." },
-        { q: "Чи працює AI узбецькою мовою?", a: "Так. Рішення Tezcode працюють узбецькою (латиниця та кирилиця), російською й англійською — бот відповідає тією мовою, якою пише клієнт. Голосовий асистент Salomat AI також говорить узбецькою та російською." },
-        { q: "Скільки триває впровадження?", a: "Проста автоматизація (Telegram-бот, автоматичний звіт) — 1-2 тижні. Робочий MVP повнішого ШІ-рішення — 2-4 тижні. Щотижня показуємо демо, тож ви бачите результат у процесі." },
+        { q: "Скільки коштує впровадження ШІ в Узбекистані?", a: "Готові рішення: AI-агент від $400, AI-відеоаналітика від $990, індивідуальний проєкт (MVP) від $1000. Точна ціна — у письмовій пропозиції після безкоштовної консультації та ТЗ. Оплата: 30% передоплата, решта поетапно." },
+        { q: "Чи працює AI узбецькою мовою?", a: "Так. Рішення Tezcode працюють узбецькою (латиниця та кирилиця), російською й англійською — AI-агент відповідає тією мовою, якою пише клієнт. Голосовий асистент Salomat AI також говорить узбецькою та російською." },
+        { q: "Скільки триває впровадження?", a: "Проста автоматизація (наприклад, автоматичний звіт) — 1-2 тижні. Робочий MVP повнішого ШІ-рішення — 2-4 тижні. Щотижня показуємо демо, тож ви бачите результат у процесі." },
         { q: "Чи потрібно міняти наявні системи (1C, CRM)?", a: "Ні. Ми впроваджуємо ШІ всередину вашого поточного робочого потоку: будуємо інтеграції з 1C, amoCRM, Bitrix24, Google Sheets, Telegram і платіжними системами Click/Payme. Мета — зробити розумними ваші нинішні системи." },
         { q: "З чого почати?", a: "З безкоштовної 30-хвилинної консультації. На ній визначаємо, який повторюваний процес з'їдає найбільше часу, і кажемо, яке ШІ-рішення окупиться найшвидше. Технічні знання не потрібні. Консультація проходить онлайн або в офісі Tezcode (резидент IT Park): Ташкент, просп. Аміра Темура, 10." },
       ],
@@ -646,7 +646,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "Впровадження ШІ в бізнес в Узбекистані — Tezcode",
       description:
-        "Впровадження ШІ в бізнес по всьому Узбекистану: AI-агенти, чат-боти, автоматизація процесів, AI-відеоаналітика, голосові асистенти. Узбецькою та російською, з інтеграцією 1C/CRM. Tezcode — резидент IT Park, Ташкент.",
+        "Впровадження ШІ в бізнес по всьому Узбекистану: AI-агенти, автоматизація процесів, AI-відеоаналітика, голосові асистенти. Узбецькою та російською, з інтеграцією 1C/CRM. Tezcode — резидент IT Park, Ташкент.",
       serviceType: "Впровадження ШІ / рішення на основі штучного інтелекту",
     },
   },

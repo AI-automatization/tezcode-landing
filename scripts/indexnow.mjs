@@ -4,7 +4,7 @@
 //
 // Usage:
 //   node scripts/indexnow.mjs               # submit every URL from all locale sitemaps
-//   node scripts/indexnow.mjs /ai-chatbot   # submit specific path(s) only
+//   node scripts/indexnow.mjs /ai-agent     # submit specific path(s) only
 //
 // Run after each production deploy (or when key pages change).
 
