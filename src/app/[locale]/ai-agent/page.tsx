@@ -20,17 +20,17 @@ const META: Record<
   { title: string; description: string; ogTitle: string; ogDescription: string }
 > = {
   uz: {
-    title: "AI agent yaratish — biznes uchun $400 dan",
+    title: "AI agent (AI xodim) yaratish — biznes uchun $400 dan",
     description:
-      "Biznes uchun AI agent: mijoz javobsiz qolmaydi, buyurtma yo'qolmaydi, kunlik hisobot Telegramga o'zi keladi. $400 dan, 1–2 haftada. Butun O'zbekiston.",
+      "Biznes uchun AI agent — 24/7 ishlaydigan AI xodim: mijoz javobsiz qolmaydi, buyurtma yo'qolmaydi, kunlik hisobot Telegramga o'zi keladi. $400 dan, 1–2 haftada. Butun O'zbekiston.",
     ogTitle: "AI agent yaratish biznes uchun — Tezcode, Toshkent",
     ogDescription:
       "Ishni o'zi bajaradigan AI agentlar: savdo, buyurtma, hisobot, HR. Telegram/CRM/1C/POS integratsiyasi, uz/ru. Bepul konsultatsiya.",
   },
   ru: {
-    title: "Создание ИИ-агента (AI-агента) для бизнеса — Ташкент",
+    title: "Создание ИИ-агента (ИИ-сотрудника) для бизнеса — Ташкент",
     description:
-      "ИИ-агент для бизнеса: клиент не ждёт ответа, заказ не теряется, отчёт за день сам приходит в Telegram. От $400, запуск за 1–2 недели. Весь Узбекистан.",
+      "ИИ-агент для бизнеса — ИИ-сотрудник, который работает 24/7: клиент не ждёт ответа, заказ не теряется, отчёт за день сам приходит в Telegram. От $400, запуск за 1–2 недели. Весь Узбекистан.",
     ogTitle: "Создание ИИ-агента (AI) для бизнеса — Tezcode, Ташкент",
     ogDescription:
       "ИИ-агенты (AI-агенты), которые сами выполняют работу: продажи, заказы, отчёты, HR. Интеграция Telegram/CRM/1C/POS, uz/ru. Бесплатная консультация.",

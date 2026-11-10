@@ -572,6 +572,8 @@ export function getProductSchemas() {
       description: "Uyga hamshira/medik chaqirish platformasi — ilovadan buyurtma, medik uyga keladi; Salomat AI ovozli tibbiy assistent",
       url: "https://hamshirago.uz",
       category: "HealthApplication",
+      operatingSystem: "Web, Android",
+      downloadUrl: "https://play.google.com/store/apps/details?id=com.hamshirago.client",
     },
     {
       name: "ClinicaGo",
@@ -588,7 +590,8 @@ export function getProductSchemas() {
     description: p.description,
     url: p.url,
     applicationCategory: p.category,
-    operatingSystem: "Web",
+    operatingSystem: p.operatingSystem ?? "Web",
+    ...(p.downloadUrl ? { downloadUrl: p.downloadUrl } : {}),
     provider: {
       "@type": "Organization",
       name: SITE_NAME,

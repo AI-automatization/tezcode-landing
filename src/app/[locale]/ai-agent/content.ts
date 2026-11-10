@@ -26,12 +26,12 @@ export const AI_AGENT_PRICE_Q = {
 export const CONTENT: ServicePageContent = {
   uz: {
     hero: {
-      badge: "AI agentlar — Tezcode",
+      badge: "AI xodim — 24/7 ishlaydi",
       title1: "Biznes uchun",
       titleAccent: "AI agent",
       title2: "yaratish",
       subtitle:
-        "Biznesingizga AI agent kerakmi? Tezcode Telegram yoki saytda mijozlarga javob beradigan, buyurtmalarni qabul qilib CRMga yozadigan va hisobot tayyorlaydigan agentlarni buyurtma asosida yaratadi. Toshkent va butun O'zbekiston uchun, o'zbek va rus tillarida. Narx $400 dan. Bepul konsultatsiyada bitta vazifani tanlaymiz; ish hajmi, integratsiyalar va muddatni yozma taklifda belgilaymiz.",
+        "Biznesingizga AI agent, ya'ni AI xodim kerakmi? Tezcode Telegram yoki saytda mijozlarga javob beradigan, buyurtmalarni qabul qilib CRMga yozadigan va hisobot tayyorlaydigan agentlarni buyurtma asosida yaratadi. Toshkent va butun O'zbekiston uchun, o'zbek va rus tillarida. Narx $400 dan. Bepul konsultatsiyada bitta vazifani tanlaymiz; ish hajmi, integratsiyalar va muddatni yozma taklifda belgilaymiz.",
       trust:
         "Toshkent va butun O'zbekiston • IT Park rasmiy rezidenti • Bepul 30 daqiqa konsultatsiya • To'lov: 30% oldindan",
       ctaPrimary: "Bepul konsultatsiya so'rang",
@@ -274,12 +274,12 @@ export const CONTENT: ServicePageContent = {
 
   ru: {
     hero: {
-      badge: "ИИ-агенты (AI) — Tezcode",
+      badge: "ИИ-сотрудник — работает 24/7",
       title1: "Создание",
       titleAccent: "ИИ-агента",
       title2: "для бизнеса",
       subtitle:
-        "Tezcode разрабатывает ИИ-агентов на заказ для бизнеса в Ташкенте и по всему Узбекистану. Агент обрабатывает обращение в Telegram или на сайте, записывает данные в CRM и выполняет согласованные действия. Начинаем с одной задачи в продажах, заказах или отчётности на узбекском и русском языках. Стоимость — от $400; объём работ, интеграции и сроки фиксируем в письменном предложении после бесплатной консультации.",
+        "Tezcode разрабатывает ИИ-агентов (ИИ-сотрудников) на заказ для бизнеса в Ташкенте и по всему Узбекистану. Агент обрабатывает обращение в Telegram или на сайте, записывает данные в CRM и выполняет согласованные действия. Начинаем с одной задачи в продажах, заказах или отчётности на узбекском и русском языках. Стоимость — от $400; объём работ, интеграции и сроки фиксируем в письменном предложении после бесплатной консультации.",
       trust:
         "Ташкент и весь Узбекистан • Официальный резидент IT Park • Бесплатная 30-мин консультация • Оплата: 30% предоплата",
       ctaPrimary: "Бесплатная консультация",
