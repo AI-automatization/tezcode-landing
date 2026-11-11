@@ -515,6 +515,24 @@ export const TEAM_PROFILES: TeamProfile[] = [
     metaDescription:
       "Emirhan Ertan — Tezcode jamoasida WeWatch co-founder va SEO mutaxassisi. WeWatch.uz. HTML, CSS, JavaScript, React Native.",
   },
+  {
+    slug: "jamoliddin-sadriddinov",
+    name: "Jamoliddin Sadriddinov",
+    role: "AI Engineer",
+    photo: "/team/jamoliddin-sadriddinov.jpg",
+    bio: [
+      "Jamoliddin Sadriddinov — Tezcode jamoasida AI Engineer. U React, Redux Toolkit, Node.js, JavaScript, TailwindCSS, DaisyUI va MongoDB texnologiyalari bilan ishlaydi, versiyalarni boshqarishda Git va GitHub'dan foydalanadi.",
+      "Jamoliddin Sedap tizimini va LMS tizimini qurgan. Sedap loyihasida frontend qismini yozgan, LMS loyihasida esa asosan backend ustida ishlagan.",
+    ],
+    skills: ["React", "RTK", "Node.js", "JavaScript", "TailwindCSS", "DaisyUI", "MongoDB", "Git", "GitHub"],
+    projects: [],
+    telegram: "jamkaILZ",
+    linkedin: "https://www.linkedin.com/in/jamoliddin-sadriddinov-3800863b1/",
+    knowsAbout: ["Frontend Development", "Backend Development", "Full-Stack Development", "AI", "LMS tizimlari"],
+    metaTitle: "Jamoliddin Sadriddinov — Tezcode AI Engineer",
+    metaDescription:
+      "Jamoliddin Sadriddinov — Tezcode jamoasida AI Engineer. React, Node.js, MongoDB, TailwindCSS. Sedap va LMS tizimlarini qurgan.",
+  },
 ];
 
 export function getProfile(slug: string): TeamProfile | undefined {
