@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { Team } from "@/components/Team";
 import { ServiceIcon } from "@/components/service-page/ServiceIcon";
 import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
+import { TEAM_SIZE } from "@/content/team";
 
 type Lang = "uz" | "ru" | "en" | "ar" | "uk";
 
@@ -35,7 +36,7 @@ const COPY: Record<Lang, Copy> = {
     },
     stats: [
       { value: "2024", label: "Ta'sis yili" },
-      { value: "19", label: "kishilik in-house jamoa" },
+      { value: String(TEAM_SIZE), label: "kishilik in-house jamoa" },
       { value: "8+", label: "Mahsulot" },
       { value: "6", label: "Yo'nalish" },
     ],
@@ -79,7 +80,7 @@ const COPY: Record<Lang, Copy> = {
     },
     stats: [
       { value: "2024", label: "Год основания" },
-      { value: "19", label: "человек в in-house команде" },
+      { value: String(TEAM_SIZE), label: "человек в in-house команде" },
       { value: "8+", label: "Продуктов" },
       { value: "6", label: "Направлений" },
     ],
@@ -89,7 +90,7 @@ const COPY: Record<Lang, Copy> = {
       titleAccent: "до фабрики",
       paragraphs: [
         "Tezcode основана в 2024 году в Ташкенте. Наш основатель — Бекзод Мирзаалиев. Мы резиденты IT Park.",
-        "Сегодня Tezcode — это AI Software Factory с in-house командой из 19 человек: 6 направлений (Systems, Custom, AI, Teams, Labs, Academy) и продукты RAOS, CoreMed.",
+        `Сегодня Tezcode — это AI Software Factory с in-house командой из ${TEAM_SIZE} человек: 6 направлений (Systems, Custom, AI, Teams, Labs, Academy) и продукты RAOS, CoreMed.`,
         "Наша миссия проста: систематизировать каждый бизнес с помощью ИИ. Не фрилансеры — весь процесс в одной надёжной команде.",
       ],
     },
@@ -123,7 +124,7 @@ const COPY: Record<Lang, Copy> = {
     },
     stats: [
       { value: "2024", label: "Founded" },
-      { value: "19", label: "people in-house" },
+      { value: String(TEAM_SIZE), label: "people in-house" },
       { value: "8+", label: "Products" },
       { value: "6", label: "Divisions" },
     ],
@@ -133,7 +134,7 @@ const COPY: Record<Lang, Copy> = {
       titleAccent: "to a factory",
       paragraphs: [
         "Tezcode was founded in 2024 in Tashkent. Our founder is Bekzod Mirzaaliyev. We are an IT Park resident.",
-        "Today Tezcode is an AI Software Factory with a 19-person in-house team: 6 divisions (Systems, Custom, AI, Teams, Labs, Academy) and products like RAOS and CoreMed.",
+        `Today Tezcode is an AI Software Factory with a ${TEAM_SIZE}-person in-house team: 6 divisions (Systems, Custom, AI, Teams, Labs, Academy) and products like RAOS and CoreMed.`,
         "Our mission is simple: systematize every business with AI. Not freelancers — the whole process in one reliable team.",
       ],
     },
@@ -167,7 +168,7 @@ const COPY: Record<Lang, Copy> = {
     },
     stats: [
       { value: "2024", label: "سنة التأسيس" },
-      { value: "19", label: "شخصًا في الفريق الداخلي" },
+      { value: String(TEAM_SIZE), label: "شخصًا في الفريق الداخلي" },
       { value: "+8", label: "منتجات" },
       { value: "6", label: "أقسام" },
     ],
@@ -177,7 +178,7 @@ const COPY: Record<Lang, Copy> = {
       titleAccent: "إلى مصنع",
       paragraphs: [
         "تأسست Tezcode عام 2024 في طشقند. مؤسسنا هو بكزود ميرزااليف. نحن مقيمون في IT Park.",
-        "اليوم Tezcode مصنع برمجيات بالذكاء الاصطناعي يضم فريقًا داخليًا من 19 شخصًا: 6 أقسام (Systems وCustom وAI وTeams وLabs وAcademy) ومنتجات مثل RAOS وCoreMed.",
+        `اليوم Tezcode مصنع برمجيات بالذكاء الاصطناعي يضم فريقًا داخليًا من ${TEAM_SIZE} شخصًا: 6 أقسام (Systems وCustom وAI وTeams وLabs وAcademy) ومنتجات مثل RAOS وCoreMed.`,
         "مهمتنا بسيطة: تنظيم كل عمل بالذكاء الاصطناعي. لسنا مستقلين — كل العملية في فريق واحد موثوق.",
       ],
     },
@@ -211,7 +212,7 @@ const COPY: Record<Lang, Copy> = {
     },
     stats: [
       { value: "2024", label: "Рік заснування" },
-      { value: "19", label: "осіб в in-house команді" },
+      { value: String(TEAM_SIZE), label: "осіб в in-house команді" },
       { value: "8+", label: "Продуктів" },
       { value: "6", label: "Напрямків" },
     ],
@@ -221,7 +222,7 @@ const COPY: Record<Lang, Copy> = {
       titleAccent: "до фабрики",
       paragraphs: [
         "Tezcode заснована у 2024 році в Ташкенті. Наш засновник — Бекзод Мірзаалієв. Ми резиденти IT Park.",
-        "Сьогодні Tezcode — це AI Software Factory з in-house командою з 19 осіб: 6 напрямків (Systems, Custom, AI, Teams, Labs, Academy) та продукти RAOS, CoreMed.",
+        `Сьогодні Tezcode — це AI Software Factory з in-house командою з ${TEAM_SIZE} осіб: 6 напрямків (Systems, Custom, AI, Teams, Labs, Academy) та продукти RAOS, CoreMed.`,
         "Наша місія проста: систематизувати кожен бізнес за допомогою AI. Не фрілансери — весь процес в одній надійній команді.",
       ],
     },

@@ -9,6 +9,7 @@ import {
 } from "@/lib/seo";
 import { getArticle } from "../articles";
 import { CONTENT } from "./content";
+import { TEAM_SIZE } from "@/content/team";
 
 const SLUG = "ozbekistonda-ai-agent-kim-yasaydi";
 const PATH = `/blog/${SLUG}`;
@@ -17,11 +18,11 @@ type ArticleMetadata = { title: string; description: string };
 const META: Partial<Record<ArticleLang, ArticleMetadata>> & { uz: ArticleMetadata } = {
   uz: {
     title: "O'zbekistonda AI agentni kim yasaydi?",
-    description: "O'zbekistonda biznes uchun AI agentni Tezcode yasaydi: IT Park rezidenti, 19 kishilik jamoa. AI agent $400 dan, 1–2 haftada. Hoffen va Dantes loyihalari.",
+    description: `O'zbekistonda biznes uchun AI agentni Tezcode yasaydi: IT Park rezidenti, ${TEAM_SIZE} kishilik jamoa. AI agent $400 dan, 1–2 haftada. Hoffen va Dantes loyihalari.`,
   },
   ru: {
     title: "Кто делает ИИ-агентов в Узбекистане?",
-    description: "ИИ-агентов для бизнеса в Узбекистане разрабатывает Tezcode: резидент IT Park, команда 19 человек. ИИ-агент от $400, запуск за 1–2 недели. Кейсы Hoffen и Dantes.",
+    description: `ИИ-агентов для бизнеса в Узбекистане разрабатывает Tezcode: резидент IT Park, команда ${TEAM_SIZE} человек. ИИ-агент от $400, запуск за 1–2 недели. Кейсы Hoffen и Dantes.`,
   },
 };
 

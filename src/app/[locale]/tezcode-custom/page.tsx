@@ -6,6 +6,7 @@ import {
   getServiceSchema,
 } from "@/lib/seo";
 import { CONTENT } from "./content";
+import { TEAM_SIZE } from "@/content/team";
 
 const PATH = "/tezcode-custom";
 
@@ -14,7 +15,7 @@ const PATH = "/tezcode-custom";
 const META: Record<string, { title: string; description: string; ogTitle: string; ogDescription: string }> = {
   uz: {
     title: "TezCode Custom — buyurtma dasturiy ta'minot, Toshkent",
-    description: "TezCode Custom: noldan buyurtma asosidagi dasturiy mahsulot — biznesingizga moslab qurilgan ERP, CRM, marketplace, ichki tizim yoki AI ilova. MVP $1000 dan, 2-4 haftada, to'lov 30% oldindan, source code 100% sizniki. 19 kishilik in-house jamoa, Toshkent.",
+    description: `TezCode Custom: noldan buyurtma asosidagi dasturiy mahsulot — biznesingizga moslab qurilgan ERP, CRM, marketplace, ichki tizim yoki AI ilova. MVP $1000 dan, 2-4 haftada, to'lov 30% oldindan, source code 100% sizniki. ${TEAM_SIZE} kishilik in-house jamoa, Toshkent.`,
     ogTitle: "TezCode Custom — buyurtma dasturiy mahsulot",
     ogDescription: "Sizning biznesingizga moslab qurilgan dasturiy mahsulot. MVP $1000 dan, 2-4 haftada, to'lov 30% oldindan, source code 100% sizniki.",
   },

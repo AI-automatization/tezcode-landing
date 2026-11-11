@@ -218,7 +218,7 @@
   },
   "team": {
     "title": "Bizning jamoa",
-    "subtitle": "19 kishilik jamoa — har biri o'z loyihasi bilan",
+    "subtitle": "{count} kishilik jamoa — har biri o'z loyihasi bilan",
     "members": {
       "bekzod": {
         "name": "Bekzod Mirzaaliyev",

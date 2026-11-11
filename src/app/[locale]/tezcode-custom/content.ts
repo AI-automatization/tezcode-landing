@@ -1,4 +1,5 @@
 import type { ServicePageContent } from "@/components/service-page/types";
+import { TEAM_SIZE } from "@/content/team";
 
 // Content for /tezcode-custom — TezCode Custom division: fully bespoke software
 // built from scratch for one client (project-based). Angle: your OWN product,
@@ -51,7 +52,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "bizga ishonasiz",
       subtitle: "Bizni tayyor SaaS va freelancerlardan ajratib turadigan asosiy farqlar.",
       items: [
-        { tag: "01", title: "19 kishilik in-house jamoa", desc: "Toshkentdagi ofisimizda. Freelancer emas — jamoa. Backend, frontend, mobil, AI, DevOps bitta loyihada birga ishlaydi." },
+        { tag: "01", title: `${TEAM_SIZE} kishilik in-house jamoa`, desc: "Toshkentdagi ofisimizda. Freelancer emas — jamoa. Backend, frontend, mobil, AI, DevOps bitta loyihada birga ishlaydi." },
         { tag: "02", title: "AI bilan tezroq MVP", desc: "Claude va zamonaviy AI vositalari kundalik ishchi vositamiz. Shuning uchun to'liq buyurtma MVP odatda 2-4 haftada tayyor." },
         { tag: "03", title: "Shaffof to'lov — 30% oldindan", desc: "Boshlash uchun atigi 30% — qolgani loyiha bosqichlari bo'yicha to'lanadi." },
         { tag: "04", title: "Source code 100% sizniki", desc: "Kod to'liq sizga o'tadi, GitHub sizning hisobingizda. Vendor lock-in yo'q — mahsulot va uning kodi butunlay sizniki." },
@@ -92,7 +93,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "TezCode Custom — buyurtma dasturiy mahsulot, Toshkent",
       description:
-        "Noldan buyurtma asosidagi dasturiy mahsulot: ERP, CRM, marketplace, ichki tizim, AI ilova va integratsiya. Biznesingizga moslab qurilgan, MVP $1000 dan, 2-4 haftada, source code 100% sizniki. AI Software Factory, 19 kishilik in-house jamoa, Toshkent.",
+        `Noldan buyurtma asosidagi dasturiy mahsulot: ERP, CRM, marketplace, ichki tizim, AI ilova va integratsiya. Biznesingizga moslab qurilgan, MVP $1000 dan, 2-4 haftada, source code 100% sizniki. AI Software Factory, ${TEAM_SIZE} kishilik in-house jamoa, Toshkent.`,
       serviceType: "Buyurtma dasturiy ta'minot ishlab chiqish",
     },
   },
@@ -142,7 +143,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "заказной продукт",
       subtitle: "Главные отличия, выделяющие нас среди готовых SaaS и фрилансеров.",
       items: [
-        { tag: "01", title: "in-house команда из 19 человек", desc: "В офисе в Ташкенте. Не фрилансеры — команда. Backend, frontend, mobile, ИИ, DevOps работают над одним проектом вместе." },
+        { tag: "01", title: `in-house команда из ${TEAM_SIZE} человек`, desc: "В офисе в Ташкенте. Не фрилансеры — команда. Backend, frontend, mobile, ИИ, DevOps работают над одним проектом вместе." },
         { tag: "02", title: "Быстрее MVP с ИИ", desc: "Claude и современные ИИ-инструменты — часть нашей повседневной работы. Поэтому полноценный заказной MVP обычно готов за 2-4 недели." },
         { tag: "03", title: "Прозрачная оплата — 30% предоплата", desc: "Для старта достаточно 30% — остальное по этапам проекта." },
         { tag: "04", title: "Исходный код на 100% ваш", desc: "Код полностью передаётся вам, GitHub на вашем аккаунте. Без vendor lock-in — продукт и его код целиком ваши." },
@@ -183,7 +184,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "TezCode Custom — заказной программный продукт, Ташкент",
       description:
-        "Заказная разработка ПО с нуля: ERP, CRM, marketplace, внутренние системы, ИИ-приложения и интеграции. Построено под ваш бизнес, MVP от $1000, за 2-4 недели, исходный код на 100% ваш. AI Software Factory, in-house команда из 19 человек, Ташкент.",
+        `Заказная разработка ПО с нуля: ERP, CRM, marketplace, внутренние системы, ИИ-приложения и интеграции. Построено под ваш бизнес, MVP от $1000, за 2-4 недели, исходный код на 100% ваш. AI Software Factory, in-house команда из ${TEAM_SIZE} человек, Ташкент.`,
       serviceType: "Заказная разработка программного обеспечения",
     },
   },
@@ -233,7 +234,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "bespoke products",
       subtitle: "The key differences that set us apart from off-the-shelf SaaS and freelancers.",
       items: [
-        { tag: "01", title: "19-person in-house team", desc: "In our Tashkent office. Not freelancers — a team. Backend, frontend, mobile, AI, DevOps work on one project together." },
+        { tag: "01", title: `${TEAM_SIZE}-person in-house team`, desc: "In our Tashkent office. Not freelancers — a team. Backend, frontend, mobile, AI, DevOps work on one project together." },
         { tag: "02", title: "Faster MVP with AI", desc: "Claude and modern AI tools are our daily workhorse. That's why a full bespoke MVP is usually ready in 2-4 weeks." },
         { tag: "03", title: "Transparent payment — 30% upfront", desc: "Just 30% to start — the rest is paid per project stage." },
         { tag: "04", title: "Source code 100% yours", desc: "The code is handed over to you in full, GitHub on your account. No vendor lock-in — the product and its code are entirely yours." },
@@ -274,7 +275,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "TezCode Custom — bespoke software product, Tashkent",
       description:
-        "Bespoke software built from scratch: ERP, CRM, marketplace, internal tools, AI-powered apps and integrations. Shaped to your business, MVP from $1000, in 2-4 weeks, source code 100% yours. AI Software Factory, 19-person in-house team, Tashkent.",
+        `Bespoke software built from scratch: ERP, CRM, marketplace, internal tools, AI-powered apps and integrations. Shaped to your business, MVP from $1000, in 2-4 weeks, source code 100% yours. AI Software Factory, ${TEAM_SIZE}-person in-house team, Tashkent.`,
       serviceType: "Bespoke / custom software development",
     },
   },
@@ -324,7 +325,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "المنتجات المخصصة",
       subtitle: "الفروق الرئيسية التي تميّزنا عن أنظمة SaaS الجاهزة والمستقلين.",
       items: [
-        { tag: "01", title: "فريق داخلي من 19 شخصًا", desc: "في مكتبنا بطشقند. ليسوا مستقلين — فريق. Backend وfrontend وجوال وAI وDevOps يعملون على مشروع واحد معاً." },
+        { tag: "01", title: `فريق داخلي من ${TEAM_SIZE} شخصًا`, desc: "في مكتبنا بطشقند. ليسوا مستقلين — فريق. Backend وfrontend وجوال وAI وDevOps يعملون على مشروع واحد معاً." },
         { tag: "02", title: "MVP أسرع مع AI", desc: "Claude وأدوات الذكاء الاصطناعي الحديثة أداتنا اليومية. لذلك عادة يكون MVP مخصص كامل جاهزاً خلال 2-4 أسابيع." },
         { tag: "03", title: "دفع شفاف — 30% مقدمًا", desc: "يكفي 30% للبدء — والباقي حسب مراحل المشروع." },
         { tag: "04", title: "الكود المصدري لك 100%", desc: "يُسلَّم الكود لك بالكامل، GitHub على حسابك. لا vendor lock-in — المنتج وكوده لك تماماً." },
@@ -365,7 +366,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "TezCode Custom — منتج برمجي مخصص، طشقند",
       description:
-        "تطوير برمجيات مخصصة من الصفر: ERP، CRM، marketplace، أنظمة داخلية، تطبيقات AI وتكاملات. مصمم لأعمالك، MVP من 1000$، خلال 2-4 أسابيع، الكود المصدري لك 100%. مصنع برمجيات بالذكاء الاصطناعي، فريق داخلي من 19 شخصًا، طشقند.",
+        `تطوير برمجيات مخصصة من الصفر: ERP، CRM، marketplace، أنظمة داخلية، تطبيقات AI وتكاملات. مصمم لأعمالك، MVP من 1000$، خلال 2-4 أسابيع، الكود المصدري لك 100%. مصنع برمجيات بالذكاء الاصطناعي، فريق داخلي من ${TEAM_SIZE} شخصًا، طشقند.`,
       serviceType: "تطوير البرمجيات المخصصة",
     },
   },
@@ -415,7 +416,7 @@ export const CONTENT: ServicePageContent = {
       titleAccent: "довіряють нам",
       subtitle: "Головні відмінності, що вирізняють нас серед готових SaaS і фрілансерів.",
       items: [
-        { tag: "01", title: "in-house команда з 19 осіб", desc: "В офісі у Ташкенті. Не фрілансери — команда. Backend, frontend, mobile, AI, DevOps працюють над одним проектом разом." },
+        { tag: "01", title: `in-house команда з ${TEAM_SIZE} осіб`, desc: "В офісі у Ташкенті. Не фрілансери — команда. Backend, frontend, mobile, AI, DevOps працюють над одним проектом разом." },
         { tag: "02", title: "Швидший MVP з AI", desc: "Claude і сучасні AI-інструменти — наш щоденний робочий інструмент. Тому повноцінний замовний MVP зазвичай готовий за 2-4 тижні." },
         { tag: "03", title: "Прозора оплата — 30% передоплата", desc: "Для старту достатньо 30% — решта за етапами проєкту." },
         { tag: "04", title: "Вихідний код на 100% ваш", desc: "Код повністю передається вам, GitHub на вашому акаунті. Без vendor lock-in — продукт і його код цілком ваші." },
@@ -456,7 +457,7 @@ export const CONTENT: ServicePageContent = {
     service: {
       name: "TezCode Custom — замовний програмний продукт, Ташкент",
       description:
-        "Замовна розробка ПЗ з нуля: ERP, CRM, marketplace, внутрішні системи, AI-застосунки та інтеграції. Побудовано під ваш бізнес, MVP від $1000, за 2-4 тижні, вихідний код на 100% ваш. AI Software Factory, in-house команда з 19 осіб, Ташкент.",
+        `Замовна розробка ПЗ з нуля: ERP, CRM, marketplace, внутрішні системи, AI-застосунки та інтеграції. Побудовано під ваш бізнес, MVP від $1000, за 2-4 тижні, вихідний код на 100% ваш. AI Software Factory, in-house команда з ${TEAM_SIZE} осіб, Ташкент.`,
       serviceType: "Замовна розробка програмного забезпечення",
     },
   },

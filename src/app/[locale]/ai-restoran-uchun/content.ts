@@ -1,4 +1,5 @@
 import type { ServicePageContent } from "@/components/service-page/types";
+import { TEAM_SIZE } from "@/content/team";
 
 // Industry landing /ai-restoran-uchun — target queries: "restoran uchun dastur",
 // "restoran avtomatlashtirish", "kafe uchun AI", "restoran POS tizimi",
@@ -73,7 +74,7 @@ export const CONTENT: ServicePageContent = {
         { name: "POS + AI bitta jamoadan", desc: "Kassa, AI agent va video analitikani alohida vendorlardan yig'maysiz — hammasini bitta jamoa bog'lab, birga ishlashini ta'minlaydi." },
         { name: "O'zbek va rus tilida AI agent", desc: "AI agent o'zbek (lotin/kirill) va rus tilida tabiiy ishlaydi — mijozingiz o'z tilida bemalol bron va buyurtma qiladi." },
         { name: "IT Park rasmiy rezidenti", desc: "Tezcode — IT Park Uzbekistan rezidenti (guvohnoma №6237). Rasmiy shartnoma va hujjatlashtirilgan majburiyatlar bilan ishlaymiz." },
-        { name: "19 kishilik in-house jamoa", desc: "Frilanser emas — Toshkentdagi doimiy jamoa. O'rnatilgandan keyin ham qo'llab-quvvatlash va rivojlantirish davom etadi." },
+        { name: `${TEAM_SIZE} kishilik in-house jamoa`, desc: "Frilanser emas — Toshkentdagi doimiy jamoa. O'rnatilgandan keyin ham qo'llab-quvvatlash va rivojlantirish davom etadi." },
         { name: "Fiskal / soliq talablariga moslik", desc: "RAOS onlayn nazorat-kassa (NKA) va fiskal hujjat talablari bilan ishlaydi — restoraningiz qonuniy va tinch ishlaydi." },
       ],
     },
@@ -192,7 +193,7 @@ export const CONTENT: ServicePageContent = {
         { name: "POS + AI от одной команды", desc: "Кассу, ИИ-агента и видеоаналитику не нужно собирать у разных вендоров — всё связывает воедино одна команда и обеспечивает совместную работу." },
         { name: "ИИ-агент на узбекском и русском", desc: "ИИ-агент (AI) естественно работает на узбекском (латиница/кириллица) и русском — ваш клиент свободно бронирует и заказывает на своём языке." },
         { name: "Официальный резидент IT Park", desc: "Tezcode — резидент IT Park Uzbekistan (свидетельство №6237). Работаем по официальному договору с задокументированными обязательствами." },
-        { name: "In-house команда из 19 человек", desc: "Не фрилансер — постоянная команда в Ташкенте. Поддержка и развитие продолжаются после внедрения." },
+        { name: `In-house команда из ${TEAM_SIZE} человек`, desc: "Не фрилансер — постоянная команда в Ташкенте. Поддержка и развитие продолжаются после внедрения." },
         { name: "Соответствие фискальным требованиям", desc: "RAOS работает с онлайн-ККМ (НКА) и фискальными документами — ваш ресторан работает легально и спокойно." },
       ],
     },
@@ -428,7 +429,7 @@ export const CONTENT: ServicePageContent = {
         { name: "POS + AI من فريق واحد", desc: "لا تجمع الكاشير والوكيل وتحليلات الفيديو من مورّدين مختلفين — فريق واحد يربطها ويضمن عملها معًا." },
         { name: "وكيل بالأوزبكية والروسية", desc: "وكيل AI يعمل بطبيعية بالأوزبكية (لاتيني/سيريلي) والروسية — يحجز عميلك ويطلب بلغته بحرية." },
         { name: "مقيم رسمي في IT Park", desc: "Tezcode مقيم في IT Park Uzbekistan (شهادة №6237). نعمل بعقد رسمي وبالتزامات موثّقة." },
-        { name: "فريق داخلي من 19 شخصًا", desc: "لسنا مستقلين — فريق دائم في طشقند. يستمر الدعم والتطوير بعد التركيب." },
+        { name: `فريق داخلي من ${TEAM_SIZE} شخصًا`, desc: "لسنا مستقلين — فريق دائم في طشقند. يستمر الدعم والتطوير بعد التركيب." },
         { name: "التوافق مع المتطلبات الضريبية", desc: "يعمل RAOS مع الكاشير الضريبي الإلكتروني والمستندات الضريبية — يعمل مطعمك بشكل قانوني ومطمئن." },
       ],
     },
@@ -546,7 +547,7 @@ export const CONTENT: ServicePageContent = {
         { name: "POS + AI від однієї команди", desc: "Касу, AI-агента та відеоаналітику не збираєте з різних вендорів — усе пов'язує одна команда й забезпечує спільну роботу." },
         { name: "AI-агент узбецькою та російською", desc: "AI-агент природно працює узбецькою (латиниця/кирилиця) та російською — ваш клієнт вільно бронює й замовляє своєю мовою." },
         { name: "Офіційний резидент IT Park", desc: "Tezcode — резидент IT Park Uzbekistan (свідоцтво №6237). Працюємо за офіційним договором із задокументованими зобов'язаннями." },
-        { name: "In-house команда з 19 осіб", desc: "Не фрилансер — постійна команда в Ташкенті. Підтримка й розвиток тривають після впровадження." },
+        { name: `In-house команда з ${TEAM_SIZE} осіб`, desc: "Не фрилансер — постійна команда в Ташкенті. Підтримка й розвиток тривають після впровадження." },
         { name: "Відповідність фіскальним вимогам", desc: "RAOS працює з онлайн-РРО та фіскальними документами — ваш ресторан працює легально й спокійно." },
       ],
     },

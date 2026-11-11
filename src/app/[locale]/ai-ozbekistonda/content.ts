@@ -1,4 +1,5 @@
 import type { ServicePageContent } from "@/components/service-page/types";
+import { TEAM_SIZE } from "@/content/team";
 
 // Country-level umbrella /ai-ozbekistonda — target queries: RU «внедрение ИИ в
 // бизнес Узбекистан» / «ИИ для бизнеса Узбекистан» (aisolution.uz's
@@ -22,7 +23,7 @@ export const CONTENT: ServicePageContent = {
         "Tezcode — Toshkentdagi AI kompaniya va AI Software Factory. Biz O'zbekistonda biznesga AI joriy qilamiz: takroriy ishlarni (mijozga javob, hisobot, buyurtma qayd etish, kamera nazorati) sun'iy intellektga topshirib, jamoani asosiy ishga bo'shatamiz. AI agentlar, jarayon avtomatizatsiyasi, AI video analitika va ovozli assistentlar o'zbek (lotin va kiril), rus va ingliz tillarida ishlaydi hamda 1C, CRM, Telegram, Click/Payme bilan integratsiya qilinadi.",
       // TODO(Sardor): real raqam qo'yish — nechta loyiha/joriy etish bo'lganini
       // trust satriga qo'shish (raqobatchi "120+ внедрений" deb yozadi).
-      trust: "IT Park rezidenti (№6237) • 19 kishilik jamoa • Google reytingi 5.0 • Bepul 30 daqiqa konsultatsiya",
+      trust: `IT Park rezidenti (№6237) • ${TEAM_SIZE} kishilik jamoa • Google reytingi 5.0 • Bepul 30 daqiqa konsultatsiya`,
       ctaPrimary: "Bepul konsultatsiya so'rang",
       ctaSecondary: "Nimalarni joriy qilamiz?",
     },
@@ -163,7 +164,7 @@ export const CONTENT: ServicePageContent = {
         "Tezcode — AI-компания и AI Software Factory в Ташкенте. Мы внедряем ИИ в бизнес в Узбекистане: передаём рутинные задачи (ответы клиентам, отчёты, регистрация заказов, контроль по камерам) искусственному интеллекту. ИИ-агенты, автоматизация процессов, видеоаналитика и голосовые ассистенты работают на узбекском (латиница и кириллица), русском и английском и интегрируются с 1C, CRM, Telegram, Click/Payme.",
       // TODO(Sardor): real raqam qo'yish — количество реализованных внедрений
       // для trust-строки (у конкурента цитируется «120+ внедрений»).
-      trust: "Резидент IT Park (№6237) • Команда 19 человек • Рейтинг Google 5.0 • Бесплатная 30-мин консультация",
+      trust: `Резидент IT Park (№6237) • Команда ${TEAM_SIZE} человек • Рейтинг Google 5.0 • Бесплатная 30-мин консультация`,
       ctaPrimary: "Бесплатная консультация",
       ctaSecondary: "Что мы внедряем?",
     },
@@ -304,7 +305,7 @@ export const CONTENT: ServicePageContent = {
         "AI implementation for business in Uzbekistan means handing repetitive work — customer replies, reports, order intake, camera monitoring — to artificial intelligence so your team can focus on what matters. Tezcode, an AI Software Factory in Tashkent and an official IT Park Uzbekistan resident, implements AI agents, process automation, AI video analytics and voice assistants nationwide: solutions work in Uzbek (Latin and Cyrillic), Russian and English, and integrate with the systems you already run — 1C, CRM, Telegram, Click/Payme.",
       // TODO(Sardor): real raqam qo'yish — number of completed implementations
       // for the trust line (the competitor quotes "120+ implementations").
-      trust: "IT Park resident (No. 6237) • 19-person team • Google rating 5.0 • Free 30-min consultation",
+      trust: `IT Park resident (No. 6237) • ${TEAM_SIZE}-person team • Google rating 5.0 • Free 30-min consultation`,
       ctaPrimary: "Book free consultation",
       ctaSecondary: "What do we implement?",
     },
@@ -443,7 +444,7 @@ export const CONTENT: ServicePageContent = {
       title2: "",
       subtitle:
         "تطبيق الذكاء الاصطناعي في الأعمال في أوزبكستان يعني تسليم المهام المتكررة — الرد على العملاء، التقارير، تسجيل الطلبات، مراقبة الكاميرات — إلى الذكاء الاصطناعي ليتفرغ فريقك للأهم. Tezcode — مصنع برمجيات الذكاء الاصطناعي في طشقند ومقيم رسمي في IT Park Uzbekistan — يطبّق وكلاء AI وأتمتة العمليات وتحليلات الفيديو والمساعدين الصوتيين في كل البلاد: تعمل الحلول بالأوزبكية والروسية والإنجليزية وتتكامل مع أنظمتك الحالية — 1C وCRM وTelegram وClick/Payme.",
-      trust: "مقيم في IT Park (رقم 6237) • فريق من 19 شخصًا • تقييم Google ‏5.0 • استشارة 30 دقيقة مجانية",
+      trust: `مقيم في IT Park (رقم 6237) • فريق من ${TEAM_SIZE} شخصًا • تقييم Google ‏5.0 • استشارة 30 دقيقة مجانية`,
       ctaPrimary: "اطلب استشارة مجانية",
       ctaSecondary: "ماذا نطبّق؟",
     },

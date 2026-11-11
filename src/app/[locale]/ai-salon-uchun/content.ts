@@ -1,4 +1,5 @@
 import type { ServicePageContent } from "@/components/service-page/types";
+import { TEAM_SIZE } from "@/content/team";
 
 // Industry landing /ai-salon-uchun — target queries: "go'zallik saloni uchun
 // dastur", "salon avtomatlashtirish", "onlayn bron dasturi",
@@ -71,7 +72,7 @@ export const CONTENT: ServicePageContent = {
         { name: "O'zbek va rus tilida AI agent", desc: "AI agent o'zbek (lotin/kirill) va rus tilida tabiiy ishlaydi — mijozingiz o'z tilida bemalol bron qiladi. Tayyor xorijiy platformalar aynan shu yerda qiynaladi." },
         { name: "Instagram + Telegram birga", desc: "O'zbekistonda salon mijozi ko'proq Instagram va Telegram'da. AI agent ikkala kanalda ham bron oladi — mijoz qayerdan yozsa ham." },
         { name: "IT Park rasmiy rezidenti", desc: "Tezcode — IT Park Uzbekistan rezidenti (guvohnoma №6237). Rasmiy shartnoma va hujjatlashtirilgan majburiyatlar bilan ishlaymiz." },
-        { name: "19 kishilik in-house jamoa", desc: "Frilanser emas — Toshkentdagi doimiy jamoa. O'rnatilgandan keyin ham qo'llab-quvvatlash davom etadi." },
+        { name: `${TEAM_SIZE} kishilik in-house jamoa`, desc: "Frilanser emas — Toshkentdagi doimiy jamoa. O'rnatilgandan keyin ham qo'llab-quvvatlash davom etadi." },
         { name: "CRM va sodiqlik ichkarida", desc: "CoreMed — o'z mahsulotimiz. Bron, mijoz bazasi va sodiqlikni bitta tizimda bog'lab beramiz." },
         { name: "Kelmay qolishni kamaytirish", desc: "Avtomatik eslatma no-show'ni sezilarli kamaytiradi — bu to'g'ridan-to'g'ri daromadingizni oshiradi." },
       ],
@@ -190,7 +191,7 @@ export const CONTENT: ServicePageContent = {
         { name: "ИИ-агент на узбекском и русском", desc: "ИИ-агент естественно работает на узбекском (латиница/кириллица) и русском — клиент свободно записывается на своём языке. Готовые зарубежные платформы не справляются именно с этим." },
         { name: "Instagram + Telegram вместе", desc: "В Узбекистане клиент салона чаще в Instagram и Telegram. ИИ-агент принимает запись в обоих — откуда бы ни написал клиент." },
         { name: "Официальный резидент IT Park", desc: "Tezcode — резидент IT Park Uzbekistan (свидетельство №6237). Работаем по официальному договору с задокументированными обязательствами." },
-        { name: "In-house команда из 19 человек", desc: "Не фрилансер — постоянная команда в Ташкенте. Поддержка продолжается и после внедрения." },
+        { name: `In-house команда из ${TEAM_SIZE} человек`, desc: "Не фрилансер — постоянная команда в Ташкенте. Поддержка продолжается и после внедрения." },
         { name: "CRM и лояльность внутри", desc: "CoreMed — наш продукт. Связываем запись, базу клиентов и лояльность в одной системе." },
         { name: "Снижение неявок", desc: "Автоматические напоминания заметно снижают no-show — а это напрямую повышает вашу выручку." },
       ],
@@ -426,7 +427,7 @@ export const CONTENT: ServicePageContent = {
         { name: "وكيل AI بالأوزبكية والروسية", desc: "يعمل الوكيل بطبيعية بالأوزبكية (لاتيني/سيريلي) والروسية — يحجز العميل بلغته بحرية. المنصات الأجنبية الجاهزة تفشل هنا." },
         { name: "Instagram + Telegram معًا", desc: "في أوزبكستان عميل الصالون غالبًا على Instagram وTelegram. يستقبل الوكيل الحجز في كليهما." },
         { name: "مقيم رسمي في IT Park", desc: "Tezcode مقيم في IT Park Uzbekistan (شهادة №6237). نعمل بعقد رسمي وبالتزامات موثّقة." },
-        { name: "فريق داخلي من 19 شخصًا", desc: "لسنا مستقلين — فريق دائم في طشقند. يستمر الدعم بعد التركيب." },
+        { name: `فريق داخلي من ${TEAM_SIZE} شخصًا`, desc: "لسنا مستقلين — فريق دائم في طشقند. يستمر الدعم بعد التركيب." },
         { name: "CRM والولاء بالداخل", desc: "CoreMed من منتجاتنا. نربط الحجز وقاعدة العملاء والولاء في نظام واحد." },
         { name: "تقليل الغياب", desc: "التذكيرات التلقائية تقلّل الغياب بشكل ملحوظ — وهذا يرفع إيرادك مباشرة." },
       ],
@@ -544,7 +545,7 @@ export const CONTENT: ServicePageContent = {
         { name: "AI-агент узбецькою та російською", desc: "AI-агент природно працює узбецькою (латиниця/кирилиця) та російською — клієнт вільно записується своєю мовою. Готові зарубіжні платформи падають саме тут." },
         { name: "Instagram + Telegram разом", desc: "В Узбекистані клієнт салону частіше в Instagram та Telegram. AI-агент приймає запис в обох." },
         { name: "Офіційний резидент IT Park", desc: "Tezcode — резидент IT Park Uzbekistan (свідоцтво №6237). Працюємо за офіційним договором із задокументованими зобов'язаннями." },
-        { name: "In-house команда з 19 осіб", desc: "Не фрилансер — постійна команда в Ташкенті. Підтримка триває після впровадження." },
+        { name: `In-house команда з ${TEAM_SIZE} осіб`, desc: "Не фрилансер — постійна команда в Ташкенті. Підтримка триває після впровадження." },
         { name: "CRM і лояльність всередині", desc: "CoreMed — наш продукт. Пов'язуємо запис, базу клієнтів і лояльність в одній системі." },
         { name: "Зниження неявок", desc: "Автоматичні нагадування помітно знижують no-show — а це прямо підвищує вашу виручку." },
       ],

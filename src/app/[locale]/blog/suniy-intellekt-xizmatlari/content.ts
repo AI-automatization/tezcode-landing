@@ -1,4 +1,5 @@
 import type { ArticleContent } from "@/components/blog/types";
+import { TEAM_SIZE } from "@/content/team";
 
 // Pillar article: "Sun'iy intellekt xizmatlari O'zbekistonda (2026)".
 // Targets the Uzbek query «sun'iy intellekt xizmatlari» and related searches
@@ -113,7 +114,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Tezcode sun'iy intellekt xizmatlari",
         paragraphs: [
-          "Tezcode — 2024-yilda Toshkentda tashkil topgan, 19 kishilik AI Software Factory jamoasi. Yuqorida sanab o'tilgan sun'iy intellekt xizmatlarining barchasini qilamiz: AI agentlar, jarayon avtomatizatsiyasi, AI video analitika, CRM/1C integratsiya va buyurtma AI ilovalar.",
+          `Tezcode — 2024-yilda Toshkentda tashkil topgan, ${TEAM_SIZE} kishilik AI Software Factory jamoasi. Yuqorida sanab o'tilgan sun'iy intellekt xizmatlarining barchasini qilamiz: AI agentlar, jarayon avtomatizatsiyasi, AI video analitika, CRM/1C integratsiya va buyurtma AI ilovalar.`,
           "Yechimlarni Claude (Anthropic) va GPT (OpenAI) modellari asosida quramiz, o'zbek va rus tilida (bitta suhbatda aralash bo'lsa ham) ishlashga sozlaymiz va mavjud tizimlaringizga — Telegram, Instagram, sayt, CRM, 1C — ulaymiz. Xizmatlar ro'yxati: tezcode.dev/ai-avtomatizatsiya va tezcode.dev/ai-agent sahifalarida.",
           "Boshlash uchun biror narsa sotib olish shart emas: avval bepul konsultatsiyada biznesingizga sun'iy intellekt qaysi ko'rinishda foyda berishini birga baholaymiz va yozma taklif tayyorlaymiz.",
         ],
@@ -253,7 +254,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Услуги искусственного интеллекта от Tezcode",
         paragraphs: [
-          "Tezcode — команда AI Software Factory из 19 человек, основанная в Ташкенте в 2024 году. Мы делаем все перечисленные выше услуги искусственного интеллекта: ИИ-агентов, автоматизацию процессов, ИИ-видеоаналитику, интеграцию CRM/1С и заказные ИИ-приложения.",
+          `Tezcode — команда AI Software Factory из ${TEAM_SIZE} человек, основанная в Ташкенте в 2024 году. Мы делаем все перечисленные выше услуги искусственного интеллекта: ИИ-агентов, автоматизацию процессов, ИИ-видеоаналитику, интеграцию CRM/1С и заказные ИИ-приложения.`,
           "Решения строим на моделях Claude (Anthropic) и GPT (OpenAI), настраиваем работу на узбекском и русском (даже вперемешку в одном разговоре) и подключаем к вашим существующим системам — Telegram, Instagram, сайту, CRM, 1С. Список услуг — на страницах tezcode.dev/ai-avtomatizatsiya и tezcode.dev/ai-agent.",
           "Чтобы начать, ничего покупать не нужно: сначала на бесплатной консультации мы вместе оценим, в каком виде искусственный интеллект принесёт пользу вашему бизнесу, и подготовим письменное предложение.",
         ],
@@ -393,7 +394,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Artificial intelligence services from Tezcode",
         paragraphs: [
-          "Tezcode is a 19-person AI Software Factory team founded in Tashkent in 2024. We deliver all the artificial intelligence services listed above: AI agents, process automation, AI video analytics, CRM/1C integration and custom AI applications.",
+          `Tezcode is a ${TEAM_SIZE}-person AI Software Factory team founded in Tashkent in 2024. We deliver all the artificial intelligence services listed above: AI agents, process automation, AI video analytics, CRM/1C integration and custom AI applications.`,
           "We build the solutions on Claude (Anthropic) and GPT (OpenAI) models, tune them to work in Uzbek and Russian (even mixed within one conversation) and connect them to your existing systems — Telegram, Instagram, website, CRM, 1C. The service list is on the tezcode.dev/ai-avtomatizatsiya and tezcode.dev/ai-agent pages.",
           "To get started you do not have to buy anything: first, in a free consultation, we assess together in what form artificial intelligence will benefit your business, and prepare a written proposal.",
         ],

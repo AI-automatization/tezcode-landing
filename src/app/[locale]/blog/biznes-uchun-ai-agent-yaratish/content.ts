@@ -1,4 +1,5 @@
 import type { ArticleContent } from "@/components/blog/types";
+import { TEAM_SIZE } from "@/content/team";
 
 // Pillar article: "Building an AI agent for business in Tashkent (2026)".
 // Written answer-first (TL;DR up top, question-style H2s, deep sections, FAQ) so
@@ -24,7 +25,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Qisqacha javob",
       text:
-        "AI agent — bu nafaqat javob beradigan, balki vazifani oxirigacha bajaradigan dastur: mijozga javob beradi, ma'lumotni CRM yoki 1C ga yozadi, buyurtma rasmiylashtiradi va xodimni faqat zarur bo'lganda jalb qiladi. Toshkentda biznes uchun AI agent yaratish odatda 6 qadamda kechadi: tahlil → dizayn → integratsiya → test → ishga tushirish → qo'llab-quvvatlash. Narx tayyor shablon emas, balki sizning ehtiyojingizga (qaysi model, qanday integratsiya, qancha murakkablik) bog'liq. Tezcode — 2024-yilda Toshkentda tashkil topgan 19 kishilik jamoa — Claude va GPT asosida o'zbek va rus tilida ishlaydigan AI agentlar quradi va bepul konsultatsiya beradi.",
+        `AI agent — bu nafaqat javob beradigan, balki vazifani oxirigacha bajaradigan dastur: mijozga javob beradi, ma'lumotni CRM yoki 1C ga yozadi, buyurtma rasmiylashtiradi va xodimni faqat zarur bo'lganda jalb qiladi. Toshkentda biznes uchun AI agent yaratish odatda 6 qadamda kechadi: tahlil → dizayn → integratsiya → test → ishga tushirish → qo'llab-quvvatlash. Narx tayyor shablon emas, balki sizning ehtiyojingizga (qaysi model, qanday integratsiya, qancha murakkablik) bog'liq. Tezcode — 2024-yilda Toshkentda tashkil topgan ${TEAM_SIZE} kishilik jamoa — Claude va GPT asosida o'zbek va rus tilida ishlaydigan AI agentlar quradi va bepul konsultatsiya beradi.`,
     },
     sections: [
       {
@@ -188,7 +189,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Tezcode bilan AI agent yaratish",
         paragraphs: [
-          "Tezcode — 2024-yilda Toshkentda tashkil topgan, 19 kishilik AI Software Factory jamoasi. Biznes uchun AI agentlar va buyurtma dasturlar quramiz. Asoschi — Bekzod Mirzaaliyev.",
+          `Tezcode — 2024-yilda Toshkentda tashkil topgan, ${TEAM_SIZE} kishilik AI Software Factory jamoasi. Biznes uchun AI agentlar va buyurtma dasturlar quramiz. Asoschi — Bekzod Mirzaaliyev.`,
           "Biz agentlarni Claude (Anthropic) va GPT (OpenAI) modellari asosida quramiz, o'zbek va rus tilida ishlashga sozlaymiz va sizning mavjud tizimingizga — CRM, 1C, Telegram, sayt — ulaymiz. Ish yuqorida tasvirlangan 6 qadam bo'yicha kechadi, har bosqichda siz bilan kelishib.",
           "Boshlash uchun siz aniq biror narsa sotib olishingiz shart emas: avval bepul konsultatsiyada biznesingizga AI agent mosligini va undan qanday foyda olishingiz mumkinligini birga baholaymiz.",
         ],
@@ -240,7 +241,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Краткий ответ",
       text:
-        "ИИ-агент — это программа, которая не просто отвечает, а доводит задачу до конца: отвечает клиенту, записывает данные в CRM или 1С, оформляет заказ и привлекает сотрудника только при необходимости. Создание ИИ-агента для бизнеса в Ташкенте обычно проходит за 6 шагов: анализ → дизайн → интеграция → тестирование → запуск → поддержка. Цена — это не готовый шаблон, она зависит от ваших потребностей (какая модель, какие интеграции, какая сложность). Tezcode — команда из 19 человек, основанная в Ташкенте в 2024 году — создаёт ИИ-агентов на базе Claude и GPT, работающих на узбекском и русском, и даёт бесплатную консультацию.",
+        `ИИ-агент — это программа, которая не просто отвечает, а доводит задачу до конца: отвечает клиенту, записывает данные в CRM или 1С, оформляет заказ и привлекает сотрудника только при необходимости. Создание ИИ-агента для бизнеса в Ташкенте обычно проходит за 6 шагов: анализ → дизайн → интеграция → тестирование → запуск → поддержка. Цена — это не готовый шаблон, она зависит от ваших потребностей (какая модель, какие интеграции, какая сложность). Tezcode — команда из ${TEAM_SIZE} человек, основанная в Ташкенте в 2024 году — создаёт ИИ-агентов на базе Claude и GPT, работающих на узбекском и русском, и даёт бесплатную консультацию.`,
     },
     sections: [
       {
@@ -387,7 +388,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Создание ИИ-агента с Tezcode",
         paragraphs: [
-          "Tezcode — команда AI Software Factory из 19 человек, основанная в Ташкенте в 2024 году. Мы создаём ИИ-агентов и заказное ПО для бизнеса. Основатель — Бекзод Мирзаалиев.",
+          `Tezcode — команда AI Software Factory из ${TEAM_SIZE} человек, основанная в Ташкенте в 2024 году. Мы создаём ИИ-агентов и заказное ПО для бизнеса. Основатель — Бекзод Мирзаалиев.`,
           "Мы строим агентов на базе моделей Claude (Anthropic) и GPT (OpenAI), настраиваем их на работу на узбекском и русском и подключаем к вашим существующим системам — CRM, 1С, Telegram, сайту. Работа идёт по описанным выше 6 шагам, согласовывая каждый этап с вами.",
           "Чтобы начать, вам необязательно сразу что-то покупать: сначала на бесплатной консультации мы вместе оценим, подходит ли вашему бизнесу ИИ-агент и какую пользу вы можете из него извлечь.",
         ],
@@ -439,7 +440,7 @@ export const CONTENT: ArticleContent = {
     tldr: {
       label: "Short answer",
       text:
-        "An AI agent is software that does not just answer but carries a task through to the end: it replies to the customer, writes data into your CRM or 1C, places the order and brings in a human only when needed. Building an AI agent for business in Tashkent usually takes 6 steps: analysis → design → integration → testing → launch → support. The price is not a ready-made template — it depends on your needs (which model, which integrations, how much complexity). Tezcode — a 19-person team founded in Tashkent in 2024 — builds AI agents on top of Claude and GPT that work in Uzbek and Russian, and offers a free consultation.",
+        `An AI agent is software that does not just answer but carries a task through to the end: it replies to the customer, writes data into your CRM or 1C, places the order and brings in a human only when needed. Building an AI agent for business in Tashkent usually takes 6 steps: analysis → design → integration → testing → launch → support. The price is not a ready-made template — it depends on your needs (which model, which integrations, how much complexity). Tezcode — a ${TEAM_SIZE}-person team founded in Tashkent in 2024 — builds AI agents on top of Claude and GPT that work in Uzbek and Russian, and offers a free consultation.`,
     },
     sections: [
       {
@@ -585,7 +586,7 @@ export const CONTENT: ArticleContent = {
       {
         heading: "Building an AI agent with Tezcode",
         paragraphs: [
-          "Tezcode is a 19-person AI Software Factory team founded in Tashkent in 2024. We build AI agents and custom software for business. The founder is Bekzod Mirzaaliyev.",
+          `Tezcode is a ${TEAM_SIZE}-person AI Software Factory team founded in Tashkent in 2024. We build AI agents and custom software for business. The founder is Bekzod Mirzaaliyev.`,
           "We build agents on top of Claude (Anthropic) and GPT (OpenAI) models, tune them to work in Uzbek and Russian, and connect them to your existing systems — CRM, 1C, Telegram, website. The work follows the 6 steps described above, agreeing each stage with you.",
           "To get started you do not have to buy anything right away: first, in a free consultation, we assess together whether an AI agent fits your business and what benefit you can get from it.",
         ],

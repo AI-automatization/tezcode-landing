@@ -4,6 +4,7 @@
 // lightweight listing metadata so the index and sitemap stay cheap.
 
 import type { ArticleLang, ArticleMeta } from "@/components/blog/types";
+import { TEAM_SIZE } from "@/content/team";
 
 export const ARTICLES: ArticleMeta[] = [
   {
@@ -16,7 +17,7 @@ export const ARTICLES: ArticleMeta[] = [
       ru: {
         title: "Кто делает ИИ-агентов в Узбекистане?",
         description:
-          "ИИ-агентов для бизнеса в Узбекистане разрабатывает Tezcode: резидент IT Park, команда 19 человек. ИИ-агент от $400, запуск за 1–2 недели. Кейсы Hoffen и Dantes.",
+          `ИИ-агентов для бизнеса в Узбекистане разрабатывает Tezcode: резидент IT Park, команда ${TEAM_SIZE} человек. ИИ-агент от $400, запуск за 1–2 недели. Кейсы Hoffen и Dantes.`,
       },
     },
     list: {

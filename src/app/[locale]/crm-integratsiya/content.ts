@@ -1,4 +1,5 @@
 import type { ServicePageContent } from "@/components/service-page/types";
+import { TEAM_SIZE } from "@/content/team";
 
 // Content for /crm-integratsiya — target keywords: "CRM integratsiya",
 // "amoCRM Bitrix24 ulash Toshkent", "CRM внедрение Ташкент", "CRM integration
@@ -76,7 +77,7 @@ export const CONTENT: ServicePageContent = {
         { name: "5 xil CRM bilan tajriba", desc: "amoCRM, Bitrix24, HubSpot, 1C va Sales Doctor — bittasiga bog'lanib qolmaymiz. Biznesingizga qaysi biri mos bo'lsa, o'shani tavsiya qilamiz va sozlaymiz, sotuvchi manfaati emas, sizniki." },
         { name: "O'z CRM va POS tizimlarimiz bor", desc: "RAOS (POS) va CoreMed — o'z mahsulotlarimiz. CRM va integratsiya ichini ichkaridan bilamiz, shuning uchun ulashni tez va to'g'ri quramiz." },
         { name: "IT Park rasmiy rezidenti", desc: "Tezcode — IT Park Uzbekistan rezidenti (guvohnoma №6237). Rasmiy shartnoma, O'zbekiston yurisdiksiyasi va hujjatlashtirilgan majburiyatlar bilan ishlaymiz." },
-        { name: "19 kishilik in-house jamoa", desc: "Frilanser emas — Toshkentdagi doimiy jamoa. Integratsiya topshirilgandan keyin ham qo'llab-quvvatlash va rivojlantirish davom etadi." },
+        { name: `${TEAM_SIZE} kishilik in-house jamoa`, desc: "Frilanser emas — Toshkentdagi doimiy jamoa. Integratsiya topshirilgandan keyin ham qo'llab-quvvatlash va rivojlantirish davom etadi." },
         { name: "AI qatlamini qo'sha olamiz", desc: "Oddiy integratsiyadan tashqari CRM ustiga AI qo'shamiz: AI agent lidlarni saralaydi, suhbatlarni tahlil qiladi, avtomatik javob beradi. Ko'p integrator buni qila olmaydi." },
         { name: "Litsenziya bo'yicha ochiq maslahat", desc: "CRM litsenziyasini har doim mijoz to'laydi — biz uni ustiga qo'shib qo'ymaymiz. Qaysi tarif yetarli, qayerda ortiqcha to'lov — ochiq aytamiz." },
       ],
@@ -201,7 +202,7 @@ export const CONTENT: ServicePageContent = {
         { name: "Опыт с 5 разными CRM", desc: "amoCRM, Bitrix24, HubSpot, 1C и Sales Doctor — мы не привязаны к одной. Рекомендуем и настраиваем ту, что подходит вам, исходя из вашей выгоды, а не интереса продавца." },
         { name: "У нас есть свои CRM и POS", desc: "RAOS (POS) и CoreMed — наши продукты. Мы знаем CRM и интеграции изнутри, поэтому строим связки быстро и правильно." },
         { name: "Официальный резидент IT Park", desc: "Tezcode — резидент IT Park Uzbekistan (свидетельство №6237). Работаем по официальному договору, в юрисдикции Узбекистана, с задокументированными обязательствами." },
-        { name: "In-house команда из 19 человек", desc: "Не фрилансер — постоянная команда в Ташкенте. Поддержка и развитие продолжаются и после сдачи интеграции." },
+        { name: `In-house команда из ${TEAM_SIZE} человек`, desc: "Не фрилансер — постоянная команда в Ташкенте. Поддержка и развитие продолжаются и после сдачи интеграции." },
         { name: "Можем добавить ИИ-слой (AI)", desc: "Помимо обычной интеграции добавляем поверх CRM ИИ (AI): ИИ-агент квалифицирует лиды, анализирует диалоги и отвечает автоматически. Многие интеграторы этого не умеют." },
         { name: "Честный совет по лицензии", desc: "Лицензию CRM всегда оплачивает клиент — мы не накручиваем её сверху. Открыто говорим, какого тарифа достаточно и где переплата." },
       ],
@@ -451,7 +452,7 @@ export const CONTENT: ServicePageContent = {
         { name: "خبرة مع 5 أنظمة CRM مختلفة", desc: "amoCRM و Bitrix24 و HubSpot و 1C و Sales Doctor — لسنا مرتبطين بواحد. نوصي ونعدّ المناسب لك بناءً على مصلحتك، لا مصلحة بائع." },
         { name: "لدينا أنظمة CRM و POS خاصة", desc: "RAOS‏ (POS) و CoreMed منتجاتنا. نعرف أنظمة CRM والتكامل من الداخل، لذا نبني الروابط بسرعة وصواب." },
         { name: "مقيم رسمي في IT Park", desc: "Tezcode مقيم في IT Park Uzbekistan (شهادة №6237). نعمل بعقد رسمي ضمن الاختصاص القضائي لأوزبكستان وبالتزامات موثّقة." },
-        { name: "فريق داخلي من 19 شخصًا", desc: "لسنا مستقلين — فريق دائم في طشقند. يستمر الدعم والتطوير بعد تسليم التكامل." },
+        { name: `فريق داخلي من ${TEAM_SIZE} شخصًا`, desc: "لسنا مستقلين — فريق دائم في طشقند. يستمر الدعم والتطوير بعد تسليم التكامل." },
         { name: "يمكننا إضافة طبقة ذكاء اصطناعي", desc: "إلى جانب التكامل العادي نبني ذكاءً اصطناعيًا فوق CRM: وكيل AI يفرز العملاء المحتملين ويحلّل الحوارات ويرد تلقائيًا. كثير من المتكاملين لا يستطيعون ذلك." },
         { name: "نصيحة صادقة بشأن الترخيص", desc: "يدفع العميل دائمًا ترخيص CRM — لا نضيفه فوق سعرنا. نقول بصراحة أي باقة تكفي وأين تُدفع زيادة." },
       ],
@@ -576,7 +577,7 @@ export const CONTENT: ServicePageContent = {
         { name: "Досвід з 5 різними CRM", desc: "amoCRM, Bitrix24, HubSpot, 1C та Sales Doctor — ми не прив'язані до однієї. Рекомендуємо й налаштовуємо ту, що підходить вам, з вашої вигоди, а не інтересу продавця." },
         { name: "У нас є власні CRM та POS", desc: "RAOS (POS) і CoreMed — наші продукти. Ми знаємо CRM та інтеграції зсередини, тому будуємо зв'язки швидко й правильно." },
         { name: "Офіційний резидент IT Park", desc: "Tezcode — резидент IT Park Uzbekistan (свідоцтво №6237). Працюємо за офіційним договором, у юрисдикції Узбекистану, із задокументованими зобов'язаннями." },
-        { name: "In-house команда з 19 осіб", desc: "Не фрилансер — постійна команда в Ташкенті. Підтримка й розвиток тривають і після здачі інтеграції." },
+        { name: `In-house команда з ${TEAM_SIZE} осіб`, desc: "Не фрилансер — постійна команда в Ташкенті. Підтримка й розвиток тривають і після здачі інтеграції." },
         { name: "Можемо додати AI-шар", desc: "Крім звичайної інтеграції надбудовуємо над CRM AI: AI-агент кваліфікує ліди, аналізує діалоги, відповідає автоматично. Багато інтеграторів цього не вміють." },
         { name: "Чесна порада щодо ліцензії", desc: "Ліцензію CRM завжди оплачує клієнт — ми не накручуємо її зверху. Відкрито кажемо, якого тарифу достатньо і де переплата." },
       ],

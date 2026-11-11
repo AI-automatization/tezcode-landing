@@ -11,6 +11,7 @@ import { Reveal, RevealStagger, RevealItem } from "@/components/motion/Reveal";
 import { Tilt3D } from "@/components/motion/Tilt3D";
 import { Magnetic } from "@/components/motion/Magnetic";
 import { ServiceIcon } from "@/components/service-page/ServiceIcon";
+import { TEAM_SIZE } from "@/content/team";
 
 // ─────────────────────────────────────────────────────────────────────
 // Locale types & copy
@@ -164,11 +165,11 @@ const COPY: Record<Lang, Copy> = {
       badge: "Tezcode farqi",
       title: "Nima uchun",
       titleAccent: "Tezcode Custom",
-      subtitle: "19 kishilik in-house (ichki) jamoa, AI (sun'iy intellekt) tool'lari, lokal CEO, yagona javobgarlik.",
+      subtitle: `${TEAM_SIZE} kishilik in-house (ichki) jamoa, AI (sun'iy intellekt) tool'lari, lokal CEO, yagona javobgarlik.`,
       items: [
         {
           icon: "users",
-          title: "19 kishilik in-house jamoa",
+          title: `${TEAM_SIZE} kishilik in-house jamoa`,
           desc: "Toshkentdagi ofisimizda. Freelancer emas, jamoa. Birovi kasal bo'lsa boshqa qo'llab turadi. Backend, frontend, mobil, AI, DevOps — barchasi bizda.",
         },
         {
@@ -311,7 +312,7 @@ const COPY: Record<Lang, Copy> = {
       title: "5+ yil tajriba,",
       titleAccent: "150+ loyiha",
       stats: [
-        { value: "19", label: "kishilik in-house jamoa" },
+        { value: String(TEAM_SIZE), label: "kishilik in-house jamoa" },
         { value: "150+", label: "Ishlangan loyiha" },
         { value: "5+", label: "Yillik tajriba" },
         { value: "8", label: "O'z mahsulotimiz" },
@@ -404,11 +405,11 @@ const COPY: Record<Lang, Copy> = {
       badge: "Отличие Tezcode",
       title: "Почему",
       titleAccent: "Tezcode Custom",
-      subtitle: "in-house команда из 19 человек, ИИ-инструменты, локальный CEO, единая ответственность.",
+      subtitle: `in-house команда из ${TEAM_SIZE} человек, ИИ-инструменты, локальный CEO, единая ответственность.`,
       items: [
         {
           icon: "users",
-          title: "in-house команда из 19 человек",
+          title: `in-house команда из ${TEAM_SIZE} человек`,
           desc: "В офисе в Ташкенте. Не фрилансеры — команда. Заболеет один — другие подстрахуют. Backend, frontend, mobile, ИИ, DevOps — всё у нас.",
         },
         {
@@ -551,7 +552,7 @@ const COPY: Record<Lang, Copy> = {
       title: "5+ лет опыта,",
       titleAccent: "150+ проектов",
       stats: [
-        { value: "19", label: "человек в in-house команде" },
+        { value: String(TEAM_SIZE), label: "человек в in-house команде" },
         { value: "150+", label: "Проектов выполнено" },
         { value: "5+", label: "Лет опыта" },
         { value: "8", label: "Своих продуктов" },
@@ -643,11 +644,11 @@ const COPY: Record<Lang, Copy> = {
       badge: "The Tezcode edge",
       title: "Why",
       titleAccent: "Tezcode Custom",
-      subtitle: "19-person in-house team, AI tooling, local CEO, single accountability.",
+      subtitle: `${TEAM_SIZE}-person in-house team, AI tooling, local CEO, single accountability.`,
       items: [
         {
           icon: "users",
-          title: "19-person in-house team",
+          title: `${TEAM_SIZE}-person in-house team`,
           desc: "In our Tashkent office. Not freelancers — a team. If one is sick, others cover. Backend, frontend, mobile, AI, DevOps — all in-house.",
         },
         {
@@ -789,7 +790,7 @@ const COPY: Record<Lang, Copy> = {
       title: "5+ years experience,",
       titleAccent: "150+ projects",
       stats: [
-        { value: "19", label: "people in-house" },
+        { value: String(TEAM_SIZE), label: "people in-house" },
         { value: "150+", label: "Projects delivered" },
         { value: "5+", label: "Years of experience" },
         { value: "8", label: "Own products" },
@@ -881,11 +882,11 @@ const COPY: Record<Lang, Copy> = {
       badge: "ميزة Tezcode",
       title: "لماذا",
       titleAccent: "Tezcode Custom",
-      subtitle: "فريق داخلي من 19 شخصًا، أدوات AI، مدير محلي، مسؤولية واحدة.",
+      subtitle: `فريق داخلي من ${TEAM_SIZE} شخصًا، أدوات AI، مدير محلي، مسؤولية واحدة.`,
       items: [
         {
           icon: "users",
-          title: "فريق داخلي من 19 شخصًا",
+          title: `فريق داخلي من ${TEAM_SIZE} شخصًا`,
           desc: "في مكتبنا بطشقند. ليس مستقلين — فريق. إذا مرض أحدهم، يعوض الآخرون.",
         },
         {
@@ -1026,7 +1027,7 @@ const COPY: Record<Lang, Copy> = {
       title: "5+ سنوات خبرة،",
       titleAccent: "150+ مشروع",
       stats: [
-        { value: "19", label: "شخصًا في الفريق الداخلي" },
+        { value: String(TEAM_SIZE), label: "شخصًا في الفريق الداخلي" },
         { value: "150+", label: "مشروع مسلم" },
         { value: "5+", label: "سنوات خبرة" },
         { value: "8", label: "منتج خاص" },
@@ -1118,11 +1119,11 @@ const COPY: Record<Lang, Copy> = {
       badge: "Відмінність Tezcode",
       title: "Чому",
       titleAccent: "Tezcode Custom",
-      subtitle: "in-house команда з 19 осіб, AI інструменти, локальний CEO, єдина відповідальність.",
+      subtitle: `in-house команда з ${TEAM_SIZE} осіб, AI інструменти, локальний CEO, єдина відповідальність.`,
       items: [
         {
           icon: "users",
-          title: "in-house команда з 19 осіб",
+          title: `in-house команда з ${TEAM_SIZE} осіб`,
           desc: "В офісі у Ташкенті. Не фрілансери — команда. Backend, frontend, mobile, AI, DevOps — все у нас.",
         },
         {
@@ -1263,7 +1264,7 @@ const COPY: Record<Lang, Copy> = {
       title: "5+ років досвіду,",
       titleAccent: "150+ проектів",
       stats: [
-        { value: "19", label: "осіб в in-house команді" },
+        { value: String(TEAM_SIZE), label: "осіб в in-house команді" },
         { value: "150+", label: "Зроблено проектів" },
         { value: "5+", label: "Років досвіду" },
         { value: "8", label: "Власних продуктів" },

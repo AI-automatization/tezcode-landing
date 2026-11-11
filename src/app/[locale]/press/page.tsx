@@ -2,6 +2,7 @@ import { Download } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo";
+import { TEAM_SIZE } from "@/content/team";
 
 export async function generateMetadata({
   params,
@@ -59,7 +60,7 @@ const FACTS = [
   { label: "Founded", value: "2024" },
   { label: "HQ", value: "Toshkent, O'zbekiston" },
   { label: "Founder", value: "Bekzod Mirzaaliyev" },
-  { label: "Team", value: "19 kishilik jamoa" },
+  { label: "Team", value: `${TEAM_SIZE} kishilik jamoa` },
   { label: "Products", value: "8 ta (3 live, 5 R&D)" },
   { label: "Divisions", value: "6 (Systems / Custom / AI / Teams / Labs / Academy)" },
   { label: "Languages", value: "UZ · RU · EN · AR · UK" },
