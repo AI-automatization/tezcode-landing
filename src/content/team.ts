@@ -145,6 +145,13 @@ export const TEAM: Member[] = [
     profileSlug: "jamoliddin-sadriddinov",
     photo: "/team/jamoliddin-sadriddinov.jpg",
   },
+  {
+    name: "Odilbek Qodirov",
+    role: "AI Engineer",
+    telegram: "@kodirov_odilbek",
+    profileSlug: "odilbek-qodirov",
+    photo: "/team/odilbek-qodirov.jpg",
+  },
 ];
 
 // Russian role labels (cards default to English roles; in the ru locale the
@@ -170,6 +177,7 @@ export const ROLE_RU: Record<string, string> = {
   "Ibrohim Sobirov": "ИИ-инженер",
   "Yusuf Kasimov": "ИИ-инженер",
   "Jamoliddin Sadriddinov": "ИИ-инженер",
+  "Odilbek Qodirov": "ИИ-инженер",
 };
 
 // Russian (Cyrillic) name spellings — shown in the ru locale so the About page
@@ -196,6 +204,7 @@ export const NAME_RU: Record<string, string> = {
   "Ibrohim Sobirov": "Иброхим Собиров",
   "Yusuf Kasimov": "Юсуф Касимов",
   "Jamoliddin Sadriddinov": "Джамолиддин Садриддинов",
+  "Odilbek Qodirov": "Одилбек Кодиров",
 };
 
 export const TEAM_SIZE = TEAM.length;

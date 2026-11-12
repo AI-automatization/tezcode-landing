@@ -533,6 +533,23 @@ export const TEAM_PROFILES: TeamProfile[] = [
     metaDescription:
       "Jamoliddin Sadriddinov — Tezcode jamoasida AI Engineer. React, Node.js, MongoDB, TailwindCSS. Sedap va LMS tizimlarini qurgan.",
   },
+  {
+    slug: "odilbek-qodirov",
+    name: "Odilbek Qodirov",
+    role: "AI Engineer",
+    photo: "/team/odilbek-qodirov.jpg",
+    bio: [
+      "Odilbek Qodirov — Tezcode jamoasida AI Engineer. U asosan Python, React va Node.js texnologiyalari bilan ishlaydi.",
+      "Odilbek Tezcode marketing bo'limida research va sales agentlari ustida ishlaydi.",
+    ],
+    skills: ["Python", "React", "Node.js"],
+    projects: [],
+    telegram: "kodirov_odilbek",
+    knowsAbout: ["AI agentlar", "Research agentlari", "Sales agentlari", "Full-Stack Development"],
+    metaTitle: "Odilbek Qodirov — Tezcode AI Engineer",
+    metaDescription:
+      "Odilbek Qodirov — Tezcode jamoasida AI Engineer. Python, React, Node.js. Marketing bo'limida research va sales agentlari ustida ishlaydi.",
+  },
 ];
 
 export function getProfile(slug: string): TeamProfile | undefined {
