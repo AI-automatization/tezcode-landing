@@ -24,6 +24,7 @@ export const TEAM: Member[] = [
   {
     name: "Abdulaziz Yormatov",
     role: "COO",
+    photo: "/team/abdulaziz-yormatov.jpg",
     telegram: "@mr_abdulaziz_yormatov",
     profileSlug: "abdulaziz-yormatov",
   },

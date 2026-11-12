@@ -86,6 +86,7 @@ export const TEAM_PROFILES: TeamProfile[] = [
     slug: "abdulaziz-yormatov",
     name: "Abdulaziz Yormatov",
     role: "COO",
+    photo: "/team/abdulaziz-yormatov.jpg",
     bio: [
       "Abdulaziz Yormatov — Tezcode jamoasida COO. Studiyaning barcha mahsulotlarida arxitektura qarorlarini qabul qiladi va kod reviewdan o'tkazadi.",
       "NestJS va Prisma asosidagi backend, React hamda React Native frontend bilan ishlaydi; RAOS kassa tizimi, CoreMed va markazlashtirilgan billing ustida.",
