@@ -42,3 +42,6 @@ jobs:
 
       - name: Build
         run: pnpm build
+
+      - name: Smoke test (sitemap URLs + retired-page 410s)
+        run: pnpm smoke
