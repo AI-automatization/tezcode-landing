@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
+    "test": "vitest run src/lib",
     "indexnow": "node scripts/indexnow.mjs",
     "check:script": "node scripts/check-mixed-script.mjs",
     "check:seo": "node scripts/check-seo.mjs",
@@ -39,7 +40,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^5.1.0"
   },
   "browserslist": [
     "chrome >= 92",

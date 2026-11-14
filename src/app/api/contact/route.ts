@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { after, NextRequest, NextResponse } from "next/server";
 import { contactSchema, isHoneypotFilled } from "@/lib/contact";
 import { sendTelegramNotification } from "@/lib/telegram";
 import { forwardToHamshirago } from "@/lib/hamshirago-leads";
@@ -62,7 +62,9 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    await forwardToHamshirago(data).catch(() => {});
+    // Runs after the response is sent: retries (up to ~17 s worst case) never delay the
+    // visitor. forwardToHamshirago never throws and reports its own failures.
+    after(() => forwardToHamshirago(data));
 
     return NextResponse.json(
       { success: true },

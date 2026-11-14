@@ -67,3 +67,27 @@ export async function sendTelegramNotification(data: ContactData & { locale: str
     return false;
   }
 }
+
+// Plain-text message to the same group. Used for operational alerts, not leads.
+export async function sendTelegramText(text: string): Promise<boolean> {
+  if (!TELEGRAM_BOT_TOKEN) {
+    console.warn("[Telegram] TELEGRAM_BOT_TOKEN not set — alert not sent");
+    return false;
+  }
+  try {
+    const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+      method: "POST",
+      signal: AbortSignal.timeout(10000),
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text }),
+    });
+    if (!res.ok) {
+      console.error("[Telegram] Alert rejected:", res.status);
+      return false;
+    }
+    return true;
+  } catch {
+    console.error("[Telegram] Alert unavailable");
+    return false;
+  }
+}
